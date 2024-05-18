@@ -11,19 +11,6 @@
       reoccurrenceDelay: 5
     - type: NoosphericStormRule
 
-# Mid round antag spawns
-- type: entity
-  abstract: true
-  parent: BaseGameRule
-  id: BaseMidRoundAntag
-  components:
-  - type: StationEvent
-    weight: 7
-    reoccurrenceDelay: 5
-    minimumPlayers: 15
-    earliestStart: 25
-  - type: MidRoundAntagRule
-
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseMidRoundAntag
@@ -31,14 +18,6 @@
   components:
   - type: MidRoundAntagRule
     spawner: SpawnPointGhostRatKing
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseMidRoundAntag
-  id: ParadoxAnomalySpawn
-  components:
-  - type: MidRoundAntagRule
-    spawner: SpawnPointGhostParadoxAnomaly
 
 # Base glimmer event
 - type: entity
