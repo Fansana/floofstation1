@@ -399,9 +399,9 @@
 #        prototype: InitialInfected
 
 - type: entity
-  id: LoneOpsSpawn
-  parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   categories: [ HideSpawnMenu ]
+  parent: BaseNukeopsRule
+  id: LoneOpsSpawn
   components:
   - type: StationEvent
     earliestStart: 35
