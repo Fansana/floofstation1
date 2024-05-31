@@ -1,4 +1,3 @@
-using Content.Server.GenericAntag;
 using Content.Server.Objectives.Components;
 using Content.Server.Objectives.Systems;
 using Content.Server.Popups;
@@ -53,7 +52,7 @@ public sealed partial class DragonSystem : EntitySystem
         SubscribeLocalEvent<DragonComponent, DragonSpawnRiftActionEvent>(OnSpawnRift);
         SubscribeLocalEvent<DragonComponent, RefreshMovementSpeedModifiersEvent>(OnDragonMove);
         SubscribeLocalEvent<DragonComponent, MobStateChangedEvent>(OnMobStateChanged);
-        SubscribeLocalEvent<DragonComponent, GenericAntagCreatedEvent>(OnCreated);
+        SubscribeLocalEvent<DragonComponent, EntityZombifiedEvent>(OnZombified);
     }
 
     public override void Update(float frameTime)
@@ -184,16 +183,10 @@ public sealed partial class DragonSystem : EntitySystem
         DeleteRifts(uid, false, component);
     }
 
-    private void OnCreated(EntityUid uid, DragonComponent comp, ref GenericAntagCreatedEvent args)
+    private void OnZombified(Entity<DragonComponent> ent, ref EntityZombifiedEvent args)
     {
-        var mindId = args.MindId;
-        var mind = args.Mind;
-
-        _role.MindAddRole(mindId, new DragonRoleComponent(), mind);
-        _role.MindAddRole(mindId, new RoleBriefingComponent()
-        {
-            Briefing = Loc.GetString("dragon-role-briefing")
-        }, mind);
+        // prevent carp attacking zombie dragon
+        _faction.AddFaction(ent.Owner, ent.Comp.Faction);
     }
 
     private void Roar(EntityUid uid, DragonComponent comp)

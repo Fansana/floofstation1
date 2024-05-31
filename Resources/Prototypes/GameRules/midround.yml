@@ -17,18 +17,6 @@
   - type: NinjaRule
     threats: NinjaThreats
 
-# stores configuration for dragon
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BaseGameRule
-  id: Dragon
-  components:
-  - type: GenericAntagRule
-    agentName: dragon-round-end-agent-name
-    objectives:
-    - CarpRiftsObjective
-    - DragonSurviveObjective
-
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseGameRule
