@@ -136,12 +136,7 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
         }
     }
 
-    #region Helper Functions
-
-    protected void ForceEndSelf(EntityUid uid, GameRuleComponent? component = null)
-    {
-        GameTicker.EndGameRule(uid, component);
-    }
+    #region Helper Functions // Floofstation - this whole region was removed in wizden PR #28210, I left it due to the floof-specific code. Hopefully it's compatible...
 
     // Floof section - a function to delay the appearance of spawned mobs
 
@@ -218,5 +213,6 @@ public abstract class StationEventSystem<T> : GameRuleSystem<T> where T : ICompo
 
     // Floof section end
 
-    #endregion
+    #endregion // Floofstation - end removed region in wizden PR #28210
+
 }
