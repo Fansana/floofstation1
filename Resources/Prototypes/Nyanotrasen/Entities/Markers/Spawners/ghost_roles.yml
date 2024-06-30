@@ -18,25 +18,26 @@
       - sprite: Mobs/Animals/bat.rsi
         state: bat
 
-- type: entity
-  id: SpawnPointGhostFugitive
-  name: ghost role spawn point
-  parent: MarkerBase
-  categories: [ HideSpawnMenu ]
-  components:
-  # - type: GhostRoleMobSpawner
-  #   prototype: MobHumanFugitive # Todo
-  - type: GhostRole
-    name: Fugitive
-    description: You're an escaped prisoner. Make it out alive.
-    rules: |
-      You are the lightest of antags.
-      Murderboning = ban and whitelist removal.
-  - type: Sprite
-    sprite: Markers/jobs.rsi
-    layers:
-      - state: green
-      - state: prisoner
+# Floofstation - removed by Delta-v PR #1413 due to conflict with their fugitive system. I decided to comment out instead.
+#- type: entity
+#  id: SpawnPointGhostFugitive
+#  name: ghost role spawn point
+#  parent: MarkerBase
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  # - type: GhostRoleMobSpawner
+#  #   prototype: MobHumanFugitive # Todo
+#  - type: GhostRole
+#    name: Fugitive
+#    description: You're an escaped prisoner. Make it out alive.
+#    rules: |
+#      You are the lightest of antags.
+#      Murderboning = ban and whitelist removal.
+#  - type: Sprite
+#    sprite: Markers/jobs.rsi
+#    layers:
+#      - state: green
+#      - state: prisoner
 
 - type: entity
   id: SpawnPointLocationMidRoundAntag
@@ -49,7 +50,7 @@
     layers:
       - state: green
       - state: prisoner
-  # - type: MidRoundAntagSpawnLocation # When MidRoundAntag?
+  - type: MidRoundAntagSpawnLocation # Floofstation - modified by Delta-v PR #1413
 
 #- type: entity
 #  id: SpawnPointGhostVampSpider

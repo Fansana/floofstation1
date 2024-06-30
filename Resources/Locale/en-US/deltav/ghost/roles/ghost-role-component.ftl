@@ -11,6 +11,10 @@ ghost-role-information-paradox-anomaly-name = Paradox Anomaly
 ghost-role-information-paradox-anomaly-description = Replace your double, or befriend them.
 ghost-role-information-paradox-anomaly-rules = Try and replace your twin with this funny roleplay antag rather than plasma flooding the station or something. You can also just befriend them.
 
+ghost-role-information-fugitive-name = Fugitive
+ghost-role-information-fugitive-description = You're an escaped prisoner. Make it out alive.
+ghost-role-information-fugitive-rules = You are the lightest of antags, focus on laying low rather than engaging security directly. Don't murderbone.
+
 # Delta V soft antag rule
 deltav-ghost-role-information-softantag-rules = You are allowed to attack the crew without provocation.
                                                 You are allowed to coexist with the crew.
