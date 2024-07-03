@@ -7,6 +7,7 @@ using Content.Server.Chat.Managers;
 using Content.Server.Connection;
 using Content.Server.DiscordAuth;
 using Content.Server.JoinQueue;
+using Content.Server.Consent;
 using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.EUI;
@@ -34,6 +35,7 @@ namespace Content.Server.IoC
             IoCManager.Register<IChatManager, ChatManager>();
             IoCManager.Register<IChatSanitizationManager, ChatSanitizationManager>();
             IoCManager.Register<IMoMMILink, MoMMILink>();
+            IoCManager.Register<IServerConsentManager, ServerConsentManager>();
             IoCManager.Register<IServerPreferencesManager, ServerPreferencesManager>();
             IoCManager.Register<IServerDbManager, ServerDbManager>();
             IoCManager.Register<RecipeManager, RecipeManager>();

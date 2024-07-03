@@ -4,6 +4,7 @@ using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
 using Content.Client.DiscordAuth;
 using Content.Client.JoinQueue;
+using Content.Client.Consent;
 using Content.Client.Options;
 using Content.Client.Eui;
 using Content.Client.GhostKick;
@@ -33,6 +34,7 @@ namespace Content.Client.IoC
         {
             IoCManager.Register<IParallaxManager, ParallaxManager>();
             IoCManager.Register<IChatManager, ChatManager>();
+            IoCManager.Register<IClientConsentManager, ClientConsentManager>();
             IoCManager.Register<IClientPreferencesManager, ClientPreferencesManager>();
             IoCManager.Register<IStylesheetManager, StylesheetManager>();
             IoCManager.Register<IScreenshotHook, ScreenshotHook>();
