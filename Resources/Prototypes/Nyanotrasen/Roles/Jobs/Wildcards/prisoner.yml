@@ -9,11 +9,6 @@
 #  whitelistRequired: true
   icon: "JobIconPrisoner"
   supervisors: job-supervisors-security
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 21600
-
 - type: startingGear
   id: PrisonerGear
   equipment:
