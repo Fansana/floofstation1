@@ -13,6 +13,7 @@ using Content.Shared.Rejuvenate;
 using Robust.Server.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Timing;
+using Content.Shared.Cuffs.Components;
 
 namespace Content.Server.Atmos.Rotting;
 
@@ -87,6 +88,18 @@ public sealed class RottingSystem : SharedRottingSystem
         {
             return false;
         }
+
+        if (TryComp<CuffableComponent>(uid, out var cuffed) && cuffed.CuffedHandCount > 0)
+        {
+            if (TryComp<HandcuffComponent>(cuffed.LastAddedCuffs, out var cuffcomp))
+            {
+                if (cuffcomp.NoRot)
+                {
+                    return false;
+                }
+            }
+        }
+
 
         var ev = new IsRottingEvent();
         RaiseLocalEvent(uid, ref ev);
