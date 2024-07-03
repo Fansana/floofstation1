@@ -58,7 +58,7 @@
   id: GauzeBlindfold
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Harpy, Vulpkanin] # Delta V - Felinid, Oni, Harpy, Vulpkanin
   coloring:
     default:
       type:
@@ -100,7 +100,7 @@
   id: GauzeUpperArmRight
   bodyPart: RArm
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Slimeperson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -114,7 +114,7 @@
   id: GauzeLowerArmRight
   bodyPart: RArm, RHand
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Slimeperson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -198,7 +198,7 @@
   id: GauzeBoxerWrapRight
   bodyPart: RHand
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Slimeperson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -212,7 +212,7 @@
   id: GauzeBoxerWrapLeft
   bodyPart: LHand
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Slimeperson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
