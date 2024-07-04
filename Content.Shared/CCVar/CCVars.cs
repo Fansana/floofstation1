@@ -2177,5 +2177,11 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> StationGoalsChance =
             CVarDef.Create("game.station_goals_chance", 0.1f, CVar.SERVERONLY);
+
+        /// <summary>
+        /// How many characters the consent text can be.
+        /// </summary>
+        public static readonly CVarDef<int> ConsentFreetextMaxLength =
+            CVarDef.Create("consent.freetext_max_length", 1000, CVar.REPLICATED | CVar.SERVER);
     }
 }

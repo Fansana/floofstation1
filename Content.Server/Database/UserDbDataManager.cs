@@ -1,6 +1,7 @@
-﻿using System.Threading;
+using System.Threading;
 using System.Threading.Tasks;
 using Content.Server.Players.PlayTimeTracking;
+using Content.Server.Consent;
 using Content.Server.Preferences.Managers;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -20,6 +21,7 @@ public sealed class UserDbDataManager
 {
     [Dependency] private readonly IServerPreferencesManager _prefs = default!;
     [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
+    [Dependency] private readonly IServerConsentManager _consent = default!;
 
     private readonly Dictionary<NetUserId, UserData> _users = new();
 
@@ -47,13 +49,15 @@ public sealed class UserDbDataManager
 
         _prefs.OnClientDisconnected(session);
         _playTimeTracking.ClientDisconnected(session);
+        _consent.OnClientDisconnected(session); //TODO: use new AddOnPlayerDisconnect in consent manager instead?
     }
 
     private async Task Load(ICommonSession session, CancellationToken cancel)
     {
         await Task.WhenAll(
             _prefs.LoadData(session, cancel),
-            _playTimeTracking.LoadData(session, cancel));
+            _playTimeTracking.LoadData(session, cancel),
+            _consent.LoadData(session, cancel)); // TODO: use the new AddOnLoadPlayer instead, that was added in #28085
     }
 
     public Task WaitLoadComplete(ICommonSession session)
