@@ -200,10 +200,7 @@ namespace Content.Server.Connection
 
                 var slots = _cfg.GetCVar(CCVars.WhitelistMinPlayers);
 
-                var noSlotsOpen = slots > 0 && slots < connectedPlayers - connectedWhitelist;
-
-                if (noSlotsOpen && await _db.GetWhitelistStatusAsync(userId) == false
-                                     && adminData is null)
+                if (await _db.GetWhitelistStatusAsync(userId) == false && adminData is null)
                 {
                     var msg = Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason));
 
