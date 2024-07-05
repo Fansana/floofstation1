@@ -1,0 +1,16 @@
+<ui:FurryServersWindow xmlns="https://spacestation14.io"
+                    xmlns:ui="clr-namespace:Content.Client.FurryServers"
+                    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                    Title="Other Furry Servers..."
+                    MinSize="500 300"
+                    SetSize="500 450">
+    <ScrollContainer HScrollEnabled="False" Margin="4" VerticalExpand="True" ReturnMeasure="True">
+        <BoxContainer Orientation="Vertical">
+            <Label Margin="8 0 0 0" StyleClasses="FurryServersSectionHeader" Align="Center"
+                                Text="BlepStation (LRP)" Name="BlepstationHeader" />
+            <RichTextLabel Margin="8 8 8 8" Name="BlepstationDescription" />
+
+            <Button Name="BlepstationWebsite" Text="Launch Website:  BlepStation.com" />
+        </BoxContainer>
+    </ScrollContainer>
+</ui:FurryServersWindow>

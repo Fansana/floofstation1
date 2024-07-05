@@ -1,0 +1,15 @@
+<ui:WhitelistDenialWindow xmlns="https://spacestation14.io"
+                    xmlns:ui="clr-namespace:Content.Client.UserInterface.Systems.WhitelistWindow.Controls"
+                    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                    Title="Whitelist Required"
+                    MinSize="400 170"
+                    SetSize="400 170">
+    <ScrollContainer HScrollEnabled="False" Margin="4" VerticalExpand="True" ReturnMeasure="True">
+        <BoxContainer Orientation="Vertical">
+            <Label Margin="8 0 0 0" Text="Whitelist Required Text Goes here" Name="DenialReason" />
+            <Button Margin="8 10 0 0" Name="WhitelistApplyButton" Text="Apply for whitelist" />
+            <PanelContainer Margin="8 10 0 0" StyleClasses="LowDivider" />
+            <Button Margin="8 20 0 0" Name="FurryServersButton" Text="Or check out other Furry SS14 Servers" />
+        </BoxContainer>
+    </ScrollContainer>
+</ui:WhitelistDenialWindow>

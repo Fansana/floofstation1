@@ -10,6 +10,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
 using UsernameHelpers = Robust.Shared.AuthLib.UsernameHelpers;
+using Content.Client.UserInterface.Systems.WhitelistWindow;
 
 namespace Content.Client.MainMenu
 {
@@ -176,7 +177,18 @@ namespace Content.Client.MainMenu
 
         private void _onConnectFailed(object? _, NetConnectFailArgs args)
         {
-            _userInterfaceManager.Popup(Loc.GetString("main-menu-failed-to-connect",("reason", args.Reason)));
+            // This assumes whitelist related disconnect will contain the text 'whitelist' which is probably a fair
+            // assumption.  More ideally, disconnect reasons would send across an enum or something, but that looks to
+            // be in engine code, perhaps.
+            if (args.Reason.ToUpper().Contains("WHITELIST"))
+            {
+                // Whitelist specialized popup that shows application link for the whitelist
+                _userInterfaceManager.GetUIController<WhitelistDenialUIController>().OpenWindow(args.Reason);
+            } else {
+                // Generic popup
+                _userInterfaceManager.Popup(Loc.GetString("main-menu-failed-to-connect",("reason", args.Reason)));
+            }
+
             _netManager.ConnectFailed -= _onConnectFailed;
             _setConnectingState(false);
         }
