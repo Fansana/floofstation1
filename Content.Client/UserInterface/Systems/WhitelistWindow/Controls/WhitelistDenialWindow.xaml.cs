@@ -46,7 +46,7 @@ namespace Content.Client.UserInterface.Systems.WhitelistWindow.Controls
 
         public void SetDenialMessage(string denial)
         {
-            DenialReason.Text = denial;
+            DenialReason.SetMessage(denial);
         }
     }
 }
