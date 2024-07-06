@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformNudePermit
+  name: public nudity permit
+  description: This permit entitles the bearer to conduct their duties without a uniform. Normally issued to furred crewmembers or those with nothing to hide.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/permit-nude.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/permit-nude.rsi
+    equipDelay: 0
+    unequipDelay: 0
