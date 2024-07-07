@@ -259,11 +259,3 @@
   exclusive: true
   items:
     - ClothingUniformColorRainbow
-
-- type: loadout # FloofStation
-  id: LoadoutUniformNudePermit
-  category: Uniform
-  cost: 2
-  exclusive: true
-  items:
-    - ClothingUniformNudePermit

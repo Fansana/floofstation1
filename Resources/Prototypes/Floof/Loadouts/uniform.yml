@@ -1,0 +1,7 @@
+- type: loadout
+  id: LoadoutUniformNudePermit
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformNudePermit
