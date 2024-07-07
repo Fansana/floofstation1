@@ -32,19 +32,13 @@ trait-description-SocialAnxiety = You are anxious when you speak and stutter.
 trait-name-Snoring = Snoring
 trait-description-Snoring = You will snore while sleeping.
 
-trait-name-LatentPsychic = Latent Psychic
-trait-description-LatentPsychic = Your mind and soul are open to the noosphere, allowing for a limited use of Telepathy.
-                                  Thus, you are eligible for potentially receiving psychic powers.
-                                  It is possible that you may be hunted by otherworldly forces, so consider keeping your powers a secret.
+trait-name-NormalVisionHarpy = Trichromat Modification
+trait-description-NormalVisionHarpy = Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
 
-trait-name-PsionicInsulation = χ Waveform Misalignment
-trait-description-PsionicInsulation = Through a quirk of fate, your brainwaves are permanently out of phase with the noösphere
-                                      You are immune to both positive and negative effects of nearly all psychic powers,
-                                      But you can never be a psionic yourself in this life. This trait is incompatible with
-                                      all other psychic traits.
+trait-name-NormalVisionVulpkanin = Trichromat Modification
+trait-description-NormalVisionVulpkanin = Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
 
-trait-name-NaturalTelepath = Natural Telepath
-trait-description-NaturalTelepath = As a naturally occuring Telepath, you are capable of fluent telepathic communication, regardless of
-                                    whether or not you possess any notable psychic powers. This offers all of the same benefits and
-                                    drawbacks of Latent Psychic, except that you are guaranteed to start with full Telepathy. You may
-                                    still gain powers as normal for a Latent Psychic.
+trait-name-Thieving = Thieving
+trait-description-Thieving =
+    You are deft with your hands, and talented at convincing people of their belongings.
+    You can identify pocketed items, steal them quieter, and steal ~33% faster.
