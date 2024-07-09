@@ -84,6 +84,7 @@
     idleState: icon
     runningState: building
     staticRecipes:
+      - ShockCollar # FloofStation
       - Wirecutter
       - Igniter
       - Signaller
@@ -742,6 +743,7 @@
       - ShellShotgunPractice
       - WeaponLaserCarbinePractice
       - WeaponDisablerPractice
+      - ShockCollar # Nyanotrasen - Shock Collar
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial
       - MagazineBoxSpecialPractice
@@ -798,7 +800,6 @@
       - WeaponLaserCarbine
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear
       - ClothingHeadCage # Nyanotrasen - Insulative headgear
-      - ShockCollar # Nyanotrasen - Shock Collar
       - WeaponXrayCannon
       - PowerCageSmall
       - PowerCageMedium
