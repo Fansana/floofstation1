@@ -39,6 +39,30 @@
     - ClothingUniformJumpsuitBartenderPurple
 
 - type: loadout
+  id: LoadoutServiceBartenderBunnyEars
+  category: Jobs
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - ClothingHeadHatBunny
+
+- type: loadout
+  id: LoadoutServiceBartenderBunnySuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - ClothingCostumeBunnySuit
+
+- type: loadout
   id: LoadoutServiceBotanistUniformOveralls
   category: Jobs
   cost: 2
