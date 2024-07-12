@@ -1,3 +1,4 @@
+Order: 3
 Entries:
 - author: metalgearsloth
   changes:
@@ -4051,7 +4052,7 @@ Entries:
     - type: Add
       message: >-
         Glass/Crystal shards and floor tiles now deal damage and embed in
-        victims when colliding with them. 
+        victims when colliding with them.
   id: 6107
   time: '2024-05-11T01:23:00.0000000+00:00'
 - author: FoxxoTrystan
@@ -4262,7 +4263,7 @@ Entries:
     - type: Fix
       message: >-
         Spent bullet casings now fly away from a shooter in a cinematic manner,
-        rather than fall at their feet. 
+        rather than fall at their feet.
   id: 6133
   time: '2024-07-01T22:37:29.0000000+00:00'
 - author: WarMechanic
