@@ -1,3 +1,4 @@
+## Clown
 - type: loadout
   id: LoadoutServiceClownOutfitJester
   category: Jobs
@@ -26,6 +27,7 @@
     - ClothingHeadHatJesterAlt
     - ClothingShoesJester
 
+## Bartender
 - type: loadout
   id: LoadoutServiceBartenderUniformPurple
   category: Jobs
@@ -37,6 +39,31 @@
         - Bartender
   items:
     - ClothingUniformJumpsuitBartenderPurple
+
+## Botanist
+- type: loadout
+  id: LoadoutServiceBartenderBunnyEars
+  category: Jobs
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - ClothingHeadHatBunny
+
+- type: loadout
+  id: LoadoutServiceBartenderBunnySuit
+  category: Jobs
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - ClothingCostumeBunnySuit
 
 - type: loadout
   id: LoadoutServiceBotanistUniformOveralls
@@ -50,6 +77,7 @@
   items:
     - ClothingUniformOveralls
 
+## Lawyer
 - type: loadout
   id: LoadoutServiceLawyerUniformBlueSuit
   category: Jobs
@@ -158,6 +186,7 @@
   items:
     - ClothingUniformJumpsuitJournalist
 
+## Reporter
 - type: loadout
   id: LoadoutServiceReporterUniformDetectivesuit
   category: Jobs
@@ -181,3 +210,15 @@
         - Reporter
   items:
     - ClothingUniformJumpskirtDetective
+
+## Musician
+- type: loadout
+  id: LoadoutItemSynthesizerInstrument
+  category: Jobs
+  cost: 8
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+  items:
+    - SynthesizerInstrument
