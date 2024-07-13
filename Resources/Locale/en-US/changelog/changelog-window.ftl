@@ -10,5 +10,7 @@ changelog-version-tag = version v{ $version }
 changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
-changelog-tab-title-Changelog = Floof Station
-changelog-tab-title-Admin = Floof Station Admin
+changelog-tab-title-Changelog = Einstein Engines
+changelog-tab-title-Admin = Einstein Engines Admin
+
+changelog-tab-title-Floof = Floof Station
