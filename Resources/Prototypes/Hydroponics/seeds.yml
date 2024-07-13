@@ -1037,7 +1037,7 @@
   name: seeds-pomegranate-name
   noun: seeds-noun-seeds
   displayName: seeds-pomegranate-display-name
-  plantRsi: Objects/Specific/Hydroponics/pomegranate.rsi
+  plantRsi: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
   packetPrototype: PomegranateSeeds
   productPrototypes:
     - FoodPomegranate
