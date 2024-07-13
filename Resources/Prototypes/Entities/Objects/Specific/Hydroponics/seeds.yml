@@ -373,7 +373,7 @@
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/lingzhi.rsi
 
-- type: entity
+- type: entity # Floofstation
   parent: SeedBase
   name: packet of pomegranate seeds
   description: "The Fruit of the Underworld"
