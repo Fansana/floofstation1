@@ -1823,7 +1823,7 @@
     tags:
     - ClothMade
 
-- type: entity
+- type: entity # Floofttation
   name: pomegranate
   parent: FoodProduceBase
   id: FoodPomegranate
