@@ -210,6 +210,7 @@ flavor-complex-milk = like milk
 flavor-complex-tea = like tea
 flavor-complex-ice = like ice
 flavor-complex-mopwata = like stagnant, dirty water
+flavor-complex-nikkonectar = like creamy blueberries.
 
 ## Cocktails
 flavor-complex-long-island = suspiciously like iced tea
