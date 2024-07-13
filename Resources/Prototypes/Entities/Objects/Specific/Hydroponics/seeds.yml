@@ -373,6 +373,17 @@
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/lingzhi.rsi
 
+- type: entity # Floofstation
+  parent: SeedBase
+  name: packet of pomegranate seeds
+  description: "The Fruit of the Underworld"
+  id: PomegranateSeeds
+  components:
+    - type: Seed
+      seedId: pomegranate
+    - type: Sprite
+      sprite: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
+
 - type: entity
   parent: SeedBase
   name: packet of ambrosia vulgaris seeds
