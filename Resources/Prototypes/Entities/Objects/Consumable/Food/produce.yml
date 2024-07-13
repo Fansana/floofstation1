@@ -1843,7 +1843,7 @@
         - ReagentId: Nutriment
           Quantity: 10
   - type: Sprite
-    sprite: Objects/Specific/Hydroponics/pomegranate.rsi
+    sprite: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
   - type: Produce
     seedId: pomegranate
   - type: Extractable
