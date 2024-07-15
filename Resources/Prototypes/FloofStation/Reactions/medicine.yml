@@ -1,0 +1,14 @@
+- type: reaction
+  id: Philterex
+  impact: Medium
+  reactants:
+    Inaprovaline:
+      amount: 2
+    Saline:
+      amount: 1
+    Ephedrine:
+      amount: 1
+    Benzene:
+      amount: 1
+  products:
+      Philterex: 5
