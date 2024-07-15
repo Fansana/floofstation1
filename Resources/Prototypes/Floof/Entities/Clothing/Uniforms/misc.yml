@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformLoinCloth
+  name: loin cloth
+  description: A piece of cloth wrapped around the waist.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/loincloth.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/loincloth.rsi
+    equipDelay: 0
+    unequipDelay: 0

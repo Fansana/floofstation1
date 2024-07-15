@@ -1,0 +1,20 @@
+- type: reagent
+  id: NikkosNaughtyNectar
+  name: reagent-name-NNN
+  parent: BaseDrink
+  desc: reagent-desc-NNN
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: nikkonectar
+  color: "#deebff"
+  recognizable: true
+  viscosity: 0.15
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+       #TO-DO Lust+
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 3
