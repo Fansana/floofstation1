@@ -93,3 +93,13 @@ Entries:
       message: Removed fun :(
   id: 13
   time: '2024-07-04T19:53:49.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: >-
+        Arachnid can now make webs on the floor, web nest and Cocoon peoples!
+        (Cocoons prevent rotting!)
+    - type: Tweak
+      message: Arachnid has no slowdown on walking on webs.
+  id: 14
+  time: '2024-07-03T01:27:16.0000000+00:00'
