@@ -81,3 +81,15 @@ Entries:
       message: Changed lizard markings to upstream names.
   id: 12
   time: '2024-07-04T19:58:26.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Added fun :D
+    - type: Tweak
+      message: Tweaked fun
+    - type: Fix
+      message: Fixed fun!
+    - type: Remove
+      message: Removed fun :(
+  id: 13
+  time: '2024-07-04T19:53:49.0000000+00:00'
