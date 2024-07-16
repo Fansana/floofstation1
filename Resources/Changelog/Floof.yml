@@ -67,3 +67,9 @@ Entries:
       message: Useless FSCVars File. (It has been put down, finally)
   id: 10
   time: '2024-07-09T06:50:54.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Shockcollars can now be crafted in lathes
+  id: 11
+  time: '2024-07-07T11:13:20.0000000+00:00'
