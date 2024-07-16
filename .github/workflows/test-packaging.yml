@@ -29,7 +29,7 @@ on:
 jobs:
   build:
     name: Test Packaging
-    if: github.actor != 'PJBot' && github.event.pull_request.draft == false && github.actor != 'DeltaV-Bot' && github.actor != 'SimpleStation14'
+    if: github.actor != 'PJBot' && github.event.pull_request.draft == false && github.actor != 'DeltaV-Bot'
     runs-on: ubuntu-latest
 
     steps:
@@ -64,9 +64,6 @@ jobs:
 
       - name: Package client
         run: dotnet run --project Content.Packaging client --no-wipe-release
-
-      - name: Update Build Info
-        run: Tools/gen_build_info.py
 
       - name: Shuffle files around
         run: |
