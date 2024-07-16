@@ -188,11 +188,14 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: true
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
     startDelay: 10
+    earliestStart: 30
     minimumPlayers: 10
     weight: 5
-    duration: 60
+    duration: 50
   - type: VentCrittersRule
     entries:
     - id: MobScugCat
