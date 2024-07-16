@@ -73,3 +73,11 @@ Entries:
       message: Shockcollars can now be crafted in lathes
   id: 11
   time: '2024-07-07T11:13:20.0000000+00:00'
+- author: XavierSomething
+  changes:
+    - type: Add
+      message: Added moth markings in overlay, including body gauzes and eye patches.
+    - type: Tweak
+      message: Changed lizard markings to upstream names.
+  id: 12
+  time: '2024-07-04T19:58:26.0000000+00:00'
