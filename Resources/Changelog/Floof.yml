@@ -45,3 +45,9 @@ Entries:
       message: Added pomegranates and three new drugs
   id: 7
   time: '2024-07-13T21:25:05.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Humans can now understand sol common again!
+  id: 8
+  time: '2024-07-13T12:26:24.0000000+00:00'
