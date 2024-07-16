@@ -93,12 +93,12 @@
     factions:
     - Cat
     - Passive
-  # - type: LanguageKnowledge
-  #   speaks:
-  #   - ScugSign
-  #   understands:
-  #   - ScugSign
-  #   - Cat
+  - type: LanguageKnowledge
+    speaks:
+    - ScugSign
+    understands:
+    - ScugSign
+    - Cat
 
 - type: palette
   id: ScugCatColors
