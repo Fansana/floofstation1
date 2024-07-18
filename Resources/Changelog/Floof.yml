@@ -103,3 +103,11 @@ Entries:
       message: Arachnid has no slowdown on walking on webs.
   id: 14
   time: '2024-07-03T01:27:16.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Add
+      message: Pomegranate Juice & Slices
+    - type: Tweak
+      message: Downsized pomegranate sprite
+  id: 15
+  time: '2024-07-18T11:18:57.0000000+00:00'

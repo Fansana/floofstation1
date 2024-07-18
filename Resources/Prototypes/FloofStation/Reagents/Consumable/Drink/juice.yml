@@ -1,0 +1,8 @@
+- type: reagent
+  id: JuicePomegranate
+  name: reagent-name-juice-pomegranate
+  parent: BaseJuice
+  desc: reagent-desc-juice-pomegranate
+  physicalDesc: reagent-physical-desc-sticky
+  flavor: sweet
+  color: "#660C21"

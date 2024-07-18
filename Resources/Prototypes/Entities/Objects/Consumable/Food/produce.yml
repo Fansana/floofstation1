@@ -1823,7 +1823,7 @@
     tags:
     - ClothMade
 
-- type: entity # Floofttation
+- type: entity # Floofstation
   name: pomegranate
   parent: FoodProduceBase
   id: FoodPomegranate
@@ -1847,7 +1847,43 @@
   - type: Produce
     seedId: pomegranate
   - type: Extractable
-    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: JuicePomegranate
+        Quantity: 20
+  - type: SliceableFood
+    count: 2
+    slice: FoodPomegranateSlice
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity # Floofstation
+  name: pomegranate slice
+  parent: ProduceSliceBase
+  id: FoodPomegranateSlice
+  description: A delicious, sweet fruit, believed to have special properties.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - spooky
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Pomelustine
+          Quantity: 15
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuicePomegranate
+        Quantity: 10
   - type: Tag
     tags:
     - Fruit
