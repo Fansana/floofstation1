@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksCoderValid
+  name: blood red coder socks
+  description: "It's time to code malciously while petting a syndicat!!! :3 :3"
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Socks/codervalid.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Socks/codervalid.rsi
