@@ -4513,3 +4513,33 @@ Entries:
       message: Added an alert on the UI for when the user is walking or running.
   id: 6166
   time: '2024-07-16T21:39:46.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now lie down and stand up at will! The default keybind for it is
+        "R", but it can be changed in settings.
+  id: 6167
+  time: '2024-07-18T02:33:16.0000000+00:00'
+- author: VMSolidus
+  changes:
+    - type: Fix
+      message: >-
+        Harpies can no longer buy Loadout items that are impossible for them to
+        wear due to having digitigrade legs. 
+  id: 6168
+  time: '2024-07-18T02:34:52.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Foreigner translator should now consume power, as intended.
+  id: 6169
+  time: '2024-07-18T08:22:52.0000000+00:00'
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Atmospheric "Throws" are now calculated using object mass, and behave
+        accordingly. Tiny objects will shoot out of rooms quite fast!
+  id: 6170
+  time: '2024-07-18T08:24:58.0000000+00:00'
