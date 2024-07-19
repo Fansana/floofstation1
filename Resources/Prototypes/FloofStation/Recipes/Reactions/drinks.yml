@@ -1,0 +1,154 @@
+- type: reaction
+  id: BlueBaller
+  reactants:
+    BlueCuracao:
+      amount: 1
+    JuiceWatermelon:
+      amount: 1
+    Pomelustine:
+      amount: 1
+  products:
+    BlueBaller: 3
+
+- type: reaction
+  id: DemonSeed
+  reactants:
+    Blood:
+      amount: 2
+    Cum:
+      amount: 1
+    Pomelustine:
+      amount: 2
+    Vodka:
+      amount: 1
+  products:
+    DemonSeed: 6
+
+- type: reaction
+  id: DoubleCreamBlaster
+  reactants:
+    Cream:
+      amount: 1
+    Cum:
+      amount: 1
+    RootBeer:
+      amount: 1
+  products:
+    DoubleCreamBlaster: 3
+
+
+- type: reaction
+  id: EmeraldSwinger
+  reactants:
+    JuiceGrape:
+      amount: 2
+    MelonLiquor:
+      amount: 2
+    JuicePomegranate:
+      amount: 1
+  products:
+    EmeraldSwinger: 5
+
+- type: reaction
+  id: MarieJulep
+  reactants:
+    Anisette:
+      amount: 1
+    Gin:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    MarieJulep: 4
+
+- type: reaction
+  id: OrgasmOnTheBeach
+  reactants:
+    Cum:
+      amount: 1
+    JuiceOrange:
+      amount: 2
+    JuiceWatermelon:
+      amount: 2
+    Vodka:
+      amount: 1
+  products:
+    OrgasmOnTheBeach: 5
+
+- type: reaction
+  id: PomPassion
+  reactants:
+    BlueCuracao:
+      amount: 1
+    Grenadine:
+      amount: 1
+    JuicePomegranate:
+      amount: 1
+  products:
+    PomPassion: 3
+
+- type: reaction
+  id: RedRocket
+  reactants:
+    Grenadine:
+      amount: 2
+    JuicePomegranate:
+      amount: 1
+    Rum:
+      amount: 1
+    JuiceWatermelon:
+      amount: 2
+  products:
+    RedRocket: 6
+
+- type: reaction
+  id: SemenBomb
+  reactants:
+    Beer:
+      amount: 2
+    Cum:
+      amount: 1
+  products:
+    SemenBomb: 3
+
+- type: reaction
+  id: SemenHemorrhage
+  reactants:
+    Cum:
+      amount: 1
+    Grenadine:
+      amount: 1
+    JuiceApple:
+      amount: 2
+  products:
+    SemenHemorrhage: 5
+
+- type: reaction
+  id: WatermelonGinJizz
+  reactants:
+    Cum:
+      amount: 1
+    JuiceWatermelon:
+      amount: 2
+    SodaWater:
+      amount: 1
+    Vodka:
+      amount: 1
+  products:
+    WatermelonGinJizz: 5
+
+- type: reaction
+  id: YeOlHandy
+  reactants:
+    Ice:
+      amount: 1
+    JuiceOrange:
+      amount: 2
+    JuicePomegranate:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    YeOlHandy: 5

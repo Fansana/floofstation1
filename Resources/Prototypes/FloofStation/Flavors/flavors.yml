@@ -1,4 +1,70 @@
 - type: flavor
+  id: anisette
+  flavorType: Complex
+  description: flavor-complex-anisette
+
+- type: flavor
+  id: blueballer
+  flavorType: Complex
+  description: flavor-complex-blueballer
+
+- type: flavor
+  id: demonseed
+  flavorType: Complex
+  description: flavor-complex-demonseed
+
+- type: flavor
+  id: doublecreamblaster
+  flavorType: Complex
+  description: flavor-complex-doublecreamblaster
+
+- type: flavor
+  id: emeraldswinger
+  flavorType: Complex
+  description: flavor-complex-emeraldswinger
+
+# Cum
+- type: flavor
   id: nikkonectar
   flavorType: Complex
   description: flavor-complex-nikkonectar
+
+- type: flavor
+  id: mariejulep
+  flavorType: Complex
+  description: flavor-complex-mariejulep
+
+- type: flavor
+  id: orgasmonthebeach
+  flavorType: Complex
+  description: flavor-complex-orgasmonthebeach
+
+- type: flavor
+  id: pompassion
+  flavorType: Complex
+  description: flavor-complex-pompassion
+
+- type: flavor
+  id: redrocket
+  flavorType: Complex
+  description: flavor-complex-redrocket
+
+- type: flavor
+  id: semenbomb
+  flavorType: Complex
+  description: flavor-complex-semenbomb
+
+- type: flavor
+  id: semenhemorrhage
+  flavorType: Complex
+  description: flavor-complex-semenhemorrhage
+
+- type: flavor
+  id: watermelonginjizz
+  flavorType: Complex
+  description: flavor-complex-watermelonginjizz
+
+- type: flavor
+  id: yeolhandy
+  flavorType: Complex
+  description: flavor-complex-yeolhandy
