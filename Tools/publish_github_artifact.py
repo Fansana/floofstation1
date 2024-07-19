@@ -15,7 +15,7 @@ VERSION = os.environ['GITHUB_SHA']
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "http://floofstation.com:27690/"
-FORK_ID = "floof"
+FORK_ID = "floofstation-main"
 
 def main():
     print("Fetching artifact URL from API...")
