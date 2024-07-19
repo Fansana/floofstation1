@@ -94,16 +94,16 @@
       glimmerBurnUpper: 40
     - type: PsionicCatGotYourTongueRule
 
-- type: entity
-  id: MassMindSwap
-  parent: BaseGlimmerEvent
-  noSpawn: true
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 900
-      glimmerBurnLower: 50
-      glimmerBurnUpper: 110
-    - type: MassMindSwapRule
+# - type: entity # Floofstation - Never this again please!
+#   id: MassMindSwap
+#   parent: BaseGlimmerEvent
+#   noSpawn: true
+#   components:
+#     - type: GlimmerEvent
+#       minimumGlimmer: 900
+#       glimmerBurnLower: 50
+#       glimmerBurnUpper: 110
+#     - type: MassMindSwapRule
 
 #- type: entity
 #  id: GlimmerWispSpawn
