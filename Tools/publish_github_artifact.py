@@ -14,8 +14,8 @@ VERSION = os.environ['GITHUB_SHA']
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "https://cdn.delta-v.org/"
-FORK_ID = "delta-v"
+ROBUST_CDN_URL = "https://floofstation.com:27690"
+FORK_ID = "3b872cff-31fa-4c33-8b51-1b0de7f9b439"
 
 def main():
     print("Fetching artifact URL from API...")
