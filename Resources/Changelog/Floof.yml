@@ -123,3 +123,9 @@ Entries:
       message: Upsteam Update.
   id: 17
   time: '2024-07-19T09:56:48.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed Mass-Mind-Swap Event.
+  id: 18
+  time: '2024-07-19T13:45:06.0000000+00:00'
