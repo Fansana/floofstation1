@@ -135,3 +135,9 @@ Entries:
       message: Set up the Floof CDN.
   id: 19
   time: '2024-07-19T13:45:06.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: force Michael announcer
+  id: 20
+  time: '2024-07-20T19:49:06.0000000+00:00'
