@@ -5,9 +5,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      startAnnouncement: station-event-noospheric-storm-announcement
-      startAudio:
-        path: /Audio/Announcements/noosphericstorm.ogg
+      startAnnouncement: true
       weight: 5
       earliestStart: 15
     - type: NoosphericStormRule
@@ -94,16 +92,16 @@
       glimmerBurnUpper: 40
     - type: PsionicCatGotYourTongueRule
 
-- type: entity
-  id: MassMindSwap
-  parent: BaseGlimmerEvent
-  noSpawn: true
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 900
-      glimmerBurnLower: 50
-      glimmerBurnUpper: 110
-    - type: MassMindSwapRule
+# - type: entity # Floofstation - Never this again please!
+#   id: MassMindSwap
+#   parent: BaseGlimmerEvent
+#   noSpawn: true
+#   components:
+#     - type: GlimmerEvent
+#       minimumGlimmer: 900
+#       glimmerBurnLower: 50
+#       glimmerBurnUpper: 110
+#     - type: MassMindSwapRule
 
 #- type: entity
 #  id: GlimmerWispSpawn

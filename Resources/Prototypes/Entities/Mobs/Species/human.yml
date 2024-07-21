@@ -16,12 +16,14 @@
     spawned:
     - id: FoodMeatHuman
       amount: 5
-  - type: LanguageSpeaker
+  - type: PotentialPsionic #Nyano - Summary: makes potentially psionic.
+  - type: LanguageKnowledge
     speaks:
     - GalacticCommon
     - SolCommon
     understands:
     - GalacticCommon
+    - SolCommon
 
 - type: entity
   parent: BaseSpeciesDummy

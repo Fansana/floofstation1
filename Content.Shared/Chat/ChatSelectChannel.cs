@@ -7,7 +7,7 @@
     ///     Maps to <see cref="ChatChannel"/>, giving better names.
     /// </remarks>
     [Flags]
-    public enum ChatSelectChannel : ushort
+    public enum ChatSelectChannel : UInt32
     {
         None = 0,
 
@@ -42,6 +42,11 @@
         Emotes = ChatChannel.Emotes,
 
         /// <summary>
+        ///     Subtle - Floofstation
+        /// </summary>
+        Subtle = ChatChannel.Subtle,
+
+        /// <summary>
         ///     Deadchat
         /// </summary>
         Dead = ChatChannel.Dead,
@@ -52,7 +57,7 @@
         Admin = ChatChannel.AdminChat,
 
         /// <summary>
-        ///     Nyano - Summary:. Telepathic channel for all psionic entities. 
+        ///     Nyano - Summary:. Telepathic channel for all psionic entities.
         /// </summary>
         Telepathic = ChatChannel.Telepathic,
 

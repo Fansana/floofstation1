@@ -43,6 +43,10 @@ namespace Content.Client.Info
             };
             buttons.AddChild(guidebookButton);
 
+            var furryServersButton = new Button() { Text = "More Furry Servers" };
+            furryServersButton.OnPressed += args => UserInterfaceManager.GetUIController<FurryServersUIController>().ToggleWindow();
+            buttons.AddChild(furryServersButton);
+
             var changelogButton = new ChangelogButton();
             changelogButton.OnPressed += args => UserInterfaceManager.GetUIController<ChangelogUIController>().ToggleWindow();
             buttons.AddChild(changelogButton);

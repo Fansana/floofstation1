@@ -104,13 +104,15 @@
     price: 100
   - type: Appearance
   - type: WiresVisuals
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - GalacticCommon
     - RobotTalk
     understands:
     - GalacticCommon
     - RobotTalk
+  - type: VendingMachine
+    soundVend: /Audio/SimpleStation14/Machines/machine_vend.ogg
 
 - type: entity
   parent: VendingMachine

@@ -1,0 +1,8 @@
+- type: weightedRandom
+  id: RandomAnnouncers
+  weights:
+    Intern: 0
+    MedBot: 0
+    Michael: 1
+    NEIL: 0
+    VoxFem: 0

@@ -13,6 +13,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: bat
       sprite: Mobs/Animals/bat.rsi
+  - type: Carriable
   - type: Speech
     speechSounds: Squeak
     speechVerb: SmallMob
@@ -22,7 +23,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.25
-        density: 10
+        density: 0.8
         mask:
         - FlyingMobMask
         layer:
@@ -48,7 +49,7 @@
     flavorKind: station-event-random-sentience-flavor-organic
   - type: Bloodstream
     bloodMaxVolume: 50
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Mouse
     understands:
@@ -88,7 +89,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.1
-        density: 30
+        density: 0.1
         mask:
         - FlyingMobMask
         layer:
@@ -188,6 +189,8 @@
     noMovementLayers:
       movement:
         state: chicken-0
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Fixtures
     fixtures:
       fix1:
@@ -240,7 +243,7 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Chicken
     understands:
@@ -343,7 +346,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.2
-        density: 100
+        density: 0.0007
         mask:
         - SmallMobMask
         layer:
@@ -447,7 +450,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.2
-        density: 120
+        density: 0.007
         mask:
         - SmallMobMask
         layer:
@@ -519,7 +522,7 @@
       prob: 0.5
   - type: Extractable
     grindableSolutionName: food
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Moffic
     understands:
@@ -580,6 +583,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -619,7 +624,7 @@
   - type: EggLayer
     eggSpawn:
     - id: FoodEgg
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Duck
     understands:
@@ -840,6 +845,8 @@
     noMovementLayers:
       movement:
         state: crab
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -872,7 +879,7 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Crab
     understands:
@@ -907,6 +914,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: goat
       sprite: Mobs/Animals/goat.rsi
+  - type: Carriable
   - type: Fixtures
     fixtures:
       fix1:
@@ -999,6 +1007,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: goose
       sprite: Mobs/Animals/goose.rsi
+  - type: Carriable
   - type: Fixtures
     fixtures:
       fix1:
@@ -1118,7 +1127,7 @@
   - type: Inventory
     speciesId: kangaroo
     templateId: kangaroo
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Kangaroo
     understands:
@@ -1245,6 +1254,7 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
+  - type: Carriable
   - type: Hands
   - type: GenericVisualizer
     visuals:
@@ -1299,6 +1309,7 @@
     tags:
     - VimPilot
     - DoorBumpOpener
+  - type: CanWalk
 
 - type: entity
   name: monkey
@@ -1311,7 +1322,7 @@
   - type: Speech
     speechSounds: Monkey
     speechVerb: Monkey
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Monkey
     understands:
@@ -1350,7 +1361,7 @@
   - type: Speech
     speechSounds: Monkey
     speechVerb: Monkey
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Monkey
     understands:
@@ -1395,7 +1406,7 @@
   - type: NameIdentifier
     group: Kobold
   - type: LizardAccent
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Kobold
     understands:
@@ -1570,7 +1581,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.2
-        density: 100
+        density: 0.76
         mask:
         - SmallMobMask
         layer:
@@ -1630,7 +1641,7 @@
     spawned:
     - id: FoodMeatRat
       amount: 1
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Mouse
     understands:
@@ -1767,6 +1778,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: lizard
       sprite: Mobs/Animals/lizard.rsi
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -1821,6 +1833,8 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: slug
       sprite: Mobs/Animals/slug.rsi
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -1873,6 +1887,7 @@
     noMovementLayers:
       movement:
         state: frog
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -1936,6 +1951,8 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: parrot
       sprite: Mobs/Animals/parrot.rsi
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Fixtures
     fixtures:
       fix1:
@@ -1973,7 +1990,7 @@
       path: /Audio/Animals/parrot_raught.ogg
   - type: Bloodstream
     bloodMaxVolume: 50
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - GalacticCommon
     understands:
@@ -1991,6 +2008,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: penguin
       sprite: Mobs/Animals/penguin.rsi
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2124,6 +2142,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: snake
       sprite: Mobs/Animals/snake.rsi
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2186,6 +2205,7 @@
     noMovementLayers:
       movement:
         state: tarantula
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2236,7 +2256,7 @@
   - type: MeleeChemicalInjector
     transferAmount: 0.75
     solution: melee
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Xeno
     understands:
@@ -2371,6 +2391,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: possum
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2446,6 +2467,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: raccoon
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2510,6 +2532,7 @@
     noMovementLayers:
       movement:
         state: fox
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2517,7 +2540,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 50 #They actually are pretty light, I looked it up
+        density: 16.66
         mask:
         - MobMask
         layer:
@@ -2572,7 +2595,7 @@
   - type: Tag
     tags:
     - VimPilot
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Fox
     understands:
@@ -2590,6 +2613,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: corgi
+  - type: Carriable
   - type: Physics
   - type: Speech
     speechVerb: Canine
@@ -2599,7 +2623,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 50
+        density: 25.5
         mask:
         - MobMask
         layer:
@@ -2623,7 +2647,7 @@
     spawned:
     - id: FoodMeat
       amount: 2
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Dog
     understands:
@@ -2746,6 +2770,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: cat
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2753,7 +2778,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 15
+        density: 9
         mask:
         - MobMask
         layer:
@@ -2780,7 +2805,7 @@
     spawned:
     - id: FoodMeat
       amount: 3
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Cat
     understands:
@@ -2852,7 +2877,7 @@
   - type: NpcFactionMember
     factions:
     - Syndicate
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Xeno
     understands:
@@ -2906,6 +2931,17 @@
         Base: caracal_flop
       Dead:
         Base: caracal_dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 30
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
 
 - type: entity
   name: kitten
@@ -2925,6 +2961,8 @@
         Base: kitten_dead
       Dead:
         Base: kitten_dead
+  - type: Carriable
+    freeHandsRequired: 1
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -2939,6 +2977,17 @@
     thresholds:
       0: Alive
       25: Dead
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 2
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
 
 - type: entity
   name: sloth
@@ -2955,6 +3004,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: sloth
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -3016,6 +3066,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: ferret
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -3023,7 +3074,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 5
+        density: 4
         mask:
         - MobMask
         layer:
@@ -3100,7 +3151,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.2
-        density: 120
+        density: 0.8
         mask:
         - SmallMobMask
         layer:
@@ -3157,7 +3208,7 @@
     spawned:
     - id: FoodMeat
       amount: 1
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Mouse
     understands:
@@ -3217,13 +3268,14 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: pig
       sprite: Mobs/Animals/pig.rsi
+  - type: Carriable
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 250
+        density: 750
         mask:
         - MobMask
         layer:
@@ -3269,7 +3321,7 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/pig_oink.ogg
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - Pig
     understands:
@@ -3292,6 +3344,7 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: nymph
       sprite: Mobs/Animals/nymph.rsi
+  - type: Carriable
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -3299,7 +3352,7 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.35
-        density: 100 # High, because wood is heavy.
+        density: 15
         mask:
         - MobMask
         layer:
@@ -3359,7 +3412,7 @@
     reformTime: 10
     popupText: diona-reform-attempt
     reformPrototype: MobDionaReformed
-  - type: LanguageSpeaker
+  - type: LanguageKnowledge
     speaks:
     - RootSpeak
     understands:
