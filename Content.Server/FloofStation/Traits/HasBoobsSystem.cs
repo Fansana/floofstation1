@@ -1,0 +1,156 @@
+using Content.Server.Chemistry.Containers.EntitySystems;
+using Content.Server.Popups;
+using Content.Shared.Chemistry.Components;
+using Content.Shared.DoAfter;
+using Content.Shared.IdentityManagement;
+using Content.Shared.Mobs.Systems;
+using Content.Shared.Nutrition.Components;
+using Content.Shared.Nutrition.EntitySystems;
+using Content.Shared.Popups;
+using Content.Shared.Verbs;
+using Content.Shared.FloofStation.Traits.Events;
+using Robust.Shared.Timing;
+using JetBrains.Annotations;
+
+namespace Content.Server.FloofStation.Traits;
+
+[UsedImplicitly]
+public sealed class HasBoobsSystem : EntitySystem
+{
+    [Dependency] private readonly HungerSystem _hunger = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private readonly PopupSystem _popupSystem = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
+    [Dependency] private readonly SolutionContainerSystem _solutionContainer = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<HasBoobsComponent, ComponentInit>(OnComponentInit);
+        SubscribeLocalEvent<HasBoobsComponent, GetVerbsEvent<AlternativeVerb>>(AddMilkVerb);
+        SubscribeLocalEvent<HasBoobsComponent, MilkingDoAfterEvent>(OnDoAfter);
+    }
+
+    //From UdderSystem.cs
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        var query = EntityQueryEnumerator<HasBoobsComponent>();
+        var now = _timing.CurTime;
+        while (query.MoveNext(out var uid, out var boobs))
+        {
+            if (now < boobs.NextGrowth)
+                continue;
+
+            boobs.NextGrowth = now + boobs.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
+
+            // Actually there is food digestion so no problem with instant reagent generation "OnFeed"
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+            {
+                // Is there enough nutrition to produce reagent?
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
+
+                _hunger.ModifyHunger(uid, -boobs.HungerUsage, hunger);
+            }
+
+            if (!_solutionContainer.ResolveSolution(uid, boobs.SolutionName, ref boobs.Solution))
+                continue;
+
+            _solutionContainer.TryAddReagent(boobs.Solution.Value, boobs.ReagentId, boobs.QuantityPerUpdate, out _);
+        }
+    }
+
+    private void AttemptMilk(Entity<HasBoobsComponent?> penis, EntityUid userUid, EntityUid containerUid)
+    {
+        if (!Resolve(penis, ref penis.Comp))
+            return;
+
+        var doargs = new DoAfterArgs(EntityManager, userUid, 5, new MilkingDoAfterEvent(), penis, penis, used: containerUid)
+        {
+            BreakOnUserMove = true,
+            BreakOnDamage = true,
+            BreakOnTargetMove = true,
+            MovementThreshold = 1.0f,
+        };
+
+        _doAfterSystem.TryStartDoAfter(doargs);
+    }
+
+    private void OnDoAfter(Entity<HasBoobsComponent> entity, ref MilkingDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled || args.Args.Used == null)
+            return;
+
+        if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
+            return;
+
+        if (!_solutionContainer.TryGetRefillableSolution(args.Args.Used.Value, out var targetSoln, out var targetSolution))
+            return;
+
+        args.Handled = true;
+        var quantity = solution.Volume;
+        if (quantity == 0)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("milk-verb-dry"), entity.Owner, args.Args.User);
+            return;
+        }
+
+        if (quantity > targetSolution.AvailableVolume)
+            quantity = targetSolution.AvailableVolume;
+
+        var split = _solutionContainer.SplitSolution(entity.Comp.Solution.Value, quantity);
+        _solutionContainer.TryAddSolution(targetSoln.Value, split);
+
+        _popupSystem.PopupEntity(Loc.GetString("milk-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner,
+            args.Args.User, PopupType.Medium);
+    }
+
+    //Based on BloodstreamSystem.cs
+    private void OnComponentInit(Entity<HasBoobsComponent> entity, ref ComponentInit args)
+    {
+        var cumSolution = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+
+        cumSolution.MaxVolume = entity.Comp.CumMaxVolume;
+
+        // Fill breasts solution with MILK
+        cumSolution.AddReagent(entity.Comp.ReagentId, entity.Comp.CumMaxVolume - cumSolution.Volume);
+    }
+
+    //Based on UdderSystem.cs
+    /*TO-DO:
+     * Check for suit (-loincloth) to prevent action?
+     * Be able to milk yourself w/o a container.
+     * -Add a check for a container in the active hand? Yes = fill container. No = Milk go on ground.
+     * Better text for actions. (Says you/your instead of the person.)
+     */
+    public void AddMilkVerb(Entity<HasBoobsComponent> entity, ref GetVerbsEvent<AlternativeVerb> args)
+    {
+        if (args.Using == null ||
+             !args.CanInteract ||
+             !EntityManager.HasComponent<RefillableSolutionComponent>(args.Using.Value)) //see if removing this part lets you milk on the ground.
+            return;
+
+        var cumContainer = entity.Comp.Solution;
+        var uid = entity.Owner;
+        var user = args.User;
+        var used = args.Using.Value;
+
+        AlternativeVerb verb = new()
+        {
+            Act = () =>
+            {
+                AttemptMilk(uid, user, used);
+            },
+            Text = Loc.GetString("milk-verb-get-text"),
+            Priority = 2
+        };
+        args.Verbs.Add(verb);
+    }
+}

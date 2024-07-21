@@ -1,0 +1,49 @@
+- type: trait
+  id: HasPenis
+  category: Physical
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  components:
+    - type: HasPenis
+    - type: SolutionContainerManager
+      solutions:
+        penis:
+          maxVol: 250
+          reagents:
+          - ReagentId: Cum
+            Quantity: 30
+
+- type: trait
+  id: HasBoobs
+  category: Physical
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  components:
+    - type: HasBoobs
+    - type: SolutionContainerManager
+      solutions:
+        breasts:
+          maxVol: 250
+          reagents:
+          - ReagentId: Milk
+            Quantity: 30
+
+# - type: trait
+#   id: HasVagina
+#   category: Physical
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       inverted: true
+#       jobs:
+#         - Borg
+#         - MedicalBorg
+#   components:
+#     - type: HasVagina

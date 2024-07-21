@@ -48,3 +48,12 @@ trait-description-NaturalTelepath = As a naturally occuring Telepath, you are ca
                                     whether or not you possess any notable psychic powers. This offers all of the same benefits and
                                     drawbacks of Latent Psychic, except that you are guaranteed to start with full Telepathy. You may
                                     still gain powers as normal for a Latent Psychic.
+
+trait-name-HasPenis = Cock
+trait-description-HasPenis = You have a schlong between your legs.
+
+trait-name-HasBoobs = Boobs
+trait-description-HasBoobs = You have a pair of large mammaries.
+
+trait-name-HasVagina = Pussy
+trait-description-HasVagina = You have a slit between your legs.
