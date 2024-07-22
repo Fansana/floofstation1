@@ -188,9 +188,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
+    startAnnouncement: true
     startDelay: 10
     earliestStart: 30
     minimumPlayers: 10
