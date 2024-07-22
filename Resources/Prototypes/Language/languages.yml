@@ -576,3 +576,13 @@
     - hiss
     - ss
     - ee
+
+- type: language
+  id: ScugSign
+  signLanguage: true
+  obfuscation:
+    !type:ReplacementObfuscation
+    replacement:
+    - "language-scugsign-1"
+    - "language-scugsign-2"
+    - "language-scugsign-3"
