@@ -1,0 +1,287 @@
+- type: reagent
+  id: Anisette
+  name: reagent-name-anisette
+  parent: BaseAlcohol
+  desc: reagent-desc-anisette
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: anisette
+  color: "#f9f8c6"
+
+- type: reagent
+  id: BlueBaller
+  name: reagent-name-blueballer
+  parent: BaseAlcohol
+  desc: reagent-desc-blueballer
+  physicalDesc: reagent-physical-desc-tropical
+  flavor: blueballer
+  color: "#88065b"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/blueballer.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.06
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 0.5
+
+- type: reagent
+  id: DemonSeed
+  name: reagent-name-demonseed
+  parent: BaseAlcohol
+  desc: reagent-desc-demonseed
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: demonseed
+  color: "#301637"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/demonseed.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.07
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 1
+
+- type: reagent
+  id: DoubleCreamBlaster
+  name: reagent-name-doublecreamblaster
+  parent: BaseAlcohol
+  desc: reagent-desc-doublecreamblaster
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: doublecreamblaster
+  color: "#532104"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/doublecreamblaster.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+
+- type: reagent
+  id: EmeraldSwinger
+  name: reagent-name-emeraldswinger
+  parent: BaseAlcohol
+  desc: reagent-desc-emeraldswinger
+  physicalDesc: reagent-physical-desc-buzzy
+  flavor: emeraldswinger
+  color: "#50c878"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/emeraldswinger.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.04
+
+- type: reagent
+  id: MarieJulep
+  name: reagent-name-mariejulep
+  parent: BaseAlcohol
+  desc: reagent-desc-mariejulep
+  physicalDesc: reagent-physical-desc-refreshing
+  flavor: mariejulep
+  color: "#f3eaaf"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/mariejulep.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.06
+
+- type: reagent
+  id: OrgasmOnTheBeach
+  name: reagent-name-orgasmonthebeach
+  parent: BaseAlcohol
+  desc: reagent-desc-orgasmonthebeach
+  physicalDesc: reagent-physical-desc-tart
+  flavor: orgasmonthebeach
+  color: "#b5693a"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/orgasmonthebeach.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
+
+- type: reagent
+  id: PomPassion
+  name: reagent-name-pompassion
+  parent: BaseAlcohol
+  desc: reagent-desc-pompassion
+  physicalDesc: reagent-physical-desc-sugary
+  flavor: pompassion
+  color: "#9c0101"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/pompassion.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.03
+
+- type: reagent
+  id: RedRocket
+  name: reagent-name-redrocket
+  parent: BaseAlcohol
+  desc: reagent-desc-redrocket
+  physicalDesc: reagent-physical-desc-saucey
+  flavor: redrocket
+  color: "#ba3b3d"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/redrocket.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.06
+
+- type: reagent
+  id: SemenBomb
+  name: reagent-name-semenbomb
+  parent: BaseAlcohol
+  desc: reagent-desc-semenbomb
+  physicalDesc: reagent-physical-desc-foamy
+  flavor: semenbomb
+  color: "#fbb117"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/semenbomb.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.04
+
+- type: reagent
+  id: SemenHemorrhage
+  name: reagent-name-semenhemorrhage
+  parent: BaseAlcohol
+  desc: reagent-desc-semenhemorrhage
+  physicalDesc: reagent-physical-desc-heterogeneous
+  flavor: semenhemorrhage
+  color: "#c83341"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/semenhemorrhage.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.03
+
+- type: reagent
+  id: WatermelonGinJizz
+  name: reagent-name-watermelonginjizz
+  parent: BaseAlcohol
+  desc: reagent-desc-watermelonginjizz
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: watermelonginjizz
+  color: "#c79081"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/watermelonginjizz.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.07
+
+- type: reagent
+  id: YeOlHandy
+  name: reagent-name-yeolhandy
+  parent: BaseAlcohol
+  desc: reagent-desc-yeolhandy
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: yeolhandy
+  color: "#d29062"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/yeolhandy.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
