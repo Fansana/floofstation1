@@ -141,3 +141,9 @@ Entries:
       message: force Michael announcer
   id: 20
   time: '2024-07-20T19:49:06.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: shuttle and alert announcements
+  id: 21
+  time: '2024-07-22T04:29:24.0000000+00:00'
