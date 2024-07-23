@@ -179,3 +179,11 @@ Entries:
       message: Further tweaks and fixes to rules.
   id: 26
   time: '2024-07-23T12:17:28.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Scugs can now go in bags and resist grabs!
+    - type: Fix
+      message: Scugs cannot fit under doors anymore.
+  id: 27
+  time: '2024-07-23T13:59:07.0000000+00:00'
