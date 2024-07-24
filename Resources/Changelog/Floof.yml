@@ -147,3 +147,49 @@ Entries:
       message: shuttle and alert announcements
   id: 21
   time: '2024-07-22T04:29:24.0000000+00:00'
+- author: SnowyFoxxo
+  changes:
+    - type: Tweak
+      message: >-
+        Added, tweaked or removed a few rules. Also finally should have a
+        modicum of formatting.
+  id: 22
+  time: '2024-07-22T17:02:37.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Sign Languages!
+  id: 23
+  time: '2024-07-22T20:14:58.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Add
+      message: Added a new series of cocktails and new bottles to the booze'o'mat
+  id: 24
+  time: '2024-07-22T20:15:08.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: ScugCats! Wawa!
+  id: 25
+  time: '2024-07-22T21:25:23.0000000+00:00'
+- author: SnowyFoxxo
+  changes:
+    - type: Tweak
+      message: Further tweaks and fixes to rules.
+  id: 26
+  time: '2024-07-23T12:17:28.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Scugs can now go in bags and resist grabs!
+    - type: Fix
+      message: Scugs cannot fit under doors anymore.
+  id: 27
+  time: '2024-07-23T13:59:07.0000000+00:00'
+- author: Aidenkrz
+  changes:
+    - type: Fix
+      message: Rules header now correctly displays server name.
+  id: 28
+  time: '2024-07-23T13:59:17.0000000+00:00'

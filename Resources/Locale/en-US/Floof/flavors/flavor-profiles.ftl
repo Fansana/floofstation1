@@ -1,0 +1,13 @@
+flavor-complex-anisette = like sweet anise
+flavor-complex-blueballer = like fruit and unrequited love
+flavor-complex-demonseed =  metallic, sweet, and smooth
+flavor-complex-doublecreamblaster = creamy and sweet
+flavor-complex-emeraldswinger = fruity and colorful
+flavor-complex-mariejulep = minty and spicy
+flavor-complex-orgasmonthebeach = like a tart infection
+flavor-complex-pompassion = fruity and like candy
+flavor-complex-redrocket = incredibly sweet, like a rocket pop
+flavor-complex-semenbomb = bitter and oleogustus
+flavor-complex-semenhemorrhage = clumpy and sweet
+flavor-complex-watermelonginjizz = bubbly and fruity
+flavor-complex-yeolhandy = like oranges and solitude

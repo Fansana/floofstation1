@@ -4,6 +4,9 @@ language-Universal-description = What are you?
 language-GalacticCommon-name = Galactic common
 language-GalacticCommon-description = The standard Galatic language, most commonly used for inter-species communications and legal work.
 
+language-SignLanguage-name = Sign Language
+language-SignLanguage-description = The standard Galactic sign language, used by those that are unable to speak Galactic Common or at all.
+
 language-Bubblish-name = Bubblish
 language-Bubblish-description = The language of Slimes. Being a mixture of bubbling noises and pops it's very difficult to speak for humans without the use of mechanical aids.
 
@@ -69,3 +72,6 @@ language-Crab-description = Click!
 
 language-Kobold-name = Kobold
 language-Kobold-description = Hiss!
+
+language-ScugSign-name = ScugSign
+language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
