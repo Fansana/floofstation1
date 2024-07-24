@@ -57,6 +57,8 @@ jobs:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         ARTIFACT_ID: ${{ steps.artifact-upload-step.outputs.artifact-id }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+        ROBUST_CDN_URL: ${{ vars.ROBUST_CDN_URL }}
+        FORK_ID: ${{ vars.FORK_ID }}
 
     # - name: Publish changelog (Discord)
     #   run: Tools/actions_changelogs_since_last_run.py
