@@ -121,7 +121,7 @@
   - type: StorageFill
     contents:
       - id: HoPIDCard
-      - id: ClothingLongcoatHoP
+      - id: ClothingLongcoatHoP # Floofstation
       - id: ClothingHeadsetAltService # DeltaV - HoP is now a service role, replaces their all channels headset.
       - id: BoxPDA
       - id: BoxID
