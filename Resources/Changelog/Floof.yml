@@ -215,3 +215,9 @@ Entries:
       message: Nikko's Naughty Nectar has been added to more vending machines.
   id: 31
   time: '2024-07-25T03:14:46.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed subtle emote being uppercase
+  id: 32
+  time: '2024-07-25T16:48:45.0000000+00:00'
