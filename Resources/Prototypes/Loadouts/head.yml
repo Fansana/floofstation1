@@ -70,6 +70,14 @@
   exclusive: true
   items:
     - ClothingHeadHatBellhop
+
+- type: loadout
+  id: LoadoutHeadFlower
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatHairflower
 ## Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
