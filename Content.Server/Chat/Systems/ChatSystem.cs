@@ -223,7 +223,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             message = message[1..];
         }
 
-        bool shouldCapitalize = (desiredType != InGameICChatType.Emote);
+        bool shouldCapitalize = (desiredType != InGameICChatType.Emote && desiredType != InGameICChatType.Subtle);
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
         // Capitalizing the word I only happens in English, so we check language here
         bool shouldCapitalizeTheWordI = (!CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Parent.Name == "en")
