@@ -13,7 +13,22 @@
       effects:
       - !type:SatiateThirst
         factor: 2
-       #TO-DO Lust+
+    Medicine:
+      metabolismRate : 0.5
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "reagent-effect-aphrodisiac-mild1"
+          - "reagent-effect-aphrodisiac-mild2"
+          - "reagent-effect-aphrodisiac-mild3"
+          - "reagent-effect-aphrodisiac-mild4"
+          - "reagent-effect-aphrodisiac-mild5"
+        probability: 0.02
+        conditions:
+          - !type:ReagentThreshold
+            max: 50
   footstepSound:
     collection: FootstepSticky
     params:
