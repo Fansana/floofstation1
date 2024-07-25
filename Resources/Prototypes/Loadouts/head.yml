@@ -118,6 +118,14 @@
   exclusive: true
   items:
     - ClothingHeadHatBellhop
+
+- type: loadout # FloofStation
+  id: LoadoutHeadFlower
+  category: Head
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHeadHatHairflower
 ## Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
