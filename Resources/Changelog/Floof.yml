@@ -173,3 +173,59 @@ Entries:
       message: ScugCats! Wawa!
   id: 25
   time: '2024-07-22T21:25:23.0000000+00:00'
+- author: SnowyFoxxo
+  changes:
+    - type: Tweak
+      message: Further tweaks and fixes to rules.
+  id: 26
+  time: '2024-07-23T12:17:28.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Scugs can now go in bags and resist grabs!
+    - type: Fix
+      message: Scugs cannot fit under doors anymore.
+  id: 27
+  time: '2024-07-23T13:59:07.0000000+00:00'
+- author: Aidenkrz
+  changes:
+    - type: Fix
+      message: Rules header now correctly displays server name.
+  id: 28
+  time: '2024-07-23T13:59:17.0000000+00:00'
+- author: AeraAuling
+  changes:
+    - type: Add
+      message: >-
+        Epistemics has been given a supply of new labcoats, and everyone has
+        been authorized to wear hairflowers.
+  id: 29
+  time: '2024-07-25T03:13:46.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Tweak
+      message: Description for bottleocum
+  id: 30
+  time: '2024-07-25T03:14:35.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Nikko's Naughty Nectar now has an aphrodisiac effect
+    - type: Tweak
+      message: Nikko's Naughty Nectar has been added to more vending machines.
+  id: 31
+  time: '2024-07-25T03:14:46.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed subtle emote being uppercase
+  id: 32
+  time: '2024-07-25T16:48:45.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Add
+      message: >-
+        Opporozine, upstream chemical that allows you to remove rotting by
+        cryopods!
+  id: 33
+  time: '2024-07-26T01:07:22.0000000+00:00'

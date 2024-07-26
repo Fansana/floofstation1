@@ -1,4 +1,4 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Mobs.Components;
 
@@ -40,5 +40,27 @@ public abstract class SharedRottingSystem : EntitySystem
             description += "-nonmob";
 
         args.PushMarkup(Loc.GetString(description, ("target", Identity.Entity(uid, EntityManager))));
+    }
+
+    public void ReduceAccumulator(EntityUid uid, TimeSpan time)
+    {
+        if (!TryComp<PerishableComponent>(uid, out var perishable))
+            return;
+
+        if (!TryComp<RottingComponent>(uid, out var rotting))
+        {
+            perishable.RotAccumulator -= time;
+            return;
+        }
+        var total = (rotting.TotalRotTime + perishable.RotAccumulator) - time;
+
+        if (total < perishable.RotAfter)
+        {
+            RemCompDeferred(uid, rotting);
+            perishable.RotAccumulator = total;
+        }
+
+        else
+            rotting.TotalRotTime = total - perishable.RotAfter;
     }
 }

@@ -74,9 +74,9 @@
           radius: 0.2
         density: 120
         mask:
-        - SmallMobMask
+        - MobMask
         layer:
-        - SmallMobLayer
+        - MobLayer
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-scugcat-name
@@ -87,10 +87,18 @@
   - type: Hunger
   - type: Inventory
     templateId: scugcat
+  - type: PseudoItem
+  - type: CanEscapeInventory
   - type: InventorySlots
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
+  - type: IdExaminable
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - DoorBumpOpener
+    - VimPilot
   - type: LanguageKnowledge
     speaks:
     - ScugSign
