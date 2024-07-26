@@ -44,7 +44,6 @@
     - id: FoodMeat
       amount: 4 # Good eatin', though. You monster.
   - type: Speech
-    speechVerb: Wawa
     speechSounds: Wawa
   - type: TypingIndicator
     proto: moth
@@ -113,13 +112,6 @@
     Cocaine: "#679cfe"
     Mutant: "#7824a0"
     Damned: "#98e652"
-
-- type: speechVerb
-  id: Wawa
-  speechVerbStrings:
-  - chat-speech-verb-wawa-1
-  - chat-speech-verb-wawa-2
-  - chat-speech-verb-wawa-3
 
 - type: speechSounds
   id: Wawa
