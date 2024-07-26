@@ -619,7 +619,7 @@
     messageWrapOverrides:
       Speak: chat-sign-language-message-wrap
       Whisper: chat-sign-language-whisper-wrap
-    chatTypeOverride: Emote
+    speechVerbOverrides:
     - chat-speech-verb-sign-1
     - chat-speech-verb-sign-2
     - chat-speech-verb-sign-3
