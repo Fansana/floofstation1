@@ -68,11 +68,9 @@
   - type: LanguageKnowledge
     speaks:
     - GalacticCommon
-    - SolCommon
     - Nekomimetic
     understands:
     - GalacticCommon
-    - SolCommon
     - Nekomimetic
   - type: Thieving
     ignoreStripHidden: true
