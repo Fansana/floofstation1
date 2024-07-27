@@ -96,7 +96,6 @@
   - type: IdExaminable
   - type: Tag
     tags:
-    - CannotSuicide
     - DoorBumpOpener
     - VimPilot
   - type: LanguageKnowledge
@@ -188,12 +187,11 @@
   components:
   - type: StationEvent
     startAnnouncement: true
-    startDelay: 10
-    earliestStart: 30
-    minimumPlayers: 10
+    reoccurrenceDelay: 12
+    minimumPlayers: 1
     weight: 5
     duration: 50
   - type: VentCrittersRule
     entries:
     - id: MobScugCat
-      prob: 0.02
+      prob: 0.01
