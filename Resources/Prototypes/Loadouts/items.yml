@@ -204,3 +204,24 @@
   cost: 3
   items:
     - SolCommonTranslator
+    -
+- type: loadout
+  id: LoadoutEmergencyNitrogenTank
+  category: Items
+  cost: 1
+  items:
+  - EmergencyNitrogenTankFilled
+
+- type: loadout
+  id: LoadoutExtendedEmergencyNitrogenTank
+  category: Items
+  cost: 2
+  items:
+  - ExtendedEmergencyNitrogenTankFilled
+
+- type: loadout
+  id: LoadoutDoubleEmergencyNitrogenTank
+  category: Items
+  cost: 3
+  items:
+  - DoubleEmergencyNitrogenTankFilled
