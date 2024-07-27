@@ -229,3 +229,9 @@ Entries:
         cryopods!
   id: 33
   time: '2024-07-26T01:07:22.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Remove
+      message: ability for felinids to speak sol common
+  id: 34
+  time: '2024-07-27T08:34:31.0000000+00:00'
