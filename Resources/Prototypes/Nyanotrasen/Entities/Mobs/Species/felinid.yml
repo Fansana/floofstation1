@@ -72,11 +72,6 @@
     understands:
     - GalacticCommon
     - Nekomimetic
-  - type: Thieving
-    ignoreStripHidden: true
-    stealth: Subtle
-    stripTimeReduction: 0
-    stripTimeMultiplier: 0.667
 
 - type: entity
   save: false
