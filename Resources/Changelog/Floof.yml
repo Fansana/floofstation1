@@ -253,3 +253,9 @@ Entries:
       message: N2 are available for everybody now
   id: 37
   time: '2024-07-27T09:03:57.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Upstream Merge
+  id: 38
+  time: '2024-07-27T14:23:51.0000000+00:00'
