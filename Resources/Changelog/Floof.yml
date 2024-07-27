@@ -235,3 +235,9 @@ Entries:
       message: ability for felinids to speak sol common
   id: 34
   time: '2024-07-27T08:34:31.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Remove
+      message: thieving from felinids
+  id: 35
+  time: '2024-07-27T08:41:38.0000000+00:00'
