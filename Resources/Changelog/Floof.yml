@@ -259,3 +259,9 @@ Entries:
       message: Upstream Merge
   id: 38
   time: '2024-07-27T14:23:51.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Whisper
+  id: 39
+  time: '2024-07-27T18:16:02.0000000+00:00'
