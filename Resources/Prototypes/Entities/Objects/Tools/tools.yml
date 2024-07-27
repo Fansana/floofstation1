@@ -10,8 +10,6 @@
     sound: /Audio/SimpleStation14/Items/Handling/wirecutter_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      params:
-        volume: -10
       path: /Audio/Items/wirecutter_drop.ogg
   - type: Tag
     tags:
