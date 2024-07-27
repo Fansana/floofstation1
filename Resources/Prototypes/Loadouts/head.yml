@@ -1,4 +1,4 @@
-## Hats
+# Hats
 - type: loadout
   id: LoadoutHeadBeaverHat
   category: Head
@@ -120,13 +120,14 @@
     - ClothingHeadHatBellhop
 
 - type: loadout # FloofStation
-  id: LoadoutHeadFlower
+  id: LoadoutFoodPoppy
   category: Head
   cost: 1
   exclusive: true
   items:
-    - ClothingHeadHatHairflower
-## Color Hats
+    - FoodPoppy
+
+# Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
   category: Head
@@ -255,7 +256,7 @@
   items:
     - ClothingHeadHatYellowsoftFlipped
 
-## Headbands
+# Headbands
 - type: loadout
   id: LoadoutHeadBandBlack
   category: Head

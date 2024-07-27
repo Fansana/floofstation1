@@ -1,4 +1,4 @@
-## Clown
+# Clown
 - type: loadout
   id: LoadoutServiceClownOutfitJester
   category: Jobs
@@ -27,7 +27,7 @@
     - ClothingHeadHatJesterAlt
     - ClothingShoesJester
 
-## Bartender
+# Bartender
 - type: loadout
   id: LoadoutServiceBartenderUniformPurple
   category: Jobs
@@ -40,7 +40,7 @@
   items:
     - ClothingUniformJumpsuitBartenderPurple
 
-## Botanist
+# Botanist
 - type: loadout
   id: LoadoutServiceBartenderBunnyEars
   category: Jobs
@@ -77,7 +77,7 @@
   items:
     - ClothingUniformOveralls
 
-## Lawyer
+# Lawyer
 - type: loadout
   id: LoadoutServiceLawyerUniformBlueSuit
   category: Jobs
@@ -86,7 +86,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
      jobs:
         - Lawyer
@@ -113,7 +114,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Lawyer
@@ -140,7 +142,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Lawyer
@@ -167,7 +170,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Lawyer
@@ -198,7 +202,7 @@
   items:
     - ClothingUniformJumpsuitJournalist
 
-## Reporter
+# Reporter
 - type: loadout
   id: LoadoutServiceReporterUniformDetectivesuit
   category: Jobs
@@ -207,7 +211,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Reporter
@@ -226,7 +231,7 @@
   items:
     - ClothingUniformJumpskirtDetective
 
-## Musician
+# Musician
 - type: loadout
   id: LoadoutItemSynthesizerInstrument
   category: Jobs

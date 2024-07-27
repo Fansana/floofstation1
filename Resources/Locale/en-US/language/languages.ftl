@@ -73,5 +73,8 @@ language-Crab-description = Click!
 language-Kobold-name = Kobold
 language-Kobold-description = Hiss!
 
+language-Sign-name = Sign Language
+language-Sign-description = The standard Galactic sign language, used by those that are unable to speak Galactic Common or at all.
+
 language-ScugSign-name = ScugSign
 language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
