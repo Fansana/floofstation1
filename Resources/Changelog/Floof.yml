@@ -229,3 +229,27 @@ Entries:
         cryopods!
   id: 33
   time: '2024-07-26T01:07:22.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Remove
+      message: ability for felinids to speak sol common
+  id: 34
+  time: '2024-07-27T08:34:31.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Remove
+      message: thieving from felinids
+  id: 35
+  time: '2024-07-27T08:41:38.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: add thieving trait back to felinids
+  id: 36
+  time: '2024-07-27T08:51:07.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: N2 are available for everybody now
+  id: 37
+  time: '2024-07-27T09:03:57.0000000+00:00'
