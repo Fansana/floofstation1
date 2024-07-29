@@ -265,3 +265,12 @@ Entries:
       message: Whisper
   id: 39
   time: '2024-07-27T18:16:02.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Early-merged new changes to psionics. This includes glimmer being more
+        jumpy and dangerous, loto oil actually working consistently, and many
+        other minor changes.
+  id: 40
+  time: '2024-07-29T14:36:32.0000000+00:00'
