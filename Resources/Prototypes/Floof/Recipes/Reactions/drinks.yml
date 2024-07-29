@@ -1,4 +1,16 @@
 - type: reaction
+  id: A.B.Lustine
+  reactants:
+    JuiceApple:
+      amount: 1
+    JuiceBanana:
+      amount: 1
+    Pomelustine:
+      amount: 1
+  products:
+    ABLustine: 3
+
+- type: reaction
   id: BlueBaller
   reactants:
     BlueCuracao:
@@ -36,6 +48,43 @@
   products:
     DoubleCreamBlaster: 3
 
+- type: reaction
+  id: DragonsBlood
+  reactants:
+    Ale:
+      amount: 1
+    Blood:
+      amount: 1
+    CapsaicinOil:
+      amount: 1
+  products:
+    DragonsBlood: 3
+
+- type: reaction
+  id: DragonsBreath
+  reactants:
+    CapsaicinOil:
+      amount: 1
+    JuiceTomato:
+      amount: 1
+    Tequila:
+      amount: 1
+  products:
+    DragonsBreath: 3
+
+- type: reaction
+  id: DragonsSeed
+  reactants:
+    CapsaicinOil:
+      amount: 1
+    Cum:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+    JuiceTomato:
+      amount: 1
+  products:
+    DragonsSeed: 4
 
 - type: reaction
   id: EmeraldSwinger
@@ -50,6 +99,96 @@
     EmeraldSwinger: 5
 
 - type: reaction
+  id: Eminence
+  reactants:
+    Absinthe:
+      amount: 1
+    CogChamp:
+      amount: 2
+    Ethanol:
+      amount: 1
+    HealthViolation:
+      amount: 1
+  products:
+    Eminence: 5
+
+- type: reaction
+  id: GoldbloomSpecial
+  reactants:
+    Anisette:
+      amount: 1
+    Cognac:
+      amount: 2
+    Tea:
+      amount: 3
+  products:
+    GoldbloomSpecial: 5
+
+- type: reaction
+  id: GrandNavy
+  reactants:
+    Amasec:
+      amount: 1
+    BlueCuracao:
+      amount: 1
+    SodaWater:
+      amount: 1
+  products:
+    GrandNavy: 3
+
+- type: reaction
+  id: HornyStallion
+  reactants:
+    Coffee:
+      amount: 1
+    Libidozenithizine:
+      amount: 1
+    SodaWater:
+      amount: 1
+  products:
+    HornyStallion: 3
+
+- type: reaction
+  id: KoboldKooler
+  reactants:
+    Egg:
+      amount: 3
+    JuiceOrange:
+      amount: 5
+    SodaWater:
+      amount: 7
+  products:
+    KoboldKooler: 15
+
+- type: reaction
+  id: LemonPopsicle
+  reactants:
+    Ice:
+      amount: 3
+    JuiceLemon:
+      amount: 2
+    JuiceOrange:
+      amount: 1
+    SodaWater:
+      amount: 4
+  products:
+    LemonPopsicle: 10
+
+- type: reaction
+  id: LemonPopsicle
+  reactants:
+    Ice:
+      amount: 3
+    JuiceLemon:
+      amount: 2
+    JuiceOrange:
+      amount: 1
+    SodaWater:
+      amount: 4
+  products:
+    LemonPopsicle: 10
+
+- type: reaction
   id: MarieJulep
   reactants:
     Anisette:
@@ -62,6 +201,44 @@
       amount: 1
   products:
     MarieJulep: 4
+
+- type: reaction
+  id: MarsBar
+  reactants:
+    Cum:
+      amount: 1
+    HotCocoa:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    MarsBar: 3
+
+- type: reaction
+  id: MossBloodShot
+  reactants:
+    JuiceBerry:
+      amount: 1
+    JuicePomegranate:
+      amount: 1
+    Rum:
+      amount: 2
+    Sugar:
+      amount: 1
+  products:
+    MossBloodShot: 5
+
+- type: reaction
+  id: OpsShine
+  reactants:
+    BlackRussian:
+      amount: 1
+    FourteenLoko:
+      amount: 1
+    Moonshine:
+      amount: 1
+  products:
+    OpsShine: 3
 
 - type: reaction
   id: OrgasmOnTheBeach
@@ -90,6 +267,48 @@
     PomPassion: 3
 
 - type: reaction
+  id: PomTwist
+  reactants:
+    JuiceLemon:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    Pomelustine:
+      amount: 1
+  products:
+    PomTwist: 3
+
+- type: reaction
+  id: PrairieOyster
+  reactants:
+    Blackpepper:
+      amount: 1
+    Egg:
+      amount: 1
+    Hotsauce:
+      amount: 1
+    TableSalt:
+      amount: 1
+    Vinegar:
+      amount: 1
+    Vodka:
+      amount: 1
+  products:
+    PrairieOyster: 6
+
+- type: reaction
+  id: RandyStallion
+  reactants:
+    Coffee:
+      amount: 1
+    Pomelustine:
+      amount: 1
+    SodaWater:
+      amount: 1
+  products:
+    RandyStallion: 3
+
+- type: reaction
   id: RedRocket
   reactants:
     Grenadine:
@@ -102,6 +321,20 @@
       amount: 2
   products:
     RedRocket: 6
+
+- type: reaction
+  id: SalvagersDelight
+  reactants:
+    CarpoToxin:
+      amount: 2
+    FluorosulfuricAcid:
+      amount: 2
+    InsectBlood:
+      amount: 2
+    ManlyDorf:
+      amount: 4
+  products:
+    SalvagersDelight: 10
 
 - type: reaction
   id: SemenBomb
@@ -126,6 +359,30 @@
     SemenHemorrhage: 5
 
 - type: reaction
+  id: SilverStallion
+  reactants:
+    Coffee:
+      amount: 1
+    Cum:
+      amount: 1
+    SodaWater:
+      amount: 1
+  products:
+    SilverStallion: 3
+
+- type: reaction
+  id: SyndicatesOverseer
+  reactants:
+    Blood:
+      amount: 2
+    Moonshine:
+      amount: 3
+    Ice:
+      amount: 1
+  products:
+    SyndicatesOverseer: 6
+
+- type: reaction
   id: WatermelonGinJizz
   reactants:
     Cum:
@@ -138,6 +395,18 @@
       amount: 1
   products:
     WatermelonGinJizz: 5
+
+- type: reaction
+  id: WhiskeySour
+  reactants:
+    Egg:
+      amount: 3
+    JuiceLemon:
+      amount: 5
+    Whiskey:
+      amount: 7
+  products:
+    WhiskeySour: 15
 
 - type: reaction
   id: YeOlHandy

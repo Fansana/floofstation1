@@ -1,4 +1,9 @@
 - type: flavor
+  id: ablustine
+  flavorType: Complex
+  description: flavor-complex-ablustine
+
+- type: flavor
   id: anisette
   flavorType: Complex
   description: flavor-complex-anisette
@@ -19,20 +24,85 @@
   description: flavor-complex-doublecreamblaster
 
 - type: flavor
+  id: dragonsblood
+  flavorType: Complex
+  description: flavor-complex-dragonsblood
+
+- type: flavor
+  id: dragonsbreath
+  flavorType: Complex
+  description: flavor-complex-dragonsbreath
+
+- type: flavor
+  id: dragonsseed
+  flavorType: Complex
+  description: flavor-complex-dragonsseed
+
+- type: flavor
   id: emeraldswinger
   flavorType: Complex
   description: flavor-complex-emeraldswinger
+
+- type: flavor
+  id: eminence
+  flavorType: Complex
+  description: flavor-complex-eminence
+
+- type: flavor
+  id: goldbloomspecial
+  flavorType: Complex
+  description: flavor-complex-goldbloomspecial
+
+- type: flavor
+  id: grandnavy
+  flavorType: Complex
+  description: flavor-complex-grandnavy
+
+- type: flavor
+  id: hornystallion
+  flavorType: Complex
+  description: flavor-complex-hornystallion
+
+- type: flavor
+  id: opsshine
+  flavorType: Complex
+  description: flavor-complex-opsshine
+
+- type: flavor
+  id: koboldkooler
+  flavorType: Complex
+  description: flavor-complex-koboldkooler
+
+- type: flavor
+  id: lemonpopsicle
+  flavorType: Complex
+  description: flavor-complex-lemonpopsicle
+
+- type: flavor
+  id: loverskiss
+  flavorType: Complex
+  description: flavor-complex-loverskiss
+
+- type: flavor
+  id: mariejulep
+  flavorType: Complex
+  description: flavor-complex-mariejulep
+
+- type: flavor
+  id: marsbar
+  flavorType: Complex
+  description: flavor-complex-marsbar
+
+- type: flavor
+  id: mossbloodshot
+  flavorType: Complex
+  description: flavor-complex-mossbloodshot
 
 # Cum
 - type: flavor
   id: nikkonectar
   flavorType: Complex
   description: flavor-complex-nikkonectar
-
-- type: flavor
-  id: mariejulep
-  flavorType: Complex
-  description: flavor-complex-mariejulep
 
 - type: flavor
   id: orgasmonthebeach
@@ -45,9 +115,29 @@
   description: flavor-complex-pompassion
 
 - type: flavor
+  id: pomtwist
+  flavorType: Complex
+  description: flavor-complex-pomtwist
+
+- type: flavor
+  id: prairieoyster
+  flavorType: Complex
+  description: flavor-complex-prairieoyster
+
+- type: flavor
+  id: randystallion
+  flavorType: Complex
+  description: flavor-complex-randystallion
+
+- type: flavor
   id: redrocket
   flavorType: Complex
   description: flavor-complex-redrocket
+
+- type: flavor
+  id: salvagersdelight
+  flavorType: Complex
+  description: flavor-complex-salvagersdelight
 
 - type: flavor
   id: semenbomb
@@ -60,9 +150,24 @@
   description: flavor-complex-semenhemorrhage
 
 - type: flavor
+  id: silverstallion
+  flavorType: Complex
+  description: flavor-complex-silverstallion
+
+- type: flavor
+  id: syndicatesoverseer
+  flavorType: Complex
+  description: flavor-complex-syndicatesoverseer
+
+- type: flavor
   id: watermelonginjizz
   flavorType: Complex
   description: flavor-complex-watermelonginjizz
+
+- type: flavor
+  id: whiskeysour
+  flavorType: Complex
+  description: flavor-complex-whiskeysour
 
 - type: flavor
   id: yeolhandy
