@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterWinterCoat
-  id: ClothingLongcoatArashiLabs
+  id: ClothingLongcoatAL
   name: Arashi Labs Longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of Arashi Laboratories, A biotech corporation claiming to hail from the 'Long Rim', wherever that is. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
@@ -11,7 +11,7 @@
 
 - type: entity
   parent: ClothingOuterWinterCoat
-  id: ClothingLongcoatNanoTrasen
+  id: ClothingLongcoatNT
   name: Nanotrasen Longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of NanoTrasen, The general-purpose spacefaring corporation that you (hopefully) work for! Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
