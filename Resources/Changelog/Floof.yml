@@ -284,3 +284,9 @@ Entries:
       message: Harpies can now equip eyepatches and eyegauze.
   id: 42
   time: '2024-08-01T00:17:47.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Add
+      message: Canes for the blind to Medifab.
+  id: 43
+  time: '2024-08-01T14:41:49.0000000+00:00'
