@@ -272,29 +272,6 @@
         amount: 0.06
 
 - type: reagent
-  id: GrandNavy
-  name: reagent-name-grandnavy
-  parent: BaseAlcohol
-  desc: reagent-desc-grandnavy
-  physicalDesc: reagent-physical-desc-vibrant
-  flavor: grandnavy
-  color: "#000080"
-  metamorphicSprite:
-    sprite: Floof/Objects/Consumable/Drinks/grandnavy.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: 0.06
-
-- type: reagent
   id: HornyStallion
   name: reagent-name-hornystallion
   parent: BaseAlcohol
