@@ -99,3 +99,7 @@ reagent-physical-desc-reflective = reflective
 reagent-physical-desc-holy = holy
 reagent-physical-desc-slimy = slimy
 reagent-physical-desc-neural = neural
+## Floof
+reagent-physical-desc-earthy = earthy
+reagent-physical-desc-ethereal-brass = ethereal brass
+reagent-physical-desc-smooth = smooth
