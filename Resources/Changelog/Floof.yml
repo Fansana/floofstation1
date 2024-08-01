@@ -278,3 +278,9 @@ Entries:
   changes: []
   id: 41
   time: '2024-07-31T05:11:26.0000000+00:00'
+- author: Aikakakah
+  changes:
+    - type: Fix
+      message: Harpies can now equip eyepatches and eyegauze.
+  id: 42
+  time: '2024-08-01T00:17:47.0000000+00:00'
