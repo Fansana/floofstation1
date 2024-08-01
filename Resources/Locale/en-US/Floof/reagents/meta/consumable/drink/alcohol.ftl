@@ -40,6 +40,12 @@ reagent-desc-hornystallion = A drink with a strong effect on anyone stupid enoug
 reagent-name-koboldkooler = kobold kooler
 reagent-desc-koboldkooler = A cool, soothing drink for the cold-blooded amongst the crew.
 
+reagent-name-koboldkorkscrew = kobold korkscrew
+reagent-desc-koboldkorkscrew = A fizzy, sugary drink, with an added scale-like smoothness.
+
+reagent-name-lamplight = lamplight
+reagent-desc-lamplight = This drink is known to have a very particular allure to the moffic crew. Non-Moths report nothing out of the ordinary, though.
+
 reagent-name-lemonpopsicle = lemon popsicle
 reagent-desc-lemonpopsicle = An on-the-wagon cocktail, for those who just adore sour things. It is tradition to rim the glass with citric acid.
 
@@ -90,6 +96,9 @@ reagent-desc-silverstallion = A strong drink that'll put hair on your chest.
 
 reagent-name-syndicatesoverseer = syndicate's overseer
 reagent-desc-syndicatesoverseer = This drink is menacing, you don't even know if you should be drinking this or not.
+
+reagent-name-voltage = voltage
+reagent-desc-voltage = A strong, electric drink, overloading the senses in both sweetness and strength.
 
 reagent-name-watermelonginjizz = watermelon gin jizz
 reagent-desc-watermelonginjizz = Perfect for a luncheon on a warm sunny afternoon.

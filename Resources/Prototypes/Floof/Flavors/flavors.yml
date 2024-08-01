@@ -74,6 +74,16 @@
   description: flavor-complex-koboldkooler
 
 - type: flavor
+  id: koboldkorkscrew
+  flavorType: Complex
+  description: flavor-complex-koboldkorkscrew
+
+- type: flavor
+  id: lamplight
+  flavorType: Complex
+  description: flavor-complex-lamplight
+
+- type: flavor
   id: lemonpopsicle
   flavorType: Complex
   description: flavor-complex-lemonpopsicle
@@ -158,6 +168,11 @@
   id: syndicatesoverseer
   flavorType: Complex
   description: flavor-complex-syndicatesoverseer
+
+- type: flavor
+  id: voltage
+  flavorType: Complex
+  description: flavor-complex-voltage
 
 - type: flavor
   id: watermelonginjizz

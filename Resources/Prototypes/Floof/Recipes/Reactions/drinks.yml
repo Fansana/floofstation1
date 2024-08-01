@@ -8,7 +8,7 @@
     Pomelustine:
       amount: 1
   products:
-    ABLustine: 3
+    A.B.Lustine: 3
 
 - type: reaction
   id: BlueBaller
@@ -161,18 +161,28 @@
     KoboldKooler: 15
 
 - type: reaction
-  id: LemonPopsicle
+  id: KoboldKorkscrew
   reactants:
-    Ice:
-      amount: 3
-    JuiceLemon:
-      amount: 2
+    Cum:
+      amount: 1
     JuiceOrange:
       amount: 1
     SodaWater:
-      amount: 4
+      amount: 1
   products:
-    LemonPopsicle: 10
+    KoboldKorkscrew: 3
+
+- type: reaction
+  id: Lamplight
+  reactants:
+    EnergyDrink:
+      amount: 1
+    Pomelustine:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    Lamplight: 3
 
 - type: reaction
   id: LemonPopsicle
@@ -381,6 +391,20 @@
       amount: 1
   products:
     SyndicatesOverseer: 6
+
+- type: reaction
+  id: Voltage
+  reactants:
+    EnergyDrink:
+      amount: 1
+    Rum:
+      amount: 2
+    Sugar:
+      amount: 1
+    Vodka:
+      amount: 2
+  products:
+    Voltage: 6
 
 - type: reaction
   id: WatermelonGinJizz

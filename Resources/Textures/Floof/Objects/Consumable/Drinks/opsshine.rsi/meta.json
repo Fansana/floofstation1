@@ -4,14 +4,26 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "dakodragon, DiscordID: 56038550335922176",
+    "license": "CC-BY-3.0",
+    "copyright": "Gabriel08, DiscordID: 705370914535243796",
     "states": [
         {
             "name": "icon"
         },
         {
-            "name": "icon_open"
+            "name": "icon_empty"
+        },
+        {
+            "name": "fill-1"
+        },
+        {
+            "name": "fill-2"
+        },
+        {
+            "name": "fill-3"
+        },
+        {
+            "name": "fill-4"
         }
     ]
 }

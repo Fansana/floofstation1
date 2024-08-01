@@ -6,6 +6,12 @@
   physicalDesc: reagent-physical-desc-syrupy
   flavor: ablustine
   color: "#a845a3"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/ablustine.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
   metabolisms:
     Drink:
       effects:
@@ -207,7 +213,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/eminence.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -230,7 +236,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/goldbloomspecial.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -253,7 +259,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/grandnavy.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -325,6 +331,84 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/koboldkooler.rsi
     state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+
+- type: reagent
+  id: KoboldKorkscrew
+  name: reagent-name-koboldkorkscrew
+  parent: BaseAlcohol
+  desc: reagent-desc-koboldkorkscrew
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: koboldkorkscrew
+  color: "#e67409"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/koboldkorkscrew.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+
+- type: reagent
+  id: Lamplight
+  name: reagent-name-lamplight
+  parent: BaseAlcohol
+  desc: reagent-desc-lamplight
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: lamplight
+  color: "#ffd000"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/lamplight.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        - !type:OrganType
+          type: Moth # non-moths get standard effect
+          shouldHave: false
+        reagent: Pomelustine
+        amount: 0.5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+        - !type:OrganType
+          type: Moth # Get them moffy fucks horny
+          shouldHave: true
+        reagent: Philterex
+        amount: 1
+
+- type: reagent
+  id: LemonPopsicle
+  name: reagent-name-lemonpopsicle
+  parent: BaseAlcohol
+  desc: reagent-desc-lemonpopsicle
+  physicalDesc: reagent-physical-desc-lemony-fresh
+  flavor: lemonpopsicle
+  color: "#ffff9e"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/lemonpopsicle.rsi
+    state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
@@ -394,7 +478,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/marsbar.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 3
+  metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -440,7 +524,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/opsshine.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -519,7 +603,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/pomtwist.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 3
+  metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -615,7 +699,7 @@
   metamorphicSprite:
     sprite: Floof/Objects/Consumable/Drinks/salvagersdelight.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 5
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
@@ -708,6 +792,29 @@
     sprite: Floof/Objects/Consumable/Drinks/syndicatesoverseer.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.08
+
+- type: reagent
+  id: Voltage
+  name: reagent-name-voltage
+  parent: BaseAlcohol
+  desc: reagent-desc-voltage
+  physicalDesc: reagent-physical-desc-energizing
+  flavor: voltage
+  color: "#4f4c0e"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/voltage.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:

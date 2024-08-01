@@ -1,14 +1,14 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkABLustineGlass
-  suffix: A.B. lustine
+  suffix: A.B.Lustine
   components:
   - type: SolutionContainerManager
     solutions:
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ABLustine
+        - ReagentId: A.B.Lustine
           Quantity: 30
   - type: Icon
     sprite: Floof/Objects/Consumable/Drinks/ablustine.rsi
@@ -202,6 +202,41 @@
         reagents:
         - ReagentId: KoboldKooler
           Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/koboldkooler.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkKoboldKorkscrewGlass
+  suffix: kobold korkscrew
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: KoboldKorkscrew
+          Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/koboldkorkscrew.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkLamplightGlass
+  suffix: lamplight
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Lamplight
+          Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/lamplight.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -215,6 +250,9 @@
         reagents:
         - ReagentId: LemonPopsicle
           Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/lemonpopsicle.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -228,6 +266,9 @@
         reagents:
         - ReagentId: LoversKiss
           Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/loverskiss.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -467,6 +508,22 @@
           Quantity: 30
   - type: Icon
     sprite: Floof/Objects/Consumable/Drinks/syndicatesoverseer.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkVoltageGlass
+  suffix: voltage
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Voltage
+          Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/voltage.rsi
     state: icon
 
 - type: entity
