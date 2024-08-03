@@ -4,8 +4,9 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # DeltaV - 1 hour
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 36000 # DeltaV - 10 hours
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

@@ -5,9 +5,11 @@
   playTimeTracker: JobResearchDirector
   antagAdvantage: 6
   requirements:
-    - !type:DepartmentTimeRequirement
+    - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      time: 3600 # DeltaV - 15 hours
+      min: 54000 # DeltaV - 15 hours
+    - !type:CharacterOverallTimeRequirement
+      min: 72000 # DeltaV - 20 hours
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
