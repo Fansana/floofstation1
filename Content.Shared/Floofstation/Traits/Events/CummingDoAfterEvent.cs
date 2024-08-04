@@ -7,3 +7,4 @@ namespace Content.Shared.FloofStation.Traits.Events;
 public sealed partial class CummingDoAfterEvent : SimpleDoAfterEvent
 {
 }
+

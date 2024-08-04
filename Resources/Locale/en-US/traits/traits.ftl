@@ -73,11 +73,11 @@ trait-description-Foreigner =
     For one reason or another you do not speak this station's primary language.
     Instead, you have a translator issued to you that only you can use.
 
-trait-name-HasPenis = Cock
-trait-description-HasPenis = You have a schlong between your legs.
+trait-name-CumProducer = Cock
+trait-description-CumProducer = You have a schlong between your legs.
 
-trait-name-HasBoobs = Boobs
-trait-description-HasBoobs = You have a pair of large mammaries.
+trait-name-MilkProducer = Boobs
+trait-description-MilkProducer = You have a pair of large mammaries.
 
-trait-name-HasVagina = Pussy
-trait-description-HasVagina = You have a slit between your legs.
+trait-name-SquirtProducer = Pussy
+trait-description-SquirtProducer = You have a slit between your legs.
