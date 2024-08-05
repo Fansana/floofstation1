@@ -95,6 +95,7 @@ public sealed class LewdTraitSystem : EntitySystem
     {
         if (args.Using == null ||
              !args.CanInteract ||
+             args.User != args.Target ||
              !EntityManager.HasComponent<RefillableSolutionComponent>(args.Using.Value)) //see if removing this part lets you milk on the ground.
             return;
 
