@@ -268,9 +268,9 @@ public sealed class LewdTraitSystem : EntitySystem
         base.Update(frameTime);
 
         var now = _timing.CurTime;
-        var query = AllEntityQuery<CumProducerComponent, MilkProducerComponent, SquirtProducerComponent>();
+        var query = AllEntityQuery<CumProducerComponent, MilkProducerComponent>(); //SquirtProducerComponent -unused
 
-        while (query.MoveNext(out var uid, out var containerCum, out var containerMilk, out var containerSquirt))
+        while (query.MoveNext(out var uid, out var containerCum, out var containerMilk)) // out var containerSquirt -unused
         {
             if (_mobState.IsDead(uid))
                 continue;
