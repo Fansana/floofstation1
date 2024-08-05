@@ -296,3 +296,29 @@ Entries:
       message: 24 New Drinks
   id: 44
   time: '2024-08-01T14:43:20.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Fix
+      message: White Cane not appearing in Medifab.
+  id: 45
+  time: '2024-08-05T19:19:36.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Fix
+      message: Crew monitor not working properly, now displays correctly.
+  id: 46
+  time: '2024-08-05T19:22:03.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: '"Cock" trait, fill containers with your essence!'
+    - type: Add
+      message: '"Boobs" trait, fill containers using your mommy milkers!'
+    - type: Add
+      message: LewdTrait system.
+    - type: Tweak
+      message: >-
+        Changed hunger/thirst values for cum to not satiate as much. (No cum
+        meta)
+  id: 47
+  time: '2024-08-05T22:07:16.0000000+00:00'

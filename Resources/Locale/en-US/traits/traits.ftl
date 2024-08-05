@@ -89,3 +89,12 @@ trait-description-Voracious =
 trait-name-LightStep = Light Step
 trait-description-LightStep =
     You move with a gentle step, making your footsteps quieter.
+    
+trait-name-CumProducer = Cock
+trait-description-CumProducer = You have a schlong between your legs.
+
+trait-name-MilkProducer = Boobs
+trait-description-MilkProducer = You have a pair of large mammaries.
+
+trait-name-SquirtProducer = Pussy
+trait-description-SquirtProducer = You have a slit between your legs.
