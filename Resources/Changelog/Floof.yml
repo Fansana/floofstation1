@@ -302,3 +302,9 @@ Entries:
       message: White Cane not appearing in Medifab.
   id: 45
   time: '2024-08-05T19:19:36.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Fix
+      message: Crew monitor not working properly, now displays correctly.
+  id: 46
+  time: '2024-08-05T19:22:03.0000000+00:00'
