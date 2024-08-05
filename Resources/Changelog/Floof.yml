@@ -296,3 +296,9 @@ Entries:
       message: 24 New Drinks
   id: 44
   time: '2024-08-01T14:43:20.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Fix
+      message: White Cane not appearing in Medifab.
+  id: 45
+  time: '2024-08-05T19:19:36.0000000+00:00'
