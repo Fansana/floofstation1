@@ -7,9 +7,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 54000 # DeltaV - 15 hours
-    - !type:CharacterOverallTimeRequirement
-      min: 72000 # DeltaV - 20 hours
+      min: 3600 # Floofstation - 1 hour
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

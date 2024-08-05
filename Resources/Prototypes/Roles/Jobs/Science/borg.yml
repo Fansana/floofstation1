@@ -5,7 +5,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:CharacterOverallTimeRequirement
-      min: 216000 #60 hrs
+      min: 3600 #1 hr
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
