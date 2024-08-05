@@ -1,9 +1,12 @@
+using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
+using Content.Shared.Examine;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
 using Content.Shared.Psionics.Glimmer;
+using Robust.Shared.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 
@@ -17,6 +20,7 @@ namespace Content.Shared.Psionics.Abilities
         [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
         [Dependency] private readonly GlimmerSystem _glimmerSystem = default!;
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
+        [Dependency] private readonly INetManager _net = default!;
 
         public override void Initialize()
         {
@@ -24,6 +28,7 @@ namespace Content.Shared.Psionics.Abilities
             SubscribeLocalEvent<PsionicsDisabledComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<PsionicsDisabledComponent, ComponentShutdown>(OnShutdown);
             SubscribeLocalEvent<PsionicComponent, PsionicPowerUsedEvent>(OnPowerUsed);
+            SubscribeLocalEvent<PsionicInsulationComponent, ExaminedEvent>(OnExamined);
 
             SubscribeLocalEvent<PsionicComponent, MobStateChangedEvent>(OnMobStateChanged);
         }
@@ -76,10 +81,35 @@ namespace Content.Shared.Psionics.Abilities
             _actions.SetEnabled(uid, IsEligibleForPsionics(uid));
         }
 
+        private void OnExamined(EntityUid uid, PsionicInsulationComponent component, ExaminedEvent args)
+        {
+            if (!component.MindBroken || !args.IsInDetailsRange)
+                return;
+
+            args.PushMarkup($"[color=mediumpurple]{Loc.GetString("examine-mindbroken-message", ("entity", uid))}[/color]");
+        }
+
         private bool IsEligibleForPsionics(EntityUid uid)
         {
             return !HasComp<PsionicInsulationComponent>(uid)
                 && (!TryComp<MobStateComponent>(uid, out var mobstate) || mobstate.CurrentState == MobState.Alive);
+        }
+
+        public bool CheckCanSelfCast(EntityUid uid, [NotNullWhen(true)] out PsionicComponent? psiComp)
+        {
+            if (!HasComp<PsionicInsulationComponent>(uid))
+                return TryComp(uid, out psiComp);
+            psiComp = null;
+            return false;
+        }
+
+        public bool CheckCanTargetCast(EntityUid performer, EntityUid target, [NotNullWhen(true)] out PsionicComponent? psiComp)
+        {
+            if (!HasComp<PsionicInsulationComponent>(performer)
+                && !HasComp<PsionicInsulationComponent>(target))
+                return TryComp(performer, out psiComp);
+            psiComp = null;
+            return false;
         }
 
         public void LogPowerUsed(EntityUid uid, string power, PsionicComponent? psionic = null, int minGlimmer = 8, int maxGlimmer = 12, bool overrideGlimmer = false)

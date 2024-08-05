@@ -1,4 +1,4 @@
-## Hats
+# Hats
 - type: loadout
   id: LoadoutHeadBeaverHat
   category: Head
@@ -56,6 +56,54 @@
     - ClothingHeadHatFlatBrown
 
 - type: loadout
+  id: LoadoutHeadHatCowboyBrown
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyBrown
+
+- type: loadout
+  id: LoadoutHeadHatCowboyBlack
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyBlack
+
+- type: loadout
+  id: LoadoutHeadHatCowboyGrey
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyGrey
+
+- type: loadout
+  id: LoadoutHeadHatCowboyRed
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyRed
+
+- type: loadout
+  id: LoadoutHeadHatCowboyWhite
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyWhite
+
+- type: loadout
+  id: LoadoutHeadHatCowboyBountyHunter
+  category: Head
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyBountyHunter
+
+- type: loadout
   id: LoadoutHeadTinfoil
   category: Head
   cost: 3
@@ -70,7 +118,16 @@
   exclusive: true
   items:
     - ClothingHeadHatBellhop
-## Color Hats
+
+- type: loadout # FloofStation
+  id: LoadoutFoodPoppy
+  category: Head
+  cost: 1
+  exclusive: true
+  items:
+    - FoodPoppy
+
+# Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
   category: Head
@@ -199,7 +256,7 @@
   items:
     - ClothingHeadHatYellowsoftFlipped
 
-## Headbands
+# Headbands
 - type: loadout
   id: LoadoutHeadBandBlack
   category: Head

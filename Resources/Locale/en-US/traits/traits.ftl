@@ -29,8 +29,8 @@ trait-description-Accentless = You don't have the accent that your species would
 trait-name-FrontalLisp = Frontal Lisp
 trait-description-FrontalLisp = You thpeak with a lithp
 
-trait-name-SocialAnxiety = Social Anxiety
-trait-description-SocialAnxiety = You are anxious when you speak and stutter.
+trait-name-Stutter = Stutter
+trait-description-Stutter = You t-t-talk with a bit of a s-s-stutter...
 
 trait-name-Snoring = Snoring
 trait-description-Snoring = You will snore while sleeping.
@@ -41,10 +41,10 @@ trait-description-LatentPsychic = Your mind and soul are open to the noosphere, 
                                   It is possible that you may be hunted by otherworldly forces, so consider keeping your powers a secret.
 
 trait-name-PsionicInsulation = χ Waveform Misalignment
-trait-description-PsionicInsulation = Through a quirk of fate, your brainwaves are permanently out of phase with the noösphere
-                                      You are immune to both positive and negative effects of nearly all psychic powers,
-                                      But you can never be a psionic yourself in this life. This trait is incompatible with
-                                      all other psychic traits.
+trait-description-PsionicInsulation = You are a flesh automaton animated by neurotransmitters. Within your skull lies a
+                                      1.5kg sack of meat pretending at sentience. By modern epistemiological theory, you aren't even a sophont.
+                                      The good news is that you are immune to most positive and negative effects of psychic powers. There may be other
+                                      consequences to this malady.
 
 trait-name-NaturalTelepath = Natural Telepath
 trait-description-NaturalTelepath = As a naturally occuring Telepath, you are capable of fluent telepathic communication, regardless of
@@ -55,8 +55,11 @@ trait-description-NaturalTelepath = As a naturally occuring Telepath, you are ca
 trait-name-NormalVisionHarpy = Trichromat Modification
 trait-description-NormalVisionHarpy = Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
 
-trait-name-NormalVisionVulpkanin = Trichromat Modification
-trait-description-NormalVisionVulpkanin = Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
+trait-name-Southern = Southern Drawl
+trait-description-Southern = You have a different way of speakin'.
+
+trait-name-NormalVision = Trichromat Modification
+trait-description-NormalVision = Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
 
 trait-name-Thieving = Thieving
 trait-description-Thieving =

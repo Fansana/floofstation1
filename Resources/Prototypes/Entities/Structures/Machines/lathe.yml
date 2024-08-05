@@ -33,9 +33,6 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: WiresPanel
-  - type: Wires
-    boardName: wires-board-name-autolathe
-    layoutId: Autolathe
   - type: ActivatableUI
     key: enum.LatheUiKey.Key
   - type: ActivatableUIRequiresPower
@@ -263,9 +260,6 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
     board: ProtolatheMachineCircuitboard
-  - type: Wires
-    boardName: wires-board-name-protolathe
-    layoutId: Protolathe
   - type: MaterialStorage
     whitelist:
       tags:
@@ -501,6 +495,7 @@
       - ArtifactCrusherMachineCircuitboard
       - TelecomServerCircuitboard
       - MassMediaCircuitboard
+      - ReagentGrinderIndustrialMachineCircuitboard
     # Begin Nyano additions
       - ReverseEngineeringMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
