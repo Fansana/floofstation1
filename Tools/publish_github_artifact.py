@@ -9,13 +9,8 @@ PUBLISH_TOKEN = os.environ["PUBLISH_TOKEN"]
 ARTIFACT_ID = os.environ["ARTIFACT_ID"]
 GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]
 VERSION = os.environ['GITHUB_SHA']
-
-#
-# CONFIGURATION PARAMETERS
-# Forks should change these to publish to their own infrastructure.
-#
-ROBUST_CDN_URL = "http://floofstation.com:27690/"
-FORK_ID = "floofstation-main"
+ROBUST_CDN_URL = os.environ['ROBUST_CDN_URL']
+FORK_ID = os.environ['FORK_ID']
 
 def main():
     print("Fetching artifact URL from API...")

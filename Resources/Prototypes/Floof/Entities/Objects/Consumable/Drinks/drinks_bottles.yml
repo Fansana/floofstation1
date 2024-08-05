@@ -1,0 +1,36 @@
+- type: entity
+  parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkAnisetteBottleFull
+  name: anisette bottle
+  description: Liquor made of anise and sugar, typically used as a sweeter form of absinthe.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Anisette
+          Quantity: 100
+  - type: Label
+    currentLabel: anisette
+  - type: Sprite
+    sprite: Floof/Objects/Consumable/Drinks/anisettebottle.rsi
+  - type: Sealable
+
+- type: entity
+  parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkCumBottleFull
+  name: bottle'o'cum
+                                                                      # you're welcome azzy
+  description: Straight nard nectar. 100% Ethically Sourced Guaranteed! Boneless.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Cum
+          Quantity: 100
+  - type: Label
+    currentLabel: bottle'o'cum
+  - type: Sprite
+    sprite: Floof/Objects/Consumable/Drinks/bottleocum.rsi
+  - type: Sealable

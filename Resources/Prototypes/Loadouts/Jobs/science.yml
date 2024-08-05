@@ -21,7 +21,8 @@
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
-      species: Harpy
+      species:
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Scientist
@@ -74,6 +75,20 @@
   items:
     - ClothingOuterCoatLabSeniorResearcher
 
+- type: loadout # Floofstation
+  id: LoadoutScienceOuterExplorerLabcoat
+  category: Jobs
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Scientist
+        - ResearchAssistant
+        - ResearchDirector
+  items:
+    - ClothingOuterExplorerCoat
+
 - type: loadout
   id: LoadoutScienceHatBeret
   category: Jobs
@@ -116,7 +131,7 @@
   items:
     - ClothingEyesEyepatchHudDiag
 
-## Robes
+# Robes
 - type: loadout
   id: LoadoutOuterRobeTechPriest
   category: Outer
