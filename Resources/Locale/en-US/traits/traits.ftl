@@ -75,3 +75,12 @@ trait-name-Foreigner = Foreigner
 trait-description-Foreigner =
     For one reason or another you do not speak this station's primary language.
     Instead, you have a translator issued to you that only you can use.
+
+trait-name-CumProducer = Cock
+trait-description-CumProducer = You have a schlong between your legs.
+
+trait-name-MilkProducer = Boobs
+trait-description-MilkProducer = You have a pair of large mammaries.
+
+trait-name-SquirtProducer = Pussy
+trait-description-SquirtProducer = You have a slit between your legs.
