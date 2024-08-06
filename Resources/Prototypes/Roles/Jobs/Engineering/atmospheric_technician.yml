@@ -3,6 +3,10 @@
   name: job-name-atmostech
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Engineering
+    min: 3600 # Floofstation - 1 hour
   antagAdvantage: 10 # DeltaV - Reduced TC: External Access + Fireaxe + Free Hardsuit
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"

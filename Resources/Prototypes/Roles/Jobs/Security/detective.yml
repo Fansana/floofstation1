@@ -4,8 +4,9 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # DeltaV - 1 hour
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 14400 # Floofstation - 4 hour
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -16,6 +17,8 @@
   - Maintenance
   - Service
   - Detective
+  - External
+  - Cryogenics
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

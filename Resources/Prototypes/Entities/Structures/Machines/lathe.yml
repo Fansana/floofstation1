@@ -170,6 +170,7 @@
        - ShellTranquilizer
        - CartridgeLightRifle
        - CartridgeRifle
+       - CombatKnife
        - MagazineBoxPistol
        - MagazineBoxMagnum
        - MagazineBoxRifle
@@ -707,6 +708,7 @@
     runningState: icon
     staticRecipes:
       - ClothingEyesHudSecurity
+      - CombatKnife
       - Flash
       - Handcuffs
       - Zipties
