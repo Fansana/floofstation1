@@ -6,10 +6,10 @@
   objective: roles-antag-rev-head-objective
   requirements:
   - !type:CharacterOverallTimeRequirement # DeltaV - Playtime requirement
-    min: 172800 # DeltaV - 48 hours
+    min: 54000 # Floofstation - 15 hours
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
-    min: 36000 # DeltaV - 10 hours
+    min: 14400 # Floofstation - 4 hours
 
 - type: antag
   id: Rev
