@@ -340,3 +340,9 @@ Entries:
       message: Fixed the RegenMesh recipe
   id: 50
   time: '2024-08-06T18:50:58.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Edge engineering has been modified to support the supermatter.
+  id: 51
+  time: '2024-08-07T04:15:10.0000000+00:00'
