@@ -352,3 +352,9 @@ Entries:
       message: Barotrauma admin log spam
   id: 52
   time: '2024-08-07T13:38:27.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Admin spawned planets now contain ores.
+  id: 53
+  time: '2024-08-07T20:22:55.0000000+00:00'
