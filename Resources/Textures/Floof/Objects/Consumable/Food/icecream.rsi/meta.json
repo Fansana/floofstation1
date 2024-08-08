@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "dakodrago, Fills created by Fansana",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bowl"
+        },
+        {
+            "name": "fill-1"
+        },
+        {
+            "name": "fill-2"
+        },
+        {
+            "name": "fill-3"
+        },
+        {
+            "name": "fill-4"
+        },
+        {
+            "name": "fill-5"
+        },
+        {
+            "name": "blooddrop"
+        },
+        {
+            "name": "caramel"
+        },
+        {
+            "name": "coffee"
+        },
+        {
+            "name": "greentea"
+        },
+        {
+            "name": "lemon"
+        },
+        {
+            "name": "orange"
+        },
+        {
+            "name": "plate"
+        },
+        {
+            "name": "rainbow"
+        },
+        {
+            "name": "saltedcaramel"
+        },
+        {
+            "name": "spaghetti"
+        },
+        {
+            "name": "strawberry"
+        }
+    ]
+}

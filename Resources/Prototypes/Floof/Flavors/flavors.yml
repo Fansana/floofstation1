@@ -188,3 +188,28 @@
   id: yeolhandy
   flavorType: Complex
   description: flavor-complex-yeolhandy
+
+- type: flavor
+  id: blooddrop
+  flavorType: Complex
+  description: flavor-complex-blooddrop
+
+- type: flavor
+  id: strawberry
+  flavorType: Complex
+  description: flavor-complex-strawberry
+
+- type: flavor
+  id: whitechocolatechip
+  flavorType: Complex
+  description: flavor-complex-whitechocolatechip
+
+- type: flavor
+  id: caramel
+  flavorType: Complex
+  description: flavor-complex-caramel
+
+- type: flavor
+  id: vanilla
+  flavorType: Complex
+  description: flavor-complex-vanilla
