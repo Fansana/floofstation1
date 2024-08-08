@@ -98,7 +98,7 @@
   materials:
     Steel: 100
 
-- type: latheRecipe
+- type: latheRecipe # FloofStation
   id: CustomDrinkJug
   result: CustomDrinkJug
   completetime: 4
