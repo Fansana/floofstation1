@@ -370,3 +370,9 @@ Entries:
       message: Skeletons are no longer inherently evil
   id: 55
   time: '2024-08-08T18:47:45.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Tweak
+      message: added beverage jugs to autolathe
+  id: 56
+  time: '2024-08-08T18:48:38.0000000+00:00'
