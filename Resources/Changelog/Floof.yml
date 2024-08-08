@@ -364,3 +364,9 @@ Entries:
       message: Glasses are now available for nearsighted crew.
   id: 54
   time: '2024-08-08T18:46:54.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Skeletons are no longer inherently evil
+  id: 55
+  time: '2024-08-08T18:47:45.0000000+00:00'
