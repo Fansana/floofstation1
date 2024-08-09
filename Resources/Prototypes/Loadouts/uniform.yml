@@ -1517,7 +1517,7 @@
        departments:
          - Command
 
-- type: loadout
+- type: loadout #FloofStation
   id: LoadoutUniformJumpskirtTacticalMaid
   category: Uniform
   cost: 3
@@ -1531,7 +1531,7 @@
          - Security
          - Command
 
-- type: loadout
+- type: loadout #FloofStation
   id: LoadoutUniformJumpskirtJanimaid
   category: Uniform
   cost: 3
@@ -1545,7 +1545,7 @@
          - Security
          - Command
 
-- type: loadout
+- type: loadout #FloofStation
   id: LoadoutUniformJumpskirtJanimaidmini
   category: Uniform
   cost: 3
