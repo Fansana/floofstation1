@@ -503,6 +503,20 @@
   items:
     - ClothingHeadHatBowlerHat
 
+- type: loadout #FloofStation
+  id: LoadoutTacticalMaidHeadband
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatTacticalMaidHeadband
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
 # Flatcaps
 - type: loadout
   id: LoadoutHeadGreyFlatcap
