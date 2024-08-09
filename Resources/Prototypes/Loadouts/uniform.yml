@@ -1516,3 +1516,45 @@
        inverted: true
        departments:
          - Command
+
+- type: loadout
+  id: LoadoutUniformJumpskirtTacticalMaid
+  category: Uniform
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtTacticalMaid
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout
+  id: LoadoutUniformJumpskirtJanimaid
+  category: Uniform
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJanimaid
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout
+  id: LoadoutUniformJumpskirtJanimaidmini
+  category: Uniform
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJanimaidmini
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
