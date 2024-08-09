@@ -4,6 +4,10 @@
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
   setPreference: false # DeltaV - Disable Senior Roles round start selection
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 14400 # Floofstation 4 hrs
   startingGear: SeniorPhysicianGear
   icon: "JobIconSeniorPhysician"
   supervisors: job-supervisors-cmo

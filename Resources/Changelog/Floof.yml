@@ -322,3 +322,63 @@ Entries:
         meta)
   id: 47
   time: '2024-08-05T22:07:16.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Fix
+      message: harpies can now wear loincloth :3
+  id: 48
+  time: '2024-08-06T16:59:41.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Upstream Merge
+  id: 49
+  time: '2024-08-06T18:25:19.0000000+00:00'
+- author: SleepyScarecrow
+  changes:
+    - type: Fix
+      message: Fixed the RegenMesh recipe
+  id: 50
+  time: '2024-08-06T18:50:58.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Edge engineering has been modified to support the supermatter.
+  id: 51
+  time: '2024-08-07T04:15:10.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Barotrauma admin log spam
+  id: 52
+  time: '2024-08-07T13:38:27.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Admin spawned planets now contain ores.
+  id: 53
+  time: '2024-08-07T20:22:55.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Glasses are now available for nearsighted crew.
+  id: 54
+  time: '2024-08-08T18:46:54.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Skeletons are no longer inherently evil
+  id: 55
+  time: '2024-08-08T18:47:45.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Tweak
+      message: added beverage jugs to autolathe
+  id: 56
+  time: '2024-08-08T18:48:38.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added different ice cream types
+  id: 57
+  time: '2024-08-08T20:10:52.0000000+00:00'

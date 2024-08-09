@@ -3,6 +3,9 @@
   name: job-name-technical-assistant
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
+  requirements:
+  - !type:CharacterOverallTimeRequirement
+    min: 3600 # 1hr floof
   antagAdvantage: 3 # DeltaV - Reduced TC: External Access + Engineering
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"

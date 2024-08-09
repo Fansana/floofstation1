@@ -299,13 +299,6 @@
     solution: bloodstream
   - type: DrainableSolution
     solution: bloodstream
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 1
-    psychicFeedback:
-    - "reagent-slime-feedback"
-  - type: CanWalk
 
 - type: entity
   name: Reagent Slime Spawner

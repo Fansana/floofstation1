@@ -9,7 +9,6 @@
   icon: "JobIconGladiator"
   supervisors: job-supervisors-security
   setPreference: true
-#  whitelistRequired: true
   special:
   - !type:AddComponentSpecial
     components:
