@@ -122,7 +122,7 @@
   items:
     - ClothingHandsGlovesFingerless
 
-- type: loadout
+- type: loadout #FloofStation
   id: LoadoutHandsGlovesTacticalMaid
   category: Hands
   cost: 2
