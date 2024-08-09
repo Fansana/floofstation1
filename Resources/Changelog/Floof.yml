@@ -382,3 +382,13 @@ Entries:
       message: Added different ice cream types
   id: 57
   time: '2024-08-08T20:10:52.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        Maid outfits, including the tactical variety, are now available for
+        everyone but Security and Command!
+    - type: Tweak
+      message: Tactical maid gloves are no longer insulated.
+  id: 58
+  time: '2024-08-09T06:23:31.0000000+00:00'
