@@ -4,6 +4,10 @@
   description: job-description-senior-engineer
   playTimeTracker: JobSeniorEngineer
   setPreference: false # DeltaV - Disable Senior Roles round start selection
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 14400 # Floofstation 4 hrs
   startingGear: SeniorEngineerGear
   icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce
