@@ -409,3 +409,12 @@ Entries:
         survival box
   id: 60
   time: '2024-08-09T14:17:57.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Fix
+      message: >-
+        Replaced the Head of Personell's Coat with the Head of Personnel's coat.
+        We're not sure who the Head of Personell is, but godspeed you coatless
+        soul.
+  id: 61
+  time: '2024-08-10T07:11:46.0000000+00:00'
