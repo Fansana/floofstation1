@@ -1,6 +1,5 @@
 using System.Numerics;
 using Content.Server.GameTicking;
-using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Spawners.Components;
 using Content.Shared.EntityTable;
 using Content.Shared.GameTicking.Components;
@@ -128,6 +127,24 @@ namespace Content.Server.Spawners.EntitySystems
             catch (EntityCreationException e)
             {
                 Log.Warning($"Caught an exception while trying to process a conditional spawner {ToPrettyString(uid)} of type {picked}: {e}");
+            }
+        }
+
+        private void Spawn(Entity<EntityTableSpawnerComponent> ent)
+        {
+            if (TerminatingOrDeleted(ent) || !Exists(ent))
+                return;
+
+            var coords = Transform(ent).Coordinates;
+
+            var spawns = _entityTable.GetSpawns(ent.Comp.Table);
+            foreach (var proto in spawns)
+            {
+                var xOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
+                var yOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
+                var trueCoords = coords.Offset(new Vector2(xOffset, yOffset));
+
+                Spawn(proto, trueCoords);
             }
         }
 

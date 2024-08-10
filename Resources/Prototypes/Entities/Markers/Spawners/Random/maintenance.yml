@@ -23,6 +23,9 @@
         - !type:EntSelector
           id: ClothingEyesGlassesGarGiga
       - !type:EntSelector
+        id: Wristwatch
+        weight: 0.5
+      - !type:EntSelector
         id: ClothingHeadHatCake
       - !type:EntSelector
         id: ClothingHeadHatSkub
@@ -274,6 +277,8 @@
         id: CigarGold
       - !type:EntSelector
         id: ClothingUniformJumpsuitFamilyGuy
+      - !type:EntSelector
+        id: WristwatchGold
 
 - type: entity
   name: Maint Loot Spawner
