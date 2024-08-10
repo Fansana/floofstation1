@@ -418,3 +418,15 @@ Entries:
         soul.
   id: 61
   time: '2024-08-10T07:11:46.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        Completely cosmetic goggles are now being sold for the low cost of 2
+        loadout points.
+    - type: Add
+      message: >-
+        We've realized we'd make more money selling the animal masks to crew
+        instead of leaving them in maints.
+  id: 62
+  time: '2024-08-10T07:12:42.0000000+00:00'
