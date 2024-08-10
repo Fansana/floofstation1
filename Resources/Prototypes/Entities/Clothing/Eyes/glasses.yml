@@ -234,3 +234,14 @@
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesThermalBudget
+  name: knockoff optical thermal scanner
+  description: These don't have any real function, but they do look cool!
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/thermal.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/thermal.rsi
