@@ -47,3 +47,31 @@
        departments:
          - Security
          - Command
+
+- type: loadout #FloofStation
+  id: LoadoutUniformJumpskirtJumpskirtTacticool
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJumpskirtTacticool
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout #FloofStation
+  id: LoadoutUniformJumpskirtJumpsuitTacticool
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJumpsuitTacticool
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
