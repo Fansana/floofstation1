@@ -455,3 +455,13 @@
       amount: 1
   products:
     YeOlHandy: 5
+    
+- type: reaction
+  id: Cream
+  reactants:
+    Sugar:
+      amount: 5
+    Milk:
+      amount: 10
+  products:
+    Cream: 15
