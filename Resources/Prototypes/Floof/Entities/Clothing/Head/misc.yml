@@ -9,7 +9,7 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/catears.rsi
     
-    - type: entity
+- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatDogEarsCosmetic
   name: cosmetic doggy ears
