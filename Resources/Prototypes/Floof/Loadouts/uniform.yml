@@ -49,12 +49,12 @@
          - Command
 
 - type: loadout #FloofStation
-  id: LoadoutUniformJumpskirtJumpskirtTacticool
+  id: LoadoutUniformJumpskirtTacticool
   category: Uniform
   cost: 2
   exclusive: true
   items:
-    - ClothingUniformJumpskirtJumpskirtTacticool
+    - ClothingUniformJumpskirtTacticool
   requirements:
     - !type:CharacterDepartmentRequirement
        inverted: true
@@ -63,12 +63,12 @@
          - Command
 
 - type: loadout #FloofStation
-  id: LoadoutUniformJumpskirtJumpsuitTacticool
+  id: LoadoutUniformJumpsuitTacticool
   category: Uniform
   cost: 2
   exclusive: true
   items:
-    - ClothingUniformJumpskirtJumpsuitTacticool
+    - ClothingUniformJumpsuitTacticool
   requirements:
     - !type:CharacterDepartmentRequirement
        inverted: true
