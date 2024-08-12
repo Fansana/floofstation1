@@ -1,0 +1,13 @@
+- type: loadout
+  id: LoadoutOuterPlagueSuit
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterPlagueSuit
+
+- type: loadout
+  id: LoadoutOuterRedRacoon
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterRedRacoon

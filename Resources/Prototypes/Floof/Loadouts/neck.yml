@@ -1,0 +1,7 @@
+- type: loadout
+  id: LoadoutNeckCloakMoth
+  category: Neck
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingNeckCloakMoth

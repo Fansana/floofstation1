@@ -6,7 +6,7 @@
   items:
     - ClothingUniformLoinCloth
 
-- type: loadout #FloofStation
+- type: loadout 
   id: LoadoutUniformJumpskirtTacticalMaid
   category: Uniform
   cost: 3
@@ -20,7 +20,7 @@
          - Security
          - Command
 
-- type: loadout #FloofStation
+- type: loadout 
   id: LoadoutUniformJumpskirtJanimaid
   category: Uniform
   cost: 3
@@ -34,13 +34,41 @@
          - Security
          - Command
 
-- type: loadout #FloofStation
+- type: loadout 
   id: LoadoutUniformJumpskirtJanimaidmini
   category: Uniform
   cost: 3
   exclusive: true
   items:
     - ClothingUniformJumpskirtJanimaidmini
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout 
+  id: LoadoutUniformJumpskirtTacticool
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtTacticool
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout 
+  id: LoadoutUniformJumpsuitTacticool
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformJumpsuitTacticool
   requirements:
     - !type:CharacterDepartmentRequirement
        inverted: true
