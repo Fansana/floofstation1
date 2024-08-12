@@ -9,7 +9,7 @@
   components:
     - type: Construction
       graph: WebStructures
-      node: spiderweb
+      node: SpiderWeb
     - type: MeleeSound
       soundGroups:
         Brute:
