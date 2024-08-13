@@ -6,8 +6,5 @@ namespace Content.Shared.Psionics.Abilities
         public bool Passthrough = false;
 
         public List<String> SuppressedFactions = new();
-
-        [DataField]
-        public bool MindBroken = false;
     }
 }

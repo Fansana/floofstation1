@@ -11,7 +11,6 @@
     psychicFeedback:
     - "prober-feedback"
   - type: GlimmerSource
-    researchPointGeneration: 20
   - type: Construction
     graph: GlimmerDevices
     node: glimmerProber

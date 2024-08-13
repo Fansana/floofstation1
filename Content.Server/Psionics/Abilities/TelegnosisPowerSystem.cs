@@ -27,16 +27,17 @@ namespace Content.Server.Psionics.Abilities
 
         private void OnInit(EntityUid uid, TelegnosisPowerComponent component, ComponentInit args)
         {
-            EnsureComp<PsionicComponent>(uid, out var psionic);
             _actions.AddAction(uid, ref component.TelegnosisActionEntity, component.TelegnosisActionId );
             _actions.TryGetActionData( component.TelegnosisActionEntity, out var actionData );
             if (actionData is { UseDelay: not null })
-                _actions.SetCooldown(component.TelegnosisActionEntity, actionData.UseDelay.Value - TimeSpan.FromSeconds(psionic.Dampening + psionic.Amplification));
-
-            psionic.ActivePowers.Add(component);
-            psionic.PsychicFeedback.Add(component.TelegnosisFeedback);
-            psionic.Amplification += 0.3f;
-            psionic.Dampening += 0.3f;
+                _actions.StartUseDelay(component.TelegnosisActionEntity);
+            if (TryComp<PsionicComponent>(uid, out var psionic))
+            {
+                psionic.ActivePowers.Add(component);
+                psionic.PsychicFeedback.Add(component.TelegnosisFeedback);
+                psionic.Amplification += 0.3f;
+                psionic.Dampening += 0.3f;
+            }
         }
 
         private void OnShutdown(EntityUid uid, TelegnosisPowerComponent component, ComponentShutdown args)
@@ -65,10 +66,6 @@ namespace Content.Server.Psionics.Abilities
             component.IsProjecting = true;
             component.ProjectionUid = projection;
             _mindSwap.Swap(uid, projection);
-
-            _actions.TryGetActionData( component.TelegnosisActionEntity, out var actionData );
-            if (actionData is { UseDelay: not null })
-                _actions.SetCooldown(component.TelegnosisActionEntity, actionData.UseDelay.Value - TimeSpan.FromSeconds(psionic.Dampening + psionic.Amplification));
 
             if (EnsureComp<TelegnosticProjectionComponent>(projection, out var projectionComponent))
                 projectionComponent.OriginalEntity = uid;
