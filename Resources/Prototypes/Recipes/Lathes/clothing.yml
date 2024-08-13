@@ -1282,3 +1282,12 @@
   completetime: 1
   materials:
     Cloth: 100
+
+# Floofstation - Collars
+- type: latheRecipe
+  id: ClothingNeckCollarCmd
+  result: ClothingNeckCollarCmd
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
