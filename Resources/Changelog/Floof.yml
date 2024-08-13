@@ -456,3 +456,27 @@ Entries:
       message: Lover's Kiss Recipe
   id: 66
   time: '2024-08-12T12:27:16.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Black Collar to Clothesmate and Loadout
+    - type: Add
+      message: Blue Collar Clothesmate and Loadout
+    - type: Add
+      message: CentCom Collar to CentDrobe
+    - type: Add
+      message: Captain's Collar to the Uniform Printer and Captain's Loadout
+    - type: Add
+      message: Engineer Collar to EngiDrobe and Engineer's Loadout
+    - type: Add
+      message: Epistemics Collar to SciDrobe and Epistemic's Loadout
+    - type: Add
+      message: Logistics Collar to CargoDrobe and Logistic's Loadout
+    - type: Add
+      message: Medical Collar to MediDrobe and Medical's Loadout
+    - type: Add
+      message: Security Collar to SecDrobe and Security's Loadout
+    - type: Add
+      message: Blood-Red Collar to SyndieDrobe and Loadout
+  id: 67
+  time: '2024-08-13T20:40:40.0000000+00:00'
