@@ -4,8 +4,9 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # DeltaV - 1 hour
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # Floofstation - 1 hour
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos

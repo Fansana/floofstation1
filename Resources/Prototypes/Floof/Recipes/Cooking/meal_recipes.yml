@@ -1,0 +1,112 @@
+- type: microwaveMealRecipe
+  id: RecipeIceCreamBloodDrop
+  name: blood drop ice cream recipe
+  result: IceCreamBloodDrop
+  time: 5
+  reagents:
+    IceCream: 15
+    JuicePomegranate: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamCaramel
+  name: caramel ice cream recipe
+  result: IceCreamCaramel
+  time: 5
+  reagents:
+    IceCream: 15
+    Sugar: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamCoffee
+  name: coffee ice cream recipe
+  result: IceCreamCoffee
+  time: 5
+  reagents:
+    IceCream: 15
+    Coffee: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamGreenTea
+  name: green tea ice cream recipe
+  result: IceCreamGreenTea
+  time: 5
+  reagents:
+    IceCream: 15
+    GreenTea: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamLemon
+  name: lemon tea ice cream recipe
+  result: IceCreamLemon
+  reagents:
+    IceCream: 15
+    JuiceLemon: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamOrange
+  name: orange ice cream recipe
+  result: IceCreamOrange
+  time: 5
+  reagents:
+    IceCream: 15
+    JuiceOrange: 15
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamRainbow
+  name: rainbow ice cream recipe
+  result: IceCreamRainbow
+  time: 5
+  reagents:
+    IceCream: 15
+    JuiceGrape: 5
+    JuiceLemon: 5
+    JuiceOrange: 5
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamSaltedCaramel
+  name: salted caramel ice cream recipe
+  result: IceCreamSaltedCaramel
+  time: 5
+  reagents:
+    IceCream: 15
+    Sugar: 10
+    TableSalt: 5
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamSpaghetti
+  name: spaghetti ice cream recipe
+  result: IceCreamSpaghetti
+  time: 5
+  reagents:
+    IceCream: 15
+    Sugar: 10
+    Ketchup: 5
+  solids:
+    IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeIceCreamStrawberry
+  name: strawberry ice cream recipe
+  result: IceCreamStrawberry
+  time: 5
+  reagents:
+    IceCream: 15
+    Ketchup: 15
+  solids:
+    IceCreamBowl: 1

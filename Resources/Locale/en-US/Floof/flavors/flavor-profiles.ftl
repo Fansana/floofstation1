@@ -35,3 +35,7 @@ flavor-complex-voltage = like drinking an alcoholic battery
 flavor-complex-watermelonginjizz = bubbly and fruity
 flavor-complex-whiskeysour = sour and like molasses
 flavor-complex-yeolhandy = like oranges and solitude
+flavor-complex-blooddrop = crimson lust
+flavor-complex-strawberry = strawberry
+flavor-complex-whitechocolatechip = like white chocolate chips
+flavor-complex-caramel = caramel

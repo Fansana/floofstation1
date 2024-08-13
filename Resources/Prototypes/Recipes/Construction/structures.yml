@@ -1671,3 +1671,17 @@
     state: closed
   conditions:
     - !type:TileNotBlocked
+
+- type: construction
+  name: bonfire
+  id: Bonfire
+  graph: Bonfire
+  startNode: start
+  targetNode: BonfireLit
+  category: construction-category-structures
+  description: What can be better than late evening under the sky with guitar and friends
+  icon: { sprite: Structures/Decoration/bonfire.rsi, state: bonfire }
+  objectType: Structure
+  placementMode: SnapgridCenter
+  conditions:
+  - !type:TileNotBlocked

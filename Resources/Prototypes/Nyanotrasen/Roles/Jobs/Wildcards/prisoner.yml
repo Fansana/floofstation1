@@ -6,9 +6,9 @@
   startingGear: PrisonerGear
   alwaysUseSpawner: true
   canBeAntag: false
-#  whitelistRequired: true
   icon: "JobIconPrisoner"
   supervisors: job-supervisors-security
+
 - type: startingGear
   id: PrisonerGear
   equipment:

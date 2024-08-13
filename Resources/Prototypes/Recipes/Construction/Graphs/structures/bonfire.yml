@@ -1,0 +1,26 @@
+- type: constructionGraph
+  id: Bonfire
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: Bonfire
+      completed:
+      - !type:SnapToGrid
+        southRotation: true
+      steps:
+      - material: WoodPlank
+        amount: 15
+        doAfter: 4
+
+  - node: Bonfire
+    entity: Bonfire
+    edges:
+    - to: BonfireLit
+      steps:
+      - tool: Welding
+        doAfter: 5
+
+  - node: BonfireLit
+    entity: BonfireLit
+

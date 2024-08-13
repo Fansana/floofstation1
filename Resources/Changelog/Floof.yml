@@ -322,3 +322,137 @@ Entries:
         meta)
   id: 47
   time: '2024-08-05T22:07:16.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Fix
+      message: harpies can now wear loincloth :3
+  id: 48
+  time: '2024-08-06T16:59:41.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Upstream Merge
+  id: 49
+  time: '2024-08-06T18:25:19.0000000+00:00'
+- author: SleepyScarecrow
+  changes:
+    - type: Fix
+      message: Fixed the RegenMesh recipe
+  id: 50
+  time: '2024-08-06T18:50:58.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Edge engineering has been modified to support the supermatter.
+  id: 51
+  time: '2024-08-07T04:15:10.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Barotrauma admin log spam
+  id: 52
+  time: '2024-08-07T13:38:27.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Admin spawned planets now contain ores.
+  id: 53
+  time: '2024-08-07T20:22:55.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Glasses are now available for nearsighted crew.
+  id: 54
+  time: '2024-08-08T18:46:54.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Skeletons are no longer inherently evil
+  id: 55
+  time: '2024-08-08T18:47:45.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Tweak
+      message: added beverage jugs to autolathe
+  id: 56
+  time: '2024-08-08T18:48:38.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added different ice cream types
+  id: 57
+  time: '2024-08-08T20:10:52.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        Maid outfits, including the tactical variety, are now available for
+        everyone but Security and Command!
+    - type: Tweak
+      message: Tactical maid gloves are no longer insulated.
+  id: 58
+  time: '2024-08-09T06:23:31.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Tweak
+      message: >-
+        made many loud/high pitched sounds quieter to hopefully reduce ear
+        strain (is that a word..?). please let me know if they're still too
+        loud!!! :3
+  id: 59
+  time: '2024-08-09T13:56:52.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: >-
+        Space OSHA has required us to offer Epistemics the option to take a
+        survival box
+  id: 60
+  time: '2024-08-09T14:17:57.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Fix
+      message: >-
+        Replaced the Head of Personell's Coat with the Head of Personnel's coat.
+        We're not sure who the Head of Personell is, but godspeed you coatless
+        soul.
+  id: 61
+  time: '2024-08-10T07:11:46.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        Completely cosmetic goggles are now being sold for the low cost of 2
+        loadout points.
+    - type: Add
+      message: >-
+        We've realized we'd make more money selling the animal masks to crew
+        instead of leaving them in maints.
+  id: 62
+  time: '2024-08-10T07:12:42.0000000+00:00'
+- author: FennEmeraldwing
+  changes:
+    - type: Fix
+      message: Rouny
+  id: 63
+  time: '2024-08-10T21:24:51.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Many cosmetics have shown up in the NanoTrasen Loadout Store!
+  id: 64
+  time: '2024-08-12T12:24:44.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: >-
+        Our chaplain prayed to the Deity of Lust, and now aphrodisiacs last much
+        much longer
+  id: 65
+  time: '2024-08-12T12:25:53.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Fix
+      message: Lover's Kiss Recipe
+  id: 66
+  time: '2024-08-12T12:27:16.0000000+00:00'

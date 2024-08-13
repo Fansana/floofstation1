@@ -4,8 +4,8 @@
   description: job-description-cadet
   playTimeTracker: JobSecurityCadet
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 3600 # DeltaV - 1 hour
+    - !type:CharacterOverallTimeRequirement
+      min: 3600 # Floofstation - 1 hour
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security
