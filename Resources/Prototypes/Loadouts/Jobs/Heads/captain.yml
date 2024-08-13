@@ -151,15 +151,3 @@
         - Captain
   items:
     - DrinkFlask
-
-# Floofstation - Collar Addition
-- type: loadout 
-  id: LoadoutCommandCapCollar
-  category: Jobs
-  cost: 1
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - Captain
-  items:
-    - ClothingNeckCollarCmd

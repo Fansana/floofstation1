@@ -176,17 +176,3 @@
         - AtmosphericTechnician
   items:
     - ClothingHeadHatHardhatRed
-
-# Floofstation - Collar Addition
-- type: loadout
-  id: LoadoutEngineeringNeckCollar
-  category: Jobs
-  cost: 1
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - StationEngineer
-        - AtmosphericTechnician
-        - ChiefEngineer 
-  items:
-    - ClothingNeckCollarEngi
