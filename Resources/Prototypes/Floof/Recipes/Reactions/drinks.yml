@@ -465,3 +465,16 @@
       amount: 10
   products:
     Cream: 15
+
+- type: reaction
+  id: CreamOfCoconut
+  reactants:
+    CoconutWater:
+      amount: 2
+    Cream:
+      amount: 3
+    Sugar:
+      amount: 1
+  products:
+    CreamOfCoconut: 6
+    
