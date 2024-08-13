@@ -102,3 +102,28 @@
   exclusive: true
   items:
     - ClothingNeckTransPin
+
+# Floofstation - Collar Addition
+- type: loadout
+  id: LoadoutItemsNeckBlueCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarBlue
+
+- type: loadout
+  id: LoadoutItemsNeckBlackCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarBlack
+
+- type: loadout
+  id: LoadoutItemsNeckSyndieCollar
+  category: Neck
+  cost: 3
+  exclusive: true
+  items:
+    - ClothingNeckCollarSyndi

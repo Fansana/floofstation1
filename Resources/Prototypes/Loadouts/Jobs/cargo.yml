@@ -12,3 +12,17 @@
       min: 36000 # 10 hours
   items:
     - ClothingNeckCloakGoliathCloak
+
+# Floofstation - Collar Addition
+- type: loadout
+  id: LoadoutCargoNeckCollar
+  category: Jobs
+  cost: 1
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CargoTechnician
+        - SalvageSpecialist
+        - Quartermaster
+  items:
+    - ClothingNeckCollarLogi

@@ -383,3 +383,17 @@
 #         - Oni
 #   items:
 #     - Truncheon
+
+# Floofstation - Collar Addition
+- type: loadout
+  id: LoadoutSecurityNeckCollar
+  category: Jobs
+  cost: 1
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+         - SecurityOfficer
+         - Warden
+         - HeadOfSecurity
+  items:
+    - ClothingNeckCollarSec

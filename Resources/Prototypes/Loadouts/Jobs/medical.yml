@@ -495,3 +495,19 @@
         - Nearsighted
   items:
     - ClothingEyesPrescriptionMedHud
+
+# Floofstation - Collar Addition
+- type: loadout
+  id: LoadoutMedicalNeckCollar
+  category: Jobs
+  cost: 1
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - Paramedic
+        - ChiefMedicalOfficer
+        - MedicalIntern
+        - Brigmedic
+  items:
+    - ClothingNeckCollarMed

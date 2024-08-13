@@ -158,3 +158,17 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+
+# Floofstation - Collar Addition
+- type: loadout
+  id: LoadoutScienceNeckCollar
+  category: Jobs
+  cost: 1
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Scientist
+        - ResearchAssistant
+        - ResearchDirector
+  items:
+    - ClothingNeckCollarEpi
