@@ -15,6 +15,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using System.Threading.Tasks;
+using Content.Shared.Procedural.Loot;
 
 namespace Content.Server.Maps;
 
@@ -63,9 +65,44 @@ public sealed class PlanetCommand : IConsoleCommand
         var mapUid = _mapManager.GetMapEntityId(mapId);
         biomeSystem.EnsurePlanet(mapUid, biomeTemplate);
 
+        foreach (var lootProto in _protoManager.EnumeratePrototypes<SalvageLootPrototype>())
+        {
+            if (!lootProto.Guaranteed)
+                continue;
+
+            SpawnDungeonLoot(biomeSystem ,lootProto, mapUid);
+        }
+
         shell.WriteLine(Loc.GetString("cmd-planet-success", ("mapId", mapId)));
     }
 
+    private void SpawnDungeonLoot(BiomeSystem biomeSystem, SalvageLootPrototype loot, EntityUid gridUid)
+    {
+        for (var i = 0; i < loot.LootRules.Count; i++)
+        {
+            var rule = loot.LootRules[i];
+
+            switch (rule)
+            {
+                case BiomeMarkerLoot biomeLoot:
+                {
+                    if (_entManager.TryGetComponent<BiomeComponent>(gridUid, out var biome))
+                    {
+                        biomeSystem.AddMarkerLayer(gridUid, biome, biomeLoot.Prototype);
+                    }
+                }
+                    break;
+                case BiomeTemplateLoot biomeLoot:
+                {
+                    if (_entManager.TryGetComponent<BiomeComponent>(gridUid, out var biome))
+                    {
+                        biomeSystem.AddTemplate(gridUid, biome, "Loot", _protoManager.Index<BiomeTemplatePrototype>(biomeLoot.Prototype), i);
+                    }
+                }
+                    break;
+            }
+        }
+    }
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
         if (args.Length == 1)

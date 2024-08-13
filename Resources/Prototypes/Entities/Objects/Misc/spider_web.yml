@@ -7,9 +7,6 @@
     snap:
       - Wall
   components:
-    - type: Construction
-      graph: WebStructures
-      node: spiderweb
     - type: MeleeSound
       soundGroups:
         Brute:

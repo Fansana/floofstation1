@@ -6,6 +6,11 @@
   exclusive: true
   items:
     - ClothingHeadHatBeaverHat
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadTophat
@@ -24,12 +29,38 @@
     - ClothingHeadHatFedoraBlack
 
 - type: loadout
+  id: LoadoutHeadFedoraBrown
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatFedoraBrown
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+- type: loadout
+  id: LoadoutHeadFedoraGrey
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatFedoraGrey
+
+- type: loadout
   id: LoadoutHeadFedoraChoc
   category: Head
   cost: 2
   exclusive: true
   items:
     - ClothingHeadHatFedoraChoc
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadFedoraWhite
@@ -54,6 +85,11 @@
   exclusive: true
   items:
     - ClothingHeadHatFlatBrown
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatCowboyBrown
@@ -119,14 +155,6 @@
   items:
     - ClothingHeadHatBellhop
 
-- type: loadout # FloofStation
-  id: LoadoutFoodPoppy
-  category: Head
-  cost: 1
-  exclusive: true
-  items:
-    - FoodPoppy
-
 # Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
@@ -135,6 +163,11 @@
   exclusive: true
   items:
     - ClothingHeadHatBluesoft
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatBluesoftFlipped
@@ -143,6 +176,11 @@
   exclusive: true
   items:
     - ClothingHeadHatBluesoftFlipped
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatCorpsoft
@@ -167,6 +205,11 @@
   exclusive: true
   items:
     - ClothingHeadHatGreensoft
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatGreensoftFlipped
@@ -175,6 +218,11 @@
   exclusive: true
   items:
     - ClothingHeadHatGreensoftFlipped
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatGreysoft
@@ -193,12 +241,33 @@
     - ClothingHeadHatGreysoftFlipped
 
 - type: loadout
+  id: LoadoutHeadHatMimesoft
+  category: Head
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHeadHatMimesoft
+
+- type: loadout
+  id: LoadoutHeadHatMimesoftFlipped
+  category: Head
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHeadHatMimesoftFlipped
+
+- type: loadout
   id: LoadoutHeadHatOrangesoft
   category: Head
   cost: 1
   exclusive: true
   items:
     - ClothingHeadHatOrangesoft
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatOrangesoftFlipped
@@ -207,6 +276,11 @@
   exclusive: true
   items:
     - ClothingHeadHatOrangesoftFlipped
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatPurplesoft
@@ -215,6 +289,11 @@
   exclusive: true
   items:
     - ClothingHeadHatPurplesoft
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatPurplesoftFlipped
@@ -223,6 +302,11 @@
   exclusive: true
   items:
     - ClothingHeadHatPurplesoftFlipped
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatRedsoft
@@ -247,6 +331,11 @@
   exclusive: true
   items:
     - ClothingHeadHatYellowsoft
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadHatYellowsoftFlipped
@@ -255,6 +344,11 @@
   exclusive: true
   items:
     - ClothingHeadHatYellowsoftFlipped
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 # Headbands
 - type: loadout
@@ -272,6 +366,11 @@
   exclusive: true
   items:
     - ClothingHeadBandBlue
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadBandGold
@@ -280,6 +379,11 @@
   exclusive: true
   items:
     - ClothingHeadBandGold
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadBandGreen
@@ -288,6 +392,11 @@
   exclusive: true
   items:
     - ClothingHeadBandGreen
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadBandGrey
@@ -296,6 +405,11 @@
   exclusive: true
   items:
     - ClothingHeadBandGrey
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadBandRed
@@ -320,6 +434,11 @@
   exclusive: true
   items:
     - ClothingHeadBandMerc
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
 
 - type: loadout
   id: LoadoutHeadBandBrown
@@ -328,3 +447,135 @@
   exclusive: true
   items:
     - ClothingHeadBandBrown
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+- type: loadout
+  id: LoadoutHeadFishCap
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadFishCap
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+- type: loadout
+  id: LoadoutHeadRastaHat
+  category: Head
+  cost: 4
+  exclusive: true
+  items:
+    - ClothingHeadRastaHat
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+- type: loadout
+  id: LoadoutHeadFez
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatFez
+
+- type: loadout
+  id: LoadoutHeadBowlerHat
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatBowlerHat
+
+# Flatcaps
+- type: loadout
+  id: LoadoutHeadGreyFlatcap
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatGreyFlatcap
+
+- type: loadout
+  id: LoadoutHeadBrownFlatcap
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatBrownFlatcap
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+# Berets
+- type: loadout
+  id: LoadoutHeadBeret
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatBeret
+
+- type: loadout
+  id: LoadoutHeadBeretFrench
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatBeretFrench
+
+# Cowboy hats
+- type: loadout
+  id: LoadoutHeadCowboyBrown
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyBrown
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+
+- type: loadout
+  id: LoadoutHeadCowboyBlack
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyBlack
+
+- type: loadout
+  id: LoadoutHeadCowboyWhite
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyWhite
+
+- type: loadout
+  id: LoadoutHeadCowboyGrey
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyGrey
+
+- type: loadout
+  id: LoadoutHeadCowboyRed
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCowboyRed

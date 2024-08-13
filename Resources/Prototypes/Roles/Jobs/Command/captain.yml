@@ -4,24 +4,24 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
+    - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
-      time: 3600 # 1 hour
-    - !type:DepartmentTimeRequirement
+      min: 14400 # Floofstation - 4 hour
+    - !type:CharacterDepartmentTimeRequirement
       department: Engineering
-      time: 3600 # 1 hour
-    - !type:DepartmentTimeRequirement
+      min: 14400 # Floofstation - 4 hour
+    - !type:CharacterDepartmentTimeRequirement
       department: Medical
-      time: 3600 # 1 hours
-    - !type:DepartmentTimeRequirement
+      min: 14400 # Floofstation - 4 hour
+    - !type:CharacterDepartmentTimeRequirement
       department: Security
-      time: 3600 # 1 hours
-    - !type:DepartmentTimeRequirement # DeltaV - Epistemics dept time requirement
+      min: 14400 # Floofstation - 4 hour
+    - !type:CharacterDepartmentTimeRequirement # DeltaV - Epistemics dept time requirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      time: 3600 # 1 hours
-    - !type:DepartmentTimeRequirement
+      min: 14400 # Floofstation - 4 hour
+    - !type:CharacterDepartmentTimeRequirement
       department: Command
-      time: 3600 # 1 hours
+      min: 14400 # Floofstation - 4 hour
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

@@ -1,9 +1,12 @@
 - type: entity
-  id: Bonfire
+  id: BonfireLit
   parent: BaseStructure
-  name: bonfire
+  name: Bonfire
   description: What can be better then late evening under the sky with guitar and friends.
   components:
+  - type: Construction
+    graph: Bonfire
+    node: BonfireLit
   - type: Sprite
     noRot: true
     sprite: Structures/Decoration/bonfire.rsi
@@ -31,6 +34,32 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
+
+- type: entity
+  id: Bonfire
+  parent: BaseStructure
+  name: Bonfire
+  description: What can be better then late evening under the sky with guitar and friends.
+  components:
+  - type: Construction
+    graph: Bonfire
+    node: Bonfire
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Decoration/bonfire.rsi
+    layers:
+    - state: bonfire
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
 
 - type: entity
   id: LegionnaireBonfire
