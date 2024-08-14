@@ -480,3 +480,9 @@ Entries:
       message: Blood-Red Collar to SyndieDrobe and Loadout
   id: 67
   time: '2024-08-13T20:40:40.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Add
+      message: F9 now opens the RoundEnd Screen! May have to press twice.
+  id: 68
+  time: '2024-08-14T23:48:02.0000000+00:00'
