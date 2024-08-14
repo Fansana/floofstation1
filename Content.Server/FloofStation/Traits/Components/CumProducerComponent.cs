@@ -13,7 +13,7 @@ namespace Content.Server.FloofStation.Traits;
 public sealed partial class CumProducerComponent : Component
 {
     [DataField("solutionname"), ViewVariables(VVAccess.ReadWrite)]
-    public string SolutionName;
+    public string SolutionName = "penis";
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ProtoId<ReagentPrototype> ReagentId = "Cum";
@@ -24,15 +24,15 @@ public sealed partial class CumProducerComponent : Component
     [DataField]
     public Entity<SolutionComponent>? Solution = null;
 
-    [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 QuantityPerUpdate = 25;
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public FixedPoint2 QuantityPerUpdate = 5;
 
-    [DataField]
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float HungerUsage = 10f;
 
-    [DataField]
-    public TimeSpan GrowthDelay = TimeSpan.FromMinutes(1);
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public TimeSpan GrowthDelay = TimeSpan.FromSeconds(10);
 
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan NextGrowth = TimeSpan.FromSeconds(0);
 }
