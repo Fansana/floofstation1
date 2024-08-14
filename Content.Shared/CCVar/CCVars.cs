@@ -380,7 +380,7 @@ namespace Content.Shared.CCVar
         ///     How many points to give to each player for loadouts.
         /// </summary>
         public static readonly CVarDef<int> GameLoadoutsPoints =
-            CVarDef.Create("game.loadouts_points", 20, CVar.REPLICATED);
+            CVarDef.Create("game.loadouts_points", 14, CVar.REPLICATED);
 
 
         /// <summary>
