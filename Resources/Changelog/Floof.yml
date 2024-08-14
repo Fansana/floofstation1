@@ -486,3 +486,13 @@ Entries:
       message: F9 now opens the RoundEnd Screen! May have to press twice.
   id: 68
   time: '2024-08-14T23:48:02.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        The lab coat is now available for everyone, because you can be a
+        scientist without working in Epistemics.
+    - type: Tweak
+      message: Loadout points have been increased from 14 to 20.
+  id: 69
+  time: '2024-08-14T23:53:38.0000000+00:00'
