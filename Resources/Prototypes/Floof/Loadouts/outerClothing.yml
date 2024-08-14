@@ -12,8 +12,8 @@
   items:
     - ClothingOuterRedRacoon
 
-- type: loadoutOuterCoatLab # Science is for everyone, not just science
-  id: LoadoutOuter
+- type: loadout # Science is for everyone, not just science
+  id: LoadoutOuterCoatLab
   category: Outer
   cost: 2
   items:
