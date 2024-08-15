@@ -57,3 +57,78 @@
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-red
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsStripeWhiteWarmers
+  name: striped white arm-warmers
+  description: A pair of rather nice arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerwhite.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerwhite.rsi
+  - type: Fiber
+    fiberMaterial: fibers-cotton
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsStripePurpleWarmers
+  name: striped purple arm-warmers
+  description: A pair of rather nice arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerpurple.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerpurple.rsi
+  - type: Fiber
+    fiberMaterial: fibers-cotton
+    fiberColor: fibers-purple
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsStripeRainbowWarmers
+  name: striped rainbow arm-warmers
+  description: A pair of rather nice arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerrainbow.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/stripewarmerrainbow.rsi
+  - type: Fiber
+    fiberMaterial: fibers-cotton
+    fiberColor: fibers-colorful
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsSexCompGlovesRed
+  name: red sex competition gloves
+  description: It looks like it should be part of a competition.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/sexcompredgloves.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/sexcompredgloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-red
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsSexCompGlovesBlue
+  name: blue sex competition gloves
+  description: It looks like it should be part of a competition.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/sexcompbluegloves.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/sexcompbluegloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-blue
+  - type: FingerprintMask

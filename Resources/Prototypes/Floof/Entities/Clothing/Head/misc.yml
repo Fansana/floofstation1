@@ -19,3 +19,14 @@
     sprite: Clothing/Head/Hats/dogears.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/dogears.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadSexCompCirclet
+  name: sex competition circlet
+  description: It looks like it should be part of a competition.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Head/sexcompcirclet.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Head/sexcompcirclet.rsi

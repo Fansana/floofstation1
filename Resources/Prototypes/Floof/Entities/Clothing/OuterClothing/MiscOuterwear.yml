@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterSexCompBeltBronze
+  name: bronze sex competition belt
+  description: Looks like you came third in a competion.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltbronze.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltbronze.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterSexCompBeltSilver
+  name: silver sex competition belt
+  description: Looks like you came second in a competion.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltsilver.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltsilver.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterSexCompBeltGold
+  name: gold sex competition belt
+  description: Looks like you came in first in a competion.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltgold.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltgold.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterBeltedOutfit
+  name: belted outerwear
+  description: What? Do you think youre an anime protagonist or something?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OtherClothing/Misc/beltedouterwear.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OtherClothing/Misc/beltedouterwear.rsi

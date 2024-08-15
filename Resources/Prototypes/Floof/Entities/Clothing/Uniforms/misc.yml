@@ -78,3 +78,58 @@
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformStripedThongWhite
+  name: striped white thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/stripethongwhite.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/stripethongwhite.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformStripedThongPurple
+  name: striped purple thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/stripethongpurple.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/stripethongpurple.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformStripedThongRainbow
+  name: striped rainbow thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/stripethongrainbow.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/stripethongrainbow.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSexCompRed
+  name: red sex competition outfit
+  description: It looks like it should be part of a competition, but wheres the rest?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/sexcompred.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/sexcompred.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSexCompBlue
+  name: blue sex competition outfit
+  description: It looks like it should be part of a competition, but wheres the rest?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
