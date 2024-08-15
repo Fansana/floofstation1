@@ -35,7 +35,7 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/loinclothwhite.rsi
 
- - type: entity
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformThongPlain
   name: plain thong

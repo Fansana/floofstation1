@@ -9,7 +9,7 @@
   - type: Clothing
     sprite: Floof/Clothing/Under/Socks/codervalid.rsi
 
- - type: entity
+- type: entity
   parent: ClothingShoesBase
   id: ClothingUnderSocksPlain
   name: plain thigh-high socks
