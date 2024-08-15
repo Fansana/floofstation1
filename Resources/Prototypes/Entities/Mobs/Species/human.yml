@@ -17,11 +17,7 @@
     - id: FoodMeatHuman
       amount: 5
   - type: PotentialPsionic #Nyano - Summary: makes potentially psionic.
-<<<<<<< HEAD
   - type: LanguageKnowledge
-=======
-  - type: LanguageSpeaker
->>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
     speaks:
     - GalacticCommon
     - SolCommon

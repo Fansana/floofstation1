@@ -15,7 +15,10 @@
         state: oracle-0
   - type: Speech
     speechSounds: Tenor
+  - type: PotentialPsionic
   - type: Psionic
+    psychicFeedback:
+    - "oracle-feedback"
   - type: SolutionContainerManager
     solutions:
       fountain:
@@ -41,7 +44,6 @@
   - type: SpriteFade
   - type: Tag
     tags: []
-<<<<<<< HEAD:Resources/Prototypes/Entities/Structures/Specific/oracle.yml
   - type: Oracle
     demandTypes: OracleDemandTypes
     rewardReagents: OracleRewardReagents
@@ -85,5 +87,3 @@
   weights:
     tech: 3
     plant: 1 # Plants are very annoying to procure most of the time
-=======
->>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics):Resources/Prototypes/Nyanotrasen/Entities/Structures/Research/oracle.yml

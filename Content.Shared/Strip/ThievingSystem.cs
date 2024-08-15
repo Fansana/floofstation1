@@ -1,8 +1,5 @@
 using Content.Shared.Inventory;
-<<<<<<< HEAD
 using Content.Shared.Popups;
-=======
->>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
 using Content.Shared.Strip.Components;
 using Robust.Shared.Serialization;
 
