@@ -456,3 +456,49 @@ Entries:
       message: Lover's Kiss Recipe
   id: 66
   time: '2024-08-12T12:27:16.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Black Collar to Clothesmate and Loadout
+    - type: Add
+      message: Blue Collar Clothesmate and Loadout
+    - type: Add
+      message: CentCom Collar to CentDrobe
+    - type: Add
+      message: Captain's Collar to the Uniform Printer and Captain's Loadout
+    - type: Add
+      message: Engineer Collar to EngiDrobe and Engineer's Loadout
+    - type: Add
+      message: Epistemics Collar to SciDrobe and Epistemic's Loadout
+    - type: Add
+      message: Logistics Collar to CargoDrobe and Logistic's Loadout
+    - type: Add
+      message: Medical Collar to MediDrobe and Medical's Loadout
+    - type: Add
+      message: Security Collar to SecDrobe and Security's Loadout
+    - type: Add
+      message: Blood-Red Collar to SyndieDrobe and Loadout
+  id: 67
+  time: '2024-08-13T20:40:40.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Add
+      message: F9 now opens the RoundEnd Screen! May have to press twice.
+  id: 68
+  time: '2024-08-14T23:48:02.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: >-
+        The lab coat is now available for everyone, because you can be a
+        scientist without working in Epistemics.
+    - type: Tweak
+      message: Loadout points have been increased from 14 to 20.
+  id: 69
+  time: '2024-08-14T23:53:38.0000000+00:00'
+- author: neuPanda
+  changes:
+    - type: Add
+      message: Added way to make Double Cream Blaster with all natural creams
+  id: 70
+  time: '2024-08-15T00:10:40.0000000+00:00'
