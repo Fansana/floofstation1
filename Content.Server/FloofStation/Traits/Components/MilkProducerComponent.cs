@@ -12,10 +12,10 @@ namespace Content.Server.FloofStation.Traits;
 [RegisterComponent, Access(typeof(LewdTraitSystem))]
 public sealed partial class MilkProducerComponent : Component
 {
-    [DataField("solutionname"), ViewVariables(VVAccess.ReadWrite)]
+    [DataField("solutionname")]
     public string SolutionName = "breasts";
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public ProtoId<ReagentPrototype> ReagentId = "Milk";
 
     [DataField]
@@ -24,15 +24,15 @@ public sealed partial class MilkProducerComponent : Component
     [DataField]
     public Entity<SolutionComponent>? Solution = null;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public FixedPoint2 QuantityPerUpdate = 5;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public float HungerUsage = 10f;
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public TimeSpan GrowthDelay = TimeSpan.FromSeconds(10);
 
-    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan NextGrowth = TimeSpan.FromSeconds(0);
 }
