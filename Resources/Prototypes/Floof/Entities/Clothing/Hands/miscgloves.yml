@@ -12,3 +12,48 @@
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-black
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsBeeWarmers
+  name: bee arm-warmers
+  description: A pair of rather buzzy arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/beewarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/beewarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-yellow
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCoderWarmers
+  name: coder arm-warmers
+  description: A pair of rather nice arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/coderwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/coderwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCoderValidWarmers
+  name: coder valid arm-warmers
+  description: A pair of rather nice arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/codervalidwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/codervalidwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-red
+  - type: FingerprintMask

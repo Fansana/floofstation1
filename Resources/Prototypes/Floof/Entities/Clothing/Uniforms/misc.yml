@@ -45,3 +45,36 @@
     sprite: Floof/Clothing/Uniforms/plainthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/plainthong.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformThongBee
+  name: bee thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/beethong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/beethong.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformThongCoder
+  name: coder thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/coderthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/coderthong.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformThongCoderValid
+  name: coder valid thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
