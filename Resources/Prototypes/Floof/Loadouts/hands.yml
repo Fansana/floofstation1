@@ -1,0 +1,7 @@
+- type: loadout #FloofStation
+  id: LoadoutHandsGlovesTacticalMaid
+  category: Hands
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsTacticalMaidGloves

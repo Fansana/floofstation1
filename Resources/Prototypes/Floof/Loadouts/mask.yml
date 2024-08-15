@@ -1,0 +1,64 @@
+# Costume Masks FloofStation
+- type: loadout
+  id: LoadoutMaskPlague
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskPlague
+
+- type: loadout
+  id: LoadoutMaskRat
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskRat
+
+- type: loadout
+  id: LoadoutMaskFox
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskFox
+
+- type: loadout
+  id: LoadoutMaskBee
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskBee
+
+- type: loadout
+  id: LoadoutMaskBear
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskBear
+
+- type: loadout
+  id: LoadoutMaskRaven
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskRaven
+
+- type: loadout
+  id: LoadoutMaskJackal
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskJackal
+
+- type: loadout
+  id: LoadoutMaskBat
+  category: Mask
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingMaskBat

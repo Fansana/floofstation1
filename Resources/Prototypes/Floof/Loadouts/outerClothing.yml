@@ -1,0 +1,20 @@
+- type: loadout
+  id: LoadoutOuterPlagueSuit
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterPlagueSuit
+
+- type: loadout
+  id: LoadoutOuterRedRacoon
+  category: Outer
+  cost: 3
+  items:
+    - ClothingOuterRedRacoon
+
+- type: loadout # Science is for everyone, not just science
+  id: LoadoutOuterCoatLab
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterCoatLab

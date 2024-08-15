@@ -46,19 +46,19 @@
   items:
     - ClothingOuterCoatRnd
 
-- type: loadout
-  id: LoadoutScienceOuterLabcoat
-  category: Jobs
-  cost: 2
-  exclusive: true
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - Scientist
-        - ResearchAssistant
-        - ResearchDirector
-  items:
-    - ClothingOuterCoatLab
+#- type: loadout
+#  id: LoadoutScienceOuterLabcoat
+#  category: Jobs
+#  cost: 2
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - Scientist
+#        - ResearchAssistant
+#        - ResearchDirector
+#  items:
+#    - ClothingOuterCoatLab
 
 - type: loadout
   id: LoadoutScienceOuterLabcoatSeniorResearcher

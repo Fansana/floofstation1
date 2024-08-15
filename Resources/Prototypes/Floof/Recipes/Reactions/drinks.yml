@@ -199,6 +199,16 @@
     LemonPopsicle: 10
 
 - type: reaction
+  id: LoversKiss
+  reactants:
+    Pomelustine:
+      amount: 1
+    Wine:
+      amount: 2
+  products:
+    LoversKiss: 3
+
+- type: reaction
   id: MarieJulep
   reactants:
     Anisette:
@@ -445,3 +455,26 @@
       amount: 1
   products:
     YeOlHandy: 5
+    
+- type: reaction
+  id: Cream
+  reactants:
+    Sugar:
+      amount: 5
+    Milk:
+      amount: 10
+  products:
+    Cream: 15
+
+- type: reaction
+  id: CreamOfCoconut
+  reactants:
+    CoconutWater:
+      amount: 2
+    Cream:
+      amount: 3
+    Sugar:
+      amount: 1
+  products:
+    CreamOfCoconut: 6
+    

@@ -1,0 +1,149 @@
+- type: loadout
+  id: LoadoutFoodPoppy
+  category: Head
+  cost: 1
+  exclusive: true
+  items:
+    - FoodPoppy
+
+- type: loadout
+  id: LoadoutTacticalMaidHeadband
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatTacticalMaidHeadband
+  requirements:
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout
+  id: LoadoutHeadHatAnimalCat
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatAnimalCat
+
+- type: loadout
+  id: LoadoutHeadHatAnimalCatBrown
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatAnimalCatBrown
+
+- type: loadout
+  id: LoadoutHeadAnimalCatBlack
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatAnimalCatBlack
+
+- type: loadout
+  id: LoadoutHeadAnimalHeadslime
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatAnimalHeadslime
+
+- type: loadout
+  id: LoadoutHeadHatAnimalMonkey
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatAnimalMonkey
+
+- type: loadout
+  id: LoadoutHeadHatWitch1
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatWitch1
+
+- type: loadout
+  id: LoadoutHeadHatPlaguedoctor
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatPlaguedoctor
+
+- type: loadout
+  id: LoadoutHeadHatUshanka
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatUshanka
+
+- type: loadout
+  id: LoadoutHeadHatWitch
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatWitch
+
+- type: loadout
+  id: LoadoutHeadHatTrucker
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatTrucker
+
+- type: loadout
+  id: LoadoutHeadPaperSack
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadPaperSack
+
+- type: loadout
+  id: LoadoutHeadHatFlowerWreath
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatFlowerWreath
+
+- type: loadout
+  id: LoadoutHeadHatSquid
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatSquid
+
+- type: loadout
+  id: LoadoutHeadHatRedRacoon
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatRedRacoon
+
+- type: loadout
+  id: LoadoutHeadHatDogEarsCosmetic
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatDogEarsCosmetic
+
+- type: loadout
+  id: LoadoutHeadHatCatEarsCosmetic
+  category: Head
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHatCatEarsCosmetic
