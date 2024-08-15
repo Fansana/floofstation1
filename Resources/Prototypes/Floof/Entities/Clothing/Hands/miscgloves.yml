@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsPlainWarmers
+  name: plain arm-warmers
+  description: A pair of rather plain arm-warmers
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/plainwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/plainwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-black
+  - type: FingerprintMask
