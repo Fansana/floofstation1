@@ -12,3 +12,33 @@
     sprite: Floof/Clothing/Uniforms/loincloth.rsi
     equipDelay: 0
     unequipDelay: 0
+
+  type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformLoinClothBlack
+  name: black loin cloth
+  description: A piece of cloth wrapped around the waist.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
+    equipDelay: 0
+    unequipDelay: 0
+
+  type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformLoinClothWhite
+  name: white loin cloth
+  description: A piece of cloth wrapped around the waist.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/loinclothwhite.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
+    equipDelay: 0
+    unequipDelay: 0
