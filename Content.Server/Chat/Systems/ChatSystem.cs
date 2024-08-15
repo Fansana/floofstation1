@@ -8,7 +8,13 @@ using Content.Server.GameTicking;
 using Content.Server.Language;
 using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
+<<<<<<< HEAD
 using Content.Server.Psionics.Telepathy;
+=======
+using Content.Server.Nyanotrasen.Chat;
+using Content.Server.Speech.Components;
+using Content.Server.Speech.EntitySystems;
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.ActionBlocker;

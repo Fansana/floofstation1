@@ -17,12 +17,16 @@ public abstract class SharedStrippableSystem : EntitySystem
         SubscribeLocalEvent<StrippableComponent, DragDropDraggedEvent>(OnDragDrop);
     }
 
+<<<<<<< HEAD
     public (TimeSpan Time, ThievingStealth Stealth) GetStripTimeModifiers(EntityUid user, EntityUid target, TimeSpan initialTime)
+=======
+    public (float Time, bool Stealth) GetStripTimeModifiers(EntityUid user, EntityUid target, float initialTime)
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
     {
         var userEv = new BeforeStripEvent(initialTime);
-        RaiseLocalEvent(user, ref userEv);
+        RaiseLocalEvent(user, userEv);
         var ev = new BeforeGettingStrippedEvent(userEv.Time, userEv.Stealth);
-        RaiseLocalEvent(target, ref ev);
+        RaiseLocalEvent(target, ev);
         return (ev.Time, ev.Stealth);
     }
 

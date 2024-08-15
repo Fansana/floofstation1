@@ -1,4 +1,4 @@
-using Content.Server.Psionics.Abilities;
+using Content.Server.Abilities.Psionics; //Nyano - Summary: the psniocs bin where dispel is located.
 using Content.Shared.Anomaly;
 using Content.Shared.Anomaly.Components;
 using Robust.Shared.Random;
@@ -16,7 +16,11 @@ public sealed partial class AnomalySystem
         SubscribeLocalEvent<AnomalyComponent, DispelledEvent>(OnDispelled);
     }
 
+<<<<<<< HEAD
     //Nyano - Summary: gives dispellable behavior to Anomalies.
+=======
+    //Nyano - Summary: gives dispellable behavior to Anomalies. 
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
     private void OnDispelled(EntityUid uid, AnomalyComponent component, DispelledEvent args)
     {
         _dispel.DealDispelDamage(uid);

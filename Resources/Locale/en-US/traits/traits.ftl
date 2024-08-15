@@ -34,6 +34,7 @@ trait-description-Stutter = You t-t-talk with a bit of a s-s-stutter...
 
 trait-name-Snoring = Snoring
 trait-description-Snoring = You will snore while sleeping.
+<<<<<<< HEAD
 
 trait-name-LatentPsychic = Latent Psychic
 trait-description-LatentPsychic = Your mind and soul are open to the noosphere, allowing for a limited use of Telepathy.
@@ -98,3 +99,5 @@ trait-description-MilkProducer = You have a pair of large mammaries.
 
 trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
+=======
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)

@@ -4257,6 +4257,7 @@ Entries:
       message: Most items now take time to equip and unequip, especially space suits.
   id: 6132
   time: '2024-06-30T18:22:28.0000000+00:00'
+<<<<<<< HEAD
 - author: VMSolidus
   changes:
     - type: Fix
@@ -4934,3 +4935,5 @@ Entries:
       message: Lamiae should now be rendered much better.
   id: 6217
   time: '2024-08-05T17:15:51.0000000+00:00'
+=======
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)

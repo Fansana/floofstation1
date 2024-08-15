@@ -1,4 +1,28 @@
+<<<<<<< HEAD
 # Job
+=======
+character-age-requirement = You must {$inverted ->
+    [true] not be
+    *[other] be
+} be within [color=yellow]{$min}[/color] and [color=yellow]{$max}[/color] years old
+character-species-requirement = You must {$inverted ->
+    [true] not be
+    *[other] be
+} a [color=green]{$species}[/color]
+character-trait-requirement = You must {$inverted ->
+    [true] not have
+    *[other] have
+} the trait [color=lightblue]{$trait}[/color]
+character-backpack-type-requirement = You must {$inverted ->
+    [true] not use
+    *[other] use
+} a [color=lightblue]{$type}[/color] as your bag
+character-clothing-preference-requirement = You must {$inverted ->
+    [true] not wear
+    *[other] wear
+} a [color=lightblue]{$type}[/color]
+
+>>>>>>> parent of febd6c735c (Merge pull request #6 from VMSolidus/latest-experimental-psychics)
 character-job-requirement = You must {$inverted ->
     [true] not be
     *[other] be
