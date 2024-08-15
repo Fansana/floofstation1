@@ -49,7 +49,7 @@
     sound:
       path: /Audio/Effects/teleport_arrival.ogg
   - type: Psionic #Nyano - Summary: makes psionic on creation.
-  - type: GlimmerSource #Nyano - Summary: makes this a potential source of Glimmer.
+  - type: GlimmerSource #Nyano - Summary: makes this a potential source of Glimmer. 
     active: false
   - type: SecretDataAnomaly
     randomStartSecretMin: 0
@@ -102,12 +102,6 @@
   - type: IgniteOnCollide
     fixtureId: fix1
     fireStacks: 1
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-pyroclastic-feedback"
 
 - type: entity
   id: AnomalyGravity
@@ -140,12 +134,6 @@
   - type: SingularityDistortion
     intensity: 1000
     falloffPower: 2.7
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-gravity-feedback"
 
 - type: entity
   id: AnomalyElectricity
@@ -169,12 +157,6 @@
     castShadows: false
   - type: ElectricityAnomaly
   - type: Electrified
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-electricity-feedback"
 
 - type: entity
   id: AnomalyFlesh
@@ -268,12 +250,6 @@
       - MobFleshClamp
       - MobFleshLover
       - FleshKudzu
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-flesh-feedback"
 
 - type: entity
   id: AnomalyBluespace
@@ -324,12 +300,6 @@
     anomalyContactDamage:
       types:
         Radiation: 10
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-bluespace-feedback"
 
 - type: entity
   id: AnomalyIce
@@ -378,12 +348,6 @@
     releasedGas: 8 # Frezon. Please replace if there is a better way to specify this
     releaseOnMaxSeverity: true
     spawnRadius: 0
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-ice-feedback"
 
 - type: entity
   id: AnomalyRockBase
@@ -422,12 +386,6 @@
         maxAmount: 50
         maxRange: 12
       floor: FloorAsteroidTile
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-rock-feedback"
 
 - type: entity
   id: AnomalyRockUranium
@@ -687,12 +645,6 @@
         maxRange: 6
       spawns:
       - KudzuFlowerAngry
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-flora-feedback"
 
 - type: entity
   id: AnomalyFloraBulb
@@ -853,12 +805,6 @@
     solution: anomaly
   - type: InjectableSolution
     solution: beaker
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-liquid-feedback"
 
 - type: entity
   id: AnomalyShadow
@@ -915,9 +861,3 @@
   - type: Tag
     tags:
       - SpookyFog
-  - type: PotentialPsionic
-  - type: Psionic
-    removable: false
-    amplification: 5
-    psychicFeedback:
-    - "anomaly-shadow-feedback"

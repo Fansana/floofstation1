@@ -3,11 +3,8 @@ cage-resist-third-person = {CAPITALIZE(THE($user))} starts removing {POSS-ADJ($u
 
 cage-uncage-verb = Uncage
 
-action-name-widemetapsionic = Wide Metapsionic Pulse
-action-description-widemetapsionic = Send a mental pulse through the area to see if there are any psychics nearby.
-
-action-name-focusedmetapsionic = Focused Metapsionic Pulse
-action-description-focusedmetapsionic = Probe an entity at close range to glean metaphorical information about any powers they may have
+action-name-metapsionic = Metapsionic Pulse
+action-description-metapsionic = Send a mental pulse through the area to see if there are any psychics nearby.
 
 metapsionic-pulse-success = You detect psychic presence nearby.
 metapsionic-pulse-failure = You don't detect any psychic presence nearby.
@@ -16,8 +13,8 @@ metapsionic-pulse-power = You detect that {$power} was used nearby.
 action-name-dispel = Dispel
 action-description-dispel = Dispel summoned entities such as familiars or forcewalls.
 
-action-name-regenerative-stasis = Regenerative Stasis
-action-description-regenerative-stasis = Puts the target into a brief stasis, during which time their wounds rapidly heal.
+action-name-mass-sleep = Mass Sleep
+action-description-mass-sleep = Put targets in a small area to sleep.
 
 accept-psionics-window-title = Psionic!
 accept-psionics-window-prompt-text-part = You rolled a psionic power!
@@ -26,10 +23,13 @@ accept-psionics-window-prompt-text-part = You rolled a psionic power!
                                          Do you still wish to be psionic?
 
 action-name-psionic-invisibility = Psionic Invisibility
-action-description-psionic-invisibility = Telepathically remove yourself from the vision of anyone not psionically insulated.
+action-description-psionic-invisibility = Render yourself invisible to any entity that could potentially be psychic. Borgs, animals, and so on are not affected.
+
+action-name-psionic-invisibility = Psionic Invisibility
+action-description-psionic-invisibility = Render yourself invisible to any entity that could potentially be psychic. Borgs, animals, and so on are not affected.
 
 action-name-psionic-invisibility-off = Turn Off Psionic Invisibility
-action-description-psionic-invisibility-off = End your invisibility early.
+action-description-psionic-invisibility-off = Return to visibility, and receive a stun.
 
 action-name-mind-swap = Mind Swap
 action-description-mind-swap = Swap minds with the target. Either can change back after 20 seconds.
@@ -63,10 +63,8 @@ action-name-noospheric-zap = Noospheric Zap
 action-description-noospheric-zap = Shocks the conciousness of the target and leaves them stunned and stuttering.
 
 action-name-pyrokinesis = Pyrokinesis
-action-description-pyrokinesis = Hurl a fire bolt at your target
-
-action-name-precharge-pyrokinesis = Precharge Pyrokinesis
-action-description-precharge-pyrokinesis = Draw forth the Secret of Fire, and prepare to launch a fire bolt
+action-description-pyrokinesis = Light a flammable target on fire.
+pyrokinesis-power-used = A wisp of flame engulfs {THE($target)}, igniting {OBJECT($target)}!
 
 action-name-psychokinesis = Psychokinesis
 action-description-psychokinesis = Bend the fabric of space to instantly move across it.
