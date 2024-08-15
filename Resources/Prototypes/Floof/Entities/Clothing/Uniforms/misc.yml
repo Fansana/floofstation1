@@ -13,32 +13,35 @@
     equipDelay: 0
     unequipDelay: 0
 
-  type: entity
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformLoinClothBlack
-  name: black loin cloth
+  name: black loin-cloth
   description: A piece of cloth wrapped around the waist.
   components:
-  - type: Item
-    size: Small
   - type: Sprite
     sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
-    equipDelay: 0
-    unequipDelay: 0
 
-  type: entity
+- type: entity
   parent: ClothingUniformBase
   id: ClothingUniformLoinClothWhite
-  name: white loin cloth
+  name: white loin-cloth
   description: A piece of cloth wrapped around the waist.
   components:
-  - type: Item
-    size: Small
   - type: Sprite
     sprite: Floof/Clothing/Uniforms/loinclothwhite.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
-    equipDelay: 0
-    unequipDelay: 0
+    sprite: Floof/Clothing/Uniforms/loinclothwhite.rsi
+
+ - type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformThongPlain
+  name: plain thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/plainthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/plainthong.rsi

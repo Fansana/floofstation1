@@ -8,3 +8,25 @@
     sprite: Floof/Clothing/Under/Socks/codervalid.rsi
   - type: Clothing
     sprite: Floof/Clothing/Under/Socks/codervalid.rsi
+
+ - type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksPlain
+  name: plain thigh-high socks
+  description: Just a plain pair of thigh-high socks.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Socks/plainsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Socks/plainsocks.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingUnderWarmersPlain
+  name: plain arm-warmers
+  description: Just a plain pair of arm warmers.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/plainwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/plainwarmer.rsi
