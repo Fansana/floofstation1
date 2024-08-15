@@ -5,9 +5,9 @@
   description: Looks like you came third in a competion.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltbronze.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltbronze.rsi
   - type: Clothing
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltbronze.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltbronze.rsi
 
 - type: entity
   parent: ClothingOuterBase
@@ -16,9 +16,9 @@
   description: Looks like you came second in a competion.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltsilver.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltsilver.rsi
   - type: Clothing
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltsilver.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltsilver.rsi
 
 - type: entity
   parent: ClothingOuterBase
@@ -27,9 +27,9 @@
   description: Looks like you came in first in a competion.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltgold.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltgold.rsi
   - type: Clothing
-    sprite: Floof/Clothing/OtherClothing/Misc/sexcompbeltgold.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/sexcompbeltgold.rsi
 
 - type: entity
   parent: ClothingOuterBase
@@ -38,6 +38,18 @@
   description: What? Do you think youre an anime protagonist or something?
   components:
   - type: Sprite
-    sprite: Floof/Clothing/OtherClothing/Misc/beltedouterwear.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/beltedouterwear.rsi
   - type: Clothing
-    sprite: Floof/Clothing/OtherClothing/Misc/beltedouterwear.rsi
+    sprite: Floof/Clothing/OuterClothing/Misc/beltedouterwear.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoatToggleable
+  id: ClothingOuterMarsHoodie
+  name: mars pink hoodie
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/Misc/marshoodie.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/Misc/marshoodie.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMarsHoodieHood

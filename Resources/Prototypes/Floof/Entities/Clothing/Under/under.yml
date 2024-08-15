@@ -74,3 +74,14 @@
     sprite: Floof/Clothing/Under/Socks/sexcompblueboots.rsi
   - type: Clothing
     sprite: Floof/Clothing/Under/Socks/sexcompblueboots.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksCaptain
+  name: captains thigh-high socks
+  description: Just a plain pair of thigh-high socks.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Socks/captsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Socks/captsocks.rsi

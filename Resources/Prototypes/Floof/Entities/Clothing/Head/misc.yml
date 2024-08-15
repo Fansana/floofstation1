@@ -30,3 +30,14 @@
     sprite: Floof/Clothing/Head/sexcompcirclet.rsi
   - type: Clothing
     sprite: Floof/Clothing/Head/sexcompcirclet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodMarsHoodieHood
+  noSpawn: true
+  name: mars hoodie hood
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Head/hoodmarshoodie.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Head/hoodmarshoodie.rsi

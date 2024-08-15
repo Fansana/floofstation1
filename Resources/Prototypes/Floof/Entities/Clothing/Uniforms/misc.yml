@@ -133,3 +133,15 @@
     sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCaptainThong
+  name: captains thong
+  description: Is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/captthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/captthong.rsi
