@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCoderArms
+  name: Coder Armwarmers
+  description: A pair of armwarmers that provide some protection during those long nights at the keyboard.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Hands/coderarms.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Hands/coderarms.rsi
+  - type: Fiber
+    fiberColor: fibers-white
