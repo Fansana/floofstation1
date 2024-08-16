@@ -12,26 +12,26 @@ namespace Content.Server.FloofStation.Traits;
 [RegisterComponent, Access(typeof(LewdTraitSystem))]
 public sealed partial class CumProducerComponent : Component
 {
-    [DataField("solutionname")]
-    public string SolutionName = "penis";
+    [DataField("solutionname"), ViewVariables(VVAccess.ReadWrite)]
+    public string SolutionName;
 
-    [DataField]
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ProtoId<ReagentPrototype> ReagentId = "Cum";
 
-    [DataField]
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
     public FixedPoint2 MaxVolume = FixedPoint2.New(25);
 
     [DataField]
     public Entity<SolutionComponent>? Solution = null;
 
     [DataField]
-    public FixedPoint2 QuantityPerUpdate = 5;
+    public FixedPoint2 QuantityPerUpdate = 25;
 
     [DataField]
     public float HungerUsage = 10f;
 
     [DataField]
-    public TimeSpan GrowthDelay = TimeSpan.FromSeconds(10);
+    public TimeSpan GrowthDelay = TimeSpan.FromMinutes(1);
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan NextGrowth = TimeSpan.FromSeconds(0);
