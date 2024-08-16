@@ -1,0 +1,469 @@
+#Command Outfits
+#
+#Captain
+- type: loadout
+  id: LoadoutClothingHandsCaptainWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsCaptainWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCaptain
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksCaptain
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+
+- type: loadout
+  id: LoadoutClothingUniformCaptainThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformCaptainThong
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+
+#General Command
+
+- type: loadout
+  id: LoadoutClothingHandsCommandWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsCommandWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+         - ChiefEngineer
+         - ChiefMedicalOfficer
+         - HeadOfPersonnel
+         - HeadOfSecurity
+         - Quartermaster
+         - ResearchDirector
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCommand
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksCommand
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+         - ChiefEngineer
+         - ChiefMedicalOfficer
+         - HeadOfPersonnel
+         - HeadOfSecurity
+         - Quartermaster
+         - ResearchDirector
+
+- type: loadout
+  id: LoadoutClothingUniformCommandThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformCommandThong
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Captain
+         - ChiefEngineer
+         - ChiefMedicalOfficer
+         - HeadOfPersonnel
+         - HeadOfSecurity
+         - Quartermaster
+         - ResearchDirector
+
+#Engineering Outfits
+#
+#General Engineering
+
+- type: loadout
+  id: LoadoutClothingHandsEngiWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsEngiWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
+
+- type: loadout
+  id: LoadoutClothingUnderSocksEngi
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksEngi
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
+
+- type: loadout
+  id: LoadoutClothingUniformEngiThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformEngiThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
+
+#Epistemics Outfits
+#
+#General Epistemics
+
+- type: loadout
+  id: LoadoutClothingHandsEpiWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsEpiWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Scientist
+        - ResearchAssistant
+        - ResearchDirector
+
+- type: loadout
+  id: LoadoutClothingUnderSocksEpi
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksEpi
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Scientist
+        - ResearchAssistant
+        - ResearchDirector
+
+
+- type: loadout
+  id: LoadoutClothingUniformEpiThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformEpiThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Scientist
+        - ResearchAssistant
+        - ResearchDirector
+
+#Chaplain
+
+- type: loadout
+  id: LoadoutClothingHandChaplainWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsChaplainWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Chaplain
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChaplain
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksChaplain
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Chaplain
+
+- type: loadout
+  id: LoadoutClothingUniformChaplainThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformChaplainThong
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Chaplain
+
+- type: loadout
+  id: LoadoutClothingChaplainEpiMantle
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingOuterEpiChaplainMantle
+  requirements:
+    - !type:CharacterJobRequirement
+       jobs:
+         - Chaplain
+
+#Logistics Outfits
+#
+#General Logistics
+- type: loadout
+  id: LoadoutClothingHandsLogisWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsLogisWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CargoTechnician
+
+- type: loadout
+  id: LoadoutClothingUnderSocksLogis
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksLogis
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CargoTechnician
+
+- type: loadout
+  id: LoadoutClothingUniformLogisThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformLogisThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CargoTechnician
+
+#Medical Outfits
+#
+#General Medical
+- type: loadout
+  id: LoadoutClothingHandsMedicWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsMedicWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - Paramedic
+        - ChiefMedicalOfficer
+        - MedicalIntern
+        - Chemist
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMedic
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksMedic
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - Paramedic
+        - ChiefMedicalOfficer
+        - MedicalIntern
+        - Chemist
+
+- type: loadout
+  id: LoadoutClothingUniformMedicThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformMedicThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - Paramedic
+        - ChiefMedicalOfficer
+        - MedicalIntern
+        - Chemist
+
+#Security Outfits
+#
+#General Security
+- type: loadout
+  id: LoadoutClothingHandsSecurityWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsSecurityWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - SecurityOfficer
+        - SecurityCadet
+        - Warden
+        - Detective
+        - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUnderSocksSecurity
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksSecurity
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - SecurityOfficer
+        - SecurityCadet
+        - Warden
+        - Detective
+        - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUniformSecurityThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformSecurityThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - SecurityOfficer
+        - SecurityCadet
+        - Warden
+        - Detective
+        - HeadOfSecurity
+
+#Service Outfits
+#
+#General Service
+- type: loadout
+  id: LoadoutClothingHandsServiceWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsServiceWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+        - Botanist
+        - Reporter
+        - Musician
+        - Chef
+        - ServiceWorker
+
+- type: loadout
+  id: LoadoutClothingUnderSocksService
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksService
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+        - Botanist
+        - Reporter
+        - Musician
+        - Chef
+        - ServiceWorker
+
+- type: loadout
+  id: LoadoutClothingUniformServiceThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformServiceThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+        - Botanist
+        - Reporter
+        - Musician
+        - Chef
+        - ServiceWorker
+
+#Janitorial
+- type: loadout
+  id: LoadoutClothingHandsJanitorWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsJanitorWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutClothingUnderSocksJanitor
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksJanitor
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutClothingUniformJanitorThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformJanitorThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor

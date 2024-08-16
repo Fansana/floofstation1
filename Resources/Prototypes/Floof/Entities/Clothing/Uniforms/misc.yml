@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingUniformBase
   id: ClothingUniformLoinCloth
   name: loin cloth
   description: A piece of cloth wrapped around the waist.
@@ -14,7 +14,7 @@
     unequipDelay: 0
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBaseSwitch
   id: ClothingUniformLoinClothBlack
   name: black loin-cloth
   description: A piece of cloth wrapped around the waist.
@@ -25,7 +25,7 @@
     sprite: Floof/Clothing/Uniforms/loinclothblack.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformBaseSwitch
   id: ClothingUniformLoinClothWhite
   name: white loin-cloth
   description: A piece of cloth wrapped around the waist.
@@ -134,14 +134,14 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
 
-
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformCaptainThong
-  name: captains thong
-  description: Is this even considered a piece of clothing?
+  id: ClothingUniforReotaSuit
+  name: casual suit
+  description: A rather casual looking suit
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Uniforms/captthong.rsi
+    sprite: Floof/Clothing/Uniforms/reotasuit.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Uniforms/captthong.rsi
+    sprite: Floof/Clothing/Uniforms/reotasuit.rsi
+

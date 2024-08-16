@@ -63,6 +63,9 @@
     contents:
       - id: ClothingOuterArmorCaptainCarapace
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingHandsCaptainWarmers # Floofstation
+      - id: ClothingUnderSocksCaptain # Floofstation
+      - id: ClothingUniformCaptainThong # Floofstation
       - id: NukeDisk
       - id: PinpointerNuclear
 #     - id: CaptainIDCard # DeltaV - Replaced by the spare ID system
@@ -122,6 +125,9 @@
     contents:
       - id: HoPIDCard
       - id: ClothingLongcoatHoP # Floofstation
+      - id: ClothingHandsCommandWarmers # Floofstation
+      - id: ClothingUnderSocksCommand # Floofstation
+      - id: ClothingUniformCommandThong # Floofstation
       - id: ClothingHeadsetAltService # DeltaV - HoP is now a service role, replaces their all channels headset.
       - id: BoxPDA
       - id: BoxID

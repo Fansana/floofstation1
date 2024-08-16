@@ -133,17 +133,3 @@
     fiberColor: fibers-blue
   - type: FingerprintMask
 
-- type: entity
-  parent: ClothingHandsBase
-  id: ClothingHandsCaptainWarmers
-  name: captains arm-warmers
-  description: A pair of rather nice arm-warmers
-  components:
-  - type: Sprite
-    sprite: Floof/Clothing/Under/Gloves/captwarmer.rsi
-  - type: Clothing
-    sprite: Floof/Clothing/Under/Gloves/captwarmer.rsi
-  - type: Fiber
-    fiberMaterial: fibers-durathread
-    fiberColor: fibers-regal-blue
-  - type: FingerprintMask
