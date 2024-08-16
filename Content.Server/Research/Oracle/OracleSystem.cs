@@ -7,7 +7,7 @@ using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Psionics;
 using Content.Server.Research.Systems;
-using Content.Shared.Abilities.Psionics
+using Content.Shared.Abilities.Psionics;
 using Content.Shared.Chat;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
