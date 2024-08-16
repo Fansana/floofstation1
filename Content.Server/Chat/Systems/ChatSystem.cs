@@ -8,7 +8,6 @@ using Content.Server.GameTicking;
 using Content.Server.Language;
 using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
-using Content.Server.Psionics.Telepathy;
 using Content.Server.Nyanotrasen.Chat;
 using Content.Server.Speech.Components;
 using Content.Server.Speech.EntitySystems;
