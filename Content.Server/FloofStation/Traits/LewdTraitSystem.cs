@@ -268,61 +268,73 @@ public sealed class LewdTraitSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
-
+        var queryCum = EntityQueryEnumerator<CumProducerComponent>(); //SquirtProducerComponent -unused , 
+        var queryMilk = EntityQueryEnumerator<MilkProducerComponent>();
         var now = _timing.CurTime;
-        var query = AllEntityQuery<CumProducerComponent, MilkProducerComponent>(); //SquirtProducerComponent -unused
 
-        while (query.MoveNext(out var uid, out var containerCum, out var containerMilk)) // out var containerSquirt -unused
+        while (queryCum.MoveNext(out var uid, out var containerCum))
         {
+            if (now < containerCum.NextGrowth)
+                continue;
+
+            containerCum.NextGrowth = now + containerCum.GrowthDelay;
+
             if (_mobState.IsDead(uid))
                 continue;
 
-            if (!(now < containerCum.NextGrowth))
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
             {
-                containerCum.NextGrowth = now + containerCum.GrowthDelay;
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
 
-                // Actually there is food digestion so no problem with instant reagent generation "OnFeed"
-                if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
-                {
-                    // Is there enough nutrition to produce reagent?
-                    if (!(_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay))
-                        _hunger.ModifyHunger(uid, -containerCum.HungerUsage, hunger);
-                }
-
-                if (_solutionContainer.ResolveSolution(uid, containerCum.SolutionName, ref containerCum.Solution))
-                    _solutionContainer.TryAddReagent(containerCum.Solution.Value, containerCum.ReagentId, containerCum.QuantityPerUpdate, out _);
+                _hunger.ModifyHunger(uid, -containerCum.HungerUsage, hunger);
             }
 
-            if (!(now < containerMilk.NextGrowth))
-            {
-                containerMilk.NextGrowth = now + containerMilk.GrowthDelay;
+            if (!_solutionContainer.ResolveSolution(uid, containerCum.SolutionName, ref containerCum.Solution))
+                continue;
 
-                if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
-                {
-                    if (!(_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay))
-                        _hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
-                }
-
-                if (_solutionContainer.ResolveSolution(uid, containerMilk.SolutionName, ref containerMilk.Solution))
-                    _solutionContainer.TryAddReagent(containerMilk.Solution.Value, containerMilk.ReagentId, containerMilk.QuantityPerUpdate, out _);
-            }
-
-            //if (!(now < containerSquirt.NextGrowth)) //Unused-Trait is WIP
-            //{
-            //    containerSquirt.NextGrowth = now + containerSquirt.GrowthDelay;
-
-            //    
-            //    if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
-            //    {
-            //        
-            //        if (!(_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay))
-            //            _hunger.ModifyHunger(uid, -containerSquirt.HungerUsage, hunger);
-            //    }
-
-            //    if (_solutionContainer.ResolveSolution(uid, containerSquirt.SolutionName, ref containerSquirt.Solution))
-            //        _solutionContainer.TryAddReagent(containerSquirt.Solution.Value, containerSquirt.ReagentId, containerSquirt.QuantityPerUpdate, out _);
-            //}
+            _solutionContainer.TryAddReagent(containerCum.Solution.Value, containerCum.ReagentId, containerCum.QuantityPerUpdate, out _);
         }
+
+        while (queryMilk.MoveNext(out var uid, out var containerMilk))
+        {
+            if (now < containerMilk.NextGrowth)
+                continue;
+
+            containerMilk.NextGrowth = now + containerMilk.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
+
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+            {
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
+
+                _hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
+            }
+
+            if (!_solutionContainer.ResolveSolution(uid, containerMilk.SolutionName, ref containerMilk.Solution))
+                continue;
+
+            _solutionContainer.TryAddReagent(containerMilk.Solution.Value, containerMilk.ReagentId, containerMilk.QuantityPerUpdate, out _);
+        }
+
+        //if (!(now < containerSquirt.NextGrowth)) //Unused-Trait is WIP
+        //{
+        //    containerSquirt.NextGrowth = now + containerSquirt.GrowthDelay;
+
+        //    
+        //    if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+        //    {
+        //        
+        //        if (!(_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay))
+        //            _hunger.ModifyHunger(uid, -containerSquirt.HungerUsage, hunger);
+        //    }
+
+        //    if (_solutionContainer.ResolveSolution(uid, containerSquirt.SolutionName, ref containerSquirt.Solution))
+        //        _solutionContainer.TryAddReagent(containerSquirt.Solution.Value, containerSquirt.ReagentId, containerSquirt.QuantityPerUpdate, out _);
+        //}
     }
     #endregion
 }
