@@ -1,21 +1,23 @@
 using Content.Server.Chat.Systems;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
+using Robust.Server.Player;
 using Robust.Shared.Console;
 using Robust.Shared.Enums;
+using Robust.Shared.Player;
 
 namespace Content.Server.Chat.Commands
 {
     [AnyCommand]
-    internal sealed class SubtleCommand : IConsoleCommand
+    internal sealed class TSayCommand : IConsoleCommand
     {
-        public string Command => "subtle";
-        public string Description => "Perform an subtle action.";
-        public string Help => "subtle <text>";
+        public string Command => "tsay";
+        public string Description => "Send chat messages to the telepathic.";
+        public string Help => "tsay <text>";
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (shell.Player is not { } player)
+            if (shell.Player is not ICommonSession player)
             {
                 shell.WriteError("This command cannot be run from the server.");
                 return;
@@ -36,9 +38,8 @@ namespace Content.Server.Chat.Commands
             var message = string.Join(" ", args).Trim();
             if (string.IsNullOrEmpty(message))
                 return;
-
-            IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ChatSystem>()
-                .TrySendInGameICMessage(playerEntity, message, InGameICChatType.Subtle, ChatTransmitRange.NoGhosts, false, shell, player);
+            //Not sure if I should hide the logs from this. Default is false.
+            EntitySystem.Get<ChatSystem>().TrySendInGameICMessage(playerEntity, message, InGameICChatType.Telepathic, ChatTransmitRange.Normal, false, shell, player);
         }
     }
 }
