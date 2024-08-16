@@ -1,8 +1,8 @@
 - type: entity
-  name: Seb
+  name: Siobhan
   parent: MobArcticFox
   id: MobArcticFoxSiobhan
-  description: His name is "Sebastien de Lys", but he is known as Seb by his friends. A fluffy, adorable arctic fox.
+  description: Her name is pronounced "Shivahn", but she is known as Shivs by her associates. A fluffy, adorable arctic fox.
   components:
   - type: InteractionPopup
     successChance: 1
@@ -13,7 +13,7 @@
   - type: Grammar
     attributes:
       proper: true
-      gender: male
+      gender: female
   - type: Tag
     tags:
     - CannotSuicide
