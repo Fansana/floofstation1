@@ -17,7 +17,7 @@
   access:
   - Research
   - Maintenance
-  - Mantis
+  - Mantis # DeltaV - Mantis, see Resources/Prototypes/DeltaV/Access/epistemics.yml
   special:
   - !type:AddComponentSpecial
     components:
