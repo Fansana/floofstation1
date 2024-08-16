@@ -18,13 +18,13 @@ public sealed partial class CumProducerComponent : Component
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ProtoId<ReagentPrototype> ReagentId = "Cum";
 
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public FixedPoint2 MaxVolume = FixedPoint2.New(25);
 
     [DataField]
     public Entity<SolutionComponent>? Solution = null;
 
-    [DataField]
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
     public FixedPoint2 QuantityPerUpdate = 25;
 
     [DataField]
