@@ -279,6 +279,9 @@ public sealed class LewdTraitSystem : EntitySystem
 
             containerCum.NextGrowth = now + containerCum.GrowthDelay;
 
+            if (_mobState.IsDead(uid))
+                continue;
+
             if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
             {
                 if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
@@ -299,6 +302,9 @@ public sealed class LewdTraitSystem : EntitySystem
                 continue;
 
             containerMilk.NextGrowth = now + containerMilk.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
 
             if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
             {
