@@ -139,6 +139,8 @@
         - AtmosphericTechnician
         - ChiefEngineer
 
+#TO BE ADDED - ChiefEngineer
+
 #Epistemics Outfits
 #
 #General Epistemics
@@ -236,6 +238,8 @@
        jobs:
          - Chaplain
 
+#TO BE ADDED - ResearchDirector
+
 #Logistics Outfits
 #
 #General Logistics
@@ -274,6 +278,8 @@
     - !type:CharacterJobRequirement
       jobs:
         - CargoTechnician
+
+#TO BE ADDED - Quartermaster
 
 #Medical Outfits
 #
@@ -326,6 +332,9 @@
         - MedicalIntern
         - Chemist
 
+#TO BE ADDED - Chemist
+#TO BE ADDED - ChiefMedicalOfficer
+
 #Security Outfits
 #
 #General Security
@@ -376,6 +385,9 @@
         - Warden
         - Detective
         - HeadOfSecurity
+
+#TO BE ADDED - Detective
+#TO BE ADDED - HeadOfSecurity
 
 #Service Outfits
 #
@@ -431,6 +443,10 @@
         - Chef
         - ServiceWorker
 
+#TO BE ADDED - Bartender
+#TO BE ADDED - Chef
+#TO BE ADDED - Musician
+
 #Janitorial
 - type: loadout
   id: LoadoutClothingHandsJanitorWarmers
@@ -467,3 +483,44 @@
     - !type:CharacterJobRequirement
       jobs:
         - Janitor
+
+# Misc
+# Mime
+
+- type: loadout
+  id: LoadoutClothingHandsStripeWhiteWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsStripeWhiteWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Mime
+
+- type: loadout
+  id: LoadoutClothingUnderSocksStripedWhite
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksStripedWhite
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Mime
+
+- type: loadout
+  id: LoadoutClothingUniformStripedThongWhite
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingClothingUniformStripedThongWhite
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Mime
+
+#TO BE ADDED - Clown
