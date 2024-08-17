@@ -45,7 +45,7 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterMarsHoodie
-  name: mars pink hoodie
+  name: pink hoodie
   components:
   - type: Sprite
     sprite: Floof/Clothing/OuterClothing/Misc/marshoodie.rsi
