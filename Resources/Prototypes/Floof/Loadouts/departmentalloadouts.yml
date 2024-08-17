@@ -519,7 +519,7 @@
   cost: 2
   exclusive: true
   items:
-    - ClothingClothingUniformStripedThongWhite
+    - ClothingUniformStripedThongWhite
   requirements:
     - !type:CharacterJobRequirement
       jobs:
