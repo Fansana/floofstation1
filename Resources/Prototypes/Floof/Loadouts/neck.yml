@@ -102,6 +102,14 @@
     - ClothingNeckCollarBlack
 
 - type: loadout
+  id: LoadoutItemsNeckPinkCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarPink
+
+- type: loadout
   id: LoadoutItemsNeckSyndieCollar
   category: Neck
   cost: 3
