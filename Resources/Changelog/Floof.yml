@@ -538,3 +538,11 @@ Entries:
       message: Cum/Milk regeneration doesn't use hunger.
   id: 73
   time: '2024-08-17T23:21:19.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Adds Seb themselves as their own thing!
+    - type: Tweak
+      message: Seb will always spawn instead of Siobhan in Floof maps.
+  id: 74
+  time: '2024-08-18T21:19:51.0000000+00:00'
