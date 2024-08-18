@@ -287,7 +287,7 @@ public sealed class LewdTraitSystem : EntitySystem
                 if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
                     continue;
 
-                _hunger.ModifyHunger(uid, -containerCum.HungerUsage, hunger);
+                //_hunger.ModifyHunger(uid, -containerCum.HungerUsage, hunger);
             }
 
             if (!_solutionContainer.ResolveSolution(uid, containerCum.SolutionName, ref containerCum.Solution))
@@ -311,7 +311,7 @@ public sealed class LewdTraitSystem : EntitySystem
                 if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
                     continue;
 
-                _hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
+                //_hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
             }
 
             if (!_solutionContainer.ResolveSolution(uid, containerMilk.SolutionName, ref containerMilk.Solution))
