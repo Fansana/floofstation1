@@ -5,3 +5,11 @@
   exclusive: true
   items:
     - ClothingHandsTacticalMaidGloves
+
+- type: loadout #FloofStation
+  id: LoadoutHandsGlovesCoderArms
+  category: Hands
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsCoderArms
