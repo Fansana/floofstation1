@@ -3,12 +3,19 @@ using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Floofstation.Leash.Components;
 using Content.Shared.Floofstation.Leash.Events;
+using Content.Shared.Hands.Components;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Input;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Pulling.Events;
+using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
+using Content.Shared.Throwing;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
+using Robust.Shared.Input.Binding;
+using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
@@ -26,6 +33,8 @@ public sealed class LeashSystem : EntitySystem
     [Dependency] private readonly SharedJointSystem _joints = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedPopupSystem _popups = default!;
+    [Dependency] private readonly ThrowingSystem _throwing = default!;
+    [Dependency] private readonly SharedTransformSystem _xform = default!;
 
     public override void Initialize()
     {
@@ -38,6 +47,16 @@ public sealed class LeashSystem : EntitySystem
 
         SubscribeLocalEvent<LeashAnchorComponent, LeashAttachDoAfterEvent>(OnAttachDoAfter);
         SubscribeLocalEvent<LeashedComponent, LeashDetachDoAfterEvent>(OnDetachDoAfter);
+
+        CommandBinds.Builder
+            .BindBefore(ContentKeyFunctions.MovePulledObject, new PointerInputCmdHandler(OnRequestPullLeash), before: [typeof(PullingSystem)])
+            .Register<LeashSystem>();
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        CommandBinds.Unregister<LeashSystem>();
     }
 
     public override void Update(float frameTime)
@@ -164,10 +183,44 @@ public sealed class LeashSystem : EntitySystem
 
     private void OnDetachDoAfter(Entity<LeashedComponent> ent, ref LeashDetachDoAfterEvent args)
     {
-        if (args.Cancelled || args.Handled)
+        if (args.Cancelled || args.Handled || ent.Comp.Puller is not { } leash)
             return;
 
-        RemoveLeash(args.Target!.Value, args.Used!.Value, true);
+        RemoveLeash(ent!, leash, true);
+    }
+
+    private bool OnRequestPullLeash(ICommonSession? session, EntityCoordinates targetCoords, EntityUid uid)
+    {
+        if (session?.AttachedEntity is not { } player
+            || !player.IsValid()
+            || !TryComp<HandsComponent>(player, out var hands)
+            || hands.ActiveHandEntity is not {} leash
+            || !TryComp<LeashComponent>(leash, out var leashComp)
+            || leashComp.NextPull > _timing.CurTime)
+            return false;
+
+        // Pull all entities towards the coordinates.
+        targetCoords = targetCoords.WithEntityId(player);
+        var userCoords = Transform(player).Coordinates;
+        foreach (var data in leashComp.Leashed)
+        {
+            var pulled = GetEntity(data.Pulled);
+            var pulledCoords = Transform(pulled).Coordinates.WithEntityId(player);
+
+            // Ensure that the new entity position is actually closer to the user than previous - this is to limit pushing via a leash
+            var newCoords = targetCoords;
+            if (!userCoords.TryDistance(EntityManager, _xform, pulledCoords, out var sourceDst)
+                || !userCoords.TryDelta(EntityManager, _xform, targetCoords, out var userTargetDelta))
+                continue;
+
+            if (userTargetDelta.Length() > sourceDst)
+                newCoords = userCoords.WithPosition(userTargetDelta.Normalized() * sourceDst);
+
+            _throwing.TryThrow(pulled, newCoords, user: player, animated: false, playSound: false, doSpin: false, pushbackRatio: 1f);
+        }
+
+        leashComp.NextPull = _timing.CurTime + leashComp.PullInterval;
+        return true;
     }
 
     #endregion
@@ -234,9 +287,12 @@ public sealed class LeashSystem : EntitySystem
             (string, object)[] locArgs = [("user", user), ("target", leashTarget), ("anchor", anchor.Owner), ("selfAnchor", anchor.Owner == leashTarget)];
 
             // This could've been much easier if my interaction verbs PR got merged already, but it isn't yet, so I gotta suffer
-            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-target", locArgs), user, user);
-            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-target", locArgs), leashTarget, leashTarget);
-            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-others", locArgs), leashTarget, Filter.PvsExcept(leashTarget).RemovePlayerByAttachedEntity(user), true);
+            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-self", locArgs), user, user);
+            if (user != leashTarget)
+                _popups.PopupEntity(Loc.GetString("leash-attaching-popup-target", locArgs), leashTarget, leashTarget);
+
+            var othersFilter = Filter.PvsExcept(leashTarget).RemovePlayerByAttachedEntity(user);
+            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-others", locArgs), leashTarget, othersFilter, true);
         }
         return result;
     }
@@ -312,7 +368,7 @@ public sealed class LeashSystem : EntitySystem
             return;
 
         var jointId = leashed.Comp.JointId;
-        RemComp<LeashedComponent>(leashed);
+        RemCompDeferred<LeashedComponent>(leashed); // Has to be deferred else the client explodes for some reason
 
         if (breakJoint && jointId is not null)
             _joints.RemoveJoint(leash, jointId);

@@ -11,7 +11,7 @@ leash-attaching-popup-others = {THE($user)} is trying to attach a leash to {$sel
     *[true] {THE($target)}
 }
 
-leash-detaching-popup-self = You begin trying to remove the leash...
+leash-detaching-popup-self = You are trying to remove the leash...
 leash-detaching-popup-others = {THE($user)} is trying to remove the leash {$isSelf ->
     [true] from {REFLEXIVE($user)}
     *[false] from {THE($target)}

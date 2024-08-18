@@ -26,19 +26,25 @@ public sealed partial class LeashComponent : Component
     public float MaxDistance = 8f;
 
     /// <summary>
-    ///     The time it takes for one entity to attach the leash to another entity.
+    ///     The time it takes for one entity to attach/detach the leash to/from another entity.
     /// </summary>
     [DataField, AutoNetworkedField]
     public TimeSpan AttachDelay = TimeSpan.FromSeconds(2f), DetachDelay = TimeSpan.FromSeconds(2f);
 
     /// <summary>
-    ///     The time it takes for the leashed entity to detach itself.
+    ///     The time it takes for the leashed entity to detach itself from this leash.
     /// </summary>
     [DataField, AutoNetworkedField]
     public TimeSpan SelfDetachDelay = TimeSpan.FromSeconds(8f);
 
     [DataField, AutoNetworkedField]
     public SpriteSpecifier? LeashSprite;
+
+    [DataField]
+    public TimeSpan NextPull = TimeSpan.Zero;
+
+    [DataField, AutoNetworkedField]
+    public TimeSpan PullInterval = TimeSpan.FromSeconds(2.5f);
 
     /// <summary>
     ///     How much damage each leash joint can sustain before it breaks.
