@@ -532,3 +532,9 @@ Entries:
       message: Updated the Rouny Sprite
   id: 72
   time: '2024-08-16T06:52:50.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Cum/Milk regeneration doesn't use hunger.
+  id: 73
+  time: '2024-08-17T23:21:19.0000000+00:00'
