@@ -3,7 +3,6 @@ using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Floofstation.Leash.Components;
 using Content.Shared.Floofstation.Leash.Events;
-using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Physics;
@@ -13,6 +12,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
@@ -67,15 +67,15 @@ public sealed class LeashSystem : EntitySystem
 
                 // TODO reaction force always returns 0 and thus damage doesn't work
                 // TODO find another way to calculate how much force is being excerted to hold the two entities together
-                var damage = joint.GetReactionForce(1 / (float) leash.DamageInterval.TotalSeconds).Length() - leash.JointRepairDamage;
-                data.Damage = Math.Max(0f, data.Damage + damage);
-                data.NextDamage = _timing.CurTime + leash.DamageInterval;
-
-                if (damage >= leash.BreakDamage && !_net.IsClient)
-                {
-                    _popups.PopupPredicted(Loc.GetString("leash-snap-popup", ("leash", leashEnt)), target, null, PopupType.SmallCaution);
-                    RemoveLeash(target, (leashEnt, leash), true);
-                }
+                // var damage = joint.GetReactionForce(1 / (float) leash.DamageInterval.TotalSeconds).Length() - leash.JointRepairDamage;
+                // data.Damage = Math.Max(0f, data.Damage + damage);
+                // data.NextDamage = _timing.CurTime + leash.DamageInterval;
+                //
+                // if (damage >= leash.BreakDamage && !_net.IsClient)
+                // {
+                //     _popups.PopupPredicted(Loc.GetString("leash-snap-popup", ("leash", leashEnt)), target, null, PopupType.SmallCaution);
+                //     RemoveLeash(target, (leashEnt, leash), true);
+                // }
             }
         }
 
@@ -227,10 +227,21 @@ public sealed class LeashSystem : EntitySystem
             BreakOnWeightlessMove = true,
             NeedHand = true
         };
-        return _doAfters.TryStartDoAfter(doAfter);
+
+        var result = _doAfters.TryStartDoAfter(doAfter);
+        if (result && _net.IsServer)
+        {
+            (string, object)[] locArgs = [("user", user), ("target", leashTarget), ("anchor", anchor.Owner), ("selfAnchor", anchor.Owner == leashTarget)];
+
+            // This could've been much easier if my interaction verbs PR got merged already, but it isn't yet, so I gotta suffer
+            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-target", locArgs), user, user);
+            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-target", locArgs), leashTarget, leashTarget);
+            _popups.PopupEntity(Loc.GetString("leash-attaching-popup-others", locArgs), leashTarget, Filter.PvsExcept(leashTarget).RemovePlayerByAttachedEntity(user), true);
+        }
+        return result;
     }
 
-    public bool TryUnleash(Entity<LeashedComponent?> leashed, Entity<LeashComponent?> leash, EntityUid user)
+    public bool TryUnleash(Entity<LeashedComponent?> leashed, Entity<LeashComponent?> leash, EntityUid user, bool popup = true)
     {
         if (!Resolve(leashed, ref leashed.Comp, false) || !Resolve(leash, ref leash.Comp) || leashed.Comp.Puller != leash)
             return false;
@@ -245,7 +256,15 @@ public sealed class LeashSystem : EntitySystem
             NeedHand = true
         };
 
-        return _doAfters.TryStartDoAfter(doAfter);
+        var result = _doAfters.TryStartDoAfter(doAfter);
+        if (result && _net.IsServer)
+        {
+            (string, object)[] locArgs = [("user", user), ("target", leashed.Owner), ("isSelf", user == leashed.Owner)];
+            _popups.PopupEntity(Loc.GetString("leash-detaching-popup-self", locArgs), user, user);
+            _popups.PopupEntity(Loc.GetString("leash-detaching-popup-others", locArgs), user, Filter.PvsExcept(user), true);
+        }
+
+        return result;
     }
 
     public void DoLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid leashTarget)
@@ -285,7 +304,6 @@ public sealed class LeashSystem : EntitySystem
 
         leash.Comp.Leashed.Add(data);
         Dirty(leash);
-        Dirty(leashTarget, leashedComp);
     }
 
     public void RemoveLeash(Entity<LeashedComponent?> leashed, Entity<LeashComponent?> leash, bool breakJoint = true)

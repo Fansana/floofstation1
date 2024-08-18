@@ -1,8 +1,20 @@
-leash-attaching-popup-target = {THE($user)} is trying to attach a leash to you!
-leash-attaching-popup-others = {THE($user)} is trying to attach a leash to {THE($target)}.
+leash-attaching-popup-self = You are trying to attach a leash to {$selfAnchor ->
+    [false] {THE($target)}'s {$anchor}
+    *[true] {THE($target)}
+}...
+leash-attaching-popup-target = {THE($target)} is trying to attach a leash to {$selfAnchor ->
+    [false] your {$anchor}
+    *[true] you
+}...
+leash-attaching-popup-others = {THE($user)} is trying to attach a leash to {$selfAnchor ->
+    [false] {THE($target)}'s {$anchor}
+    *[true] {THE($target)}
+}
 
-leash-attaching-popup-success-self = You attach {THE($leash)} to {THE($target)}.
-leash-attaching-popup-success-target = {THE($user)} attaches {THE($leash)} to you.
-leash-attaching-popup-success-others = {THE($user)} attaches {THE($leash)} to {THE($target)}.
+leash-detaching-popup-self = You begin trying to remove the leash...
+leash-detaching-popup-others = {THE($user)} is trying to remove the leash {$isSelf ->
+    [true] from {REFLEXIVE($user)}
+    *[false] from {THE($target)}
+}...
 
 leash-snap-popup = {THE($leash)} snaps off!
