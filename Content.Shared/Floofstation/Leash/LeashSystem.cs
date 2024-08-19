@@ -41,6 +41,7 @@ public sealed class LeashSystem : EntitySystem
         UpdatesBefore.Add(typeof(SharedPhysicsSystem));
 
         SubscribeLocalEvent<LeashAnchorComponent, BeingUnequippedAttemptEvent>(OnAnchorUnequipping);
+        SubscribeLocalEvent<LeashedComponent, ContainerGettingInsertedAttemptEvent>(OnLeashedInserting);
         SubscribeLocalEvent<LeashComponent, JointRemovedEvent>(OnJointRemoved);
         SubscribeLocalEvent<LeashAnchorComponent, GetVerbsEvent<EquipmentVerb>>(OnGetEquipmentVerbs);
         SubscribeLocalEvent<LeashedComponent, GetVerbsEvent<InteractionVerb>>(OnGetLeashedVerbs);
@@ -67,7 +68,7 @@ public sealed class LeashSystem : EntitySystem
         {
             var sourceXForm = Transform(leashEnt);
 
-            foreach (var data in leash.Leashed)
+            foreach (var data in leash.Leashed.ToList())
             {
                 if (data.Pulled == NetEntity.Invalid || !TryGetEntity(data.Pulled, out var target))
                     continue;
@@ -112,6 +113,22 @@ public sealed class LeashSystem : EntitySystem
             && leashed.Puller is not null
         )
             args.Cancel();
+    }
+
+    private void OnLeashedInserting(Entity<LeashedComponent> ent, ref ContainerGettingInsertedAttemptEvent args)
+    {
+        // Prevent the entity from entering crates and the like because that would instantly break all joints on it, including the leash
+        if (!Exists(ent.Comp.Puller)
+            || !Exists(ent.Comp.Anchor)
+            || !TryComp<LeashComponent>(ent.Comp.Puller, out var leashPuller)
+            || !TryComp<LeashAnchorComponent>(ent.Comp.Anchor, out var leashAnchor))
+            return;
+
+        args.Cancel();
+        // This is hella unsafe to do, but we recreate the joint because dumb storage system removes it before raising the event.
+        // We have to pray that OnJointRemoved already was called and that it deferred the removal of everything that used to exist
+        // I HATE STORAGE
+        DoLeash((ent.Comp.Anchor.Value, leashAnchor), (ent.Comp.Puller.Value, leashPuller), ent);
     }
 
     private void OnJointRemoved(Entity<LeashComponent> ent, ref JointRemovedEvent args)
@@ -221,7 +238,7 @@ public sealed class LeashSystem : EntitySystem
         if (!playerCoords.TryDelta(EntityManager, _xform, pulledCoords, out var delta))
             return false;
 
-        var pullTarget = playerCoords.WithPosition(delta.Normalized() * 0.5f);
+        var pullTarget = playerCoords.WithPosition(delta.Normalized() * 0.5f).ToMapPos(EntityManager, _xform);
         _throwing.TryThrow(pulled, pullTarget, user: player, pushbackRatio: 1f, strength: 1.5f, animated: false, recoil: false, playSound: false, doSpin: false);
 
         leashComp.NextPull = _timing.CurTime + leashComp.PullInterval;
@@ -264,7 +281,8 @@ public sealed class LeashSystem : EntitySystem
             && TryGetLeashTarget(anchor!, out var leashTarget)
             && CompOrNull<LeashedComponent>(leashTarget)?.JointId == null
             && Transform(anchor).Coordinates.TryDistance(EntityManager, Transform(leash).Coordinates, out var dst)
-            && dst <= leash.Comp.Length;
+            && dst <= leash.Comp.Length
+            && !_xform.IsParentOf(Transform(leashTarget), leash); // google recursion - this makes the game explode for some reason
     }
 
     public bool TryLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid user)
@@ -340,6 +358,7 @@ public sealed class LeashSystem : EntitySystem
         var netLeashTarget = GetNetEntity(leashTarget);
         leashedComp.JointId = $"leash-joint-{netLeashTarget}";
         leashedComp.Puller = leash;
+        leashedComp.Anchor = anchor;
 
         // I'd like to use a chain joint or smth, but it's too hard and oftentimes buggy - lamia is a good bad example of that.
         var joint = _joints.CreateDistanceJoint(leash, leashTarget, id: leashedComp.JointId);
