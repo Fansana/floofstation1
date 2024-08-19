@@ -69,14 +69,15 @@ public sealed class LeashSystem : EntitySystem
 
             foreach (var data in leash.Leashed)
             {
-                // Break each leash joint whose entities are on different maps or are too far apart
-                var target = GetEntity(data.Pulled);
-                var targetXForm = Transform(target);
+                if (data.Pulled == NetEntity.Invalid || !TryGetEntity(data.Pulled, out var target))
+                    continue;
 
+                // Break each leash joint whose entities are on different maps or are too far apart
+                var targetXForm = Transform(target.Value);
                 if (targetXForm.MapUid != sourceXForm.MapUid
                     || !sourceXForm.Coordinates.TryDistance(EntityManager, targetXForm.Coordinates, out var dst)
                     || dst > leash.MaxDistance)
-                    RemoveLeash(target, (leashEnt, leash));
+                    RemoveLeash(target.Value, (leashEnt, leash));
 
                 // Calculate joint damage
                 if (_timing.CurTime < data.NextDamage
@@ -106,7 +107,10 @@ public sealed class LeashSystem : EntitySystem
     private void OnAnchorUnequipping(Entity<LeashAnchorComponent> ent, ref BeingUnequippedAttemptEvent args)
     {
         // Prevent unequipping the anchor clothing until the leash is removed
-        if (TryComp<LeashedComponent>(args.Equipment, out var leashed) && leashed.Puller is not null)
+        if (TryGetLeashTarget(args.Equipment, out var leashTarget)
+            && TryComp<LeashedComponent>(leashTarget, out var leashed)
+            && leashed.Puller is not null
+        )
             args.Cancel();
     }
 
@@ -141,7 +145,7 @@ public sealed class LeashSystem : EntitySystem
         args.Verbs.Add(leashVerb);
 
 
-        if (!TryGetLeashTarget(ent, out var leashTarget)
+        if (!TryGetLeashTarget(ent!, out var leashTarget)
             || !TryComp<LeashedComponent>(leashTarget, out var leashedComp)
             || leashedComp.Puller != leash
             || HasComp<LeashedComponent>(leashTarget)) // This one means that OnGetLeashedVerbs will add a verb to remove it
@@ -199,25 +203,26 @@ public sealed class LeashSystem : EntitySystem
             || leashComp.NextPull > _timing.CurTime)
             return false;
 
-        // Pull all entities towards the coordinates.
-        targetCoords = targetCoords.WithEntityId(player);
-        var userCoords = Transform(player).Coordinates;
-        foreach (var data in leashComp.Leashed)
-        {
-            var pulled = GetEntity(data.Pulled);
-            var pulledCoords = Transform(pulled).Coordinates.WithEntityId(player);
+        // find the entity closest to the target coords
+        var candidates = leashComp.Leashed
+            .Select(it => GetEntity(it.Pulled))
+            .Where(it => it != EntityUid.Invalid)
+            .Select(it => (it, Transform(it).Coordinates.TryDistance(EntityManager, _xform, targetCoords, out var dist) ? dist : float.PositiveInfinity))
+            .Where(it => it.Item2 < float.PositiveInfinity)
+            .ToList();
 
-            // Ensure that the new entity position is actually closer to the user than previous - this is to limit pushing via a leash
-            var newCoords = targetCoords;
-            if (!userCoords.TryDistance(EntityManager, _xform, pulledCoords, out var sourceDst)
-                || !userCoords.TryDelta(EntityManager, _xform, targetCoords, out var userTargetDelta))
-                continue;
+        if (candidates.Count == 0)
+            return false;
 
-            if (userTargetDelta.Length() > sourceDst)
-                newCoords = userCoords.WithPosition(userTargetDelta.Normalized() * sourceDst);
+        // And pull it towards the user
+        var pulled = candidates.MinBy(it => it.Item2).Item1;
+        var playerCoords = Transform(player).Coordinates;
+        var pulledCoords = Transform(pulled).Coordinates;
+        if (!playerCoords.TryDelta(EntityManager, _xform, pulledCoords, out var delta))
+            return false;
 
-            _throwing.TryThrow(pulled, newCoords, user: player, animated: false, playSound: false, doSpin: false, pushbackRatio: 1f);
-        }
+        var pullTarget = playerCoords.WithPosition(delta.Normalized() * 0.5f);
+        _throwing.TryThrow(pulled, pullTarget, user: player, pushbackRatio: 1f, strength: 1.5f, animated: false, recoil: false, playSound: false, doSpin: false);
 
         leashComp.NextPull = _timing.CurTime + leashComp.PullInterval;
         return true;
@@ -230,9 +235,12 @@ public sealed class LeashSystem : EntitySystem
     /// <summary>
     ///     Tries to find the entity that gets leashed for the given anchor entity.
     /// </summary>
-    private bool TryGetLeashTarget(Entity<LeashAnchorComponent> ent, out EntityUid leashTarget)
+    private bool TryGetLeashTarget(Entity<LeashAnchorComponent?> ent, out EntityUid leashTarget)
     {
         leashTarget = default;
+        if (!Resolve(ent, ref ent.Comp, false))
+            return false;
+
         if (TryComp<ClothingComponent>(ent, out var clothing))
         {
             if (clothing.InSlot == null || !_container.TryGetContainingContainer(ent, out var container))
@@ -253,7 +261,7 @@ public sealed class LeashSystem : EntitySystem
     public bool CanLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash)
     {
         return leash.Comp.Leashed.Count < leash.Comp.MaxJoints
-            && TryGetLeashTarget(anchor, out var leashTarget)
+            && TryGetLeashTarget(anchor!, out var leashTarget)
             && CompOrNull<LeashedComponent>(leashTarget)?.JointId == null
             && Transform(anchor).Coordinates.TryDistance(EntityManager, Transform(leash).Coordinates, out var dst)
             && dst <= leash.Comp.Length;
@@ -261,7 +269,7 @@ public sealed class LeashSystem : EntitySystem
 
     public bool TryLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid user)
     {
-        if (!CanLeash(anchor, leash) || !TryGetLeashTarget(anchor, out var leashTarget))
+        if (!CanLeash(anchor, leash) || !TryGetLeashTarget(anchor!, out var leashTarget))
             return false;
 
         // We reuse pulling attempt here because eugh it already exists
@@ -325,7 +333,7 @@ public sealed class LeashSystem : EntitySystem
 
     public void DoLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid leashTarget)
     {
-        if (_net.IsClient || leashTarget is { Valid: false } && !TryGetLeashTarget(anchor, out leashTarget))
+        if (_net.IsClient || leashTarget is { Valid: false } && !TryGetLeashTarget(anchor!, out leashTarget))
             return;
 
         var leashedComp = EnsureComp<LeashedComponent>(leashTarget);
@@ -349,13 +357,15 @@ public sealed class LeashSystem : EntitySystem
 
         if (leash.Comp.LeashSprite is { } sprite)
         {
-            var visualEntity = EntityManager.SpawnAttachedTo(null, Transform(leashTarget).Coordinates);
-            var visualComp = EnsureComp<JointVisualsComponent>(visualEntity);
+            _container.EnsureContainer<ContainerSlot>(leashTarget, LeashedComponent.VisualsContainerName);
+            if (EntityManager.TrySpawnInContainer(null, leashTarget, LeashedComponent.VisualsContainerName, out var visualEntity))
+            {
+                var visualComp = EnsureComp<JointVisualsComponent>(visualEntity.Value);
+                visualComp.Sprite = sprite;
+                visualComp.Target = leash;
 
-            visualComp.Sprite = sprite;
-            visualComp.Target = leash;
-
-            data.LeashVisuals = GetNetEntity(visualEntity);
+                data.LeashVisuals = GetNetEntity(visualEntity);
+            }
         }
 
         leash.Comp.Leashed.Add(data);
@@ -370,17 +380,18 @@ public sealed class LeashSystem : EntitySystem
         var jointId = leashed.Comp.JointId;
         RemCompDeferred<LeashedComponent>(leashed); // Has to be deferred else the client explodes for some reason
 
+        if (_container.TryGetContainer(leashed, LeashedComponent.VisualsContainerName, out var visualsContainer))
+            _container.CleanContainer(visualsContainer);
+
         if (breakJoint && jointId is not null)
             _joints.RemoveJoint(leash, jointId);
 
         if (Resolve(leash, ref leash.Comp, false))
-            foreach (var data in leash.Comp.Leashed.Where(it => it.JointId == jointId).ToList())
-            {
-                if (data.LeashVisuals is {} visualsEntity)
-                    QueueDel(GetEntity(visualsEntity));
-
+        {
+            var leashedData = leash.Comp.Leashed.Where(it => it.JointId == jointId).ToList();
+            foreach (var data in leashedData)
                 leash.Comp.Leashed.Remove(data);
-            }
+        }
 
         Dirty(leash);
     }

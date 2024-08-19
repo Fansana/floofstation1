@@ -44,24 +44,26 @@ public sealed partial class LeashComponent : Component
     public TimeSpan NextPull = TimeSpan.Zero;
 
     [DataField, AutoNetworkedField]
-    public TimeSpan PullInterval = TimeSpan.FromSeconds(2.5f);
+    public TimeSpan PullInterval = TimeSpan.FromSeconds(1.5f);
 
     /// <summary>
     ///     How much damage each leash joint can sustain before it breaks.
     /// </summary>
-    /// <remarks>Damage here actually refers to impulse exerted by the joint minus repair.</remarks>
+    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
     [DataField, AutoNetworkedField]
     public float BreakDamage = 20f;
 
     /// <summary>
     ///     How much damage each leash joint loses every <see cref="DamageInterval"/>.
     /// </summary>
+    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
     [DataField, AutoNetworkedField]
     public float JointRepairDamage = 1f;
 
     /// <summary>
     ///     Interval at which damage is calculated for each joint.
     /// </summary>
+    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
     [DataField, AutoNetworkedField]
     public TimeSpan DamageInterval = TimeSpan.FromMilliseconds(200);
 

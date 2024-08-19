@@ -47,3 +47,4 @@
     attachDelay: 0
     detachDelay: 10000 # will still be instant for admin ghosts or whatever with instant doafters tag
     selfDetachDelay: 10000
+    pullInterval: 0.1
