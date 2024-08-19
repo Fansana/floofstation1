@@ -81,3 +81,6 @@ language-Hissing-description = Hiss!
 
 language-ScugSign-name = ScugSign
 language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
+
+language-Arachnic-name = Arachnic
+language-Arachnic-description = 

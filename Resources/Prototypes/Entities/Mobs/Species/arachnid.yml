@@ -66,6 +66,13 @@
   - type: Speech
     speechVerb: Arachnid
     speechSounds: Arachnid
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    - Arachnic 
+    understands:
+    - GalacticCommon
+    - Arachnic
   - type: Vocal
     sounds:
       Male: UnisexArachnid
