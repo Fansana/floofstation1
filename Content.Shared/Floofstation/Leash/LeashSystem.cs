@@ -235,11 +235,9 @@ public sealed class LeashSystem : EntitySystem
         var pulled = candidates.MinBy(it => it.Item2).Item1;
         var playerCoords = Transform(player).Coordinates;
         var pulledCoords = Transform(pulled).Coordinates;
-        if (!playerCoords.TryDelta(EntityManager, _xform, pulledCoords, out var delta))
-            return false;
+        var pullDir = _xform.ToMapCoordinates(playerCoords).Position - _xform.ToMapCoordinates(pulledCoords).Position;
 
-        var pullTarget = playerCoords.WithPosition(delta.Normalized() * 0.5f).ToMapPos(EntityManager, _xform);
-        _throwing.TryThrow(pulled, pullTarget, user: player, pushbackRatio: 1f, strength: 1.5f, animated: false, recoil: false, playSound: false, doSpin: false);
+        _throwing.TryThrow(pulled, pullDir * 0.5f, user: player, pushbackRatio: 1f, strength: 3f, animated: false, recoil: false, playSound: false, doSpin: false);
 
         leashComp.NextPull = _timing.CurTime + leashComp.PullInterval;
         return true;
