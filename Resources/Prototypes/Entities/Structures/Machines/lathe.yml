@@ -1144,6 +1144,50 @@
       - CarpetWhite
       # Floofstation - Collars
       - ClothingNeckCollarCmd
+      # Floofstation - Socks, Armwarmers ect
+      - ClothingHandsPlainWarmers
+      - ClothingUnderSocksPlain
+      - ClothingUniformThongPlain
+      - ClothingHandsStripeRainbowWarmers
+      - ClothingUnderSocksStripedRainbow
+      - ClothingUniformStripedThongRainbow
+      - ClothingHandsStripePurpleWarmers
+      - ClothingUnderSocksStripedPurple
+      - ClothingUniformStripedThongPurple
+      - ClothingHandsStripeWhiteWarmers
+      - ClothingUnderSocksStripedWhite
+      - ClothingUniformStripedThongWhite
+      # Floofstation - Department Socks, Armwarmers ect
+      - ClothingHandsCaptainWarmers
+      - ClothingUnderSocksCaptain
+      - ClothingUniformCaptainThong
+      - ClothingHandsCommandWarmers
+      - ClothingUnderSocksCommand
+      - ClothingUniformCommandThong
+      - ClothingHandsEngiWarmers
+      - ClothingUnderSocksEngi
+      - ClothingUniformEngiThong
+      - ClothingHandsEpiWarmers
+      - ClothingUnderSocksEpi
+      - ClothingUniformEpiThong
+      - ClothingHandsChaplainWarmers
+      - ClothingUnderSocksChaplain
+      - ClothingUniformChaplainThong
+      - ClothingHandsLogisWarmers
+      - ClothingUnderSocksLogis
+      - ClothingUniformLogisThong
+      - ClothingHandsMedicWarmers
+      - ClothingUnderSocksMedic
+      - ClothingUniformMedicThong
+      - ClothingHandsSecurityWarmers
+      - ClothingUnderSocksSecurity
+      - ClothingUniformSecurityThong
+      - ClothingHandsServiceWarmers
+      - ClothingUnderSocksService
+      - ClothingUniformServiceThong
+      - ClothingHandsJanitorWarmers
+      - ClothingUnderSocksJanitor
+      - ClothingUniformJanitorThong
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
