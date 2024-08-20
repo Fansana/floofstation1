@@ -53,3 +53,26 @@
     sprite: Floof/Clothing/OuterClothing/Misc/marshoodie.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMarsHoodieHood
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterRoboOveralls
+  name: robotocist overalls
+  description: A simple pair of overalls, designed to go over a jumpsuit.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/Misc/robooveralls.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/Misc/robooveralls.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterPlainOveralls
+  name: plain overalls
+  description: A simple pair of overalls, designed to go over a jumpsuit.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/Misc/plainoveralls.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/Misc/plainoveralls.rsi
+
