@@ -56,6 +56,9 @@
     sprite: Floof/Clothing/Uniforms/plainthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/plainthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -67,6 +70,9 @@
     sprite: Floof/Clothing/Uniforms/beethong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/beethong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -78,6 +84,9 @@
     sprite: Floof/Clothing/Uniforms/coderthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/coderthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -89,6 +98,9 @@
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -100,6 +112,9 @@
     sprite: Floof/Clothing/Uniforms/stripethongwhite.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/stripethongwhite.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -111,6 +126,9 @@
     sprite: Floof/Clothing/Uniforms/stripethongpurple.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/stripethongpurple.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -122,6 +140,9 @@
     sprite: Floof/Clothing/Uniforms/stripethongrainbow.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/stripethongrainbow.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -133,6 +154,9 @@
     sprite: Floof/Clothing/Uniforms/sexcompred.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/sexcompred.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
@@ -144,6 +168,9 @@
     sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/sexcompblue.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingUniformBase
