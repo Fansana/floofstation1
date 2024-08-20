@@ -338,6 +338,13 @@
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black-and-red
   - type: FingerprintMask
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.3
   - type: GroupExamine
 
 - type: entity
@@ -350,6 +357,13 @@
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.3
   - type: GroupExamine
 
 - type: entity
@@ -366,6 +380,14 @@
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.3
+  - type: GroupExamine
 
 #Service Outfits
 #
