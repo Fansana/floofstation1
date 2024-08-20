@@ -1,4 +1,4 @@
-using Content.Server.Psionics.Abilities;
+using Content.Server.Abilities.Psionics;
 using Content.Shared.Anomaly;
 using Content.Shared.Anomaly.Components;
 using Robust.Shared.Random;

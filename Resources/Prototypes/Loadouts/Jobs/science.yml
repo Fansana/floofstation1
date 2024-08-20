@@ -46,7 +46,7 @@
   items:
     - ClothingOuterCoatRnd
 
-#- type: loadout
+#- type: loadout - Floofstation
 #  id: LoadoutScienceOuterLabcoat
 #  category: Jobs
 #  cost: 2
@@ -75,7 +75,7 @@
   items:
     - ClothingOuterCoatLabSeniorResearcher
 
-- type: loadout # Floofstation
+- type: loadout
   id: LoadoutScienceOuterExplorerLabcoat
   category: Jobs
   cost: 2

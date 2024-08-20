@@ -552,3 +552,11 @@ Entries:
       message: Pink Collar
   id: 75
   time: '2024-08-19T05:33:04.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Upstream Merge
+    - type: Remove
+      message: Experimental Psionic Refractor
+  id: 76
+  time: '2024-08-20T04:31:41.0000000+00:00'
