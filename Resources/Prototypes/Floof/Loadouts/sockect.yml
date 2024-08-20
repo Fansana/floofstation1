@@ -1,0 +1,71 @@
+#Plain Outfit
+- type: loadout
+  id: LoadoutClothingHandsPlainWarmers
+  category: Hands
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsPlainWarmers
+
+- type: loadout
+  id: LoadoutClothingUnderSocksPlain
+  category: Shoes
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksPlain
+
+- type: loadout
+  id: LoadoutClothingUniformThongPlain
+  category: Uniform
+  exclusive: true
+  items:
+    - ClothingUniformThongPlain
+
+#Striped Purple Outfit
+- type: loadout
+  id: LoadoutClothingHandsStripePurpleWarmers
+  category: Hands
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsStripePurpleWarmers
+
+- type: loadout
+  id: LoadoutClothingUnderSocksStripedPurple
+  category: Shoes
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksStripedPurple
+
+- type: loadout
+  id: LoadoutClothingUniformStripedThongPurple
+  category: Uniform
+  exclusive: true
+  items:
+    - ClothingUniformStripedThongPurple
+
+#Striped Purple Outfit
+- type: loadout
+  id: LoadoutClothingHandsStripeRainbowWarmers
+  category: Hands
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsStripeRainbowWarmers
+
+- type: loadout
+  id: LoadoutClothingUnderSocksStripedRainbow
+  category: Shoes
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksStripedRainbow
+
+- type: loadout
+  id: LoadoutClothingUniformStripedThongRainbow
+  category: Uniform
+  exclusive: true
+  items:
+    - ClothingUniformStripedThongRainbow

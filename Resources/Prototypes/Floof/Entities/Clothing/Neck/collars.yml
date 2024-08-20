@@ -22,6 +22,17 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckCollarPink
+  name: pink collar
+  description: A cute pink collar.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Neck/collar_pink.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Neck/collar_pink.rsi
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckCollarEpi
   name: epistemics collar
   description: A collar showing how loyal you are to science!
