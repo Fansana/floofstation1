@@ -1,4 +1,4 @@
-namespace Content.Shared.Psionics.Abilities
+namespace Content.Shared.Abilities.Psionics
 {
     [RegisterComponent]
     public sealed partial class PsionicInsulationComponent : Component
@@ -6,8 +6,5 @@ namespace Content.Shared.Psionics.Abilities
         public bool Passthrough = false;
 
         public List<String> SuppressedFactions = new();
-
-        [DataField]
-        public bool MindBroken = false;
     }
 }

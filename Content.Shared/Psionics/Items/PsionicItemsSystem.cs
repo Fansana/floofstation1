@@ -2,7 +2,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Clothing.Components;
 using Content.Shared.StatusEffect;
 
-namespace Content.Shared.Psionics.Abilities
+namespace Content.Shared.Abilities.Psionics
 {
     public sealed class PsionicItemsSystem : EntitySystem
     {

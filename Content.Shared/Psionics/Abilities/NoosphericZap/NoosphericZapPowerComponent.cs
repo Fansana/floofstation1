@@ -2,7 +2,7 @@ using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Shared.Psionics.Abilities
+namespace Content.Shared.Abilities.Psionics
 {
     [RegisterComponent]
     public sealed partial class NoosphericZapPowerComponent : Component
@@ -13,8 +13,5 @@ namespace Content.Shared.Psionics.Abilities
 
         [DataField("noosphericZapActionEntity")]
         public EntityUid? NoosphericZapActionEntity;
-
-        [DataField("noosphericZapFeedback")]
-        public string NoosphericZapFeedback = "noospheric-zap-feedback";
     }
 }

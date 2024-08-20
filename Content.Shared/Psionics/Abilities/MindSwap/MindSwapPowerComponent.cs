@@ -1,7 +1,7 @@
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
-namespace Content.Shared.Psionics.Abilities
+namespace Content.Shared.Abilities.Psionics
 {
     [RegisterComponent]
     public sealed partial class MindSwapPowerComponent : Component
@@ -12,8 +12,5 @@ namespace Content.Shared.Psionics.Abilities
 
         [DataField("mindSwapActionEntity")]
         public EntityUid? MindSwapActionEntity;
-
-        [DataField("mindSwapFeedback")]
-        public string MindSwapFeedback = "mind-swap-feedback";
     }
 }
