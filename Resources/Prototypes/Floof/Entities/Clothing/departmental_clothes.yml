@@ -12,6 +12,9 @@
     sprite: Floof/Clothing/Departmental/Command/captwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/captwarmer.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-regal-blue
@@ -51,6 +54,10 @@
     sprite: Floof/Clothing/Departmental/Command/commandwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/commandwarmer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-blue
@@ -91,9 +98,12 @@
     sprite: Floof/Clothing/Departmental/Engineering/engiwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Engineering/engiwarmer.rsi
+  - type: Insulated
+  - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Fiber
-    fiberMaterial: fibers-synthetic
-    fiberColor: fibers-yellow-and-orange
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-yellow
   - type: FingerprintMask
 
 - type: entity
@@ -118,6 +128,47 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Engineering/engithong.rsi
 
+#Head of Engi / Chief Engineer
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsChiefEngiWarmers
+  name: chief engineer's arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Engineering roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengiwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengiwarmer.rsi
+  - type: Insulated
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksChiefEngi
+  name: chief engineer's thigh-high socks
+  description: A pair of thigh-high socks, styled for Logistic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengisocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengisocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformChiefEngiThong
+  name: chief engineer's thong
+  description: Styled for a Logistics, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengithong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Engineering/chiefengithong.rsi
+
 
 #Epistemics Outfits
 #
@@ -132,9 +183,13 @@
     sprite: Floof/Clothing/Departmental/Epistemics/epiwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/epiwarmer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.85
   - type: Fiber
     fiberMaterial: fibers-synthetic
-    fiberColor: fibers-white-and-purple
+    fiberColor: fibers-white
   - type: FingerprintMask
 
 - type: entity
@@ -147,6 +202,10 @@
     sprite: Floof/Clothing/Departmental/Epistemics/episocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/episocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.85
 
 - type: entity
   parent: ClothingUniformBase
@@ -158,6 +217,10 @@
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
 
 #Chaplain
 - type: entity
@@ -220,6 +283,56 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/chaplainmantlehood.rsi
 
+#Head of Epi / Research Director
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsEpiHeadWarmers
+  name: research director's arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Epistemic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepiwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepiwarmer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.85
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-purple
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksEpiHead
+  name: research director's thigh-high socks
+  description: A pair of thigh-high socks, styled for Epistemic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepisocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepisocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.85
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformEpiHeadThong
+  name: research director's thong
+  description: Styled for a Epistemics, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepithong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/directorepithong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+
 #Logistics Outfits
 #
 #General Logistics
@@ -235,7 +348,7 @@
     sprite: Floof/Clothing/Departmental/Logistics/logiwarmer.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
-    fiberColor: fibers-brown-and-yellow
+    fiberColor: fibers-brown
   - type: FingerprintMask
 
 - type: entity
@@ -260,6 +373,44 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Logistics/logithong.rsi
 
+#Quartermaster/ Logistics Officer
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsLOLogisWarmers
+  name: logistics officer arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Logistic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogiwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogiwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksLOLogis
+  name: logistics officer thigh-high socks
+  description: A pair of thigh-high socks, styled for Logistic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogisocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogisocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformLOLogisThong
+  name: logistics officer thong
+  description: Styled for a Logistics, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogithong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/qmlogithong.rsi
+
 #Medical Outfits
 #
 #General Medical
@@ -274,8 +425,8 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/medicalwarmer.rsi
   - type: Fiber
-    fiberMaterial: fibers-synthetic
-    fiberColor: fibers-white-and-blue
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-white
   - type: FingerprintMask
 
 - type: entity
@@ -300,6 +451,136 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/medicalthong.rsi
 
+#Chemist
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsChemistsWarmers
+  name: chemist arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Chemists.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/chemistwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/chemistwarmer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+  - type: Fiber
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksChemists
+  name: chemist thigh-high socks
+  description: A pair of thigh-high socks, styled for Chemists.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/chemistsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/chemistsocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformChemistsThong
+  name: chemist thong
+  description: Styled for a Chemists, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/chemistthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/chemistthong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+
+#Paramedic
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsParaMedicWarmers
+  name: paramedic arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Paramedic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksParaMedic
+  name: paramedic thigh-high socks
+  description: A pair of thigh-high socks, styled for Paramedic roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1.2
+    enabled: false
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformParaMedicThong
+  name: paramedic thong
+  description: Styled for a Paramedics, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+
+#Chief Medical Officer
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCMOWarmers
+  name: chief med officer's arm-warmers
+  description: A pair of rather nice arm-warmers, styled for the CMO.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/cmowarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/cmowarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksCMO
+  name: chief med officer's thigh-high socks
+  description: A pair of thigh-high socks, styled for the CMO.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/cmosocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/cmosocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCMOThong
+  name: chief med officer's thong
+  description: Styled for the CMO, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/cmothong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/cmothong.rsi
+
 #Security Outfits
 #
 #General Security
@@ -315,19 +596,18 @@
     sprite: Floof/Clothing/Departmental/Security/secwarmer.rsi
   - type: Fiber
     fiberMaterial: fibers-durathread
-    fiberColor: fibers-black-and-red
+    fiberColor: fibers-black
   - type: FingerprintMask
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.3
-  - type: GroupExamine
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
 
 - type: entity
-  parent: ClothingShoesBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingUnderSocksSecurity
   name: security thigh-high socks
   description: A pair of thigh-high socks, styled for Security roles.
@@ -339,11 +619,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.3
-  - type: GroupExamine
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
 
 - type: entity
   parent: ClothingUniformBase
@@ -358,11 +637,128 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.3
-  - type: GroupExamine
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+#Head of Security
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsHeadSecurityWarmers
+  name: HoS arm-warmers
+  description: A pair of rather nice arm-warmers, styled for HoS.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/hoswarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/hoswarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-black
+  - type: FingerprintMask
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingUnderSocksHeadSecurity
+  name: HoS thigh-high socks
+  description: A pair of thigh-high socks, styled for the HoS.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/hossocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/hossocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformHeadSecurityThong
+  name: HoS thong
+  description: Styled for the HoS, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/hosthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/hosthong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+  #Detective
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsDetectiveWarmers
+  name: detective's arm-warmers
+  description: A pair of rather nice arm-warmers, styled for a Detective. Does not leave Fibers or Fingerprints.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
+  - type: FingerprintMask
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+  - type: GuideHelp
+    guides:
+    - Forensics
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingUnderSocksDetective
+  name: detective's thigh-high socks
+  description: A pair of thigh-high socks, styled for a Detective.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDetectiveThong
+  name: detective's thong
+  description: Styled for a Detective, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/detectthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/detectthong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.9
 
 #Service Outfits
 #
@@ -379,7 +775,7 @@
     sprite: Floof/Clothing/Departmental/Service/servicewarmer.rsi
   - type: Fiber
     fiberMaterial: fibers-synthetic
-    fiberColor: fibers-grey-and-green
+    fiberColor: fibers-grey
   - type: FingerprintMask
 
 - type: entity
@@ -403,6 +799,17 @@
     sprite: Floof/Clothing/Departmental/Service/servicethong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/servicethong.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformServiceUni
+  name: universal service jumpsuit
+  description: A jumpsuit styled for service workers.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/universalservicejumpsuit.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/universalservicejumpsuit.rsi
 
 #Janitorial
 - type: entity
@@ -430,6 +837,7 @@
     sprite: Floof/Clothing/Departmental/Service/janitorsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/janitorsocks.rsi
+  - type: NoSlip
 
 - type: entity
   parent: ClothingUniformBase
@@ -441,3 +849,117 @@
     sprite: Floof/Clothing/Departmental/Service/janitorthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/janitorthong.rsi
+
+#Bartender
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsBartenderWarmers
+  name: bartender arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Bartenders.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/bartenderwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/bartenderwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-black
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksBartender
+  name: bartender thigh-high socks
+  description: A pair of thigh-high socks, styled for Bartenders.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/bartendersocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/bartendersocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBartenderThong
+  name: bartender thong
+  description: Styled for a Bartenders, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/bartenderthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/bartenderthong.rsi
+
+#Musician
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsMusicianWarmers
+  name: musician arm-warmers
+  description: A pair of rather nice arm-warmers, styled for musicians.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/musicianwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/musicianwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-purple
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksMusician
+  name: musician thigh-high socks
+  description: A pair of thigh-high socks, styled for musicians.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/musiciansocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/musiciansocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMusicianThong
+  name: musician thong
+  description: Styled for a musicians, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/musicianthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/musicianthong.rsi
+
+#Chef
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsChefWarmers
+  name: chef arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Chef.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/chefwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/chefwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksChef
+  name: chef thigh-high socks
+  description: A pair of thigh-high socks, styled for a Chef.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/chefsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/chefsocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformChefThong
+  name: chef thong
+  description: Styled for a Chef, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Service/chefthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Service/chefthong.rsi

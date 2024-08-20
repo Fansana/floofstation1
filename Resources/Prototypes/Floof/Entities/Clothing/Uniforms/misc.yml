@@ -123,6 +123,8 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/stripethongrainbow.rsi
 
+
+#Other Outfits
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformSexCompRed
@@ -156,3 +158,24 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/reotasuit.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMusicKing
+  name: musician king
+  description: A musicians outfit, fit for a king
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/musicianking.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/musicianking.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMusicKingBlack
+  name: musician king black
+  description: A musicians outfit, fit for a king
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
