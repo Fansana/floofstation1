@@ -592,13 +592,11 @@
   id: SemenBomb
   reactants:
     Ale:
-      amount: 1
-    Beer:
       amount: 2
     Cum:
       amount: 1
   products:
-    SemenBomb: 4
+    SemenBomb: 3
 
 - type: reaction
   id: SemenHemorrhage
