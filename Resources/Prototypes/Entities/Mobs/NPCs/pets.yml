@@ -42,7 +42,24 @@
     understands:
     - GalacticCommon
     - Dog
-
+    
+  type: entity
+  name: Friend-Shaped
+  parent: MobXenoRounyNPC
+  id: MobFriendshaped
+  description: Friendly Xeno from CC
+  components:
+    factions:
+      - PetsNT
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/rouny.rsi
+     offset: 0,0.6
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
 - type: entity
   name: Old Ian
   parent: MobCorgiIan
