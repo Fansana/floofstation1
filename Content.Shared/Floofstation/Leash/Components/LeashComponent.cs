@@ -74,7 +74,7 @@ public sealed partial class LeashComponent : Component
     public List<LeashData> Leashed = new();
 
     [DataDefinition, Serializable, NetSerializable]
-    public partial class LeashData
+    public sealed partial class LeashData
     {
         [DataField]
         public string JointId = string.Empty;

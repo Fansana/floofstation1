@@ -16,6 +16,8 @@ using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Dynamics.Joints;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
@@ -60,9 +62,9 @@ public sealed class LeashSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        var leashQuery = EntityQueryEnumerator<LeashComponent>();
+        var leashQuery = EntityQueryEnumerator<LeashComponent, PhysicsComponent>();
 
-        while (leashQuery.MoveNext(out var leashEnt, out var leash))
+        while (leashQuery.MoveNext(out var leashEnt, out var leash, out var physics))
         {
             var sourceXForm = Transform(leashEnt);
 
@@ -133,10 +135,11 @@ public sealed class LeashSystem : EntitySystem
     {
         var id = args.Joint.ID;
         if (!ent.Comp.Leashed.TryFirstOrDefault(it => it.JointId == id, out var data)
-            || !TryComp<LeashedComponent>(GetEntity(data.Pulled), out var leashed))
+            || !TryGetEntity(data.Pulled, out var leashedEnt)
+            || !TryComp<LeashedComponent>(leashedEnt, out var leashed))
             return;
 
-        RemoveLeash((leashed.Owner, leashed), ent!, false);
+        RemoveLeash((leashedEnt.Value, leashed), ent!, false);
     }
 
     private void OnGetEquipmentVerbs(Entity<LeashAnchorComponent> ent, ref GetVerbsEvent<EquipmentVerb> args)
@@ -197,7 +200,7 @@ public sealed class LeashSystem : EntitySystem
             || !CanLeash(ent, (args.Used.Value, leash)))
             return;
 
-        DoLeash(ent, (args.Used.Value, leash), args.Target!.Value);
+        DoLeash(ent, (args.Used.Value, leash), EntityUid.Invalid);
     }
 
     private void OnDetachDoAfter(Entity<LeashedComponent> ent, ref LeashDetachDoAfterEvent args)
@@ -205,7 +208,7 @@ public sealed class LeashSystem : EntitySystem
         if (args.Cancelled || args.Handled || ent.Comp.Puller is not { } leash)
             return;
 
-        RemoveLeash(ent!, leash, true);
+        RemoveLeash(ent!, leash);
     }
 
     private bool OnRequestPullLeash(ICommonSession? session, EntityCoordinates targetCoords, EntityUid uid)
@@ -267,6 +270,19 @@ public sealed class LeashSystem : EntitySystem
         return true;
     }
 
+    private DistanceJoint CreateLeashJoint(string jointId, Entity<LeashComponent> leash, EntityUid leashTarget)
+    {
+        var joint = _joints.CreateDistanceJoint(leash, leashTarget, id: jointId);
+        joint.CollideConnected = false;
+        joint.Length = leash.Comp.Length;
+        joint.MinLength = 0f;
+        joint.MaxLength = leash.Comp.Length;
+        joint.Stiffness = 1f;
+        joint.CollideConnected = true; // This is just for performance reasons and doesn't actually make mobs collide.
+
+        return joint;
+    }
+
     #endregion
 
     #region public api
@@ -281,7 +297,7 @@ public sealed class LeashSystem : EntitySystem
             && !_xform.IsParentOf(Transform(leashTarget), leash); // google recursion - this makes the game explode for some reason
     }
 
-    public bool TryLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid user)
+    public bool TryLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid user, bool popup = true)
     {
         if (!CanLeash(anchor, leash) || !TryGetLeashTarget(anchor!, out var leashTarget))
             return false;
@@ -304,7 +320,7 @@ public sealed class LeashSystem : EntitySystem
         };
 
         var result = _doAfters.TryStartDoAfter(doAfter);
-        if (result && _net.IsServer)
+        if (result && _net.IsServer && popup)
         {
             (string, object)[] locArgs = [("user", user), ("target", leashTarget), ("anchor", anchor.Owner), ("selfAnchor", anchor.Owner == leashTarget)];
 
@@ -345,6 +361,12 @@ public sealed class LeashSystem : EntitySystem
         return result;
     }
 
+    /// <summary>
+    ///     Immediately creates the leash joint between the specified entities and sets up respective components.
+    /// </summary>
+    /// <param name="anchor">The anchor entity, usually either target's clothing or the target itself.</param>
+    /// <param name="leash">The leash entity.</param>
+    /// <param name="leashTarget">The entity to which the leash is actually connected. Can be EntityUid.Invalid, then it will be deduced.</param>
     public void DoLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid leashTarget)
     {
         if (_net.IsClient || leashTarget is { Valid: false } && !TryGetLeashTarget(anchor!, out leashTarget))
@@ -357,14 +379,7 @@ public sealed class LeashSystem : EntitySystem
         leashedComp.Anchor = anchor;
 
         // I'd like to use a chain joint or smth, but it's too hard and oftentimes buggy - lamia is a good bad example of that.
-        var joint = _joints.CreateDistanceJoint(leash, leashTarget, id: leashedComp.JointId);
-        joint.CollideConnected = false;
-        joint.Length = leash.Comp.Length;
-        joint.MinLength = 0f;
-        joint.MaxLength = leash.Comp.Length;
-        joint.Stiffness = 0f;
-        joint.Damping = 0f;
-
+        var joint = CreateLeashJoint(leashedComp.JointId, leash, leashTarget);
         var data = new LeashComponent.LeashData(leashedComp.JointId, netLeashTarget)
         {
             NextDamage = _timing.CurTime + leash.Comp.DamageInterval
