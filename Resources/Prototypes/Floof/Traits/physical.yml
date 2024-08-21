@@ -1,0 +1,16 @@
+- type: trait
+  id: Vampirism
+  category: Physical
+  points: -2
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  components:
+  - type: BloodSucker
+    unitsToSucc: 35
+    injectWhenSucc: false
+    webRequired: false
+    
