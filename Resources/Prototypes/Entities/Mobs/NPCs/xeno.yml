@@ -57,11 +57,16 @@
         - MobMask
         layer:
         - MobLayer
-  - type: MobState
+      actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      50: Critical
+      100: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.5
@@ -143,7 +148,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Critical
+      150: Dead
   - type: Stamina
     critThreshold: 300
   - type: SlowOnDamage
@@ -176,7 +182,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      80: Critical
+      120: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
@@ -213,7 +220,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      300: Critical
+      400: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.7
@@ -259,7 +267,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Critical
+      150: Dead
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: MeleeWeapon
