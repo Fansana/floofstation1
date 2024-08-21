@@ -5,6 +5,10 @@
 petting-success-generic = You pet {THE($target)} on {POSS-ADJ($target)} head.
 petting-success-soft-floofy = You pet {THE($target)} on {POSS-ADJ($target)} soft floofy head.
 
+hugging-success-generic = You hug {THE($target)}.
+hugging-success-generic-others = { CAPITALIZE(THE($user)) } hugs {THE($target)}.
+hugging-success-generic-target = { CAPITALIZE(THE($user)) } hugs you.
+
 petting-success-bingus = You pet {THE($target)} on {POSS-ADJ($target)} wrinkly little head.
 petting-success-bird = You pet {THE($target)} on {POSS-ADJ($target)} cute feathery head.
 petting-success-carp = You pet {THE($target)} on {POSS-ADJ($target)} fishy little head.
