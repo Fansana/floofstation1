@@ -38,6 +38,9 @@
     sprite: Floof/Clothing/Departmental/Command/captthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/captthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #General Command
 
@@ -77,6 +80,9 @@
     sprite: Floof/Clothing/Departmental/Command/commandthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/commandthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Engineering Outfits
 #
@@ -117,6 +123,9 @@
     sprite: Floof/Clothing/Departmental/Engineering/engithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Engineering/engithong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 
 #Epistemics Outfits
@@ -158,6 +167,9 @@
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Chaplain
 - type: entity
@@ -196,6 +208,9 @@
     sprite: Floof/Clothing/Departmental/Epistemics/chaplainthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/chaplainthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
@@ -259,6 +274,9 @@
     sprite: Floof/Clothing/Departmental/Logistics/logithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Logistics/logithong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Medical Outfits
 #
@@ -299,6 +317,9 @@
     sprite: Floof/Clothing/Departmental/Medical/medicalthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/medicalthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Security Outfits
 #
@@ -363,6 +384,9 @@
         Piercing: 0.1
         Heat: 0.3
   - type: GroupExamine
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Service Outfits
 #
@@ -403,6 +427,9 @@
     sprite: Floof/Clothing/Departmental/Service/servicethong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/servicethong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Janitorial
 - type: entity
@@ -441,3 +468,6 @@
     sprite: Floof/Clothing/Departmental/Service/janitorthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/janitorthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt

@@ -5,22 +5,26 @@
         "y": 32
     },
     "license": "CC-BY-3.0",
-    "copyright": "dakodragon, DiscordID: 56038550335922176",
+    "copyright": "Spirted by Dakota Haven, DiscordID: 56038550335922176",
     "states": [
         {
-            "name": "icon"
+            "name": "icon",
+            "delays": [ [ 0.3, 0.3, 0.3, 0.3, 0.3 ] ]
         },
         {
             "name": "icon_empty"
         },
         {
-            "name": "fill-1"
+            "name": "fill-1",
+            "delays": [ [ 0.3, 0.3, 0.3, 0.3, 0.3 ] ]
         },
         {
-            "name": "fill-2"
+            "name": "fill-2",
+            "delays": [ [ 0.3, 0.3, 0.3, 0.3, 0.3 ] ]
         },
         {
-            "name": "fill-3"
+            "name": "fill-3",
+            "delays": [ [ 0.3, 0.3, 0.3, 0.3, 0.3 ] ]
         }
     ]
 }

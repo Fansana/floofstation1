@@ -566,3 +566,31 @@ Entries:
       message: Hugs have returned!
   id: 77
   time: '2024-08-21T02:08:26.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Cosmetic Goggles are available in loadouts again
+  id: 78
+  time: '2024-08-21T15:30:12.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Fix
+      message: >-
+        harpies can now wear thongs, and the sex competition outfits! rejoice!
+        :3
+  id: 79
+  time: '2024-08-21T15:33:26.0000000+00:00'
+- author: Tilkku
+  changes:
+    - type: Add
+      message: 24 More Drinks
+  id: 80
+  time: '2024-08-21T15:34:46.0000000+00:00'
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Prize Vendor in Edge Bar!
+    - type: Fix
+      message: Fixed the supermatter not spawning in Edge.
+  id: 81
+  time: '2024-08-21T16:43:40.0000000+00:00'
