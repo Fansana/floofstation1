@@ -22,7 +22,7 @@
       NavSmash: !type:Bool
         true
   - type: Tool
-    speed: 1.5
+    speed: 2
     qualities:
       - Prying
   - type: Prying
@@ -60,16 +60,18 @@
   - type: MobState
     allowedStates:
     - Alive
+    - Critical
     - Dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      50: Dead
+       0: Alive
+      80: Critical
+      120: Dead
+  - type: Stamina
+    critThreshold: 80
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.5
-  - type: Stamina
-    critThreshold: 200
   - type: Bloodstream
     bloodReagent: FluorosulfuricAcid
     bloodMaxVolume: 650
@@ -130,6 +132,7 @@
     - Xeno
     understands:
     - Xeno
+    - GalacticCommon
 
 - type: entity
   name: Praetorian
@@ -145,10 +148,11 @@
       state: running
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Dead
+        0: Alive
+      100: Critical
+      150: Dead
   - type: Stamina
-    critThreshold: 300
+    critThreshold: 100
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -179,7 +183,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      80: Critical
+      120: Dead
+  - type: Stamina
+    critThreshold: 80
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
@@ -216,7 +223,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      300: Critical
+      350: Dead
+  - type: Stamina
+    critThreshold: 300
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.7
@@ -262,7 +272,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Critical
+      150: Dead
+  - type: Stamina
+    critThreshold: 100
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: MeleeWeapon
@@ -301,7 +314,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 5
+       Brute: 8
   - type: Fixtures
     fixtures:
       fix1:
