@@ -1,4 +1,22 @@
 - type: reaction
+  id: 7DeadlySins
+  reactants:
+    Blood:
+      amount: 1
+    FourteenLoko:
+      amount: 1
+    Pomelustine:
+      amount: 1
+    Sugar:
+      amount: 1
+    TableSalt:
+      amount: 1
+    Tequila:
+      amount: 2
+  products:
+    7DeadlySins: 7
+
+- type: reaction
   id: A.B.Lustine
   reactants:
     JuiceApple:
@@ -9,6 +27,52 @@
       amount: 1
   products:
     A.B.Lustine: 3
+
+- type: reaction
+  id: AppleberryFizz
+  reactants:
+    JuiceApple:
+      amount: 1
+    JuiceBerry:
+      amount: 1
+    SodaWater:
+      amount: 1
+  products:
+    AppleberryFizz: 3
+
+- type: reaction
+  id: BandE
+  reactants:
+    BlackRussian:
+      amount: 1
+    BlueCuracao:
+      amount: 1
+    Cum:
+      amount: 1
+  products:
+    BandE: 3
+
+- type: reaction
+  id: BethanysCumLust
+  reactants:
+    Cum:
+      amount: 4
+    Pomelustine:
+      amount: 3
+    NikkosNaughtyNectar:
+      amount: 4
+  products:
+    BethanysCumLust: 11
+
+- type: reaction
+  id: BethanysSluttyCumLust
+  reactants:
+    BethanysCumLust:
+      amount: 11
+    Philterex:
+      amount: 3
+  products:
+    BethanysSluttyCumLust: 14
 
 - type: reaction
   id: BlueBaller
@@ -23,6 +87,90 @@
     BlueBaller: 3
 
 - type: reaction
+  id: CafeDeCacao
+  reactants:
+    Coffee:
+      amount: 1
+    CremeDeCacao:
+      amount: 1
+    Ice:
+      amount: 1
+  products:
+    CafeDeCacao: 3
+
+- type: reaction
+  id: CalicoSunrise
+  reactants:
+    SpaceUp:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+    JuicePineapple:
+      amount: 1
+  products:
+    CalicoSunrise: 3
+
+- type: reaction
+  id: Cream
+  reactants:
+    Sugar:
+      amount: 5
+    Milk:
+      amount: 10
+  products:
+    Cream: 15
+
+- type: reaction
+  id: CreamOfCoconut
+  reactants:
+    CoconutWater:
+      amount: 2
+    Cream:
+      amount: 3
+    Sugar:
+      amount: 1
+  products:
+    CreamOfCoconut: 6
+
+- type: reaction
+  id: CremeDeCacao
+  reactants:
+    HotCocoa:
+      amount: 1
+    Sugar:
+      amount: 1
+    Vodka:
+      amount: 2
+  products:
+    CremeDeCacao: 4
+
+- type: reaction
+  id: DarkOasis
+  reactants:
+    CocoaPowder:
+      amount: 3
+    Sugar:
+      amount: 1
+    Tequila:
+      amount: 1
+  products:
+    DarkOasis: 5
+
+- type: reaction
+  id: DeadMansDraught
+  reactants:
+    Ale:
+      amount: 1
+    Cognac:
+      amount: 1
+    Rum:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    DeadMansDraught: 4
+
+- type: reaction
   id: DemonSeed
   reactants:
     Blood:
@@ -35,6 +183,18 @@
       amount: 1
   products:
     DemonSeed: 6
+
+- type: reaction
+  id: DirtyWastelander
+  reactants:
+    JuiceBerry:
+      amount: 1
+    SodaWater:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    DirtyWastelander: 3
 
 - type: reaction
   id: DoubleCreamBlaster
@@ -135,6 +295,30 @@
       amount: 1
   products:
     GrandNavy: 3
+
+- type: reaction
+  id: HeartbreakMountain
+  reactants:
+    EnergyDrink:
+      amount: 1
+    Pomelustine:
+      amount: 1
+    SpaceMountainWind:
+      amount: 1
+  products:
+    HeartbreakMountain: 3
+
+- type: reaction
+  id: HolyVice
+  reactants:
+    Blood:
+      amount: 1
+    Gin:
+      amount: 1
+    HolyWater:
+      amount: 1
+  products:
+    HolyVice: 3
 
 - type: reaction
   id: HornyStallion
@@ -249,6 +433,18 @@
     MossBloodShot: 5
 
 - type: reaction
+  id: NumberOne
+  reactants:
+    Ephedrine:
+      amount: 1
+    PwrGame:
+      amount: 1
+    Vodka:
+      amount: 1
+  products:
+    NumberOne: 3
+
+- type: reaction
   id: OpsShine
   reactants:
     BlackRussian:
@@ -273,6 +469,16 @@
       amount: 1
   products:
     OrgasmOnTheBeach: 5
+
+- type: reaction
+  id: Pomonade
+  reactants:
+    JuicePomegranate:
+      amount: 1
+    Lemonade:
+      amount: 2
+  products:
+    Pomonade: 3
 
 - type: reaction
   id: PomPassion
@@ -317,6 +523,32 @@
     PrairieOyster: 6
 
 - type: reaction
+  id: PrisonWine
+  reactants:
+    JuiceGrape:
+      amount: 2
+    Water:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    PrisonWine: 4
+
+- type: reaction
+  id: QuadrupleCreamChalice
+  reactants:
+    Cream:
+      amount: 1
+    Cum:
+      amount: 1
+    IceCream:
+      amount: 1
+    Milk:
+      amount: 1
+  products:
+    QuadrupleCreamChalice: 4
+
+- type: reaction
   id: RandyStallion
   reactants:
     Coffee:
@@ -359,7 +591,7 @@
 - type: reaction
   id: SemenBomb
   reactants:
-    Beer:
+    Ale:
       amount: 2
     Cum:
       amount: 1
@@ -391,6 +623,43 @@
     SilverStallion: 3
 
 - type: reaction
+  id: SlimesDelight
+  reactants:
+    Grenadine:
+      amount: 1
+    Slime:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+  products:
+    SlimesDelight: 3
+
+
+- type: reaction
+  id: Snowball
+  reactants:
+    Cum:
+      amount: 1
+    Ice:
+      amount: 2
+    Sugar:
+      amount: 1
+  products:
+    Snowball: 4
+
+- type: reaction
+  id: SpecialSundae
+  reactants:
+    Cum:
+      amount: 1
+    IceCream:
+      amount: 1
+    JuicePomegranate:
+      amount: 1
+  products:
+    SpecialSundae: 3
+
+- type: reaction
   id: SyndicatesOverseer
   reactants:
     Blood:
@@ -401,6 +670,18 @@
       amount: 1
   products:
     SyndicatesOverseer: 6
+
+- type: reaction
+  id: TripleCitrus
+  reactants:
+    JuiceLemon:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+  products:
+    TripleCitrus: 3
 
 - type: reaction
   id: Voltage
@@ -417,6 +698,20 @@
     Voltage: 6
 
 - type: reaction
+  id: WakeUpJuice
+  reactants:
+    CapsaicinOil:
+      amount: 1
+    Hotsauce:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    JuiceTomato:
+      amount: 1
+  products:
+    WakeUpJuice: 4
+
+- type: reaction
   id: WatermelonGinJizz
   reactants:
     Cum:
@@ -429,6 +724,18 @@
       amount: 1
   products:
     WatermelonGinJizz: 5
+
+- type: reaction
+  id: TheWaterslide
+  reactants:
+    Beer:
+      amount: 1
+    Cum:
+      amount: 1
+    Water:
+      amount: 1
+  products:
+    TheWaterslide: 3
 
 - type: reaction
   id: WhiskeySour
@@ -455,26 +762,3 @@
       amount: 1
   products:
     YeOlHandy: 5
-    
-- type: reaction
-  id: Cream
-  reactants:
-    Sugar:
-      amount: 5
-    Milk:
-      amount: 10
-  products:
-    Cream: 15
-
-- type: reaction
-  id: CreamOfCoconut
-  reactants:
-    CoconutWater:
-      amount: 2
-    Cream:
-      amount: 3
-    Sugar:
-      amount: 1
-  products:
-    CreamOfCoconut: 6
-    
