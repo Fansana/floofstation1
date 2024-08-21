@@ -65,7 +65,6 @@
   - type: MobThresholds
     thresholds:
        0: Alive
-      80: Critical
       120: Dead
   - type: Stamina
     critThreshold: 80
@@ -149,7 +148,6 @@
   - type: MobThresholds
     thresholds:
         0: Alive
-      100: Critical
       150: Dead
   - type: Stamina
     critThreshold: 100
@@ -183,7 +181,6 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Critical
       120: Dead
   - type: Stamina
     critThreshold: 80
@@ -223,7 +220,6 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Critical
       350: Dead
   - type: Stamina
     critThreshold: 300
@@ -272,7 +268,6 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
       150: Dead
   - type: Stamina
     critThreshold: 100
