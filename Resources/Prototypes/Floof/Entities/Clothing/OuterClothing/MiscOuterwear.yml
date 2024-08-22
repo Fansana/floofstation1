@@ -76,3 +76,36 @@
   - type: Clothing
     sprite: Floof/Clothing/OuterClothing/Misc/plainoveralls.rsi
 
+#Cybercoats
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCyberJacketYellow
+  name: yellow cyberjacket
+  description: a brightly coloured jacket, with a short crop.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketyellow.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketyellow.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCyberJacketPurple
+  name: purple cyberjacket
+  description: a brightly coloured jacket, with a short crop.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketpurple.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketpurple.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterCyberJacketWhite
+  name: white cyberjacket
+  description: a mono coloured jacket, with a short crop.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketwhite.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/OuterClothing/WinterCoats/cyberjacketwhite.rsi

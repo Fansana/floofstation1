@@ -69,7 +69,7 @@
   - type: Clothing
     sprite: Floof/Clothing/Under/Gloves/stripewarmerwhite.rsi
   - type: Fiber
-    fiberMaterial: fibers-cotton
+    fiberMaterial: fibers-synthetic
     fiberColor: fibers-white
   - type: FingerprintMask
 
@@ -84,7 +84,7 @@
   - type: Clothing
     sprite: Floof/Clothing/Under/Gloves/stripewarmerpurple.rsi
   - type: Fiber
-    fiberMaterial: fibers-cotton
+    fiberMaterial: fibers-synthetic
     fiberColor: fibers-purple
   - type: FingerprintMask
 
@@ -99,8 +99,8 @@
   - type: Clothing
     sprite: Floof/Clothing/Under/Gloves/stripewarmerrainbow.rsi
   - type: Fiber
-    fiberMaterial: fibers-cotton
-    fiberColor: fibers-colorful
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-purple
   - type: FingerprintMask
 
 - type: entity
