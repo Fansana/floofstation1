@@ -12,6 +12,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksPlain
 
@@ -36,6 +42,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksStripedPurple
 
@@ -60,6 +72,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksStripedRainbow
 
@@ -84,6 +102,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksCoder
 
@@ -108,6 +132,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksCoderValid
 
@@ -132,6 +162,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
   items:
     - ClothingUnderSocksBee
 
