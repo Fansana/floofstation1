@@ -177,7 +177,9 @@
     sprite: Floof/Clothing/Departmental/Engineering/chiefengithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Engineering/chiefengithong.rsi
-
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Epistemics Outfits
 #
@@ -233,6 +235,9 @@
     modifiers:
       coefficients:
         Caustic: 0.95
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Chaplain
 - type: entity
@@ -303,7 +308,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsEpiHeadWarmers
   name: research director's arm-warmers
-  description: A pair of rather nice arm-warmers, styled for Epistemic roles.
+  description: A pair of rather nice arm-warmers, styled for the research director.
   components:
   - type: Sprite
     sprite: Floof/Clothing/Departmental/Epistemics/directorepiwarmer.rsi
@@ -322,7 +327,7 @@
   parent: ClothingShoesBase
   id: ClothingUnderSocksEpiHead
   name: research director's thigh-high socks
-  description: A pair of thigh-high socks, styled for Epistemic roles.
+  description: A pair of thigh-high socks, styled for the research director.
   components:
   - type: Sprite
     sprite: Floof/Clothing/Departmental/Epistemics/directorepisocks.rsi
@@ -337,7 +342,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformEpiHeadThong
   name: research director's thong
-  description: Styled for a Epistemics, but is this even considered a piece of clothing?
+  description: Oddly, styled for the research director, but is this even considered a piece of clothing?
   components:
   - type: Sprite
     sprite: Floof/Clothing/Departmental/Epistemics/directorepithong.rsi
@@ -346,7 +351,72 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.95
+        Caustic: 0.85
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
+
+#Psionic Mantis - ForensicMantis
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsMantisEpiWarmers
+  name: psionic mantis' arm-warmers
+  description: A pair of rather nice arm-warmers, styled for a Psionic Mantis.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepiwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepiwarmer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingUnderSocksMantisEpi
+  name: psionic mantis' thigh-high socks
+  description: A pair of thigh-high socks, styled for a Psionic Mantis.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepisocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepisocks.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMantisEpiThong
+  name: psionic mantis' thong
+  description: Styled for a Psionic Mantis, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Logistics Outfits
 #
@@ -428,6 +498,54 @@
     sprite: Floof/Clothing/Departmental/Logistics/qmlogithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Logistics/qmlogithong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
+
+#Courier / MailCarrier
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCourierWarmers
+  name: courier arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Couriers.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarrierwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarrierwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUnderSocksCourier
+  name: courier thigh-high socks
+  description: A pair of thigh-high socks, styled for Couriers.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarriersocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarriersocks.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1.2
+    enabled: true
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCourierThong
+  name: courier thong
+  description: Styled for a Couriers, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarrierthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Logistics/mailcarrierthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Medical Outfits
 #
@@ -521,6 +639,9 @@
     modifiers:
       coefficients:
         Caustic: 0.95
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Paramedic
 - type: entity
@@ -551,7 +672,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1.2
-    enabled: false
+    enabled: true
 
 - type: entity
   parent: ClothingUniformBase
@@ -563,6 +684,9 @@
     sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Chief Medical Officer
 - type: entity
@@ -601,6 +725,9 @@
     sprite: Floof/Clothing/Departmental/Medical/cmothong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/cmothong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Security Outfits
 #
@@ -666,6 +793,9 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Head of Security
 - type: entity
@@ -725,6 +855,9 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
   #Detective
 - type: entity
@@ -784,6 +917,9 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.9
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Service Outfits
 #
@@ -918,6 +1054,9 @@
     sprite: Floof/Clothing/Departmental/Service/bartenderthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/bartenderthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Musician
 - type: entity
@@ -956,6 +1095,9 @@
     sprite: Floof/Clothing/Departmental/Service/musicianthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/musicianthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Chef
 - type: entity
@@ -994,3 +1136,6 @@
     sprite: Floof/Clothing/Departmental/Service/chefthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Service/chefthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt

@@ -194,6 +194,7 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 - type: loadout
   id: LoadoutClothingUnderSocksEpi
@@ -208,6 +209,7 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 
 - type: loadout
@@ -223,6 +225,7 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 #Chaplain
 
@@ -312,7 +315,43 @@
       jobs:
         - ResearchDirector
 
-#TO BE ADDED - Psionic Mantis - ForensicMantis
+#Psionic Mantis - ForensicMantis
+- type: loadout
+  id: LoadoutClothingHandsMantisEpiWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsMantisEpiWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMantisEpi
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksMantisEpi
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
+
+
+- type: loadout
+  id: LoadoutClothingUniformMantisEpiThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformMantisEpiThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
 
 #Logistics Outfits
 #
@@ -390,7 +429,42 @@
       jobs:
         - Quartermaster
 
-#TO BE ADDED - Courier - MailCarrier
+#Courier - MailCarrier
+- type: loadout
+  id: LoadoutClothingHandsCourierWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsCourierWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCourier
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksCourier
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourierThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformCourierThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
 
 #Medical Outfits
 #
