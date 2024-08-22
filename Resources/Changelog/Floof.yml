@@ -594,3 +594,9 @@ Entries:
       message: Fixed the supermatter not spawning in Edge.
   id: 81
   time: '2024-08-21T16:43:40.0000000+00:00'
+- author: neuPanda
+  changes:
+    - type: Fix
+      message: Fixed Rice Pudding
+  id: 82
+  time: '2024-08-22T00:06:58.0000000+00:00'
