@@ -110,3 +110,15 @@
     Ketchup: 15
   solids:
     IceCreamBowl: 1
+
+- type: microwaveMealRecipe
+  id: RecipeRicePudding2
+  name: rice pudding recipe
+  result: FoodRicePudding
+  time: 15
+  reagents:
+    Rice: 15
+    Cream: 15
+  solids:
+    FoodBowlBig: 1
+    
