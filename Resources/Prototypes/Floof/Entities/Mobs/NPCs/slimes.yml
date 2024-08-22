@@ -235,7 +235,7 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#63806e"
-        
+
 - type: entity
   id: ReagentSlimeSoulbreakerToxin
   parent: ReagentSlime
@@ -252,7 +252,7 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#FFFFF0"  
-        
+
 - type: entity
   id: ReagentSlimeUnstableMutagen
   parent: ReagentSlime
@@ -269,7 +269,7 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#00ff5f"
-        
+
 - type: entity
   id: ReagentSlimeMindbreakerToxin
   parent: ReagentSlime
@@ -286,7 +286,7 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#77b58e"
-        
+
 - type: entity
   id: ReagentSlimeRomerol
   parent: ReagentSlime
@@ -303,7 +303,7 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#7e916e"
-        
+
 - type: entity
   id: ReagentSlimeLead
   parent: ReagentSlime
