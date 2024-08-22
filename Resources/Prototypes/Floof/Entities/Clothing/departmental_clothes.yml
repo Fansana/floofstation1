@@ -228,9 +228,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/epithong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
   - type: Armor
     modifiers:
       coefficients:
@@ -782,10 +779,6 @@
     sprite: Floof/Clothing/Departmental/Security/secthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secthong.rsi
-  - type: GroupExamine
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
   - type: Armor
     modifiers:
       coefficients:
