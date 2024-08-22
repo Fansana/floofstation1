@@ -22,7 +22,7 @@
       NavSmash: !type:Bool
         true
   - type: Tool
-    speed: 2
+    speed: 1.5
     qualities:
       - Prying
   - type: Prying
@@ -329,24 +329,6 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     offset: 0,0.6
-  - type: Butcherable
-    butcheringType: Spike
-    spawned:
-    - id: FoodMeatRouny
-      amount: 3
-      
-- type: entity
-  name: Friendshaped
-  parent: MobXenoRunnerNPC # Delta V - These no longer inherit the ghost takeover comp
-  id: MobFriendshapedNPC # Delta V - These no longer inherit the ghost takeover comp
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/rouny.rsi
-    offset: 0,0.6
-  - type: NpcFactionMember
-    factions:
-    - PetsNT
   - type: Butcherable
     butcheringType: Spike
     spawned:
