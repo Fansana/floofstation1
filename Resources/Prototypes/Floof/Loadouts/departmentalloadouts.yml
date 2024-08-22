@@ -21,6 +21,11 @@
   items:
     - ClothingUnderSocksCaptain
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Captain
@@ -65,6 +70,11 @@
   items:
     - ClothingUnderSocksCommand
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Captain
@@ -119,6 +129,11 @@
   items:
     - ClothingUnderSocksEngi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - StationEngineer
@@ -161,6 +176,11 @@
   items:
     - ClothingUnderSocksChiefEngi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - ChiefEngineer
@@ -204,6 +224,11 @@
   items:
     - ClothingUnderSocksEpi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Scientist
@@ -249,6 +274,11 @@
   items:
     - ClothingUnderSocksChaplain
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Chaplain
@@ -298,6 +328,11 @@
   items:
     - ClothingUnderSocksEpiHead
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - ResearchDirector
@@ -336,6 +371,11 @@
   items:
     - ClothingUnderSocksMantisEpi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - ForensicMantis
@@ -376,6 +416,11 @@
   items:
     - ClothingUnderSocksLogis
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - CargoTechnician
@@ -413,6 +458,11 @@
   items:
     - ClothingUnderSocksLOLogis
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Quartermaster
@@ -450,6 +500,11 @@
   items:
     - ClothingUnderSocksCourier
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - MailCarrier
@@ -493,6 +548,11 @@
   items:
     - ClothingUnderSocksMedic
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
@@ -538,6 +598,11 @@
   items:
     - ClothingUnderSocksChemists
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Chemist
@@ -575,6 +640,11 @@
   items:
     - ClothingUnderSocksCMO
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - ChiefMedicalOfficer
@@ -612,6 +682,11 @@
   items:
     - ClothingUnderSocksParaMedic
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Paramedic
@@ -655,6 +730,11 @@
   items:
     - ClothingUnderSocksSecurity
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - SecurityOfficer
@@ -700,6 +780,11 @@
   items:
     - ClothingUnderSocksDetective
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Detective
@@ -737,6 +822,11 @@
   items:
     - ClothingUnderSocksHeadSecurity
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -781,6 +871,11 @@
   items:
     - ClothingUnderSocksService
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Bartender
@@ -845,6 +940,11 @@
   items:
     - ClothingUnderSocksBartender
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Bartender
@@ -882,6 +982,11 @@
   items:
     - ClothingUnderSocksChef
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Chef
@@ -919,6 +1024,11 @@
   items:
     - ClothingUnderSocksMusician
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Musician
@@ -980,6 +1090,11 @@
   items:
     - ClothingUnderSocksJanitor
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Janitor
@@ -1022,6 +1137,11 @@
   items:
     - ClothingUnderSocksStripedWhite
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Mime
