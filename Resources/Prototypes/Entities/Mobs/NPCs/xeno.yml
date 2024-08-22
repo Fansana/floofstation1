@@ -57,6 +57,9 @@
         - MobMask
         layer:
         - MobLayer
+  - type: MobState
+  - type: Deathgasp
+  - type: MobStateActions
       actions:
       Critical:
       - ActionCritSuccumb
