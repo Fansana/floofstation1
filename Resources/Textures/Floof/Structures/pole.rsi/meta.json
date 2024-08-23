@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Splurtstation (https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13)",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "pole"
+    },
+    {
+      "name": "pole_base"
+    }
+  ]
+}
