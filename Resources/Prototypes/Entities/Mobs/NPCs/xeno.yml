@@ -60,7 +60,7 @@
   - type: MobState
   - type: Deathgasp
   - type: MobStateActions
-      actions:
+    actions:
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
