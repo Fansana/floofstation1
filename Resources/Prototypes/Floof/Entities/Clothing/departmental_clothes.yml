@@ -331,13 +331,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/mantisepiwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/mantisepiwarmer.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-blue
