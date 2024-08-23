@@ -357,13 +357,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
@@ -478,10 +471,6 @@
     sprite: Floof/Clothing/Departmental/Logistics/mailcarriersocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Logistics/mailcarriersocks.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1.2
-    enabled: true
 
 - type: entity
   parent: ClothingUniformBase
@@ -551,10 +540,6 @@
     sprite: Floof/Clothing/Departmental/Medical/chemistwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/chemistwarmer.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.95
   - type: Fiber
     fiberMaterial: fibers-latex
     fiberColor: fibers-white
@@ -570,10 +555,6 @@
     sprite: Floof/Clothing/Departmental/Medical/chemistsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/chemistsocks.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.95
 
 - type: entity
   parent: ClothingUniformBase
@@ -585,10 +566,6 @@
     sprite: Floof/Clothing/Departmental/Medical/chemistthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/chemistthong.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.95
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
@@ -619,10 +596,6 @@
     sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1.2
-    enabled: true
 
 - type: entity
   parent: ClothingUniformBase
@@ -696,13 +669,6 @@
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black
   - type: FingerprintMask
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -714,13 +680,6 @@
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
 
 - type: entity
   parent: ClothingUniformBase
@@ -732,13 +691,6 @@
     sprite: Floof/Clothing/Departmental/Security/secthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secthong.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
@@ -758,13 +710,6 @@
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black
   - type: FingerprintMask
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -787,13 +732,6 @@
     sprite: Floof/Clothing/Departmental/Security/hosthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/hosthong.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
