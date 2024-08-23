@@ -290,10 +290,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/directorepiwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/directorepiwarmer.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.85
   - type: Fiber
     fiberMaterial: fibers-synthetic
     fiberColor: fibers-purple
