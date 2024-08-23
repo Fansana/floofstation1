@@ -21,7 +21,6 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: PotentialPsionic
     - type: Psionic
   - !type:AddComponentSpecial
     components:
