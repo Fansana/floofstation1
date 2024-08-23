@@ -10,7 +10,7 @@
           steps:
             - material: Steel
               amount: 3
-              doafter: 1
+              doAfter: 1
 
     - node: FurnStripPoleInit
       entity: StripperPoleInit
@@ -22,7 +22,7 @@
               amount: 3
           steps:
            - tool: Screwing
-             doafter: 1
+             doAfter: 1
         - to: FurnStripPole
           steps:
             - material: MetalRod
