@@ -71,6 +71,7 @@
     - Fox
     understands:
     - Fox
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: security dog
@@ -185,3 +186,4 @@
     understands:
     - Dog
     - GalacticCommon
+  - type: LeashAnchor # Floofstation

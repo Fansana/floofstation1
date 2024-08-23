@@ -612,3 +612,19 @@ Entries:
       message: 'Fixed defense values for arm-warmers '
   id: 84
   time: '2024-08-22T10:43:09.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        A new leash item has been added to autolathe to help you keep your
+        animals and station pets in check. If the station pet in question has
+        hands and can speak, the leash can be attached to their collar via strip
+        menu.
+  id: 85
+  time: '2024-08-23T00:07:19.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: '"Pussy" trait that creates a "Natural Lubricant"'
+  id: 86
+  time: '2024-08-23T00:07:53.0000000+00:00'
