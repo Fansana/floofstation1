@@ -57,10 +57,6 @@
     sprite: Floof/Clothing/Departmental/Command/commandwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/commandwarmer.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-blue
