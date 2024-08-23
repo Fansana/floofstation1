@@ -747,6 +747,9 @@
     sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-synthetic
+    fiberColor: fibers-brown
   - type: FingerprintMask
 
 - type: entity
