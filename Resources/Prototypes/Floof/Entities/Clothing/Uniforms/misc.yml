@@ -144,6 +144,8 @@
     tags:
     - Skirt
 
+
+#Other Outfits
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformSexCompRed
@@ -174,7 +176,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniforReotaSuit
+  id: ClothingUniformReotaSuit
   name: casual suit
   description: A rather casual looking suit
   components:
@@ -183,3 +185,24 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/reotasuit.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMusicKing
+  name: musician king
+  description: A musicians outfit, fit for a king
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/musicianking.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/musicianking.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMusicKingBlack
+  name: musician king black
+  description: A musicians outfit, fit for a king
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi

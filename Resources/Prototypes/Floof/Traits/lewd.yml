@@ -38,23 +38,22 @@
           - ReagentId: Milk
             Quantity: 50
 
-# WIP - Needs a Reagent
-# - type: trait
-#   id: SquirtProducer
-#   category: Physical
-#   requirements:
-#     - !type:CharacterJobRequirement
-#       inverted: true
-#       jobs:
-#         - Borg
-#         - MedicalBorg
-#   components:
-#     - type: SquirtProducer
-#       solutionname: "vagina"
-#     - type: SolutionContainerManager
-#       solutions:
-#         vagina:
-#           maxVol: 250
-#           reagents:
-#           - ReagentId: Water
-#             Quantity: 30
+- type: trait
+  id: SquirtProducer
+  category: Physical
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  components:
+    - type: SquirtProducer
+      solutionname: "vagina"
+    - type: SolutionContainerManager
+      solutions:
+        vagina:
+          maxVol: 25
+          reagents:
+          - ReagentId: NaturalLubricant
+            Quantity: 25

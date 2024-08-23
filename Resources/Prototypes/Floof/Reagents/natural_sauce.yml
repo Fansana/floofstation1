@@ -19,3 +19,28 @@
     collection: FootstepSticky
     params:
       volume: 6
+
+- type: reagent
+  id: NaturalLubricant
+  name: reagent-name-nat-lube
+  group: NaturalSauce
+  desc: reagent-desc-nat-lube
+  slippery: true
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: funny
+  color: "#d6d6d6"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.3
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 4
+  tileReactions:
+  - !type:SpillTileReaction
+    paralyzeTime: 0.5
+    launchForwardsMultiplier: 1.2
+    requiredSlipSpeed: 1

@@ -254,6 +254,7 @@
     factions:
     - Passive
   - type: RandomBark
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   parent: MobChicken
@@ -561,7 +562,7 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
-
+  - type: LeashAnchor # Floofstation - moffroach my beloved
 
 # Note that the mallard duck is actually a male drake mallard, with the brown duck being the female variant of the same species, however ss14 lacks sex specific textures
 # The white duck is more akin to a pekin or call duck.
@@ -642,6 +643,7 @@
     - Passive
   - type: RandomBark
     barkMultiplier: 0.7
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: white duck #Quack
@@ -829,6 +831,7 @@
       - Moooooo
       - Moooo
     barkMultiplier: 3
+  - type: LeashAnchor # Floofstation
 
 
 - type: entity
@@ -997,6 +1000,7 @@
   - type: HTN
     rootTask:
       task: RuminantHostileCompound
+  - type: LeashAnchor # Floofstation
 
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
@@ -1045,6 +1049,7 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: gorilla
@@ -1100,6 +1105,7 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: kangaroo
@@ -1192,6 +1198,7 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: boxing kangaroo
@@ -1313,6 +1320,7 @@
     tags:
     - VimPilot
     - DoorBumpOpener
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: monkey
@@ -1822,6 +1830,7 @@
   - type: Tag
     tags:
     - VimPilot
+  - type: LeashAnchor # Floofstation
 
 
 - type: entity
@@ -1870,6 +1879,7 @@
     interactSuccessSpawn: EffectHearts
   - type: Bloodstream
     bloodMaxVolume: 50
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: frog
@@ -2446,6 +2456,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: LeashAnchor # Floofstation
 
 
 - type: entity
@@ -2529,6 +2540,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: fox
@@ -2617,6 +2629,7 @@
     - Fox
     understands:
     - Fox
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: corgi
@@ -2686,6 +2699,7 @@
     tags:
     - VimPilot
   - type: RandomBark
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: corrupted corgi
@@ -2847,6 +2861,7 @@
     tags:
     - VimPilot
   - type: RandomBark
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: calico cat
@@ -3139,6 +3154,7 @@
     - Hissing
     understands:
     - Hissing
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: hamster
@@ -3285,6 +3301,7 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: pig
