@@ -22,3 +22,4 @@
   - type: DeviceLinkSink
     ports:
       - Trigger
+  - type: LeashAnchor # floofstation
