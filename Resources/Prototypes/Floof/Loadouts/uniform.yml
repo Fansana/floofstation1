@@ -75,3 +75,28 @@
        departments:
          - Security
          - Command
+
+#Floofstation - Sock ect Uniform add ins
+- type: loadout
+  id: LoadoutClothingUniformReotaSuit
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformReotaSuit
+
+- type: loadout
+  id: LoadoutClothingUniformLoinClothBlack
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformLoinClothBlack
+
+- type: loadout
+  id: LoadoutClothingUniformLoinClothWhite
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformLoinClothWhite
