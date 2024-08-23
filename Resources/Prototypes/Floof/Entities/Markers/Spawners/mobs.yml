@@ -10,3 +10,16 @@
   - type: ConditionalSpawner
     prototypes:
       - MobArcticFoxSeb
+
+- type: entity
+  name: Friend-Shaped Spawner
+  id: SpawnMobFriendShaped
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - MobFriendshapedNPC
