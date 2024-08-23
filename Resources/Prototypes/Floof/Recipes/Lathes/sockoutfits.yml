@@ -28,6 +28,27 @@
   materials:
     Cloth: 200
 
+- type: latheRecipe
+  id: ClothingHandsBeeWarmers
+  result: ClothingHandsBeeWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingHandsCoderWarmers
+  result: ClothingHandsCoderWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingHandsCoderValidWarmers
+  result: ClothingHandsCoderValidWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+
 #Socks
 
 - type: latheRecipe
@@ -58,6 +79,27 @@
   materials:
     Cloth: 200
 
+- type: latheRecipe
+  id: ClothingUnderSocksBee
+  result: ClothingUnderSocksBee
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUnderSocksCoder
+  result: ClothingUnderSocksCoder
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUnderSocksCoderValid
+  result: ClothingUnderSocksCoderValid
+  completetime: 2
+  materials:
+    Cloth: 200
+
 #Thongs
 
 - type: latheRecipe
@@ -84,6 +126,27 @@
 - type: latheRecipe
   id: ClothingUniformStripedThongWhite
   result: ClothingUniformStripedThongWhite
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUniformThongBee
+  result: ClothingUniformThongBee
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUniformThongCoder
+  result: ClothingUniformThongCoder
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  id: ClothingUniformThongCoderValid
+  result: ClothingUniformThongCoderValid
   completetime: 2
   materials:
     Cloth: 200

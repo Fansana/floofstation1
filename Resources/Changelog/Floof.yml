@@ -612,3 +612,37 @@ Entries:
       message: 'Fixed defense values for arm-warmers '
   id: 84
   time: '2024-08-22T10:43:09.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        A new leash item has been added to autolathe to help you keep your
+        animals and station pets in check. If the station pet in question has
+        hands and can speak, the leash can be attached to their collar via strip
+        menu.
+  id: 85
+  time: '2024-08-23T00:07:19.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: '"Pussy" trait that creates a "Natural Lubricant"'
+  id: 86
+  time: '2024-08-23T00:07:53.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'the following Reagent slime entities '
+  id: 87
+  time: '2024-08-23T03:25:13.0000000+00:00'
+- author: DakoDemon
+  changes:
+    - type: Add
+      message: Added a few more outfits
+    - type: Fix
+      message: Fixed the skirt issue for harpies
+    - type: Fix
+      message: Fixed Sec armor values
+    - type: Tweak
+      message: The Autodrobe Restock is now 2000 (from 1730)
+  id: 88
+  time: '2024-08-23T19:50:13.0000000+00:00'
