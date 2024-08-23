@@ -12,9 +12,6 @@
     sprite: Floof/Clothing/Departmental/Command/captwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Command/captwarmer.rsi
-  - type: GloveHeatResistance
-    heatResistance: 1400
-  - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-regal-blue
