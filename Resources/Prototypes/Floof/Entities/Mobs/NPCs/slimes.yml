@@ -120,10 +120,10 @@
 - type: entity
   id: ReagentSlimeSpacelube
   parent: ReagentSlime
-  suffix: SpaceLube
+  suffix: Spacelube
   components:
   - type: Bloodstream
-    bloodReagent: Spacelube
+    bloodReagent: SpaceLube
   - type: PointLight
     color: "#77b58e"
   - type: Sprite
