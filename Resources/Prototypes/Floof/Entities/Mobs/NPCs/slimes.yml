@@ -237,23 +237,6 @@
         color: "#63806e"
 
 - type: entity
-  id: ReagentSlimeSoulbreakerToxin
-  parent: ReagentSlime
-  suffix: SoulbreakerToxin
-  components:
-  - type: Bloodstream
-    bloodReagent: SoulbreakerToxin
-  - type: PointLight
-    color: "#FFFFF0"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#FFFFF0"  
-
-- type: entity
   id: ReagentSlimeUnstableMutagen
   parent: ReagentSlime
   suffix: UnstableMutagen
@@ -269,40 +252,6 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#00ff5f"
-
-- type: entity
-  id: ReagentSlimeMindbreakerToxin
-  parent: ReagentSlime
-  suffix: MindbreakerToxin
-  components:
-  - type: Bloodstream
-    bloodReagent: MindbreakerToxin
-  - type: PointLight
-    color: "#77b58e"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#77b58e"
-
-- type: entity
-  id: ReagentSlimeRomerol
-  parent: ReagentSlime
-  suffix: Romerol
-  components:
-  - type: Bloodstream
-    bloodReagent: Romerol
-  - type: PointLight
-    color: "#7e916e"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#7e916e"
 
 - type: entity
   id: ReagentSlimeLead
@@ -354,20 +303,3 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#c6c8cc"
-
-- type: entity
-  id: ReagentSlimeAmbuzolPlus
-  parent: ReagentSlime
-  suffix: AmbuzolPlus
-  components:
-  - type: Bloodstream
-    bloodReagent: AmbuzolPlus
-  - type: PointLight
-    color: "#1274b5"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#1274b5"
