@@ -1,0 +1,928 @@
+- type: entity
+  abstract: true
+  parent:
+  - BaseSimpleMob
+  - MobCombat
+  - MobBloodstream
+  - MobFlammable
+  id: SimpleSpaceMobBaseFriend # Mob without barotrauma, freezing and asphyxiation (for space carps!?)
+  suffix: AI
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcBite
+  - type: Body
+    prototype: Animal
+  - type: Climbing
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: MobPrice
+    price: 1000 # Living critters are valuable in space.
+  - type: Perishable
+
+- type: entity
+  name: basic
+  id: MobSpaceFriend
+  parent: SimpleSpaceMobBaseFriend
+  abstract: true
+  description: It looks friendly. Why don't you give it a hug?
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/rouny.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      40: Critical
+      80: Dead
+  - type: Stamina
+    critThreshold: 150
+  - type: MovementAlwaysTouching
+  - type: Bloodstream
+    bloodMaxVolume: 3=600
+    bloodReagent: FluorosulfuricAcid
+  - type: CombatMode
+  - type: Temperature
+    heatDamageThreshold: 500
+    coldDamageThreshold: 0
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 5
+        Slash: 10
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+  - type: Puller
+    needsHands: false
+  - type: GhostTakeoverAvailable
+  - type: Speech
+    speechVerb: LargeMob
+
+- type: entity
+  name: Neutral Rouny
+  id: MobXenoFriendlyRouny
+  parent: SimpleSpaceMobBaseFriend
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/rouny.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      25: 0.5
+  - type: Stamina
+    critThreshold: 200
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      groups:
+        Brute: 6
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRouny
+      amount: 5
+  #- type: GhostRole # Delta V - Moves ghost role from parent to child
+  #  allowMovement: true # Delta V - Moves ghost role from parent to child
+  #  allowSpeech: true # Delta V - Moves ghost role from parent to child
+  #  makeSentient: true # Delta V - Moves ghost role from parent to child
+  #  name: ghost-role-information-xeno-name # Delta V - Moves ghost role from parent to child
+  #  description: ghost-role-information-xeno-description # Delta V - Moves ghost role from parent to child
+  #  rules: ghost-role-information-xeno-rules # Delta V - Moves ghost role from parent to child
+  # - type: GhostTakeoverAvailable # Delta V - Moves ghost role from parent to child
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: Psionic #Nyano - Summary: makes psionic by default.
+    removable: false
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - GalacticCommon
+
+- type: entity
+  name: Neutral Praetorian
+  id: MobXenoFriendlyPraetorian
+  parent: SimpleSpaceMobBaseFriend
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/praetorian.rsi
+    offset: 0,0.4
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 400
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.7
+  - type: Stamina
+    critThreshold: 200
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 6
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
+  #- type: GhostRole # Delta V - Moves ghost role from parent to child
+  #  allowMovement: true # Delta V - Moves ghost role from parent to child
+  #  allowSpeech: true # Delta V - Moves ghost role from parent to child
+  #  makeSentient: true # Delta V - Moves ghost role from parent to child
+  #  name: ghost-role-information-xeno-name # Delta V - Moves ghost role from parent to child
+  #  description: ghost-role-information-xeno-description # Delta V - Moves ghost role from parent to child
+  #  rules: ghost-role-information-xeno-rules # Delta V - Moves ghost role from parent to child
+  # - type: GhostTakeoverAvailable # Delta V - Moves ghost role from parent to child
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: Psionic #Nyano - Summary: makes psionic by default.
+    removable: false
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - GalacticCommon
+
+- type: entity
+  name: Neutral Drone
+  id: MobXenoFriendlyDrone
+  parent: SimpleSpaceMobBaseFriend
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/drone.rsi
+    offset: 0,0.2
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 450
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+  - type: Stamina
+    critThreshold: 200
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 6
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 3
+  #- type: GhostRole # Delta V - Moves ghost role from parent to child
+  #  allowMovement: true # Delta V - Moves ghost role from parent to child
+  #  allowSpeech: true # Delta V - Moves ghost role from parent to child
+  #  makeSentient: true # Delta V - Moves ghost role from parent to child
+  #  name: ghost-role-information-xeno-name # Delta V - Moves ghost role from parent to child
+  #  description: ghost-role-information-xeno-description # Delta V - Moves ghost role from parent to child
+  #  rules: ghost-role-information-xeno-rules # Delta V - Moves ghost role from parent to child
+  # - type: GhostTakeoverAvailable # Delta V - Moves ghost role from parent to child
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: Psionic #Nyano - Summary: makes psionic by default.
+    removable: false
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - GalacticCommon
+
+- type: entity
+  name: Neutral Ravager
+  id: MobXenoFriendlyRavager
+  parent: SimpleSpaceMobBaseFriend
+  description: They mostly come at night. Mostly.
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: Tool
+    speed: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/ravager.rsi
+    offset: 0,0.5
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1350
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Critical
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Critical
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.7
+  - type: Stamina
+    critThreshold: 200
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 650
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 6
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Critical:
+        Base: crit
+      Dead:
+        Base: dead
+  - type: Puller
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
+  #- type: GhostRole # Delta V - Moves ghost role from parent to child
+  #  allowMovement: true # Delta V - Moves ghost role from parent to child
+  #  allowSpeech: true # Delta V - Moves ghost role from parent to child
+  #  makeSentient: true # Delta V - Moves ghost role from parent to child
+  #  name: ghost-role-information-xeno-name # Delta V - Moves ghost role from parent to child
+  #  description: ghost-role-information-xeno-description # Delta V - Moves ghost role from parent to child
+  #  rules: ghost-role-information-xeno-rules # Delta V - Moves ghost role from parent to child
+  # - type: GhostTakeoverAvailable # Delta V - Moves ghost role from parent to child
+  - type: TypingIndicator
+    proto: alien
+  - type: Temperature
+    heatDamageThreshold: 360
+    coldDamageThreshold: -150
+    currentTemperature: 310.15
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NoSlip
+  - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
+    molsPerSecondPerUnitMass: 0.0005
+  - type: Speech
+    speechVerb: LargeMob
+  - type: Psionic #Nyano - Summary: makes psionic by default.
+    removable: false
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - GalacticCommon
+
+- type: inventoryTemplate
+  id: friendxeno
+  slots:
+  - name: id
+    slotTexture: id
+    slotFlags: IDCARD
+    slotGroup: SecondHotbar
+    stripTime: 6
+    uiWindowPos: 2,1
+    strippingWindowPos: 2,4
+    displayName: ID
+  - name: pocket1
+    slotTexture: pocket
+    slotFlags: POCKET
+    slotGroup: MainHotbar
+    stripTime: 3
+    uiWindowPos: 0,3
+    strippingWindowPos: 0,4
+    displayName: Pocket 1
+    stripHidden: false
+
+- type: entity
+  name: Friend-Shaped
+  parent: MobXenoFriendlyRouny
+  id: MobXenoFriendShaped
+  description: A very clearly friend-shaped Xeno.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Floof/Mobs/Pets/friendshape.rsi
+    scale: 0.7, 0.7
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: friendshape
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: friendshape
+      Critical:
+        Base: friendshape_crit
+      Dead:
+        Base: friendshape_dead
+  - type: Inventory
+    speciesId: rouny
+    templateId: friendxeno
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 250
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRouny
+      amount: 5
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
+
+- type: entity
+  name: Patriach
+  parent: MobXenoFriendlyPraetorian
+  id: MobXenoPatriarch
+  description: A very clearly friend-shaped Xeno.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Floof/Mobs/Pets/patriarch.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: patriarch
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: patriarch
+      Critical:
+        Base: patriarch_crit
+      Dead:
+        Base: patriarch_dead
+  - type: Inventory
+    speciesId: praetorian
+    templateId: friendxeno
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
+
+- type: entity
+  name: FXES
+  parent: MobXenoFriendlyDrone
+  id: MobXenoFXES
+  description: A very clearly friend-shaped Xeno.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Floof/Mobs/Pets/fxes.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: fxes
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: fxes
+      Critical:
+        Base: fxes_crit
+      Dead:
+        Base: fxes_dead
+  - type: Inventory
+    speciesId: drone
+    templateId: friendxeno
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 3
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
+
+- type: entity
+  name: Hell-Shaped
+  parent: MobXenoFriendlyRavager
+  id: MobXenoHellShaped
+  description: A very clearly friend-shaped Xeno.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Floof/Mobs/Pets/hellshaped.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: hellshaped
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: hellshaped
+      Critical:
+        Base: hellshaped_crit
+      Dead:
+        Base: hellshaped_dead
+  - type: Inventory
+    speciesId: ravager
+    templateId: friendxeno
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
+
+- type: entity
+  name: FXE Subject 7355
+  parent: MobXenoFriendlyRavager
+  id: MobXenoSubjectTess
+  description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Floof/Mobs/Pets/subject7355.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: subject7355
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
+  - type: PointLight
+    radius: 2
+    energy: .5
+    color: "#639fff"
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: subject7355
+      Critical:
+        Base: subject7355_crit
+      Dead:
+        Base: subject7355_dead
+  - type: Inventory
+    speciesId: ravager
+    templateId: friendxeno
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatXeno
+      amount: 5
+  - type: Tag
+    tags:
+    - CannotSuicide
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - GalacticCommon
+    - Xeno
