@@ -847,7 +847,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsDetectiveWarmers
   name: detective's arm-warmers
-  description: A pair of rather nice arm-warmers, styled for a Detective. Does not leave Fibers or Fingerprints.
+  description: A pair of rather nice arm-warmers, styled for a Detective.
   components:
   - type: Sprite
     sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
