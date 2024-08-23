@@ -305,10 +305,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/directorepisocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/directorepisocks.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.85
 
 - type: entity
   parent: ClothingUniformBase
