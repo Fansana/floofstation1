@@ -1,13 +1,8 @@
 - type: entity
   name: Friendshaped
-  parent: MobXenoRunnerNPC
+  parent: MobXenoRounyNPC
   id: MobFriendshapedNPC
   components:
   - type: NpcFactionMember
     factions:
     - PetsNT
-  - type: Butcherable
-    butcheringType: Spike
-    spawned:
-    - id: FoodMeatRouny
-      amount: 3
