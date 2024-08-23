@@ -186,7 +186,7 @@
     thresholds:
       0: Alive
       80: Critical
-      120: Dead
+      130: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
