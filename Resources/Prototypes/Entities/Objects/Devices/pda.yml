@@ -417,6 +417,12 @@
     borderColor: "#858585"
   - type: Icon
     state: pda-library
+  - type: CartridgeLoader
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - GlimmerMonitorCartridge
 
 - type: entity
   parent: BasePDA
