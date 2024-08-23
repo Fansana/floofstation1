@@ -5,7 +5,7 @@
   description: A large and shiny egg, couldn't have been laid by a chicken!
   components:
   - type: Sprite
-    sprite: Floof\Objects\Fun\Lewd\egg.rsi
+    sprite: Floof/Objects/Fun/Lewd/egg.rsi
     state: egg_chicken
 
 - type: entity
@@ -15,7 +15,7 @@
   description: A warm and shimmering egg, power could be felt from within...
   components:
   - type: Sprite
-    sprite: Floof\Objects\Fun\Lewd\egg.rsi
+    sprite: Floof/Objects/Fun/Lewd/egg.rsi
     state: egg_dragon
 
 - type: entity
@@ -25,7 +25,7 @@
   description: A void egg. This has to be dangerous, right?
   components:
   - type: Sprite
-    sprite: Floof\Objects\Fun\Lewd\egg.rsi
+    sprite: Floof/Objects/Fun/Lewd/egg.rsi
     state: egg_void
 
 - type: entity
@@ -35,7 +35,7 @@
   description: A globby and squishy egg, feels nasty.
   components:
   - type: Sprite
-    sprite: Floof\Objects\Fun\Lewd\egg.rsi
+    sprite: Floof/Objects/Fun/Lewd/egg.rsi
     state: egg_slimeglob
 
 - type: entity
@@ -45,5 +45,5 @@
   description: An egg covered in a sticky and sweet honey.
   components:
   - type: Sprite
-    sprite: Floof\Objects\Fun\Lewd\egg.rsi
+    sprite: Floof/Objects/Fun/Lewd/egg.rsi
     state: egg_honeycomb
