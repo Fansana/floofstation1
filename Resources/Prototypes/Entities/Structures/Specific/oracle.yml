@@ -15,7 +15,6 @@
         state: oracle-0
   - type: Speech
     speechSounds: Tenor
-  - type: PotentialPsionic
   - type: Psionic
   - type: SolutionContainerManager
     solutions:
