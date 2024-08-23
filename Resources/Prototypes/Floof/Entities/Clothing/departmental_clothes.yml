@@ -854,16 +854,6 @@
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/detectwarmer.rsi
   - type: FingerprintMask
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.9
-  - type: GuideHelp
-    guides:
-    - Forensics
 
 - type: entity
   parent: ClothingShoesMilitaryBase
