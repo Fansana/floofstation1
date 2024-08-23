@@ -21,11 +21,12 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: PotentialPsionic
     - type: Psionic
-      amplification: 0.3
-      dampening: 0.3
-    - type: MetapsionicPower
+  - !type:AddComponentSpecial
+    components:
+    - type: InnatePsionicPowers
+      powersToAdd:
+        - MetapsionicPower
 
 - type: startingGear
   id: ForensicMantisGear

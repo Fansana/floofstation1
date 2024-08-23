@@ -634,3 +634,15 @@ Entries:
       message: 'the following Reagent slime entities '
   id: 87
   time: '2024-08-23T03:25:13.0000000+00:00'
+- author: DakoDemon
+  changes:
+    - type: Add
+      message: Added a few more outfits
+    - type: Fix
+      message: Fixed the skirt issue for harpies
+    - type: Fix
+      message: Fixed Sec armor values
+    - type: Tweak
+      message: The Autodrobe Restock is now 2000 (from 1730)
+  id: 88
+  time: '2024-08-23T19:50:13.0000000+00:00'
