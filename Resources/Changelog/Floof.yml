@@ -606,3 +606,9 @@ Entries:
       message: New Trait, Vampirism!
   id: 83
   time: '2024-08-22T00:07:07.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Fix
+      message: 'Fixed defense values for arm-warmers '
+  id: 84
+  time: '2024-08-22T10:43:09.0000000+00:00'
