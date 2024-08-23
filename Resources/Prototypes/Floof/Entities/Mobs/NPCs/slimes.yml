@@ -106,7 +106,7 @@
   suffix: Soap
   components:
   - type: Bloodstream
-    bloodReagent: Soap
+    bloodReagent: SoapReagent
   - type: PointLight
     color: "#c8dfc9"
   - type: Sprite
@@ -120,7 +120,7 @@
 - type: entity
   id: ReagentSlimeSpacelube
   parent: ReagentSlime
-  suffix: Spacelube
+  suffix: SpaceLube
   components:
   - type: Bloodstream
     bloodReagent: Spacelube
@@ -140,7 +140,7 @@
   suffix: Buzzachloricbees
   components:
   - type: Bloodstream
-    bloodReagent: Buzzachloricbees
+    bloodReagent: BuzzochloricBees
   - type: PointLight
     color: "#FFD35D"
   - type: Sprite
@@ -157,7 +157,7 @@
   suffix: Wehjuice
   components:
   - type: Bloodstream
-    bloodReagent: Wehjuice
+    bloodReagent: JuiceThatMakesYouWeh
   - type: PointLight
     color: "#59b23a"
   - type: Sprite
@@ -276,7 +276,7 @@
   suffix: chlorinetriflouride
   components:
   - type: Bloodstream
-    bloodReagent: chlorinetriflouride
+    bloodReagent: ChlorineTrifluoride
   - type: PointLight
     color: "#FFC8C8"
   - type: Sprite
