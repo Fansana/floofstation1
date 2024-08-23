@@ -138,9 +138,6 @@
     sprite: Floof/Clothing/Departmental/Engineering/chiefengiwarmer.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Engineering/chiefengiwarmer.rsi
-  - type: Insulated
-  - type: GloveHeatResistance
-    heatResistance: 1400
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-white
