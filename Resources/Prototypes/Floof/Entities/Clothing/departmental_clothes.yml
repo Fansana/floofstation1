@@ -316,10 +316,6 @@
     sprite: Floof/Clothing/Departmental/Epistemics/directorepithong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Epistemics/directorepithong.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.85
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
