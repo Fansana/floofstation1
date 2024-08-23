@@ -865,13 +865,6 @@
     sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.9
 
 - type: entity
   parent: ClothingUniformBase
