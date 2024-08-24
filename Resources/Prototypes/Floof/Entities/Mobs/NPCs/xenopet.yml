@@ -141,7 +141,7 @@
 
 - type: entity
   name: Patriach
-  parent: MobXenoFriendlyPraetorian
+  parent: MobXenoNeutralPraetorian
   id: MobXenoPatriarch
   description: A not entirely clearly friend-shaped Xeno.
   components:
@@ -183,7 +183,7 @@
 
 - type: entity
   name: FXES
-  parent: MobXenoFriendlyDrone
+  parent: MobXenoNeutralDrone
   id: MobXenoFXES
   description: A very clearly friend-shaped Xeno.
   components:
@@ -213,7 +213,7 @@
 
 - type: entity
   name: Hell-Shaped
-  parent: MobXenoFriendlyRavager
+  parent: MobXenoNeutralRavager
   id: MobXenoHellShaped
   description: A very clearly friend-shaped Xeno.
   components:
@@ -243,7 +243,7 @@
 
 - type: entity
   name: FXE Subject 7355
-  parent: MobXenoFriendlyRavager
+  parent: MobXenoNeutralRavager
   id: MobXenoSubjectTess
   description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
   components:
