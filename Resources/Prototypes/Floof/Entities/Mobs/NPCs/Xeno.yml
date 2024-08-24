@@ -1,0 +1,8 @@
+- type: entity
+  name: Friendshaped
+  parent: MobXenoRounyNPC
+  id: MobFriendshapedNPC
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
