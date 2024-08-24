@@ -646,3 +646,15 @@ Entries:
       message: The Autodrobe Restock is now 2000 (from 1730)
   id: 88
   time: '2024-08-23T19:50:13.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Friend Shaped entity
+    - type: Add
+      message: >-
+        Added a crit state to most Xenos including: Friend, Rouny, Praetorian,
+        Drone, and Ravager.  
+    - type: Fix
+      message: 'fixed Friend being unrevivable '
+  id: 89
+  time: '2024-08-24T03:21:18.0000000+00:00'
