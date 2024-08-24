@@ -658,3 +658,11 @@ Entries:
       message: 'fixed Friend being unrevivable '
   id: 89
   time: '2024-08-24T03:21:18.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Stripper Pole
+    - type: Tweak
+      message: Corp Couche can be crafted
+  id: 90
+  time: '2024-08-24T16:57:39.0000000+00:00'
