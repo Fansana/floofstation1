@@ -97,7 +97,7 @@
   category: Physical
   points: 1
   requirements:
-    - !ype:CharacterJobRequirement
+    - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Borg
