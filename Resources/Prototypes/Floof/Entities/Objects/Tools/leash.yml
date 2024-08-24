@@ -25,6 +25,17 @@
     selfDetachDelay: 10
 
 - type: entity
+  id: ShortLeash
+  parent: BaseLeash
+  name: short leash
+  components:
+  - type: Leash
+    length: 1.5
+    attachDelay: 4.5
+    detachDelay: 3
+    selfDetachDelay: 10
+
+- type: entity
   id: LeashAdvanced
   parent: LeashBasic
   name: advanced leash
