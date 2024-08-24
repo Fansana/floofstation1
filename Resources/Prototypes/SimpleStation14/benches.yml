@@ -211,7 +211,7 @@
     graph: Seat
     node: chairSofaBench
   - type: StaticPrice
-    price: 15
+    price: 30
 
 - type: entity
   id: BenchSofaCorpLeft
