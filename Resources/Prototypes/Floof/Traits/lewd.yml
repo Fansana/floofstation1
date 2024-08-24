@@ -7,6 +7,10 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - ProductivePenis
   components:
     - type: CumProducer
       solutionname: "penis"
@@ -57,3 +61,29 @@
           reagents:
           - ReagentId: NaturalLubricant
             Quantity: 25
+
+- type: trait
+  id: ProductivePenis
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - CumProducer
+  components:
+    - type: ProductivePenis
+      solutionname: "productivePenis"
+    - type: SolutionContainerManager
+      solutions:
+        productivepenis:
+          MaxVol: 100
+          reagents:
+          - ReagentId: Cum
+            Quantity: 100
+        

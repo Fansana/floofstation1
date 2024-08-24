@@ -32,20 +32,31 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<CumProducerComponent, ComponentStartup>(OnComponentInitCum);
         SubscribeLocalEvent<MilkProducerComponent, ComponentStartup>(OnComponentInitMilk);
         SubscribeLocalEvent<SquirtProducerComponent, ComponentStartup>(OnComponentInitSquirt);
+        SubscribeLocalEvent<ProductivePenisComponent, ComponentStartup>(OnComponentInitProductiveCum);
 
         //Verbs
         SubscribeLocalEvent<CumProducerComponent, GetVerbsEvent<InnateVerb>>(AddCumVerb);
         SubscribeLocalEvent<MilkProducerComponent, GetVerbsEvent<InnateVerb>>(AddMilkVerb);
         SubscribeLocalEvent<SquirtProducerComponent, GetVerbsEvent<InnateVerb>>(AddSquirtVerb);
+        SubscribeLocalEvent<ProductivePenisComponent, GetVerbsEvent<InnateVerb>>(AddProductiveCumVerb);
 
         //Events
         SubscribeLocalEvent<CumProducerComponent, CummingDoAfterEvent>(OnDoAfterCum);
         SubscribeLocalEvent<MilkProducerComponent, MilkingDoAfterEvent>(OnDoAfterMilk);
         SubscribeLocalEvent<SquirtProducerComponent, SquirtingDoAfterEvent>(OnDoAfterSquirt);
+        SubscribeLocalEvent<ProductivePenisComponent, ProductiveCummingDoAfterEvent>(OnDoAfterProductiveCum);
     }
 
     #region event handling
     private void OnComponentInitCum(Entity<CumProducerComponent> entity, ref ComponentStartup args)
+    {
+        var solutionCum = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+        solutionCum.MaxVolume = entity.Comp.MaxVolume;
+
+        solutionCum.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionCum.Volume);
+    }
+
+    private void OnComponentInitProductiveCum(Entity<ProductivePenisComponent> entity, ref ComponentStartup args)
     {
         var solutionCum = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
         solutionCum.MaxVolume = entity.Comp.MaxVolume;
@@ -85,6 +96,28 @@ public sealed class LewdTraitSystem : EntitySystem
         InnateVerb verbCum = new()
         {
             Act = () => AttemptCum(entity, user, used),
+            Text = Loc.GetString($"cum-verb-get-text"),
+            Priority = 1
+        };
+        args.Verbs.Add(verbCum);
+    }
+
+    public void AddProductiveCumVerb(Entity<ProductivePenisComponent> entity, ref GetVerbsEvent<InnateVerb> args)
+    {
+        if (args.Using == null ||
+             !args.CanInteract ||
+             args.User != args.Target ||
+             !EntityManager.HasComponent<RefillableSolutionComponent>(args.Using.Value)) //see if removing this part lets you milk on the ground.
+            return;
+
+        _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+
+        var user = args.User;
+        var used = args.Using.Value;
+
+        InnateVerb verbCum = new()
+        {
+            Act = () => AttemptProductiveCum(entity, user, used),
             Text = Loc.GetString($"cum-verb-get-text"),
             Priority = 1
         };
@@ -135,6 +168,33 @@ public sealed class LewdTraitSystem : EntitySystem
     }
 
     private void OnDoAfterCum(Entity<CumProducerComponent> entity, ref CummingDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled || args.Args.Used == null)
+            return;
+
+        if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
+            return;
+
+        if (!_solutionContainer.TryGetRefillableSolution(args.Args.Used.Value, out var targetSoln, out var targetSolution))
+            return;
+
+        args.Handled = true;
+        var quantity = solution.Volume;
+        if (quantity == 0)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("cum-verb-dry"), entity.Owner, args.Args.User);
+            return;
+        }
+
+        if (quantity > targetSolution.AvailableVolume)
+            quantity = targetSolution.AvailableVolume;
+
+        var split = _solutionContainer.SplitSolution(entity.Comp.Solution.Value, quantity);
+        _solutionContainer.TryAddSolution(targetSoln.Value, split);
+        _popupSystem.PopupEntity(Loc.GetString("cum-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
+    }
+
+    private void OnDoAfterProductiveCum(Entity<ProductivePenisComponent> entity, ref ProductiveCummingDoAfterEvent args)
     {
         if (args.Cancelled || args.Handled || args.Args.Used == null)
             return;
@@ -223,6 +283,22 @@ public sealed class LewdTraitSystem : EntitySystem
             return;
 
         var doargs = new DoAfterArgs(EntityManager, userUid, 5, new CummingDoAfterEvent(), lewd, lewd, used: containerUid)
+        {
+            BreakOnUserMove = true,
+            BreakOnDamage = true,
+            BreakOnTargetMove = true,
+            MovementThreshold = 1.0f,
+        };
+
+        _doAfterSystem.TryStartDoAfter(doargs);
+    }
+
+    private void AttemptProductiveCum(Entity<ProductivePenisComponent> lewd, EntityUid userUid, EntityUid containerUid)
+    {
+        if (!HasComp<ProductivePenisComponent>(userUid))
+            return;
+
+        var doargs = new DoAfterArgs(EntityManager, userUid, 5, new ProductiveCummingDoAfterEvent(), lewd, lewd, used: containerUid)
         {
             BreakOnUserMove = true,
             BreakOnDamage = true,
