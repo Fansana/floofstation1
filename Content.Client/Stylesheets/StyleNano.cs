@@ -1342,11 +1342,6 @@ namespace Content.Client.Stylesheets
                  .Prop(Label.StylePropertyFont, notoSans10),
                 // ---
 
-                // Furry Servers - Very Large Label for section headers
-                 Element<Label>().Class("FurryServersSectionHeader")
-                     .Prop(Label.StylePropertyFont, notoSansBold20),
-                // ---
-
                 // Different Background shapes ---
                 Element<PanelContainer>().Class(ClassAngleRect)
                     .Prop(PanelContainer.StylePropertyPanel, BaseAngleRect)

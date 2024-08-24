@@ -25,7 +25,6 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
     [Dependency] private readonly InfoUIController _info = default!;
     [Dependency] private readonly OptionsUIController _options = default!;
     [Dependency] private readonly GuidebookUIController _guidebook = default!;
-    //[Dependency] private readonly FurryServersUIController _furryServers = default!;
 
     private Options.UI.EscapeMenu? _escapeWindow;
 
@@ -98,12 +97,6 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         {
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWiki));
         };
-
-        //_escapeWindow.FurryServersButton.OnPressed += _ =>
-        //{
-        //    CloseEscapeWindow();
-        //    _furryServers.ToggleWindow();
-        //};
 
         _escapeWindow.GuidebookButton.OnPressed += _ =>
         {
