@@ -347,9 +347,34 @@ public sealed class LewdTraitSystem : EntitySystem
         var queryCum = EntityQueryEnumerator<CumProducerComponent>();
         var queryMilk = EntityQueryEnumerator<MilkProducerComponent>();
         var querySquirt = EntityQueryEnumerator<SquirtProducerComponent>();
+        var queryProductiveCum = EntityQueryEnumerator<ProductivePenisComponent>();
         var now = _timing.CurTime;
 
         while (queryCum.MoveNext(out var uid, out var containerCum))
+        {
+            if (now < containerCum.NextGrowth)
+                continue;
+
+            containerCum.NextGrowth = now + containerCum.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
+
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+            {
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
+
+                //_hunger.ModifyHunger(uid, -containerCum.HungerUsage, hunger);
+            }
+
+            if (!_solutionContainer.ResolveSolution(uid, containerCum.SolutionName, ref containerCum.Solution))
+                continue;
+
+            _solutionContainer.TryAddReagent(containerCum.Solution.Value, containerCum.ReagentId, containerCum.QuantityPerUpdate, out _);
+        }
+
+        while (queryProductiveCum.MoveNext(out var uid, out var containerCum))
         {
             if (now < containerCum.NextGrowth)
                 continue;
