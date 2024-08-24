@@ -210,6 +210,8 @@
   - type: Construction # Floof
     graph: Seat
     node: chairSofaBench
+  - type: StaticPrice
+    price: 15
 
 - type: entity
   id: BenchSofaCorpLeft
