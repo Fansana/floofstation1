@@ -65,7 +65,7 @@
 - type: trait
   id: ProductivePenis
   category: Physical
-  points: -1
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -82,8 +82,8 @@
     - type: SolutionContainerManager
       solutions:
         productivepenis:
-          MaxVol: 100
+          MaxVol: 50
           reagents:
           - ReagentId: Cum
-            Quantity: 100
+            Quantity: 50
         

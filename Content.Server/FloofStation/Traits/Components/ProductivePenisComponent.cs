@@ -19,19 +19,19 @@ public sealed partial class ProductivePenisComponent : Component
     public ProtoId<ReagentPrototype> ReagentId = "Cum";
 
     [DataField]
-    public FixedPoint2 MaxVolume = FixedPoint2.New(100);
+    public FixedPoint2 MaxVolume = FixedPoint2.New(50);
 
     [DataField]
     public Entity<SolutionComponent>? Solution = null;
 
     [DataField]
-    public FixedPoint2 QuantityPerUpdate = 20;
+    public FixedPoint2 QuantityPerUpdate = 10;
 
     [DataField]
     public float HungerUsage = 10f;
 
     [DataField]
-    public TimeSpan GrowthDelay = TimeSpan.FromSeconds(10);
+    public TimeSpan GrowthDelay = TimeSpan.FromSeconds(5);
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan NextGrowth = TimeSpan.FromSeconds(0);
