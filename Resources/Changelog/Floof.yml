@@ -678,3 +678,9 @@ Entries:
       message: added an optionally shorter leash to autolathes! :3
   id: 92
   time: '2024-08-24T17:31:55.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Remove
+      message: Zombies are gone from this sector, for now...
+  id: 93
+  time: '2024-08-24T18:47:06.0000000+00:00'
