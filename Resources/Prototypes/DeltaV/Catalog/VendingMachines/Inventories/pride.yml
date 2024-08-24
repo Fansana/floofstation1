@@ -27,6 +27,12 @@
        ClothingUniformColorRainbow: 2
        ClothingUnderSocksCoder: 1
        ClothingUnderSocksBee: 1
+       ClothingHandsBeeWarmers: 1 # Floofstation
+       ClothingHandsCoderWarmers: 1 # Floofstation
+       ClothingUniformThongCoder: 1 # Floofstation
+       ClothingUniformThongBee: 1 # Floofstation
   emaggedInventory:
       # 3 for more friends!
       ClothingUnderSocksCoderValid: 3 # Floofstation
+      ClothingHandsCoderValidWarmers: 3 # Floofstation
+      ClothingUniformThongCoderValid: 3 # Floofstation

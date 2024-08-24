@@ -21,6 +21,11 @@
   items:
     - ClothingUnderSocksCaptain
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Captain
@@ -65,6 +70,11 @@
   items:
     - ClothingUnderSocksCommand
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Captain
@@ -119,6 +129,11 @@
   items:
     - ClothingUnderSocksEngi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - StationEngineer
@@ -139,7 +154,48 @@
         - AtmosphericTechnician
         - ChiefEngineer
 
-#TO BE ADDED - ChiefEngineer
+#Chief Engineer
+
+- type: loadout
+  id: LoadoutClothingHandsChiefEngiWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsChiefEngiWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefEngineer
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChiefEngi
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksChiefEngi
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefEngineer
+
+- type: loadout
+  id: LoadoutClothingUniformChiefEngiThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformChiefEngiThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefEngineer
 
 #Epistemics Outfits
 #
@@ -158,6 +214,7 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 - type: loadout
   id: LoadoutClothingUnderSocksEpi
@@ -167,11 +224,17 @@
   items:
     - ClothingUnderSocksEpi
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 
 - type: loadout
@@ -187,6 +250,7 @@
         - Scientist
         - ResearchAssistant
         - ResearchDirector
+        - ForensicMantis
 
 #Chaplain
 
@@ -210,6 +274,11 @@
   items:
     - ClothingUnderSocksChaplain
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
        jobs:
          - Chaplain
@@ -229,7 +298,7 @@
 - type: loadout
   id: LoadoutClothingChaplainEpiMantle
   category: Jobs
-  cost: 2
+  cost: 1
   exclusive: true
   items:
     - ClothingOuterEpiChaplainMantle
@@ -238,7 +307,91 @@
        jobs:
          - Chaplain
 
-#TO BE ADDED - ResearchDirector
+#Research Director
+- type: loadout
+  id: LoadoutClothingHandsEpiHeadWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsEpiHeadWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ResearchDirector
+
+- type: loadout
+  id: LoadoutClothingUnderSocksEpiHead
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksEpiHead
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - ResearchDirector
+
+
+- type: loadout
+  id: LoadoutClothingUniformEpiHeadThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformEpiHeadThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ResearchDirector
+
+#Psionic Mantis - ForensicMantis
+- type: loadout
+  id: LoadoutClothingHandsMantisEpiWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsMantisEpiWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMantisEpi
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksMantisEpi
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
+
+
+- type: loadout
+  id: LoadoutClothingUniformMantisEpiThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformMantisEpiThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ForensicMantis
 
 #Logistics Outfits
 #
@@ -263,6 +416,11 @@
   items:
     - ClothingUnderSocksLogis
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - CargoTechnician
@@ -279,8 +437,89 @@
       jobs:
         - CargoTechnician
 
-#TO BE ADDED - Quartermaster
-#TO BE ADDED - Courier
+#Quartermaster
+- type: loadout
+  id: LoadoutClothingHandsLOLogisWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsLOLogisWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+
+- type: loadout
+  id: LoadoutClothingUnderSocksLOLogis
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksLOLogis
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+
+- type: loadout
+  id: LoadoutClothingUniformLOLogisThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformLOLogisThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+
+#Courier - MailCarrier
+- type: loadout
+  id: LoadoutClothingHandsCourierWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsCourierWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCourier
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksCourier
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourierThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformCourierThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - MailCarrier
 
 #Medical Outfits
 #
@@ -309,6 +548,11 @@
   items:
     - ClothingUnderSocksMedic
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
@@ -333,9 +577,131 @@
         - MedicalIntern
         - Chemist
 
-#TO BE ADDED - Chemist
-#TO BE ADDED - ChiefMedicalOfficer
-#TO BE ADDED - Paramedic
+#Chemist
+- type: loadout
+  id: LoadoutClothingHandsChemistsWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsChemistsWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChemists
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksChemists
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+
+- type: loadout
+  id: LoadoutClothingUniformChemistsThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformChemistsThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+
+#Chief Medical Officer
+- type: loadout
+  id: LoadoutClothingHandsCMOWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsCMOWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCMO
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksCMO
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+
+- type: loadout
+  id: LoadoutClothingUniformCMOThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformCMOThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+
+#Paramedic
+- type: loadout
+  id: LoadoutClothingHandsParaMedicWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsParaMedicWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+- type: loadout
+  id: LoadoutClothingUnderSocksParaMedic
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksParaMedic
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+- type: loadout
+  id: LoadoutClothingUniformParaMedicThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformParaMedicThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
 
 #Security Outfits
 #
@@ -364,6 +730,11 @@
   items:
     - ClothingUnderSocksSecurity
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - SecurityOfficer
@@ -388,8 +759,89 @@
         - Detective
         - HeadOfSecurity
 
-#TO BE ADDED - Detective
-#TO BE ADDED - HeadOfSecurity
+#Detective
+- type: loadout
+  id: LoadoutClothingHandsDetectiveWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsDetectiveWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+
+- type: loadout
+  id: LoadoutClothingUnderSocksDetective
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksDetective
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+
+- type: loadout
+  id: LoadoutClothingUniformDetectiveThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformDetectiveThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+
+#Head Of Security
+- type: loadout
+  id: LoadoutClothingHandsHeadSecurityWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsHeadSecurityWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUnderSocksHeadSecurity
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksHeadSecurity
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUniformHeadSecurityThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformHeadSecurityThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - HeadOfSecurity
 
 #Service Outfits
 #
@@ -419,6 +871,11 @@
   items:
     - ClothingUnderSocksService
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Bartender
@@ -445,9 +902,172 @@
         - Chef
         - ServiceWorker
 
-#TO BE ADDED - Bartender
-#TO BE ADDED - Chef
-#TO BE ADDED - Musician
+- type: loadout
+  id: LoadoutClothingUniformServiceUni
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformServiceUni
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+        - Botanist
+        - Reporter
+        - Musician
+        - Chef
+        - ServiceWorker
+
+#Bartender
+- type: loadout
+  id: LoadoutClothingHandsBartenderWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsBartenderWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+
+- type: loadout
+  id: LoadoutClothingUnderSocksBartender
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksBartender
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+
+- type: loadout
+  id: LoadoutClothingUniformBartenderThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformBartenderThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+
+#Chef
+- type: loadout
+  id: LoadoutClothingHandsChefWarmers
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsChefWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChef
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUnderSocksChef
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+
+- type: loadout
+  id: LoadoutClothingUniformChefThong
+  category: Jobs
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformChefThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+
+#Musician
+- type: loadout
+  id: LoadoutClothingHandsMusicianWarmers
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHandsMusicianWarmers
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMusician
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUnderSocksMusician
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicianThong
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformMusicianThong
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicKingBlack
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformMusicKingBlack
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicKing
+  category: Jobs
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingUniformMusicKing
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
 
 #Janitorial
 - type: loadout
@@ -470,6 +1090,11 @@
   items:
     - ClothingUnderSocksJanitor
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Janitor
@@ -485,6 +1110,9 @@
     - !type:CharacterJobRequirement
       jobs:
         - Janitor
+
+#TO BE ADDED - Botanist
+#TO BE ADDED - Reporter
 
 # Misc
 # Mime
@@ -509,6 +1137,11 @@
   items:
     - ClothingUnderSocksStripedWhite
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
     - !type:CharacterJobRequirement
       jobs:
         - Mime

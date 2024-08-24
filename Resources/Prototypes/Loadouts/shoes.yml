@@ -327,33 +327,33 @@
     - ClothingShoesHighheelBoots
 
 # Socks
-- type: loadout
-  id: LoadoutShoesUnderSocksCoder
-  category: Shoes
-  cost: 3
-  exclusive: true
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Diona
-        - Harpy
-  items:
-    - ClothingUnderSocksCoder
+#- type: loadout
+#  id: LoadoutShoesUnderSocksCoder
+#  category: Shoes
+#  cost: 3
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterSpeciesRequirement
+#      inverted: true
+#      species:
+#        - Diona
+#        - Harpy
+#  items:
+#    - ClothingUnderSocksCoder
 
-- type: loadout
-  id: LoadoutShoesUnderSocksBee
-  category: Shoes
-  cost: 3
-  exclusive: true
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Diona
-        - Harpy
-  items:
-    - ClothingUnderSocksBee
+#- type: loadout
+#  id: LoadoutShoesUnderSocksBee
+#  category: Shoes
+#  cost: 3
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterSpeciesRequirement
+#      inverted: true
+#      species:
+#        - Diona
+#        - Harpy
+#  items:
+#    - ClothingUnderSocksBee
 
 - type: loadout
   id: LoadoutShoesClothWrap
