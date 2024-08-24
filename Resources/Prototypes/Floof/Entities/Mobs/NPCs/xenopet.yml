@@ -259,10 +259,10 @@
   id: MobXenoSubjectTess
   description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
   components:
-  - type: Sprite
-    - type: NpcFactionMember
+  - type: NpcFactionMember
      factions:
      - PetsNT
+  - type: Sprite
     drawdepth: Mobs
     sprite: Floof/Mobs/Pets/subject7355.rsi
     layers:
