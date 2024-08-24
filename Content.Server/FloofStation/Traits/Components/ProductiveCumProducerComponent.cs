@@ -13,7 +13,7 @@ namespace Content.Server.FloofStation.Traits;
 public sealed partial class ProductiveCumProducerComponent : Component
 {
     [DataField("solutionname")]
-    public string SolutionName = "productivePenis";
+    public string SolutionName = "penis";
 
     [DataField]
     public ProtoId<ReagentPrototype> ReagentId = "Cum";

@@ -78,10 +78,10 @@
         - CumProducer
   components:
     - type: ProductiveCumProducer
-      solutionname: "productivePenis"
+      solutionname: "penis"
     - type: SolutionContainerManager
       solutions:
-        productivePenis:
+        penis:
           MaxVol: 50
           reagents:
           - ReagentId: Cum
