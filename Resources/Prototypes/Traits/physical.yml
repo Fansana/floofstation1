@@ -3,12 +3,12 @@
   category: Physical
   points: -2
   requirements:
-    - type: CharacterJobRequirement
+    - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Borg
         - MedicalBorg
-    - type: CharacterTraitRequirement
+    - !type:CharacterTraitRequirement
       inverted: true
       traits:
         - WillToDie
@@ -21,12 +21,12 @@
   category: Physical
   points: 1
   requirements:
-    - type: CharacterJobRequirement
+    - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Borg
         - MedicalBorg
-    - type: CharacterTraitRequirement
+    - !type:CharacterTraitRequirement
       inverted: true
       traits:
         - WillToLive
