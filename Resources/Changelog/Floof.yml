@@ -658,3 +658,29 @@ Entries:
       message: 'fixed Friend being unrevivable '
   id: 89
   time: '2024-08-24T03:21:18.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Stripper Pole
+    - type: Tweak
+      message: Corp Couche can be crafted
+  id: 90
+  time: '2024-08-24T16:57:39.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Fix
+      message: the bell collar can now be leashed! :3
+  id: 91
+  time: '2024-08-24T17:31:20.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Add
+      message: added an optionally shorter leash to autolathes! :3
+  id: 92
+  time: '2024-08-24T17:31:55.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Remove
+      message: Zombies are gone from this sector, for now...
+  id: 93
+  time: '2024-08-24T18:47:06.0000000+00:00'
