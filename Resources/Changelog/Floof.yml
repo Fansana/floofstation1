@@ -672,3 +672,9 @@ Entries:
       message: the bell collar can now be leashed! :3
   id: 91
   time: '2024-08-24T17:31:20.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Add
+      message: added an optionally shorter leash to autolathes! :3
+  id: 92
+  time: '2024-08-24T17:31:55.0000000+00:00'
