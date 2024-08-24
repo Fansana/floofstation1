@@ -58,10 +58,10 @@ public sealed class LewdTraitSystem : EntitySystem
 
     private void OnComponentInitProductiveCum(Entity<ProductivePenisComponent> entity, ref ComponentStartup args)
     {
-        var solutionCum = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
-        solutionCum.MaxVolume = entity.Comp.MaxVolume;
+        var solutionProdCum = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+        solutionProdCum.MaxVolume = entity.Comp.MaxVolume;
 
-        solutionCum.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionCum.Volume);
+        solutionProdCum.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionProdCum.Volume);
     }
 
     private void OnComponentInitMilk(Entity<MilkProducerComponent> entity, ref ComponentStartup args)
@@ -115,13 +115,13 @@ public sealed class LewdTraitSystem : EntitySystem
         var user = args.User;
         var used = args.Using.Value;
 
-        InnateVerb verbCum = new()
+        InnateVerb verbProdCum = new()
         {
             Act = () => AttemptProductiveCum(entity, user, used),
             Text = Loc.GetString($"cum-verb-get-text"),
             Priority = 1
         };
-        args.Verbs.Add(verbCum);
+        args.Verbs.Add(verbProdCum);
     }
 
     public void AddMilkVerb(Entity<MilkProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
