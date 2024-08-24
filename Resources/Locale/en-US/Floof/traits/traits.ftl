@@ -10,5 +10,5 @@ trait-description-MilkProducer = You have a pair of large mammaries.
 trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
 
-trait-name-ProductivePenis = Productive Cock
-trait-description-ProductivePenis = Whether through a healthy diet, genetic modification, or evolution, your cock seems to produce a much larger quantity of semen, while also regenerating it twice as fast.
+trait-name-ProductiveCumProducer = Productive Cock
+trait-description-ProductiveCumProducer = Through a blend of optimized nutrition, advanced genetic enhancements, or the next stage in evolution, your body now produces an exceptional volume of semen, regenerating it at double the usual speed.

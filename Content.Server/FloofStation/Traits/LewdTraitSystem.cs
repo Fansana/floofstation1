@@ -32,19 +32,19 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<CumProducerComponent, ComponentStartup>(OnComponentInitCum);
         SubscribeLocalEvent<MilkProducerComponent, ComponentStartup>(OnComponentInitMilk);
         SubscribeLocalEvent<SquirtProducerComponent, ComponentStartup>(OnComponentInitSquirt);
-        SubscribeLocalEvent<ProductivePenisComponent, ComponentStartup>(OnComponentInitProductiveCum);
+        SubscribeLocalEvent<ProductiveCumProducerComponent, ComponentStartup>(OnComponentInitProductiveCum);
 
         //Verbs
         SubscribeLocalEvent<CumProducerComponent, GetVerbsEvent<InnateVerb>>(AddCumVerb);
         SubscribeLocalEvent<MilkProducerComponent, GetVerbsEvent<InnateVerb>>(AddMilkVerb);
         SubscribeLocalEvent<SquirtProducerComponent, GetVerbsEvent<InnateVerb>>(AddSquirtVerb);
-        SubscribeLocalEvent<ProductivePenisComponent, GetVerbsEvent<InnateVerb>>(AddProductiveCumVerb);
+        SubscribeLocalEvent<ProductiveCumProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveCumVerb);
 
         //Events
         SubscribeLocalEvent<CumProducerComponent, CummingDoAfterEvent>(OnDoAfterCum);
         SubscribeLocalEvent<MilkProducerComponent, MilkingDoAfterEvent>(OnDoAfterMilk);
         SubscribeLocalEvent<SquirtProducerComponent, SquirtingDoAfterEvent>(OnDoAfterSquirt);
-        SubscribeLocalEvent<ProductivePenisComponent, ProductiveCummingDoAfterEvent>(OnDoAfterProductiveCum);
+        SubscribeLocalEvent<ProductiveCumProducerComponent, ProductiveCummingDoAfterEvent>(OnDoAfterProductiveCum);
     }
 
     #region event handling
@@ -56,7 +56,7 @@ public sealed class LewdTraitSystem : EntitySystem
         solutionCum.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionCum.Volume);
     }
 
-    private void OnComponentInitProductiveCum(Entity<ProductivePenisComponent> entity, ref ComponentStartup args)
+    private void OnComponentInitProductiveCum(Entity<ProductiveCumProducerComponent> entity, ref ComponentStartup args)
     {
         var solutionProdCum = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
         solutionProdCum.MaxVolume = entity.Comp.MaxVolume;
@@ -102,7 +102,7 @@ public sealed class LewdTraitSystem : EntitySystem
         args.Verbs.Add(verbCum);
     }
 
-    public void AddProductiveCumVerb(Entity<ProductivePenisComponent> entity, ref GetVerbsEvent<InnateVerb> args)
+    public void AddProductiveCumVerb(Entity<ProductiveCumProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
     {
         if (args.Using == null ||
              !args.CanInteract ||
@@ -194,7 +194,7 @@ public sealed class LewdTraitSystem : EntitySystem
         _popupSystem.PopupEntity(Loc.GetString("cum-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
     }
 
-    private void OnDoAfterProductiveCum(Entity<ProductivePenisComponent> entity, ref ProductiveCummingDoAfterEvent args)
+    private void OnDoAfterProductiveCum(Entity<ProductiveCumProducerComponent> entity, ref ProductiveCummingDoAfterEvent args)
     {
         if (args.Cancelled || args.Handled || args.Args.Used == null)
             return;
@@ -293,9 +293,9 @@ public sealed class LewdTraitSystem : EntitySystem
         _doAfterSystem.TryStartDoAfter(doargs);
     }
 
-    private void AttemptProductiveCum(Entity<ProductivePenisComponent> lewd, EntityUid userUid, EntityUid containerUid)
+    private void AttemptProductiveCum(Entity<ProductiveCumProducerComponent> lewd, EntityUid userUid, EntityUid containerUid)
     {
-        if (!HasComp<ProductivePenisComponent>(userUid))
+        if (!HasComp<ProductiveCumProducerComponent>(userUid))
             return;
 
         var doargs = new DoAfterArgs(EntityManager, userUid, 5, new ProductiveCummingDoAfterEvent(), lewd, lewd, used: containerUid)
@@ -347,7 +347,7 @@ public sealed class LewdTraitSystem : EntitySystem
         var queryCum = EntityQueryEnumerator<CumProducerComponent>();
         var queryMilk = EntityQueryEnumerator<MilkProducerComponent>();
         var querySquirt = EntityQueryEnumerator<SquirtProducerComponent>();
-        var queryProductiveCum = EntityQueryEnumerator<ProductivePenisComponent>();
+        var queryProductiveCum = EntityQueryEnumerator<ProductiveCumProducerComponent>();
         var now = _timing.CurTime;
 
         while (queryCum.MoveNext(out var uid, out var containerCum))

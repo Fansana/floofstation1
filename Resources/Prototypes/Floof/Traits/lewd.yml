@@ -10,7 +10,7 @@
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
-        - ProductivePenis
+        - ProductiveCumProducer
   components:
     - type: CumProducer
       solutionname: "penis"
@@ -63,7 +63,7 @@
             Quantity: 25
 
 - type: trait
-  id: ProductivePenis
+  id: ProductiveCumProducer
   category: Physical
   points: -2
   requirements:
@@ -77,11 +77,11 @@
       traits:
         - CumProducer
   components:
-    - type: ProductivePenis
+    - type: ProductiveCumProducer
       solutionname: "productivePenis"
     - type: SolutionContainerManager
       solutions:
-        productivepenis:
+        productivePenis:
           MaxVol: 50
           reagents:
           - ReagentId: Cum

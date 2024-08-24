@@ -10,7 +10,7 @@ using Robust.Shared.GameStates;
 namespace Content.Server.FloofStation.Traits;
 
 [RegisterComponent, Access(typeof(LewdTraitSystem))]
-public sealed partial class ProductivePenisComponent : Component
+public sealed partial class ProductiveCumProducerComponent : Component
 {
     [DataField("solutionname")]
     public string SolutionName = "productivePenis";
