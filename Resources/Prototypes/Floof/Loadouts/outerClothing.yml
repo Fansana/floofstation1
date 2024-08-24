@@ -18,3 +18,45 @@
   cost: 2
   items:
     - ClothingOuterCoatLab
+
+- type: loadout 
+  id: LoadoutClothingOuterRoboOveralls
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterRoboOveralls
+
+- type: loadout 
+  id: LoadoutClothingOuterPlainOveralls
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterPlainOveralls
+
+- type: loadout 
+  id: LoadoutClothingOuterMarsHoodie
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterMarsHoodie
+
+- type: loadout 
+  id: LoadoutClothingOuterCyberJacketYellow
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterCyberJacketYellow
+
+- type: loadout 
+  id: LoadoutClothingOuterCyberJacketPurple
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterCyberJacketPurple
+
+- type: loadout 
+  id: LoadoutClothingOuterCyberJacketWhite
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterCyberJacketWhite
