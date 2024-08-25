@@ -690,3 +690,9 @@ Entries:
       message: Thieves have started appearing without Traitors...
   id: 94
   time: '2024-08-25T05:59:41.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Fix
+      message: IPCs can no longer be vampiric.
+  id: 95
+  time: '2024-08-25T17:13:10.0000000+00:00'
