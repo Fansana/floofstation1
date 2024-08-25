@@ -8,7 +8,7 @@ paperwork-access-request =
                        Access Authorization Form
     ====================================================
     Time from start of shift and date:
-    {"["}color=#1b487e] TIME AND DATE[/color]
+    {"["}color=#1b487e] SHIFT TIME[/color]
     Compiler of the document:
     {"["}color=#1b487e] NAME[/color]
     Compiler's position:
