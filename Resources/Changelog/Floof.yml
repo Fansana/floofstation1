@@ -684,3 +684,9 @@ Entries:
       message: Zombies are gone from this sector, for now...
   id: 93
   time: '2024-08-24T18:47:06.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Thieves have started appearing without Traitors...
+  id: 94
+  time: '2024-08-25T05:59:41.0000000+00:00'
