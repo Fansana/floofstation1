@@ -21,9 +21,6 @@
     prototype: Carpet
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetRed: 100
   - type: Material
 
 - type: entity
@@ -45,9 +42,6 @@
     prototype: CarpetBlack
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetBlack: 100
   - type: Material
 
 - type: entity
@@ -69,9 +63,6 @@
     prototype: CarpetBlue
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetBlue: 100
   - type: Material
 
 - type: entity
@@ -93,9 +84,6 @@
     prototype: CarpetGreen
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetGreen: 100
   - type: Material
 
 - type: entity
@@ -117,9 +105,6 @@
     prototype: CarpetOrange
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetOrange: 100
   - type: Material
 
 - type: entity
@@ -141,9 +126,6 @@
     prototype: CarpetSBlue
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetSBlue: 100
   - type: Material
 
 - type: entity
@@ -165,9 +147,6 @@
     prototype: CarpetPurple
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetPurple: 100
   - type: Material
 
 - type: entity
@@ -189,9 +168,6 @@
     prototype: CarpetPink
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetPink: 100
   - type: Material
 
 - type: entity
@@ -213,9 +189,6 @@
     prototype: CarpetCyan
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetCyan: 100
   - type: Material
 
 - type: entity
@@ -237,7 +210,4 @@
     prototype: CarpetWhite
     doAfter: 0.5
     removeOnInteract: true
-  - type: PhysicalComposition
-    materialComposition:
-      CarpetWhite: 100
   - type: Material
