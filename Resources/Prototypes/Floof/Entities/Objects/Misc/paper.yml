@@ -1,0 +1,23 @@
+- type: entity
+  name: application for access
+  parent: Paper
+  id: PaperApplicationForAccess
+  description: 'A form used to request access to an area'
+  components:
+  - type: Paper
+    contentSize: 2000
+    escapeFormatting: false
+    content: paperwork-access-request
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
