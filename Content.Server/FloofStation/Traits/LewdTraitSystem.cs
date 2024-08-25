@@ -33,18 +33,21 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<MilkProducerComponent, ComponentStartup>(OnComponentInitMilk);
         SubscribeLocalEvent<SquirtProducerComponent, ComponentStartup>(OnComponentInitSquirt);
         SubscribeLocalEvent<ProductiveCumProducerComponent, ComponentStartup>(OnComponentInitProductiveCum);
+        SubscribeLocalEvent<ProductiveMilkProducerComponent, ComponentStartup>(OnComponentInitProductiveMilk);
 
         //Verbs
         SubscribeLocalEvent<CumProducerComponent, GetVerbsEvent<InnateVerb>>(AddCumVerb);
         SubscribeLocalEvent<MilkProducerComponent, GetVerbsEvent<InnateVerb>>(AddMilkVerb);
         SubscribeLocalEvent<SquirtProducerComponent, GetVerbsEvent<InnateVerb>>(AddSquirtVerb);
         SubscribeLocalEvent<ProductiveCumProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveCumVerb);
+        SubscribeLocalEvent<ProductiveMilkProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveMilkVerb);
 
         //Events
         SubscribeLocalEvent<CumProducerComponent, CummingDoAfterEvent>(OnDoAfterCum);
         SubscribeLocalEvent<MilkProducerComponent, MilkingDoAfterEvent>(OnDoAfterMilk);
         SubscribeLocalEvent<SquirtProducerComponent, SquirtingDoAfterEvent>(OnDoAfterSquirt);
         SubscribeLocalEvent<ProductiveCumProducerComponent, ProductiveCummingDoAfterEvent>(OnDoAfterProductiveCum);
+        SubscribeLocalEvent<ProductiveMilkProducerComponent, ProductiveMilkingDoAfterEvent>(OnDoAfterProductiveMilk);
     }
 
     #region event handling
@@ -72,7 +75,15 @@ public sealed class LewdTraitSystem : EntitySystem
         solutionMilk.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionMilk.Volume);
     }
 
-    private void OnComponentInitSquirt(Entity<SquirtProducerComponent> entity, ref ComponentStartup args)
+    private void OnComponentInitProductiveMilk(Entity<ProductiveMilkProducerComponent> entity, ref ComponentStartup args)
+    {
+        var solutionProdMilk = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+        solutionProdMilk.MaxVolume = entity.Comp.MaxVolume;
+
+        solutionProdMilk.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionProdMilk.Volume);
+    }
+
+        private void OnComponentInitSquirt(Entity<SquirtProducerComponent> entity, ref ComponentStartup args)
     {
         var solutionSquirt = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
         solutionSquirt.MaxVolume = entity.Comp.MaxVolume;
@@ -144,6 +155,28 @@ public sealed class LewdTraitSystem : EntitySystem
             Priority = 1
         };
         args.Verbs.Add(verbMilk);
+    }
+
+    public void AddProductiveMilkVerb(Entity<ProductiveMilkProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
+    {
+        if (args.Using == null ||
+             !args.CanInteract ||
+             args.User != args.Target ||
+             !EntityManager.HasComponent<RefillableSolutionComponent>(args.Using.Value)) //see if removing this part lets you milk on the ground.
+            return;
+
+        _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+
+        var user = args.User;
+        var used = args.Using.Value;
+
+        InnateVerb verbProdMilk = new()
+        {
+            Act = () => AttemptProductiveMilk(entity, user, used),
+            Text = Loc.GetString($"milk-verb-get-text"),
+            Priority = 1
+        };
+        args.Verbs.Add(verbProdMilk);
     }
 
     public void AddSquirtVerb(Entity<SquirtProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
@@ -248,6 +281,33 @@ public sealed class LewdTraitSystem : EntitySystem
         _popupSystem.PopupEntity(Loc.GetString("milk-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
     }
 
+    private void OnDoAfterProductiveMilk(Entity<ProductiveMilkProducerComponent> entity, ref ProductiveMilkingDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled || args.Args.Used == null)
+            return;
+
+        if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
+            return;
+
+        if (!_solutionContainer.TryGetRefillableSolution(args.Args.Used.Value, out var targetSoln, out var targetSolution))
+            return;
+
+        args.Handled = true;
+        var quantity = solution.Volume;
+        if (quantity == 0)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("milk-verb-dry"), entity.Owner, args.Args.User);
+            return;
+        }
+
+        if (quantity > targetSolution.AvailableVolume)
+            quantity = targetSolution.AvailableVolume;
+
+        var split = _solutionContainer.SplitSolution(entity.Comp.Solution.Value, quantity);
+        _solutionContainer.TryAddSolution(targetSoln.Value, split);
+        _popupSystem.PopupEntity(Loc.GetString("milk-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
+    }
+
     private void OnDoAfterSquirt(Entity<SquirtProducerComponent> entity, ref SquirtingDoAfterEvent args)
     {
         if (args.Cancelled || args.Handled || args.Args.Used == null)
@@ -325,6 +385,22 @@ public sealed class LewdTraitSystem : EntitySystem
         _doAfterSystem.TryStartDoAfter(doargs);
     }
 
+    private void AttemptProductiveMilk(Entity<ProductiveMilkProducerComponent> lewd, EntityUid userUid, EntityUid containerUid)
+    {
+        if (!HasComp<ProductiveMilkProducerComponent>(userUid))
+            return;
+
+        var doargs = new DoAfterArgs(EntityManager, userUid, 5, new ProductiveMilkingDoAfterEvent(), lewd, lewd, used: containerUid)
+        {
+            BreakOnUserMove = true,
+            BreakOnDamage = true,
+            BreakOnTargetMove = true,
+            MovementThreshold = 1.0f,
+        };
+
+        _doAfterSystem.TryStartDoAfter(doargs);
+    }
+
     private void AttemptSquirt(Entity<SquirtProducerComponent> lewd, EntityUid userUid, EntityUid containerUid)
     {
         if (!HasComp<SquirtProducerComponent>(userUid))
@@ -348,6 +424,7 @@ public sealed class LewdTraitSystem : EntitySystem
         var queryMilk = EntityQueryEnumerator<MilkProducerComponent>();
         var querySquirt = EntityQueryEnumerator<SquirtProducerComponent>();
         var queryProductiveCum = EntityQueryEnumerator<ProductiveCumProducerComponent>();
+        var queryProductiveMilk = EntityQueryEnumerator<ProductiveMilkProducerComponent>();
         var now = _timing.CurTime;
 
         while (queryCum.MoveNext(out var uid, out var containerCum))
@@ -399,6 +476,30 @@ public sealed class LewdTraitSystem : EntitySystem
         }
 
         while (queryMilk.MoveNext(out var uid, out var containerMilk))
+        {
+            if (now < containerMilk.NextGrowth)
+                continue;
+
+            containerMilk.NextGrowth = now + containerMilk.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
+
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+            {
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
+
+                //_hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
+            }
+
+            if (!_solutionContainer.ResolveSolution(uid, containerMilk.SolutionName, ref containerMilk.Solution))
+                continue;
+
+            _solutionContainer.TryAddReagent(containerMilk.Solution.Value, containerMilk.ReagentId, containerMilk.QuantityPerUpdate, out _);
+        }
+
+        while (queryProductiveMilk.MoveNext(out var uid, out var containerMilk))
         {
             if (now < containerMilk.NextGrowth)
                 continue;

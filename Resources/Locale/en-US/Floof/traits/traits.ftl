@@ -11,4 +11,7 @@ trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
 
 trait-name-ProductiveCumProducer = Productive Cock
-trait-description-ProductiveCumProducer = Through a blend of optimized nutrition, advanced genetic enhancements, or the next stage in evolution, your body now produces an exceptional volume of semen, regenerating it at double the usual speed.
+trait-description-ProductiveCumProducer = You have a schlong along with larger and heavier balls.
+
+trait-name-ProductiveMilkProducer = Productive Boobs
+trait-description-ProductiveMilkProducer = You have a pair of larger and much heavier mammaries.
