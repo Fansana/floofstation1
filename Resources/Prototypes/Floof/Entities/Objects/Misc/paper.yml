@@ -2,10 +2,10 @@
   name: application for access
   parent: Paper
   id: PaperApplicationForAccess
-  description: 'A form used to request access to an area'
+  description: 'Access Authorization Form'
   components:
   - type: Paper
-    contentSize: 2000
+    contentSize: 10000
     escapeFormatting: false
     content: paperwork-access-request
   - type: Sprite
@@ -21,3 +21,209 @@
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
 
+- type: entity
+  name: employee transfer request form
+  parent: Paper
+  id: PaperEmployeeTransferRequestForm
+  description: 'Employee Transfer Request Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-employment-request
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: equipment request form
+  parent: Paper
+  id: PaperEquipmentRequestForm
+  description: 'Equipment Request Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-equipment-request
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: complaint form
+  parent: Paper
+  id: PaperApplicationForEmployment
+  description: 'Complaint Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-complaint-report
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: access termination order form
+  parent: Paper
+  id: PaperAccessTerminationForm
+  description: 'Access Termination Order Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-access-removal
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: manufacturing order form
+  parent: Paper
+  id: PaperManufacturingForm
+  description: 'Manufacturing Order Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-production-order
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: dismissal order form
+  parent: Paper
+  id: PaperApplicationForEmployment
+  description: 'Dismissal Order Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-dismissal-order
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: equipment authorization form
+  parent: Paper
+  id: PaperEquipmentAuthorizationForm
+  description: 'Equipment Authorization Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-equipment-license
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: construction project request form
+  parent: Paper
+  id: PaperConstructionRequestForm
+  description: 'Construction Project Request Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-construction-license
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+
+- type: entity
+  name: prescription form
+  parent: Paper
+  id: PaperPrescription
+  description: 'Prescription Form'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-precription
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false

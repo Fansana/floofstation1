@@ -164,7 +164,16 @@
   components:
   - type: StorageFill
     contents:
-      - id: Pen
+      - id: PaperApplicationForAccess
+      - id: PaperEmployeeTransferRequestForm
+      - id: PaperEquipmentRequestForm
+      - id: PaperApplicationForEmployment
+      - id: PaperAccessTerminationForm
+      - id: PaperManufacturingForm
+      - id: PaperApplicationForEmployment
+      - id: PaperEquipmentAuthorizationForm
+      - id: PaperConstructionRequestForm
+      - id: PaperPrescription
         prob: 0.5
       - id: PaperOffice
         amount: 1
