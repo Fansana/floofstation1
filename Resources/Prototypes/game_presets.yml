@@ -20,6 +20,7 @@
   rules:
     - HellshiftStationEventScheduler
     - BasicRoundstartVariation
+    - SubGamemodesRule # Floof - Thieves in Hellshift!
 
 - type: gamePreset
   id: AllAtOnce
