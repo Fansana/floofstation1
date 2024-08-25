@@ -3,6 +3,7 @@
   parent: FloorTileItemBase
   id: FloorCarpetItemRed
   name: red carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-red
@@ -29,6 +30,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemBlack
   name: black carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-black
@@ -52,6 +54,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemBlue
   name: blue carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-blue
@@ -75,6 +78,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemGreen
   name: green carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-green
@@ -98,6 +102,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemOrange
   name: orange carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-orange
@@ -121,6 +126,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemSkyBlue
   name: sky blue carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-skyblue
@@ -144,6 +150,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemPurple
   name: purple carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-purple
@@ -167,6 +174,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemPink
   name: pink carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-pink
@@ -190,6 +198,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemCyan
   name: cyan carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-cyan
@@ -213,6 +222,7 @@
   parent: FloorCarpetItemRed
   id: FloorCarpetItemWhite
   name: white carpet
+  suffix: Item
   components:
   - type: Sprite
     state: carpet-white
