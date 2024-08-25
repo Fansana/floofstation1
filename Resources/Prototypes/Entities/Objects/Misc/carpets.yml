@@ -1,9 +1,8 @@
 # TODO once tiles can be smoothed and carpets ported over to that, add them to the FloorTile outputs
 - type: entity
-  name: carpet
   parent: FloorTileItemBase
   id: FloorCarpetItemRed
-  suffix: Red
+  name: red carpet
   components:
   - type: Sprite
     state: carpet-red
@@ -21,11 +20,15 @@
     prototype: Carpet
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetRed: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemBlack
-  suffix: Black
+  name: black carpet
   components:
   - type: Sprite
     state: carpet-black
@@ -40,11 +43,15 @@
     prototype: CarpetBlack
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetBlack: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemBlue
-  suffix: Blue
+  name: blue carpet
   components:
   - type: Sprite
     state: carpet-blue
@@ -59,11 +66,15 @@
     prototype: CarpetBlue
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetBlue: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemGreen
-  suffix: Green
+  name: green carpet
   components:
   - type: Sprite
     state: carpet-green
@@ -78,11 +89,15 @@
     prototype: CarpetGreen
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetGreen: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemOrange
-  suffix: Orange
+  name: orange carpet
   components:
   - type: Sprite
     state: carpet-orange
@@ -97,11 +112,15 @@
     prototype: CarpetOrange
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetOrange: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemSkyBlue
-  suffix: Sky Blue
+  name: sky blue carpet
   components:
   - type: Sprite
     state: carpet-skyblue
@@ -116,11 +135,15 @@
     prototype: CarpetSBlue
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetSBlue: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemPurple
-  suffix: Purple
+  name: purple carpet
   components:
   - type: Sprite
     state: carpet-purple
@@ -135,11 +158,15 @@
     prototype: CarpetPurple
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetPurple: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemPink
-  suffix: Pink
+  name: pink carpet
   components:
   - type: Sprite
     state: carpet-pink
@@ -154,11 +181,15 @@
     prototype: CarpetPink
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetPink: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemCyan
-  suffix: Cyan
+  name: cyan carpet
   components:
   - type: Sprite
     state: carpet-cyan
@@ -173,11 +204,15 @@
     prototype: CarpetCyan
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetCyan: 100
+  - type: Material
 
 - type: entity
   parent: FloorCarpetItemRed
   id: FloorCarpetItemWhite
-  suffix: White
+  name: white carpet
   components:
   - type: Sprite
     state: carpet-white
@@ -192,3 +227,7 @@
     prototype: CarpetWhite
     doAfter: 0.5
     removeOnInteract: true
+  - type: PhysicalComposition
+    materialComposition:
+      CarpetWhite: 100
+  - type: Material
