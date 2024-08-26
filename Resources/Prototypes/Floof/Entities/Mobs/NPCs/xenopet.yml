@@ -260,7 +260,7 @@
   description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
   components:
   - type: NpcFactionMember
-     factions:
+    factions:
      - PetsNT
   - type: Sprite
     drawdepth: Mobs
