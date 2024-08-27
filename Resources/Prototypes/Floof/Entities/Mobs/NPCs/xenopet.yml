@@ -1,12 +1,12 @@
 - type: entity
-  name: basic
-  id: MobSpaceFriend
+  name: Neutral Rouny
+  id: MobXenoNeutralRouny
   parent: MobXenoRounyNPC
-  description: It looks friendly. Why don't you give it a hug?
+  description: They mostly come at night. Mostly.
   components:
   - type: NpcFactionMember
     factions:
-    - PetsNT
+    - Passive
   - type: MovementAlwaysTouching
   - type: MeleeWeapon
     soundHit:
@@ -17,19 +17,7 @@
       types:
         Blunt: 5
         Slash: 5
-  - type: Puller
-    needsHands: false
   - type: GhostTakeoverAvailable
-
-- type: entity
-  name: Neutral Rouny
-  id: MobXenoNeutralRouny
-  parent: MobSpaceFriend
-  description: They mostly come at night. Mostly.
-  components:
-  - type: NpcFactionMember
-    factions:
-    - Passive
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -46,8 +34,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-  - type: Puller
-    needsHands: false
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -101,7 +87,7 @@
 
 - type: entity
   name: Friend-Shaped
-  parent: MobSpaceFriend
+  parent: MobXenoNeutralRouny
   id: MobXenoFriendShaped
   description: A very clearly friend-shaped Xeno.
   components:
@@ -114,8 +100,6 @@
     scale: 0.7, 0.7
   - type: Inventory
     templateId: friendxeno
-  - type: Puller
-    needsHands: false
   - type: IdExaminable
   - type: InventorySlots
   - type: Strippable
@@ -190,8 +174,6 @@
     - PetsNT
   - type: Inventory
     templateId: friendxeno
-  - type: Puller
-    needsHands: false
   - type: IdExaminable
   - type: InventorySlots
   - type: Strippable
@@ -222,8 +204,6 @@
     - PetsNT
   - type: Inventory
     templateId: friendxeno
-  - type: Puller
-    needsHands: false
   - type: IdExaminable
   - type: InventorySlots
   - type: Strippable
@@ -275,8 +255,6 @@
         Base: subject7355_dead
   - type: Inventory
     templateId: friendxeno
-  - type: Puller
-    needsHands: false
   - type: IdExaminable
   - type: InventorySlots
   - type: Strippable
