@@ -429,23 +429,23 @@
     - id: MobGiantSpiderVampireAngry
       prob: 0.01
 
-- type: entity
-  id: ZombieOutbreak
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    earliestStart: 60
-    reoccurrenceDelay: 60
-    minimumPlayers: 15
-    weight: 2
-    duration: 1
-  - type: ZombieRule
-    minStartDelay: 0 #let them know immediately
-    maxStartDelay: 10
-    maxInitialInfected: 2
-    minInitialInfectedGrace: 300
-    maxInitialInfectedGrace: 450
+#- type: entity
+#  id: ZombieOutbreak
+#  parent: BaseGameRule
+#  noSpawn: true
+#  components:
+#  - type: StationEvent
+#    earliestStart: 60
+#    reoccurrenceDelay: 60
+#    minimumPlayers: 15
+#    weight: 2
+#    duration: 1
+#  - type: ZombieRule
+#    minStartDelay: 0 #let them know immediately
+#    maxStartDelay: 10
+#    maxInitialInfected: 2
+#    minInitialInfectedGrace: 300
+#    maxInitialInfectedGrace: 450
 
 - type: entity
   id: LoneOpsSpawn
