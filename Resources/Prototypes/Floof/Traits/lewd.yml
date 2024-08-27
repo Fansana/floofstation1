@@ -55,6 +55,10 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - ProductiveSquirtProducer
   components:
     - type: SquirtProducer
       solutionname: "vagina"
@@ -116,28 +120,27 @@
           - ReagentId: Milk
             Quantity: 100
 
-# temp until i make the actual component n stuff
-# - type: trait
-#   id: ProductiveSquirtProducer
-#   category: Physical
-#   points: -2
-#   requirements:
-#     - !type:CharacterJobRequirement
-#       inverted: true
-#       jobs:
-#         - Borg
-#         - MedicalBorg
-#     - !type:CharacterTraitRequirement
-#       inverted: true
-#       traits:
-#         - SquirtProducer
-#   components:
-#     - type: ProductiveSquirtProducer
-#       solutionname: "vagina"
-#     - type: SolutionContainerManager
-#       solutions:
-#         vagina:
-#           maxVol: 50
-#           reagents:
-#           - ReagentId: NaturalLubricant
-#             Quantity: 50
+- type: trait
+  id: ProductiveSquirtProducer
+  category: Physical
+  points: -2
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - SquirtProducer
+  components:
+    - type: ProductiveSquirtProducer
+      solutionname: "vagina"
+    - type: SolutionContainerManager
+      solutions:
+        vagina:
+          maxVol: 50
+          reagents:
+          - ReagentId: NaturalLubricant
+            Quantity: 50

@@ -34,6 +34,7 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<SquirtProducerComponent, ComponentStartup>(OnComponentInitSquirt);
         SubscribeLocalEvent<ProductiveCumProducerComponent, ComponentStartup>(OnComponentInitProductiveCum);
         SubscribeLocalEvent<ProductiveMilkProducerComponent, ComponentStartup>(OnComponentInitProductiveMilk);
+        SubscribeLocalEvent<ProductiveSquirtProducerComponent, ComponentStartup>(OnComponentInitProductiveSquirt);
 
         //Verbs
         SubscribeLocalEvent<CumProducerComponent, GetVerbsEvent<InnateVerb>>(AddCumVerb);
@@ -41,6 +42,7 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<SquirtProducerComponent, GetVerbsEvent<InnateVerb>>(AddSquirtVerb);
         SubscribeLocalEvent<ProductiveCumProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveCumVerb);
         SubscribeLocalEvent<ProductiveMilkProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveMilkVerb);
+        SubscribeLocalEvent<ProductiveSquirtProducerComponent, GetVerbsEvent<InnateVerb>>(AddProductiveSquirtVerb);
 
         //Events
         SubscribeLocalEvent<CumProducerComponent, CummingDoAfterEvent>(OnDoAfterCum);
@@ -48,6 +50,7 @@ public sealed class LewdTraitSystem : EntitySystem
         SubscribeLocalEvent<SquirtProducerComponent, SquirtingDoAfterEvent>(OnDoAfterSquirt);
         SubscribeLocalEvent<ProductiveCumProducerComponent, ProductiveCummingDoAfterEvent>(OnDoAfterProductiveCum);
         SubscribeLocalEvent<ProductiveMilkProducerComponent, ProductiveMilkingDoAfterEvent>(OnDoAfterProductiveMilk);
+        SubscribeLocalEvent<ProductiveSquirtProducerComponent, ProductiveSquirtingDoAfterEvent>(OnDoAfterProductiveSquirt);
     }
 
     #region event handling
@@ -89,6 +92,14 @@ public sealed class LewdTraitSystem : EntitySystem
         solutionSquirt.MaxVolume = entity.Comp.MaxVolume;
 
         solutionSquirt.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionSquirt.Volume);
+    }
+
+    private void OnComponentInitProductiveSquirt(Entity<ProductiveSquirtProducerComponent> entity, ref ComponentStartup args)
+    {
+        var solutionProdSquirt = _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+        solutionProdSquirt.MaxVolume = entity.Comp.MaxVolume;
+
+        solutionProdSquirt.AddReagent(entity.Comp.ReagentId, entity.Comp.MaxVolume - solutionProdSquirt.Volume);
     }
 
     public void AddCumVerb(Entity<CumProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
@@ -198,6 +209,27 @@ public sealed class LewdTraitSystem : EntitySystem
             Priority = 1
         };
         args.Verbs.Add(verbSquirt);
+    }
+
+    public void AddProductiveSquirtVerb(Entity<ProductiveSquirtProducerComponent> entity, ref GetVerbsEvent<InnateVerb> args)
+    {
+        if (args.Using == null ||
+             !args.CanInteract ||
+             !EntityManager.HasComponent<RefillableSolutionComponent>(args.Using.Value)) //see if removing this part lets you milk on the ground.
+            return;
+
+        _solutionContainer.EnsureSolution(entity.Owner, entity.Comp.SolutionName);
+
+        var user = args.User;
+        var used = args.Using.Value;
+
+        InnateVerb verbProdSquirt = new()
+        {
+            Act = () => AttemptProductiveSquirt(entity, user, used),
+            Text = Loc.GetString($"squirt-verb-get-text"),
+            Priority = 1
+        };
+        args.Verbs.Add(verbProdSquirt);
     }
 
     private void OnDoAfterCum(Entity<CumProducerComponent> entity, ref CummingDoAfterEvent args)
@@ -334,6 +366,33 @@ public sealed class LewdTraitSystem : EntitySystem
         _solutionContainer.TryAddSolution(targetSoln.Value, split);
         _popupSystem.PopupEntity(Loc.GetString("squirt-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
     }
+
+    private void OnDoAfterProductiveSquirt(Entity<ProductiveSquirtProducerComponent> entity, ref ProductiveSquirtingDoAfterEvent args)
+    {
+        if (args.Cancelled || args.Handled || args.Args.Used == null)
+            return;
+
+        if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
+            return;
+
+        if (!_solutionContainer.TryGetRefillableSolution(args.Args.Used.Value, out var targetSoln, out var targetSolution))
+            return;
+
+        args.Handled = true;
+        var quantity = solution.Volume;
+        if (quantity == 0)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("squirt-verb-dry"), entity.Owner, args.Args.User);
+            return;
+        }
+
+        if (quantity > targetSolution.AvailableVolume)
+            quantity = targetSolution.AvailableVolume;
+
+        var split = _solutionContainer.SplitSolution(entity.Comp.Solution.Value, quantity);
+        _solutionContainer.TryAddSolution(targetSoln.Value, split);
+        _popupSystem.PopupEntity(Loc.GetString("squirt-verb-success", ("amount", quantity), ("target", Identity.Entity(args.Args.Used.Value, EntityManager))), entity.Owner, args.Args.User, PopupType.Medium);
+    }
     #endregion
 
     #region utilities
@@ -417,6 +476,22 @@ public sealed class LewdTraitSystem : EntitySystem
         _doAfterSystem.TryStartDoAfter(doargs);
     }
 
+    private void AttemptProductiveSquirt(Entity<ProductiveSquirtProducerComponent> lewd, EntityUid userUid, EntityUid containerUid)
+    {
+        if (!HasComp<ProductiveSquirtProducerComponent>(userUid))
+            return;
+
+        var doargs = new DoAfterArgs(EntityManager, userUid, 5, new ProductiveSquirtingDoAfterEvent(), lewd, lewd, used: containerUid)
+        {
+            BreakOnUserMove = true,
+            BreakOnDamage = true,
+            BreakOnTargetMove = true,
+            MovementThreshold = 1.0f,
+        };
+
+        _doAfterSystem.TryStartDoAfter(doargs);
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -425,6 +500,7 @@ public sealed class LewdTraitSystem : EntitySystem
         var querySquirt = EntityQueryEnumerator<SquirtProducerComponent>();
         var queryProductiveCum = EntityQueryEnumerator<ProductiveCumProducerComponent>();
         var queryProductiveMilk = EntityQueryEnumerator<ProductiveMilkProducerComponent>();
+        var queryProductiveSquirt = EntityQueryEnumerator<ProductiveSquirtProducerComponent>();
         var now = _timing.CurTime;
 
         while (queryCum.MoveNext(out var uid, out var containerCum))
@@ -526,6 +602,30 @@ public sealed class LewdTraitSystem : EntitySystem
         while (querySquirt.MoveNext(out var uid, out var containerSquirt))
         {
             if (now < containerSquirt.NextGrowth)
+                continue;
+
+            containerSquirt.NextGrowth = now + containerSquirt.GrowthDelay;
+
+            if (_mobState.IsDead(uid))
+                continue;
+
+            if (EntityManager.TryGetComponent(uid, out HungerComponent? hunger))
+            {
+                if (_hunger.GetHungerThreshold(hunger) < HungerThreshold.Okay)
+                    continue;
+
+                //_hunger.ModifyHunger(uid, -containerMilk.HungerUsage, hunger);
+            }
+
+            if (!_solutionContainer.ResolveSolution(uid, containerSquirt.SolutionName, ref containerSquirt.Solution))
+                continue;
+
+            _solutionContainer.TryAddReagent(containerSquirt.Solution.Value, containerSquirt.ReagentId, containerSquirt.QuantityPerUpdate, out _);
+        }
+
+        while (queryProductiveSquirt.MoveNext(out var uid, out var containerSquirt))
+        {
+            if (now<containerSquirt.NextGrowth)
                 continue;
 
             containerSquirt.NextGrowth = now + containerSquirt.GrowthDelay;

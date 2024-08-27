@@ -15,3 +15,6 @@ trait-description-ProductiveCumProducer = You have a schlong along with larger a
 
 trait-name-ProductiveMilkProducer = Productive Boobs
 trait-description-ProductiveMilkProducer = You have a pair of larger and much heavier mammaries.
+
+trait-name-ProductiveSquirtProducer = Productive Pussy
+trait-description-ProductiveSquirtProducer = You have a slit between your legs that produces a much larger quantity of juices.
