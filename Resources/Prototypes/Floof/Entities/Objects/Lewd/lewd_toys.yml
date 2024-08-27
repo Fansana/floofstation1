@@ -1,0 +1,436 @@
+- type: entity
+  parent: BaseItem
+  id: LewdWand
+  name: magic wand
+  description: A magic wand! This one casts spells of pleasure!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: magicwand_off
+        map: ["base"]
+      - state: magicwand_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+
+- type: entity
+  parent: BaseItem
+  id: LewdVibeGreen
+  name: tentacle vibrator
+  description: A green vibrator in the shape of a tentacle.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: vibrator_green_off
+        map: ["base"]
+      - state: vibrator_green_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+- type: entity
+  parent: BaseItem
+  id: LewdVibeTeal
+  name: teal vibrator
+  description: A teal vibrator with a bolbous look.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: vibrator_teal_off
+        map: ["base"]
+      - state: vibrator_teal_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+- type: entity
+  parent: BaseItem
+  id: LewdVibePink
+  name: pink vibrator
+  description: A common pink vibrator.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: vibrator_pink_off
+        map: ["base"]
+      - state: vibrator_pink_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+- type: entity
+  parent: BaseItem
+  id: LewdVibeRed
+  name: beaded vibrator
+  description: A red vibrator with different sized beads.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: vibrator_red_off
+        map: ["base"]
+      - state: vibrator_red_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+- type: entity
+  parent: BaseItem
+  id: LewdVibeYellow
+  name: yellow vibrator
+  description: A yellow vibrator in the shape of an egg.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    layers:
+      - state: vibrator_yellow_off
+        map: ["base"]
+      - state: vibrator_yellow_medium
+        map: ["on"]
+        visible: false
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/Floof/Lewd/vibrate.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        on:
+          True: { visible: true }
+          False: { visible: false }
+        base:
+          True: { visible: false }
+          False: { visible: true }
+
+- type: entity
+  parent: BaseItem
+  id: LewdFleshlightGreen
+  name: green fleshlight
+  description: A green fleshlight waiting for something to fill it.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: fleshlight_green
+  - type: Drink
+    solution: fleshlight
+    ignoreEmpty: true
+  - type: SolutionContainerManager
+    solutions:
+      fleshlight:
+        maxVol: 10
+  - type: SolutionTransfer
+    transferAmount: 5
+    maxTransferAmount: 10
+    minTransferAmount: 1
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Spillable
+    solution: fleshlight
+  - type: DrawableSolution
+    solution: fleshlight
+  - type: RefillableSolution
+    solution: fleshlight
+  - type: DrainableSolution
+    solution: fleshlight
+  - type: ExaminableSolution
+    solution: fleshlight
+
+- type: entity
+  parent: BaseItem
+  id: LewdFleshlightTeal
+  name: teal fleshlight
+  description: A teal fleshlight waiting for something to fill it.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: fleshlight_teal
+  - type: Drink
+    solution: fleshlight
+    ignoreEmpty: true
+  - type: SolutionContainerManager
+    solutions:
+      fleshlight:
+        maxVol: 10
+  - type: SolutionTransfer
+    transferAmount: 5
+    maxTransferAmount: 10
+    minTransferAmount: 1
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Spillable
+    solution: fleshlight
+  - type: DrawableSolution
+    solution: fleshlight
+  - type: RefillableSolution
+    solution: fleshlight
+  - type: DrainableSolution
+    solution: fleshlight
+  - type: ExaminableSolution
+    solution: fleshlight
+
+- type: entity
+  parent: BaseItem
+  id: LewdFleshlightPink
+  name: pink fleshlight
+  description: A pink fleshlight waiting for something to fill it.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: fleshlight_pink
+  - type: Drink
+    solution: fleshlight
+    ignoreEmpty: true
+  - type: SolutionContainerManager
+    solutions:
+      fleshlight:
+        maxVol: 10
+  - type: SolutionTransfer
+    transferAmount: 5
+    maxTransferAmount: 10
+    minTransferAmount: 1
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Spillable
+    solution: fleshlight
+  - type: DrawableSolution
+    solution: fleshlight
+  - type: RefillableSolution
+    solution: fleshlight
+  - type: DrainableSolution
+    solution: fleshlight
+  - type: ExaminableSolution
+    solution: fleshlight
+
+- type: entity
+  parent: BaseItem
+  id: LewdFleshlightRed
+  name: red fleshlight
+  description: A red fleshlight waiting for something to fill it.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: fleshlight_red
+  - type: Drink
+    solution: fleshlight
+    ignoreEmpty: true
+  - type: SolutionContainerManager
+    solutions:
+      fleshlight:
+        maxVol: 10
+  - type: SolutionTransfer
+    transferAmount: 5
+    maxTransferAmount: 10
+    minTransferAmount: 1
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Spillable
+    solution: fleshlight
+  - type: DrawableSolution
+    solution: fleshlight
+  - type: RefillableSolution
+    solution: fleshlight
+  - type: DrainableSolution
+    solution: fleshlight
+  - type: ExaminableSolution
+    solution: fleshlight
+
+- type: entity
+  parent: BaseItem
+  id: LewdFleshlightYellow
+  name: yellow fleshlight
+  description: A yellow fleshlight waiting for something to fill it.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: fleshlight_yellow
+  - type: Drink
+    solution: fleshlight
+    ignoreEmpty: true
+  - type: SolutionContainerManager
+    solutions:
+      fleshlight:
+        maxVol: 10
+  - type: SolutionTransfer
+    transferAmount: 5
+    maxTransferAmount: 10
+    minTransferAmount: 1
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+  - type: Spillable
+    solution: fleshlight
+  - type: DrawableSolution
+    solution: fleshlight
+  - type: RefillableSolution
+    solution: fleshlight
+  - type: DrainableSolution
+    solution: fleshlight
+  - type: ExaminableSolution
+    solution: fleshlight
+
+- type: entity
+  parent: BaseItem
+  id: AvianDildo
+  name: avian dildo
+  description: A dildo in the shape of a bird's "caw-k".
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_avian
+
+- type: entity
+  parent: BaseItem
+  id: CanineDildo
+  name: canine dildo
+  description: A dildo of a green rocket.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_canine
+
+- type: entity
+  parent: BaseItem
+  id: HorseDildo
+  name: horse dildo
+  description: A large dildo of a horse... Wow it's big...
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_equine
+
+- type: entity
+  parent: BaseItem
+  id: DragonDildo
+  name: dragon dildo
+  description: A large red dildo of a dragon... Woof...
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_dragon
+
+- type: entity
+  parent: BaseItem
+  id: NormalDildo
+  name: dildo
+  description: A simple pink dildo.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_human
+
+- type: entity
+  parent: BaseItem
+  id: TentacleDildo
+  name: tentacle dildo
+  description: A floppy tentacle dildo... Is it slimey?
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_tentacle
+
+- type: entity
+  parent: BaseItem
+  id: DoubleDildo
+  name: double-sided dildo
+  description: A long dildo with two ends. Bring a friend!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/lewd_items.rsi
+    state: dildo_double
