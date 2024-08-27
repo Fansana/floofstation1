@@ -153,7 +153,7 @@
     - PetsNT
   - type: Sprite
     drawdepth: Mobs
-    sprite: Floof/Mobs/Pets/patriarch.rsi
+    sprite: Floof/Mobs/Animals/patriarch.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: patriarch
@@ -264,7 +264,7 @@
      - PetsNT
   - type: Sprite
     drawdepth: Mobs
-    sprite: Floof/Mobs/Pets/subject7355.rsi
+    sprite: Floof/Mobs/Animals/subject7355.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: subject7355
