@@ -705,3 +705,13 @@ Entries:
         Psychologist.
   id: 96
   time: '2024-08-25T17:57:54.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Tweak
+      message: carpets now have proper naming schemes! :3
+    - type: Fix
+      message: >-
+        when crafting curtains/fancy tables, your entire stack of hard-earned
+        carpet will no longer be used all at once! :3
+  id: 97
+  time: '2024-08-26T13:20:19.0000000+00:00'
