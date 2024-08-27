@@ -90,7 +90,7 @@
     - type: SolutionContainerManager
       solutions:
         penis:
-          MaxVol: 50
+          maxVol: 50
           reagents:
           - ReagentId: Cum
             Quantity: 50
