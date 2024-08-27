@@ -110,7 +110,6 @@
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     scale: 0.7, 0.7
   - type: Inventory
-    speciesId: rouny
     templateId: friendxeno
   - type: Puller
     needsHands: false
