@@ -87,6 +87,34 @@
               doAfter: 1
             - material: Cloth
               amount: 1
+        - to: chairSofaBench # Floof
+          steps:
+            - material: Steel
+              amount: 4
+              doAfter: 1
+            - material: Cloth
+              amount: 2
+        - to: chairSofaBenchLeft # Floof
+          steps:
+            - material: Steel
+              amount: 4
+              doAfter: 1
+            - material: Cloth
+              amount: 2
+        - to: chairSofaBenchRight # Floof
+          steps:
+            - material: Steel
+              amount: 4
+              doAfter: 1
+            - material: Cloth
+              amount: 2
+        - to: chairSofaBenchCorner # Floof
+          steps:
+            - material: Steel
+              amount: 4
+              doAfter: 1
+            - material: Cloth
+              amount: 2
 
     - node: chair
       entity: Chair
@@ -271,6 +299,74 @@
             - !type:SpawnPrototype
               prototype: MaterialCloth1
               amount: 1
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairSofaBench # Floof
+      entity: BenchSofaCorpMiddle
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairSofaBenchLeft # Floof
+      entity: BenchSofaCorpLeft
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairSofaBenchRight # Floof
+      entity: BenchSofaCorpRight
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Cutting
+              doAfter: 1
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairSofaBenchCorner # Floof
+      entity: BenchSofaCorpCorner
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
           steps:
             - tool: Cutting
               doAfter: 1

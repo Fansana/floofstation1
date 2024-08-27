@@ -11,7 +11,6 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Console;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Utility;
-using Content.Client.UserInterface.Systems.EscapeMenu;
 
 namespace Content.Client.UserInterface.Systems.WhitelistWindow.Controls
 {
@@ -30,11 +29,6 @@ namespace Content.Client.UserInterface.Systems.WhitelistWindow.Controls
             WhitelistApplyButton.OnPressed += _ =>
             {
                 _uri.OpenUri("https://discord.gg/ZZYNpq5KBJ"); // Floof discord link
-            };
-
-            FurryServersButton.OnPressed += _ =>
-            {
-                UserInterfaceManager.GetUIController<FurryServersUIController>().ToggleWindow();
             };
         }
 

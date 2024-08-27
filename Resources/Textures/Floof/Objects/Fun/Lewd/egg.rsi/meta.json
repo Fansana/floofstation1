@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Splurtstation (https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "egg_xenomorph",
+      "delays": [
+        [
+          3.5,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "egg_badrecipe"
+    },
+    {
+      "name": "egg_chocolate"
+    },
+    {
+      "name": "egg_pellet"
+    },
+    {
+      "name": "egg_rock"
+    },
+    {
+      "name": "egg_chicken"
+    },
+    {
+      "name": "egg_slimeglob"
+    },
+    {
+      "name": "egg_synthetic"
+    },
+    {
+      "name": "egg_escapepod"
+    },
+    {
+      "name": "egg_cocoon"
+    },
+    {
+      "name": "egg_bugcocoon"
+    },
+    {
+      "name": "egg_yellow"
+    },
+    {
+      "name": "egg_blue"
+    },
+    {
+      "name": "egg_green"
+    },
+    {
+      "name": "egg_orange"
+    },
+    {
+      "name": "egg_purple"
+    },
+    {
+      "name": "egg_red"
+    },
+    {
+      "name": "egg_rainbow"
+    },
+    {
+      "name": "egg_pinkspots"
+    },
+    {
+      "name": "egg_honeycomb"
+    },
+    {
+      "name": "egg_floppy",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_file"
+    },
+    {
+      "name": "egg_cd"
+    },
+    {
+      "name": "egg_spidercluster",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_dragon",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_corrupteddemon",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_holy",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_fish"
+    },
+    {
+      "name": "egg_insectoid"
+    },
+    {
+      "name": "egg_ashwalker",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_void",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_polychrome"
+    },
+    {
+      "name": "egg_ratvar",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "egg_hybrid"
+    }
+  ]
+}

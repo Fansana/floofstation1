@@ -201,10 +201,17 @@
 - type: entity
   name: grey sofa
   id: BenchSofaCorpMiddle
+  placement: # Floof
+    mode: SnapgridCenter # Floof
   parent: BenchBaseMiddle
   components:
   - type: Sprite
     sprite: SimpleStation14/Structures/Furniture/Benches/sofa_corp.rsi
+  - type: Construction # Floof
+    graph: Seat
+    node: chairSofaBench
+  - type: StaticPrice
+    price: 30
 
 - type: entity
   id: BenchSofaCorpLeft
@@ -226,9 +233,7 @@
   name: grey sofa
   id: BenchSofaCorpCorner
   suffix: Corner
-#  parent: BenchSofaCorpMiddle
-  placement:
-    mode: SnapgridCenter
+  parent: BenchSofaCorpMiddle # Floof
   components:
   - type: Transform
     anchored: true
