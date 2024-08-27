@@ -274,7 +274,6 @@
       Dead:
         Base: subject7355_dead
   - type: Inventory
-    speciesId: ravager
     templateId: friendxeno
   - type: Puller
     needsHands: false
