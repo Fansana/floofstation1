@@ -159,7 +159,6 @@
       Dead:
         Base: patriarch_dead
   - type: Inventory
-    speciesId: praetorian
     templateId: friendxeno
   - type: IdExaminable
   - type: InventorySlots
