@@ -221,7 +221,6 @@
     factions:
     - PetsNT
   - type: Inventory
-    speciesId: ravager
     templateId: friendxeno
   - type: Puller
     needsHands: false
