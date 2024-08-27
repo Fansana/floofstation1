@@ -61,6 +61,9 @@
   parent: MobXenoDroneNPC
   description: They mostly come at night. Mostly.
   components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
   - type: LanguageKnowledge
     speaks:
     - Xeno
