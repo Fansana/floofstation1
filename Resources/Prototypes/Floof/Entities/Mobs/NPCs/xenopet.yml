@@ -189,7 +189,6 @@
     factions:
     - PetsNT
   - type: Inventory
-    speciesId: drone
     templateId: friendxeno
   - type: Puller
     needsHands: false
