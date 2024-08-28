@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Splurtstation (https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "feather"
+    },
+    {
+      "name": "pinkcuffs"
+    },
+    {
+      "name": "lustwish_refill"
+    },
+    {
+      "name": "filter_pink"
+    },
+    {
+      "name": "filter_teal"
+    },
+    {
+      "name": "leather_whip_pink_hard"
+    },
+    {
+      "name": "leather_crotch_pink_hard"
+    },
+    {
+      "name": "leather_whip_teal_hard"
+    },
+    {
+      "name": "leather_crotch_teal_hard"
+    },
+    {
+      "name": "leather_whip_pink_weak"
+    },
+    {
+      "name": "leather_crotch_pink_weak"
+    },
+    {
+      "name": "leather_whip_teal_weak"
+    },
+    {
+      "name": "leather_crotch_teal_weak"
+    },
+    {
+      "name": "collar_key_tealblack"
+    },
+    {
+      "name": "collar_key_green"
+    },
+    {
+      "name": "collar_key_black"
+    },
+    {
+      "name": "collar_key_latex"
+    },
+    {
+      "name": "collar_key_orange"
+    },
+    {
+      "name": "collar_key_yellow"
+    },
+    {
+      "name": "collar_key_white"
+    },
+    {
+      "name": "collar_key_blue"
+    },
+    {
+      "name": "collar_key_red"
+    },
+    {
+      "name": "collar_key_purple"
+    },
+    {
+      "name": "collar_key"
+    },
+    {
+      "name": "magicwand_off"
+    },
+    {
+      "name": "magicwand_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "magicwand_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "magicwand_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_green_off"
+    },
+    {
+      "name": "vibrator_green_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_green_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_green_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_teal_off"
+    },
+    {
+      "name": "vibrator_teal_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_teal_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_teal_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_pink_off"
+    },
+    {
+      "name": "vibrator_pink_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_pink_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_pink_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_red_off"
+    },
+    {
+      "name": "vibrator_red_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_red_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_red_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_yellow_off"
+    },
+    {
+      "name": "vibrator_yellow_low",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_yellow_medium",
+      "delays": [
+        [
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08,
+          0.08
+        ]
+      ]
+    },
+    {
+      "name": "vibrator_yellow_hard",
+      "delays": [
+        [
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002,
+          0.060000002
+        ]
+      ]
+    },
+    {
+      "name": "candle_teal_off"
+    },
+    {
+      "name": "candle_teal_lit",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candle_pink_off"
+    },
+    {
+      "name": "candle_pink_lit",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "shocker_off"
+    },
+    {
+      "name": "shocker_on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_pink_off"
+    },
+    {
+      "name": "eggvib_pink_low",
+      "delays": [
+        [
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_pink_medium",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_pink_hard",
+      "delays": [
+        [
+          0.035,
+          0.035,
+          0.035,
+          0.035,
+          0.035
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_teal_off"
+    },
+    {
+      "name": "eggvib_teal_low",
+      "delays": [
+        [
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_teal_medium",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "eggvib_teal_hard",
+      "delays": [
+        [
+          0.035,
+          0.035,
+          0.035,
+          0.035,
+          0.035
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_pink_low_off"
+    },
+    {
+      "name": "signalvib_pink_medium_off"
+    },
+    {
+      "name": "signalvib_pink_hard_off"
+    },
+    {
+      "name": "signalvib_pink_low_on",
+      "delays": [
+        [
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_pink_medium_on",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_pink_hard_on",
+      "delays": [
+        [
+          0.035,
+          0.035,
+          0.035,
+          0.035,
+          0.035
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_teal_low_off"
+    },
+    {
+      "name": "signalvib_teal_medium_off"
+    },
+    {
+      "name": "signalvib_teal_hard_off"
+    },
+    {
+      "name": "signalvib_teal_low_on",
+      "delays": [
+        [
+          0.065,
+          0.065,
+          0.065,
+          0.065,
+          0.065
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_teal_medium_on",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "signalvib_teal_hard_on",
+      "delays": [
+        [
+          0.035,
+          0.035,
+          0.035,
+          0.035,
+          0.035
+        ]
+      ]
+    },
+    {
+      "name": "buttplug_tail_small"
+    },
+    {
+      "name": "buttplug_tail_medium"
+    },
+    {
+      "name": "buttplug_tail_big"
+    },
+    {
+      "name": "buttplug_metal_small"
+    },
+    {
+      "name": "buttplug_metal_medium"
+    },
+    {
+      "name": "buttplug_metal_big"
+    },
+    {
+      "name": "buttplug_pink_small"
+    },
+    {
+      "name": "buttplug_pink_medium"
+    },
+    {
+      "name": "buttplug_pink_big"
+    },
+    {
+      "name": "buttplug_teal_small"
+    },
+    {
+      "name": "buttplug_teal_medium"
+    },
+    {
+      "name": "buttplug_teal_big"
+    },
+    {
+      "name": "buttplug_yellow_small"
+    },
+    {
+      "name": "buttplug_yellow_medium"
+    },
+    {
+      "name": "buttplug_yellow_big"
+    },
+    {
+      "name": "buttplug_green_small",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "buttplug_green_medium",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "buttplug_green_big",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "pillow_teal_square"
+    },
+    {
+      "name": "pillow_teal_round"
+    },
+    {
+      "name": "pillow_pink_square"
+    },
+    {
+      "name": "pillow_pink_round"
+    },
+    {
+      "name": "lewdapron_green"
+    },
+    {
+      "name": "lewdapron_red"
+    },
+    {
+      "name": "lewdapron_pink"
+    },
+    {
+      "name": "lewdapron_teal"
+    },
+    {
+      "name": "lewdapron_yellow"
+    },
+    {
+      "name": "mindcontroller"
+    },
+    {
+      "name": "fleshlight_green"
+    },
+    {
+      "name": "fleshlight_teal"
+    },
+    {
+      "name": "fleshlight_pink"
+    },
+    {
+      "name": "fleshlight_red"
+    },
+    {
+      "name": "fleshlight_yellow"
+    },
+    {
+      "name": "serviette_clean"
+    },
+    {
+      "name": "serviette_dirty"
+    },
+    {
+      "name": "serviettepack_4"
+    },
+    {
+      "name": "serviettepack_3"
+    },
+    {
+      "name": "serviettepack_2"
+    },
+    {
+      "name": "serviettepack_1"
+    },
+    {
+      "name": "serviettepack_0"
+    },
+    {
+      "name": "dildo_avian"
+    },
+    {
+      "name": "dildo_canine"
+    },
+    {
+      "name": "dildo_equine"
+    },
+    {
+      "name": "dildo_dragon"
+    },
+    {
+      "name": "dildo_human"
+    },
+    {
+      "name": "dildo_tentacle"
+    },
+    {
+      "name": "polydildo_small"
+    },
+    {
+      "name": "polydildo_medium"
+    },
+    {
+      "name": "polydildo_big"
+    },
+    {
+      "name": "dildo_double"
+    },
+    {
+      "name": "lustwish_discount"
+    },
+    {
+      "name": "spankpad_pink"
+    },
+    {
+      "name": "spankpad_teal"
+    },
+    {
+      "name": "vibroring_teal_off"
+    },
+    {
+      "name": "vibroring_teal_on",
+      "delays": [
+        [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "vibroring_pink_off"
+    },
+    {
+      "name": "vibroring_pink_on",
+      "delays": [
+        [
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "condom_pack_pink"
+    },
+    {
+      "name": "condom_pack_teal"
+    },
+    {
+      "name": "condom_pink_unused"
+    },
+    {
+      "name": "condom_teal_unused"
+    },
+    {
+      "name": "condom_teal_used"
+    },
+    {
+      "name": "condom_pink_used"
+    },
+    {
+      "name": "condom_teal_dirty"
+    },
+    {
+      "name": "condom_pink_dirty"
+    },
+    {
+      "name": "condom_teal_broken"
+    },
+    {
+      "name": "condom_pink_broken"
+    },
+    {
+      "name": "clamps"
+    },
+    {
+      "name": "strapon_avian"
+    },
+    {
+      "name": "strapon_canine"
+    },
+    {
+      "name": "strapon_equine"
+    },
+    {
+      "name": "strapon_dragon"
+    },
+    {
+      "name": "strapon_human"
+    },
+    {
+      "name": "NEXT_ICONS_USED_ONLY_FOR_VENDOMAT_DONT_TOUCH"
+    },
+    {
+      "name": "eggvib"
+    },
+    {
+      "name": "signalvib"
+    },
+    {
+      "name": "buttplug"
+    },
+    {
+      "name": "vibroring"
+    },
+    {
+      "name": "condom_pack"
+    },
+    {
+      "name": "dildo"
+    },
+    {
+      "name": "polydildo"
+    },
+    {
+      "name": "fleshlight"
+    },
+    {
+      "name": "shocker"
+    },
+    {
+      "name": "leather"
+    },
+    {
+      "name": "magicwand"
+    },
+    {
+      "name": "candle"
+    },
+    {
+      "name": "spankpad"
+    },
+    {
+      "name": "vibrator"
+    },
+    {
+      "name": "serviettepack"
+    },
+    {
+      "name": "pillow"
+    },
+    {
+      "name": "strapon"
+    },
+    {
+      "name": "filter"
+    }
+  ]
+}
