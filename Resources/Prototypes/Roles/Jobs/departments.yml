@@ -117,6 +117,15 @@
   - Librarian
   - Roboticist
 
+- type: department
+  id: Silicon
+  name: department-Silicon
+  description: department-Silicon-description
+  color: "#D381C9"
+  roles:
+  - Borg
+  - StationAi
+
 # Floof section - Remove station-specific job pseudo-department
 #- type: department
 #  id: Specific
