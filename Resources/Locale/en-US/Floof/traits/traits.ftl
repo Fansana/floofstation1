@@ -18,11 +18,3 @@ trait-description-ProductiveMilkProducer = You have a pair of larger and much he
 
 trait-name-ProductiveSquirtProducer = Productive Pussy
 trait-description-ProductiveSquirtProducer = You have a slit between your legs that produces a much larger quantity of juices.
-
-trait-name-Weakness = Weakness
-trait-description-Weakness = You are naturally more vulnerable to fatigue. Your stamina pool is halved, making you greately vulnerable to shoving and stunning attacks.
-
-trait-name-Lightweight = Lightweight
-trait-description-Lightweight =
-    You are naturally lighter than other representatives of your species. Your body density is reduced to 2/3 of normal.
-    Note: [color=red]this will not display in the character creation menu, and will only have effect in-game.[/color]
