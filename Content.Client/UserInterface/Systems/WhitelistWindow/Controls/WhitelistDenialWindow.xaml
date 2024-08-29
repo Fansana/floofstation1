@@ -8,8 +8,6 @@
         <BoxContainer Orientation="Vertical">
             <RichTextLabel Margin="8 0 0 0" Name="DenialReason" />
             <Button Margin="8 10 0 0" Name="WhitelistApplyButton" Text="Apply for whitelist" />
-            <PanelContainer Margin="8 10 0 0" StyleClasses="LowDivider" />
-            <Button Margin="8 20 0 0" Name="FurryServersButton" Text="Or check out other Furry SS14 Servers" />
         </BoxContainer>
     </ScrollContainer>
 </ui:WhitelistDenialWindow>

@@ -1,0 +1,34 @@
+- type: entity
+  id: CrateLewdToys
+  parent: CrateLewd
+  name: sex toys crate
+  description: Improve your station's mood by introducing some fun "toys"! Careful, work may plummet and the station may become a mess.
+  components:
+  - type: StorageFill
+    contents:
+      - id: LewdWand
+      - id: LewdVibeGreen
+      - id: LewdVibeTeal
+      - id: LewdVibePink
+      - id: LewdVibeRed
+      - id: LewdVibeYellow
+      - id: LewdFleshlightGreen
+      - id: LewdFleshlightTeal
+      - id: LewdFleshlightPink
+      - id: LewdFleshlightRed
+      - id: LewdFleshlightYellow
+      - id: AvianDildo
+      - id: CanineDildo
+      - id: HorseDildo
+      - id: DragonDildo
+      - id: NormalDildo
+      - id: TentacleDildo
+      - id: DoubleDildo
+      - id: DrinkCumBottleFull
+        amount: 3
+      - id: DrinkNNNCan
+        amount: 3
+      - id: LeashBasic
+        amount: 2
+      - id: ShortLeash
+        amount: 2

@@ -122,6 +122,10 @@
       amount: 2
     - id: DrinkCreamCarton
       amount: 2
+    - id: DrinkCumBottleFull # Floof
+      amount: 2
+    - id: DrinkIceJug # Floof
+      amount: 2
 
 - type: entity
   id: CrateFoodSoftdrinks
@@ -143,6 +147,8 @@
       amount: 2
     - id: DrinkFourteenLokoCan
       amount: 2
+    - id: DrinkNNNCan # Floof
+      amount: 2
 
 - type: entity
   id: CrateFoodSoftdrinksLarge
@@ -163,5 +169,7 @@
       - id: DrinkLemonLimeCan
         amount: 4
       - id: DrinkFourteenLokoCan
+        amount: 2
+      - id: DrinkNNNCan # Floof
         amount: 4
 
