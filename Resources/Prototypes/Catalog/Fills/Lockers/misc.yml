@@ -89,6 +89,7 @@
         - id: OxygenTankFilled
         - id: FireExtinguisher
           prob: 0.25
+
 - type: entity
   id: ClosetWallFireFilledRandom
   parent: ClosetWallFire
@@ -102,6 +103,7 @@
         - id: OxygenTankFilled
         - id: FireExtinguisher
           prob: 0.25
+
 - type: entity
   id: ClosetMaintenanceFilledRandom
   suffix: Filled, Random
@@ -169,6 +171,60 @@
           prob: 0.05
         - id: BookRandomStory
           prob: 0.1
+        - id: LewdWand # Floof - Start
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeGreen
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeTeal
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibePink
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeRed
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeYellow
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightGreen
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightTeal
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightPink
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightRed
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightYellow
+          prob: 0.02
+          orGroup: Lewd
+        - id: AvianDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: CanineDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: HorseDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: DragonDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: NormalDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: TentacleDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: DoubleDildo
+          prob: 0.02   # Floof - End
+          orGroup: Lewd
         # Syndicate loot
         - id: null
           prob: 0.95
@@ -200,9 +256,9 @@
         #- id: ToolboxSyndicateFilled
         #  prob: 0.005
         #  orGroup: syndiemaintloot
-        #- id: BalloonSyn
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
+        - id: BalloonSyn
+          prob: 0.005
+          orGroup: syndiemaintloot
         #- id: WeaponSniperMosin
         #  prob: 0.0010
         #  orGroup: syndiemaintloot
@@ -264,6 +320,60 @@
           prob: 0.20
         - id: ModularReceiver
           prob: 0.1
+        - id: LewdWand  # Floof - Start
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeGreen
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeTeal
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibePink
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeRed
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdVibeYellow
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightGreen
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightTeal
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightPink
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightRed
+          prob: 0.02
+          orGroup: Lewd
+        - id: LewdFleshlightYellow
+          prob: 0.02
+          orGroup: Lewd
+        - id: AvianDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: CanineDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: HorseDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: DragonDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: NormalDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: TentacleDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: DoubleDildo
+          prob: 0.02  # Floof - End
+          orGroup: Lewd
         # Syndicate loot
         - id: null
           prob: 0.95

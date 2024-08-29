@@ -38,7 +38,8 @@
 - type: entity
   id: Carpet
   parent: CarpetBase
-  suffix: Red
+  name: red carpet
+  suffix: Tile
   components:
   - type: Sprite
     sprite: Structures/Furniture/Carpets/red_carpet.rsi
@@ -67,7 +68,8 @@
 - type: entity
   id: CarpetBlack
   parent: CarpetBase
-  suffix: Black
+  name: black carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -97,7 +99,8 @@
 - type: entity
   id: CarpetPink
   parent: CarpetBase
-  suffix: Pink
+  name: pink carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -127,7 +130,8 @@
 - type: entity
   id: CarpetBlue
   parent: CarpetBase
-  suffix: Blue
+  name: blue carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -157,7 +161,8 @@
 - type: entity
   id: CarpetGreen
   parent: CarpetBase
-  suffix: Green
+  name: green carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -187,7 +192,8 @@
 - type: entity
   id: CarpetOrange
   parent: CarpetBase
-  suffix: Orange
+  name: orange carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -217,7 +223,8 @@
 - type: entity
   id: CarpetSBlue
   parent: CarpetBase
-  suffix: Sky Blue
+  name: sky blue carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -247,7 +254,8 @@
 - type: entity
   id: CarpetPurple
   parent: CarpetBase
-  suffix: Purple
+  name: purple carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -277,7 +285,8 @@
 - type: entity
   id: CarpetCyan
   parent: CarpetBase
-  suffix: Cyan
+  name: cyan carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
@@ -307,7 +316,8 @@
 - type: entity
   id: CarpetWhite
   parent: CarpetBase
-  suffix: White
+  name: white carpet
+  suffix: Tile
   components:
   - type: Clickable
   - type: Sprite
