@@ -26,5 +26,3 @@ trait-description-ProductiveMilkProducer = You have a pair of larger and much he
 
 trait-name-ProductiveSquirtProducer = Productive Pussy
 trait-description-ProductiveSquirtProducer = You have a slit between your legs that produces a much larger quantity of juices.
-
-## test
