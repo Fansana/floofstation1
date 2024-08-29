@@ -100,6 +100,7 @@
       inverted: true
       traits:
         - Lethargy
+        - Weakness # Floofstation
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -123,6 +124,7 @@
       inverted: true
       traits:
         - Vigor
+        - Weakness # Floofstation
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
