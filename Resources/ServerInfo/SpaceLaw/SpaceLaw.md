@@ -219,4 +219,25 @@ Any sophont found to have committed a crime or crimes in protection of oneself o
 
 Any convict who peacefully complies with the authorities, displays clear signs of remorse concerning the committed crime, and/or conducts themselves peacefully while imprisoned, may be paroled as outlined in the Standard Operating Procedures.
 
+## Sentences
 
+### Capital
+- __Execution__: Termination of the convict’s life.
+Whenever any execution is performed, regardless of trial or not, a general announcement must be made detailing who was executed and for what reason.
+The convict may select from one of four methods of execution, depending on availability: firing squad, lethal injection, electric shock, or asphyxiation. If the convict does not make a choice after being given ample opportunity, the sentencing officer or other relevant authority may select the method that is most appropriate. Convicts may request alternate methods of execution that may be approved or denied at the discretion of the individual passing the sentence.
+The executed’s corpse must be burned, stored in the morgue, or processed by medical staff using the biomass reclaimer.
+- __Exfiltration__: Immediate retrieval of the convict via a CentComm, or GALPOL, dispatched transport.
+The prisoner may be held in a temporary cell until the transport arrives.
+If a transport cannot be arranged, default to other capital sentences.
+- __Preservative Stasis__: Relocation of the convict into a morgue or similar controlled and regulated environment until one’s sentence is concluded or the legal system can accommodate the convict.
+- __Decorporealisation__: Stripping the convict’s mind from their body into a more restricting form. Like putting the mind into a cyborgs body.
+- __Permanent Brig, Permabrig, or Extended Confinement__: Placing the convict into the permanent brig until the end of the shift, where they are to be transported to Central Command for processing.
+The convict has the same rights as any other prisoner within the permabrig, whether they arrived by transport or were sentenced to Extended confinement.
+
+
+### Standard
+- __Brigging__: Placing the convict into a temporary holding cell. __TODO: Treatment of Prisoners (SOP).__
+- __Catch & Release__: Taking the convict to Security, processing them, searching them, and then releasing them. __TODO: Jurisdiction (SOP).__
+- __Demotion__: Downgrading the convict’s employment contract and revoking their access accordingly, with permission from or when ordered by the convict’s head of department. May be applied when the convict has committed a crime relating to their employment within their department or with NanoTrasen as a whole. __TODO: Conduct Unbecoming (Company Policy).__
+- __Licence restriction__: Downgrading or suspending the convict’s armament licence and confiscating possessions accordingly. May be applied when the convict is guilty of possession or a crime involving a weapon they were lawfully permitted to carry.
+- __Mindbreaking__: Removal of the convict’s psionic power by use of mindbreaker toxin or any other means. May be applied when the convict is guilty of a crime in which they use psionics.
