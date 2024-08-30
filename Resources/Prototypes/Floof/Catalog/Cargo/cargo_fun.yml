@@ -2,9 +2,7 @@
   id: FunPrizeBall
   icon:
     sprite: Objects/Fun/prizeticket.rsi
-    layers:
-      - state: prizeball
-    state: icon
+    state: prizeball
   product: CratePrizeBall
   cost: 5000
   category: cargoproduct-category-name-fun
