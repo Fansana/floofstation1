@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Splurtstation (https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13).",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "magicwand_off"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "magicwand_low",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "magicwand_medium",
+            "delays": [
+                [
+                    0.08,
+                    0.08,
+                    0.08,
+                    0.08
+                ]
+            ]
+        },
+        {
+            "name": "magicwand_hard",
+            "delays": [
+                [
+                    0.060000002,
+                    0.060000002,
+                    0.060000002,
+                    0.060000002
+                ]
+            ]
+        }
+    ]
+}
