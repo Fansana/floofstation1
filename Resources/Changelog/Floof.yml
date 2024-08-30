@@ -735,3 +735,9 @@ Entries:
       message: Added two new physical traits - weakness and lightweight
   id: 100
   time: '2024-08-29T14:51:40.0000000+00:00'
+- author: cynical24
+  changes:
+    - type: Fix
+      message: space dragons will now drop bodies upon being butchered :3
+  id: 101
+  time: '2024-08-30T05:07:01.0000000+00:00'
