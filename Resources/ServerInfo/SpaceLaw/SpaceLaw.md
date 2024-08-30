@@ -5,7 +5,7 @@
 | Code | 1XX - Misdemeanor       | 2XX - Felony              | 3XX - Capital      |
 |:-----|:------------------------|:--------------------------|:-------------------|
 | 01   | Fearmongering           | Perjury or False Report   | Terrorism          |
-| 02   |                         |                           | Sedition           |
+| 02   |                         |                           |                    |
 | 03   | Animal Cruelty          | Manslaughter              | Murder             |
 | 04   | Theft                   | Grand Theft               |                    |
 | 05   |                         | Black Marketeering        |                    |
@@ -18,9 +18,9 @@
 | 12   | Trespass                | Secure Trespass           |                    |
 | 13   |                         | Endangerment              | Grand Endangerment |
 | 14   |                         | Harassment                |                    |
-| 15   | Hooliganism             | Rioting                   |                    |
+| 15   | Hooliganism             | Rioting                   | Sedition           |
 | 16   |                         | Contempt of Court         |                    |
-| 17   | Indecent Exposure       | Sexual Harassment         | Rape               |
+| 17   |                         | Sexual Harassment         | Rape               |
 | 18   | Failure To Comply       | Obstruction of Justice    |                    |
 | 19   |                         |                           |                    |
 | 20   |                         |                           |                    |
@@ -35,10 +35,6 @@ Code. -103-Charge: 3 minutes.
 ### Brandishing
 To show a firearm or deadly weapon in public without proper permission to do so.
 Code-109-Charge: 2 minutes
-
-### Indecent Exposure
-Willingly exposing one’s genitals in a public location without the intent to coerce or force one into sexual relations.
-Code-117- Charge: 3 Minutes
 
 ### Failure To Comply
 To willfully ignore lawful orders and commands provided by a Security Member or Command Member
@@ -109,7 +105,7 @@ Code.-208-Charge: 8 Minutes
 
 ### Sexual Harassment
 To sexually harass, attempt to coerce into sexual relations, or effect unwanted sexual contact with an unwilling sophont.
-Code.-217-Charge: 8 minutes
+Code.-217-Charge: 6 minutes
 
 ### Endangerment
 To recklessly abandon obligations involving the continued well-being and/or protection of life and property, through malpractice, action, or inaction.
@@ -160,7 +156,7 @@ Code.-308-Charge: Capital, Capital crimes necessitate a mandatory trial.
 
 ### Sedition
 To act to overthrow a lawfully established Chain of Command or governing body without lawful or legitimate cause.
-Code.-302-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-315-Charge: Capital, Capital crimes necessitate a mandatory trial.
 
 ### Rape
 To force sexual relations on an unwilling sophont
@@ -171,13 +167,9 @@ To egregiously and recklessly abandon obligations involving the continued wellbe
 Code.-313- Charge: Capital, Capital crimes necessitate a mandatory trial.
 
 
-
-
 ## Crime Modifiers:
 
 Sentencing modifiers are to be applied by the sentencing officer, judge, or arbiter. Aggravating modifiers may not extend a sentence beyond the specified limit, while extenuating modifiers may not reduce a sentence below the specified limit.
-
-### Aggravating:
 
 ### Solicitation:
 
@@ -210,8 +202,6 @@ Any sophont found guilty of committing a crime based fully or in part based on t
 ### Recidivism:
 
 Any sophont convicted of the same criminal charge multiple times within one shift will receive an additional modifier of, at most, 200% of the original sentence.
-
-Extenuating:
 
 ### Cooperation:
 
