@@ -8,7 +8,7 @@
   rules:
     - RampingStationEventScheduler
     - BasicRoundstartVariation
-    - SubGamemodesRule # Floof - Thieves in Survival!
+    - SubGamemodesRule
 
 - type: gamePreset
   id: SurvivalHellshift
@@ -20,7 +20,7 @@
   rules:
     - HellshiftStationEventScheduler
     - BasicRoundstartVariation
-    - SubGamemodesRule # Floof - Thieves in Hellshit!
+    - SubGamemodesRule
 
 - type: gamePreset
   id: AllAtOnce
@@ -45,7 +45,7 @@
   rules:
   - BasicStationEventScheduler
   - BasicRoundstartVariation
-  - SubGamemodesRule # Floof - Thieves in Extended!
+  - SubGamemodesRule
 
 - type: gamePreset
   id: Greenshift
