@@ -1,6 +1,7 @@
 using Content.Server.Body.Components;
 using Content.Server.Floofstation.Traits.Components;
 using Content.Server.Vampiric;
+using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
 
 namespace Content.Server.Floofstation.Traits;
@@ -18,12 +19,9 @@ public sealed class VampirismSystem : EntitySystem
     {
         EnsureBloodSucker(ent);
 
-        Log.Info($"Init vampire: {ent.Owner}");
-
-        if (!_body.TryGetBodyOrganComponents<MetabolizerComponent>(ent, out var comps))
+        if (!TryComp<BodyComponent>(ent, out var body)
+		    || !_body.TryGetBodyOrganComponents<MetabolizerComponent>(ent, out var comps, body))
             return;
-
-        Log.Info($"Init vampire: {ent.Owner}");
 
         foreach (var (metabolizer, organ) in comps)
         {
