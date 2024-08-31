@@ -46,6 +46,12 @@
           type: Vampiric
         reagent: Omnizine
         amount: 0.2
+      # Floofstation - make vampires replenish their own blood by drinking blood
+      - !type:ModifyBloodLevel
+        amount: 0.3 # +0.6 units of blood for each unit drunk
+        conditions:
+        - !type:OrganType
+          type: Vampiric
     Food:
       effects:
         - !type:AdjustReagent
