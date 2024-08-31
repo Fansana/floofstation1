@@ -755,3 +755,9 @@ Entries:
       message: Holding sprites for all lewd items.
   id: 103
   time: '2024-08-31T01:02:03.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Upstream merge. See the einstein-engines changelog tab for more details!
+  id: 104
+  time: '2024-08-31T20:33:10.0000000+00:00'
