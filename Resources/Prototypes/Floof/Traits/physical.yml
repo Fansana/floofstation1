@@ -8,20 +8,19 @@
       jobs:
         - Borg
         - MedicalBorg
-    - !type:CharacterSpeciesRequirement # This will be removed once you can edit organs with traits
+    - !type:CharacterSpeciesRequirement
       inverted: true
       species:
-        - Moth
-        - Oni
-        - Diona
-        - SlimePerson
-        - Human
         - IPC
   components:
-  - type: BloodSucker
-    unitsToSucc: 10
-    injectWhenSucc: false
-    webRequired: false
+    - type: Vampirism
+      succDelay: 3
+      specialDigestible: # Vampires cannot eat food chat is that real
+        tags:
+        - IceCream
+        - Pill
+        - Crayon
+        - Paper
 
 - type: trait
   id: Weakness
