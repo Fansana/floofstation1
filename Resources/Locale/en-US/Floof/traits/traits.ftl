@@ -1,5 +1,7 @@
 trait-name-Vampirism = Vampirism
-trait-description-Vampirism = Whether through implantation, genetic modification, or evolution, you have a pair of hollow, sharp fangs used to drink iron-based blood from the beings that contain it.
+trait-description-Vampirism =
+    Whether through implantation, genetic modification, or evolution, you have a pair of hollow, sharp fangs used to drink iron-based blood from the beings that contain it.
+    You cannot eat normal food, but drinking blood satiates your hunger and thirst, and also improves your health.
 
 trait-name-CumProducer = Cock
 trait-description-CumProducer = You have a schlong between your legs.
