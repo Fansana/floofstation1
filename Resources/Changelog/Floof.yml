@@ -741,3 +741,9 @@ Entries:
       message: space dragons will now drop bodies upon being butchered :3
   id: 101
   time: '2024-08-30T05:07:01.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Prize Ball Crates can now be ordered from the market
+  id: 102
+  time: '2024-08-31T00:59:49.0000000+00:00'
