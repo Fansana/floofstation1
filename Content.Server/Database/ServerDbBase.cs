@@ -219,6 +219,7 @@ namespace Content.Server.Database
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
+                profile.ConsentText,
                 profile.Species,
                 profile.Height,
                 profile.Width,
@@ -259,6 +260,7 @@ namespace Content.Server.Database
 
             profile.CharacterName = humanoid.Name;
             profile.FlavorText = humanoid.FlavorText;
+            profile.ConsentText = humanoid.ConsentText; // Floof - Per-Character Consent
             profile.Species = humanoid.Species;
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();

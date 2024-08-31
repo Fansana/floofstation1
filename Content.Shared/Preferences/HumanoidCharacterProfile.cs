@@ -26,6 +26,7 @@ namespace Content.Shared.Preferences
     {
         public const int MaxNameLength = 32;
         public const int MaxDescLength = 512;
+        public const int MaxCharConsLength = 512; // Floof - Per-Character Consent
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
         private readonly List<string> _antagPreferences;
@@ -35,6 +36,7 @@ namespace Content.Shared.Preferences
         private HumanoidCharacterProfile(
             string name,
             string flavortext,
+            string consenttext, // Floof - Per-Character Consent
             string species,
             float height,
             float width,
@@ -53,6 +55,7 @@ namespace Content.Shared.Preferences
         {
             Name = name;
             FlavorText = flavortext;
+            ConsentText = consenttext; // Floof - Per-Character Consent
             Species = species;
             Height = height;
             Width = width;
@@ -77,7 +80,7 @@ namespace Content.Shared.Preferences
             List<string> antagPreferences,
             List<string> traitPreferences,
             List<string> loadoutPreferences)
-            : this(other.Name, other.FlavorText, other.Species, other.Height, other.Width, other.Age, other.Sex, other.Gender, other.Appearance,
+            : this(other.Name, other.FlavorText, other.ConsentText, other.Species, other.Height, other.Width, other.Age, other.Sex, other.Gender, other.Appearance,
                 other.Clothing, other.Backpack, other.SpawnPriority, jobPriorities, other.PreferenceUnavailable,
                 antagPreferences, traitPreferences, loadoutPreferences)
         {
@@ -94,6 +97,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
+            string consenttext, // Floof - Per-Character Consent
             string species,
             float height,
             float width,
@@ -109,7 +113,7 @@ namespace Content.Shared.Preferences
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences,
             IReadOnlyList<string> loadoutPreferences)
-            : this(name, flavortext, species, height, width, age, sex, gender, appearance, clothing, backpack, spawnPriority,
+            : this(name, flavortext, consenttext, species, height, width, age, sex, gender, appearance, clothing, backpack, spawnPriority,
                 new Dictionary<string, JobPriority>(jobPriorities), preferenceUnavailable,
                 new List<string>(antagPreferences), new List<string>(traitPreferences),
                 new List<string>(loadoutPreferences))
@@ -124,6 +128,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile() : this(
             "John Doe",
             "",
+            "", // Floof - Per-Character Consent
             SharedHumanoidAppearanceSystem.DefaultSpecies,
             1f,
             1f,
@@ -155,6 +160,7 @@ namespace Content.Shared.Preferences
             return new(
                 "John Doe",
                 "",
+                "", // Floof - Per-Character Consent
                 species,
                 1f,
                 1f,
@@ -221,7 +227,7 @@ namespace Content.Shared.Preferences
 
             var name = GetName(species, gender);
 
-            return new HumanoidCharacterProfile(name, "", species, height, width, age, sex, gender,
+            return new HumanoidCharacterProfile(name, "", "", species, height, width, age, sex, gender,
                 HumanoidCharacterAppearance.Random(species, sex), ClothingPreference.Jumpsuit,
                 BackpackPreference.Backpack, SpawnPriorityPreference.None,
                 new Dictionary<string, JobPriority>
@@ -232,6 +238,7 @@ namespace Content.Shared.Preferences
 
         public string Name { get; private set; }
         public string FlavorText { get; private set; }
+        public string ConsentText { get; private set; } // Floof - Per-Character Consent
         [DataField("species")]
         public string Species { get; private set; }
 
@@ -271,6 +278,11 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithFlavorText(string flavorText)
         {
             return new(this) { FlavorText = flavorText };
+        }
+
+        public HumanoidCharacterProfile WithConsentText(string consentText) // Floof - Per-Character Consent
+        {
+            return new(this) { ConsentText = consentText };
         }
 
         public HumanoidCharacterProfile WithAge(int age)
@@ -530,6 +542,16 @@ namespace Content.Shared.Preferences
                 flavortext = FormattedMessage.RemoveMarkup(FlavorText);
             }
 
+            string consenttext; // Floof - Per-Character Consent
+            if (ConsentText.Length > MaxCharConsLength)
+            {
+                consenttext = FormattedMessage.RemoveMarkup(ConsentText)[..MaxCharConsLength];
+            }
+            else
+            {
+                consenttext = FormattedMessage.RemoveMarkup(ConsentText);
+            }
+
             var height = Height;
             if (speciesPrototype != null)
                 height = Math.Clamp(Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
@@ -626,6 +648,7 @@ namespace Content.Shared.Preferences
 
             Name = name;
             FlavorText = flavortext;
+            ConsentText = consenttext; // Floof - Per-Character Consent
             Age = age;
             Height = height;
             Width = width;

@@ -6,6 +6,7 @@ using Content.Client.Lobby;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Roles;
+using Content.Client.CharConsent; // Floof - Per-Character Consent
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing.Loadouts.Prototypes;
@@ -51,6 +52,7 @@ namespace Content.Client.Preferences.UI
         private LineEdit _ageEdit => CAgeEdit;
         private LineEdit _nameEdit => CNameEdit;
         private TextEdit? _flavorTextEdit;
+        private TextEdit? _consentTextEdit; // Floof - Per-Character Consent
         private Button _nameRandomButton => CNameRandomize;
         private Button _randomizeEverythingButton => CRandomizeEverything;
         private RichTextLabel _warningLabel => CWarningLabel;
@@ -549,7 +551,7 @@ namespace Content.Client.Preferences.UI
 
             #endregion Markings
 
-            #region FlavorText
+            #region FlavorText 
 
             if (configurationManager.GetCVar(CCVars.FlavorText))
             {
@@ -562,6 +564,18 @@ namespace Content.Client.Preferences.UI
             }
 
             #endregion FlavorText
+
+            // Floof - Per-Character Consent
+            #region ConsentText
+
+            var consentText = new ConsentText();
+            _tabContainer.AddChild(consentText);
+            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
+            _consentTextEdit = consentText.CConsentTextInput;
+
+            consentText.OnConsentTextChanged += OnConsentTextChange;
+
+            #endregion ConsentText
 
             #region Dummy
 
@@ -811,7 +825,14 @@ namespace Content.Client.Preferences.UI
             Profile = Profile.WithFlavorText(content);
             IsDirty = true;
         }
+        private void OnConsentTextChange(string content) // Floof - Per-Character Consent
+        {
+            if (Profile is null)
+                return;
 
+            Profile = Profile.WithConsentText(content);
+            IsDirty = true;
+        }
         private void OnMarkingChange(MarkingSet markings)
         {
             if (Profile is null)
@@ -1030,6 +1051,12 @@ namespace Content.Client.Preferences.UI
         {
             if(_flavorTextEdit != null)
                 _flavorTextEdit.TextRope = new Rope.Leaf(Profile?.FlavorText ?? "");
+        }
+
+        private void UpdateConsentTextEdit() // Floof - Per-Character Consent
+        {
+            if (_consentTextEdit != null)
+                _consentTextEdit.TextRope = new Rope.Leaf(Profile?.ConsentText ?? "");
         }
 
         private void UpdateAgeEdit()
@@ -1325,6 +1352,7 @@ namespace Content.Client.Preferences.UI
 
             UpdateNameEdit();
             UpdateFlavorTextEdit();
+            UpdateConsentTextEdit();
             UpdateSexControls();
             UpdateGenderControls();
             UpdateSkinColor();
