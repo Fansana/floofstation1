@@ -747,3 +747,11 @@ Entries:
       message: Prize Ball Crates can now be ordered from the market
   id: 102
   time: '2024-08-31T00:59:49.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Whips and Paddles
+    - type: Add
+      message: Holding sprites for all lewd items.
+  id: 103
+  time: '2024-08-31T01:02:03.0000000+00:00'
