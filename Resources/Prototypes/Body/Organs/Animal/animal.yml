@@ -82,7 +82,7 @@
   - type: Stomach
   - type: Metabolizer
     maxReagents: 3
-    metabolizerPrototypes: [ Animal ]
+    metabolizerTypes: [ Animal ]
     groups:
     - id: Food
     - id: Drink
