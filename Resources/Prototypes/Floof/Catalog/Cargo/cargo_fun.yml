@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: FunPrizeBall
+  icon:
+    sprite: Objects/Fun/prizeticket.rsi
+    state: prizeball
+  product: CratePrizeBall
+  cost: 5000
+  category: cargoproduct-category-name-fun
+  group: market
