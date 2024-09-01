@@ -168,7 +168,7 @@
         - !type:ReagentThreshold
           min: 15
       - !type:Drunk
-
+      
 - type: reagent
   id: Cryoxadone
   name: reagent-name-cryoxadone
@@ -177,6 +177,7 @@
   physicalDesc: reagent-physical-desc-fizzy
   flavor: medicine
   color: "#0091ff"
+  worksOnTheDead: true # Floof 
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -5
@@ -194,10 +195,12 @@
           damage:
           # todo scale with temp like SS13
             groups:
-              Airloss: -6
-              Brute: -4
-              Burn: -6
-              Toxin: -4
+              Airloss: -10 # Floof: -6<-10
+              # Brute: -4 # Floof
+              # Burn: -6 # Floof
+              # Toxin: -4 # Floof
+        - !type:ModifyBloodLevel # Floof
+          amount: 5 # Floof
 
 - type: reagent
   id: Doxarubixadone
@@ -207,6 +210,7 @@
   physicalDesc: reagent-physical-desc-bubbling
   flavor: medicine
   color: "#32cd32"
+  worksOnTheDead: true # Floof
   metabolisms:
     Medicine:
       effects:
@@ -216,7 +220,9 @@
             max: 213.0
           damage:
             types:
-             Cellular: -2
+             Cellular: -4 # Floof: -2<-4
+            groups: # Floof
+                Brute: 1 # Floof
 
 - type: reagent
   id: Dermaline
@@ -1191,4 +1197,5 @@
           types:
             Heat: -3.0
             Shock: -3.0
+            Cold: -3.0 # Floof 
             Caustic: -1.0

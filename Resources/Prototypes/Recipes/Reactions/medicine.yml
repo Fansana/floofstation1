@@ -71,7 +71,7 @@
   reactants:
     Cryoxadone:
       amount: 1
-    UnstableMutagen:
+    Phalanximine: # Floof: 1 UnstableMutagen < 1 Phalanximine
       amount: 1
   products:
     Doxarubixadone: 2
@@ -552,7 +552,7 @@
   id: Opporozidone
   minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
   reactants:
-    Cognizine: 
+    Formaldehyde: 
       amount: 1
     Plasma:
       amount: 2
