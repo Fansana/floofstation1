@@ -767,3 +767,9 @@ Entries:
       message: Sake Recipe
   id: 105
   time: '2024-09-01T18:52:34.0000000+00:00'
+- author: Tryded
+  changes:
+    - type: Fix
+      message: Fixed Glacier not having its Justice Roles
+  id: 106
+  time: '2024-09-01T18:53:22.0000000+00:00'
