@@ -69,7 +69,7 @@
   - type: DogVision
   - type: NpcFactionMember
     factions:
-    - NTPets
+    - SimpleNeutral
   - type: Grammar
     attributes:
       proper: true
