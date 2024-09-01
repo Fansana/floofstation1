@@ -762,3 +762,14 @@
       amount: 1
   products:
     YeOlHandy: 5
+
+- type: reaction
+  id: Sake
+  reactants:
+    Rice:
+      amount: 1
+    Enzyme:
+      amount: 1
+      catalyst: true
+  products:
+    Sake: 1

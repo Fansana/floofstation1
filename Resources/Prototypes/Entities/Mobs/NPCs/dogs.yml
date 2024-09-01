@@ -69,13 +69,13 @@
   - type: DogVision
   - type: NpcFactionMember
     factions:
-    - Pibble
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-    blackboard:
-      NavSmash: !type:Bool
-        true
+    - SimpleNeutral
+#  - type: HTN
+#    rootTask:
+#      task: SimpleHostileCompound
+#    blackboard:
+#      NavSmash: !type:Bool
+#        true
   - type: Grammar
     attributes:
       proper: true
