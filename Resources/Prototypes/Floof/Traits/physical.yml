@@ -12,6 +12,10 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - HollowFangs
   components:
     - type: Vampirism
       succDelay: 3
@@ -21,6 +25,30 @@
         - Pill
         - Crayon
         - Paper
+
+- type: trait
+  id: HollowFangs
+  category: Physical
+  points: -2
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - IPC
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Vampirism
+  components:
+  - type: Vampirism
+    succDelay: 5
+    metabolizerPrototypes:
+    - Animal
 
 - type: trait
   id: Weakness
