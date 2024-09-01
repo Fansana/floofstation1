@@ -785,3 +785,9 @@ Entries:
       message: Whips and Paddles to lockers.
   id: 108
   time: '2024-09-01T18:55:37.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Many trait costs have been cheapened, some traits have been changed.
+  id: 109
+  time: '2024-09-01T23:06:43.0000000+00:00'
