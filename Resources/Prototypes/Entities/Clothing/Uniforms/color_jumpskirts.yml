@@ -1,3 +1,4 @@
+# Every jumpskirt in this file has been changed from having ClothingUniformBase to having ClothingUniformSkirtBase as a parent.
 # White Jumpskirt
 - type: entity
   parent: ClothingUniformSkirtBase

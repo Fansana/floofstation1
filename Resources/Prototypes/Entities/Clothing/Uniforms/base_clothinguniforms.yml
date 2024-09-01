@@ -36,6 +36,8 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+# Adds the 'skirt' tag to UnsensoredClothingUniformSkirtBase to, well, make it a skirt.
+# By extension, the ClothingUniformSkirtBase is marked as a skirt as well.
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
@@ -69,6 +71,6 @@
     slots: [innerclothing]
     femaleMask: UniformTop
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+# Removed the subsequent 'skirt' tag from ClothingUniformSkirtBase, as the unsensored parent now has it.
     tags:
-    - Skirt
     - ClothMade # Delta-V - allows moths to eat this

@@ -9,6 +9,7 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/bartender.rsi
 
+# Moved gladiator uniform here instead of jumpsuits.yml, changed its parent to ClothingUniformSkirtBase, and moved the sprite location to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitGladiator
@@ -20,6 +21,7 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/gladiator.rsi
 
+# Moved purple bartender's uniform here instead of jumpsuits.yml, changed its parent to ClothingUniformSkirtBase, and moved the sprite location to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitBartenderPurple
@@ -31,6 +33,7 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/bartender_purple.rsi
 
+# Moved dark monstic robe here instead of jumpsuits.yml, changed its parent to ClothingUniformSkirtBase, and moved the sprite location to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMonasticRobeDark
@@ -42,6 +45,7 @@
     - type: Clothing
       sprite: Clothing/Uniforms/Jumpskirt/monastic_robe_dark.rsi
 
+# Moved light monastic here instead of jumpsuits.yml, changed its parent to ClothingUniformSkirtBase, and moved the sprite location to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitMonasticRobeLight
@@ -53,6 +57,7 @@
     - type: Clothing
       sprite: Clothing/Uniforms/Jumpskirt/monastic_robe_light.rsi
 
+# Moved kimono here instead of jumpsuits.yml, changed its parent to ClothingUniformSkirtBase, and moved the sprite location to the jumpskirts directory.
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitKimono
