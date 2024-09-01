@@ -70,6 +70,12 @@
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
+#  - type: HTN
+#    rootTask:
+#      task: SimpleHostileCompound
+#    blackboard:
+#      NavSmash: !type:Bool
+#        true
   - type: Grammar
     attributes:
       proper: true
