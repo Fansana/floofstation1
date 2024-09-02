@@ -7,6 +7,10 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: PointLight
+    radius: 2
+    energy: .5
+    color: "#B85E5E"
   - type: MovementAlwaysTouching
   - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
@@ -25,6 +29,10 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: PointLight
+    radius: 2
+    energy: .5
+    color: "#62B85E"
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -41,6 +49,10 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: PointLight
+    radius: 2
+    energy: .5
+    color: "#8B5EB8"
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -57,6 +69,10 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: PointLight
+    radius: 2
+    energy: .5
+    color: "#E3954D"
   - type: LanguageKnowledge
     speaks:
     - Xeno
