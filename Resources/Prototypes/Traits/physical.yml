@@ -1,7 +1,7 @@
 - type: trait
   id: WillToLive
   category: Physical
-  points: -4
+  points: -1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -23,7 +23,7 @@
 - type: trait
   id: WillToDie
   category: Physical
-  points: 2
+  points: 1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -40,12 +40,12 @@
         - WillToLive
   components:
     - type: DeadModifier
-      deadThresholdModifier: -15
+      deadThresholdModifier: -10
 
 - type: trait
   id: Tenacity
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -84,7 +84,7 @@
         - Tenacity
   components:
     - type: CritModifier
-      critThresholdModifier: -10
+      critThresholdModifier: -7
 
 - type: trait
   id: Vigor
@@ -100,6 +100,7 @@
       inverted: true
       traits:
         - Lethargy
+        - Weakness # Floofstation
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -112,7 +113,7 @@
 - type: trait
   id: Lethargy
   category: Physical
-  points: 2
+  points: 4
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -123,6 +124,7 @@
       inverted: true
       traits:
         - Vigor
+        - Weakness # Floofstation
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -134,7 +136,7 @@
 - type: trait
   id: HighAdrenaline
   category: Physical
-  points: -6
+  points: -5
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -157,7 +159,7 @@
 - type: trait
   id: AdrenalDysfunction
   category: Physical
-  points: 2
+  points: 3
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -179,7 +181,7 @@
 - type: trait
   id: Masochism
   category: Physical
-  points: -6
+  points: -5
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -198,7 +200,7 @@
 - type: trait
   id: LowPainTolerance
   category: Physical
-  points: 2
+  points: 3
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -216,7 +218,7 @@
 - type: trait
   id: MartialArtist
   category: Physical
-  points: -4
+  points: -3
   requirements:
   - !type:CharacterJobRequirement
     inverted: true

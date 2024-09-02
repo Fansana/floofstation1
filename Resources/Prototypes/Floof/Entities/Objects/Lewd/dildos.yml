@@ -1,0 +1,69 @@
+- type: entity
+  parent: BaseItem
+  id: AvianDildo
+  name: avian dildo
+  description: A dildo in the shape of a bird's "caw-k".
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_avian.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: CanineDildo
+  name: canine dildo
+  description: A dildo of a green rocket.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_canine.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: HorseDildo
+  name: horse dildo
+  description: A large dildo of a horse... Wow it's big...
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_equine.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: DragonDildo
+  name: dragon dildo
+  description: A large red dildo of a dragon... Woof...
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_dragon.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: NormalDildo
+  name: dildo
+  description: A simple pink dildo.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_human.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: TentacleDildo
+  name: tentacle dildo
+  description: A floppy tentacle dildo... Is it slimey?
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_tentacle.rsi
+    state: icon
+
+- type: entity
+  parent: BaseItem
+  id: DoubleDildo
+  name: double-sided dildo
+  description: A long dildo with two ends. Bring a friend!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_double.rsi
+    state: icon

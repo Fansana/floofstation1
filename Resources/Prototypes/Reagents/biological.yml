@@ -51,6 +51,11 @@
         - !type:AdjustReagent
           reagent: UncookedAnimalProteins
           amount: 0.5
+          # Floofstation - prevent vampires from getting sick by drinking blood
+          conditions:
+          - !type:OrganType
+            type: Vampiric
+            shouldHave: false
     Medicine:
       effects:
       - !type:HealthChange

@@ -1,25 +1,96 @@
 - type: trait
   id: Vampirism # You may port this to EE, you have my permission!
   category: Physical
-  points: -1
+  points: 3
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Borg
         - MedicalBorg
-    - !type:CharacterSpeciesRequirement # This will be removed once you can edit organs with traits
+    - !type:CharacterSpeciesRequirement
       inverted: true
       species:
-        - Moth
-        - Oni
-        - Diona
-        - SlimePerson
-        - Human
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - HollowFangs
   components:
-  - type: BloodSucker
-    unitsToSucc: 10
-    injectWhenSucc: false
-    webRequired: false
-    
+    - type: Vampirism
+      succDelay: 3
+      specialDigestible: # Vampires cannot eat food chat is that real
+        tags:
+        - IceCream
+        - Pill
+        - Crayon
+        - Paper
+
+- type: trait
+  id: HollowFangs
+  category: Physical
+  points: -2
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - IPC
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Vampirism
+  components:
+  - type: Vampirism
+    succDelay: 5
+    metabolizerPrototypes:
+    - Animal
+
+- type: trait
+  id: Weakness
+  category: Physical
+  points: 5
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+      - Borg
+      - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+      - Oni
+      - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - Lethargy
+      - Vigor
+  components:
+    - type: StaminaCritModifier
+      critThresholdModifier: -50
+
+- type: trait
+  id: Lightweight
+  category: Physical
+  points: -2 # Has pros and cons, not sure
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement # TODO if lamia gets merged, ensure it is added too
+    inverted: true
+    species:
+    - Felinid # They don't need to be lighter
+    - IPC
+  components:
+  - type: FixtureDensityModifier
+    min: 100
+    factor: 0.66 # still not as light as felinids due to different fixture size
+
