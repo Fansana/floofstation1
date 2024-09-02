@@ -8,15 +8,6 @@
     factions:
     - Passive
   - type: MovementAlwaysTouching
-  - type: MeleeWeapon
-    soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    animation: WeaponArcClaw
-    damage:
-      types:
-        Blunt: 5
-        Slash: 5
   - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
