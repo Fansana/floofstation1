@@ -33,18 +33,6 @@
 - type: reaction
   id : Formaldehyde
   reactants:
-    Ethanol:
-      amount: 1
-    Oxygen:
-      amount: 1
-    Silver:
-      amount: 1
-  products:
-    Formaldehyde: 3
-    
-- type: reaction
-  id : Formaldehyde
-  reactants:
     Vinegar:
       amount: 2
     Silver:
