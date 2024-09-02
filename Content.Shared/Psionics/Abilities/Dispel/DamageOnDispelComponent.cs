@@ -1,6 +1,6 @@
 using Content.Shared.Damage;
 
-namespace Content.Shared.Psionics.Abilities
+namespace Content.Shared.Abilities.Psionics
 {
     /// <summary>
     /// Takes damage when dispelled.
@@ -8,10 +8,10 @@ namespace Content.Shared.Psionics.Abilities
     [RegisterComponent]
     public sealed partial class DamageOnDispelComponent : Component
     {
-        [DataField("damage", required: true)]
+        [DataField(required: true)]
         public DamageSpecifier Damage = default!;
 
-        [DataField("variance")]
+        [DataField]
         public float Variance = 0.5f;
     }
 }

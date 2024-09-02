@@ -243,6 +243,8 @@
       prob: 0.02
     - id: MobMouse2
       prob: 0.02
+    - id: MobPibbleVent
+      prob: 0.005
 
 - type: entity
   id: PowerGridCheck
@@ -414,22 +416,38 @@
 #      prob: 0.05
 
 - type: entity
-  id: ZombieOutbreak
+  id: OneirophageSpawn
   parent: BaseGameRule
   noSpawn: true
   components:
   - type: StationEvent
-    earliestStart: 60
-    reoccurrenceDelay: 60
+    id: VentCritters
+    earliestStart: 15
     minimumPlayers: 15
-    weight: 2
-    duration: 1
-  - type: ZombieRule
-    minStartDelay: 0 #let them know immediately
-    maxStartDelay: 10
-    maxInitialInfected: 2
-    minInitialInfectedGrace: 300
-    maxInitialInfectedGrace: 450
+    weight: 4
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobGiantSpiderVampireAngry
+      prob: 0.01
+
+#- type: entity
+#  id: ZombieOutbreak
+#  parent: BaseGameRule
+#  noSpawn: true
+#  components:
+#  - type: StationEvent
+#    earliestStart: 60
+#    reoccurrenceDelay: 60
+#    minimumPlayers: 15
+#    weight: 2
+#    duration: 1
+#  - type: ZombieRule
+#    minStartDelay: 0 #let them know immediately
+#    maxStartDelay: 10
+#    maxInitialInfected: 2
+#    minInitialInfectedGrace: 300
+#    maxInitialInfectedGrace: 450
 
 - type: entity
   id: LoneOpsSpawn

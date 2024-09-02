@@ -250,7 +250,7 @@ namespace Content.Server.Strip
                 return;
             }
 
-            var (time, stealth) = GetStripTimeModifiers(user, target, slotDef.StripTime);
+            var (time, stealth) = GetStripTimeModifiers(user, target, TimeSpan.FromSeconds(slotDef.StripTime));
 
             bool hidden = stealth == ThievingStealth.Hidden;
 
@@ -341,7 +341,7 @@ namespace Content.Server.Strip
                 return;
             }
 
-            var (time, stealth) = GetStripTimeModifiers(user, target, slotDef.StripTime);
+            var (time, stealth) = GetStripTimeModifiers(user, target, TimeSpan.FromSeconds(slotDef.StripTime));
 
             bool hidden = stealth == ThievingStealth.Hidden;
 

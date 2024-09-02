@@ -17,15 +17,17 @@
   access:
   - Research
   - Maintenance
-  - Mantis
+  - Mantis # DeltaV - Mantis, see Resources/Prototypes/DeltaV/Access/epistemics.yml
   special:
   - !type:AddComponentSpecial
     components:
-    - type: PotentialPsionic
     - type: Psionic
-      amplification: 0.3
-      dampening: 0.3
-    - type: MetapsionicPower
+  - !type:AddComponentSpecial
+    components:
+    - type: InnatePsionicPowers
+      powersToAdd:
+        - MetapsionicPower
+        - TelepathyPower
 
 - type: startingGear
   id: ForensicMantisGear

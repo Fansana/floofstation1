@@ -1,5 +1,5 @@
 using Content.Shared.Chemistry.Reagent;
-using Content.Server.Psionics.Abilities;
+using Content.Server.Abilities.Psionics;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 
@@ -21,7 +21,7 @@ namespace Content.Server.Chemistry.ReagentEffects
 
             var psySys = args.EntityManager.EntitySysManager.GetEntitySystem<PsionicAbilitiesSystem>();
 
-            psySys.RemovePsionics(args.SolutionEntity);
+            psySys.RemoveAllPsionicPowers(args.SolutionEntity, true);
         }
     }
 }

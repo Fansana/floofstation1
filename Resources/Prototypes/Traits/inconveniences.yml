@@ -1,4 +1,4 @@
-﻿- type: trait
+- type: trait
   id: LightweightDrunk
   category: Physical
   requirements:
@@ -11,6 +11,12 @@
       inverted: true
       traits:
         - HeavyweightDrunk
+        - LiquorLifeline
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Dwarf
+        - IPC
   components:
     - type: LightweightDrunk
       boozeStrengthMultiplier: 2
@@ -34,7 +40,7 @@
 - type: trait
   id: ForeignerLight
   category: Mental
-  points: 1
+  points: 2
   requirements:
     - !type:CharacterTraitRequirement
       inverted: true
@@ -48,7 +54,7 @@
 - type: trait
   id: Foreigner
   category: Mental
-  points: 2
+  points: 4
   requirements: # TODO: Add a requirement to know at least 1 non-gc language
     - !type:CharacterTraitRequirement
       inverted: true

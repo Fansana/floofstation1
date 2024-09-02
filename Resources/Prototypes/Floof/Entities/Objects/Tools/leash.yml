@@ -1,0 +1,61 @@
+- type: entity
+  id: BaseLeash
+  parent: BaseItem
+  name: leash
+  description: Helps keep your animals close to you, as well as your friends. Attach to supported object or clothing (such as collars) to use. You can pull attached entities while holding the leash.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Tools/leash.rsi
+    layers:
+    - state: icon
+  - type: Leash
+    leashSprite:
+      sprite: Floof/Objects/Tools/leash-rope.rsi
+      state: rope
+
+- type: entity
+  id: LeashBasic
+  parent: BaseLeash
+  components:
+  - type: Leash
+    length: 3.5
+    attachDelay: 4.5 # Gotta be at least as high as cuffs or antags may abuse it
+    detachDelay: 3
+    selfDetachDelay: 10
+
+- type: entity
+  id: ShortLeash
+  parent: BaseLeash
+  name: short leash
+  components:
+  - type: Leash
+    length: 1.5
+    attachDelay: 4.5
+    detachDelay: 3
+    selfDetachDelay: 10
+
+- type: entity
+  id: LeashAdvanced
+  parent: LeashBasic
+  name: advanced leash
+  components:
+  - type: Leash
+    maxJoints: 3
+    attachDelay: 2.5
+    detachDelay: 2
+    selfDetachDelay: 15
+
+- type: entity
+  id: LeashBluespace
+  parent: BaseLeash
+  name: bluespace leash
+  description: Powered by a miniature singularity inside the handle. Not safe for use by crewmembers.
+  suffix: DEBUG, DO NOT MAP
+  components:
+  - type: Leash
+    maxJoints: 25
+    attachDelay: 0
+    detachDelay: 10000 # will still be instant for admin ghosts or whatever with instant doafters tag
+    selfDetachDelay: 10000
+    pullInterval: 0.1

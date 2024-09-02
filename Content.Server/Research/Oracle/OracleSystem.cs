@@ -5,9 +5,8 @@ using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
-using Content.Server.Psionics;
 using Content.Server.Research.Systems;
-using Content.Shared.Psionics.Abilities;
+using Content.Shared.Abilities.Psionics;
 using Content.Shared.Chat;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
@@ -74,7 +73,7 @@ public sealed class OracleSystem : EntitySystem
 
     private void OnInteractHand(Entity<OracleComponent> oracle, ref InteractHandEvent args)
     {
-        if (!HasComp<PotentialPsionicComponent>(args.User) || HasComp<PsionicInsulationComponent>(args.User)
+        if (!HasComp<PsionicComponent>(args.User) || HasComp<PsionicInsulationComponent>(args.User)
             || !TryComp<ActorComponent>(args.User, out var actor))
             return;
 
@@ -165,7 +164,7 @@ public sealed class OracleSystem : EntitySystem
             return;
 
         // Why is this hardcoded?
-        var amount = MathF.Round(20 + _random.Next(1, 30) + _glimmer.GlimmerOutput / 10f);
+        var amount = MathF.Round(20 + _random.Next(1, 30) + _glimmer.Glimmer / 10f);
         var temporarySol = new Solution();
         var reagent = _protoMan.Index(oracle.Comp.RewardReagents).Pick(_random);
 

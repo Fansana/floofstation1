@@ -162,6 +162,8 @@
       - HandheldStationMap
       - ClothingHeadHatWelding
       - CustomDrinkJug # FloofStation
+      - LeashBasic # FloofStation
+      - ShortLeash # FloofStation
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
@@ -596,6 +598,8 @@
     - BorgModuleAdvancedTool
     - BorgModuleGPS
     - BorgModuleRCD
+    - BorgModuleJetpack
+    - BorgModulePka
     - BorgModuleArtifact
     - BorgModuleAnomaly
     - BorgModuleGardening
@@ -1144,6 +1148,59 @@
       - CarpetWhite
       # Floofstation - Collars
       - ClothingNeckCollarCmd
+      # Floofstation - Socks, Armwarmers ect
+      - ClothingHandsPlainWarmers
+      - ClothingUnderSocksPlain
+      - ClothingUniformThongPlain
+      - ClothingHandsStripeRainbowWarmers
+      - ClothingUnderSocksStripedRainbow
+      - ClothingUniformStripedThongRainbow
+      - ClothingHandsStripePurpleWarmers
+      - ClothingUnderSocksStripedPurple
+      - ClothingUniformStripedThongPurple
+      - ClothingHandsStripeWhiteWarmers
+      - ClothingUnderSocksStripedWhite
+      - ClothingUniformStripedThongWhite
+      - ClothingHandsCoderWarmers
+      - ClothingUnderSocksCoder
+      - ClothingUniformThongCoder
+      - ClothingHandsCoderValidWarmers
+      - ClothingUnderSocksCoderValid
+      - ClothingUniformThongCoderValid
+      - ClothingHandsBeeWarmers
+      - ClothingUnderSocksBee
+      - ClothingUniformThongBee
+      # Floofstation - Department Socks, Armwarmers ect
+      - ClothingHandsCaptainWarmers
+      - ClothingUnderSocksCaptain
+      - ClothingUniformCaptainThong
+      - ClothingHandsCommandWarmers
+      - ClothingUnderSocksCommand
+      - ClothingUniformCommandThong
+      - ClothingHandsEngiWarmers
+      - ClothingUnderSocksEngi
+      - ClothingUniformEngiThong
+      - ClothingHandsEpiWarmers
+      - ClothingUnderSocksEpi
+      - ClothingUniformEpiThong
+      - ClothingHandsChaplainWarmers
+      - ClothingUnderSocksChaplain
+      - ClothingUniformChaplainThong
+      - ClothingHandsLogisWarmers
+      - ClothingUnderSocksLogis
+      - ClothingUniformLogisThong
+      - ClothingHandsMedicWarmers
+      - ClothingUnderSocksMedic
+      - ClothingUniformMedicThong
+      - ClothingHandsSecurityWarmers
+      - ClothingUnderSocksSecurity
+      - ClothingUniformSecurityThong
+      - ClothingHandsServiceWarmers
+      - ClothingUnderSocksService
+      - ClothingUniformServiceThong
+      - ClothingHandsJanitorWarmers
+      - ClothingUnderSocksJanitor
+      - ClothingUniformJanitorThong
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
@@ -1277,3 +1334,141 @@
     staticRecipes:
     - MaterialSheetMeat
     - SheetPaper
+
+- type: entity
+  parent: BaseLathe
+  id: PrizeCounter
+  name: prize counter
+  description: Claim your prize and win some toys and cute plushies!
+  components:
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 3
+    enabled: false
+    sound:
+      path: /Audio/Ambience/Objects/vending_machine_hum.ogg
+  - type: LitOnPowered
+  - type: ApcPowerReceiver
+    powerLoad: 200
+    priority: Low
+  # - type: Advertise
+  #   pack: CuddlyCritterAds # TODO Change this
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#4b93ad"
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: Structures/Machines/prizecounter.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticRecipes:
+      - PrizeBall
+      - PlushieMothRandom
+      - PlushieMothMusician
+      - PlushieMothBartender
+      - PlushieBee
+      - PlushieHampter
+      - PlushieRouny
+      - PlushieLamp
+      - PlushieArachind
+      - PlushieLizard
+      - PlushieSpaceLizard
+      - PlushieSharkBlue
+      - PlushieSharkPink
+      - PlushieSharkGrey
+      - PlushieCarp
+      - PlushieMagicarp
+      - PlushieHolocarp
+      - PlushieSlime
+      - PlushieSnake
+      - ToyMouse
+      - ToyRubberDuck
+      - PlushieVox
+      - PlushieAtmosian
+      - PlushiePenguin
+      - PlushieHuman
+      - PlushieArachne
+      - PlushieGnome
+      - PlushieLoveable
+      - PlushieDeer
+      - PlushieIpc
+      - PlushieGrey
+      - PlushieRedFox
+      - PlushiePurpleFox
+      - PlushiePinkFox
+      - PlushieOrangeFox
+      - PlushieMarbleFox
+      - PlushieCrimsonFox
+      - PlushieCoffeeFox
+      - PlushieBlueFox
+      - PlushieBlackFox
+      - PlushieVulp
+      - PlushieCorgi
+      - PlushieGirlyCorgi
+      - PlushieRobotCorgi
+      - PlushieCatBlack
+      - PlushieCatGrey
+      - PlushieCatOrange
+      - PlushieCatSiames
+      - PlushieCatTabby
+      - PlushieCatTuxedo
+      - PlushieCatWhite
+      - ToyAi
+      - ToyIan
+      - BalloonNT
+      - BalloonCorgi
+      - CrayonBox
+      - PetRockCarrier
+      - PlushieXeno
+      - FoamCrossbow
+      - RevolverCapGun
+      - PonderingOrb
+      - ToyAmongPequeno
+      - FoamCutlass
+      - WhoopieCushion
+      - ToyHammer
+      - PlasticBanana
+      - WeaponWaterPistol
+      - WeaponWaterBlaster
+      - NewtonCradle
+      - SnapPopBox
+      - MrDips
+      - MrChips
+      - CrazyGlue
+      - PlushieRatvar
+      - PlushieNar
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+      - PlushieGhost
+      - PlushieRGBee
+      - PlushieRainbowCarp
+      - PlushieJester
+      - PlushieSlips
+      - PlushieTrystan
+      - PlushieAbductor
+      - PlushieAbductorAgent
+      - PlushieNuke
+      - ToyNuke
+      - FoamBlade
+      - BalloonSyn
+      - SingularityToy
+      - TeslaToy
+      - ToySword
+      - ThronglerToy
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - PrizeTicket

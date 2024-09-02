@@ -1,7 +1,7 @@
 using Content.Shared.Psionics;
 using Content.Shared.Eui;
 using Content.Server.EUI;
-using Content.Server.Psionics.Abilities;
+using Content.Server.Abilities.Psionics;
 
 namespace Content.Server.Psionics
 {

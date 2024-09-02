@@ -1,7 +1,9 @@
+using System.Numerics;
 using Content.Shared.Physics;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
+using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Dynamics.Joints;
 
@@ -27,6 +29,8 @@ public sealed class JointVisualsOverlay : Overlay
     {
         _drawn.Clear();
         var worldHandle = args.WorldHandle;
+        // Floofstation: fix incorrect drawing box location due to incorrect coordinate system
+        worldHandle.SetTransform(Vector2.Zero, Angle.Zero);
 
         var spriteSystem = _entManager.System<SpriteSystem>();
         var xformSystem = _entManager.System<SharedTransformSystem>();

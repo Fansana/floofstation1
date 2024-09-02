@@ -1,8 +1,9 @@
-using Content.Shared.Psionics.Abilities;
-using Content.Shared.Psionics;
+using Content.Shared.Abilities.Psionics;
+using Content.Server.Abilities.Psionics;
 using Content.Shared.Eye;
 using Content.Server.NPC.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Player;
 using Robust.Server.GameObjects;
 
 namespace Content.Server.Psionics
@@ -17,12 +18,12 @@ namespace Content.Server.Psionics
         {
             base.Initialize();
             /// Masking
-            SubscribeLocalEvent<PotentialPsionicComponent, ComponentInit>(OnInit);
+            SubscribeLocalEvent<ActorComponent, ComponentInit>(OnInit);
             SubscribeLocalEvent<PsionicInsulationComponent, ComponentInit>(OnInsulInit);
             SubscribeLocalEvent<PsionicInsulationComponent, ComponentShutdown>(OnInsulShutdown);
 
             /// Layer
-            SubscribeLocalEvent<PsionicallyInvisibleComponent, ComponentInit>(OnInvisInit);
+            SubscribeLocalEvent<PsionicallyInvisibleComponent, ComponentStartup>(OnInvisInit);
             SubscribeLocalEvent<PsionicallyInvisibleComponent, ComponentShutdown>(OnInvisShutdown);
 
             // PVS Stuff
@@ -30,22 +31,14 @@ namespace Content.Server.Psionics
             SubscribeLocalEvent<PsionicallyInvisibleComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
         }
 
-        private void OnInit(EntityUid uid, PotentialPsionicComponent component, ComponentInit args)
+        private void OnInit(EntityUid uid, ActorComponent component, ComponentInit args)
         {
-            SetCanSeePsionicInvisiblity(uid, false);
+            if (!HasComp<PsionicInsulationComponent>(uid))
+                SetCanSeePsionicInvisiblity(uid, false);
         }
 
-        /// <summary>
-        /// Being able to see invisible by default is no longer tracked by "Not having Potential Psionic".
-        /// Anything intended to be immune to invisibility(and mind magic in general) should instead have PsionicInsulation as a built-in component
-        /// </summary>
-        /// <param name="uid"></param>
-        /// <param name="component"></param>
-        /// <param name="args"></param>
         private void OnInsulInit(EntityUid uid, PsionicInsulationComponent component, ComponentInit args)
         {
-            RaiseLocalEvent(uid, new PsionicInsulationEvent());
-
             if (HasComp<PsionicInvisibilityUsedComponent>(uid))
                 _invisSystem.ToggleInvisibility(uid);
 
@@ -81,14 +74,13 @@ namespace Content.Server.Psionics
             component.SuppressedFactions.Clear();
         }
 
-        private void OnInvisInit(EntityUid uid, PsionicallyInvisibleComponent component, ComponentInit args)
+        private void OnInvisInit(EntityUid uid, PsionicallyInvisibleComponent component, ComponentStartup args)
         {
             var visibility = EntityManager.EnsureComponent<VisibilityComponent>(uid);
 
             _visibilitySystem.AddLayer(uid, visibility, (int) VisibilityFlags.PsionicInvisibility, false);
             _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
             _visibilitySystem.RefreshVisibility(uid, visibility);
-            SetCanSeePsionicInvisiblity(uid, true);
         }
 
 
@@ -99,7 +91,6 @@ namespace Content.Server.Psionics
                 _visibilitySystem.RemoveLayer(uid, visibility, (int) VisibilityFlags.PsionicInvisibility, false);
                 _visibilitySystem.AddLayer(uid, visibility, (int) VisibilityFlags.Normal, false);
                 _visibilitySystem.RefreshVisibility(uid, visibility);
-                SetCanSeePsionicInvisiblity(uid, false);
             }
         }
 
@@ -121,7 +112,8 @@ namespace Content.Server.Psionics
                 {
                     _eye.SetVisibilityMask(uid, eye.VisibilityMask | (int) VisibilityFlags.PsionicInvisibility, eye);
                 }
-            } else
+            }
+            else
             {
                 if (EntityManager.TryGetComponent(uid, out EyeComponent? eye))
                 {

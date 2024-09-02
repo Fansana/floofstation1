@@ -1,4 +1,3 @@
-using Content.Server.Actions;
 using Content.Server.Atmos.Components;
 using Content.Server.Body.Components;
 using Content.Server.Chat;
@@ -16,7 +15,7 @@ using Content.Server.NPC.Systems;
 using Content.Server.Roles;
 using Content.Server.Speech.Components;
 using Content.Server.Temperature.Components;
-using Content.Shared.Psionics.Abilities;
+using Content.Shared.Abilities.Psionics;
 using Content.Shared.CombatMode;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage;
@@ -37,6 +36,7 @@ using Content.Shared.Zombies;
 using Content.Shared.Prying.Components;
 using Robust.Shared.Audio.Systems;
 using Content.Shared.Traits.Assorted.Components;
+using Content.Server.Abilities.Psionics;
 
 namespace Content.Server.Zombies
 {
@@ -59,7 +59,9 @@ namespace Content.Server.Zombies
         [Dependency] private readonly IChatManager _chatMan = default!;
         [Dependency] private readonly MindSystem _mind = default!;
         [Dependency] private readonly SharedRoleSystem _roles = default!;
+        [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
+        [Dependency] private readonly PsionicAbilitiesSystem _psionic = default!;
 
         /// <summary>
         /// Handles an entity turning into a zombie when they die or go into crit
@@ -107,17 +109,9 @@ namespace Content.Server.Zombies
             RemComp<ReproductivePartnerComponent>(target);
             RemComp<LegsParalyzedComponent>(target);
 
-            if (TryComp<PsionicComponent>(target, out var psionic)) // DeltaV - Prevent psionic zombies
+            if (HasComp<PsionicComponent>(target)) // Prevent psionic zombies
             {
-                if (psionic.ActivePowers.Count > 0)
-                {
-                    foreach (var power in psionic.ActivePowers)
-                    {
-                        RemComp(target, power);
-                    }
-                    psionic.ActivePowers.Clear();
-                }
-                RemComp<PsionicComponent>(target);
+                _psionic.RemoveAllPsionicPowers(target, true);
             }
 
             //funny voice
@@ -142,7 +136,7 @@ namespace Content.Server.Zombies
             melee.AltDisarm = false;
             melee.Range = 1.2f;
             melee.Angle = 0.0f;
-            melee.HitSound = zombiecomp.BiteSound;
+            melee.SoundHit = zombiecomp.BiteSound;
 
             if (mobState.CurrentState == MobState.Alive)
             {

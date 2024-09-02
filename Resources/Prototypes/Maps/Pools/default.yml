@@ -1,9 +1,9 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-# DeltaV
   - Arena
   - Asterisk
+  - Core
   - Edge
   - Hammurabi
   - Lighthouse
@@ -11,4 +11,5 @@
   - Shoukou
   - Tortuga
   - TheHive
-  - Submarine
+  - Saltern
+  - Glacier
