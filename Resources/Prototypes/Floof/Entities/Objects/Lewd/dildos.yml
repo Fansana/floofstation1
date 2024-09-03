@@ -1,5 +1,16 @@
 - type: entity
   parent: BaseItem
+  id: BaseDildo
+  abstract: true
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 100
+  - type: StaticPrice
+    price: 75
+
+- type: entity
+  parent: BaseDildo
   id: AvianDildo
   name: avian dildo
   description: A dildo in the shape of a bird's "caw-k".
@@ -9,7 +20,7 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
   id: CanineDildo
   name: canine dildo
   description: A dildo of a green rocket.
@@ -19,7 +30,17 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
+  id: CanineDildoRed
+  name: red canine dildo
+  description: You'll be seeing stars when you ride THIS red rocket.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_canine_red.rsi
+    state: icon
+
+- type: entity
+  parent: BaseDildo
   id: HorseDildo
   name: horse dildo
   description: A large dildo of a horse... Wow it's big...
@@ -29,7 +50,7 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
   id: DragonDildo
   name: dragon dildo
   description: A large red dildo of a dragon... Woof...
@@ -39,7 +60,7 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
   id: NormalDildo
   name: dildo
   description: A simple pink dildo.
@@ -49,7 +70,7 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
   id: TentacleDildo
   name: tentacle dildo
   description: A floppy tentacle dildo... Is it slimey?
@@ -59,7 +80,7 @@
     state: icon
 
 - type: entity
-  parent: BaseItem
+  parent: BaseDildo
   id: DoubleDildo
   name: double-sided dildo
   description: A long dildo with two ends. Bring a friend!
