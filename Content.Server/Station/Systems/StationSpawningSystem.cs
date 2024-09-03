@@ -28,6 +28,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Content.Server.Floof;
 
 namespace Content.Server.Station.Systems;
 
@@ -186,6 +187,15 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
             {
                 AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+            }
+
+            if (profile.ConsentText != "") // Floof - Per-Character Consent Menu
+            {
+                AddComp<CharConsentComponent>(entity.Value).Consent = profile.ConsentText;
+            }
+            else
+            {
+                AddComp<CharConsentComponent>(entity.Value).Consent = Loc.GetString("consent-text-not-set");
             }
         }
 

@@ -1,5 +1,0 @@
-<Control Name="CConsentText" xmlns="https://spacestation14.io">
-    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-        <TextEdit Name="CConsentTextInput" Access="Public" MinSize="220 100" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
-    </BoxContainer>
-</Control>

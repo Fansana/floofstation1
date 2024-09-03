@@ -6,7 +6,7 @@ using Content.Client.Lobby;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Roles;
-using Content.Client.CharConsent; // Floof - Per-Character Consent
+using Content.Client.Floof.CharConsent.UI.Windows; // Floof - Per-Character Consent
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing.Loadouts.Prototypes;
@@ -570,7 +570,7 @@ namespace Content.Client.Preferences.UI
 
             var consentText = new ConsentText();
             _tabContainer.AddChild(consentText);
-            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
+            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-consenttext-tab"));
             _consentTextEdit = consentText.CConsentTextInput;
 
             consentText.OnConsentTextChanged += OnConsentTextChange;
