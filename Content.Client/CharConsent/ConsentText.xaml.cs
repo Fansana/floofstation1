@@ -17,7 +17,7 @@ namespace Content.Client.CharConsent
 
             var loc = IoCManager.Resolve<ILocalizationManager>();
             CConsentTextInput.Placeholder = new Rope.Leaf(loc.GetString("flavor-text-placeholder"));
-            CConsentTextInput.OnKeyBindDown  += _ => ConsentTextChanged();
+            CConsentTextInput.OnKeyBindDown += _ => ConsentTextChanged();
         }
 
         public void ConsentTextChanged()
