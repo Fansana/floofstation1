@@ -41,6 +41,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                 "Charlie Charlieson",
                 "The biggest boy around.",
                 "Human",
+                "Everything",
                 1,
                 1,
                 21,
