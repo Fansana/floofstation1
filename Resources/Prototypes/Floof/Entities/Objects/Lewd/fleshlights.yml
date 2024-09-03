@@ -3,6 +3,11 @@
   id: BaseFleshlight
   abstract: true
   components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 100
+  - type: StaticPrice
+    price: 75
   - type: Drink
     solution: fleshlight
     ignoreEmpty: true
