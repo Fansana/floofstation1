@@ -110,7 +110,7 @@ trait-description-Tenacity =
 trait-name-GlassJaw = Glass Jaw
 trait-description-GlassJaw =
     Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
-    Your damage threshold for becoming Critical is decreased by 10 points.
+    Your damage threshold for becoming Critical is decreased by 7 points.
 
 trait-name-HighAdrenaline = High Adrenaline
 trait-description-HighAdrenaline =

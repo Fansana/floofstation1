@@ -19,6 +19,9 @@
       - id: LewdFleshlightYellow
       - id: AvianDildo
       - id: CanineDildo
+        orGroup: canine
+      - id: CanineDildoRed
+        orGroup: canine
       - id: HorseDildo
       - id: DragonDildo
       - id: NormalDildo
