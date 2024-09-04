@@ -2,7 +2,7 @@
 - type: language
   id: Arachnic
   speech:
-    color: "#5B5B5Bdd"
+    color: "#909090"
     fontId: StrawSerif
   obfuscation:
     !type:SyllableObfuscation
@@ -12,12 +12,16 @@
     - cl'
     - cl'
     - cl'
-    - tch
-    - tch
+    - tc'h
+    - tc'h
     - ixl
-    - chitl
+    - ch'itl
     - iztla
     - xiti
     - tztli
-    - ztica
-    - etzi
+    - ztic'a
+    - tzi
+    - h'ss
+    - h'ss
+    - tzz
+    - tzz
