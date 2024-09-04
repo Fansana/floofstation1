@@ -821,3 +821,27 @@ Entries:
       message: Sex Toy Crate price increased to 2000.
   id: 112
   time: '2024-09-03T20:08:29.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Fix
+      message: You can now be headpat and not be referred to in the third person.
+  id: 113
+  time: '2024-09-03T21:33:48.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added colorful glowing gems
+  id: 114
+  time: '2024-09-03T21:53:54.0000000+00:00'
+- author: neuPanda
+  changes:
+    - type: Add
+      message: new cryo chems
+    - type: Tweak
+      message: old cryo chems
+    - type: Fix
+      message: death
+    - type: Remove
+      message: metabolism restrictions
+  id: 115
+  time: '2024-09-04T05:12:40.0000000+00:00'
