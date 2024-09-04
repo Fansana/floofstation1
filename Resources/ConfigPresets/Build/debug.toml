@@ -1,6 +1,6 @@
 ﻿[events]
-# Annoying
-enabled = false
+# Annoying - setting to false disabled all events.
+enabled = true
 
 [shuttle]
 auto_call_time = 0
