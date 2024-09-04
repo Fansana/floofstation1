@@ -83,4 +83,4 @@ language-ScugSign-name = ScugSign
 language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
 
 language-Arachnic-name = Arachnic
-language-Arachnic-description = 
+language-Arachnic-description = The language of arachnids is composed of mostly clicks and hisses, it almost has a rhythmic character to it at times.
