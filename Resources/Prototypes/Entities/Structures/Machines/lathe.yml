@@ -359,6 +359,8 @@
       - AnimalTranslator
       - MofficTranslatorImplanter
       - MofficTranslator
+      - ArachnicTranslatorImplanter
+      - ArachnicTranslator
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
