@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatAL
-  name: Arashi Labs Longcoat
+  name: arashi labs longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of Arashi Laboratories, A biotech corporation claiming to hail from the 'Long Rim', wherever that is. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatNT
-  name: Nanotrasen Longcoat
+  name: nanotrasen longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of NanoTrasen, The general-purpose spacefaring corporation that you (hopefully) work for! Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBlack
-  name: Black Longcoat
+  name: black longcoat
   description: A Double-Breasted longcoat, specifically. This one is matte black with gold-tinted brass buttons. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBrown
-  name: Brown Longcoat
+  name: brown longcoat
   description: A Double-Breasted longcoat, specifically. This one is matte brown with onyx buttons. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatLO
-  name: Logistics Officer's Longcoat
+  name: logistics officer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a saturated brown with mossy trim, fit for the Logistics Officer. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -56,7 +56,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatRD
-  name: Mystagogue's Longcoat
+  name: mystagogue's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a pure white with a purple stripe, fit for the Mystagogue. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -67,7 +67,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCMO
-  name: Chief Medical Officer's Longcoat
+  name: chief medical officer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a deep cyan with a green cross, fit for the CMO. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -78,7 +78,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCE
-  name: Chief Engineer's Longcoat
+  name: chief engineer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a dark green with LED strip trim, fit for the CE. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -89,7 +89,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatHoP
-  name: Head of Personnel's Longcoat
+  name: head of personnel's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a navy blue with red shoulderpads, fit for the HoP. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -100,7 +100,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCap
-  name: Captain's Longcoat
+  name: captain's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a navy blue with gold embelleshments, fit for the Captain. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite
@@ -111,7 +111,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatSec
-  name: Security Officer's Armored Longcoat
+  name: security officer's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons and red armbands. Security longcoats sport protective plate carriers underneath, but are fairly heavy.
   components:
   - type: Sprite
@@ -135,7 +135,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatWarden
-  name: Warden's Armored Longcoat
+  name: warden's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons and red band and cuffs, fit for the Warden. Security longcoats sport protective plate carriers underneath, but are fairly heavy.
   components:
   - type: Sprite
@@ -159,7 +159,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBrigmedic
-  name: Corpsman's Armored Longcoat
+  name: corpsman's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons, red and blue bands, and sterile fabric cuffs fit for the Corpsman. Security longcoats sport protective plate carriers underneath, though this one comes with lighter plates that traditional Armored Longcoats.
   components:
   - type: Sprite
@@ -183,7 +183,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatHoS
-  name: Head of Security's Armored Longcoat
+  name: head of security's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with gold buttons and gray sleeves with velvet trim along the whole outfit. A heavier alternative to the Armored Coat.
   components:
   - type: Sprite
@@ -207,7 +207,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCC
-  name: Central Command Longcoat
+  name: central command longcoat
   description: A Double-Breasted longcoat, specifically. This one is a royal green with gold embellishments, fit for a Central Command Agent. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
   components:
   - type: Sprite

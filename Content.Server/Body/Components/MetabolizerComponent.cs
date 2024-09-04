@@ -1,4 +1,5 @@
 using Content.Server.Body.Systems;
+using Content.Server.Floofstation.Traits;
 using Content.Server.Traits.Assorted;
 using Content.Shared.Body.Prototypes;
 using Content.Shared.FixedPoint;
@@ -45,7 +46,7 @@ namespace Content.Server.Body.Components
         ///     List of metabolizer types that this organ is. ex. Human, Slime, Felinid, w/e.
         /// </summary>
         [DataField]
-        [Access(typeof(MetabolizerSystem), typeof(LiquorLifelineSystem), Other = AccessPermissions.ReadExecute)] // FIXME Friends
+        [Access(typeof(MetabolizerSystem), typeof(LiquorLifelineSystem), typeof(VampirismSystem), Other = AccessPermissions.ReadExecute)] // Floofstation
         public HashSet<ProtoId<MetabolizerTypePrototype>>? MetabolizerTypes = null;
 
         /// <summary>
@@ -54,14 +55,15 @@ namespace Content.Server.Body.Components
         /// </summary>
         [DataField]
         public bool RemoveEmpty = false;
-
         /// <summary>
-        ///     How many reagents can this metabolizer process at once?
+        ///     floof
+        /// 
+        ///     How many poisons can this metabolizer process at once?
         ///     Used to nerf 'stacked poisons' where having 5+ different poisons in a syringe, even at low
         ///     quantity, would be muuuuch better than just one poison acting.
         /// </summary>
-        [DataField("maxReagents")]
-        public int MaxReagentsProcessable = 3;
+        [DataField("maxPoisons")]
+        public int MaxPoisonsProcessable = 3;
 
         /// <summary>
         ///     A list of metabolism groups that this metabolizer will act on, in order of precedence.

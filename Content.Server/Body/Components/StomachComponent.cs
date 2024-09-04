@@ -1,4 +1,5 @@
 using Content.Server.Body.Systems;
+using Content.Server.Floofstation.Traits;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
@@ -45,6 +46,7 @@ namespace Content.Server.Body.Components
         ///     A whitelist for what special-digestible-required foods this stomach is capable of eating.
         /// </summary>
         [DataField]
+        [Access(Other = AccessPermissions.ReadWriteExecute)] // Floofstation
         public EntityWhitelist? SpecialDigestible = null;
 
         /// <summary>
