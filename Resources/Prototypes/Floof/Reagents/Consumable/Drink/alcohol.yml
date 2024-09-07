@@ -1404,6 +1404,11 @@
   physicalDesc: reagent-physical-desc-starry
   flavor: thecutecaptain
   color: "#87cefa"
+  metamorphicSprite:
+    sprite: Nyanotrasen/Objects/Consumable/Drinks/sakeglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   metabolisms:
     Drink:
@@ -1422,7 +1427,12 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: axelsale
   color: "#E43414"
-  metamorphicChangeColor: false
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/deadmansdraught.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
   metabolisms:
     Drink:
       effects:
