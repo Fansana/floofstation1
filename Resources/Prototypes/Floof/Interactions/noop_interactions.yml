@@ -1,8 +1,7 @@
 - type: Interaction
   id: Kiss
   parent: [BaseGlobal, BaseHands]
-  priority: 2
-  #icon: /Textures/Interface/Actions/hug.png
+  priority: 0
   delay: 0.7
   range: {max: 1}
   hideByRequirement: true
