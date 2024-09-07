@@ -1395,3 +1395,43 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.05
+
+- type: reagent
+  id: TheCuteCaptain
+  name: reagent-name-the-cute-captain
+  parent: BaseAlcohol
+  desc: reagent-desc-the-cute-captain
+  physicalDesc: reagent-physical-desc-starry
+  flavor: thecutecaptain
+  color: "#87cefa"
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 0.5
+
+- type: reagent
+  id: AxelsAle
+  name: reagent-name-axels-ale
+  parent: BaseAlcohol
+  desc: reagent-desc-axels-ale
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: axelsale
+  color: "#E43414"
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 0.5
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.03
+        

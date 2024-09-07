@@ -773,3 +773,26 @@
       catalyst: true
   products:
     Sake: 1
+
+- type: reaction
+  id: TheCuteCaptain
+  reactants:
+    Tea:
+      amount: 2
+    Pomelustine:
+      amount: 1
+  products:
+    TheCuteCaptain: 3
+
+- type: reaction
+  id: AxelsAle
+  reactants:
+    Ale:
+      amount: 1
+    Rum:
+      amount: 1
+    Pomelustine:
+      amount: 1
+  products:
+    AxelsAle: 3
+
