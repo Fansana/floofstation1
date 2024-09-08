@@ -796,3 +796,15 @@
   products:
     AxelsAle: 3
 
+- type: reaction
+  id: JennTonic
+  reactants:
+    Ice:
+      amount: 1
+    Whiskey:
+      amount: 1
+    TonicWater:
+      amount: 1
+  products:
+    JennTonic: 3
+

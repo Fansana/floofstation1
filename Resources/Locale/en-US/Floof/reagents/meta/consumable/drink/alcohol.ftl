@@ -183,3 +183,6 @@ reagent-desc-the-cute-captain = Light blue liquid with a sweet floral scent and 
 
 reagent-name-axels-ale = Axel's Ale
 reagent-desc-axels-ale = Red like the color of a setting sun on a beach
+
+reagent-name-jenn-tonic = Jenn in Tonic
+reagent-desc-jenn-tonic = Light golden and bubbly, what could go wrong?

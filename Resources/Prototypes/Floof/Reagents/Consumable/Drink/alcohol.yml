@@ -1444,4 +1444,27 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.03
+
+- type: reagent
+  id: JennTonic
+  name: reagent-name-jenn-tonic
+  parent: BaseAlcohol
+  desc: reagent-desc-jenn-tonic
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: jenntonic
+  color: "#C1C071"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/ginfizzglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
         
