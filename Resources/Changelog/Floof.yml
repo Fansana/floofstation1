@@ -857,3 +857,12 @@ Entries:
       message: Spider Language, with translators and implants!
   id: 117
   time: '2024-09-05T04:21:07.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Upstream merge. See the einstein-engines tab for more details. Most
+        notably, jukeboxes are now a thing!
+  id: 118
+  time: '2024-09-08T15:57:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/178
