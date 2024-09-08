@@ -25,7 +25,7 @@ CHANGELOG_FILE = os.environ.get("CHANGELOG_DIR")
 
 TYPES_TO_EMOJI = {
     "Fix":    "🐛",
-    "Add":    "🆕",
+    "Add":    "✨",
     "Remove": "❌",
     "Tweak":  "⚒️"
 }
@@ -41,21 +41,8 @@ def main():
     session.headers["Accept"]               = "Accept: application/vnd.github+json"
     session.headers["X-GitHub-Api-Version"] = "2022-11-28"
 
-    resp = session.get(f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/pulls/{PR_NUMBER}")
-    resp.raise_for_status()
-    last_sha = resp.json()["merge_commit_sha"]
-
-    index = int(PR_NUMBER)
-    while True:
-        index -= 1
-        resp = session.get(f"{GITHUB_API_URL}/repos/{GITHUB_REPOSITORY}/pulls/{index}")
-        resp.raise_for_status()
-        merge_info = resp.json()
-        if merge_info["merged_at"]:
-            last_sha = merge_info["merge_commit_sha"]
-            break
-
     most_recent = get_most_recent_workflow(session)
+    last_sha = most_recent['head_commit']['id']
     print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
     last_changelog = yaml.safe_load(get_last_changelog(session, last_sha))
     with open(CHANGELOG_FILE, "r") as f:
@@ -121,14 +108,14 @@ def diff_changelog(old: dict[str, Any], cur: dict[str, Any]) -> Iterable[Changel
 
 def get_discord_body(content: str):
     return {
-            "content": content,
-            # Do not allow any mentions.
-            "allowed_mentions": {
-                "parse": []
-            },
-            # SUPPRESS_EMBEDS
-            "flags": 1 << 2
-        }
+        "content": content,
+        # Do not allow any mentions.
+        "allowed_mentions": {
+            "parse": []
+        },
+        # SUPPRESS_EMBEDS
+        "flags": 1 << 2
+    }
 
 
 def send_discord(content: str):
@@ -159,7 +146,7 @@ def send_to_discord(entries: Iterable[ChangelogEntry]) -> None:
                 message = change['message']
                 url = entry.get("url")
                 if url and url.strip():
-                    group_content.write(f"{emoji} [-]({url}) {message}\n")
+                    group_content.write(f"{emoji} - [{message}]({url})\n")
                 else:
                     group_content.write(f"{emoji} - {message}\n")
 
