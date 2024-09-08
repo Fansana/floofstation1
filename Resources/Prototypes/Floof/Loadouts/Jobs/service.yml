@@ -1,0 +1,314 @@
+#General Service
+- type: loadout
+  id: LoadoutClothingHandsServiceWarmers
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsServiceWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+    - Botanist
+    - Reporter
+    - Musician
+    - Chef
+    - ServiceWorker
+
+- type: loadout
+  id: LoadoutClothingUnderSocksService
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksService
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+    - Botanist
+    - Reporter
+    - Musician
+    - Chef
+    - ServiceWorker
+
+- type: loadout
+  id: LoadoutClothingUniformServiceThong
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformServiceThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+    - Botanist
+    - Reporter
+    - Musician
+    - Chef
+    - ServiceWorker
+
+- type: loadout
+  id: LoadoutClothingUniformServiceUni
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformServiceUni
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+    - Botanist
+    - Reporter
+    - Musician
+    - Chef
+    - ServiceWorker
+
+#Bartender
+- type: loadout
+  id: LoadoutClothingHandsBartenderWarmers
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsBartenderWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+- type: loadout
+  id: LoadoutClothingUnderSocksBartender
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUnderSocksBartender
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+- type: loadout
+  id: LoadoutClothingUniformBartenderThong
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformBartenderThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+#Chef
+- type: loadout
+  id: LoadoutClothingHandsChefWarmers
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsChefWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChef
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUnderSocksChef
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef
+
+- type: loadout
+  id: LoadoutClothingUniformChefThong
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformChefThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef
+
+#Musician
+- type: loadout
+  id: LoadoutClothingHandsMusicianWarmers
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsMusicianWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Musician
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMusician
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksMusician
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicianThong
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformMusicianThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicKingBlack
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformMusicKingBlack
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Musician
+
+- type: loadout
+  id: LoadoutClothingUniformMusicKing
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformMusicKing
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Musician
+
+#Janitorial
+- type: loadout
+  id: LoadoutClothingHandsJanitorWarmers
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsJanitorWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Janitor
+
+- type: loadout
+  id: LoadoutClothingUnderSocksJanitor
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksJanitor
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Janitor
+
+- type: loadout
+  id: LoadoutClothingUniformJanitorThong
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformJanitorThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Janitor
+
+#TO BE ADDED - Botanist
+#TO BE ADDED - Reporter
+
+# Misc
+# Mime
+
+- type: loadout
+  id: LoadoutClothingHandsStripeWhiteWarmers
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsStripeWhiteWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime
+
+- type: loadout
+  id: LoadoutClothingUnderSocksStripedWhite
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksStripedWhite
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime
+
+- type: loadout
+  id: LoadoutClothingUniformStripedThongWhite
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformStripedThongWhite
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime
+
+#TO BE ADDED - Clown

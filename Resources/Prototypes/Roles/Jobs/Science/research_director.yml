@@ -8,6 +8,15 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 14400 # Floofstation - 4 hour
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - IPC
+        - !type:CharacterTraitRequirement
+          traits:
+            - AnomalousPositronics
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

@@ -449,6 +449,7 @@
       - SurveillanceWirelessCameraMonitorCircuitboard
       - SurveillanceCameraWirelessRouterCircuitboard
       - ComputerTelevisionCircuitboard
+      - JukeboxCircuitBoard
       - SurveillanceWirelessCameraMovableCircuitboard
       - SurveillanceWirelessCameraAnchoredCircuitboard
       - HydroponicsTrayMachineCircuitboard
@@ -1469,6 +1470,7 @@
       - SingularityToy
       - TeslaToy
       - ToySword
+      - BwoinkHammer
       - ThronglerToy
   - type: MaterialStorage
     whitelist:
