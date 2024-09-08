@@ -1,0 +1,40 @@
+- type: loadout
+  id: LoadoutClothingHandsHeadSecurityWarmers
+  category: JobsCommandHOS
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsHeadSecurityWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUnderSocksHeadSecurity
+  category: JobsCommandHOS
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUnderSocksHeadSecurity
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUniformHeadSecurityThong
+  category: JobsCommandHOS
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformHeadSecurityThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity

@@ -1,0 +1,96 @@
+# General logistics
+- type: loadout
+  id: LoadoutClothingHandsLogisWarmers
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsLogisWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - CargoTechnician
+
+- type: loadout
+  id: LoadoutClothingUnderSocksLogis
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksLogis
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - CargoTechnician
+
+- type: loadout
+  id: LoadoutClothingUniformLogisThong
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformLogisThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - CargoTechnician
+
+# Courier
+- type: loadout
+  id: LoadoutClothingHandsCourierWarmers
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsCourierWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCourier
+  category: JobsAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksCourier
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourierThong
+  category: JobsAUncategorized
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformCourierThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutCargoNeckCollar
+  category: JobsAUncategorized
+  cost: 1
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - CargoTechnician
+    - SalvageSpecialist
+    - Quartermaster
+  items:
+  - ClothingNeckCollarLogi
