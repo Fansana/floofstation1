@@ -884,3 +884,10 @@ Entries:
   id: 120
   time: '2024-09-09T05:30:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/155
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Hotfixed some job requirements with logical OR.
+  id: 121
+  time: '2024-09-09T14:50:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/181
