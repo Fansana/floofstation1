@@ -31,6 +31,7 @@
   rules:
     - IrregularStationEventScheduler
     - BasicRoundstartVariation
+    - SubGamemodesRule
 
 - type: gamePreset
   id: SurvivalIrregularExtended
@@ -41,6 +42,7 @@
   rules:
     - IrregularExtendedStationEventScheduler
     - BasicRoundstartVariation
+    - SubGamemodesRule
 
 - type: gamePreset
   id: AllAtOnce
@@ -98,6 +100,7 @@
   description: secret-description
   rules:
     - BasicStationEventScheduler
+    - SubGamemodesRule
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
