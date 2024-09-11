@@ -7,6 +7,9 @@
   exclusive: true
   items:
     - ClothingEyesGlassesThermalBudget
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesChemicalBudget
@@ -15,7 +18,9 @@
   exclusive: true
   items:
     - ClothingEyesGlassesChemicalBudget
-
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesMesonBudget
@@ -24,3 +29,6 @@
   exclusive: true
   items:
     - ClothingEyesGlassesMesonBudget
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEyes
