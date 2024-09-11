@@ -1,0 +1,9 @@
+- type: characterItemGroup
+  id: LoadoutEyes
+  items:
+    - type: loadout
+      id: LoadoutEyesThermalBudget
+    - type: loadout
+      id: LoadoutEyesChemicalBudget
+    - type: loadout
+      id: LoadoutEyesMesonBudget
