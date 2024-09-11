@@ -3,7 +3,7 @@
 - type: loadout
   id: LoadoutEyesThermalBudget
   category: Eyes
-  cost: 2
+  cost: 0
   exclusive: true
   items:
     - ClothingEyesGlassesThermalBudget
@@ -14,7 +14,7 @@
 - type: loadout
   id: LoadoutEyesChemicalBudget
   category: Eyes
-  cost: 2
+  cost: 0
   exclusive: true
   items:
     - ClothingEyesGlassesChemicalBudget
@@ -25,7 +25,7 @@
 - type: loadout
   id: LoadoutEyesMesonBudget
   category: Eyes
-  cost: 2
+  cost: 0
   exclusive: true
   items:
     - ClothingEyesGlassesMesonBudget
