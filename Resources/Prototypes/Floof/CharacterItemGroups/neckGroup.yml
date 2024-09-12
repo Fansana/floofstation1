@@ -1,0 +1,13 @@
+- type: characterItemGroup
+  id: LoadoutNeck
+  items:
+    - type: loadout
+      id: LoadoutNeckCloakMoth
+    - type: loadout
+      id: LoadoutItemsNeckBlueCollar
+    - type: loadout
+      id: LoadoutItemsNeckBlackCollar
+    - type: loadout
+      id: LoadoutItemsNeckPinkCollar
+    - type: loadout
+      id: LoadoutItemsNeckSyndieCollar
