@@ -1,0 +1,36 @@
+# Not too sure why this is called "itemGroup.yml" on EE
+# But I am calling it "uniformGroup.yml" because it just makes more sense
+# By the way, this will NOT be alphabetical. This will be in the order as they appear in the loadouts folder
+- type: characterItemGroup
+  id: LoadoutUniformsCivilian
+  items:
+    - type: loadout
+      id: LoadoutUniformLoinCloth
+    - type: loadout
+      id: LoadoutUniformJumpskirtTacticalMaid
+    - type: loadout
+      id: LoadoutUniformJumpskirtJanimaid
+    - type: loadout
+      id: LoadoutUniformJumpskirtJanimaidmini
+    - type: loadout
+      id: LoadoutUniformJumpskirtTacticool
+    - type: loadout
+      id: LoadoutUniformJumpsuitTacticool
+    - type: loadout
+      id: LoadoutClothingUniformReotaSuit
+    - type: loadout
+      id: LoadoutClothingUniformLoinClothBlack
+    - type: loadout
+      id: LoadoutClothingUniformLoinClothWhite
+    - type: loadout
+      id: LoadoutClothingUniformThongPlain
+    - type: loadout
+      id: LoadoutClothingUniformStripedThongPurple
+    - type: loadout
+      id: LoadoutClothingUniformStripedThongRainbow
+    - type: loadout
+      id: LoadoutClothingUniformThongCoder
+    - type: loadout
+      id: LoadoutClothingUniformThongCoderValid
+    - type: loadout
+      id: LoadoutClothingUniformThongBee
