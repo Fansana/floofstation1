@@ -3,6 +3,12 @@
   id: BaseVibe
   abstract: true
   components:
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 75
+      Steel: 25
+  - type: StaticPrice
+    price: 100
   - type: ItemToggle
     predictable: false
     soundActivate:

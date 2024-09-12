@@ -70,6 +70,7 @@
     - BorgModuleClowning
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
+    - JukeboxCircuitBoard
 
 - type: technology
   id: RoboticCleanliness
@@ -247,6 +248,7 @@
   - RootSpeakTranslator
   - BasicGalaticCommonTranslatorImplanter
   - MofficTranslator
+  - ArachnicTranslator
 
 - type: technology
   id: AdvancedTranslation
@@ -268,3 +270,4 @@
   - RootSpeakTranslatorImplanter
   - AnimalTranslator
   - MofficTranslatorImplanter
+  - ArachnicTranslatorImplanter
