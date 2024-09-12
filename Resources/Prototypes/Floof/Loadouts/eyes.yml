@@ -10,6 +10,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesChemicalBudget
@@ -21,6 +22,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesMesonBudget
@@ -32,3 +34,4 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
+      group: LoadoutEyes
