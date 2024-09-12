@@ -113,6 +113,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/Xenos/rouny.rsi
@@ -155,6 +159,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Floof/Mobs/Animals/patriarch.rsi
@@ -199,6 +207,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Inventory
     templateId: friendxeno
   - type: IdExaminable
@@ -229,6 +241,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Inventory
     templateId: friendxeno
   - type: IdExaminable
@@ -259,6 +275,10 @@
   - type: NpcFactionMember
     factions:
      - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Floof/Mobs/Animals/subject7355.rsi
