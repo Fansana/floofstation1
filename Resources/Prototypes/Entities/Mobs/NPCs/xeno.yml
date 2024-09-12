@@ -39,6 +39,12 @@
   - type: NpcFactionMember
     factions:
     - Xeno
+  - type: Psionic
+    removable: false
+  - type: InnatePsionicPowers
+    powersToAdd:
+      - TelepathyPower
+They need this
   - type: Hands
   - type: Sprite
     drawdepth: Mobs
