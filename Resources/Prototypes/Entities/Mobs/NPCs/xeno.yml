@@ -39,11 +39,6 @@
   - type: NpcFactionMember
     factions:
     - Xeno
-  - type: Psionic
-    removable: false
-  - type: InnatePsionicPowers
-    powersToAdd:
-      - TelepathyPower
   - type: Hands
   - type: Sprite
     drawdepth: Mobs
@@ -134,6 +129,9 @@
     speechVerb: LargeMob
   - type: Psionic #Nyano - Summary: makes psionic by default.
     removable: false
+  - type: InnatePsionicPowers
+    powersToAdd:
+      - TelepathyPower
   - type: LanguageKnowledge
     speaks:
     - Xeno
