@@ -1,0 +1,21 @@
+- type: characterItemGroup
+  id: LoadoutOuter
+  items:
+    - type: loadout
+      id: LoadoutOuterPlagueSuit
+    - type: loadout
+      id: LoadoutOuterRedRacoon
+    - type: loadout
+      id: LoadoutOuterCoatLab
+    - type: loadout
+      id: LoadoutClothingOuterRoboOveralls
+    - type: loadout
+      id: LoadoutClothingOuterPlainOveralls
+    - type: loadout
+      id: LoadoutClothingOuterMarsHoodie
+    - type: loadout
+      id: LoadoutClothingOuterCyberJacketYellow
+    - type: loadout
+      id: LoadoutClothingOuterCyberJacketPurple
+    - type: loadout
+      id: LoadoutClothingOuterCyberJacketWhite
