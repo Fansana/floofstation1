@@ -6,7 +6,7 @@
     - ClothingOuterPlagueSuit
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
   id: LoadoutOuterRedRacoon
@@ -16,7 +16,7 @@
     - ClothingOuterRedRacoon
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout # Science is for everyone, not just science
   id: LoadoutOuterCoatLab
@@ -26,9 +26,9 @@
     - ClothingOuterCoatLab
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterRoboOveralls
   category: Outer
   cost: 0
@@ -36,9 +36,9 @@
     - ClothingOuterRoboOveralls
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterPlainOveralls
   category: Outer
   cost: 0
@@ -46,9 +46,9 @@
     - ClothingOuterPlainOveralls
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterMarsHoodie
   category: Outer
   cost: 0
@@ -56,9 +56,9 @@
     - ClothingOuterMarsHoodie
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterCyberJacketYellow
   category: Outer
   cost: 0
@@ -66,9 +66,9 @@
     - ClothingOuterCyberJacketYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterCyberJacketPurple
   category: Outer
   cost: 0
@@ -76,9 +76,9 @@
     - ClothingOuterCyberJacketPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
-- type: loadout 
+- type: loadout
   id: LoadoutClothingOuterCyberJacketWhite
   category: Outer
   cost: 0
@@ -86,4 +86,4 @@
     - ClothingOuterCyberJacketWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2

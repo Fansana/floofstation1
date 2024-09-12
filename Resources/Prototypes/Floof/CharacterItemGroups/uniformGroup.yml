@@ -2,7 +2,7 @@
 # But I am calling it "uniformGroup.yml" because it just makes more sense
 # By the way, this will NOT be alphabetical. This will be in the order as they appear in the loadouts folder
 - type: characterItemGroup
-  id: LoadoutUniformsCivilian
+  id: LoadoutUniformsCivilian2
   items:
     - type: loadout
       id: LoadoutUniformLoinCloth

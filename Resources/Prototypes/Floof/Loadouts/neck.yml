@@ -7,7 +7,7 @@
     - ClothingNeckCloakMoth
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 # Generic collars
 - type: loadout
@@ -19,7 +19,7 @@
     - ClothingNeckCollarBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckBlackCollar
@@ -30,7 +30,7 @@
     - ClothingNeckCollarBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckPinkCollar
@@ -41,7 +41,7 @@
     - ClothingNeckCollarPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckSyndieCollar
@@ -52,4 +52,4 @@
     - ClothingNeckCollarSyndi
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
