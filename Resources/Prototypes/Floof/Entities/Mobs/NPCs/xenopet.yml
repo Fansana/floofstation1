@@ -9,7 +9,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#B85E5E"
   - type: MovementAlwaysTouching
   - type: GhostTakeoverAvailable
@@ -31,7 +31,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#62B85E"
   - type: LanguageKnowledge
     speaks:
@@ -51,7 +51,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#8B5EB8"
   - type: LanguageKnowledge
     speaks:
@@ -71,7 +71,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#E3954D"
   - type: LanguageKnowledge
     speaks:
@@ -290,7 +290,7 @@
       shader: unshaded
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#639fff"
   - type: DamageStateVisuals
     states:
