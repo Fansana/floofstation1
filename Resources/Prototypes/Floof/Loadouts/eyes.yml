@@ -10,7 +10,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
-    - !type:CharacterItemGroupRequirement
       group: LoadoutEyes
 
 - type: loadout
@@ -23,7 +22,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
-    - !type:CharacterItemGroupRequirement
       group: LoadoutEyes
 
 - type: loadout
@@ -36,5 +34,4 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEyes2
-    - !type:CharacterItemGroupRequirement
       group: LoadoutEyes
