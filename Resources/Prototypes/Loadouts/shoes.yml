@@ -6,7 +6,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorBlack
 
@@ -17,7 +17,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorBlue
 
@@ -28,7 +28,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorBrown
 
@@ -39,7 +39,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorGreen
 
@@ -50,7 +50,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorOrange
 
@@ -61,7 +61,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorPurple
 
@@ -72,7 +72,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorRed
 
@@ -83,7 +83,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorWhite
 
@@ -94,7 +94,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesColorYellow
 
@@ -105,7 +105,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesGeta
 
@@ -116,7 +116,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesTourist
 
@@ -128,7 +128,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsWork
 
@@ -139,7 +139,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsLaceup
 
@@ -150,7 +150,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsWinter
 
@@ -161,7 +161,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsCowboyBrown
 
@@ -172,7 +172,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsCowboyBlack
 
@@ -183,7 +183,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsCowboyWhite
 
@@ -194,7 +194,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsCowboyFancy
 
@@ -205,7 +205,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesBootsFishing
 
@@ -219,7 +219,7 @@
     - ClothingShoeSlippersDuck
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
     - !type:CharacterJobRequirement
       jobs:
         - Clown
@@ -231,7 +231,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesLeather
 
@@ -242,7 +242,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesMiscWhite
 
@@ -253,7 +253,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingShoesHighheelBoots
 
@@ -293,6 +293,6 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes
+      group: LoadoutShoes2
   items:
     - ClothingClothWrap
