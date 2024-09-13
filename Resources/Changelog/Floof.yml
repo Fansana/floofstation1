@@ -917,3 +917,12 @@ Entries:
   id: 125
   time: '2024-09-13T06:55:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/187
+- author: Fansana
+  changes:
+    - type: Add
+      message: >-
+        Added secret doors for walls of type shuttle, wood, reinforced and
+        uranium.
+  id: 126
+  time: '2024-09-13T11:03:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/189
