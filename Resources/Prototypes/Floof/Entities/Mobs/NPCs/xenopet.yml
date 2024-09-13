@@ -9,7 +9,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#B85E5E"
   - type: MovementAlwaysTouching
   - type: GhostTakeoverAvailable
@@ -31,7 +31,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#62B85E"
   - type: LanguageKnowledge
     speaks:
@@ -51,7 +51,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#8B5EB8"
   - type: LanguageKnowledge
     speaks:
@@ -71,7 +71,7 @@
     - Passive
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#E3954D"
   - type: LanguageKnowledge
     speaks:
@@ -91,6 +91,18 @@
     uiWindowPos: 2,1
     strippingWindowPos: 2,4
     displayName: ID
+  - name: head
+    slotTexture: head
+    slotFlags: HEAD
+    uiWindowPos: 1,2
+    strippingWindowPos: 0,0
+    displayName: Head
+  - name: mask
+    slotTexture: mask
+    slotFlags: MASK
+    uiWindowPos: 0,1
+    strippingWindowPos: 1,1
+    displayName: Mask
 
 - type: entity
   name: Friend-Shaped
@@ -101,14 +113,22 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     scale: 0.7, 0.7
+  - type: GhostRole
+    makeSentient: true
+  - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno
   - type: IdExaminable
   - type: InventorySlots
+  - type: Stripping
   - type: Strippable
   - type: UserInterface
     interfaces:
@@ -118,6 +138,9 @@
     attributes:
       proper: true
       gender: male
+  - type: Body
+    prototype: Friendshaped
+    requiredLegs: 1 # TODO: More than 1 leg
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-reptile
@@ -125,6 +148,7 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/lizard_happy.ogg
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   name: Patriach
@@ -135,6 +159,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Floof/Mobs/Animals/patriarch.rsi
@@ -179,6 +207,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Inventory
     templateId: friendxeno
   - type: IdExaminable
@@ -209,6 +241,10 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Inventory
     templateId: friendxeno
   - type: IdExaminable
@@ -239,6 +275,10 @@
   - type: NpcFactionMember
     factions:
      - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
   - type: Sprite
     drawdepth: Mobs
     sprite: Floof/Mobs/Animals/subject7355.rsi
@@ -250,7 +290,7 @@
       shader: unshaded
   - type: PointLight
     radius: 2
-    energy: .5
+    energy: 1
     color: "#639fff"
   - type: DamageStateVisuals
     states:
