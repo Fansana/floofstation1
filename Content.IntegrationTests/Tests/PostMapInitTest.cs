@@ -52,6 +52,7 @@ namespace Content.IntegrationTests.Tests
             "Pebble", //DeltaV
             "Edge", //DeltaV
             "Saltern",
+            "Core",
             "Shoukou", //DeltaV
             "Tortuga", //DeltaV
             "Arena", //DeltaV
