@@ -49,7 +49,6 @@ namespace Content.IntegrationTests.Tests
             "CentComm",
             "MeteorArena",
             "NukieOutpost",
-            "Core",
             "Pebble", //DeltaV
             "Edge", //DeltaV
             "Saltern",
