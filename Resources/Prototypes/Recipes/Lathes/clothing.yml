@@ -1,841 +1,722 @@
+# Base prototypes
+
+- type: latheRecipe
+  abstract: true
+  id: BaseJumpsuitRecipe
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseJumpsuitRecipe
+  id: BaseCommandJumpsuitRecipe
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  abstract: true
+  id: BaseCoatRecipe
+  completetime: 3.2 # don't ask why its faster than a jumpsuit??
+  materials:
+    Cloth: 500
+    Durathread: 200
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseCoatRecipe
+  id: BaseCommandCoatRecipe
+  materials:
+    Cloth: 500
+    Durathread: 300
+
+- type: latheRecipe
+  abstract: true
+  id: BaseHatRecipe
+  completetime: 2
+  materials:
+    Cloth: 100
+
+- type: latheRecipe
+  abstract: true
+  id: BaseCarpetRecipe
+  completetime: 1
+  materials:
+    Cloth: 100
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseHatRecipe
+  id: BaseCommandHatRecipe
+  materials:
+    Cloth: 100
+    Durathread: 50
+
+- type: latheRecipe
+  abstract: true
+  id: BaseNeckClothingRecipe
+  completetime: 2
+  materials:
+    Cloth: 200
+
+# Recipes
 
 # Jumpsuits/skirts
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitColorGrey # Tide
-  result: ClothingUniformJumpsuitColorGrey
+  result: ClothingUniformJumpsuitColorGrey # Tide
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtColorGrey
   result: ClothingUniformJumpskirtColorGrey
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitBartender
   result: ClothingUniformJumpsuitBartender
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtBartender
   result: ClothingUniformJumpskirtBartender
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCaptain
   result: ClothingUniformJumpsuitCaptain
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCapFormal
   result: ClothingUniformJumpsuitCapFormal
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
-
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCapFormalDress
   result: ClothingUniformJumpskirtCapFormalDress
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCaptain
   result: ClothingUniformJumpskirtCaptain
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitCargo
   result: ClothingUniformJumpsuitCargo
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtCargo
   result: ClothingUniformJumpskirtCargo
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSalvageSpecialist
   result: ClothingUniformJumpsuitSalvageSpecialist
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 500 #It's armored but I don't want to include durathread for a non-head
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCentcomAgent
   result: ClothingUniformJumpsuitCentcomAgent
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCentcomFormal
   result: ClothingUniformJumpsuitCentcomFormal
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCentcomFormalDress
   result: ClothingUniformJumpskirtCentcomFormalDress
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCentcomOfficer
   result: ClothingUniformJumpsuitCentcomOfficer
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCentcomOfficial
   result: ClothingUniformJumpsuitCentcomOfficial
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+
+## CE
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitChiefEngineer
   result: ClothingUniformJumpsuitChiefEngineer
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtChiefEngineer
   result: ClothingUniformJumpskirtChiefEngineer
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitChiefEngineerTurtle
   result: ClothingUniformJumpsuitChiefEngineerTurtle
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtChiefEngineerTurtle
   result: ClothingUniformJumpskirtChiefEngineerTurtle
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Chaplain
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitChaplain
   result: ClothingUniformJumpsuitChaplain
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtChaplain
   result: ClothingUniformJumpskirtChaplain
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Chef
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitChef
   result: ClothingUniformJumpsuitChef
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtChef
   result: ClothingUniformJumpskirtChef
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Chemist
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitChemistry
   result: ClothingUniformJumpsuitChemistry
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtChemistry
   result: ClothingUniformJumpskirtChemistry
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Clown
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitClown
   result: ClothingUniformJumpsuitClown
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## CMO
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitCMO
   result: ClothingUniformJumpsuitCMO
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCMO
   result: ClothingUniformJumpskirtCMO
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+
+## Detective
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitDetective
   result: ClothingUniformJumpsuitDetective
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtDetective
   result: ClothingUniformJumpskirtDetective
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Engineer
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitEngineering
   result: ClothingUniformJumpsuitEngineering
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtEngineering
   result: ClothingUniformJumpskirtEngineering
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSeniorEngineer
   result: ClothingUniformJumpsuitSeniorEngineer
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSeniorEngineer
   result: ClothingUniformJumpskirtSeniorEngineer
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## HoP
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoP
   result: ClothingUniformJumpsuitHoP
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtHoP
   result: ClothingUniformJumpskirtHoP
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+
+## HoS
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoS
   result: ClothingUniformJumpsuitHoS
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtHoS
   result: ClothingUniformJumpskirtHoS
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHosFormal
   result: ClothingUniformJumpsuitHosFormal
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtHosFormal
   result: ClothingUniformJumpskirtHosFormal
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoSParadeMale
   result: ClothingUniformJumpsuitHoSParadeMale
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 5
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtHoSParadeMale
   result: ClothingUniformJumpskirtHoSParadeMale
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 5
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoSAlt
   result: ClothingUniformJumpsuitHoSAlt
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoSBlue
   result: ClothingUniformJumpsuitHoSBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitHoSGrey
   result: ClothingUniformJumpsuitHoSGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtHoSAlt
   result: ClothingUniformJumpskirtHoSAlt
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+
+## Hydroponics
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitHydroponics
   result: ClothingUniformJumpsuitHydroponics
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtHydroponics
   result: ClothingUniformJumpskirtHydroponics
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Janitor
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitJanitor
   result: ClothingUniformJumpsuitJanitor
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtJanitor
   result: ClothingUniformJumpskirtJanitor
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Lawyer
+>>>>>>> f2fc8c830d (clean up clothing lathe recipes (#31520))
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitLawyerBlack
   result: ClothingUniformJumpsuitLawyerBlack
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Librarian
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitLibrarian
   result: ClothingUniformJumpsuitLibrarian
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtColorLightBrown #Librarian
-  result: ClothingUniformJumpskirtColorLightBrown
+  result: ClothingUniformJumpskirtColorLightBrown #Librarian
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Medical Doctor
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitMedicalDoctor
   result: ClothingUniformJumpsuitMedicalDoctor
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtMedicalDoctor
   result: ClothingUniformJumpskirtMedicalDoctor
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSeniorPhysician
   result: ClothingUniformJumpsuitSeniorPhysician
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSeniorPhysician
   result: ClothingUniformJumpskirtSeniorPhysician
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Mime
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitMime
   result: ClothingUniformJumpsuitMime
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtMime
   result: ClothingUniformJumpskirtMime
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Musician
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitMusician
   result: ClothingUniformJumpsuitMusician
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Operative
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitOperative
   result: ClothingUniformJumpsuitOperative
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtOperative
   result: ClothingUniformJumpskirtOperative
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Paramedic
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitParamedic
   result: ClothingUniformJumpsuitParamedic
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtParamedic
   result: ClothingUniformJumpskirtParamedic
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Senior Officer
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSeniorOfficer
   result: ClothingUniformJumpsuitSeniorOfficer
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSeniorOfficer
   result: ClothingUniformJumpskirtSeniorOfficer
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Prisoner
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitPrisoner
   result: ClothingUniformJumpsuitPrisoner
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtPrisoner
   result: ClothingUniformJumpskirtPrisoner
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## QM
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitQM
   result: ClothingUniformJumpsuitQM
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitQMFormal
   result: ClothingUniformJumpsuitQMFormal
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtQM
   result: ClothingUniformJumpskirtQM
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitQMTurtleneck
   result: ClothingUniformJumpsuitQMTurtleneck
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtQMTurtleneck
   result: ClothingUniformJumpskirtQMTurtleneck
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## RD
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpsuitResearchDirector
   result: ClothingUniformJumpsuitResearchDirector
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtResearchDirector
   result: ClothingUniformJumpskirtResearchDirector
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
-    Durathread: 100
+
+## Scientist
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitScientist
   result: ClothingUniformJumpsuitScientist
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtScientist
   result: ClothingUniformJumpskirtScientist
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSeniorResearcher
   result: ClothingUniformJumpsuitSeniorResearcher
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSeniorResearcher
   result: ClothingUniformJumpskirtSeniorResearcher
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Security Officer
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSec
   result: ClothingUniformJumpsuitSec
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSec
   result: ClothingUniformJumpskirtSec
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
+## Brigmedic
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitBrigmedic
   result: ClothingUniformJumpsuitBrigmedic
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtBrigmedic
   result: ClothingUniformJumpskirtBrigmedic
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitSyndieFormal
   result: ClothingUniformJumpsuitSyndieFormal
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtSyndieFormalDress
   result: ClothingUniformJumpskirtSyndieFormalDress
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicateBlack
   result: ClothingUniformJumpsuitPyjamaSyndicateBlack
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicatePink
   result: ClothingUniformJumpsuitPyjamaSyndicatePink
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicateRed
   result: ClothingUniformJumpsuitPyjamaSyndicateRed
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpsuitWarden
   result: ClothingUniformJumpsuitWarden
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtWarden
   result: ClothingUniformJumpskirtWarden
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
+
 # Command winter coats
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterCap
   result: ClothingOuterWinterCap
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterCE
   result: ClothingOuterWinterCE
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterCentcom
   result: ClothingOuterWinterCentcom
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterCMO
   result: ClothingOuterWinterCMO
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 500
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterHoP
   result: ClothingOuterWinterHoP
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterHoSUnarmored
   result: ClothingOuterWinterHoSUnarmored
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterWardenUnarmored
   result: ClothingOuterWinterWardenUnarmored
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterQM
   result: ClothingOuterWinterQM
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCommandCoatRecipe
   id: ClothingOuterWinterRD
   result: ClothingOuterWinterRD
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
+
 # Mantles
 - type: latheRecipe
   id: ClothingNeckMantleCap
@@ -899,571 +780,409 @@
   materials:
     Cloth: 200
     Durathread: 150
+
 # Winter coats
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterMusician
   result: ClothingOuterWinterMusician
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterClown
   result: ClothingOuterWinterClown
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterMime
   result: ClothingOuterWinterMime
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterCoat
   result: ClothingOuterWinterCoat
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterJani
   result: ClothingOuterWinterJani
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterBar
   result: ClothingOuterWinterBar
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterChef
   result: ClothingOuterWinterChef
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterHydro
   result: ClothingOuterWinterHydro
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterAtmos
   result: ClothingOuterWinterAtmos
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterEngi
   result: ClothingOuterWinterEngi
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterCargo
   result: ClothingOuterWinterCargo
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterMiner
   result: ClothingOuterWinterMiner
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterMed
   result: ClothingOuterWinterMed
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterPara
   result: ClothingOuterWinterPara
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 450
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterChem
   result: ClothingOuterWinterChem
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 500
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterGen
   result: ClothingOuterWinterGen
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterViro
   result: ClothingOuterWinterViro
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterSci
   result: ClothingOuterWinterSci
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 400
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterRobo
   result: ClothingOuterWinterRobo
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterSec
   result: ClothingOuterWinterSec
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterSyndie
   result: ClothingOuterWinterSyndie
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
 
 - type: latheRecipe
+  parent: BaseCoatRecipe
   id: ClothingOuterWinterSyndieCap
   result: ClothingOuterWinterSyndieCap
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 3.2
-  materials:
-    Cloth: 500
-    Durathread: 300
+
 # Hats
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatCaptain
   result: ClothingHeadHatCaptain
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatCapcap
   result: ClothingHeadHatCapcap
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretHoS
   result: ClothingHeadHatBeretHoS
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatHoshat
   result: ClothingHeadHatHoshat
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatWarden
   result: ClothingHeadHatWarden
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretWarden
   result: ClothingHeadHatBeretWarden
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatHopcap
   result: ClothingHeadHatHopcap
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatQMsoft
   result: ClothingHeadHatQMsoft
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretRND
   result: ClothingHeadHatBeretRND
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretEngineering
   result: ClothingHeadHatBeretEngineering
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretQM
   result: ClothingHeadHatBeretQM
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatBeretCmo
   result: ClothingHeadHatBeretCmo
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
+
+# Non-command hats
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatBeretMedic
   result: ClothingHeadHatBeretMedic
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatBeretBrigmedic
   result: ClothingHeadHatBeretBrigmedic
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatBeretSecurity
   result: ClothingHeadHatBeretSecurity
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatBeretSeniorPhysician
   result: ClothingHeadHatBeretSeniorPhysician
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatCentcom
   result: ClothingHeadHatCentcom
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseCommandHatRecipe
   id: ClothingHeadHatCentcomcap
   result: ClothingHeadHatCentcomcap
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatSyndie
   result: ClothingHeadHatSyndie
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatSyndieMAA
   result: ClothingHeadHatSyndieMAA
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadPyjamaSyndicateBlack
   result: ClothingHeadPyjamaSyndicateBlack
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadPyjamaSyndicatePink
   result: ClothingHeadPyjamaSyndicatePink
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadPyjamaSyndicateRed
   result: ClothingHeadPyjamaSyndicateRed
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseHatRecipe
   id: ClothingHeadHatParamedicsoft
   result: ClothingHeadHatParamedicsoft
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
+
 # Ties
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckTieRed
   result: ClothingNeckTieRed
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckTieDet
   result: ClothingNeckTieDet
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckTieSci
   result: ClothingNeckTieSci
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
+
 # Scarfs
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedGreen
   result: ClothingNeckScarfStripedGreen
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedBlue
   result: ClothingNeckScarfStripedBlue
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedRed
   result: ClothingNeckScarfStripedRed
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedBrown
   result: ClothingNeckScarfStripedBrown
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedLightBlue
   result: ClothingNeckScarfStripedLightBlue
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedOrange
   result: ClothingNeckScarfStripedOrange
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedBlack
   result: ClothingNeckScarfStripedBlack
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseNeckClothingRecipe
   id: ClothingNeckScarfStripedPurple
   result: ClothingNeckScarfStripedPurple
   category: ClothingOther # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 200
 
 # Carpets
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: Carpet
   result: FloorCarpetItemRed
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetBlack
   result: FloorCarpetItemBlack
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetPink
   result: FloorCarpetItemPink
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetBlue
   result: FloorCarpetItemBlue
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetGreen
   result: FloorCarpetItemGreen
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetOrange
   result: FloorCarpetItemOrange
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetPurple
   result: FloorCarpetItemPurple
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetCyan
   result: FloorCarpetItemCyan
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 - type: latheRecipe
+  parent: BaseCarpetRecipe
   id: CarpetWhite
   result: FloorCarpetItemWhite
   category: Carpet # Floof - add uniform printer clothing categories
-  completetime: 1
-  materials:
-    Cloth: 100
 
 # Floofstation - Collars
 - type: latheRecipe
