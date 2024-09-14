@@ -808,3 +808,15 @@
   products:
     JennTonic: 3
 
+- type: reaction
+  id: Hallelujah 
+  reactants:
+    Wine:
+      amount: 2
+    Water:
+      amount: 3
+    LotophagoiOil:
+      amount: 1
+  products:
+    Hallelujah : 6
+
