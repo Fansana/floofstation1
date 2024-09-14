@@ -1,7 +1,7 @@
 # General medical
 - type: loadout
   id: LoadoutClothingHandsMedicWarmers
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -17,7 +17,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksMedic
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -38,7 +38,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformMedicThong
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -52,10 +52,25 @@
     - MedicalIntern
     - Chemist
 
+- type: loadout
+  id: LoadoutMedicalNeckCollar
+  category: JobsMedical
+  cost: 1
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+    - MedicalIntern
+    - Brigmedic
+  items:
+  - ClothingNeckCollarMed
+
 # Chemist
 - type: loadout
   id: LoadoutClothingHandsChemistsWarmers
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -67,7 +82,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksChemists
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -84,7 +99,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformChemistsThong
-  category: JobsAUncategorized
+  category: JobsMedical
   cost: 2
   exclusive: true
   items:
@@ -97,7 +112,7 @@
 # Paramedic
 - type: loadout
   id: LoadoutClothingHandsParaMedicWarmers
-  category: JobsCommandCMO
+  category: JobsMedical
   cost: 1
   exclusive: true
   items:
@@ -109,7 +124,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksParaMedic
-  category: JobsCommandCMO
+  category: JobsMedical
   cost: 1
   exclusive: true
   items:
@@ -126,7 +141,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformParaMedicThong
-  category: JobsCommandCMO
+  category: JobsMedical
   cost: 1
   exclusive: true
   items:
@@ -135,18 +150,3 @@
   - !type:CharacterJobRequirement
     jobs:
     - Paramedic
-
-- type: loadout
-  id: LoadoutMedicalNeckCollar
-  category: JobsAUncategorized
-  cost: 1
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - MedicalDoctor
-    - Paramedic
-    - ChiefMedicalOfficer
-    - MedicalIntern
-    - Brigmedic
-  items:
-  - ClothingNeckCollarMed
