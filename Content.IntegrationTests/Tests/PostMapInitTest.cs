@@ -49,10 +49,10 @@ namespace Content.IntegrationTests.Tests
             "CentComm",
             "MeteorArena",
             "NukieOutpost",
+            "Core",
             "Pebble", //DeltaV
             "Edge", //DeltaV
             "Saltern",
-            "Core",
             "Shoukou", //DeltaV
             "Tortuga", //DeltaV
             "Arena", //DeltaV
