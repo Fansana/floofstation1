@@ -1,0 +1,13 @@
+- type: loadout
+  id: LoadoutItemSuspendersBlack
+  category: Items
+  cost: 0
+  items:
+    - ClothingBeltSuspendersBlack
+
+- type: loadout
+  id: LoadoutItemSuspenders
+  category: Items
+  cost: 0
+  items:
+    - ClothingBeltSuspenders
