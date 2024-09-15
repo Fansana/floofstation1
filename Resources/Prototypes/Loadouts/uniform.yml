@@ -5,7 +5,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterJobRequirement
       jobs:
         - Passenger
@@ -24,7 +24,7 @@
     - ClothingUniformJumpsuitColorBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -43,7 +43,7 @@
     - ClothingUniformJumpskirtColorBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -62,7 +62,7 @@
     - ClothingUniformJumpsuitColorBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Medical
@@ -81,7 +81,7 @@
     - ClothingUniformJumpskirtColorBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Medical
@@ -100,7 +100,7 @@
     - ClothingUniformJumpsuitColorGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -118,7 +118,7 @@
     - ClothingUniformJumpskirtColorGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -136,7 +136,7 @@
     - ClothingUniformJumpsuitColorOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -154,7 +154,7 @@
     - ClothingUniformJumpskirtColorOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -172,7 +172,7 @@
     - ClothingUniformJumpsuitColorPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -190,7 +190,7 @@
     - ClothingUniformJumpskirtColorPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -208,7 +208,7 @@
     - ClothingUniformJumpsuitColorRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -227,7 +227,7 @@
     - ClothingUniformJumpskirtColorRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -246,7 +246,7 @@
     - ClothingUniformJumpsuitColorWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -266,7 +266,7 @@
     - ClothingUniformJumpskirtColorWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -286,7 +286,7 @@
     - ClothingUniformJumpsuitColorYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -305,7 +305,7 @@
     - ClothingUniformJumpskirtColorYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -324,7 +324,7 @@
     - ClothingUniformJumpsuitColorDarkBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -342,7 +342,7 @@
     - ClothingUniformJumpskirtColorDarkBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -360,7 +360,7 @@
     - ClothingUniformJumpsuitColorTeal
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -378,7 +378,7 @@
     - ClothingUniformJumpskirtColorTeal
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -396,7 +396,7 @@
     - ClothingUniformJumpsuitColorPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -415,7 +415,7 @@
     - ClothingUniformJumpskirtColorPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -434,7 +434,7 @@
     - ClothingUniformJumpsuitColorDarkGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -452,7 +452,7 @@
     - ClothingUniformJumpskirtColorDarkGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -470,7 +470,7 @@
     - ClothingUniformJumpsuitColorLightBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -488,7 +488,7 @@
     - ClothingUniformJumpskirtColorLightBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -506,7 +506,7 @@
     - ClothingUniformJumpsuitColorBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -524,7 +524,7 @@
     - ClothingUniformJumpskirtColorBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -542,7 +542,7 @@
     - ClothingUniformJumpsuitColorMaroon
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -560,7 +560,7 @@
     - ClothingUniformJumpskirtColorMaroon
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
@@ -578,7 +578,7 @@
     - ClothingUniformJumpsuitFlannel
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -593,7 +593,7 @@
     - ClothingUniformJumpskirtCasualBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -609,7 +609,7 @@
     - ClothingUniformJumpsuitCasualPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -625,7 +625,7 @@
     - ClothingUniformJumpskirtCasualPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -641,7 +641,7 @@
     - ClothingUniformJumpsuitCasualRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -656,7 +656,7 @@
     - ClothingUniformJumpskirtCasualRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -671,7 +671,7 @@
     - ClothingUniformJumpsuitTshirtJeans
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -687,7 +687,7 @@
     - ClothingUniformJumpsuitTshirtJeansGray
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -702,7 +702,7 @@
     - ClothingUniformJumpsuitTshirtJeansPeach
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -717,7 +717,7 @@
     - ClothingUniformJumpsuitJeansGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -733,7 +733,7 @@
     - ClothingUniformJumpsuitJeansRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -748,7 +748,7 @@
     - ClothingUniformJumpsuitJeansBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -764,7 +764,7 @@
     - ClothingUniformJumpsuitLostTourist
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -781,7 +781,7 @@
     - ClothingUniformJumpsuitHawaiBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -797,7 +797,7 @@
     - ClothingUniformJumpsuitHawaiBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -813,7 +813,7 @@
     - ClothingUniformJumpsuitHawaiRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -828,7 +828,7 @@
     - ClothingUniformJumpsuitHawaiYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -845,7 +845,7 @@
     - ClothingUniformDressRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -860,7 +860,7 @@
     - ClothingUniformJumpsuitSober
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -875,7 +875,7 @@
     - ClothingUniformSkirtTurtle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -890,7 +890,7 @@
     - UniformGeisha
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -905,7 +905,7 @@
     - ClothingCostumeArcDress
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -921,7 +921,7 @@
     - ClothingCostumeMioSkirt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -937,7 +937,7 @@
     - ClothingCostumeNaota
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -953,7 +953,7 @@
     - ClothingUniformJumpsuitLoungewear
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -969,7 +969,7 @@
     - ClothingUniformJumpsuitBartender
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -985,7 +985,7 @@
     - ClothingUniformJumpskirtBartender
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1002,7 +1002,7 @@
     - ClothingUniformKendoHakama
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1017,7 +1017,7 @@
     - ClothingUniformMartialGi
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1034,7 +1034,7 @@
     - ClothingUniformJumpsuitKimono
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1050,7 +1050,7 @@
     - ClothingKimonoBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1066,7 +1066,7 @@
     - ClothingKimonoPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1082,7 +1082,7 @@
     - ClothingKimonoPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1098,7 +1098,7 @@
     - ClothingKimonoSky
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1114,7 +1114,7 @@
     - ClothingKimonoGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1131,7 +1131,7 @@
     - ClothingUniformSchoolGakuranBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1147,7 +1147,7 @@
     - UniformSchoolgirlBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1162,7 +1162,7 @@
     - UniformSchoolgirlBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1178,7 +1178,7 @@
     - UniformSchoolgirlCyan
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1194,7 +1194,7 @@
     - UniformSchoolgirlGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1210,7 +1210,7 @@
     - UniformSchoolgirlOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1226,7 +1226,7 @@
     - UniformSchoolgirlPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1242,7 +1242,7 @@
     - UniformSchoolgirlPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1258,7 +1258,7 @@
     - UniformSchoolgirlRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1273,7 +1273,7 @@
     - UniformSchoolgirlDusk
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1289,7 +1289,7 @@
     - UniformSchoolgirlBlazerTan
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1306,7 +1306,7 @@
     - ClothingUniformMNKOfficeSkirt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1321,7 +1321,7 @@
     - ClothingUniformMNKUnderGarment
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1336,7 +1336,7 @@
     - ClothingUniformMNKGymBra
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1351,7 +1351,7 @@
     - ClothingUniformMNKDressBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1366,7 +1366,7 @@
     - ClothingUniformMNKBlackOveralls
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1381,7 +1381,7 @@
     - ClothingUniformMNKBlackShoulder
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1396,7 +1396,7 @@
     - ClothingUniformMNKTracksuitBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1412,7 +1412,7 @@
     - ClothingUniformJumpsuitSuitBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1427,7 +1427,7 @@
     - ClothingUniformJumpsuitSuitBlackAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1442,7 +1442,7 @@
     - ClothingUniformJumpsuitSuitBlackMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1457,7 +1457,7 @@
     - ClothingUniformJumpsuitSuitBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1473,7 +1473,7 @@
     - ClothingUniformJumpsuitSuitBrownAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1488,7 +1488,7 @@
     - ClothingUniformJumpsuitSuitBrownMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1503,7 +1503,7 @@
     - ClothingUniformJumpsuitSuitWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1519,7 +1519,7 @@
     - ClothingUniformJumpsuitSuitWhiteAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1534,7 +1534,7 @@
     - ClothingUniformJumpsuitSuitWhiteMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian
+      group: LoadoutUniformsCivilian2
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:

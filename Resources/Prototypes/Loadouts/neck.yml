@@ -7,7 +7,7 @@
     - ClothingNeckHeadphones
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckBellCollar
@@ -18,7 +18,7 @@
     - ClothingNeckBellCollar
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckOldMantle
@@ -29,7 +29,7 @@
     - ClothingNeckOldMantle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckUnathiMantle
@@ -40,7 +40,7 @@
     - ClothingNeckUnathiMantle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 # Scarves
 - type: loadout
@@ -52,7 +52,7 @@
     - ClothingNeckScarfStripedRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedBlue
@@ -63,7 +63,7 @@
     - ClothingNeckScarfStripedBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedGreen
@@ -74,7 +74,7 @@
     - ClothingNeckScarfStripedGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedBlack
@@ -85,7 +85,7 @@
     - ClothingNeckScarfStripedBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedBrown
@@ -96,7 +96,7 @@
     - ClothingNeckScarfStripedBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedLightBlue
@@ -107,7 +107,7 @@
     - ClothingNeckScarfStripedLightBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedOrange
@@ -118,7 +118,7 @@
     - ClothingNeckScarfStripedOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedPurple
@@ -129,7 +129,7 @@
     - ClothingNeckScarfStripedPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckScarfStripedZebra
@@ -140,7 +140,7 @@
     - ClothingNeckScarfStripedZebra
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 # Ties
 - type: loadout
@@ -152,7 +152,7 @@
     - ClothingNeckTieRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckTieWhite
@@ -163,7 +163,7 @@
     - ClothingNeckTieWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckTieBlack
@@ -174,7 +174,7 @@
     - ClothingNeckTieBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckTieBlue
@@ -185,7 +185,7 @@
     - ClothingNeckTieBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutNeckTieGreen
@@ -196,7 +196,7 @@
     - ClothingNeckTieGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 #Pride Accessories
 - type: loadout
@@ -208,7 +208,7 @@
     - ClothingNeckLGBTPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideAromanticPin
@@ -219,7 +219,7 @@
     - ClothingNeckAromanticPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideAsexualPin
@@ -230,7 +230,7 @@
     - ClothingNeckAsexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideBisexualPin
@@ -241,7 +241,7 @@
     - ClothingNeckBisexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideIntersexPin
@@ -252,7 +252,7 @@
     - ClothingNeckIntersexPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideLesbianPin
@@ -263,7 +263,7 @@
     - ClothingNeckLesbianPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideNonBinaryPin
@@ -274,7 +274,7 @@
     - ClothingNeckNonBinaryPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPridePansexualPin
@@ -285,7 +285,7 @@
     - ClothingNeckPansexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsPrideTransPin
@@ -296,7 +296,7 @@
     - ClothingNeckTransPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
 
 # Bedsheets
 - type: loadout
@@ -308,7 +308,7 @@
     - BedsheetBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -326,7 +326,7 @@
     - BedsheetBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -344,7 +344,7 @@
     - BedsheetBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -362,7 +362,7 @@
     - BedsheetCosmos
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -380,7 +380,7 @@
     - BedsheetGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -398,7 +398,7 @@
     - BedsheetGrey
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -416,7 +416,7 @@
     - BedsheetOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -435,7 +435,7 @@
     - BedsheetPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -454,7 +454,7 @@
     - BedsheetRainbow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -472,7 +472,7 @@
     - BedsheetRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -491,7 +491,7 @@
     - BedsheetWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -509,7 +509,7 @@
     - BedsheetYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -528,7 +528,7 @@
     - BedsheetNT
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck
+      group: LoadoutNeck2
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian

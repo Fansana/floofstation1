@@ -1,10 +1,13 @@
 - type: loadout
   id: LoadoutNeckCloakMoth
   category: Neck
-  cost: 3
+  cost: 1
   exclusive: true
   items:
     - ClothingNeckCloakMoth
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
 
 # Generic collars
 - type: loadout
@@ -14,6 +17,9 @@
   exclusive: true
   items:
     - ClothingNeckCollarBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckBlackCollar
@@ -22,6 +28,9 @@
   exclusive: true
   items:
     - ClothingNeckCollarBlack
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckPinkCollar
@@ -30,11 +39,17 @@
   exclusive: true
   items:
     - ClothingNeckCollarPink
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
 
 - type: loadout
   id: LoadoutItemsNeckSyndieCollar
   category: Neck
-  cost: 3
+  cost: 1
   exclusive: true
   items:
     - ClothingNeckCollarSyndi
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
