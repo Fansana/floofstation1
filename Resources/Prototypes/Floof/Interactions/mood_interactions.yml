@@ -11,7 +11,7 @@
   action:
     # TODO: this should pull the target closer or sumth, but I need to code that action first
     !type:MoodAction
-    effect: BeingHugged
+    effect: BeingKissed
 
 - type: Interaction
   id: Lick
@@ -27,5 +27,5 @@
   action:
     # TODO: this should pull the target closer or sumth, but I need to code that action first
     !type:MoodAction
-    effect: BeingHugged
+    effect: BeingLicked
 
