@@ -4,16 +4,6 @@
   noSpawn: true
   components:
   - type: Stomach
-    specialDigestible:
-      tags:
-      - IceCream #Floofstation
-      - Fruit
-      - ReptilianFood
-      - Meat
-      - Pill
-      - Crayon
-      - Paper
-      - ClothMade
   - type: SolutionContainerManager
     solutions:
       stomach:
