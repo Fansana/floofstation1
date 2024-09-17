@@ -114,6 +114,7 @@
     - GalacticCommon
     - RobotTalk
   - type: PsionicInsulation
+  - type: LeashAnchor # Floofstation
 
 - type: entity
   parent: MobSiliconBase
