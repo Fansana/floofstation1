@@ -53,7 +53,7 @@ ghost-role-information-xeno-rules = You are a xeno.
 
 ghost-role-information-friendlyxeno-name = Xeno Subject
 ghost-role-information-friendlyxeno-description = You are a friendly xeno, co-operate with the crew and protect the station!
-ghost-role-information-xeno-rules = You are a friendly xeno.
+ghost-role-information-friendlyxeno-rules = You are a friendly xeno.
                                     Your objective is to cooperate with any sophonts and not bring harm to the crew. 
                                     Do your best to be helpful and don't give anyone a reason to fear you.
 
