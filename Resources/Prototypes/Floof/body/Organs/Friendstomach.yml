@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: OrganFriendStomach
+  parent: OrganAnimalStomach
+  noSpawn: true
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - IceCream #Floofstation
+      - Fruit
+      - ReptilianFood
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+      - ClothMade
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 500
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
