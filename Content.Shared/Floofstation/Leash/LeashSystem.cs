@@ -85,26 +85,9 @@ public sealed class LeashSystem : EntitySystem
                 var targetXForm = Transform(target.Value);
                 if (targetXForm.MapUid != sourceXForm.MapUid
                     || !sourceXForm.Coordinates.TryDistance(EntityManager, targetXForm.Coordinates, out var dst)
-                    || dst > leash.MaxDistance)
+                    || dst > leash.MaxDistance
+                )
                     RemoveLeash(target.Value, (leashEnt, leash));
-
-                // Calculate joint damage
-                if (_timing.CurTime < data.NextDamage
-                    || !TryComp<JointComponent>(target, out var jointComp)
-                    || !jointComp.GetJoints.TryGetValue(data.JointId, out var joint))
-                    continue;
-
-                // TODO reaction force always returns 0 and thus damage doesn't work
-                // TODO find another way to calculate how much force is being excerted to hold the two entities together
-                // var damage = joint.GetReactionForce(1 / (float) leash.DamageInterval.TotalSeconds).Length() - leash.JointRepairDamage;
-                // data.Damage = Math.Max(0f, data.Damage + damage);
-                // data.NextDamage = _timing.CurTime + leash.DamageInterval;
-                //
-                // if (damage >= leash.BreakDamage && !_net.IsClient)
-                // {
-                //     _popups.PopupPredicted(Loc.GetString("leash-snap-popup", ("leash", leashEnt)), target, null, PopupType.SmallCaution);
-                //     RemoveLeash(target, (leashEnt, leash), true);
-                // }
             }
         }
 
@@ -287,6 +270,7 @@ public sealed class LeashSystem : EntitySystem
         joint.MaxLength = leash.Comp.Length;
         joint.Stiffness = 1f;
         joint.CollideConnected = true; // This is just for performance reasons and doesn't actually make mobs collide.
+        joint.Damping = 1f;
 
         return joint;
     }

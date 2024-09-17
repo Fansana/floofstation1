@@ -47,27 +47,6 @@ public sealed partial class LeashComponent : Component
     public TimeSpan PullInterval = TimeSpan.FromSeconds(1.5f);
 
     /// <summary>
-    ///     How much damage each leash joint can sustain before it breaks.
-    /// </summary>
-    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
-    [DataField, AutoNetworkedField]
-    public float BreakDamage = 20f;
-
-    /// <summary>
-    ///     How much damage each leash joint loses every <see cref="DamageInterval"/>.
-    /// </summary>
-    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
-    [DataField, AutoNetworkedField]
-    public float JointRepairDamage = 1f;
-
-    /// <summary>
-    ///     Interval at which damage is calculated for each joint.
-    /// </summary>
-    /// <remarks>Not currently implemented; needs to be reworked in order to work.</remarks>
-    [DataField, AutoNetworkedField]
-    public TimeSpan DamageInterval = TimeSpan.FromMilliseconds(200);
-
-    /// <summary>
     ///     List of all joints and their respective pulled entities created by this leash.
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -87,12 +66,6 @@ public sealed partial class LeashComponent : Component
         /// </summary>
         [DataField]
         public NetEntity? LeashVisuals = null;
-
-        [DataField]
-        public float Damage = 0f;
-
-        [DataField]
-        public TimeSpan NextDamage = TimeSpan.Zero;
 
         public LeashData(string jointId, NetEntity pulled)
         {
