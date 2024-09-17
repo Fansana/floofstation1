@@ -773,3 +773,50 @@
       catalyst: true
   products:
     Sake: 1
+
+- type: reaction
+  id: TheCuteCaptain
+  reactants:
+    Tea:
+      amount: 2
+    Pomelustine:
+      amount: 1
+  products:
+    TheCuteCaptain: 3
+
+- type: reaction
+  id: AxelsAle
+  reactants:
+    Ale:
+      amount: 1
+    Rum:
+      amount: 1
+    Pomelustine:
+      amount: 1
+  products:
+    AxelsAle: 3
+
+- type: reaction
+  id: JennTonic
+  reactants:
+    Ice:
+      amount: 1
+    Whiskey:
+      amount: 1
+    TonicWater:
+      amount: 1
+  products:
+    JennTonic: 3
+
+- type: reaction
+  id: Hallelujah 
+  reactants:
+    Wine:
+      amount: 2
+    Water:
+      amount: 3
+    LotophagoiOil:
+      amount: 1
+  products:
+    Hallelujah : 6
+
