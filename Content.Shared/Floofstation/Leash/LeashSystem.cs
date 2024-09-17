@@ -81,6 +81,9 @@ public sealed class LeashSystem : EntitySystem
                 )
                     distanceJoint.MaxLength = float.MaxValue;
 
+                if (_net.IsClient)
+                    continue;
+
                 // Break each leash joint whose entities are on different maps or are too far apart
                 var targetXForm = Transform(target.Value);
                 if (targetXForm.MapUid != sourceXForm.MapUid
@@ -109,7 +112,8 @@ public sealed class LeashSystem : EntitySystem
     private void OnLeashedInserting(Entity<LeashedComponent> ent, ref ContainerGettingInsertedAttemptEvent args)
     {
         // Prevent the entity from entering crates and the like because that would instantly break all joints on it, including the leash
-        if (!Exists(ent.Comp.Puller)
+        if (_timing.ApplyingState
+            || !Exists(ent.Comp.Puller)
             || !Exists(ent.Comp.Anchor)
             || !TryComp<LeashComponent>(ent.Comp.Puller, out var leashPuller)
             || !TryComp<LeashAnchorComponent>(ent.Comp.Anchor, out var leashAnchor))
@@ -372,10 +376,7 @@ public sealed class LeashSystem : EntitySystem
 
         // I'd like to use a chain joint or smth, but it's too hard and oftentimes buggy - lamia is a good bad example of that.
         var joint = CreateLeashJoint(leashedComp.JointId, leash, leashTarget);
-        var data = new LeashComponent.LeashData(leashedComp.JointId, netLeashTarget)
-        {
-            NextDamage = _timing.CurTime + leash.Comp.DamageInterval
-        };
+        var data = new LeashComponent.LeashData(leashedComp.JointId, netLeashTarget);
 
         if (leash.Comp.LeashSprite is { } sprite)
         {
