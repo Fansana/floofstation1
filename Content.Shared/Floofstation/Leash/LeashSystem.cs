@@ -41,9 +41,8 @@ public sealed class LeashSystem : EntitySystem
         UpdatesBefore.Add(typeof(SharedPhysicsSystem));
 
         SubscribeLocalEvent<LeashAnchorComponent, BeingUnequippedAttemptEvent>(OnAnchorUnequipping);
-        SubscribeLocalEvent<LeashedComponent, ContainerGettingInsertedAttemptEvent>(OnLeashedInserting);
-        SubscribeLocalEvent<LeashComponent, JointRemovedEvent>(OnJointRemoved);
         SubscribeLocalEvent<LeashAnchorComponent, GetVerbsEvent<EquipmentVerb>>(OnGetEquipmentVerbs);
+        SubscribeLocalEvent<LeashedComponent, JointRemovedEvent>(OnJointRemoved, after: [typeof(SharedJointSystem)]);
         SubscribeLocalEvent<LeashedComponent, GetVerbsEvent<InteractionVerb>>(OnGetLeashedVerbs);
 
         SubscribeLocalEvent<LeashAnchorComponent, LeashAttachDoAfterEvent>(OnAttachDoAfter);
@@ -73,30 +72,24 @@ public sealed class LeashSystem : EntitySystem
                 if (data.Pulled == NetEntity.Invalid || !TryGetEntity(data.Pulled, out var target))
                     continue;
 
+                // Client side only: set max distance to infinity to prevent the client from ever predicting leashes.
+                if (_net.IsClient
+                    && TryComp<JointComponent>(target, out var jointComp)
+                    && jointComp.GetJoints.TryGetValue(data.JointId, out var joint)
+                    && joint is DistanceJoint distanceJoint
+                )
+                    distanceJoint.MaxLength = float.MaxValue;
+
+                if (_net.IsClient)
+                    continue;
+
                 // Break each leash joint whose entities are on different maps or are too far apart
                 var targetXForm = Transform(target.Value);
                 if (targetXForm.MapUid != sourceXForm.MapUid
                     || !sourceXForm.Coordinates.TryDistance(EntityManager, targetXForm.Coordinates, out var dst)
-                    || dst > leash.MaxDistance)
+                    || dst > leash.MaxDistance
+                )
                     RemoveLeash(target.Value, (leashEnt, leash));
-
-                // Calculate joint damage
-                if (_timing.CurTime < data.NextDamage
-                    || !TryComp<JointComponent>(target, out var jointComp)
-                    || !jointComp.GetJoints.TryGetValue(data.JointId, out var joint))
-                    continue;
-
-                // TODO reaction force always returns 0 and thus damage doesn't work
-                // TODO find another way to calculate how much force is being excerted to hold the two entities together
-                // var damage = joint.GetReactionForce(1 / (float) leash.DamageInterval.TotalSeconds).Length() - leash.JointRepairDamage;
-                // data.Damage = Math.Max(0f, data.Damage + damage);
-                // data.NextDamage = _timing.CurTime + leash.DamageInterval;
-                //
-                // if (damage >= leash.BreakDamage && !_net.IsClient)
-                // {
-                //     _popups.PopupPredicted(Loc.GetString("leash-snap-popup", ("leash", leashEnt)), target, null, PopupType.SmallCaution);
-                //     RemoveLeash(target, (leashEnt, leash), true);
-                // }
             }
         }
 
@@ -113,33 +106,6 @@ public sealed class LeashSystem : EntitySystem
             && leashed.Puller is not null
         )
             args.Cancel();
-    }
-
-    private void OnLeashedInserting(Entity<LeashedComponent> ent, ref ContainerGettingInsertedAttemptEvent args)
-    {
-        // Prevent the entity from entering crates and the like because that would instantly break all joints on it, including the leash
-        if (!Exists(ent.Comp.Puller)
-            || !Exists(ent.Comp.Anchor)
-            || !TryComp<LeashComponent>(ent.Comp.Puller, out var leashPuller)
-            || !TryComp<LeashAnchorComponent>(ent.Comp.Anchor, out var leashAnchor))
-            return;
-
-        args.Cancel();
-        // This is hella unsafe to do, but we recreate the joint because dumb storage system removes it before raising the event.
-        // We have to pray that OnJointRemoved already was called and that it deferred the removal of everything that used to exist
-        // I HATE STORAGE
-        DoLeash((ent.Comp.Anchor.Value, leashAnchor), (ent.Comp.Puller.Value, leashPuller), ent);
-    }
-
-    private void OnJointRemoved(Entity<LeashComponent> ent, ref JointRemovedEvent args)
-    {
-        var id = args.Joint.ID;
-        if (!ent.Comp.Leashed.TryFirstOrDefault(it => it.JointId == id, out var data)
-            || !TryGetEntity(data.Pulled, out var leashedEnt)
-            || !TryComp<LeashedComponent>(leashedEnt, out var leashed))
-            return;
-
-        RemoveLeash((leashedEnt.Value, leashed), ent!, false);
     }
 
     private void OnGetEquipmentVerbs(Entity<LeashAnchorComponent> ent, ref GetVerbsEvent<EquipmentVerb> args)
@@ -191,6 +157,26 @@ public sealed class LeashSystem : EntitySystem
             Text = Loc.GetString("verb-unleash-text"),
             Act = () => TryUnleash(ent!, (leash, leashComp), user)
         });
+    }
+
+    private void OnJointRemoved(Entity<LeashedComponent> ent, ref JointRemovedEvent args)
+    {
+        var id = args.Joint.ID;
+        if (_timing.ApplyingState
+            || ent.Comp.LifeStage >= ComponentLifeStage.Removing
+            || ent.Comp.Puller is not { } puller
+            || !TryComp<LeashAnchorComponent>(ent.Comp.Anchor, out var anchor)
+            || !TryComp<LeashComponent>(puller, out var leash)
+            || !Transform(ent).Coordinates.TryDistance(EntityManager, Transform(puller).Coordinates, out var dst)
+            || dst > leash.MaxDistance
+           )
+            return;
+
+        // If the entity still has a leashed comp, and is on the same map, and is within the max distance of the leash
+        // Then the leash was likely broken due to some weird unforeseen fucking robust toolbox magic. We can try to recreate it.
+        // This is hella unsafe to do. It will crash in debug builds under certain conditions. Luckily, release builds are safe.
+        RemoveLeash(ent!, (puller, leash), false);
+        DoLeash((ent.Comp.Anchor.Value, anchor), (puller, leash), ent);
     }
 
     private void OnAttachDoAfter(Entity<LeashAnchorComponent> ent, ref LeashAttachDoAfterEvent args)
@@ -279,6 +265,7 @@ public sealed class LeashSystem : EntitySystem
         joint.MaxLength = leash.Comp.Length;
         joint.Stiffness = 1f;
         joint.CollideConnected = true; // This is just for performance reasons and doesn't actually make mobs collide.
+        joint.Damping = 1f;
 
         return joint;
     }
@@ -380,10 +367,7 @@ public sealed class LeashSystem : EntitySystem
 
         // I'd like to use a chain joint or smth, but it's too hard and oftentimes buggy - lamia is a good bad example of that.
         var joint = CreateLeashJoint(leashedComp.JointId, leash, leashTarget);
-        var data = new LeashComponent.LeashData(leashedComp.JointId, netLeashTarget)
-        {
-            NextDamage = _timing.CurTime + leash.Comp.DamageInterval
-        };
+        var data = new LeashComponent.LeashData(leashedComp.JointId, netLeashTarget);
 
         if (leash.Comp.LeashSprite is { } sprite)
         {
