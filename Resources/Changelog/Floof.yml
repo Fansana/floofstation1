@@ -926,3 +926,21 @@ Entries:
   id: 126
   time: '2024-09-13T11:03:42.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/189
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Suspenders are now in loadouts.
+    - type: Tweak
+      message: >-
+        Loadouts items from Floof are a lot cheaper, but you cannot take an
+        extra change of clothes.
+  id: 127
+  time: '2024-09-15T06:53:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/186
+- author: cynical24
+  changes:
+    - type: Add
+      message: three new harpy instruments
+  id: 128
+  time: '2024-09-16T09:28:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/184
