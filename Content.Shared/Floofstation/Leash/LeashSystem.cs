@@ -73,6 +73,14 @@ public sealed class LeashSystem : EntitySystem
                 if (data.Pulled == NetEntity.Invalid || !TryGetEntity(data.Pulled, out var target))
                     continue;
 
+                // Client side only: set max distance to infinity to prevent the client from ever predicting leashes.
+                if (_net.IsClient
+                    && TryComp<JointComponent>(target, out var jointComp)
+                    && jointComp.GetJoints.TryGetValue(data.JointId, out var joint)
+                    && joint is DistanceJoint distanceJoint
+                )
+                    distanceJoint.MaxLength = float.MaxValue;
+
                 // Break each leash joint whose entities are on different maps or are too far apart
                 var targetXForm = Transform(target.Value);
                 if (targetXForm.MapUid != sourceXForm.MapUid
