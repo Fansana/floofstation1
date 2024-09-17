@@ -175,6 +175,7 @@ public sealed class LeashSystem : EntitySystem
         // If the entity still has a leashed comp, and is on the same map, and is within the max distance of the leash
         // Then the leash was likely broken due to some weird unforeseen fucking robust toolbox magic. We can try to recreate it.
         // This is hella unsafe to do. It will crash in debug builds under certain conditions. Luckily, release builds are safe.
+        RemoveLeash(ent!, (puller, leash), false);
         DoLeash((ent.Comp.Anchor.Value, anchor), (puller, leash), ent);
     }
 
