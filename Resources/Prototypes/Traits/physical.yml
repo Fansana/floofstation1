@@ -23,7 +23,7 @@
 - type: trait
   id: WillToDie
   category: Physical
-  points: 1
+  points: 2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -40,12 +40,12 @@
         - WillToLive
   components:
     - type: DeadModifier
-      deadThresholdModifier: -10
+      deadThresholdModifier: -15
 
 - type: trait
   id: Tenacity
   category: Physical
-  points: -2
+  points: -3
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -84,7 +84,7 @@
         - Tenacity
   components:
     - type: CritModifier
-      critThresholdModifier: -7
+      critThresholdModifier: -10
 
 - type: trait
   id: Vigor

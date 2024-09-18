@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: BasicEgg
+  id: BasicEggEaster
   name: basic egg
   description: A large and shiny egg, couldn't have been laid by a chicken!
   components:
@@ -10,7 +10,7 @@
 
 - type: entity
   parent: BaseItem
-  id: DragonEgg
+  id: DragonEggEaster
   name: dragon egg
   description: A warm and shimmering egg, power could be felt from within...
   components:
@@ -20,7 +20,7 @@
 
 - type: entity
   parent: BaseItem
-  id: VoidEgg
+  id: VoidEggEaster
   name: void egg
   description: A void egg. This has to be dangerous, right?
   components:
@@ -30,7 +30,7 @@
 
 - type: entity
   parent: BaseItem
-  id: SlimeEgg
+  id: SlimeEggEaster
   name: slime egg
   description: A globby and squishy egg, feels nasty.
   components:
@@ -40,7 +40,7 @@
 
 - type: entity
   parent: BaseItem
-  id: HoneyEgg
+  id: HoneyEggEaster
   name: honeycomb egg
   description: An egg covered in a sticky and sweet honey.
   components:

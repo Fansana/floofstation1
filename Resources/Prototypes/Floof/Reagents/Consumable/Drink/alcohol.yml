@@ -1395,3 +1395,99 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.05
+
+- type: reagent
+  id: TheCuteCaptain
+  name: reagent-name-the-cute-captain
+  parent: BaseAlcohol
+  desc: reagent-desc-the-cute-captain
+  physicalDesc: reagent-physical-desc-starry
+  flavor: thecutecaptain
+  color: "#87cefa"
+  metamorphicSprite:
+    sprite: Nyanotrasen/Objects/Consumable/Drinks/sakeglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 0.5
+
+- type: reagent
+  id: AxelsAle
+  name: reagent-name-axels-ale
+  parent: BaseAlcohol
+  desc: reagent-desc-axels-ale
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: axelsale
+  color: "#E43414"
+  metamorphicSprite:
+    sprite: Floof/Objects/Consumable/Drinks/deadmansdraught.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Pomelustine
+        amount: 0.5
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
+
+- type: reagent
+  id: JennTonic
+  name: reagent-name-jenn-tonic
+  parent: BaseAlcohol
+  desc: reagent-desc-jenn-tonic
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: jenntonic
+  color: "#C1C071"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/ginfizzglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.08
+
+- type: reagent
+  id: Hallelujah
+  name: reagent-name-hallelujah
+  parent: BaseAlcohol
+  desc: reagent-desc-hallelujah
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: hallelujah
+  color: "#87757E"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 5
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.06
+        

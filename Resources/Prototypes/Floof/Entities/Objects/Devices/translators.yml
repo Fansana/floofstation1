@@ -1,0 +1,16 @@
+- type: entity
+  id: ArachnicTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: Arachnic translator
+  description: Translates speech between Arachnic and Galactic Common, which won't get through to spiders that walk on more than 2 legs.
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - GalacticCommon
+    - Arachnic
+    understood:
+    - GalacticCommon
+    - Arachnic
+    requires:
+    - GalacticCommon
+    - Arachnic

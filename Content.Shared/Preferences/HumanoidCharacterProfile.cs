@@ -24,9 +24,9 @@ namespace Content.Shared.Preferences
     [Serializable, NetSerializable]
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
-        public const int MaxNameLength = 32;
-        public const int MaxDescLength = 512;
-        public const int MaxCharConsLength = 512; // Floof - Per-Character Consent
+        public const int MaxNameLength = 48;
+        public const int MaxDescLength = 1024;
+        public const int MaxCharConsLength = 1024; // Floof - Per-Character Consent
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
         private readonly List<string> _antagPreferences;

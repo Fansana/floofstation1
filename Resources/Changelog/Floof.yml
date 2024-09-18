@@ -805,3 +805,171 @@ Entries:
         vampire.
   id: 110
   time: '2024-09-02T03:14:35.0000000+00:00'
+- author: Xavier
+  changes:
+    - type: Add
+      message: Pulled Health Analyzer UI updates from Wizden
+  id: 111
+  time: '2024-09-03T20:00:55.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Add
+      message: Red Canine Dildo
+    - type: Tweak
+      message: Sex Toys can be recycled and sold.
+    - type: Tweak
+      message: Sex Toy Crate price increased to 2000.
+  id: 112
+  time: '2024-09-03T20:08:29.0000000+00:00'
+- author: ShatteredSwords
+  changes:
+    - type: Fix
+      message: You can now be headpat and not be referred to in the third person.
+  id: 113
+  time: '2024-09-03T21:33:48.0000000+00:00'
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added colorful glowing gems
+  id: 114
+  time: '2024-09-03T21:53:54.0000000+00:00'
+- author: neuPanda
+  changes:
+    - type: Add
+      message: new cryo chems
+    - type: Tweak
+      message: old cryo chems
+    - type: Fix
+      message: death
+    - type: Remove
+      message: metabolism restrictions
+  id: 115
+  time: '2024-09-04T05:12:40.0000000+00:00'
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Survival not creating events.
+  id: 116
+  time: '2024-09-05T04:20:01.0000000+00:00'
+- author: Xavier and Satchmo
+  changes:
+    - type: Add
+      message: Spider Language, with translators and implants!
+  id: 117
+  time: '2024-09-05T04:21:07.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Upstream merge. See the einstein-engines tab for more details. Most
+        notably, jukeboxes are now a thing!
+  id: 118
+  time: '2024-09-08T15:57:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/178
+- author: fenndragon
+  changes:
+    - type: Add
+      message: a collection of Passive Xenos
+    - type: Add
+      message: >-
+        several New friendly Xeno experimental subjects much like
+        Friend-shaped. 
+  id: 119
+  time: '2024-09-09T02:04:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/145
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Added admin-spawnable-only map with ghost roles.
+  id: 120
+  time: '2024-09-09T05:30:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/155
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Hotfixed some job requirements with logical OR.
+  id: 121
+  time: '2024-09-09T14:50:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/181
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed a couple issues with the language menu UI and translators.
+  id: 122
+  time: '2024-09-10T18:26:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/182
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Thieves are showing up more often again...
+  id: 123
+  time: '2024-09-11T17:34:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/183
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added frontier dragon egg, without the ghost role.
+  id: 124
+  time: '2024-09-13T04:37:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/188
+- author: fenndragon
+  changes: []
+  id: 125
+  time: '2024-09-13T06:55:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/187
+- author: Fansana
+  changes:
+    - type: Add
+      message: >-
+        Added secret doors for walls of type shuttle, wood, reinforced and
+        uranium.
+  id: 126
+  time: '2024-09-13T11:03:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/189
+- author: ShatteredSwords
+  changes:
+    - type: Add
+      message: Suspenders are now in loadouts.
+    - type: Tweak
+      message: >-
+        Loadouts items from Floof are a lot cheaper, but you cannot take an
+        extra change of clothes.
+  id: 127
+  time: '2024-09-15T06:53:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/186
+- author: cynical24
+  changes:
+    - type: Add
+      message: three new harpy instruments
+  id: 128
+  time: '2024-09-16T09:28:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/184
+- author: neuPanda
+  changes:
+    - type: Add
+      message: >-
+        Added 4 new drinks: Axel's Ale, The Cute Captain, Jenn in Tonic,
+        Hallelujah
+  id: 129
+  time: '2024-09-17T18:59:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/180
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: You can now leash janibots, medibots, and more.
+    - type: Fix
+      message: >-
+        Leashes no longer cause broken client-side behavior, and no longer break
+        during FTL.
+  id: 130
+  time: '2024-09-17T19:07:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/193
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added a stomach to friend '
+    - type: Tweak
+      message: 'Tweaked the sprites for downed rounys '
+  id: 131
+  time: '2024-09-18T05:13:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/192

@@ -2,7 +2,7 @@
   id: BaseLeash
   parent: BaseItem
   name: leash
-  description: Helps keep your animals close to you, as well as your friends. Attach to supported object or clothing (such as collars) to use. You can pull attached entities while holding the leash.
+  description: Helps keep your animals or friends close to you. Attach to supported objects or clothing (such as collars) to use. You can pull attached entities while holding the leash.
   noSpawn: true
   components:
   - type: Sprite
@@ -10,6 +10,7 @@
     layers:
     - state: icon
   - type: Leash
+    pullInterval: 0.75
     leashSprite:
       sprite: Floof/Objects/Tools/leash-rope.rsi
       state: rope
@@ -19,9 +20,10 @@
   parent: BaseLeash
   components:
   - type: Leash
-    length: 3.5
-    attachDelay: 4.5 # Gotta be at least as high as cuffs or antags may abuse it
-    detachDelay: 3
+    length: 3
+    maxDistance: 6
+    attachDelay: 4
+    detachDelay: 4
     selfDetachDelay: 10
 
 - type: entity
@@ -31,6 +33,7 @@
   components:
   - type: Leash
     length: 1.5
+    maxDistance: 3
     attachDelay: 4.5
     detachDelay: 3
     selfDetachDelay: 10
@@ -54,6 +57,7 @@
   suffix: DEBUG, DO NOT MAP
   components:
   - type: Leash
+    maxDistance: 100
     maxJoints: 25
     attachDelay: 0
     detachDelay: 10000 # will still be instant for admin ghosts or whatever with instant doafters tag

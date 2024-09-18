@@ -210,6 +210,9 @@
         - id: CanineDildo
           prob: 0.02
           orGroup: Lewd
+        - id: CanineDildoRed
+          prob: 0.02
+          orGroup: Lewd
         - id: HorseDildo
           prob: 0.02
           orGroup: Lewd
@@ -376,6 +379,9 @@
           prob: 0.02
           orGroup: Lewd
         - id: CanineDildo
+          prob: 0.02
+          orGroup: Lewd
+        - id: CanineDildoRed
           prob: 0.02
           orGroup: Lewd
         - id: HorseDildo
