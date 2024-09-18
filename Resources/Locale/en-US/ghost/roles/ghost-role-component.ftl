@@ -51,6 +51,12 @@ ghost-role-information-xeno-rules = You are a xeno.
                                     Your objective is to cooperate with your fellow xenos and kill all the crew.
                                     Strike fast, make them fear the shadows.
 
+ghost-role-information-friendlyxeno-name = Xeno Subject
+ghost-role-information-friendlyxeno-description = You are a friendly xeno, co-operate with the crew and protect the station!
+ghost-role-information-friendlyxeno-rules = You are a friendly xeno.
+                                    Your objective is to cooperate with any sophonts and not bring harm to the crew. 
+                                    Do your best to be helpful and don't give anyone a reason to fear you.
+
 ghost-role-information-revenant-name = Revenant
 ghost-role-information-revenant-description = You are a Revenant. Use your powers to harvest souls and unleash chaos upon the crew. Unlock new abilities with the essence you harvest.
 ghost-role-information-revenant-rules = You are an antagonist, harvest, defile, and drive the crew insane.

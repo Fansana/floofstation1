@@ -12,6 +12,10 @@
     energy: 1
     color: "#B85E5E"
   - type: MovementAlwaysTouching
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
   - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
@@ -33,6 +37,11 @@
     radius: 2
     energy: 1
     color: "#62B85E"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -53,6 +62,11 @@
     radius: 2
     energy: 1
     color: "#8B5EB8"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -73,6 +87,11 @@
     radius: 2
     energy: 1
     color: "#E3954D"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
   - type: LanguageKnowledge
     speaks:
     - Xeno
@@ -122,7 +141,6 @@
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     scale: 0.7, 0.7
   - type: GhostRole
-    makeSentient: true
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno

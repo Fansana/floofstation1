@@ -8,6 +8,12 @@
       connections:
       - hands
       - legs
+      organs:
+        lungs: OrganAnimalLungs
+        stomach: OrganFriendStomach
+        liver: OrganAnimalLiver
+        heart: OrganAnimalHeart
+        kidneys: OrganAnimalKidneys
     hands:
       part: HandsAnimal
     legs:
