@@ -167,6 +167,7 @@ public sealed class LeashSystem : EntitySystem
             || ent.Comp.Puller is not { } puller
             || !TryComp<LeashAnchorComponent>(ent.Comp.Anchor, out var anchor)
             || !TryComp<LeashComponent>(puller, out var leash)
+            || leash.Leashed.All(it => it.JointId != id)
             || !Transform(ent).Coordinates.TryDistance(EntityManager, Transform(puller).Coordinates, out var dst)
             || dst > leash.MaxDistance
            )
@@ -397,15 +398,15 @@ public sealed class LeashSystem : EntitySystem
         if (_container.TryGetContainer(leashed, LeashedComponent.VisualsContainerName, out var visualsContainer))
             _container.CleanContainer(visualsContainer);
 
-        if (breakJoint && jointId is not null)
-            _joints.RemoveJoint(leash, jointId);
-
         if (Resolve(leash, ref leash.Comp, false))
         {
             var leashedData = leash.Comp.Leashed.Where(it => it.JointId == jointId).ToList();
             foreach (var data in leashedData)
                 leash.Comp.Leashed.Remove(data);
         }
+
+        if (breakJoint && jointId is not null)
+            _joints.RemoveJoint(leash, jointId);
 
         Dirty(leash);
     }
