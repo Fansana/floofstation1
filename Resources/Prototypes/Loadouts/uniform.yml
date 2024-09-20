@@ -29,10 +29,6 @@
       departments:
         - Civilian
         - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorBlack
@@ -48,10 +44,6 @@
       departments:
         - Civilian
         - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorBlue
@@ -67,10 +59,6 @@
       departments:
         - Medical
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorBlue
@@ -86,10 +74,6 @@
       departments:
         - Medical
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorGreen
@@ -104,10 +88,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorGreen
@@ -122,10 +102,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorOrange
@@ -140,10 +116,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorOrange
@@ -158,10 +130,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorPink
@@ -176,10 +144,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorPink
@@ -194,10 +158,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorRed
@@ -213,10 +173,6 @@
       departments:
         - Civilian
         - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorRed
@@ -232,10 +188,6 @@
       departments:
         - Civilian
         - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorWhite
@@ -252,10 +204,6 @@
         - Civilian
         - Medical
         - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorWhite
@@ -272,10 +220,6 @@
         - Civilian
         - Medical
         - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorYellow
@@ -291,10 +235,6 @@
       departments:
         - Civilian
         - Engineering
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorYellow
@@ -310,10 +250,6 @@
       departments:
         - Civilian
         - Engineering
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorDarkBlue
@@ -328,10 +264,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorDarkBlue
@@ -346,10 +278,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorTeal
@@ -364,10 +292,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorTeal
@@ -382,10 +306,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorPurple
@@ -401,10 +321,6 @@
       departments:
         - Civilian
         - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorPurple
@@ -420,10 +336,6 @@
       departments:
         - Civilian
         - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorDarkGreen
@@ -438,10 +350,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorDarkGreen
@@ -456,10 +364,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorLightBrown
@@ -474,10 +378,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorLightBrown
@@ -492,10 +392,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorBrown
@@ -510,10 +406,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorBrown
@@ -528,10 +420,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitColorMaroon
@@ -546,10 +434,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtColorMaroon
@@ -564,10 +448,6 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitFlannel
@@ -579,10 +459,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtCasualBlue
@@ -594,11 +470,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitCasualPurple
@@ -610,11 +481,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtCasualPurple
@@ -626,11 +492,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitCasualRed
@@ -642,10 +503,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtCasualRed
@@ -657,10 +514,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitTshirtJeans
@@ -672,11 +525,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitTshirtJeansGray
@@ -688,10 +536,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitTshirtJeansPeach
@@ -703,10 +547,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitJeansGreen
@@ -718,11 +558,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitJeansRed
@@ -734,10 +569,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitJeansBrown
@@ -749,11 +580,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitLostTourist
@@ -765,11 +591,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # Hawaiian shirts
 - type: loadout
@@ -782,11 +603,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitHawaiBlue
@@ -798,11 +614,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitHawaiRed
@@ -814,10 +625,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitHawaiYellow
@@ -829,11 +636,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # AutoDrobe clothes
 - type: loadout
@@ -846,10 +648,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitSober
@@ -861,10 +659,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformSkirtTurtle
@@ -876,10 +670,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformGeisha
@@ -891,10 +681,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformCostumeArcDress
@@ -906,11 +692,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformCostumeMioSkirt
@@ -922,11 +703,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformCostumeNaota
@@ -938,11 +714,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpsuitLoungewear
@@ -954,10 +725,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 # Bartender clothes
 - type: loadout
@@ -970,11 +737,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformJumpskirtBartender
@@ -986,11 +748,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # Kendo
 - type: loadout
@@ -1003,10 +760,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformMartialGi
@@ -1018,11 +771,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # Kimono
 - type: loadout
@@ -1035,11 +783,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutClothingKimonoBlue
@@ -1051,11 +794,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutClothingKimonoPink
@@ -1067,11 +805,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutClothingKimonoPurple
@@ -1083,11 +816,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutClothingKimonoSky
@@ -1099,11 +827,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutClothingKimonoGreen
@@ -1115,11 +838,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # Gakuran
 - type: loadout
@@ -1132,10 +850,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 # Schoolgirl uniform
 - type: loadout
@@ -1148,10 +862,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlBlue
@@ -1163,11 +873,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlCyan
@@ -1179,11 +884,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlGreen
@@ -1195,11 +895,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlOrange
@@ -1211,11 +906,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlPink
@@ -1227,11 +917,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlPurple
@@ -1243,11 +928,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlRed
@@ -1259,10 +939,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlDusk
@@ -1274,11 +950,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 - type: loadout
   id: LoadoutUniformSchoolgirlBlazerTan
@@ -1290,11 +961,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security
-        - Command
 
 # MNK Uniforms
 - type: loadout
@@ -1307,10 +973,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKUnderGarment
@@ -1322,10 +984,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKGymBra
@@ -1337,10 +995,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKDressBlack
@@ -1352,10 +1006,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKBlackOveralls
@@ -1367,10 +1017,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKBlackShoulder
@@ -1382,10 +1028,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingMNKTracksuitBlack
@@ -1397,10 +1039,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 # Suits
 - type: loadout
@@ -1413,10 +1051,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitBlackAlt
@@ -1428,10 +1062,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitBlackMob
@@ -1443,10 +1073,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitBrown
@@ -1458,11 +1084,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-        - Security
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitBrownAlt
@@ -1474,10 +1095,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitBrownMob
@@ -1489,10 +1106,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitWhite
@@ -1504,11 +1117,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-        - Security
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitWhiteAlt
@@ -1520,10 +1128,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
 
 - type: loadout
   id: LoadoutClothingJumpsuitSuitWhiteMob
@@ -1535,7 +1139,3 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
