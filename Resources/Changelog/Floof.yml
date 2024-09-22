@@ -980,3 +980,12 @@ Entries:
   id: 132
   time: '2024-09-19T03:01:46.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/194
+- author: Memeji
+  changes:
+    - type: Add
+      message: Shuttle Console Boards added to the Tech Board loot pool.
+    - type: Tweak
+      message: R&D Server boards are now common finds.
+  id: 133
+  time: '2024-09-22T06:50:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/196
