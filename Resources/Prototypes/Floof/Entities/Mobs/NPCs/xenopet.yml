@@ -338,3 +338,28 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/lizard_happy.ogg
+
+- type: entity
+  id: neutralXenoVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 1
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobXeno
+      prob: 0.01
+    - id: MobXenoNeutralRouny
+      prob: 0.005
+    - id: MobXenoNeutralDrone
+      prob: 0.005
+    - id: MobXenoNeutralPraetorian
+      prob: 0.005
+    - id: MobXenoNeutralRavager
+      prob: 0.005
