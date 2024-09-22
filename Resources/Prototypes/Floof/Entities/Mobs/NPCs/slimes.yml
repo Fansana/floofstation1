@@ -303,3 +303,82 @@
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
         color: "#c6c8cc"
+        
+- type: entity
+  id: reagentslimeVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 1
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: ReagentSlime
+      prob: 0.01
+    - id: ReagentSlimeBeer
+      prob: 0.01
+    - id: ReagentSlimePax
+      prob: 0.01
+    - id: ReagentSlimeNocturine
+      prob: 0.01
+    - id: ReagentSlimeTHC
+      prob: 0.01
+    - id: ReagentSlimeBicaridine
+      prob: 0.01
+    - id: ReagentSlimeToxin
+      prob: 0.01
+    - id: ReagentSlimeNapalm
+      prob: 0.01
+    - id: ReagentSlimeOmnizine
+      prob: 0.01
+    - id: ReagentSlimeMuteToxin
+      prob: 0.01
+    - id: ReagentSlimeNorepinephricAcid
+      prob: 0.01
+    - id: ReagentSlimeEphedrine
+      prob: 0.01
+    - id: ReagentSlimeRobustHarvest
+      prob: 0.01
+    - id: ReagentSlimeCum
+      prob: 0.01
+    - id: ReagentSlimePomelustine
+      prob: 0.01
+    - id: ReagentSlimePhilterex
+      prob: 0.01
+    - id: ReagentSlimeLibidozenithizine
+      prob: 0.01
+    - id: ReagentSlimeIchor
+      prob: 0.01
+    - id: ReagentSlimeBleach
+      prob: 0.01
+    - id: ReagentSlimeSoap
+      prob: 0.01
+    - id: ReagentSlimeSpacelube
+      prob: 0.01
+    - id: ReagentSlimeBuzzachloricbees
+      prob: 0.01
+    - id: ReagentSlimeWehjuice
+      prob: 0.01
+    - id: ReagentCognizine
+      prob: 0.01
+    - id: ReagentSlimeOpporozidone
+      prob: 0.01
+    - id: ReagentSlimeNecrosol
+      prob: 0.01
+    - id: ReagentSlimeSpaceDrugs
+      prob: 0.01
+    - id: ReagentSlimeUnstableMutagen
+      prob: 0.01
+    - id: ReagentSlimeLead
+      prob: 0.01
+    - id: ReagentSlimechlorinetriflouride
+      prob: 0.01
+    - id: ReagentSlimePotassium
+      prob: 0.01
+    - id: ReagentSlimeLotophagoiOil
+      prob: 0.01
