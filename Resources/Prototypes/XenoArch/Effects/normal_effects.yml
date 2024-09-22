@@ -675,3 +675,14 @@
     maxSpawns: 1
     spawns:
     - id: TeslaEnergyBall
+
+# Floof - Added Effects
+
+- type: artifactEffect
+  id: EffectMiniBomb
+  targetDepth: 6
+  effectHint:
+  components:
+  - type: SpawnArtifact
+    spawns:
+    - id: 
