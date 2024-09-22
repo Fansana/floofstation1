@@ -363,3 +363,88 @@
       prob: 0.005
     - id: MobXenoNeutralRavager
       prob: 0.005
+      
+- type: entity
+  id: ArgocyteVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 12
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: BaseMobArgocyte
+      prob: 0.01
+    - id: MobArgocyteSlurva
+      prob: 0.005
+    - id: MobArgocyteBarrier
+      prob: 0.005
+    - id: MobArgocyteSkitter
+      prob: 0.005
+    - id: MobArgocyteSwiper
+      prob: 0.005
+    - id: MobArgocyteMolder
+      prob: 0.01
+    - id: MobArgocytePouncer
+      prob: 0.005
+    - id: MobArgocyteGlider
+      prob: 0.005
+    - id: MobArgocyteHarvester
+      prob: 0.005
+    - id: MobArgocyteCrawler
+      prob: 0.005
+    - id: MobArgocyteEnforcer
+      prob: 0.005
+    - id: MobArgocyteFounder
+      prob: 0.005
+    - id: MobArgocyteLeviathing
+      prob: 0.005
+
+- type: entity
+  id: MeatVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 12
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: BaseMobFlesh
+      prob: 0.01
+    - id: MobFleshJared
+      prob: 0.005
+    - id: MobFleshGolem
+      prob: 0.005
+    - id: MobFleshClamp
+      prob: 0.005
+    - id: MobFleshLover
+      prob: 0.005
+    - id: MobAbomination
+      prob: 0.005
+      
+- type: entity
+  id: TickVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 1
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobTick
+      prob: 0.01
