@@ -181,6 +181,9 @@
     - Sodium
     - Water
     - Sulfur
+    - Blood # Floof - Artifact tweaks  
+    - Cum # Floof - Artifact tweaks
+    - Pomelustine # Floof - Artifact tweaks
 
 - type: artifactEffect
   id: EffectCold
@@ -503,6 +506,8 @@
     - Desoxyephedrine
     - Pax
     - Siderlac
+    - Libidozenithizine # Floof - Artifact tweaks
+    - Philterex # Floof - Artifact tweaks
 
 - type: artifactEffect
   id: EffectEmp
@@ -658,7 +663,7 @@
 
 - type: artifactEffect
   id: EffectSingulo
-  targetDepth: 10
+  targetDepth: 8 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact
@@ -668,7 +673,7 @@
 
 - type: artifactEffect
   id: EffectTesla
-  targetDepth: 10
+  targetDepth: 8 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseStructureDynamic
   id: BaseXenoArtifact
   name: alien artifact
@@ -87,4 +87,13 @@
   - type: Artifact
     nodesMin: 9
     nodesMax: 13
+
+- type: entity # Floof - Omen artifact
+  parent: BaseXenoArtifact
+  id: OmenXenoArtifact
+  suffix: Omen
+  components:
+  - type: Artifact
+    nodesMin: 13
+    nodesMax: 18
 
