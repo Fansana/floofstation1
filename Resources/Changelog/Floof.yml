@@ -1017,3 +1017,14 @@ Entries:
   id: 137
   time: '2024-09-23T17:49:01.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/203
+- author: Memeji
+  changes:
+    - type: Add
+      message: '"Omen" Artifacts'
+    - type: Add
+      message: Lewd reagents to the reagent spawning effects.
+    - type: Tweak
+      message: Reduced depth at which extremely dangerous effects can occur.
+  id: 138
+  time: '2024-09-23T21:04:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/204
