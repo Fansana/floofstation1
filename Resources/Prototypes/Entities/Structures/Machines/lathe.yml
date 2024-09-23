@@ -81,7 +81,6 @@
     idleState: icon
     runningState: building
     staticRecipes:
-      - ShockCollar # FloofStation
       - Wirecutter
       - Igniter
       - Signaller
@@ -161,6 +160,7 @@
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
+      - ShockCollar # FloofStation
       - CustomDrinkJug # FloofStation
       - LeashBasic # FloofStation
       - ShortLeash # FloofStation
@@ -359,8 +359,10 @@
       - AnimalTranslator
       - MofficTranslatorImplanter
       - MofficTranslator
-      - ArachnicTranslatorImplanter
-      - ArachnicTranslator
+      - ArachnicTranslatorImplanter # Floofstation
+      - ArachnicTranslator # Floofstation
+      - RCDAmmo #DeltaV
+      - RCD #EE
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -632,8 +634,6 @@
     - HamtrRLeg
     - VimHarness
   # Begin Nyano additions
-    - ClothingOuterHardsuitJuggernautReverseEngineered
-    - ClothingOuterHardsuitSyndieReverseEngineered
     - JetpackBlue
     - JetpackMini
   # End Nyano additions

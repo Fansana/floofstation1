@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: RandomBoard
   name: random board spawner
   parent: MarkerBase
@@ -27,10 +27,11 @@
     - WeaponCapacitorRechargerCircuitboard # Delta V - Add additional boards
     - StationMapCircuitboard # Delta V - Add additional boards
     - DeepFryerMachineCircuitboard # Delta V - Add additional boards
-    chance: 0.95
+    - ResearchAndDevelopmentServerMachineCircuitboard # Floof - Increase chance for R&D Server Boards
+    chance: 0.9
     rarePrototypes:
     - CommsComputerCircuitboard
-    #- ShuttleConsoleCircuitboard # Delta V - Remove shuttle boards
+    - ShuttleConsoleCircuitboard # Floof - Added Shuttle boards back
     - ComputerMassMediaCircuitboard
     - AutolatheMachineCircuitboard
     - ProtolatheMachineCircuitboard
@@ -38,7 +39,6 @@
     - PortableGeneratorSuperPacmanMachineCircuitboard # Delta V - Add additional boards
     - PortableGeneratorJrPacmanMachineCircuitboard # Delta V - Add additional boards
     - MedicalTechFabCircuitboard # Delta V - Add additional boards
-    - ResearchAndDevelopmentServerMachineCircuitboard # Delta V - Add additional boards
     - UniformPrinterMachineCircuitboard # Delta V - Add additional boards
     - ArtifactAnalyzerMachineCircuitboard # Delta V - Add additional boards
-    rareChance: 0.05
+    rareChance: 0.1
