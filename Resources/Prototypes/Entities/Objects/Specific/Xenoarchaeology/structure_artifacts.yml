@@ -88,7 +88,7 @@
     nodesMin: 9
     nodesMax: 13
 
-- type: entity
+- type: entity # Floof - Omen artifact
   parent: BaseXenoArtifact
   id: OmenXenoArtifact
   suffix: Omen

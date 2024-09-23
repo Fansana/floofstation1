@@ -663,7 +663,7 @@
 
 - type: artifactEffect
   id: EffectSingulo
-  targetDepth: 8
+  targetDepth: 8 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact
@@ -673,32 +673,10 @@
 
 - type: artifactEffect
   id: EffectTesla
-  targetDepth: 8
+  targetDepth: 8 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact
     maxSpawns: 1
     spawns:
     - id: TeslaEnergyBall
-
-# Floof - Added Effects
-
-- type: artifactEffect
-  id: EffectMiniBomb
-  targetDepth: 6
-  effectHint:
-  components:
-  - type: SpawnArtifact
-    maxSpawns: 1
-    spawns:
-    - id: TrainingBomb
-
-- type: artifactEffect
-  id: EffectNukeActivate
-  targetDepth: 8
-  effectHint:
-  components:
-  - type: SpawnArtifact
-    maxSpawns: 1
-    spawns:
-    - id: TrainingBomb

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: RandomArtifactSpawner
   name: random artifact spawner
   parent: MarkerBase
@@ -18,9 +18,11 @@
         - ComplexXenoArtifact
         - ComplexXenoArtifact
         - ComplexXenoArtifact
+        - OmenXenoArtifactItem # Floof - Artifacts
         - SimpleXenoArtifactItem
         - MediumXenoArtifactItem
         - ComplexXenoArtifactItem
+        - OmenXenoArtifactItem  # Floof - Artifacts
       chance: 1
 
 - type: entity
