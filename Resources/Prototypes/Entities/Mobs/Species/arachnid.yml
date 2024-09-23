@@ -68,10 +68,10 @@
     speechSounds: Arachnid
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
-    - Arachnic 
+    - TauCetiBasic
+    - Arachnic
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Arachnic
   - type: Vocal
     sounds:
