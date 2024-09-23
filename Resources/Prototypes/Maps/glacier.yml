@@ -21,6 +21,7 @@
         overflowJobs:
           - Passenger
         availableJobs:
+          Passenger: [ -1, -1 ]
           Captain: [ 1, 1 ]
         #service
           HeadOfPersonnel: [ 1, 1 ]
@@ -34,7 +35,6 @@
           ServiceWorker: [ 2, 3 ]
           Janitor: [ 2, 2 ]
           Mime: [ 1, 2 ]
-          Passenger: [ -1, -1 ]
         #engineering
           ChiefEngineer: [ 1, 1 ]
           AtmosphericTechnician: [ 1, 2 ]
@@ -75,4 +75,4 @@
           MailCarrier: [ 2, 3 ]
           SalvageSpecialist: [ 2, 3 ]
           CargoTechnician: [ 2, 3 ]
-        
+

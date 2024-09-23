@@ -1,7 +1,7 @@
 # General security
 - type: loadout
   id: LoadoutClothingHandsSecurityWarmers
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 2
   exclusive: true
   items:
@@ -17,7 +17,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksSecurity
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 2
   exclusive: true
   items:
@@ -38,7 +38,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformSecurityThong
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 2
   exclusive: true
   items:
@@ -52,10 +52,23 @@
     - Detective
     - HeadOfSecurity
 
+- type: loadout
+  id: LoadoutSecurityNeckCollar
+  category: JobsSecurity
+  cost: 1
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - SecurityOfficer
+    - Warden
+    - HeadOfSecurity
+  items:
+  - ClothingNeckCollarSec
+
 # Detective
 - type: loadout
   id: LoadoutClothingHandsDetectiveWarmers
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 1
   exclusive: true
   items:
@@ -67,7 +80,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksDetective
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 1
   exclusive: true
   items:
@@ -84,7 +97,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformDetectiveThong
-  category: JobsAUncategorized
+  category: JobsSecurity
   cost: 1
   exclusive: true
   items:
@@ -93,16 +106,3 @@
   - !type:CharacterJobRequirement
     jobs:
     - Detective
-
-- type: loadout
-  id: LoadoutSecurityNeckCollar
-  category: JobsAUncategorized
-  cost: 1
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - SecurityOfficer
-    - Warden
-    - HeadOfSecurity
-  items:
-  - ClothingNeckCollarSec
