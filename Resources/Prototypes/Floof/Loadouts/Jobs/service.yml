@@ -1,7 +1,7 @@
 #General Service
 - type: loadout
   id: LoadoutClothingHandsServiceWarmers
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -18,7 +18,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksService
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -40,7 +40,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformServiceThong
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -57,7 +57,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformServiceUni
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -75,7 +75,7 @@
 #Bartender
 - type: loadout
   id: LoadoutClothingHandsBartenderWarmers
-  category: JobsAUncategorized
+  category: JobsServiceBartender
   cost: 1
   exclusive: true
   items:
@@ -87,7 +87,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksBartender
-  category: JobsAUncategorized
+  category: JobsServiceBartender
   cost: 1
   exclusive: true
   items:
@@ -104,7 +104,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformBartenderThong
-  category: JobsAUncategorized
+  category: JobsServiceBartender
   cost: 1
   exclusive: true
   items:
@@ -114,10 +114,34 @@
     jobs:
     - Bartender
 
+- type: loadout
+  id: LoadoutServiceBartenderBunnyEars
+  category: JobsServiceBartender
+  cost: 2
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - ClothingHeadHatBunny
+
+- type: loadout
+  id: LoadoutServiceBartenderBunnySuit
+  category: JobsServiceBartender
+  cost: 2
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - ClothingCostumeBunnySuit
+
 #Chef
 - type: loadout
   id: LoadoutClothingHandsChefWarmers
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 1
   exclusive: true
   items:
@@ -129,7 +153,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksChef
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 1
   exclusive: true
   items:
@@ -146,7 +170,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformChefThong
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 1
   exclusive: true
   items:
@@ -159,7 +183,7 @@
 #Musician
 - type: loadout
   id: LoadoutClothingHandsMusicianWarmers
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -171,7 +195,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksMusician
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -188,7 +212,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformMusicianThong
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -200,7 +224,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformMusicKingBlack
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -212,7 +236,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformMusicKing
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -225,7 +249,7 @@
 #Janitorial
 - type: loadout
   id: LoadoutClothingHandsJanitorWarmers
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -237,7 +261,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksJanitor
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -254,7 +278,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformJanitorThong
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -272,7 +296,7 @@
 
 - type: loadout
   id: LoadoutClothingHandsStripeWhiteWarmers
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -284,7 +308,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksStripedWhite
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
@@ -301,7 +325,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformStripedThongWhite
-  category: JobsAUncategorized
+  category: JobsServiceUncategorized
   cost: 2
   exclusive: true
   items:
