@@ -996,3 +996,10 @@ Entries:
   id: 134
   time: '2024-09-23T02:22:08.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/201
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Clarified where IPCs should go for repairs in their guidebook.
+  id: 135
+  time: '2024-09-23T02:26:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/199
