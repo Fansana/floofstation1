@@ -18,11 +18,11 @@
         - ComplexXenoArtifact
         - ComplexXenoArtifact
         - ComplexXenoArtifact
-        - OmenXenoArtifactItem # Floof - Artifacts
+        - OmenXenoArtifact # Floof - Artifacts
         - SimpleXenoArtifactItem
         - MediumXenoArtifactItem
         - ComplexXenoArtifactItem
-        - OmenXenoArtifactItem  # Floof - Artifacts
+        #- OmenXenoArtifactItem  # Floof - Artifacts
       chance: 1
 
 - type: entity

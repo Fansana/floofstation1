@@ -94,14 +94,14 @@
     nodesMin: 9
     nodesMax: 13
 
-- type: entity # Floof - Omen artifact
-  parent: BaseXenoArtifactItem
-  id: OmenXenoArtifactItem
-  suffix: Omen
-  components:
-  - type: Artifact
-    nodesMin: 13
-    nodesMax: 18
+# - type: entity # Floof - Omen artifact
+#   parent: BaseXenoArtifactItem
+#   id: OmenXenoArtifactItem
+#   suffix: Omen
+#   components:
+#   - type: Artifact
+#     nodesMin: 13
+#     nodesMax: 18
 
 # this exists for crafting item artifacts so that the final result can be simple, medium, or complex.
 - type: entity
