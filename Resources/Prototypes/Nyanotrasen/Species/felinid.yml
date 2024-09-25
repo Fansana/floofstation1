@@ -6,7 +6,7 @@
   sprites: MobHumanSprites
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
-  skinColoration: HumanToned
+  skinColoration: Hues #FloofStation copied from DeltaV
   minHeight: 0.65
   defaultHeight: 0.8
   maxHeight: 1.1
