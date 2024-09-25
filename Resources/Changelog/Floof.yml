@@ -1049,3 +1049,10 @@ Entries:
   id: 141
   time: '2024-09-25T22:17:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/207
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: The NEIL announcer can once again appear in a shift.
+  id: 142
+  time: '2024-09-25T22:19:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/209
