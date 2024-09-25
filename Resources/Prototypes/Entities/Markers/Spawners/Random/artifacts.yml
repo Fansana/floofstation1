@@ -22,7 +22,7 @@
         - SimpleXenoArtifactItem
         - MediumXenoArtifactItem
         - ComplexXenoArtifactItem
-        - OmenXenoArtifactItem  # Floof - Artifacts
+        #- OmenXenoArtifactItem  # Floof - Artifacts
       chance: 1
 
 - type: entity
