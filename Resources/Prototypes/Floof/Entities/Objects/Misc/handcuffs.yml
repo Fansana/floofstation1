@@ -1,0 +1,12 @@
+- type: entity
+  parent: Handcuffs
+  id: HandcuffsFuzzy
+  name: fuzzy handcuffs
+  description: Used to detain naughty people. Covered in luxuriously comfortable faux-fur and definitely not security-grade. 
+  components:
+  - type: Handcuff
+    cuffedRSI: Floof/Objects/Misc/fuzzy_handcuffs.rsi
+    breakoutTime: 5 # 1/3 as long as regular handcuffs
+  - type: Sprite
+    sprite: Floof/Objects/Misc/fuzzy_handcuffs.rsi
+    state: icon
