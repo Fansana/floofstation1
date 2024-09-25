@@ -28,7 +28,14 @@
 - type: entity
   parent: ClothingMaskGasBase # FLOOF: Change parent
   id: ClothingMaskGas
-  components:
+  components: # FLOOF: Remove most components, move them to ClothingMaskGasBase
+  # - type: Sprite
+  #   sprite: Clothing/Mask/gas.rsi
+  # - type: Clothing
+  #   sprite: Clothing/Mask/gas.rsi
+  # - type: BreathMask
+  # - type: IngestionBlocker
+  # - type: IdentityBlocker
   - type: Tag # FLOOF: Add MaskGasIngredient tag
     tags:
     - HamsterWearable
