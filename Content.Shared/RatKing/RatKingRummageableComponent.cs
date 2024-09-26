@@ -29,8 +29,7 @@ public sealed partial class RatKingRummageableComponent : Component
     /// <summary>
     /// DeltaV: Minimum time between rummage attempts
     /// </summary>
-    [DataField("rummageCooldown"), ViewVariables(VVAccess.ReadWrite)]
-    [AutoNetworkedField]
+    [DataField, AutoNetworkedField]
     public TimeSpan RummageCooldown = TimeSpan.FromMinutes(5);
 
     /// <summary>
