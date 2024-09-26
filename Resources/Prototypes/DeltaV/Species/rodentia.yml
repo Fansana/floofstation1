@@ -12,7 +12,13 @@
   femaleFirstNames: names_rodentia_female
   lastNames: names_rodentia_last
   naming: LastFirst
-
+  minHeight: 0.65
+  defaultHeight: 0.8
+  maxHeight: 1.1
+  minWidth: 0.6
+  defaultWidth: 0.8
+  maxWidth: 1.15
+  
 - type: speciesBaseSprites
   id: MobRodentiaSprites
   sprites:
