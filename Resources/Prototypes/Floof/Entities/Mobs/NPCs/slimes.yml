@@ -67,23 +67,6 @@
         color: "#c90084"
 
 - type: entity
-  id: ReagentSlimeSoap
-  parent: ReagentSlime
-  suffix: Soap
-  components:
-  - type: Bloodstream
-    bloodReagent: SoapReagent
-  - type: PointLight
-    color: "#c8dfc9"
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/elemental.rsi
-    layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
-        color: "#c8dfc9"
-
-- type: entity
   id: ReagentSlimeOpporozidone
   parent: ReagentSlime
   suffix: Opporozidone
