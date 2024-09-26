@@ -77,6 +77,7 @@
         state: "creampie_rodentia"
         visible: false
   - type: MeleeWeapon
+    hidden: true
     soundHit:
       path: /Audio/Weapons/pierce.ogg
     angle: 30
@@ -85,6 +86,7 @@
       types:
         Blunt: 2
         Slash: 3
+  - type: Perishable
   - type: Damageable
     damageModifierSet: Rodentia
   - type: Butcherable
@@ -109,8 +111,16 @@
     mouthProto: CheekStorage
     openStorageAction: ActionOpenMouthStorage
     spitDamageThreshold: 3
-  - type: CrawlUnderObjects
-    actionProto: ActionToggleSneakMode
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  - type: ConsumeDelayModifier
+    foodDelayMultiplier: 0.5
+    drinkDelayMultiplier: 0.5
+  - type: Flammable
+    fireStackIncreaseMultiplier: 1.25
 
 - type: entity
   save: false
