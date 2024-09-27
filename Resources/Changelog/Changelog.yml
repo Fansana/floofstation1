@@ -6576,3 +6576,99 @@ Entries:
   id: 6381
   time: '2024-09-20T21:47:16.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/940
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: Part Upgrading has returned!
+  id: 6382
+  time: '2024-09-21T22:46:49.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/917
+- author: Spatison
+  changes:
+    - type: Add
+      message: Added discounts in uplink / Добавлены скидки в аплинк
+  id: 6383
+  time: '2024-09-21T22:46:59.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/930
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Healing Word has been added as a new Psionic Power. When cast on another
+        person, it heals a small amount of every damage type(scaling with
+        Casting Stats), while also reducing rot timers. Healing Word has a very
+        short cooldown, and a fairly low Glimmer cost.
+    - type: Add
+      message: >-
+        Breath of Life has been added as a new extremely rare Psionic Power.
+        When cast on another person, it heals a large amount of damage(scaling
+        with Casting Stats), while also substantially reducing rot timers.
+        Additionally, it will revive the target if it is possible to do so.
+        Breath of Life has an incredibly long cooldown, a long interuptable cast
+        time, and an extraordinarily high glimmer cost(A typical Psion will
+        spike glimmer by more than 50 points when casting it).
+    - type: Add
+      message: The Chaplain now starts with the Healing Word power.
+  id: 6384
+  time: '2024-09-21T22:50:01.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/942
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Bottles, Drink Glasses, Plates, and all liquid containers are now struck
+        by bullets(and most likely destroyed in the process). We hope that this
+        will offer both a small tactical advantage/disadvantage, as well as
+        contribute to making gunfights around the bar more "Cinematic".
+    - type: Add
+      message: >-
+        Chairs are now hit by projectiles if a shooter clicks on them, in
+        addition to Tables.
+  id: 6385
+  time: '2024-09-21T23:22:43.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/943
+- author: VMSolidus
+  changes:
+    - type: Fix
+      message: >-
+        Fixed a bug where Breath of Life and Healing Word would set living
+        people to crit, which would knock them down.
+    - type: Fix
+      message: >-
+        Fixed a bug where Breath of Life could revive people who were rotten(It
+        will still heal them and reduce the rot timer as intended, but will not
+        revive unless said rot timer reduction brings them below the 10 minute
+        threshold).
+    - type: Add
+      message: >-
+        The Do-After bar for Breath of Life and Healing Word is now hidden if
+        glimmer is low enough. The threshold for which scales with your
+        Dampening stat. More Dampening = stealthier casting. 
+  id: 6386
+  time: '2024-09-24T00:56:34.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/949
+- author: Mocho
+  changes:
+    - type: Add
+      message: >-
+        Added a lot of recipes to the quick construction menus. Give it a shot
+        by pressing Z with different construction materials in your hand!
+  id: 6387
+  time: '2024-09-24T00:56:45.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/945
+- author: VMSolidus
+  changes:
+    - type: Fix
+      message: >-
+        IPC now weigh 71kg by default instead of 5kg. Seriously who the fuck
+        made the BeepBoops out of feathers!?!
+  id: 6388
+  time: '2024-09-25T05:09:06.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/959
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added new neutral xenos, events, and reagent slimes
+  id: 6389
+  time: '2024-09-26T15:06:54.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/956
