@@ -61,7 +61,7 @@
           - /Maps/Shuttles/trading_outpost.yml
         mining:
           paths:
-          - /Maps/Shuttles/mining.yml
+          - /Maps/Floof/Shuttles/mining.yml # FloofStation
         # Spawn last
         ruins:
           hide: true
