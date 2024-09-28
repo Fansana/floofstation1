@@ -1,0 +1,10 @@
+- type: loadout
+  id: LoadoutClothingUniformBlackTurtleneck
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformBlackTurtleneck
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilianDelta
