@@ -1,0 +1,49 @@
+- type: body
+  name: species-name-anthromorph
+  id: Anthromorph
+  root: torso
+  slots:
+    head:
+      part: HeadAnthromorph
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoAnthromorph
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganAnimalStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmAnthromorph
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmAnthromorph
+      connections:
+      - left hand
+    right hand:
+      part: RightHandAnthromorph
+    left hand:
+      part: LeftHandAnthromorph
+    right leg:
+      part: RightLegAnthromorph
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegAnthromorph
+      connections:
+      - left foot
+    right foot:
+      part: RightFootAnthromorph
+    left foot:
+      part: LeftFootAnthromorph

@@ -1,0 +1,429 @@
+# ANTHROMORPH MARKINGS
+
+# Ears
+
+# Snouts
+- type: marking
+  id: AnthroSnoutBird
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bird_beak
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bird_detail
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bird_top
+
+- type: marking
+  id: AnthroSnoutBigBeak
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bigbeak
+
+- type: marking
+  id: AnthroSnoutBigBeakShort
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bigbeak_short
+
+- type: marking
+  id: AnthroSnoutSlimBeak
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: slimbeak
+
+- type: marking
+  id: AnthroSnoutSlimBeakShort
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: slimbeak_short
+
+- type: marking
+  id: AnthroSnoutSlimBeakAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: slimbeak_alt
+
+- type: marking
+  id: AnthroSnoutHookBeak
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: hookbeak
+
+- type: marking
+  id: AnthroSnoutHookBeakBig
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: hookbeak_big
+
+- type: marking
+  id: AnthroSnoutBug
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bug_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bug_eyes
+
+- type: marking
+  id: AnthroSnoutElephant
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: elephant_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: elephant_horns
+
+- type: marking
+  id: AnthroSnoutHusky
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: husky_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: husky_inner
+
+- type: marking
+  id: AnthroSnoutRhino
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: rhino_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: rhino_inner
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: rhino_nose
+
+- type: marking
+  id: AnthroSnoutBovine
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bovine_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bovine_detail
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: bovine_nose
+
+- type: marking
+  id: AnthroSnoutRodent
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: rodent
+
+- type: marking
+  id: AnthroSnoutMammalLong
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: lcanid
+
+- type: marking
+  id: AnthroSnoutMammalLongAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: lcanidalt
+
+- type: marking
+  id: AnthroSnoutMammalLongStripe
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: lcanidstripe_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: lcanidstripe_inner
+
+- type: marking
+  id: AnthroSnoutMammalShort
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: scanid_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: scanid_inner
+
+- type: marking
+  id: AnthroSnoutMammalShortAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: scanidalt2
+
+- type: marking
+  id: AnthroSnoutMammalShortAlt2
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: scanidalt3_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: scanidalt3_inner
+
+- type: marking
+  id: AnthroSnoutMammalThick
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wolf_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wolf_nose
+
+- type: marking
+  id: AnthroSnoutMammalThickAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wolfalt
+
+- type: marking
+  id: AnthroSnoutTajaran
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: tajaran
+
+- type: marking
+  id: AnthroSnoutLeporid
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: leporid_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: leporid_nose
+
+- type: marking
+  id: AnthroSnoutOtie
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: otie_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: otie_inner
+
+- type: marking
+  id: AnthroSnoutOtieSmile
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: otiesmile_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: otiesmile_inner
+
+- type: marking
+  id: AnthroSnoutScolipede
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: pede_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: pede_inner
+
+- type: marking
+  id: AnthroSnoutSergal
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: sergal_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: sergal_inner
+
+- type: marking
+  id: AnthroSnoutShark
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: shark_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: shark_inner
+
+- type: marking
+  id: AnthroSnoutToucan
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: toucan_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: toucan_inner
+
+- type: marking
+  id: AnthroSnoutWah
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wah_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wah_detail
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wah_inner
+
+- type: marking
+  id: AnthroSnoutWahAlt
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wahalt_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: wahalt_detail
+
+- type: marking
+  id: AnthroSnoutSkulldog
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: skulldog_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: skulldog_detail
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: skulldog_skull
+
+- type: marking
+  id: AnthroSnoutAnabus
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: anabus_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: anabus_inner
+
+- type: marking
+  id: AnthroSnoutPanda
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: panda_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: panda_inner
+
+- type: marking
+  id: AnthroSnoutJackal
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: jackal_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: jackal_inner
+
+- type: marking
+  id: AnthroSnoutHyena
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: hyena_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: hyena_inner
+
+- type: marking
+  id: AnthroSnoutHorse
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: horse_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: horse_nose
+
+- type: marking
+  id: AnthroSnoutZebra
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: zebra_snout
+    - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
+      state: zebra_inner
+
+# Head
+
+# Head Side (Cheeks)
+
+# Chest
+
+# Arms
+
+# Legs
+
+# Tails
