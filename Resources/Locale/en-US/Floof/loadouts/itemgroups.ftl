@@ -6,3 +6,5 @@ character-item-group-LoadoutNeck2 = Civilian Neckwear
 character-item-group-LoadoutOuter2 = Civilian Outerwear
 character-item-group-LoadoutShoes2 = Civilian Shoes
 character-item-group-LoadoutUniformsCivilian2 = Civilian Uniforms
+character-item-group-LoadoutFun = Fun
+character-item-group-LoadoutLewd = Lewd

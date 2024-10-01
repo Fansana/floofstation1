@@ -53,3 +53,14 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutNeck2
+
+- type: loadout
+  id: LoadoutItemsNeckShockCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ShockCollar
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck2
