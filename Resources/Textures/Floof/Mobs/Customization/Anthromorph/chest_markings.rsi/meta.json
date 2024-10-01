@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/Rotwood-Vale/Ratwood-Keep/blob/cf7c846344f0b3996a5ab62e55d8131d65f1ea8c/icons/mob/body_markings/chest_markings.dmi, modified by papelinn",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "backspots_f",
+      "directions": 4
+    },
+    {
+      "name": "backspots",
+      "directions": 4
+    },
+    {
+      "name": "bat_f",
+      "directions": 4
+    },
+    {
+      "name": "bat",
+      "directions": 4
+    },
+    {
+      "name": "belly_f",
+      "directions": 4
+    },
+    {
+      "name": "belly",
+      "directions": 4
+    },
+    {
+      "name": "bellyslim_f",
+      "directions": 4
+    },
+    {
+      "name": "bellyslim",
+      "directions": 4
+    },
+    {
+      "name": "butt_f",
+      "directions": 4
+    },
+    {
+      "name": "butt",
+      "directions": 4
+    },
+    {
+      "name": "front_f",
+      "directions": 4
+    },
+    {
+      "name": "front",
+      "directions": 4
+    },
+    {
+      "name": "tie_f",
+      "directions": 4
+    },
+    {
+      "name": "tie",
+      "directions": 4
+    },
+    {
+      "name": "tiesmall_f",
+      "directions": 4
+    },
+    {
+      "name": "tiesmall",
+      "directions": 4
+    },
+    {
+      "name": "wolf_f",
+      "directions": 4
+    },
+    {
+      "name": "wolf",
+      "directions": 4
+    }
+  ]
+}

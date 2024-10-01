@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/lpeapnni/CotM/blob/536c3ae06b3d64634c3083c1321c2ab911db38eb/icons/mob/body_markings/secondary_markings.dmi, modified by papelinn",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "floof_chest_f",
+      "directions": 4
+    },
+    {
+      "name": "floof_chest",
+      "directions": 4
+    },
+    {
+      "name": "floof_head",
+      "directions": 4
+    }
+  ]
+}

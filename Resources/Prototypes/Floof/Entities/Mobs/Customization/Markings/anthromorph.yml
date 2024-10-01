@@ -418,12 +418,671 @@
 
 # Head
 
+- type: marking
+  id: AnthroHeadFloof
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Anthromorph]
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
+      state: floof_head
+
 # Head Side (Cheeks)
 
 # Chest
 
+- type: marking
+  id: AnthroChestBackspots
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: backspots
+
+- type: marking
+  id: AnthroChestBackspotsF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: backspots_f
+
+- type: marking
+  id: AnthroChestBat
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: bat
+
+- type: marking
+  id: AnthroChestBatF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: bat_f
+
+- type: marking
+  id: AnthroChestBelly
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: belly
+
+- type: marking
+  id: AnthroChestBellyF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: belly_f
+
+- type: marking
+  id: AnthroChestBellySlim
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: bellyslim
+
+- type: marking
+  id: AnthroChestBellySlimF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: bellyslim_f
+
+- type: marking
+  id: AnthroChestButt
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: butt
+
+- type: marking
+  id: AnthroChestButtF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: butt_f
+
+- type: marking
+  id: AnthroChestFront
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: front
+
+- type: marking
+  id: AnthroChestFrontF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: front_f
+
+- type: marking
+  id: AnthroChestTie
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: tie
+
+- type: marking
+  id: AnthroChestTieF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: tie_f
+
+- type: marking
+  id: AnthroChestTieSmall
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: tiesmall
+
+- type: marking
+  id: AnthroChestTieSmallF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: tiesmall_f
+
+- type: marking
+  id: AnthroChestWolf
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: wolf
+
+- type: marking
+  id: AnthroChestWolfF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
+      state: wolf_f
+
+- type: marking
+  id: AnthroChestFloof
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
+      state: floof_chest
+
+- type: marking
+  id: AnthroChestFloofF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
+      state: floof_chest_f
+
+- type: marking
+  id: AnthroChestDTiger
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: dtiger_chest
+
+- type: marking
+  id: AnthroChestDTigerF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: dtiger_chest_f
+
+- type: marking
+  id: AnthroChestLTiger
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_chest
+
+- type: marking
+  id: AnthroChestLTigerF
+  markingCategory: Chest
+  bodyPart: Chest
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_chest_f
+
 # Arms
 
+- type: marking
+  id: AnthroArmLeftSockLonger
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_arm
+      
+- type: marking
+  id: AnthroArmLeftSockLongerF
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_arm_f
+
+- type: marking
+  id: AnthroArmRightSockLonger
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_arm
+      
+- type: marking
+  id: AnthroArmRightSockLongerF
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_arm_f
+
+
+- type: marking
+  id: AnthroArmLeftLTiger
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_l_arm
+      
+- type: marking
+  id: AnthroArmLeftLTigerF
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_l_arm_f
+
+- type: marking
+  id: AnthroArmRightLTiger
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_r_arm
+      
+- type: marking
+  id: AnthroArmRightLTigerF
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_r_arm_f
+
+# Hands
+
+- type: marking
+  id: AnthroHandLeftSock
+  markingCategory: LeftHand
+  bodyPart: LHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_hand
+      
+- type: marking
+  id: AnthroHandLeftSockF
+  markingCategory: LeftHand
+  bodyPart: LHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_hand_f
+
+- type: marking
+  id: AnthroHandRightSock
+  markingCategory: RightHand
+  bodyPart: RHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_hand
+      
+- type: marking
+  id: AnthroHandRightSockF
+  markingCategory: RightHand
+  bodyPart: RHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_hand_f
+
+
+- type: marking
+  id: AnthroHandLeftTips
+  markingCategory: LeftHand
+  bodyPart: LHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_l_hand
+      
+- type: marking
+  id: AnthroHandLeftTipsF
+  markingCategory: LeftHand
+  bodyPart: LHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_l_hand_f
+
+- type: marking
+  id: AnthroHandRightTips
+  markingCategory: RightHand
+  bodyPart: RHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_r_hand
+      
+- type: marking
+  id: AnthroHandRightTipsF
+  markingCategory: RightHand
+  bodyPart: RHand
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_r_hand_f
+
 # Legs
+
+- type: marking
+  id: AnthroLegLeftSock
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_leg
+      
+- type: marking
+  id: AnthroLegLeftSockF
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_leg_f
+
+- type: marking
+  id: AnthroLegRightSock
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_leg
+      
+- type: marking
+  id: AnthroLegRightSockF
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_leg_f
+
+
+- type: marking
+  id: AnthroLegLeftSockLonger
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_leg
+      
+- type: marking
+  id: AnthroLegLeftSockLongerF
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_leg_f
+
+- type: marking
+  id: AnthroLegRightSockLonger
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_leg
+      
+- type: marking
+  id: AnthroLegRightSockLongerF
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_leg_f
+
+
+- type: marking
+  id: AnthroLegLeftLTiger
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_l_leg
+      
+- type: marking
+  id: AnthroLegLeftLTigerF
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_l_leg_f
+
+- type: marking
+  id: AnthroLegRightLTiger
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_r_leg
+      
+- type: marking
+  id: AnthroLegRightLTigerF
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
+      state: ltiger_r_leg_f
+
+# Feet
+
+- type: marking
+  id: AnthroFootLeftSock
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_foot
+      
+- type: marking
+  id: AnthroFootLeftSockF
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_l_foot_f
+
+- type: marking
+  id: AnthroFootRightSock
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_foot
+      
+- type: marking
+  id: AnthroFootRightSockF
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: sock_r_foot_f
+
+
+- type: marking
+  id: AnthroFootLeftSockLonger
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_foot
+      
+- type: marking
+  id: AnthroFootLeftSockLongerF
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_l_foot_f
+
+- type: marking
+  id: AnthroFootRightSockLonger
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_foot
+      
+- type: marking
+  id: AnthroFootRightSockLongerF
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
+      state: socklonger_r_foot_f
+
+
+- type: marking
+  id: AnthroFootLeftTips
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_l_foot
+      
+- type: marking
+  id: AnthroFootLeftTipsF
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_l_foot_f
+
+- type: marking
+  id: AnthroFootRightTips
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Male
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_r_foot
+      
+- type: marking
+  id: AnthroFootRightTipsF
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Anthromorph]
+  sexRestriction: Female
+  sprites:
+    - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
+      state: tips_r_foot_f
 
 # Tails
