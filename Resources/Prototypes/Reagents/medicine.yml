@@ -494,12 +494,12 @@
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          max: 293.15
+          max: 288.15
         amount: 100000 # thermal energy, not temperature!
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          min: 293.15
+          min: 298.15
         amount: -10000
       - !type:PopupMessage
         type: Local
