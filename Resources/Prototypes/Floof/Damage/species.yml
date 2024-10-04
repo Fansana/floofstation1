@@ -1,0 +1,6 @@
+- type: damageModifierSet
+  id: Aquatic # Cold blooded, weak to electricity (water conducts electricity, right?)
+  coefficients:
+    Heat: 0.7
+    Cold: 1.3
+    Shock: 1.3

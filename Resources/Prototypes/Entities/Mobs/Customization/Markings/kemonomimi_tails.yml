@@ -2,7 +2,7 @@
   id: BunnyTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: bunnytail
@@ -11,7 +11,7 @@
   id: DobleFur
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: doblefurtailtone1
@@ -22,7 +22,7 @@
   id: FluffyTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: fluffytail
@@ -31,7 +31,7 @@
   id: FoxNineTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: foxninetailstone1
@@ -42,7 +42,7 @@
   id: FoxThreeTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: foxthreetailstone1
@@ -53,7 +53,7 @@
   id: HorseTailCulty
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: horsetailculty
@@ -62,7 +62,7 @@
   id: HorseTailLong
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: horsetaillong
@@ -71,7 +71,7 @@
   id: SharkTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: sharktail
@@ -80,7 +80,7 @@
   id: TasselTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: tasseltailtone1

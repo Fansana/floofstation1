@@ -2,7 +2,7 @@
   id: BullishHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: bullishhorns
@@ -11,7 +11,7 @@
   id: BunnyEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: bunnyearstone1
@@ -22,7 +22,7 @@
   id: FoxEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: foxears
@@ -31,7 +31,7 @@
   id: GoatHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Felinid, Anthromorph] # Floof - Anthromorphs
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: goathornstone1

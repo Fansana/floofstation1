@@ -1,13 +1,13 @@
 - type: entity
-  id: PartAnthromorph
+  id: PartAquatic
   parent: BaseItem
-  name: "furred body part"
+  name: "aquatic body part"
   abstract: true
   components:
   - type: Sprite
-    sprite: Floof/Mobs/Species/Anthromorph/parts.rsi
+    sprite: Floof/Mobs/Species/Aquatic/parts.rsi
   - type: Icon
-    sprite: Floof/Mobs/Species/Anthromorph/parts.rsi
+    sprite: Floof/Mobs/Species/Aquatic/parts.rsi
   - type: Damageable
     damageContainer: Biological
   - type: BodyPart
@@ -22,9 +22,9 @@
       - Trash
 
 - type: entity
-  id: TorsoAnthromorph
-  name: "furred torso"
-  parent: PartAnthromorph
+  id: TorsoAquatic
+  name: "aquatic torso"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "torso_m"
@@ -34,9 +34,9 @@
     partType: Torso
 
 - type: entity
-  id: HeadAnthromorph
-  name: "furred head"
-  parent: PartAnthromorph
+  id: HeadAquatic
+  name: "aquatic head"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "head_m"
@@ -54,9 +54,9 @@
       - Head
 
 - type: entity
-  id: LeftArmAnthromorph
-  name: "left furred arm"
-  parent: PartAnthromorph
+  id: LeftArmAquatic
+  name: "left aquatic arm"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "l_arm"
@@ -67,9 +67,9 @@
     symmetry: Left
 
 - type: entity
-  id: RightArmAnthromorph
-  name: "right furred arm"
-  parent: PartAnthromorph
+  id: RightArmAquatic
+  name: "right aquatic arm"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "r_arm"
@@ -80,9 +80,9 @@
     symmetry: Right
 
 - type: entity
-  id: LeftHandAnthromorph
-  name: "left furred hand"
-  parent: PartAnthromorph
+  id: LeftHandAquatic
+  name: "left aquatic hand"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "l_hand"
@@ -93,9 +93,9 @@
     symmetry: Left
 
 - type: entity
-  id: RightHandAnthromorph
-  name: "right furred hand"
-  parent: PartAnthromorph
+  id: RightHandAquatic
+  name: "right aquatic hand"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "r_hand"
@@ -106,9 +106,9 @@
     symmetry: Right
 
 - type: entity
-  id: LeftLegAnthromorph
-  name: "left furred leg"
-  parent: PartAnthromorph
+  id: LeftLegAquatic
+  name: "left aquatic leg"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "l_leg"
@@ -120,9 +120,9 @@
   - type: MovementBodyPart
 
 - type: entity
-  id: RightLegAnthromorph
-  name: "right furred leg"
-  parent: PartAnthromorph
+  id: RightLegAquatic
+  name: "right aquatic leg"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "r_leg"
@@ -134,9 +134,9 @@
   - type: MovementBodyPart
 
 - type: entity
-  id: LeftFootAnthromorph
-  name: "left furred foot"
-  parent: PartAnthromorph
+  id: LeftFootAquatic
+  name: "left aquatic foot"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "l_foot"
@@ -147,9 +147,9 @@
     symmetry: Left
 
 - type: entity
-  id: RightFootAnthromorph
-  name: "right furred foot"
-  parent: PartAnthromorph
+  id: RightFootAquatic
+  name: "right aquatic foot"
+  parent: PartAquatic
   components:
   - type: Sprite
     state: "r_foot"

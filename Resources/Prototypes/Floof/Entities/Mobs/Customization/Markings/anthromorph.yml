@@ -7,7 +7,7 @@
   id: AnthroSnoutBird
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: bird_beak
@@ -20,7 +20,7 @@
   id: AnthroSnoutBigBeak
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: bigbeak
@@ -29,7 +29,7 @@
   id: AnthroSnoutBigBeakShort
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: bigbeak_short
@@ -38,7 +38,7 @@
   id: AnthroSnoutSlimBeak
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: slimbeak
@@ -47,7 +47,7 @@
   id: AnthroSnoutSlimBeakShort
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: slimbeak_short
@@ -56,7 +56,7 @@
   id: AnthroSnoutSlimBeakAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: slimbeak_alt
@@ -65,7 +65,7 @@
   id: AnthroSnoutHookBeak
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: hookbeak
@@ -74,7 +74,7 @@
   id: AnthroSnoutHookBeakBig
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: hookbeak_big
@@ -83,7 +83,7 @@
   id: AnthroSnoutBug
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: bug_snout
@@ -94,7 +94,7 @@
   id: AnthroSnoutElephant
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: elephant_snout
@@ -105,7 +105,7 @@
   id: AnthroSnoutHusky
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: husky_snout
@@ -116,7 +116,7 @@
   id: AnthroSnoutRhino
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: rhino_snout
@@ -129,7 +129,7 @@
   id: AnthroSnoutBovine
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: bovine_snout
@@ -142,7 +142,7 @@
   id: AnthroSnoutRodent
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: rodent
@@ -151,7 +151,7 @@
   id: AnthroSnoutMammalLong
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: lcanid
@@ -160,7 +160,7 @@
   id: AnthroSnoutMammalLongAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: lcanidalt
@@ -169,7 +169,7 @@
   id: AnthroSnoutMammalLongStripe
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: lcanidstripe_snout
@@ -180,7 +180,7 @@
   id: AnthroSnoutMammalShort
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: scanid_snout
@@ -191,7 +191,7 @@
   id: AnthroSnoutMammalShortAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: scanidalt2
@@ -200,7 +200,7 @@
   id: AnthroSnoutMammalShortAlt2
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: scanidalt3_snout
@@ -211,7 +211,7 @@
   id: AnthroSnoutMammalThick
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: wolf_snout
@@ -222,7 +222,7 @@
   id: AnthroSnoutMammalThickAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: wolfalt
@@ -231,7 +231,7 @@
   id: AnthroSnoutTajaran
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: tajaran
@@ -240,7 +240,7 @@
   id: AnthroSnoutLeporid
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: leporid_snout
@@ -251,7 +251,7 @@
   id: AnthroSnoutOtie
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: otie_snout
@@ -262,7 +262,7 @@
   id: AnthroSnoutOtieSmile
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: otiesmile_snout
@@ -273,7 +273,7 @@
   id: AnthroSnoutScolipede
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: pede_snout
@@ -284,7 +284,7 @@
   id: AnthroSnoutSergal
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: sergal_snout
@@ -295,7 +295,7 @@
   id: AnthroSnoutShark
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: shark_snout
@@ -306,7 +306,7 @@
   id: AnthroSnoutToucan
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: toucan_snout
@@ -317,7 +317,7 @@
   id: AnthroSnoutWah
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: wah_snout
@@ -330,7 +330,7 @@
   id: AnthroSnoutWahAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: wahalt_snout
@@ -341,7 +341,7 @@
   id: AnthroSnoutSkulldog
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: skulldog_snout
@@ -354,7 +354,7 @@
   id: AnthroSnoutAnabus
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: anabus_snout
@@ -365,7 +365,7 @@
   id: AnthroSnoutPanda
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: panda_snout
@@ -376,7 +376,7 @@
   id: AnthroSnoutJackal
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: jackal_snout
@@ -387,7 +387,7 @@
   id: AnthroSnoutHyena
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: hyena_snout
@@ -398,7 +398,7 @@
   id: AnthroSnoutHorse
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: horse_snout
@@ -409,7 +409,7 @@
   id: AnthroSnoutZebra
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/head_markings.rsi
       state: zebra_snout
@@ -422,7 +422,7 @@
   id: AnthroHeadFloof
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
       state: floof_head
@@ -435,7 +435,7 @@
   id: AnthroChestBackspots
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -445,7 +445,7 @@
   id: AnthroChestBackspotsF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -455,7 +455,7 @@
   id: AnthroChestBat
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -465,7 +465,7 @@
   id: AnthroChestBatF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -475,7 +475,7 @@
   id: AnthroChestBelly
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -485,7 +485,7 @@
   id: AnthroChestBellyF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -495,7 +495,7 @@
   id: AnthroChestBellySlim
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -505,7 +505,7 @@
   id: AnthroChestBellySlimF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -515,7 +515,7 @@
   id: AnthroChestButt
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -525,7 +525,7 @@
   id: AnthroChestButtF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -535,7 +535,7 @@
   id: AnthroChestFront
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -545,7 +545,7 @@
   id: AnthroChestFrontF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -555,7 +555,7 @@
   id: AnthroChestTie
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -565,7 +565,7 @@
   id: AnthroChestTieF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -575,7 +575,7 @@
   id: AnthroChestTieSmall
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -585,7 +585,7 @@
   id: AnthroChestTieSmallF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -595,7 +595,7 @@
   id: AnthroChestWolf
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -605,7 +605,7 @@
   id: AnthroChestWolfF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/chest_markings.rsi
@@ -615,7 +615,7 @@
   id: AnthroChestFloof
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
@@ -625,7 +625,7 @@
   id: AnthroChestFloofF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/secondary_markings.rsi
@@ -635,7 +635,7 @@
   id: AnthroChestDTiger
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -645,7 +645,7 @@
   id: AnthroChestDTigerF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -655,7 +655,7 @@
   id: AnthroChestLTiger
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -665,7 +665,7 @@
   id: AnthroChestLTigerF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -677,7 +677,7 @@
   id: AnthroArmLeftSockLonger
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -687,7 +687,7 @@
   id: AnthroArmLeftSockLongerF
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -697,7 +697,7 @@
   id: AnthroArmRightSockLonger
   markingCategory: RightArm
   bodyPart: RArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -707,7 +707,7 @@
   id: AnthroArmRightSockLongerF
   markingCategory: RightArm
   bodyPart: RArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -718,7 +718,7 @@
   id: AnthroArmLeftLTiger
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -728,7 +728,7 @@
   id: AnthroArmLeftLTigerF
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -738,7 +738,7 @@
   id: AnthroArmRightLTiger
   markingCategory: RightArm
   bodyPart: RArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -748,7 +748,7 @@
   id: AnthroArmRightLTigerF
   markingCategory: RightArm
   bodyPart: RArm
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -760,7 +760,7 @@
   id: AnthroHandLeftSock
   markingCategory: LeftHand
   bodyPart: LHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -770,7 +770,7 @@
   id: AnthroHandLeftSockF
   markingCategory: LeftHand
   bodyPart: LHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -780,7 +780,7 @@
   id: AnthroHandRightSock
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -790,7 +790,7 @@
   id: AnthroHandRightSockF
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -801,7 +801,7 @@
   id: AnthroHandLeftTips
   markingCategory: LeftHand
   bodyPart: LHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -811,7 +811,7 @@
   id: AnthroHandLeftTipsF
   markingCategory: LeftHand
   bodyPart: LHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -821,7 +821,7 @@
   id: AnthroHandRightTips
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -831,7 +831,7 @@
   id: AnthroHandRightTipsF
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -843,7 +843,7 @@
   id: AnthroLegLeftSock
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -853,7 +853,7 @@
   id: AnthroLegLeftSockF
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -863,7 +863,7 @@
   id: AnthroLegRightSock
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -873,7 +873,7 @@
   id: AnthroLegRightSockF
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -884,7 +884,7 @@
   id: AnthroLegLeftSockLonger
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -894,7 +894,7 @@
   id: AnthroLegLeftSockLongerF
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -904,7 +904,7 @@
   id: AnthroLegRightSockLonger
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -914,7 +914,7 @@
   id: AnthroLegRightSockLongerF
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -925,7 +925,7 @@
   id: AnthroLegLeftLTiger
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -935,7 +935,7 @@
   id: AnthroLegLeftLTigerF
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -945,7 +945,7 @@
   id: AnthroLegRightLTiger
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -955,7 +955,7 @@
   id: AnthroLegRightLTigerF
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tiger_markings.rsi
@@ -967,7 +967,7 @@
   id: AnthroFootLeftSock
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -977,7 +977,7 @@
   id: AnthroFootLeftSockF
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -987,7 +987,7 @@
   id: AnthroFootRightSock
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -997,7 +997,7 @@
   id: AnthroFootRightSockF
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -1008,7 +1008,7 @@
   id: AnthroFootLeftSockLonger
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -1018,7 +1018,7 @@
   id: AnthroFootLeftSockLongerF
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -1028,7 +1028,7 @@
   id: AnthroFootRightSockLonger
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -1038,7 +1038,7 @@
   id: AnthroFootRightSockLongerF
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/sock_markings.rsi
@@ -1049,7 +1049,7 @@
   id: AnthroFootLeftTips
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -1059,7 +1059,7 @@
   id: AnthroFootLeftTipsF
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -1069,7 +1069,7 @@
   id: AnthroFootRightTips
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Male
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi
@@ -1079,7 +1079,7 @@
   id: AnthroFootRightTipsF
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Anthromorph]
+  speciesRestriction: [Anthromorph, Aquatic]
   sexRestriction: Female
   sprites:
     - sprite: Floof/Mobs/Customization/Anthromorph/tips_markings.rsi

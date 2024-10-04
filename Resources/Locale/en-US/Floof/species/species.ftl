@@ -1,3 +1,4 @@
 ## Species Names
 
-species-name-anthromorph = Anthromorph
+species-name-anthromorph = Furred Anthro
+species-name-aquatic = Aquatic Anthro
