@@ -355,23 +355,28 @@
       path: /Audio/Animals/lizard_happy.ogg
 
 - type: entity
-  id: CrateNTXenos
-  parent: CrateLivestock
-  name: friendly xenos crate
-  description: A crate containing 4 live xenos.
+  parent: CratePlastic
+  id: Cratexeno
+  name: Xeno Companion Crate
   components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/podfill.rsi
   - type: Sprite
     sprite: Structures/Storage/Crates/podfill.rsi
-    layers:
-    - state: open
-    - state: closed
+    
+- type: entity
+  id: CrateNTxenos
+  parent: Cratexeno
+  name: Xeno Companion Crate
+  description: Xeno Companion Crate
+  components:
   - type: StorageFill
     contents:
       - id: DehydratedFRouny
+      - id: DehydratedFPraetorian
       - id: DehydratedFRavager
       - id: DehydratedFDrone
-      - id: DehydratedFPraetorian
-
+            
 - type: entity
   id: Giftsxenofriends
   parent: BaseGameRule
@@ -388,7 +393,7 @@
     sender: cargo-gift-nt-lab
     dest: cargo-gift-trade-dest
     gifts:
-      CrateNTXenos: 1
+      CrateNTxenos: 1
 #
 #- type: entity
 #  id: neutralXenoVents
