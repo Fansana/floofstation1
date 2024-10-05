@@ -7,6 +7,10 @@
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/rouny.rsi
+    scale: 0.6, 0.6
   - type: PointLight
     radius: 2
     energy: 1
@@ -23,82 +27,94 @@
     understands:
     - Xeno
     - TauCetiBasic
-#
-#- type: entity
-#  name: Neutral Praetorian
-#  id: MobXenoNeutralPraetorian
-#  parent: MobXenoPraetorianNPC
-#  description: They mostly come at night. Mostly.
-#  components:
-#  - type: NpcFactionMember
-#    factions:
-#    - Passive
-#  - type: PointLight
-#    radius: 2
-#    energy: 1
-#    color: "#62B85E"
-#  - type: GhostRole
-#    name: ghost-role-information-friendlyxeno-name
-#    description: ghost-role-information-friendlyxeno-description
-#    rules: ghost-role-information-friendlyxeno-rules
-#  - type: GhostTakeoverAvailable
-#  - type: LanguageKnowledge
-#    speaks:
-#    - Xeno
-#    understands:
-#    - Xeno
-#    - TauCetiBasic
-#
-#- type: entity
-#  name: Neutral Drone
-#  id: MobXenoNeutralDrone
-#  parent: MobXenoDroneNPC
-#  description: They mostly come at night. Mostly.
-#  components:
-#  - type: NpcFactionMember
-#    factions:
-#    - Passive
-#  - type: PointLight
-#    radius: 2
-#    energy: 1
-#    color: "#8B5EB8"
-#  - type: GhostRole
-#    name: ghost-role-information-friendlyxeno-name
-#    description: ghost-role-information-friendlyxeno-description
-#    rules: ghost-role-information-friendlyxeno-rules
-#  - type: GhostTakeoverAvailable
-#  - type: LanguageKnowledge
-#    speaks:
-#    - Xeno
-#    understands:
-#    - Xeno
-#    - TauCetiBasic
-#
-#- type: entity
-#  name: Neutral Ravager
-#  id: MobXenoNeutralRavager
-#  parent: MobXenoRavagerNPC
-#  description: They mostly come at night. Mostly.
-#  components:
-#  - type: NpcFactionMember
-#    factions:
-#    - Passive
-#  - type: PointLight
-#    radius: 2
-#    energy: 1
-#    color: "#E3954D"
-#  - type: GhostRole
-#    name: ghost-role-information-friendlyxeno-name
-#    description: ghost-role-information-friendlyxeno-description
-#    rules: ghost-role-information-friendlyxeno-rules
-#  - type: GhostTakeoverAvailable
-#  - type: LanguageKnowledge
-#    speaks:
-#    - Xeno
-#    understands:
-#    - Xeno
-#    - TauCetiBasic
-#
+
+- type: entity
+  name: Neutral Praetorian
+  id: MobXenoNeutralPraetorian
+  parent: MobXenoPraetorianNPC
+  description: They mostly come at night. Mostly.
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/praetorian.rsi
+    scale: 0.8, 0.8
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#62B85E"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - TauCetiBasic
+
+- type: entity
+  name: Neutral Drone
+  id: MobXenoNeutralDrone
+  parent: MobXenoDroneNPC
+  description: They mostly come at night. Mostly.
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/drone.rsi
+    scale: 0.8, 0.8
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#8B5EB8"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - TauCetiBasic
+
+- type: entity
+  name: Neutral Ravager
+  id: MobXenoNeutralRavager
+  parent: MobXenoRavagerNPC
+  description: They mostly come at night. Mostly.
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/ravager.rsi
+    scale: 0.7, 0.7
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#E3954D"
+  - type: GhostRole
+    name: ghost-role-information-friendlyxeno-name
+    description: ghost-role-information-friendlyxeno-description
+    rules: ghost-role-information-friendlyxeno-rules
+  - type: GhostTakeoverAvailable
+  - type: LanguageKnowledge
+    speaks:
+    - Xeno
+    understands:
+    - Xeno
+    - TauCetiBasic
+
 - type: inventoryTemplate
   id: friendxeno
   slots:
@@ -138,7 +154,7 @@
       - Prying
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/rouny.rsi
+    sprite: Mobs/Aliens/FXS/rouny.rsi
     scale: 0.5, 0.5
   - type: GhostRole
   - type: GhostTakeoverAvailable
@@ -166,54 +182,54 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/lizard_happy.ogg
-#
-#- type: entity
-#  name: Patriach
-#  parent: MobXenoNeutralPraetorian
-#  id: MobXenoPatriarch
-#  description: A not entirely clearly friend-shaped Xeno.
-#  components:
-#  - type: NpcFactionMember
-#    factions:
-#    - PetsNT
-#  - type: Tool
-#    speed: 3
-#    qualities:
-#      - Prying
-#  - type: Sprite
-#    drawdepth: Mobs
-#    sprite: Mobs/Animals/patriarch.rsi
-#    layers:
-#    - map: ["enum.DamageStateVisualLayers.Base"]
-#      state: patriarch
-#  - type: DamageStateVisuals
-#    states:
-#      Alive:
-#        Base: patriarch
-#      Critical:
-#        Base: patriarch_crit
-#      Dead:
-#        Base: patriarch_dead
-#  - type: Inventory
-#    templateId: friendxeno
-#  - type: IdExaminable
-#  - type: InventorySlots
-#  - type: Strippable
-#  - type: UserInterface
-#    interfaces:
-#    - key: enum.StrippingUiKey.Key
-#      type: StrippableBoundUserInterface
-#  - type: Grammar
-#    attributes:
-#      proper: true
-#      gender: male
-#  - type: InteractionPopup
-#    successChance: 0.5
-#    interactSuccessString: petting-success-reptile
-#    interactFailureString: petting-failure-generic
-#    interactSuccessSpawn: EffectHearts
-#    interactSuccessSound:
-#      path: /Audio/Animals/lizard_happy.ogg
+
+- type: entity
+  name: Patriach
+  parent: MobXenoNeutralPraetorian
+  id: MobXenoPatriarch
+  description: A not entirely clearly friend-shaped Xeno.
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Animals/patriarch.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: patriarch
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: patriarch
+      Critical:
+        Base: patriarch_crit
+      Dead:
+        Base: patriarch_dead
+  - type: Inventory
+    templateId: friendxeno
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
 #
 #- type: entity
 #  name: FXES
@@ -282,61 +298,134 @@
 #    interactSuccessSpawn: EffectHearts
 #    interactSuccessSound:
 #      path: /Audio/Animals/lizard_happy.ogg
-#
-#- type: entity
-#  name: FXE Subject 7355
-#  parent: MobXenoNeutralRavager
-#  id: MobXenoSubjectTess
-#  description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
-#  components:
-#  - type: NpcFactionMember
-#    factions:
-#     - PetsNT
-#  - type: Tool
-#    speed: 3
-#    qualities:
-#      - Prying
-#  - type: Sprite
-#    drawdepth: Mobs
-#    sprite: Mobs/Animals/subject7355.rsi
-#    layers:
-#    - map: ["enum.DamageStateVisualLayers.Base"]
-#      state: subject7355
-#    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
-#      state: glow
-#      shader: unshaded
-#  - type: PointLight
-#    radius: 2
-#    energy: 1
-#    color: "#639fff"
-#  - type: DamageStateVisuals
-#    states:
-#      Alive:
-#        Base: subject7355
-#      Critical:
-#        Base: subject7355_crit
-#      Dead:
-#        Base: subject7355_dead
-#  - type: Inventory
-#    templateId: friendxeno
-#  - type: IdExaminable
-#  - type: InventorySlots
-#  - type: Strippable
-#  - type: UserInterface
-#    interfaces:
-#    - key: enum.StrippingUiKey.Key
-#      type: StrippableBoundUserInterface
-#  - type: Grammar
-#    attributes:
-#      proper: true
-#      gender: male
-#  - type: InteractionPopup
-#    successChance: 0.5
-#    interactSuccessString: petting-success-reptile
-#    interactFailureString: petting-failure-generic
-#    interactSuccessSpawn: EffectHearts
-#    interactSuccessSound:
-#      path: /Audio/Animals/lizard_happy.ogg
+
+- type: entity
+  name: FXE Subject 7355
+  parent: MobXenoNeutralRavager
+  id: MobXenoSubjectTess
+  description: An extremely oddly coloured xeno, with glowing stripes. An odd mutation.
+  components:
+  - type: NpcFactionMember
+    factions:
+     - PetsNT
+  - type: Tool
+    speed: 3
+    qualities:
+      - Prying
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Animals/subject7355.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: subject7355
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: glow
+      shader: unshaded
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#639fff"
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: subject7355
+      Critical:
+        Base: subject7355_crit
+      Dead:
+        Base: subject7355_dead
+  - type: Inventory
+    templateId: friendxeno
+  - type: IdExaminable
+  - type: InventorySlots
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+    - key: enum.StrippingUiKey.Key
+      type: StrippableBoundUserInterface
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+
+- type: entity
+  id: CrateNTXenos
+  parent: CrateLivestock
+  name: friendly xenos crate
+  description: A crate containing a single cat.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobCatCalico
+        prob: 0.5
+      - id: MobCatCaracal
+        prob: 0.5
+      - id: MobCatKitten
+        prob: 0.5
+      - id: MobBingus
+        prob: 0.5
+        amount: 4
+
+- type: entity
+  parent: CrateGeneric
+  id: CrateXeno
+  name: Xeno companion crate
+  components:
+  - type: EntityStorage
+    airtight: false
+  - type: Sprite
+    sprite: Structures/Storage/Crates/podfill.rsi
+    layers:
+    - state: open
+    - state: closed
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.29"
+        density: 135
+        mask:
+        - SmallMobMask #this is so they can go under plastic flaps
+        layer:
+        - LargeMobLayer
+  - type: Construction
+    graph: CrateLivestock
+    node: cratelivestock
+    containers:
+    - entity_storage
+  - type: StaticPrice
+    price: 125w
+
+
+- type: entity
+  id: Giftsxenofriends
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    startDelay: 10
+    reoccurrenceDelay: 120
+    duration: 120
+    earliestStart: 10
+  - type: CargoGiftsRule
+    description: cargo-gift-friendly-xenos
+    sender: cargo-gift-nt-lab
+    dest: cargo-gift-trade-dest
+    gifts:
+      FoodPizzaLarge: 1              # 16 pizzas
+      FoodBarSupply: 1
+      FoodSoftdrinks: 1
+      CrateVendingMachineRestockRobustSoftdrinks: 1
 #
 #- type: entity
 #  id: neutralXenoVents
@@ -360,45 +449,45 @@
 #      prob: 0.008
 #    - id: MobXenoNeutralRavager
 #      prob: 0.008
-#
-#- type: entity
-#  id: ArgocyteVents
-#  parent: BaseGameRule
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: true
-#    earliestStart: 20
-#    reoccurrenceDelay: 12
-#    minimumPlayers: 30
-#    weight: 6 # Really weak compared to other critters
-#    duration: 60
-#  - type: VentCrittersRule
-#    entries:
-#    - id: MobArgocyteSlurva
-#      prob: 0.003
-#    - id: MobArgocyteBarrier
-#      prob: 0.003
-#    - id: MobArgocyteSkitter
-#      prob: 0.003
-#    - id: MobArgocyteSwiper
-#      prob: 0.003
-#    - id: MobArgocyteMolder
-#      prob: 0.003
-#    - id: MobArgocytePouncer
-#      prob: 0.003
-#    - id: MobArgocyteGlider
-#      prob: 0.003
-#    - id: MobArgocyteHarvester
-#      prob: 0.003
-#    - id: MobArgocyteCrawler
-#      prob: 0.003
-#    - id: MobArgocyteEnforcer
-#      prob: 0.003
-#    - id: MobArgocyteFounder
-#      prob: 0.003
-#    - id: MobArgocyteLeviathing
-#      prob: 0.001
+
+- type: entity
+  id: ArgocyteVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 30
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobArgocyteSlurva
+      prob: 0.003
+    - id: MobArgocyteBarrier
+      prob: 0.001
+    - id: MobArgocyteSkitter
+      prob: 0.001
+    - id: MobArgocyteSwiper
+      prob: 0.001
+    - id: MobArgocyteMolder
+      prob: 0.001
+    - id: MobArgocytePouncer
+      prob: 0.001
+    - id: MobArgocyteGlider
+      prob: 0.001
+    - id: MobArgocyteHarvester
+      prob: 0.001
+    - id: MobArgocyteCrawler
+      prob: 0.001
+    - id: MobArgocyteEnforcer
+      prob: 0.001
+    - id: MobArgocyteFounder
+      prob: 0.001
+    - id: MobArgocyteLeviathing
+      prob: 0.0001
 #
 #- type: entity
 #  id: MeatVents
@@ -424,73 +513,73 @@
 #      prob: 0.005
 #    - id: MobAbomination
 #      prob: 0.005
-#
-#- type: entity
-#  id: TickVents
-#  parent: BaseGameRule
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: true
-#    earliestStart: 20
-#    reoccurrenceDelay: 12
-#    minimumPlayers: 1
-#    weight: 6 # Really weak compared to other critters
-#    duration: 60
-#  - type: VentCrittersRule
-#    entries:
-#    - id: MobTick
-#      prob: 0.01
-#
-#- type: entity
-#  id: CarpVents
-#  parent: BaseGameRule
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: true
-#    earliestStart: 20
-#    reoccurrenceDelay: 12
-#    minimumPlayers: 20
-#    weight: 6 # Really weak compared to other critters
-#    duration: 60
-#  - type: VentCrittersRule
-#    entries:
-#    - id: MobCarp
-#      prob: 0.01
-#    - id: MobCarpMagic
-#      prob: 0.01
-#    - id: MobCarpHolo
-#      prob: 0.008
-#    - id: MobCarpRainbow
-#      prob: 0.01
-#    - id: MobShark
-#      prob: 0.008
-#    - id: MobCarpDragon
-#      prob: 0.01
-#
-#- type: entity
-#  id: SpaceVents
-#  parent: BaseGameRule
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    startAnnouncement: true
-#    earliestStart: 20
-#    reoccurrenceDelay: 12
-#    minimumPlayers: 20
-#    weight: 6 # Really weak compared to other critters
-#    duration: 60
-#  - type: VentCrittersRule
-#    entries:
-#    - id: MobBearSpace
-#      prob: 0.01
-#    - id: MobKangarooSpace
-#      prob: 0.01
-#    - id: MobSpiderSpace
-#      prob: 0.01
-#    - id: MobCobraSpace
-#      prob: 0.01
+
+- type: entity
+  id: TickVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 1
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobTick
+      prob: 0.01
+
+- type: entity
+  id: CarpVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 20
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobCarp
+      prob: 0.01
+    - id: MobCarpMagic
+      prob: 0.01
+    - id: MobCarpHolo
+      prob: 0.003
+    - id: MobCarpRainbow
+      prob: 0.01
+    - id: MobShark
+      prob: 0.003
+    - id: MobCarpDragon
+      prob: 0.01
+
+- type: entity
+  id: SpaceVents
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 20
+    reoccurrenceDelay: 12
+    minimumPlayers: 20
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobBearSpace
+      prob: 0.01
+    - id: MobKangarooSpace
+      prob: 0.01
+    - id: MobSpiderSpace
+      prob: 0.01
+    - id: MobCobraSpace
+      prob: 0.01
 #
 #- type: entity
 #  id: LightVents
@@ -514,21 +603,366 @@
 #      prob: 0.01
 #    - id: MobLuminousEntity
 #      prob: 0.01
-#
-#- type: entity
-#  name: Friendly Xeno spawner
-#  id: friendlyxenoSpawner
-#  parent: MarkerBase
-#  components:
-#    - type: Sprite
-#      layers:
-#        - state: green
-#        - sprite: Mobs/Aliens/Xenos/drone.rsi
-#          state: sleeping
-#    - type: RandomSpawner
-#      prototypes:
-#        - MobXenoNeutralRouny
-#        - MobXenoNeutralPraetorian
-#        - MobXenoNeutralDrone
-#        - MobXenoNeutralRavager
-#      chance: 1
+
+- type: entity
+  name: Friendly Xeno spawner
+  id: friendlyxenoSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: Mobs/Aliens/Xenos/drone.rsi
+          state: sleeping
+    - type: RandomSpawner
+      prototypes:
+        - MobXenoNeutralRouny
+        - MobXenoNeutralPraetorian
+        - MobXenoNeutralDrone
+        - MobXenoNeutralRavager
+      chance: 1
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFRouny
+  name: blue rouny plush
+  description: An adorable stuffed toy that resembles a rouny with blue stripes.
+  components:
+  - type: Sprite
+    state: nrouny
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFDrone
+  name: blue drone plush
+  description: An adorable stuffed toy that resembles a drone with blue stripes.
+  components:
+  - type: Sprite
+    state: ndrone
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFPraetorian
+  name: blue Praetorian plush
+  description: An adorable stuffed toy that resembles a Praetorian with blue stripes.
+  components:
+  - type: Sprite
+    state: nPraetorian
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFRavager
+  name: blue ravager plush
+  description: An adorable stuffed toy that resembles a ravager with blue stripes.
+  components:
+  - type: Sprite
+    state: nravager
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+    
+- type: entity
+  parent: PlushieFRouny
+  id: DehydratedFRouny
+  name: dehydrated friendly rouny
+  description: Looks like a plush toy rouny with blue stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      plushie:
+        maxVol: 11 # needs room for water
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: RefillableSolution
+    solution: plushie
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddToSolutionReaction
+        solution: plushie
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoNeutralRouny
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 15
+        mask:
+        - ItemMask
+      rehydrate:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        hard: false
+        layer:
+        - LowImpassable
+  # pet fish before rehydrating and he will be nice to you
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      path: /Audio/Effects/bite.ogg
+  - type: Tag
+    tags: [] 
+
+- type: entity
+  parent: PlushieFRavager
+  id: DehydratedFRavager
+  name: dehydrated friendly ravager
+  description: Looks like a plush toy ravager with blue stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      plushie:
+        maxVol: 11 # needs room for water
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: RefillableSolution
+    solution: plushie
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddToSolutionReaction
+        solution: plushie
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoNeutralRavager
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 15
+        mask:
+        - ItemMask
+      rehydrate:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        hard: false
+        layer:
+        - LowImpassable
+  # pet fish before rehydrating and he will be nice to you
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      path: /Audio/Effects/bite.ogg
+  - type: Tag
+    tags: [] 
+
+- type: entity
+  parent: PlushieFDrone
+  id: DehydratedFDrone
+  name: dehydrated friendly drone
+  description: Looks like a plush toy xeno with blue stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      plushie:
+        maxVol: 11 # needs room for water
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: RefillableSolution
+    solution: plushie
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddToSolutionReaction
+        solution: plushie
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoNeutralDrone
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 15
+        mask:
+        - ItemMask
+      rehydrate:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        hard: false
+        layer:
+        - LowImpassable
+  # pet fish before rehydrating and he will be nice to you
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      path: /Audio/Effects/bite.ogg
+  - type: Tag
+    tags: [] 
+
+- type: entity
+  parent: PlushieFPraetorian
+  id: DehydratedFPraetorian
+  name: dehydrated friendly praetorian
+  description: Looks like a plush toy praetorian, but just add water and it becomes a real-life xeno!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      plushie:
+        maxVol: 11 # needs room for water
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+  - type: RefillableSolution
+    solution: plushie
+  - type: Reactive
+    reactions:
+    - reagents: [Water]
+      methods: [Touch, Ingestion, Injection]
+      effects:
+      - !type:AddToSolutionReaction
+        solution: plushie
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoNeutralPraetorian
+  - type: CollisionWake
+    enabled: false
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 15
+        mask:
+        - ItemMask
+      rehydrate:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        hard: false
+        layer:
+        - LowImpassable
+  # pet fish before rehydrating and he will be nice to you
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      path: /Audio/Effects/bite.ogg
+  - type: Tag
+    tags: [] 
+
