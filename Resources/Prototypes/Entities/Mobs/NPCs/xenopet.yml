@@ -367,13 +367,13 @@
     - state: closed
   - type: StorageFill
     contents:
-      - id: MobCatCalico
+      - id: DehydratedFRouny
         prob: 0.5
-      - id: MobCatCaracal
+      - id: DehydratedFRavager
         prob: 0.5
-      - id: MobCatKitten
+      - id: DehydratedFDrone
         prob: 0.5
-      - id: MobBingus
+      - id: DehydratedFPraetorian
         prob: 0.5
         amount: 4
 
