@@ -358,8 +358,13 @@
   id: CrateNTXenos
   parent: CrateLivestock
   name: friendly xenos crate
-  description: A crate containing a single cat.
+  description: A crate containing 4 live xenos.
   components:
+  - type: Sprite
+    sprite: Structures/Storage/Crates/podfill.rsi
+    layers:
+    - state: open
+    - state: closed
   - type: StorageFill
     contents:
       - id: MobCatCalico
@@ -371,40 +376,6 @@
       - id: MobBingus
         prob: 0.5
         amount: 4
-
-- type: entity
-  parent: CrateGeneric
-  id: CrateXeno
-  name: Xeno companion crate
-  components:
-  - type: EntityStorage
-    airtight: false
-  - type: Sprite
-    sprite: Structures/Storage/Crates/podfill.rsi
-    layers:
-    - state: open
-    - state: closed
-  - type: Physics
-    bodyType: Dynamic
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.29"
-        density: 135
-        mask:
-        - SmallMobMask #this is so they can go under plastic flaps
-        layer:
-        - LargeMobLayer
-  - type: Construction
-    graph: CrateLivestock
-    node: cratelivestock
-    containers:
-    - entity_storage
-  - type: StaticPrice
-    price: 125w
-
 
 - type: entity
   id: Giftsxenofriends
