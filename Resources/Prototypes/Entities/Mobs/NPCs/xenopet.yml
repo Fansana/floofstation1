@@ -368,17 +368,9 @@
   - type: StorageFill
     contents:
       - id: DehydratedFRouny
-        prob: 0.5
-        amount: 2
       - id: DehydratedFRavager
-        prob: 0.5
-        amount: 2
       - id: DehydratedFDrone
-        prob: 0.5
-        amount: 2
       - id: DehydratedFPraetorian
-        prob: 0.5
-        amount: 2
 
 - type: entity
   id: Giftsxenofriends
