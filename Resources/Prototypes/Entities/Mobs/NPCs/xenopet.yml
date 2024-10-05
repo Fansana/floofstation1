@@ -355,14 +355,25 @@
       path: /Audio/Animals/lizard_happy.ogg
 
 - type: entity
-  parent: CratePlastic
   id: Cratexeno
+  parent: CratePlastic
   name: Xeno Companion Crate
   components:
-  - type: Icon
-    sprite: Structures/Storage/Crates/podfill.rsi
+  - type: EntityStorage
+    airtight: false
   - type: Sprite
     sprite: Structures/Storage/Crates/podfill.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: paper
+      sprite: Structures/Storage/Crates/labels.rsi
+      offset: "-0.25,0.625"
+      map: ["enum.PaperLabelVisuals.Layer"]  
+  - type: Icon
+    sprite: Structures/Storage/Crates/podfill.rsi
+    state: base
     
 - type: entity
   id: CrateNTxenos
