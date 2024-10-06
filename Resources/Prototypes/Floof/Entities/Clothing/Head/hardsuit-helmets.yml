@@ -1,0 +1,37 @@
+#Predaceous Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitPredaceous
+  name: salvage hardsuit helmet
+  description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Floof/Clothing/Head/Hardsuits/predaceous.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Head/Hardsuits/predaceous.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    radius: 7
+    energy: 3
+
+#Synla Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitSynla
+  name: salvage hardsuit helmet
+  description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Floof/Clothing/Head/Hardsuits/synla.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Head/Hardsuits/synla.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: PointLight
+    radius: 7
+    energy: 3
