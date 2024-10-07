@@ -1,6 +1,6 @@
 - type: loadout
   id: LoadoutClothingHandsLOLogisWarmers
-  category: JobsCommandQM
+  category: JobsCommand
   cost: 1
   exclusive: true
   items:
@@ -12,7 +12,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksLOLogis
-  category: JobsCommandQM
+  category: JobsCommand
   cost: 1
   exclusive: true
   items:
@@ -29,7 +29,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformLOLogisThong
-  category: JobsCommandQM
+  category: JobsCommand
   cost: 1
   exclusive: true
   items:
