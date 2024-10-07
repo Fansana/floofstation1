@@ -1,7 +1,7 @@
 - type: species
   id: Shadowkin
   name: species-name-shadowkin
-  roundStart: true
+  roundStart: false # Floofstation - Testing period.
   prototype: MobShadowkin
   sprites: MobShadowkinSprites
   defaultSkinTone: "#323232"
