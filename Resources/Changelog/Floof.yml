@@ -1157,3 +1157,10 @@ Entries:
   id: 155
   time: '2024-10-06T18:58:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/236
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Reduced the max amount of traitors in a shift.
+  id: 156
+  time: '2024-10-07T05:30:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/238
