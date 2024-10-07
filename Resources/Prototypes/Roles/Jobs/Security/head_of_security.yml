@@ -5,8 +5,18 @@
   playTimeTracker: JobHeadOfSecurity
   requirements:
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
-      department: Security
+      department: Command
       min: 14400 # Floofstation - 4 hour
+    - !type:CharacterWhitelistRequirement
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterTraitRequirement
+          traits:
+            - ShadowkinBlackeye
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

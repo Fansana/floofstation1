@@ -8,6 +8,16 @@
   canBeAntag: false
   icon: "JobIconPrisoner"
   supervisors: job-supervisors-security
+  requirements:
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterTraitRequirement
+          traits:
+            - ShadowkinBlackeye
 
 - type: startingGear
   id: PrisonerGear
