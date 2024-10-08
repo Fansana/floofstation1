@@ -1164,3 +1164,24 @@ Entries:
   id: 156
   time: '2024-10-07T05:30:29.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/238
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added day night cycle
+  id: 157
+  time: '2024-10-08T00:20:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/240
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Upstream merge. The the Einstein-Engines changelog tab for more details.
+  id: 158
+  time: '2024-10-08T00:29:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/223
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Artificial Bluespace Crystals!
+  id: 159
+  time: '2024-10-08T01:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/244

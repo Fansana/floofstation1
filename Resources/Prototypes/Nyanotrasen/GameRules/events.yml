@@ -94,23 +94,23 @@
   noSpawn: true
   components:
     - type: GlimmerEvent
-      minimumGlimmer: 590
+      minimumGlimmer: 400
       maximumGlimmer: 1000
       glimmerBurnLower: 18
       glimmerBurnUpper: 40
     - type: PsionicCatGotYourTongueRule
 
-# - type: entity FloofStatoin Disabled for no chaos.
-#   id: MassMindSwap
-#   parent: BaseGlimmerEvent
-#   noSpawn: true
-#   components:
-#     - type: GlimmerEvent
-#       minimumGlimmer: 900
-#       glimmerBurnLower: 350
-#       glimmerBurnUpper: 450 # Unless epistemics badly f-d up, this will restore the glimmer balance for a while.
-#     - type: MassMindSwapRule
-#       isTemporary: true # Permanent mindswap is hell.
+- type: entity
+  id: MassMindSwap
+  parent: BaseGlimmerEvent
+  noSpawn: true
+  components:
+    - type: GlimmerEvent
+      minimumGlimmer: 900
+      glimmerBurnLower: 350
+      glimmerBurnUpper: 450 # Unless epistemics badly f-d up, this will restore the glimmer balance for a while.
+    - type: MassMindSwapRule
+      isTemporary: true # Permanent mindswap is hell.
 
 #- type: entity
 #  id: GlimmerWispSpawn
@@ -129,7 +129,7 @@
   noSpawn: true
   components:
     - type: GlimmerEvent
-      minimumGlimmer: 550 # Requires at least some noospheric activity
+      minimumGlimmer: 300
       maximumGlimmer: 1000
       report: glimmer-event-report-signatures
     - type: FreeProberRule
@@ -147,7 +147,7 @@
       reoccurrenceDelay: 15
       minimumPlayers: 10
     - type: GlimmerEvent
-      minimumGlimmer: 500
+      minimumGlimmer: 250
       maximumGlimmer: 900
       report: glimmer-event-report-signatures
     - type: GlimmerRandomSentienceRule
@@ -158,8 +158,10 @@
   noSpawn: true
   components:
     - type: GlimmerEvent
-      minimumGlimmer: 500
+      minimumGlimmer: 450
       maximumGlimmer: 900
+      glimmerBurnLower: 50
+      glimmerBurnUpper: 100 # Gives epi a chance to recover
       report: glimmer-event-report-signatures
     - type: GlimmerRevenantRule
 
@@ -169,7 +171,7 @@
   noSpawn: true
   components:
     - type: GlimmerEvent
-      minimumGlimmer: 50
+      minimumGlimmer: 250
       maximumGlimmer: 900
       report: glimmer-event-report-signatures
     - type: GlimmerMobRule

@@ -10,6 +10,15 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
       min: 14400 # Floofstation - 4 hour
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterTraitRequirement
+          traits:
+            - ShadowkinBlackeye
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

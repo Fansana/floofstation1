@@ -65,6 +65,9 @@ entities:
   - uid: 1
     components:
     - type: MetaData
+    - type: MapLight
+      ambientLightColor: '#030305FF'
+    - type: DayNightCycle
     - type: Transform
     - type: Map
       mapPaused: True

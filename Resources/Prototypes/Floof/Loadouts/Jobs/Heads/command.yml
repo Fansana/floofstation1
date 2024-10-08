@@ -1,6 +1,6 @@
 - type: loadout
   id: LoadoutClothingHandsCommandWarmers
-  category: JobsCommandAUncategorized
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -18,7 +18,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksCommand
-  category: JobsCommandAUncategorized
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -41,7 +41,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformCommandThong
-  category: JobsCommandAUncategorized
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:

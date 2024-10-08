@@ -4,9 +4,18 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: Security
+    - !type:CharacterPlaytimeRequirement # DeltaV - JobSecurityOfficer time requirement. Make them experienced in proper officer work.
+      tracker: JobSecurityOfficer
       min: 3600 # Floofstation - 1 hour
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterTraitRequirement
+          traits:
+            - ShadowkinBlackeye
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos

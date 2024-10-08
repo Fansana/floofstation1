@@ -1,6 +1,6 @@
 - type: loadout
   id: LoadoutClothingHandsCMOWarmers
-  category: JobsCommandCMO
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -12,7 +12,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksCMO
-  category: JobsCommandCMO
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -29,7 +29,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformCMOThong
-  category: JobsCommandCMO
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:

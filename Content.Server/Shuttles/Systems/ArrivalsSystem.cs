@@ -11,6 +11,7 @@ using Content.Server.Shuttles.Events;
 using Content.Server.Spawners.Components;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
+using Content.Shared._NC14.DayNightCycle;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.DeviceNetwork;
@@ -485,6 +486,12 @@ public sealed class ArrivalsSystem : EntitySystem
                 Range = 32f
             };
             AddComp(mapUid, restricted);
+            var dayNight = new DayNightCycleComponent
+            {
+                CurrentCycleTime = 0.5f,
+                CycleDurationMinutes = 60,
+            };
+            AddComp(mapUid, dayNight);
         }
 
         _mapManager.DoMapInitialize(mapId);
