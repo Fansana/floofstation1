@@ -7,6 +7,17 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
       min: 14400 # Floofstation - 4 hour
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterTraitRequirement
+          traits:
+            - ShadowkinBlackeye
+#    - !type:OverallPlaytimeRequirement
+#      time: 72000 # DeltaV - 20 hours
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
