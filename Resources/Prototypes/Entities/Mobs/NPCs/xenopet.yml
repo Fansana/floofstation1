@@ -2,11 +2,12 @@
   name: Neutral Rouny
   id: MobXenoNeutralRouny
   parent: MobXenoRounyNPC
-  description: They mostly come at night. Mostly.
+  description: A friendly Rouny trained by Centcomm
   components:
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/rouny.rsi
@@ -32,11 +33,12 @@
   name: Neutral Praetorian
   id: MobXenoNeutralPraetorian
   parent: MobXenoPraetorianNPC
-  description: They mostly come at night. Mostly.
+  description: A friendly Praetorian programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/praetorian.rsi
@@ -61,11 +63,12 @@
   name: Neutral Drone
   id: MobXenoNeutralDrone
   parent: MobXenoDroneNPC
-  description: They mostly come at night. Mostly.
+  description: A friendly drone programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/drone.rsi
@@ -90,11 +93,12 @@
   name: Neutral Ravager
   id: MobXenoNeutralRavager
   parent: MobXenoRavagerNPC
-  description: They mostly come at night. Mostly.
+  description: A friendly ravager programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
     - Passive
+  - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/ravager.rsi
@@ -114,6 +118,50 @@
     understands:
     - Xeno
     - TauCetiBasic
+
+- type: entity
+  name: Neutral CC Rouny
+  id: MobXenoCCNeutralRouny
+  parent: MobXenoNeutralRouny
+  description: A friendly rouny programmed by centcomm
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/CCrouny.rsi
+    scale: 0.7, 0.7
+
+- type: entity
+  name: Neutral CC Drone
+  id: MobXenoCCNeutralDrone
+  parent: MobXenoNeutralDrone
+  description: A friendly drone programmed by centcomm
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/CCdrone.rsi
+    scale: 0.7, 0.7
+
+- type: entity
+  name: Neutral CC Praetorian
+  id: MobXenoCCNeutralPraetorian
+  parent: MobXenoNeutralPraetorian
+  description: A friendly Praetorian programmed by centcomm
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/CCpraetorian.rsi
+    scale: 0.7, 0.7
+
+- type: entity
+  name: Neutral CC Ravager
+  id: MobXenoCCNeutralRavager
+  parent: MobXenoNeutralRavager
+  description: A friendly ravager programmed by centcomm
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/FXS/CCravager.rsi
+    scale: 0.7, 0.7
 
 - type: inventoryTemplate
   id: friendxeno
@@ -370,41 +418,11 @@
     - state: paper
       sprite: Structures/Storage/Crates/labels.rsi
       offset: "-0.25,0.625"
-      map: ["enum.PaperLabelVisuals.Layer"]  
+      map: ["enum.PaperLabelVisuals.Layer"]
   - type: Icon
     sprite: Structures/Storage/Crates/xeno.rsi
     state: base
-    
-- type: entity
-  id: CrateNTxenos
-  parent: Cratexeno
-  name: Xeno Companion Crate
-  description: Xeno Companion Crate
-  components:
-  - type: StorageFill
-    contents:
-      - id: DehydratedFRouny
-      - id: DehydratedFPraetorian
-      - id: DehydratedFRavager
-      - id: DehydratedFDrone
-            
-- type: entity
-  id: Giftsxenofriends
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 10
-    startDelay: 10
-    reoccurrenceDelay: 120
-    duration: 120
-    earliestStart: 10
-  - type: CargoGiftsRule
-    description: cargo-gift-friendly-xenos
-    sender: cargo-gift-nt-lab
-    dest: cargo-gift-trade-dest
-    gifts:
-      CrateNTxenos: 1
+
 #
 #- type: entity
 #  id: neutralXenoVents
@@ -732,7 +750,7 @@
       path: /Audio/Weapons/Xeno/alien_spitacid.ogg
     angle: 0
     animation: WeaponArcBite # Rrrr!
-    
+
 - type: entity
   parent: PlushieFRouny
   id: DehydratedFRouny
@@ -784,7 +802,7 @@
     sound:
       path: /Audio/Effects/bite.ogg
   - type: Tag
-    tags: [] 
+    tags: []
 
 - type: entity
   parent: PlushieFRavager
@@ -837,7 +855,7 @@
     sound:
       path: /Audio/Effects/bite.ogg
   - type: Tag
-    tags: [] 
+    tags: []
 
 - type: entity
   parent: PlushieFDrone
@@ -890,7 +908,7 @@
     sound:
       path: /Audio/Effects/bite.ogg
   - type: Tag
-    tags: [] 
+    tags: []
 
 - type: entity
   parent: PlushieFPraetorian
@@ -943,5 +961,96 @@
     sound:
       path: /Audio/Effects/bite.ogg
   - type: Tag
-    tags: [] 
+    tags: []
 
+- type: entity
+  parent: DehydratedFRouny
+  id: DehydratedCCRouny
+  name: dehydrated friendly rouny
+  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: Sprite
+    state: CCrouny
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoCCNeutralRouny
+
+- type: entity
+  parent: DehydratedFPraetorian
+  id: DehydratedCCPraetorian
+  name: dehydrated friendly praetorian
+  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: Sprite
+    state: CCPraetorian
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoCCNeutralPraetorian
+
+- type: entity
+  parent: DehydratedFDrone
+  id: DehydratedCCDrone
+  name: dehydrated friendly drone
+  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: Sprite
+    state: CCDrone
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoCCNeutralDrone
+
+- type: entity
+  parent: DehydratedFRavager
+  id: DehydratedCCRavager
+  name: dehydrated friendly ravager
+  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  components:
+  - type: Sprite
+    state: CCRavager
+  - type: Rehydratable
+    possibleSpawns:
+    - MobXenoCCNeutralRavager
+
+- type: entity
+  id: CrateNTxenos
+  parent: Cratexeno
+  suffix: Filled, Random
+  name: Xeno Companion Crate
+  description: Xeno Companion Crate
+  components:
+     - type: StorageFill
+       contents:
+        - id: DehydratedFRouny
+          prob: 0.5
+        - id: DehydratedFPraetorian
+          prob: 0.5
+        - id: DehydratedFRavager
+          prob: 0.5
+        - id: DehydratedFDrone
+          prob: 0.5
+        - id: DehydratedCCRouny
+          prob: 0.1
+        - id: DehydratedCCPraetorian
+          prob: 0.1
+        - id: DehydratedCCRavager
+          prob: 0.1
+        - id: DehydratedCCDrone
+          prob: 0.1
+
+- type: entity
+  id: Giftsxenocompanions
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    startDelay: 10
+    reoccurrenceDelay: 120
+    duration: 120
+    earliestStart: 10
+  - type: CargoGiftsRule
+    description: cargo-gift-friendly-xenos
+    sender: cargo-gift-nt-lab
+    dest: cargo-gift-trade-dest
+    gifts:
+      CrateNTxenos: 1
