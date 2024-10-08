@@ -220,16 +220,16 @@
       durationMultiplier: 1.5
     - type: Shadowkin
       blackeyeSpawn: true
-    # - type: Psionic
-    #   mindbreakingFeedback: shadowkin-blackeye
-    #   manaGain: 0.25
-    #   mana: 150
-    #   maxMana: 250
-    #   bypassManaCheck: true
-    #   removable: false
-    # - type: InnatePsionicPowers
-    #   powersToAdd:
-    #     - ShadowkinPowers
+    - type: Psionic
+      mindbreakingFeedback: shadowkin-blackeye
+      manaGain: 0.25
+      mana: 150
+      maxMana: 250
+      bypassManaCheck: true
+      removable: false
+    - type: InnatePsionicPowers
+      powersToAdd:
+        - ShadowkinPowers
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
