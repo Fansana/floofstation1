@@ -11,3 +11,34 @@
   cost: 0
   items:
     - ClothingBeltSuspenders
+
+- type: loadout
+  id: LoadoutItemRemoteSignaller
+  category: Items
+  cost: 1
+  items:
+    - RemoteSignaller
+
+# Leashes
+- type: loadout
+  id: LoadoutItemLeashBasic
+  category: Items
+  cost: 2
+  exclusive: true
+  items:
+  - LeashBasic
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutFun
+
+- type: loadout
+  id: LoadoutItemLeashShort
+  category: Items
+  cost: 2
+  exclusive: true
+  items:
+  - ShortLeash
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutFun
+
