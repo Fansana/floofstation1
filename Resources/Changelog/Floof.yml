@@ -1143,3 +1143,24 @@ Entries:
   id: 153
   time: '2024-10-05T18:46:51.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/210
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: adjusted antag rules
+  id: 154
+  time: '2024-10-06T15:22:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/235
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix the swat mask hair bug. Long life the baldberg.
+  id: 155
+  time: '2024-10-06T18:58:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/236
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Reduced the max amount of traitors in a shift.
+  id: 156
+  time: '2024-10-07T05:30:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/238
