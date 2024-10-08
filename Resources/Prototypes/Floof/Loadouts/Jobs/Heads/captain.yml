@@ -1,6 +1,6 @@
 - type: loadout
   id: LoadoutClothingHandsCaptainWarmers
-  category: JobsCommandCaptain
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -12,7 +12,7 @@
 
 - type: loadout
   id: LoadoutClothingUnderSocksCaptain
-  category: JobsCommandCaptain
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -29,7 +29,7 @@
 
 - type: loadout
   id: LoadoutClothingUniformCaptainThong
-  category: JobsCommandCaptain
+  category: JobsCommand
   cost: 2
   exclusive: true
   items:
@@ -41,7 +41,7 @@
 
 - type: loadout
   id: LoadoutCommandCapCollar
-  category: JobsCommandCaptain
+  category: JobsCommand
   cost: 1
   requirements:
   - !type:CharacterJobRequirement
