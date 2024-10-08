@@ -28,7 +28,7 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
     /// <inheritdoc/>
     public override void Initialize()
     {
-        base.Initialize(); // Floofstation - remove the comment after this call is added upstream
+        base.Initialize();
         SubscribeLocalEvent<DeadStartupButtonComponent, OnDoAfterButtonPressedEvent>(OnDoAfter);
         SubscribeLocalEvent<DeadStartupButtonComponent, ElectrocutedEvent>(OnElectrocuted);
         SubscribeLocalEvent<DeadStartupButtonComponent, MobStateChangedEvent>(OnMobStateChanged);

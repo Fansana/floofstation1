@@ -85,6 +85,19 @@
 # Tier 2
 
 - type: technology
+  id: AdvancedBluespace
+  name: research-technology-advanced-bluespace
+  icon:
+    sprite: Nyanotrasen/Objects/Materials/materials.rsi
+    state: bluespace_3
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ArtificialBluespaceCrystal
+  - ShadowkinRestraints
+
+- type: technology
   id: AdvancedParts
   name: research-technology-advanced-parts
   icon:
@@ -183,18 +196,18 @@
   - SuperMatterBinStockPart
   - PicoManipulatorStockPart
 
-#- type: technology # DeltaV - LRP
-#  id: GravityManipulation
-#  name: research-technology-gravity-manipulation
-#  icon:
-#    sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
-#    state: base
-#  discipline: Experimental
-#  tier: 3
-#  cost: 10000
-#  recipeUnlocks:
-#    - WeaponForceGun
-#    - WeaponTetherGun
+- type: technology
+  id: GravityManipulation
+  name: research-technology-gravity-manipulation
+  icon:
+    sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
+    state: base
+  discipline: Experimental
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+    - WeaponForceGun
+    - WeaponTetherGun
 
 - type: technology
   id: QuantumLeaping
