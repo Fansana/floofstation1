@@ -231,6 +231,7 @@
     interactSuccessSound:
       path: /Audio/Animals/lizard_happy.ogg
 
+# Floofstation - commented out for reasons unknown
 - type: entity
   name: Patriach
   parent: MobXenoNeutralPraetorian
