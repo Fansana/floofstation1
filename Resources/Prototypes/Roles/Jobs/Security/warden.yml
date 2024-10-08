@@ -7,7 +7,6 @@
     - !type:CharacterPlaytimeRequirement # DeltaV - JobSecurityOfficer time requirement. Make them experienced in proper officer work.
       tracker: JobSecurityOfficer
       min: 3600 # Floofstation - 1 hour
-    - !type:CharacterWhitelistRequirement
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
