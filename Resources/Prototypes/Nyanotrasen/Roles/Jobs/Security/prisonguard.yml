@@ -9,15 +9,16 @@
     - !type:DepartmentTimeRequirement
       department: Security
       min: 7200 # 2hr floof
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
-        - !type:CharacterTraitRequirement
-          traits:
-            - ShadowkinBlackeye
+    # - !type:CharacterLogicOrRequirement
+    #   requirements:
+    #     - !type:CharacterSpeciesRequirement
+    #       inverted: true
+    #       species:
+    #         - Shadowkin
+    #     - !type:CharacterTraitRequirement
+    #       inverted: true
+    #       traits:
+    #         - ShadowkinBlackeye
   startingGear: PrisonGuardGear
   alwaysUseSpawner: true
   canBeAntag: false

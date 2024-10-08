@@ -219,6 +219,7 @@
       eyeDamage: 1
       durationMultiplier: 1.5
     - type: Shadowkin
+      blackeyeSpawn: true
     - type: Psionic
       mindbreakingFeedback: shadowkin-blackeye
       manaGain: 0.25

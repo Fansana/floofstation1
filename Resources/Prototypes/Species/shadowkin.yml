@@ -1,10 +1,10 @@
 - type: species
   id: Shadowkin
   name: species-name-shadowkin
-  roundStart: false
+  roundStart: true
   prototype: MobShadowkin
   sprites: MobShadowkinSprites
-  defaultSkinTone: "#323232"
+  defaultSkinTone: "#FFFFFF"
   markingLimits: MobShadowkinMarkingLimits
   dollPrototype: MobShadowkinDummy
   skinColoration: Hues
