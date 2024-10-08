@@ -1,12 +1,12 @@
 - type: entity
-  name: Neutral Rouny
+  name: Friendly NT Rouny
   id: MobXenoNeutralRouny
   parent: MobXenoRounyNPC
   description: A friendly Rouny trained by Centcomm
   components:
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
   - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
@@ -30,14 +30,14 @@
     - TauCetiBasic
 
 - type: entity
-  name: Neutral Praetorian
+  name: Friendly NT Praetorian
   id: MobXenoNeutralPraetorian
   parent: MobXenoPraetorianNPC
   description: A friendly Praetorian programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
   - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
@@ -60,14 +60,14 @@
     - TauCetiBasic
 
 - type: entity
-  name: Neutral Drone
+  name: Friendly NT Drone
   id: MobXenoNeutralDrone
   parent: MobXenoDroneNPC
   description: A friendly drone programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
   - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
@@ -90,14 +90,14 @@
     - TauCetiBasic
 
 - type: entity
-  name: Neutral Ravager
+  name: Friendly NT Ravager
   id: MobXenoNeutralRavager
   parent: MobXenoRavagerNPC
   description: A friendly ravager programmed by centcomm
   components:
   - type: NpcFactionMember
     factions:
-    - Passive
+    - PetsNT
   - type: LayingDown
   - type: Sprite
     drawdepth: Mobs
@@ -120,7 +120,7 @@
     - TauCetiBasic
 
 - type: entity
-  name: Neutral CC Rouny
+  name: Friendly CC Rouny
   id: MobXenoCCNeutralRouny
   parent: MobXenoNeutralRouny
   description: A friendly rouny programmed by centcomm
@@ -131,7 +131,7 @@
     scale: 0.7, 0.7
 
 - type: entity
-  name: Neutral CC Drone
+  name: Friendly CC Drone
   id: MobXenoCCNeutralDrone
   parent: MobXenoNeutralDrone
   description: A friendly drone programmed by centcomm
@@ -142,7 +142,7 @@
     scale: 0.7, 0.7
 
 - type: entity
-  name: Neutral CC Praetorian
+  name: Friendly CC Praetorian
   id: MobXenoCCNeutralPraetorian
   parent: MobXenoNeutralPraetorian
   description: A friendly Praetorian programmed by centcomm
@@ -153,7 +153,7 @@
     scale: 0.7, 0.7
 
 - type: entity
-  name: Neutral CC Ravager
+  name: Friendly CC Ravager
   id: MobXenoCCNeutralRavager
   parent: MobXenoNeutralRavager
   description: A friendly ravager programmed by centcomm
