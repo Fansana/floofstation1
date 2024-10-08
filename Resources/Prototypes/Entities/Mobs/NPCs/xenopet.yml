@@ -1038,7 +1038,7 @@
           prob: 0.1
 
 - type: entity
-  id: Giftsxenocompanions
+  id: giftsxenocompanions
   parent: BaseGameRule
   noSpawn: true
   components:
