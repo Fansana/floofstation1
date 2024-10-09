@@ -44,7 +44,7 @@
   id: TailShadowkinBigFluff
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Shadowkin]
+  speciesRestriction: [Shadowkin, Reptilian]
   sprites:
     - sprite: Mobs/Customization/Shadowkin/tails64x32.rsi
       state: shadowkin_big_fluff
