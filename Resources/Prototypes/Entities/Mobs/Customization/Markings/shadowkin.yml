@@ -58,6 +58,7 @@
   markingCategory: Tail
   speciesRestriction: [Shadowkin]
   forcedColoring: true
+  speciesRestriction: [Shadowkin, Reptilian]
   sprites:
     - sprite: Mobs/Customization/Shadowkin/tails64x32.rsi
       state: shadowkin_big_fluff
