@@ -1022,21 +1022,29 @@
      - type: StorageFill
        contents:
         - id: DehydratedFRouny
-          prob: 0.5
+          prob: 0.25
+          orGroup: XenosRouny
         - id: DehydratedFPraetorian
-          prob: 0.5
+          prob: 0.25
+          orGroup: XenosPraet
         - id: DehydratedFRavager
-          prob: 0.5
+          prob: 0.25
+          orGroup: XenosRavager
         - id: DehydratedFDrone
-          prob: 0.5
+          prob: 0.25
+          orGroup: XenosDrone
         - id: DehydratedCCRouny
-          prob: 0.1
+          prob: 0.01
+          orGroup: XenosRouny
         - id: DehydratedCCPraetorian
-          prob: 0.1
+          prob: 0.01
+          orGroup: XenosPraet
         - id: DehydratedCCRavager
-          prob: 0.1
+          prob: 0.01
+          orGroup: XenosRavager
         - id: DehydratedCCDrone
-          prob: 0.1
+          prob: 0.01
+          orGroup: XenosDrone
 
 - type: entity
   id: giftsxenocompanions
@@ -1054,4 +1062,14 @@
     sender: cargo-gift-nt-lab
     dest: cargo-gift-trade-dest
     gifts:
-      CrateNTxenos: 1
+      xenocompanions: 1
+
+- type: cargoProduct
+  id: xenocompanions
+  icon:
+    sprite: Structures/Storage/Crates/xeno.rsi
+    state: icon
+  product: CrateNTxenos
+  cost: 100000
+  category: cargoproduct-category-name-fun
+  group: market
