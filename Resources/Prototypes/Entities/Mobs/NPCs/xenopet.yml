@@ -127,7 +127,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/FXS/CCrouny.rsi
+    sprite: Mobs/Aliens/FXS/ccrouny.rsi
     scale: 0.7, 0.7
 
 - type: entity
@@ -138,7 +138,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/FXS/CCdrone.rsi
+    sprite: Mobs/Aliens/FXS/ccdrone.rsi
     scale: 0.7, 0.7
 
 - type: entity
@@ -149,7 +149,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/FXS/CCpraetorian.rsi
+    sprite: Mobs/Aliens/FXS/ccpraetorian.rsi
     scale: 0.7, 0.7
 
 - type: entity
@@ -160,7 +160,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/FXS/CCravager.rsi
+    sprite: Mobs/Aliens/FXS/ccravager.rsi
     scale: 0.7, 0.7
 
 - type: inventoryTemplate
