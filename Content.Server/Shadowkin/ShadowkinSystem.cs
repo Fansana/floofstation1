@@ -20,7 +20,6 @@ namespace Content.Server.Shadowkin;
 public sealed class ShadowkinSystem : EntitySystem
 {
     [Dependency] private readonly StaminaSystem _stamina = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly PsionicAbilitiesSystem _psionicAbilitiesSystem = default!;
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
@@ -36,6 +35,7 @@ public sealed class ShadowkinSystem : EntitySystem
         SubscribeLocalEvent<ShadowkinComponent, OnAttemptPowerUseEvent>(OnAttemptPowerUse);
         SubscribeLocalEvent<ShadowkinComponent, OnManaUpdateEvent>(OnManaUpdate);
         SubscribeLocalEvent<ShadowkinComponent, RejuvenateEvent>(OnRejuvenate);
+        SubscribeLocalEvent<ShadowkinComponent, EyeColorInitEvent>(OnEyeColorChange);
     }
 
     private void OnInit(EntityUid uid, ShadowkinComponent component, ComponentStartup args)
@@ -46,6 +46,18 @@ public sealed class ShadowkinSystem : EntitySystem
         _actionsSystem.AddAction(uid, ref component.ShadowkinSleepAction, ShadowkinSleepActionId, uid);
 
         UpdateShadowkinAlert(uid, component);
+    }
+
+    private void OnEyeColorChange(EntityUid uid, ShadowkinComponent component, EyeColorInitEvent args)
+    {
+        if (!TryComp<HumanoidAppearanceComponent>(uid, out var humanoid)
+            || !component.BlackeyeSpawn
+            || humanoid.EyeColor == component.OldEyeColor)
+            return;
+
+        component.OldEyeColor = humanoid.EyeColor;
+        humanoid.EyeColor = component.BlackEyeColor;
+        Dirty(humanoid);
     }
 
     private void OnExamined(EntityUid uid, ShadowkinComponent component, ExaminedEvent args)
@@ -139,13 +151,6 @@ public sealed class ShadowkinSystem : EntitySystem
 
         if (TryComp<StaminaComponent>(uid, out var stamina))
             _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
-
-        if (!TryComp<DamageableComponent>(uid, out var damageable))
-        {
-            DamageSpecifier damage = new();
-            damage.DamageDict.Add("Cellular", FixedPoint2.New(5));
-            _damageable.TryChangeDamage(uid, damage);
-        }
     }
 
     private void OnRejuvenate(EntityUid uid, ShadowkinComponent component, RejuvenateEvent args)
