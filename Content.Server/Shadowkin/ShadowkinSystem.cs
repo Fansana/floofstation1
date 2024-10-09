@@ -30,7 +30,7 @@ public sealed class ShadowkinSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<ShadowkinComponent, MapInitEvent>(OnInit);
+        SubscribeLocalEvent<ShadowkinComponent, ComponentStartup>(OnInit);
         SubscribeLocalEvent<ShadowkinComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<ShadowkinComponent, OnMindbreakEvent>(OnMindbreak);
         SubscribeLocalEvent<ShadowkinComponent, OnAttemptPowerUseEvent>(OnAttemptPowerUse);
@@ -38,7 +38,7 @@ public sealed class ShadowkinSystem : EntitySystem
         SubscribeLocalEvent<ShadowkinComponent, RejuvenateEvent>(OnRejuvenate);
     }
 
-    private void OnInit(EntityUid uid, ShadowkinComponent component, MapInitEvent args)
+    private void OnInit(EntityUid uid, ShadowkinComponent component, ComponentStartup args)
     {
         if (component.BlackeyeSpawn)
             ApplyBlackEye(uid);

@@ -6,15 +6,16 @@
   requirements:
     - !type:CharacterOverallTimeRequirement
       min: 3600 # Floofstation - 1 hour
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
-        - !type:CharacterTraitRequirement
-          traits:
-            - ShadowkinBlackeye
+    # - !type:CharacterLogicOrRequirement
+    #   requirements:
+    #     - !type:CharacterSpeciesRequirement
+    #       inverted: true
+    #       species:
+    #         - Shadowkin
+    #     - !type:CharacterTraitRequirement
+    #       inverted: true
+    #       traits:
+    #         - ShadowkinBlackeye
 #    - !type:DepartmentTimeRequirement # DeltaV - Removes time limit
 #      department: Security
 #      time: 54000 #15 hrs
