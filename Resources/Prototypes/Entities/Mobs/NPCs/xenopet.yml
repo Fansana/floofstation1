@@ -980,7 +980,7 @@
   parent: DehydratedFPraetorian
   id: DehydratedCCPraetorian
   name: dehydrated friendly praetorian
-  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  description: Looks like a plush toy praetorian with green stripes, but just add water and it becomes a real-life xeno!
   components:
   - type: Sprite
     state: CCPraetorian
@@ -992,7 +992,7 @@
   parent: DehydratedFDrone
   id: DehydratedCCDrone
   name: dehydrated friendly drone
-  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  description: Looks like a plush toy drone with green stripes, but just add water and it becomes a real-life xeno!
   components:
   - type: Sprite
     state: CCDrone
@@ -1004,7 +1004,7 @@
   parent: DehydratedFRavager
   id: DehydratedCCRavager
   name: dehydrated friendly ravager
-  description: Looks like a plush toy rouny with green stripes, but just add water and it becomes a real-life xeno!
+  description: Looks like a plush toy ravager with green stripes, but just add water and it becomes a real-life xeno!
   components:
   - type: Sprite
     state: CCRavager

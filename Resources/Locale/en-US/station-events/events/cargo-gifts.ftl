@@ -24,4 +24,4 @@ cargo-gift-space-protection = space hazard protection
 cargo-gift-fire-protection = fire protection
 cargo-gift-security-guns = lethal weapons
 cargo-gift-security-riot = riot gear
-cargo-gift-friendly-xenos = Xeno Companion Crate 
+cargo-gift-friendly-xenos = a Xeno Companion Crate 
