@@ -1,0 +1,58 @@
+- type: entity
+  save: false
+  name: Urist McAnthro
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobAnthromorph
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Anthromorph
+  - type: Icon
+    sprite: Floof/Mobs/Species/Anthromorph/parts.rsi
+    state: full
+  - type: Body
+    prototype: Anthromorph
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 2
+        Slash: 3
+  - type: Perishable
+  - type: Damageable
+    damageModifierSet: Vulpkanin # resistant to cold, weak to heat
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Thirst
+  - type: Carriable # Carrying system from nyanotrasen.
+  - type: Wagging
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  - type: Flammable
+    fireStackIncreaseMultiplier: 1.25
+
+
+- type: entity
+  save: false
+  name: Furred Anthro Dummy
+  parent: MobHumanDummy
+  id: MobAnthromorphDummy
+  noSpawn: true
+  description: A dummy anthromorph meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Anthromorph
+  - type: Inventory
+    speciesId: anthromorph
