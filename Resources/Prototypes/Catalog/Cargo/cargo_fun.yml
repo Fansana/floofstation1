@@ -187,3 +187,13 @@
   cost: 10000
   category: cargoproduct-category-name-fun
   group: market
+
+- type: cargoProduct
+  id: xenocompanions
+  icon:
+    sprite: Structures/Storage/Crates/xeno.rsi
+    state: icon
+  product: CrateNTxenos
+  cost: 100000
+  category: cargoproduct-category-name-fun
+  group: market
