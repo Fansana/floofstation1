@@ -126,7 +126,7 @@ public sealed class ShadowkinSystem : EntitySystem
         if (TryComp<MindbrokenComponent>(uid, out var mindbreak))
             mindbreak.MindbrokenExaminationText = "examine-mindbroken-shadowkin-message";
 
-        if (EnsureComp<HumanoidAppearanceComponent>(uid, out var humanoid))
+        if (TryComp<HumanoidAppearanceComponent>(uid, out var humanoid))
         {
             component.OldEyeColor = humanoid.EyeColor;
             humanoid.EyeColor = component.BlackEyeColor;
