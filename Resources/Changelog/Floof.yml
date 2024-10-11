@@ -1199,3 +1199,24 @@ Entries:
   id: 161
   time: '2024-10-11T03:02:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/251
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Add lizard tail to IPCs
+  id: 162
+  time: '2024-10-11T09:04:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/253
+- author: Fansana
+  changes:
+    - type: Fix
+      message: spider webs making spider invisible
+  id: 163
+  time: '2024-10-11T09:25:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/254
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Latejoin antag selection should respect player's antag preferences.
+  id: 164
+  time: '2024-10-11T11:48:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/252
