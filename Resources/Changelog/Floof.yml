@@ -1192,3 +1192,10 @@ Entries:
   id: 160
   time: '2024-10-09T02:01:11.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/245
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixes the arrivals shuttle choosing to correct docking port.
+  id: 161
+  time: '2024-10-11T03:02:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/251
