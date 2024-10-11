@@ -1,10 +1,7 @@
 cargo-gifts-event-announcement = Congratulations! { $sender } has decided to send { $description } to the station { $dest }. Look for it in your next cargo shipment.
 cargo-gift-default-description = A bundle of gifts
 cargo-gift-default-sender = NanoTrasen
-cargo-gift-nt-lab = NT Biotech
-cargo-gift-cc-lab = Central R&D
 cargo-gift-default-dest = Logistics Dept.
-cargo-gift-trade-dest = Trade Depot
 
 cargo-gift-dest-bar = bar
 cargo-gift-dest-eng = Engineering Dept
@@ -24,4 +21,3 @@ cargo-gift-space-protection = space hazard protection
 cargo-gift-fire-protection = fire protection
 cargo-gift-security-guns = lethal weapons
 cargo-gift-security-riot = riot gear
-cargo-gift-friendly-xenos = a Xeno Companion Crate 
