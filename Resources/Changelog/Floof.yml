@@ -1199,3 +1199,10 @@ Entries:
   id: 161
   time: '2024-10-11T03:02:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/251
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Add lizard tail to IPCs
+  id: 162
+  time: '2024-10-11T09:04:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/253
