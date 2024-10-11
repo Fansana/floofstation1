@@ -1206,3 +1206,10 @@ Entries:
   id: 162
   time: '2024-10-11T09:04:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/253
+- author: Fansana
+  changes:
+    - type: Fix
+      message: spider webs making spider invisible
+  id: 163
+  time: '2024-10-11T09:25:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/254
