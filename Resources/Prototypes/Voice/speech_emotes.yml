@@ -22,7 +22,7 @@
 - type: emote
   id: Gekker
   category: Vocal
-  chatMessags: [ laughs ]
+  chatMessages: [ laughs ]
   chatTriggers:
   - gekkers
 
