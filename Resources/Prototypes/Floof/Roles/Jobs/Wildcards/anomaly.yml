@@ -1,0 +1,32 @@
+- type: job
+  id: Anomaly
+  name: job-name-anomaly
+  description: job-description-anomaly
+  playTimeTracker: JobAnomaly
+  startingGear: AnomalyGear
+  alwaysUseSpawner: true
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  icon: "JobIconVisitor"
+  joinNotifyCrew: false
+  access:
+  - Maintenance
+  requirements:
+    - !type:CharacterWhitelistRequirement
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Shadowkin
+        blackeyeSpawn: false
+
+- type: startingGear
+  id: AnomalyGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    back: ClothingBackpackFilled
+    shoes: ClothingShoesColorBlack
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey
+  innerClothingSkirt: ClothingUniformJumpskirtColorGrey
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled

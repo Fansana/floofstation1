@@ -10,16 +10,6 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
     min: 14400 # Floofstation - 4 hours
-  # - !type:CharacterLogicOrRequirement
-  #     requirements:
-  #       - !type:CharacterSpeciesRequirement
-  #         inverted: true
-  #         species:
-  #           - Shadowkin
-  #       - !type:CharacterTraitRequirement
-  #         inverted: true
-  #         traits:
-  #           - ShadowkinBlackeye
 
 - type: antag
   id: Rev

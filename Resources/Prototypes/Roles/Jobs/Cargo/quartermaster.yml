@@ -11,16 +11,6 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
       min: 14400 #Floofstation 4 hour
-    # - !type:CharacterLogicOrRequirement
-    #   requirements:
-    #     - !type:CharacterSpeciesRequirement
-    #       inverted: true
-    #       species:
-    #         - Shadowkin
-    #     - !type:CharacterTraitRequirement
-    #       inverted: true
-    #       traits:
-    #         - ShadowkinBlackeye
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
