@@ -20,6 +20,13 @@
     - chortles
 
 - type: emote
+  id: Gekker
+  category: Vocal
+  chatMessags: [ laughs ]
+  chatTriggers:
+  - gekkers
+
+- type: emote
   id: Honk
   category: Vocal
   chatMessages: [ honks ]
