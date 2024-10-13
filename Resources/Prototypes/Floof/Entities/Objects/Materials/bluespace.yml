@@ -1,0 +1,5 @@
+# Needed simply because the tests will fail if 2 recipes have the same result entity
+- type: entity
+  parent: MaterialBluespace1
+  id: MaterialBluespaceArtificial1
+  noSpawn: true
