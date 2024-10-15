@@ -60,7 +60,7 @@ void fragment() {
     // visualize distortion via:
     // COLOR = vec4(w,w,w,1.0);
 
-    w *= (3.0 + 1 * 2.0);
+    w *= 5.0;
 
     highp vec4 background = zTextureSpec(SCREEN_TEXTURE, ( FRAGCOORD.xy + vec2(w) ) * SCREEN_PIXEL_SIZE );
     highp vec3 hsvBg = rgb2hsv(background.rgb);
