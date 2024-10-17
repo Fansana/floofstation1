@@ -1,0 +1,49 @@
+- type: body
+  name: species-name-aquatic
+  id: Aquatic
+  root: torso
+  slots:
+    head:
+      part: HeadAquatic
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoAquatic
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganAnimalStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmAquatic
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmAquatic
+      connections:
+      - left hand
+    right hand:
+      part: RightHandAquatic
+    left hand:
+      part: LeftHandAquatic
+    right leg:
+      part: RightLegAquatic
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegAquatic
+      connections:
+      - left foot
+    right foot:
+      part: RightFootAquatic
+    left foot:
+      part: LeftFootAquatic

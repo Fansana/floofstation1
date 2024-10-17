@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/lpeapnni/CotM/blob/536c3ae06b3d64634c3083c1321c2ab911db38eb/icons/mob/body_markings/tips_markings.dmi, modified by papelinn",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tips_l_foot_f",
+      "directions": 4
+    },
+    {
+      "name": "tips_l_foot",
+      "directions": 4
+    },
+    {
+      "name": "tips_l_hand_f",
+      "directions": 4
+    },
+    {
+      "name": "tips_l_hand",
+      "directions": 4
+    },
+    {
+      "name": "tips_r_foot_f",
+      "directions": 4
+    },
+    {
+      "name": "tips_r_foot",
+      "directions": 4
+    },
+    {
+      "name": "tips_r_hand_f",
+      "directions": 4
+    },
+    {
+      "name": "tips_r_hand",
+      "directions": 4
+    }
+  ]
+}
