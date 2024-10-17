@@ -94,9 +94,9 @@
   - type: StationEvent
     weight: 2
     duration: 1
-    earliestStart: 45
+    earliestStart: 120 # Floof
     reoccurrenceDelay: 60
-    minimumPlayers: 20
+    minimumPlayers: 40 # Floof
   - type: RandomSpawnRule
     prototype: SpawnPointGhostDragon
 
@@ -108,9 +108,9 @@
   - type: StationEvent
     weight: 3
     duration: 1
-    earliestStart: 45
-    reoccurrenceDelay: 45
-    minimumPlayers: 20
+    earliestStart: 90 # Floof
+    reoccurrenceDelay: 60 # Floof
+    minimumPlayers: 30 # Floof
   - type: NinjaSpawnRule
 
 # TODO there's already a glimmer revenant rule. One of them might be broken.
@@ -176,7 +176,7 @@
     earliestStart: 30
     reoccurrenceDelay: 5
     weight: 7.5
-    minimumPlayers: 7 #Enough to hopefully have at least one engineering guy
+    minimumPlayers: 20 # Floof
     startAnnouncement: true
     endAnnouncement: true
     duration: null #ending is handled by MeteorSwarmRule
@@ -258,7 +258,7 @@
     startDelay: 24
     duration: 60
     maxDuration: 120
-    reoccurrenceDelay: 2 # Gives a chance for multiple checks in a row, but not in parallel
+    reoccurrenceDelay: 20 # Floof
   - type: PowerGridCheckRule
 
 - type: entity
