@@ -10,6 +10,7 @@ using Content.Shared.Chat;
 using Content.Shared.Language;
 using Robust.Shared.Prototypes;
 using Content.Shared.Abilities.Psionics;
+using Content.Shared.Language.Components;
 
 namespace Content.Server.Chat;
 
