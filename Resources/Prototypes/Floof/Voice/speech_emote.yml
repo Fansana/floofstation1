@@ -5,3 +5,11 @@
   chatTriggers:
   - yip
   - yips
+
+- type: emote
+  id: ReptilianHiss
+  category: Vocal
+  chatMessages: [ hiss ]
+  chatTriggers:
+  - hiss
+  - hisses

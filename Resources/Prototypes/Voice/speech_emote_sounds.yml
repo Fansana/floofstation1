@@ -88,8 +88,12 @@
       collection: MaleCry
     Weh:
       collection: Weh
+    # Floof
     Yip:
       collection: Yip
+    ReptilianHiss:
+      collection: ReptilianHiss
+    # Floof end
 
 - type: emoteSounds
   id: MaleSlime
