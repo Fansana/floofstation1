@@ -200,7 +200,7 @@
 - type: trait
   id: PsionicInsulation
   category: Mental
-  points: -10 #Buy a significant disability to get this.
+  points: -4 #Buy a significant disability to get this... NOT
   components:
     - type: PsionicInsulation
     - type: Mindbroken
