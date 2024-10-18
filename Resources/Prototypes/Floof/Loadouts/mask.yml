@@ -86,3 +86,14 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMasks2
+
+- type: loadout
+  id: LoadoutMaskGasMuffled
+  category: Mask
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingMaskGasMuffled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMasks2
