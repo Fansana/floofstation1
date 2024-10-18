@@ -1,0 +1,160 @@
+- type: entity
+  id: PartAquatic
+  parent: BaseItem
+  name: "aquatic body part"
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Species/Aquatic/parts.rsi
+  - type: Icon
+    sprite: Floof/Mobs/Species/Aquatic/parts.rsi
+  - type: Damageable
+    damageContainer: Biological
+  - type: BodyPart
+  - type: ContainerContainer
+    containers:
+      bodypart: !type:Container
+        ents: []
+  - type: StaticPrice #DynamicPrice
+    price: 100
+  - type: Tag
+    tags:
+      - Trash
+
+- type: entity
+  id: TorsoAquatic
+  name: "aquatic torso"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "torso_m"
+  - type: Icon
+    state: "torso_m"
+  - type: BodyPart
+    partType: Torso
+
+- type: entity
+  id: HeadAquatic
+  name: "aquatic head"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "head_m"
+  - type: Icon
+    state: "head_m"
+  - type: BodyPart
+    partType: Head
+    vital: true
+  - type: Input
+    context: "ghost"
+  - type: InputMover
+  - type: GhostOnMove
+  - type: Tag
+    tags:
+      - Head
+
+- type: entity
+  id: LeftArmAquatic
+  name: "left aquatic arm"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "l_arm"
+  - type: Icon
+    state: "l_arm"
+  - type: BodyPart
+    partType: Arm
+    symmetry: Left
+
+- type: entity
+  id: RightArmAquatic
+  name: "right aquatic arm"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "r_arm"
+  - type: Icon
+    state: "r_arm"
+  - type: BodyPart
+    partType: Arm
+    symmetry: Right
+
+- type: entity
+  id: LeftHandAquatic
+  name: "left aquatic hand"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "l_hand"
+  - type: Icon
+    state: "l_hand"
+  - type: BodyPart
+    partType: Hand
+    symmetry: Left
+
+- type: entity
+  id: RightHandAquatic
+  name: "right aquatic hand"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "r_hand"
+  - type: Icon
+    state: "r_hand"
+  - type: BodyPart
+    partType: Hand
+    symmetry: Right
+
+- type: entity
+  id: LeftLegAquatic
+  name: "left aquatic leg"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "l_leg"
+  - type: Icon
+    state: "l_leg"
+  - type: BodyPart
+    partType: Leg
+    symmetry: Left
+  - type: MovementBodyPart
+
+- type: entity
+  id: RightLegAquatic
+  name: "right aquatic leg"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "r_leg"
+  - type: Icon
+    state: "r_leg"
+  - type: BodyPart
+    partType: Leg
+    symmetry: Right
+  - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootAquatic
+  name: "left aquatic foot"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "l_foot"
+  - type: Icon
+    state: "l_foot"
+  - type: BodyPart
+    partType: Foot
+    symmetry: Left
+
+- type: entity
+  id: RightFootAquatic
+  name: "right aquatic foot"
+  parent: PartAquatic
+  components:
+  - type: Sprite
+    state: "r_foot"
+  - type: Icon
+    state: "r_foot"
+  - type: BodyPart
+    partType: Foot
+    symmetry: Right

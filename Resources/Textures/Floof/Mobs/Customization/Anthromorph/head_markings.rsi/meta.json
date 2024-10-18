@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "https://github.com/Rotwood-Vale/Ratwood-Keep/blob/cf7c846344f0b3996a5ab62e55d8131d65f1ea8c/icons/mob/sprite_accessory/snouts/snouts.dmi, modified by papelinn",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "anabus_inner",
+      "directions": 4
+    },
+    {
+      "name": "anabus_snout",
+      "directions": 4
+    },
+    {
+      "name": "bigbeak",
+      "directions": 4
+    },
+    {
+      "name": "bigbeak_short",
+      "directions": 4
+    },
+    {
+      "name": "bird_beak",
+      "directions": 4
+    },
+    {
+      "name": "bird_detail",
+      "directions": 4
+    },
+    {
+      "name": "bird_top",
+      "directions": 4
+    },
+    {
+      "name": "bovine_detail",
+      "directions": 4
+    },
+    {
+      "name": "bovine_nose",
+      "directions": 4
+    },
+    {
+      "name": "bovine_snout",
+      "directions": 4
+    },
+    {
+      "name": "bug_eyes",
+      "directions": 4
+    },
+    {
+      "name": "bug_snout",
+      "directions": 4
+    },
+    {
+      "name": "elephant_horns",
+      "directions": 4
+    },
+    {
+      "name": "elephant_snout",
+      "directions": 4
+    },
+    {
+      "name": "hookbeak_big",
+      "directions": 4
+    },
+    {
+      "name": "hookbeak",
+      "directions": 4
+    },
+    {
+      "name": "horse_nose",
+      "directions": 4
+    },
+    {
+      "name": "horse_snout",
+      "directions": 4
+    },
+    {
+      "name": "husky_inner",
+      "directions": 4
+    },
+    {
+      "name": "husky_snout",
+      "directions": 4
+    },
+    {
+      "name": "hyena_inner",
+      "directions": 4
+    },
+    {
+      "name": "hyena_snout",
+      "directions": 4
+    },
+    {
+      "name": "jackal_inner",
+      "directions": 4
+    },
+    {
+      "name": "jackal_snout",
+      "directions": 4
+    },
+    {
+      "name": "lcanidalt",
+      "directions": 4
+    },
+    {
+      "name": "lcanid",
+      "directions": 4
+    },
+    {
+      "name": "lcanidstripe_inner",
+      "directions": 4
+    },
+    {
+      "name": "lcanidstripe_snout",
+      "directions": 4
+    },
+    {
+      "name": "leporid_nose",
+      "directions": 4
+    },
+    {
+      "name": "leporid_snout",
+      "directions": 4
+    },
+    {
+      "name": "otie_inner",
+      "directions": 4
+    },
+    {
+      "name": "otiesmile_inner",
+      "directions": 4
+    },
+    {
+      "name": "otiesmile_snout",
+      "directions": 4
+    },
+    {
+      "name": "otie_snout",
+      "directions": 4
+    },
+    {
+      "name": "panda_inner",
+      "directions": 4
+    },
+    {
+      "name": "panda_snout",
+      "directions": 4
+    },
+    {
+      "name": "pede_inner",
+      "directions": 4
+    },
+    {
+      "name": "pede_snout",
+      "directions": 4
+    },
+    {
+      "name": "rhino_inner",
+      "directions": 4
+    },
+    {
+      "name": "rhino_nose",
+      "directions": 4
+    },
+    {
+      "name": "rhino_snout",
+      "directions": 4
+    },
+    {
+      "name": "rodent",
+      "directions": 4
+    },
+    {
+      "name": "scanidalt2",
+      "directions": 4
+    },
+    {
+      "name": "scanidalt3_inner",
+      "directions": 4
+    },
+    {
+      "name": "scanidalt3_snout",
+      "directions": 4
+    },
+    {
+      "name": "scanid_inner",
+      "directions": 4
+    },
+    {
+      "name": "scanid_snout",
+      "directions": 4
+    },
+    {
+      "name": "sergal_inner",
+      "directions": 4
+    },
+    {
+      "name": "sergal_snout",
+      "directions": 4
+    },
+    {
+      "name": "shark_inner",
+      "directions": 4
+    },
+    {
+      "name": "shark_snout",
+      "directions": 4
+    },
+    {
+      "name": "skulldog_detail",
+      "directions": 4
+    },
+    {
+      "name": "skulldog_skull",
+      "directions": 4
+    },
+    {
+      "name": "skulldog_snout",
+      "directions": 4
+    },
+    {
+      "name": "slimbeak_alt",
+      "directions": 4
+    },
+    {
+      "name": "slimbeak",
+      "directions": 4
+    },
+    {
+      "name": "slimbeak_short",
+      "directions": 4
+    },
+    {
+      "name": "tajaran",
+      "directions": 4
+    },
+    {
+      "name": "toucan_inner",
+      "directions": 4
+    },
+    {
+      "name": "toucan_snout",
+      "directions": 4
+    },
+    {
+      "name": "wahalt_detail",
+      "directions": 4
+    },
+    {
+      "name": "wahalt_snout",
+      "directions": 4
+    },
+    {
+      "name": "wah_detail",
+      "directions": 4
+    },
+    {
+      "name": "wah_inner",
+      "directions": 4
+    },
+    {
+      "name": "wah_snout",
+      "directions": 4
+    },
+    {
+      "name": "wolfalt",
+      "directions": 4
+    },
+    {
+      "name": "wolf_nose",
+      "directions": 4
+    },
+    {
+      "name": "wolf_snout",
+      "directions": 4
+    },
+    {
+      "name": "zebra_inner",
+      "directions": 4
+    },
+    {
+      "name": "zebra_snout",
+      "directions": 4
+    }
+  ]
+}

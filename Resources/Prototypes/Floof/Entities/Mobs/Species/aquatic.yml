@@ -1,0 +1,63 @@
+- type: entity
+  save: false
+  name: Urist McAquatic
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobAquatic
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Aquatic
+  - type: Icon
+    sprite: Floof/Mobs/Species/Aquatic/parts.rsi
+    state: full
+  - type: Body
+    prototype: Aquatic
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Blunt: 2
+        Slash: 3
+  - type: Perishable
+  - type: Damageable
+    damageModifierSet: Aquatic # weak to cold and shock, resistant to heat
+  - type: Temperature
+    heatDamageThreshold: 400
+    coldDamageThreshold: 285
+    currentTemperature: 310.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold : 0.1 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 1.5 #per second, scales with temperature & other constants
+  - type: Thirst
+  - type: Carriable # Carrying system from nyanotrasen.
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatFish
+      amount: 5
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+
+- type: entity
+  save: false
+  name: Aquatic Anthro Dummy
+  parent: MobHumanDummy
+  id: MobAquaticDummy
+  noSpawn: true
+  description: A dummy aquatic meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Aquatic
+  - type: Inventory
+    speciesId: aquatic

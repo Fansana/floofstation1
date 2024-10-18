@@ -2,14 +2,7 @@
   id: BullishHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: bullishhorns
@@ -18,19 +11,7 @@
   id: BunnyEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      bunnyearstone2:
-        type:
-          !type:SimpleColoring
-            color: "#FFFFFF"
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: bunnyearstone1
@@ -41,14 +22,7 @@
   id: FoxEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: foxears
@@ -57,19 +31,7 @@
   id: GoatHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      goathornstone22:
-        type:
-          !type:SimpleColoring
-            color: "#FFFFFF"
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-ears.rsi
     state: goathornstone1
