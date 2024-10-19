@@ -18,8 +18,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: Shadowkin
-        blackeyeSpawn: false
+      - type: AnomalyJob
 
 - type: startingGear
   id: AnomalyGear
