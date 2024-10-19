@@ -1,9 +1,0 @@
-- type: entity
-  id: ShadowkinHideoutStation
-  parent:
-    - BaseStation
-    - BaseStationJobsSpawning
-    - BaseStationNanotrasen
-  noSpawn: true
-  components:
-    - type: Transform

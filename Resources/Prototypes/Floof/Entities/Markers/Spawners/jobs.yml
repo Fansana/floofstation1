@@ -1,0 +1,10 @@
+- type: entity
+  id: SpawnPointAnomaly
+  parent: SpawnPointJobBase
+  name: anomaly
+  components:
+  - type: SpawnPoint
+    job_id: Anomaly
+  - type: Sprite
+    layers:
+      - state: green
