@@ -6,6 +6,10 @@
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Medical
+    min: 36000 # Floofstation - 10 hour
   access:
   - Medical
   - Maintenance

@@ -6,7 +6,17 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 14400 # Floofstation - 4 hour
+    min: 90000 # Floofstation - 25 hour
+  # - !type:CharacterLogicOrRequirement
+  #     requirements:
+  #       - !type:CharacterSpeciesRequirement
+  #         inverted: true
+  #         species:
+  #           - Shadowkin
+  #       - !type:CharacterTraitRequirement
+  #         inverted: true
+  #         traits:
+  #           - ShadowkinBlackeye
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
