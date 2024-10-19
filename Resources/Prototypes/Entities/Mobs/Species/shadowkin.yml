@@ -225,7 +225,7 @@
       manaGain: 0.25
       mana: 150
       maxMana: 250
-      bypassManaCheck: true
+      noMana: "shadowkin-tired"
       removable: false
     - type: InnatePsionicPowers
       powersToAdd:
