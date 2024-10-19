@@ -14,6 +14,10 @@ using Content.Shared.Rounding;
 using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 using Content.Server.Abilities.Psionics;
+using Content.Shared.Mobs; // Floofstation Edit
+using Content.Server.FloofStation; // Floofstation Edit
+using Content.Shared.Inventory; // Floofstation Edit
+using Content.Shared.Teleportation.Components; // Floofstation Edit
 
 namespace Content.Server.Shadowkin;
 
@@ -24,6 +28,8 @@ public sealed class ShadowkinSystem : EntitySystem
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!; // Floofstation Edit
+    [Dependency] private readonly InventorySystem _inventorySystem = default!; // Floofstation Edit
 
     public const string ShadowkinSleepActionId = "ShadowkinActionSleep";
     public override void Initialize()
@@ -36,6 +42,7 @@ public sealed class ShadowkinSystem : EntitySystem
         SubscribeLocalEvent<ShadowkinComponent, OnManaUpdateEvent>(OnManaUpdate);
         SubscribeLocalEvent<ShadowkinComponent, RejuvenateEvent>(OnRejuvenate);
         SubscribeLocalEvent<ShadowkinComponent, EyeColorInitEvent>(OnEyeColorChange);
+        SubscribeLocalEvent<ShadowkinComponent, MobStateChangedEvent>(OnMobStateChanged); // Floofstation Edit
     }
 
     private void OnInit(EntityUid uid, ShadowkinComponent component, ComponentStartup args)
@@ -117,6 +124,9 @@ public sealed class ShadowkinSystem : EntitySystem
         if (magic.Mana <= component.BlackEyeMana)
             ApplyBlackEye(uid);
 
+        if (magic.Mana >= magic.MaxMana)
+            RemComp<ForcedSleepingComponent>(uid);
+
         Dirty(magic); // Update Shadowkin Overlay.
         UpdateShadowkinAlert(uid, component);
     }
@@ -171,7 +181,7 @@ public sealed class ShadowkinSystem : EntitySystem
         magic.Mana = 250;
         magic.MaxMana = 250;
         magic.ManaGain = 0.25f;
-        magic.BypassManaCheck = true;
+        magic.NoMana = "shadowkin-tired"; // FloofStation Edit
         magic.Removable = false;
         magic.MindbreakingFeedback = "shadowkin-blackeye";
 
@@ -179,5 +189,43 @@ public sealed class ShadowkinSystem : EntitySystem
             _psionicAbilitiesSystem.InitializePsionicPower(uid, shadowkinPowers);
 
         UpdateShadowkinAlert(uid, component);
+    }
+
+    // FloofStation Edit
+    private void OnMobStateChanged(EntityUid uid, ShadowkinComponent component, MobStateChangedEvent args)
+    {
+        if (HasComp<MindbrokenComponent>(uid) || HasComp<ShadowkinCuffComponent>(uid))
+            return;
+
+        if (args.NewMobState == MobState.Critical || args.NewMobState == MobState.Dead)
+        {
+            if (TryComp<InventoryComponent>(uid, out var inventoryComponent) && _inventorySystem.TryGetSlots(uid, out var slots))
+                foreach (var slot in slots)
+                    _inventorySystem.TryUnequip(uid, slot.Name, true, true, false, inventoryComponent);
+
+            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
+            SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(uid).Coordinates);
+
+            var query = EntityQueryEnumerator<DarkHubComponent>();
+            while (query.MoveNext(out var target, out var portal))
+            {
+                var timeout = EnsureComp<PortalTimeoutComponent>(uid);
+                timeout.EnteredPortal = target;
+                Dirty(uid, timeout);
+
+                _transform.SetCoordinates(uid, Transform(target).Coordinates);
+                continue;
+            }
+
+            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
+            SpawnAtPosition("EffectFlashShadowkinDarkSwapOn", Transform(uid).Coordinates);
+
+            RaiseLocalEvent(uid, new RejuvenateEvent());
+            if (TryComp<PsionicComponent>(uid, out var magic))
+            {
+                magic.Mana = 0;
+                EnsureComp<ForcedSleepingComponent>(uid);
+            }
+        }
     }
 }

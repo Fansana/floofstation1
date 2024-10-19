@@ -1,0 +1,13 @@
+- type: entity
+  parent: IDCardStandard
+  id: AnomalyIDCard
+  name: anomaly ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: rpg
+    - state: department
+      color: "#C96DBF"
+    - state: passenger
+  - type: PresetIdCard
+    job: Anomaly
