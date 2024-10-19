@@ -24,6 +24,67 @@
     drawdepth: FloorTiles
     sprite: Floof/Structures/dark.rsi
     state: dark
+    shader: unshaded
   - type: Physics
     canCollide: false
   - type: Fixtures
+
+- type: entity
+  id: PortalShadowkinHub
+  parent: BasePortal
+  name: dark hub
+  description: This portal is used by shadowkins to go nearly anywhere in the universe!
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Floof/Structures/shadowkin_portal.rsi
+    layers:
+    - state: hub_portal
+  - type: PointLight
+    color: "#793a80dd"
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: Portal
+    arrivalSound: /Audio/Items/hiss.ogg
+    departureSound: /Audio/Items/hiss.ogg
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+  - type: DarkHub
+
+- type: entity
+  id: PortalShadowkin
+  parent: BasePortal
+  name: dark portal
+  description: The portal to the dark...
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Floof/Structures/shadowkin_portal.rsi
+    layers:
+    - state: portal
+  - type: PointLight
+    color: "#793a80dd"
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: Portal
+    arrivalSound: /Audio/Items/hiss.ogg
+    departureSound: /Audio/Items/hiss.ogg
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+  - type: DarkPortal
+  - type: Ethereal
+
+- type: entity
+  name: Shadowkin Portal Spawner
+  id: PortalShadowkinSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - PortalShadowkin

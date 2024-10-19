@@ -1011,7 +1011,7 @@ entities:
       pos: -17.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2765.003
+      secondsUntilStateChange: -2781.5022
       state: Opening
     - type: DeviceLinkSink
       links:
@@ -6382,6 +6382,13 @@ entities:
     components:
     - type: Transform
       pos: -10.365437,6.5959682
+      parent: 2
+- proto: PortalShadowkinHub
+  entities:
+  - uid: 1605
+    components:
+    - type: Transform
+      pos: 0.5,0.5
       parent: 2
 - proto: PottedPlantRandom
   entities:

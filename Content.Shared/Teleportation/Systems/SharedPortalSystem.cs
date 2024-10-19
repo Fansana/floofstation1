@@ -4,6 +4,7 @@ using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
+using Content.Shared.Shadowkin;
 using Content.Shared.Teleportation.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio;
@@ -48,9 +49,11 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnGetVerbs(EntityUid uid, PortalComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-        // Traversal altverb for ghosts to use that bypasses normal functionality
-        if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
-            return;
+
+        if (!HasComp<EtherealComponent>(uid) && !HasComp<EtherealComponent>(args.User)) // FloofStation Edit
+            // Traversal altverb for ghosts to use that bypasses normal functionality
+            if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
+                return;
 
         // Don't use the verb with unlinked or with multi-output portals
         // (this is only intended to be useful for ghosts to see where a linked portal leads)
@@ -152,7 +155,7 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnEndCollide(EntityUid uid, PortalComponent component, ref EndCollideEvent args)
     {
-        if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId,args.OurFixture, args.OtherFixture))
+        if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId, args.OurFixture, args.OtherFixture))
             return;
 
         var subject = args.OtherEntity;
@@ -164,7 +167,7 @@ public abstract class SharedPortalSystem : EntitySystem
         }
     }
 
-    private void TeleportEntity(EntityUid portal, EntityUid subject, EntityCoordinates target, EntityUid? targetEntity=null, bool playSound=true,
+    private void TeleportEntity(EntityUid portal, EntityUid subject, EntityCoordinates target, EntityUid? targetEntity = null, bool playSound = true,
         PortalComponent? portalComponent = null)
     {
         if (!Resolve(portal, ref portalComponent))
