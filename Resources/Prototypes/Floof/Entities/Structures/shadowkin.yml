@@ -1,0 +1,29 @@
+- type: entity
+  id: Phoronic
+  parent: BaseStructure
+  name: phoronic cascade
+  description: "A huge structure made of pure plasma. Dark energy roils and bursts within it."
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    offset: "0.0,0.5"
+    sprite: Floof/Structures/phoronic.rsi
+    state: phoronic
+  - type: SpriteFade
+
+- type: entity
+  id: DarkTile
+  parent: BaseStructure
+  name: Dark
+  description: "It's a strange, impenetrable darkness."
+  components:
+  - type: Sprite
+    drawdepth: FloorTiles
+    sprite: Floof/Structures/dark.rsi
+    state: dark
+  - type: Physics
+    canCollide: false
+  - type: Fixtures

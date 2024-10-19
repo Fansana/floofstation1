@@ -7,12 +7,14 @@
   alwaysUseSpawner: true
   overrideConsoleVisibility: true
   canBeAntag: false
-  icon: "JobIconVisitor"
+  icon: "JobIconNoId"
   joinNotifyCrew: false
   access:
   - Maintenance
   requirements:
-    - !type:CharacterWhitelistRequirement
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Shadowkin
   special:
   - !type:AddComponentSpecial
     components:
@@ -22,11 +24,7 @@
 - type: startingGear
   id: AnomalyGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorGrey
-    back: ClothingBackpackFilled
-    shoes: ClothingShoesColorBlack
-    id: PassengerPDA
+    jumpsuit: ClothingUniformLoinCloth
+    shoes: ClothingClothWrap
+    id: AnomalyIDCard
     ears: ClothingHeadsetGrey
-  innerClothingSkirt: ClothingUniformJumpskirtColorGrey
-  satchel: ClothingBackpackSatchelFilled
-  duffelbag: ClothingBackpackDuffelFilled

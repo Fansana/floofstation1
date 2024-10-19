@@ -1,0 +1,11 @@
+- type: gameMap
+  id: ShadowkinHideout
+  mapName: Shadowkin Hideout
+  mapPath: /Maps/Floof/hideout.yml
+  minPlayers: 0
+  stations:
+    ShadowkinHideout:
+      stationProto: ShadowkinHideoutStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Shadowkin Hideout"
