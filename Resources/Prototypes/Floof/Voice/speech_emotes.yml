@@ -1,0 +1,6 @@
+- type: emote
+  id: Gekker
+  category: Vocal
+  chatMessages: [ gekkers ]
+  chatTriggers:
+  - gekkers

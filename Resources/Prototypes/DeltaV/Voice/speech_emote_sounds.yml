@@ -74,8 +74,8 @@
       collection: VulpkaninScreams
     Laugh:
       collection: MaleLaugh
-    Gekker:
-      collection: MaleLaugh
+    Gekker: #Floof
+      collection: VulpkaninGekker
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -114,8 +114,8 @@
       collection: VulpkaninScreams
     Laugh:
       collection: FemaleLaugh
-    Gekker:
-      collection: FemaleLaugh
+    Gekker: #Floof
+      collection: VulpkaninGekker
     Sneeze:
       collection: FemaleSneezes
     Cough:
