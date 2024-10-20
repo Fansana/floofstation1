@@ -13,6 +13,7 @@
   lastNames: names_arachnid_last
   sexes:
   - Unsexed
+  customName: true
 
 - type: speciesBaseSprites
   id: MobArachnidSprites

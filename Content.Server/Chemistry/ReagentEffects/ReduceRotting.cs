@@ -1,5 +1,5 @@
-using Content.Server.Stunnable;
 using Content.Shared.Chemistry.Reagent;
+using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Content.Server.Atmos.Rotting;
 
@@ -8,6 +8,7 @@ namespace Content.Server.Chemistry.ReagentEffects
     /// <summary>
     /// Reduces the rotting accumulator on the patient, making them revivable.
     /// </summary>
+    [UsedImplicitly]
     public sealed partial class ReduceRotting : ReagentEffect
     {
         [DataField("seconds")]
