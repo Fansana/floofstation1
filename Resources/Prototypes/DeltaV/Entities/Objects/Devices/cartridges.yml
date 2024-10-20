@@ -31,8 +31,8 @@
   - type: Icon
     sprite: DeltaV/Objects/Devices/cartridge.rsi
     state: cart-cri
-  - type: UIFragment
-    ui: !type:SecWatchUi
+  # - type: UIFragment
+  #   ui: !type:SecWatchUi
   - type: Cartridge
     programName: sec-watch-program-name
     icon:
