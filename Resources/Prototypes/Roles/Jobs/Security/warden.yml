@@ -6,17 +6,7 @@
   requirements:
     - !type:CharacterPlaytimeRequirement # DeltaV - JobSecurityOfficer time requirement. Make them experienced in proper officer work.
       tracker: JobSecurityOfficer
-      min: 180000 # Floofstation - 50 hour
-    # - !type:CharacterLogicOrRequirement
-    #   requirements:
-    #     - !type:CharacterSpeciesRequirement
-    #       inverted: true
-    #       species:
-    #         - Shadowkin
-    #     - !type:CharacterTraitRequirement
-    #       inverted: true
-    #       traits:
-    #         - ShadowkinBlackeye
+      min: 3600 # Floofstation - 1 hour
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos

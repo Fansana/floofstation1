@@ -7,17 +7,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 360000 # Floofstation - 100 hour
-    # - !type:CharacterLogicOrRequirement
-    #   requirements:
-    #     - !type:CharacterSpeciesRequirement
-    #       inverted: true
-    #       species:
-    #         - Shadowkin
-    #     - !type:CharacterTraitRequirement
-    #       inverted: true
-    #       traits:
-    #         - ShadowkinBlackeye
+      min: 3600 # Floofstation - 1 hour
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos
