@@ -71,22 +71,22 @@
   category: cargoproduct-category-name-hardsuits
   group: market
 
-- type: cargoProduct
-  id: SecuritySuldeTacsuit
-  icon:
-    sprite: DeltaV/Clothing/OuterClothing/Hardsuits/Combat/riot.rsi
-    state: icon
-  product: CrateSecuritySuldeTacsuit
-  cost: 7500
-  category: cargoproduct-category-name-hardsuits
-  group: market
+# - type: cargoProduct
+#   id: SecuritySuldeTacsuit
+#   icon:
+#     sprite: DeltaV/Clothing/OuterClothing/Hardsuits/Combat/riot.rsi
+#     state: icon
+#   product: CrateSecuritySuldeTacsuit
+#   cost: 7500
+#   category: cargoproduct-category-name-hardsuits
+#   group: market
 
-- type: cargoProduct
-  id: SecurityTsagaanTacsuit
-  icon:
-    sprite: DeltaV/Clothing/OuterClothing/Hardsuits/Combat/medical.rsi
-    state: icon
-  product: CrateSecurityTsagaanTacsuit
-  cost: 5500
-  category: cargoproduct-category-name-hardsuits
-  group: market
+# - type: cargoProduct
+#   id: SecurityTsagaanTacsuit
+#   icon:
+#     sprite: DeltaV/Clothing/OuterClothing/Hardsuits/Combat/medical.rsi
+#     state: icon
+#   product: CrateSecurityTsagaanTacsuit
+#   cost: 5500
+#   category: cargoproduct-category-name-hardsuits
+#   group: market
