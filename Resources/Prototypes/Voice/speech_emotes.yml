@@ -127,6 +127,9 @@
   id: Weh
   category: Vocal
   chatMessages: [ wehs ]
+  chatTriggers: # Floof - you can weh now
+    - weh
+    - wehs
 
 - type: emote
   id: Chirp
