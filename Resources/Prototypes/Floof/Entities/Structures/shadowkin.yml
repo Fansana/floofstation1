@@ -75,6 +75,7 @@
     randomTeleport: false
   - type: DarkPortal
   - type: Ethereal
+    canBeStunned: false
 
 - type: entity
   name: Shadowkin Portal Spawner
