@@ -33,11 +33,11 @@
     state: cart-cri
   # - type: UIFragment
   #   ui: !type:SecWatchUi
-  - type: Cartridge
-    programName: sec-watch-program-name
-    icon:
-      sprite: Objects/Weapons/Melee/stunbaton.rsi
-      state: stunbaton_on
+  # - type: Cartridge
+  #   programName: sec-watch-program-name
+  #   icon:
+  #     sprite: Objects/Weapons/Melee/stunbaton.rsi
+  #     state: stunbaton_on
   # - type: SecWatchCartridge
 
 - type: entity
