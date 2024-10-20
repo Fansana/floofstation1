@@ -6,32 +6,22 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
-      min: 360000 # Floofstation - 100 hour
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
-      min: 360000 # Floofstation - 100 hour
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
-      min: 360000 # Floofstation - 100 hour
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 360000 # Floofstation - 100 hour
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Epistemics dept time requirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 360000 # Floofstation - 100 hour
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Command
-      min: 360000 # Floofstation - 100 hour
-    # - !type:CharacterLogicOrRequirement
-    #   requirements:
-    #     - !type:CharacterSpeciesRequirement
-    #       inverted: true
-    #       species:
-    #         - Shadowkin
-    #     - !type:CharacterTraitRequirement
-    #       inverted: true
-    #       traits:
-    #         - ShadowkinBlackeye
+      min: 14400 # Floofstation - 4 hour
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

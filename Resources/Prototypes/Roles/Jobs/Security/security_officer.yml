@@ -6,7 +6,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 36000 # Floofstation - 10 hour
+      min: 3600 # Floofstation - 1 hour
     # - !type:CharacterLogicOrRequirement
     #   requirements:
     #     - !type:CharacterSpeciesRequirement
