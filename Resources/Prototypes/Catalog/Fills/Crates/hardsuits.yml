@@ -41,25 +41,26 @@
     - id: ClothingOuterHardsuitSalvage
 
 # Security
-- type: entity
-  id: CrateSecurityShanlinTacsuit
-  parent: CrateSecgear
-  name: shanlin tacsuit crate
-  description: Contains a single CSA-51a "Shanlin" tacsuit. Requires Security access to open.
-  components:
-  - type: StorageFill
-    contents:
-    - id: ClothingOuterHardsuitSyndieReverseEngineered
+# Floofstation - commented those out: who even thought it was a good idea?
+# - type: entity
+#   id: CrateSecurityShanlinTacsuit
+#   parent: CrateSecgear
+#   name: shanlin tacsuit crate
+#   description: Contains a single CSA-51a "Shanlin" tacsuit. Requires Security access to open.
+#   components:
+#   - type: StorageFill
+#     contents:
+#     - id: ClothingOuterHardsuitSyndieReverseEngineered
 
-- type: entity
-  id: CrateSecurityGuanYuTacsuit
-  parent: CrateSecgear
-  name: guan-yu tacsuit crate
-  description: Contains a single CSA-80UA "Guan-Yu" tacsuit. Requires Security access to open.
-  components:
-  - type: StorageFill
-    contents:
-    - id: ClothingOuterHardsuitJuggernautReverseEngineered
+# - type: entity
+#   id: CrateSecurityGuanYuTacsuit
+#   parent: CrateSecgear
+#   name: guan-yu tacsuit crate
+#   description: Contains a single CSA-80UA "Guan-Yu" tacsuit. Requires Security access to open.
+#   components:
+#   - type: StorageFill
+#     contents:
+#     - id: ClothingOuterHardsuitJuggernautReverseEngineered
 
 - type: entity
   id: CrateSecurityBaghaturTacsuit
