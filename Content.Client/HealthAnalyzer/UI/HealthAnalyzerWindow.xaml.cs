@@ -156,7 +156,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
                 var groupTitleText = $"{Loc.GetString(
                     "health-analyzer-window-damage-group-text",
-                    ("damageGroup", Loc.GetString("health-analyzer-window-damage-group-" + damageGroupId)),
+                    ("damageGroup", _prototypes.Index<DamageGroupPrototype>(damageGroupId).LocalizedName),
                     ("amount", damageAmount)
                 )}";
 
@@ -184,7 +184,7 @@ namespace Content.Client.HealthAnalyzer.UI
                         ("amount", typeAmount)
                     );
 
-                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, " · ")));
+                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, "- ")));
                 }
             }
         }

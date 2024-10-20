@@ -5,8 +5,6 @@ using Content.Shared.Psionics;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
-using Content.Shared.Damage;
-using Content.Shared.FixedPoint;
 using Content.Shared.Shadowkin;
 using Content.Shared.Rejuvenate;
 using Content.Shared.Alert;
