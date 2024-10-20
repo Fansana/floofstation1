@@ -7,7 +7,17 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Civilian dept time requirement
       department: Civilian
-      min: 14400 # Floofstation 4 hours
+      min: 180000 # Floofstation 50 hours
+    # - !type:CharacterLogicOrRequirement
+    #   requirements:
+    #     - !type:CharacterSpeciesRequirement
+    #       inverted: true
+    #       species:
+    #         - Shadowkin
+    #     - !type:CharacterTraitRequirement
+    #       inverted: true
+    #       traits:
+    #         - ShadowkinBlackeye
   weight: 10 # DeltaV - Changed HoP weight from 20 to 10 due to them not being more important than other Heads
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
