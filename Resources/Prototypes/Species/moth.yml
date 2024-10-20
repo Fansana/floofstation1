@@ -11,6 +11,7 @@
   maleFirstNames: names_moth_first_male
   femaleFirstNames: names_moth_first_female
   lastNames: names_moth_last
+  customName: true
 
 - type: speciesBaseSprites
   id: MobMothSprites

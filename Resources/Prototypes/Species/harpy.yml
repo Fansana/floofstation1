@@ -13,6 +13,7 @@
   minWidth: 0.55
   defaultWidth: 0.8
   maxWidth: 1.15
+  customName: true
 
 - type: speciesBaseSprites
   id: MobHarpySprites

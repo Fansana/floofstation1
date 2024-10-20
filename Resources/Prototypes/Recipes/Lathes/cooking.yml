@@ -49,13 +49,13 @@
   materials:
     Glass: 100
 
-- type: latheRecipe 
-  id: CustomDrinkJug 
-  result: CustomDrinkJug 
-  completetime: 2 
-  materials: 
+- type: latheRecipe
+  id: CustomDrinkJug
+  result: CustomDrinkJug
+  completetime: 2
+  materials:
     Plastic: 200
-    
+
 - type: latheRecipe
   id: FoodPlate
   result: FoodPlate
@@ -104,10 +104,3 @@
   completetime: 0.4
   materials:
     Steel: 100
-
-- type: latheRecipe # FloofStation
-  id: CustomDrinkJug
-  result: CustomDrinkJug
-  completetime: 4
-  materials:
-    Plastic: 400

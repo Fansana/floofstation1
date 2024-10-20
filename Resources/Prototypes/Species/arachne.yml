@@ -1,7 +1,7 @@
 - type: species
   id: Arachne
   name: species-name-arachne
-  roundStart: false
+  roundStart: true
   prototype: MobArachne
   sprites: MobArachneSprites
   markingLimits: MobArachneMarkingLimits
@@ -13,6 +13,7 @@
   youngAge: 150
   oldAge: 400
   maxAge: 666
+  customName: true
 
 - type: markingPoints
   id: MobArachneMarkingLimits

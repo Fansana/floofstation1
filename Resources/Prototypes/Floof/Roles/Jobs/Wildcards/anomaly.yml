@@ -9,6 +9,7 @@
   canBeAntag: false
   icon: "JobIconNoId"
   joinNotifyCrew: false
+  whitelisted: true
   access:
   - Maintenance
   requirements:

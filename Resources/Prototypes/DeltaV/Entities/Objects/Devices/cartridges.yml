@@ -38,7 +38,7 @@
     icon:
       sprite: Objects/Weapons/Melee/stunbaton.rsi
       state: stunbaton_on
-  - type: SecWatchCartridge
+  # - type: SecWatchCartridge
 
 - type: entity
   parent: BaseItem

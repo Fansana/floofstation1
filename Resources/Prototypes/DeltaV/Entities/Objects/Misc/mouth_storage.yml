@@ -9,7 +9,7 @@
       grid:
       - 0,0,1,1
       maxItemSize: Small
-      blacklist: 
+      blacklist:
         components:
         - Sharp
         - MindContainer
@@ -19,6 +19,6 @@
           ents: [ ]
     - type: UserInterface
       interfaces:
-       - key: enum.StorageUiKey.Key
-         type: StorageBoundUserInterface
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
     - type: Dumpable
