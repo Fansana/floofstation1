@@ -28,7 +28,6 @@
         visualType: Medium
         messages:
           - "reagent-effect-aphrodisiac-mildoverdose"
-        probablity: 0.06
         conditions:
           - !type:ReagentThreshold
             min: 50
