@@ -180,7 +180,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
                     var damageString = Loc.GetString(
                         "health-analyzer-window-damage-type-text",
-                        ("damageType", Loc.GetString("health-analyzer-window-damage-type-" + type)),
+                        ("damageType", Loc.GetString("damage-type-" + type.ToLower())),
                         ("amount", typeAmount)
                     );
 
