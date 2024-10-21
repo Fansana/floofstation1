@@ -17,6 +17,7 @@
   minWidth: 0.85
   defaultWidth: 1.2
   maxWidth: 1.35
+  customName: true
 
 - type: markingPoints
   id: MobOniMarkingLimits
