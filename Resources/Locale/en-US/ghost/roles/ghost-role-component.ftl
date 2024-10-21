@@ -30,6 +30,10 @@ ghost-role-information-angry-slimes-description = Everyone around you irritates 
 ghost-role-information-smile-name = Smile the Slime
 ghost-role-information-smile-description = The sweetest creature in the world. Smile Slime!
 
+ghost-role-information-Shiva-name = Shiva
+ghost-role-information-Shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
+ghost-role-information-Shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
+
 ghost-role-information-punpun-name = Pun Pun
 ghost-role-information-punpun-description = An honorable member of the monkey society in charge of the bar and helping the bartenders in any way he can.
 
