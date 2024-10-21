@@ -265,6 +265,7 @@
       inverted: true
       species:
         - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
+        - Anthromorph
   components:
     - type: TemperatureProtection
       coefficient: 0.1 # Enough resistance to walk into the chef's freezer, or tolerate daytime temperatures on Glacier without a jacket.
@@ -306,6 +307,8 @@
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
+        - Anthromorph
+        - Aquatic
         - Felinid # Felinids already have cat claws.
         - Reptilian # Reptilians also have cat claws.
         - Shadowkin # Shadowkins also have claws.

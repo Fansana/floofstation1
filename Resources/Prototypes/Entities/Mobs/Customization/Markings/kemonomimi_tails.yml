@@ -2,16 +2,7 @@
   id: BunnyTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: bunnytail
@@ -20,16 +11,7 @@
   id: DobleFur
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: doblefurtailtone1
@@ -40,16 +22,7 @@
   id: FluffyTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: fluffytail
@@ -58,16 +31,7 @@
   id: FoxNineTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: foxninetailstone1
@@ -78,16 +42,7 @@
   id: FoxThreeTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: foxthreetailstone1
@@ -98,16 +53,7 @@
   id: HorseTailCulty
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: horsetailculty
@@ -116,16 +62,7 @@
   id: HorseTailLong
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: horsetaillong
@@ -134,16 +71,7 @@
   id: SharkTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: sharktail
@@ -152,16 +80,7 @@
   id: TasselTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-          category: Hair
-      fallbackTypes:
-        - !type:CategoryColoring
-          category: FacialHair
-        - !type:SkinColoring
+  speciesRestriction: [Felinid, Anthromorph, Aquatic] # Floof - Anthromorphs
   sprites:
   - sprite: Mobs/Customization/kemonomimi-tails.rsi
     state: tasseltailtone1
