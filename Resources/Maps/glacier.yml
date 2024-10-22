@@ -75,7 +75,10 @@ entities:
     - type: GridTree
     - type: MovedGrids
     - type: Parallax
-      parallax: Sky
+      parallax: Snow
+    - type: Gravity
+      enabled: true
+      inherent: true
     - type: MapAtmosphere
       space: False
       mixture:
@@ -103,6 +106,9 @@ entities:
     - type: MetaData
     - type: Transform
       parent: 1
+    - type: PassiveDampening
+      linearDampening: 1
+      angularDampening: 1
     - type: MapGrid
       chunks:
         -1,-1:
@@ -69879,13 +69885,6 @@ entities:
     components:
     - type: Transform
       pos: 63.191357,-49.411076
-      parent: 2
-- proto: GravityGenerator
-  entities:
-  - uid: 9482
-    components:
-    - type: Transform
-      pos: 27.5,54.5
       parent: 2
 - proto: GravityGeneratorMini
   entities:
