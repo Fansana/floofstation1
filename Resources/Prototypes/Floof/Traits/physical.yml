@@ -1,7 +1,7 @@
 - type: trait
   id: Vampirism # You may port this to EE, you have my permission!
   category: Physical
-  points: -3 # MD - Change from "3" tp "-3" for balancing.
+  points: -1 # Floof - Change from "-3" tp "-1" for balancing.
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -94,3 +94,44 @@
     min: 100
     factor: 0.66 # still not as light as felinids due to different fixture size
 
+- type: trait
+  id: CyberEyesFlash
+  category: Physical
+  points: -6
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Photophobia
+        - Blindness
+        - Nearsighted
+  componentRemovals:
+    - Flashable
+  components:
+    - type: FlashImmunity
+    - type: CyberEyes
+
+- type: trait
+  id: CyberEyesWeld
+  category: Physical
+  points: -6
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Photophobia
+        - Blindness
+        - Nearsighted
+  components:
+    - type: EyeProtection
+    - type: CyberEyes

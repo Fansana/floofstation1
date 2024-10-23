@@ -365,6 +365,7 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterSpeciesRequirement
       species:
         - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
@@ -403,6 +404,7 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -426,10 +428,11 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
   components:
     - type: Prying
       speedModifier: 1
-      pryPowered: true
+      pryPowered: false # Floof - Balancing
 
 - type: trait
   id: PlateletFactories
@@ -440,6 +443,7 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -469,6 +473,7 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterSpeciesRequirement
       species:
         - Human
@@ -478,27 +483,28 @@
     - type: Damageable
       damageModifierSet: DermalArmor
 
-- type: trait
-  id: CyberEyes
-  category: Physical
-  points: -8
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - Photophobia
-        - Blindness
-        - Nearsighted
-  componentRemovals:
-    - Flashable
-  components:
-    - type: FlashImmunity
-    - type: EyeProtection
-    - type: CyberEyes
+# - type: trait
+#   id: CyberEyes
+#   category: Physical
+#   points: -8
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       inverted: true
+#       jobs:
+#         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+#         - Gladiator # Floof
+#     - !type:CharacterTraitRequirement
+#       inverted: true
+#       traits:
+#         - Photophobia
+#         - Blindness
+#         - Nearsighted
+#   componentRemovals:
+#     - Flashable
+#   components:
+#     - type: FlashImmunity
+#     - type: EyeProtection
+#     - type: CyberEyes
 
 - type: trait
   id: CyberEyesSecurity
@@ -509,12 +515,14 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
     - !type:CharacterTraitRequirement
       traits:
-        - CyberEyes
+        - CyberEyesWeld
+        - CyberEyesFlash 
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -533,9 +541,11 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
-        - CyberEyes
+        - CyberEyesWeld
+        - CyberEyesFlash 
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -558,9 +568,11 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
-        - CyberEyes
+        - CyberEyesWeld
+        - CyberEyesFlash 
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -581,12 +593,14 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
     - !type:CharacterTraitRequirement
       traits:
-        - CyberEyes
+        - CyberEyesWeld
+        - CyberEyesFlash 
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
