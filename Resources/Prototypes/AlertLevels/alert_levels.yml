@@ -7,6 +7,7 @@
       color: Green
       emergencyLightColor: LawnGreen
       sound: /Audio/Announcements/Alerts/code_green.ogg
+
       shuttleTime: 600
     blue:
       announcement: alert-level-blue-announcement
