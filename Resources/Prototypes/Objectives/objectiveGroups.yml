@@ -31,7 +31,7 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    KillRandomPersonObjective: 1
+    # KillRandomPersonObjective: 1 Floofstation Edit
     KillRandomHeadObjective: 0.25
 
 - type: weightedRandom
