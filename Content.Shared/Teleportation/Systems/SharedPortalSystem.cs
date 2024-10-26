@@ -69,6 +69,8 @@ public abstract class SharedPortalSystem : EntitySystem
 
                 var ent = link.LinkedEntities.First();
                 TeleportEntity(uid, args.User, Transform(ent).Coordinates, ent, false);
+                if (TryComp<EtherealComponent>(args.User, out var ethereal)) // Floofstation Edit
+                    RemComp(uid, ethereal);
                 if (TryComp<PortalTimeoutComponent>(args.User, out var timeout)) // Floofstation Edit
                     RemCompDeferred(args.User, timeout);
             },
@@ -147,9 +149,6 @@ public abstract class SharedPortalSystem : EntitySystem
             }
 
             TeleportEntity(uid, subject, Transform(target).Coordinates, target);
-
-            if (TryComp<EtherealComponent>(target, out var ethereal)) // Floofstation Edit
-                RemComp(uid, ethereal);
 
             return;
         }
