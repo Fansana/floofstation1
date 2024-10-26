@@ -20,10 +20,10 @@
       - type: StationJobs
         overflowJobs:
           - Passenger
-          - Anomaly # Floofstation
+          #- Anomaly # Floofstation
         availableJobs:
           Passenger: [ -1, -1 ]
-          Anomaly: [ -1, -1 ] # Floofstation
+          Anomaly: [ 2, 2 ] # Floofstation
           Captain: [ 1, 1 ]
         #service
           HeadOfPersonnel: [ 1, 1 ]
