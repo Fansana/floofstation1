@@ -30,7 +30,7 @@
 
 ### Animal Cruelty
 To inflict unnecessary suffering on a sapient being with malicious intent.
-Code. -103-Charge: 3 minutes.
+Code. -103-Charge:5 minutes.
 
 ### Brandishing
 To show a firearm or deadly weapon in public without proper permission to do so.
@@ -38,7 +38,7 @@ Code-109-Charge: 2 minutes
 
 ### Failure To Comply
 To willfully ignore lawful orders and commands provided by a Security Member or Command Member
-Code. -118-Charge: 2 minutes
+Code. -118-Charge: Dependant on the severity with no less than 2 minutes and a maximum of 10 minutes
 
 ### Theft
 To unlawfully take property or items without consent.
@@ -46,11 +46,11 @@ Code.-104-Charge: 2 minutes.
 
 ### Trespass
 To enter into an area where one is not authorized nor invited.
-Code.-112-Charge: 2 minutes.
+Code.-112-Charge: 5 minutes.
 
 ### Vandalism
 To deface or superficially damage public property, or property belonging to another person.
-Code.-106-Charge: 2 minutes
+Code.-106-Charge: "As Necessary"
 
 ### Hooliganism
 To intentionally and maliciously engage in disruptive conduct, where one refuses to cease.
@@ -58,7 +58,7 @@ Code.-115-Charge: "As Necessary"
 
 ### Possession
 To be in unauthorized possession of restricted items or items of particular danger. See Controlled Substances/Items, Controlled Armaments.
-Code-111-Charge: "Up to 5 Minutes".
+Code-111-Charge: "Up to 8 Minutes".
 
 
 ## Felonies:
@@ -69,39 +69,39 @@ Code.-203-Charge: 8 Minutes.
 
 ### Grand Theft
 To unlawfully take highly restricted, dangerous, valuable, or highly sensitive property or items without consent.
-Code.-204-Charge: 8 Minutes.
+Code.-204-Charge: 12 Minutes.
 
 ### Black Marketeering
 To sell, distribute, or otherwise circulate restricted items or substances to unauthorized sophonts or entities.
-Code.-205-Charge: 6 Minutes.
+Code.-205-Charge: 9 Minutes.
 
 ### Harassment
 To effect behavior that demeans, humiliates, and intimidates a Sophont intentionally or with malice intent
-Code-214- Charge 4 Minutes
+Code-214- Charge 5 Minutes
 
 ### Felony Possession
 To be in unauthorized possession of HIGHLY restricted items or items of extreme danger to Property and Sophonts. See Controlled Substances/Items, Controlled Armaments
-Code-111-Charge: Up to 10 Minutes.
+Code-111-Charge: Up to 10 up to 20 Minutes.
 
 ### Sabotage
 To engage in malicious actions that directly or indirectly hinder the operation of a vessel or its part, modify and/or damage technology one is not authorized to access, or endanger multiple sophonts.
-Code.-206-Charge: 6 Minutes.
+Code.-206-Charge: 8 Minutes.
 
 ### Mind Breaking
 To unlawfully and maliciously rid a psionic sophont of their powers.
-Code.-207-Charge: 5 Minutes.
+Code.-207-Charge: 15 Minutes.
 
 ### Assault
 To cause physical harm or to effect unwanted physical contact on a sophont, without the apparent intent to kill them, or to threaten such actions with both capability and intent to do so.
-Code.-209-Charge: 5 Minutes.
+Code.-209-Charge: 8 Minutes.
 
 ### Abuse of Power
 To intentionally misuse or wrongfully exercise one’s authority, influence, or control, resulting in harm, unjust treatment, or demonstrable loss to a separate party due to violation of ethical and professional standards.
-Code.-210-Charge: 5 Minutes.
+Code.-210-Charge: 8 minutes plus demotion
 
 ### Kidnapping
 To unlawfully confine or restrict the free movement of a sophont against their will.
-Code.-208-Charge: 8 Minutes
+Code.-208-Charge: dependant on the length of confinement
 
 ### Sexual Harassment
 To sexually harass, attempt to coerce into sexual relations, or effect unwanted sexual contact with an unwilling sophont.
@@ -113,34 +113,34 @@ Code.-213-Charge: 4 Minutes
 
 ### Secure Trespass
 To break into a high-security area where one is not authorized nor invited.
-Code.-212-Charge: 4 Minutes.
+Code.-212-Charge: 12 Minutes.
 
 ### Rioting
 To partake in an unauthorized riotous, tumultuous, and disruptive public assembly that refuses to disperse after warning.
-Code.-215-Charge: 4 Minutes.
+Code.-215-Charge: 6 Minutes.
 
 ### Contempt of Court
 To conduct oneself disruptively and disrespectfully before the court.
-Code.-216-Charge: 4 Minutes.
+Code.-216-Charge: 6 Minutes.
 
 ### Perjury or False Report
 To wilfully and maliciously tell an untruth either in court or in the process of making an actionable report to law enforcement.
-Code.-201-Charge: 3 Minutes.
+Code.-201-Charge: 8 Minutes.
 
 ### Obstruction of Justice
 To wilfully disobey, interfere with, or refuse a decree of the court, warrant, or arrest.
-Code.-218-Charge: 2 Minutes.
+Code.-218-Charge: 8 Minutes.
 
 
 
 ## Capital Crimes:
 ### Murder
 To kill a sophont with malicious intent and premeditation.
-Code.-303-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-303-Charge: 30 Minutes up to Execution
 
 ### Terrisom
 To commit an act with the intent to cause injury or death, or to take hostages, to provoke a state of terror in, intimidate, or compel a group of sophonts to do or to abstain from doing any act.
-Code.-301-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-301-Charge: 30 Minutes up to Execution.
 
 ### Grand Sabotage
 To engage in malicious actions that directly or indirectly make uninhabitable or inoperable a vessel or its part, or irreversibly modify and/or damage technology one is not authorized to access, causing severe bodily harm or death to multiple sophonts.
@@ -148,23 +148,25 @@ Code.-306-Charge: Capital, Capital crimes necessitate a mandatory trial.
 
 ### Decorporealization
 To unlawfully, maliciously, and permanently strip a sophont’s mind from their body
-Code.-307-Charge:  Capital, Capital crimes necessitate a mandatory trial.
+Code.-307-Charge: 45 Minutes up to Execution.
 
 ### Hostage Taking
 To unlawfully confine or restrict the free movement of a sophont to utilize for personal gain or to invoke a state of terror
-Code.-308-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-308-Charge: 15 Minutes up to 30
 
 ### Sedition
 To act to overthrow a lawfully established Chain of Command or governing body without lawful or legitimate cause.
-Code.-315-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-315-Charge: Execution
 
 ### Rape
 To force sexual relations on an unwilling sophont
-Code 317-Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code 317-Charge: 30 Minutes up to Execution.
 
 ### Grand Endangerment
 To egregiously and recklessly abandon obligations involving the continued wellbeing and/or protection of life and property, through malpractice, action, or inaction, resulting in significant harm, injury, or death to multiple sophonts.
-Code.-313- Charge: Capital, Capital crimes necessitate a mandatory trial.
+Code.-313- Charge: 15 Minutes up to Execution.
+
+Note: All Execution charges MUST be issued via a trial.
 
 
 ## Crime Modifiers:
@@ -223,16 +225,16 @@ Any convict who peacefully complies with the authorities, displays clear signs o
 
 ### Capital
 - __Execution__: Termination of the convict’s life.
-Whenever any execution is performed, regardless of trial or not, a general announcement must be made detailing who was executed and for what reason.
-The convict may select from one of four methods of execution, depending on availability: firing squad, lethal injection, electric shock, or asphyxiation. If the convict does not make a choice after being given ample opportunity, the sentencing officer or other relevant authority may select the method that is most appropriate. Convicts may request alternate methods of execution that may be approved or denied at the discretion of the individual passing the sentence.
-The executed’s corpse must be burned, stored in the morgue, or processed by medical staff using the biomass reclaimer.
+  Whenever any execution is performed, regardless of trial or not, a general announcement must be made detailing who was executed and for what reason.
+  The convict may select from one of four methods of execution, depending on availability: firing squad, lethal injection, electric shock, or asphyxiation. If the convict does not make a choice after being given ample opportunity, the sentencing officer or other relevant authority may select the method that is most appropriate. Convicts may request alternate methods of execution that may be approved or denied at the discretion of the individual passing the sentence.
+  The executed’s corpse must be burned, stored in the morgue, or processed by medical staff using the biomass reclaimer.
 - __Exfiltration__: Immediate retrieval of the convict via a CentComm, or GALPOL, dispatched transport.
-The prisoner may be held in a temporary cell until the transport arrives.
-If a transport cannot be arranged, default to other capital sentences.
+  The prisoner may be held in a temporary cell until the transport arrives.
+  If a transport cannot be arranged, default to other capital sentences.
 - __Preservative Stasis__: Relocation of the convict into a morgue or similar controlled and regulated environment until one’s sentence is concluded or the legal system can accommodate the convict.
 - __Decorporealisation__: Stripping the convict’s mind from their body into a more restricting form. Like putting the mind into a cyborgs body.
 - __Permanent Brig, Permabrig, or Extended Confinement__: Placing the convict into the permanent brig until the end of the shift, where they are to be transported to Central Command for processing.
-The convict has the same rights as any other prisoner within the permabrig, whether they arrived by transport or were sentenced to Extended confinement.
+  The convict has the same rights as any other prisoner within the permabrig, whether they arrived by transport or were sentenced to Extended confinement.
 
 
 ### Standard
