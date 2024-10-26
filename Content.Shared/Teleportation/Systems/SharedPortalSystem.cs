@@ -50,7 +50,7 @@ public abstract class SharedPortalSystem : EntitySystem
     private void OnGetVerbs(EntityUid uid, PortalComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
 
-        if (!HasComp<EtherealComponent>(uid) && !HasComp<EtherealComponent>(args.User)) // FloofStation Edit
+        if (!args.CanAccess || !HasComp<EtherealComponent>(args.User)) // FloofStation Edit
             // Traversal altverb for ghosts to use that bypasses normal functionality
             if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
                 return;
@@ -69,6 +69,8 @@ public abstract class SharedPortalSystem : EntitySystem
 
                 var ent = link.LinkedEntities.First();
                 TeleportEntity(uid, args.User, Transform(ent).Coordinates, ent, false);
+                if (TryComp<PortalTimeoutComponent>(args.User, out var timeout)) // Floofstation Edit
+                    RemCompDeferred(args.User, timeout);
             },
             Disabled = disabled,
             Text = Loc.GetString("portal-component-ghost-traverse"),
@@ -88,6 +90,9 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnCollide(EntityUid uid, PortalComponent component, ref StartCollideEvent args)
     {
+        if (HasComp<EtherealComponent>(uid) || HasComp<EtherealComponent>(args.OtherEntity)) // Floofstation Edit
+            return;
+
         if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId, args.OurFixture, args.OtherFixture))
             return;
 
@@ -142,6 +147,10 @@ public abstract class SharedPortalSystem : EntitySystem
             }
 
             TeleportEntity(uid, subject, Transform(target).Coordinates, target);
+
+            if (TryComp<EtherealComponent>(target, out var ethereal)) // Floofstation Edit
+                RemComp(uid, ethereal);
+
             return;
         }
 
@@ -155,6 +164,9 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnEndCollide(EntityUid uid, PortalComponent component, ref EndCollideEvent args)
     {
+        if (HasComp<EtherealComponent>(uid) || HasComp<EtherealComponent>(args.OtherEntity)) // Floofstation Edit
+            return;
+
         if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId, args.OurFixture, args.OtherFixture))
             return;
 

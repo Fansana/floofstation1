@@ -14,6 +14,7 @@ using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using Content.Shared.Abilities.Psionics;
 using Content.Shared.Tag;
+using Content.Shared.Standing;
 
 namespace Content.Shared.Shadowkin;
 
@@ -24,6 +25,7 @@ public abstract class SharedEtherealSystem : EntitySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly StandingStateSystem _standingStateSystem = default!;
 
     public override void Initialize()
     {
@@ -38,12 +40,18 @@ public abstract class SharedEtherealSystem : EntitySystem
         SubscribeLocalEvent<EtherealComponent, ShotAttemptedEvent>(OnShootAttempt);
         SubscribeLocalEvent<EtherealComponent, OnMindbreakEvent>(OnMindbreak);
         SubscribeLocalEvent<EtherealComponent, MobStateChangedEvent>(OnMobStateChanged);
+        SubscribeLocalEvent<EtherealComponent, DownAttemptEvent>(DownAttemptEvent);
     }
 
     public virtual void OnStartup(EntityUid uid, EtherealComponent component, MapInitEvent args)
     {
         if (!TryComp<FixturesComponent>(uid, out var fixtures))
             return;
+
+        if (TryComp<StandingStateComponent>(uid, out var standingstate))
+        {
+            _standingStateSystem.Stand(uid, standingstate);
+        }
 
         var fixture = fixtures.Fixtures.First();
 
@@ -136,6 +144,11 @@ public abstract class SharedEtherealSystem : EntitySystem
         if (args.Power == "DarkSwap")
             return;
 
+        args.Cancel();
+    }
+
+    private void DownAttemptEvent(EntityUid uid, EtherealComponent component, DownAttemptEvent args)
+    {
         args.Cancel();
     }
 }
