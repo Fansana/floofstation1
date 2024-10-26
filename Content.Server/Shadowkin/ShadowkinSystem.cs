@@ -15,7 +15,10 @@ using Content.Server.Abilities.Psionics;
 using Content.Shared.Mobs; // Floofstation Edit
 using Content.Server.FloofStation; // Floofstation Edit
 using Content.Shared.Inventory; // Floofstation Edit
-using Content.Shared.Teleportation.Components; // Floofstation Edit
+using Robust.Shared.Physics.Systems; // Floofstation Edit
+using Robust.Shared.Random; // Floofstation Edit
+using Robust.Shared.Utility; // Floofstation Edit
+using System.Linq; // Floofstation Edit
 
 namespace Content.Server.Shadowkin;
 
@@ -28,8 +31,13 @@ public sealed class ShadowkinSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!; // Floofstation Edit
     [Dependency] private readonly InventorySystem _inventorySystem = default!; // Floofstation Edit
+    [Dependency] private readonly IRobustRandom _random = default!; // Floofstation Edit
+    [Dependency] private readonly EntityLookupSystem _lookup = default!; // Floofstation Edit
+    [Dependency] private readonly SharedJointSystem _joints = default!; // Floofstation
 
     public const string ShadowkinSleepActionId = "ShadowkinActionSleep";
+
+    private const int MaxRandomTeleportAttempts = 20; // Floofstation Edit
     public override void Initialize()
     {
         base.Initialize();
@@ -176,6 +184,7 @@ public sealed class ShadowkinSystem : EntitySystem
         }
 
         EnsureComp<PsionicComponent>(uid, out var magic);
+        magic.CanReroll = false;
         magic.Mana = 250;
         magic.MaxMana = 250;
         magic.ManaGain = 0.25f;
@@ -207,11 +216,19 @@ public sealed class ShadowkinSystem : EntitySystem
             var query = EntityQueryEnumerator<DarkHubComponent>();
             while (query.MoveNext(out var target, out var portal))
             {
-                var timeout = EnsureComp<PortalTimeoutComponent>(uid);
-                timeout.EnteredPortal = target;
-                Dirty(uid, timeout);
+                var coords = Transform(target).Coordinates;
+                var newCoords = coords.Offset(_random.NextVector2(5));
+                for (var i = 0; i < MaxRandomTeleportAttempts; i++)
+                {
+                    var randVector = _random.NextVector2(5);
+                    newCoords = coords.Offset(randVector);
+                    if (!_lookup.GetEntitiesIntersecting(newCoords.ToMap(EntityManager, _transform), LookupFlags.Static).Any())
+                        break;
+                }
 
-                _transform.SetCoordinates(uid, Transform(target).Coordinates);
+                _joints.RecursiveClearJoints(uid);
+
+                _transform.SetCoordinates(uid, newCoords);
                 continue;
             }
 
