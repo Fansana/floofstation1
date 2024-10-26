@@ -21,7 +21,7 @@
             - Passenger
             #- Anomaly # Floofstation
           availableJobs:
-            Anomaly: [ 2, 2 ] # FloofStation
+            Anomaly: [ 4, 4 ] # FloofStation
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
