@@ -105,7 +105,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         if (!Resolve(owner, ref component, logMissing: false))
             return;
 
-        if (_uiSystem.HasUi(owner, VoiceMaskUIKey.Key))
+        if (!_uiSystem.HasUi(owner, VoiceMaskUIKey.Key))
             _uiSystem.SetUiState(owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(component.VoiceName, component.SpeechVerb));
     }
 }
