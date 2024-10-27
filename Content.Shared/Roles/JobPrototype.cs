@@ -126,6 +126,9 @@ namespace Content.Shared.Roles
 
         [DataField]
         public bool Whitelisted;
+
+        [DataField]
+        public bool CanBeAntagTarget = true; // Floofstation Edit
     }
 
     /// <summary>

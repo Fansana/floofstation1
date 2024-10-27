@@ -1,7 +1,7 @@
 - type: gameMap
   id: Shoukou
   mapName: 'Shōkō'
-  mapPath: /Maps/shoukou.yml
+  mapPath: /Maps/Floof/shoukou.yml # FloofStation
   minPlayers: 0
   maxPlayers: 60
   stations:
@@ -18,7 +18,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
+            Anomaly: [ 4, 4 ] # FloofStation
           #Service
             Passenger: [ -1, -1 ]
             ServiceWorker: [ 1, 2]

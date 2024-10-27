@@ -1,7 +1,7 @@
 - type: gameMap
   id: Asterisk
   mapName: 'Asterisk'
-  mapPath: /Maps/asterisk.yml
+  mapPath: /Maps/Floof/asterisk.yml # Floofstation
   minPlayers: 0
   maxPlayers: 60
   stations:
@@ -21,7 +21,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
+            Anomaly: [ 4, 4 ] # Floofstation
           #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
