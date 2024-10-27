@@ -93,7 +93,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
 
     private void OpenUI(EntityUid player)
     {
-        if (_uiSystem.IsUiOpen(player, VoiceMaskUIKey.Key))
+        if (!_uiSystem.IsUiOpen(player, VoiceMaskUIKey.Key))
             return;
 
         _uiSystem.OpenUi(player, VoiceMaskUIKey.Key, player);
@@ -105,7 +105,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
         if (!Resolve(owner, ref component, logMissing: false))
             return;
 
-        if (!_uiSystem.HasUi(owner, VoiceMaskUIKey.Key))
+        if (_uiSystem.HasUi(owner, VoiceMaskUIKey.Key))
             _uiSystem.SetUiState(owner, VoiceMaskUIKey.Key, new VoiceMaskBuiState(component.VoiceName, component.SpeechVerb));
     }
 }
