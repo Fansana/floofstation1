@@ -93,7 +93,7 @@ public sealed partial class VoiceMaskSystem : EntitySystem
 
     private void OpenUI(EntityUid player)
     {
-        if (!_uiSystem.IsUiOpen(player, VoiceMaskUIKey.Key))
+        if (_uiSystem.IsUiOpen(player, VoiceMaskUIKey.Key))
             return;
 
         _uiSystem.OpenUi(player, VoiceMaskUIKey.Key, player);
