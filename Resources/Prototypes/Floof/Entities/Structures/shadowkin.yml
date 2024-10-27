@@ -78,14 +78,17 @@
     canBeStunned: false
 
 - type: entity
-  name: Shadowkin Portal Spawner
   id: PortalShadowkinSpawner
   parent: MarkerBase
   components:
-  - type: Sprite
-    sprite: Markers/jobs.rsi
-    layers:
-      - state: green
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Anomaly
   - type: ConditionalSpawner
     prototypes:
       - PortalShadowkin
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Floof/Structures/shadowkin_portal.rsi
+        state: portal
