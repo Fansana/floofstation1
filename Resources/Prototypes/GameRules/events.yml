@@ -473,7 +473,7 @@
   noSpawn: true
   components:
     - type: StationEvent
-      earliestStart: 0
+      earliestStart: 20 # Floof
       minimumPlayers: 20
       maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
       weight: 5
