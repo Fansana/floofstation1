@@ -1229,3 +1229,12 @@ Entries:
   id: 165
   time: '2024-10-12T23:08:26.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/247
+- author: cynical24
+  changes:
+    - type: Fix
+      message: >-
+        fixed the backwards hand/description bug on the HUD for some species by
+        swapping the hands :3
+  id: 166
+  time: '2024-10-27T11:23:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/292
