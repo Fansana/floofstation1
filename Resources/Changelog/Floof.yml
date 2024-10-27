@@ -1252,3 +1252,10 @@ Entries:
   id: 168
   time: '2024-10-27T17:24:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/298
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Nerf mimic vendor, only appears after 20 minutes now
+  id: 169
+  time: '2024-10-27T22:27:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/297
