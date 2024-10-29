@@ -20,7 +20,7 @@
 | 14   |                         | Harassment                |                    |
 | 15   | Hooliganism             | Rioting                   | Sedition           |
 | 16   |                         | Contempt of Court         |                    |
-| 17   |                         | Sexual Harassment         | Rape               |
+| 17   |                         |                           |                    |
 | 18   | Failure To Comply       | Obstruction of Justice    |                    |
 | 19   |                         |                           |                    |
 | 20   |                         |                           |                    |
@@ -103,10 +103,6 @@ Code.-210-Charge: 5 Minutes.
 To unlawfully confine or restrict the free movement of a sophont against their will.
 Code.-208-Charge: 8 Minutes
 
-### Sexual Harassment
-To sexually harass, attempt to coerce into sexual relations, or effect unwanted sexual contact with an unwilling sophont.
-Code.-217-Charge: 6 minutes
-
 ### Endangerment
 To recklessly abandon obligations involving the continued well-being and/or protection of life and property, through malpractice, action, or inaction.
 Code.-213-Charge: 4 Minutes
@@ -157,10 +153,6 @@ Code.-308-Charge: Capital, Capital crimes necessitate a mandatory trial.
 ### Sedition
 To act to overthrow a lawfully established Chain of Command or governing body without lawful or legitimate cause.
 Code.-315-Charge: Capital, Capital crimes necessitate a mandatory trial.
-
-### Rape
-To force sexual relations on an unwilling sophont
-Code 317-Charge: Capital, Capital crimes necessitate a mandatory trial.
 
 ### Grand Endangerment
 To egregiously and recklessly abandon obligations involving the continued wellbeing and/or protection of life and property, through malpractice, action, or inaction, resulting in significant harm, injury, or death to multiple sophonts.
