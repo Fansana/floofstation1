@@ -1245,3 +1245,49 @@ Entries:
   id: 167
   time: '2024-10-27T11:23:21.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/293
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed the blue nukie suits.
+  id: 168
+  time: '2024-10-27T17:24:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/298
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Nerf mimic vendor, only appears after 20 minutes now
+  id: 169
+  time: '2024-10-27T22:27:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/297
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Anomaly Spawn.
+    - type: Fix
+      message: Arrival Shuttle going in the dark.
+    - type: Fix
+      message: Ethereal Portal Glitch
+  id: 170
+  time: '2024-10-27T22:46:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/299
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 171
+  time: '2024-10-28T16:15:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/301
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 172
+  time: '2024-10-28T16:16:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/300
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Give thermal insulation to penguins
+  id: 173
+  time: '2024-10-29T14:42:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/302
