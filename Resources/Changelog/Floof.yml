@@ -1300,3 +1300,10 @@ Entries:
   id: 174
   time: '2024-10-29T22:10:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/306
+- author: Memeji
+  changes:
+    - type: Remove
+      message: Removed Gax from the map pool.
+  id: 175
+  time: '2024-10-29T23:51:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/303
