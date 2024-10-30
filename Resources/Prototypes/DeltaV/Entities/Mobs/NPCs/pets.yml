@@ -36,6 +36,7 @@
       department: Security
       time: 14400 # DeltaV - 4 hours
   - type: GhostTakeoverAvailable
+  - type: ScentTracker # Floof - Added Scent Tracking
   - type: InteractionPopup
     successChance: 1
   - type: Butcherable

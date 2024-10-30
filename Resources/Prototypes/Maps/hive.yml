@@ -1,7 +1,7 @@
 - type: gameMap
   id: TheHive
   mapName: 'The Hive'
-  mapPath: /Maps/hive.yml
+  mapPath: /Maps/Floof/hive.yml # Floofstation
   minPlayers: 30
   #maxPlayers: 80 Temporary maybe
   stations:
@@ -18,9 +18,11 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
           #civilian
             Passenger: [ -1, -1 ]
+            Anomaly: [ 4, 4 ] # Floofstation
             Librarian: [ 1, 1 ]
           #command
             Captain: [ 1, 1 ]

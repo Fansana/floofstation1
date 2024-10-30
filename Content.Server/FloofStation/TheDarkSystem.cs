@@ -24,13 +24,10 @@ public sealed class TheDarkSystem : EntitySystem
         _mapManager.AddUninitializedMap(mapId);
 
         if (!_loader.TryLoad(mapId, "/Maps/Floof/hideout.yml", out var uids))
-        {
             return;
-        }
 
         foreach (var id in uids)
         {
-            EnsureComp<ArrivalsSourceComponent>(id);
             EnsureComp<PreventPilotComponent>(id);
         }
 

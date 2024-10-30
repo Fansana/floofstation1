@@ -61,6 +61,12 @@ public sealed class KillPersonConditionSystem : EntitySystem
             return;
         }
 
+        // Floofstation Edit Start
+        foreach (var mind in allHumans)
+            if (_job.MindTryGetJob(mind, out _, out var prototype) && !prototype.CanBeAntagTarget)
+                allHumans.Remove(mind);
+        // Floofstation Edit End
+
         _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
 
