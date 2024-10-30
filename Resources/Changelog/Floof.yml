@@ -1314,3 +1314,10 @@ Entries:
   id: 176
   time: '2024-10-30T21:06:34.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/307
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Syndicate uplink, re add Deception and Chemicals
+  id: 177
+  time: '2024-10-30T21:14:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/310
