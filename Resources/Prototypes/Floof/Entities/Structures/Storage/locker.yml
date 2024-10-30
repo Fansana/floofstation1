@@ -1,0 +1,56 @@
+- type: entity
+  id: LockerClownFilled
+  suffix: Clown, Filled # DeltaV - rename brigmedic to corpsman
+  parent: LockerClown
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodCakeClown
+    - id: ToyFigurineClown
+    - id: ClownRecorder
+    - id: ClothingShoesClown
+    - id: ClothingUniformJumpsuitClown
+    - id: ClothingMaskClown # DeltaV - ClothingHeadHatBeretBrigmedic replaced in favour of corpsman beret.
+    - id: RubberStampClown
+    - id: DrinkSpaceGlue
+    - id: DrinkSpaceLube # Floofstation
+    - id: ClothingShoeSlippersDuck # Delta V - added it for tracking the implant tracker pop up.
+    - id: RevolverCapGun
+    - id: ClothingMaskSexyClown
+    - id: LauncherCreamPie
+    - id: WhoopieCushion
+    - id: CrayonRainbow
+    - id: ToyHammer
+    - id: PlasticBananaa
+    - id: HappyHonk
+    - id: ClothingBackpackClown
+    - id: MrDips
+    - id: LunchboxService # Delta-v Lunchboxes!
+      prob: 0.8
+
+
+- type: entity
+  id: LockerMimeFilled
+  suffix: Mime, Filled # DeltaV - rename brigmedic to corpsman
+  parent: LockerMime
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodTartMime
+    - id: RevolverCapGun
+    - id: ToyFigurineMime
+    - id: ClothingUniformJumpsuitMime
+    - id: ClothingUniformJumpskirtMime
+    - id: ClothingHeadHatMimesoft # DeltaV - ClothingHeadHatBeretBrigmedic replaced in favour of corpsman beret.
+    - id: RubberStampMime
+    - id: HappyHonkMime
+    - id: CrayonMime
+    - id: ClothingMaskMime
+    - id: ClothingBackpackMime
+    - id: MrChips
+    - id: DrinkBottleOfNothingFull
+    - id: FoodBreadBaguette
+    - id: DrinkWineGlass
+    - id: ClothingMaskSadMime
+    - id: ClothingMaskSexyMime
+    - id: ClothingMaskScaredMime

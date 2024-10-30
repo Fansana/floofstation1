@@ -80334,7 +80334,7 @@ entities:
     - type: Transform
       pos: 8.5,18.5
       parent: 2
-- proto: LockerClown
+- proto: LockerClownFilled
   entities:
   - uid: 12176
     components:
@@ -80470,7 +80470,7 @@ entities:
     - type: Transform
       pos: 16.5,26.5
       parent: 2
-- proto: LockerMime
+- proto: LockerMimeFilled
   entities:
   - uid: 12198
     components:
