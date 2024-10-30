@@ -152,6 +152,11 @@
   - type: ActionGun
     action: ActionDragonsBreath
     gunProto: DragonsSparkGun
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
 
 - type: entity
   categories: [ HideSpawnMenu ]
