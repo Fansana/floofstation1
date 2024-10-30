@@ -1321,3 +1321,10 @@ Entries:
   id: 177
   time: '2024-10-30T21:14:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/310
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed steal objective for the RD cloak
+  id: 178
+  time: '2024-10-30T21:19:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/304
