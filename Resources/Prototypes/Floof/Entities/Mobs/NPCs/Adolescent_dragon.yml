@@ -51,13 +51,12 @@
   - type: FloatingVisuals
   - type: NpcFactionMember
     factions:
-    - Dragon
     - PetsNT
   - type: Speech
     speechVerb: SmallMob
   - type: HTN
     rootTask:
-      task: MouseCompound
+      task: SimpleHostileCompound
   - type: CombatMode
   - type: MobMover
   - type: InputMover
@@ -119,6 +118,7 @@
     metabolizerTypes: [ Dragon ]
     groups:
     - id: Medicine
+    - id: Cryogenic
     - id: Poison
   - type: Butcherable
     spawned:
