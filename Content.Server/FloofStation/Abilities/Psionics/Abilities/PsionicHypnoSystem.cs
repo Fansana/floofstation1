@@ -15,6 +15,12 @@ using Content.Shared.Database;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs.Components;
+using Content.Shared.Mindshield.Components;
+using Content.Shared.Psionics;
+using Content.Shared.Tag;
+using Content.Shared.Implants;
+using Content.Shared.Implants.Components;
+using Content.Shared.Mindshield.Components;
 
 
 namespace Content.Server.Abilities.Psionics
@@ -28,6 +34,7 @@ namespace Content.Server.Abilities.Psionics
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly ISharedAdminLogManager _adminLog = default!;
         [Dependency] private readonly MobStateSystem _mobState = default!;
+        [Dependency] private readonly TagSystem _tag = default!;
 
         public override void Initialize()
         {
@@ -37,20 +44,28 @@ namespace Content.Server.Abilities.Psionics
             SubscribeLocalEvent<HypnotizedComponent, DispelledEvent>(OnDispelledHypnotized);
             SubscribeLocalEvent<PsionicHypnoComponent, DispelledEvent>(OnDispelled);
             SubscribeLocalEvent<PsionicHypnoComponent, PsionicHypnosisDoAfterEvent>(OnDoAfter);
+            SubscribeLocalEvent<HypnotizedComponent, OnMindbreakEvent>(OnMindbreak);
+            SubscribeLocalEvent<HypnotizedComponent, ImplantImplantedEvent>(OnMindShield);
             SubscribeLocalEvent<HypnotizedComponent, ExaminedEvent>((uid, _, args) => OnExamine(uid, args));
         }
 
         private void OnPowerUsed(EntityUid uid, PsionicHypnoComponent component, HypnoPowerActionEvent args)
         {
             if (!_psionics.OnAttemptPowerUse(args.Performer, "hypno")
-                || TryComp<MobStateComponent>(args.Target, out var mob)
-                || !_mobState.IsDead(args.Target, mob)
-                || !_mobState.IsCritical(args.Target, mob))
+                || !TryComp<MobStateComponent>(args.Target, out var mob)
+                || _mobState.IsDead(args.Target, mob)
+                || _mobState.IsCritical(args.Target, mob))
                 return;
 
             if (component.Subjects >= component.MaxSubjects)
             {
                 _popups.PopupEntity(Loc.GetString("hypno-max-subject"), uid, uid, PopupType.Large);
+                return;
+            }
+
+            if (!component.ByPassMindShield && HasComp<MindShieldComponent>(args.Target))
+            {
+                _popups.PopupEntity(Loc.GetString("has-mindshield"), uid, uid, PopupType.Large);
                 return;
             }
 
@@ -71,7 +86,7 @@ namespace Content.Server.Abilities.Psionics
             component.DoAfter = doAfterId;
 
             _popups.PopupEntity(Loc.GetString("hypno-start", ("entity", args.Target)), uid, uid, PopupType.LargeCaution);
-            _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("entity", uid)), uid, args.Target, PopupType.Small);
+            _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("entity", uid)), args.Target, args.Target, PopupType.Small);
 
             args.Handled = true;
             _psionics.LogPowerUsed(args.Performer, "hypno");
@@ -92,6 +107,24 @@ namespace Content.Server.Abilities.Psionics
             StopHypno(uid, component);
         }
 
+        private void OnMindbreak(EntityUid uid, HypnotizedComponent component, ref OnMindbreakEvent args)
+        {
+            StopHypno(uid, component);
+        }
+
+        private void OnMindShield(EntityUid uid, HypnotizedComponent component, ref ImplantImplantedEvent ev)
+        {
+            if (_tag.HasTag(ev.Implant, "MindShield") && ev.Implanted != null)
+            {
+                if (component.Master is not null
+                    && TryComp<PsionicHypnoComponent>(component.Master, out var hypnotist)
+                    && hypnotist.ByPassMindShield)
+                    return;
+
+                StopHypno(uid, component);
+            }
+        }
+
         private void ReleaseSubjectVerb(EntityUid uid, PsionicHypnoComponent component, GetVerbsEvent<InnateVerb> args)
         {
             if (args.User == args.Target)
@@ -99,7 +132,7 @@ namespace Content.Server.Abilities.Psionics
 
             InnateVerb verbReleaseHypno = new()
             {
-                Act = () => StopHypno(uid),
+                Act = () => StopHypno(args.Target),
                 Text = Loc.GetString("hypno-release"),
                 Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Floof/Interface/Actions/hypno.png")),
                 Priority = 1
@@ -120,7 +153,7 @@ namespace Content.Server.Abilities.Psionics
 
             if (args.Phase == 1)
             {
-                _popups.PopupEntity(Loc.GetString("hypno-phase-2", ("entity", uid)), uid, args.Target.Value, PopupType.Medium);
+                _popups.PopupEntity(Loc.GetString("hypno-phase-2", ("entity", uid)), args.Target.Value, args.Target.Value, PopupType.Medium);
 
                 _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, component.UseDelay, new PsionicHypnosisDoAfterEvent(2), uid, target: args.Target)
                 {
@@ -133,7 +166,7 @@ namespace Content.Server.Abilities.Psionics
             }
             else if (args.Phase == 2)
             {
-                _popups.PopupEntity(Loc.GetString("hypno-phase-3"), uid, args.Target.Value, PopupType.Medium);
+                _popups.PopupEntity(Loc.GetString("hypno-phase-3"), args.Target.Value, args.Target.Value, PopupType.Medium);
 
                 _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, component.UseDelay, new PsionicHypnosisDoAfterEvent(3), uid, target: args.Target)
                 {
@@ -190,6 +223,8 @@ namespace Content.Server.Abilities.Psionics
             _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} is not longer hypnotized.");
 
             _popups.PopupEntity(Loc.GetString("hypno-free"), uid, uid, PopupType.LargeCaution);
+
+            RaiseLocalEvent(uid, new MoodEffectEvent("LostHypnosis"));
 
             if (_playerManager.TryGetSessionByEntity(uid, out var session)
                 || session is not null)

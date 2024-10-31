@@ -9,13 +9,16 @@ namespace Content.Shared.Floofstation.Hypno;
 public sealed partial class PsionicHypnoComponent : Component
 {
     [DataField]
-    public float UseDelay = 2f;
+    public float UseDelay = 10f;
 
     [DataField]
     public float Subjects = 0;
 
     [DataField]
     public float MaxSubjects = 1;
+
+    [DataField]
+    public bool ByPassMindShield = false;
 
     [DataField]
     public DoAfterId? DoAfter;
