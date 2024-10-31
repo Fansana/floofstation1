@@ -19,8 +19,6 @@ using Content.Shared.Mindshield.Components;
 using Content.Shared.Psionics;
 using Content.Shared.Tag;
 using Content.Shared.Implants;
-using Content.Shared.Implants.Components;
-using Content.Shared.Mindshield.Components;
 
 
 namespace Content.Server.Abilities.Psionics
@@ -251,7 +249,8 @@ namespace Content.Server.Abilities.Psionics
 
         private void OnExamine(EntityUid uid, ExaminedEvent args)
         {
-            args.PushMarkup(Loc.GetString("examined-hypno"), -1);
+            if (args.IsInDetailsRange)
+                args.PushMarkup(Loc.GetString("examined-hypno"), -1);
         }
     }
 }
