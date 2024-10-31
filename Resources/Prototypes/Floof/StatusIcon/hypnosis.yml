@@ -1,0 +1,13 @@
+- type: statusIcon
+  id: HypnoMaster
+  priority: 11
+  icon:
+    sprite: /Textures/Floof/Interface/Misc/hypno_icons.rsi
+    state: Master
+
+- type: statusIcon
+  id: HypnoSubject
+  priority: 11
+  icon:
+    sprite: /Textures/Floof/Interface/Misc/hypno_icons.rsi
+    state: Subject

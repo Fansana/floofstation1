@@ -1,0 +1,12 @@
+- type: psionicPower
+  id: HypnosisPower
+  name: Psionic Hypnosis
+  description: action-description-hypno
+  actions:
+    - ActionHypno
+  components:
+    - type: PsionicHypno
+  initializationFeedback: hypnosis-power-initialization-feedback
+  metapsionicFeedback: hypnosis-power-feedback
+  amplificationModifier: 1
+  powerSlotCost: 1

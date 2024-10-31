@@ -1,0 +1,18 @@
+- type: entity
+  id: ActionHypno
+  name: action-name-hypno
+  description: action-description-hypno
+  noSpawn: true
+  components:
+    - type: EntityTargetAction
+      icon: Floof/Interface/Actions/hypno.png
+      useDelay: 5
+      checkCanAccess: false
+      range: 6
+      itemIconStyle: BigAction
+      canTargetSelf: true
+      blacklist:
+        components:
+          - PsionicInsulation
+          - Mindbroken
+      event: !type:HypnoPowerActionEvent
