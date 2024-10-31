@@ -69,7 +69,7 @@ namespace Content.Server.Abilities.Psionics
 
             if (HasComp<HypnotizedComponent>(args.Target))
             {
-                _popups.PopupEntity(Loc.GetString("hypno-already-under"), uid, uid, PopupType.Large);
+                _popups.PopupEntity(Loc.GetString("hypno-already-under", ("target", uid)), uid, uid, PopupType.Large);
                 return;
             }
 
@@ -83,8 +83,8 @@ namespace Content.Server.Abilities.Psionics
 
             component.DoAfter = doAfterId;
 
-            _popups.PopupEntity(Loc.GetString("hypno-start", ("entity", args.Target)), uid, uid, PopupType.LargeCaution);
-            _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("entity", uid)), args.Target, args.Target, PopupType.Small);
+            _popups.PopupEntity(Loc.GetString("hypno-start", ("target", args.Target)), uid, uid, PopupType.LargeCaution);
+            _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("target", uid)), args.Target, args.Target, PopupType.Small);
 
             args.Handled = true;
             _psionics.LogPowerUsed(args.Performer, "hypno");
@@ -151,7 +151,7 @@ namespace Content.Server.Abilities.Psionics
 
             if (args.Phase == 1)
             {
-                _popups.PopupEntity(Loc.GetString("hypno-phase-2", ("entity", uid)), args.Target.Value, args.Target.Value, PopupType.Medium);
+                _popups.PopupEntity(Loc.GetString("hypno-phase-2", ("target", uid)), args.Target.Value, args.Target.Value, PopupType.Medium);
 
                 _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, component.UseDelay, new PsionicHypnosisDoAfterEvent(2), uid, target: args.Target)
                 {
@@ -177,7 +177,7 @@ namespace Content.Server.Abilities.Psionics
             }
             else
             {
-                _popups.PopupEntity(Loc.GetString("hypno-success"), uid, uid, PopupType.LargeCaution);
+                _popups.PopupEntity(Loc.GetString("hypno-success", ("target", uid)), uid, uid, PopupType.LargeCaution);
 
                 Hypnotize(uid, args.Target.Value, component);
             }
@@ -241,7 +241,7 @@ namespace Content.Server.Abilities.Psionics
                 && TryComp<PsionicHypnoComponent>(component.Master, out var hypnotist))
             {
                 hypnotist.Subjects -= 1;
-                _popups.PopupEntity(Loc.GetString("lost-subject"), uid, uid, PopupType.LargeCaution);
+                _popups.PopupEntity(Loc.GetString("lost-subject"), hypnotist.Owner, hypnotist.Owner, PopupType.LargeCaution);
             }
 
             RemComp(uid, component);
