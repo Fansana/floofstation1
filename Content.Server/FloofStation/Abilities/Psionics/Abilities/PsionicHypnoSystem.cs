@@ -125,7 +125,9 @@ namespace Content.Server.Abilities.Psionics
 
         private void ReleaseSubjectVerb(EntityUid uid, PsionicHypnoComponent component, GetVerbsEvent<InnateVerb> args)
         {
-            if (args.User == args.Target)
+            if (args.User == args.Target
+                || !TryComp<HypnotizedComponent>(args.Target, out var hypno)
+                || args.User != uid)
                 return;
 
             InnateVerb verbReleaseHypno = new()
