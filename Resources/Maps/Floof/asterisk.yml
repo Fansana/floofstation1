@@ -49649,7 +49649,7 @@ entities:
     - type: Transform
       pos: 37.25989,-20.5
       parent: 2
-- proto: LockerClownFilled
+- proto: LockerClown
   entities:
   - uid: 7633
     components:
@@ -49759,7 +49759,7 @@ entities:
     - type: Transform
       pos: 37.5,-8.5
       parent: 2
-- proto: LockerMimeFilled
+- proto: LockerMime
   entities:
   - uid: 7651
     components:
