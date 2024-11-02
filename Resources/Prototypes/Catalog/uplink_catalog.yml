@@ -402,7 +402,7 @@
   cost:
     Telecrystal: 40
   categories:
-  - UplinkChemicals
+  - UplinkMisc
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -974,7 +974,7 @@
   cost:
     Telecrystal: 4
   categories:
-  - UplinkDeception
+  - UplinkUtility
 
 # Disruption
 
