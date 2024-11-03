@@ -12,6 +12,8 @@ using Content.Server.Psionics;
 using Content.Server.GameTicking;
 using Content.Shared.Mind;
 using Content.Shared.Actions.Events;
+using Content.Server.DoAfter;
+using Content.Shared.DoAfter;
 
 namespace Content.Server.Abilities.Psionics
 {
@@ -23,11 +25,13 @@ namespace Content.Server.Abilities.Psionics
         [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly MindSystem _mindSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaDataSystem = default!;
+        [Dependency] private readonly DoAfterSystem _doAfterSystem = default!;
 
         public override void Initialize()
         {
             base.Initialize();
-            SubscribeLocalEvent<MindSwapPowerActionEvent>(OnPowerUsed);
+            SubscribeLocalEvent<MindSwapPowerComponent, MindSwapPowerActionEvent>(OnPowerUsed);
+            SubscribeLocalEvent<PsionicComponent, MindSwapPowerDoAfterEvent>(OnDoAfter);
             SubscribeLocalEvent<MindSwappedComponent, MindSwapPowerReturnActionEvent>(OnPowerReturned);
             SubscribeLocalEvent<MindSwappedComponent, DispelledEvent>(OnDispelled);
             SubscribeLocalEvent<MindSwappedComponent, MobStateChangedEvent>(OnMobStateChanged);
@@ -36,16 +40,38 @@ namespace Content.Server.Abilities.Psionics
             SubscribeLocalEvent<MindSwappedComponent, ComponentInit>(OnSwapInit);
         }
 
-        private void OnPowerUsed(MindSwapPowerActionEvent args)
+        private void OnPowerUsed(EntityUid uid, MindSwapPowerComponent component, MindSwapPowerActionEvent args)
         {
             if (!_psionics.OnAttemptPowerUse(args.Performer, "mind swap")
                 || !(TryComp<DamageableComponent>(args.Target, out var damageable) && damageable.DamageContainerID == "Biological"))
                 return;
 
-            Swap(args.Performer, args.Target);
+            _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, args.Performer, component.UseDelay, new MindSwapPowerDoAfterEvent(), args.Performer, target: args.Target)
+            {
+                Hidden = true,
+                BreakOnTargetMove = true,
+                BreakOnDamage = true,
+                BreakOnUserMove = true
+            }, out var doAfterId);
+
+            if (TryComp<PsionicComponent>(uid, out var magic))
+                magic.DoAfter = doAfterId;
 
             _psionics.LogPowerUsed(args.Performer, "mind swap");
             args.Handled = true;
+        }
+
+        private void OnDoAfter(EntityUid uid, PsionicComponent component, MindSwapPowerDoAfterEvent args)
+        {
+            if (component is null)
+                return;
+            component.DoAfter = null;
+
+            if (args.Target is null
+                || args.Cancelled)
+                return;
+
+            Swap(uid, args.Target.Value);
         }
 
         private void OnPowerReturned(EntityUid uid, MindSwappedComponent component, MindSwapPowerReturnActionEvent args)

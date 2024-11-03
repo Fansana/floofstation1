@@ -62099,7 +62099,7 @@ entities:
     - type: Transform
       pos: 13.5,-32.5
       parent: 2
-- proto: LockerClownFilled
+- proto: LockerClown
   entities:
   - uid: 9465
     components:
@@ -62270,7 +62270,7 @@ entities:
     - type: Transform
       pos: 9.5,-29.5
       parent: 2
-- proto: LockerMimeFilled
+- proto: LockerMime
   entities:
   - uid: 9490
     components:
