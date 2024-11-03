@@ -12,7 +12,7 @@ binds:
 - function: CloseModals
   type: State
   key: Escape
-  priority: 10
+  priority: 6
 - function: Use
   type: State
   key: MouseLeft
