@@ -9,3 +9,13 @@
   moodChange: 4
   timeout: 120
   category: PositiveInteraction
+
+- type: moodEffect
+  id: BeingHypnotized
+  moodChange: 10
+  timeout: 300
+
+- type: moodEffect
+  id: LostHypnosis
+  moodChange: -3
+  timeout: 120
