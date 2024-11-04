@@ -15,7 +15,7 @@
  # id: UplinkCryoinjector
   #name: uplink-Cryptobiolininjector-name
   #description: uplink-Cryptobiolininjector-desc
-  #icon: { sprite: Objects/Specific/Medical/syndihypo.rsi, state: hypo }
+  #icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
   #productEntity: CryptobiolinInjector
   #cost:
   #  Telecrystal: 2

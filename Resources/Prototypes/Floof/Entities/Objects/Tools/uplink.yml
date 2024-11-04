@@ -1,15 +1,17 @@
 - type: entity
   name: Cryptobiolin injector
   id: CryptobiolinInjector
-  parent: SyndiHypo
+  parent: ChemicalMedipen
   description: Made by SESWC. This item is prefilled with 20u of Cryptobiolin to help you get rid of those pesky psionic weirdo's.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/hypospray.rsi
-    state: combat_hypo
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: penacid
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerManager
     solutions:
-      hypospray:
+      pen:
         maxVol: 20
         reagents:
         - ReagentId: Cryptobiolin
