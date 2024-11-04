@@ -1,7 +1,7 @@
 - type: gameMap
   id: Edge
   mapName: 'Edge'
-  mapPath: /Maps/Floof/edge.yml
+  mapPath: /Maps/Floof/edge.yml # Floofstation
   minPlayers: 10
   maxPlayers: 80
   stations:
@@ -18,7 +18,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
+            Anomaly: [ 4, 4 ] # Floofstation
           #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]

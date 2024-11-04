@@ -653,7 +653,7 @@ Entries:
     - type: Add
       message: >-
         Added a crit state to most Xenos including: Friend, Rouny, Praetorian,
-        Drone, and Ravager.  
+        Drone, and Ravager.
     - type: Fix
       message: 'fixed Friend being unrevivable '
   id: 89
@@ -871,9 +871,7 @@ Entries:
     - type: Add
       message: a collection of Passive Xenos
     - type: Add
-      message: >-
-        several New friendly Xeno experimental subjects much like
-        Friend-shaped. 
+      message: several New friendly Xeno experimental subjects much like Friend-shaped.
   id: 119
   time: '2024-09-09T02:04:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/145
@@ -1229,3 +1227,120 @@ Entries:
   id: 165
   time: '2024-10-12T23:08:26.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/247
+- author: cynical24
+  changes:
+    - type: Fix
+      message: >-
+        fixed the backwards hand/description bug on the HUD for some species by
+        swapping the hands :3
+  id: 166
+  time: '2024-10-27T11:23:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/292
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix yipping and hissing for female reptilians
+  id: 167
+  time: '2024-10-27T11:23:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/293
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed the blue nukie suits.
+  id: 168
+  time: '2024-10-27T17:24:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/298
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Nerf mimic vendor, only appears after 20 minutes now
+  id: 169
+  time: '2024-10-27T22:27:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/297
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Anomaly Spawn.
+    - type: Fix
+      message: Arrival Shuttle going in the dark.
+    - type: Fix
+      message: Ethereal Portal Glitch
+  id: 170
+  time: '2024-10-27T22:46:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/299
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 171
+  time: '2024-10-28T16:15:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/301
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 172
+  time: '2024-10-28T16:16:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/300
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Give thermal insulation to penguins
+  id: 173
+  time: '2024-10-29T14:42:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/302
+- author: neuPanda
+  changes:
+    - type: Remove
+      message: Rape from law as it is a rules violation.
+    - type: Remove
+      message: Sexual Assault/Harassment from law as it is a rules violation.
+  id: 174
+  time: '2024-10-29T22:10:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/306
+- author: Memeji
+  changes:
+    - type: Remove
+      message: Removed Gax from the map pool.
+  id: 175
+  time: '2024-10-29T23:51:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/303
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added filled mime/clown lockers to every map
+  id: 176
+  time: '2024-10-30T21:06:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/307
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Syndicate uplink, re add Deception and Chemicals
+  id: 177
+  time: '2024-10-30T21:14:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/310
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed steal objective for the RD cloak
+  id: 178
+  time: '2024-10-30T21:19:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/304
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Adolescent dragon
+  id: 179
+  time: '2024-10-31T18:48:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/309
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: >-
+        Cocooners can now freely uncocoon any cocoons without the need of a
+        sharp object.
+    - type: Fix
+      message: Cocoon making you stuck in muffle accent.
+  id: 180
+  time: '2024-11-01T20:32:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/313

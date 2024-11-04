@@ -1,7 +1,7 @@
 - type: gameMap
   id: Hammurabi
   mapName: 'Hammurabi'
-  mapPath: /Maps/hammurabi.yml
+  mapPath: /Maps/Floof/hammurabi.yml # Floofstation
   minPlayers: 50
   stations:
     Hammurabi:
@@ -17,9 +17,11 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
           #civilian
             Passenger: [ -1, -1 ]
+            Anomaly: [ 4, 4 ] # Floofstation
             Librarian: [ 1, 1 ]
           #command
             Captain: [ 1, 1 ]

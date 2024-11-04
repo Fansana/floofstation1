@@ -1,7 +1,7 @@
 - type: gameMap
   id: Rad
   mapName: 'RadStation'
-  mapPath: /Maps/radstation.yml
+  mapPath: /Maps/Floof/radstation.yml # Floofstation
   minPlayers: 35
   stations:
     RadStation:
@@ -17,7 +17,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
+            Anomaly: [ 4, 4 ] # Floofstation
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]

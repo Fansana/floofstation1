@@ -1,7 +1,7 @@
 - type: gameMap
   id: Core
   mapName: 'Core'
-  mapPath: /Maps/core.yml
+  mapPath: /Maps/Floof/core.yml # Floofstation
   minPlayers: 35
   maxPlayers: 70
   stations:
@@ -18,7 +18,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly
           availableJobs:
+            Anomaly: [ 4, 4 ] # Floofstation
             # Service
             Bartender: [ 2, 3 ]
             Botanist: [ 2, 4]

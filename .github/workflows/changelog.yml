@@ -3,6 +3,8 @@ concurrency: commit_action
 on:
   pull_request_target:
     types: [closed]
+    branches:
+      - stable
 
 env:
   GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
@@ -20,7 +22,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.BOT_TOKEN }}
-        ref: ${{ vars.CHANGELOG_BRANCH }}
+        ref:  ${{ vars.CHANGELOG_BRANCH }}
 
     - name: Setup Git
       run: |
@@ -47,7 +49,7 @@ jobs:
 
     - name: Commit Changelog
       run: |
-        git pull origin master
+        git pull origin ${{ vars.CHANGELOG_BRANCH }}
         git add *.yml
         git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})"
         git push
