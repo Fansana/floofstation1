@@ -194,8 +194,21 @@ namespace Content.Server.Abilities.Psionics
 
             RaiseLocalEvent(target, new MoodEffectEvent("BeingHypnotized"));
 
-            if (_playerManager.TryGetSessionByEntity(target, out var session)
-                || session is not null)
+            if (_playerManager.TryGetSessionByEntity(uid, out var sessionmaster)
+                || sessionmaster is not null)
+            {
+                var message = Loc.GetString("hypnotist", ("entity", target));
+                _chatManager.ChatMessageToOne(
+                    ChatChannel.Emotes,
+                    message,
+                    message,
+                    EntityUid.Invalid,
+                    false,
+                    sessionmaster.Channel);
+            }
+
+            if (_playerManager.TryGetSessionByEntity(target, out var sessionsubject)
+                || sessionsubject is not null)
             {
                 var message = Loc.GetString("hypnotized", ("entity", uid));
                 _chatManager.ChatMessageToOne(
@@ -204,7 +217,7 @@ namespace Content.Server.Abilities.Psionics
                     message,
                     EntityUid.Invalid,
                     false,
-                    session.Channel);
+                    sessionsubject.Channel);
             }
         }
 
