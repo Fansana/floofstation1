@@ -39,7 +39,7 @@
   components:
     - type: EntityTargetAction
       icon: Interface/VerbIcons/mind_swap.png
-      useDelay: 240
+      useDelay: 120
       checkCanAccess: false
       range: 8
       itemIconStyle: BigAction
@@ -47,6 +47,7 @@
         components:
           - PsionicInsulation
           - Mindbroken
+          - MindShield
       event: !type:MindSwapPowerActionEvent
 
 - type: entity
