@@ -106,3 +106,36 @@
   - !type:CharacterJobRequirement
     jobs:
     - Detective
+
+
+#Weapons
+- type: loadout
+  id: Loadout45MagnumSpare
+  category: JobsSecurity
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEquipmentSecurity
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - MagazineMagnum
+
+- type: loadout
+  id: Loadout45MagnumRubber
+  category: JobsSecurity
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEquipmentSecurity
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - MagazineMagnumRubber
