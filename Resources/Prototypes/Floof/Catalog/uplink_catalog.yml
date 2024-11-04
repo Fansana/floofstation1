@@ -11,13 +11,13 @@
     - UplinkPointless
 
 
-- type: listing
-  id: UplinkCryoinjector
-  name: uplink-Cryptobiolininjector-name
-  description: uplink-Cryptobiolininjector-desc
-  icon: { sprite: Objects/Specific/Medical/syndihypo.rsi, state: hypo }
-  productEntity: CryptobiolinInjector
-  cost:
-    Telecrystal: 2
-  categories:
-  - UplinkUtility
+# type: listing
+ # id: UplinkCryoinjector
+  #name: uplink-Cryptobiolininjector-name
+  #description: uplink-Cryptobiolininjector-desc
+  #icon: { sprite: Objects/Specific/Medical/syndihypo.rsi, state: hypo }
+  #productEntity: CryptobiolinInjector
+  #cost:
+  #  Telecrystal: 2
+  #categories:
+  #- UplinkUtility
