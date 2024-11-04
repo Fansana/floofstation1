@@ -686,14 +686,12 @@
 - type: reaction
   id: Voltage
   reactants:
-    EnergyDrink:
-      amount: 1
     Rum:
       amount: 2
     Sugar:
       amount: 1
-    Vodka:
-      amount: 2
+    VodkaRedBool:
+      amount: 3
   products:
     Voltage: 6
 
@@ -809,7 +807,7 @@
     JennTonic: 3
 
 - type: reaction
-  id: Hallelujah 
+  id: Hallelujah
   reactants:
     Wine:
       amount: 2
