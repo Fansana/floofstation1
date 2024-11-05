@@ -79,12 +79,6 @@ public sealed class EtherealSystem : SharedEtherealSystem
         RemComp<RespiratorImmuneComponent>(uid);
         RemComp<MovementIgnoreGravityComponent>(uid);
 
-        if (component.ShadowRemove)
-        {
-            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
-            SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(uid).Coordinates);
-        }
-
         foreach (var light in component.DarkenedLights.ToArray())
         {
             if (!TryComp<PointLightComponent>(light, out var pointLight)
