@@ -11,7 +11,7 @@
   - type: Construction
     graph: PrescriptionMedHud
     node: prescmedhud
-  - type: VisionCorrection
+  - type: VisionCorrection # Floof
   - type: ShowHealthBars
     damageContainers:
     - Biological
@@ -35,7 +35,7 @@
   - type: Construction
     graph: PrescriptionSecHud
     node: prescsechud
-  - type: VisionCorrection
+  - type: VisionCorrection # Floof
   - type: Tag
     tags:
     - HudSecurity
