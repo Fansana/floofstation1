@@ -12,6 +12,12 @@ public sealed partial class EtherealComponent : Component
     public bool Darken = false;
 
     /// <summary>
+    ///     Create a shadow on removal.
+    /// </summary>
+    [DataField]
+    public bool ShadowRemove = false;
+
+    /// <summary>
     ///     Range of the Darken Effect.
     /// </summary>
     [DataField]
