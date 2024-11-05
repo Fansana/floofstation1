@@ -34,6 +34,8 @@ namespace Content.Server.Abilities.Psionics
 
                 if (_psionics.OnAttemptPowerUse(args.Performer, "DarkSwap", args.ManaCost / 2, args.CheckInsulation))
                 {
+                    SpawnAtPosition("ShadowkinShadow", Transform(args.Performer).Coordinates);
+                    SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(args.Performer).Coordinates);
                     RemComp(args.Performer, ethereal);
                     args.Handled = true;
                 }
