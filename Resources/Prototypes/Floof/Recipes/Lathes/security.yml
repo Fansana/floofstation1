@@ -13,3 +13,12 @@
   completetime: 5
   materials:
      Steel: 210
+
+- type: latheRecipe
+  id: ClothingShoesBootsMagCom
+  result: ClothingShoesBootsMagCom
+  completetime: 5
+  materials:
+    Steel: 500
+    Silver: 250
+    Gold: 100
