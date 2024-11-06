@@ -24,8 +24,4 @@ health-analyzer-window-malnutrition = Severely malnourished
 
 health-analyzer-window-entity-bleeding-text = Patient is bleeding!
 
-health-analyzer-window-scan-mode-text = Scan Mode:
-health-analyzer-window-scan-mode-active = Active
-health-analyzer-window-scan-mode-inactive = Inactive
-
 health-analyzer-popup-scan-target = {CAPITALIZE(THE($user))} is trying to scan you!
