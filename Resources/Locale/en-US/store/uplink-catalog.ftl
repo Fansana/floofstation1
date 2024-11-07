@@ -163,10 +163,6 @@ uplink-syndicate-martyr-module-desc = Turn your emagged borg friend into a walki
 uplink-singularity-beacon-name = Singularity Beacon
 uplink-singularity-beacon-desc = A device that attracts singularities. Has to be anchored and powered. Causes singularities to grow when consumed.
 
-# Floof station
-uplink-Cryptobiolininjector-name = Cryptobiolin injector
-uplink-Cryptobiolininjector-desc = Made by SESWC. This item is prefilled with 20u of Cryptobiolin to help you get rid of those pesky psionic weirdo's.
-
 # Implants
 uplink-storage-implanter-name = Storage Implanter
 uplink-storage-implanter-desc = Hide goodies inside of yourself with new bluespace technology!
