@@ -1,14 +1,17 @@
 - type: entity
-  parent: ClothingShoesBootsMagAdv
+  parent: ClothingShoesBootsMag
   id: ClothingShoesBootsMagCom
   name: Combat magboots
-  description: Made by SESWC. These State-of-the-art magnetic boots that do not slow down their wearer with built in armor for extra protection
+  description: Made by SESWC. These State-of-the-art magnetic boots with built in armor for extra protection
   components:
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.85
   - type: Item
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
