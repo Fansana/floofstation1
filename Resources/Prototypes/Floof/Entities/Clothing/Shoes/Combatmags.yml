@@ -4,9 +4,6 @@
   name: Combat magboots
   description: Made by SESWC. These State-of-the-art magnetic boots with built in armor for extra protection
   components:
-  - type: ClothingSpeedModifier
-    walkModifier: 0.90
-    sprintModifier: 0.85
   - type: Item
   - type: Armor
     modifiers:
