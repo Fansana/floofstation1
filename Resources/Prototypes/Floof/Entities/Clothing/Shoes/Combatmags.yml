@@ -5,12 +5,12 @@
   description: Made by SESWC. These State-of-the-art magnetic boots with built in armor for extra protection
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Shoes/Boots/magboots.rsi
+    sprite: Floof/Clothing/Shoes/Boots/combatMagboots.rsi
     layers:
     - state: icon
       map: [ "enum.ToggleVisuals.Layer" ]
   - type: Clothing
-    sprite: Floof/Clothing/Shoes/Boots/magboots.rsi
+    sprite: Floof/Clothing/Shoes/Boots/combatMagboots.rsi
   - type: Item
   - type: Armor
     modifiers:
