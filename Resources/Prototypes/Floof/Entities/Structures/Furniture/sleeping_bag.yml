@@ -12,6 +12,8 @@
   - type: Construction
     graph: SleepingBag
     node: sleepingbag
+    containers:
+    - entity_storage
   - type: Item
     size: Normal
   - type: Sprite
@@ -64,9 +66,6 @@
           True: {visible: false}
           False: {visible: true}
   - type: Pullable
-  - type: ContainerContainer
-    containers:
-      entity_storage: !type:Container
   - type: EntityStorage
     airtight: false
     capacity: 2
@@ -75,6 +74,9 @@
       path: /Audio/Misc/zip.ogg
     openSound:
       path: /Audio/Misc/zip.ogg
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
 
 - type: entity
   id: SleepingBagFolded

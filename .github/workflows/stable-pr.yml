@@ -7,7 +7,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    if: ${{github.base_ref == 'stable' && github.actor != 'Fansana'}}
+    if: ${{ github.base_ref == 'stable' && github.actor != 'Fansana' && github.actor != 'Memeji' && github.actor != 'FoxxoTrystan' }}
 
     steps:
     - uses: superbrothers/close-pull-request@v3
