@@ -2613,7 +2613,7 @@ entities:
       pos: 5.5,12.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -1174.803
+      secondsUntilStateChange: -2010.5782
       state: Opening
 - proto: DoubleEmergencyOxygenTankFilled
   entities:
@@ -5962,19 +5962,19 @@ entities:
     - type: Transform
       pos: 5.5,2.5
       parent: 1
+- proto: VendingMachineNutri
+  entities:
+  - uid: 915
+    components:
+    - type: Transform
+      pos: 10.5,14.5
+      parent: 1
 - proto: VendingMachineSec
   entities:
   - uid: 914
     components:
     - type: Transform
       pos: 1.5,8.5
-      parent: 1
-- proto: VendingMachineSeeds
-  entities:
-  - uid: 915
-    components:
-    - type: Transform
-      pos: 10.5,14.5
       parent: 1
 - proto: VendingMachineSeedsUnlocked
   entities:
