@@ -10,12 +10,13 @@ PosterLegitSMEpi: PosterLegitSafetyMothEpi
 PosterLegitSMPills: PosterLegitSafetyMothPills
 PosterLegitSMAnomalies: PosterLegitSafetyMothDelam
 PosterLegitSMGlimmer: PosterLegitSafetyMothGlimmer
-EngineeringTechFab: Autolathe
-EngineeringTechFabCircuitboard: AutolatheMachineCircuitboard
+# Floof - re-added those 2
+# EngineeringTechFab: Autolathe
+# EngineeringTechFabCircuitboard: AutolatheMachineCircuitboard
+# ServiceTechFab: Autolathe
+# ServiceTechFabCircuitboard: AutolatheMachineCircuitboard
 ScienceTechFab: Protolathe
 ScienceTechFabCircuitboard: ProtolatheMachineCircuitboard
-ServiceTechFab: Autolathe
-ServiceTechFabCircuitboard: AutolatheMachineCircuitboard
 
 # 2023-10-05
 FoodMothTomatoSauce: null
