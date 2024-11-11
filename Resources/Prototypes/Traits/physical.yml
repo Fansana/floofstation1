@@ -422,7 +422,7 @@
 - type: trait
   id: BionicArm
   category: Physical
-  points: -8
+  points: -6 # Floof - since you can't get free JoL anymore
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
