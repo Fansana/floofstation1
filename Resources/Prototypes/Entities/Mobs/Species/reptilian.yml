@@ -29,13 +29,16 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
+    allowedEmotes: ['Thump']
   - type: TypingIndicator
     proto: lizard
   - type: Vocal
     sounds:
-      Male: UnisexReptilian
-      Female: UnisexReptilian
-      Unsexed: UnisexReptilian
+      Male: MaleReptilian
+      Female: FemaleReptilian
+      Unsexed: MaleReptilian
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Scale
@@ -61,10 +64,10 @@
   - type: Wagging
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
+    - TauCetiBasic
     - Draconic
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Draconic
 
 - type: entity

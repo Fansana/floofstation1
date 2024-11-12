@@ -10,3 +10,8 @@ ghost-role-information-listeningop-rules =	You are a Syndicate Operative tasked 
 ghost-role-information-paradox-anomaly-name = Paradox Anomaly
 ghost-role-information-paradox-anomaly-description = Replace your double, or befriend them.
 ghost-role-information-paradox-anomaly-rules = Try and replace your twin with this funny roleplay antag rather than plasma flooding the station or something. You can also just befriend them.
+
+# Delta V soft antag rule
+deltav-ghost-role-information-softantag-rules = You are allowed to attack the crew without provocation.
+                                                You are allowed to coexist with the crew.
+                                                The crew is allowed to kill you without warning.

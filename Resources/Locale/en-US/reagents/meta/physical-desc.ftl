@@ -1,5 +1,8 @@
 reagent-physical-desc-abrasive = abrasive
 reagent-physical-desc-acidic = acidic
+reagent-physical-desc-soapy = soapy
+reagent-physical-desc-ferrous = ferrous
+reagent-physical-desc-nothing = nothing
 reagent-physical-desc-acrid = acrid
 reagent-physical-desc-alkaline = alkaline
 reagent-physical-desc-aromatic = aromatic
@@ -77,14 +80,6 @@ reagent-physical-desc-sickly = sickly
 reagent-physical-desc-skunky = skunky
 reagent-physical-desc-slimy = slimy
 reagent-physical-desc-neural = neural
-## Floof
-reagent-physical-desc-earthy = earthy
-reagent-physical-desc-ethereal-brass = ethereal brass
-reagent-physical-desc-smooth = smooth
-reagent-physical-desc-cold-crunchy-sticky = cold, crunchy, and sticky
-reagent-physical-desc-fizzy-smooth-citrussy = fizzy, smooth, and citrussy
-reagent-physical-desc-fizzy-sharp-citrussy = fizzy, sharp, and citrussy
-reagent-physical-desc-dirty = dirty
 reagent-physical-desc-soapy = soapy
 reagent-physical-desc-soothing = soothing
 reagent-physical-desc-sour = sour
@@ -106,3 +101,12 @@ reagent-physical-desc-vibrant = vibrant
 reagent-physical-desc-viscous = viscous
 reagent-physical-desc-volatile = volatile
 reagent-physical-desc-wormy = wormy
+
+## Floof
+reagent-physical-desc-earthy = earthy
+reagent-physical-desc-ethereal-brass = ethereal brass
+reagent-physical-desc-smooth = smooth
+reagent-physical-desc-cold-crunchy-sticky = cold, crunchy, and sticky
+reagent-physical-desc-fizzy-smooth-citrussy = fizzy, smooth, and citrussy
+reagent-physical-desc-fizzy-sharp-citrussy = fizzy, sharp, and citrussy
+reagent-physical-desc-dirty = dirty

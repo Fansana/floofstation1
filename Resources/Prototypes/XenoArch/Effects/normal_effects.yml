@@ -109,7 +109,7 @@
   components:
   - type: PointLight
     radius: 8
-    energy: 25
+    energy: 10
     color: "#daa3fd"
   - type: TriggerArtifact
   - type: FlashOnTrigger
@@ -181,6 +181,9 @@
     - Sodium
     - Water
     - Sulfur
+    - Blood # Floof - Artifact tweaks  
+    - Cum # Floof - Artifact tweaks
+    - Pomelustine # Floof - Artifact tweaks
 
 - type: artifactEffect
   id: EffectCold
@@ -503,6 +506,8 @@
     - Desoxyephedrine
     - Pax
     - Siderlac
+    - Libidozenithizine # Floof - Artifact tweaks
+    - Philterex # Floof - Artifact tweaks
 
 - type: artifactEffect
   id: EffectEmp
@@ -585,6 +590,24 @@
     - shuffle-artifact-popup
 
 - type: artifactEffect
+  id: EffectT4PartsSpawn
+  targetDepth: 3
+  effectHint: artifact-effect-hint-creation
+  components:
+  - type: SpawnArtifact
+    maxSpawns: 10
+    spawns:
+    - id: BluespaceCapacitorStockPart
+      prob: 0.5
+      maxAmount: 3
+    - id: BluespaceManipulatorStockPart
+      prob: 0.5
+      maxAmount: 3
+    - id: BluespaceMatterBinStockPart
+      prob: 0.5
+      maxAmount: 3
+
+- type: artifactEffect
   id: EffectFoamDangerous
   targetDepth: 3
   effectHint: artifact-effect-hint-biochemical
@@ -658,7 +681,7 @@
 
 - type: artifactEffect
   id: EffectSingulo
-  targetDepth: 10
+  targetDepth: 9 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact
@@ -668,7 +691,7 @@
 
 - type: artifactEffect
   id: EffectTesla
-  targetDepth: 10
+  targetDepth: 9 # Floof - Make it so they can actually occur
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact

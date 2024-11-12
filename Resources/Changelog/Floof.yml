@@ -653,7 +653,7 @@ Entries:
     - type: Add
       message: >-
         Added a crit state to most Xenos including: Friend, Rouny, Praetorian,
-        Drone, and Ravager.  
+        Drone, and Ravager.
     - type: Fix
       message: 'fixed Friend being unrevivable '
   id: 89
@@ -871,9 +871,7 @@ Entries:
     - type: Add
       message: a collection of Passive Xenos
     - type: Add
-      message: >-
-        several New friendly Xeno experimental subjects much like
-        Friend-shaped. 
+      message: several New friendly Xeno experimental subjects much like Friend-shaped.
   id: 119
   time: '2024-09-09T02:04:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/145
@@ -980,3 +978,440 @@ Entries:
   id: 132
   time: '2024-09-19T03:01:46.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/194
+- author: Memeji
+  changes:
+    - type: Add
+      message: Shuttle Console Boards added to the Tech Board loot pool.
+    - type: Tweak
+      message: R&D Server boards are now common finds.
+  id: 133
+  time: '2024-09-22T06:50:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/196
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Vampirism costs three points.
+  id: 134
+  time: '2024-09-23T02:22:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/201
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Clarified where IPCs should go for repairs in their guidebook.
+  id: 135
+  time: '2024-09-23T02:26:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/199
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Upstream merge. See the Einstein-Engines tab for more details.
+  id: 136
+  time: '2024-09-23T17:43:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/190
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed several major issues with leashes. Again.
+  id: 137
+  time: '2024-09-23T17:49:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/203
+- author: Memeji
+  changes:
+    - type: Add
+      message: '"Omen" Artifacts'
+    - type: Add
+      message: Lewd reagents to the reagent spawning effects.
+    - type: Tweak
+      message: Reduced depth at which extremely dangerous effects can occur.
+  id: 138
+  time: '2024-09-23T21:04:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/204
+- author: ShatteredSwords
+  changes:
+    - type: Tweak
+      message: Felinids can now be multiple colors instead of human colors.
+  id: 139
+  time: '2024-09-24T06:41:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/202
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Depth changed from 8 to 9.
+  id: 140
+  time: '2024-09-25T04:21:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/206
+- author: Memeji
+  changes:
+    - type: Remove
+      message: Omen Item Artifacts.
+  id: 141
+  time: '2024-09-25T22:17:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/207
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: The NEIL announcer can once again appear in a shift.
+  id: 142
+  time: '2024-09-25T22:19:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/209
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Upstream merge. See the Einstein-Engines changelog tab for more details.
+  id: 143
+  time: '2024-09-27T20:51:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/212
+- author: Memeji
+  changes:
+    - type: Add
+      message: The Rodentia species can now be played in Floof.
+  id: 144
+  time: '2024-09-27T21:51:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/208
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: 'Lighthouse: Added cryogenics to medbay.'
+    - type: Remove
+      message: 'Lighthouse: Replaced the medbay cryosleep room with cryogenics.'
+    - type: Fix
+      message: >-
+        Lighthouse: That one wall light in medbay next to maintenance now has
+        power.
+  id: 145
+  time: '2024-09-28T03:48:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/211
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Somebody fucked up the salvage shuttle
+  id: 146
+  time: '2024-09-28T11:51:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/215
+- author: neuPanda
+  changes:
+    - type: Add
+      message: Kiss an Lick
+  id: 147
+  time: '2024-09-29T02:41:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/179
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: nerf reagent slimes
+  id: 148
+  time: '2024-09-29T17:16:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/218
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: 'Tweaked spawn rates of Various Ventcritter Spawn events '
+  id: 149
+  time: '2024-09-29T18:26:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/219
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Loadouts have been expanded with leashes, remote signalers, shock
+        collars, and a wide variety of lewd items.
+  id: 150
+  time: '2024-10-01T16:14:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/217
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix the disposal pipe ejection to space and after pipe bends.
+  id: 151
+  time: '2024-10-01T17:33:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/220
+- author: Xavier
+  changes:
+    - type: Tweak
+      message: >-
+        Lepo now has a 10 degree buffer between it's heating and cooling effect
+        to prevent looping temperature shocks.
+  id: 152
+  time: '2024-10-03T19:58:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/222
+- author: Xavier
+  changes:
+    - type: Add
+      message: New mini hypospray that epistemics can research!
+  id: 153
+  time: '2024-10-05T18:46:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/210
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: adjusted antag rules
+  id: 154
+  time: '2024-10-06T15:22:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/235
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix the swat mask hair bug. Long life the baldberg.
+  id: 155
+  time: '2024-10-06T18:58:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/236
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Reduced the max amount of traitors in a shift.
+  id: 156
+  time: '2024-10-07T05:30:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/238
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added day night cycle
+  id: 157
+  time: '2024-10-08T00:20:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/240
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Upstream merge. The the Einstein-Engines changelog tab for more details.
+  id: 158
+  time: '2024-10-08T00:29:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/223
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Artificial Bluespace Crystals!
+  id: 159
+  time: '2024-10-08T01:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/244
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Blackeye-Shadowkins!
+  id: 160
+  time: '2024-10-09T02:01:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/245
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixes the arrivals shuttle choosing to correct docking port.
+  id: 161
+  time: '2024-10-11T03:02:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/251
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Add lizard tail to IPCs
+  id: 162
+  time: '2024-10-11T09:04:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/253
+- author: Fansana
+  changes:
+    - type: Fix
+      message: spider webs making spider invisible
+  id: 163
+  time: '2024-10-11T09:25:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/254
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Latejoin antag selection should respect player's antag preferences.
+  id: 164
+  time: '2024-10-11T11:48:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/252
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Xeno companion crate and accompanying event
+    - type: Fix
+      message: 'Fixed Specific ventcritters events and re-enabled them '
+  id: 165
+  time: '2024-10-12T23:08:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/247
+- author: cynical24
+  changes:
+    - type: Fix
+      message: >-
+        fixed the backwards hand/description bug on the HUD for some species by
+        swapping the hands :3
+  id: 166
+  time: '2024-10-27T11:23:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/292
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix yipping and hissing for female reptilians
+  id: 167
+  time: '2024-10-27T11:23:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/293
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed the blue nukie suits.
+  id: 168
+  time: '2024-10-27T17:24:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/298
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Nerf mimic vendor, only appears after 20 minutes now
+  id: 169
+  time: '2024-10-27T22:27:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/297
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Anomaly Spawn.
+    - type: Fix
+      message: Arrival Shuttle going in the dark.
+    - type: Fix
+      message: Ethereal Portal Glitch
+  id: 170
+  time: '2024-10-27T22:46:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/299
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 171
+  time: '2024-10-28T16:15:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/301
+- author: Fansana
+  changes:
+    - type: Add
+      message: added neck floof for lizards
+  id: 172
+  time: '2024-10-28T16:16:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/300
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Give thermal insulation to penguins
+  id: 173
+  time: '2024-10-29T14:42:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/302
+- author: neuPanda
+  changes:
+    - type: Remove
+      message: Rape from law as it is a rules violation.
+    - type: Remove
+      message: Sexual Assault/Harassment from law as it is a rules violation.
+  id: 174
+  time: '2024-10-29T22:10:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/306
+- author: Memeji
+  changes:
+    - type: Remove
+      message: Removed Gax from the map pool.
+  id: 175
+  time: '2024-10-29T23:51:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/303
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added filled mime/clown lockers to every map
+  id: 176
+  time: '2024-10-30T21:06:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/307
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Syndicate uplink, re add Deception and Chemicals
+  id: 177
+  time: '2024-10-30T21:14:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/310
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed steal objective for the RD cloak
+  id: 178
+  time: '2024-10-30T21:19:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/304
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Adolescent dragon
+  id: 179
+  time: '2024-10-31T18:48:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/309
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: >-
+        Cocooners can now freely uncocoon any cocoons without the need of a
+        sharp object.
+    - type: Fix
+      message: Cocoon making you stuck in muffle accent.
+  id: 180
+  time: '2024-11-01T20:32:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/313
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Fix the call the shuttle button.
+  id: 181
+  time: '2024-11-09T15:55:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/338
+- author: VividPups
+  changes:
+    - type: Add
+      message: New Combat Boots!
+  id: 182
+  time: '2024-11-08T00:42:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/335
+- author: Memeji
+  changes:
+    - type: Add
+      message: 18 plants
+    - type: Tweak
+      message: Added plant mutations to existing plants.
+  id: 183
+  time: '2024-11-07T22:30:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/284
+- author: VividPups
+  changes:
+    - type: Add
+      message: New way for Syndies to deal with those pesky psionic
+  id: 184
+  time: '2024-11-07T04:47:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/322
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'inventory, body, and grabbing setups for NT xenos '
+  id: 185
+  time: '2024-11-07T01:18:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/316
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: >-
+        LPO no longer has the CC Stamp and they have a new communication
+        console.
+  id: 186
+  time: '2024-11-06T13:15:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/325
+- author: KyuPolaris
+  changes:
+    - type: Fix
+      message: >-
+        Prescription Lenses re-added to prescription MedHUDs and prescription
+        SecHUDs.
+  id: 187
+  time: '2024-11-05T23:03:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/330
+- author: Fansana
+  changes:
+    - type: Fix
+      message: >-
+        fix Voltage drink, now required VodkaRedBool instead of vodka and energy
+        drink
+  id: 188
+  time: '2024-11-05T00:33:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/328
+- author: SleepyScarecrow
+  changes:
+  - type: Tweak
+    message: Tweaked Dark Oasis Recipe
+  id: 181
+  time: '2024-11-11T06:50:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/341

@@ -1,0 +1,15 @@
+name: Close PRs to stable
+
+on:
+  pull_request_target:
+    types: [ opened, ready_for_review ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    if: ${{ github.base_ref == 'stable' && github.actor != 'Fansana' && github.actor != 'Memeji' && github.actor != 'FoxxoTrystan' }}
+
+    steps:
+    - uses: superbrothers/close-pull-request@v3
+      with:
+        comment: "Thank you for contributing to Floof Station repository. Unfortunately, it looks like you submitted your pull request to the stable branch, Please move this PR to the master Branch."

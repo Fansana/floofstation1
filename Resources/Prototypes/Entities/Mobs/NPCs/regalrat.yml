@@ -90,6 +90,8 @@
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
     rules: ghost-role-information-rat-king-rules
+    raffle:
+      settings: default
   - type: GhostTakeoverAvailable
   - type: Tag
     tags:
@@ -99,6 +101,7 @@
   - type: RatKing
     hungerPerArmyUse: 25
     hungerPerDomainUse: 50
+  - type: Rummager # DeltaV: Make rummaging a generic component
   - type: MobsterAccent
   - type: Speech
     speechVerb: SmallMob
@@ -120,10 +123,10 @@
       gender: male
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
+    - TauCetiBasic
     - Mouse
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Mouse
 
 - type: entity
@@ -301,7 +304,7 @@
     speaks:
     - Mouse
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Mouse
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
@@ -309,10 +312,11 @@
 
 - type: weightedRandomEntity
   id: RatKingLoot
-  weights:
-    RandomSpawner100: 66 #garbage
-    FoodCheese: 28 #food
-    IngotGold1: 5 #loot
+  weights: # DeltaV: Rebalanced for Rodentia rummaging because we don't have Rat King
+    RandomSpawner100: 70 #garbage
+    FoodCheese: 15 #food
+    RandomSnacks: 10
+    RandomFoodSingle: 5
 
 - type: entity
   id: ActionRatKingRaiseArmy

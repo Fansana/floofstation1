@@ -103,14 +103,16 @@
     spawned:
     - id: FoodMeatXeno
       amount: 5
-  #- type: GhostRole # Delta V - Moves ghost role from parent to child
-  #  allowMovement: true # Delta V - Moves ghost role from parent to child
-  #  allowSpeech: true # Delta V - Moves ghost role from parent to child
-  #  makeSentient: true # Delta V - Moves ghost role from parent to child
-  #  name: ghost-role-information-xeno-name # Delta V - Moves ghost role from parent to child
-  #  description: ghost-role-information-xeno-description # Delta V - Moves ghost role from parent to child
-  #  rules: ghost-role-information-xeno-rules # Delta V - Moves ghost role from parent to child
-  # - type: GhostTakeoverAvailable # Delta V - Moves ghost role from parent to child
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: ghost-role-information-xeno-name
+    description: ghost-role-information-xeno-description
+    rules: ghost-role-information-xeno-rules
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
   - type: TypingIndicator
     proto: alien
   - type: Temperature
@@ -251,10 +253,10 @@
     - CannotSuicide
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
+    - TauCetiBasic
     - Xeno
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Xeno
 
 - type: entity
@@ -334,6 +336,7 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     offset: 0,0.6
+    scale: 0.7, 0.7
   - type: Butcherable
     butcheringType: Spike
     spawned:

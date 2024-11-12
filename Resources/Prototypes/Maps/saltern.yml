@@ -1,7 +1,7 @@
 - type: gameMap
   id: Saltern
   mapName: 'Saltern'
-  mapPath: /Maps/saltern.yml
+  mapPath: /Maps/Floof/saltern.yml # FloofStation
   minPlayers: 0
   maxPlayers: 35
   fallback: true
@@ -19,7 +19,9 @@
         - type: StationJobs
           overflowJobs:
             - Passenger
+            #- Anomaly # Floofstation
           availableJobs:
+            Anomaly: [ 4, 4 ] # FloofStation
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]

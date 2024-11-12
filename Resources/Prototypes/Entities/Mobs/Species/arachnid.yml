@@ -46,6 +46,9 @@
       methods: [Touch]
       effects:
       - !type:WashCreamPieReaction
+  - type: BloodSucker
+    webRequired: true
+  - type: Cocooner
   # Damage (Self)
   - type: Bloodstream
     bloodReagent: CopperBlood
@@ -66,12 +69,13 @@
   - type: Speech
     speechVerb: Arachnid
     speechSounds: Arachnid
+    allowedEmotes: ['Click', 'Chitter']
   - type: LanguageKnowledge
     speaks:
-    - GalacticCommon
-    - Arachnic 
+    - TauCetiBasic
+    - Arachnic
     understands:
-    - GalacticCommon
+    - TauCetiBasic
     - Arachnic
   - type: Vocal
     sounds:

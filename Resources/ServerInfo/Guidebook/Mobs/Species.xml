@@ -19,4 +19,10 @@
   <Box>
   <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
   </Box>
+
+  # Delta-V specific species
+  <Box>
+    <GuideEntityEmbed Entity="MobRodentia" Caption="Rodentia"/>
+  </Box>
+  
 </Document>

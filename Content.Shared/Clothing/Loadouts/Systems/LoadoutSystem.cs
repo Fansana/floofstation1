@@ -31,11 +31,12 @@ public sealed class LoadoutSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, LoadoutComponent component, MapInitEvent args)
     {
-        if (component.Prototypes == null)
+        if (component.StartingGear is null
+            || component.StartingGear.Count <= 0)
             return;
 
-        var proto = _prototype.Index<StartingGearPrototype>(_random.Pick(component.Prototypes));
-        _station.EquipStartingGear(uid, proto, null);
+        var proto = _prototype.Index(_random.Pick(component.StartingGear));
+        _station.EquipStartingGear(uid, proto);
     }
 
 

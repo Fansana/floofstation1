@@ -1,7 +1,7 @@
 - type: gameMap
   id: Glacier
   mapName: Glacier
-  mapPath: /Maps/glacier.yml
+  mapPath: /Maps/Floof/glacier.yml # Floofstation
   minPlayers: 15
   maxPlayers: 70
   stations:
@@ -20,7 +20,10 @@
       - type: StationJobs
         overflowJobs:
           - Passenger
+          #- Anomaly # Floofstation
         availableJobs:
+          Passenger: [ -1, -1 ]
+          Anomaly: [ 4, 4 ] # Floofstation
           Captain: [ 1, 1 ]
         #service
           HeadOfPersonnel: [ 1, 1 ]
@@ -34,7 +37,6 @@
           ServiceWorker: [ 2, 3 ]
           Janitor: [ 2, 2 ]
           Mime: [ 1, 2 ]
-          Passenger: [ -1, -1 ]
         #engineering
           ChiefEngineer: [ 1, 1 ]
           AtmosphericTechnician: [ 1, 2 ]
@@ -75,4 +77,4 @@
           MailCarrier: [ 2, 3 ]
           SalvageSpecialist: [ 2, 3 ]
           CargoTechnician: [ 2, 3 ]
-        
+

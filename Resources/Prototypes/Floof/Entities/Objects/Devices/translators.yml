@@ -6,11 +6,11 @@
   components:
   - type: HandheldTranslator
     spoken:
-    - GalacticCommon
+    - TauCetiBasic
     - Arachnic
     understood:
-    - GalacticCommon
+    - TauCetiBasic
     - Arachnic
     requires:
-    - GalacticCommon
+    - TauCetiBasic
     - Arachnic

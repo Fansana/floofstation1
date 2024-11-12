@@ -1,0 +1,131 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieFRouny
+  name: blue rouny plush
+  description: An adorable stuffed toy that resembles a rouny with blue stripes.
+  components:
+  - type: Sprite
+    state: nrouny
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFDrone
+  name: blue drone plush
+  description: An adorable stuffed toy that resembles a drone with blue stripes.
+  components:
+  - type: Sprite
+    state: ndrone
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFPraetorian
+  name: blue Praetorian plush
+  description: An adorable stuffed toy that resembles a Praetorian with blue stripes.
+  components:
+  - type: Sprite
+    state: nPraetorian
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFRavager
+  name: blue ravager plush
+  description: An adorable stuffed toy that resembles a ravager with blue stripes.
+  components:
+  - type: Sprite
+    state: nravager
+  - type: Item
+    storedRotation: -90
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    angle: 0
+    animation: WeaponArcBite # Rrrr!

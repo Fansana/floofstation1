@@ -26,6 +26,7 @@
     detachDelay: 4
     selfDetachDelay: 10
 
+# TODO this should be named LeashShort...
 - type: entity
   id: ShortLeash
   parent: BaseLeash

@@ -18,7 +18,7 @@
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 1.5
+        factor: 0.5
         conditions:
           - !type:OrganType
             type: Human
@@ -39,7 +39,7 @@
         - !type:OrganType
           type: Vampiric
         reagent: Protein
-        amount: 0.15
+        amount: 0.125 # See below
       - !type:AdjustReagent
         conditions:
         - !type:OrganType
@@ -50,8 +50,7 @@
       effects:
         - !type:AdjustReagent
           reagent: UncookedAnimalProteins
-          amount: 0.5
-          # Floofstation - prevent vampires from getting sick by drinking blood
+          amount: 0.125 # 0.25 proteins for 1u of blood - restores 0.75 hunger, adds 0.25 blood per unit
           conditions:
           - !type:OrganType
             type: Vampiric
@@ -104,7 +103,7 @@
       # Delicious!
       effects:
       - !type:SatiateHunger
-        factor: 1.5
+        factor: 1
   footstepSound:
     collection: FootstepBlood
     params:
@@ -128,9 +127,9 @@
       # Sweet!
       effects:
       - !type:SatiateHunger
-        factor: 1
+        factor: 0.5
       - !type:SatiateThirst
-        factor: 1
+        factor: 0.5
   footstepSound:
     collection: FootstepBlood
     params:
