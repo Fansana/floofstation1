@@ -2,6 +2,7 @@ using Content.Shared.Arcade;
 using Robust.Server.GameObjects;
 using Robust.Shared.Random;
 using System.Linq;
+using Content.Shared.Mood;
 
 namespace Content.Server.Arcade.BlockGame;
 
