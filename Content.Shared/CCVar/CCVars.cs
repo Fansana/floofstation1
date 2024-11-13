@@ -2005,7 +2005,7 @@ namespace Content.Shared.CCVar
         /// Allow Ethereal Ent to PassThrough Walls/Objects while in Ethereal.
         /// </summary>
         public static readonly CVarDef<bool> EtherealPassThrough =
-            CVarDef.Create("ic.EtherealPassThrough", false, CVar.SERVER);
+            CVarDef.Create("ic.EtherealPassThrough", true, CVar.SERVER);
 
         /*
          * Salvage
@@ -2065,7 +2065,7 @@ namespace Content.Shared.CCVar
         ///     Time that players have to wait before rules can be accepted.
         /// </summary>
         public static readonly CVarDef<float> RulesWaitTime =
-            CVarDef.Create("rules.time", 10f, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("rules.time", 60f, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         ///     Don't show rules to localhost/loopback interface.
@@ -2640,12 +2640,6 @@ namespace Content.Shared.CCVar
             CVarDef.Create("ghost.allow_same_character", false, CVar.SERVERONLY);
 
         #endregion
-
-        /// <summary>
-        /// Set to true to disable parallel processing in the pow3r solver.
-        /// </summary>
-        public static readonly CVarDef<bool> DebugPow3rDisableParallel =
-            CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
 
         /*
         * AUTOVOTE SYSTEM
