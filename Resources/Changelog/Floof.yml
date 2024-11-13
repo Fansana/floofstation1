@@ -1410,8 +1410,15 @@ Entries:
   url: https://github.com/Fansana/floofstation1/pull/328
 - author: SleepyScarecrow
   changes:
-  - type: Tweak
-    message: Tweaked Dark Oasis Recipe
+    - type: Tweak
+      message: Tweaked Dark Oasis Recipe
   id: 181
   time: '2024-11-11T06:50:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/341
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed block game UI!
+  id: 189
+  time: '2024-11-13T22:20:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/348
