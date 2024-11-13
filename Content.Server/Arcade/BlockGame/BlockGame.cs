@@ -84,6 +84,8 @@ public sealed partial class BlockGame
             SendHighscoreUpdate();
         }
         SendMessage(new BlockGameMessages.BlockGameGameOverScreenMessage(Points, _highScorePlacement?.LocalPlacement, _highScorePlacement?.GlobalPlacement));
+        var ev = new MoodEffectEvent("ArcadePlay");
+        _entityManager.EventBus.RaiseLocalEvent(meta.Owner, ev);
     }
 
     /// <summary>
