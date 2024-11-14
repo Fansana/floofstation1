@@ -1410,8 +1410,38 @@ Entries:
   url: https://github.com/Fansana/floofstation1/pull/328
 - author: SleepyScarecrow
   changes:
-  - type: Tweak
-    message: Tweaked Dark Oasis Recipe
+    - type: Tweak
+      message: Tweaked Dark Oasis Recipe
   id: 181
   time: '2024-11-11T06:50:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/341
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed block game UI!
+  id: 189
+  time: '2024-11-13T22:20:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/348
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Price
+  id: 190
+  time: '2024-11-14T09:55:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/353
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Gladiators can no longer have bionics.
+    - type: Tweak
+      message: Bionic arm cannot opened powered doors. Cost reduced to 6 instead of 8.
+  id: 191
+  time: '2024-11-14T09:55:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/343
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Tweaked game mode votes
+  id: 192
+  time: '2024-11-14T09:57:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/350
