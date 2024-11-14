@@ -1429,3 +1429,12 @@ Entries:
   id: 190
   time: '2024-11-14T09:55:10.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/353
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Gladiators can no longer have bionics.
+    - type: Tweak
+      message: Bionic arm cannot opened powered doors. Cost reduced to 6 instead of 8.
+  id: 191
+  time: '2024-11-14T09:55:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/343
