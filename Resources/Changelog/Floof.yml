@@ -1452,3 +1452,10 @@ Entries:
   id: 193
   time: '2024-11-14T18:02:17.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/352
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed the power flickers!
+  id: 194
+  time: '2024-11-14T18:03:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/354
