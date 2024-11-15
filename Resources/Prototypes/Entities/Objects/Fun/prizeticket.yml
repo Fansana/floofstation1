@@ -378,12 +378,14 @@
       - id: MrDips
         prob: 0.50
         orGroup: Prize
+      # HypnoTemp Merch - Start
       - id: PlushieHypnoTempMysta
         prob: 0.50
         orGroup: Prize
       - id: PlushieHypnoTempHoS
         prob: 0.50
         orGroup: Prize
+       #HypnoTemp Merch - End
       # Rare
       - id: PlushieAbductorAgent
         prob: 0.30
