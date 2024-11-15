@@ -288,6 +288,7 @@
       - id: PlushieShadowkin
         prob: 0.80
         orGroup: Prize
+      # HypnoTemp Merch - Start
       - id: PlushieHypnoTempLO
         prob: 0.80
         orGroup: Prize
@@ -297,6 +298,7 @@
       - id: PlushieHypnoTempCMO
         prob: 0.80
         orGroup: Prize
+      #HypnoTemp Merch - End
       # Uncommon
       - id: PrizeTicket60
         prob: 0.50
