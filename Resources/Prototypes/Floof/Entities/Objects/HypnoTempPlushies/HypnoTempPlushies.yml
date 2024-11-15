@@ -56,7 +56,7 @@
   parent: BaseHypnoTempPlush
   id: PlushieHypnoTempCMO
   name: HypnoTemp™ plushie
-  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a cute Chief Medical Officer uniform.
+  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a life-givingly cute Chief Medical Officer uniform.
   components:
   - type: Sprite
     sprite: Floof/Objects/HypnoTempPlushies/staffer_plushies.rsi
@@ -145,7 +145,7 @@
   parent: BaseHypnoTempPlush
   id: PlushieHypnoTempCE
   name: HypnoTemp™ plushie
-  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a Chief Engineer uniform.
+  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a handy Chief Engineer uniform.
   components:
   - type: Sprite
     sprite: Floof/Objects/HypnoTempPlushies/staffer_plushies.rsi
@@ -167,7 +167,7 @@
   parent: BaseHypnoTempPlush
   id: PlushieHypnoTempHoP
   name: HypnoTemp™ plushie
-  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a Head of Personnel uniform.
+  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in an adorkable Head of Personnel uniform.
   components:
   - type: Sprite
     sprite: Floof/Objects/HypnoTempPlushies/staffer_plushies.rsi
@@ -189,7 +189,7 @@
   parent: BaseHypnoTempPlush
   id: PlushieHypnoTempCap
   name: HypnoTemp™ plushie
-  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a Captain uniform.
+  description: A larger than life HypnoTech™ Temporary Staffer plushie! This one is dressed in a delightfully commanding Captain uniform.
   components:
   - type: Sprite
     sprite: Floof/Objects/HypnoTempPlushies/staffer_plushies.rsi
