@@ -3,8 +3,8 @@
   - SimpleSpaceMobBase
   - FlyingMobBase
   id: MobDragonPet
-  name: adolescent space dragon
-  description: A younger Space dragon with a friendly demeanor.
+  name: Space Drake
+  description: A smaller breed of space dragon with a friendly demeanor.
   components:
   - type: Body
     prototype: Animal
@@ -156,6 +156,7 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
+  - type: LeashAnchor
 
 - type: entity
   categories: [ HideSpawnMenu ]

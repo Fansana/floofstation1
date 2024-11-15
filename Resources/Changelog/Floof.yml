@@ -1408,3 +1408,78 @@ Entries:
   id: 188
   time: '2024-11-05T00:33:06.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/328
+- author: SleepyScarecrow
+  changes:
+    - type: Tweak
+      message: Tweaked Dark Oasis Recipe
+  id: 181
+  time: '2024-11-11T06:50:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/341
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed block game UI!
+  id: 189
+  time: '2024-11-13T22:20:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/348
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Price
+  id: 190
+  time: '2024-11-14T09:55:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/353
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Gladiators can no longer have bionics.
+    - type: Tweak
+      message: Bionic arm cannot opened powered doors. Cost reduced to 6 instead of 8.
+  id: 191
+  time: '2024-11-14T09:55:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/343
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Tweaked game mode votes
+  id: 192
+  time: '2024-11-14T09:57:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/350
+- author: fenndragon
+  changes:
+    - type: Remove
+      message: Removed timer from dragon gameplay
+  id: 193
+  time: '2024-11-14T18:02:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/352
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed the power flickers!
+  id: 194
+  time: '2024-11-14T18:03:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/354
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Leash anchor to Space drakes
+    - type: Tweak
+      message: 'Tweaked the name of Space drakes '
+  id: 195
+  time: '2024-11-14T18:05:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/349
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Removed nicotine from Interdynes and replaced it with iron and dylovene.
+  id: 196
+  time: '2024-11-14T18:06:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/344
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added auto vote system
+  id: 197
+  time: '2024-11-14T23:20:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/351
+
