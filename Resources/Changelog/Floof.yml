@@ -1344,3 +1344,81 @@ Entries:
   id: 180
   time: '2024-11-01T20:32:06.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/313
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Fix the call the shuttle button.
+  id: 181
+  time: '2024-11-09T15:55:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/338
+- author: VividPups
+  changes:
+    - type: Add
+      message: New Combat Boots!
+  id: 182
+  time: '2024-11-08T00:42:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/335
+- author: Memeji
+  changes:
+    - type: Add
+      message: 18 plants
+    - type: Tweak
+      message: Added plant mutations to existing plants.
+  id: 183
+  time: '2024-11-07T22:30:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/284
+- author: VividPups
+  changes:
+    - type: Add
+      message: New way for Syndies to deal with those pesky psionic
+  id: 184
+  time: '2024-11-07T04:47:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/322
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'inventory, body, and grabbing setups for NT xenos '
+  id: 185
+  time: '2024-11-07T01:18:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/316
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: >-
+        LPO no longer has the CC Stamp and they have a new communication
+        console.
+  id: 186
+  time: '2024-11-06T13:15:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/325
+- author: KyuPolaris
+  changes:
+    - type: Fix
+      message: >-
+        Prescription Lenses re-added to prescription MedHUDs and prescription
+        SecHUDs.
+  id: 187
+  time: '2024-11-05T23:03:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/330
+- author: Fansana
+  changes:
+    - type: Fix
+      message: >-
+        fix Voltage drink, now required VodkaRedBool instead of vodka and energy
+        drink
+  id: 188
+  time: '2024-11-05T00:33:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/328
+- author: SleepyScarecrow
+  changes:
+    - type: Tweak
+      message: Tweaked Dark Oasis Recipe
+  id: 181
+  time: '2024-11-11T06:50:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/341
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed block game UI!
+  id: 189
+  time: '2024-11-13T22:20:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/348
