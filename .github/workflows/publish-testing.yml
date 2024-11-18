@@ -18,7 +18,7 @@ jobs:
 
     - uses: actions/checkout@v3.6.0
       with:
-        ref: stable
+        ref: master
         submodules: 'recursive'
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3.2.0
@@ -59,7 +59,7 @@ jobs:
         ARTIFACT_ID: ${{ steps.artifact-upload-step.outputs.artifact-id }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
         ROBUST_CDN_URL: ${{ vars.ROBUST_CDN_URL }}
-        FORK_ID: ${{ vars.FORK_ID }}
+        FORK_ID: "floofstation-test"
 
     # - name: Publish changelog (Discord)
     #   run: Tools/actions_changelogs_since_last_run.py
