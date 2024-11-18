@@ -93,12 +93,7 @@ public sealed partial class DragonSystem : EntitySystem
 
             comp.RiftAccumulator += frameTime;
 
-            // Delete it, naughty dragon!
-            if (comp.RiftAccumulator >= comp.RiftMaxAccumulator)
-            {
-                Roar(uid, comp);
-                QueueDel(uid);
-            }
+
         }
     }
 
