@@ -73,3 +73,5 @@ flavor-complex-numbing-tranquility = like numbing tranquility
 flavor-complex-blue-pumpkin = like a mouthful of pool water
 flavor-base-strange = strange
 flavor-complex-cherry = like cherries
+flavor-complex-walnut = like walnuts
+flavor-complex-despair = despair
