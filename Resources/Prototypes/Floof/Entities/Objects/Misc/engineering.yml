@@ -1,0 +1,10 @@
+- type: entity
+  name: building permit
+  parent: PaperTemplate
+  id: PaperTemplateEngineeringBuildingPermit
+  description: 'For all your building needs.'
+  components:
+  - type: Paper
+    contentSize: 10000
+    escapeFormatting: false
+    content: paperwork-separator-engineering-building-permit
