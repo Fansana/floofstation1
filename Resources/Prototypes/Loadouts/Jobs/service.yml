@@ -319,6 +319,23 @@
   items:
     - WeaponSniperMosinRubber
 
+- type: loadout # Floof
+  id: LoadoutServiceBartenderBrassKnuckles
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBartenderWeapon
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+    - !type:CharacterSpeciesRequirement
+      species:
+       - Oni
+  items:
+    - WeaponBrassKnuckles
+
 - type: loadout
   id: LoadoutServiceJumpsuitBartenderNt
   category: JobsServiceBartender
