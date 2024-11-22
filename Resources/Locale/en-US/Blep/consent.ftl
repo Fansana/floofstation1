@@ -20,3 +20,6 @@ consent-examine-not-set = This player has no consent preferences set. Ask for co
 # Consent toggles
 consent-example1 = Example Consent Toggle
 consent-example1-desc = This is just here as an example for how to add consent toggles.
+
+consent-Hypno-name = Hypnosis
+consent-Hypno-desc = Allow yourself to be hypnotized.
