@@ -1,0 +1,51 @@
+- type: entity
+  id: LockerJanitorFilled
+  parent: LockerJanitor
+  name: janitor locker
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: MopItem
+      amount: 2
+    - id: BoxMousetrap
+      amount: 2
+    - id: WetFloorSign
+      amount: 3
+    - id: TrashBag
+      amount: 2
+    - id: LightReplacer
+    - id: BoxLightMixed
+    - id: Holoprojector
+    - id: SoapNT
+      amount: 2
+    - id: FlashlightLantern
+      amount: 2
+    - id: Plunger
+      amount: 2
+    - id: LunchboxServiceFilledRandom # Delta-V Lunchboxes!
+      prob: 0.3
+
+# Bartender
+- type: entity
+  id: LockerBartenderFilled
+  parent: LockerBartender
+  name: bartender's locker
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: DrinkShaker
+    - id: ClothingEyesHudBeer
+    - id: HandLabeler
+      amount: 1
+    - id: DrinkBottleBeer
+      prob: 0.5
+    - id: DrinkBottleBeer
+      prob: 0.5
+    - id: DrinkBottleBeer
+      prob: 0.5
+    - id: RagItem
+      amount: 2
+    - id: LunchboxServiceFilledRandom # Delta-V Lunchboxes!
+      prob: 0.3

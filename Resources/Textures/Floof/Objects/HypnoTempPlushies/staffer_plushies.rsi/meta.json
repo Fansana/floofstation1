@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "JTCircus",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "staffer_Cap"
+        },
+        {
+            "name": "staffer_CE"
+        },
+        {
+            "name": "staffer_CMO"
+        },
+        {
+            "name": "staffer_HoP"
+        },
+        {
+            "name": "staffer_HoS"
+        },
+        {
+            "name": "staffer_LO"
+        },
+        {
+            "name": "staffer_Mysta"
+        }
+    ]
+}

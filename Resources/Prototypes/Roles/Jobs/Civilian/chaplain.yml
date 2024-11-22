@@ -29,13 +29,14 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: BibleUser #Lets them heal with bibles
+    - type: BibleUser
     - type: Psionic
       powerRollMultiplier: 3
     - type: InnatePsionicPowers
       powersToAdd:
         - TelepathyPower
         - HealingWordPower
+        - SummonRemiliaPower
 
 - type: startingGear
   id: ChaplainGear

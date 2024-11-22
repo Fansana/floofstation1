@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagCom
+  name: Combat magboots
+  description: Made by SESWC. These State-of-the-art magnetic boots with built in armor for extra protection
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Shoes/Boots/combatMagboots.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: Clothing
+    sprite: Floof/Clothing/Shoes/Boots/combatMagboots.rsi
+  - type: Item
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90
