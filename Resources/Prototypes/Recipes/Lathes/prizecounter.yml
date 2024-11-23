@@ -743,3 +743,61 @@
   completetime: 0.1
   materials:
     PrizeTicket: 500
+
+# HypnoTemp Plushies - Start
+- type: latheRecipe
+  id: PlushieHypnoTempCap
+  result: PlushieHypnoTempCap
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempHoS
+  result: PlushieHypnoTempHoS
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempHoP
+  result: PlushieHypnoTempHoP
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempCE
+  result: PlushieHypnoTempCE
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempCMO
+  result: PlushieHypnoTempCMO
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempLO
+  result: PlushieHypnoTempLO
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempMysta
+  result: PlushieHypnoTempMysta
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+# HypnoTemp Plushies - End

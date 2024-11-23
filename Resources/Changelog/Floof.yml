@@ -1496,3 +1496,86 @@ Entries:
   id: 199
   time: '2024-11-16T21:30:08.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/358
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: 'Aranchids can now speak to shiva and other spiders '
+  id: 200
+  time: '2024-11-19T04:12:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/364
+- author: Fansana
+  changes:
+    - type: Add
+      message: >-
+        Added watermelon, walnut, void, vanilla, starlight, rocky road,
+        neapolitan, nebula, Solar, mint chocolate, lover's delight, hazelnut,
+        gilded, cosmos, coconut, chocolate and bananasplit ice cream.
+  id: 201
+  time: '2024-11-19T07:43:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/362
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed voice mask AGAIN!!!
+  id: 202
+  time: '2024-11-19T09:00:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/365
+- author: sprkl
+  changes:
+    - type: Add
+      message: >-
+        Seven variants of HypnoTemp Staffer plushies can now be found in station
+        lockers and prize balls.
+  id: 203
+  time: '2024-11-21T17:08:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/356
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged some of the upstream changes. See the Einstein-Engines tab for
+        more details.
+  id: 204
+  time: '2024-11-22T16:21:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/326
+- author: sarcoph
+  changes:
+    - type: Add
+      message: >-
+        New "muffled" variants for the regular, explorer, and security gas
+        masks, for people who love breathing almost as much as they love
+        speaking unintelligibly. They can be obtained via the crafting tab, or
+        the regular one can be found in loadouts.
+  id: 205
+  time: '2024-11-23T13:55:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/197
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added wedding essentials
+  id: 206
+  time: '2024-11-23T14:38:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/361
+- author: Fansana
+  changes:
+    - type: Add
+      message: 'Add departmental folders that contain common paperwork templates. '
+  id: 207
+  time: '2024-11-23T18:36:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/366
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted security magboots to spawn in appropriate suit storage lockers
+  id: 208
+  time: '2024-11-23T18:38:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/345
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some spawn rates of items that were incorrectly spawning in every
+        locker.
+  id: 209
+  time: '2024-11-23T18:40:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/374

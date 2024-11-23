@@ -288,6 +288,17 @@
       - id: PlushieShadowkin
         prob: 0.80
         orGroup: Prize
+      # HypnoTemp Merch - Start
+      - id: PlushieHypnoTempLO
+        prob: 0.80
+        orGroup: Prize
+      - id: PlushieHypnoTempHoP
+        prob: 0.80
+        orGroup: Prize
+      - id: PlushieHypnoTempCMO
+        prob: 0.80
+        orGroup: Prize
+      #HypnoTemp Merch - End
       # Uncommon
       - id: PrizeTicket60
         prob: 0.50
@@ -367,6 +378,14 @@
       - id: MrDips
         prob: 0.50
         orGroup: Prize
+      # HypnoTemp Merch - Start
+      - id: PlushieHypnoTempMysta
+        prob: 0.50
+        orGroup: Prize
+      - id: PlushieHypnoTempHoS
+        prob: 0.50
+        orGroup: Prize
+       #HypnoTemp Merch - End
       # Rare
       - id: PlushieAbductorAgent
         prob: 0.30
@@ -396,5 +415,8 @@
         prob: 0.30
         orGroup: Prize
       - id: BwoinkHammer
+        prob: 0.30
+        orGroup: Prize
+      - id: PlushieHypnoTempCap # Floofstation
         prob: 0.30
         orGroup: Prize

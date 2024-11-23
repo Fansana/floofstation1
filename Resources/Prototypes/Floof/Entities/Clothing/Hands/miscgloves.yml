@@ -133,3 +133,14 @@
     fiberColor: fibers-blue
   - type: FingerprintMask
 
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGoldRing
+  name: gold ring
+  description: a band for a special bond
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Under/Gloves/goldring.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Under/Gloves/goldring.rsi
+

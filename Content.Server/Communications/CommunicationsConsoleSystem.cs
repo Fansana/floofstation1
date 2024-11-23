@@ -205,10 +205,6 @@ namespace Content.Server.Communications
                 || !comp.CanShuttle)
                 return false;
 
-            // Calling shuttle checks
-            if (_roundEndSystem.ExpectedCountdownEnd is null)
-                return comp.CanShuttle;
-
             // Recalling shuttle checks
             var recallThreshold = _cfg.GetCVar(CCVars.EmergencyRecallTurningPoint);
 
