@@ -1563,3 +1563,10 @@ Entries:
   id: 207
   time: '2024-11-23T18:36:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/366
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted security magboots to spawn in appropriate suit storage lockers
+  id: 208
+  time: '2024-11-23T18:38:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/345
