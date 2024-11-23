@@ -8,3 +8,14 @@
     sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi
   - type: Clothing
     sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi
+  - type: Magboots
+    toggleAction: ActionToggleMagbootsSecurity
+
+- type: entity
+  id: ActionToggleMagbootsSecurity
+  parent: ActionBaseToggleMagboots
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi, state: icon }
+    iconOn: { sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi, state: icon-on }
