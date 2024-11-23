@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ GasMaskTags, ClothingMaskGas, ClothingMaskMuzzle ]
+  id: ClothingMaskGasMuffled
+  name: muffled gas mask
+  description: A face-covering mask that can be connected to an air supply. This one blocks your speech.
+
+- type: entity
+  parent: [ GasMaskTags, ClothingMaskGasExplorer, ClothingMaskMuzzle ]
+  id: ClothingMaskGasExplorerMuffled
+  name: muffled explorer gas mask
+  description: A military-grade gas mask that can be connected to an air supply. This one blocks your speech.
+
+- type: entity
+  parent: [ GasMaskTags, ClothingMaskGasSecurity, ClothingMaskMuzzle ]
+  id: ClothingMaskGasSecurityMuffled
+  name: muffled security gas mask
+  description: A standard issue Security gas mask. This one blocks your speech.
+
+# I'm actually not super satisfied with this implementation. I kinda wish all gas masks simply had a slot you could
+# attach a muzzle to and it would muffle your speech. Especially because working with tags in recipes is clunky as hell
+# and encourages some bad code practice. But I'm lazy. WYCI
