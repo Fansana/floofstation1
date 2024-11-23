@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingUniformBaseSwitch
+  id: ClothingUniformWeddingDress
+  name: wedding dress
+  description: a beautiful wedding dress fit for a princess
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/weddingdress.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/weddingdress.rsi
+    unequipDelay: 0
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt

@@ -1,0 +1,65 @@
+- type: constructionGraph
+  id: ClothingMaskGasMuffled
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: gasmask
+          steps:
+            - tag: MaskGasIngredient
+              name: gas mask
+              icon:
+                sprite: Clothing/Mask/gas.rsi
+                state: icon
+            - tag: MuzzleIngredient
+              name: muzzle
+              icon:
+                sprite: Clothing/Mask/muzzle.rsi
+                state: icon
+              doAfter: 3
+    - node: gasmask
+      entity: ClothingMaskGasMuffled
+
+- type: constructionGraph
+  id: ClothingMaskGasExplorerMuffled
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: gasmask
+          steps:
+            - tag: MaskGasExplorerIngredient
+              name: explorer gas mask
+              icon:
+                sprite: Clothing/Mask/gasexplorer.rsi
+                state: icon
+            - tag: MuzzleIngredient
+              name: muzzle
+              icon:
+                sprite: Clothing/Mask/muzzle.rsi
+                state: icon
+              doAfter: 3
+    - node: gasmask
+      entity: ClothingMaskGasExplorerMuffled
+
+- type: constructionGraph
+  id: ClothingMaskGasSecurityMuffled
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: gasmask
+          steps:
+            - tag: MaskGasSecurityIngredient
+              name: security gas mask
+              icon:
+                sprite: Clothing/Mask/gassecurity.rsi
+                state: icon
+            - tag: MuzzleIngredient
+              name: muzzle
+              icon:
+                sprite: Clothing/Mask/muzzle.rsi
+                state: icon
+              doAfter: 3
+    - node: gasmask
+      entity: ClothingMaskGasSecurityMuffled
