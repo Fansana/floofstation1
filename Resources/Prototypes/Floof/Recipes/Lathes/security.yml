@@ -15,10 +15,9 @@
      Steel: 210
 
 - type: latheRecipe
-  id: ClothingShoesBootsMagCom
-  result: ClothingShoesBootsMagCom
+  id: ClothingShoesBootsSecurityMagboots
+  result: ClothingShoesBootsSecurityMagboots
   completetime: 10
   materials:
-    Steel: 1000
-    Plastic: 500
-    Silver: 250
+     Steel: 1000
+     Plastic: 500
