@@ -114,12 +114,12 @@ paperwork-security-department-search-warrant =
     { paperwork-separator-security }
         {"["}head=2]DEPARTMENT SEARCH WARRANT [/head]
     { paperwork-separator-security }
-        {"["}bold] SECTOR:[/bold] Floof Station
-        {"["}bold] STATION:[/bold] NT14-NAME-XXX
-        {"["}bold] SHIFT TIME:[/bold] XX:XX
-        {"["}bold] PROSECUTOR:[/bold]
-        {"["}bold] HEAD OF SECURITY:[/bold]
-        {"["}bold] TARGET OF WARRANT: [/bold]
+        {"["}bold]SECTOR:[/bold] Floof Station
+        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]SHIFT TIME:[/bold] XX:XX
+        {"["}bold]PROSECUTOR:[/bold]
+        {"["}bold]HEAD OF SECURITY:[/bold]
+        {"["}bold]TARGET OF WARRANT: [/bold]
     { paperwork-separator-security }
     • Requesting Officer:
 
@@ -201,13 +201,13 @@ paperwork-security-individual-search-warrant =
     { paperwork-separator-security }
         {"["}head=2]INDIVIDUAL SEARCH WARRANT [/head]
     { paperwork-separator-security }
-        {"["}bold] SECTOR:[/bold] Floof Station
-        {"["}bold] STATION:[/bold] NT14-NAME-XXX
-        {"["}bold] SHIFT TIME:[/bold] XX:XX
-        {"["}bold] PROSECUTOR:[/bold]
-        {"["}bold] HEAD OF SECURITY:[/bold]
-        {"["}bold] TARGET OF WARRANT:[/bold]
-        {"["}bold] JOB:[/bold]
+        {"["}bold]SECTOR:[/bold] Floof Station
+        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]SHIFT TIME:[/bold] XX:XX
+        {"["}bold]PROSECUTOR:[/bold]
+        {"["}bold]HEAD OF SECURITY:[/bold]
+        {"["}bold]TARGET OF WARRANT:[/bold]
+        {"["}bold]JOB:[/bold]
     { paperwork-separator-security }
     • Requesting Officer:
 

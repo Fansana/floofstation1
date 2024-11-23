@@ -5,7 +5,7 @@ paperwork-separator-epistemics = {"["}color=#c96dbf]‾‾‾‾‾‾‾‾‾�
 paperwork-separator-epistemics-borgification-notice =
     { paperwork-header-epistemics }
     { paperwork-separator-epistemics }
-        {"["}head=2]BORGIFCATION NOTICE [/head]
+        {"["}head=2]BORGIFCATION NOTICE[/head]
     { paperwork-separator-epistemics }
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
@@ -33,7 +33,7 @@ paperwork-separator-epistemics-borgification-notice =
 paperwork-separator-epistemics-production-request =
     { paperwork-header-epistemics }
     { paperwork-separator-epistemics }
-        {"["}head=2]PRODUCTION REQUEST [/head][color=#c96dbf]
+        {"["}head=2]PRODUCTION REQUEST[/head]
     { paperwork-separator-epistemics }
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
@@ -54,7 +54,7 @@ paperwork-separator-epistemics-production-request =
 paperwork-separator-epistemics-psionic-self-identification =
     { paperwork-header-epistemics }
     { paperwork-separator-epistemics }
-        {"["}head=2]PSIONIC SELF-IDENTIFICATION  [/head]
+        {"["}head=2]PSIONIC SELF-IDENTIFICATION[/head]
     { paperwork-separator-epistemics }
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]NAME:[/bold]

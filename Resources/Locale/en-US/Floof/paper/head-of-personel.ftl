@@ -125,11 +125,11 @@ paperwork-hop-oder-of-dismissal =
     { paperwork-separator-hop }
         {"["}head=2]ORDER OF DISMISSAL [/head]
     { paperwork-separator-hop }
-        {"["}bold]  SECTOR:[/bold] Floof Station
-        {"["}bold]  STATION:[/bold] NT14-NAME-XXX
-        {"["}bold]  SHIFT TIME:[/bold] XX:XX
-        {"["}bold]  ACCOUNTABLE PERSON:[/bold]
-        {"["}bold]  JOB:[/bold]
+        {"["}bold]SECTOR:[/bold] Floof Station
+        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]SHIFT TIME:[/bold] XX:XX
+        {"["}bold]ACCOUNTABLE PERSON:[/bold]
+        {"["}bold]JOB:[/bold]
     { paperwork-separator-hop }
     {"•"} Dismissed employee:
     {"•"} The position of the dismissed employee:
@@ -227,12 +227,12 @@ paperwork-hop-restricted-weapons-permit =
     { paperwork-separator-hop }
         {"["}head=2]Restricted Weapons Permit [/head]
     { paperwork-separator-hop }
-        {"["}bold]  SECTOR:[/bold] Floof Station
-        {"["}bold]  STATION:[/bold] NT14-NAME-XXX
-        {"["}bold]  SHIFT TIME:[/bold] XX:XX
-        {"["}bold]  WEAPON USER: [/bold]
-        {"["}bold]  WEAPON TYPE: [/bold]
-        {"["}bold]  JOB: [/bold]
+        {"["}bold]SECTOR:[/bold] Floof Station
+        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]SHIFT TIME:[/bold] XX:XX
+        {"["}bold]WEAPON USER: [/bold]
+        {"["}bold]WEAPON TYPE: [/bold]
+        {"["}bold]JOB: [/bold]
     { paperwork-separator-hop }
     {"•"} Reasons for desired Equipment:
     {"•"} Other Notes:

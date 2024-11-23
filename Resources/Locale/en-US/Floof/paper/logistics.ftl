@@ -1,7 +1,7 @@
 paperwork-header-logistics = {"["}color=#b18644] ◥[bold]N[/bold]◣ [head=3][bold]LOGISTICS [/bold][/color][/head]
 paperwork-separator-logistics = {"["}color=#b18644]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
- paperwork-logistics-cargo-request =
+paperwork-logistics-cargo-request =
     { paperwork-header-logistics }
     { paperwork-separator-logistics }
         {"["}head=2]CARGO REQUEST[/head]

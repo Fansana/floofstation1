@@ -35,7 +35,7 @@ paperwork-justice-pardon-request =
 paperwork-justice-restraining-order =
     { paperwork-header-justice }
     { paperwork-separator-justice }
-    {"["}color=#6b2833][bold]Restraining Order[/bold][/color]
+    {"["}head=2]RESTRAINING ORDER[/head]
     { paperwork-separator-justice }
         {"["}bold]SECTOR:[/bold] Flood Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
@@ -59,7 +59,7 @@ paperwork-justice-restraining-order =
 paperwork-justice-trial-docket-civil =
     { paperwork-header-justice }
     { paperwork-separator-justice }
-    {"["}head=3]TRIAL DOCKET - CIVIL[/head]
+    {"["}head=2]TRIAL DOCKET - CIVIL[/head]
     { paperwork-separator-justice }
     {"["}bold]SECTOR:[/bold] Floof Station
     {"["}bold]STATION:[/bold] NTXXX - XXX
@@ -91,7 +91,7 @@ paperwork-justice-trial-docket-civil =
 paperwork-justice-trial-docket-criminal =
     { paperwork-header-justice }
     { paperwork-separator-justice }
-        {"["}head=3]TRIAL DOCKET [/head]
+        {"["}head=2]TRIAL DOCKET[/head]
     { paperwork-separator-justice }
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NTXXX - XXX
@@ -179,7 +179,7 @@ paperwork-justice-trial-docket-criminal =
 paperwork-justice-written-testimony =
     { paperwork-header-justice }
     { paperwork-separator-justice }
-        {"["}head=2]WRITTEN TESTIMONY [/head]
+        {"["}head=2]WRITTEN TESTIMONY[/head]
     { paperwork-separator-justice }
         {"["}bold]CASE:[/bold] (PLANTIFF) v. (DEFENDANT)
         {"["}bold]PROSECUTOR:[/bold]

@@ -4,7 +4,7 @@ paperwork-separator-medical = {"["}color=#b18644]‾‾‾‾‾‾‾‾‾‾�
 paperwork-medical-death-certificate =
     { paperwork-header-medical }
     { paperwork-separator-medical }
-        {"["}head=2]DEATH CERTIFICATE [/head]
+        {"["}head=2]DEATH CERTIFICATE[/head]
     { paperwork-separator-medical }
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
@@ -30,7 +30,7 @@ paperwork-medical-order-of-dismissal =
     { paperwork-separator-medical }
         {"["}head=2]ORDER OF DISMISSAL - MEDICALLY UNFIT [/head]
     { paperwork-separator-medical }
-        {"["}bold]  SECTOR:[/bold] Floof Station
+        {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]CAPTAIN:[/bold]
