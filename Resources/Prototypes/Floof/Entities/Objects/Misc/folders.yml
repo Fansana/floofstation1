@@ -9,6 +9,10 @@
     - state: folder-colormap
       color: "#009100"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateCommandEmergencyPersonalRecovery
+    - id: PaperTemplateCommandStationRequestForAssistance
 
 - type: entity
   id: BoxFolderEngineering
@@ -21,6 +25,9 @@
     - state: folder-colormap
       color: "#f39f27"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateEngineeringBuildingPermit
 
 - type: entity
   id: BoxFolderEpistemics
@@ -33,6 +40,11 @@
     - state: folder-colormap
       color: "#c96dbf"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateEpistemicsBorgificationNotice
+    - id: PaperTemplateEpistemicsProductionRequest
+    - id: PaperTemplateEpistemicsPsionicSelfIdentification
 
 - type: entity
   id: BoxFolderHop
@@ -45,6 +57,18 @@
     - state: folder-colormap
       color: "#1b67a5"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateHopAccessPermit
+    - id: PaperTemplateHopJobTransferRequest
+    - id: PaperTemplateHopCrewmateIdentification
+    - id: PaperTemplateHopFormalComplaint
+    - id: PaperTemplateHopOrderOfDismissal
+    - id: PaperTemplateHopDismissalOfDepartmentHead
+    - id: PaperTemplateHopEmploymentApplication
+    - id: PaperTemplateHopRestrictedEquipmentPermit
+    - id: PaperTemplateHopRestrictedWeaponsPermit
+
 
 - type: entity
   id: BoxFolderJustice
@@ -57,6 +81,13 @@
     - state: folder-colormap
       color: "#6b2833"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateJusticePardonRequest
+    - id: PaperTemplateJusticeRestrainingOrder
+    - id: PaperTemplateJusticeTrialDocketCivil
+    - id: PaperTemplateJusticeTrialDocketCriminal
+    - id: PaperTemplateJusticeTrialDocketTestimony
 
 - type: entity
   id: BoxFolderLogistics
@@ -69,6 +100,9 @@
     - state: folder-colormap
       color: "#b18644"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateLogisticsCargoRequest
 
 - type: entity
   id: BoxFolderMedical
@@ -81,6 +115,10 @@
     - state: folder-colormap
       color: "#5b97bc"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateMedicalOrderOfDismissal
+    - id: PaperTemplateMedicalDeathCertificate
 
 - type: entity
   id: BoxFolderSecurity
@@ -93,6 +131,16 @@
     - state: folder-colormap
       color: "#cb0000"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateSecurityArrestReport
+    - id: PaperTemplateSecurityArrestWarrant
+    - id: PaperTemplateSecurityDepartSearchWarrant
+    - id: PaperTemplateSecurityDetectiveReport
+    - id: PaperTemplateSecurityFurloughRequest
+    - id: PaperTemplateSecurityIndividualSearchWarrant
+    - id: PaperTemplateSecurityInmateRequest
+    - id: PaperTemplateSecurityVisitationRequest
 
 - type: entity
   id: BoxFolderService
@@ -105,3 +153,7 @@
     - state: folder-colormap
       color: "#9fed58"
     - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperTemplateServiceBotanyRequest
+    - id: PaperTemplateServiceRestrictedPlantPermit
