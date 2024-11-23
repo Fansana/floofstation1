@@ -64,7 +64,7 @@
     sprite: Objects/Materials/Sheets/other.rsi
     state: plasma_3
   product: CrateMaterialPlasma
-  cost: 2000
+  cost: 4000
   category: cargoproduct-category-name-materials
   group: market
 
@@ -105,5 +105,35 @@
     state: watertank
   product: WaterTankFull
   cost: 1000
+  category: cargoproduct-category-name-materials
+  group: market
+
+- type: cargoProduct
+  id: MaterialUranium
+  icon:
+    sprite: Objects/Materials/Sheets/other.rsi
+    state: uranium_3
+  product: CrateMaterialUranium
+  cost: 12000
+  category: cargoproduct-category-name-materials
+  group: market
+
+- type: cargoProduct
+  id: MaterialGold
+  icon:
+    sprite: Objects/Materials/ingots.rsi
+    state: gold_3
+  product: CrateMaterialGold
+  cost: 6000
+  category: cargoproduct-category-name-materials
+  group: market
+
+- type: cargoProduct
+  id: MaterialSilver
+  icon:
+    sprite: Objects/Materials/ingots.rsi
+    state: silver_3
+  product: CrateMaterialSilver
+  cost: 4000
   category: cargoproduct-category-name-materials
   group: market
