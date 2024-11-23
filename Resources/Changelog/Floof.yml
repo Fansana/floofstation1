@@ -1570,3 +1570,12 @@ Entries:
   id: 208
   time: '2024-11-23T18:38:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/345
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some spawn rates of items that were incorrectly spawning in every
+        locker.
+  id: 209
+  time: '2024-11-23T18:40:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/374
