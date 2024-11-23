@@ -1538,3 +1538,14 @@ Entries:
   id: 204
   time: '2024-11-22T16:21:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/326
+- author: sarcoph
+  changes:
+    - type: Add
+      message: >-
+        New "muffled" variants for the regular, explorer, and security gas
+        masks, for people who love breathing almost as much as they love
+        speaking unintelligibly. They can be obtained via the crafting tab, or
+        the regular one can be found in loadouts.
+  id: 205
+  time: '2024-11-23T13:55:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/197
