@@ -139,6 +139,9 @@
         - id: PlushieRainbowCarp
           prob: 0.03
           orGroup: carp
+        - id: null #Sets carp group to 33% chance of spawn
+          prob: 0.67
+          orGroup: carp
         - id: PlushieSlime
           prob: 0.2
         - id: PlushieSnake
@@ -246,6 +249,9 @@
         - id: SpankTealPaddle
           prob: 0.01
           orGroup: Lewd
+        - id: null #Sets lewd group to 44% chance of spawn
+          prob: 0.56
+          orGroup: Lewd
         # HypnoTemp Merch - Start
         - id: PlushieHypnoTempCap
           prob: 0.005
@@ -341,6 +347,9 @@
           orGroup: carp
         - id: PlushieRainbowCarp
           prob: 0.03
+          orGroup: carp
+        - id: null #Sets carp group to 33% chance of spawn
+          prob: 0.67
           orGroup: carp
         - id: PlushieSlime
           prob: 0.2
@@ -438,6 +447,9 @@
           orGroup: Lewd
         - id: SpankTealPaddle
           prob: 0.01
+          orGroup: Lewd
+        - id: null #Sets lewd group to 44% chance of spawn
+          prob: 0.56
           orGroup: Lewd
         # HypnoTemp Merch - Start
         - id: PlushieHypnoTempCap

@@ -1556,3 +1556,26 @@ Entries:
   id: 206
   time: '2024-11-23T14:38:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/361
+- author: Fansana
+  changes:
+    - type: Add
+      message: 'Add departmental folders that contain common paperwork templates. '
+  id: 207
+  time: '2024-11-23T18:36:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/366
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted security magboots to spawn in appropriate suit storage lockers
+  id: 208
+  time: '2024-11-23T18:38:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/345
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some spawn rates of items that were incorrectly spawning in every
+        locker.
+  id: 209
+  time: '2024-11-23T18:40:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/374
