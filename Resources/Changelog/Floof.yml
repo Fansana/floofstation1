@@ -1579,3 +1579,24 @@ Entries:
   id: 209
   time: '2024-11-23T18:40:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/374
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed shuttle calling
+  id: 210
+  time: '2024-11-25T02:09:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/377
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed accessing things in bags
+  id: 211
+  time: '2024-11-25T11:33:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/379
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted Glacier evac shuttle
+  id: 212
+  time: '2024-11-25T11:33:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/378
