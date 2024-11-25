@@ -32,9 +32,3 @@
         - !type:CharacterJobRequirement
           jobs:
             - Anomaly
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
