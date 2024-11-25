@@ -1579,3 +1579,10 @@ Entries:
   id: 209
   time: '2024-11-23T18:40:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/374
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed shuttle calling
+  id: 210
+  time: '2024-11-25T02:09:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/377
