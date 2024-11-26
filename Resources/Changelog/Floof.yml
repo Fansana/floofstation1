@@ -1614,3 +1614,10 @@ Entries:
   id: 214
   time: '2024-11-25T20:36:44.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/381
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: MassMindSwap Event
+  id: 215
+  time: '2024-11-26T21:59:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/382
