@@ -20,6 +20,7 @@
       - id: RubberStampWarden
       - id: DoorRemoteArmory
       - id: ClothingOuterHardsuitCombatWarden # DeltaV - ClothingOuterHardsuitWarden replaced in favour of warden's riot combat hardsuit.
+      - id: ClothingShoesBootsSecurityMagboots # Floofstation
       - id: HoloprojectorSecurity
       - id: ClothingEyesHudSecurity
       - id: BoxPDAPrisoner # Delta-V
@@ -155,6 +156,7 @@
       - id: TrackingImplanter
         amount: 2
       - id: ClothingOuterHardsuitCombatCorpsman
+      - id: ClothingShoesBootsSecurityMagboots #Floofstation
       - id: ClothingUniformJumpsuitBrigmedic
       - id: ClothingUniformJumpskirtBrigmedic
       - id: ClothingLongcoatBrigmedic # Floofstation
