@@ -137,7 +137,10 @@ public abstract class ClothingSystem : EntitySystem
 
             var didEquippedEvent = new ClothingDidEquippedEvent((uid, component));
             RaiseLocalEvent(args.Equipee, ref didEquippedEvent);
+
+
         }
+        component.IsEquipped = true;
     }
 
     protected virtual void OnGotUnequipped(EntityUid uid, ClothingComponent component, GotUnequippedEvent args)
@@ -151,6 +154,7 @@ public abstract class ClothingSystem : EntitySystem
             RaiseLocalEvent(args.Equipee, ref didUnequippedEvent);
         }
 
+        component.IsEquipped = false;
         component.InSlot = null;
         CheckEquipmentForLayerHide(args.Equipment, args.Equipee);
     }

@@ -41,4 +41,10 @@ public sealed partial class SolutionRegenerationComponent : Component
     [DataField("nextChargeTime", customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     [AutoPausedField]
     public TimeSpan NextRegenTime = TimeSpan.FromSeconds(0);
+
+    /// <summary>
+    /// Whether the entity with the solution needs to be equipped
+    /// </summary>
+    [DataField("needsEquipped"), ViewVariables(VVAccess.ReadWrite)]
+    public bool NeedsEquipped = false;
 }

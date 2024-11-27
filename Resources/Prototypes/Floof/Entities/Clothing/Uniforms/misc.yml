@@ -206,3 +206,35 @@
     sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMilkingMachine
+  name: milking machine
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 100
+  - type: DrawableSolution
+    solution: tank
+  - type: DrainableSolution
+    solution: tank
+  - type: ExaminableSolution
+    solution: tank
+  - type: SolutionItemStatus
+    solution: tank
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: Cum
+        Quantity: 0.01
+    needsEquipped: true
