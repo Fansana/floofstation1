@@ -71,6 +71,7 @@
     heavyRateModifier: 1
     heavyRangeModifier: 2
     heavyDamageBaseModifier: 1
+    heavyStaminaCost: -2.5
     angle: 20
 
   - type: ReverseEngineering # Nyano
