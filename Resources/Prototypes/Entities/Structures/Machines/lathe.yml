@@ -822,6 +822,7 @@
       - SpeedLoaderSpecial
       - MagazinePistolSpecial
     dynamicRecipes:
+      - BolaEnergy
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
@@ -905,6 +906,7 @@
       - MagazineBoxSpecialIncendiary
       - MagazineBoxSpecialUranium
       - MagazineBoxSpecialMindbreaker
+      - ClothingShoesBootsSecurityMagboots # Floofstation
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1539,6 +1541,15 @@
       - CrazyGlue
       - PlushieRatvar
       - PlushieNar
+      #HypnoTemp Plushies - Start
+      - PlushieHypnoTempCap
+      - PlushieHypnoTempCMO
+      - PlushieHypnoTempHoP
+      - PlushieHypnoTempHoS
+      - PlushieHypnoTempCE
+      - PlushieHypnoTempLO
+      - PlushieHypnoTempMysta
+      #HypnoTemp Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - PlushieGhost

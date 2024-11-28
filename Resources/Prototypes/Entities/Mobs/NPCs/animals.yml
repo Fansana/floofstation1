@@ -1427,11 +1427,14 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
+    allowedEmotes: ['Thump']
   - type: Vocal
     sounds:
       Male: MaleReptilian
       Female: FemaleReptilian
       Unsexed: MaleReptilian
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
   - type: TypingIndicator
     proto: lizard
   - type: InteractionPopup
@@ -2311,9 +2314,9 @@
     solution: melee
   - type: LanguageKnowledge
     speaks:
-    - Xeno
+    - Arachnic #change from Xeno  Floofstation
     understands:
-    - Xeno
+    - Arachnic #change from Xeno  Floofstation
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-tarantula

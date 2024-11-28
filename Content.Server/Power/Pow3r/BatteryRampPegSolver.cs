@@ -54,7 +54,7 @@ namespace Content.Server.Power.Pow3r
                 // suppliers + discharger) Then decide based on total layer size whether its worth parallelizing that
                 // layer?
                 _networkJob.Networks = group;
-                parallel.ProcessNow(_networkJob, group.Count);
+                parallel.ProcessSerialNow(_networkJob, group.Count);
             }
 
             ClearBatteries(state);

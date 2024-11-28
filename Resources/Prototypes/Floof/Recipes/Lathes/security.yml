@@ -13,3 +13,11 @@
   completetime: 5
   materials:
      Steel: 210
+
+- type: latheRecipe
+  id: ClothingShoesBootsSecurityMagboots
+  result: ClothingShoesBootsSecurityMagboots
+  completetime: 10
+  materials:
+     Steel: 1000
+     Plastic: 500
