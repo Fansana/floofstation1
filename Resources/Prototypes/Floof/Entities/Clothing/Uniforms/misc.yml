@@ -212,7 +212,7 @@
   id: ClothingUniformMilkingMachine
   name: milking machine
   components:
-  - type: Sprite
+  - type: Sprite #sprite is placeholder as I cannot sprite :((
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/codervalidthong.rsi
