@@ -21,20 +21,10 @@ public sealed class SolutionRegenerationSystem : EntitySystem
         while (query.MoveNext(out var uid, out var regen, out var manager))
         {
             if (_timing.CurTime < regen.NextRegenTime)
-            {
                 continue;
-            }
 
-            if (regen.NeedsEquipped)
-            {
-                if(EntityManager.TryGetComponent(uid, out ClothingComponent? clothing))
-                {
-                    if (!clothing.IsEquipped)
-                    {
-                        continue;
-                    }
-                }
-            }
+            if (regen.NeedsEquipped && TryComp(uid, out ClothingComponent? clothing) && !clothing.IsEquipped)
+                continue;
 
             // timer ignores if its full, it's just a fixed cycle
             regen.NextRegenTime = _timing.CurTime + regen.Duration;
