@@ -137,8 +137,6 @@ public abstract class ClothingSystem : EntitySystem
 
             var didEquippedEvent = new ClothingDidEquippedEvent((uid, component));
             RaiseLocalEvent(args.Equipee, ref didEquippedEvent);
-
-
         }
     }
 
