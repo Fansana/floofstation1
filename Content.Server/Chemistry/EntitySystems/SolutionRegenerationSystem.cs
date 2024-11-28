@@ -23,7 +23,7 @@ public sealed class SolutionRegenerationSystem : EntitySystem
             if (_timing.CurTime < regen.NextRegenTime)
                 continue;
 
-            if (regen.NeedsEquipped && TryComp(uid, out ClothingComponent? clothing) && clothing.InSlot != null)
+            if (regen.NeedsEquipped && TryComp(uid, out ClothingComponent? clothing) && clothing.InSlot == null)
                 continue;
 
             // timer ignores if its full, it's just a fixed cycle
