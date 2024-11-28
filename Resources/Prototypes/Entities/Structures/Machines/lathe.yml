@@ -824,6 +824,7 @@
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
     dynamicRecipes:
+      - BolaEnergy
       - BoxBeanbag
       - BoxShotgunIncendiary
       - BoxShotgunUranium
@@ -907,7 +908,7 @@
       - MagazineBoxSpecialIncendiary
       - MagazineBoxSpecialUranium
       - MagazineBoxSpecialMindbreaker
-      - ClothingShoesBootsMagCom # Floof
+      - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
       - WeaponGrapplingGun # Floof
       - JawsOfLife
@@ -1786,6 +1787,15 @@
       - CrazyGlue
       - PlushieRatvar
       - PlushieNar
+      #HypnoTemp Plushies - Start
+      - PlushieHypnoTempCap
+      - PlushieHypnoTempCMO
+      - PlushieHypnoTempHoP
+      - PlushieHypnoTempHoS
+      - PlushieHypnoTempCE
+      - PlushieHypnoTempLO
+      - PlushieHypnoTempMysta
+      #HypnoTemp Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - PlushieGhost
