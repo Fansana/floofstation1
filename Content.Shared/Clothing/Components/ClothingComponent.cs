@@ -66,9 +66,6 @@ public sealed partial class ClothingComponent : Component
     [DataField("unisexMask")]
     public ClothingMask UnisexMask = ClothingMask.UniformFull;
 
-    [DataField("isEquipped")]
-    public bool IsEquipped;
-
     /// <summary>
     /// Name of the inventory slot the clothing is in.
     /// </summary>
