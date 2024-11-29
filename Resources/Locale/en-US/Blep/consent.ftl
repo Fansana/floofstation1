@@ -20,3 +20,9 @@ consent-examine-not-set = This player has no consent preferences set. Ask for co
 # Consent toggles
 consent-Example-name = Example Consent Toggle
 consent-Example-desc = This is just here as an example for how to add consent toggles.
+
+consent-Vore-name = Vore
+consent-Vore-desc = Allow yourself to be devoured by anyone... or anything.
+
+consent-Digestion-name = Digestion
+consent-Digestion-desc = Allow yourself to be digested. [color=red]WARNING: BRING DIGESTED WILL ROUND-REMOVE YOU.[/color]
