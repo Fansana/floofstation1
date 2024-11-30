@@ -17,7 +17,8 @@ using Content.Shared.Resist;
 using Content.Shared.Storage;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
-using Content.Server.FloofStation; // Floofstation
+using Content.Server.FloofStation;
+using Content.Shared.FloofStation; // Floofstation
 
 namespace Content.Server.Resist;
 
@@ -58,17 +59,8 @@ public sealed class EscapeInventorySystem : EntitySystem
         if (!args.HasDirectionalMovement)
             return;
 
-        if (!_containerSystem.TryGetContainingContainer(uid, out var container))
-            return;
-
-        // Vore - Floofstation
-        if (HasComp<VoredComponent>(uid))
-        {
-            AttemptEscape(uid, container.Owner, component, 5f);
-            return;
-        }
-
-        if (!_actionBlockerSystem.CanInteract(uid, container.Owner))
+        if (!_containerSystem.TryGetContainingContainer(uid, out var container)
+            || !_actionBlockerSystem.CanInteract(uid, container.Owner))
             return;
 
         // Make sure there's nothing stopped the removal (like being glued)
@@ -83,6 +75,13 @@ public sealed class EscapeInventorySystem : EntitySystem
         {
             var disadvantage = _contests.MassContest(container.Owner, uid, rangeFactor: 3f);
             AttemptEscape(uid, container.Owner, component, disadvantage);
+            return;
+        }
+
+        // Vore - Floofstation
+        if (HasComp<VoredComponent>(uid))
+        {
+            AttemptEscape(uid, container.Owner, component, 5f);
             return;
         }
 
@@ -131,12 +130,6 @@ public sealed class EscapeInventorySystem : EntitySystem
             _carryingSystem.DropCarried(carried.Carrier, uid);
             return;
         } // End of carrying system of nyanotrasen.
-
-        if (TryComp<VoredComponent>(uid, out var vored)) // Floofstation
-        {
-            _vore.Release(vored.Pred, uid);
-            return;
-        }
 
         _containerSystem.AttachParentToContainerOrGrid((uid, Transform(uid)));
         args.Handled = true;
