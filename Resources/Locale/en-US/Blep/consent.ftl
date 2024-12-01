@@ -25,4 +25,4 @@ consent-Vore-name = Vore
 consent-Vore-desc = Allow yourself to be devoured by anyone... or anything.
 
 consent-Digestion-name = Digestion
-consent-Digestion-desc = Allow yourself to be digested. [color=red]WARNING: BRING DIGESTED WILL ROUND-REMOVE YOU.[/color]
+consent-Digestion-desc = Allow yourself to be digested. WARNING: BRING DIGESTED WILL ROUND-REMOVE YOU.
