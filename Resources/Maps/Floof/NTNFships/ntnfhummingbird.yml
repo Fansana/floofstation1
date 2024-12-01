@@ -19,7 +19,7 @@ entities:
     - type: MetaData
       name: N.T.N.F. Hummingbird
     - type: Transform
-      pos: 78.053764,-9.11257
+      pos: 103.053764,15.88743
       parent: invalid
     - type: MapGrid
       chunks:
@@ -949,6 +949,20 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 4.5,15.5
+      parent: 1
+- proto: ChairPilotSeat
+  entities:
+  - uid: 430
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 0.5,17.5
+      parent: 1
+  - uid: 431
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,17.5
       parent: 1
 - proto: ComputerCrewMonitoring
   entities:
