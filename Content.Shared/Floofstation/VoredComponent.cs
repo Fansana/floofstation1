@@ -1,23 +1,27 @@
 using Robust.Shared.Audio;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared.FloofStation;
 
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class VoredComponent : Component
 {
+    public EntityUid? Stream;
     public float Accumulator;
 
-    [DataField]
+    [DataField, AutoNetworkedField]
     public EntityUid Pred;
 
     [DataField]
     public bool Digesting = false;
 
+    [DataField, AutoNetworkedField]
     public SoundSpecifier? SoundBelly = new SoundPathSpecifier("/Audio/Floof/Vore/stomach_loop.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithLoop(true).WithVolume(-3f),
     };
 
+    [DataField]
     public SoundSpecifier? SoundRelease = new SoundPathSpecifier("/Audio/Effects/Fluids/splat.ogg")
     {
         Params = AudioParams.Default.WithVolume(-3f),
