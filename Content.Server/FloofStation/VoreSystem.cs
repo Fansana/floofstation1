@@ -358,24 +358,7 @@ public sealed class VoreSystem : EntitySystem
         if (TryComp<VoreComponent>(prey, out var preyvore))
             _containerSystem.EmptyContainer(preyvore.Stomach);
 
-        var preymass = 50f;
-
-        if (TryComp<PhysicsComponent>(prey, out var preyPhysics))
-            preymass = preyPhysics.Mass;
-
         QueueDel(prey);
-
-        if (TryComp<HungerComponent>(uid, out var hunger))
-            _hunger.ModifyHunger(uid, preymass, hunger);
-
-        if (TryComp<PowerCellSlotComponent>(uid, out var batterySlot)
-            && _containerSystem.TryGetContainer(uid, batterySlot.CellSlotId, out var container)
-            && container.ContainedEntities is not null)
-        {
-            var battery = container.ContainedEntities.First();
-            if (TryComp<BatteryComponent>(battery, out var batterycomp))
-                _battery.SetCharge(battery, batterycomp.CurrentCharge + preymass, batterycomp);
-        }
     }
 
     private void OnExamine(EntityUid uid, ExaminedEvent args)
@@ -431,6 +414,20 @@ public sealed class VoreSystem : EntitySystem
                 DamageSpecifier damage = new();
                 damage.DamageDict.Add("Caustic", 1);
                 _damageable.TryChangeDamage(uid, damage, true, false);
+
+                // Give 1 Hunger per 1 Caustic Damage.
+                if (TryComp<HungerComponent>(vored.Pred, out var hunger))
+                    _hunger.ModifyHunger(vored.Pred, 1, hunger);
+
+                // Give 2 Power per 1 Caustic Damage.
+                if (TryComp<PowerCellSlotComponent>(vored.Pred, out var batterySlot)
+                    && _containerSystem.TryGetContainer(vored.Pred, batterySlot.CellSlotId, out var container)
+                    && container.ContainedEntities.Count > 0)
+                {
+                    var battery = container.ContainedEntities.First();
+                    if (TryComp<BatteryComponent>(battery, out var batterycomp))
+                        _battery.SetCharge(battery, batterycomp.CurrentCharge + 2, batterycomp);
+                }
             }
         }
     }
