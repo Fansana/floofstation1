@@ -1,6 +1,18 @@
+# FLOOF: Create a gas mask base class so that the MaskGas tag doesn't pass onto children
 - type: entity
-  parent: ClothingMaskPullableBase
-  id: ClothingMaskGas
+  id: GasMaskTags
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - HidesNose
+
+- type: entity
+  parent: [ GasMaskTags, ClothingMaskPullableBase ]
+  id: ClothingMaskGasBase
+  abstract: true
   name: gas mask
   description: A face-covering mask that can be connected to an air supply.
   components:
@@ -11,17 +23,32 @@
   - type: BreathMask
   - type: IngestionBlocker
   - type: IdentityBlocker
-  - type: Tag
-    tags:
-    - HamsterWearable
-    - WhitelistChameleon
   - type: HideLayerClothing
     slots:
     - Snout
     hideOnToggle: true
+# END FLOOF
 
 - type: entity
-  parent: ClothingMaskGas
+  parent: ClothingMaskGasBase # FLOOF: Change parent
+  id: ClothingMaskGas
+  components: # FLOOF: Remove most components, move them to ClothingMaskGasBase
+  # - type: Sprite
+  #   sprite: Clothing/Mask/gas.rsi
+  # - type: Clothing
+  #   sprite: Clothing/Mask/gas.rsi
+  # - type: BreathMask
+  # - type: IngestionBlocker
+  # - type: IdentityBlocker
+  - type: Tag # FLOOF: Add MaskGasIngredient tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - HidesNose
+    - MaskGasIngredient
+
+- type: entity
+  parent: ClothingMaskGasBase # FLOOF: Change parent
   id: ClothingMaskGasSecurity
   name: security gas mask
   description: A standard issue Security gas mask.
@@ -39,9 +66,15 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag # FLOOF: Add MaskGasSecurityIngredient tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - HidesNose
+    - MaskGasSecurityIngredient
 
 - type: entity
-  parent: ClothingMaskGas
+  parent: ClothingMaskGasBase # FLOOF: Change parent
   id: ClothingMaskGasSyndicate
   name: syndicate gas mask
   description: A close-fitting tactical mask that can be connected to an air supply.
@@ -61,7 +94,7 @@
         Heat: 0.95
 
 - type: entity
-  parent: ClothingMaskGas
+  parent: ClothingMaskGasBase # FLOOF: Change parent
   id: ClothingMaskGasAtmos
   name: atmospheric gas mask
   description: Improved gas mask utilized by atmospheric technicians. It's flameproof!
@@ -118,6 +151,12 @@
         Slash: 0.90
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag # FLOOF: Add MaskGasExplorerIngredient tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - HidesNose
+    - MaskGasExplorerIngredient
 
 - type: entity
   parent: ClothingMaskPullableBase
@@ -309,6 +348,10 @@
   - type: Construction
     graph: Muzzle
     node: muzzle
+  - type: Tag # FLOOF: Add MuzzleIngredient tag
+    tags:
+    - WhitelistChameleon
+    - MuzzleIngredient
 
 - type: entity
   parent: ClothingMaskPullableBase

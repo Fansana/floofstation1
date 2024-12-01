@@ -1410,8 +1410,214 @@ Entries:
   url: https://github.com/Fansana/floofstation1/pull/328
 - author: SleepyScarecrow
   changes:
-  - type: Tweak
-    message: Tweaked Dark Oasis Recipe
+    - type: Tweak
+      message: Tweaked Dark Oasis Recipe
   id: 181
   time: '2024-11-11T06:50:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/341
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed block game UI!
+  id: 189
+  time: '2024-11-13T22:20:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/348
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Price
+  id: 190
+  time: '2024-11-14T09:55:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/353
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Gladiators can no longer have bionics.
+    - type: Tweak
+      message: Bionic arm cannot opened powered doors. Cost reduced to 6 instead of 8.
+  id: 191
+  time: '2024-11-14T09:55:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/343
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Tweaked game mode votes
+  id: 192
+  time: '2024-11-14T09:57:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/350
+- author: fenndragon
+  changes:
+    - type: Remove
+      message: Removed timer from dragon gameplay
+  id: 193
+  time: '2024-11-14T18:02:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/352
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed the power flickers!
+  id: 194
+  time: '2024-11-14T18:03:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/354
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Leash anchor to Space drakes
+    - type: Tweak
+      message: 'Tweaked the name of Space drakes '
+  id: 195
+  time: '2024-11-14T18:05:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/349
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Removed nicotine from Interdynes and replaced it with iron and dylovene.
+  id: 196
+  time: '2024-11-14T18:06:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/344
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added auto vote system
+  id: 197
+  time: '2024-11-14T23:20:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/351
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Tweaked the rules, please read them carefully!
+  id: 198
+  time: '2024-11-15T19:14:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/357
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added Winter logo
+  id: 199
+  time: '2024-11-16T21:30:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/358
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: 'Aranchids can now speak to shiva and other spiders '
+  id: 200
+  time: '2024-11-19T04:12:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/364
+- author: Fansana
+  changes:
+    - type: Add
+      message: >-
+        Added watermelon, walnut, void, vanilla, starlight, rocky road,
+        neapolitan, nebula, Solar, mint chocolate, lover's delight, hazelnut,
+        gilded, cosmos, coconut, chocolate and bananasplit ice cream.
+  id: 201
+  time: '2024-11-19T07:43:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/362
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed voice mask AGAIN!!!
+  id: 202
+  time: '2024-11-19T09:00:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/365
+- author: sprkl
+  changes:
+    - type: Add
+      message: >-
+        Seven variants of HypnoTemp Staffer plushies can now be found in station
+        lockers and prize balls.
+  id: 203
+  time: '2024-11-21T17:08:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/356
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged some of the upstream changes. See the Einstein-Engines tab for
+        more details.
+  id: 204
+  time: '2024-11-22T16:21:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/326
+- author: sarcoph
+  changes:
+    - type: Add
+      message: >-
+        New "muffled" variants for the regular, explorer, and security gas
+        masks, for people who love breathing almost as much as they love
+        speaking unintelligibly. They can be obtained via the crafting tab, or
+        the regular one can be found in loadouts.
+  id: 205
+  time: '2024-11-23T13:55:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/197
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added wedding essentials
+  id: 206
+  time: '2024-11-23T14:38:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/361
+- author: Fansana
+  changes:
+    - type: Add
+      message: 'Add departmental folders that contain common paperwork templates. '
+  id: 207
+  time: '2024-11-23T18:36:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/366
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted security magboots to spawn in appropriate suit storage lockers
+  id: 208
+  time: '2024-11-23T18:38:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/345
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some spawn rates of items that were incorrectly spawning in every
+        locker.
+  id: 209
+  time: '2024-11-23T18:40:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/374
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed shuttle calling
+  id: 210
+  time: '2024-11-25T02:09:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/377
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed accessing things in bags
+  id: 211
+  time: '2024-11-25T11:33:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/379
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted Glacier evac shuttle
+  id: 212
+  time: '2024-11-25T11:33:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/378
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Captain job is now whitelisted.
+  id: 213
+  time: '2024-11-25T20:18:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/346
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added captain whitelist
+  id: 214
+  time: '2024-11-25T20:36:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/381
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: MassMindSwap Event
+  id: 215
+  time: '2024-11-26T21:59:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/382

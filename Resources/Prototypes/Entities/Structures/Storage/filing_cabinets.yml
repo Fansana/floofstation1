@@ -165,22 +165,20 @@
   - type: StorageFill
     contents:
       - id: Pen
-        prob: 0.5
       - id: PaperOffice
         amount: 1
         maxAmount: 3
-      - id: BoxFolderBlue
-        orGroup: Folder
-      - id: BoxFolderRed
-        orGroup: Folder
-      - id: BoxFolderYellow
-        orGroup: Folder
-      - id: BoxFolderWhite
-        orGroup: Folder
-      - id: BoxFolderGrey
-        orGroup: Folder
-      - id: BoxFolderBlack
-        orGroup: Folder
+      # Floof -  we take paperwork serious
+      - id: BoxFolderCommand
+      - id: BoxFolderEngineering
+      - id: BoxFolderEpistemics
+      - id: BoxFolderHop
+      - id: BoxFolderJustice
+      - id: BoxFolderLogistics
+      - id: BoxFolderMedical
+      - id: BoxFolderSecurity
+      - id: BoxFolderService
+      # end Floof
 
 - type: entity
   parent: [filingCabinet, BaseBureaucraticStorageFill]

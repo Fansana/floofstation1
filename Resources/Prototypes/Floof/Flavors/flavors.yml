@@ -372,3 +372,13 @@
   id: cherry
   flavorType: Complex
   description: flavor-complex-cherry
+
+- type: flavor
+  id: walnut
+  flavorType: Complex
+  description: flavor-complex-walnut
+
+- type: flavor
+  id: despair
+  flavorType: Complex
+  description: flavor-complex-despair
