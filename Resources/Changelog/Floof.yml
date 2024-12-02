@@ -1621,3 +1621,30 @@ Entries:
   id: 215
   time: '2024-11-26T21:59:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/382
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Added Psionic Hypnosis.
+  id: 216
+  time: '2024-12-02T19:05:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/327
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The heads of logistics, service, and engineering can now find brand-new
+        department-specific techfab boards in their lockers.
+    - type: Add
+      message: >-
+        The list of things the medical and security techfabs can produce has
+        been expanded.
+  id: 217
+  time: '2024-12-02T19:10:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/342
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Resomi Specie.
+  id: 218
+  time: '2024-12-02T19:21:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/372
