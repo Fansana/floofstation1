@@ -8,21 +8,6 @@
     sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
-  - type: ItemSlots
-    slots:
-      item:
-        name: Plunger
-       # insertVerbText: cloak-insert-verb
-       # ejectVerbText: cloak-eject-verb
-        whitelist:
-          tags:
-          - Plunger
-  - type: ItemMapper
-    mapLayers:
-      plunger:
-        whitelist:
-          tags:
-            - Plunger
     sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
   - type: Appearance
 
