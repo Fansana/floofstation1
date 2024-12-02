@@ -9,13 +9,3 @@
   - type: Clothing
     sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
     sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
-
-- type: entity
-  id: ClothingNeckCloakJanitorFilled
-  parent: ClothingNeckCloakJanitor
-  suffix: Filled
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - Plunger
