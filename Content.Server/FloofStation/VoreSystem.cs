@@ -218,6 +218,8 @@ public sealed class VoreSystem : EntitySystem
             || predvore.Stomach != args.Container)
             return;
 
+        _transform.AttachToGridOrMap(uid);
+
         RemComp<VoredComponent>(uid);
         RemComp<PressureImmunityComponent>(uid);
         RemComp<RespiratorImmuneComponent>(uid);
