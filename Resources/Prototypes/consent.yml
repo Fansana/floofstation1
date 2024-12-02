@@ -1,8 +1,8 @@
-# - type: consentToggle
-#   id: Example
-
 - type: consentToggle
   id: Vore
 
 - type: consentToggle
   id: Digestion
+
+- type: consentToggle
+  id: Hypno
