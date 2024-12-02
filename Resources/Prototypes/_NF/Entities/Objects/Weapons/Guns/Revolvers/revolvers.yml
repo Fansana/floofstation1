@@ -27,7 +27,7 @@
 - type: entity
   parent: WeaponRevolverArgenti
   id: WeaponRevolverArgentiNonlethal
-  suffic: Non-lethal
+  suffix: Non-lethal
   components:
   - type: RevolverAmmoProvider
     capacity: 8
