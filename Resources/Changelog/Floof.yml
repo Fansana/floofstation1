@@ -1628,3 +1628,16 @@ Entries:
   id: 216
   time: '2024-12-02T19:05:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/327
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The heads of logistics, service, and engineering can now find brand-new
+        department-specific techfab boards in their lockers.
+    - type: Add
+      message: >-
+        The list of things the medical and security techfabs can produce has
+        been expanded.
+  id: 217
+  time: '2024-12-02T19:10:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/342
