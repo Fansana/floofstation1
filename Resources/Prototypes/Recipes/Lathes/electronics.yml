@@ -697,6 +697,16 @@
      Steel: 100
      Glass: 500
 
+# Floof
+- type: latheRecipe
+  id: AlertsComputerCircuitboard
+  result: AlertsComputerCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+     Steel: 100
+     Glass: 500
+
 - type: latheRecipe
   id: CloningConsoleComputerCircuitboard
   result: CloningConsoleComputerCircuitboard
@@ -976,7 +986,7 @@
      Steel: 100
      Glass: 500
      Gold: 100
- 
+
 - type: latheRecipe
   id: JukeboxCircuitBoard
   result: JukeboxCircuitBoard

@@ -100,17 +100,17 @@
       glimmerBurnUpper: 40
     - type: PsionicCatGotYourTongueRule
 
-- type: entity
-  id: MassMindSwap
-  parent: BaseGlimmerEvent
-  noSpawn: true
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 900
-      glimmerBurnLower: 350
-      glimmerBurnUpper: 450 # Unless epistemics badly f-d up, this will restore the glimmer balance for a while.
-    - type: MassMindSwapRule
-      isTemporary: true # Permanent mindswap is hell.
+# - type: entity # Floofstation - Disabled because this is perm and this is bullshit!
+#   id: MassMindSwap
+#   parent: BaseGlimmerEvent
+#   noSpawn: true
+#   components:
+#     - type: GlimmerEvent
+#       minimumGlimmer: 900
+#       glimmerBurnLower: 350
+#       glimmerBurnUpper: 450 # Unless epistemics badly f-d up, this will restore the glimmer balance for a while.
+#     - type: MassMindSwapRule
+#       isTemporary: true # Permanent mindswap is hell.
 
 - type: entity
   abstract: true
