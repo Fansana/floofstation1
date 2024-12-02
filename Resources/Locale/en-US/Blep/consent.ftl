@@ -22,7 +22,7 @@ consent-Vore-name = Vore
 consent-Vore-desc = Allow yourself to be devoured by anyone... or anything.
 
 consent-Digestion-name = Digestion
-consent-Digestion-desc = Allow yourself to be digested. WARNING: BRING DIGESTED WILL ROUND-REMOVE YOU.
+consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED WILL ROUND-REMOVE YOU.
 
 consent-Hypno-name = Hypnosis
 consent-Hypno-desc = Allow yourself to be hypnotized.

@@ -35,6 +35,7 @@ using Content.Shared.Contests;
 using Content.Shared.Standing;
 using Content.Server.Power.Components;
 using Content.Shared.PowerCell;
+using Content.Server.Nutrition.EntitySystems;
 
 namespace Content.Server.FloofStation;
 
@@ -58,6 +59,7 @@ public sealed class VoreSystem : EntitySystem
     [Dependency] private readonly ContestsSystem _contests = default!;
     [Dependency] private readonly StandingStateSystem _standingState = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly FoodSystem _food = default!;
 
     public override void Initialize()
     {
@@ -157,6 +159,9 @@ public sealed class VoreSystem : EntitySystem
     public void TryDevour(EntityUid uid, EntityUid target, VoreComponent? component = null)
     {
         if (!Resolve(uid, ref component))
+            return;
+
+        if (_food.IsMouthBlocked(uid, uid))
             return;
 
         _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
@@ -420,6 +425,10 @@ public sealed class VoreSystem : EntitySystem
                 // Give 1 Hunger per 1 Caustic Damage.
                 if (TryComp<HungerComponent>(vored.Pred, out var hunger))
                     _hunger.ModifyHunger(vored.Pred, 1, hunger);
+
+                // Give 2 Power per 1 Caustic Damage.
+                if (TryComp<BatteryComponent>(vored.Pred, out var internalbattery))
+                    _battery.SetCharge(vored.Pred, internalbattery.CurrentCharge + 2, internalbattery);
 
                 // Give 2 Power per 1 Caustic Damage.
                 if (TryComp<PowerCellSlotComponent>(vored.Pred, out var batterySlot)
