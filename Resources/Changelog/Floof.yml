@@ -1669,3 +1669,22 @@ Entries:
   id: 221
   time: '2024-12-02T21:36:29.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/389
+- author: Memeji
+  changes:
+    - type: Add
+      message: Repeater, Argenti, and 45 magnum rubber box to Bartender's loadout.
+    - type: Add
+      message: Red cloak to loadout
+    - type: Add
+      message: Witch Robes to loadout
+    - type: Add
+      message: Sawed-off PKA
+    - type: Add
+      message: More end-round sounds.
+    - type: Add
+      message: Some contraband to the maintenance lockers.
+    - type: Tweak
+      message: Salvage Restock crate price raised to 1300
+  id: 222
+  time: '2024-12-02T22:39:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/390
