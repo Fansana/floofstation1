@@ -4,6 +4,7 @@
   parent: [BaseMob, MobDamageable, MobCombat, MobAtmosExposed, MobFlammable]
   abstract: true
   components:
+    - type: Vore # Floofstation - Vore
     - type: ContentEye
     - type: CameraRecoil
     - type: Reactive
@@ -201,8 +202,6 @@
     - type: Strippable
     - type: UserInterface
       interfaces:
-        enum.VoiceMaskUIKey.Key:
-          type: VoiceMaskBoundUserInterface
         enum.HumanoidMarkingModifierKey.Key:
           type: HumanoidMarkingModifierBoundUserInterface
         enum.StrippingUiKey.Key:

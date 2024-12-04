@@ -1520,3 +1520,178 @@ Entries:
   id: 202
   time: '2024-11-19T09:00:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/365
+- author: sprkl
+  changes:
+    - type: Add
+      message: >-
+        Seven variants of HypnoTemp Staffer plushies can now be found in station
+        lockers and prize balls.
+  id: 203
+  time: '2024-11-21T17:08:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/356
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged some of the upstream changes. See the Einstein-Engines tab for
+        more details.
+  id: 204
+  time: '2024-11-22T16:21:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/326
+- author: sarcoph
+  changes:
+    - type: Add
+      message: >-
+        New "muffled" variants for the regular, explorer, and security gas
+        masks, for people who love breathing almost as much as they love
+        speaking unintelligibly. They can be obtained via the crafting tab, or
+        the regular one can be found in loadouts.
+  id: 205
+  time: '2024-11-23T13:55:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/197
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added wedding essentials
+  id: 206
+  time: '2024-11-23T14:38:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/361
+- author: Fansana
+  changes:
+    - type: Add
+      message: 'Add departmental folders that contain common paperwork templates. '
+  id: 207
+  time: '2024-11-23T18:36:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/366
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted security magboots to spawn in appropriate suit storage lockers
+  id: 208
+  time: '2024-11-23T18:38:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/345
+- author: sprkl
+  changes:
+    - type: Fix
+      message: >-
+        Fixed some spawn rates of items that were incorrectly spawning in every
+        locker.
+  id: 209
+  time: '2024-11-23T18:40:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/374
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed shuttle calling
+  id: 210
+  time: '2024-11-25T02:09:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/377
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed accessing things in bags
+  id: 211
+  time: '2024-11-25T11:33:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/379
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted Glacier evac shuttle
+  id: 212
+  time: '2024-11-25T11:33:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/378
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Captain job is now whitelisted.
+  id: 213
+  time: '2024-11-25T20:18:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/346
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added captain whitelist
+  id: 214
+  time: '2024-11-25T20:36:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/381
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: MassMindSwap Event
+  id: 215
+  time: '2024-11-26T21:59:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/382
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Added Psionic Hypnosis.
+  id: 216
+  time: '2024-12-02T19:05:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/327
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The heads of logistics, service, and engineering can now find brand-new
+        department-specific techfab boards in their lockers.
+    - type: Add
+      message: >-
+        The list of things the medical and security techfabs can produce has
+        been expanded.
+  id: 217
+  time: '2024-12-02T19:10:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/342
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Resomi Specie.
+  id: 218
+  time: '2024-12-02T19:21:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/372
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Vore...
+  id: 219
+  time: '2024-12-02T20:51:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/387
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed SyndicateBomb, ChinaLake, ZombieBundle
+  id: 220
+  time: '2024-12-02T20:52:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/388
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Replace the loin cloth with the nudity permit.
+  id: 221
+  time: '2024-12-02T21:36:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/389
+- author: Memeji
+  changes:
+    - type: Add
+      message: Repeater, Argenti, and 45 magnum rubber box to Bartender's loadout.
+    - type: Add
+      message: Red cloak to loadout
+    - type: Add
+      message: Witch Robes to loadout
+    - type: Add
+      message: Sawed-off PKA
+    - type: Add
+      message: More end-round sounds.
+    - type: Add
+      message: Some contraband to the maintenance lockers.
+    - type: Tweak
+      message: Salvage Restock crate price raised to 1300
+  id: 222
+  time: '2024-12-02T22:39:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/390
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Resomi Damage Sprites + Sprite Support
+  id: 223
+  time: '2024-12-03T16:25:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/392

@@ -139,6 +139,9 @@
         - id: PlushieRainbowCarp
           prob: 0.03
           orGroup: carp
+        - id: null #Sets carp group to 33% chance of spawn
+          prob: 0.67
+          orGroup: carp
         - id: PlushieSlime
           prob: 0.2
         - id: PlushieSnake
@@ -226,27 +229,51 @@
           prob: 0.02
           orGroup: Lewd
         - id: DoubleDildo
-          prob: 0.02   
+          prob: 0.02
           orGroup: Lewd
         - id: WhipPink
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipTeal
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipPinkCrotch
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipTealCrotch
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: SpankPinkPaddle
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: SpankTealPaddle
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
-        # Floof - End
+        - id: null #Sets lewd group to 44% chance of spawn
+          prob: 0.56
+          orGroup: Lewd
+        # HypnoTemp Merch - Start
+        - id: PlushieHypnoTempCap
+          prob: 0.005
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempMysta
+          prob: 0.010
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempHoS
+          prob: 0.010
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempLO
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempHoP
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempCMO
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: null
+          orGroup: HypnoTempPlush
+        #HypnoTemp Merch - End
         # Syndicate loot
         - id: null
           prob: 0.95
@@ -260,30 +287,31 @@
         - id: ClothingBackpackDuffelSyndicate
           prob: 0.005
           orGroup: syndiemaintloot
-        #- id: CyberPen # DeltaV - Nuh uh
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
-        #- id: CigPackSyndicate
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
+        - id: CyberPen # Floof - Yuh huh, it's funny
+          prob: 0.005
+          orGroup: syndiemaintloot
+        - id: CigPackSyndicate
+          prob: 0.005
+          orGroup: syndiemaintloot
         - id: ClothingBackpackDuffelSyndicatePyjamaBundle
           prob: 0.005
           orGroup: syndiemaintloot
-        #- id: ClothingBeltMilitaryWebbing
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
-        #- id: ClothingShoesBootsCombatFilled
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
-        #- id: ToolboxSyndicateFilled
-        #  prob: 0.005
-        #  orGroup: syndiemaintloot
+        - id: ClothingBeltMilitaryWebbing
+          prob: 0.005
+          orGroup: syndiemaintloot
+        - id: ClothingShoesBootsCombatFilled
+          prob: 0.005
+          orGroup: syndiemaintloot
+        - id: ToolboxSyndicateFilled
+          prob: 0.005
+          orGroup: syndiemaintloot
         - id: BalloonSyn
           prob: 0.005
           orGroup: syndiemaintloot
-        #- id: WeaponSniperMosin
-        #  prob: 0.0010
-        #  orGroup: syndiemaintloot
+        - id: WeaponSniperMosin
+          prob: 0.005
+          orGroup: syndiemaintloot
+        # Floof - End
 
 - type: entity
   id: ClosetWallMaintenanceFilledRandom
@@ -319,6 +347,9 @@
           orGroup: carp
         - id: PlushieRainbowCarp
           prob: 0.03
+          orGroup: carp
+        - id: null #Sets carp group to 33% chance of spawn
+          prob: 0.67
           orGroup: carp
         - id: PlushieSlime
           prob: 0.2
@@ -397,26 +428,51 @@
           prob: 0.02
           orGroup: Lewd
         - id: DoubleDildo
-          prob: 0.02  
+          prob: 0.02
           orGroup: Lewd
         - id: WhipPink
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipTeal
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipPinkCrotch
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: WhipTealCrotch
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: SpankPinkPaddle
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
         - id: SpankTealPaddle
-          prob: 0.01  
+          prob: 0.01
           orGroup: Lewd
+        - id: null #Sets lewd group to 44% chance of spawn
+          prob: 0.56
+          orGroup: Lewd
+        # HypnoTemp Merch - Start
+        - id: PlushieHypnoTempCap
+          prob: 0.005
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempMysta
+          prob: 0.010
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempHoS
+          prob: 0.010
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempLO
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempHoP
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: PlushieHypnoTempCMO
+          prob: 0.025
+          orGroup: HypnoTempPlush
+        - id: null
+          orGroup: HypnoTempPlush
+        #HypnoTemp Merch - End
         # Floof - End
         # Syndicate loot
         - id: null
@@ -459,5 +515,17 @@
           prob: 0.005
           orGroup: syndiemaintloot
         - id: WeaponSniperMosin
-          prob: 0.0010
+          prob: 0.005
           orGroup: syndiemaintloot
+
+- type: entity
+  id: ClosetWallRadiationFilled
+  suffix: Filled
+  parent: ClosetWallRadiation
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterSuitRad
+        amount: 2
+      - id: GeigerCounter
+        amount: 2

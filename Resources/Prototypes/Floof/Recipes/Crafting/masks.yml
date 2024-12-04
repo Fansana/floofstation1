@@ -1,0 +1,38 @@
+- type: construction
+  name: muffled gas mask
+  id: ClothingMaskGasMuffled
+  graph: ClothingMaskGasMuffled
+  startNode: start
+  targetNode: gasmask 
+  category: construction-category-clothing
+  description: A gas mask with a muzzle attached to block the wearer's speech.
+  icon:
+    sprite: Clothing/Mask/gas.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: muffled explorer gas mask
+  id: ClothingMaskGasExplorerMuffled
+  graph: ClothingMaskGasExplorerMuffled
+  startNode: start
+  targetNode: gasmask 
+  category: construction-category-clothing
+  description: An explorer gas mask with a muzzle attached to block the wearer's speech.
+  icon:
+    sprite: Clothing/Mask/gasexplorer.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: muffled security gas mask
+  id: ClothingMaskGasSecurityMuffled
+  graph: ClothingMaskGasSecurityMuffled
+  startNode: start
+  targetNode: gasmask 
+  category: construction-category-clothing
+  description: A security gas mask with a muzzle attached to block the wearer's speech.
+  icon:
+    sprite: Clothing/Mask/gassecurity.rsi
+    state: icon
+  objectType: Item
