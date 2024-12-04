@@ -67,11 +67,11 @@
         Blunt: 2
         Slash: 1
         Structural: 15
-    bluntStaminaDamageFactor: 4.0
+    bluntStaminaDamageFactor: 1
     heavyRateModifier: 1
     heavyRangeModifier: 2
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: -2.5
+    heavyStaminaCost: 0
     angle: 20
 
   - type: ReverseEngineering # Nyano
