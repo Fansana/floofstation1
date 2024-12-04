@@ -87,7 +87,7 @@
           - MobLayer
   - type: Inventory
     templateId: diona
-    femaleDisplacements:
+    femaleDisplacements: # Floof - displacements
       jumpsuit:
         sizeMaps:
           32:
@@ -135,13 +135,5 @@
   id: MobDionaDummy
   noSpawn: true
   components:
-  - type: Inventory
-    templateId: diona
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
   - type: HumanoidAppearance
     species: Diona
