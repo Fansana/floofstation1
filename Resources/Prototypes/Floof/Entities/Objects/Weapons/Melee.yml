@@ -35,7 +35,7 @@
     materialComposition:
       Brass: 1000
   - type: StaticPrice
-    price: 30 # Ensures these can be sold and have a reasonable vending value.
+    price: 300 # Ensures these can be sold and have a reasonable vending value.
 
 - type: entity
   name: improvised brass knuckles
