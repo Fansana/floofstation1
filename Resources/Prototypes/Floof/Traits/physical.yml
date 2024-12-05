@@ -16,15 +16,17 @@
       inverted: true
       traits:
       - HollowFangs
-  components:
-    - type: Vampirism
-      succDelay: 3
-      specialDigestible: # Vampires cannot eat food chat is that real
-        tags:
-        - IceCream
-        - Pill
-        - Crayon
-        - Paper
+  functions:
+  - !type:TraitAddComponent
+    components:
+      - type: Vampirism
+        succDelay: 3
+        specialDigestible: # Vampires cannot eat food chat is that real
+          tags:
+          - IceCream
+          - Pill
+          - Crayon
+          - Paper
 
 - type: trait
   id: HollowFangs
@@ -44,11 +46,13 @@
     inverted: true
     traits:
     - Vampirism
-  components:
-  - type: Vampirism
-    succDelay: 5
-    metabolizerPrototypes:
-    - Animal
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: Vampirism
+      succDelay: 5
+      metabolizerPrototypes:
+      - Animal
 
 - type: trait
   id: Weakness
@@ -70,9 +74,11 @@
       traits:
       - Lethargy
       - Vigor
-  components:
-    - type: StaminaCritModifier
-      critThresholdModifier: -50
+  functions:
+  - !type:TraitReplaceComponent
+    components:
+      - type: StaminaCritModifier
+        critThresholdModifier: -50
 
 - type: trait
   id: Lightweight
@@ -90,7 +96,9 @@
     - Felinid # They don't need to be lighter
     - IPC
   components:
-  - type: FixtureDensityModifier
-    min: 100
-    factor: 0.66 # still not as light as felinids due to different fixture size
+  - !type:TraitAddComponent
+    functions:
+    - type: FixtureDensityModifier
+      min: 100
+      factor: 0.6 # still not as light as felinids due to different fixture size
 
