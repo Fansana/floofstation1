@@ -2,9 +2,11 @@ name: Publish stable
 
 concurrency:
   group: publish
-
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - stable  # or the branch where merge requests are being merged into (e.g., 'master')
+
 
 jobs:
   build:
