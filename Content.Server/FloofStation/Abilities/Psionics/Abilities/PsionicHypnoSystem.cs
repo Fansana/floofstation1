@@ -80,7 +80,7 @@ namespace Content.Server.Abilities.Psionics
             _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("target", uid)), args.Target, args.Target, PopupType.Small);
 
             args.Handled = true;
-            _psionics.LogPowerUsed(args.Performer, "hypno");
+            _psionics.LogPowerUsed(args.Performer, "hypno", 0, 0);
         }
 
         private void OnDispelled(EntityUid uid, PsionicHypnoComponent component, DispelledEvent args)
