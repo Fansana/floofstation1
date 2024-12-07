@@ -10,7 +10,6 @@ namespace Content.Server.Polymorph.Systems;
 
 public sealed partial class PolymorphSystem
 {
-    [Dependency] private readonly IEntityManager _entities = default!;
     private void InitializeProvider()
     {
         SubscribeLocalEvent<PolymorphProviderComponent, GotEquippedEvent>(OnEquipped);
