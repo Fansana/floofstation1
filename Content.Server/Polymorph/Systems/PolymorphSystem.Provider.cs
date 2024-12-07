@@ -14,7 +14,6 @@ public sealed partial class PolymorphSystem
     {
         SubscribeLocalEvent<PolymorphProviderComponent, GotEquippedEvent>(OnEquipped);
         SubscribeLocalEvent<PolymorphProviderComponent, GotUnequippedEvent>(OnUnEquipped);
-
     }
 
     private void OnUnEquipped(EntityUid uid, PolymorphProviderComponent component, ref GotUnequippedEvent args)
