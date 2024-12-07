@@ -10,5 +10,4 @@ public sealed partial class PolymorphProviderComponent : Component
 {
     [DataField]
     public ProtoId<PolymorphPrototype> Polymorph;
-
 }
