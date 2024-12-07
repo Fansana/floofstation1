@@ -6,7 +6,7 @@ namespace Content.Server.Polymorph.Components;
 
 [RegisterComponent]
 [Access(typeof(PolymorphSystem))]
-public sealed partial class PolymorphProviderComponent  : Component
+public sealed partial class PolymorphProviderComponent : Component
 {
     [DataField]
     public ProtoId<PolymorphPrototype> Polymorph;
