@@ -19,8 +19,8 @@ public sealed partial class PolymorphSystem
 
     private void OnUnEquipped(EntityUid uid, PolymorphProviderComponent component, ref GotUnequippedEvent args)
     {
-        var polymorphable = _entities.EnsureComponent<PolymorphableComponent>(args.Equipee);
-        RemovePolymorphAction(component.Polymorph, (args.Equipee, polymorphable));
+        if (TryComp<PolymorphableComponent>(args.Equipee, out var polymorphable))
+            RemovePolymorphAction(component.Polymorph, (args.Equipee, polymorphable));
     }
 
     private void OnEquipped(EntityUid uid, PolymorphProviderComponent component, ref GotEquippedEvent args)
