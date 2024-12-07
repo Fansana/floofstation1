@@ -8,7 +8,7 @@
     drawdepth: SmallMobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      sprite: Floof/Mobs/Animals/scugcat.rsi
+      sprite: Floof/Mobs/Animals/scugcat/parts.rsi
       state: scugcat
     - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
       color: "#ffffff"
@@ -24,10 +24,6 @@
     states:
       Alive:
         Base: scugcat
-      Critical:
-        Base: scugcat_crit
-      Dead:
-        Base: scugcat_dead
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -81,12 +77,9 @@
     makeSentient: true
     name: ghost-role-information-scugcat-name
     description: ghost-role-information-scugcat-description
-    rules: deltav-ghost-role-information-softantag-rules
   - type: GhostTakeoverAvailable
   - type: Food
   - type: Hunger
-  - type: Inventory
-    templateId: scugcat
   - type: PseudoItem
   - type: CanEscapeInventory
   - type: InventorySlots
@@ -106,6 +99,15 @@
     - Cat
   - type: LeashAnchor # Floofstation
   - type: Vore
+  - type: Inventory
+    speciesId: scugcat
+    templateId: scugcat
+    # displacements:
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Floof/Mobs/Animals/scugcat/displacement.rsi.rsi
+    #         state: jumpsuit
 
 - type: palette
   id: ScugCatColors
