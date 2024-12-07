@@ -1707,3 +1707,25 @@ Entries:
   id: 224
   time: '2024-12-05T16:33:52.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/393
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Added languages to certain entities that lacked them, including MMIs and
+        positronic brains.
+    - type: Add
+      message: >-
+        Polymorphing into another entity now preserves your languages and
+        grammar.
+    - type: Tweak
+      message: Cherry-picked some changes to languages made upstream.
+  id: 225
+  time: '2024-12-07T02:43:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/395
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed mining drill '
+  id: 226
+  time: '2024-12-07T06:16:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/383
