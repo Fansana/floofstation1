@@ -8,7 +8,7 @@ namespace Content.Server.Polymorph.Components;
 [Access(typeof(PolymorphSystem))]
 public sealed partial class PolymorphProviderComponent  : Component
 {
-    [DataField(required: true)]
+    [DataField]
     public ProtoId<PolymorphPrototype> Polymorph;
 
 }
