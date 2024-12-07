@@ -1740,3 +1740,10 @@ Entries:
   id: 227
   time: '2024-12-07T15:04:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/371
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed Irregular Extended '
+  id: 228
+  time: '2024-12-07T15:06:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/385
