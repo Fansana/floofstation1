@@ -25,8 +25,7 @@ public sealed partial class PolymorphSystem
 
     private void OnEquipped(EntityUid uid, PolymorphProviderComponent component, ref GotEquippedEvent args)
     {
-
-        var polymorphable = _entities.EnsureComponent<PolymorphableComponent>(args.Equipee);
+        var polymorphable = EnsureComp<PolymorphableComponent>(args.Equipee);
         CreatePolymorphAction(component.Polymorph, (args.Equipee, polymorphable));
     }
 
