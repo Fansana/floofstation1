@@ -15,10 +15,9 @@ using Content.Shared.Database;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs.Components;
-using Content.Shared.Mindshield.Components;
 using Content.Shared.Psionics;
-using Content.Shared.Tag;
-using Content.Shared.Implants;
+using Content.Server.Consent;
+using Content.Shared.Mind.Components;
 
 
 namespace Content.Server.Abilities.Psionics
@@ -32,7 +31,7 @@ namespace Content.Server.Abilities.Psionics
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly ISharedAdminLogManager _adminLog = default!;
         [Dependency] private readonly MobStateSystem _mobState = default!;
-        [Dependency] private readonly TagSystem _tag = default!;
+        [Dependency] private readonly ConsentSystem _consent = default!;
 
         public override void Initialize()
         {
@@ -42,8 +41,8 @@ namespace Content.Server.Abilities.Psionics
             SubscribeLocalEvent<HypnotizedComponent, DispelledEvent>(OnDispelledHypnotized);
             SubscribeLocalEvent<PsionicHypnoComponent, DispelledEvent>(OnDispelled);
             SubscribeLocalEvent<PsionicHypnoComponent, PsionicHypnosisDoAfterEvent>(OnDoAfter);
+            SubscribeLocalEvent<HypnotizedComponent, GetVerbsEvent<InnateVerb>>(BreakHypnoVerb);
             SubscribeLocalEvent<HypnotizedComponent, OnMindbreakEvent>(OnMindbreak);
-            SubscribeLocalEvent<HypnotizedComponent, ImplantImplantedEvent>(OnMindShield);
             SubscribeLocalEvent<HypnotizedComponent, ExaminedEvent>((uid, _, args) => OnExamine(uid, args));
         }
 
@@ -55,15 +54,9 @@ namespace Content.Server.Abilities.Psionics
                 || _mobState.IsCritical(args.Target, mob))
                 return;
 
-            if (component.Subjects >= component.MaxSubjects)
+            if (!_consent.HasConsent(args.Target, "Hypno"))
             {
-                _popups.PopupEntity(Loc.GetString("hypno-max-subject"), uid, uid, PopupType.Large);
-                return;
-            }
-
-            if (!component.ByPassMindShield && HasComp<MindShieldComponent>(args.Target))
-            {
-                _popups.PopupEntity(Loc.GetString("has-mindshield"), uid, uid, PopupType.Large);
+                _popups.PopupEntity(Loc.GetString("has-no-consent"), uid, uid, PopupType.Large);
                 return;
             }
 
@@ -87,7 +80,7 @@ namespace Content.Server.Abilities.Psionics
             _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("target", uid)), args.Target, args.Target, PopupType.Small);
 
             args.Handled = true;
-            _psionics.LogPowerUsed(args.Performer, "hypno");
+            _psionics.LogPowerUsed(args.Performer, "hypno", 0, 0);
         }
 
         private void OnDispelled(EntityUid uid, PsionicHypnoComponent component, DispelledEvent args)
@@ -110,19 +103,6 @@ namespace Content.Server.Abilities.Psionics
             StopHypno(uid, component);
         }
 
-        private void OnMindShield(EntityUid uid, HypnotizedComponent component, ref ImplantImplantedEvent ev)
-        {
-            if (_tag.HasTag(ev.Implant, "MindShield") && ev.Implanted != null)
-            {
-                if (component.Master is not null
-                    && TryComp<PsionicHypnoComponent>(component.Master, out var hypnotist)
-                    && hypnotist.ByPassMindShield)
-                    return;
-
-                StopHypno(uid, component);
-            }
-        }
-
         private void ReleaseSubjectVerb(EntityUid uid, PsionicHypnoComponent component, GetVerbsEvent<InnateVerb> args)
         {
             if (args.User == args.Target
@@ -138,6 +118,21 @@ namespace Content.Server.Abilities.Psionics
                 Priority = 1
             };
             args.Verbs.Add(verbReleaseHypno);
+        }
+
+        private void BreakHypnoVerb(EntityUid uid, HypnotizedComponent component, GetVerbsEvent<InnateVerb> args)
+        {
+            if (args.User != args.Target)
+                return;
+
+            InnateVerb verbBreakHypno = new()
+            {
+                Act = () => StopHypno(args.User),
+                Text = Loc.GetString("hypno-break"),
+                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Floof/Interface/Actions/hypno.png")),
+                Priority = 1
+            };
+            args.Verbs.Add(verbBreakHypno);
         }
 
         private void OnDoAfter(EntityUid uid, PsionicHypnoComponent component, PsionicHypnosisDoAfterEvent args)
@@ -195,14 +190,25 @@ namespace Content.Server.Abilities.Psionics
 
             Dirty(target, hypnotized);
 
-            component.Subjects += 1;
-
-            _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} hypnotized {ToPrettyString(target)}");
+            _adminLog.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(uid)} hypnotized {ToPrettyString(target)}");
 
             RaiseLocalEvent(target, new MoodEffectEvent("BeingHypnotized"));
 
-            if (_playerManager.TryGetSessionByEntity(target, out var session)
-                || session is not null)
+            if (_playerManager.TryGetSessionByEntity(uid, out var sessionmaster)
+                || sessionmaster is not null)
+            {
+                var message = Loc.GetString("hypnotist", ("entity", target));
+                _chatManager.ChatMessageToOne(
+                    ChatChannel.Emotes,
+                    message,
+                    message,
+                    EntityUid.Invalid,
+                    false,
+                    sessionmaster.Channel);
+            }
+
+            if (_playerManager.TryGetSessionByEntity(target, out var sessionsubject)
+                || sessionsubject is not null)
             {
                 var message = Loc.GetString("hypnotized", ("entity", uid));
                 _chatManager.ChatMessageToOne(
@@ -211,7 +217,7 @@ namespace Content.Server.Abilities.Psionics
                     message,
                     EntityUid.Invalid,
                     false,
-                    session.Channel);
+                    sessionsubject.Channel);
             }
         }
 
@@ -220,31 +226,31 @@ namespace Content.Server.Abilities.Psionics
             if (!Resolve(uid, ref component))
                 return;
 
-            _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} is not longer hypnotized.");
+            _adminLog.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(uid)} is not longer hypnotized.");
 
             _popups.PopupEntity(Loc.GetString("hypno-free"), uid, uid, PopupType.LargeCaution);
 
             RaiseLocalEvent(uid, new MoodEffectEvent("LostHypnosis"));
 
-            if (_playerManager.TryGetSessionByEntity(uid, out var session)
-                || session is not null)
-            {
-                var message = Loc.GetString("stophypno", ("entity", uid));
-                _chatManager.ChatMessageToOne(
-                    ChatChannel.Emotes,
-                    message,
-                    message,
-                    EntityUid.Invalid,
-                    false,
-                    session.Channel);
-            }
-
             if (component.Master is not null
                 && TryComp<PsionicHypnoComponent>(component.Master, out var hypnotist))
             {
-                hypnotist.Subjects -= 1;
                 _popups.PopupEntity(Loc.GetString("lost-subject"), hypnotist.Owner, hypnotist.Owner, PopupType.LargeCaution);
+
+                if (_playerManager.TryGetSessionByEntity(uid, out var session)
+                || session is not null)
+                {
+                    var message = Loc.GetString("stophypno", ("entity", hypnotist.Owner));
+                    _chatManager.ChatMessageToOne(
+                        ChatChannel.Emotes,
+                        message,
+                        message,
+                        EntityUid.Invalid,
+                        false,
+                        session.Channel);
+                }
             }
+
 
             RemComp(uid, component);
         }
