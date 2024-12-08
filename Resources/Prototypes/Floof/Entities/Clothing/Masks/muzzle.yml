@@ -1,0 +1,193 @@
+- type: entity
+  parent: ClothingMaskMuzzle
+  id: ClothingMaskMuzzleGagBall
+  name: ball gag
+  description: A gag attached to a harness that wraps around the head. This one is ball-shaped.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Floof/Clothing/Mask/gag.rsi
+      state: icon
+    - sprite: Floof/Clothing/Mask/ball_gag.rsi
+      state: icon
+      color: "#EA0423"
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-left
+      - sprite: Floof/Clothing/Mask/ball_gag.rsi
+        state: inhand-left
+        color: "#EA0423"
+      right:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-right
+      - sprite: Floof/Clothing/Mask/ball_gag.rsi
+        state: inhand-right
+        color: "#EA0423"
+  - type: Clothing
+    clothingVisuals:
+      mask:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK
+      - sprite: Floof/Clothing/Mask/ball_gag.rsi
+        state: equipped-MASK
+        color: "#EA0423"
+      mask-vulpkanin:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-vulpkanin
+      - sprite: Floof/Clothing/Mask/ball_gag.rsi
+        state: equipped-MASK-vulpkanin
+        color: "#EA0423"
+      mask-reptilian:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-reptilian
+      - sprite: Floof/Clothing/Mask/ball_gag.rsi
+        state: equipped-MASK-reptilian
+        color: "#EA0423"
+
+- type: entity
+  parent: ClothingMaskMuzzle
+  id: ClothingMaskMuzzleGagBone
+  name: bone gag
+  description: A gag attached to a harness that wraps around the head. This one is bone-shaped. Woof woof!
+  components: 
+  - type: Sprite
+    layers:
+    - sprite: Floof/Clothing/Mask/gag.rsi
+      state: icon
+    - sprite: Floof/Clothing/Mask/bone_gag.rsi
+      state: icon
+      color: "#E5E5E5"
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-left
+      - sprite: Floof/Clothing/Mask/bone_gag.rsi
+        state: inhand-left
+        color: "#E5E5E5"
+      right:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-right
+      - sprite: Floof/Clothing/Mask/bone_gag.rsi
+        state: inhand-right
+        color: "#E5E5E5"
+  - type: Clothing
+    clothingVisuals:
+      mask:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK
+      - sprite: Floof/Clothing/Mask/bone_gag.rsi
+        state: equipped-MASK
+        color: "#E5E5E5"
+      mask-vulpkanin:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-vulpkanin
+      - sprite: Floof/Clothing/Mask/bone_gag.rsi
+        state: equipped-MASK-vulpkanin
+        color: "#E5E5E5"
+      mask-reptilian:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-reptilian
+      - sprite: Floof/Clothing/Mask/bone_gag.rsi
+        state: equipped-MASK-reptilian
+        color: "#E5E5E5"
+
+- type: entity
+  parent: ClothingMaskMuzzle
+  id: ClothingMaskMuzzleGagRing
+  name: ring gag
+  description: A gag attached to a harness that wraps around the head. This one is ring-shaped. You could stick something in there!
+  components: 
+  - type: Sprite
+    layers:
+    - sprite: Floof/Clothing/Mask/gag.rsi
+      state: icon
+    - sprite: Floof/Clothing/Mask/ring_gag.rsi
+      state: icon
+      color: "#BFBFBF"
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-left
+      - sprite: Floof/Clothing/Mask/ring_gag.rsi
+        state: inhand-left
+        color: "#BFBFBF"
+      right:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-right
+      - sprite: Floof/Clothing/Mask/ring_gag.rsi
+        state: inhand-right
+        color: "#BFBFBF"
+  - type: Clothing
+    clothingVisuals:
+      mask:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK
+      - sprite: Floof/Clothing/Mask/ring_gag.rsi
+        state: equipped-MASK
+        color: "#BFBFBF"
+      mask-vulpkanin:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-vulpkanin
+      - sprite: Floof/Clothing/Mask/ring_gag.rsi
+        state: equipped-MASK-vulpkanin
+        color: "#BFBFBF"
+      mask-reptilian:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-reptilian
+      - sprite: Floof/Clothing/Mask/ring_gag.rsi
+        state: equipped-MASK-reptilian
+        color: "#BFBFBF"
+
+- type: entity
+  parent: ClothingMaskMuzzle
+  id: ClothingMaskMuzzleGagDildo
+  description: A gag attached to a harness that wraps around the head. This one is dildo-shaped.
+  name: dildo gag
+  components: 
+  - type: Sprite
+    layers:
+    - sprite: Floof/Clothing/Mask/gag.rsi
+      state: icon
+    - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+      state: icon
+      color: "#474547"
+  - type: Item
+    inhandVisuals:
+      left:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-left
+      - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+        state: inhand-left
+        color: "#474547"
+      right:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: inhand-right
+      - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+        state: inhand-right
+        color: "#474547"
+  - type: Clothing
+    clothingVisuals:
+      mask:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK
+      - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+        state: equipped-MASK
+        color: "#474547"
+      mask-vulpkanin:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-vulpkanin
+      - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+        state: equipped-MASK-vulpkanin
+        color: "#474547"
+      mask-reptilian:
+      - sprite: Floof/Clothing/Mask/gag.rsi
+        state: equipped-MASK-reptilian
+      - sprite: Floof/Clothing/Mask/dildo_gag.rsi
+        state: equipped-MASK-reptilian
+        color: "#474547"
+
+# TODO: Maybe variants on the dildo gag? We have a lot of dildo options on this server.
