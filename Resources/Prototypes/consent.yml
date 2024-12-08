@@ -2,6 +2,9 @@
   id: Vore
 
 - type: consentToggle
+  id: VorePred
+
+- type: consentToggle
   id: Digestion
 
 - type: consentToggle
