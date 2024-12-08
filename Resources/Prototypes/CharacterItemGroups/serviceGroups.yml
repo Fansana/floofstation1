@@ -104,6 +104,8 @@
       id: LoadoutServiceBartenderBoxLightRifleRubber
     - type: loadout
       id: LoadoutServiceBartenderBoxMagnumRubber # Floofstation
+    - type: loadout
+      id: LoadoutServiceBartenderRifleBigRubber # Floofstation
 
 - type: characterItemGroup
   id: LoadoutBartenderWeapon

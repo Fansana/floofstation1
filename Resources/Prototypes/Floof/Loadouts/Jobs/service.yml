@@ -138,6 +138,20 @@
   items:
   - ClothingCostumeBunnySuit
 
+- type: loadout
+  id: LoadoutServiceBartenderRifleBigRubber
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBartenderAmmo
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - MagazineBoxRifleBigRubber
+
 #Chef
 - type: loadout
   id: LoadoutClothingHandsChefWarmers
