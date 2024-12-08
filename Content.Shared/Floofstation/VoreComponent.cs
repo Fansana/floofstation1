@@ -14,7 +14,7 @@ public sealed partial class VoreComponent : Component
     [DataField]
     public SoundSpecifier? SoundDevour = new SoundPathSpecifier("/Audio/Floof/Vore/gulp.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(-4f).WithMaxDistance(1f),
     };
     public Container Stomach = default!;
 }

@@ -18,12 +18,12 @@ public sealed partial class VoredComponent : Component
     [DataField, AutoNetworkedField]
     public SoundSpecifier? SoundBelly = new SoundPathSpecifier("/Audio/Floof/Vore/stomach_loop.ogg")
     {
-        Params = AudioParams.Default.WithLoop(true).WithVolume(-3f),
+        Params = AudioParams.Default.WithLoop(true).WithVolume(-4f),
     };
 
     [DataField]
     public SoundSpecifier? SoundRelease = new SoundPathSpecifier("/Audio/Effects/Fluids/splat.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(-4f),
     };
 }
