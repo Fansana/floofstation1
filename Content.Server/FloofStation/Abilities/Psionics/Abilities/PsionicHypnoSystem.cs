@@ -62,7 +62,7 @@ namespace Content.Server.Abilities.Psionics
 
             if (HasComp<HypnotizedComponent>(args.Target))
             {
-                _popups.PopupEntity(Loc.GetString("hypno-already-under", ("target", uid)), uid, uid, PopupType.Large);
+                _popups.PopupEntity(Loc.GetString("hypno-already-under", ("target", args.Target)), uid, uid, PopupType.Large);
                 return;
             }
 
