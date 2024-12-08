@@ -189,7 +189,7 @@ public sealed class VoreSystem : EntitySystem
         if (_food.IsMouthBlocked(uid, uid))
             return;
 
-        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
+        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.MediumCaution);
 
         if (!TryComp<PhysicsComponent>(uid, out var predPhysics)
             || !TryComp<PhysicsComponent>(target, out var preyPhysics))
@@ -238,7 +238,7 @@ public sealed class VoreSystem : EntitySystem
 
         _audioSystem.PlayPvs(component.SoundDevour, uid);
 
-        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
+        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), uid, PopupType.SmallCaution);
 
         _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} vored {ToPrettyString(target)}");
     }
@@ -260,7 +260,7 @@ public sealed class VoreSystem : EntitySystem
 
         _audioSystem.PlayPvs(component.SoundRelease, args.Container.Owner);
 
-        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, PopupType.Large);
+        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, PopupType.Medium);
 
         _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(uid)} got released from {ToPrettyString(args.Container.Owner)} belly");
     }
