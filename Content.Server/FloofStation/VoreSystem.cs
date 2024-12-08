@@ -35,8 +35,8 @@ using Content.Shared.Standing;
 using Content.Server.Power.Components;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Shared.Interaction.Events;
-using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Robust.Shared.Player;
 
 namespace Content.Server.FloofStation;
 
@@ -189,7 +189,8 @@ public sealed class VoreSystem : EntitySystem
         if (_food.IsMouthBlocked(uid, uid))
             return;
 
-        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.MediumCaution);
+        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, target, PopupType.MediumCaution);
+        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), target, uid, PopupType.MediumCaution);
 
         if (!TryComp<PhysicsComponent>(uid, out var predPhysics)
             || !TryComp<PhysicsComponent>(target, out var preyPhysics))
@@ -236,9 +237,10 @@ public sealed class VoreSystem : EntitySystem
 
         _containerSystem.Insert(target, component.Stomach);
 
-        _audioSystem.PlayPvs(component.SoundDevour, uid);
+        _audioSystem.PlayEntity(component.SoundDevour, Filter.Pvs(uid), uid, false);
 
-        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), uid, PopupType.SmallCaution);
+        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), uid, target, PopupType.SmallCaution);
+        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), target, uid, PopupType.SmallCaution);
 
         _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} vored {ToPrettyString(target)}");
     }
@@ -258,9 +260,11 @@ public sealed class VoreSystem : EntitySystem
         if (TryComp<TemperatureComponent>(uid, out var temp))
             temp.AtmosTemperatureTransferEfficiency = 0.1f;
 
-        _audioSystem.PlayPvs(component.SoundRelease, args.Container.Owner);
+        _audioSystem.PlayEntity(component.SoundRelease, Filter.Pvs(uid), uid, false);
+        _audioSystem.PlayEntity(component.SoundRelease, Filter.Pvs(args.Container.Owner), args.Container.Owner, false);
 
-        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, PopupType.Medium);
+        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, args.Container.Owner, PopupType.Medium);
+        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), args.Container.Owner, uid, PopupType.Medium);
 
         _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(uid)} got released from {ToPrettyString(args.Container.Owner)} belly");
     }
