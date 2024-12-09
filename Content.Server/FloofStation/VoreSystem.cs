@@ -26,7 +26,6 @@ using Robust.Shared.Physics.Components;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Server.Power.EntitySystems;
-using Content.Server.Silicon.Charge;
 using Content.Shared.PowerCell.Components;
 using System.Linq;
 using Content.Shared.Forensics;
@@ -34,8 +33,10 @@ using Content.Server.Forensics;
 using Content.Shared.Contests;
 using Content.Shared.Standing;
 using Content.Server.Power.Components;
-using Content.Shared.PowerCell;
 using Content.Server.Nutrition.EntitySystems;
+using Content.Shared.Interaction.Events;
+using Content.Shared.Hands.EntitySystems;
+using Robust.Shared.Player;
 
 namespace Content.Server.FloofStation;
 
@@ -60,6 +61,7 @@ public sealed class VoreSystem : EntitySystem
     [Dependency] private readonly StandingStateSystem _standingState = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly FoodSystem _food = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
 
     public override void Initialize()
     {
@@ -73,6 +75,7 @@ public sealed class VoreSystem : EntitySystem
 
         SubscribeLocalEvent<VoredComponent, EntGotRemovedFromContainerMessage>(OnRelease);
         SubscribeLocalEvent<VoredComponent, CanSeeAttemptEvent>(OnSeeAttempt);
+        SubscribeLocalEvent<VoredComponent, InteractionAttemptEvent>(CheckInteraction);
     }
 
     private void OnInit(EntityUid uid, VoreComponent component, MapInitEvent args)
@@ -83,6 +86,7 @@ public sealed class VoreSystem : EntitySystem
     private void AddVerbs(EntityUid uid, VoreComponent component, GetVerbsEvent<InnateVerb> args)
     {
         DevourVerb(uid, component, args);
+        InsertSelfVerb(uid, args);
         VoreVerb(uid, component, args);
     }
 
@@ -91,20 +95,41 @@ public sealed class VoreSystem : EntitySystem
         if (!args.CanInteract
             || !args.CanAccess
             || args.User == args.Target
-            || !HasComp<MobStateComponent>(args.Target)
-            || !_consent.HasConsent(args.Target, "Vore")
-            || HasComp<VoredComponent>(args.User))
+            || !HasComp<VoreComponent>(args.Target)
+            || !_consent.HasConsent(args.User, "VorePred")
+            || !_consent.HasConsent(args.Target, "Vore"))
             return;
 
         InnateVerb verbDevour = new()
         {
-            Act = () => TryDevour(uid, args.Target, component),
+            Act = () => TryDevour(args.User, args.Target, component),
             Text = Loc.GetString("vore-devour"),
-            Category = VerbCategory.Vore,
+            Category = VerbCategory.Interaction,
             Icon = new SpriteSpecifier.Rsi(new ResPath("Interface/Actions/devour.rsi"), "icon-on"),
             Priority = -1
         };
         args.Verbs.Add(verbDevour);
+    }
+
+    private void InsertSelfVerb(EntityUid uid, GetVerbsEvent<InnateVerb> args)
+    {
+        if (!args.CanInteract
+            || !args.CanAccess
+            || args.User == args.Target
+            || !TryComp<VoreComponent>(args.Target, out var component)
+            || !_consent.HasConsent(args.Target, "VorePred")
+            || !_consent.HasConsent(args.User, "Vore"))
+            return;
+
+        InnateVerb verbInsert = new()
+        {
+            Act = () => TryDevour(args.Target, args.User, component),
+            Text = Loc.GetString("action-name-insert-self"),
+            Category = VerbCategory.Interaction,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("Interface/Actions/devour.rsi"), "icon"),
+            Priority = -1
+        };
+        args.Verbs.Add(verbInsert);
     }
 
     private void VoreVerb(EntityUid uid, VoreComponent component, GetVerbsEvent<InnateVerb> args)
@@ -164,7 +189,8 @@ public sealed class VoreSystem : EntitySystem
         if (_food.IsMouthBlocked(uid, uid))
             return;
 
-        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
+        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), uid, target, PopupType.MediumCaution);
+        _popups.PopupEntity(Loc.GetString("vore-attempt-devour", ("entity", uid), ("prey", target)), target, uid, PopupType.MediumCaution);
 
         if (!TryComp<PhysicsComponent>(uid, out var predPhysics)
             || !TryComp<PhysicsComponent>(target, out var preyPhysics))
@@ -210,9 +236,27 @@ public sealed class VoreSystem : EntitySystem
             temp.AtmosTemperatureTransferEfficiency = 0;
 
         _containerSystem.Insert(target, component.Stomach);
-        _audioSystem.PlayPvs(component.SoundDevour, uid);
 
-        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), uid, PopupType.LargeCaution);
+        if (_playerManager.TryGetSessionByEntity(target, out var sessionprey)
+            || sessionprey is not null)
+            _audioSystem.PlayEntity(component.SoundDevour, sessionprey, uid);
+
+        if (_playerManager.TryGetSessionByEntity(uid, out var sessionpred)
+            || sessionpred is not null)
+        {
+            _audioSystem.PlayEntity(component.SoundDevour, sessionpred, uid);
+            // var message = Loc.GetString("", ("entity", uid));
+            // _chatManager.ChatMessageToOne(
+            //     ChatChannel.Emotes,
+            //     message,
+            //     message,
+            //     EntityUid.Invalid,
+            //     false,
+            //     sessionprey.Channel);
+        }
+
+        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), target, target, PopupType.SmallCaution);
+        _popups.PopupEntity(Loc.GetString("vore-devoured", ("entity", uid), ("prey", target)), target, uid, PopupType.SmallCaution);
 
         _adminLog.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(uid)} vored {ToPrettyString(target)}");
     }
@@ -232,9 +276,16 @@ public sealed class VoreSystem : EntitySystem
         if (TryComp<TemperatureComponent>(uid, out var temp))
             temp.AtmosTemperatureTransferEfficiency = 0.1f;
 
-        _audioSystem.PlayPvs(component.SoundRelease, args.Container.Owner);
+        if (_playerManager.TryGetSessionByEntity(args.Container.Owner, out var sessionpred)
+            || sessionpred is not null)
+            _audioSystem.PlayEntity(component.SoundRelease, sessionpred, uid);
 
-        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, PopupType.Large);
+        if (_playerManager.TryGetSessionByEntity(uid, out var sessionprey)
+            || sessionprey is not null)
+            _audioSystem.PlayEntity(component.SoundRelease, sessionprey, uid);
+
+        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, args.Container.Owner, PopupType.Medium);
+        _popups.PopupEntity(Loc.GetString("vore-released", ("entity", uid), ("pred", args.Container.Owner)), uid, uid, PopupType.Medium);
 
         _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(uid)} got released from {ToPrettyString(args.Container.Owner)} belly");
     }
@@ -388,6 +439,14 @@ public sealed class VoreSystem : EntitySystem
         _containerSystem.EmptyContainer(component.Stomach);
     }
 
+    private void CheckInteraction(EntityUid uid, VoredComponent component, InteractionAttemptEvent args)
+    {
+        if (component.Pred != args.Target)
+            return;
+
+        args.Cancel();
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -400,7 +459,7 @@ public sealed class VoreSystem : EntitySystem
 
             vored.Accumulator += frameTime;
 
-            if (vored.Accumulator <= 1)
+            if (vored.Accumulator <= 5)
                 continue;
 
             vored.Accumulator -= 1;

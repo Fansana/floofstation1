@@ -64,6 +64,7 @@ public sealed partial class PolymorphSystem : EntitySystem
 
         InitializeCollide();
         InitializeMap();
+        InitializeProvider();
     }
 
     public override void Update(float frameTime)
@@ -365,8 +366,11 @@ public sealed partial class PolymorphSystem : EntitySystem
     public void CreatePolymorphAction(ProtoId<PolymorphPrototype> id, Entity<PolymorphableComponent> target)
     {
         target.Comp.PolymorphActions ??= new();
-        if (target.Comp.PolymorphActions.ContainsKey(id))
+        if (target.Comp.PolymorphActions.TryGetValue(id, out var actionBla))
+        {
+            _actions.AddAction(target, actionBla, target);
             return;
+        }
 
         if (!_proto.TryIndex(id, out var polyProto))
             return;

@@ -16,6 +16,8 @@
           jobs:
             - Chaplain
             - Librarian
+            - ForensicMantis
+            - ResearchDirector
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement

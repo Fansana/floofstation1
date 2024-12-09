@@ -1695,3 +1695,84 @@ Entries:
   id: 223
   time: '2024-12-03T16:25:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/392
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now interact with carried entities, and carried entities
+        themselves can freely interact with items inside their
+        bags/clothing/etc.
+    - type: Fix
+      message: Jittering should no longer leave your character visually off-set.
+  id: 224
+  time: '2024-12-05T16:33:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/393
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Added languages to certain entities that lacked them, including MMIs and
+        positronic brains.
+    - type: Add
+      message: >-
+        Polymorphing into another entity now preserves your languages and
+        grammar.
+    - type: Tweak
+      message: Cherry-picked some changes to languages made upstream.
+  id: 225
+  time: '2024-12-07T02:43:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/395
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed mining drill '
+  id: 226
+  time: '2024-12-07T06:16:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/383
+- author: VividPups
+  changes:
+    - type: Add
+      message: 'brass-knuckles to the oni loadout '
+    - type: Add
+      message: can now craft brass knuckles as a stun weapon
+    - type: Add
+      message: 'the crass-knuckles '
+  id: 227
+  time: '2024-12-07T15:04:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/371
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed Irregular Extended '
+  id: 228
+  time: '2024-12-07T15:06:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/385
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Add Vore Sound toggle in options.
+    - type: Add
+      message: Added Vore Pred and allow to insert yourself.
+    - type: Tweak
+      message: Vore Consent was changed to Vore Prey.
+    - type: Tweak
+      message: You can only vore others with the ability to vore.
+    - type: Fix
+      message: Fix Resomi Displacement Maps
+  id: 229
+  time: '2024-12-08T23:56:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/398
+- author: Memeji
+  changes:
+    - type: Add
+      message: .20 Rifle Rubber Ammo Box to Bartender loadout.
+  id: 230
+  time: '2024-12-08T23:57:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/397
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed mice eating uranium!
+  id: 231
+  time: '2024-12-09T15:57:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/400

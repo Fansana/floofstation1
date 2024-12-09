@@ -62,7 +62,7 @@ namespace Content.Server.Abilities.Psionics
 
             if (HasComp<HypnotizedComponent>(args.Target))
             {
-                _popups.PopupEntity(Loc.GetString("hypno-already-under", ("target", uid)), uid, uid, PopupType.Large);
+                _popups.PopupEntity(Loc.GetString("hypno-already-under", ("target", args.Target)), uid, uid, PopupType.Large);
                 return;
             }
 
@@ -80,7 +80,7 @@ namespace Content.Server.Abilities.Psionics
             _popups.PopupEntity(Loc.GetString("hypno-phase-1", ("target", uid)), args.Target, args.Target, PopupType.Small);
 
             args.Handled = true;
-            _psionics.LogPowerUsed(args.Performer, "hypno");
+            _psionics.LogPowerUsed(args.Performer, "hypno", 0, 0);
         }
 
         private void OnDispelled(EntityUid uid, PsionicHypnoComponent component, DispelledEvent args)
@@ -161,7 +161,7 @@ namespace Content.Server.Abilities.Psionics
             }
             else if (args.Phase == 2)
             {
-                _popups.PopupEntity(Loc.GetString("hypno-phase-3"), args.Target.Value, args.Target.Value, PopupType.Medium);
+                _popups.PopupEntity(Loc.GetString("hypno-phase-3", ("target", uid)), args.Target.Value, args.Target.Value, PopupType.Medium);
 
                 _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, component.UseDelay, new PsionicHypnosisDoAfterEvent(3), uid, target: args.Target)
                 {
