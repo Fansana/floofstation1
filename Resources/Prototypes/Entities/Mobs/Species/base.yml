@@ -232,7 +232,7 @@
   - MobAtmosStandard
   - MobFlammable
   - BaseMobSpecies
-  id: BaseMobSpeciesOrBaseMobSpeciesOrganic
+  id: BaseMobSpeciesOrganic
   abstract: true
   components:
   - type: Flashable

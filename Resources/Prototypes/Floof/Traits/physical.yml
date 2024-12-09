@@ -95,9 +95,9 @@
     species:
     - Felinid # They don't need to be lighter
     - IPC
-  components:
+  functions:
   - !type:TraitAddComponent
-    functions:
+    components:
     - type: FixtureDensityModifier
       min: 100
       factor: 0.6 # still not as light as felinids due to different fixture size
