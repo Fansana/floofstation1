@@ -12,6 +12,8 @@
   femaleFirstNames: names_resomi_female
   naming: First
   customName: true
+  sexes:
+  - Unsexed
 
 - type: speciesBaseSprites
   id: MobResomiSprites
@@ -42,7 +44,7 @@
       points: 1
       required: false
     Tail:
-      points: 1
+      points: 2
       required: true
       defaultMarkings: [ ResomiTail, ResomiTailFeathers ]
     Head:
@@ -54,15 +56,19 @@
     RightFoot:
       points: 1
       required: false
+      defaultMarkings: [ ResomiRLegFeathers ]
     LeftFoot:
       points: 1
       required: false
+      defaultMarkings: [ ResomiLLegFeathers ]
     RightHand:
       points: 1
       required: false
+      defaultMarkings: [ ResomiRArmFeathers ]
     LeftHand:
       points: 1
       required: false
+      defaultMarkings: [ ResomiLArmFeathers ]
 
 - type: humanoidBaseSprite
   id: MobResomiEyes

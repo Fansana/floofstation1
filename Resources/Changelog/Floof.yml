@@ -1747,3 +1747,25 @@ Entries:
   id: 228
   time: '2024-12-07T15:06:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/385
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Add Vore Sound toggle in options.
+    - type: Add
+      message: Added Vore Pred and allow to insert yourself.
+    - type: Tweak
+      message: Vore Consent was changed to Vore Prey.
+    - type: Tweak
+      message: You can only vore others with the ability to vore.
+    - type: Fix
+      message: Fix Resomi Displacement Maps
+  id: 229
+  time: '2024-12-08T23:56:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/398
+- author: Memeji
+  changes:
+    - type: Add
+      message: .20 Rifle Rubber Ammo Box to Bartender loadout.
+  id: 230
+  time: '2024-12-08T23:57:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/397
