@@ -7,7 +7,9 @@
       jobs:
         - Borg
         - MedicalBorg
-  components:
+  functions:
+  - !type:TraitAddComponent
+    components:
     - type: CumProducer
       solutionname: "penis"
     - type: SolutionContainerManager
@@ -27,7 +29,9 @@
       jobs:
         - Borg
         - MedicalBorg
-  components:
+  functions:
+  - !type:TraitAddComponent
+    components:
     - type: MilkProducer
       solutionname: "breasts"
     - type: SolutionContainerManager
@@ -47,7 +51,9 @@
       jobs:
         - Borg
         - MedicalBorg
-  components:
+  functions:
+  - !type:TraitAddComponent
+    components:
     - type: SquirtProducer
       solutionname: "vagina"
     - type: SolutionContainerManager

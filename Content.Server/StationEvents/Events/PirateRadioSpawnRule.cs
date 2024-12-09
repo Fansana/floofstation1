@@ -14,6 +14,7 @@ using Robust.Shared.Serialization.Manager;
 using Content.Shared.Parallax.Biomes;
 using Robust.Shared.Map;
 
+
 namespace Content.Server.StationEvents.Events;
 
 public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRuleComponent>
@@ -48,9 +49,8 @@ public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRu
             return;
 
         var targetStation = _random.Pick(stations);
-        var targetMapId = Transform(targetStation).MapID;
-
-        if (!_mapSystem.MapExists(targetMapId))
+        var targetMapId = Transform(targetStation).MapID; // Floof
+        if (!_mapSystem.MapExists(targetMapId)) // Floof
             return;
 
         var randomOffset = _random.NextVector2(component.MinimumDistance, component.MaximumDistance);
@@ -60,6 +60,7 @@ public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRu
             LoadMap = false,
         };
 
+        // Floof - changed to load onto the specified map
         if (!_map.TryLoad(Transform(targetStation).MapID, _random.Pick(component.PirateRadioShuttlePath), out var outpostids, outpostOptions))
             return;
 

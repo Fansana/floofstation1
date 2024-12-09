@@ -47,13 +47,6 @@
     - Nekomimetic
   - type: PotentiaModifier
     potentiaMultiplier: 0.5
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
 
 - type: entity
   save: false
@@ -62,11 +55,3 @@
   id: MobOniDummy
   noSpawn: true
   description: A dummy oni meant to be used in character setup.
-  components:
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

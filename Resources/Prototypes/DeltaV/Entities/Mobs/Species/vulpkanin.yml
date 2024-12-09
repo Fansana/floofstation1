@@ -106,7 +106,7 @@
     fireStackIncreaseMultiplier: 1.25
   - type: Inventory
     speciesId: vulpkanin
-    femaleDisplacements:
+    femaleDisplacements: # Floof - displacements
       jumpsuit:
         sizeMaps:
           32:
@@ -123,11 +123,3 @@
   components:
   - type: HumanoidAppearance
     species: Vulpkanin
-  - type: Inventory
-    speciesId: vulpkanin
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

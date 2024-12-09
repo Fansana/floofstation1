@@ -123,7 +123,7 @@
     fireStackIncreaseMultiplier: 1.25
   - type: Inventory
     speciesId: rodentia
-    femaleDisplacements:
+    femaleDisplacements: # Floof - displacements
       jumpsuit:
         sizeMaps:
           32:
@@ -140,11 +140,3 @@
   components:
   - type: HumanoidAppearance
     species: Rodentia
-  - type: Inventory
-    speciesId: rodentia
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

@@ -84,13 +84,6 @@
         - Landmine
         - Mousetrap
         - SlipEntity
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
 
 - type: entity
   save: false
@@ -99,13 +92,3 @@
   id: MobFelinidDummy
   noSpawn: true
   description: A dummy felinid meant to be used in character setup.
-  components:
-  - type: HumanoidAppearance
-    species: Felinid
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female

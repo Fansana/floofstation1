@@ -73,6 +73,8 @@ namespace Content.Client.HealthAnalyzer.UI
             // Patient Information
 
             SpriteView.SetEntity(target.Value);
+            SpriteView.Visible = msg.ScanMode.HasValue && msg.ScanMode.Value;
+            NoDataTex.Visible = !SpriteView.Visible;
 
             var name = new FormattedMessage();
             name.PushColor(Color.White);
@@ -108,17 +110,34 @@ namespace Content.Client.HealthAnalyzer.UI
 
             // Alerts
 
-            AlertsDivider.Visible = msg.Bleeding == true;
-            AlertsContainer.Visible = msg.Bleeding == true;
+            var showAlerts = msg.Unrevivable == true || msg.Bleeding == true;
+
+            AlertsDivider.Visible = showAlerts;
+            AlertsContainer.Visible = showAlerts;
+
+            if (showAlerts)
+                AlertsContainer.DisposeAllChildren();
+
+            if (msg.Unrevivable == true) // Right now this does nothing, but we have it just for parity :)
+            {
+                var unrevivableLabel = new RichTextLabel
+                {
+                    Margin = new Thickness(0, 4),
+                    MaxWidth = 300
+                };
+                unrevivableLabel.SetMessage(Loc.GetString("health-analyzer-window-entity-unrevivable-text"), defaultColor: Color.Red);
+                AlertsContainer.AddChild(unrevivableLabel);
+            }
 
             if (msg.Bleeding == true)
             {
-                AlertsContainer.DisposeAllChildren();
-                AlertsContainer.AddChild(new Label
+                var bleedingLabel = new RichTextLabel
                 {
-                    Text = Loc.GetString("health-analyzer-window-entity-bleeding-text"),
-                    FontColorOverride = Color.Red,
-                });
+                    Margin = new Thickness(0, 4),
+                    MaxWidth = 300
+                };
+                bleedingLabel.SetMessage(Loc.GetString("health-analyzer-window-entity-bleeding-text"), defaultColor: Color.Red);
+                AlertsContainer.AddChild(bleedingLabel);
             }
 
             // Damage Groups
@@ -180,11 +199,11 @@ namespace Content.Client.HealthAnalyzer.UI
 
                     var damageString = Loc.GetString(
                         "health-analyzer-window-damage-type-text",
-                        ("damageType", Loc.GetString("damage-type-" + type.ToLower())),
+                        ("damageType", Loc.GetString("health-analyzer-window-damage-type-" + type)),
                         ("amount", typeAmount)
                     );
 
-                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, "- ")));
+                    groupContainer.AddChild(CreateDiagnosticItemLabel(damageString.Insert(0, " · ")));
                 }
             }
         }
