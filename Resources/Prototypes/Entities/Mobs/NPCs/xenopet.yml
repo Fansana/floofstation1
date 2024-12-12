@@ -399,7 +399,12 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
-    scale: 0.6, 0.6
+    scale: 1,1
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+
   - type: SegmentedEntity
     numberOfSegments: 2
     texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
