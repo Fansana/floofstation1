@@ -398,7 +398,7 @@
       - Prying
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/FXS/rouny.rsi
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
     scale: 0.6, 0.6
   - type: SegmentedEntity
     numberOfSegments: 2
