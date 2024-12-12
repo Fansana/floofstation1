@@ -257,38 +257,38 @@
   categories:
   - UplinkExplosives
 
-- type: listing
-  id: UplinkSyndicateBomb
-  name: uplink-exploding-syndicate-bomb-name
-  description: uplink-exploding-syndicate-bomb-desc
-  productEntity: SyndicateBomb
-  cost:
-    Telecrystal: 11
-  categories:
-    - UplinkExplosives
-  restockTime: 1800
-  conditions:
-  - !type:StoreWhitelistCondition
-    blacklist:
-      tags:
-      - NukeOpsUplink
-  saleLimit: 1
+# - type: listing
+#   id: UplinkSyndicateBomb
+#   name: uplink-exploding-syndicate-bomb-name
+#   description: uplink-exploding-syndicate-bomb-desc
+#   productEntity: SyndicateBomb
+#   cost:
+#     Telecrystal: 11
+#   categories:
+#     - UplinkExplosives
+#   restockTime: 1800
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     blacklist:
+#       tags:
+#       - NukeOpsUplink
+#   saleLimit: 1
 
-- type: listing
-  id: UplinkSyndicateBombNukie
-  name: uplink-exploding-syndicate-bomb-name
-  description: uplink-exploding-syndicate-bomb-desc
-  productEntity: SyndicateBomb
-  cost:
-    Telecrystal: 11
-  categories:
-    - UplinkExplosives
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-  saleLimit: 1
+# - type: listing
+#   id: UplinkSyndicateBombNukie
+#   name: uplink-exploding-syndicate-bomb-name
+#   description: uplink-exploding-syndicate-bomb-desc
+#   productEntity: SyndicateBomb
+#   cost:
+#     Telecrystal: 11
+#   categories:
+#     - UplinkExplosives
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - NukeOpsUplink
+#   saleLimit: 1
 
 - type: listing
   id: UplinkClusterGrenade
@@ -393,26 +393,26 @@
 
 #Utility
 
-- type: listing
-  id: UplinkZombieBundle
-  name: uplink-zombie-bundle-name
-  description: uplink-zombie-bundle-desc
-  icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
-  productEntity: ClothingBackpackDuffelZombieBundle
-  cost:
-    Telecrystal: 40
-  categories:
-  - UplinkMisc
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
-  saleLimit: 1
+# - type: listing
+#   id: UplinkZombieBundle
+#   name: uplink-zombie-bundle-name
+#   description: uplink-zombie-bundle-desc
+#   icon: { sprite: /Textures/Structures/Wallmounts/signs.rsi, state: bio }
+#   productEntity: ClothingBackpackDuffelZombieBundle
+#   cost:
+#     Telecrystal: 40
+#   categories:
+#   - UplinkMisc
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - NukeOpsUplink
+#   - !type:BuyerWhitelistCondition
+#     blacklist:
+#       components:
+#       - SurplusBundle
+#   saleLimit: 1
 
 - type: listing
   id: UplinkNocturineChemistryBottle
@@ -966,15 +966,15 @@
   categories:
   - UplinkBundles
 
-- type: listing
-  id: UplinkSyndicateBombFake
-  name: uplink-exploding-syndicate-bomb-fake-name
-  description: uplink-exploding-syndicate-bomb-fake-desc
-  productEntity: SyndicateBombFake
-  cost:
-    Telecrystal: 4
-  categories:
-  - UplinkUtility
+# - type: listing
+#   id: UplinkSyndicateBombFake
+#   name: uplink-exploding-syndicate-bomb-fake-name
+#   description: uplink-exploding-syndicate-bomb-fake-desc
+#   productEntity: SyndicateBombFake
+#   cost:
+#     Telecrystal: 4
+#   categories:
+#   - UplinkUtility
 
 # Disruption
 
@@ -1057,17 +1057,17 @@
   - UplinkBundles
   saleLimit: 1
 
-- type: listing
-  id: UplinkGrenadeLauncherBundle
-  name: uplink-grenade-launcher-bundle-name
-  description: uplink-grenade-launcher-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
-  cost:
-    Telecrystal: 25
-  categories:
-  - UplinkBundles
-  saleLimit: 1
+# - type: listing
+#   id: UplinkGrenadeLauncherBundle
+#   name: uplink-grenade-launcher-bundle-name
+#   description: uplink-grenade-launcher-bundle-desc
+#   icon: { sprite: /Textures/Objects/Weapons/Guns/Launchers/china_lake.rsi, state: icon }
+#   productEntity: ClothingBackpackDuffelSyndicateFilledGrenadeLauncher
+#   cost:
+#     Telecrystal: 25
+#   categories:
+#   - UplinkBundles
+#   saleLimit: 1
 
 - type: listing
   id: UplinkL6SawBundle
