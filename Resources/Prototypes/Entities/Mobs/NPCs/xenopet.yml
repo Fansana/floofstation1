@@ -400,3 +400,7 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/rouny.rsi
     scale: 0.6, 0.6
+  - type: SegmentedEntity
+    numberOfSegments: 2
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
+  - type: PortalExempt
