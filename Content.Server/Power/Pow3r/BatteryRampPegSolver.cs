@@ -10,9 +10,8 @@ namespace Content.Server.Power.Pow3r
         private UpdateNetworkJob _networkJob;
         private bool _disableParallel;
 
-        public BatteryRampPegSolver(bool disableParallel = false)
+        public BatteryRampPegSolver()
         {
-            _disableParallel = disableParallel;
             _networkJob = new()
             {
                 Solver = this,
@@ -56,10 +55,7 @@ namespace Content.Server.Power.Pow3r
                 // suppliers + discharger) Then decide based on total layer size whether its worth parallelizing that
                 // layer?
                 _networkJob.Networks = group;
-                if (_disableParallel)
-                    parallel.ProcessSerialNow(_networkJob, group.Count);
-                else
-                    parallel.ProcessNow(_networkJob, group.Count);
+                parallel.ProcessSerialNow(_networkJob, group.Count);
             }
 
             ClearBatteries(state);
