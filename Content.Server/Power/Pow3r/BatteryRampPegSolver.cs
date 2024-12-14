@@ -8,7 +8,6 @@ namespace Content.Server.Power.Pow3r
     public sealed class BatteryRampPegSolver : IPowerSolver
     {
         private UpdateNetworkJob _networkJob;
-        private bool _disableParallel;
 
         public BatteryRampPegSolver()
         {
