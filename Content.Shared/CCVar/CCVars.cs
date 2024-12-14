@@ -2641,19 +2641,13 @@ namespace Content.Shared.CCVar
 
         #endregion
 
-        /// <summary>
-        /// Set to true to disable parallel processing in the pow3r solver.
-        /// </summary>
-        public static readonly CVarDef<bool> DebugPow3rDisableParallel =
-            CVarDef.Create("debug.pow3r_disable_parallel", true, CVar.SERVERONLY);
-
         /*
         * AUTOVOTE SYSTEM
         */
 
         /// Enables the automatic voting system.
         public static readonly CVarDef<bool> AutoVoteEnabled =
-            CVarDef.Create("vote.autovote_enabled", false, CVar.SERVERONLY);
+            CVarDef.Create("vote.autovote_enabled", true, CVar.SERVERONLY); // Floof 
 
         /// Automatically starts a map vote when returning to the lobby.
         /// Requires auto voting to be enabled.
