@@ -404,7 +404,6 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
-
   - type: SegmentedEntity
     numberOfSegments: 2
     texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
