@@ -105,7 +105,7 @@
   - type: Flammable
     fireStackIncreaseMultiplier: 1.25
   - type: Inventory
-    # speciesId: vulpkanin
+    speciesId: vulpkanin
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:

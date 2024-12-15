@@ -24,7 +24,7 @@
     - id: FoodMeatLizard
       amount: 5
   - type: Inventory
-    # speciesId: reptilian
+    speciesId: reptilian
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:

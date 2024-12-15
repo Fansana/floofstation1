@@ -86,7 +86,7 @@
         layer:
           - MobLayer
   - type: Inventory
-    # templateId: diona
+    templateId: diona
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:
