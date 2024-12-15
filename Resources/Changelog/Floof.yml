@@ -1824,3 +1824,10 @@ Entries:
   id: 237
   time: '2024-12-15T15:24:41.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/406
+- author: Fansana
+  changes:
+    - type: Remove
+      message: The hand teleporter can no longer create portal links between grids.
+  id: 238
+  time: '2024-12-15T16:25:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/409
