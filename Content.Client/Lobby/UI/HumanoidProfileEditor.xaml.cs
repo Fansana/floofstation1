@@ -1412,6 +1412,9 @@ namespace Content.Client.Lobby.UI
                 if (ratio < 1 / sizeRatio || ratio > sizeRatio)
                     heightValue = widthValue * (ratio < 1 / sizeRatio ? (1 / sizeRatio) : sizeRatio);
 
+            heightValue = Math.Clamp(heightValue, species.MinHeight, species.MaxHeight);
+            widthValue = Math.Clamp(widthValue, species.MinWidth, species.MaxWidth);
+
             HeightSlider.Value = heightValue;
             WidthSlider.Value = widthValue;
 
