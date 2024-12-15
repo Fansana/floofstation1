@@ -89,6 +89,10 @@ namespace Content.Client.HealthAnalyzer.UI
 
             // Basic Diagnostic
 
+            MassLabel.Text = !float.IsNaN(msg.Mass) // Floof: Health scanners show body mass
+                ? $"{msg.Mass:F1} kg"
+                : Loc.GetString("health-analyzer-window-entity-unknown-value-text");
+
             TemperatureLabel.Text = !float.IsNaN(msg.Temperature)
                 ? $"{msg.Temperature - Atmospherics.T0C:F1} °C ({msg.Temperature:F1} K)"
                 : Loc.GetString("health-analyzer-window-entity-unknown-value-text");

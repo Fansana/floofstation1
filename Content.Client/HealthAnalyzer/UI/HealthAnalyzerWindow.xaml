@@ -35,6 +35,8 @@
                 <GridContainer Margin="0 5 0 0" Columns="2">
                     <Label Text="{Loc 'health-analyzer-window-entity-status-text'}" />
                     <Label Name="StatusLabel" />
+                    <Label Text="{Loc 'health-analyzer-window-entity-mass-text'}" />
+                    <Label Name="MassLabel" /> <!-- Floof: Health scanners show body mass -->
                     <Label Text="{Loc 'health-analyzer-window-entity-temperature-text'}" />
                     <Label Name="TemperatureLabel" />
                     <Label Text="{Loc 'health-analyzer-window-entity-blood-level-text'}" />
