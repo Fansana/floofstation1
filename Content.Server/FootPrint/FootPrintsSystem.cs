@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.Atmos.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Mobs;
@@ -21,6 +22,7 @@ public sealed class FootPrintsSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
 
     private EntityQuery<TransformComponent> _transformQuery;
     private EntityQuery<MobThresholdsComponent> _mobThresholdQuery;
@@ -47,10 +49,10 @@ public sealed class FootPrintsSystem : EntitySystem
 
     private void OnMove(EntityUid uid, FootPrintsComponent component, ref MoveEvent args)
     {
-        if (component.PrintsColor.A <= 0f)
+        if (component.PrintsColor.A <= .2f) // avoid creating footsteps that are invisible
             component.DNAs.Clear();
 
-        if (component.PrintsColor.A <= 0f
+        if (component.PrintsColor.A <= .2f
             || !_transformQuery.TryComp(uid, out var transform)
             || !_mobThresholdQuery.TryComp(uid, out var mobThreshHolds)
             || !_map.TryFindGridAt(_transform.GetMapCoordinates((uid, transform)), out var gridUid, out _))
@@ -63,6 +65,10 @@ public sealed class FootPrintsSystem : EntitySystem
 
         if (!(distance > stepSize))
             return;
+
+        var entities = _lookup.GetEntitiesIntersecting(uid, LookupFlags.All);
+        foreach (var entityUid in entities.Where(entityUid => HasComp<PuddleFootPrintsComponent>(entityUid)))
+            return; //are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
 
         component.RightStep = !component.RightStep;
 
