@@ -1869,3 +1869,12 @@ Entries:
   id: 242
   time: '2024-12-15T21:06:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/413
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Character UI scaling fixes
+    - type: Fix
+      message: fix Salvage magnet opening multiple windows
+  id: 243
+  time: '2024-12-15T22:34:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/411
