@@ -86,13 +86,13 @@
         layer:
           - MobLayer
   - type: Inventory
-    templateId: diona
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # templateId: diona
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
   - type: Speech
     speechVerb: Plant
   - type: Vocal

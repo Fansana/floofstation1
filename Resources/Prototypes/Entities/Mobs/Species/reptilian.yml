@@ -24,13 +24,13 @@
     - id: FoodMeatLizard
       amount: 5
   - type: Inventory
-    speciesId: reptilian
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # speciesId: reptilian
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
   - type: LizardAccent
   - type: Speech
     speechSounds: Lizard
