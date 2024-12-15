@@ -1831,3 +1831,10 @@ Entries:
   id: 238
   time: '2024-12-15T16:25:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/409
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Quadruple SMES MaxCharge
+  id: 239
+  time: '2024-12-15T16:48:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/410
