@@ -122,7 +122,7 @@
   - type: Flammable
     fireStackIncreaseMultiplier: 1.25
   - type: Inventory
-    # speciesId: rodentia
+    speciesId: rodentia
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:
