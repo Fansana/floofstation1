@@ -7,6 +7,7 @@ health-analyzer-window-entity-alive-text = Alive
 health-analyzer-window-entity-dead-text = Dead
 health-analyzer-window-entity-critical-text = Critical
 
+health-analyzer-window-entity-mass-text = Mass:
 health-analyzer-window-entity-temperature-text = Temperature:
 health-analyzer-window-entity-blood-level-text = Blood Level:
 health-analyzer-window-entity-status-text = Status:

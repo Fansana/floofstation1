@@ -17,6 +17,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Robust.Shared.Physics.Components;
 
 namespace Content.Server.Medical;
 
@@ -181,6 +182,11 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         if (!HasComp<DamageableComponent>(target))
             return;
 
+        var mass = float.NaN; // Floof: Health scanners show body mass
+
+        if (TryComp<PhysicsComponent>(target, out var physics))
+            mass = physics.FixturesMass;
+
         var bodyTemperature = float.NaN;
 
         if (TryComp<TemperatureComponent>(target, out var temp))
@@ -203,6 +209,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         */
         _uiSystem.ServerSendUiMessage(healthAnalyzer, HealthAnalyzerUiKey.Key, new HealthAnalyzerScannedUserMessage(
             GetNetEntity(target),
+            mass, // Floof: Health scanners show body mass
             bodyTemperature,
             bloodAmount,
             scanMode,
