@@ -85,4 +85,7 @@ public sealed partial class FootPrintsComponent : Component
     ///     Value between 0 and 1, where higher values mean faster color changes.
     /// </summary>
     public float ColorInterpolationFactor = 0.2f;
+
+    [DataField]
+    public HashSet<string> DNAs = new();
 }

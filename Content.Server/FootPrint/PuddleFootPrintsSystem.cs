@@ -4,6 +4,7 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Fluids;
 using Content.Shared.Fluids.Components;
+using Content.Shared.Forensics;
 using Robust.Shared.Physics.Events;
 
 namespace Content.Server.FootPrint;
@@ -36,6 +37,13 @@ public sealed class PuddleFootPrintsSystem : EntitySystem
 
         tripper.ReagentToTransfer =
             solutions.Contents.Aggregate((l, r) => l.Quantity > r.Quantity ? l : r).Reagent.Prototype;
+
+        if (TryComp<ForensicsComponent>(uid, out var puddleForensics))
+        {
+            tripper.DNAs.UnionWith(puddleForensics.DNAs);
+            if(TryComp<ForensicsComponent>(args.OtherEntity, out var tripperForensics))
+                tripperForensics.DNAs.UnionWith(puddleForensics.DNAs);
+        }
 
         if (_appearance.TryGetData(uid, PuddleVisuals.SolutionColor, out var color, appearance)
             && _appearance.TryGetData(uid, PuddleVisuals.CurrentVolume, out var volume, appearance))

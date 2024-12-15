@@ -6,6 +6,7 @@ using Content.Shared.FootPrint;
 using Content.Shared.Standing;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Forensics;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
 
@@ -46,6 +47,9 @@ public sealed class FootPrintsSystem : EntitySystem
 
     private void OnMove(EntityUid uid, FootPrintsComponent component, ref MoveEvent args)
     {
+        if (component.PrintsColor.A <= 0f)
+            component.DNAs.Clear();
+
         if (component.PrintsColor.A <= 0f
             || !_transformQuery.TryComp(uid, out var transform)
             || !_mobThresholdQuery.TryComp(uid, out var mobThreshHolds)
@@ -64,6 +68,9 @@ public sealed class FootPrintsSystem : EntitySystem
 
         var entity = Spawn(component.StepProtoId, CalcCoords(gridUid, component, transform, dragging));
         var footPrintComponent = EnsureComp<FootPrintComponent>(entity);
+
+        var forensics = EntityManager.EnsureComponent<ForensicsComponent>(entity);
+        forensics.DNAs.UnionWith(component.DNAs);
 
         footPrintComponent.PrintOwner = uid;
         Dirty(entity, footPrintComponent);
