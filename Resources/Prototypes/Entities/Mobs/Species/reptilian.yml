@@ -23,6 +23,14 @@
     spawned:
     - id: FoodMeatLizard
       amount: 5
+  - type: Inventory
+    speciesId: reptilian
+    femaleDisplacements: # Floof - displacements
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
   - type: LizardAccent
   - type: Speech
     speechSounds: Lizard
@@ -67,14 +75,9 @@
     understands:
     - TauCetiBasic
     - Draconic
-  - type: Inventory
-    speciesId: reptilian
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+  - type: FootPrints
+    leftBarePrint: "footprint-left-bare-lizard"
+    rightBarePrint: "footprint-right-bare-lizard"
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -84,13 +87,5 @@
   components:
   - type: HumanoidAppearance
     species: Reptilian
-  - type: Inventory
-    speciesId: reptilian
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
 
 #Weh

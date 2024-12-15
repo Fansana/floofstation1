@@ -1790,3 +1790,19 @@ Entries:
   id: 233
   time: '2024-12-15T00:33:09.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/405
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed crass knuckles
+  id: 234
+  time: '2024-12-15T12:01:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/407
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged upstream changes up to the 17th of November. See the
+        Einstein-Engines changelog tab for more details.
+  id: 235
+  time: '2024-12-15T15:20:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/402

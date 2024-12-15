@@ -14,6 +14,7 @@ public sealed class HealthAnalyzerScannedUserMessage : BoundUserInterfaceMessage
     public float BloodLevel;
     public bool? ScanMode;
     public bool? Bleeding;
+    public bool? Unrevivable;
 
     public HealthAnalyzerScannedUserMessage(NetEntity? targetEntity, float mass, float temperature, float bloodLevel, bool? scanMode, bool? bleeding)
     {
@@ -23,6 +24,7 @@ public sealed class HealthAnalyzerScannedUserMessage : BoundUserInterfaceMessage
         BloodLevel = bloodLevel;
         ScanMode = scanMode;
         Bleeding = bleeding;
+        Unrevivable = unrevivable;
     }
 }
 
