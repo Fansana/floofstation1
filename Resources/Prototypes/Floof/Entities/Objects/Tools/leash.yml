@@ -9,6 +9,7 @@
     sprite: Floof/Objects/Tools/leash.rsi
     layers:
     - state: icon
+    scale: 0.5, 0.5
   - type: Leash
     pullInterval: 0.75
     leashSprite:
