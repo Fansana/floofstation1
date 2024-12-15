@@ -1838,3 +1838,10 @@ Entries:
   id: 239
   time: '2024-12-15T16:48:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/410
+- author: Fansana
+  changes:
+    - type: Fix
+      message: language markers
+  id: 240
+  time: '2024-12-15T17:22:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/412
