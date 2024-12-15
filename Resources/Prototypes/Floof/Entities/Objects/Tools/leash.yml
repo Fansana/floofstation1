@@ -9,7 +9,7 @@
     sprite: Floof/Objects/Tools/leash.rsi
     layers:
     - state: icon
-    scale: 0.5, 0.5
+    scale: 0.7, 0.7
   - type: Leash
     pullInterval: 0.75
     leashSprite:
@@ -29,7 +29,7 @@
     maxDistance: 6
     attachDelay: 4
     detachDelay: 4
-    selfDetachDelay: 10
+    selfDetachDelay: 10ug
 
 - type: entity
   id: LeashAdvanced

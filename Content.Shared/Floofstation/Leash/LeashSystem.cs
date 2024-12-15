@@ -467,9 +467,11 @@ private void OnJointRemoved(Entity<LeashedComponent> ent, ref JointRemovedEvent 
             _container.EnsureContainer<ContainerSlot>(leashTarget, LeashedComponent.VisualsContainerName);
             if (EntityManager.TrySpawnInContainer(null, leashTarget, LeashedComponent.VisualsContainerName, out var visualEntity))
             {
-                var visualComp = EnsureComp<JointVisualsComponent>(visualEntity.Value);
+                var visualComp = EnsureComp<LeashedVisualsComponent>(visualEntity.Value);
                 visualComp.Sprite = sprite;
-                visualComp.Target = leash;
+                visualComp.Source = leash;
+                visualComp.Target = leashTarget;
+                visualComp.OffsetTarget = anchor.Comp.Offset;
 
                 data.LeashVisuals = GetNetEntity(visualEntity);
             }
