@@ -1815,3 +1815,12 @@ Entries:
   id: 236
   time: '2024-12-15T15:21:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/408
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        Health Analyzers will now display the patient's body mass, and thus
+        their susceptibility to temperature changing reagents. And throwability.
+  id: 237
+  time: '2024-12-15T15:24:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/406
