@@ -201,7 +201,7 @@ public sealed class LeashSystem : EntitySystem
         }
     }
 
-private void OnJointRemoved(Entity<LeashedComponent> ent, ref JointRemovedEvent args)
+    private void OnJointRemoved(Entity<LeashedComponent> ent, ref JointRemovedEvent args)
     {
         var id = args.Joint.ID;
         if (_timing.ApplyingState
