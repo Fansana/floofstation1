@@ -1862,3 +1862,10 @@ Entries:
   id: 241
   time: '2024-12-15T21:06:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/414
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed females displacement to avoid a bug.
+  id: 242
+  time: '2024-12-15T21:06:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/413
