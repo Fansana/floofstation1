@@ -107,7 +107,7 @@ namespace Content.Server.Abilities.Psionics
         {
             if (args.User == args.Target
                 || !TryComp<HypnotizedComponent>(args.Target, out var hypno)
-                || args.User != uid)
+                || hypno.Master != args.User)
                 return;
 
             InnateVerb verbReleaseHypno = new()
