@@ -143,12 +143,12 @@
   - type: IdExaminable
   - type: Hands
   - type: Inventory
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
   - type: InventorySlots
   - type: FloatingVisuals
   - type: Climbing
@@ -318,12 +318,12 @@
   components:
   - type: Hands
   - type: Inventory
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
   - type: InventorySlots
   - type: ContainerContainer
   - type: Icon

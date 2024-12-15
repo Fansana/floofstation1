@@ -93,12 +93,12 @@
     speechSounds: Alto
   - type: Inventory
     templateId: anytaur
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
   - type: Tag
     tags:
     - CanPilot

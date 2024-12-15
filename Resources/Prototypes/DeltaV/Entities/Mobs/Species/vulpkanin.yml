@@ -105,13 +105,13 @@
   - type: Flammable
     fireStackIncreaseMultiplier: 1.25
   - type: Inventory
-    speciesId: vulpkanin
-    femaleDisplacements: # Floof - displacements
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+    # speciesId: vulpkanin
+    # femaleDisplacements: # Floof - displacements
+    #   jumpsuit:
+    #     sizeMaps:
+    #       32:
+    #         sprite: Mobs/Species/Human/displacement.rsi
+    #         state: jumpsuit-female
 
 - type: entity
   save: false
