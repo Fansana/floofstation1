@@ -25,7 +25,7 @@ namespace Content.Server.Power.EntitySystems
         private readonly HashSet<ApcNet> _apcNetReconnectQueue = new();
 
         private readonly BatteryRampPegSolver _solver = new();
-
+        
         public override void Initialize()
         {
             base.Initialize();
@@ -52,6 +52,7 @@ namespace Content.Server.Power.EntitySystems
             SubscribeLocalEvent<PowerSupplierComponent, ComponentShutdown>(PowerSupplierShutdown);
             SubscribeLocalEvent<PowerSupplierComponent, EntityPausedEvent>(PowerSupplierPaused);
             SubscribeLocalEvent<PowerSupplierComponent, EntityUnpausedEvent>(PowerSupplierUnpaused);
+
         }
 
         private void ApcPowerReceiverInit(EntityUid uid, ApcPowerReceiverComponent component, ComponentInit args)

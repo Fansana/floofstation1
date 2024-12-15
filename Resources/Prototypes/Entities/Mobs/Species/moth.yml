@@ -112,13 +112,7 @@
         sprite: "Effects/creampie.rsi"
         state: "creampie_moth"
         visible: false
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+  - type: FootPrints
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -127,10 +121,3 @@
   components:
   - type: HumanoidAppearance
     species: Moth
-  - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
