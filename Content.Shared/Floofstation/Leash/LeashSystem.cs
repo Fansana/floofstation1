@@ -156,8 +156,7 @@ public sealed class LeashSystem : EntitySystem
         if (!TryGetLeashTarget(ent!, out var leashTarget)
             || !TryComp<LeashedComponent>(leashTarget, out var leashedComp)
             || leashedComp.Puller != leash
-            || HasComp<LeashedComponent>(
-                leashTarget)) // This one means that OnGetLeashedVerbs will add a verb to remove it
+            || HasComp<LeashedComponent>(ent)) // This one means that OnGetLeashedVerbs will add a verb to remove it
             return;
 
         var unleashVerb = new EquipmentVerb
