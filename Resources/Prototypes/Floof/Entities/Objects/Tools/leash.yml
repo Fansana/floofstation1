@@ -29,7 +29,7 @@
     maxDistance: 6
     attachDelay: 4
     detachDelay: 4
-    selfDetachDelay: 10ug
+    selfDetachDelay: 10
 
 - type: entity
   id: LeashAdvanced
