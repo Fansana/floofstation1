@@ -21,6 +21,7 @@
                 Orientation="Vertical">
                 <BoxContainer Orientation="Horizontal" Margin="0 0 0 5">
                     <SpriteView OverrideDirection="South" Scale="2 2" Name="SpriteView" Access="Public" SetSize="64 64" />
+                    <TextureRect Name="NoDataTex" Access="Public" SetSize="64 64" Visible="false" Stretch="KeepAspectCentered" TexturePath="/Textures/Interface/Misc/health_analyzer_out_of_range.png"/>
                     <BoxContainer Margin="5 0 0 0" Orientation="Vertical" VerticalAlignment="Top">
                         <RichTextLabel Name="NameLabel" SetWidth="150" />
                         <Label Name="SpeciesLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" />
@@ -35,6 +36,8 @@
                 <GridContainer Margin="0 5 0 0" Columns="2">
                     <Label Text="{Loc 'health-analyzer-window-entity-status-text'}" />
                     <Label Name="StatusLabel" />
+                    <Label Text="{Loc 'health-analyzer-window-entity-mass-text'}" />
+                    <Label Name="MassLabel" /> <!-- Floof: Health scanners show body mass -->
                     <Label Text="{Loc 'health-analyzer-window-entity-temperature-text'}" />
                     <Label Name="TemperatureLabel" />
                     <Label Text="{Loc 'health-analyzer-window-entity-blood-level-text'}" />
@@ -46,8 +49,7 @@
 
             <PanelContainer Name="AlertsDivider" Visible="False" StyleClasses="LowDivider" />
 
-            <BoxContainer Name="AlertsContainer" Visible="False" Margin="0 5" Orientation="Horizontal"
-                          HorizontalExpand="True" HorizontalAlignment="Center">
+            <BoxContainer Name="AlertsContainer" Visible="False" Margin="0 5" Orientation="Vertical" HorizontalAlignment="Center">
 
             </BoxContainer>
 

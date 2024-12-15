@@ -1769,3 +1769,119 @@ Entries:
   id: 230
   time: '2024-12-08T23:57:51.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/397
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed mice eating uranium!
+  id: 231
+  time: '2024-12-09T15:57:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/400
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Secret Gamemode
+  id: 232
+  time: '2024-12-14T01:32:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/404
+- author: Crow
+  changes:
+    - type: Add
+      message: Added wedding rings to loadouts
+  id: 233
+  time: '2024-12-15T00:33:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/405
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed crass knuckles
+  id: 234
+  time: '2024-12-15T12:01:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/407
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged upstream changes up to the 17th of November. See the
+        Einstein-Engines changelog tab for more details.
+  id: 235
+  time: '2024-12-15T15:20:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/402
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        The effects of the Sanguine and Saturnine traits have been made
+        significantly weaker.
+  id: 236
+  time: '2024-12-15T15:21:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/408
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        Health Analyzers will now display the patient's body mass, and thus
+        their susceptibility to temperature changing reagents. And throwability.
+  id: 237
+  time: '2024-12-15T15:24:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/406
+- author: Fansana
+  changes:
+    - type: Remove
+      message: The hand teleporter can no longer create portal links between grids.
+  id: 238
+  time: '2024-12-15T16:25:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/409
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Quadruple SMES MaxCharge
+  id: 239
+  time: '2024-12-15T16:48:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/410
+- author: Fansana
+  changes:
+    - type: Fix
+      message: language markers
+  id: 240
+  time: '2024-12-15T17:22:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/412
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now configure the length of a leash using the verb menu.
+        Subsequently, the dedicated short leash has been removed.
+    - type: Tweak
+      message: >-
+        Leashes can now be anchored, have a smaller sprite, and proper visual
+        offsets.
+    - type: Fix
+      message: >-
+        Fixed a number of bugs with leashes, including the "remove" verb not
+        appearing on clothing.
+  id: 241
+  time: '2024-12-15T21:06:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/414
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed females displacement to avoid a bug.
+  id: 242
+  time: '2024-12-15T21:06:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/413
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Character UI scaling fixes
+    - type: Fix
+      message: fix Salvage magnet opening multiple windows
+  id: 243
+  time: '2024-12-15T22:34:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/411
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Expanded which jobs can wear senior uniforms
+  id: 244
+  time: '2024-12-15T22:43:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/415
