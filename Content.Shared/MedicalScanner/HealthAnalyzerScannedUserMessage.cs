@@ -16,7 +16,7 @@ public sealed class HealthAnalyzerScannedUserMessage : BoundUserInterfaceMessage
     public bool? Bleeding;
     public bool? Unrevivable;
 
-    public HealthAnalyzerScannedUserMessage(NetEntity? targetEntity, float mass, float temperature, float bloodLevel, bool? scanMode, bool? bleeding)
+    public HealthAnalyzerScannedUserMessage(NetEntity? targetEntity, float mass, float temperature, float bloodLevel, bool? scanMode, bool? bleeding, bool? unrevivable)
     {
         TargetEntity = targetEntity;
         Mass = mass; // Floof: Health scanners show body mass
