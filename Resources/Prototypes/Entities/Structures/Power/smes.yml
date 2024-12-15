@@ -34,7 +34,7 @@
       baseMaxCharge: 8000000
     - type: UpgradePowerSupplyRamping
       scaling: Linear
-      supplyRampingMultiplier: 1     
+      supplyRampingMultiplier: 1
     - type: Appearance
     - type: Battery
       startingCharge: 0
@@ -103,8 +103,8 @@
   suffix: Basic, 8MW
   components:
   - type: Battery
-    maxCharge: 8000000
-    startingCharge: 8000000
+    maxCharge: 32000000
+    startingCharge: 32000000
 
 - type: entity
   parent: SMESBasic
