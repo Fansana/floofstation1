@@ -13,3 +13,5 @@ chat-language-Canilunzt-name = Canilunzt
 chat-language-Moffic-name = Moffic
 chat-language-RobotTalk-name = Binary
 chat-language-ValyrianStandard-name = Valyrian
+chat-language-Arachnic-name = Arachnic
+chat-language-Mouse-name = Mouse
