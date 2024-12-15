@@ -94,8 +94,7 @@ namespace Content.Client.Lobby.UI
             IPlayerManager playerManager,
             IPrototypeManager prototypeManager,
             JobRequirementsManager requirements,
-            MarkingManager markings
-            )
+            MarkingManager markings)
         {
             RobustXamlLoader.Load(this);
             _cfgManager = cfgManager;

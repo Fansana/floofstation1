@@ -21,9 +21,17 @@ public sealed class SalvageMagnetBoundUserInterface : BoundUserInterface
     {
         base.Open();
 
-        _window = this.CreateWindow<OfferingWindow>();
+        _window = new OfferingWindow();
         _window.Title = Loc.GetString("salvage-magnet-window-title");
+        _window.OnClose += Close;
         _window.OpenCenteredLeft();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+        _window?.Dispose();
+        _window = null;
     }
 
     protected override void UpdateState(BoundUserInterfaceState state)
