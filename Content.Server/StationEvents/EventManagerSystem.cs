@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Chat.Managers;
+using Content.Server.FloofStation.GameTicking;
 using Content.Server.GameTicking;
 using Content.Server.StationEvents.Components;
 using Content.Shared.CCVar;
@@ -24,11 +25,16 @@ public sealed class EventManagerSystem : EntitySystem
     public bool EventsEnabled { get; private set; }
     private void SetEnabled(bool value) => EventsEnabled = value;
 
+    private StationEventCondition.Dependencies _eventConditionDeps = default!; // Floof
+
     public override void Initialize()
     {
         base.Initialize();
 
         Subs.CVar(_configurationManager, CCVars.EventsEnabled, SetEnabled, true);
+
+        _eventConditionDeps = new(EntityManager, GameTicker, this);
+        _eventConditionDeps.Initialize();
     }
 
     /// <summary>
@@ -112,6 +118,8 @@ public sealed class EventManagerSystem : EntitySystem
             : TimeSpan.Zero;
 
         var result = new Dictionary<EntityPrototype, StationEventComponent>();
+
+        _eventConditionDeps.Update(); // Floof
 
         foreach (var (proto, stationEvent) in AllEvents())
         {
@@ -200,6 +208,13 @@ public sealed class EventManagerSystem : EntitySystem
             return false;
         }
         // Nyano - End modified code block.
+
+        // Floof section - custom conditions
+        if (stationEvent.Conditions is { } conditions
+            && conditions.Any(it => it.Inverted ^ !it.IsMet(prototype, stationEvent, _eventConditionDeps))
+        )
+            return false;
+        // Floof section end
 
         return true;
     }
