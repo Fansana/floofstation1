@@ -12,7 +12,6 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
-
 namespace Content.Server.FloofStation.GameTicking;
 
 /// <summary>

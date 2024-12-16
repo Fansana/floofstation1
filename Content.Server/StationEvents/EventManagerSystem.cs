@@ -33,7 +33,7 @@ public sealed class EventManagerSystem : EntitySystem
 
         Subs.CVar(_configurationManager, CCVars.EventsEnabled, SetEnabled, true);
 
-        _eventConditionDeps = new(EntityManager, GameTicker, this);
+        _eventConditionDeps = new(EntityManager, GameTicker, this); // Floof
         _eventConditionDeps.Initialize();
     }
 
