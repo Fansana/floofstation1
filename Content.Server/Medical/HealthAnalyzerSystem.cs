@@ -3,6 +3,8 @@ using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Medical.Components;
 using Content.Server.PowerCell;
 using Content.Server.Temperature.Components;
+using Content.Server.Traits.Assorted;
+using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
@@ -15,6 +17,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Robust.Shared.Physics.Components;
 
 namespace Content.Server.Medical;
 
@@ -179,6 +182,11 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         if (!HasComp<DamageableComponent>(target))
             return;
 
+        var mass = float.NaN; // Floof: Health scanners show body mass
+
+        if (TryComp<PhysicsComponent>(target, out var physics))
+            mass = physics.FixturesMass;
+
         var bodyTemperature = float.NaN;
 
         if (TryComp<TemperatureComponent>(target, out var temp))
@@ -186,6 +194,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
 
         var bloodAmount = float.NaN;
         var bleeding = false;
+        var unrevivable = false;
 
         if (TryComp<BloodstreamComponent>(target, out var bloodstream) &&
             _solutionContainerSystem.ResolveSolution(target, bloodstream.BloodSolutionName,
@@ -195,12 +204,17 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             bleeding = bloodstream.BleedAmount > 0;
         }
 
+        /*if (HasComp<UnrevivableComponent>(target)) Somehow we dont have unrevivable???
+            unrevivable = true;
+        */
         _uiSystem.ServerSendUiMessage(healthAnalyzer, HealthAnalyzerUiKey.Key, new HealthAnalyzerScannedUserMessage(
             GetNetEntity(target),
+            mass, // Floof: Health scanners show body mass
             bodyTemperature,
             bloodAmount,
             scanMode,
-            bleeding
+            bleeding,
+            unrevivable
         ));
     }
 }

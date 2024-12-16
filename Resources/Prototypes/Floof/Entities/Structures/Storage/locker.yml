@@ -25,27 +25,3 @@
       amount: 2
     - id: LunchboxServiceFilledRandom # Delta-V Lunchboxes!
       prob: 0.3
-
-# Bartender
-- type: entity
-  id: LockerBartenderFilled
-  parent: LockerBartender
-  name: bartender's locker
-  suffix: Filled
-  components:
-  - type: StorageFill
-    contents:
-    - id: DrinkShaker
-    - id: ClothingEyesHudBeer
-    - id: HandLabeler
-      amount: 1
-    - id: DrinkBottleBeer
-      prob: 0.5
-    - id: DrinkBottleBeer
-      prob: 0.5
-    - id: DrinkBottleBeer
-      prob: 0.5
-    - id: RagItem
-      amount: 2
-    - id: LunchboxServiceFilledRandom # Delta-V Lunchboxes!
-      prob: 0.3

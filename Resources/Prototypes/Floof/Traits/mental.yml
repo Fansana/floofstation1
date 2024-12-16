@@ -2,7 +2,9 @@
   id: HypnoticGaze
   category: Mental
   points: -2
-  psionicPowers:
+  functions:
+  - !type:TraitAddPsionics
+    psionicPowers:
     - HypnosisPower
   requirements:
     - !type:CharacterLogicOrRequirement
