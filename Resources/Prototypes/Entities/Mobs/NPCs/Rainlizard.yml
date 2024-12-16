@@ -1,0 +1,299 @@
+- type: entity
+  name: Rain Lizard
+  parent: MobXenoNeutralRouny
+  id: Mobrainlizard
+  description: A darkscaled lizard with a colorful head
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: Tool
+    speed: 6
+    qualities:
+      - Prying
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.6,0.6
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      color: "#30ce00"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#30ce00"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 30
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
+  - type: PortalExempt
+
+- type: entity
+  name: Green Rain Lizard
+  parent: Mobrainlizard
+  id: Mobgreenlizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.6,0.6
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      color: "#30ce00"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#30ce00"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 30
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
+
+- type: entity
+  name: Blue Rain Lizard
+  parent: Mobrainlizard
+  id: Mobbluelizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.4,0.4
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      color: "#2986cc"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#2986cc"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.2
+    staticScale: 0.6
+    staticOffset: 0.15
+    taperOffset: 15
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentblue.png
+
+- type: entity
+  name: Pink Rain Lizard
+  parent: Mobrainlizard
+  id: Mobpinklizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.5,0.5
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      color: "#cc29bf"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#cc29bf"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.23
+    staticScale: 0.7
+    staticOffset: 0.19
+    taperOffset: 25
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentpink.png
+
+- type: entity
+  name: Red Rain Lizard
+  parent: Mobrainlizard
+  id: Mobredlizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.8,0.8
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+      color: "#ff0000"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#ff0000"
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Piercing: 15
+        Slash: 15
+  - type: Devourer
+    foodPreference: Humanoid
+    shouldStoreDevoured: true
+    chemical: Ichor
+    healRate: 15.0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      450: Critical
+      500: Dead
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 40
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentred.png
+
+- type: entity
+  name: Rabid Green Rain Lizard
+  parent: Mobrainlizard
+  id: MobRgreenlizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Dragon
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.6,0.6
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lizardheadopen
+      color: "#30ce00"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#30ce00"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 30
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
+
+- type: entity
+  name: Rabid blue Rain Lizard
+  parent: Mobrainlizard
+  id: MobRbluelizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Dragon
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.4,0.4
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lizardheadopen
+      color: "#2986cc"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#2986cc"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 30
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentblue.png
+
+- type: entity
+  name: Rabid pink Rain Lizard
+  parent: Mobrainlizard
+  id: MobRpinklizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Dragon
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.5,0.5
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lizardheadopen
+      color: "#cc29bf"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#cc29bf"
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.23
+    staticScale: 0.7
+    staticOffset: 0.19
+    taperOffset: 25
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentpink.png
+
+- type: entity
+  name: Rabid Red Rain Lizard
+  parent: Mobrainlizard
+  id: MobRredlizard
+  description: A darkscaled lizard with a colorful head
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Dragon
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
+    scale: 0.8,0.8
+    offset: 0,0
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: lizardheadopen
+      color: "#ff0000"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#ff0000"
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Piercing: 15
+        Slash: 15
+  - type: Devourer
+    foodPreference: Humanoid
+    shouldStoreDevoured: true
+    chemical: Ichor
+    healRate: 15.0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      450: Critical
+      500: Dead
+  - type: SegmentedEntity
+    numberOfSegments: 3
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 40
+    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segmentred.png

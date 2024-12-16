@@ -383,37 +383,4 @@
         - MobXenoNeutralRavager
       chance: 1
 
-- type: entity
-  name: Rain Lizard
-  parent: MobXenoNeutralRouny
-  id: Mobrainlizard
-  description: A darkscaled lizard with a colorful head
-  components:
-  - type: NpcFactionMember
-    factions:
-    - PetsNT
-  - type: Tool
-    speed: 6
-    qualities:
-      - Prying
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
-    scale: 0.6,0.6
-    offset: 0,0
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
-      color: "#30ce00"
-  - type: PointLight
-    radius: 2
-    energy: 1
-    color: "#30ce00"
-  - type: SegmentedEntity
-    numberOfSegments: 3
-    initialRadius: 0.25
-    staticScale: 0.9
-    staticOffset: 0.2
-    taperOffset: 30
-    texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
-  - type: PortalExempt
+
