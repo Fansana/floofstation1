@@ -1579,3 +1579,309 @@ Entries:
   id: 209
   time: '2024-11-23T18:40:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/374
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed shuttle calling
+  id: 210
+  time: '2024-11-25T02:09:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/377
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed accessing things in bags
+  id: 211
+  time: '2024-11-25T11:33:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/379
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Adjusted Glacier evac shuttle
+  id: 212
+  time: '2024-11-25T11:33:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/378
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Captain job is now whitelisted.
+  id: 213
+  time: '2024-11-25T20:18:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/346
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added captain whitelist
+  id: 214
+  time: '2024-11-25T20:36:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/381
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: MassMindSwap Event
+  id: 215
+  time: '2024-11-26T21:59:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/382
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Added Psionic Hypnosis.
+  id: 216
+  time: '2024-12-02T19:05:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/327
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The heads of logistics, service, and engineering can now find brand-new
+        department-specific techfab boards in their lockers.
+    - type: Add
+      message: >-
+        The list of things the medical and security techfabs can produce has
+        been expanded.
+  id: 217
+  time: '2024-12-02T19:10:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/342
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Resomi Specie.
+  id: 218
+  time: '2024-12-02T19:21:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/372
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Vore...
+  id: 219
+  time: '2024-12-02T20:51:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/387
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed SyndicateBomb, ChinaLake, ZombieBundle
+  id: 220
+  time: '2024-12-02T20:52:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/388
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Replace the loin cloth with the nudity permit.
+  id: 221
+  time: '2024-12-02T21:36:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/389
+- author: Memeji
+  changes:
+    - type: Add
+      message: Repeater, Argenti, and 45 magnum rubber box to Bartender's loadout.
+    - type: Add
+      message: Red cloak to loadout
+    - type: Add
+      message: Witch Robes to loadout
+    - type: Add
+      message: Sawed-off PKA
+    - type: Add
+      message: More end-round sounds.
+    - type: Add
+      message: Some contraband to the maintenance lockers.
+    - type: Tweak
+      message: Salvage Restock crate price raised to 1300
+  id: 222
+  time: '2024-12-02T22:39:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/390
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Resomi Damage Sprites + Sprite Support
+  id: 223
+  time: '2024-12-03T16:25:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/392
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now interact with carried entities, and carried entities
+        themselves can freely interact with items inside their
+        bags/clothing/etc.
+    - type: Fix
+      message: Jittering should no longer leave your character visually off-set.
+  id: 224
+  time: '2024-12-05T16:33:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/393
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Added languages to certain entities that lacked them, including MMIs and
+        positronic brains.
+    - type: Add
+      message: >-
+        Polymorphing into another entity now preserves your languages and
+        grammar.
+    - type: Tweak
+      message: Cherry-picked some changes to languages made upstream.
+  id: 225
+  time: '2024-12-07T02:43:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/395
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed mining drill '
+  id: 226
+  time: '2024-12-07T06:16:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/383
+- author: VividPups
+  changes:
+    - type: Add
+      message: 'brass-knuckles to the oni loadout '
+    - type: Add
+      message: can now craft brass knuckles as a stun weapon
+    - type: Add
+      message: 'the crass-knuckles '
+  id: 227
+  time: '2024-12-07T15:04:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/371
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'Fixed Irregular Extended '
+  id: 228
+  time: '2024-12-07T15:06:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/385
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Add Vore Sound toggle in options.
+    - type: Add
+      message: Added Vore Pred and allow to insert yourself.
+    - type: Tweak
+      message: Vore Consent was changed to Vore Prey.
+    - type: Tweak
+      message: You can only vore others with the ability to vore.
+    - type: Fix
+      message: Fix Resomi Displacement Maps
+  id: 229
+  time: '2024-12-08T23:56:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/398
+- author: Memeji
+  changes:
+    - type: Add
+      message: .20 Rifle Rubber Ammo Box to Bartender loadout.
+  id: 230
+  time: '2024-12-08T23:57:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/397
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed mice eating uranium!
+  id: 231
+  time: '2024-12-09T15:57:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/400
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Secret Gamemode
+  id: 232
+  time: '2024-12-14T01:32:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/404
+- author: Crow
+  changes:
+    - type: Add
+      message: Added wedding rings to loadouts
+  id: 233
+  time: '2024-12-15T00:33:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/405
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed crass knuckles
+  id: 234
+  time: '2024-12-15T12:01:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/407
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged upstream changes up to the 17th of November. See the
+        Einstein-Engines changelog tab for more details.
+  id: 235
+  time: '2024-12-15T15:20:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/402
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        The effects of the Sanguine and Saturnine traits have been made
+        significantly weaker.
+  id: 236
+  time: '2024-12-15T15:21:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/408
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        Health Analyzers will now display the patient's body mass, and thus
+        their susceptibility to temperature changing reagents. And throwability.
+  id: 237
+  time: '2024-12-15T15:24:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/406
+- author: Fansana
+  changes:
+    - type: Remove
+      message: The hand teleporter can no longer create portal links between grids.
+  id: 238
+  time: '2024-12-15T16:25:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/409
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Quadruple SMES MaxCharge
+  id: 239
+  time: '2024-12-15T16:48:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/410
+- author: Fansana
+  changes:
+    - type: Fix
+      message: language markers
+  id: 240
+  time: '2024-12-15T17:22:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/412
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now configure the length of a leash using the verb menu.
+        Subsequently, the dedicated short leash has been removed.
+    - type: Tweak
+      message: >-
+        Leashes can now be anchored, have a smaller sprite, and proper visual
+        offsets.
+    - type: Fix
+      message: >-
+        Fixed a number of bugs with leashes, including the "remove" verb not
+        appearing on clothing.
+  id: 241
+  time: '2024-12-15T21:06:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/414
+- author: FoxxoTrystan
+  changes:
+    - type: Remove
+      message: Removed females displacement to avoid a bug.
+  id: 242
+  time: '2024-12-15T21:06:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/413
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Character UI scaling fixes
+    - type: Fix
+      message: fix Salvage magnet opening multiple windows
+  id: 243
+  time: '2024-12-15T22:34:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/411
+- author: Crow
+  changes:
+    - type: Tweak
+      message: Expanded which jobs can wear senior uniforms
+  id: 244
+  time: '2024-12-15T22:43:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/415

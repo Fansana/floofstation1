@@ -102,6 +102,10 @@
       id: LoadoutServiceBartenderBoxBeanbags
     - type: loadout
       id: LoadoutServiceBartenderBoxLightRifleRubber
+    - type: loadout
+      id: LoadoutServiceBartenderBoxMagnumRubber # Floofstation
+    - type: loadout
+      id: LoadoutServiceBartenderRifleBigRubber # Floofstation
 
 - type: characterItemGroup
   id: LoadoutBartenderWeapon
@@ -110,6 +114,10 @@
       id: LoadoutServiceBartenderShotgunDoubleBarreledRubber
     - type: loadout
       id: LoadoutServiceBartenderMosinRubber
+    - type: loadout
+      id: LoadoutServiceBartenderArgentiNonlethal # Floofstation
+    - type: loadout
+      id: LoadoutServiceBartenderRepeaterNonlethal # Floofstation
 
 - type: characterItemGroup
   id: LoadoutBartenderUniforms

@@ -18,5 +18,14 @@ consent-examine-verb = Consent Info
 consent-examine-not-set = This player has no consent preferences set. Ask for consent first before engaging in any erotic roleplay.
 
 # Consent toggles
-consent-Example-name = Example Consent Toggle
-consent-Example-desc = This is just here as an example for how to add consent toggles.
+consent-Vore-name = Vore Prey
+consent-Vore-desc = Allow yourself to be devoured by anyone... or anything.
+
+consent-VorePred-name = Vore Pred
+consent-VorePred-desc = Allow to devoured critters... or anyone that has the consent option 'vore' enabled.
+
+consent-Digestion-name = Digestion
+consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED WILL ROUND-REMOVE YOU.
+
+consent-Hypno-name = Hypnosis
+consent-Hypno-desc = Allow yourself to be hypnotized.

@@ -71,6 +71,7 @@
       tags:
         - Carp
         - DoorBumpOpener
+        - NoPaint
     - type: ReplacementAccent
       accent: genericAggressive
     - type: Speech
@@ -80,6 +81,7 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
+    - type: Vore # Floofstation - Vore
 
 - type: entity
   parent: BaseMobCarp

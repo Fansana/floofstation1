@@ -950,6 +950,9 @@
   id: NoBlockAnchoring
 
 - type: Tag
+  id: NoPaint
+
+- type: Tag
   id: NozzleBackTank
 
 - type: Tag
@@ -1363,3 +1366,8 @@
 
 - type: Tag
   id: WriteIgnoreStamps
+
+#Floof tags
+
+- type: Tag
+  id: BrassKnuckles

@@ -92,6 +92,3 @@
   id: MobFelinidDummy
   noSpawn: true
   description: A dummy felinid meant to be used in character setup.
-  components:
-  - type: HumanoidAppearance
-    species: Felinid

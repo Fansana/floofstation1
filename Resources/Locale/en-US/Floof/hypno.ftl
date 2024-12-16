@@ -1,29 +1,40 @@
 action-name-hypno = Psionic Hypnosis
-action-description-hypno = You are capable to hypnotize people and make them do your bidding.
+action-description-hypno = You are capable to mentally interfere with people's thoughts, and make them do your bidding.
 
-hypnosis-power-initialization-feedback = I am able to hypnotize and make people do my bidding, reaching them in the deepest parts of their mind.
-hypnosis-power-feedback = {CAPITALIZE($entity)} wields the power to control minds.
+hypnosis-power-initialization-feedback = I am able to place other in a trance and have them do my bidding, cementing my will in the deepest parts of their mind.
+hypnosis-power-feedback = The air around {CAPITALIZE($entity)} shimmers hypnotically from the force of their personality"
 
-hypno-max-subject = I cannot take more subjects.
-hypno-already-under = {CAPITALIZE($target)} is already hypnotized.
-examined-hypno = Looks mindless, happy...
-lost-subject = I lost control of one of my subjects.
-hypno-free = I feel able to make my own toughts again.
+hypno-already-under = {CAPITALIZE($target)} is already under hypnosis.
+examined-hypno = Seems completely content with everything
+lost-subject = I feel my powers dissipate. My subject is once again free...
+hypno-free = I have awoken from my trance...
 hypno-release = Release Subject
+hypno-break = Break Hypnosis
 
 hypno-start = You stare into {POSS-ADJ($target)} eyes...
-hypno-phase-1 = {CAPITALIZE($target)} eyes glows in such pretty colors... it's hard to look away...
-hypno-phase-2 = The more you stare at {POSS-ADJ($target)} eyes... the more its i's hard to think... to have a thought...
-hypno-phase-3 = What was I doing... again? It's so hard to think... maybe I don't need to anymore, just stare... its just... so pretty...
-hypno-success = {CAPITALIZE(SUBJECT($target))} stares into your eyes, lost in them, lost in you.
+hypno-phase-1 = {CAPITALIZE($target)} eyes are shining with a powerful but calming aura...
+hypno-phase-2 = The deeper you look into {POSS-ADJ($target)} eyes... the more difficult it is to think... easier to listen...
+hypno-phase-3 = It's so hard to think. Maybe... I don't need to anymore? Just sink... only {POSS-ADJ($target)}.
+hypno-success = {CAPITALIZE($target)} stares into your eyes, lost in them, lost in you.
 
-mood-effect-BeingHypnotized = It's nice to not think, to be mindless... I love to obey.
-mood-effect-LostHypnosis = It was nice to not think, I miss that.
+mood-effect-BeingHypnotized = It's so wonderful to not have to think... to be mindless... Obedience is pleasure...
+mood-effect-LostHypnosis = I miss being under trance like that... it was so much easier...
 
-hypnotized = [bold][color=red]You are hypnotized!
-    You are now completely loyal to {CAPITALIZE($entity)}.[/color][/bold]
+hypnotized = [bold][color=red]You have been HYPNOTISED by {CAPITALIZE($entity)}!
+    Warning: You are not an antag, and still cannot help antags. THIS IS NOT AN ANTAGONIST ROLE.
+    Standard server rules apply, this is just for ROLEPLAY intents
+    If this was done against your preferences, AHELP "Adminhelp", otherwise, enjoy![/color][/bold]
+
+hypnotist = [bold][color=red]You have enthralled {CAPITALIZE($entity)}!
+    Have then serve your will, and do what you desire!
+    "in accordinace to server rules, of course."[/color][/bold]
 
 stophypno = [bold][color=red]You are no longer hypnotized!
-    You are no longer loyal to {CAPITALIZE($entity)}, you are now thinking properly again.[/color][/bold]
+    You are no longer under the mental control of {CAPITALIZE($entity)}.[/color][/bold]
 
-has-mindshield = I cannot enter his mind.
+has-no-consent = I cannot enter his mind.
+
+trait-name-HypnoticGaze = Hypnotic Gaze
+trait-description-HypnoticGaze =
+    Within your eyes lies the ability to place others under your control. You are capable of placing others in a trance, regardless of
+    whether or not you possess any other notable psychic powers.

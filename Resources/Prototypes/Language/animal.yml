@@ -61,6 +61,7 @@
 
 - type: language
   id: Mouse
+  isVisibleLanguage: true
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 2
@@ -184,3 +185,16 @@
     - iss
     - ss
     - is
+
+- type: language
+  id: Penguin
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 3
+    replacement: # I'm out of ideas
+    - pen
+    - peng
+    - won
+    - wonk
+    - wong

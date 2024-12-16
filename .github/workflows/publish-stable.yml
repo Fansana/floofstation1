@@ -1,12 +1,12 @@
-name: Publish
+name: Publish stable
 
 concurrency:
   group: publish
-
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * *'
+  push:
+    branches:
+      - stable  # or the branch where merge requests are being merged into (e.g., 'master')
+
 
 jobs:
   build:
