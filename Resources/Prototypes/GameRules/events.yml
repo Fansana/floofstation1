@@ -7,6 +7,10 @@
     weight: 8
     startDelay: 30
     duration: 35
+    conditions: # Floof - at least one epi member
+    - !type:DepartmentCountCondition
+      department: Epistemics
+      range: {min: 1}
   - type: AnomalySpawnRule
 
 - type: entity
@@ -80,7 +84,7 @@
     prototype: MobSkeletonCloset
 
 - type: entity
-  parent: BaseGameRule
+  parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   id: DragonSpawn
   noSpawn: true
   components:
@@ -94,7 +98,7 @@
     prototype: SpawnPointGhostDragon
 
 - type: entity
-  parent: BaseGameRule
+  parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   id: NinjaSpawn
   noSpawn: true
   components:
@@ -168,6 +172,10 @@
     endAnnouncement: true
     duration: null #ending is handled by MeteorSwarmRule
     startDelay: 30
+    conditions: # Floof
+    - !type:DepartmentCountCondition
+      department: Engineering
+      range: {min: 2}
   - type: MeteorSwarmRule
 
 - type: entity
@@ -371,7 +379,7 @@
 
 - type: entity
   id: LoneOpsSpawn
-  parent: BaseGameRule
+  parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   noSpawn: true
   components:
   - type: StationEvent
