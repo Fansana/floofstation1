@@ -37,6 +37,8 @@
     - !type:CharacterJobRequirement
       jobs:
         - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
     - !type:CharacterPlaytimeRequirement
       tracker: JobAtmosphericTechnician
       min: 21600 # 6 hours
@@ -60,6 +62,8 @@
     - !type:CharacterJobRequirement
       jobs:
         - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
     - !type:CharacterPlaytimeRequirement
       tracker: JobAtmosphericTechnician
       min: 21600 # 6 hours

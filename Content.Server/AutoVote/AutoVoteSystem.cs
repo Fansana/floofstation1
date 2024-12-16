@@ -24,18 +24,15 @@ public sealed class AutoVoteSystem : EntitySystem
         SubscribeLocalEvent<PlayerJoinedLobbyEvent>(OnPlayerJoinedLobby);
     }
 
-    public void OnReturnedToLobby(RoundRestartCleanupEvent ev)
-    {
-        CallAutovote();
-    }
+    public void OnReturnedToLobby(RoundRestartCleanupEvent ev) => CallAutovote();
 
     public void OnPlayerJoinedLobby(PlayerJoinedLobbyEvent ev)
     {
-        if (_shouldVoteNextJoin)
-        {
-            CallAutovote();
-            _shouldVoteNextJoin = false;
-        }
+        if (!_shouldVoteNextJoin)
+            return;
+
+        CallAutovote();
+        _shouldVoteNextJoin = false;
     }
 
     private void CallAutovote()
@@ -50,8 +47,8 @@ public sealed class AutoVoteSystem : EntitySystem
         }
 
         if (_cfg.GetCVar(CCVars.MapAutoVoteEnabled))
-            _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
-        if (_cfg.GetCVar(CCVars.PresetAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Map);
+        if (_cfg.GetCVar(CCVars.PresetAutoVoteEnabled))
+            _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
     }
 }

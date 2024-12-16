@@ -61,6 +61,7 @@
 
 - type: language
   id: Mouse
+  isVisibleLanguage: true
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 2

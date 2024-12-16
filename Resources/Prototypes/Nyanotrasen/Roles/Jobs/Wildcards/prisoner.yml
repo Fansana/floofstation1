@@ -6,8 +6,13 @@
   startingGear: PrisonerGear
   alwaysUseSpawner: true
   canBeAntag: false
+#  whitelistRequired: true
   icon: "JobIconPrisoner"
   supervisors: job-supervisors-security
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Pacified
 
 - type: startingGear
   id: PrisonerGear

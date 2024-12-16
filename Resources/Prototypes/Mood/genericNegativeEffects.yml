@@ -38,7 +38,7 @@
 
 - type: moodEffect
   id: TraitSaturnine
-  moodChange: -20
+  moodChange: -12 # Floof - nerfed
 
 - type: moodEffect
   id: Dead
