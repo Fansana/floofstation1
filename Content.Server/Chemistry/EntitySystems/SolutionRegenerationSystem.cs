@@ -2,6 +2,7 @@ using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Clothing.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Timing;
 
@@ -20,6 +21,9 @@ public sealed class SolutionRegenerationSystem : EntitySystem
         while (query.MoveNext(out var uid, out var regen, out var manager))
         {
             if (_timing.CurTime < regen.NextRegenTime)
+                continue;
+
+            if (regen.NeedsEquipped && TryComp(uid, out ClothingComponent? clothing) && clothing.InSlot == null)
                 continue;
 
             // timer ignores if its full, it's just a fixed cycle
