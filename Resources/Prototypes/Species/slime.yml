@@ -46,6 +46,9 @@
     Snout:
       points: 1
       required: false
+    Head:
+      points: 2
+      required: false
     HeadTop:
       points: 3
       required: false
