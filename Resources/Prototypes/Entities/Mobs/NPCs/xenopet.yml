@@ -405,11 +405,15 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
       color: "#30ce00"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#30ce00"
   - type: SegmentedEntity
     numberOfSegments: 3
-    staticOffset: 0.3
-    taperOffset: 5
+    initialRadius: 0.25
+    staticScale: 0.9
+    staticOffset: 0.2
+    taperOffset: 30
     texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
-  - type: RotationVisuals
-    horizontalRotation: 45
   - type: PortalExempt

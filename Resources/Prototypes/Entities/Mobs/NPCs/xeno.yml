@@ -87,6 +87,7 @@
     damage:
       groups:
         Brute: 6
+  - type: Rotatable
   - type: DamageStateVisuals
     rotate: true
     states:
