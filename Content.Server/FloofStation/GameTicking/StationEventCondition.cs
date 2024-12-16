@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Server.GameTicking;
 using Content.Server.Mind;
 using Content.Server.StationEvents;
@@ -10,7 +11,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Serilog;
 
 
 namespace Content.Server.FloofStation.GameTicking;
@@ -53,15 +53,15 @@ public abstract partial class StationEventCondition
         [Dependency] public IPlayerManager PlayerManager = default!;
 
         /// <summary>
-        ///     List of all players along with their jobs. The dept field may have the default value if it could not be determined.
+        ///     The list of all players along with their jobs.
         /// </summary>
-        public List<(ICommonSession session, EntityUid uid, ProtoId<JobPrototype> job, ProtoId<DepartmentPrototype> dept)> Players = new();
+        public List<(ICommonSession session, EntityUid uid, ProtoId<JobPrototype> job)> Players = new();
         public Dictionary<ProtoId<JobPrototype>, int> JobCounts = new();
         public Dictionary<ProtoId<DepartmentPrototype>, int> DeptCounts = new();
 
         // Lookups
         private readonly Dictionary<string, ProtoId<JobPrototype>> _jobTitleToPrototype = new();
-        private readonly Dictionary<ProtoId<JobPrototype>, ProtoId<DepartmentPrototype>> _jobToDept = new();
+        private readonly Dictionary<ProtoId<JobPrototype>, List<ProtoId<DepartmentPrototype>>> _jobToDepts = new();
 
         /// <summary>
         ///     Called once after the instantiation of the class.
@@ -74,20 +74,18 @@ public abstract partial class StationEventCondition
             IdCard = EntMan.System<SharedIdCardSystem>();
             Minds = EntMan.System<MindSystem>();
 
-            // Build the lookups - SharedJobSystem contains methods that iterate over all of those lists each time,
+            // Build the inverse lookups - SharedJobSystem contains methods that iterate over all of those lists each time,
             // Resulting in an O(n^2 * m) performance cost for each update() call.
             foreach (var job in ProtoMan.EnumeratePrototypes<JobPrototype>())
             {
                 _jobTitleToPrototype[job.LocalizedName] = job.ID;
 
-                foreach (var dept in ProtoMan.EnumeratePrototypes<DepartmentPrototype>())
-                {
-                    if (!dept.Primary || !dept.Roles.Contains(job.ID))
-                        continue;
+                var depts = ProtoMan.EnumeratePrototypes<DepartmentPrototype>()
+                    .Where(it => it.Roles.Contains(job.ID))
+                    .Select(it => new ProtoId<DepartmentPrototype>(it.ID))
+                    .ToList();
 
-                    _jobToDept[job.ID] = dept.ID;
-                    break;
-                }
+                _jobToDepts[job.ID] = depts;
             }
         }
 
@@ -124,11 +122,15 @@ public abstract partial class StationEventCondition
                 if (job == default)
                     continue;
 
-                var dept = _jobToDept.GetValueOrDefault(job);
-
-                Players.Add((session, player, job, dept));
+                // Update the info
+                Players.Add((session, player, job));
                 JobCounts[job] = JobCounts.GetValueOrDefault(job, 0) + 1;
-                DeptCounts[dept] = DeptCounts.GetValueOrDefault(dept, 0) + 1;
+                // Increment the number  of players in each dept this job belongs to
+                if (_jobToDepts.TryGetValue(job, out var depts))
+                {
+                    foreach (var dept in depts)
+                        DeptCounts[dept] = DeptCounts.GetValueOrDefault(dept, 0) + 1;
+                }
             }
 
             #if DEBUG
