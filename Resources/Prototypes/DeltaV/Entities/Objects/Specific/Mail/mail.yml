@@ -1584,9 +1584,6 @@
       - id: MobMouse2
         orGroup: Critter
         prob: 0.33
-      - id: MobMouseCancer
-        orGroup: Critter
-        prob: 0.01 # Rare
 
 - type: entity
   noSpawn: true
