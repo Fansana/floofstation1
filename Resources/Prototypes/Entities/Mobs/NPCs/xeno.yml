@@ -79,8 +79,8 @@
     bloodReagent: FluorosulfuricAcid
     bloodMaxVolume: 650
   - type: MeleeWeapon
-    altDisarm: false
-    angle: 0
+    altDisarm: true
+    angle: 30
     soundHit:
      collection: AlienClaw
     animation: WeaponArcBite
@@ -134,6 +134,7 @@
   - type: InnatePsionicPowers
     powersToAdd:
       - TelepathyPower
+  - type: MouseRotator
   - type: LanguageKnowledge
     speaks:
     - Xeno

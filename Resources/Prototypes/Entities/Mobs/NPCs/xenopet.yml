@@ -399,12 +399,17 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: /Textures/Floof/Mobs/Animals/rainlizard.rsi
-    scale: 1,1
+    scale: 0.6,0.6
     offset: 0,0
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
+      color: "#30ce00"
   - type: SegmentedEntity
-    numberOfSegments: 2
+    numberOfSegments: 3
+    staticOffset: 0.3
+    taperOffset: 5
     texturePath: /Textures/Floof/Mobs/Animals/rainlizard.rsi/segment.png
+  - type: RotationVisuals
+    horizontalRotation: 45
   - type: PortalExempt
