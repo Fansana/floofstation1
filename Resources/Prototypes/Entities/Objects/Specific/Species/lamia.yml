@@ -20,12 +20,12 @@
         shape:
           !type:PhysShapeCircle
           radius: 0.25
-        density: 80
+        density: 1
         restitution: 0.0
         mask:
-        - MobMask
+        - FlyingMobMask
         layer:
-        - MobLayer
+        - FlyingMobLayer
   - type: Transform
     anchored: false
   - type: Tag
