@@ -48,12 +48,6 @@
   - type: PseudoItem
   - type: Inventory
     speciesId: scugcat
-    displacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
-            state: jumpsuit
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -65,9 +59,3 @@
     species: Scugcat
   - type: Inventory
     speciesId: scugcat
-    displacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
-            state: jumpsuit
