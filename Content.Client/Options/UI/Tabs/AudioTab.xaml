@@ -121,6 +121,7 @@
                     Text="{Loc 'ui-options-announcer-disable-multiple-sounds'}"
                     ToolTip="{Loc 'ui-options-announcer-disable-multiple-sounds-tooltip'}" />
                 <CheckBox Name="AdminSoundsCheckBox" Text="{Loc 'ui-options-admin-sounds'}" />
+                <CheckBox Name="VoreSoundCheckBox" Text="{Loc 'ui-options-vore-sounds'}" />
             </BoxContainer>
         </BoxContainer>
         <controls:StripeBack HasBottomEdge="False" HasMargins="False">

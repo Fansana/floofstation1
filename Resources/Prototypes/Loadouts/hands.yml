@@ -166,3 +166,13 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutGloves2
 
+- type: loadout
+  id: LoadoutGoldRing
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsGoldRing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves2

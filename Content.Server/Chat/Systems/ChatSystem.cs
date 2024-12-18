@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
+using Content.Server.Atmos.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Language;
@@ -36,6 +37,8 @@ using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Server.Shuttles.Components;
+using Content.Shared.Actions;
+using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Dynamics.Joints;
 
@@ -69,10 +72,12 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
     [Dependency] private readonly LanguageSystem _language = default!;
     [Dependency] private readonly TelepathicChatSystem _telepath = default!;
+    [Dependency] private readonly IMapManager _mapManager = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    public const float InSpaceRange = .3f; // how far speech travels in space
     public const string DefaultAnnouncementSound = "/Audio/Announcements/announce.ogg";
     public const float DefaultObfuscationFactor = 0.2f; // Percentage of symbols in a whispered message that can be seen even by "far" listeners
     public readonly Color DefaultSpeakColor = Color.White;
@@ -747,18 +752,53 @@ public sealed partial class ChatSystem : SharedChatSystem
         return initialResult;
     }
 
+    public bool isSoundTransmittable(MapId mapId)
+    {
+        try
+        {
+            var map = _mapManager.GetMapEntityIdOrThrow(mapId);
+            if (!map.Valid)
+                return false;
+            if (!EntityManager.TryGetComponent<MapAtmosphereComponent>(map, out var _))
+                return false;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
+
+        return true;
+    }
     /// <summary>
     ///     Sends a chat message to the given players in range of the source entity.
     /// </summary>
     private void SendInVoiceRange(ChatChannel channel, string name, string message, string wrappedMessage, string obfuscated, string obfuscatedWrappedMessage, EntityUid source, ChatTransmitRange range, NetUserId? author = null, LanguagePrototype? languageOverride = null)
     {
         var language = languageOverride ?? _language.GetLanguage(source);
-        foreach (var (session, data) in GetRecipients(source, Transform(source).GridUid == null ? 0.3f : VoiceRange))
+        foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
-            if (session.AttachedEntity != null
-                && Transform(session.AttachedEntity.Value).GridUid != Transform(source).GridUid
-                && !CheckAttachedGrids(source, session.AttachedEntity.Value))
-                continue;
+            if (language.SpeechOverride.RequireSpeech && channel != ChatChannel.LOOC && channel != ChatChannel.Emotes )
+            {
+                var sourceGrid = Transform(source).GridUid;
+                float transmitRange = VoiceRange;
+                if (sourceGrid == null && !isSoundTransmittable(Transform(source).MapID))
+                    transmitRange = InSpaceRange;
+
+                if (session.AttachedEntity != null
+                    && Transform(session.AttachedEntity.Value).GridUid == null
+                    && !isSoundTransmittable(Transform(session.AttachedEntity.Value).MapID))
+                    transmitRange = InSpaceRange;
+
+                if (session.AttachedEntity != null
+                    && Transform(session.AttachedEntity.Value).GridUid != sourceGrid
+                    && !isSoundTransmittable(Transform(session.AttachedEntity.Value).MapID)
+                    && !CheckAttachedGrids(source, session.AttachedEntity.Value))
+                    transmitRange = InSpaceRange;
+
+                if (session.AttachedEntity != null && Transform(source).Coordinates.TryDistance(EntityManager, Transform(session.AttachedEntity.Value).Coordinates, out var distance) && distance > transmitRange)
+                    continue;
+
+            }
 
             var entRange = MessageRangeCheck(session, data, range);
             if (entRange == MessageRangeCheckResult.Disallowed)
@@ -923,6 +963,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         var color = DefaultSpeakColor;
         if (language.SpeechOverride.Color is { } colorOverride)
             color = Color.InterpolateBetween(color, colorOverride, colorOverride.A);
+        var languageDisplay = language.IsVisibleLanguage
+            ? Loc.GetString("chat-manager-language-prefix", ("language", language.ChatName))
+            : "";
 
         return Loc.GetString(wrapId,
             ("color", color),
@@ -930,7 +973,8 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("verb", Loc.GetString(verbId)),
             ("fontType", language.SpeechOverride.FontId ?? speech.FontId),
             ("fontSize", language.SpeechOverride.FontSize ?? speech.FontSize),
-            ("message", message));
+            ("message", message),
+            ("language", languageDisplay));
     }
 
     /// <summary>

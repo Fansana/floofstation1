@@ -334,7 +334,7 @@
     - WeaponSniperMosinRubber
 
 - type: loadout # Floof
-  id: LoadoutServiceBartenderArgentiNonlethal
+  id: LoadoutServiceBartenderBrassKnuckles
   category: JobsServiceBartender
   cost: 0
   exclusive: true
@@ -344,6 +344,23 @@
     - !type:CharacterJobRequirement
       jobs:
         - Bartender
+    - !type:CharacterSpeciesRequirement
+      species:
+       - Oni
+  items:
+    - WeaponBrassKnuckles
+
+- type: loadout
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBartenderWeapon
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  id: LoadoutServiceBartenderArgentiNonlethal
   items:
     - WeaponRevolverArgentiNonlethal
 

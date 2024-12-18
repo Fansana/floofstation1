@@ -66,6 +66,9 @@
     - !type:CharacterJobRequirement
       jobs:
         - SecurityOfficer
+        - Detective
+        - Warden
+        - HeadOfSecurity
     - !type:CharacterPlaytimeRequirement
       tracker: JobWarden
       min: 21600 # 6 hours
@@ -92,6 +95,9 @@
     - !type:CharacterJobRequirement
       jobs:
         - SecurityOfficer
+        - Detective
+        - Warden
+        - HeadOfSecurity
     - !type:CharacterPlaytimeRequirement
       tracker: JobWarden
       min: 21600 # 6 hours

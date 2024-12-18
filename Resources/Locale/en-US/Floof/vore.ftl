@@ -31,3 +31,5 @@ vore-digested-prey-7 = [color=red]{CAPITALIZE($entity)} belly kneads on every fi
 vore-digested-prey-8 = [color=red]{CAPITALIZE($entity)} belly churns you down into a hot slush. Your nutrient-rich remains course through their digestive track with a series of long, wet glorps.[/color]
 
 vore-examine = Their belly is larger, you can see {$count} shapes.
+
+ui-options-vore-sounds = Vore Sounds

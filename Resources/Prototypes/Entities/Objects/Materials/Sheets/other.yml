@@ -12,6 +12,7 @@
   - type: Tag
     tags:
     - Sheet
+    - NoPaint
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -110,6 +111,7 @@
   - type: Tag
     tags:
     - Sheet
+    - NoPaint
   - type: UserInterface
     interfaces:
       enum.RadialSelectorUiKey.Key:
@@ -145,6 +147,7 @@
     tags:
     - Plastic
     - Sheet
+    - NoPaint
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -210,7 +213,7 @@
     count: 1
 
 - type: entity
-  parent: [SheetOtherBase, FoodBase]
+  parent: [SheetOtherBase] # Floof Uranium not more munchable
   id: SheetUranium
   name: uranium
   suffix: Full
@@ -234,17 +237,6 @@
   - type: Appearance
   - type: Item
     heldPrefix: uranium
-  - type: Extractable
-    grindableSolutionName: food
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: Uranium
-          Quantity: 8
-        - ReagentId: Radium
-          Quantity: 2
-        canReact: false
   - type: UserInterface
     interfaces:
       enum.RadialSelectorUiKey.Key:
