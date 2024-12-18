@@ -1,0 +1,61 @@
+- type: entity
+  save: false
+  name: Urist McScug
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobScugCat
+  abstract: true
+  components:
+  - type: FootPrints
+  - type: Carriable
+  - type: Hunger
+  - type: Thirst
+  - type: LanguageKnowledge
+    speaks:
+      - TauCetiBasic
+      - ScugSign
+    understands:
+      - TauCetiBasic
+      - ScugSign
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 120
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: HumanoidAppearance
+    species: Scugcat
+  - type: Icon
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: full
+  - type: Body
+    prototype: Scugcat
+    requiredLegs: 1
+  - type: Speech
+    speechSounds: Wawa
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 30
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 5 # NOM - Do NOT mess with skugs.
+  - type: PseudoItem
+  - type: Inventory
+    speciesId: scugcat
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobScugcatDummy
+  noSpawn: true
+  description: A dummy scugcat meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Scugcat
+  - type: Inventory
+    speciesId: scugcat
