@@ -1,0 +1,137 @@
+- type: species
+  id: Scugcat
+  name: species-name-scugcat
+  roundStart: true
+  prototype: MobScugcat
+  sprites: MobScugcatSprites
+  defaultSkinTone: "#FFFFFF"
+  markingLimits: MobScugcatMarkingLimits
+  dollPrototype: MobScugcatDummy
+  skinColoration: Hues
+  minHeight: 1
+  defaultHeight: 1
+  maxHeight: 1.5
+  minWidth: 1
+  defaultWidth: 1
+  maxWidth: 1.5
+
+
+- type: speciesBaseSprites
+  id: MobScugcatSprites
+  sprites:
+    Head: MobScugcatHead
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobScugcatTorso
+    Eyes: MobScugcatEyes
+    LArm: MobScugcatLArm
+    RArm: MobScugcatRArm
+    LHand: MobScugcatLHand
+    RHand: MobScugcatRHand
+    LLeg: MobScugcatLLeg
+    RLeg: MobScugcatRLeg
+    LFoot: MobScugcatLFoot
+    RFoot: MobScugcatRFoot
+    Tail: MobHumanoidAnyMarking
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+
+- type: markingPoints
+  id: MobScugcatMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ ScugcatTail ]
+
+- type: humanoidBaseSprite
+  id: MobScugcatEyes
+  baseSprite:
+    sprite: Floof/Mobs/Customization/eyes.rsi
+    state: scugcat
+
+- type: humanoidBaseSprite
+  id: MobScugcatHead
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobScugcatHeadMale
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobScugcatHeadFemale
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobScugcatTorso
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobScugcatTorsoMale
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobScugcatTorsoFemale
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobScugcatLLeg
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: legs
+
+- type: humanoidBaseSprite
+  id: MobScugcatLArm
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: legs
+
+- type: humanoidBaseSprite
+  id: MobScugcatLHand
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: legs
+
+- type: humanoidBaseSprite
+  id: MobScugcatLFoot
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: legs
+
+- type: humanoidBaseSprite
+  id: MobScugcatRLeg
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: legs
+
+- type: humanoidBaseSprite
+  id: MobScugcatRArm
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: arms
+
+- type: humanoidBaseSprite
+  id: MobScugcatRHand
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: arms
+
+- type: humanoidBaseSprite
+  id: MobScugcatRFoot
+  baseSprite:
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: arms

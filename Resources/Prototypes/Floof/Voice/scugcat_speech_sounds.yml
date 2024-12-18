@@ -1,0 +1,8 @@
+- type: speechSounds
+  id: Wawa
+  saySound:
+    path: /Audio/Animals/wawa_statement.wav
+  askSound:
+    path: /Audio/Animals/wawa_question.wav
+  exclaimSound:
+    path: /Audio/Animals/wawa_exclaim.wav

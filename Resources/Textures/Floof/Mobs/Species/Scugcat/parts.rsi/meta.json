@@ -1,0 +1,30 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "THIS NEED TO BE CHANGED",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "full"
+        },
+        {
+            "name": "head",
+            "directions": 4
+        },
+        {
+            "name": "torso",
+            "directions": 4
+        },
+        {
+            "name": "arms",
+            "directions": 4
+        },
+        {
+            "name": "legs",
+            "directions": 4
+        }
+    ]
+}

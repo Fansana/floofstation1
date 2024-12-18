@@ -1,0 +1,9 @@
+- type: marking
+  id: ScugcatTail
+  bodyPart: Chest
+  markingCategory: Tail
+  speciesRestriction: [Scugcat]
+  forcedColoring: true
+  sprites:
+  - sprite: Floof/Mobs/Customization/scugcat_parts.rsi
+    state: tail

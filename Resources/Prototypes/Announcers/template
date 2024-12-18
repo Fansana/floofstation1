@@ -132,9 +132,6 @@
     ## NyanoTrasen
     - id: noosphericStorm # A large amount of glimmer has joined the station and made people psionic
       path: events/noospheric_storm.ogg
-    ## Floofstation
-    - id: scugCatSpawn # Several scugs have appeared in a random place
-      path: comms/attention.ogg
 
     # Shuttle
     - id: shuttleCalled # The shuttle is on its way
