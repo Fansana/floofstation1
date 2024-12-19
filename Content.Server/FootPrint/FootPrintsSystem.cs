@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server.Atmos.Components;
+using Content.Server.Gravity;
 using Content.Shared.Inventory;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -9,6 +10,7 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Forensics;
 using Robust.Shared.Map;
+using Robust.Shared.Physics.Components;
 using Robust.Shared.Random;
 
 namespace Content.Server.FootPrint;
@@ -22,7 +24,7 @@ public sealed class FootPrintsSystem : EntitySystem
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!; // Floof
 
     private EntityQuery<TransformComponent> _transformQuery;
     private EntityQuery<MobThresholdsComponent> _mobThresholdQuery;
@@ -49,10 +51,12 @@ public sealed class FootPrintsSystem : EntitySystem
 
     private void OnMove(EntityUid uid, FootPrintsComponent component, ref MoveEvent args)
     {
-        if (component.PrintsColor.A <= .2f) // avoid creating footsteps that are invisible
+        // Floof: clear stored DNAs if footprints are now invisible
+        if (component.PrintsColor.A <= .2f)
             component.DNAs.Clear();
 
-        if (component.PrintsColor.A <= .2f
+        if (component.PrintsColor.A <= .2f // avoid creating footsteps that are invisible
+            || TryComp<PhysicsComponent>(uid, out var physics) && physics.BodyStatus != BodyStatus.OnGround // Floof: do not create footprints if the entity is flying
             || !_transformQuery.TryComp(uid, out var transform)
             || !_mobThresholdQuery.TryComp(uid, out var mobThreshHolds)
             || !_map.TryFindGridAt(_transform.GetMapCoordinates((uid, transform)), out var gridUid, out _))
@@ -66,9 +70,10 @@ public sealed class FootPrintsSystem : EntitySystem
         if (!(distance > stepSize))
             return;
 
+        // Floof section
         var entities = _lookup.GetEntitiesIntersecting(uid, LookupFlags.All);
         foreach (var entityUid in entities.Where(entityUid => HasComp<PuddleFootPrintsComponent>(entityUid)))
-            return; //are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
+            return; // are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
 
         component.RightStep = !component.RightStep;
 
@@ -76,7 +81,8 @@ public sealed class FootPrintsSystem : EntitySystem
         var footPrintComponent = EnsureComp<FootPrintComponent>(entity);
 
         var forensics = EntityManager.EnsureComponent<ForensicsComponent>(entity);
-        forensics.DNAs.UnionWith(component.DNAs);
+        if (TryComp<ForensicsComponent>(uid, out var ownerForensics)) // Floof edit: transfer owner DNA into the footsteps
+            forensics.DNAs.UnionWith(ownerForensics.DNAs);
 
         footPrintComponent.PrintOwner = uid;
         Dirty(entity, footPrintComponent);
