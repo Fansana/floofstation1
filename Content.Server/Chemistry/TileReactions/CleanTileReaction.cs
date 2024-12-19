@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reaction;
@@ -7,6 +8,9 @@ using Content.Shared.Fluids.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using System.Linq;
+using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.FootPrint;
+
 
 namespace Content.Server.Chemistry.TileReactions;
 
@@ -42,11 +46,9 @@ public sealed partial class CleanTileReaction : ITileReaction
 
         foreach (var entity in entities)
         {
-            if (!puddleQuery.TryGetComponent(entity, out var puddle) ||
-                !solutionContainerSystem.TryGetSolution(entity, puddle.SolutionName, out var puddleSolution, out _))
-            {
+            // Floof - separated this into a separate function to incroporate cleaning footprints
+            if (!TryGetCleanableSolution(entity, entMan, solutionContainerSystem, out var puddleSolution))
                 continue;
-            }
 
             var purgeable = solutionContainerSystem.SplitSolutionWithout(puddleSolution.Value, purgeAmount, ReplacementReagent, reagent.ID);
 
@@ -59,5 +61,30 @@ public sealed partial class CleanTileReaction : ITileReaction
         }
 
         return (reactVolume / CleanAmountMultiplier - purgeAmount) * CleanAmountMultiplier;
+    }
+
+    // Floof
+    private bool TryGetCleanableSolution(
+        EntityUid entity,
+        IEntityManager entMan,
+        SharedSolutionContainerSystem solutionContainerSystem,
+        [NotNullWhen(true)] out Entity<SolutionComponent>? solution)
+    {
+        solution = default;
+        if (entMan.TryGetComponent<PuddleComponent>(entity, out var puddle) &&
+            solutionContainerSystem.TryGetSolution(entity, puddle.SolutionName, out var puddleSolution, out _))
+        {
+            solution = puddleSolution;
+            return true;
+        }
+
+        if (entMan.TryGetComponent<FootPrintComponent>(entity, out var footPrint) &&
+            solutionContainerSystem.TryGetSolution(entity, footPrint.SolutionName, out var footPrintSolution, out _))
+        {
+            solution = footPrintSolution;
+            return true;
+        }
+
+        return false;
     }
 }

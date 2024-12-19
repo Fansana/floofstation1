@@ -86,6 +86,7 @@ public sealed partial class FootPrintsComponent : Component
     /// </summary>
     public float ColorInterpolationFactor = 0.2f;
 
+    // Floof
     [DataField]
     public HashSet<string> DNAs = new();
 }
