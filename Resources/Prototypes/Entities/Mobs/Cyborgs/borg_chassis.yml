@@ -61,7 +61,7 @@
     access: [["Security"], ["Armory"], ["Command"]]
   - type: BorgTransponder
     sprite:
-      sprite: Mobs/Silicon/chassis.rsi
+      sprite: Mobs/Silicon/quad.rsi
       state: quadsprite
     name: cyborg
   - type: Construction
