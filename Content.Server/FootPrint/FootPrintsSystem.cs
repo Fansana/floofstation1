@@ -52,10 +52,10 @@ public sealed class FootPrintsSystem : EntitySystem
     private void OnMove(EntityUid uid, FootPrintsComponent component, ref MoveEvent args)
     {
         // Floof: clear stored DNAs if footprints are now invisible
-        if (component.PrintsColor.A <= .2f)
+        if (component.PrintsColor.A <= .3f)
             component.DNAs.Clear();
 
-        if (component.PrintsColor.A <= .2f // avoid creating footsteps that are invisible
+        if (component.PrintsColor.A <= .3f // avoid creating footsteps that are invisible
             || TryComp<PhysicsComponent>(uid, out var physics) && physics.BodyStatus != BodyStatus.OnGround // Floof: do not create footprints if the entity is flying
             || !_transformQuery.TryComp(uid, out var transform)
             || !_mobThresholdQuery.TryComp(uid, out var mobThreshHolds)
