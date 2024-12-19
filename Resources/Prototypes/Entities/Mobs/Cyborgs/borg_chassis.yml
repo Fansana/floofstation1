@@ -3,7 +3,6 @@
   parent: BaseBorgChassisNT
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: robot
     - state: robot_e_r
@@ -75,7 +74,6 @@
   name: salvage cyborg
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: miner
       map: ["movement"]
@@ -132,7 +130,6 @@
   name: engineer cyborg
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: engineer
     - state: engineer_e_r
@@ -183,7 +180,6 @@
   name: janitor cyborg
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: janitor
       map: ["movement"]
@@ -242,7 +238,6 @@
   name: medical cyborg
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: medical
       map: ["movement"]
@@ -308,7 +303,6 @@
   name: service cyborg
   components:
   - type: Sprite
-    scale: 0.5, 0.5
     layers:
     - state: service
     - state: service_e_r
@@ -358,7 +352,6 @@
   description: A lean, mean killing machine with access to a variety of deadly modules.
   components:
     - type: Sprite
-      scale: 0.5, 0.5
       layers:
         - state: synd_sec
         - state: synd_sec_e
@@ -390,7 +383,6 @@
   description: A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities.
   components:
     - type: Sprite
-      scale: 0.5, 0.5
       layers:
         - state: synd_medical
         - state: synd_medical_e
@@ -420,7 +412,6 @@
   description: A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a Nanotrasen cyborg.
   components:
     - type: Sprite
-      scale: 0.5, 0.5
       layers:
         - state: synd_engi
         - state: synd_engi_e
