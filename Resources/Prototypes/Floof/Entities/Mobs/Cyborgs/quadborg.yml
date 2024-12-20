@@ -4,7 +4,7 @@
   parent: BaseBorgChassisNT
   components:
   - type: Sprite
-    sprite: Mobs/Silicon/quad.rsi
+    sprite: Floof/Mobs/Silicon/quad.rsi
     scale: 0.6, 0.6
     layers:
     - state: quadsprite
@@ -29,7 +29,7 @@
     access: [["Security"], ["Armory"], ["Command"]]
   - type: BorgTransponder
     sprite:
-      sprite: Mobs/Silicon/quad.rsi
+      sprite: Floof/Mobs/Silicon/quad.rsi
       state: quadsprite
     name: cyborg
   - type: Construction
