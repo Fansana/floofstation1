@@ -4,7 +4,7 @@
   parent: BaseBorgChassisNT
   components:
   - type: Sprite
-    sprite: Floof/Mobs/Silicon/quad.rsi
+    sprite: Mobs/Silicon/quad.rsi
     scale: 0.6, 0.6
     layers:
     - state: quadsprite
@@ -18,7 +18,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 6
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -29,6 +29,10 @@
     access: [["Security"], ["Armory"], ["Command"]]
   - type: BorgTransponder
     sprite:
-      sprite: Floof/Mobs/Silicon/quad.rsi
+      sprite: Mobs/Silicon/quad.rsi
       state: quadsprite
     name: cyborg
+  - type: Construction
+    node: cyborg
+  - type: Speech
+    speechVerb: Robotic
