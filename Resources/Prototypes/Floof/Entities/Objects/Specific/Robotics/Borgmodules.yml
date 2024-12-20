@@ -20,7 +20,6 @@
   - type: ItemBorgModule
     items:
     - WeaponBorgDisabler
-    - WeaponborgTaser
     - BorgStunbaton
 
 - type: entity
@@ -35,6 +34,6 @@
     - state: icon-kill
   - type: ItemBorgModule
     items:
-    - WeaponAntiqueLaser
+    - WeaponAdvancedLaser
     - WeaponborgPistolMk58
     - CombatKnife
