@@ -1,0 +1,40 @@
+- type: entity
+  id: BaseBorgModuleSecurity
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSecurity
+
+- type: entity
+  id: BorgModuleStun
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: Disabler cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-stun
+  - type: ItemBorgModule
+    items:
+    - WeaponBorgDisabler
+    - WeaponborgTaser
+    - BorgStunbaton
+
+- type: entity
+  id: BorgModuleKill
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: combat cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-kill
+  - type: ItemBorgModule
+    items:
+    - WeaponAntiqueLaser
+    - WeaponborgPistolMk58
+    - CombatKnife
