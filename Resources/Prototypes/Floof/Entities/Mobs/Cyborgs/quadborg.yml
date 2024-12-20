@@ -32,7 +32,3 @@
       sprite: Floof/Mobs/Silicon/quad.rsi
       state: quadsprite
     name: cyborg
-  - type: Construction
-    node: cyborg
-  - type: Speech
-    speechVerb: Robotic
