@@ -17,7 +17,6 @@
     icon:
       sprite: DeltaV/Icons/cri.rsi
       state: cri
-  - type: CrimeAssistCartridge
 
 - type: entity
   parent: BaseItem
