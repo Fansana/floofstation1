@@ -1712,7 +1712,7 @@
   components:
   - type: MachineBoard
     prototype: StationAnchor
-    stackRequirements:
+    requirements:
       Capacitor: 4
       MatterBin: 3
       Steel: 10
