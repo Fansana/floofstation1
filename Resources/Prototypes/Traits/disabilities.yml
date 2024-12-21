@@ -73,6 +73,26 @@
           sounds:
             collection: Paracusia
 
+# Floofstation-specific trait, for now. EE will probably port it over later, so we keep it here.
+- type: trait
+  id: Unrevivable
+  category: Physical
+  points: 6
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg # Borgs cannot be revived and don't have the "dead" state, they just gib
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC # IPCs use their own system
+  functions:
+    - !type:TraitAddComponent
+      components:
+      - type: Unrevivable
+
 - type: trait
   id: Muted
   category: Mental
