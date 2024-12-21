@@ -43,6 +43,9 @@ trait-description-Hemophilia =
 trait-name-Paracusia = Paracusia
 trait-description-Paracusia = You hear sounds that aren't really there
 
+trait-name-Unrevivable = Unrevivable
+trait-description-Unrevivable = You have a unique body composition that prevents you from being revived by normal means.
+
 trait-name-PirateAccent = Pirate Accent
 trait-description-PirateAccent = You can't stop speaking like a pirate!
 
@@ -321,7 +324,7 @@ trait-description-AddictionNicotine =
 trait-name-AnimalFriend = Animal Friend
 trait-description-AnimalFriend =
     You have a way with animals. You will never be attacked by animals, unless you attack them first.
-    
+
 trait-name-Liar = Pathological liar
 trait-description-Liar = You can hardly bring yourself to tell the truth. Sometimes you lie anyway.
 
