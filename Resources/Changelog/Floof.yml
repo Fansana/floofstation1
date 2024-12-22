@@ -1925,3 +1925,12 @@ Entries:
   id: 249
   time: '2024-12-22T07:12:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/424
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Changed Glacier based on community feedback/requests
+    - type: Tweak
+      message: Changed Asterisk based on community feedback/requests
+  id: 250
+  time: '2024-12-22T23:57:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/427
