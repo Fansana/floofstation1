@@ -1916,3 +1916,12 @@ Entries:
   id: 248
   time: '2024-12-22T07:11:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/425
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The SecWatch PDA app is back, once again allowing security members to
+        view the stations crime records in real time.
+  id: 249
+  time: '2024-12-22T07:12:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/424
