@@ -1,0 +1,8 @@
+- type: entity
+  id: HeadScugcat
+  name: "scugcat head"
+  parent: HeadHuman
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Species/Scugcat/parts.rsi
+    state: "head"
