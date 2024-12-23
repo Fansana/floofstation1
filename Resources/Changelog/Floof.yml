@@ -1934,3 +1934,10 @@ Entries:
   id: 250
   time: '2024-12-22T23:57:46.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/427
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Vulpkanins and other species should now properly leave footprints.
+  id: 251
+  time: '2024-12-23T07:51:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/426
