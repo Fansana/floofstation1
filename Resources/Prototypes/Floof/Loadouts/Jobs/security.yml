@@ -69,7 +69,7 @@
 - type: loadout
   id: LoadoutClothingHandsDetectiveWarmers
   category: JobsSecurity
-  cost: 1
+  cost: 2
   exclusive: true
   items:
   - ClothingHandsDetectiveWarmers
@@ -81,7 +81,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksDetective
   category: JobsSecurity
-  cost: 1
+  cost: 2
   exclusive: true
   items:
   - ClothingUnderSocksDetective
@@ -98,7 +98,7 @@
 - type: loadout
   id: LoadoutClothingUniformDetectiveThong
   category: JobsSecurity
-  cost: 1
+  cost: 2
   exclusive: true
   items:
   - ClothingUniformDetectiveThong
