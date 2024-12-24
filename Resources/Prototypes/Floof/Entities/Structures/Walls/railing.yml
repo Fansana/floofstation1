@@ -3,13 +3,6 @@
   id: BaseRailing
   abstract: true
   components:
-  - type: Sprite
-    drawdepth: WallTops
-    sprite: Floof/Structures/Walls/railing.rsi
-    state: side
-  - type: Icon
-    sprite: Floof/Structures/Walls/railing.rsi
-    state: side
   - type: Physics
     bodyType: Static
   - type: InteractionOutline
@@ -50,15 +43,15 @@
   parent: BaseRailing
   id: RailingWood
   name: wooden railing
-  description: Wooden railing meant to hold onto.
+  description: A wooden railing designed for grip and support along the stairs.
   components:
   - type: Sprite
     drawdepth: WallTops
     sprite: Floof/Structures/Walls/railing.rsi
-    state: side
+    state: wood_side
   - type: Icon
     sprite: Floof/Structures/Walls/railing.rsi
-    state: side
+    state: wood_side
   - type: Fixtures
     fixtures:
       fix1:
@@ -77,15 +70,15 @@
   parent: BaseRailing
   id: RailingCornerWood
   name: wooden railing
-  description: Wooden railing meant to hold onto.
+  description: A wooden railing designed for grip and support along the stairs.
   components:
   - type: Sprite
     drawdepth: WallTops
     sprite: Floof/Structures/Walls/railing.rsi
-    state: corner
+    state: wood_corner
   - type: Icon
     sprite: Floof/Structures/Walls/railing.rsi
-    state: corner
+    state: wood_corner
   - type: Fixtures
     fixtures:
       fix1:
@@ -112,15 +105,15 @@
   parent: BaseRailing
   id: RailingCornerSmallWood
   name: wooden railing
-  description: Wooden railing meant to hold onto.
+  description: A wooden railing designed for grip and support along the stairs.
   components:
   - type: Sprite
     drawdepth: WallTops
     sprite: Floof/Structures/Walls/railing.rsi
-    state: corner_small
+    state: wood_corner_small
   - type: Icon
     sprite: Floof/Structures/Walls/railing.rsi
-    state: corner_small
+    state: wood_corner_small
   - type: Fixtures
     fixtures:
       fix1:
@@ -137,15 +130,15 @@
   parent: BaseRailing
   id: RailingRoundWood
   name: wooden railing
-  description: Wooden railing meant to hold onto.
+  description: A wooden railing designed for grip and support along the stairs.
   components:
   - type: Sprite
     drawdepth: WallTops
     sprite: Floof/Structures/Walls/railing.rsi
-    state: round
+    state: wood_round
   - type: Icon
     sprite: Floof/Structures/Walls/railing.rsi
-    state: round
+    state: wood_round
   - type: Fixtures
     fixtures:
       fix1:
