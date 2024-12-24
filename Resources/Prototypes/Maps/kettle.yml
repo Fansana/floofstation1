@@ -1,0 +1,75 @@
+- type: gameMap
+  id: Kettle
+  mapName: 'Kettle'
+  mapPath: /Maps/kettle.yml
+  minPlayers: 35
+  maxPlayers: 70
+  stations:
+    Kettle:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml #floofstation
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Kettle {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          overflowJobs:
+            - Passenger
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 3, 3 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 2, 3 ]
+            ServiceWorker: [ 2, 4 ]
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 3 ]
+            StationEngineer: [ 3, 4 ]
+            TechnicalAssistant: [ 2, 2 ]
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 3 ]
+            MedicalBorg: [ 1, 1 ]
+            MedicalDoctor: [ 3, 4 ]
+            Paramedic: [ 2, 2 ]
+            MedicalIntern: [ 2, 2 ]
+            Psychologist: [ 1, 1 ]
+            #science
+            ResearchDirector: [ 1, 1 ]
+            Roboticist: [ 1, 1 ]
+            Scientist: [ 3, 4 ]
+            ForensicMantis: [ 1, 1 ]
+            ResearchAssistant: [ 2, 2 ]
+            Borg: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            #security
+            HeadOfSecurity: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 3, 4 ]
+            Prisoner: [ 2, 2 ]
+            PrisonGuard: [ 1, 1 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 2, 2 ]
+            #supply
+            Quartermaster: [ 1, 1 ]
+            MailCarrier: [ 1, 2 ]
+            SalvageSpecialist: [ 3, 4 ]
+            CargoTechnician: [ 3, 4 ]
+            #civilian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 2, 2 ]
+            Reporter: [ 2, 2 ]
+            Zookeeper: [ 1, 1 ]
+            Anomaly: [ 4, 4 ] # Floofstation
+            #justice
+            Lawyer: [ 2, 2 ]
