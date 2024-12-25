@@ -36,7 +36,7 @@
         acts: [ "Destruction" ]
   - type: Climbable
   - type: Construction
-    graph: Railing
+    graph: RailingWood
     node: railing
 
 - type: entity
@@ -63,12 +63,13 @@
         - TableMask
         layer:
         - TableLayer
-
-
+  - type: Construction
+    graph: RailingWood
+    node: railingWood
 
 - type: entity
   parent: BaseRailing
-  id: RailingCornerWood
+  id: RailingWoodCorner
   name: wooden railing
   description: A wooden railing designed for grip and support along the stairs.
   components:
@@ -99,11 +100,13 @@
         - TableMask
         layer:
         - TableLayer
-
+  - type: Construction
+    graph: RailingWood
+    node: railingWoodCorner
 
 - type: entity
   parent: BaseRailing
-  id: RailingCornerSmallWood
+  id: RailingWoodCornerSmall
   name: wooden railing
   description: A wooden railing designed for grip and support along the stairs.
   components:
@@ -125,10 +128,13 @@
         - TableMask
         layer:
         - TableLayer
+  - type: Construction
+    graph: RailingWood
+    node: railingWoodCornerSmall
 
 - type: entity
   parent: BaseRailing
-  id: RailingRoundWood
+  id: RailingWoodRound
   name: wooden railing
   description: A wooden railing designed for grip and support along the stairs.
   components:
@@ -168,3 +174,6 @@
           - TableMask
         layer:
           - TableLayer
+  - type: Construction
+    graph: RailingWood
+    node: railingWoodRound
