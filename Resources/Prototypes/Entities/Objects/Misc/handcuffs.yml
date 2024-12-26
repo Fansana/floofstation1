@@ -13,9 +13,6 @@
   - type: Sprite
     sprite: Objects/Misc/handcuffs.rsi
     state: handcuff
-  - type: Tag
-    tags:
-    - Handcuffs
   - type: MeleeWeapon
     wideAnimationRotation: 90
     resetOnHandSelected: false
@@ -29,16 +26,6 @@
   - type: UseDelay
     delay: 6
 
-- type: entity
-  name: borg handcuffs
-  description: Used to detain criminals and other assholes.
-  id: BorgHandcuffs
-  parent: Handcuffs
-  components:
-  - type: Stack
-    lingering: true
-    count: 10
-  
 - type: entity
   name: makeshift handcuffs
   description: Homemade handcuffs crafted from spare cables.

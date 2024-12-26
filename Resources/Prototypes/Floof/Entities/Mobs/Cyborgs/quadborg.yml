@@ -17,6 +17,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: Hands
+  - type: Stripping
+  - type: Body
+    prototype: Primate
+    requiredLegs: 1 # TODO: More than 1 leg
+  - type: Inventory
+    templateId: Securityborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -38,3 +45,16 @@
     speechVerb: Robotic
   - type: LayingDown
   - type: LeashAnchor # Floofstation
+  
+- type: inventoryTemplate
+  id: Securityborg
+  slots:
+  - name: pocket1
+    slotTexture: pocket
+    slotFlags: POCKET
+    slotGroup: MainHotbar
+    stripTime: 3
+    uiWindowPos: 0,3
+    strippingWindowPos: 0,4
+    displayName: Pocket 1
+    stripHidden: false
