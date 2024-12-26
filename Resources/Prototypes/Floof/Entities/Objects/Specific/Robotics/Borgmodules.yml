@@ -37,3 +37,19 @@
     - WeaponAdvancedLaser
     - WeaponborgPistolMk58
     - CombatKnife
+    
+- type: entity
+  id: BorgModuleInvestigation
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: Investigation cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-investigation
+  - type: ItemBorgModule
+    items:
+    - ForensicScanner
+    - DetectivePDA
+    - SecurityWhistle
