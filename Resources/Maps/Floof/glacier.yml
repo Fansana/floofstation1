@@ -76,6 +76,34 @@ entities:
     - type: MapLight
       ambientLightColor: '#030305FF'
     - type: DayNightCycle
+      timeEntries:
+      - colorHex: '#000000'
+      - time: 0.04
+        colorHex: '#02020b'
+      - time: 0.08
+        colorHex: '#312716'
+      - time: 0.17
+        colorHex: '#4E3D23'
+      - time: 0.25
+        colorHex: '#58372D'
+      - time: 0.33
+        colorHex: '#876A42'
+      - time: 0.42
+        colorHex: '#A08042'
+      - time: 0.5
+        colorHex: '#A88F73'
+      - time: 0.58
+        colorHex: '#C1A78A'
+      - time: 0.67
+        colorHex: '#7D6244'
+      - time: 0.75
+        colorHex: '#8C6130'
+      - time: 0.83
+        colorHex: '#543521'
+      - time: 0.92
+        colorHex: '#02020b'
+      - time: 1
+        colorHex: '#000000'
     - type: Map
       mapPaused: True
     - type: PhysicsMap
@@ -11997,7 +12025,7 @@ entities:
       pos: -33.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -41189.68
+      secondsUntilStateChange: -42395.734
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12028,7 +12056,7 @@ entities:
       pos: -48.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -31827.816
+      secondsUntilStateChange: -33033.87
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12044,7 +12072,7 @@ entities:
       pos: -44.5,-17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13966.286
+      secondsUntilStateChange: -15172.34
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14878,7 +14906,7 @@ entities:
     - type: Transform
       pos: -69.5,22.5
       parent: 2
-  - uid: 6644
+  - uid: 6648
     components:
     - type: Transform
       pos: 71.5,-3.5
@@ -50801,7 +50829,7 @@ entities:
     - type: Transform
       pos: -58.5,30.5
       parent: 2
-  - uid: 7382
+  - uid: 7496
     components:
     - type: Transform
       pos: 47.5,6.5
@@ -50836,7 +50864,7 @@ entities:
       containers:
       - EntityStorageComponent
       - entity_storage
-  - uid: 7496
+  - uid: 7503
     components:
     - type: Transform
       pos: 46.5,2.5
@@ -56399,16 +56427,11 @@ entities:
       parent: 2
 - proto: DresserHeadOfSecurityFilled
   entities:
-  - uid: 7503
+  - uid: 6644
     components:
     - type: Transform
       pos: -10.5,36.5
       parent: 2
-    - type: UserInterface
-      actors:
-        enum.StorageUiKey.Key:
-        - invalid
-    - type: ActiveUserInterface
 - proto: DresserQuarterMasterFilled
   entities:
   - uid: 4430
@@ -59493,7 +59516,7 @@ entities:
       parent: 2
 - proto: FoodBurgerMcrib
   entities:
-  - uid: 6708
+  - uid: 6880
     components:
     - type: Transform
       pos: 69.814156,0.8260797
@@ -101477,17 +101500,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: 49.5,14.5
       parent: 2
-  - uid: 6880
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 41.5,13.5
-      parent: 2
   - uid: 7380
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 58.5,1.5
+      parent: 2
+  - uid: 7382
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 41.5,13.5
       parent: 2
   - uid: 7514
     components:
@@ -104058,7 +104081,7 @@ entities:
       parent: 2
 - proto: SignCargoDock
   entities:
-  - uid: 6648
+  - uid: 6708
     components:
     - type: Transform
       pos: 61.5,8.5
