@@ -1969,3 +1969,12 @@ Entries:
   id: 255
   time: '2024-12-27T02:10:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/433
+- author: Memeji
+  changes:
+    - type: Add
+      message: .20 Rifle Speedloader to Bartenders
+    - type: Fix
+      message: .20 Rubber Rifle Box gives the correct ammo type.
+  id: 256
+  time: '2024-12-27T02:10:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/434
