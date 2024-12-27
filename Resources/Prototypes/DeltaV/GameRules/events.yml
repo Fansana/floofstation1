@@ -75,9 +75,9 @@
     entries:
     - id: MobMothroach
       prob: 0.05
-      sound: # Floof - mothroach my beloved
-        path: /Audio/Voice/Moth/moth_chitter.ogg
-        params: {volume: 0.5}
+    sound: # Floof - mothroach my beloved
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+      params: {volume: 0.5}
 
 
 - type: entity
