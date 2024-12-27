@@ -28,6 +28,11 @@
       prob: 0.005
     - id: MobXenoQueen
       prob: 0.005
+    crawlTime: 3, 4 # Floof
+    popup: station-event-xeno-vents-popup # Floof
+    sound: # Floof
+      path: /Audio/Animals/space_dragon_roar.ogg
+      params: {volume: 0.5}
 
 # Weaker version of xenos, meant to provide some dangers in low pop.
 - type: entity
@@ -70,6 +75,10 @@
     entries:
     - id: MobMothroach
       prob: 0.05
+    sound: # Floof - mothroach my beloved
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+      params: {volume: 0.5}
+
 
 - type: entity
   id: PirateRadioSpawn
