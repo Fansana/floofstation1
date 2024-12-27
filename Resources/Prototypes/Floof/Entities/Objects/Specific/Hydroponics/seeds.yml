@@ -119,3 +119,23 @@
       seedId: anomalyBerry
     - type: Sprite
       sprite: Floof/Objects/Specific/Hydroponics/anomaly_berry.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of humpshroom spores
+  id: HumpShroomSeeds
+  components:
+    - type: Seed
+      seedId: humpShroom
+    - type: Sprite
+      sprite: Floof/Objects/Specific/Hydroponics/humpshroom.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of breedshroom spores
+  id: BreedShroomSeeds
+  components:
+    - type: Seed
+      seedId: breedShroom
+    - type: Sprite
+      sprite: Floof/Objects/Specific/Hydroponics/breedshroom.rsi

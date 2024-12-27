@@ -1885,3 +1885,123 @@ Entries:
   id: 244
   time: '2024-12-15T22:43:32.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/415
+- author: Memeji
+  changes:
+    - type: Add
+      message: German Accent
+  id: 245
+  time: '2024-12-21T03:36:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/422
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Added the "Unrevivable" trait for those who like to live on the edge.
+  id: 246
+  time: '2024-12-21T20:36:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/423
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Station events can now have customizable conditions. This means that the
+        station will no longer have to suffer from midround antags when there is
+        zero security players, and the like.
+  id: 247
+  time: '2024-12-21T20:37:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/418
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Station Anchor
+  id: 248
+  time: '2024-12-22T07:11:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/425
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The SecWatch PDA app is back, once again allowing security members to
+        view the stations crime records in real time.
+  id: 249
+  time: '2024-12-22T07:12:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/424
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Changed Glacier based on community feedback/requests
+    - type: Tweak
+      message: Changed Asterisk based on community feedback/requests
+  id: 250
+  time: '2024-12-22T23:57:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/427
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Vulpkanins and other species should now properly leave footprints.
+  id: 251
+  time: '2024-12-23T07:51:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/426
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added Security Quadborg '
+  id: 252
+  time: '2024-12-23T23:11:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/420
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added code word highlight
+  id: 253
+  time: '2024-12-23T23:13:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/429
+- author: VividPups
+  changes:
+    - type: Add
+      message: 'Corpsman Highsocks as a loadout item '
+  id: 254
+  time: '2024-12-23T23:24:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/428
+- author: Memeji
+  changes:
+    - type: Add
+      message: Humpshroom and Breedshroom.
+  id: 255
+  time: '2024-12-27T02:10:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/433
+- author: Memeji
+  changes:
+    - type: Add
+      message: .20 Rifle Speedloader to Bartenders
+    - type: Fix
+      message: .20 Rubber Rifle Box gives the correct ammo type.
+  id: 256
+  time: '2024-12-27T02:10:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/434
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added Eggnog, Syndicate Eggnog.
+    - type: Add
+      message: Added wooden railing.
+    - type: Add
+      message: More Plushies. Chill human, Slime Tider, Dragon
+    - type: Add
+      message: added tiger tail, lizard fin and crest
+    - type: Add
+      message: added eggnog and syndicate eggnog
+    - type: Add
+      message: THE GLACIER UPDATE
+  id: 257
+  time: '2024-12-27T03:28:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/430
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Vent critters will no longer spawn immediately after being announced,
+        and their appearance is now accompanied by audiovisual warnings
+        appearing up to 6 seconds ahead of their spawn.
+  id: 258
+  time: '2024-12-27T03:32:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/435

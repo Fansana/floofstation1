@@ -329,3 +329,71 @@
       Min: 1
       Max: 3
       potencyDivisor: 40
+
+- type: seed
+  id: humpShroom
+  name: seeds-humpshroom-name
+  noun: seeds-noun-spores
+  displayName: seeds-humpshroom-display-name
+  plantRsi: Floof/Objects/Specific/Hydroponics/humpshroom.rsi
+  packetPrototype: HumpShroomSeeds
+  productPrototypes:
+    - FoodHumpShroom
+  mutationPrototypes:
+    - breedShroom
+  lifespan: 25
+  maturation: 12
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  chemicals:
+    Philterex:
+      Min: 1
+      Max: 5
+      potencyDivisor: 4
+    Cum:
+      Min: 1
+      Max: 20
+      potencyDivisor: 10
+    Nutriment:
+      Min: 1
+      Max: 5
+      potencyDivisor: 20
+
+- type: seed
+  id: breedShroom
+  name: seeds-breedshroom-name
+  noun: seeds-noun-spores
+  displayName: seeds-breedshroom-display-name
+  plantRsi: Floof/Objects/Specific/Hydroponics/breedshroom.rsi
+  packetPrototype: BreedShroomSeeds
+  productPrototypes:
+    - FoodBreedShroom
+  lifespan: 25
+  maturation: 12
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.80
+  nutrientConsumption: 0.60
+  chemicals:
+    Libidozenithizine:
+      Min: 1
+      Max: 2
+      potencyDivisor: 4
+    Cum:
+      Min: 1
+      Max: 20
+      potencyDivisor: 20
+    Philterex:
+      Min: 1
+      Max: 4
+      potencyDivisor: 5
+    Happiness:
+      Min: 1
+      Max: 4
+      potencyDivisor: 5

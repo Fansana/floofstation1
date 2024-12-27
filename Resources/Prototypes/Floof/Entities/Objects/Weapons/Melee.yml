@@ -81,3 +81,13 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+
+- type: entity
+  name: borg stun baton
+  parent: Stunbaton
+  id: BorgStunbaton
+  description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40

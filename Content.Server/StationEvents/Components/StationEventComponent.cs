@@ -1,3 +1,4 @@
+using Content.Server.FloofStation.GameTicking;
 using Robust.Shared.Audio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
@@ -82,4 +83,14 @@ public sealed partial class StationEventComponent : Component
     [DataField("endTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
     public TimeSpan? EndTime;
+
+    // Floof section - custom conditions
+
+    /// <summary>
+    ///     A list of conditions that must be met for the event to run.
+    /// </summary>
+    [DataField]
+    public List<StationEventCondition>? Conditions;
+
+    // Floof section end
 }
