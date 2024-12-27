@@ -20,3 +20,7 @@ seeds-anomaly-berry-name = anomaly berry
 seeds-anomaly-berry-display-name = anomaly berries
 seeds-blue-pumpkin-name = blue pumpkin
 seeds-blue-pumpkin-display-name = blue pumpkins
+seeds-humpshroom-name = humpshroom
+seeds-humpshroom-display-name = humpshroom
+seeds-breedshroom-name = breedshroom
+seeds-breedshroom-display-name = breedshroom
