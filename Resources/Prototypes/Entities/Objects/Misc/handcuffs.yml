@@ -8,6 +8,9 @@
     size: Small
     storedRotation: 90
   - type: Handcuff
+  - type: Tag
+    tags:
+    - Handcuffs
     cuffedRSI: Objects/Misc/handcuffs.rsi
     bodyIconState: body-overlay
   - type: Sprite
