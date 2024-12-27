@@ -1995,3 +1995,13 @@ Entries:
   id: 257
   time: '2024-12-27T03:28:12.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/430
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Vent critters will no longer spawn immediately after being announced,
+        and their appearance is now accompanied by audiovisual warnings
+        appearing up to 6 seconds ahead of their spawn.
+  id: 258
+  time: '2024-12-27T03:32:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/435
