@@ -35,7 +35,6 @@
     count: 1
   - type: SpentAmmoVisuals
     state: "beanbag"
-
 - type: entity
   id: ShellShotgunSlug
   name: shell (.50 slug)
@@ -78,6 +77,18 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgun
+    
+- type: entity
+  id: eShellShotgun
+  name: eshell (.50)
+  parent: BaseShellShotgun
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: BulletLaserSpread
 
 - type: entity
   id: ShellShotgunIncendiary
