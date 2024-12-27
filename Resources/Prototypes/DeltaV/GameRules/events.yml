@@ -32,7 +32,7 @@
     popup: station-event-xeno-vents-popup # Floof
     sound: # Floof
       path: /Audio/Animals/space_dragon_roar.ogg
-      params: {volume: 0.3}
+      params: {volume: 0.5}
 
 # Weaker version of xenos, meant to provide some dangers in low pop.
 - type: entity
