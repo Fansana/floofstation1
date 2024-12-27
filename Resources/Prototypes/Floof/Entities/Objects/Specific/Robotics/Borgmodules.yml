@@ -53,3 +53,19 @@
     - ForensicScanner
     - DetectivePDA
     - SecurityWhistle
+    
+- type: entity
+  id: BorgModuleadvancedmeasures
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: advanced combat cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-Advmeasures
+  - type: ItemBorgModule
+    items:
+    - BorgWeaponPulseRifle
+    - BorgWeaponXrayCannon
+    - WeaponLightMachineGunL6C

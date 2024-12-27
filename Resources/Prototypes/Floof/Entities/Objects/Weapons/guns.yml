@@ -49,6 +49,26 @@
   # - type: Appearance
 
 - type: entity
+  name: borg pulse rifle
+  parent: WeaponPulseRifle
+  id: BorgWeaponPulseRifle
+  description: A weapon that is almost as infamous as its users.
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30  
+
+- type: entity
+  name: borg Xray Cannon
+  parent: WeaponXrayCannon
+  id: BorgWeaponXrayCannon
+  description: A weapon that is almost as infamous as its users.
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30
+    
+- type: entity
   name: mk 58
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
