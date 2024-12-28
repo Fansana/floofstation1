@@ -17,6 +17,7 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: Hands
   - type: Stripping
   - type: IntrinsicRadioTransmitter
   - type: ActiveRadio

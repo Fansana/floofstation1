@@ -21,6 +21,7 @@
     items:
     - WeaponBorgDisabler
     - BorgStunbaton
+    - BorgFlash
 
 - type: entity
   id: BorgModuleKill
