@@ -19,6 +19,8 @@
       visible: false
   - type: Hands
   - type: Stripping
+  - type: IntrinsicRadioTransmitter
+  - type: ActiveRadio
   - type: Body
     prototype: Primate
     requiredLegs: 1 # TODO: More than 1 leg
