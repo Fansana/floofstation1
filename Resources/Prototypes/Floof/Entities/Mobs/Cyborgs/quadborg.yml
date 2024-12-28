@@ -17,7 +17,6 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  - type: Hands
   - type: Stripping
   - type: Body
     prototype: Primate
