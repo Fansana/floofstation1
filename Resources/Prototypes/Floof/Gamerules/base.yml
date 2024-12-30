@@ -1,0 +1,11 @@
+# A game rule base that requires at least 2 security members to be present
+- type: entity
+  id: BaseGameRuleSecurityRequirement
+  parent: BaseGameRule
+  abstract: true
+  components:
+  - type: StationEvent
+    conditions:
+    - !type:DepartmentCountCondition
+      department: Security
+      range: {min: 2}

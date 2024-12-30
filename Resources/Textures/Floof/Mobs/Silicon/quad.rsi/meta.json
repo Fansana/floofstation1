@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Fenndragon discord: 190763499276861440",
+  "states": [
+    {
+      "name": "quadsprite",
+      "directions": 4
+    },
+    {
+      "name": "quadspritel",
+      "directions": 4
+    },
+    {
+      "name": "quadspriter",
+      "directions": 4
+    }
+
+  ]
+}

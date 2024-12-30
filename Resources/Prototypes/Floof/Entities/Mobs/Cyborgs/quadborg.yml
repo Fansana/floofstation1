@@ -1,0 +1,40 @@
+
+- type: entity
+  id: BorgChassisQuad
+  parent: BaseBorgChassisNT
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.6, 0.6
+    layers:
+    - state: quadsprite
+      map: ["movement"]
+    - state: quadspritel
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspriter
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleSecurity
+    hasMindState: quadspritel
+    noMindState: quadspriter
+  - type: AccessReader
+    access: [["Security"], ["Armory"], ["Command"]]
+  - type: BorgTransponder
+    sprite:
+      sprite: Floof/Mobs/Silicon/quad.rsi
+      state: quadsprite
+    name: cyborg
+  - type: Construction
+    node: cyborg
+  - type: Speech
+    speechVerb: Robotic
+  - type: LayingDown
+  - type: LeashAnchor # Floofstation

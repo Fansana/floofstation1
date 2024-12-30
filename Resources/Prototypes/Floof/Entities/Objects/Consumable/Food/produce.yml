@@ -410,3 +410,65 @@
   - type: Tag
     tags:
     - Fruit
+
+- type: entity
+  name: humpshroom
+  parent: FoodProduceBase
+  id: FoodHumpShroom
+  description: A sweet-smelling mushroom that excretes a sticky and arousing liquid.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mushroom
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Philterex
+          Quantity: 5
+        - ReagentId: Cum
+          Quantity: 20
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Hydroponics/humpshroom.rsi
+  - type: Produce
+    seedId: humpShroom
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Vegetable
+
+- type: entity
+  name: breedshroom
+  parent: FoodProduceBase
+  id: FoodBreedShroom
+  description: An overwhelmingly smelling mushroom that excretes an incredibly sticky and arousing liquid. It has been known to increase the population in colonies. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mushroom
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Libidozenithizine
+          Quantity: 2
+        - ReagentId: Cum
+          Quantity: 20
+        - ReagentId: Philterex
+          Quantity: 4
+        - ReagentId: Happiness
+          Quantity: 4
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Hydroponics/breedshroom.rsi
+  - type: Produce
+    seedId: breedShroom
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Vegetable
