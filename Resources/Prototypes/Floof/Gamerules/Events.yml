@@ -1,6 +1,6 @@
 # - type: entity
 #   id: ArgocyteVents
-#   parent: BaseGameRule
+#   parent: [VentCrittersBase, BaseGameRule]
 #   noSpawn: true
 #   components:
 #   - type: StationEvent
@@ -39,7 +39,7 @@
 
 # - type: entity
 #   id: TickVents
-#   parent: BaseGameRule
+#   parent: [VentCrittersBase, BaseGameRule]
 #   noSpawn: true
 #   components:
 #   - type: StationEvent
@@ -56,7 +56,7 @@
 
 # - type: entity
 #   id: CarpVents
-#   parent: BaseGameRule
+#   parent: [VentCrittersBase, BaseGameRule]
 #   noSpawn: true
 #   components:
 #   - type: StationEvent
@@ -83,7 +83,7 @@
 
 # - type: entity
 #   id: SpaceVents
-#   parent: BaseGameRule
+#   parent: [VentCrittersBase, BaseGameRule]
 #   noSpawn: true
 #   components:
 #   - type: StationEvent
