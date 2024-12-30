@@ -32,6 +32,8 @@
     size: Large
     sprite: Objects/Specific/Janitorial/mop.rsi
   - type: Absorbent
+    footprintCleaningRange: 0.75 # Floof - to make janitors lives easier, but not too easy.
+    maxCleanedFootprints: 25 # Floof
   - type: SolutionContainerManager
     solutions:
       absorbed:
