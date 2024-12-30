@@ -47,7 +47,7 @@
   - type: LayingDown
   - type: LeashAnchor # Floofstation
   
- - type: entity
+- type: entity
   id: BorgChassisQuadCC
   parent: BorgChassisQuad
   components:
