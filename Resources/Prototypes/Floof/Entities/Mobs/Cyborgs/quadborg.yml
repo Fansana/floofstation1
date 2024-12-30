@@ -5,7 +5,7 @@
   components:
   - type: Sprite
     sprite: Floof/Mobs/Silicon/quad.rsi
-    scale: 0.6, 0.6
+    scale: 0.7, 0.7
     layers:
     - state: quadsprite
       map: ["movement"]
@@ -46,6 +46,25 @@
     speechVerb: Robotic
   - type: LayingDown
   - type: LeashAnchor # Floofstation
+  
+  - type: entity
+  id: BorgChassisQuadCC
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: quadspriteCC
+      map: ["movement"]
+    - state: quadspritel
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspriter
+      shader: unshaded
+      map: ["light"]
+      visible: false
   
 - type: inventoryTemplate
   id: Securityborg
