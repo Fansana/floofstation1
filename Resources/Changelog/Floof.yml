@@ -2048,3 +2048,30 @@ Entries:
   id: 263
   time: '2024-12-31T15:12:37.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/431
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Hammurabi based on community feedback
+    - type: Tweak
+      message: Tweaked Shokou based on community feedback
+    - type: Add
+      message: Added a job slot for librarian on Shokou
+    - type: Tweak
+      message: Tweaked Rad based on community feedback
+    - type: Tweak
+      message: Tweaked Lighthouse based on community feedback
+    - type: Add
+      message: >-
+        Added a job slot for a corpsmen, a librarian and a roboticist on
+        Lighthouse 
+    - type: Tweak
+      message: Tweaked Core based on community feedback
+    - type: Add
+      message: added two courier job slots on Core
+    - type: Tweak
+      message: Tweaked Asterisk based on community feedback
+    - type: Tweak
+      message: Tweaked Glaciers atmos setup
+  id: 264
+  time: '2024-12-31T20:02:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/446
