@@ -62,8 +62,10 @@ public sealed class FootPrintsSystem : EntitySystem
             || !_map.TryFindGridAt(_transform.GetMapCoordinates((uid, transform)), out var gridUid, out _))
             return;
 
-        var dragging = mobThreshHolds.CurrentThresholdState is MobState.Critical or MobState.Dead
-                       || _layingQuery.TryComp(uid, out var laying) && laying.IsCrawlingUnder;
+        // Floof - this is dumb
+        // var dragging = mobThreshHolds.CurrentThresholdState is MobState.Critical or MobState.Dead
+        //                || _layingQuery.TryComp(uid, out var laying) && laying.IsCrawlingUnder;
+        var dragging = TryComp<StandingStateComponent>(uid, out var standing) && standing.CurrentState == StandingState.Lying; // Floof - replaced the above
         var distance = (transform.LocalPosition - component.StepPos).Length();
         var stepSize = dragging ? component.DragSize : component.StepSize;
 
@@ -74,15 +76,18 @@ public sealed class FootPrintsSystem : EntitySystem
         var entities = _lookup.GetEntitiesIntersecting(uid, LookupFlags.All);
         foreach (var entityUid in entities.Where(entityUid => HasComp<PuddleFootPrintsComponent>(entityUid)))
             return; // are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
+        // Floof section end
 
         component.RightStep = !component.RightStep;
 
         var entity = Spawn(component.StepProtoId, CalcCoords(gridUid, component, transform, dragging));
         var footPrintComponent = EnsureComp<FootPrintComponent>(entity);
 
+        // Floof section
         var forensics = EntityManager.EnsureComponent<ForensicsComponent>(entity);
-        if (TryComp<ForensicsComponent>(uid, out var ownerForensics)) // Floof edit: transfer owner DNA into the footsteps
+        if (TryComp<ForensicsComponent>(uid, out var ownerForensics)) // transfer owner DNA into the footsteps
             forensics.DNAs.UnionWith(ownerForensics.DNAs);
+        // Floof section end
 
         footPrintComponent.PrintOwner = uid;
         Dirty(entity, footPrintComponent);
