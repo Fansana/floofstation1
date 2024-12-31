@@ -26,6 +26,7 @@
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
       - id: CargoTechFabCircuitboard # Floof - port to EE if possible
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -56,6 +57,7 @@
       - id: MedalCase
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilled
@@ -86,6 +88,7 @@
       - id: ClothingHeadHatBeretCap # Nyanotrasen - Captain's Beret
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -115,6 +118,7 @@
       - id: ClothingHeadHatBeretCap # Nyanotrasen - Captain's Beret
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -150,6 +154,7 @@
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
       - id: ServiceTechFabCircuitboard # Floof - port to ee if possible
+      - id: ClothingEyesHudCommand
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
