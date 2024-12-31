@@ -5526,6 +5526,8 @@ entities:
             3157: -53.39496,-0.6914034
             4994: -69,12
             4999: -65,12
+            6009: 14,24
+            6010: 15,25
         - node:
             color: '#FFFFFFFF'
             id: WoodTrimThinCornerSe
@@ -5664,6 +5666,7 @@ entities:
             5112: -36,-20
             5113: -35,-20
             5114: -34,-20
+            6011: 16,25
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -5747,6 +5750,10 @@ entities:
             5097: -41,-30
             5098: -41,-31
             5109: -37,-20
+            6005: 14,22
+            6006: 14,21
+            6007: 14,20
+            6008: 14,23
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -12041,7 +12048,7 @@ entities:
       pos: -33.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -46683.44
+      secondsUntilStateChange: -47558.844
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12072,7 +12079,7 @@ entities:
       pos: -48.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -37321.58
+      secondsUntilStateChange: -38196.98
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12088,7 +12095,7 @@ entities:
       pos: -44.5,-17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19460.045
+      secondsUntilStateChange: -20335.447
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14435,6 +14442,20 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 47.785324,12.693391
       parent: 2
+- proto: ArrivalsShuttleTimer
+  entities:
+  - uid: 19292
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 50.5,26.5
+      parent: 2
+  - uid: 19293
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 59.5,26.5
+      parent: 2
 - proto: Ash
   entities:
   - uid: 324
@@ -14941,11 +14962,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,22.5
-      parent: 2
-  - uid: 17437
-    components:
-    - type: Transform
-      pos: -2.5,24.5
       parent: 2
   - uid: 17621
     components:
@@ -30954,6 +30970,11 @@ entities:
     - type: Transform
       pos: 8.5,61.5
       parent: 2
+  - uid: 19295
+    components:
+    - type: Transform
+      pos: -26.5,32.5
+      parent: 2
 - proto: CableApcStack
   entities:
   - uid: 3233
@@ -46411,6 +46432,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -10.5,61.5
       parent: 2
+  - uid: 19298
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -30.5,-18.5
+      parent: 2
 - proto: Chair
   entities:
   - uid: 6017
@@ -48603,6 +48630,51 @@ entities:
     - type: Transform
       pos: 66.5,-7.5
       parent: 2
+  - uid: 13899
+    components:
+    - type: Transform
+      pos: -46.5,-13.5
+      parent: 2
+  - uid: 17437
+    components:
+    - type: Transform
+      pos: -42.5,-13.5
+      parent: 2
+  - uid: 18008
+    components:
+    - type: Transform
+      pos: -38.5,-13.5
+      parent: 2
+  - uid: 18009
+    components:
+    - type: Transform
+      pos: -42.5,-20.5
+      parent: 2
+  - uid: 18010
+    components:
+    - type: Transform
+      pos: -42.5,-24.5
+      parent: 2
+  - uid: 18011
+    components:
+    - type: Transform
+      pos: -46.5,-20.5
+      parent: 2
+  - uid: 18012
+    components:
+    - type: Transform
+      pos: -46.5,-24.5
+      parent: 2
+  - uid: 18013
+    components:
+    - type: Transform
+      pos: -46.5,-31.5
+      parent: 2
+  - uid: 18014
+    components:
+    - type: Transform
+      pos: -42.5,-31.5
+      parent: 2
 - proto: ClosetWallEmergencyFilledRandom
   entities:
   - uid: 18647
@@ -48632,71 +48704,6 @@ entities:
     components:
     - type: Transform
       pos: 69.5,-3.5
-      parent: 2
-- proto: ClosetWallMaintenanceFilledRandom
-  entities:
-  - uid: 18008
-    components:
-    - type: Transform
-      pos: -38.5,-13.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.7459903
-        - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-  - uid: 18009
-    components:
-    - type: Transform
-      pos: -42.5,-13.5
-      parent: 2
-  - uid: 18010
-    components:
-    - type: Transform
-      pos: -46.5,-13.5
-      parent: 2
-  - uid: 18011
-    components:
-    - type: Transform
-      pos: -42.5,-20.5
-      parent: 2
-  - uid: 18012
-    components:
-    - type: Transform
-      pos: -46.5,-20.5
-      parent: 2
-  - uid: 18013
-    components:
-    - type: Transform
-      pos: -42.5,-24.5
-      parent: 2
-  - uid: 18014
-    components:
-    - type: Transform
-      pos: -46.5,-24.5
-      parent: 2
-  - uid: 18015
-    components:
-    - type: Transform
-      pos: -42.5,-31.5
-      parent: 2
-  - uid: 18016
-    components:
-    - type: Transform
-      pos: -46.5,-31.5
       parent: 2
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
@@ -49029,6 +49036,16 @@ entities:
     components:
     - type: Transform
       pos: -31.632198,34.134468
+      parent: 2
+  - uid: 19308
+    components:
+    - type: Transform
+      pos: -37.8257,7.164164
+      parent: 2
+  - uid: 19309
+    components:
+    - type: Transform
+      pos: -36.72153,6.1530447
       parent: 2
 - proto: ClothingHeadHatCowboyBlack
   entities:
@@ -56188,6 +56205,60 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -37.5,-22.5
+      parent: 2
+  - uid: 19299
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -66.5,13.5
+      parent: 2
+  - uid: 19300
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -65.5,12.5
+      parent: 2
+  - uid: 19301
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -64.5,12.5
+      parent: 2
+  - uid: 19302
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -63.5,12.5
+      parent: 2
+  - uid: 19303
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -62.5,12.5
+      parent: 2
+  - uid: 19304
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -61.5,12.5
+      parent: 2
+  - uid: 19305
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -60.5,12.5
+      parent: 2
+  - uid: 19306
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -59.5,12.5
+      parent: 2
+  - uid: 19307
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -58.5,12.5
       parent: 2
 - proto: DisposalPipeBroken
   entities:
@@ -82863,6 +82934,11 @@ entities:
     - type: Transform
       pos: -4.5,-13.5
       parent: 2
+  - uid: 19310
+    components:
+    - type: Transform
+      pos: 18.5,25.5
+      parent: 2
 - proto: KitchenSpike
   entities:
   - uid: 10618
@@ -102358,12 +102434,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 37.5,45.5
       parent: 2
-  - uid: 13899
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 29.5,12.5
-      parent: 2
   - uid: 13901
     components:
     - type: Transform
@@ -104516,6 +104586,13 @@ entities:
     components:
     - type: Transform
       pos: 52.513466,41.507915
+      parent: 2
+- proto: Screen
+  entities:
+  - uid: 18016
+    components:
+    - type: Transform
+      pos: 51.5,35.5
       parent: 2
 - proto: Screwdriver
   entities:
@@ -112647,6 +112724,29 @@ entities:
     components:
     - type: Transform
       pos: -33.5,-24.5
+      parent: 2
+- proto: VendingMachineCoffee
+  entities:
+  - uid: 18015
+    components:
+    - type: Transform
+      pos: 29.5,12.5
+      parent: 2
+  - uid: 19294
+    components:
+    - type: Transform
+      pos: 23.5,5.5
+      parent: 2
+  - uid: 19296
+    components:
+    - type: Transform
+      pos: -6.5,30.5
+      parent: 2
+  - uid: 19297
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -16.5,-12.5
       parent: 2
 - proto: VendingMachineCola
   entities:
