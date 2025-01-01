@@ -17,6 +17,9 @@
     layers:
     - state: security
     - state: icon-stun
+  - type: Construction
+    graph: BorgmoduleDisabler
+    node: icon
   - type: ItemBorgModule
     items:
     - WeaponBorgDisabler
@@ -33,6 +36,9 @@
     layers:
     - state: security
     - state: icon-kill
+  - type: Construction
+    graph: BorgmoduleCombat
+    node: icon
   - type: ItemBorgModule
     items:
     - WeaponAdvancedLaser
@@ -69,3 +75,24 @@
     items:
     - WeaponEnergyShotgun
     - BorgWeaponXrayCannon
+    
+- type: entity
+  id: BaseSecModule
+  parent: BaseItem
+  name: blank security borg module
+  description: A piece of tech that gives cyborgs new abilities.
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+    - BorgModuleGeneric
+  - type: GuideHelp
+    guides:
+      - Cyborgs
