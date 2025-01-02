@@ -233,15 +233,8 @@
   - type: Sprite
     noRot: true
     drawdepth: Items
-    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
-    state: robo_suit
-  - type: ItemMapper
-    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
-    mapLayers:
-      borg_l_arm+o:
-        whitelist:
-          tags:
-          - BorgGenericLArm
+    sprite: Floof/Objects/Specific/Robotics/parts.rsi
+    state: quad_suit
   - type: PartAssembly
     parts:
       quadborg:
