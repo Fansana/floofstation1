@@ -63,6 +63,17 @@
   description: A lethal module for security borg
   icon: { sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi, state: icon-kill }
   objectType: Item
+  
+- type: construction
+  name: Investigation
+  id: BorgModuleInvestigation
+  graph: BorgModuleInvestigation
+  startNode: start
+  targetNode: icon
+  category: construction-category-tools
+  description: A lethal module for security borg
+  icon: { sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi, state: icon-kill }
+  objectType: Item
 
 # - type: construction
   # name: Investigation Module

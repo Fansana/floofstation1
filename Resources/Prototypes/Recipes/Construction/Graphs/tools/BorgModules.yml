@@ -49,3 +49,27 @@
         doAfter: 1
   - node: icon
     entity: BorgModuleKill
+    
+- type: constructionGraph
+  id: BorgModuleInvestigation
+  start: start
+  graph:
+  - node: start
+    entity: ForensicScanner
+    edges:
+    - to: icon
+      steps:
+      - tag: BorgModuleGeneric
+        name: blank security borg module
+        icon:
+          sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+          state: security
+        doAfter: 1
+      - tag: DoorBumpOpener
+        name: SecurityPDA
+        icon:
+          sprite: Objects/Devices/pda.rsi
+          state: pda-security
+        doAfter: 1
+  - node: icon
+    entity: BorgModuleInvestigation
