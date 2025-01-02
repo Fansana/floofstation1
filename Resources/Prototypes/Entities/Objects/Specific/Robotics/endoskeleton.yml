@@ -235,6 +235,33 @@
     drawdepth: Items
     sprite: Floof/Objects/Specific/Robotics/parts.rsi
     state: quad_suit
+  - type: ItemMapper
+    sprite: Floof/Objects/Specific/Robotics/parts.rsi
+    mapLayers:
+      borg_l_arm+o:
+        whitelist:
+          tags:
+          - BorgGenericLLeg
+      borg_r_arm+o:
+        whitelist:
+          tags:
+          - BorgGenericRLeg
+      borg_l_leg+o:
+        whitelist:
+          tags:
+          - BorgGenericLLeg
+      borg_r_leg+o:
+        whitelist:
+          tags:
+          - BorgGenericRLeg
+      borg_head+o:
+        whitelist:
+          tags:
+          - BorgGenericHead
+      borg_chest+o:
+        whitelist:
+          tags:
+          - BorgGenericTorso
   - type: PartAssembly
     parts:
       quadborg:

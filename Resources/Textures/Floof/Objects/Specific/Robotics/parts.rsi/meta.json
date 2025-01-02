@@ -8,6 +8,24 @@
   },
   "states": [
     {
+      "name": "borg_l_arm+o"
+    },
+    {
+      "name": "borg_r_arm+o"
+    },
+    {
+      "name": "borg_l_leg+o"
+    },
+    {
+      "name": "borg_r_leg+o"
+    },
+    {
+      "name": "borg_chest+o"
+    },
+    {
+      "name": "borg_head+o"
+    },
+    {
       "name": "quad_suit"
     }
   ]
