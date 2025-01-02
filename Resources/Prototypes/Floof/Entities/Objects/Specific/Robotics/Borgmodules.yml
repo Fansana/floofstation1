@@ -55,6 +55,9 @@
     layers:
     - state: security
     - state: icon-investigation
+  - type: Construction
+    graph: BorgModuleInvestigation
+    node: icon
   - type: ItemBorgModule
     items:
     - ForensicScanner
