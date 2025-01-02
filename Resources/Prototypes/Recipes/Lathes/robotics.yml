@@ -16,6 +16,17 @@
     Glass: 100
     Plastic: 200
     Steel: 100
+    
+- type: latheRecipe
+  id: BaseSecModule
+  result: BaseSecModule
+  category: Robotics
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
 
 - type: latheRecipe
   id: CyborgEndoskeleton
