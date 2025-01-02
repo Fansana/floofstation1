@@ -2,10 +2,10 @@ using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
+using Content.Client.DeltaV.NanoChat;
 using Content.Client.Consent;
 using Content.Client.DiscordAuth;
 using Content.Client.JoinQueue;
-using Content.Client.Consent;
 using Content.Client.Options;
 using Content.Client.Eui;
 using Content.Client.GhostKick;
@@ -26,6 +26,8 @@ using Content.Shared.Administration.Managers;
 using Content.Shared.Chat;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Robust.Client.GameObjects;
+
 
 namespace Content.Client.IoC
 {
@@ -56,10 +58,11 @@ namespace Content.Client.IoC
             collection.Register<DocumentParsingManager>();
             collection.Register<ContentReplayPlaybackManager>();
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
-            IoCManager.Register<JoinQueueManager>();
-            IoCManager.Register<DiscordAuthManager>();
+            collection.Register<JoinQueueManager>();
+            collection.Register<DiscordAuthManager>();
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
+            collection.Register<NanoChatSystem>();
 
             // Floof
             collection.Register<IClientConsentManager, ClientConsentManager>();

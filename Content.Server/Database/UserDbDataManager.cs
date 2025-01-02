@@ -1,6 +1,8 @@
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Preferences.Managers;
+using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
@@ -18,7 +20,9 @@ namespace Content.Server.Database;
 /// </remarks>
 public sealed class UserDbDataManager : IPostInjectInit
 {
+    [Dependency] private readonly IServerPreferencesManager _prefs = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
     [Dependency] private readonly IServerConsentManager _consent = default!;
 
     private readonly Dictionary<NetUserId, UserData> _users = new();
@@ -69,20 +73,16 @@ public sealed class UserDbDataManager : IPostInjectInit
         {
             var tasks = new List<Task>();
             foreach (var action in _onLoadPlayer)
-            {
                 tasks.Add(action(session, cancel));
-            }
 
             tasks.Add(_consent.LoadData(session, cancel)); // Floofstation
 
             await Task.WhenAll(tasks);
-
             cancel.ThrowIfCancellationRequested();
-            foreach (var action in _onFinishLoad)
-            {
-                action(session);
-            }
 
+            foreach (var action in _onFinishLoad)
+                action(session);
+            _prefs.SanitizeData(session);
             _sawmill.Verbose($"Load complete for user {session}");
         }
         catch (OperationCanceledException)
