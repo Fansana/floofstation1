@@ -2075,3 +2075,10 @@ Entries:
   id: 264
   time: '2024-12-31T20:02:02.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/446
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Fixed a crash that occurred while trying to build prescription huds.
+  id: 265
+  time: '2025-01-03T03:26:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/449
