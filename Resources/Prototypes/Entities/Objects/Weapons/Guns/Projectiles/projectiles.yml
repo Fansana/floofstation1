@@ -1041,3 +1041,10 @@
         Heat: 20 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
     soundHit:
       collection: MeatLaserImpact
+
+- type: entity
+  name: wide laser barrage
+  id: BulletLaserSpread
+  categories: [ HideSpawnMenu ]
+  parent: BulletEnergyGunLaser
+

@@ -1206,7 +1206,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
-      - SecWatchCartridge
+      - LogProbeCartridge
 
 - type: entity
   parent: BaseMedicalPDA
