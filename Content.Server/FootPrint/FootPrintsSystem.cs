@@ -11,34 +11,33 @@ using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Forensics;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
 namespace Content.Server.FootPrint;
 
+// Floof: this system has been effectively rewritten. DO NOT MERGE UPSTREAM CHANGES.
 public sealed class FootPrintsSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly IMapManager _map = default!;
+    [Dependency] private readonly IPrototypeManager _protoMan = default!;
 
+    [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!; // Floof
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
 
-    private EntityQuery<TransformComponent> _transformQuery;
-    private EntityQuery<MobThresholdsComponent> _mobThresholdQuery;
     private EntityQuery<AppearanceComponent> _appearanceQuery;
-    private EntityQuery<LayingDownComponent> _layingQuery;
+    private EntityQuery<StandingStateComponent> _standingStateQuery;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        _transformQuery = GetEntityQuery<TransformComponent>();
-        _mobThresholdQuery = GetEntityQuery<MobThresholdsComponent>();
         _appearanceQuery = GetEntityQuery<AppearanceComponent>();
-        _layingQuery = GetEntityQuery<LayingDownComponent>();
+        _standingStateQuery = GetEntityQuery<StandingStateComponent>();
 
         SubscribeLocalEvent<FootPrintsComponent, ComponentStartup>(OnStartupComponent);
         SubscribeLocalEvent<FootPrintsComponent, MoveEvent>(OnMove);
@@ -51,81 +50,72 @@ public sealed class FootPrintsSystem : EntitySystem
 
     private void OnMove(EntityUid uid, FootPrintsComponent component, ref MoveEvent args)
     {
-        // Floof: clear stored DNAs if footprints are now invisible
-        if (component.PrintsColor.A <= .3f)
-            component.DNAs.Clear();
-
-        if (component.PrintsColor.A <= .3f // avoid creating footsteps that are invisible
+        if (component.ContainedSolution.Volume <= 0
             || TryComp<PhysicsComponent>(uid, out var physics) && physics.BodyStatus != BodyStatus.OnGround // Floof: do not create footprints if the entity is flying
-            || !_transformQuery.TryComp(uid, out var transform)
-            || !_mobThresholdQuery.TryComp(uid, out var mobThreshHolds)
-            || !_map.TryFindGridAt(_transform.GetMapCoordinates((uid, transform)), out var gridUid, out _))
+            || args.Entity.Comp1.GridUid is not {} gridUid)
             return;
 
-        // Floof - this is dumb
-        // var dragging = mobThreshHolds.CurrentThresholdState is MobState.Critical or MobState.Dead
-        //                || _layingQuery.TryComp(uid, out var laying) && laying.IsCrawlingUnder;
-        var dragging = TryComp<StandingStateComponent>(uid, out var standing) && standing.CurrentState == StandingState.Lying; // Floof - replaced the above
-        var distance = (transform.LocalPosition - component.StepPos).Length();
+        var newPos = _transform.ToMapCoordinates(args.NewPosition).Position;
+        var dragging = _standingStateQuery.TryComp(uid, out var standing) && standing.CurrentState == StandingState.Lying;
+        var distance = (newPos - component.LastStepPos).Length();
         var stepSize = dragging ? component.DragSize : component.StepSize;
 
-        if (!(distance > stepSize))
+        if (distance < stepSize)
             return;
 
-        // Floof section
+        // are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
         var entities = _lookup.GetEntitiesIntersecting(uid, LookupFlags.All);
-        foreach (var entityUid in entities.Where(entityUid => HasComp<PuddleFootPrintsComponent>(entityUid)))
-            return; // are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
-        // Floof section end
+        if (entities.Any(HasComp<PuddleFootPrintsComponent>))
+            return;
 
-        component.RightStep = !component.RightStep;
+        // Spawn the footprint
+        var footprintUid = Spawn(component.StepProtoId, CalcCoords(gridUid, component, args.Component, dragging));
+        var stepTransform = Transform(footprintUid);
+        var footPrintComponent = EnsureComp<FootPrintComponent>(footprintUid);
 
-        var entity = Spawn(component.StepProtoId, CalcCoords(gridUid, component, transform, dragging));
-        var footPrintComponent = EnsureComp<FootPrintComponent>(entity);
-
-        // Floof section
-        var forensics = EntityManager.EnsureComponent<ForensicsComponent>(entity);
-        if (TryComp<ForensicsComponent>(uid, out var ownerForensics)) // transfer owner DNA into the footsteps
+        // transfer owner DNA into the footsteps
+        var forensics = EntityManager.EnsureComponent<ForensicsComponent>(footprintUid);
+        if (TryComp<ForensicsComponent>(uid, out var ownerForensics))
             forensics.DNAs.UnionWith(ownerForensics.DNAs);
-        // Floof section end
 
         footPrintComponent.PrintOwner = uid;
-        Dirty(entity, footPrintComponent);
+        Dirty(footprintUid, footPrintComponent);
 
-        if (_appearanceQuery.TryComp(entity, out var appearance))
+        if (_appearanceQuery.TryComp(footprintUid, out var appearance))
         {
-            _appearance.SetData(entity, FootPrintVisualState.State, PickState(uid, dragging), appearance);
-            _appearance.SetData(entity, FootPrintVisualState.Color, component.PrintsColor, appearance);
+            var color = component.ContainedSolution.GetColor(_protoMan);
+            color.A = Math.Max(0.3f, component.ContainedSolution.FillFraction);
+
+            _appearance.SetData(footprintUid, FootPrintVisualState.State, PickState(uid, dragging), appearance);
+            _appearance.SetData(footprintUid, FootPrintVisualState.Color, color, appearance);
         }
 
-        if (!_transformQuery.TryComp(entity, out var stepTransform))
-            return;
-
         stepTransform.LocalRotation = dragging
-            ? (transform.LocalPosition - component.StepPos).ToAngle() + Angle.FromDegrees(-90f)
-            : transform.LocalRotation + Angle.FromDegrees(180f);
+            ? (newPos - component.LastStepPos).ToAngle() + Angle.FromDegrees(-90f)
+            : args.Component.LocalRotation + Angle.FromDegrees(180f);
 
-        component.PrintsColor = component.PrintsColor.WithAlpha(Math.Max(0f, component.PrintsColor.A - component.ColorReduceAlpha));
-        component.StepPos = transform.LocalPosition;
-
-        if (!TryComp<SolutionContainerManagerComponent>(entity, out var solutionContainer)
-            || !_solution.ResolveSolution((entity, solutionContainer), footPrintComponent.SolutionName, ref footPrintComponent.Solution, out var solution)
-            || string.IsNullOrWhiteSpace(component.ReagentToTransfer) || solution.Volume >= 1)
+        if (!TryComp<SolutionContainerManagerComponent>(footprintUid, out var solutionContainer)
+            || !_solution.ResolveSolution((footprintUid, solutionContainer), footPrintComponent.SolutionName, ref footPrintComponent.Solution, out var solution))
             return;
 
-        _solution.TryAddReagent(footPrintComponent.Solution.Value, component.ReagentToTransfer, 1, out _);
+        // Transfer from the component to the footprint
+        var removedReagents = component.ContainedSolution.SplitSolution(component.FootprintVolume);
+        _solution.ForceAddSolution(footPrintComponent.Solution.Value, removedReagents);
+
+        component.RightStep = !component.RightStep;
+        component.LastStepPos = newPos;
     }
 
     private EntityCoordinates CalcCoords(EntityUid uid, FootPrintsComponent component, TransformComponent transform, bool state)
     {
         if (state)
-            return new EntityCoordinates(uid, transform.LocalPosition);
+            return new(uid, transform.LocalPosition);
 
         var offset = component.RightStep
             ? new Angle(Angle.FromDegrees(180f) + transform.LocalRotation).RotateVec(component.OffsetPrint)
             : new Angle(transform.LocalRotation).RotateVec(component.OffsetPrint);
 
-        return new EntityCoordinates(uid, transform.LocalPosition + offset);
+        return new(uid, transform.LocalPosition + offset);
     }
 
     private FootPrintVisuals PickState(EntityUid uid, bool dragging)
