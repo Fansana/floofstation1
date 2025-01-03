@@ -10,7 +10,7 @@
   #    time: 21600 #6 hrs
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
-      min: 14400 #Floofstation 4 hour
+      min: 57600 # Floofstation - 16 hour
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
