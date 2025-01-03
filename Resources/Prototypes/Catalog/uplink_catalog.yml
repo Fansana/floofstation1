@@ -694,7 +694,7 @@
   cost:
     Telecrystal: 2
   categories:
-  - UplinkMisc
+  - UplinkPointless
 
 - type: listing
   id: UplinkMedsBundle
@@ -707,7 +707,7 @@
   cost:
     Telecrystal: 20
   categories:
-  - UplinkMisc
+  - UplinkChemicals
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -1802,16 +1802,15 @@
     blacklist:
       components:
       - SurplusBundle
-      -
-- type: listing
-  id: UplinkSingarityBeacon
-  name: uplink-singularity-beacon-name
-  description: uplink-singularity-beacon-desc
-  productEntity: SingularityBeacon
-  cost:
-    Telecrystal: 12
-  categories:
-    - UplinkUtility
+#- type: listing
+#  id: UplinkSingarityBeacon
+#  name: uplink-singularity-beacon-name
+#  description: uplink-singularity-beacon-desc
+#  productEntity: SingularityBeacon
+#  cost:
+#    Telecrystal: 12
+#  categories:
+#    - UplinkUtility
 
 - type: listing
   id: UplinkEmpFlashlight
@@ -1833,7 +1832,7 @@
   cost:
     Telecrystal: 1
   categories:
-    - UplinkArmor
+    - UplinkWearables
 
 - type: listing
   id: UplinkChameleon
@@ -1844,9 +1843,9 @@
   cost:
     Telecrystal: 4
   categories:
-    - UplinkArmor
+    - UplinkWearables
 
-# Misc
+# Pointless
 
 - type: listing
   id: UplinkSnackBox
@@ -1856,7 +1855,7 @@
   cost:
     Telecrystal: 1
   categories:
-  - UplinkMisc
+  - UplinkPointless
 
 # - type: listing
 #   id: UplinkGigacancerScanner
@@ -1866,7 +1865,7 @@
 #   cost:
 #     Telecrystal: 5
 #   categories:
-#   - UplinkMisc
+#   - UplinkPointless
 
 - type: listing
   id: UplinkBackpackSyndicate

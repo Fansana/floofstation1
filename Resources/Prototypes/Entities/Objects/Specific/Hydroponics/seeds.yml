@@ -461,17 +461,6 @@
 
 - type: entity
   parent: SeedBase
-  name: packet of glasstle seeds
-  description: "Scars of gloomy nights."
-  id: GlasstleSeeds
-  components:
-    - type: Seed
-      seedId: glasstle
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/glasstle.rsi
-
-- type: entity
-  parent: SeedBase
   name: packet of fly amanita spores
   description: "The iconic, extremely deadly mushroom to be used for purely ornamental purposes."
   id: FlyAmanitaSeeds
