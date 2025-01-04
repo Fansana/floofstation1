@@ -2093,3 +2093,25 @@ Entries:
   id: 266
   time: '2025-01-03T15:44:09.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/447
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Improved the footprints system to properly adhere to energy & mass
+        conservation principles.
+    - type: Fix
+      message: Fixed leash length settings and added popups to them.
+    - type: Fix
+      message: Fixed lying down near a table allowing to bypass barriers.
+    - type: Fix
+      message: Deep fryer and music band UIs should now work correctly.
+    - type: Fix
+      message: Fixed lingering color effects from stamina and damage.
+    - type: Fix
+      message: >-
+        Minor fixes: made table frames climbable, made ashtrays work correctly,
+        made welders require being lit in order to weld glass. See the PR #452
+        for more details.
+  id: 267
+  time: '2025-01-04T11:20:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/452
