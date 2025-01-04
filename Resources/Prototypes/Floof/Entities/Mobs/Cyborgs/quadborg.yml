@@ -19,6 +19,11 @@
       visible: false
   - type: Stripping
   - type: IntrinsicRadioTransmitter
+    channels:
+    - Security
+    - Binary
+    - Common
+    - Science
   - type: ActiveRadio
   - type: Body
     prototype: Primate
