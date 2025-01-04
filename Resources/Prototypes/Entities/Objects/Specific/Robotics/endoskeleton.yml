@@ -234,9 +234,11 @@
     noRot: true
     drawdepth: Items
     sprite: Floof/Objects/Specific/Robotics/parts.rsi
+    scale: 0.7, 0.7
     state: quad_suit
   - type: ItemMapper
     sprite: Floof/Objects/Specific/Robotics/parts.rsi
+    scale: 0.7, 0.7
     mapLayers:
       borg_l_arm+o:
         whitelist:
