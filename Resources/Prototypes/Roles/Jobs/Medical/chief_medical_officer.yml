@@ -9,7 +9,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
-      min: 14400 # Floofstation - 4 hour
+      min: 57600 # Floofstation - 16 hour
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
