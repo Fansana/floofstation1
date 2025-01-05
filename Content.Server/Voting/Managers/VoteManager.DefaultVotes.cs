@@ -242,18 +242,18 @@ namespace Content.Server.Voting.Managers
             vote.OnFinished += (_, args) =>
             {
                 GameMapPrototype picked;
-                if (args.Winner == null)
+                if (args.Winners.Contains(randomMapData)) // Floof section - random map
+                {
+                    picked = _random.Pick(maps.Keys);
+                    _chatManager.DispatchServerAnnouncement(
+                        Loc.GetString("ui-vote-map-random-win", ("picked", maps[picked])));
+                }
+                else if (args.Winner == null) // Floof section end
                 {
                     picked = (GameMapPrototype) _random.Pick(args.Winners);
                     _chatManager.DispatchServerAnnouncement(
                         Loc.GetString("ui-vote-map-tie", ("picked", maps[picked])));
                 }
-                else if (args.Winner == randomMapData) // Floof section - random map
-                {
-                    picked = _random.Pick(maps.Keys);
-                    _chatManager.DispatchServerAnnouncement(
-                        Loc.GetString("ui-vote-map-random-win", ("picked", maps[picked])));
-                } // Floof section end
                 else
                 {
                     picked = (GameMapPrototype) args.Winner;
