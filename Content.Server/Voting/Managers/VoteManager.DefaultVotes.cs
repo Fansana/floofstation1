@@ -57,7 +57,7 @@ namespace Content.Server.Voting.Managers
 
             var ghostVotePercentageRequirement = _cfg.GetCVar(CCVars.VoteRestartGhostPercentage);
             var ghostCount = 0;
-            
+
             foreach (var player in _playerManager.Sessions)
             {
                 _playerManager.UpdateState(player);
@@ -231,6 +231,10 @@ namespace Content.Server.Voting.Managers
                 options.Options.Add((v, k));
             }
 
+            // Floof - add the random map vote option
+            object randomMapData = new();
+            options.Options.Add((Loc.GetString("ui-vote-map-random"), randomMapData));
+
             WirePresetVoteInitiator(options, initiator);
 
             var vote = CreateVote(options);
@@ -244,6 +248,12 @@ namespace Content.Server.Voting.Managers
                     _chatManager.DispatchServerAnnouncement(
                         Loc.GetString("ui-vote-map-tie", ("picked", maps[picked])));
                 }
+                else if (args.Winner == randomMapData) // Floof section - random map
+                {
+                    picked = _random.Pick(maps.Keys);
+                    _chatManager.DispatchServerAnnouncement(
+                        Loc.GetString("ui-vote-map-random-win", ("picked", maps[picked])));
+                } // Floof section end
                 else
                 {
                     picked = (GameMapPrototype) args.Winner;
