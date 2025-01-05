@@ -2124,3 +2124,10 @@ Entries:
   id: 268
   time: '2025-01-05T07:09:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/450
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Added a "random map" option to "next map" votings.
+  id: 269
+  time: '2025-01-05T17:33:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/453
