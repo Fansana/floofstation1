@@ -205,3 +205,15 @@
     - type: Puddle
       solution: step
     - type: Appearance
+    # Floof section - components that puddles have and footprints should also have. Why are we not inheriting from Puddle again?
+    - type: Drink
+      delay: 3
+      transferAmount: 1
+      solution: step
+      examinable: false
+    - type: ExaminableSolution
+      solution: step
+    - type: DrawableSolution
+      solution: step
+    - type: BadDrink
+    # Floof section end

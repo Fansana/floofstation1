@@ -38,6 +38,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - SecWatchCartridge
 
 - type: entity
   parent: BasePDA

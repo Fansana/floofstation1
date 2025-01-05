@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "base by EmoGarbage404, icons by Fenndragon: 190763499276861440.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "security"
+    },
+    {
+      "name": "icon-Advmeasures"
+    },
+    {
+      "name": "icon-stun"
+    },
+    {
+      "name": "icon-kill"
+    },
+    {
+      "name": "icon-capture"
+    },
+    {
+      "name": "icon-investigation"
+    },
+    {
+      "name": "icon-explosive"
+    }
+  ]
+}

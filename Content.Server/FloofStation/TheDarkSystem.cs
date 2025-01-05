@@ -14,12 +14,13 @@ public sealed class TheDarkSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-
-        SubscribeLocalEvent<RoundStartingEvent>(SetupTheDark);
+        SubscribeLocalEvent<HideoutGeneratorComponent, MapInitEvent>(SetupTheDark);
+        SubscribeLocalEvent<HideoutGeneratorComponent, ComponentShutdown>(DestroyTheDark);
     }
 
-    private void SetupTheDark(RoundStartingEvent ev)
+    private void SetupTheDark(EntityUid uid, HideoutGeneratorComponent component, MapInitEvent args)
     {
+        Logger.Debug(uid.ToString());
         var mapId = _mapManager.CreateMap();
         _mapManager.AddUninitializedMap(mapId);
 
@@ -30,7 +31,21 @@ public sealed class TheDarkSystem : EntitySystem
         {
             EnsureComp<PreventPilotComponent>(id);
         }
-
+        component.Generated.Add(mapId);
         _mapManager.DoMapInitialize(mapId);
+    }
+
+    private void DestroyTheDark(EntityUid uid, HideoutGeneratorComponent component, ComponentShutdown args)
+    {
+
+        foreach (var mapId in component.Generated)
+        {
+            if (!_mapManager.MapExists(mapId))
+                continue;
+
+            _mapManager.DeleteMap(mapId);
+        }
+
+
     }
 }

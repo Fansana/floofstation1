@@ -777,6 +777,18 @@
     tags:
     - Skirt
 
+#Corpsmen Outfits
+- type: entity
+  parent: [ ClothingShoesBase, ClothingShoesMilitaryBase ]
+  id: ClothingUnderSocksCorpsman
+  name: corpsman thigh-high socks
+  description: A pair of thigh-high socks, styled for Corpsman roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+
 #Service Outfits
 #
 #General Service

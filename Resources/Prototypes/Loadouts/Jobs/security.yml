@@ -270,6 +270,20 @@
   items:
     - ClothingShoesBootsCombatFilled
 
+- type: loadout
+  id: LoadoutHighsocksBrigmedic
+  category: JobsSecurity
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutShoesSecurity
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
+  items:
+    - ClothingUnderSocksCorpsman
+
 # Eyes
 - type: loadout
   id: LoadoutSecurityEyesHudSecurity
