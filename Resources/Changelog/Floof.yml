@@ -2115,3 +2115,12 @@ Entries:
   id: 267
   time: '2025-01-04T11:20:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/452
+- author: Memeji
+  changes:
+    - type: Add
+      message: Shackles to the loadout
+    - type: Fix
+      message: Witch Robes cannot be selected with other outer wear items.
+  id: 268
+  time: '2025-01-05T07:09:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/450
