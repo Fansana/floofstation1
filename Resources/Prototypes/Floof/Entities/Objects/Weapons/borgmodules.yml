@@ -1,0 +1,20 @@
+- type: entity
+  id: WeaponProtoKineticAcceleratorborg
+  parent: WeaponProtoKineticAcceleratorBase
+  name: proto-kinetic accelerator borg
+  noSpawn: true
+  components:
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    minAngle: 1
+    maxAngle: 3
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+    fireOnDropChance: 1
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi

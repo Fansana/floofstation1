@@ -236,7 +236,8 @@
     - state: icon-pka
   - type: ItemBorgModule
     items:
-    - WeaponProtoKineticAccelerator
+    - WeaponProtoKineticAcceleratorborg #Floof
+    - SurvivalKnife # floof they are salavaging they should be able to cut a fish
 
 - type: entity
   id: BorgModuleGrapplingGun
