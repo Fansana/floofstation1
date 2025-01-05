@@ -63,16 +63,14 @@
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: frills_hood_secondary
 
-# Floof
 - type: marking
-  id: LizardFloofNeckfull
+  id: LizardFrillsNeckfull
   bodyPart: HeadSide
   markingCategory: HeadSide
   speciesRestriction: [Reptilian, SlimePerson]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
-    state: floof_neckfull
-# end Floof
+    state: frills_neckfull
 
 - type: marking
   id: LizardHornsAngler
