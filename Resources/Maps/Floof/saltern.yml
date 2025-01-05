@@ -5039,8 +5039,6 @@ entities:
       pos: 11.5,13.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
       devices:
       - 256
       - 216
