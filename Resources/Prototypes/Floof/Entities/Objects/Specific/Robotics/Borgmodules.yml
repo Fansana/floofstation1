@@ -65,21 +65,6 @@
     - SecurityWhistle
     
 - type: entity
-  id: BorgModuleadvancedmeasures
-  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: advanced combat cyborg module
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
-    layers:
-    - state: security
-    - state: icon-Advmeasures
-  - type: ItemBorgModule
-    items:
-    - WeaponEnergyShotgun
-    - BorgWeaponXrayCannon
-    
-- type: entity
   id: BaseSecModule
   parent: BaseItem
   name: blank security borg module
