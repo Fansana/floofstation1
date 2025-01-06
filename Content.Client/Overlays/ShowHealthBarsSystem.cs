@@ -18,7 +18,14 @@ public sealed class ShowHealthBarsSystem : EquipmentHudSystem<ShowHealthBarsComp
     {
         base.Initialize();
 
+        SubscribeLocalEvent<ShowHealthBarsComponent, AfterAutoHandleStateEvent>(OnHandleState);
+
         _overlay = new(EntityManager);
+    }
+
+    private void OnHandleState(Entity<ShowHealthBarsComponent> ent, ref AfterAutoHandleStateEvent args)
+    {
+        RefreshOverlay(ent);
     }
 
     protected override void UpdateInternal(RefreshEquipmentHudEvent<ShowHealthBarsComponent> component)

@@ -11,7 +11,6 @@
   cost: 7500
   recipeUnlocks:
   - MiningDrill
-  - BorgModuleMining
   - OreProcessorIndustrialMachineCircuitboard
   - OreBagOfHolding
   - ClothingMaskWeldingGas
@@ -119,7 +118,6 @@
   cost: 5000
   recipeUnlocks:
   - WeaponGrapplingGun
-  - BorgModuleGrapplingGun
 
 # Tier 2
 
@@ -180,7 +178,6 @@
     - PowerDrill
     - JawsOfLife
     - BorgModuleAdvancedTool
-    - BorgModuleRCD
 
 - type: technology
   id: MechanizedSalvaging
