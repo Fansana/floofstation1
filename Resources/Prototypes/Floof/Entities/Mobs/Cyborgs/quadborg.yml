@@ -50,6 +50,8 @@
   - type: Speech
     speechVerb: Robotic
   - type: LayingDown
+  - type: SiliconLawProvider 
+    laws: Qborg
   - type: LeashAnchor # Floofstation
   
 - type: entity

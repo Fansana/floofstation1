@@ -1,0 +1,30 @@
+﻿- type: siliconLaw
+  id: qborg1
+  order: 1
+  lawString: law-qborg-1
+
+- type: siliconLaw
+  id: qborg2
+  order: 2
+  lawString: law-qborg-2
+
+- type: siliconLaw
+  id: qborg3
+  order: 3
+  lawString: law-qborg-3
+  
+- type: siliconLaw
+  id: qborg4
+  order: 4
+  lawString: law-qborg-4
+
+- type: siliconLawset
+  id: Qborg
+  laws:
+  - qborg1
+  - qborg2
+  - qborg3
+  - qborg4
+  obeysTo: laws-owner-crew
+
+

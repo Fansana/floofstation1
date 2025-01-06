@@ -10,7 +10,7 @@
 - type: entity
   id: BorgModuleStun
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: Disabler cyborg module
+  name: A Module "incapable of causing harm if used correctly"
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
