@@ -779,7 +779,7 @@
 
 #Corpsmen Outfits
 - type: entity
-  parent: ClothingShoesBase
+  parent: [ ClothingShoesBase, ClothingShoesMilitaryBase ]
   id: ClothingUnderSocksCorpsman
   name: corpsman thigh-high socks
   description: A pair of thigh-high socks, styled for Corpsman roles.

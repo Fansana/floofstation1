@@ -92,7 +92,7 @@ public abstract partial class InteractionTest
         {
             await Server.WaitPost(() =>
             {
-                uid = SEntMan.SpawnEntity(stackProto.Spawn, coords);
+                uid = SEntMan.SpawnAtPosition(stackProto.Spawn, coords);
                 Stack.SetCount(uid, spec.Quantity);
             });
             return uid;
@@ -114,13 +114,13 @@ public abstract partial class InteractionTest
             return await SpawnEntity((stack.StackTypeId, spec.Quantity), coords);
 
         Assert.That(spec.Quantity, Is.EqualTo(1), "SpawnEntity only supports returning a singular entity");
-        await Server.WaitPost(() => uid = SEntMan.SpawnEntity(spec.Prototype, coords));
+        await Server.WaitPost(() => uid = SEntMan.SpawnAtPosition(spec.Prototype, coords));
         return uid;
     }
 
     /// <summary>
     /// Convert an entity-uid to a matching entity specifier. Useful when doing entity lookups & checking that the
-    /// right quantity of entities/materials werre produced. Returns null if passed an entity with a null prototype.
+    /// right quantity of entities/materials were produced. Returns null if passed an entity with a null prototype.
     /// </summary>
     protected EntitySpecifier? ToEntitySpecifier(EntityUid uid)
     {
