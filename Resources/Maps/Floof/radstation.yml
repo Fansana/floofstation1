@@ -126581,9 +126581,6 @@ entities:
       pos: -29.5,-15.5
       parent: 2
     - type: DeviceLinkSource
-      linkedPorts:
-        invalid:
-        - Status: Toggle
   - uid: 18426
     components:
     - type: Transform
