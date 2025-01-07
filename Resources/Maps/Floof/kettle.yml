@@ -12130,7 +12130,7 @@ entities:
       pos: 10.5,32.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -3810.4055
+      secondsUntilStateChange: -3866.0059
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13218,7 +13218,7 @@ entities:
       pos: 30.5,50.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -4227.2954
+      secondsUntilStateChange: -4282.8955
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13982,7 +13982,7 @@ entities:
       pos: -55.5,-23.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -2293.1956
+      secondsUntilStateChange: -2348.796
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -79328,6 +79328,16 @@ entities:
       parent: 26185
     - type: Physics
       canCollide: False
+- proto: EncryptionKeyJustice
+  entities:
+  - uid: 26725
+    components:
+    - type: Transform
+      parent: 25896
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
 - proto: EncryptionKeyMedical
   entities:
   - uid: 26272
@@ -118823,7 +118833,7 @@ entities:
       pos: 29.5,63.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -17096.953
+      secondsUntilStateChange: -17152.553
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -147794,6 +147804,7 @@ entities:
           occludes: True
           ents:
           - 26275
+          - 26725
         machine_board: !type:Container
           showEnts: False
           occludes: True
