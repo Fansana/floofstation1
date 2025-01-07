@@ -14977,7 +14977,7 @@ entities:
       pos: -23.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4105.455
+      secondsUntilStateChange: -4124.439
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15011,7 +15011,7 @@ entities:
       pos: 34.5,-35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -68724.65
+      secondsUntilStateChange: -68743.63
       state: Opening
   - uid: 386
     components:
@@ -15337,7 +15337,7 @@ entities:
       pos: -35.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4507.487
+      secondsUntilStateChange: -4526.4707
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -37068,6 +37068,11 @@ entities:
     components:
     - type: Transform
       pos: -14.5,-26.5
+      parent: 2
+  - uid: 24281
+    components:
+    - type: Transform
+      pos: 11.5,-56.5
       parent: 2
 - proto: CableApcStack
   entities:
@@ -158350,7 +158355,7 @@ entities:
       links:
       - 20116
     - type: Door
-      secondsUntilStateChange: -205016.92
+      secondsUntilStateChange: -205035.9
       state: Opening
   - uid: 23498
     components:
