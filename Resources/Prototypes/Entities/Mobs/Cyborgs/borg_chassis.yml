@@ -105,8 +105,6 @@
           - BorgModuleSyndicateAssault
       hasMindState: synd_sec_e
       noMindState: synd_sec
-    - type: Construction
-      node: syndicateassault
 
 - type: entity
   id: BorgChassisSyndicateMedical
@@ -134,8 +132,6 @@
           - BorgModuleSyndicate
       hasMindState: synd_medical_e
       noMindState: synd_medical
-    - type: Construction
-      node: syndicatemedical
 
 - type: entity
   id: BorgChassisSyndicateSaboteur
