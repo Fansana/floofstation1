@@ -14,6 +14,8 @@
   customName: true
   sexes:
   - Unsexed
+  - Male
+  - Female
 
 - type: speciesBaseSprites
   id: MobResomiSprites
