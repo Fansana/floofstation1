@@ -9411,7 +9411,7 @@ entities:
       pos: -49.5,31.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2933.9045
+      secondsUntilStateChange: -3128.9094
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -27420,6 +27420,11 @@ entities:
     components:
     - type: Transform
       pos: 37.5,-37.5
+      parent: 2
+  - uid: 19388
+    components:
+    - type: Transform
+      pos: -46.5,47.5
       parent: 2
 - proto: CableApcStack
   entities:
@@ -131796,14 +131801,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,36.5
       parent: 2
-- proto: WindoorMailLocked
-  entities:
-  - uid: 20571
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -26.5,-1.5
-      parent: 2
 - proto: WindoorSecure
   entities:
   - uid: 20572
@@ -131928,6 +131925,12 @@ entities:
       parent: 2
 - proto: WindoorSecureCargoLocked
   entities:
+  - uid: 19387
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -26.5,-1.5
+      parent: 2
   - uid: 20587
     components:
     - type: MetaData
