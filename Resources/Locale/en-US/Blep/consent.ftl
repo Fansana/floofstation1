@@ -29,3 +29,6 @@ consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED 
 
 consent-Hypno-name = Hypnosis
 consent-Hypno-desc = Allow yourself to be hypnotized.
+
+consent-NoClone-name = Disallow Paradox Anomaly
+consent-NoClone-desc = Disallow yourself to be the target of a paradox anomaly clone.
