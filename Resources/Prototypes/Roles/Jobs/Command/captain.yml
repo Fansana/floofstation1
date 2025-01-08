@@ -7,22 +7,22 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Epistemics dept time requirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
     - !type:CharacterDepartmentTimeRequirement
       department: Command
-      min: 14400 # Floofstation - 4 hour
+      min: 28800 # Floofstation - 8 hour
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
