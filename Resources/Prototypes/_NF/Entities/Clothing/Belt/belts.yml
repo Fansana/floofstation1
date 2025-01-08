@@ -1,0 +1,34 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltChaplainSash
+  name: chaplain sash
+  description: Who knew that scarves can be also tied around your waist?
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Belt/chaplain_sash.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Belt/chaplain_sash.rsi
+  - type: ItemMapper
+    mapLayers:
+      book:
+        whitelist:
+          tags:
+          - Book
+          components:
+          - BibleComponent
+          - Paper
+      bottle:
+        whitelist:
+          tags:
+          - Bottle
+          - DrinkBottle
+          components:
+          - Drink
+          - Hypospray
+      crucifix:
+        whitelist:
+          tags:
+          - Crucifix
+    sprite: _NF/Clothing/Belt/chaplain_sash_overlay.rsi
+  - type: Appearance
+
