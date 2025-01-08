@@ -2144,3 +2144,12 @@ Entries:
   id: 270
   time: '2025-01-08T01:31:24.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/458
+- author: mazziechai
+  changes:
+    - type: Add
+      message: >-
+        Paradox Anomaly clones of your character can be disabled through the
+        consent preferences menu.
+  id: 271
+  time: '2025-01-08T02:11:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/463
