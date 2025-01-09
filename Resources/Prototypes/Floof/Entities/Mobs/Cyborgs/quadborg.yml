@@ -5,7 +5,7 @@
   components:
   - type: Sprite
     sprite: Floof/Mobs/Silicon/quad.rsi
-    scale: 0.6, 0.6
+    scale: 0.7, 0.7
     layers:
     - state: quadsprite
       map: ["movement"]
@@ -17,6 +17,19 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: Stripping
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Security
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+  - type: Body
+    prototype: Primate
+    requiredLegs: 1 # TODO: More than 1 leg
+  - type: Inventory
+    templateId: Securityborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -37,4 +50,38 @@
   - type: Speech
     speechVerb: Robotic
   - type: LayingDown
+  - type: SiliconLawProvider 
+    laws: Qborg
   - type: LeashAnchor # Floofstation
+  
+- type: entity
+  id: BorgChassisQuadCC
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: quadspriteCC
+      map: ["movement"]
+    - state: quadspritel
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspriter
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  
+- type: inventoryTemplate
+  id: Securityborg
+  slots:
+  - name: pocket1
+    slotTexture: pocket
+    slotFlags: POCKET
+    slotGroup: MainHotbar
+    stripTime: 3
+    uiWindowPos: 0,3
+    strippingWindowPos: 0,4
+    displayName: Pocket 1
+    stripHidden: false
