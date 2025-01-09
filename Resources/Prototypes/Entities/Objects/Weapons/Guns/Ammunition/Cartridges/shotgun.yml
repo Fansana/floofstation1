@@ -20,7 +20,7 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: Appearance
   - type: SpentAmmoVisuals
-
+  
 - type: entity
   id: ShellShotgunBeanbag
   name: shell (.50 beanbag)
@@ -35,7 +35,6 @@
     count: 1
   - type: SpentAmmoVisuals
     state: "beanbag"
-
 - type: entity
   id: ShellShotgunSlug
   name: shell (.50 slug)

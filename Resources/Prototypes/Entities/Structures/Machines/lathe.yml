@@ -645,6 +645,8 @@
     - RightLegBorgService
     - HeadBorgService
     - TorsoBorgService
+    - Quadborgendoskeleton
+    - BaseSecModule
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer
@@ -910,6 +912,7 @@
       - MagazineBoxSpecialMindbreaker
       - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
+      #- WeaponEnergyShotgun
       - WeaponGrapplingGun # Floof
       - JawsOfLife
       - HandHeldMassScanner
