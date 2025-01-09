@@ -1043,8 +1043,20 @@
       collection: MeatLaserImpact
 
 - type: entity
+  name: energy bolt
+  id: BulletEnergyGun
+  parent: BulletEnergyGunLaser
+  noSpawn: true
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectRedDisabler
+    damage:
+      types:
+        Heat: 5 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
+
+- type: entity
   name: wide laser barrage
   id: BulletLaserSpread
   categories: [ HideSpawnMenu ]
-  parent: BulletEnergyGunLaser
+  parent: BulletEnergyGun
 
