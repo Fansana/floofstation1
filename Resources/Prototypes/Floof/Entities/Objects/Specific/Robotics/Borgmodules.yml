@@ -10,16 +10,14 @@
 - type: entity
   id: BorgModuleStun
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: A Module "incapable of causing harm if used correctly"
+  name: Disabler cyborg Module 
+  description: A Module "incapable of causing harm if used correctly"
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
     layers:
     - state: security
     - state: icon-stun
-  - type: Construction
-    graph: BorgmoduleDisabler
-    node: icon
   - type: ItemBorgModule
     items:
     - WeaponBorgDisabler
@@ -29,16 +27,13 @@
 - type: entity
   id: BorgModuleKill
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: combat cyborg module
+  name: Combat cyborg module
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
     layers:
     - state: security
     - state: icon-kill
-  - type: Construction
-    graph: BorgmoduleCombat
-    node: icon
   - type: ItemBorgModule
     items:
     - WeaponAdvancedLaser
@@ -55,9 +50,6 @@
     layers:
     - state: security
     - state: icon-investigation
-#  - type: Construction
-#    graph: BorgModuleInvestigation
-#    node: icon
   - type: ItemBorgModule
     items:
     - ForensicScanner
@@ -76,26 +68,6 @@
     - state: icon-Advmeasures
   - type: ItemBorgModule
     items:
-    - WeaponEnergyShotgun
+    - WeaponBorgEnergyShotgun
     - BorgWeaponXrayCannon
     
-- type: entity
-  id: BaseSecModule
-  parent: BaseItem
-  name: blank security borg module
-  description: A piece of tech that gives cyborgs new abilities.
-  components:
-  - type: Item
-    storedRotation: -90
-  - type: Sprite
-    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
-    layers:
-    - state: security
-  - type: StaticPrice
-    price: 100
-  - type: Tag
-    tags:
-    - BorgModuleGeneric
-  - type: GuideHelp
-    guides:
-      - Cyborgs
