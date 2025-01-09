@@ -2005,3 +2005,205 @@ Entries:
   id: 258
   time: '2024-12-27T03:32:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/435
+- author: Memeji
+  changes:
+    - type: Add
+      message: Yapping emote to Vulpkanin
+  id: 259
+  time: '2024-12-30T02:47:28.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/439
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed squeaking stir fry
+  id: 260
+  time: '2024-12-31T03:34:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/443
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Mops, damp rags, and cleanbots now have area-of-effect cleaning,
+        allowing them to clean multiple footprints at once.
+    - type: Fix
+      message: Footprints can now be examined and drawn from just like regular puddles.
+    - type: Fix
+      message: >-
+        Whether an entity leaves the "dragging" or "walking" footprints is now
+        determined by whether it's standing or laying down.
+  id: 261
+  time: '2024-12-31T15:11:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/445
+- author: Fansana
+  changes:
+    - type: Add
+      message: add command glasses
+  id: 262
+  time: '2024-12-31T15:11:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/441
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added Kettle as a mid pop map
+  id: 263
+  time: '2024-12-31T15:12:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/431
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Hammurabi based on community feedback
+    - type: Tweak
+      message: Tweaked Shokou based on community feedback
+    - type: Add
+      message: Added a job slot for librarian on Shokou
+    - type: Tweak
+      message: Tweaked Rad based on community feedback
+    - type: Tweak
+      message: Tweaked Lighthouse based on community feedback
+    - type: Add
+      message: >-
+        Added a job slot for a corpsmen, a librarian and a roboticist on
+        Lighthouse 
+    - type: Tweak
+      message: Tweaked Core based on community feedback
+    - type: Add
+      message: added two courier job slots on Core
+    - type: Tweak
+      message: Tweaked Asterisk based on community feedback
+    - type: Tweak
+      message: Tweaked Glaciers atmos setup
+  id: 264
+  time: '2024-12-31T20:02:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/446
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Fixed a crash that occurred while trying to build prescription huds.
+  id: 265
+  time: '2025-01-03T03:26:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/449
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: >-
+        Increased department playtime requirement for department heads to 16
+        hours.
+    - type: Fix
+      message: Fixed Head of Security not requiring any security playtime.
+  id: 266
+  time: '2025-01-03T15:44:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/447
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Improved the footprints system to properly adhere to energy & mass
+        conservation principles.
+    - type: Fix
+      message: Fixed leash length settings and added popups to them.
+    - type: Fix
+      message: Fixed lying down near a table allowing to bypass barriers.
+    - type: Fix
+      message: Deep fryer and music band UIs should now work correctly.
+    - type: Fix
+      message: Fixed lingering color effects from stamina and damage.
+    - type: Fix
+      message: >-
+        Minor fixes: made table frames climbable, made ashtrays work correctly,
+        made welders require being lit in order to weld glass. See the PR #452
+        for more details.
+  id: 267
+  time: '2025-01-04T11:20:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/452
+- author: Memeji
+  changes:
+    - type: Add
+      message: Shackles to the loadout
+    - type: Fix
+      message: Witch Robes cannot be selected with other outer wear items.
+  id: 268
+  time: '2025-01-05T07:09:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/450
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Added a "random map" option to "next map" votings.
+  id: 269
+  time: '2025-01-05T17:33:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/453
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added kettle to the map pool
+    - type: Tweak
+      message: Tweaked Kettle to add missing warp points and map beacons
+    - type: Tweak
+      message: Tweaked Rad based on additional community feedback
+    - type: Tweak
+      message: Lighthouse so every department has paper work templates
+  id: 270
+  time: '2025-01-08T01:31:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/458
+- author: mazziechai
+  changes:
+    - type: Add
+      message: >-
+        Paradox Anomaly clones of your character can be disabled through the
+        consent preferences menu.
+  id: 271
+  time: '2025-01-08T02:11:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/463
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: >-
+        Nuclear Fission Explosive Announcements now properly alert the crew to
+        their approximate location.
+  id: 272
+  time: '2025-01-08T02:11:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/464
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added lots of punk clothing from frontier
+    - type: Add
+      message: 'Added chaplain clothing: sash Crucifix'
+  id: 273
+  time: '2025-01-08T09:22:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/448
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: >-
+        SESWC tinkered with the salvage borg PKA module and taped a knife to its
+        other arm.
+  id: 274
+  time: '2025-01-09T00:14:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/454
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added 2 new modules
+    - type: Add
+      message: Quadborg recipes
+    - type: Tweak
+      message: Tweaked Secborg setup
+    - type: Tweak
+      message: Tweaked Core map
+  id: 275
+  time: '2025-01-09T01:13:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/436
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Energy shotgun '
+  id: 276
+  time: '2025-01-09T01:18:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/455
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: 'changed Core map. '
+  id: 277
+  time: '2025-01-09T01:20:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/459

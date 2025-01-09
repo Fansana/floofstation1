@@ -1,0 +1,75 @@
+- type: constructionGraph
+  id: BorgmoduleDisabler
+  start: start
+  graph:
+  - node: start
+    entity: Stunbaton
+    edges:
+    - to: icon
+      steps:
+      - tag: BorgModuleGeneric
+        name: blank security borg module
+        icon:
+          sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+          state: security
+        doAfter: 1
+      - tag: Taser
+        name: disabler
+        icon:
+          sprite: Objects/Weapons/Guns/Battery/disabler.rsi
+          state: base
+        doAfter: 1
+  - node: icon
+    entity: BorgModuleStun
+
+- type: constructionGraph
+  id: BorgmoduleCombat
+  start: start
+  graph:
+  - node: start
+    entity: WeaponAdvancedLaser
+    edges:
+    - to: icon
+      steps:
+      - tag: BorgModuleGeneric
+        name: blank security borg module
+        icon:
+          sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+          state: security
+        doAfter: 1
+      - tag: Knife
+        icon:
+          sprite: Objects/Weapons/Melee/combat_knife.rsi
+          state: icon
+        doAfter: 1
+      - tag: Sidearm
+        icon:
+          sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+          state: base
+        doAfter: 1
+  - node: icon
+    entity: BorgModuleKill
+    
+- type: constructionGraph
+  id: BorgModuleInvestigation
+  start: start
+  graph:
+  - node: start
+    entity: ForensicScanner
+    edges:
+    - to: icon
+      steps:
+      - tag: BorgModuleGeneric
+        name: blank security borg module
+        icon:
+          sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+          state: security
+        doAfter: 1
+      - tag: DoorBumpOpener
+        name: SecurityPDA
+        icon:
+          sprite: Objects/Devices/pda.rsi
+          state: pda-security
+        doAfter: 1
+  - node: icon
+    entity: BorgModuleInvestigation
