@@ -2180,3 +2180,16 @@ Entries:
   id: 274
   time: '2025-01-09T00:14:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/454
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added 2 new modules
+    - type: Add
+      message: Quadborg recipes
+    - type: Tweak
+      message: Tweaked Secborg setup
+    - type: Tweak
+      message: Tweaked Core map
+  id: 275
+  time: '2025-01-09T01:13:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/436
