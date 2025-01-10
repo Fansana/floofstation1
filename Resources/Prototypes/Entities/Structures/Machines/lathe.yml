@@ -817,6 +817,8 @@
       - MagazinePistolSubMachineGunEmpty
       - MagazinePistolSubMachineGunTopMounted
       - MagazinePistolSubMachineGunTopMountedEmpty
+      - MagazineMagnum
+      - MagazineMagnumEmpty
       - MagazineRifle
       - MagazineRifleEmpty
       - MagazineShotgun
@@ -889,10 +891,19 @@
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
       - MagazineGrenadeEmpty
+      - MagazineLightRifleRubber
       - MagazineLightRifleIncendiary
       - MagazineLightRifleUranium
+      - MagazinePistolRubber
       - MagazinePistolIncendiary
       - MagazinePistolUranium
+      - MagazinePistolSubMachineGunRubber
+      - MagazinePistolSubMachineGunIncendiary
+      - MagazinePistolSubMachineGunUranium
+      - MagazineMagnumRubber
+      - MagazineMagnumIncendiary
+      - MagazineMagnumUranium
+      - MagazineRifleRubber
       - MagazineRifleIncendiary
       - MagazineRifleUranium
       - MagazineShotgunBeanbag
@@ -908,6 +919,7 @@
       - ShuttleGunSvalinnMachineGunCircuitboard
       - Signaller
       - SignalTrigger
+      - SpeedLoaderMagnumRubber
       - SpeedLoaderMagnumIncendiary
       - SpeedLoaderMagnumUranium
       - TelescopicShield
