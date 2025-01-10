@@ -646,7 +646,6 @@
     - HeadBorgService
     - TorsoBorgService
     - Quadborgendoskeleton
-    - BaseSecModule
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer
@@ -817,6 +816,9 @@
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
+      - BorgModuleStun
+      - BorgModuleKill
+      - BorgModuleInvestigation
       - ShadowkinRestraints
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial

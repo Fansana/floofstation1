@@ -16,6 +16,12 @@ public sealed partial class HandcuffComponent : Component
     public bool NoRot = false;
 
     /// <summary>
+    /// Should the cuff be removed when used? (This will always give zipties to the target, i should do another system clone or move it to its own comp but so far, this works)
+    /// </summary>
+    [DataField]
+    public bool RemoveOnUse = true;
+
+    /// <summary>
     ///     The time it takes to cuff an entity.
     /// </summary>
     [DataField]
