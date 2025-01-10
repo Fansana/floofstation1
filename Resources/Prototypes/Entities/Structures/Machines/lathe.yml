@@ -646,7 +646,6 @@
     - HeadBorgService
     - TorsoBorgService
     - Quadborgendoskeleton
-    - BaseSecModule
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer
