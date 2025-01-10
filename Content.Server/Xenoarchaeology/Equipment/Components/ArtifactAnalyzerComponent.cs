@@ -25,6 +25,7 @@ public sealed partial class ArtifactAnalyzerComponent : Component
     /// Each is 150 and added to this, so
     /// 550 / 700 / 850 / 1000
     /// </summary>
+    [DataField]
     public int ExtractRatio = 400;
     // Nyano - End modified code block.
 
