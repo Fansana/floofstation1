@@ -2221,3 +2221,12 @@ Entries:
   id: 279
   time: '2025-01-10T06:30:50.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/471
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Security Modules to Security techfab
+    - type: Remove
+      message: 'removed original recipe for security modules '
+  id: 280
+  time: '2025-01-10T11:08:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/472
