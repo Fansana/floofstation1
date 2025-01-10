@@ -1,7 +1,7 @@
 
 - type: entity
-  name: borg disabler
   parent: WeaponDisabler
+  suffix: Robot
   id: WeaponBorgDisabler
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
@@ -49,25 +49,25 @@
   # - type: Appearance
 
 - type: entity
-  name: borg pulse rifle
   parent: WeaponPulseRifle
+  suffix: Robot
   id: BorgWeaponPulseRifle
   description: A weapon that is almost as infamous as its users.
   components:
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 30  
+    autoRechargeRate: 30
 
 - type: entity
-  name: borg Xray Cannon
   parent: WeaponXrayCannon
+  suffix: Robot
   id: BorgWeaponXrayCannon
   description: A weapon that is almost as infamous as its users.
   components:
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 30
-    
+
 - type: entity
   name: mk 58
   parent: BaseWeaponBatterySmall
@@ -96,11 +96,12 @@
   - type: Battery
     maxCharge: 1000
     startingCharge: 1000
-    
+
 - type: entity
   name: energy shotgun
   parent: BaseWeaponBattery
-  id: WeaponEnergyShotgun
+  id: BaseWeaponEnergyShotgun
+  abstract: true
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
   - type: Sprite
@@ -120,27 +121,33 @@
   - type: ProjectileBatteryAmmoProvider
     proto: eShellShotgun
     fireCost: 150
-  - type: BatteryWeaponFireModes
-    fireModes:
-    - proto: eShellShotgun
-      fireCost: 150
-    - proto: BulletDisablerSmg
-      fireCost: 120
   - type: Item
     size: Large
     shape:
     - 0,0,3,1
     sprite: Objects/Weapons/Guns/Battery/inhands_64x.rsi
     heldPrefix: energy
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: WeaponEnergyShotgun
-  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Battery
     maxCharge: 1200
     startingCharge: 1200
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 24
+
+- type: entity
+  name: energy shotgun
+  parent: BaseWeaponEnergyShotgun
+  id: WeaponEnergyShotgun
+  components:
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: WeaponEnergyShotgun
+
+- type: entity
+  suffix: Robot
+  parent: BaseWeaponEnergyShotgun
+  id: WeaponBorgEnergyShotgun
