@@ -146,6 +146,12 @@
   - type: Vore # Floofstation - Vore
     canVore: true
     canBeVored: false
+  - type: ThermalVision
+    isActive: true
+    lightRadius: 15
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
 - type: entity
   name: Praetorian
