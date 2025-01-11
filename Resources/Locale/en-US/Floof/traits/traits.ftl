@@ -26,3 +26,6 @@ trait-description-Lightweight =
 
 trait-name-GermanAccent = German accent
 trait-description-GermanAccent = You seem to come from space Germany.
+
+trait-name-DrunkardAccent = Drunkard accent
+trait-description-DrunkardAccent = You always sound like you're drunk.
