@@ -137,6 +137,12 @@ namespace Content.Shared.Roles
 
         [DataField]
         public bool CanBeAntagTarget = true; // Floofstation Edit
+
+        [DataField]
+        public bool SpawnLoadout = true;
+
+        [DataField]
+        public bool ApplyTraits = true;
     }
 
     /// <summary>
