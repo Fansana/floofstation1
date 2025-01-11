@@ -1,7 +1,10 @@
 ﻿using System.Text;
 using Content.Server.FloofStation.Speech.Components;
 using Content.Server.Speech;
+using Content.Shared.Drunk;
+using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 
 namespace Content.Server.FloofStation.Speech.EntitySystems;
@@ -9,7 +12,9 @@ namespace Content.Server.FloofStation.Speech.EntitySystems;
 
 public sealed class DrunkardAccentSystem : EntitySystem
 {
+    [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -19,13 +24,13 @@ public sealed class DrunkardAccentSystem : EntitySystem
     }
 
     // A modified copy of SlurredSystem's Accentuate.
-    public string Accentuate(string message)
+    public string Accentuate(string message, float scale)
     {
         var sb = new StringBuilder();
 
         foreach (var character in message)
         {
-            if (_random.Prob(0.1f))
+            if (_random.Prob(scale / 3))
             {
                 var lower = char.ToLowerInvariant(character);
                 var newString = lower switch
@@ -41,7 +46,7 @@ public sealed class DrunkardAccentSystem : EntitySystem
                 sb.Append(newString);
             }
 
-            if (!_random.Prob(0.05f))
+            if (!_random.Prob(scale * 3 / 20))
             {
                 sb.Append(character);
                 continue;
@@ -60,6 +65,20 @@ public sealed class DrunkardAccentSystem : EntitySystem
         return sb.ToString();
     }
 
-    private void OnAccent(EntityUid uid, DrunkardAccentComponent component, AccentGetEvent args) =>
-        args.Message = Accentuate(args.Message);
+    private void OnAccent(EntityUid uid, DrunkardAccentComponent component, AccentGetEvent args)
+    {
+        // Drunk status effect calculations, ripped directly from SlurredSystem B)
+        if (!_statusEffectsSystem.TryGetTime(uid, SharedDrunkSystem.DrunkKey, out var time))
+        {
+            args.Message = Accentuate(args.Message, 0.25f);
+        }
+        else
+        {
+            var curTime = _timing.CurTime;
+            var timeLeft = (float) (time.Value.Item2 - curTime).TotalSeconds;
+            var drunkScale = Math.Clamp((timeLeft - 80) / 1100, 0f, 1f);
+
+            args.Message = Accentuate(args.Message, Math.Max(0.25f, drunkScale));
+        }
+    }
 }
