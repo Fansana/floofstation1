@@ -280,7 +280,7 @@ public sealed class StationAiVisionSystem : EntitySystem
     /// </summary>
     private record struct SeedJob() : IRobustJob
     {
-        public StationAiVisionSystem System;
+        public required StationAiVisionSystem System;
 
         public Entity<MapGridComponent> Grid;
         public Box2 ExpandedBounds;
@@ -295,13 +295,14 @@ public sealed class StationAiVisionSystem : EntitySystem
     {
         public int BatchSize => 1;
 
-        public IEntityManager EntManager;
-        public SharedMapSystem Maps;
-        public StationAiVisionSystem System;
+        public required IEntityManager EntManager;
+        public required SharedMapSystem Maps;
+        public required StationAiVisionSystem System;
 
         public Entity<MapGridComponent> Grid;
         public List<Entity<StationAiVisionComponent>> Data = new();
 
+        public HashSet<Vector2i> VisibleTiles = new();
         // If we're doing range-checks might be able to early out
         public Vector2i? TargetTile;
 
