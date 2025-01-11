@@ -64,7 +64,8 @@ namespace Content.IntegrationTests.Tests
             "Submarine", //DeltaV
             "Gax",
             "Rad",
-            "Kettle"
+            "Kettle",
+            "Train"
         };
 
         /// <summary>
