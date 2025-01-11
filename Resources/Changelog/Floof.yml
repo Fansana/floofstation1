@@ -2230,3 +2230,12 @@ Entries:
   id: 280
   time: '2025-01-10T11:08:37.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/472
+- author: mazziechai
+  changes:
+    - type: Add
+      message: >-
+        Added a "drunkard accent", a trait that makes a character's speech
+        slurred like they're drunk.
+  id: 281
+  time: '2025-01-11T21:04:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/476
