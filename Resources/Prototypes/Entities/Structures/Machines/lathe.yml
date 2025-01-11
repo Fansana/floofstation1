@@ -809,6 +809,7 @@
       - MagazineBoxPistolPractice
       - MagazineBoxRifle
       - MagazineBoxRiflePractice
+      - MagazineBoxLightRifle
       - MagazineLightRifle
       - MagazineLightRifleEmpty
       - MagazinePistol
@@ -852,6 +853,14 @@
       - MagazinePistolSpecial
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - MagazineNovaliteC1Empty
+      - MagazineNovaliteC1
+      - MagazineLightRifleLowCapacityEmpty
+      - MagazineLightRifleLowCapacity
+      - SpeedLoaderRifleHeavy
+      - SpeedLoaderRifleHeavyEmpty
+      - WeaponRifleNovaliteC1
+      - WeaponRifleGestio
     dynamicRecipes:
       - BolaEnergy
       - BoxBeanbag
@@ -1012,12 +1021,16 @@
         - MagazinePistolEmpty
         - MagazineRifle
         - MagazineRifleEmpty
+        - MagazineNovaliteC1
+        - MagazineNovaliteC1Empty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
         - ShellTranquilizer
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
+        - SpeedLoaderRifleHeavy
+        - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
     - type: MaterialStorage
