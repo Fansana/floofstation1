@@ -87,7 +87,7 @@
 
 - type: entity
   id: Autolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: autolathe
   description: It produces basic items using metal and glass.
   components:
@@ -242,7 +242,7 @@
 
 - type: entity
   id: Protolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -437,7 +437,7 @@
 
 - type: entity
   id: CircuitImprinter
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: circuit imprinter
   description: Prints circuit boards for machines.
   components:
@@ -566,6 +566,7 @@
       - JukeboxCircuitBoard
       - AutodocCircuitboard # Shitmed Change
       - OperatingTableCircuitboard # Shitmed Change
+      - MaterialSiloCircuitboard
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -593,7 +594,7 @@
 
 - type: entity
   id: ExosuitFabricator
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: exosuit fabricator
   description: Creates parts for robotics and other mechanical needs
   components:
@@ -722,7 +723,7 @@
 
 - type: entity
   id: Biofabricator
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   name: biofabricator
   description: Produces animal cubes using biomass.
   components:
@@ -765,7 +766,7 @@
 
 - type: entity
   id: SecurityTechFab
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: security techfab
   description: Prints equipment for use by security crew.
   components:
@@ -976,7 +977,7 @@
 
 - type: entity
   id: AmmoTechFab
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: ammo techfab
   description: Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
   components:
@@ -1029,7 +1030,7 @@
 
 - type: entity
   id: MedicalTechFab
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseMaterialSiloUtilizer]
   name: medical techfab
   description: Prints equipment for use by the medbay.
   components:
@@ -1345,7 +1346,7 @@
 # Floof section end
 
 - type: entity
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: UniformPrinter
   name: uniform printer
   description: Prints new or replacement uniforms.
@@ -1677,7 +1678,7 @@
         - Ingot
 
 - type: entity
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: OreProcessor
   name: ore processor
   description: It produces sheets and ingots using ores.
@@ -1758,7 +1759,7 @@
       - MaterialDiamond
 
 - type: entity
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: Sheetifier
   name: sheet-meister 2000
   description: A very sheety machine.
@@ -1789,7 +1790,7 @@
     - SheetPaper
 
 - type: entity
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   id: PrizeCounter
   name: prize counter
   description: Claim your prize and win some toys and cute plushies!
@@ -1953,7 +1954,7 @@
 
 - type: entity
   id: MedicalBiofabricator
-  parent: BaseLathe
+  parent: [BaseLathe, BaseMaterialSiloUtilizer]
   name: medical biofabricator
   description: Produces organs and other organic matter that can be surgically grafted onto patients with biomass.
   components:
