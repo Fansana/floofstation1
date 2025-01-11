@@ -16,7 +16,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'ED'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Seal.yml # Might need to change evac
+          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml #floofstation
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -28,7 +28,6 @@
             Botanist: [ 2, 2 ]
             Chef: [ 1, 1 ]
             Janitor: [ 1, 2 ]
-            Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 3 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
@@ -48,6 +47,7 @@
             ForensicMantis: [ 1, 1 ]
             Roboticist: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
