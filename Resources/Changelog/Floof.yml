@@ -2246,3 +2246,12 @@ Entries:
   id: 282
   time: '2025-01-11T22:32:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/479
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Artifact extractions should now generate 2.5 times less glimmer than
+        before.
+  id: 283
+  time: '2025-01-12T01:50:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/474
