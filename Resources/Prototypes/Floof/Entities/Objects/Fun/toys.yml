@@ -250,3 +250,28 @@
       path: /Audio/Voice/Slime/slime_squish.ogg
       params:
         volume: 1
+
+- type: entity
+  parent: PlushieHuman
+  id: PlushiePepper
+  name: pepper plush
+  description: Your own personal Pepper Pal. Pepper Yay!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: pepper
+  - type: UseDelay
+    delay: 1.5
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1
