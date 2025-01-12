@@ -1,4 +1,4 @@
-# TODO: Find remaining cans and move to drinks_cans
+# TODO: Find remaining cans and move to drinks_cans   b-52
 # TODO: Find empty containers (e.g. mug, pitcher) and move to their own yml
 # When adding new drinks also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\drinks_glass.yml
 - type: entity
@@ -312,6 +312,16 @@
         reagents:
         - ReagentId: ArnoldPalmer
           Quantity: 30
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/arnoldpalmer.rsi
+    layers:
+      - state: icon_empty
+      - state: fill-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-
+    changeColor: false
   - type: Icon
     sprite: Objects/Consumable/Drinks/arnoldpalmer.rsi
     state: icon
