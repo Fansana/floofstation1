@@ -2264,3 +2264,10 @@ Entries:
   id: 284
   time: '2025-01-12T03:38:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/480
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Core
+  id: 285
+  time: '2025-01-12T03:38:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/478
