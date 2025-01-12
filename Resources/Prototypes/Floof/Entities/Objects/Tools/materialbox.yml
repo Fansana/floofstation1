@@ -1,0 +1,27 @@
+- type: entity
+  id: Materialbox
+  name: Material box
+  description: A large storage container sold by SESWC to hold finish materials.
+  parent: OreBox
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: /Textures/Floof/Structures/materialbox.rsi
+    layers:
+    - state: orebox
+    - state: orebox-top
+      map: [ top ]
+      visible: true
+  - type: Storage
+    grid:
+    - 0,0,9,5
+    maxItemSize: Normal
+    storageOpenSound: /Audio/Effects/closetopen.ogg
+    storageCloseSound: /Audio/Effects/closetclose.ogg
+    whitelist:
+      tags:
+       - Sheet
+       - Metal
+  - type: Construction
+    graph: GraphMaterialbox
+    node: Materialbox

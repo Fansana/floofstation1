@@ -1,0 +1,28 @@
+- type: constructionGraph
+  id: GraphMaterialbox
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: Materialbox
+      steps:
+      - material: Brass
+        amount: 10
+        doAfter: 4
+  - node: Materialbox
+    entity: Materialbox
+
+- type: construction
+  name: material box
+  id: Materialbox
+  graph: GraphMaterialbox
+  startNode: start
+  targetNode: Materialbox
+  category: construction-category-structures
+  description: A large storage container sold by SESWC to hold finish materials.
+  icon:
+    sprite: /Textures/Floof/Structures/materialbox.rsi
+    layers:
+    - state: orebox
+    - state: orebox-top
+  objectType: structure
