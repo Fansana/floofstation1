@@ -21,7 +21,7 @@
 
 - type: characterItemGroup
   maxItems: 1
-  id: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
+  id: LoadoutHeadOfSecurityWeapon
   items:
     - type: loadout
       id: LoadoutCommandHoSPulsePistol
@@ -88,6 +88,8 @@
       id: LoadoutCommandHOSOuterTrench
     - type: loadout
       id: LoadoutCommandHOSLongcoat # Floof
+    - type: loadout
+      id: LoadoutCommandHOSOuterWinterUnarmored
 
 - type: characterItemGroup
   id: LoadoutHeadOfSecurityShoes
