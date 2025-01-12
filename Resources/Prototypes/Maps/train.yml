@@ -2,8 +2,6 @@
   id: Train
   mapName: 'Train'
   mapPath: /Maps/Floof/train.yml
-  maxRandomOffset: 0
-  randomRotation: false
   minPlayers: 45
   maxPlayers: 80
   stations:
