@@ -3,6 +3,7 @@
   name: guide-entry-rules
   priority: 0
   text: "/ServerInfo/Guidebook/ServerRules/FloofstationCoreRules.xml"
+  defaultCollapsed: true
   children:
   - CoreRules
   - RoleTypes
@@ -11,13 +12,11 @@
 - type: guideEntry
   id: RoleTypes
   name: guide-entry-rules-role-types
-  priority: 20
   text: "/ServerInfo/Guidebook/ServerRules/RoleTypes.xml"
 
 - type: guideEntry
   id: CoreRules
   name: guide-entry-rules-core
-  priority: 30
   text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC0.xml"
   children:
   - RuleC1
