@@ -5,11 +5,9 @@ using Content.Server.PowerCell;
 using Content.Server.Temperature.Components;
 using Content.Server.Traits.Assorted;
 using Content.Shared.Chemistry.EntitySystems;
-// Shitmed Start
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Targeting;
-// Shitmed End
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;

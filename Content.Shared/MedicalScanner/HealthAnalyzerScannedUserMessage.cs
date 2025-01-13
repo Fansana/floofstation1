@@ -20,7 +20,7 @@ public sealed class HealthAnalyzerScannedUserMessage : BoundUserInterfaceMessage
     public Dictionary<TargetBodyPart, TargetIntegrity>? Body; // Shitmed
     public NetEntity? Part; // Shitmed
 
-    public HealthAnalyzerScannedUserMessage(NetEntity? targetEntity, float temperature, float mass, float bloodLevel, bool? scanMode, bool? bleeding, bool? unrevivable, Dictionary<TargetBodyPart, TargetIntegrity>? body, NetEntity? part = null)
+    public HealthAnalyzerScannedUserMessage(NetEntity? targetEntity, float mass, float temperature, float bloodLevel, bool? scanMode, bool? bleeding, bool? unrevivable, Dictionary<TargetBodyPart, TargetIntegrity>? body, NetEntity? part = null)
     {
         TargetEntity = targetEntity;
         Mass = mass; // Floof: Health scanners show body mass
