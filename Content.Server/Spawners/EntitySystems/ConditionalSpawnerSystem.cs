@@ -119,7 +119,16 @@ namespace Content.Server.Spawners.EntitySystems
 
             var coordinates = Transform(uid).Coordinates.Offset(new Vector2(xOffset, yOffset));
 
-            EntityManager.SpawnEntity(_robustRandom.Pick(component.Prototypes), coordinates);
+            // Floofstation - wrapped the below in a try-catch. Fuck you heisentest.
+            var picked = _robustRandom.Pick(component.Prototypes);
+            try
+            {
+                EntityManager.SpawnEntity(picked, coordinates);
+            }
+            catch (EntityCreationException e)
+            {
+                Log.Warning($"Caught an exception while trying to process a conditional spawner {ToPrettyString(uid)} of type {picked}: {e}");
+            }
         }
 
         private void Spawn(Entity<EntityTableSpawnerComponent> ent)
