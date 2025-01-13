@@ -1,8 +1,12 @@
 ﻿- type: guideEntry
-  id: CoreRuleset
-  name: guide-entry-rules-core-only
+  id: FloofstationRuleset
+  name: guide-entry-rules
   priority: 0
   text: "/ServerInfo/Guidebook/ServerRules/FloofstationCoreRules.xml"
+  children:
+  - CoreRules
+  - RoleTypes
+  # TODO: Add silicon and roleplay rules here if they get approved for floofstation
 
 - type: guideEntry
   id: RoleTypes
