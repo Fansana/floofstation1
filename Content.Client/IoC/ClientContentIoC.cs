@@ -58,7 +58,6 @@ namespace Content.Client.IoC
 
             // Floof
             collection.Register<IClientConsentManager, ClientConsentManager>();
-            collection.Register<RulesManager, RulesManager>();
         }
     }
 }
