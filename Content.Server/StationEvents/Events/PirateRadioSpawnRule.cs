@@ -27,6 +27,7 @@ public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRu
     [Dependency] private readonly TransformSystem _xform = default!;
     [Dependency] private readonly ISerializationManager _serializationManager = default!;
     [Dependency] private readonly MapSystem _mapSystem = default!;
+    [Dependency] private readonly IMapManager _mapManager = default!;
 
     protected override void Started(EntityUid uid, PirateRadioSpawnRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
@@ -49,9 +50,8 @@ public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRu
             return;
 
         var targetStation = _random.Pick(stations);
-        var targetMapId = Transform(targetStation).MapID; // Floof
-        if (!_mapSystem.MapExists(targetMapId)) // Floof
-            return;
+        if (!_mapManager.MapExists(Transform(targetStation).MapID))
+            return; /// SHUT UP HEISENTESTS. DIE.
 
         var randomOffset = _random.NextVector2(component.MinimumDistance, component.MaximumDistance);
         var outpostOptions = new MapLoadOptions
@@ -60,7 +60,6 @@ public sealed class PirateRadioSpawnRule : StationEventSystem<PirateRadioSpawnRu
             LoadMap = false,
         };
 
-        // Floof - changed to load onto the specified map
         if (!_map.TryLoad(Transform(targetStation).MapID, _random.Pick(component.PirateRadioShuttlePath), out var outpostids, outpostOptions))
             return;
 
