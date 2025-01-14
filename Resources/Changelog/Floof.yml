@@ -2115,3 +2115,166 @@ Entries:
   id: 267
   time: '2025-01-04T11:20:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/452
+- author: Memeji
+  changes:
+    - type: Add
+      message: Shackles to the loadout
+    - type: Fix
+      message: Witch Robes cannot be selected with other outer wear items.
+  id: 268
+  time: '2025-01-05T07:09:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/450
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Added a "random map" option to "next map" votings.
+  id: 269
+  time: '2025-01-05T17:33:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/453
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added kettle to the map pool
+    - type: Tweak
+      message: Tweaked Kettle to add missing warp points and map beacons
+    - type: Tweak
+      message: Tweaked Rad based on additional community feedback
+    - type: Tweak
+      message: Lighthouse so every department has paper work templates
+  id: 270
+  time: '2025-01-08T01:31:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/458
+- author: mazziechai
+  changes:
+    - type: Add
+      message: >-
+        Paradox Anomaly clones of your character can be disabled through the
+        consent preferences menu.
+  id: 271
+  time: '2025-01-08T02:11:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/463
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: >-
+        Nuclear Fission Explosive Announcements now properly alert the crew to
+        their approximate location.
+  id: 272
+  time: '2025-01-08T02:11:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/464
+- author: Fansana
+  changes:
+    - type: Add
+      message: Added lots of punk clothing from frontier
+    - type: Add
+      message: 'Added chaplain clothing: sash Crucifix'
+  id: 273
+  time: '2025-01-08T09:22:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/448
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: >-
+        SESWC tinkered with the salvage borg PKA module and taped a knife to its
+        other arm.
+  id: 274
+  time: '2025-01-09T00:14:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/454
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added 2 new modules
+    - type: Add
+      message: Quadborg recipes
+    - type: Tweak
+      message: Tweaked Secborg setup
+    - type: Tweak
+      message: Tweaked Core map
+  id: 275
+  time: '2025-01-09T01:13:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/436
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Energy shotgun '
+  id: 276
+  time: '2025-01-09T01:18:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/455
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: 'changed Core map. '
+  id: 277
+  time: '2025-01-09T01:20:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/459
+- author: fenndragon
+  changes:
+    - type: Remove
+      message: 'removed investigation construction. '
+  id: 278
+  time: '2025-01-09T21:16:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/470
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Energy Shotgun
+  id: 279
+  time: '2025-01-10T06:30:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/471
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Security Modules to Security techfab
+    - type: Remove
+      message: 'removed original recipe for security modules '
+  id: 280
+  time: '2025-01-10T11:08:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/472
+- author: mazziechai
+  changes:
+    - type: Add
+      message: >-
+        Added a "drunkard accent", a trait that makes a character's speech
+        slurred like they're drunk.
+  id: 281
+  time: '2025-01-11T21:04:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/476
+- author: Tirochora
+  changes:
+    - type: Tweak
+      message: Changed one letter so that my drinks flavor is right.
+  id: 282
+  time: '2025-01-11T22:32:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/479
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Artifact extractions should now generate 2.5 times less glimmer than
+        before.
+  id: 283
+  time: '2025-01-12T01:50:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/474
+- author: Tirochora
+  changes:
+    - type: Fix
+      message: >-
+        Made Photophobia, Blindness, Nearsightedness, and Cyber-eyes mutually
+        exclusive.
+  id: 284
+  time: '2025-01-12T03:38:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/480
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed Core
+  id: 285
+  time: '2025-01-12T03:38:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/478
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added Train as a high pop map
+  id: 286
+  time: '2025-01-12T11:06:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/477

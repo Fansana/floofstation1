@@ -322,6 +322,7 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
+      - id: WeaponEnergyShotgun
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingLongcoatHoS # Floofstation
       - id: ClothingMaskNeckGaiter
@@ -354,6 +355,7 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
+      - id: WeaponEnergyShotgun
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingLongcoatHoS # Floofstation
       - id: ClothingMaskNeckGaiter
