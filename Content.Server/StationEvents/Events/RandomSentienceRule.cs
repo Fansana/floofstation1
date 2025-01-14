@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 using Content.Server.Announcements.Systems;
-using System.Linq;
 using Content.Server.Ghost.Roles.Components;
-using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
+using Content.Shared.Dataset;
 using Content.Shared.GameTicking.Components;
+using Content.Shared.Random.Helpers;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 
 namespace Content.Server.StationEvents.Events;
@@ -13,6 +15,8 @@ namespace Content.Server.StationEvents.Events;
 public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRuleComponent>
 {
     [Dependency] private readonly AnnouncerSystem _announcer = default!;
+    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
 
     protected override void Started(EntityUid uid, RandomSentienceRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
@@ -49,9 +53,15 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
             return;
 
         var groupList = groups.ToList();
-        var kind1 = groupList.Count > 0 ? groupList[0] : "???";
-        var kind2 = groupList.Count > 1 ? groupList[1] : "???";
-        var kind3 = groupList.Count > 2 ? groupList[2] : "???";
+        var kind1 = groupList.Count > 0 ? Loc.GetString(groupList[0]) : "???";
+        var kind2 = groupList.Count > 1 ? Loc.GetString(groupList[1]) : "???";
+        var kind3 = groupList.Count > 2 ? Loc.GetString(groupList[2]) : "???";
+
+        var data = _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventData"));
+        var strength = _random.Pick(_prototype.Index<LocalizedDatasetPrototype>("RandomSentienceEventStrength"));
+
+        data = Loc.GetString(data);
+        strength = Loc.GetString(strength);
 
         foreach (var target in targetList)
         {
@@ -70,8 +80,8 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
                     ("kind2", kind2),
                     ("kind3", kind3),
                     ("amount", groupList.Count),
-                    ("data", Loc.GetString($"random-sentience-event-data-{RobustRandom.Next(1, 6)}")),
-                    ("strength", Loc.GetString($"random-sentience-event-strength-{RobustRandom.Next(1, 8)}"))));
+                    ("data", data),
+                    ("strength", strength)));
         }
     }
 }
