@@ -10,7 +10,8 @@
 - type: entity
   id: BorgModuleStun
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: Disabler cyborg module
+  name: Disabler cyborg Module
+  description: A Module "incapable of causing harm if used correctly"
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
@@ -21,11 +22,13 @@
     items:
     - WeaponBorgDisabler
     - BorgStunbaton
+    - BorgFlash
+    - BorgZipties
 
 - type: entity
   id: BorgModuleKill
   parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
-  name: combat cyborg module
+  name: Combat cyborg module
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
@@ -37,3 +40,35 @@
     - WeaponAdvancedLaser
     - WeaponborgPistolMk58
     - CombatKnife
+
+- type: entity
+  id: BorgModuleInvestigation
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: Investigation cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-investigation
+  - type: ItemBorgModule
+    items:
+    - ForensicScanner
+    - DetectivePDA
+    - SecurityWhistle
+
+- type: entity
+  id: BorgModuleadvancedmeasures
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  name: advanced combat cyborg module
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+    - state: security
+    - state: icon-Advmeasures
+  - type: ItemBorgModule
+    items:
+    - WeaponBorgEnergyShotgun
+    - BorgWeaponXrayCannon
+

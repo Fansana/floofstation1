@@ -645,6 +645,7 @@
     - RightLegBorgService
     - HeadBorgService
     - TorsoBorgService
+    - Quadborgendoskeleton
     dynamicRecipes:
     - ProximitySensor
     - BorgModuleLightReplacer
@@ -815,6 +816,9 @@
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
+      - BorgModuleStun
+      - BorgModuleKill
+      - BorgModuleInvestigation
       - ShadowkinRestraints
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial
@@ -910,6 +914,7 @@
       - MagazineBoxSpecialMindbreaker
       - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
+      #- WeaponEnergyShotgun
       - WeaponGrapplingGun # Floof
       - JawsOfLife
       - HandHeldMassScanner

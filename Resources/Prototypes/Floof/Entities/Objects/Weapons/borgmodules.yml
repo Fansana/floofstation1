@@ -1,0 +1,40 @@
+- type: entity
+  id: WeaponProtoKineticAcceleratorborg
+  parent: WeaponProtoKineticAccelerator
+  name: proto-kinetic accelerator borg
+  noSpawn: true
+  components:
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    minAngle: 1
+    maxAngle: 3
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+    fireOnDropChance: 1
+
+- type: entity
+  id: BorgZipties
+  suffix: Robot
+  parent: Zipties
+  components:
+  - type: Handcuff
+    removeOnUse: false
+    breakoutTime: 3
+    cuffedRSI: Objects/Misc/cablecuffs.rsi  # cablecuffs will look fine
+    bodyIconState: body-overlay
+    breakOnRemove: true
+    brokenPrototype: ZiptiesBroken
+    startCuffSound:
+      path: /Audio/Items/Handcuffs/ziptie_start.ogg
+    endCuffSound:
+      path: /Audio/Items/Handcuffs/ziptie_end.ogg
+    startUncuffSound:
+      path: /Audio/Items/Handcuffs/rope_start.ogg
+    endUncuffSound:
+      path: /Audio/Items/Handcuffs/rope_breakout.ogg
+    startBreakoutSound:
+      path: /Audio/Items/Handcuffs/rope_takeoff.ogg
+    uncuffEasierWhenLarge: true
