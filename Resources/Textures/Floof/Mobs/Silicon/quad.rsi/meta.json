@@ -22,6 +22,18 @@
 	{
       "name": "quadspriteCC",
       "directions": 4
+    },
+    {
+      "name": "quadspritesalvl",
+      "directions": 4
+    },
+    {
+      "name": "quadspritesalvr",
+      "directions": 4
+    },
+	{
+      "name": "quadspritesalv",
+      "directions": 4
     }
 
   ]
