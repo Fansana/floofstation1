@@ -44,6 +44,7 @@
     powerLoad: 12000
     needsPower: false #only turns on when scanning
   - type: ArtifactAnalyzer
+    extractRatio: 1000 # Floof - increase the ratio to reduce the strain from xenoarch on glimmer
   - type: TraversalDistorter
   - type: ItemPlacer
     whitelist:
