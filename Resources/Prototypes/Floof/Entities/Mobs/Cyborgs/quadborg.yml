@@ -103,6 +103,8 @@
     - Binary
     - Common
     - Science
+  - type: Construction
+    node: cyborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
