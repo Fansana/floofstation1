@@ -31,6 +31,10 @@
   id: Carps
   prototype: MobCarpDungeon
 
+- type: biomeMarkerLayer
+  id: Gorilla
+  prototype: MobGorilla
+
 
 #- type: biomeMarkerLayer
 #  id: Experiment
