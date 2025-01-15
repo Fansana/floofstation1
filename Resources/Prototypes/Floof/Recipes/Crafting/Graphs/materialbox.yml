@@ -18,8 +18,8 @@
   graph: GraphMaterialbox
   startNode: start
   targetNode: Materialbox
-  category: construction-category-structures
-  description: A large storage container sold by SESWC to hold finish materials.
+  category: construction-category-storage
+  description: A large storage container blueprints sold by SESWC to hold finish materials.
   icon:
     sprite: /Textures/Floof/Structures/materialbox.rsi
     layers:

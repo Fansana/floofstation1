@@ -14,14 +14,46 @@
       visible: true
   - type: Storage
     grid:
-    - 0,0,9,5
-    maxItemSize: Normal
+    - 0,0,19,9
+    maxItemSize: Large
     storageOpenSound: /Audio/Effects/closetopen.ogg
     storageCloseSound: /Audio/Effects/closetclose.ogg
     whitelist:
       tags:
        - Sheet
        - Metal
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        # very  dense to make it easy to pull
+        density: 500
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+  thresholds:
+  - trigger:
+      !type:DamageTrigger
+      damage: 150
+    behaviors:
+    - !type:DoActsBehavior
+      acts: [ "Destruction" ]
+  - trigger:
+      !type:DamageTrigger
+      damage: 100
+    behaviors:
+    - !type:EmptyAllContainersBehaviour
+    - !type:SpawnEntitiesBehavior
+      spawn:
+        MaterialWoodPlank1:
+          min: 3
+          max: 5
+    - !type:DoActsBehavior
+      acts: [ "Destruction" ]
   - type: Construction
     graph: GraphMaterialbox
     node: Materialbox
