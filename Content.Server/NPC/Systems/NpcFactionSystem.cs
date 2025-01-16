@@ -169,7 +169,12 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!Resolve(uidA, ref factionA, false) || !Resolve(uidB, ref factionB, false))
             return false;
 
-        return factionA.Factions.Overlaps(factionB.Factions) || factionA.FriendlyFactions.Overlaps(factionB.Factions);
+        var intersect = factionA.Factions.Intersect(factionB.Factions); // factions which have both ent and other as members
+        foreach (var faction in intersect)
+            if (_factions[faction].IsHostileToSelf)
+                return false;
+
+        return intersect.Count() > 0 || factionA.FriendlyFactions.Overlaps(factionB.Factions);
     }
 
     public bool IsFactionFriendly(string target, string with)
@@ -234,9 +239,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
             faction => faction.ID,
             faction =>  new FactionData
             {
+                IsHostileToSelf = faction.Hostile.Contains(faction.ID),
                 Friendly = faction.Friendly.ToHashSet(),
                 Hostile = faction.Hostile.ToHashSet()
-
             });
 
         foreach (var comp in EntityQuery<NpcFactionMemberComponent>(true))
