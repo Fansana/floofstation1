@@ -39,7 +39,7 @@
   components:
     - type: EntityTargetAction
       icon: Interface/VerbIcons/mind_swap.png
-      useDelay: 10
+      useDelay: 120
       checkCanAccess: false
       range: 10
       itemIconStyle: BigAction
