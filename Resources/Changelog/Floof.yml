@@ -2291,3 +2291,20 @@ Entries:
   id: 287
   time: '2025-01-16T14:45:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/482
+- author: Timfa
+  changes:
+    - type: Add
+      message: >-
+        Added GladiaBots. Make them in the Build menu and challenge your
+        friends!
+    - type: Tweak
+      message: >-
+        Tweaked HTN combat behaviours to allow for a random deviation in attack
+        time. At the moment, only the Gladiabot uses it.
+    - type: Tweak
+      message: >-
+        Tweaked the faction code to allow for factions explicitly hostile to
+        themselves.
+  id: 288
+  time: '2025-01-16T14:59:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/485
