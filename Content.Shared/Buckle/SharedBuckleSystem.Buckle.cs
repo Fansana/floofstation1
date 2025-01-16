@@ -143,12 +143,24 @@ public abstract partial class SharedBuckleSystem
 
     private void OnBuckleDownAttempt(EntityUid uid, BuckleComponent component, DownAttemptEvent args)
     {
+        // Floof - check if the strap requires the entity to be downed. If so, permit it.
+        if (component.BuckledTo is { } strap
+            && TryComp<StrapComponent>(strap, out var strapComp)
+            && strapComp.Position == StrapPosition.Down)
+            return;
+
         if (component.Buckled)
             args.Cancel();
     }
 
     private void OnBuckleStandAttempt(EntityUid uid, BuckleComponent component, StandAttemptEvent args)
     {
+        // Floof - check if the strap requires the entity to be standing. If so, permit it.
+        if (component.BuckledTo is { } strap
+            && TryComp<StrapComponent>(strap, out var strapComp)
+            && strapComp.Position == StrapPosition.Stand)
+            return;
+
         if (component.Buckled)
             args.Cancel();
     }

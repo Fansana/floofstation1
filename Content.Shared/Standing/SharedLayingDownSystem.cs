@@ -150,6 +150,12 @@ public abstract class SharedLayingDownSystem : EntitySystem
             || HasComp<DebrainedComponent>(uid))
             return false;
 
+        // Floof - raise an attempt event before actually trying to start a do-after
+        var msg = new StandAttemptEvent();
+        RaiseLocalEvent(uid, msg, false);
+        if (msg.Cancelled)
+            return false;
+
         var args = new DoAfterArgs(EntityManager, uid, layingDown.StandingUpTime, new StandingUpDoAfterEvent(), uid)
         {
             BreakOnHandChange = false,

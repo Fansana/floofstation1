@@ -57,8 +57,9 @@ public sealed class StandingStateSystem : EntitySystem
         if (dropHeldItems && hands != null)
             RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
 
-        if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled)
-            return false;
+        // Floof - this is absolutely not necessary
+        // if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled)
+        //     return false;
 
         var msg = new DownAttemptEvent();
         RaiseLocalEvent(uid, msg, false);
@@ -111,9 +112,9 @@ public sealed class StandingStateSystem : EntitySystem
         // Optional component.
         Resolve(uid, ref appearance, false);
 
-        if (standingState.CurrentState is StandingState.Standing
-            || TryComp(uid, out BuckleComponent? buckle)
-            && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle))
+        if (standingState.CurrentState is StandingState.Standing)
+            // || TryComp(uid, out BuckleComponent? buckle)
+            // && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // Floof - this is also not necessary
             return true;
 
         if (!force)
