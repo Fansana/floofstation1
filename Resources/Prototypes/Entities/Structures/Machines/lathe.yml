@@ -1791,6 +1791,7 @@
       - CrazyGlue
       - PlushieRatvar
       - PlushieNar
+      #Floof Plushies - Start
       #HypnoTemp Plushies - Start
       - PlushieHypnoTempCap
       - PlushieHypnoTempCMO
@@ -1800,6 +1801,17 @@
       - PlushieHypnoTempLO
       - PlushieHypnoTempMysta
       #HypnoTemp Plushies - End
+      - PlushieTrystan
+      - PlushieCentCom
+      - PlushieSlimeTider
+      - PlushieChillHuman
+      - PlushieDino
+      - PlushieDragon
+      - PlushieFRavager
+      - PlushieFPraetorian
+      - PlushieFDrone
+      - PlushieFRouny
+      #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - PlushieGhost
@@ -1807,7 +1819,6 @@
       - PlushieRainbowCarp
       - PlushieJester
       - PlushieSlips
-      - PlushieTrystan
       - PlushieAbductor
       - PlushieAbductorAgent
       - PlushieNuke
