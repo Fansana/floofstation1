@@ -395,7 +395,7 @@
         - !type:EntSelector
           id: ClothingHandsGlovesColorYellow
           weight: 1
-      - table: !type:NestedSelector # Spray paints
+      - !type:NestedSelector # Spray paints
         tableId: SprayPaintTable
         weight: 3
         rolls: !type:RangeNumberSelector
