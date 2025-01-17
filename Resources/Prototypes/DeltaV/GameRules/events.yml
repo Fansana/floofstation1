@@ -15,53 +15,53 @@
     - id: MobXeno
       prob: 0.01
     - id: MobXenoRouny
-      prob: 0.004
+      prob: 0.002
     - id: MobXenoDrone
-      prob: 0.004
+      prob: 0.002
     - id: MobXenoSpitter
-      prob: 0.004
+      prob: 0.002
     - id: MobXenoRunner
-      prob: 0.004
+      prob: 0.002
     - id: MobXenoPraetorian
-      prob: 0.004
+      prob: 0.002
     - id: MobXenoRavager
-      prob: 0.004
+      prob: 0.002
     - id: MobXenochargercrusher
-      prob: 0.004
+      prob: 0.002
     - id: MobXenodancerpraetorian
-      prob: 0.004
+      prob: 0.002
     - id: MobXenodefender
-      prob: 0.004
+      prob: 0.002
     - id: MobXenosentinel
-      prob: 0.004
+      prob: 0.002
     - id: MobXenohivelord
-      prob: 0.003
+      prob: 0.001
     - id: MobXenoCarrier
-      prob: 0.004
+      prob: 0.002
     - id: MobXenobloodylarva
-      prob: 0.005
-    - id: MobXenoparasite
-      prob: 0.005
-    - id: MobXenolurker
-      prob: 0.004
-    - id: MobXenowarrior
-      prob: 0.004
-    - id: MobXenoacidrunner
-      prob: 0.004
-    - id: MobXenoacidrunnerprimed
-      prob: 0.004
-    - id: MobXenolarva
-      prob: 0.005
-    - id: MobXenoboiler
-      prob: 0.004
-    - id: MobXenoboxerwarrior
-      prob: 0.004
-    - id: MobXenoCarrier
-      prob: 0.004
-    - id: MobXenocrusher
-      prob: 0.004
-    - id: MobXenoQueen
       prob: 0.003
+    - id: MobXenoparasite
+      prob: 0.003
+    - id: MobXenolurker
+      prob: 0.002
+    - id: MobXenowarrior
+      prob: 0.002
+    - id: MobXenoacidrunner
+      prob: 0.002
+    - id: MobXenoacidrunnerprimed
+      prob: 0.002
+    - id: MobXenolarva
+      prob: 0.003
+    - id: MobXenoboiler
+      prob: 0.002
+    - id: MobXenoboxerwarrior
+      prob: 0.002
+    - id: MobXenoCarrier
+      prob: 0.002
+    - id: MobXenocrusher
+      prob: 0.002
+    - id: MobXenoQueen
+      prob: 0.001
     crawlTime: 3, 4 # Floof
     popup: station-event-xeno-vents-popup # Floof
     sound: # Floof
