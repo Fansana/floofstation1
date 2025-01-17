@@ -763,6 +763,20 @@
     - MobGorilla
 
 - type: entity
+  name: Cargorilla Spawner
+  id: SpawnMobCargorilla
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: cargo_crawling
+      sprite: Mobs/Animals/gorilla.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobCargorilla
+
+- type: entity
   name: Penguin Spawner
   id: SpawnMobPenguin
   parent: MarkerBase

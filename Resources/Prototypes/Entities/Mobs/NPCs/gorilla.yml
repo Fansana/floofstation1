@@ -70,6 +70,7 @@
     damage:
       types:
         Blunt: 18
+        Structural: 20
     animation: WeaponArcFist
   - type: MeleeThrowOnHit
     speed: 20
@@ -137,6 +138,7 @@
     damage:
       types:
         Blunt: 35
+        Structural: 20
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 4
