@@ -2308,3 +2308,10 @@ Entries:
   id: 288
   time: '2025-01-16T14:59:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/485
+- author: VividPups
+  changes:
+    - type: Add
+      message: Clean grenades crate buyable from cargo
+  id: 289
+  time: '2025-01-17T11:22:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/491
