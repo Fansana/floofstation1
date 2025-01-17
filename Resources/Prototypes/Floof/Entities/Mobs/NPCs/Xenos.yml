@@ -39,6 +39,7 @@
     - type: Sprite
       drawdepth: Mobs
       sprite: Mobs/Aliens/Xenos/larva.rsi
+      scale: 0.5, 0.5
       layers:
       - map: ["enum.DamageStateVisualLayers.Base"]
         state: alive
