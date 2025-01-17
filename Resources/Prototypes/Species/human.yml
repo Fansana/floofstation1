@@ -6,7 +6,7 @@
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
-  skinColoration: HumanToned
+  skinColoration: Hues
   customName: true
 
 # The lack of a layer means that
@@ -79,6 +79,9 @@
       points: 2
       required: false
     LeftHand:
+      points: 2
+      required: false
+    HeadSide:
       points: 2
       required: false
 

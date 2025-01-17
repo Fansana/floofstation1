@@ -39,6 +39,7 @@
     LeftHand:
       points: 2
       required: false
+      
 
 
 - type: speciesBaseSprites
@@ -52,6 +53,9 @@
     RArm: MobHumanRArm
     LHand: MobHumanLHand
     RHand: MobHumanRHand
+    Tail: MobHumanoidAnyMarking # Nyanotrasen - Felinid
+    HeadTop: MobHumanoidAnyMarking # Nyanotrasen - Felinid & Oni
+    HeadSide: MobHumanoidAnyMarking
 
 - type: humanoidBaseSprite
   id: MobArachneEyes

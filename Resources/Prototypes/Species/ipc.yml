@@ -88,7 +88,13 @@
     LeftHand:
       points: 1
       required: false
-      defaultMarkings: [ MobIPCLHandDefault ]
+      defaultMarkings: [ MobIPCLHandDefault ]   
+    Tail:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: false
 
 - type: humanoidBaseSprite
   id: MobIPCMarkingFollowSkin
