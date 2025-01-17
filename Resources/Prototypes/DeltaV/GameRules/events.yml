@@ -9,29 +9,63 @@
     reoccurrenceDelay: 12
     minimumPlayers: 15
     weight: 6 # Really weak compared to other critters
-    duration: 60
+    duration: 80
   - type: VentCrittersRule
     entries:
     - id: MobXeno
       prob: 0.01
     - id: MobXenoRouny
-      prob: 0.005
+      prob: 0.004
     - id: MobXenoDrone
-      prob: 0.005
+      prob: 0.004
     - id: MobXenoSpitter
-      prob: 0.005
+      prob: 0.004
     - id: MobXenoRunner
-      prob: 0.005
+      prob: 0.004
     - id: MobXenoPraetorian
-      prob: 0.005
+      prob: 0.004
     - id: MobXenoRavager
+      prob: 0.004
+    - id: MobXenochargercrusher
+      prob: 0.004
+    - id: MobXenodancerpraetorian
+      prob: 0.004
+    - id: MobXenodefender
+      prob: 0.004
+    - id: MobXenosentinel
+      prob: 0.004
+    - id: MobXenohivelord
+      prob: 0.003
+    - id: MobXenoCarrier
+      prob: 0.004
+    - id: MobXenobloodylarva
       prob: 0.005
+    - id: MobXenoparasite
+      prob: 0.005
+    - id: MobXenolurker
+      prob: 0.004
+    - id: MobXenowarrior
+      prob: 0.004
+    - id: MobXenoacidrunner
+      prob: 0.004
+    - id: MobXenoacidrunnerprimed
+      prob: 0.004
+    - id: MobXenolarva
+      prob: 0.005
+    - id: MobXenoboiler
+      prob: 0.004
+    - id: MobXenoboxerwarrior
+      prob: 0.004
+    - id: MobXenoCarrier
+      prob: 0.004
+    - id: MobXenocrusher
+      prob: 0.004
     - id: MobXenoQueen
-      prob: 0.005
+      prob: 0.003
     crawlTime: 3, 4 # Floof
     popup: station-event-xeno-vents-popup # Floof
     sound: # Floof
-      path: /Audio/Animals/space_dragon_roar.ogg
+      path: /Audio/Animals/alien_roar1.ogg
       params: {volume: 0.5}
 
 # Weaker version of xenos, meant to provide some dangers in low pop.
@@ -47,18 +81,54 @@
   - type: VentCrittersRule
     entries:
     - id: MobXeno
-      prob: 0.006
-    - id: MobXenoDrone
-      prob: 0.004
-    - id: MobXenoSpitter
-      prob: 0.003
+      prob: 0.01
     - id: MobXenoRouny
+      prob: 0.001
+    - id: MobXenoDrone
+      prob: 0.001
+    - id: MobXenoSpitter
       prob: 0.001
     - id: MobXenoRunner
       prob: 0.001
     - id: MobXenoPraetorian
       prob: 0.001
     - id: MobXenoRavager
+      prob: 0.001
+    - id: MobXenochargercrusher
+      prob: 0.001
+    - id: MobXenodancerpraetorian
+      prob: 0.001
+    - id: MobXenodefender
+      prob: 0.001
+    - id: MobXenosentinel
+      prob: 0.001
+    - id: MobXenohivelord
+      prob: 0.001
+    - id: MobXenoCarrier
+      prob: 0.001
+    - id: MobXenobloodylarva
+      prob: 0.002
+    - id: MobXenoparasite
+      prob: 0.002
+    - id: MobXenolurker
+      prob: 0.001
+    - id: MobXenowarrior
+      prob: 0.001
+    - id: MobXenoacidrunner
+      prob: 0.001
+    - id: MobXenoacidrunnerprimed
+      prob: 0.001
+    - id: MobXenolarva
+      prob: 0.002
+    - id: MobXenoboiler
+      prob: 0.001
+    - id: MobXenoboxerwarrior
+      prob: 0.001
+    - id: MobXenoCarrier
+      prob: 0.001
+    - id: MobXenocrusher
+      prob: 0.001
+    - id: MobXenoQueen
       prob: 0.001
 
 - type: entity

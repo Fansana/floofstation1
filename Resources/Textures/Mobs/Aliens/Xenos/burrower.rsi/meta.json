@@ -15,6 +15,10 @@
       "name": "burrowed",
       "directions": 4
     },
+	{
+      "name": "walking",
+      "directions": 4
+    },
     {
       "name": "dead"
     },
