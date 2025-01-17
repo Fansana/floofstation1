@@ -841,6 +841,24 @@
     - UplinkImplants
 
 - type: listing
+  id: UplinkMagillitisSerumImplant
+  name: uplink-magillitis-serum-implanter-name
+  description: uplink-magillitis-serum-implanter-desc
+  icon: { sprite: Actions/Implants/implants.rsi, state: gorilla_rampage }
+  productEntity: MagillitisSerumImplanter
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkJob
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - ResearchAssistant
+    - ResearchDirector
+    - Scientist
+    - SeniorResearcher
+
+- type: listing
   id: UplinkEmpImplanter
   name: uplink-emp-implanter-name
   description: uplink-emp-implanter-desc
