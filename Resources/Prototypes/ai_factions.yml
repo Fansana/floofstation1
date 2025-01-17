@@ -127,6 +127,7 @@
   - SimpleHostile
   - Dragon
 
+- type: npcFaction
   id: GladiabotFFA
   hostile:
     - GladiabotFFA
