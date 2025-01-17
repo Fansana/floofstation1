@@ -395,6 +395,11 @@
         - !type:EntSelector
           id: ClothingHandsGlovesColorYellow
           weight: 1
+      - table: !type:NestedSelector # Spray paints
+        tableId: SprayPaintTable
+        weight: 3
+        rolls: !type:RangeNumberSelector
+          range: 1, 3
       # Uncommon Group
     - !type:GroupSelector
       weight: 23
