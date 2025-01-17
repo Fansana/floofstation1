@@ -18,7 +18,10 @@
         true
   - type: NpcFactionMember
     factions:
-      - SimpleHostile
+      - Gorilla
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: FactionException
   - type: CombatMode
   - type: Sprite
     drawdepth: Mobs
