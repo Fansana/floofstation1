@@ -11,6 +11,10 @@
       "name": "alive",
       "directions": 4
     },
+	{
+      "name": "running",
+      "directions": 4
+    },
     {
       "name": "burrowed",
       "directions": 4
