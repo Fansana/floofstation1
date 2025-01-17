@@ -73,6 +73,17 @@
   - type: Speech
     speechSounds: Gorilla
     speechVerb: LargeMob
+  - type: StatusEffects
+    allowed:
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - ForcedSleep
+      - TemporaryBlindness
+      - Pacified
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
   - type: NoSlip
   - type: Tag
     tags:
@@ -87,6 +98,9 @@
     interfaces:
       enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Gorilla
   - type: LanguageKnowledge
     speaks:
     - Monkey
@@ -116,3 +130,9 @@
     damage:
       types:
         Blunt: 35
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: GorillaRampaging
