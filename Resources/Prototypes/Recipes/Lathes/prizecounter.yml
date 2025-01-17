@@ -662,13 +662,14 @@
   materials:
     PrizeTicket: 100
 
-- type: latheRecipe
-  id: PlushieDino
-  result: PlushieDino
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
+# DO NOT ADD THIS!!
+#- type: latheRecipe
+#  id: PlushieDino
+#  result: PlushieDino
+#  applyMaterialDiscount: false
+#  completetime: 0.1
+#  materials:
+#    PrizeTicket: 50
 
 - type: latheRecipe
   id: PlushieChillHuman
