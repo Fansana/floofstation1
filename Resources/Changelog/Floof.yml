@@ -2365,3 +2365,10 @@ Entries:
   id: 295
   time: '2025-01-18T12:19:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/483
+- author: WhiteLightningTwister
+  changes:
+    - type: Tweak
+      message: Reworked Saltern based on player feedback.
+  id: 296
+  time: '2025-01-18T12:26:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/451
