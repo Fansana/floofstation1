@@ -45313,8 +45313,6 @@ entities:
       pos: -17.5,-13.5
       parent: 2
     - type: DeviceList
-      configurators:
-      - invalid
       devices:
       - 5560
       - 5561
