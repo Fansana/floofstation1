@@ -32,5 +32,4 @@
     - TauCetiBasic
   - type: PressureImmunity
   - type: Insulated
-  - type: Respirator #It just works?
-    minSaturation: 5.0
+  - type: RespiratorImmune
