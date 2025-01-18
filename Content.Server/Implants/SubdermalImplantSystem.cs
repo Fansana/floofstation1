@@ -22,6 +22,9 @@ using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Systems;
 using Robust.Shared.Collections;
 using Robust.Shared.Map.Components;
+using Content.Shared.Zombies;
+using Content.Server.Polymorph.Systems;
+using Robust.Shared.Player;
 
 namespace Content.Server.Implants;
 
@@ -39,6 +42,7 @@ public sealed class SubdermalImplantSystem : SharedSubdermalImplantSystem
     [Dependency] private readonly PullingSystem _pullingSystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
+    [Dependency] private readonly PolymorphSystem _polymorphSystem = default!;
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
     private HashSet<Entity<MapGridComponent>> _targetGrids = [];
@@ -54,6 +58,7 @@ public sealed class SubdermalImplantSystem : SharedSubdermalImplantSystem
         SubscribeLocalEvent<SubdermalImplantComponent, ActivateImplantEvent>(OnActivateImplantEvent);
         SubscribeLocalEvent<SubdermalImplantComponent, UseScramImplantEvent>(OnScramImplant);
         SubscribeLocalEvent<SubdermalImplantComponent, UseDnaScramblerImplantEvent>(OnDnaScramblerImplant);
+        SubscribeLocalEvent<SubdermalImplantComponent, UseMagillitisSerumImplantEvent>(OnMagillitisSerumImplantImplant);
 
     }
 
@@ -218,6 +223,26 @@ public sealed class SubdermalImplantSystem : SharedSubdermalImplantSystem
             }
             _popup.PopupEntity(Loc.GetString("scramble-implant-activated-popup"), ent, ent);
         }
+
+        args.Handled = true;
+        QueueDel(uid);
+    }
+
+    private void OnMagillitisSerumImplantImplant(EntityUid uid, SubdermalImplantComponent component, UseMagillitisSerumImplantEvent args)
+    {
+        if (component.ImplantedEntity is not { } ent)
+            return;
+
+        if (HasComp<ZombieComponent>(uid))
+            return;
+
+        var polymorph = _polymorphSystem.PolymorphEntity(ent, "RampagingGorilla");
+
+        if (!polymorph.HasValue)
+            return;
+
+        _popup.PopupEntity(Loc.GetString("magillitisserum-implant-activated-others", ("entity", polymorph.Value)), polymorph.Value, Filter.PvsExcept(polymorph.Value), true);
+        _popup.PopupEntity(Loc.GetString("magillitisserum-implant-activated-user"), polymorph.Value, polymorph.Value);
 
         args.Handled = true;
         QueueDel(uid);

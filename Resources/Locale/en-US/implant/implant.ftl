@@ -20,6 +20,8 @@ implanter-contained-implant-text = [color=green]{$desc}[/color]
 ## Implant Popups
 
 scramble-implant-activated-popup = Your appearance shifts and changes!
+magillitisserum-implant-activated-user = You feel your muscles swell and your hair grow as you return to monke.
+magillitisserum-implant-activated-others = {CAPITALIZE(THE($entity))} swells and their hair grows rapidly. Uh oh!.
 
 ## Implant Messages
 

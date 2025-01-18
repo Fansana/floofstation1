@@ -86,6 +86,18 @@
     revertOnDeath: true
     revertOnCrit: true
 
+- type: polymorph
+  id: RampagingGorilla
+  configuration:
+    entity: MobGorillaRampaging
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: false
+    inventory: Drop
+    transferDamage: true
+    revertOnDeath: true
+    revertOnCrit: false
+
 # this is a test for transferring some visual appearance stuff
 - type: polymorph
   id: TestHumanMorph

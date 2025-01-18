@@ -103,7 +103,7 @@
   name: Psionic Invisibility
   description: psionic-invisibility-power-description
   actions:
-    - ActionDispel
+    - ActionPsionicInvisibility
   components:
     - type: PsionicInvisibilityPower
   initializationFeedback: psionic-invisibility-power-initialization-feedback

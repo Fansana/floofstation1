@@ -7,6 +7,8 @@
   components:
   - type: Insulated
   - type: CombatMode
+    canDisarm: true
+    disarmFailChance: 0.55
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -45,7 +47,7 @@
     sprite: Mobs/Aliens/Xenos/burrower.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: Fixtures
     fixtures:
       fix1:
@@ -78,8 +80,9 @@
   - type: Bloodstream
     bloodReagent: FluorosulfuricAcid
     bloodMaxVolume: 650
+  - type: LayingDown
   - type: MeleeWeapon
-    altDisarm: false
+    altDisarm: true
     angle: 0
     soundHit:
      collection: AlienClaw
@@ -91,7 +94,7 @@
     rotate: true
     states:
       Alive:
-        Base: running
+        Base: alive
       Critical:
         Base: crit
       Dead:
@@ -152,14 +155,17 @@
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      150: Dead
+      150: Critical
+      200: Dead
   - type: Stamina
     critThreshold: 300
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -186,7 +192,7 @@
     offset: 0,0.2
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -224,7 +230,7 @@
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -234,6 +240,8 @@
     speedModifierThresholds:
       150: 0.7
   - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
   - type: MeleeWeapon
     damage:
      groups:
@@ -309,9 +317,10 @@
     offset: 0,0.6
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: MovementSpeedModifier
-    baseSprintSpeed: 6.0
+    baseWalkSpeed : 6
+    baseSprintSpeed : 6
   - type: MeleeWeapon
     damage:
      groups:
@@ -338,6 +347,12 @@
     sprite: Mobs/Aliens/Xenos/rouny.rsi
     offset: 0,0.6
     scale: 0.7, 0.7
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5
+    baseSprintSpeed : 5
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -355,7 +370,7 @@
     offset: 0,0.3
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive
   - type: MobThresholds
     thresholds:
       0: Alive

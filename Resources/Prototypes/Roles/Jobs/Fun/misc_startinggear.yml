@@ -250,6 +250,11 @@
     jumpsuit: ClothingUniformJumpsuitJacketMonkey
     id: PunPunIDCard
 
+- type: startingGear
+  id: MobCargorillaGear
+  equipment:
+    id: CargorillaIDCard
+
 # Passenger but without the ID, bag, or headset
 
 - type: startingGear

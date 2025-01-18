@@ -256,28 +256,6 @@
         - id: null #Sets lewd group to 44% chance of spawn
           prob: 0.56
           orGroup: Lewd
-        # HypnoTemp Merch - Start
-        - id: PlushieHypnoTempCap
-          prob: 0.005
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempMysta
-          prob: 0.010
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempHoS
-          prob: 0.010
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempLO
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempHoP
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempCMO
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: null
-          orGroup: HypnoTempPlush
-        #HypnoTemp Merch - End
         # Syndicate loot
         - id: null
           prob: 0.95
@@ -455,28 +433,6 @@
         - id: null #Sets lewd group to 44% chance of spawn
           prob: 0.56
           orGroup: Lewd
-        # HypnoTemp Merch - Start
-        - id: PlushieHypnoTempCap
-          prob: 0.005
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempMysta
-          prob: 0.010
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempHoS
-          prob: 0.010
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempLO
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempHoP
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: PlushieHypnoTempCMO
-          prob: 0.025
-          orGroup: HypnoTempPlush
-        - id: null
-          orGroup: HypnoTempPlush
-        #HypnoTemp Merch - End
         # Floof - End
         # Syndicate loot
         - id: null

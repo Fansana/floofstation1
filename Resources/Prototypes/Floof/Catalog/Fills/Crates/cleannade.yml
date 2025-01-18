@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateCleanerGreande
+  parent: CratePlastic
+  name: space cleaner grenade crate
+  description: Crate full of two boxes of cleaner grenades, eight grenades in total for heavy used cleaning. Sold by SESWC.
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxCleanerGrenades
+        amount: 2

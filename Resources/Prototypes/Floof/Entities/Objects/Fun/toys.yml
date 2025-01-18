@@ -133,8 +133,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieDragon
-  name:
-  description:
+  name: dragon plushie
+  description: Rawr Im'ma eat ya!
   components:
   - type: Sprite
     sprite: Floof/Objects/Fun/floof_plush.rsi
@@ -248,5 +248,30 @@
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/Voice/Slime/slime_squish.ogg
+      params:
+        volume: 1
+
+- type: entity
+  parent: PlushieHuman
+  id: PlushieCentCom
+  name: Central Command plushie
+  description: Your own personal CentCom Pal!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: pepper
+  - type: UseDelay
+    delay: 1.5
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
       params:
         volume: 1
