@@ -2331,3 +2331,10 @@ Entries:
   id: 291
   time: '2025-01-18T11:38:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/487
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Fixed cyborg zipties being unable to be removed.
+  id: 292
+  time: '2025-01-18T11:39:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/484
