@@ -2345,3 +2345,12 @@ Entries:
   id: 293
   time: '2025-01-18T11:41:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/486
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added new xenonids
+    - type: Tweak
+      message: 'Tweaked xenonid values '
+  id: 294
+  time: '2025-01-18T12:18:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/488
