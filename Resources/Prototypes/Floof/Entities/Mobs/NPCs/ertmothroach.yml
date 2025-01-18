@@ -1,0 +1,36 @@
+- type: entity
+  name: ERT mothroach
+  parent: MobMothroach
+  id: MobERTMothroach
+  description: This lil guy seems ready for battle 
+  components:
+  - type: Sprite
+    sprite: Mobs/Animals/ertmothroach.rsi
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: PointLight
+    radius: 1.5
+    energy: 2.3
+    offset: 0, -1
+    color: green
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - CentCom
+  - type: ActiveRadio
+    channels:
+    - CentCom
+  - type: NoSlip
+  - type: Puller
+    needsHands: False
+  - type: LanguageKnowledge
+    speaks:
+    - Moffic
+    understands:
+    - Moffic
+    - TauCetiBasic
+  - type: PressureImmunity
+  - type: Insulated
+  - type: Respirator #It just works?
+    minSaturation: 5.0
