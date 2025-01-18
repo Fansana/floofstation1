@@ -22,7 +22,7 @@
   id: ArachnidAppendagesDefault
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: long_primary
@@ -33,7 +33,7 @@
   id: ArachnidAppendagesSharp
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: sharp_primary
@@ -44,7 +44,7 @@
   id: ArachnidAppendagesStingers
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: stingers_primary
@@ -55,7 +55,7 @@
   id: ArachnidAppendagesZigZag
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: zigzag_primary
@@ -66,7 +66,7 @@
   id: ArachnidAppendagesCurled
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: curled_primary
@@ -77,7 +77,7 @@
   id: ArachnidAppendagesChipped
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: chipped_primary
@@ -88,7 +88,7 @@
   id: ArachnidAppendagesHarvest
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: harvest_primary
@@ -99,7 +99,7 @@
   id: ArachnidAppendagesShort
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: short_primary
@@ -110,7 +110,7 @@
   id: ArachnidAppendagesFreaky
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Arachnid, SlimePerson]
+  speciesRestriction: [Arachnid, SlimePerson, IPC]
   sprites:
   - sprite: Mobs/Customization/Arachnid/appendages.rsi
     state: freaky_primary

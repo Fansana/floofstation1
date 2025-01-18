@@ -124,7 +124,7 @@
   id: HarpyEarsDefault
   bodyPart: Head
   markingCategory: HeadTop
-  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian]
+  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian, Arachne]
   coloring:
     default:
       type:
@@ -141,7 +141,7 @@
   id: HarpyEarsLarge
   bodyPart: Head
   markingCategory: HeadTop
-  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian]
+  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian, Arachne]
   coloring:
     default:
       type:

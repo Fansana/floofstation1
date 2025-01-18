@@ -2,7 +2,7 @@
   id: CatEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human, SlimePerson]
+  speciesRestriction: [Human, SlimePerson, Arachne]
   coloring:
     default:
       type:

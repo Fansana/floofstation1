@@ -6,7 +6,7 @@
   sprites: MobArachneSprites
   markingLimits: MobArachneMarkingLimits
   dollPrototype: MobArachneDummy
-  skinColoration: HumanToned
+  skinColoration: Hues
   sexes:
     - Female
   minAge: 60
@@ -39,7 +39,15 @@
     LeftHand:
       points: 2
       required: false
-      
+    Head:
+      points: 2
+      required: false
+    HeadTop:
+      points: 2
+      required: false
+    HeadSide:
+      points: 1
+      required: false
 
 
 - type: speciesBaseSprites
