@@ -25,6 +25,11 @@
     - Common
     - Science
   - type: ActiveRadio
+    channels:
+    - Security
+    - Binary
+    - Common
+    - Science
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -67,3 +72,48 @@
       shader: unshaded
       map: ["light"]
       visible: false
+      
+- type: entity
+  id: BorgChassisQuadsalv
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: quadspritesalv
+      map: ["movement"]
+    - state: quadspritesalvl
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspritesalvr
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Supply
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Supply
+    - Binary
+    - Common
+    - Science
+  - type: Construction
+    node: cyborg
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleCargo
+    hasMindState: quadspritesalvl
+    noMindState: quadspritesalvr
+  - type: AccessReader
+    access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
+  - type: SiliconLawProvider
+    laws: Corporate

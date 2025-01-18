@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: Cleanergrenades
+  icon:
+    sprite: Structures/Storage/Crates/plastic.rsi
+    state: icon
+  product: CrateCleanerGreande
+  cost: 1000
+  category: cargoproduct-category-name-fun
+  group: market

@@ -472,7 +472,8 @@ namespace Content.Shared.Cuffs
             else
             {
                 handcuff = Spawn("Zipties", Transform(user).Coordinates);
-                EnsureComp<HandcuffComponent>(handcuff);
+                var newcuffs = EnsureComp<HandcuffComponent>(handcuff);
+                newcuffs.Used = true;
             }
 
             _container.Insert(handcuff, component.Container);

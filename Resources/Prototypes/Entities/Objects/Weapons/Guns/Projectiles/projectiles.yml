@@ -824,6 +824,24 @@
       muzzleFlash: null
 
 - type: entity
+  id: BulletAcid2
+  name: boileracid spit
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Projectile
+      damage:
+        types:
+          Caustic: 8
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
+      scale: 1.2, 1.2
+      layers:
+        - state: xeno_toxic
+    - type: Ammo
+      muzzleFlash: null
+
+- type: entity
   id: BulletWaterShot
   name: water
   categories: [ HideSpawnMenu ]

@@ -263,6 +263,31 @@
         whitelist:
           tags:
           - BorgGenericTorso
+      borg_l_salvarm+o:
+        whitelist:
+          tags:
+            - BorgMiningLLeg
+      borg_r_salvarm+o:
+        whitelist:
+          tags:
+            - BorgMiningRLeg
+      borg_l_salvleg+o:
+        whitelist:
+          tags:
+            - BorgMiningLLeg
+      borg_r_salvleg+o:
+        whitelist:
+          tags:
+            - BorgMiningRLeg
+      borg_salvhead+o:
+        whitelist:
+          tags:
+            - BorgMiningHead
+      borg_salvchest+o:
+        whitelist:
+          tags:
+            - BorgMiningTorso
+            
   - type: PartAssembly
     parts:
       quadborg:
@@ -272,6 +297,13 @@
       - BorgGenericRLeg
       - BorgGenericHead
       - BorgGenericTorso
+      quadsalv:
+      - BorgMiningLLeg
+      - BorgMiningRLeg
+      - BorgMiningLLeg
+      - BorgMiningRLeg
+      - BorgMiningHead
+      - BorgMiningTorso
   - type: Construction
     graph: Cyborg
     node: start
