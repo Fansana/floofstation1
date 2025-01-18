@@ -10,11 +10,9 @@
     factions:
     - PetsNT
     - NanoTrasen
-  - type: PointLight
-    radius: 1.5
-    energy: 2.3
-    offset: 0, -1
-    color: green
+  - type: AutoImplant
+    implants:
+    - LightImplant
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
