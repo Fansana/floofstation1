@@ -9,6 +9,7 @@
   - type: NpcFactionMember
     factions:
     - PetsNT
+    - NanoTrasen
   - type: PointLight
     radius: 1.5
     energy: 2.3
