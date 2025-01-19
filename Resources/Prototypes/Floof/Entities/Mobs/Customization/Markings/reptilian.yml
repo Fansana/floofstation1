@@ -3,7 +3,7 @@
   id: LizardFloofNeckfull
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Reptilian, Human, SlimePerson]
+  speciesRestriction: [Reptilian, Human, SlimePerson, Arachne]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: floof_neckfull
