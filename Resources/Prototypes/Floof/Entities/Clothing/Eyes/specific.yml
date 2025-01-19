@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingEyesBase]
+  id: ClothingEyesHypnoVisor
+  name: Hypno Visor
+  description: A pair of goggles that can be used to hypnotize others. It is said that the visor can be used to control the minds of others, but it is not known how it works.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Hud/syndagent.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Hud/syndagent.rsi
+  - type: HypnoClothing

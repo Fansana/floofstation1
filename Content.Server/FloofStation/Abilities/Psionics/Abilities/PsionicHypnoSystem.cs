@@ -17,7 +17,6 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Psionics;
 using Content.Server.Consent;
-using Content.Shared.Mind.Components;
 
 
 namespace Content.Server.Abilities.Psionics
@@ -176,15 +175,12 @@ namespace Content.Server.Abilities.Psionics
             {
                 _popups.PopupEntity(Loc.GetString("hypno-success", ("target", uid)), uid, uid, PopupType.LargeCaution);
 
-                Hypnotize(uid, args.Target.Value, component);
+                Hypnotize(uid, args.Target.Value);
             }
         }
 
-        public void Hypnotize(EntityUid uid, EntityUid target, PsionicHypnoComponent? component = null)
+        public void Hypnotize(EntityUid uid, EntityUid target)
         {
-            if (!Resolve(uid, ref component))
-                return;
-
             EnsureComp<HypnotizedComponent>(target, out var hypnotized);
             hypnotized.Master = uid;
 
