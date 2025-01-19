@@ -2379,3 +2379,18 @@ Entries:
   id: 297
   time: '2025-01-19T11:56:11.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/495
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: A week has passed. Surgery is here.
+    - type: Add
+      message: >-
+        Upgraded the game to Robust Toolbox v237. This should fix some of the
+        annoying bugs and help us bring over more PRs in the future.
+    - type: Fix
+      message: >-
+        Fixed a couple minor bugs and removed collision fixtures from
+        footprints.
+  id: 298
+  time: '2025-01-19T13:20:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/481
