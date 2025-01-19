@@ -24,6 +24,9 @@
     Tail:
       points: 1
       required: false
+    Wings:
+      points: 1
+      required: false
     Chest:
       points: 1
       required: false
@@ -61,8 +64,8 @@
     RArm: MobHumanRArm
     LHand: MobHumanLHand
     RHand: MobHumanRHand
-    Tail: MobHumanoidAnyMarking # Nyanotrasen - Felinid
-    HeadTop: MobHumanoidAnyMarking # Nyanotrasen - Felinid & Oni
+    Wings: MobHumanoidAnyMarking
+    HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
 
 - type: humanoidBaseSprite

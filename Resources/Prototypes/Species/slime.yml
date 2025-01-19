@@ -21,6 +21,7 @@
     HeadTop: MobSlimeMarkingFollowSkin
     HeadSide: MobSlimeMarkingFollowSkin
     Tail: MobSlimeMarkingFollowSkin
+    Wings: MobSlimeMarkingFollowSkin
     Eyes: MobHumanoidEyes
     LArm: MobSlimeLArm
     RArm: MobSlimeRArm
@@ -41,19 +42,22 @@
       points: 1
       required: false
     Tail:
-      points: 3
+      points: 1
+      required: false
+    Wings:
+      points: 1
       required: false
     Snout:
       points: 1
       required: false
     Head:
-      points: 2
+      points: 1
       required: false
     HeadTop:
-      points: 3
+      points: 1
       required: false
     HeadSide:
-      points: 3
+      points: 1
       required: false
     Chest:
       points: 1

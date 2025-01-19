@@ -32,8 +32,9 @@
     RLeg: MobHumanRLeg
     LFoot: MobHumanLFoot
     RFoot: MobHumanRFoot
-    Tail: MobHumanoidAnyMarking # Nyanotrasen - Felinid
-    HeadTop: MobHumanoidAnyMarking # Nyanotrasen - Felinid & Oni
+    Tail: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
+    HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
 
 - type: markingPoints
@@ -49,6 +50,9 @@
       points: 1
       required: false
     Tail:
+      points: 1
+      required: false
+    Wings:
       points: 1
       required: false
     HeadTop:
@@ -82,7 +86,7 @@
       points: 2
       required: false
     HeadSide:
-      points: 2
+      points: 1
       required: false
 
 - type: humanoidBaseSprite
