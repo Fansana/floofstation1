@@ -99,6 +99,21 @@
           32:
             sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
             state: jumpsuit
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: hands
+      back:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: back
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: feet
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -116,3 +131,18 @@
           32:
             sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
             state: jumpsuit
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: hands
+      back:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: back
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Floof/Mobs/Species/Scugcat/displacement.rsi
+            state: feet
