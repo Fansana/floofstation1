@@ -103,7 +103,6 @@ namespace Content.Server.Forensics
         private void OnRehydrated(Entity<ForensicsComponent> ent, ref GotRehydratedEvent args)
         {
             CopyForensicsFrom(ent.Comp, args.Target);
-            Dirty(args.Target, ent.Comp);
         }
 
         /// <summary>
@@ -127,6 +126,8 @@ namespace Content.Server.Forensics
             {
                 dest.Fingerprints.Add(print);
             }
+
+            Dirty(target, dest);
         }
 
         private void OnAfterInteract(EntityUid uid, CleansForensicsComponent component, AfterInteractEvent args)
