@@ -14,3 +14,11 @@
   chatTriggers:
   - yip
   - yips
+
+- type: emote
+  id: Yap
+  name: chat-emote-name-yap
+  chatMessages: [ yaps ]
+  chatTriggers:
+  - yap
+  - yaps

@@ -67,7 +67,7 @@ namespace Content.Server.Carrying
             SubscribeLocalEvent<BeingCarriedComponent, GettingInteractedWithAttemptEvent>(OnInteractedWith);
             SubscribeLocalEvent<BeingCarriedComponent, PullAttemptEvent>(OnPullAttempt);
             SubscribeLocalEvent<BeingCarriedComponent, StartClimbEvent>(OnStartClimb);
-            SubscribeLocalEvent<BeingCarriedComponent, BuckleChangeEvent>(OnBuckleChange);
+            SubscribeLocalEvent<BeingCarriedComponent, BuckledEvent>(OnBuckled);
             SubscribeLocalEvent<CarriableComponent, CarryDoAfterEvent>(OnDoAfter);
         }
 
@@ -222,7 +222,7 @@ namespace Content.Server.Carrying
             DropCarried(component.Carrier, uid);
         }
 
-        private void OnBuckleChange(EntityUid uid, BeingCarriedComponent component, ref BuckleChangeEvent args)
+        private void OnBuckled(EntityUid uid, BeingCarriedComponent component, ref BuckledEvent args)
         {
             DropCarried(component.Carrier, uid);
         }
@@ -273,6 +273,7 @@ namespace Content.Server.Carrying
             if (TryComp<PullableComponent>(carried, out var pullable))
                 _pullingSystem.TryStopPull(carried, pullable);
 
+            EnsureComp<KnockedDownComponent>(carried); // Floof - moved this statement up because some systems can break carrying in response to knockdown
             _transform.AttachToGridOrMap(carrier);
             _transform.AttachToGridOrMap(carried);
             _transform.SetCoordinates(carried, Transform(carrier).Coordinates);
@@ -282,7 +283,6 @@ namespace Content.Server.Carrying
             var carryingComp = EnsureComp<CarryingComponent>(carrier);
             ApplyCarrySlowdown(carrier, carried);
             var carriedComp = EnsureComp<BeingCarriedComponent>(carried);
-            EnsureComp<KnockedDownComponent>(carried);
 
             carryingComp.Carried = carried;
             carriedComp.Carrier = carrier;

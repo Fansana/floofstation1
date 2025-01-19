@@ -68,6 +68,45 @@
     Gold: 850
 
 - type: latheRecipe
+  id: BorgModuleStun
+  result: BorgModuleStun
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 700
+    Glass: 500
+    Plastic: 200
+    
+- type: latheRecipe
+  id: BorgModuleKill
+  result: BorgModuleKill
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1500
+    Glass: 1000
+    Gold: 850
+    
+- type: latheRecipe
+  id: BorgModuleInvestigation
+  result: BorgModuleInvestigation
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1500
+    Glass: 1000
+    Gold: 850
+    
+# - type: latheRecipe
+  # id: WeaponEnergyShotgun
+  # result: WeaponEnergyShotgun
+  # category: Weapons
+  # completetime: 5
+  # materials:
+    # Steel: 2000
+    # Glass: 1500
+    # Gold: 1000
+- type: latheRecipe
   id: WeaponLaserCannon
   result: WeaponLaserCannon
   category: Weapons
@@ -888,3 +927,15 @@
   completetime: 6
   materials:
     Steel: 300
+
+- type: latheRecipe
+  id: SecurityCyberneticEyes
+  result: SecurityCyberneticEyes
+  category: Robotics
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Gold: 300
+    Silver: 300

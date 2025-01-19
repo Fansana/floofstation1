@@ -194,6 +194,9 @@ uplink-death-acidifier-implant-desc = Completely melts the user and their equipm
 uplink-micro-bomb-implanter-name = Micro Bomb Implanter
 uplink-micro-bomb-implanter-desc = Explode on death or manual activation with this implant. Destroys the body with all equipment.
 
+uplink-magillitis-serum-implanter-name = Magillitis Serum Implanter
+uplink-magillitis-serum-implanter-desc = An experimental biochip which causes irreversable rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas.
+
 # Bundles
 uplink-observation-kit-name = Observation Kit
 uplink-observation-kit-desc = Includes syndicate crew monitor, high power cell and security hud disguised as sunglasses.

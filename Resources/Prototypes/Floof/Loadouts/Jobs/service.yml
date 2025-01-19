@@ -152,6 +152,18 @@
   items:
     - MagazineBoxRifleBigRubber
 
+- type: loadout
+  id: LoadoutServiceBartenderRifleBigRubberSpeedloader
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Bartender
+  items:
+    - SpeedLoaderRifleHeavyRubber
+
 #Chef
 - type: loadout
   id: LoadoutClothingHandsChefWarmers

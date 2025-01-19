@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by Fenndragon discord:190763499276861440",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "borg_l_arm+o"
+    },
+    {
+      "name": "borg_r_arm+o"
+    },
+    {
+      "name": "borg_l_leg+o"
+    },
+    {
+      "name": "borg_r_leg+o"
+    },
+    {
+      "name": "borg_chest+o"
+    },
+    {
+      "name": "borg_head+o"
+    },
+    {
+      "name": "borg_l_salvleg+o"
+    },
+    {
+      "name": "borg_r_salvleg+o"
+    },
+	{
+      "name": "borg_l_salvarm+o"
+    },
+    {
+      "name": "borg_r_salvarm+o"
+    },
+    {
+      "name": "borg_salvchest+o"
+    },
+    {
+      "name": "borg_salvhead+o"
+    },
+    {
+      "name": "quad_suit"
+    }
+  ]
+}

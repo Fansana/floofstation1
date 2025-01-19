@@ -605,6 +605,145 @@
   completetime: 0.1
   materials:
     PrizeTicket: 80
+# Floof Plushies - Start
+- type: latheRecipe
+  id: PlushieCentCom
+  result: PlushieCentCom
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieFRouny
+  result: PlushieFRouny
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieFDrone
+  result: PlushieFDrone
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieFPraetorian
+  result: PlushieFPraetorian
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieFRavager
+  result: PlushieFRavager
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieSlimeTider
+  result: PlushieSlimeTider
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieDragon
+  result: PlushieDragon
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+# DO NOT ADD THIS!!
+#- type: latheRecipe
+#  id: PlushieDino
+#  result: PlushieDino
+#  applyMaterialDiscount: false
+#  completetime: 0.1
+#  materials:
+#    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieChillHuman
+  result: PlushieChillHuman
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+
+- type: latheRecipe
+  id: PlushieTrystan
+  result: PlushieTrystan
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 50
+# HypnoTemp Plushies - Start
+- type: latheRecipe
+  id: PlushieHypnoTempCap
+  result: PlushieHypnoTempCap
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempHoS
+  result: PlushieHypnoTempHoS
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempHoP
+  result: PlushieHypnoTempHoP
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempCE
+  result: PlushieHypnoTempCE
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempCMO
+  result: PlushieHypnoTempCMO
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempLO
+  result: PlushieHypnoTempLO
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieHypnoTempMysta
+  result: PlushieHypnoTempMysta
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+# HypnoTemp Plushies - End
+# Floof Plushies - End
 
 # EMAG
 
@@ -643,14 +782,6 @@
 - type: latheRecipe
   id: PlushieSlips
   result: PlushieSlips
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieTrystan
-  result: PlushieTrystan
   applyMaterialDiscount: false
   completetime: 0.1
   materials:
@@ -743,61 +874,3 @@
   completetime: 0.1
   materials:
     PrizeTicket: 500
-
-# HypnoTemp Plushies - Start
-- type: latheRecipe
-  id: PlushieHypnoTempCap
-  result: PlushieHypnoTempCap
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempHoS
-  result: PlushieHypnoTempHoS
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempHoP
-  result: PlushieHypnoTempHoP
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempCE
-  result: PlushieHypnoTempCE
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempCMO
-  result: PlushieHypnoTempCMO
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempLO
-  result: PlushieHypnoTempLO
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-
-- type: latheRecipe
-  id: PlushieHypnoTempMysta
-  result: PlushieHypnoTempMysta
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 100
-# HypnoTemp Plushies - End

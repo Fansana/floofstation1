@@ -6,6 +6,9 @@ namespace Content.Server.NPC;
 public sealed class FactionData
 {
     [ViewVariables]
+    public bool IsHostileToSelf;
+
+    [ViewVariables]
     public HashSet<string> Friendly = new();
 
     [ViewVariables]

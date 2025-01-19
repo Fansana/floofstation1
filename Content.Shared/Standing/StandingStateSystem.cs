@@ -24,7 +24,7 @@ public sealed class StandingStateSystem : EntitySystem
     [Dependency] private readonly ClimbSystem _climb = default!;
 
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
-    private const int StandingCollisionLayer = (int)CollisionGroup.MidImpassable;
+    private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
 
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
     {
@@ -57,8 +57,9 @@ public sealed class StandingStateSystem : EntitySystem
         if (dropHeldItems && hands != null)
             RaiseLocalEvent(uid, new DropHandItemsEvent(), false);
 
-        if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle))
-            return false;
+        // Floof - this is absolutely not necessary
+        // if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled)
+        //     return false;
 
         var msg = new DownAttemptEvent();
         RaiseLocalEvent(uid, msg, false);
@@ -67,7 +68,7 @@ public sealed class StandingStateSystem : EntitySystem
             return false;
 
         standingState.CurrentState = StandingState.Lying;
-        Dirty(standingState);
+        Dirty(uid, standingState);
         RaiseLocalEvent(uid, new DownedEvent(), false);
 
         // Seemed like the best place to put it
@@ -111,9 +112,9 @@ public sealed class StandingStateSystem : EntitySystem
         // Optional component.
         Resolve(uid, ref appearance, false);
 
-        if (standingState.CurrentState is StandingState.Standing
-            || TryComp(uid, out BuckleComponent? buckle)
-            && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle))
+        if (standingState.CurrentState is StandingState.Standing)
+            // || TryComp(uid, out BuckleComponent? buckle)
+            // && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // Floof - this is also not necessary
             return true;
 
         if (!force)
@@ -154,7 +155,7 @@ public sealed class StandingStateSystem : EntitySystem
 
         var entityDistances = new Dictionary<EntityUid, float>();
 
-        foreach (var entity in _lookup.GetEntitiesInRange(uid, 0.3f))
+        foreach (var entity in _lookup.GetEntitiesIntersecting(uid)) // Floof - changed to GetEntitiesIntersecting to avoid climbing through walls
             if (HasComp<ClimbableComponent>(entity))
                 entityDistances[entity] = (Transform(uid).Coordinates.Position - Transform(entity).Coordinates.Position).LengthSquared();
 

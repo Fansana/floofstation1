@@ -26,6 +26,7 @@
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
       - id: CargoTechFabCircuitboard # Floof - port to EE if possible
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilledHardsuit
@@ -56,6 +57,7 @@
       - id: MedalCase
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilled
@@ -86,6 +88,7 @@
       - id: ClothingHeadHatBeretCap # Nyanotrasen - Captain's Beret
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerCaptainFilledNoLaser
@@ -115,6 +118,7 @@
       - id: ClothingHeadHatBeretCap # Nyanotrasen - Captain's Beret
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: ClothingEyesGlassesCommand
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -150,6 +154,7 @@
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
       - id: ServiceTechFabCircuitboard # Floof - port to ee if possible
+      - id: ClothingEyesHudCommand
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -229,6 +234,7 @@
       - id: RubberStampCMO
       - id: RubberStampPsychologist # DeltaV
       - id: MedicalTechFabCircuitboard
+      - id: MedicalBiofabMachineBoard
       - id: BoxEncryptionKeyMedical
       - id: BoxPDAMedical # Delta-V
       - id: ClothingBeltMilitaryWebbingCMO # DeltaV - add webbing for CMO. ON THIS STATION, IT'S DRIP OR [die], CAPTAIN!
@@ -255,6 +261,7 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
+      - id: MedicalBiofabMachineBoard
       - id: BoxPDAMedical # Delta-V
       - id: ClothingBeltMilitaryWebbingCMO # DeltaV - add webbing for CMO. ON THIS STATION, IT'S DRIP OR [die], CAPTAIN!
       - id: CMOIDCard # Delta-V
@@ -317,6 +324,7 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
+      - id: WeaponEnergyShotgun
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingLongcoatHoS # Floofstation
       - id: ClothingMaskNeckGaiter
@@ -349,6 +357,7 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
+      - id: WeaponEnergyShotgun
       - id: ClothingOuterCoatHoSTrench
       - id: ClothingLongcoatHoS # Floofstation
       - id: ClothingMaskNeckGaiter
@@ -384,3 +393,36 @@
     - id: SpaceCash1000
     - id: BeachBall
     - id: BikeHorn
+
+- type: entity
+  id: LockerCentCommFilled # CC Locker
+  suffix: Filled
+  parent: LockerCentComm
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBackpackHolding
+      - id: JetpackBlackFilled
+      - id: DoorRemoteAll
+      - id: RubberStampCentcom
+      - id: RubberStampDenied
+      - id: RubberStampApproved
+      - id: BoxFolderCentComClipboard
+      - id: CentcomPDA
+      - id: BoxFolderCentCom
+      - id: ClothingHeadsetAltCentCom
+      - id: ClothingHeadHatCentcomcap
+      - id: ClothingMaskGasCentcom
+      - id: CentcomIDCard
+      - id: ClothingOuterWinterCCWarden
+      - id: ClothingNeckCloakCentcom
+      - id: AccessConfigurator
+      - id: ClothingOuterHardsuitERTCentcomm
+      - id: WeaponDisabler
+      - id: WeaponPistolN1984
+      - id: ClothingShoesBootsCombatFilled
+      - id: ClothingUniformJumpskirtCentcomDirector
+      - id: ClothingUniformJumpsuitCentcomDirector
+      - id: ClothingEyesGlassesSunglasses
+      - id: ClothingHandsGlovesColorBlack
+      - id: PenCentcom

@@ -23,3 +23,9 @@ trait-name-Lightweight = Lightweight
 trait-description-Lightweight =
     You are naturally lighter than other representatives of your species. Your body density is reduced to 2/3 of normal.
     Note: [color=red]this will not display in the character creation menu, and will only have effect in-game.[/color]
+
+trait-name-GermanAccent = German accent
+trait-description-GermanAccent = You seem to come from space Germany.
+
+trait-name-DrunkardAccent = Drunkard accent
+trait-description-DrunkardAccent = You always sound like you're drunk.

@@ -398,7 +398,8 @@
         damageType: Blunt
         damage: 10
       behaviors:
-      - !type:GibBehavior { }
+      - !type:GibBehavior
+        gibContents: Skip
   - type: NonSpreaderZombie
   - type: LanguageKnowledge
     speaks: [Hissing]
@@ -570,6 +571,11 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation - moffroach my beloved
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 # Note that the mallard duck is actually a male drake mallard, with the brown duck being the female variant of the same species, however ss14 lacks sex specific textures
 # The white duck is more akin to a pekin or call duck.
@@ -652,6 +658,11 @@
     barkType: chicken # Duh
     barkMultiplier: 0.7
   - type: LeashAnchor # Floofstation
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 - type: entity
   name: white duck #Quack
@@ -908,6 +919,11 @@
     prototype: AnimalHemocyanin
   - type: RandomBark
     barkType: crab
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 - type: entity
   name: goat
@@ -1000,6 +1016,11 @@
     rootTask:
       task: RuminantHostileCompound
   - type: LeashAnchor # Floofstation
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
@@ -1048,62 +1069,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-  - type: LeashAnchor # Floofstation
-
-- type: entity
-  name: gorilla
-  parent: [ SimpleMobBase, MobCombat ]
-  id: MobGorilla
-  description: Smashes, roars, looks cool. Don't stand near one.
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: crawling
-      sprite: Mobs/Animals/gorilla.rsi
-  - type: Physics
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.48
-        density: 200
-        mask:
-        - MobMask
-        layer:
-        - MobLayer
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: crawling
-      Critical:
-        Base: dead
-      Dead:
-        Base: dead
-  - type: Butcherable
-    spawned:
-    - id: FoodMeat
-      amount: 4
-  - type: Bloodstream
-    bloodMaxVolume: 300
-    # if you fuck with the gorilla he will harambe you
-  - type: MeleeWeapon
-    soundHit:
-      collection: Punch
-    damage:
-      types:
-        Blunt: 20
-    animation: WeaponArcFist
-  - type: NPCRetaliation
-  - type: FactionException
-  - type: NpcFactionMember
-    factions:
-    - Passive
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: LeashAnchor # Floofstation
 
 - type: entity
@@ -1218,6 +1183,8 @@
   abstract: true
   components:
   - type: CombatMode
+  - type: SurgeryTarget
+  - type: Targeting
   - type: Inventory
     templateId: monkey
     speciesId: monkey
@@ -1245,6 +1212,8 @@
     interfaces:
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1582,7 +1551,7 @@
 - type: entity
   name: guidebook monkey
   parent: MobMonkey
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   id: MobGuidebookMonkey
   description: A hopefully helpful monkey whose only purpose in life is for you to click on. Does this count as having a monkey give you a tutorial?
   components:
@@ -1753,6 +1722,11 @@
     whitelist:
       types:
       - Landmine
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 - type: entity
   parent: MobMouse
@@ -2383,6 +2357,11 @@
   - type: BloodSucker
     webRequired: true
   - type: Cocooner
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
 
 - type: entity
   name: tarantula

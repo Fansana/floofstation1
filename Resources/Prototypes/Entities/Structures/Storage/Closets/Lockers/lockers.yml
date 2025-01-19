@@ -470,7 +470,7 @@
   components:
   - type: Appearance
   - type: AccessReader
-    access: [["Theatre"]]
+    access: [["Clown"]] # Floof
   - type: EntityStorageVisuals
     stateBaseClosed: clown
     stateDoorOpen: clown_open
@@ -484,7 +484,7 @@
   components:
   - type: Appearance
   - type: AccessReader
-    access: [["Theatre"]]
+    access: [["Mime"]] # Floof
   - type: EntityStorageVisuals
     stateBaseClosed: mime
     stateDoorOpen: mime_open
@@ -503,3 +503,17 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+# Central Command
+- type: entity
+  id: LockerCentComm
+  name: central command officer locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: CentCom
+    stateDoorOpen: CentCom_open
+    stateDoorClosed: CentCom_door

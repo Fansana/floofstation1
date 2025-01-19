@@ -1,7 +1,7 @@
 - type: entity
   id: XenoVents
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -9,31 +9,70 @@
     reoccurrenceDelay: 12
     minimumPlayers: 15
     weight: 6 # Really weak compared to other critters
-    duration: 60
+    duration: 80
   - type: VentCrittersRule
     entries:
     - id: MobXeno
       prob: 0.01
     - id: MobXenoRouny
-      prob: 0.005
+      prob: 0.002
     - id: MobXenoDrone
-      prob: 0.005
+      prob: 0.002
     - id: MobXenoSpitter
-      prob: 0.005
+      prob: 0.002
     - id: MobXenoRunner
-      prob: 0.005
+      prob: 0.002
     - id: MobXenoPraetorian
-      prob: 0.005
+      prob: 0.002
     - id: MobXenoRavager
-      prob: 0.005
+      prob: 0.002
+    - id: MobXenochargercrusher
+      prob: 0.002
+    - id: MobXenodancerpraetorian
+      prob: 0.002
+    - id: MobXenodefender
+      prob: 0.002
+    - id: MobXenosentinel
+      prob: 0.002
+    - id: MobXenohivelord
+      prob: 0.001
+    - id: MobXenoCarrier
+      prob: 0.002
+    - id: MobXenobloodylarva
+      prob: 0.003
+    - id: MobXenoparasite
+      prob: 0.003
+    - id: MobXenolurker
+      prob: 0.002
+    - id: MobXenowarrior
+      prob: 0.002
+    - id: MobXenoacidrunner
+      prob: 0.002
+    - id: MobXenoacidrunnerprimed
+      prob: 0.002
+    - id: MobXenolarva
+      prob: 0.003
+    - id: MobXenoboiler
+      prob: 0.002
+    - id: MobXenoboxerwarrior
+      prob: 0.002
+    - id: MobXenoCarrier
+      prob: 0.002
+    - id: MobXenocrusher
+      prob: 0.002
     - id: MobXenoQueen
-      prob: 0.005
+      prob: 0.001
+    crawlTime: 3, 4 # Floof
+    popup: station-event-xeno-vents-popup # Floof
+    sound: # Floof
+      path: /Audio/Animals/alien_roar1.ogg
+      params: {volume: 0.5}
 
 # Weaker version of xenos, meant to provide some dangers in low pop.
 - type: entity
   id: XenoVentsWeak
   parent: XenoVents
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -42,12 +81,12 @@
   - type: VentCrittersRule
     entries:
     - id: MobXeno
-      prob: 0.006
-    - id: MobXenoDrone
-      prob: 0.004
-    - id: MobXenoSpitter
-      prob: 0.003
+      prob: 0.01
     - id: MobXenoRouny
+      prob: 0.001
+    - id: MobXenoDrone
+      prob: 0.001
+    - id: MobXenoSpitter
       prob: 0.001
     - id: MobXenoRunner
       prob: 0.001
@@ -55,11 +94,47 @@
       prob: 0.001
     - id: MobXenoRavager
       prob: 0.001
+    - id: MobXenochargercrusher
+      prob: 0.001
+    - id: MobXenodancerpraetorian
+      prob: 0.001
+    - id: MobXenodefender
+      prob: 0.001
+    - id: MobXenosentinel
+      prob: 0.001
+    - id: MobXenohivelord
+      prob: 0.001
+    - id: MobXenoCarrier
+      prob: 0.001
+    - id: MobXenobloodylarva
+      prob: 0.002
+    - id: MobXenoparasite
+      prob: 0.002
+    - id: MobXenolurker
+      prob: 0.001
+    - id: MobXenowarrior
+      prob: 0.001
+    - id: MobXenoacidrunner
+      prob: 0.001
+    - id: MobXenoacidrunnerprimed
+      prob: 0.001
+    - id: MobXenolarva
+      prob: 0.002
+    - id: MobXenoboiler
+      prob: 0.001
+    - id: MobXenoboxerwarrior
+      prob: 0.001
+    - id: MobXenoCarrier
+      prob: 0.001
+    - id: MobXenocrusher
+      prob: 0.001
+    - id: MobXenoQueen
+      prob: 0.001
 
 - type: entity
   id: MothroachSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     earliestStart: 15
@@ -70,11 +145,15 @@
     entries:
     - id: MobMothroach
       prob: 0.05
+    sound: # Floof - mothroach my beloved
+      path: /Audio/Voice/Moth/moth_chitter.ogg
+      params: {volume: 0.5}
+
 
 - type: entity
   id: PirateRadioSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     weight: 7.5

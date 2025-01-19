@@ -38,4 +38,15 @@ public sealed partial class AbsorbentComponent : Component
         {
             Params = AudioParams.Default.WithVariation(SharedContentAudioSystem.DefaultVariation).WithVolume(-3f),
         };
+
+    // Floof section
+    [DataField]
+    public float FootprintCleaningRange = 0.2f;
+
+    /// <summary>
+    ///     How many footprints within <see cref="FootprintCleaningRange"/> can be cleaned at once.
+    /// </summary>
+    [DataField]
+    public int MaxCleanedFootprints = 5;
+    // Floof section end
 }
