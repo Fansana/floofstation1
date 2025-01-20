@@ -1,6 +1,5 @@
 using Content.Shared.Database;
 using Content.Shared.NPC.Components;
-using Content.Shared.NPC.Prototypes;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
