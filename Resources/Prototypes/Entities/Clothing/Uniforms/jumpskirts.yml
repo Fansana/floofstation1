@@ -840,13 +840,3 @@
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/olddress.rsi
     
-- type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformClassicalMaidDress
-  name: Classical Maid Dress
-  description: A modernised version of the victorian-era maid dress. Streamlined but frilly perfect for a hard working maid.
-  components:
-  - type: Sprite
-    sprite: Floof/Clothing/Uniforms/ClassicalMaidDress.rsi
-  - type: Clothing
-    sprite: Floof/Clothing/Uniforms/ClassicalMaidDress.rsi
