@@ -220,6 +220,7 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
+  softCapContribution: 1.5
 
 - type: technology
   id: ExperimentalBatteryAmmo

@@ -165,6 +165,21 @@
   - HonkerTargetingElectronics
   - MechEquipmentHorn
 
+# Tier 3
+# TODO: Add recipes to manufacture Advanced Hardsuits
+# - type: technology
+#   id: AdvancedHardsuits
+#   name: research-technology-advanced-hardsuits
+#   icon:
+#     sprite: Clothing/OuterClothing/Hardsuits/engineering-white.rsi
+#     state: icon
+#   discipline: CivilianServices
+#   tier: 1
+#   cost: 15000
+#   recipeUnlocks:
+#   - ClothingOuterHardsuitEngineeringWhite
+#   softCapContribution: 1.5
+
 - type: technology
   id: AdvancedSpray
   name: research-technology-advanced-spray
@@ -203,6 +218,7 @@
   cost: 10000
   recipeUnlocks:
   - ClothingShoesBootsSpeed
+  softCapContribution: 1.5
 
 - type: technology
   id: BluespaceChemistry
@@ -216,6 +232,7 @@
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace
+  softCapContribution: 1.25 # Floofstation - reduced due to low utility
 
 - type: technology
   id: BasicTranslation
@@ -258,3 +275,4 @@
   - AnimalTranslator
   - MofficTranslatorImplanter
   - ArachnicTranslatorImplanter
+  softCapContribution: 1.5
