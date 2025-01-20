@@ -187,7 +187,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? nameOverride = null,
         bool checkRadioPrefix = true,
         bool ignoreActionBlocker = false,
-        LanguagePrototype? languageOverride = null
+        LanguagePrototype? languageOverride = null,
+        string? color = null
         )
     {
         if (HasComp<GhostComponent>(source))

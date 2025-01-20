@@ -22,6 +22,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';
     public const char SubtlePrefix = '-';
+    public const char SubtleOOCPrefix = '.';
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char TelepathicPrefix = '='; //Nyano - Summary: Adds the telepathic channel's prefix.
@@ -116,7 +117,7 @@ public abstract class SharedChatSystem : EntitySystem
         if (input.Length == 0)
             return false;
 
-        if (input.StartsWith(RadioCommonPrefix))
+        if (!input.StartsWith(RadioChannelPrefix))
         {
             output = SanitizeMessageCapital(input[1..].TrimStart());
             channel = _prototypeManager.Index<RadioChannelPrototype>(CommonChannel);
@@ -281,6 +282,7 @@ public enum InGameICChatType : byte
     Speak,
     Emote,
     Subtle, // Floofstation
+    SubtleOOC, // Floofstation
     Whisper,
     Telepathic
 }

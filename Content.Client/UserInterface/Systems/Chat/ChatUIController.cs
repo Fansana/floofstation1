@@ -86,6 +86,7 @@ public sealed class ChatUIController : UIController
         {SharedChatSystem.EmotesPrefix, ChatSelectChannel.Emotes},
         {SharedChatSystem.EmotesAltPrefix, ChatSelectChannel.Emotes},
         {SharedChatSystem.SubtlePrefix, ChatSelectChannel.Subtle}, // Floofstation
+        {SharedChatSystem.SubtleOOCPrefix, ChatSelectChannel.SubtleOOC}, // Floofstation
         {SharedChatSystem.AdminPrefix, ChatSelectChannel.Admin},
         {SharedChatSystem.RadioCommonPrefix, ChatSelectChannel.Radio},
         {SharedChatSystem.DeadPrefix, ChatSelectChannel.Dead},
@@ -101,6 +102,7 @@ public sealed class ChatUIController : UIController
         {ChatSelectChannel.OOC, SharedChatSystem.OOCPrefix},
         {ChatSelectChannel.Emotes, SharedChatSystem.EmotesPrefix},
         {ChatSelectChannel.Subtle, SharedChatSystem.SubtlePrefix}, // Floofstation
+        {ChatSelectChannel.SubtleOOC, SharedChatSystem.SubtleOOCPrefix}, // Floofstation
         {ChatSelectChannel.Admin, SharedChatSystem.AdminPrefix},
         {ChatSelectChannel.Radio, SharedChatSystem.RadioCommonPrefix},
         {ChatSelectChannel.Dead, SharedChatSystem.DeadPrefix},
@@ -539,6 +541,7 @@ public sealed class ChatUIController : UIController
             FilterableChannels |= ChatChannel.Radio;
             FilterableChannels |= ChatChannel.Emotes;
             FilterableChannels |= ChatChannel.Subtle; // Floofstation
+            FilterableChannels |= ChatChannel.SubtleOOC; // Floofstation
             FilterableChannels |= ChatChannel.Notifications;
 
             // Can only send local / radio / emote when attached to a non-ghost entity.
@@ -550,6 +553,7 @@ public sealed class ChatUIController : UIController
                 CanSendChannels |= ChatSelectChannel.Radio;
                 CanSendChannels |= ChatSelectChannel.Emotes;
                 CanSendChannels |= ChatSelectChannel.Subtle; // Floofstation
+                CanSendChannels |= ChatSelectChannel.SubtleOOC; // Floofstation
             }
         }
 
