@@ -1,3 +1,4 @@
+using Content.Shared.NPC.Events;
 using System.Collections.Frozen;
 using System.Linq;
 using Content.Server.NPC.Components;
@@ -76,6 +77,8 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
+        RaiseLocalEvent(ent.Owner, new NpcFactionAddedEvent(faction));
+
         if (dirty)
         {
             RefreshFactions(comp);
@@ -98,6 +101,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
 
         if (!component.Factions.Remove(faction))
             return;
+
+        RaiseLocalEvent(ent.Owner, new NpcFactionRemovedEvent(faction));
+
 
         if (dirty)
         {
