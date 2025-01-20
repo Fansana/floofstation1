@@ -206,6 +206,23 @@ public sealed partial class FancyTree : Control
         }
     }
 
+    // Floofstation - set expansion state based on a predicate.
+    public void RecursiveSetExpanded(Func<TreeItem, bool> predicate, bool value, Control? startingFrom = null, int depth = 6)
+    {
+        if (depth <= 0)
+            return;
+
+        startingFrom ??= Body;
+        foreach (var item in startingFrom.Children)
+        {
+            if (item is TreeItem ti && predicate(ti))
+                RecursiveSetExpanded(ti, value, 5);
+            else
+                RecursiveSetExpanded(predicate, value, item, depth);
+        }
+
+    }
+
     public bool TryGetIndexFromMetadata(object metadata, [NotNullWhen(true)] out int? index)
     {
         index = null;
