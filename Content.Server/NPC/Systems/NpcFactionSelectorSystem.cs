@@ -1,11 +1,11 @@
+using Content.Server.NPC.Components;
 using Content.Shared.Database;
-using Content.Shared.NPC.Components;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
 using System.Linq;
 
-namespace Content.Shared.NPC.Systems;
+namespace Content.Server.NPC.Systems;
 public sealed partial class NpcFactionSelectorSystem : EntitySystem
 {
 
@@ -18,10 +18,10 @@ public sealed partial class NpcFactionSelectorSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<NpcFactionSelectorComponent, GetVerbsEvent<Verb>>(OnGetVerb);
+        SubscribeLocalEvent<NpcFactionMemberComponent, GetVerbsEvent<Verb>>(OnGetVerb);
     }
 
-    private void OnGetVerb(Entity<NpcFactionSelectorComponent> entity, ref GetVerbsEvent<Verb> args)
+    private void OnGetVerb(Entity<NpcFactionMemberComponent> entity, ref GetVerbsEvent<Verb> args)
     {
         if (!args.CanAccess || !args.CanInteract || args.Hands == null)
             return;

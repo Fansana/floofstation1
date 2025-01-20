@@ -14,10 +14,10 @@ public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<NpcFactionSelectorComponent, NpcFactionAddedEvent>(OnFactionAdded);
+        SubscribeLocalEvent<NpcFactionSpriteStateSetterComponent, NpcFactionAddedEvent>(OnFactionAdded);
     }
 
-    private void OnFactionAdded(Entity<NpcFactionSelectorComponent> entity, ref NpcFactionAddedEvent args)
+    private void OnFactionAdded(Entity<NpcFactionSpriteStateSetterComponent> entity, ref NpcFactionAddedEvent args)
     {
         if (!_entityManager.HasComponent(entity, typeof(NpcFactionSpriteStateSetterComponent)))
             return;

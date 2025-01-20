@@ -77,7 +77,7 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
-        RaiseLocalEvent(ent.Owner, new NpcFactionAddedEvent(faction));
+        RaiseLocalEvent(uid, new NpcFactionAddedEvent(faction));
 
         if (dirty)
         {
@@ -102,7 +102,7 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!component.Factions.Remove(faction))
             return;
 
-        RaiseLocalEvent(ent.Owner, new NpcFactionRemovedEvent(faction));
+        RaiseLocalEvent(uid, new NpcFactionRemovedEvent(faction));
 
 
         if (dirty)
