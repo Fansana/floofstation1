@@ -19,6 +19,6 @@ public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
         if (!TryGetEntity(ev.EntityUid, out var entity) || !TryComp<SpriteComponent>(entity.Value, out var sprite))
             return;
 
-        sprite.LayerSetState(0, new Robust.Client.Graphics.RSI.State(0, new Robust.Client.Graphics.RSI.StateId(ev.FactionID));
+        sprite.LayerSetState(0, new (ev.FactionID));
     }
 }
