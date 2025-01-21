@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Server.NPC.Components;
 
-[RegisterComponent, NetworkedComponent, Access(typeof(NpcFactionSelectorSystem))]
+[RegisterComponent]
 public sealed partial class NpcFactionSelectorComponent : Component
 {
     [DataField]

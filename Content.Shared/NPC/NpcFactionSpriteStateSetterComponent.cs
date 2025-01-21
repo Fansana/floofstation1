@@ -2,6 +2,6 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared.NPC.Components;
 
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent]
 public sealed partial class NpcFactionSpriteStateSetterComponent : Component {}
 
