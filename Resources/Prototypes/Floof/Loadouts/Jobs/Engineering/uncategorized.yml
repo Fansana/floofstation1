@@ -1,20 +1,18 @@
 - type: loadout
   id: LoadoutClothingHandsEngiWarmers
-  category: JobsEngineering
+  category: JobsEngineeringAAUncategorized
   cost: 2
   exclusive: true
   items:
   - ClothingHandsEngiWarmers
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - StationEngineer
-    - AtmosphericTechnician
-    - ChiefEngineer
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Engineering
 
 - type: loadout
   id: LoadoutClothingUnderSocksEngi
-  category: JobsEngineering
+  category: JobsEngineeringAAUncategorized
   cost: 2
   exclusive: true
   items:
@@ -25,35 +23,29 @@
     species:
     - Diona
     - Harpy
-  - !type:CharacterJobRequirement
-    jobs:
-    - StationEngineer
-    - AtmosphericTechnician
-    - ChiefEngineer
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Engineering
 
 - type: loadout
   id: LoadoutClothingUniformEngiThong
-  category: JobsEngineering
+  category: JobsEngineeringAAUncategorized
   cost: 2
   exclusive: true
   items:
   - ClothingUniformEngiThong
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - StationEngineer
-    - AtmosphericTechnician
-    - ChiefEngineer
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Engineering
 
 - type: loadout
   id: LoadoutEngineeringNeckCollar
-  category: JobsEngineering
+  category: JobsEngineeringAAUncategorized
   cost: 1
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - StationEngineer
-    - AtmosphericTechnician
-    - ChiefEngineer
   items:
   - ClothingNeckCollarEngi
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Engineering

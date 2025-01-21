@@ -1,22 +1,22 @@
 - type: loadout
-  id: LoadoutClothingHandsHeadSecurityWarmers
-  category: JobsCommand
+  id: LoadoutClothingHandsChiefEngiWarmers
+  category: JobsEngineeringChiefEngineer
   cost: 1
   exclusive: true
   items:
-  - ClothingHandsHeadSecurityWarmers
+  - ClothingHandsChiefEngiWarmers
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - HeadOfSecurity
+    - ChiefEngineer
 
 - type: loadout
-  id: LoadoutClothingUnderSocksHeadSecurity
-  category: JobsCommand
+  id: LoadoutClothingUnderSocksChiefEngi
+  category: JobsEngineeringChiefEngineer
   cost: 1
   exclusive: true
   items:
-  - ClothingUnderSocksHeadSecurity
+  - ClothingUnderSocksChiefEngi
   requirements:
   - !type:CharacterSpeciesRequirement
     inverted: true
@@ -25,16 +25,16 @@
     - Harpy
   - !type:CharacterJobRequirement
     jobs:
-    - HeadOfSecurity
+    - ChiefEngineer
 
 - type: loadout
-  id: LoadoutClothingUniformHeadSecurityThong
-  category: JobsCommand
+  id: LoadoutClothingUniformChiefEngiThong
+  category: JobsEngineeringChiefEngineer
   cost: 1
   exclusive: true
   items:
-  - ClothingUniformHeadSecurityThong
+  - ClothingUniformChiefEngiThong
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - HeadOfSecurity
+    - ChiefEngineer

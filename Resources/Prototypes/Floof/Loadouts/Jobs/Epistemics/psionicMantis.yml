@@ -1,22 +1,22 @@
 - type: loadout
-  id: LoadoutClothingHandsEpiHeadWarmers
-  category: JobsCommand
+  id: LoadoutClothingHandsMantisEpiWarmers
+  category: JobsEpistemicsPsionicMantis
   cost: 1
   exclusive: true
   items:
-  - ClothingHandsEpiHeadWarmers
+  - ClothingHandsMantisEpiWarmers
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - ResearchDirector
+    - ForensicMantis
 
 - type: loadout
-  id: LoadoutClothingUnderSocksEpiHead
-  category: JobsCommand
+  id: LoadoutClothingUnderSocksMantisEpi
+  category: JobsEpistemicsPsionicMantis
   cost: 1
   exclusive: true
   items:
-  - ClothingUnderSocksEpiHead
+  - ClothingUnderSocksMantisEpi
   requirements:
   - !type:CharacterSpeciesRequirement
     inverted: true
@@ -25,16 +25,16 @@
     - Harpy
   - !type:CharacterJobRequirement
     jobs:
-    - ResearchDirector
+    - ForensicMantis
 
 - type: loadout
-  id: LoadoutClothingUniformEpiHeadThong
-  category: JobsCommand
+  id: LoadoutClothingUniformMantisEpiThong
+  category: JobsEpistemicsPsionicMantis
   cost: 1
   exclusive: true
   items:
-  - ClothingUniformEpiHeadThong
+  - ClothingUniformMantisEpiThong
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - ResearchDirector
+    - ForensicMantis

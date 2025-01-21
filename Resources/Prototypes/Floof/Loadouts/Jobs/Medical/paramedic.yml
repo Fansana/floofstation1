@@ -1,22 +1,22 @@
 - type: loadout
-  id: LoadoutClothingHandsChiefEngiWarmers
-  category: JobsCommand
+  id: LoadoutClothingHandsParaMedicWarmers
+  category: JobsMedicalParamedic
   cost: 1
   exclusive: true
   items:
-  - ClothingHandsChiefEngiWarmers
+  - ClothingHandsParaMedicWarmers
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - ChiefEngineer
+    - Paramedic
 
 - type: loadout
-  id: LoadoutClothingUnderSocksChiefEngi
-  category: JobsCommand
+  id: LoadoutClothingUnderSocksParaMedic
+  category: JobsMedicalParamedic
   cost: 1
   exclusive: true
   items:
-  - ClothingUnderSocksChiefEngi
+  - ClothingUnderSocksParaMedic
   requirements:
   - !type:CharacterSpeciesRequirement
     inverted: true
@@ -25,16 +25,16 @@
     - Harpy
   - !type:CharacterJobRequirement
     jobs:
-    - ChiefEngineer
+    - Paramedic
 
 - type: loadout
-  id: LoadoutClothingUniformChiefEngiThong
-  category: JobsCommand
+  id: LoadoutClothingUniformParaMedicThong
+  category: JobsMedicalParamedic
   cost: 1
   exclusive: true
   items:
-  - ClothingUniformChiefEngiThong
+  - ClothingUniformParaMedicThong
   requirements:
   - !type:CharacterJobRequirement
     jobs:
-    - ChiefEngineer
+    - Paramedic

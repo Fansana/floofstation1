@@ -1,0 +1,40 @@
+- type: loadout
+  id: LoadoutClothingHandsCourierWarmers
+  category: JobsLogisticsCourier
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsCourierWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCourier
+  category: JobsLogisticsCourier
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksCourier
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourierThong
+  category: JobsLogisticsCourier
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformCourierThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
