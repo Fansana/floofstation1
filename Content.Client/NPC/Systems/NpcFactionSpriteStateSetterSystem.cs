@@ -6,7 +6,6 @@ using Robust.Client.GameObjects;
 namespace Content.Client.NPC.Systems;
 public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
 {
-    [Dependency] private readonly EntityManager _entityManager = default!;
 
     public override void Initialize()
     {
@@ -17,13 +16,9 @@ public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
 
     private void OnFactionAdded(NpcFactionAddedEvent ev)
     {
-        if (_entityManager.TryGetEntity(ev.EntityUid, out var entity))
-        {
-            if (!_entityManager.HasComponent(entity.Value, typeof(NpcFactionSpriteStateSetterComponent)))
-                return;
+        if (!TryGetEntity(ev.EntityUid, out var entity) || !TryComp<SpriteComponent>(entity.Value, out var sprite))
+            return;
 
-            SpriteComponent spriteComponent = _entityManager.GetComponent<SpriteComponent>(entity.Value);
-            spriteComponent.LayerSetState(0, new Robust.Client.Graphics.RSI.StateId(ev.FactionID));
-        }
+        sprite.LayerSetState(0, new Robust.Client.Graphics.RSI.State(0, new Robust.Client.Graphics.RSI.StateId(ev.FactionID));
     }
 }

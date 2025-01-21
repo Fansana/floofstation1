@@ -26,9 +26,7 @@ public sealed partial class NpcFactionSelectorSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract || args.Hands == null)
             return;
 
-        NpcFactionSelectorComponent factionSelectorComponent = _entityManager.GetComponent<NpcFactionSelectorComponent>(entity);
-
-        if (factionSelectorComponent.SelectableFactions.Count < 2)
+        if (!TryComp<NpcFactionSelectorComponent>(entity, out var factionSelectorComponent) || factionSelectorComponent.SelectableFactions.Count < 2)
             return;
 
         foreach (var type in factionSelectorComponent.SelectableFactions)
