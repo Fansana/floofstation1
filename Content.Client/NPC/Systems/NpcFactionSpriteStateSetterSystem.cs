@@ -12,15 +12,18 @@ public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<NpcFactionSpriteStateSetterComponent, NpcFactionAddedEvent>(OnFactionAdded);
+        SubscribeNetworkEvent<NpcFactionAddedEvent>(OnFactionAdded);
     }
 
-    private void OnFactionAdded(Entity<NpcFactionSpriteStateSetterComponent> entity, ref NpcFactionAddedEvent args)
+    private void OnFactionAdded(NpcFactionAddedEvent ev)
     {
-        if (!_entityManager.HasComponent(entity, typeof(NpcFactionSpriteStateSetterComponent)))
-            return;
+        if (_entityManager.TryGetEntity(ev.EntityUid, out var entity))
+        {
+            if (!_entityManager.HasComponent(entity.Value, typeof(NpcFactionSpriteStateSetterComponent)))
+                return;
 
-        SpriteComponent spriteComponent = _entityManager.GetComponent<SpriteComponent>(entity);
-        spriteComponent.LayerSetState(0, new Robust.Client.Graphics.RSI.StateId(args.FactionID));
+            SpriteComponent spriteComponent = _entityManager.GetComponent<SpriteComponent>(entity.Value);
+            spriteComponent.LayerSetState(0, new Robust.Client.Graphics.RSI.StateId(ev.FactionID));
+        }
     }
 }

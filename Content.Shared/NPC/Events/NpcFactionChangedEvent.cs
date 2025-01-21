@@ -8,9 +8,14 @@ namespace Content.Shared.NPC.Events;
 [Serializable, NetSerializable]
 public sealed class NpcFactionAddedEvent : EntityEventArgs
 {
-    public string FactionID;
+    public readonly string FactionID;
+    public readonly NetEntity EntityUid;
 
-    public NpcFactionAddedEvent(string factionId) => FactionID = factionId;
+    public NpcFactionAddedEvent(NetEntity entity, string factionId)
+    {
+        FactionID = factionId;
+        EntityUid = entity;
+    }
 }
 
 /// <summary>
@@ -19,7 +24,12 @@ public sealed class NpcFactionAddedEvent : EntityEventArgs
 [Serializable, NetSerializable]
 public sealed class NpcFactionRemovedEvent : EntityEventArgs
 {
-    public string FactionID;
+    public readonly string FactionID;
+    public readonly NetEntity EntityUid;
 
-    public NpcFactionRemovedEvent(string factionId) => FactionID = factionId;
+    public NpcFactionRemovedEvent(NetEntity entity, string factionId)
+    {
+        FactionID = factionId;
+        EntityUid = entity;
+    }
 }

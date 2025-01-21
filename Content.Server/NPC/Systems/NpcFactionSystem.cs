@@ -9,7 +9,7 @@ namespace Content.Server.NPC.Systems;
 
 /// <summary>
 ///     Outlines faction relationships with each other.
-///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter. 
+///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter.
 /// </summary>
 public sealed partial class NpcFactionSystem : EntitySystem
 {
@@ -77,7 +77,8 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
-        RaiseLocalEvent(uid, new NpcFactionAddedEvent(faction));
+        if(_lookup.TryGetNetEntity(uid, out var netEntity))
+            RaiseNetworkEvent(new NpcFactionAddedEvent(netEntity.Value, faction));
 
         if (dirty)
         {
@@ -102,8 +103,8 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!component.Factions.Remove(faction))
             return;
 
-        RaiseLocalEvent(uid, new NpcFactionRemovedEvent(faction));
-
+        if(_lookup.TryGetNetEntity(uid, out var netEntity))
+            RaiseNetworkEvent(new NpcFactionRemovedEvent(netEntity.Value, faction));
 
         if (dirty)
         {
