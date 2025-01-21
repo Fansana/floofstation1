@@ -18,10 +18,10 @@ public sealed partial class NpcFactionSelectorSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<NpcFactionMemberComponent, GetVerbsEvent<Verb>>(OnGetVerb);
+        SubscribeLocalEvent<NpcFactionSelectorComponent, GetVerbsEvent<Verb>>(OnGetVerb);
     }
 
-    private void OnGetVerb(Entity<NpcFactionMemberComponent> entity, ref GetVerbsEvent<Verb> args)
+    private void OnGetVerb(Entity<NpcFactionSelectorComponent> entity, ref GetVerbsEvent<Verb> args)
     {
         if (!args.CanAccess || !args.CanInteract || args.Hands == null)
             return;
