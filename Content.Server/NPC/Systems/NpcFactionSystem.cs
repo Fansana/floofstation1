@@ -77,7 +77,7 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
-        if(_lookup.TryGetNetEntity(uid, out var netEntity))
+        if(TryGetNetEntity(uid, out var netEntity)) // Floofstation
             RaiseNetworkEvent(new NpcFactionAddedEvent(netEntity.Value, faction));
 
         if (dirty)
