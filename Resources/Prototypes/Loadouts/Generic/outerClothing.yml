@@ -1,149 +1,343 @@
 - type: loadout
-  id: LoadoutOuterBomberAerostatic
+  id: LoadoutOuterCoatBomberjacket
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatBomberAerostatic
+    - ClothingOuterCoatBomber
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterBomberPunkRed
+  id: LoadoutOuterCoatHoodieBlack
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatBomberPunkRed
+    - ClothingOuterHoodieBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketLeather
+  id: LoadoutOuterCoatHoodieGrey
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatJacketLeather
+    - ClothingOuterHoodieGrey
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketBiker
+  id: LoadoutOuterCoatWinterCoat
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketBiker
+    - ClothingOuterWinterCoat
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketJamrock
+  id: LoadoutOuterCoatHyenhSweater
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketJamrock
+    - ClothingOuterCoatHyenhSweater
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketLettermanBlue
+  id: LoadoutOuterWinterCoatLong
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketLettermanBlue
+    - ClothingOuterWinterCoatLong
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketLettermanBrown
+  id: LoadoutOuterWinterCoatPlaid
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketLettermanBrown
+    - ClothingOuterWinterCoatPlaid
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketLettermanMagenta
+  id: LoadoutOuterVestValet
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketLettermanMagenta
+    - ClothingOuterVestValet
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterJacketLettermanRed
+  id: LoadoutOuterVest
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatJacketLettermanRed
+    - ClothingOuterVest
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
+
+# Letterman Jackets
+- type: loadout
+  id: LoadoutOuterCoatLettermanBlue
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatLettermanBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterBomberPinkSleeves
+  id: LoadoutOuterCoatLettermanRed
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatBomberPinkSleeves
+    - ClothingOuterCoatLettermanRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
+
+# MNK
+- type: loadout
+  id: LoadoutOuterCoatMNKWhiteHoodie
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatMNKWhiteHoodie
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterCoatAcidRaincoat
+  id: LoadoutOuterCoatMNKBlackTopCoat
   category: Outer
-  cost: 0
+  cost: 1
   items:
-    - ClothingOuterCoatAcidRaincoat
+    - ClothingOuterCoatMNKBlackTopCoat
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterCoatAcidRaincoatBlue
+  id: LoadoutOuterCoatMNKBlackJacket
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatMNKBlackJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+# Contractor Jackets
+- type: loadout
+  id: LoadoutOuterCorporateJacket
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatAcidRaincoatBlue
+    - ClothingOuterCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterCoatAcidRaincoatGreen
+  id: LoadoutOuterCsCorporateJacket
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatAcidRaincoatGreen
+    - ClothingOuterCsCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterCoatAcidRaincoatMagenta
+  id: LoadoutOuterEeCorporateJacket
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatAcidRaincoatMagenta
+    - ClothingOuterEeCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
 
 - type: loadout
-  id: LoadoutOuterCoatAcidRaincoatYellow
+  id: LoadoutOuterHiCorporateJacket
   category: Outer
   cost: 0
   items:
-    - ClothingOuterCoatAcidRaincoatYellow
+    - ClothingOuterHiCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterHmCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterHmCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterIdCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterIdCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterBcCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterBcCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterDdCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterDdCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterFaCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterFaCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterGeCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterGeCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterZhCorporateJacket
+  category: Outer
+  cost: 0
+  items:
+    - ClothingOuterZhCorporateJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterDenimJacket
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterDenimJacket
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+# Flannel
+- type: loadout
+  id: LoadoutOuterFlannelRed
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterFlannelRed
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterFlannelGreen
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterFlannelGreen
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterFlannelBlue
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterFlannelBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterCoatTrench
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatTrench
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterCoatJensen
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatJensen
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterCoatGentle
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatGentle
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterCoatInspector
+  category: Outer
+  cost: 1
+  items:
+    - ClothingOuterCoatInspector
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
+
+- type: loadout
+  id: LoadoutOuterCoatOvercoat
+  category: Outer
+  cost: 2
+  items:
+    - ClothingOuterCoatOvercoat
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuter2
