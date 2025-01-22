@@ -4,6 +4,8 @@
   name: disablerbot
   description: Defends the station from hostile wildlife.
   components:
+  - type: StaticPrice
+    price: 545
   - type: Sprite
     sprite: Mobs/Silicon/Bots/disablerbot.rsi
     state: disablerbot
