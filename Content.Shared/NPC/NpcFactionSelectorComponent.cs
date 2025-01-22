@@ -1,4 +1,4 @@
-namespace Content.Server.NPC.Components;
+namespace Content.Shared.NPC.Components;
 
 [RegisterComponent]
 public sealed partial class NpcFactionSelectorComponent : Component

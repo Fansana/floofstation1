@@ -4,6 +4,8 @@ using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
 using System.Linq;
+using Content.Shared.NPC.Components;
+
 
 namespace Content.Server.NPC.Systems;
 public sealed partial class NpcFactionSelectorSystem : EntitySystem

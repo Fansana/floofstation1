@@ -16,9 +16,10 @@ public sealed partial class NpcFactionSpriteStateSetterSystem : EntitySystem
 
     private void OnFactionAdded(NpcFactionAddedEvent ev)
     {
-        if (!TryGetEntity(ev.EntityUid, out var entity) || !TryComp<SpriteComponent>(entity.Value, out var sprite) || !TryComp<NpcFactionSpriteStateSetterComponent>(entity.Value, out var _))
+        if (!TryGetEntity(ev.EntityUid, out var entity) || !TryComp<SpriteComponent>(entity.Value, out var sprite) || !TryComp<NpcFactionSpriteStateSetterComponent>(entity.Value, out var _)|| !TryComp<NpcFactionSelectorComponent>(entity.Value, out var factionSelector))
             return;
 
-        sprite.LayerSetState(0, new (ev.FactionID));
+        if(factionSelector.SelectableFactions.Contains(ev.FactionID))
+            sprite.LayerSetState(0, new (ev.FactionID));
     }
 }
