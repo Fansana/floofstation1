@@ -194,7 +194,7 @@ entities:
       pos: 0.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5266.8994
+      secondsUntilStateChange: -5410.621
       state: Opening
   - uid: 51
     components:
@@ -203,7 +203,7 @@ entities:
       pos: 0.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5265.9326
+      secondsUntilStateChange: -5409.6543
       state: Opening
   - uid: 52
     components:
@@ -212,7 +212,7 @@ entities:
       pos: 6.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5264.999
+      secondsUntilStateChange: -5408.7207
       state: Opening
   - uid: 53
     components:
@@ -221,7 +221,7 @@ entities:
       pos: 6.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5279.999
+      secondsUntilStateChange: -5423.7207
       state: Opening
 - proto: APCBasic
   entities:
@@ -264,21 +264,33 @@ entities:
     - type: Transform
       pos: 0.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 43
   - uid: 90
     components:
     - type: Transform
       pos: 0.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 43
   - uid: 99
     components:
     - type: Transform
       pos: 6.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 87
   - uid: 100
     components:
     - type: Transform
       pos: 6.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 87
 - proto: CableApcExtension
   entities:
   - uid: 124
@@ -600,48 +612,72 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 145
   - uid: 92
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 145
   - uid: 93
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 88
   - uid: 94
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 88
   - uid: 95
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 88
   - uid: 96
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 88
   - uid: 97
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 145
   - uid: 98
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 145
 - proto: DisposalPipe
   entities:
   - uid: 83
@@ -919,6 +955,32 @@ entities:
     - type: Transform
       pos: 4.5,-6.5
       parent: 1
+- proto: SignalButtonDirectional
+  entities:
+  - uid: 43
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,1.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        89:
+        - Pressed: Toggle
+        90:
+        - Pressed: Toggle
+  - uid: 87
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,1.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        99:
+        - Pressed: Toggle
+        100:
+        - Pressed: Toggle
 - proto: SMESBasic
   entities:
   - uid: 105
@@ -1007,6 +1069,54 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,-4.5
       parent: 1
+- proto: TwoWayLever
+  entities:
+  - uid: 88
+    components:
+    - type: Transform
+      pos: 1.5,1.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        94:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        93:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        96:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        95:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+  - uid: 145
+    components:
+    - type: Transform
+      pos: 5.5,1.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        97:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        98:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        91:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
+        92:
+        - Left: Forward
+        - Right: Reverse
+        - Middle: Off
 - proto: WallShuttle
   entities:
   - uid: 2
