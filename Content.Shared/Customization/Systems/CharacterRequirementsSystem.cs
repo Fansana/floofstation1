@@ -18,7 +18,7 @@ public sealed class CharacterRequirementsSystem : EntitySystem
     public bool CheckRequirementValid(CharacterRequirement requirement, JobPrototype job,
         HumanoidCharacterProfile profile, Dictionary<string, TimeSpan> playTimes, bool whitelisted, IPrototype prototype,
         IEntityManager entityManager, IPrototypeManager prototypeManager, IConfigurationManager configManager,
-        out string? reason, int depth = 0)
+        out FormattedMessage? reason, int depth = 0)
     {
         // Return false if the requirement is invalid and not inverted
         // If it's inverted return false when it's valid
@@ -33,9 +33,9 @@ public sealed class CharacterRequirementsSystem : EntitySystem
     public bool CheckRequirementsValid(List<CharacterRequirement> requirements, JobPrototype job,
         HumanoidCharacterProfile profile, Dictionary<string, TimeSpan> playTimes, bool whitelisted, IPrototype prototype,
         IEntityManager entityManager, IPrototypeManager prototypeManager, IConfigurationManager configManager,
-        out List<string> reasons, int depth = 0)
+        out List<FormattedMessage> reasons, int depth = 0)
     {
-        reasons = new List<string>();
+        reasons = new List<FormattedMessage>();
         var valid = true;
 
         foreach (var requirement in requirements)
@@ -66,7 +66,7 @@ public sealed class CharacterRequirementsSystem : EntitySystem
     /// <summary>
     ///     Gets the reason text from <see cref="CheckRequirementsValid"/> as a <see cref="FormattedMessage"/>.
     /// </summary>
-    public FormattedMessage GetRequirementsText(List<string> reasons)
+    public FormattedMessage GetRequirementsText(List<FormattedMessage> reasons)
     {
         return FormattedMessage.FromMarkup(GetRequirementsMarkup(reasons));
     }
@@ -74,11 +74,11 @@ public sealed class CharacterRequirementsSystem : EntitySystem
     /// <summary>
     ///     Gets the reason text from <see cref="CheckRequirementsValid"/> as a markup string.
     /// </summary>
-    public string GetRequirementsMarkup(List<string> reasons)
+    public string GetRequirementsMarkup(List<FormattedMessage> reasons)
     {
         var text = new StringBuilder();
         foreach (var reason in reasons)
-            text.Append($"\n{reason}");
+            text.Append($"\n{reason.ToMarkup()}");
 
         return text.ToString().Trim();
     }

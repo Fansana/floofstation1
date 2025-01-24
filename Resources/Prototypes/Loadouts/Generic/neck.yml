@@ -25,8 +25,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  customColorTint: true
-  canBeHeirloom: true
   items:
     - ClothingNeckOldMantle
   requirements:
@@ -38,8 +36,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  customColorTint: true
-  canBeHeirloom: true
   items:
     - ClothingNeckUnathiMantle
   requirements:
@@ -152,7 +148,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingNeckTieRed
   requirements:
@@ -164,8 +159,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  customColorTint: true
-  canBeHeirloom: true
   items:
     - ClothingNeckTieWhite
   requirements:
@@ -177,7 +170,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingNeckTieBlack
   requirements:
@@ -189,7 +181,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingNeckTieBlue
   requirements:
@@ -201,7 +192,6 @@
   category: Neck
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingNeckTieGreen
   requirements:
@@ -368,7 +358,6 @@
   category: Neck
   cost: 2
   exclusive: true
-  canBeHeirloom: true
   items:
     - BedsheetCosmos
   requirements:
@@ -498,7 +487,6 @@
   category: Neck
   cost: 1
   exclusive: true
-  customColorTint: true
   items:
     - BedsheetWhite
   requirements:

@@ -82,7 +82,6 @@
   category: Head
   cost: 1
   exclusive: true
-  customColorTint: true
   items:
     - ClothingHeadHatFedoraWhite
   requirements:
@@ -164,7 +163,6 @@
   category: Head
   cost: 1
   exclusive: true
-  customColorTint: true
   items:
     - ClothingHeadHatCowboyWhite
   requirements:
@@ -176,7 +174,6 @@
   category: Head
   cost: 1
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingHeadHatCowboyBountyHunter
   requirements:
@@ -188,8 +185,6 @@
   category: Head
   cost: 2
   exclusive: true
-  customColorTint: true
-  canBeHeirloom: true
   items:
     - ClothingHeadTinfoil
   requirements:
@@ -328,7 +323,6 @@
   category: Head
   cost: 0
   exclusive: true
-  customColorTint: true
   items:
     - ClothingHeadHatMimesoft
   requirements:
@@ -340,7 +334,6 @@
   category: Head
   cost: 0
   exclusive: true
-  customColorTint: true
   items:
     - ClothingHeadHatMimesoftFlipped
   requirements:
@@ -547,7 +540,6 @@
   category: Head
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingHeadBandSkull
   requirements:
@@ -718,7 +710,6 @@
   category: Head
   cost: 1
   exclusive: true
-  customColorTint: true
   items:
     - ClothingHeadHatCowboyWhite
   requirements:

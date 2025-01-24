@@ -2,7 +2,6 @@
   id: LoadoutEyesEyepatch
   category: Eyes
   cost: 0
-  canBeHeirloom: true
   items:
     - ClothingEyesEyepatch
   requirements:
@@ -13,7 +12,6 @@
   id: LoadoutEyesGlasses
   category: Eyes
   cost: 0
-  customColorTint: true
   items:
     - ClothingEyesGlasses
   requirements:
@@ -25,7 +23,6 @@
   category: Eyes
   cost: 1
   exclusive: true
-  customColorTint: true
   items:
     - ClothingEyesGlassesJamjar
   requirements:

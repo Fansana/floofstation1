@@ -25,7 +25,6 @@
   category: Mask
   cost: 1
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingMaskGas
   requirements:
@@ -120,7 +119,6 @@
   category: Mask
   cost: 0
   exclusive: true
-  canBeHeirloom: true
   items:
     - ClothingMaskBandSkull
   requirements:

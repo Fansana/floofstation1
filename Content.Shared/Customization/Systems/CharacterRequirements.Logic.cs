@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Text;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using JetBrains.Annotations;
@@ -21,16 +20,10 @@ public sealed partial class CharacterLogicAndRequirement : CharacterRequirement
     [DataField]
     public List<CharacterRequirement> Requirements { get; private set; } = new();
 
-    public override bool IsValid(JobPrototype job,
-        HumanoidCharacterProfile profile,
-        Dictionary<string, TimeSpan> playTimes,
-        bool whitelisted,
-        IPrototype prototype,
-        IEntityManager entityManager,
-        IPrototypeManager prototypeManager,
-        IConfigurationManager configManager,
-        out string? reason,
-        int depth = 0)
+    public override bool IsValid(JobPrototype job, HumanoidCharacterProfile profile,
+        Dictionary<string, TimeSpan> playTimes, bool whitelisted, IPrototype prototype,
+        IEntityManager entityManager, IPrototypeManager prototypeManager, IConfigurationManager configManager,
+        out FormattedMessage? reason, int depth = 0)
     {
         var succeeded = entityManager.EntitySysManager.GetEntitySystem<CharacterRequirementsSystem>()
             .CheckRequirementsValid(Requirements, job, profile, playTimes, whitelisted, prototype, entityManager,
@@ -42,12 +35,12 @@ public sealed partial class CharacterLogicAndRequirement : CharacterRequirement
             return succeeded;
         }
 
-        var reasonBuilder = new StringBuilder();
+        reason = new FormattedMessage();
         foreach (var message in reasons)
-            reasonBuilder.Append(Loc.GetString("character-logic-and-requirement-listprefix",
-                ("indent", new string(' ', depth * 2))) + message);
-        reason = Loc.GetString("character-logic-and-requirement",
-            ("inverted", Inverted), ("options", reasonBuilder.ToString()));
+            reason.AddMessage(FormattedMessage.FromMarkup(
+                Loc.GetString("character-logic-and-requirement-listprefix", ("indent", new string(' ', depth * 2))) + message.ToMarkup()));
+        reason = FormattedMessage.FromMarkup(Loc.GetString("character-logic-and-requirement",
+            ("inverted", Inverted), ("options", reason.ToMarkup())));
 
         return succeeded;
     }
@@ -63,19 +56,13 @@ public sealed partial class CharacterLogicOrRequirement : CharacterRequirement
     [DataField]
     public List<CharacterRequirement> Requirements { get; private set; } = new();
 
-    public override bool IsValid(JobPrototype job,
-        HumanoidCharacterProfile profile,
-        Dictionary<string, TimeSpan> playTimes,
-        bool whitelisted,
-        IPrototype prototype,
-        IEntityManager entityManager,
-        IPrototypeManager prototypeManager,
-        IConfigurationManager configManager,
-        out string? reason,
-        int depth = 0)
+    public override bool IsValid(JobPrototype job, HumanoidCharacterProfile profile,
+        Dictionary<string, TimeSpan> playTimes, bool whitelisted, IPrototype prototype,
+        IEntityManager entityManager, IPrototypeManager prototypeManager, IConfigurationManager configManager,
+        out FormattedMessage? reason, int depth = 0)
     {
         var succeeded = false;
-        var reasons = new List<string>();
+        var reasons = new List<FormattedMessage>();
         var characterRequirements = entityManager.EntitySysManager.GetEntitySystem<CharacterRequirementsSystem>();
 
         foreach (var requirement in Requirements)
@@ -97,12 +84,12 @@ public sealed partial class CharacterLogicOrRequirement : CharacterRequirement
             return succeeded;
         }
 
-        var reasonBuilder = new StringBuilder();
+        reason = new FormattedMessage();
         foreach (var message in reasons)
-            reasonBuilder.Append(Loc.GetString("character-logic-or-requirement-listprefix",
-                ("indent", new string(' ', depth * 2))) + message);
-        reason = Loc.GetString("character-logic-or-requirement",
-            ("inverted", Inverted), ("options", reasonBuilder.ToString()));
+            reason.AddMessage(FormattedMessage.FromMarkup(
+                Loc.GetString("character-logic-or-requirement-listprefix", ("indent", new string(' ', depth * 2))) + message.ToMarkup()));
+        reason = FormattedMessage.FromMarkup(Loc.GetString("character-logic-or-requirement",
+            ("inverted", Inverted), ("options", reason.ToMarkup())));
 
         return succeeded;
     }
@@ -118,18 +105,12 @@ public sealed partial class CharacterLogicXorRequirement : CharacterRequirement
     [DataField]
     public List<CharacterRequirement> Requirements { get; private set; } = new();
 
-    public override bool IsValid(JobPrototype job,
-        HumanoidCharacterProfile profile,
-        Dictionary<string, TimeSpan> playTimes,
-        bool whitelisted,
-        IPrototype prototype,
-        IEntityManager entityManager,
-        IPrototypeManager prototypeManager,
-        IConfigurationManager configManager,
-        out string? reason,
-        int depth = 0)
+    public override bool IsValid(JobPrototype job, HumanoidCharacterProfile profile,
+        Dictionary<string, TimeSpan> playTimes, bool whitelisted, IPrototype prototype,
+        IEntityManager entityManager, IPrototypeManager prototypeManager, IConfigurationManager configManager,
+        out FormattedMessage? reason, int depth = 0)
     {
-        var reasons = new List<string>();
+        var reasons = new List<FormattedMessage>();
         var succeeded = false;
         var characterRequirements = entityManager.EntitySysManager.GetEntitySystem<CharacterRequirementsSystem>();
 
@@ -157,12 +138,12 @@ public sealed partial class CharacterLogicXorRequirement : CharacterRequirement
             return succeeded;
         }
 
-        var reasonBuilder = new StringBuilder();
+        reason = new FormattedMessage();
         foreach (var message in reasons)
-            reasonBuilder.Append(Loc.GetString("character-logic-xor-requirement-listprefix",
-                ("indent", new string(' ', depth * 2))) + message);
-        reason = Loc.GetString("character-logic-xor-requirement",
-            ("inverted", Inverted), ("options", reasonBuilder.ToString()));
+            reason.AddMessage(FormattedMessage.FromMarkup(
+                Loc.GetString("character-logic-xor-requirement-listprefix", ("indent", new string(' ', depth * 2))) + message.ToMarkup()));
+        reason = FormattedMessage.FromMarkup(Loc.GetString("character-logic-xor-requirement",
+            ("inverted", Inverted), ("options", reason.ToMarkup())));
 
         return succeeded;
     }

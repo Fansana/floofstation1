@@ -340,7 +340,6 @@
   id: LoadoutItemsEmergencyCrowbar
   category: Items
   cost: 3
-  canBeHeirloom: true
   items:
     - CrowbarRed
 
@@ -681,7 +680,6 @@
   id: LoadoutItemPAI
   category: Items
   cost: 3
-  canBeHeirloom: true
   items:
     - PersonalAI
 
@@ -743,7 +741,6 @@
   id: LoadoutItemDrinkShinyFlask
   category: Items
   cost: 1
-  canBeHeirloom: true
   items:
     - DrinkShinyFlask
 
