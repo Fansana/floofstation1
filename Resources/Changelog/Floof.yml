@@ -2431,3 +2431,10 @@ Entries:
   id: 303
   time: '2025-01-24T17:21:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/498
+- author: Timfa2112
+  changes:
+    - type: Tweak
+      message: Allow Gladiabots to be sorted into teams
+  id: 304
+  time: '2025-01-24T17:21:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/500
