@@ -87,7 +87,7 @@
   description: This bot fights for honour and glory!
   icon:
     sprite: Mobs/Silicon/Bots/gladiabot.rsi
-    state: gladiabot
+    state: GladiabotFFA
 
 - type: construction
   name: batonbot
