@@ -2403,3 +2403,10 @@ Entries:
   id: 299
   time: '2025-01-23T14:24:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/503
+- author: VividPups
+  changes:
+    - type: Remove
+      message: Removed the singulo beacon from the uplink.
+  id: 300
+  time: '2025-01-24T13:15:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/504
