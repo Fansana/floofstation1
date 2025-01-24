@@ -1426,7 +1426,8 @@
       components:
       - SurplusBundle
 
-#- type: listing  floof
+# Floofstation: disabled because of the "proportional damage" rule
+# - type: listing
  # id: UplinkSingarityBeacon
  # name: uplink-singularity-beacon-name
  # description: uplink-singularity-beacon-desc
