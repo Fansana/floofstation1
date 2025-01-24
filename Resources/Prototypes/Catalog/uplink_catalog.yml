@@ -1425,15 +1425,16 @@
     blacklist:
       components:
       - SurplusBundle
-- type: listing
-  id: UplinkSingarityBeacon
-  name: uplink-singularity-beacon-name
-  description: uplink-singularity-beacon-desc
-  productEntity: SingularityBeacon
-  cost:
-    Telecrystal: 12
-  categories:
-    - UplinkUtility
+
+#- type: listing  floof
+ # id: UplinkSingarityBeacon
+ # name: uplink-singularity-beacon-name
+ # description: uplink-singularity-beacon-desc
+ # productEntity: SingularityBeacon
+ # cost:
+ #   Telecrystal: 12
+ # categories:
+ #   - UplinkUtility
 
 # Armor
 
