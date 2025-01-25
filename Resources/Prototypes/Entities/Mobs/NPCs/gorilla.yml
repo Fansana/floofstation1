@@ -1,0 +1,200 @@
+- type: entity
+  name: gorilla
+  parent: [SimpleMobBase, MobCombat]
+  id: MobGorilla
+  description: A ground-dwelling, predominantly herbivorous ape that inhabits the forests of central Africa on Earth.
+  components:
+  - type: Hands
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavSmash: !type:Bool
+        true
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+      - Gorilla
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: FactionException
+  - type: CombatMode
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: crawling
+      sprite: Mobs/Animals/gorilla.rsi
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.48
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: crawling
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      220: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 4
+  - type: Prying
+    pryPowered: true
+  - type: Bloodstream
+    bloodMaxVolume: 300
+    # if you fuck with the gorilla he will harambe you
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 18
+        Structural: 20
+    animation: WeaponArcFist
+  - type: MeleeThrowOnHit
+    speed: 20
+    lifetime: 0.1
+  - type: Speech
+    speechSounds: Gorilla
+    speechVerb: LargeMob
+  - type: StatusEffects
+    allowed:
+      - SlowedDown
+      - Stutter
+      - Electrocution
+      - ForcedSleep
+      - TemporaryBlindness
+      - Pacified
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
+  - type: NoSlip
+  - type: Tag
+    tags:
+      - DoorBumpOpener
+      - NoPaint
+  - type: RandomBark
+    minTime: 5
+    maxTime: 30
+  - type: MeleeSpeech
+    Battlecry: Gorilla punch!
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Gorilla
+  - type: Puller
+    needsHands: false
+  - type: LanguageKnowledge
+    speaks:
+    - Monkey
+    understands:
+    - Monkey
+    - Kobold
+
+- type: entity
+  name: Rampaging Gorilla
+  parent: MobGorilla
+  id: MobGorillaRampaging
+  description: A gorilla that has gone wild. Run!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: crawling
+      sprite: Mobs/Animals/gorilla.rsi
+      color: "#FF0000"
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Dead
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 35
+        Structural: 20
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: GorillaRampaging
+
+- type: entity
+  name: Cargorilla
+  parent: MobGorilla
+  id: MobCargorilla
+  description: Cargo's pet gorilla. He seems to have an 'I love Mom' tattoo.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cargo_crawling
+      sprite: Mobs/Animals/gorilla.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cargo_crawling
+      Critical:
+        Base: cargo_dead
+      Dead:
+        Base: cargo_dead
+  - type: HTN
+    rootTask:
+      task: IdleCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+  - type: Pacified
+  - type: NpcFactionMember
+    factions:
+      - PetsNT
+  - type: LanguageKnowledge
+    speaks:
+    - Monkey
+    understands:
+    - Monkey
+    - Kobold
+    - TauCetiBasic
+  - type: Loadout
+    prototypes: [ MobCargorillaGear ]
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+  - type: IdExaminable
+  - type: Inventory
+    templateId: idonly
+  - type: InventorySlots

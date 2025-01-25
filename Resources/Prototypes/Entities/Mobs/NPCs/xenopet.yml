@@ -12,6 +12,9 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/rouny.rsi
     scale: 0.6, 0.6
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
   - type: PointLight
     radius: 2
     energy: 1
@@ -67,6 +70,9 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/praetorian.rsi
     scale: 0.8, 0.8
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
   - type: PointLight
     radius: 2
     energy: 1
@@ -121,6 +127,9 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/drone.rsi
     scale: 0.8, 0.8
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
   - type: PointLight
     radius: 2
     energy: 1
@@ -175,6 +184,9 @@
     drawdepth: Mobs
     sprite: Mobs/Aliens/FXS/ravager.rsi
     scale: 0.7, 0.7
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
   - type: PointLight
     radius: 2
     energy: 1

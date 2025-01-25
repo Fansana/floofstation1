@@ -1,3 +1,4 @@
+using Content.Shared.NPC.Events;
 using System.Collections.Frozen;
 using System.Linq;
 using Content.Server.NPC.Components;
@@ -8,7 +9,7 @@ namespace Content.Server.NPC.Systems;
 
 /// <summary>
 ///     Outlines faction relationships with each other.
-///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter. 
+///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter.
 /// </summary>
 public sealed partial class NpcFactionSystem : EntitySystem
 {
@@ -76,6 +77,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
+        if(TryGetNetEntity(uid, out var netEntity)) // Floofstation
+            RaiseNetworkEvent(new NpcFactionAddedEvent(netEntity.Value, faction));
+
         if (dirty)
         {
             RefreshFactions(comp);
@@ -98,6 +102,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
 
         if (!component.Factions.Remove(faction))
             return;
+
+        if(_lookup.TryGetNetEntity(uid, out var netEntity))
+            RaiseNetworkEvent(new NpcFactionRemovedEvent(netEntity.Value, faction));
 
         if (dirty)
         {
@@ -169,7 +176,12 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!Resolve(uidA, ref factionA, false) || !Resolve(uidB, ref factionB, false))
             return false;
 
-        return factionA.Factions.Overlaps(factionB.Factions) || factionA.FriendlyFactions.Overlaps(factionB.Factions);
+        var intersect = factionA.Factions.Intersect(factionB.Factions); // factions which have both ent and other as members
+        foreach (var faction in intersect)
+            if (_factions[faction].IsHostileToSelf)
+                return false;
+
+        return intersect.Count() > 0 || factionA.FriendlyFactions.Overlaps(factionB.Factions);
     }
 
     public bool IsFactionFriendly(string target, string with)
@@ -234,9 +246,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
             faction => faction.ID,
             faction =>  new FactionData
             {
+                IsHostileToSelf = faction.Hostile.Contains(faction.ID),
                 Friendly = faction.Friendly.ToHashSet(),
                 Hostile = faction.Hostile.ToHashSet()
-
             });
 
         foreach (var comp in EntityQuery<NpcFactionMemberComponent>(true))
