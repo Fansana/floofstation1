@@ -415,6 +415,15 @@
     name: Pun Pun
 
 - type: entity
+  parent: CargoIDCard
+  id: CargorillaIDCard
+  name: Cargorilla ID card
+  components:
+  - type: PresetIdCard
+    job: CargoTechnician
+    name: Cargorilla
+
+- type: entity
   parent: IDCardStandard
   id: ChefIDCard
   name: chef ID card

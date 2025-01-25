@@ -82,6 +82,13 @@
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
     - type: Vore # Floofstation - Vore
+    - type: Body # Shitmed - Adds carp organs.
+      prototype: Carp
+    - type: SurgeryTarget
+    - type: UserInterface
+      interfaces:
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
 
 - type: entity
   parent: BaseMobCarp
@@ -241,6 +248,11 @@
         types:
           Slash: 12
           Bloodloss: 5
+    - type: SurgeryTarget
+    - type: UserInterface
+      interfaces:
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
 
 - type: entity
   id: MobSharkSalvage

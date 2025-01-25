@@ -208,6 +208,14 @@
     - type: Implanter
       implant: DnaScramblerImplant
 
+- type: entity
+  id: MagillitisSerumImplanter
+  name: magillitis serum implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+    - type: Implanter
+      implant: MagillitisSerumImplant
+
 #Nuclear Operative/Special implanters
 
 - type: entity

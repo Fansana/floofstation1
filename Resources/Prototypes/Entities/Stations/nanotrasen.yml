@@ -28,7 +28,7 @@
     - BaseRandomStation
     - BaseStationMail # Nyano component, required for station mail to function
     - BaseStationTheDark # Floof
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Transform
 
@@ -38,7 +38,7 @@
     - BaseStation
     - BaseStationAlertLevels
     - BaseStationNanotrasen
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Transform
 
@@ -49,7 +49,7 @@
   - BaseStationJobsSpawning
   - BaseStationRecords
   - BaseStationNanotrasen
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Transform
 
@@ -74,6 +74,6 @@
     - BaseStationNanotrasen
     - BaseRandomStation
     - BaseStationMail
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Transform
