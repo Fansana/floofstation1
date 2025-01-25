@@ -3,8 +3,8 @@
 # Ears Markings
 - type: marking
   id: HarpyWingDefaultHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -20,8 +20,8 @@
 
 - type: marking
   id: HarpyWingDefaultWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -37,8 +37,8 @@
 
 - type: marking
   id: HarpyWingClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -54,8 +54,8 @@
 
 - type: marking
   id: HarpyWingFoldedHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -71,8 +71,8 @@
 
 - type: marking
   id: HarpyWingFoldedWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -88,8 +88,8 @@
 
 - type: marking
   id: HarpyWingOwlHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -105,8 +105,8 @@
 
 - type: marking
   id: HarpyWingOwlWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -305,8 +305,8 @@
 
 - type: marking
   id: HarpyWing2ToneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -316,8 +316,8 @@
 
 - type: marking
   id: HarpyWing3ToneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -329,8 +329,8 @@
 
 - type: marking
   id: HarpyWingSpeckledClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -340,8 +340,8 @@
 
 - type: marking
   id: HarpyWingUndertoneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -351,8 +351,8 @@
 
 - type: marking
   id: HarpyWingTipsClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -362,8 +362,8 @@
 
 - type: marking
   id: HarpyWingBat
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -373,8 +373,8 @@
 
 - type: marking
   id: HarpyWingBionic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
