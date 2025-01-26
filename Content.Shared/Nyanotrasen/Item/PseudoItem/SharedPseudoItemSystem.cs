@@ -120,7 +120,7 @@ public abstract partial class SharedPseudoItemSystem : EntitySystem
     protected virtual void OnGettingPickedUpAttempt(EntityUid uid, PseudoItemComponent component,
         GettingPickedUpAttemptEvent args)
     {
-        // Floof - this is a terrible idea. This triggers every time ANY system checks if a pseudo-item can be picked up.0-]\
+        // Floof - this is a terrible idea. This triggers every time ANY system checks if a pseudo-item can be picked up.
         // WHY DID YOU DO THAT, NYANOTRASEN???
 
         // if (args.User == args.Item)
@@ -136,7 +136,7 @@ public abstract partial class SharedPseudoItemSystem : EntitySystem
             return;
 
         // Floof - we try to get the containing container and try to drop it into it
-        // If so, we permit it, since a bagged cat probably can put things back into the bag just like they can pick them up.
+        // If possible, we do it, since a bagged cat probably can put things back into the bag just like they can pick them up.
         string? failReason = null;
         if (_hands.GetActiveItem(uid) is { Valid: true, } droppedItem
             && _container.TryGetContainingContainer(Transform(uid).ParentUid, uid, out var pseudoItemContainer)
