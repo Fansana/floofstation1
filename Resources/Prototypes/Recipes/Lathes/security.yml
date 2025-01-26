@@ -308,7 +308,7 @@
     Steel: 25
     Plastic: 120
 
-- type: latheRecipe
+- type: latheRecipe #floof
   id: MagazinePistolRubber
   result: MagazinePistolRubber
   category: Ammo
@@ -445,7 +445,7 @@
     Steel: 25
     Plastic: 450
 
-- type: latheRecipe
+- type: latheRecipe #floof
   id: MagazineRifleRubber
   result: MagazineRifleRubber
   category: Ammo
@@ -498,7 +498,7 @@
     Steel: 25
     Plastic: 540
 
-- type: latheRecipe
+- type: latheRecipe #floof
   id: MagazineLightRifleRubber
   result: MagazineLightRifleRubber
   category: Ammo
@@ -914,6 +914,16 @@
   materials:
     Plastic: 20
     Steel: 5
+
+- type: latheRecipe
+  id: ShellShotgunBeanbag #floof
+  result: ShellShotgunBeanbag
+  category: Ammo
+  completetime: 2
+  materials:
+    Plastic: 20
+    Steel: 5
+
 
 - type: latheRecipe
   id: CartridgeLightRifleIncendiary
