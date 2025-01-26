@@ -31,6 +31,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobRodentiaLArm
     RArm: MobRodentiaRArm
@@ -54,6 +55,9 @@
       points: 1
       required: true
       defaultMarkings: [ RodentiaTailDefault ]
+    Wings:
+      points: 1
+      required: false
     Head:
       points: 1
       required: false
