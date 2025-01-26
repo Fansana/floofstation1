@@ -1,7 +1,7 @@
 ﻿- type: moodEffect
   id: BeingHugged
-  moodChange: 3
-  timeout: 120
+  moodChange: 4
+  timeout: 240 # Floof - was 120
   category: PositiveInteraction
 
 - type: moodEffect
