@@ -24,6 +24,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
     Eyes: MobArachnidEyes
     LArm: MobArachnidLArm
     RArm: MobArachnidRArm
@@ -54,6 +55,9 @@
       points: 1
       required: true
       defaultMarkings: [ ArachnidAppendagesDefault ]
+    Wings:
+      points: 1
+      required: false
     HeadTop:
       points: 1
       required: false

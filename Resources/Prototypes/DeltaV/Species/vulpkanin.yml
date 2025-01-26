@@ -24,6 +24,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobVulpkaninLArm
     RArm: MobVulpkaninRArm
@@ -47,6 +48,9 @@
       points: 1
       required: true
       defaultMarkings: [ VulpTail ]
+    Wings:
+      points: 1
+      required: false
     Head:
       points: 1
       required: false

@@ -1,3 +1,4 @@
+using Content.Shared.NPC.Events;
 using System.Collections.Frozen;
 using System.Linq;
 using Content.Server.NPC.Components;
@@ -8,7 +9,7 @@ namespace Content.Server.NPC.Systems;
 
 /// <summary>
 ///     Outlines faction relationships with each other.
-///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter. 
+///     part of psionics rework was making this a partial class. Should've already been handled upstream, based on the linter.
 /// </summary>
 public sealed partial class NpcFactionSystem : EntitySystem
 {
@@ -76,6 +77,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
         if (!comp.Factions.Add(faction))
             return;
 
+        if(TryGetNetEntity(uid, out var netEntity)) // Floofstation
+            RaiseNetworkEvent(new NpcFactionAddedEvent(netEntity.Value, faction));
+
         if (dirty)
         {
             RefreshFactions(comp);
@@ -98,6 +102,9 @@ public sealed partial class NpcFactionSystem : EntitySystem
 
         if (!component.Factions.Remove(faction))
             return;
+
+        if(_lookup.TryGetNetEntity(uid, out var netEntity))
+            RaiseNetworkEvent(new NpcFactionRemovedEvent(netEntity.Value, faction));
 
         if (dirty)
         {

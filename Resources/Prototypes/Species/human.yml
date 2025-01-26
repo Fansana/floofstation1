@@ -6,7 +6,7 @@
   sprites: MobHumanSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
-  skinColoration: HumanToned
+  skinColoration: Hues
   customName: true
 
 # The lack of a layer means that
@@ -32,8 +32,9 @@
     RLeg: MobHumanRLeg
     LFoot: MobHumanLFoot
     RFoot: MobHumanRFoot
-    Tail: MobHumanoidAnyMarking # Nyanotrasen - Felinid
-    HeadTop: MobHumanoidAnyMarking # Nyanotrasen - Felinid & Oni
+    Tail: MobHumanoidAnyMarking
+    Wings: MobHumanoidAnyMarking
+    HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
 
 - type: markingPoints
@@ -49,6 +50,9 @@
       points: 1
       required: false
     Tail:
+      points: 1
+      required: false
+    Wings:
       points: 1
       required: false
     HeadTop:
@@ -80,6 +84,9 @@
       required: false
     LeftHand:
       points: 2
+      required: false
+    HeadSide:
+      points: 1
       required: false
 
 - type: humanoidBaseSprite

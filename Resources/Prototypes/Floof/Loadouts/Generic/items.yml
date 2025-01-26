@@ -30,3 +30,14 @@
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutFun
+
+- type: loadout
+  id: LoadoutItemHypnoVisor
+  category: Items
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingEyesHypnoVisor
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutFun

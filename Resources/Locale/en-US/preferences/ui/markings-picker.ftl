@@ -29,4 +29,5 @@ markings-category-RightFoot = Right Foot
 markings-category-LeftLeg = Left Leg
 markings-category-LeftFoot = Left Foot
 markings-category-Tail = Tail
+markings-category-Wings = Wings
 markings-category-Overlay = Overlay

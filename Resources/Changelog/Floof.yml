@@ -2394,3 +2394,56 @@ Entries:
   id: 298
   time: '2025-01-19T13:20:01.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/481
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: >-
+        There is now 2 sawn-off pka and 2 regular pka in the vendors instead of
+        4 regular pka's
+  id: 299
+  time: '2025-01-23T14:24:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/503
+- author: VividPups
+  changes:
+    - type: Remove
+      message: Removed the singulo beacon from the uplink.
+  id: 300
+  time: '2025-01-24T13:15:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/504
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added ERT mothroach
+  id: 301
+  time: '2025-01-24T17:19:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/492
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed nt xeno sprites
+  id: 302
+  time: '2025-01-24T17:19:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/496
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added a classic maid dress to the janidrobe and the autodrobe.
+  id: 303
+  time: '2025-01-24T17:21:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/498
+- author: Timfa2112
+  changes:
+    - type: Tweak
+      message: Allow Gladiabots to be sorted into teams
+  id: 304
+  time: '2025-01-24T17:21:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/500
+- author: Timfa
+  changes:
+    - type: Add
+      message: Add Batonbot
+    - type: Add
+      message: Add Disablerbot
+  id: 305
+  time: '2025-01-24T17:45:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/501
