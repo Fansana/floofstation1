@@ -38,3 +38,7 @@ trait-name-HypnoticGaze = Hypnotic Gaze
 trait-description-HypnoticGaze =
     Within your eyes lies the ability to place others under your control. You are capable of placing others in a trance, regardless of
     whether or not you possess any other notable psychic powers.
+
+# Hypno Visor
+hypno-link = Set Mind Link
+hypno-link-master = Master: {CAPITALIZE($entity)}

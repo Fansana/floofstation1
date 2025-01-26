@@ -66,3 +66,5 @@
         - !type:EntSelector
           id: LeashBasic
           amount: !type:ConstantNumberSelector { value: 2 }
+        - !type:EntSelector
+          id: ClothingEyesHypnoVisor
