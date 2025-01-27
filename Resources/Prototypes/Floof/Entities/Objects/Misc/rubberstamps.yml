@@ -4,7 +4,7 @@
   id: RubberStampSurgery
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-surgeongeneral
+    stampedName: stamp-component-stamped-name-surgeon-general
     stampedColor: "#32A794"
   - type: Sprite
     sprite: Floof/Objects/Misc/stamp.rsi
