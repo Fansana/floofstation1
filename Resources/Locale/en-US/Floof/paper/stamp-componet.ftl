@@ -1,1 +1,1 @@
-stamp-component-stamped-name-surgeongeneral =  Surgeon General
+stamp-component-stamped-name-surgeon-general = Surgeon General
