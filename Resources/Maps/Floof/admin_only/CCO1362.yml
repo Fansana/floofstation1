@@ -12663,8 +12663,6 @@ entities:
       pos: 22.5,35.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13
       - 10
@@ -12675,8 +12673,6 @@ entities:
       pos: 22.5,33.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 10
       - 13
