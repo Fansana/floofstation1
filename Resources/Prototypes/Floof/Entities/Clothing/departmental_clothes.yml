@@ -658,7 +658,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSGThong
   name: surgeon general thong
-  description: Styled for the Surgeon general, but is this even considered a piece of clothing? Tailor by SESWC
+  description: Styled for the surgeon general, but is this even considered a piece of clothing? Tailor by SESWC
   components:
   - type: Sprite
     sprite: Floof/Clothing/Departmental/Medical/SGthong.rsi
