@@ -3,8 +3,8 @@
 # Ears Markings
 - type: marking
   id: HarpyWingDefaultHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -20,8 +20,8 @@
 
 - type: marking
   id: HarpyWingDefaultWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -37,8 +37,8 @@
 
 - type: marking
   id: HarpyWingClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -54,8 +54,8 @@
 
 - type: marking
   id: HarpyWingFoldedHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -71,8 +71,8 @@
 
 - type: marking
   id: HarpyWingFoldedWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -88,8 +88,8 @@
 
 - type: marking
   id: HarpyWingOwlHuescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -105,8 +105,8 @@
 
 - type: marking
   id: HarpyWingOwlWhitescale
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   coloring:
     default:
@@ -124,7 +124,7 @@
   id: HarpyEarsDefault
   bodyPart: Head
   markingCategory: HeadTop
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian, Arachne]
   coloring:
     default:
       type:
@@ -141,7 +141,7 @@
   id: HarpyEarsLarge
   bodyPart: Head
   markingCategory: HeadTop
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Diona, Reptilian, Arachne]
   coloring:
     default:
       type:
@@ -158,7 +158,7 @@
   id: HarpyTailPhoenix
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson]
   coloring:
     default:
       type:
@@ -175,7 +175,7 @@
   id: HarpyTailRooster
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -191,7 +191,7 @@
   id: HarpyTailForkedWhitescale
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -207,7 +207,7 @@
   id: HarpyTailForkedHuescale
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -223,7 +223,7 @@
   id: HarpyTailFinch
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -239,7 +239,7 @@
   id: HarpyTailPeacock
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson]
   coloring:
     default:
       type:
@@ -257,7 +257,7 @@
   id: HarpyTailHaven
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -275,7 +275,7 @@
   id: HarpyTailForkedLong
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -291,7 +291,7 @@
   id: HarpyTailSwallow
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, Human, SlimePerson, Reptilian]
   coloring:
     default:
       type:
@@ -305,8 +305,8 @@
 
 - type: marking
   id: HarpyWing2ToneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -316,8 +316,8 @@
 
 - type: marking
   id: HarpyWing3ToneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -329,8 +329,8 @@
 
 - type: marking
   id: HarpyWingSpeckledClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -340,8 +340,8 @@
 
 - type: marking
   id: HarpyWingUndertoneClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -351,8 +351,8 @@
 
 - type: marking
   id: HarpyWingTipsClassic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -362,8 +362,8 @@
 
 - type: marking
   id: HarpyWingBat
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -373,8 +373,8 @@
 
 - type: marking
   id: HarpyWingBionic
-  bodyPart: RArm
-  markingCategory: RightArm
+  bodyPart: Wings
+  markingCategory: Wings
   speciesRestriction: [Harpy]
   sprites:
     - sprite: Mobs/Customization/Harpy/harpy_wings.rsi
@@ -387,7 +387,7 @@
   id: HarpyChestDefault
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Harpy]
+  speciesRestriction: [Harpy, SlimePerson]
   coloring:
     default:
       type:

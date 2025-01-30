@@ -168,6 +168,9 @@ public sealed class GuidebookUIController : UIController, IOnStateEntered<LobbyS
         _guideWindow.Tree.SetAllExpanded(false);
         _guideWindow.Tree.SetAllExpanded(true, 1);
 
+        // Floof - collapse entries that don't want to be expanded by default
+        _guideWindow.Tree.RecursiveSetExpanded(it => it.Metadata is GuideEntry { DefaultCollapsed: true, }, false);
+
         _guideWindow.OpenCenteredRight();
     }
 

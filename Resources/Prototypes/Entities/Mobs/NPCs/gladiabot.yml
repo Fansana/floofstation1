@@ -6,10 +6,19 @@
   components:
   - type: Sprite
     sprite: Mobs/Silicon/Bots/gladiabot.rsi
-    state: gladiabot
+    state: GladiabotFFA
+  - type: Inventory
+    templateId: gladiabot
+  - type: InventorySlots
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
   - type: Construction
     graph: GladiaBot
     node: bot
+  - type: Stripping
+  - type: Strippable
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-mechanical
   - type: UseDelay
@@ -17,6 +26,14 @@
   - type: NpcFactionMember
     factions:
     - GladiabotFFA
+  - type: NpcFactionSelector
+    selectableFactions:
+    - GladiabotFFA
+    - GladiabotRed
+    - GladiabotBlue
+    - GladiabotGreen
+    - GladiabotYellow
+  - type: NpcFactionSpriteStateSetter
   - type: CombatMode
   - type: MeleeWeapon
     altDisarm: false
@@ -52,6 +69,9 @@
           MaterialCloth1:
             min: 1
             max: 1
+      - !type:EmptyContainersBehaviour
+        containers:
+        - head
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: MovementSpeedModifier
