@@ -2,6 +2,7 @@
   parent: ClothingBeltMedical
   id: ClothingBeltMedicalSurgeonGeneral
   name: surgeon general belt
+  suffix: Empty
   description: Belt of the surgeon general to hold all his needed surgery tools. Tailor by SESWC
   components:
   - type: Sprite

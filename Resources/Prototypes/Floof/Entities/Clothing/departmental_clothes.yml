@@ -656,14 +656,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformSGThong
+  id: ClothingUniformSurgeonGerneralThong
   name: surgeon general thong
   description: Styled for the surgeon general, but is this even considered a piece of clothing? Tailor by SESWC
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Departmental/Medical/SGthong.rsi
+    sprite: Floof/Clothing/Departmental/Medical/surgeongeneralthong.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Departmental/Medical/SGthong.rsi
+    sprite: Floof/Clothing/Departmental/Medical/surgeongeneralthong.rsi
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
