@@ -18,7 +18,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingCloakSurgeonGeneral
-  name: Surgeon General Cloak
+  name: surgeon general cloak
   description: A sterile teal cloak with a green cross, radiating with a sense of duty and willingness to help others. Tailor by SESWC
   components:
   - type: Sprite
