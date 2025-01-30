@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingEyesBase]
+  id: ClothingEyesHypnoVisor
+  name: Hypno Visor
+  description: Pre-programmed with a variety of visual and auditory options, this visor will work to induce a trance in its wearer, no psionics or hypnotist training required.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Hud/syndagent.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Hud/syndagent.rsi
+  - type: HypnoClothing
