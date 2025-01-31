@@ -94,3 +94,51 @@
   - !type:CharacterJobRequirement
     jobs:
     - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourier
+  category: JobsCargo
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformCourier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformSkirtCourier
+  category: JobsCargo
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformSkirtCourier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformMailCarrier
+  category: JobsCargo
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformMailCarrier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformSkirtMailCarrier
+  category: JobsCargo
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformSkirtMailCarrier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier

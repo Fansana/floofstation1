@@ -57,3 +57,73 @@
     - ChiefEngineer
   items:
   - ClothingNeckCollarEngi
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpskirtEngineering
+  category: JobsEngineering
+  cost: 0 #Its an jumpsuit
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsEngineering
+  - !type:CharacterJobRequirement
+    jobs:
+    - StationEngineer
+  items:
+  - ClothingUniformJumpskirtEngineering
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpsuitEngineering
+  category: JobsEngineering
+  cost: 0 #Its an jumpsuit
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsEngineering
+  - !type:CharacterJobRequirement
+    jobs:
+    - StationEngineer
+  items:
+  - ClothingUniformJumpsuitEngineering
+
+# ATMOS
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpskirtAtmos
+  category: JobsEngineering
+  cost: 0 # its an Jumpsuit
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuterEngineering
+    - !type:CharacterJobRequirement
+      jobs:
+        - AtmosphericTechnician
+  items:
+    - ClothingUniformJumpskirtAtmos
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpsuitAtmos
+  category: JobsEngineering
+  cost: 0 # its an Jumpsuit
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuterEngineering
+    - !type:CharacterJobRequirement
+      jobs:
+        - AtmosphericTechnician
+  items:
+    - ClothingUniformJumpsuitAtmos
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpsuitAtmosCasual
+  category: JobsEngineering
+  cost: 0 # its an Jumpsuit
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutOuterEngineering
+    - !type:CharacterJobRequirement
+      jobs:
+        - AtmosphericTechnician
+  items:
+    - ClothingUniformJumpsuitAtmosCasual

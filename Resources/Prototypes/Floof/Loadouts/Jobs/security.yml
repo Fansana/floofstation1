@@ -65,6 +65,35 @@
   items:
   - ClothingNeckCollarSec
 
+
+- type: loadout
+  id: ClothingUniformJumpskirtSec
+  category: JobsSecurity
+  cost: 0 # same as the other uniforms
+  exclusive: true
+  items:
+  - ClothingUniformJumpskirtSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsSecurity
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security
+
+- type: loadout
+  id: LoadoutClothingLongcoatSec
+  category: JobsSecurity
+  cost: 0 # same as the other armor
+  exclusive: true
+  items:
+  - ClothingLongcoatSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutOuterSecurity
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security
+
 # Detective
 - type: loadout
   id: LoadoutClothingHandsDetectiveWarmers
@@ -106,3 +135,4 @@
   - !type:CharacterJobRequirement
     jobs:
     - Detective
+
