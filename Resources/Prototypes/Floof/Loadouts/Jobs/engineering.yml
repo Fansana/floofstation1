@@ -93,7 +93,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuterEngineering
+      group: LoadoutUniformsEngineering
     - !type:CharacterJobRequirement
       jobs:
         - AtmosphericTechnician
@@ -107,7 +107,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuterEngineering
+      group: LoadoutUniformsEngineering
     - !type:CharacterJobRequirement
       jobs:
         - AtmosphericTechnician
@@ -121,7 +121,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuterEngineering
+      group: LoadoutUniformsEngineering
     - !type:CharacterJobRequirement
       jobs:
         - AtmosphericTechnician
