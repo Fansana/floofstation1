@@ -1,0 +1,19 @@
+# A base locker that can be privitized using an ID card.
+# Inheritors should provide additional masterAccesses based on the department.
+- type: entity
+  id: IdLockerBase
+  parent: LockerBase
+  name: id locker
+  components:
+  - type: IdLock
+    revealInfo: true
+    masterAccesses: [ Captain, HeadOfPersonnel ]
+    lockSound:
+      path: /Audio/Effects/double_beep.ogg
+    unlockSound:
+      path: /Audio/Effects/double_beep.ogg
+
+- type: entity
+  id: IdLockerBaseSecure
+  parent: [IdLockerBase, LockerBaseSecure]
+  name: secure id locker
