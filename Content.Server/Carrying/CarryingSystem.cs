@@ -237,7 +237,8 @@ namespace Content.Server.Carrying
             Carry(args.Args.User, uid);
             args.Handled = true;
         }
-        private void StartCarryDoAfter(EntityUid carrier, EntityUid carried, CarriableComponent component)
+
+        public void StartCarryDoAfter(EntityUid carrier, EntityUid carried, CarriableComponent component)
         {
             if (!TryComp<PhysicsComponent>(carrier, out var carrierPhysics)
                 || !TryComp<PhysicsComponent>(carried, out var carriedPhysics)

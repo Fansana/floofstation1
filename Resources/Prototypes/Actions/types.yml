@@ -377,6 +377,7 @@
       itemIconStyle: NoItem
       useDelay: 1 # emote spam
       event: !type:ToggleActionEvent
+      checkCanInteract: false # obviously you can wag while cuffed, duh.
 
 - type: entity
   id: ActionFabricateLollipop
