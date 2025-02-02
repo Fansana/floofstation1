@@ -63,6 +63,7 @@
   recipeUnlocks:
   - MagazineShotgunBeanbag
   - ShellTranquilizer
+  - ShellShotgunBeanbag #floof
   - BoxBeanbag
   - CartridgePistolRubber
   - CartridgeMagnumRubber
@@ -74,6 +75,13 @@
   - MagazineBoxRifleRubber
   - CartridgeSpecialRubber
   - MagazineBoxSpecialRubber
+  - MagazinePistolSubMachineGunRubber #floof
+  - MagazineUniversalMagnumRubber #floof
+  - MagazineRifleRubber #floof
+  - MagazineLightRifleRubber #floof
+  - MagazineMagnumRubber #floof
+  - MagazinePistolRubber #floof
+  - SpeedLoaderMagnumRubber #floof
   - WeaponDisabler
 
 - type: technology
