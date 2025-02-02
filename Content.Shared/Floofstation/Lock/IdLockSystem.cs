@@ -247,6 +247,10 @@ public sealed class IdLockSystem : EntitySystem
 
     private AccessLevel MatchId(Entity<IdCardComponent> id, Entity<IdLockComponent> lockable)
     {
+        // ID always matches if the lock is inactive.
+        if (!lockable.Comp.Active)
+            return AccessLevel.Full;
+
         if (lockable.Comp.Info.OwnerName == id.Comp.FullName && lockable.Comp.Info.OwnerJobTitle == id.Comp.JobTitle)
             return AccessLevel.Full;
 
