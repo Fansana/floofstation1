@@ -6,3 +6,11 @@
     Cloth: 50
     Plastic: 500
     Steel: 75
+
+- type: latheRecipe
+  id: ClothingEyesHypnoVisor
+  result: ClothingEyesHypnoVisor
+  completetime: 3.5
+  materials:
+    Glass: 100
+    Steel: 75

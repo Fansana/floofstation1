@@ -1,0 +1,55 @@
+- type: loadout
+  id: LoadoutClothingHandsMedicWarmers
+  category: JobsMedicalAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsMedicWarmers
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMedic
+  category: JobsMedicalAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksMedic
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+
+- type: loadout
+  id: LoadoutClothingUniformMedicThong
+  category: JobsMedicalAUncategorized
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformMedicThong
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+
+- type: loadout
+  id: LoadoutMedicalNeckCollar
+  category: JobsMedicalAUncategorized
+  cost: 1
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+  items:
+  - ClothingNeckCollarMed
+
+# Chemist
+
+# Paramedic

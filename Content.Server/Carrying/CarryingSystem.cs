@@ -67,7 +67,7 @@ namespace Content.Server.Carrying
             SubscribeLocalEvent<BeingCarriedComponent, GettingInteractedWithAttemptEvent>(OnInteractedWith);
             SubscribeLocalEvent<BeingCarriedComponent, PullAttemptEvent>(OnPullAttempt);
             SubscribeLocalEvent<BeingCarriedComponent, StartClimbEvent>(OnStartClimb);
-            SubscribeLocalEvent<BeingCarriedComponent, BuckleChangeEvent>(OnBuckleChange);
+            SubscribeLocalEvent<BeingCarriedComponent, BuckledEvent>(OnBuckled);
             SubscribeLocalEvent<CarriableComponent, CarryDoAfterEvent>(OnDoAfter);
         }
 
@@ -222,7 +222,7 @@ namespace Content.Server.Carrying
             DropCarried(component.Carrier, uid);
         }
 
-        private void OnBuckleChange(EntityUid uid, BeingCarriedComponent component, ref BuckleChangeEvent args)
+        private void OnBuckled(EntityUid uid, BeingCarriedComponent component, ref BuckledEvent args)
         {
             DropCarried(component.Carrier, uid);
         }
@@ -237,7 +237,8 @@ namespace Content.Server.Carrying
             Carry(args.Args.User, uid);
             args.Handled = true;
         }
-        private void StartCarryDoAfter(EntityUid carrier, EntityUid carried, CarriableComponent component)
+
+        public void StartCarryDoAfter(EntityUid carrier, EntityUid carried, CarriableComponent component)
         {
             if (!TryComp<PhysicsComponent>(carrier, out var carrierPhysics)
                 || !TryComp<PhysicsComponent>(carried, out var carriedPhysics)

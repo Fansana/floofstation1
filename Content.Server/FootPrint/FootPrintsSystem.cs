@@ -55,13 +55,17 @@ public sealed class FootPrintsSystem : EntitySystem
             || args.Entity.Comp1.GridUid is not {} gridUid)
             return;
 
+        var lastPos = component.LastStepPos; // This is saved because it will soon get overwritten
         var newPos = _transform.ToMapCoordinates(args.NewPosition).Position;
         var dragging = _standingStateQuery.TryComp(uid, out var standing) && standing.CurrentState == StandingState.Lying;
-        var distance = (newPos - component.LastStepPos).Length();
+        var distance = (newPos - lastPos).Length();
         var stepSize = dragging ? component.DragSize : component.StepSize;
 
         if (distance < stepSize)
             return;
+
+        component.RightStep = !component.RightStep;
+        component.LastStepPos = newPos;
 
         // are we on a puddle? we exit, ideally we would exchange liquid and DNA with the puddle but meh, too lazy to do that now.
         var entities = _lookup.GetEntitiesIntersecting(uid, LookupFlags.All);
@@ -90,9 +94,11 @@ public sealed class FootPrintsSystem : EntitySystem
             _appearance.SetData(footprintUid, FootPrintVisualState.Color, color, appearance);
         }
 
-        stepTransform.LocalRotation = dragging
-            ? (newPos - component.LastStepPos).ToAngle() + Angle.FromDegrees(-90f)
-            : args.Component.LocalRotation + Angle.FromDegrees(180f);
+        // Rotate the footprint to point from the last step position to the current one
+        if (dragging)
+            _transform.SetWorldRotation(stepTransform, (newPos - lastPos).ToAngle() + Angle.FromDegrees(-90f));
+        else
+            stepTransform.LocalRotation = args.Component.LocalRotation + Angle.FromDegrees(180f);
 
         if (!TryComp<SolutionContainerManagerComponent>(footprintUid, out var solutionContainer)
             || !_solution.ResolveSolution((footprintUid, solutionContainer), footPrintComponent.SolutionName, ref footPrintComponent.Solution, out var solution))
@@ -101,9 +107,6 @@ public sealed class FootPrintsSystem : EntitySystem
         // Transfer from the component to the footprint
         var removedReagents = component.ContainedSolution.SplitSolution(component.FootprintVolume);
         _solution.ForceAddSolution(footPrintComponent.Solution.Value, removedReagents);
-
-        component.RightStep = !component.RightStep;
-        component.LastStepPos = newPos;
     }
 
     private EntityCoordinates CalcCoords(EntityUid uid, FootPrintsComponent component, TransformComponent transform, bool state)
