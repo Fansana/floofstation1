@@ -30,6 +30,7 @@ public sealed class IdLockSystem : EntitySystem
         SubscribeLocalEvent<IdLockComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<IdLockComponent, LockToggleAttemptEvent>(OnToggleNormalLock);
         SubscribeLocalEvent<IdLockComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerbs);
+        SubscribeLocalEvent<LockComponent, IdLockSetEvent>(OnSetIdLock);
 
         SubscribeLocalEvent<IdLockComponent, IdLockActivateDoAfterEvent>(OnLockDoAfter);
         SubscribeLocalEvent<IdLockComponent, IdLockDeactivateDoAfterEvent>(OnUnlockDoAfter);
@@ -96,6 +97,21 @@ public sealed class IdLockSystem : EntitySystem
         args.Verbs.Add(verb);
     }
 
+    private void OnSetIdLock(Entity<LockComponent> ent, ref IdLockSetEvent args)
+    {
+        if (!HasComp<LockComponent>(ent) || !HasComp<AccessReaderComponent>(ent))
+        {
+            Log.Error($"Tried to add an ID lock to an entity without a lock or access reader: {ToPrettyString(ent)}.");
+            return;
+        }
+
+        if (args.Enable)
+            EnsureComp<IdLockComponent>(ent);
+        else if (TryComp<IdLockComponent>(ent, out var lockComp))
+            RemComp(ent, lockComp);
+    }
+
+
     private void OnLockDoAfter(Entity<IdLockComponent> ent, ref IdLockActivateDoAfterEvent args)
     {
         if (args.Cancelled || !TryComp<IdCardComponent>(args.Used, out var id))
@@ -111,7 +127,6 @@ public sealed class IdLockSystem : EntitySystem
 
         DoUnlock(ent, (args.Used.Value, id), args.User);
     }
-
     #endregion
 
     #region Public API

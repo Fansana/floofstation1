@@ -1,0 +1,11 @@
+# TODO: unique appearence, maybe?
+- type: entity
+  id: LockerSteelIdLockable
+  suffix: ID lock
+  parent: [IdLockableBase, LockerSteel]
+  components:
+  - type: Construction
+    graph: ClosetSteelSecure
+    node: idLockable
+    containers:
+    - entity_storage

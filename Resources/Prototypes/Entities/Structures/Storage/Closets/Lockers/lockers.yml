@@ -35,7 +35,7 @@
 # Basic
 - type: entity
   id: LockerSteel
-  parent: IdLockerBaseSecure
+  parent: LockerBaseSecure
   name: secure closet
   components:
   - type: Appearance
