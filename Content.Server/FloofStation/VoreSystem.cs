@@ -96,7 +96,7 @@ public sealed class VoreSystem : EntitySystem
             || !args.CanAccess
             || args.User == args.Target
             || !HasComp<VoreComponent>(args.Target)
-            || !_consent.HasConsent(args.User, "VorePred")
+            || !_consent.HasConsent(args.User, "Vore")
             || !_consent.HasConsent(args.Target, "Vore"))
             return;
 
@@ -117,7 +117,7 @@ public sealed class VoreSystem : EntitySystem
             || !args.CanAccess
             || args.User == args.Target
             || !TryComp<VoreComponent>(args.Target, out var component)
-            || !_consent.HasConsent(args.Target, "VorePred")
+            || !_consent.HasConsent(args.Target, "Vore")
             || !_consent.HasConsent(args.User, "Vore"))
             return;
 
@@ -421,6 +421,9 @@ public sealed class VoreSystem : EntitySystem
 
     private void OnExamine(EntityUid uid, ExaminedEvent args)
     {
+        if (!_consent.HasConsent(args.Examiner, "Vore"))
+            return;
+
         if (!_containerSystem.TryGetContainer(uid, "stomach", out var stomach)
             || stomach.ContainedEntities.Count < 1)
             return;
