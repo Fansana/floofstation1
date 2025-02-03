@@ -130,6 +130,12 @@
       amount: 2 # DeltaV - more folders in the bureacracy crate
     - id: BoxFolderYellow
       amount: 2 # DeltaV - more folders in the bureacracy crate
+    # Begin DeltaV: sticky notes
+    - id: PaperStickyNoteStackFilled
+    - id: PaperStickyNoteStackFilledPink
+    - id: PaperStickyNoteStackFilledGreen
+    - id: PaperStickyNoteStackFilledBlue
+    # End DeltaV: sticky notes
     - id: NewtonCradle
     - id: BoxEnvelope
     - id: BrbSign
