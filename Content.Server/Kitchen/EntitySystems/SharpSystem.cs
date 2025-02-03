@@ -120,8 +120,8 @@ public sealed class SharpSystem : EntitySystem
         _popupSystem.PopupEntity(Loc.GetString("butcherable-knife-butchered-success", ("target", args.Args.Target.Value), ("knife", uid)),
             popupEnt, args.Args.User, popupType);
 
-        if (hasBody)
-            _bodySystem.GibBody(args.Args.Target.Value, body: body);
+        if (hasBody && butcher.GibBody) // Floof - added additional check
+            _bodySystem.GibBody(args.Args.Target.Value, body: body, gibOrgans: butcher.GibOrgans, contents: butcher.GibContents);
 
         _destructibleSystem.DestroyEntity(args.Args.Target.Value);
 
