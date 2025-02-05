@@ -65,10 +65,10 @@
       id: PlushiePenguin
 
 - type: entity
-  id: CrateFunPlushie
+  id: CrateFunImportedPlushie
   parent: CrateGenericSteel
-  name: plushie crate
-  description: A buncha soft plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+  name: imported plushie crate
+  description: A bunch of older plushies from another sector, you'll have to look elsewhere for the newer models. Throw them around and then wonder how you're gonna explain this purchase to NT.
   components:
   - type: EntityTableContainerFill
     containers:
