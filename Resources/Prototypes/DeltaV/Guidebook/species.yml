@@ -8,10 +8,11 @@
   name: species-name-felinid
   text: "/ServerInfo/Guidebook/Mobs/DeltaV/Felinid.xml"
 
-- type: guideEntry
-  id: Harpy
-  name: species-name-harpy
-  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Harpy.xml"
+# Floofstation already had a Harpy guide entry, so this conflicts
+#- type: guideEntry
+#  id: Harpy
+#  name: species-name-harpy
+#  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Harpy.xml"
 
 - type: guideEntry
   id: Vulpkanin
