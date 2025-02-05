@@ -1,8 +1,8 @@
 - type: entity
-  name: ERT medical multitool
-  id: ERTOmnimedTool
+  name: bluespace medical multitool
+  id: BluespaceOmnimedTool
   parent: BaseToolSurgery
-  suffix: Admeme
+  suffix: debug, DO NOT MAP
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/omnimed.rsi
