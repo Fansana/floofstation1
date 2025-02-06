@@ -26,7 +26,6 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Wings: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobHarpyLArm
     RArm: MobHarpyRArm
@@ -71,6 +70,10 @@
     LeftFoot:
       points: 2
       required: false
+    RightArm:
+      points: 1
+      required: false
+      defaultMarkings: [ HarpyWingDefaultHuescale ]
     RightHand:
       points: 2
       required: false
@@ -80,13 +83,6 @@
     LeftHand:
       points: 2
       required: false
-    HeadSide:
-      points: 1
-      required: false
-    Wings:
-      points: 1
-      required: false
-      defaultMarkings: [ HarpyWingDefaultHuescale ]
 
 - type: humanoidBaseSprite
   id: MobHarpyHead

@@ -92,21 +92,21 @@
     - type: RandomSpawner
       prototypes:
         - MobXeno
-        - MobXenoAcidRunner
-        - MobXenoAcidRunnerPrimed
-        - MobXenoLarva
-        - MobXenoBoiler
-        - MobXenoBoxerWarrior
+        - MobXenoacidrunner
+        - MobXenoacidrunnerprimed
+        - MobXenolarva
+        - MobXenoboiler
+        - MobXenoboxerwarrior
         - MobXenoCarrier
-        - MobXenoCrusher
-        - MobXenoChargerCrusher
-        - MobXenoDancerPraetorian
-        - MobXenoDefender
-        - MobXenoSentinel
-        - MobXenoBloodyLarva
-        - MobXenoParasite
-        - MobXenoLurker
-        - MobXenoWarrior
+        - MobXenocrusher
+        - MobXenochargercrusher
+        - MobXenodancerpraetorian
+        - MobXenodefender
+        - MobXenosentinel
+        - MobXenobloodylarva
+        - MobXenoparasite
+        - MobXenolurker
+        - MobXenowarrior
         - MobXenoPraetorianNPC
         - MobXenoDroneNPC
         - MobXenoRavagerNPC
@@ -115,7 +115,7 @@
         - MobXenoSpitterNPC
       rarePrototypes:
         - MobXenoQueenNPC
-        - MobXenoHivelord
+        - MobXenohivelord
       rareChance: 0.10
 
 - type: entity

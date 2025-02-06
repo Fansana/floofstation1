@@ -162,8 +162,6 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1 #floof fix the visials of it not filling
-      map: ["enum.GunVisualLayers.Mag"]
 
 
 - type: entity
@@ -228,8 +226,6 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1 # Floof fix the mag not filling
-      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: MagazinePistolHighCapacity
@@ -305,8 +301,6 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1 # Floof fix the mag not filling
-      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: MagazinePistolSubMachineGunPractice
@@ -338,7 +332,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunUranium
-  name: SMG magazine (.35 auto Uranium)  #floof  Name fix
+  name: SMG magazine (.35 auto rubber)
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider

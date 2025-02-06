@@ -275,13 +275,3 @@
       path: /Audio/Animals/mouse_squeak.ogg
       params:
         volume: 1
-
-- type: entity
-  parent: PlushieCentCom
-  id: Plushiegirlfailure
-  name: girl failure plushie
-  description: Smells like body odor and cheese!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: girlfailure

@@ -20,6 +20,3 @@
     node: start #Frontier
     deconstructionTarget: null #Frontier
   - type: Wieldable # Frontier
-  - type: GunWieldBonus
-    minAngle: -9
-    maxAngle: -28 # 1..2 degrees when wielded

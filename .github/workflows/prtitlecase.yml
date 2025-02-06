@@ -1,7 +1,7 @@
 name: PR Title Case
-on: [] # Disabled for the time being.
-  # pull_request_target:
-  #   types: [opened, edited, synchronize]
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize]
 
 env:
   GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}

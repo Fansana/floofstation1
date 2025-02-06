@@ -198,7 +198,6 @@
       - ClothingHeadHatWelding
       - ShockCollar # FloofStation
       - LeashBasic # FloofStation
-      - ClothingEyesHypnoVisor # FloofStation
       - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
@@ -925,14 +924,6 @@
       - SurveillanceCameraMonitorCircuitboard
       - SurveillanceWirelessCameraMonitorCircuitboard
       - SurveillanceCameraWirelessRouterCircuitboard
-      - MagazineUniversalMagnumRubber
-      - MagazinePistolSubMachineGunRubber
-      - MagazineRifleRubber
-      - MagazineLightRifleRubber
-      - MagazineMagnumRubber
-      - MagazinePistolRubber
-      - SpeedLoaderMagnumRubber
-      - ShellShotgunBeanbag
       # Floof section end
   - type: MaterialStorage
     whitelist:
@@ -1820,7 +1811,6 @@
       - PlushieFPraetorian
       - PlushieFDrone
       - PlushieFRouny
-      - Plushiegirlfailure
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:

@@ -17,8 +17,6 @@
         true
       NavInteract: !type:Bool
         true
-      NavPry: !type:Bool
-        true
   - type: NpcFactionMember
     factions:
       - Gorilla

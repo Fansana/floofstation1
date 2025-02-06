@@ -386,9 +386,6 @@
         prob: 0.50
         orGroup: Prize
        #HypnoTemp Merch - End
-      - id: Plushiegirlfailure #Floof
-        prob: 0.50
-        orGroup: Prize
       # Rare
       - id: PlushieAbductorAgent
         prob: 0.30
@@ -423,4 +420,3 @@
       - id: PlushieHypnoTempCap # Floofstation
         prob: 0.30
         orGroup: Prize
-

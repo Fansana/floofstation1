@@ -14,17 +14,17 @@
         key: PsionicallyInsulated
         component: PsionicInsulation
         type: Add
-        time: 4.5 # Floof - 20u render you insulated for 15 minutes
+        time: 900
       - !type:GenericStatusEffect
         key: Stutter
         component: ScrambledAccent
         type: Add
-        time: 4.5 # Floof - 20u render you insulated for 15 minutes
+        time: 900
       - !type:GenericStatusEffect
         key: PsionicsDisabled
         component: PsionicsDisabled
         type: Add
-        time: 4.5 # Floof - 20u render you insulated for 15 minutes
+        time: 900
       - !type:Drunk
         slurSpeech: false
         boozePower: 20
@@ -172,7 +172,7 @@
         - !type:ReagentThreshold
           min: 15
       - !type:Drunk
-
+      
 - type: reagent
   id: Cryoxadone
   name: reagent-name-cryoxadone
@@ -181,7 +181,7 @@
   physicalDesc: reagent-physical-desc-fizzy
   flavor: medicine
   color: "#0091ff"
-  worksOnTheDead: true # Floof
+  worksOnTheDead: true # Floof 
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -5
@@ -1201,7 +1201,7 @@
           types:
             Heat: -3.0
             Shock: -3.0
-            Cold: -3.0 # Floof
+            Cold: -3.0 # Floof 
             Caustic: -1.0
 
 - type: reagent

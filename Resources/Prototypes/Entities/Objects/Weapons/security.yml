@@ -9,9 +9,6 @@
     layers:
     - state: stunbaton_off
       map: [ "enum.ToggleVisuals.Layer" ]
-  - type: Tag
-    tags:
-    - Stunbaton # Floof - Batonbot recipe
   - type: Stunbaton
     energyPerUse: 50
   - type: ItemToggle

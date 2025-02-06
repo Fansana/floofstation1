@@ -29,8 +29,6 @@
     RLeg: MobDionaRLeg
     LFoot: MobDionaLFoot
     RFoot: MobDionaRFoot
-    Tail: MobHumanoidAnyMarking
-    Wings: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobDionaMarkingLimits
@@ -43,12 +41,6 @@
       points: 1
       required: false
     HeadSide:
-      points: 1
-      required: false
-    Tail:
-      points: 1
-      required: false
-    Wings:
       points: 1
       required: false
     Chest:

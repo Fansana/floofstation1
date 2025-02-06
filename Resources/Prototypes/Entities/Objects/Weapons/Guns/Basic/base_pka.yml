@@ -8,12 +8,16 @@
   - type: Item
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
     size: Normal
+  - type: GunWieldBonus
+    minAngle: -43
+    maxAngle: -43
+  - type: Wieldable
   - type: Gun
     fireRate: 0.5
     selectedMode: SemiAuto
-    angleDecay: 3 # If you wait ~7 seconds between shots, you can actually land more or less accurate shots (with a 10 degree innacuracy)
-    minAngle: 10
-    maxAngle: 30
+    angleDecay: 45
+    minAngle: 44
+    maxAngle: 45
     availableModes:
     - SemiAuto
     soundGunshot:

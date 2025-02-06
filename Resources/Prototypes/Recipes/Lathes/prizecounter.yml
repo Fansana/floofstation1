@@ -686,15 +686,6 @@
   completetime: 0.1
   materials:
     PrizeTicket: 50
-
-- type: latheRecipe
-  id: Plushiegirlfailure
-  result: Plushiegirlfailure
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
-
 # HypnoTemp Plushies - Start
 - type: latheRecipe
   id: PlushieHypnoTempCap
@@ -751,9 +742,6 @@
   completetime: 0.1
   materials:
     PrizeTicket: 100
-
-
-
 # HypnoTemp Plushies - End
 # Floof Plushies - End
 

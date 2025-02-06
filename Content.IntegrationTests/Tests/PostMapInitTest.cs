@@ -65,8 +65,7 @@ namespace Content.IntegrationTests.Tests
             "Gax",
             "Rad",
             "Kettle",
-            "Train",
-            "Fland"
+            "Train"
         };
 
         /// <summary>

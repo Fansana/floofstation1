@@ -32,7 +32,6 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Wings: MobHumanoidAnyMarking
     Hair: MobHumanoidMarkingMatchSkin
     Chest: MobIPCTorso
     LArm: MobIPCLArm
@@ -90,15 +89,6 @@
       points: 1
       required: false
       defaultMarkings: [ MobIPCLHandDefault ]
-    Tail:
-      points: 1
-      required: false
-    Wings:
-      points: 1
-      required: false
-    HeadTop:
-      points: 1
-      required: false
 
 - type: humanoidBaseSprite
   id: MobIPCMarkingFollowSkin

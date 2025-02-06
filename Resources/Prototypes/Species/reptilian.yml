@@ -28,7 +28,6 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Wings: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobReptilianLArm
     RArm: MobReptilianRArm
@@ -53,9 +52,6 @@
       points: 1
       required: true
       defaultMarkings: [ LizardTailSmooth ]
-    Wings:
-      points: 1
-      required: false
     Snout:
       points: 1
       required: true
