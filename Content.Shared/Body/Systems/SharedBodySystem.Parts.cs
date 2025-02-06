@@ -333,6 +333,9 @@ public partial class SharedBodySystem
     /// </summary>
     public void ChangeSlotState(Entity<BodyPartComponent> partEnt, bool disable)
     {
+        if (_net.IsClient)
+            return; // Floofstation - we don't fuck with this on the client side. It always, ALWAYS leads to desync.
+
         if (partEnt.Comp.Body is not null
             && TryComp<InventoryComponent>(partEnt.Comp.Body, out var inventory)
             && GetBodyPartCount(partEnt.Comp.Body.Value, partEnt.Comp.PartType) == 1

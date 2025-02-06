@@ -1,6 +1,6 @@
 - type: entity
   id: BaseArachnidOrgan
-  parent: BaseItem
+  parent: [BaseItem, BaseOrganRotting] # Floof - added the rotting parent
   abstract: true
   components:
   - type: Sprite

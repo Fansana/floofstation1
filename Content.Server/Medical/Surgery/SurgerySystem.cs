@@ -25,6 +25,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Shared.Verbs;
+
 
 namespace Content.Server.Medical.Surgery;
 
@@ -47,6 +49,7 @@ public sealed class SurgerySystem : SharedSurgerySystem
         base.Initialize();
 
         SubscribeLocalEvent<SurgeryToolComponent, AfterInteractEvent>(OnToolAfterInteract);
+        SubscribeLocalEvent<SurgeryToolComponent, GetVerbsEvent<UtilityVerb>>(OnToolGetVerbs); // Floofstation
         SubscribeLocalEvent<SurgeryTargetComponent, SurgeryStepDamageEvent>(OnSurgeryStepDamage);
         // You might be wondering "why aren't we using StepEvent for these two?" reason being that StepEvent fires off regardless of success on the previous functions
         // so this would heal entities even if you had a used or incorrect organ.
@@ -106,27 +109,43 @@ public sealed class SurgerySystem : SharedSurgerySystem
 
     private void OnToolAfterInteract(Entity<SurgeryToolComponent> ent, ref AfterInteractEvent args)
     {
+        // Floofstation - replaced with a verb. Fuck AfterInteractEvent.
+        // Be very mindful of this when merging upstream changes.
+        return;
+    }
+
+    private void OnToolGetVerbs(Entity<SurgeryToolComponent> ent, ref GetVerbsEvent<UtilityVerb> args)
+    {
         var user = args.User;
-        if (args.Handled
-            || !args.CanReach
-            || args.Target == null
+        var target = args.Target;
+        if (!args.CanAccess
+            || !args.CanInteract
             || !HasComp<SurgeryTargetComponent>(args.Target)
             || !TryComp<SurgeryTargetComponent>(args.User, out var surgery)
             || !surgery.CanOperate
-            || !IsLyingDown(args.Target.Value, args.User))
+            || !IsLyingDown(args.Target, args.User))
         {
             return;
         }
 
-        if (user == args.Target && !_config.GetCVar(CCVars.CanOperateOnSelf))
+        var verb = new UtilityVerb
         {
-            _popup.PopupEntity(Loc.GetString("surgery-error-self-surgery"), user, user);
-            return;
-        }
+            Act = () =>
+            {
+                if (user == target && !_config.GetCVar(CCVars.CanOperateOnSelf))
+                {
+                    _popup.PopupEntity(Loc.GetString("surgery-error-self-surgery"), user, user);
+                    return;
+                }
 
-        args.Handled = true;
-        _ui.OpenUi(args.Target.Value, SurgeryUIKey.Key, user);
-        RefreshUI(args.Target.Value);
+                _ui.OpenUi(target, SurgeryUIKey.Key, user);
+                RefreshUI(target);
+            },
+            Text = Loc.GetString("surgery-verb-perform"),
+            Priority = 2,
+            IconEntity = GetNetEntity(ent)
+        };
+        args.Verbs.Add(verb);
     }
 
     private void OnSurgeryStepDamage(Entity<SurgeryTargetComponent> ent, ref SurgeryStepDamageEvent args) =>

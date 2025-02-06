@@ -66,7 +66,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
             || session.AttachedEntity is not {} uid
             || !TryComp<StandingStateComponent>(uid, out var standingState)
             || !TryComp<LayingDownComponent>(uid, out var layingDown)
-            || !_actionBlocker.CanInteract(uid, null))
+            || !_actionBlocker.CanConsciouslyPerformAction(uid)) // Floof - replaced CanInteract with consciousness
             return;
 
         var newState = !layingDown.IsCrawlingUnder;
@@ -147,7 +147,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
             || TerminatingOrDeleted(uid)
             || !TryComp<BodyComponent>(uid, out var body)
             || body.LegEntities.Count == 0
-            || HasComp<DebrainedComponent>(uid))
+            || !_actionBlocker.CanConsciouslyPerformAction(uid)) // Floof - check for consciousness instead of a no-brain DeBrainedComponent check (pun intended)
             return false;
 
         // Floof - raise an attempt event before actually trying to start a do-after
@@ -167,6 +167,7 @@ public abstract class SharedLayingDownSystem : EntitySystem
 
         standingState.CurrentState = StandingState.GettingUp;
         layingDown.IsCrawlingUnder = false;
+        Dirty(uid, layingDown);
         return true;
     }
 
