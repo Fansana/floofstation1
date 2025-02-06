@@ -8,13 +8,13 @@
   "license": "CC-BY-SA-3.0",
   "states": [
     {
-      "name": "med_secure_door"
+      "name": "surgeon_secure_door"
     },
     {
-      "name": "med_secure_open"
+      "name": "surgeon_secure_open"
     },
     {
-      "name": "med_secure"
+      "name": "surgeon_secure"
     },
     {
         "name": "locked"
@@ -24,6 +24,15 @@
     },
     {
         "name": "generic"
+    },
+    {
+        "name": "generic_icon"
+    },
+    {
+        "name": "generic_door"
+    },
+    {
+        "name": "generic_open"
     },
     {
         "name": "welded"
