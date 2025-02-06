@@ -142,7 +142,7 @@ public sealed partial class BodyPartComponent : Component, ISurgeryToolComponent
     /// to make possible severing it.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float SeverIntegrity = 90;
+    public float SeverIntegrity = 300; // Floof - increased to 300 due to frequent RR
 
     /// <summary>
     /// The ID of the base layer for this body part.
@@ -159,8 +159,8 @@ public sealed partial class BodyPartComponent : Component, ISurgeryToolComponent
     [DataField, AutoNetworkedField]
     public Dictionary<TargetIntegrity, float> IntegrityThresholds = new()
     {
-        { TargetIntegrity.CriticallyWounded, 90 },
-        { TargetIntegrity.HeavilyWounded, 75 },
+        { TargetIntegrity.CriticallyWounded, 100 }, // Floof - adjusted the thresholds to come in increments of 20
+        { TargetIntegrity.HeavilyWounded, 80 },
         { TargetIntegrity.ModeratelyWounded, 60 },
         { TargetIntegrity.SomewhatWounded, 40},
         { TargetIntegrity.LightlyWounded, 20 },

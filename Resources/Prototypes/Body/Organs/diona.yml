@@ -1,6 +1,6 @@
 - type: entity
   id: BaseDionaOrgan
-  parent: BaseItem
+  parent: [BaseItem, BaseOrganRotting] # Floof - added the rotting parent
   abstract: true
   components:
   - type: Sprite
@@ -64,7 +64,7 @@
       - state: eyeball-l
       - state: eyeball-r
   - type: Eyes
-  
+
 
 - type: entity
   id: OrganDionaStomach
