@@ -281,7 +281,7 @@
         - Blindness
         - CyberEyes
   functions:
-    - !type:TraitReplaceComponent
+    - !type:TraitAddComponent
       components:
         - type: Flashable
           eyeDamageChance: 0.3

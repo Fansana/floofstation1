@@ -1,0 +1,152 @@
+# General medical
+- type: loadout
+  id: LoadoutClothingHandsMedicWarmers
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsMedicWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+    - MedicalIntern
+    - Chemist
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMedic
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksMedic
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+    - MedicalIntern
+    - Chemist
+
+- type: loadout
+  id: LoadoutClothingUniformMedicThong
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformMedicThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+    - MedicalIntern
+    - Chemist
+
+- type: loadout
+  id: LoadoutMedicalNeckCollar
+  category: JobsMedical
+  cost: 1
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MedicalDoctor
+    - Paramedic
+    - ChiefMedicalOfficer
+    - MedicalIntern
+    - Brigmedic
+  items:
+  - ClothingNeckCollarMed
+
+# Chemist
+- type: loadout
+  id: LoadoutClothingHandsChemistsWarmers
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingHandsChemistsWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chemist
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChemists
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUnderSocksChemists
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chemist
+
+- type: loadout
+  id: LoadoutClothingUniformChemistsThong
+  category: JobsMedical
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingUniformChemistsThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chemist
+
+# Paramedic
+- type: loadout
+  id: LoadoutClothingHandsParaMedicWarmers
+  category: JobsMedical
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingHandsParaMedicWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutClothingUnderSocksParaMedic
+  category: JobsMedical
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUnderSocksParaMedic
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutClothingUniformParaMedicThong
+  category: JobsMedical
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingUniformParaMedicThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic

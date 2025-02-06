@@ -193,8 +193,6 @@ public sealed partial class HumanoidCharacterProfile : ICharacterProfile
         return new()
         {
             Species = species,
-            // Floof: Added a part about loading the default appearance. Not sure why/when it was removed.
-            Appearance = HumanoidCharacterAppearance.DefaultWithSpecies(species)
         };
     }
 

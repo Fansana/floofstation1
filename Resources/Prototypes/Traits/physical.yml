@@ -458,18 +458,13 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator
+        - Gladiator # Floof
   functions:
     - !type:TraitAddComponent
       components:
         - type: Prying
           speedModifier: 1
           pryPowered: false # Floof
-    - !type:TraitPushDescription
-      descriptionExtensions:
-        - description: examine-bionic-arm-message
-          fontSize: 12
-          requireDetailRange: true
 
 - type: trait
   id: PlateletFactories
@@ -504,31 +499,27 @@
 - type: trait
   id: DermalArmor
   category: Physical
-  points: -6
+  points: -9
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
-    - !type:CharacterSpeciesRequirement # Floof
+    - !type:CharacterSpeciesRequirement
       species:
         - Human
-        - Resomi
+        - Resomi # Floof
   functions:
-    - !type:TraitAddArmor
-      damageModifierSets:
-        - DermalArmor
-    - !type:TraitPushDescription
-      descriptionExtensions:
-        - description: examine-dermal-armor-message
-          fontSize: 12
-          requireDetailRange: true
+    - !type:TraitReplaceComponent
+      components:
+        - type: Damageable
+          damageModifierSet: DermalArmor
 
 - type: trait
   id: CyberEyes
   category: Physical
-  points: -4
+  points: -8
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -542,34 +533,14 @@
         - Blindness
         - Nearsighted
   functions:
-    - !type:TraitPushDescription
-      descriptionExtensions:
-        - description: examine-cybereyes-message
-          fontSize: 12
-          requireDetailRange: true
-    - !type:TraitReplaceComponent
+    - !type:TraitRemoveComponent
       components:
-        - type: Flashable # Effectively, removes any flash-vulnerability species traits.
-
-
-- type: trait
-  id: FlareShielding
-  category: Physical
-  points: -4
-  requirements:
-#    - !type:CharacterJobRequirement # Floof - this is redundant due to the below trait requirement
-#      inverted: true
-#      jobs:
-#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-    - !type:CharacterTraitRequirement
-      traits:
-        - CyberEyes
-  functions:
+        - type: Flashable
     - !type:TraitAddComponent
       components:
         - type: FlashImmunity
         - type: EyeProtection
-
+        - type: CyberEyes
 
 - type: trait
   id: CyberEyesSecurity
