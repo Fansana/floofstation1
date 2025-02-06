@@ -1,14 +1,14 @@
 - type: guideEntry
   id: SOP
   name: guide-entry-standard-operating-procedures
-  text: "/ServerInfo/Guidebook/SOP/StandardOperatingProcedures.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/StandardOperatingProcedures.xml"
   children:
   - Company Policy
 
 - type: guideEntry
   id: Company Policy
   name: guide-entry-companypolicy
-  text: "/ServerInfo/Guidebook/SOP/CompanyPolicy.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/CompanyPolicy.xml"
   defaultCollapsed: true
   children:
   - Code of Conduct
@@ -20,24 +20,24 @@
 - type: guideEntry
   id: Code of Conduct
   name: guide-entry-policy-codeofconduct
-  text: "/ServerInfo/Guidebook/SOP/CodeofConduct.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/CodeofConduct.xml"
   
 - type: guideEntry
   id: Self-Defence
   name: guide-entry-policy-self-defence
-  text: "/ServerInfo/Guidebook/SOP/SelfDefence.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/SelfDefence.xml"
   
 - type: guideEntry
   id: Conduct Unbecoming
   name: guide-entry-policy-conductunbecoming
-  text: "/ServerInfo/Guidebook/SOP/ConductUnbecoming.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/ConductUnbecoming.xml"
   
 - type: guideEntry
   id: Appearance Standards
   name: guide-entry-policy-appearancestandards
-  text: "/ServerInfo/Guidebook/SOP/AppearanceStandards.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/AppearanceStandards.xml"
   
 - type: guideEntry
   id: Dangers from our Competitors
   name: guide-entry-policy-dangersfromcompetitors
-  text: "/ServerInfo/Guidebook/SOP/DangersfromCompetitors.xml"
+  text: "/ServerInfo/Floof/Guidebook/SOP/DangersfromCompetitors.xml"
