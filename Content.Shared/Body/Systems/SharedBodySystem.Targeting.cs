@@ -139,7 +139,7 @@ public partial class SharedBodySystem
                 else if (damage != null)
                 {
                     // Division by 2 cuz damaging all parts by the same damage by default is too much.
-                    damage /= 2;
+                    damage /= 10; // Floofstation - changed to 10 because there's typically 10 parts and division by 2 is just too little.
                     targetPart = TargetBodyPart.All;
                 }
             }
