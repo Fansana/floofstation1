@@ -24,7 +24,7 @@
     sprite: Objects/Fun/toys.rsi
     state: plushie_h
   product: CrateFunPlushie
-  cost: 2500
+  cost: 3500
   category: cargoproduct-category-name-fun
   group: market
   
@@ -34,6 +34,6 @@
     sprite: Objects/Fun/toys.rsi
     state: plushie_lizard
   product: CrateFunLizardPlushieBulk
-  cost: 2000
+  cost: 2500
   category: cargoproduct-category-name-fun
   group: market
