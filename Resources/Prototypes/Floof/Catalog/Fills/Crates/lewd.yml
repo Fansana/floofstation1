@@ -9,6 +9,8 @@
       entity_storage: !type:AllSelector
         children:
         - !type:EntSelector
+          id: ClothingMaskGasDrone #TheDen
+        - !type:EntSelector
           id: LewdWand
         - !type:EntSelector
           id: LewdVibeGreen
