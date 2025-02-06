@@ -1,0 +1,18 @@
+- type: entity
+  id: CrateERTSurgery
+  parent: CrateSurgery
+  name: ERT surgical supplies crate
+  description: Special surgical instruments provided to Emergency Response Teams.
+  components:
+  - type: StorageFill
+    contents:
+      - id: BluespaceOmnimedTool
+      - id: ClothingMaskBreathMedical
+      - id: NitrousOxideTankFilled
+      - id: BoxLatexGloves
+      - id: BoxSterileMask
+      - id: MedBiofabFlatpack
+      - id: OperatingTableFlatpack
+      - id: Multitool
+      - id: MaterialBiomass
+        amount: 3
