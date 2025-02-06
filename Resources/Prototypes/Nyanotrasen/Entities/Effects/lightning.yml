@@ -2,7 +2,7 @@
   parent: BaseLightning
   id: LightningNoospheric
   name: noospheric lightning
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Electrified
     enabled: false

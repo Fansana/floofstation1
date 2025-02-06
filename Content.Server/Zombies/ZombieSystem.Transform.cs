@@ -192,7 +192,7 @@ namespace Content.Server.Zombies
                 Dirty(target, pryComp);
             }
 
-            Dirty(target, melee);
+            Dirty(melee);
 
             //The zombie gets the assigned damage weaknesses and strengths
             _damageable.SetDamageModifierSetId(target, "Zombie");

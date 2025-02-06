@@ -67,7 +67,7 @@ public sealed partial class PowerCellSystem
         {
             component.CanDraw = canDraw;
             component.CanUse = canUse;
-            Dirty(uid, component);
+            Dirty(component);
         }
     }
 
@@ -80,7 +80,7 @@ public sealed partial class PowerCellSystem
         {
             component.CanDraw = canDraw;
             component.CanUse = canUse;
-            Dirty(uid, component);
+            Dirty(component);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Content.Shared.Alert
     /// <summary>
     /// Defines the order of alerts so they show up in a consistent order.
     /// </summary>
-    [Prototype]
+    [Prototype("alertOrder")]
     [DataDefinition]
     public sealed partial class AlertOrderPrototype : IPrototype, IComparer<AlertPrototype>
     {
@@ -15,7 +15,7 @@ namespace Content.Shared.Alert
         [IdDataField]
         public string ID { get; private set; } = default!;
 
-        [DataField]
+        [DataField("order")]
         private (string type, string alert)[] Order
         {
             // why would paul do this to me.
@@ -46,10 +46,10 @@ namespace Content.Shared.Alert
                     switch (type)
                     {
                         case "alertType":
-                            _typeToIdx[alert] = i++;
+                            _typeToIdx[Enum.Parse<AlertType>(alert)] = i++;
                             break;
                         case "category":
-                            _categoryToIdx[alert] = i++;
+                            _categoryToIdx[Enum.Parse<AlertCategory>(alert)] = i++;
                             break;
                         default:
                             throw new ArgumentException();
@@ -58,17 +58,17 @@ namespace Content.Shared.Alert
             }
         }
 
-        private readonly Dictionary<ProtoId<AlertPrototype>, int> _typeToIdx = new();
-        private readonly Dictionary<ProtoId<AlertCategoryPrototype>, int> _categoryToIdx = new();
+        private readonly Dictionary<AlertType, int> _typeToIdx = new();
+        private readonly Dictionary<AlertCategory, int> _categoryToIdx = new();
 
         private int GetOrderIndex(AlertPrototype alert)
         {
-            if (_typeToIdx.TryGetValue(alert.ID, out var idx))
+            if (_typeToIdx.TryGetValue(alert.AlertType, out var idx))
             {
                 return idx;
             }
             if (alert.Category != null &&
-                _categoryToIdx.TryGetValue(alert.Category.Value, out idx))
+                _categoryToIdx.TryGetValue((AlertCategory) alert.Category, out idx))
             {
                 return idx;
             }
@@ -78,25 +78,20 @@ namespace Content.Shared.Alert
 
         public int Compare(AlertPrototype? x, AlertPrototype? y)
         {
-            if (x == null && y == null)
-                return 0;
-            if (x == null)
-                return 1;
-            if (y == null)
-                return -1;
+            if ((x == null) && (y == null)) return 0;
+            if (x == null) return 1;
+            if (y == null) return -1;
             var idx = GetOrderIndex(x);
             var idy = GetOrderIndex(y);
             if (idx == -1 && idy == -1)
             {
                 // break ties by type value
                 // Must cast to int to avoid integer overflow when subtracting (enum's unsigned)
-                return string.Compare(x.ID, y.ID, StringComparison.InvariantCulture);
+                return (int)x.AlertType - (int)y.AlertType;
             }
 
-            if (idx == -1)
-                return 1;
-            if (idy == -1)
-                return -1;
+            if (idx == -1) return 1;
+            if (idy == -1) return -1;
             var result = idx - idy;
             // not strictly necessary (we don't care about ones that go at the same index)
             // but it makes the sort stable
@@ -104,7 +99,7 @@ namespace Content.Shared.Alert
             {
                 // break ties by type value
                 // Must cast to int to avoid integer overflow when subtracting (enum's unsigned)
-                return string.Compare(x.ID, y.ID, StringComparison.InvariantCulture);
+                return (int)x.AlertType - (int)y.AlertType;
             }
 
             return result;

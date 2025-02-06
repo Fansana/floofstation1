@@ -84,7 +84,7 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
     private void OnMapInit(EntityUid uid, BorgChassisComponent component, MapInitEvent args)
     {
-        UpdateBatteryAlert((uid, component));
+        UpdateBatteryAlert(uid);
         _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
     }
 
@@ -183,7 +183,7 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
     private void OnPowerCellChanged(EntityUid uid, BorgChassisComponent component, PowerCellChangedEvent args)
     {
-        UpdateBatteryAlert((uid, component));
+        UpdateBatteryAlert(uid);
 
         if (!TryComp<PowerCellDrawComponent>(uid, out var draw))
             return;
@@ -256,12 +256,12 @@ public sealed partial class BorgSystem : SharedBorgSystem
         args.Cancel();
     }
 
-    private void UpdateBatteryAlert(Entity<BorgChassisComponent> ent, PowerCellSlotComponent? slotComponent = null)
+    private void UpdateBatteryAlert(EntityUid uid, PowerCellSlotComponent? slotComponent = null)
     {
-        if (!_powerCell.TryGetBatteryFromSlot(ent, out var battery, slotComponent))
+        if (!_powerCell.TryGetBatteryFromSlot(uid, out var battery, slotComponent))
         {
-            _alerts.ClearAlert(ent, ent.Comp.BatteryAlert);
-            _alerts.ShowAlert(ent, ent.Comp.NoBatteryAlert);
+            _alerts.ClearAlert(uid, AlertType.BorgBattery);
+            _alerts.ShowAlert(uid, AlertType.BorgBatteryNone);
             return;
         }
 
@@ -269,13 +269,13 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
         // we make sure 0 only shows if they have absolutely no battery.
         // also account for floating point imprecision
-        if (chargePercent == 0 && _powerCell.HasDrawCharge(ent, cell: slotComponent))
+        if (chargePercent == 0 && _powerCell.HasDrawCharge(uid, cell: slotComponent))
         {
             chargePercent = 1;
         }
 
-        _alerts.ClearAlert(ent, ent.Comp.NoBatteryAlert);
-        _alerts.ShowAlert(ent, ent.Comp.BatteryAlert, chargePercent);
+        _alerts.ClearAlert(uid, AlertType.BorgBatteryNone);
+        _alerts.ShowAlert(uid, AlertType.BorgBattery, chargePercent);
     }
 
     /// <summary>
@@ -288,7 +288,7 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
         component.Activated = true;
         InstallAllModules(uid, component);
-        Dirty(uid, component);
+        Dirty(component);
         _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
     }
 
@@ -302,7 +302,7 @@ public sealed partial class BorgSystem : SharedBorgSystem
 
         component.Activated = false;
         DisableAllModules(uid, component);
-        Dirty(uid, component);
+        Dirty(component);
         _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
     }
 

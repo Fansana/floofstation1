@@ -102,23 +102,20 @@ public sealed class SpaceNinjaSystem : SharedSpaceNinjaSystem
     /// </summary>
     public void SetSuitPowerAlert(EntityUid uid, SpaceNinjaComponent? comp = null)
     {
-        if (!Resolve(uid, ref comp, false))
-            return;
-
-        if (comp.Deleted || comp.Suit == null)
+        if (!Resolve(uid, ref comp, false) || comp.Deleted || comp.Suit == null)
         {
-            _alerts.ClearAlert(uid, comp.SuitPowerAlert);
+            _alerts.ClearAlert(uid, AlertType.SuitPower);
             return;
         }
 
         if (GetNinjaBattery(uid, out _, out var battery))
         {
             var severity = ContentHelpers.RoundToLevels(MathF.Max(0f, battery.CurrentCharge), battery.MaxCharge, 8);
-            _alerts.ShowAlert(uid, comp.SuitPowerAlert, (short) severity);
+            _alerts.ShowAlert(uid, AlertType.SuitPower, (short) severity);
         }
         else
         {
-            _alerts.ClearAlert(uid, comp.SuitPowerAlert);
+            _alerts.ClearAlert(uid, AlertType.SuitPower);
         }
     }
 

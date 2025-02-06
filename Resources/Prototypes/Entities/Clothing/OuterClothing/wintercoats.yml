@@ -38,7 +38,7 @@
   parent: ClothingOuterWinterCoat
   id: ClothingOuterWinterCoatToggleable
   name: winter coat with hood
-  categories: [ HideSpawnMenu ]
+  noSpawn: True
   components:
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterDefault

@@ -1,11 +1,9 @@
 using System.Numerics;
 using Content.Server.GameTicking;
+using Content.Server.GameTicking.Components;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Spawners.Components;
-using Content.Shared.EntityTable;
-using Content.Shared.GameTicking.Components;
 using JetBrains.Annotations;
-using Robust.Shared.Map;
 using Robust.Shared.Random;
 
 namespace Content.Server.Spawners.EntitySystems
@@ -15,7 +13,6 @@ namespace Content.Server.Spawners.EntitySystems
     {
         [Dependency] private readonly IRobustRandom _robustRandom = default!;
         [Dependency] private readonly GameTicker _ticker = default!;
-        [Dependency] private readonly EntityTableSystem _entityTable = default!;
 
         public override void Initialize()
         {
@@ -24,7 +21,6 @@ namespace Content.Server.Spawners.EntitySystems
             SubscribeLocalEvent<GameRuleStartedEvent>(OnRuleStarted);
             SubscribeLocalEvent<ConditionalSpawnerComponent, MapInitEvent>(OnCondSpawnMapInit);
             SubscribeLocalEvent<RandomSpawnerComponent, MapInitEvent>(OnRandSpawnMapInit);
-            SubscribeLocalEvent<EntityTableSpawnerComponent, MapInitEvent>(OnEntityTableSpawnMapInit);
         }
 
         private void OnCondSpawnMapInit(EntityUid uid, ConditionalSpawnerComponent component, MapInitEvent args)
@@ -37,13 +33,6 @@ namespace Content.Server.Spawners.EntitySystems
             Spawn(uid, component);
             if (component.DeleteSpawnerAfterSpawn)
                 QueueDel(uid);
-        }
-
-        private void OnEntityTableSpawnMapInit(Entity<EntityTableSpawnerComponent> ent, ref MapInitEvent args)
-        {
-            Spawn(ent);
-            if (ent.Comp.DeleteSpawnerAfterSpawn && !TerminatingOrDeleted(ent) && Exists(ent))
-                QueueDel(ent);
         }
 
         private void OnRuleStarted(ref GameRuleStartedEvent args)
@@ -119,34 +108,7 @@ namespace Content.Server.Spawners.EntitySystems
 
             var coordinates = Transform(uid).Coordinates.Offset(new Vector2(xOffset, yOffset));
 
-            // Floofstation - wrapped the below in a try-catch. Fuck you heisentest.
-            var picked = _robustRandom.Pick(component.Prototypes);
-            try
-            {
-                EntityManager.SpawnEntity(picked, coordinates);
-            }
-            catch (EntityCreationException e)
-            {
-                Log.Warning($"Caught an exception while trying to process a conditional spawner {ToPrettyString(uid)} of type {picked}: {e}");
-            }
-        }
-
-        private void Spawn(Entity<EntityTableSpawnerComponent> ent)
-        {
-            if (TerminatingOrDeleted(ent) || !Exists(ent))
-                return;
-
-            var coords = Transform(ent).Coordinates;
-
-            var spawns = _entityTable.GetSpawns(ent.Comp.Table);
-            foreach (var proto in spawns)
-            {
-                var xOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
-                var yOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
-                var trueCoords = coords.Offset(new Vector2(xOffset, yOffset));
-
-                Spawn(proto, trueCoords);
-            }
+            EntityManager.SpawnEntity(_robustRandom.Pick(component.Prototypes), coordinates);
         }
     }
 }

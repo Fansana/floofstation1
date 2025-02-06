@@ -1,8 +1,6 @@
-﻿using Content.Shared.Alert;
-using Content.Shared.Movement.Pulling.Systems;
+﻿using Content.Shared.Movement.Pulling.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Movement.Pulling.Components;
@@ -66,6 +64,4 @@ public sealed partial class PullerComponent : Component
     /// </summary>
     [DataField]
     public float MaxPushRange = 2f;
-    [DataField]
-    public ProtoId<AlertPrototype> PullingAlert = "Pulling";
 }

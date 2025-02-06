@@ -1,6 +1,4 @@
-using Content.Shared.Alert;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Movement.Pulling.Components;
 
@@ -45,6 +43,4 @@ public sealed partial class PullableComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool BeingActivelyPushed = false;
-    [DataField]
-    public ProtoId<AlertPrototype> PulledAlert = "Pulled";
 }

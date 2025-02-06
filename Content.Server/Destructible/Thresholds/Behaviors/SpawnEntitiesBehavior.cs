@@ -1,11 +1,12 @@
 using System.Numerics;
 using Content.Shared.Forensics;
 using Content.Server.Stack;
-using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Prototypes;
 using Content.Shared.Stacks;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
+using Content.Server.Administration.Commands;
 
 namespace Content.Server.Destructible.Thresholds.Behaviors
 {
@@ -16,8 +17,8 @@ namespace Content.Server.Destructible.Thresholds.Behaviors
         /// <summary>
         ///     Entities spawned on reaching this threshold, from a min to a max.
         /// </summary>
-        [DataField]
-        public Dictionary<EntProtoId, MinMax> Spawn = new();
+        [DataField("spawn", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<MinMax, EntityPrototype>))]
+        public Dictionary<string, MinMax> Spawn { get; set; } = new();
 
         [DataField("offset")]
         public float Offset { get; set; } = 0.5f;

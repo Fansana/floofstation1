@@ -29,7 +29,6 @@ public sealed class ExplosionOverlay : Overlay
 
     protected override void Draw(in OverlayDrawArgs args)
     {
-        var appearanceSystem = _entMan.System<SharedAppearanceSystem>();
         var drawHandle = args.WorldHandle;
         drawHandle.UseShader(_shader);
 
@@ -42,7 +41,7 @@ public sealed class ExplosionOverlay : Overlay
             if (visuals.Epicenter.MapId != args.MapId)
                 continue;
 
-            if (!appearanceSystem.TryGetData(appearance.Owner, ExplosionAppearanceData.Progress, out int index))
+            if (!appearance.TryGetData(ExplosionAppearanceData.Progress, out int index))
                 continue;
 
             index = Math.Min(index, visuals.Intensity.Count - 1);

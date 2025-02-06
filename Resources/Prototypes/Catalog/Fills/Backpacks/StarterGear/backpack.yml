@@ -1,10 +1,10 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackFilled
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackClown
   id: ClothingBackpackClownFilled
   components:
@@ -15,7 +15,7 @@
       - id: CrayonRainbow
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSecurity
   id: ClothingBackpackSecurityFilled
   components:
@@ -24,7 +24,7 @@
       - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackBrigmedic
   id: ClothingBackpackBrigmedicFilled
   components:
@@ -40,7 +40,7 @@
       - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSecurity
   id: ClothingBackpackSecurityFilledDetective
   components:
@@ -52,12 +52,12 @@
 
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackMedical
   id: ClothingBackpackMedicalFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackMedical
   id: ClothingBackpackParamedicFilled
   components:
@@ -66,7 +66,7 @@
       - id: EmergencyRollerBedSpawnFolded
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackCaptain
   id: ClothingBackpackCaptainFilled
   components:
@@ -76,7 +76,7 @@
       #- name: StationCharter
       #- name: TelescopicBaton
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackEngineering
   id: ClothingBackpackChiefEngineerFilled
   components:
@@ -86,7 +86,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackScience
   id: ClothingBackpackResearchDirectorFilled
   components:
@@ -96,7 +96,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpack
   id: ClothingBackpackHOPFilled
   components:
@@ -106,7 +106,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackMedical
   id: ClothingBackpackCMOFilled
   components:
@@ -116,7 +116,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackCargo
   id: ClothingBackpackQuartermasterFilled
   components:
@@ -126,7 +126,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSecurity
   id: ClothingBackpackHOSFilled
   components:
@@ -136,32 +136,32 @@
       - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackEngineering
   id: ClothingBackpackEngineeringFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackAtmospherics
   id: ClothingBackpackAtmosphericsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackScience
   id: ClothingBackpackScienceFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackRobotics
   id: ClothingBackpackRoboticsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackHydroponics
   id: ClothingBackpackHydroponicsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackMime
   id: ClothingBackpackMimeFilled
   components:
@@ -170,22 +170,22 @@
       - id: RubberStampMime
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackChemistry
   id: ClothingBackpackChemistryFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpack
   id: ClothingBackpackChaplainFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpack
   id: ClothingBackpackMusicianFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpack
   id: ClothingBackpackLibrarianFilled
   components:
@@ -194,7 +194,7 @@
         - id: BookRandom
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpack
   id: ClothingBackpackDetectiveFilled
   components:
@@ -208,7 +208,7 @@
 # ERT
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTLeader
   id: ClothingBackpackERTLeaderFilled
   components:
@@ -223,7 +223,7 @@
         - id: MagazineMagnum
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackERTSecurityFilled
   components:
@@ -238,7 +238,7 @@
         - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTMedical
   id: ClothingBackpackERTMedicalFilled
   components:
@@ -253,7 +253,7 @@
         - id: EpinephrineChemistryBottle
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTEngineer
   id: ClothingBackpackERTEngineerFilled
   components:
@@ -272,7 +272,7 @@
         - id: SheetGlass
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTJanitor
   id: ClothingBackpackERTJanitorFilled
   components:
@@ -287,7 +287,7 @@
         - id: AdvMopItem
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackERTChaplain
   id: ClothingBackpackERTChaplainFilled
   components:
@@ -310,6 +310,7 @@
 # Death Squad
 
 - type: entity
+  noSpawn: false
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackDeathSquadFilled
   name: death squad backpack
@@ -336,12 +337,12 @@
 # Cargo
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackCargo
   id: ClothingBackpackCargoFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSalvage
   id: ClothingBackpackSalvageFilled
 

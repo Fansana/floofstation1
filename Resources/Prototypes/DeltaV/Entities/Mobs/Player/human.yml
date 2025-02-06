@@ -1,5 +1,5 @@
 - type: entity # Delta-V : Part of a mid-round PirateRadioSpawn
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: MobHumanSyndicateAgent
   id: MobHumanSyndicateListener
   name: Syndicate Listener

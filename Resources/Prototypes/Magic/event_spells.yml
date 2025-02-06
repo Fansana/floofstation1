@@ -2,7 +2,7 @@
   id: ActionSummonGhosts
   name: Summon Ghosts
   description: Makes all current ghosts permanently invisible
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: InstantAction
     useDelay: 120

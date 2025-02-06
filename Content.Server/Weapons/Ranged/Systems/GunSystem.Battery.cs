@@ -51,7 +51,7 @@ public sealed partial class GunSystem
 
         if (component.Shots != shots || component.Capacity != maxShots)
         {
-            Dirty(uid, component);
+            Dirty(component);
         }
 
         component.Shots = shots;

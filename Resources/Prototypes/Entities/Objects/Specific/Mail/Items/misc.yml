@@ -3,7 +3,7 @@
 - type: entity
   id: DelayedSmoke
   parent: BaseItem
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   name: delayed smoke
   suffix: "(10s)"
   components:
@@ -16,7 +16,7 @@
 
 - type: entity
   id: AdminInstantEffectEMP7
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   suffix: EMP, 7 meters
   parent: AdminInstantEffectBase
   components:
@@ -27,7 +27,7 @@
 - type: entity
   id: DelayedEMP
   parent: BaseItem
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   name: delayed EMP (7 meters)
   components:
   - type: Sprite #DeltaV: Apparently these want sprites, probably because they're baseitems

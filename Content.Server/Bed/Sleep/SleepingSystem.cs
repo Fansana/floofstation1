@@ -94,13 +94,8 @@ namespace Content.Server.Bed.Sleep
             if (!args.DamageIncreased || args.DamageDelta == null)
                 return;
 
-            /* Surgery needs this, sorry! If the nocturine gamers get too feisty
-            I'll probably just increase the threshold */
-
-            if (args.DamageDelta.GetTotal() >= component.WakeThreshold
-                && !HasComp<ForcedSleepingComponent>(uid))
+            if (args.DamageDelta.GetTotal() >= component.WakeThreshold)
                 TryWaking(uid, component);
-
         }
 
         private void OnSleepAction(EntityUid uid, MobStateComponent component, SleepActionEvent args)

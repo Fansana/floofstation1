@@ -18,9 +18,6 @@ namespace Content.Shared.Gravity
         [Dependency] private readonly AlertsSystem _alerts = default!;
         [Dependency] private readonly InventorySystem _inventory = default!;
 
-        [ValidatePrototypeId<AlertPrototype>]
-        public const string WeightlessAlert = "Weightless";
-
         public bool IsWeightless(EntityUid uid, PhysicsComponent? body = null, TransformComponent? xform = null)
         {
             Resolve(uid, ref body, false);
@@ -100,11 +97,11 @@ namespace Content.Shared.Gravity
 
                 if (!ev.HasGravity)
                 {
-                    _alerts.ShowAlert(uid, WeightlessAlert);
+                    _alerts.ShowAlert(uid, AlertType.Weightless);
                 }
                 else
                 {
-                    _alerts.ClearAlert(uid, WeightlessAlert);
+                    _alerts.ClearAlert(uid, AlertType.Weightless);
                 }
             }
         }
@@ -113,11 +110,11 @@ namespace Content.Shared.Gravity
         {
             if (IsWeightless(ev.Euid))
             {
-                _alerts.ShowAlert(ev.Euid, WeightlessAlert);
+                _alerts.ShowAlert(ev.Euid, AlertType.Weightless);
             }
             else
             {
-                _alerts.ClearAlert(ev.Euid, WeightlessAlert);
+                _alerts.ClearAlert(ev.Euid, AlertType.Weightless);
             }
         }
 
@@ -125,11 +122,11 @@ namespace Content.Shared.Gravity
         {
             if (IsWeightless(uid))
             {
-                _alerts.ShowAlert(uid, WeightlessAlert);
+                _alerts.ShowAlert(uid, AlertType.Weightless);
             }
             else
             {
-                _alerts.ClearAlert(uid, WeightlessAlert);
+                _alerts.ClearAlert(uid, AlertType.Weightless);
             }
         }
 

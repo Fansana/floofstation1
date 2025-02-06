@@ -1,7 +1,7 @@
 - type: entity
   id: AnomalySpawn
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 8
@@ -16,7 +16,7 @@
 - type: entity
   id: BluespaceArtifact
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 8
@@ -27,7 +27,7 @@
 - type: entity
   id: BluespaceLocker
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 2
@@ -39,7 +39,7 @@
 - type: entity
   id: BreakerFlip
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 7
@@ -50,7 +50,7 @@
 - type: entity
   id: BureaucraticError
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -62,7 +62,7 @@
 - type: entity
   id: ClericalError
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -74,7 +74,7 @@
 - type: entity
   parent: BaseGameRule
   id: ClosetSkeleton
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 5
@@ -86,7 +86,7 @@
 - type: entity
   parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   id: DragonSpawn
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 6.5
@@ -100,7 +100,7 @@
 - type: entity
   parent: BaseGameRuleSecurityRequirement # Floof - changed parent
   id: NinjaSpawn
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 6
@@ -113,7 +113,7 @@
 - type: entity
   parent: BaseGameRule
   id: RevenantSpawn
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 7.5
@@ -127,7 +127,7 @@
 #- type: entity
 #  id: FalseAlarm
 #  parent: BaseGameRule
-#  categories: [ HideSpawnMenu ]
+#  noSpawn: true
 #  components:
 #  - type: StationEvent
 #    weight: 15
@@ -137,7 +137,7 @@
 - type: entity
   id: GasLeak
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -149,7 +149,7 @@
 - type: entity
   id: KudzuGrowth
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 15
@@ -162,7 +162,7 @@
 - type: entity
   id: MeteorSwarm
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 30
@@ -181,7 +181,7 @@
 - type: entity
   id: MouseMigration
   parent: [VentCrittersBase, BaseGameRule] # Floof - reparented
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -206,7 +206,7 @@
 - type: entity
   id: CockroachMigration
   parent: [VentCrittersBase, BaseGameRule] # Floof - reparented
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -223,7 +223,7 @@
 - type: entity
   id: PowerGridCheck
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 5
@@ -238,7 +238,7 @@
 - type: entity
   id: RandomSentience
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 6
@@ -249,7 +249,7 @@
 - type: entity
   parent: BaseGameRule
   id: SolarFlare
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 8
@@ -276,7 +276,7 @@
 - type: entity
   id: VentClog
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -290,7 +290,7 @@
 - type: entity
   id: SlimesSpawn
   parent:  [VentCrittersBase, BaseGameRule] # Floof - reparented
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -311,7 +311,7 @@
 - type: entity
   id: SpiderSpawn
   parent: [VentCrittersBase, BaseGameRule] # Floof - reparented
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -328,7 +328,7 @@
 - type: entity
   id: SpiderClownSpawn
   parent: [VentCrittersBase, BaseGameRule] # Floof - reparented
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: true
@@ -350,7 +350,7 @@
 #- type: entity
 #  id: ZombieOutbreak
 #  parent: BaseGameRule
-#  categories: [ HideSpawnMenu ]
+#  noSpawn: true
 #  components:
 #  - type: StationEvent
 #    earliestStart: 60
@@ -385,7 +385,7 @@
 - type: entity
   id: LoneOpsSpawn
   parent: BaseGameRuleSecurityRequirement # Floof - changed parent
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 35
@@ -419,7 +419,7 @@
 - type: entity
   id: SleeperAgentsRule
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     earliestStart: 25
@@ -442,7 +442,7 @@
 - type: entity
   id: MassHallucinations
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     weight: 7
@@ -459,7 +459,7 @@
 - type: entity
   id: ImmovableRodSpawn
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: StationEvent
     startAnnouncement: false
@@ -470,7 +470,7 @@
   - type: ImmovableRodRule
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseGameRule
   id: IonStorm
   components:
@@ -483,7 +483,7 @@
 - type: entity
   id: MimicVendorRule
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
     - type: StationEvent
       earliestStart: 20 # Floof

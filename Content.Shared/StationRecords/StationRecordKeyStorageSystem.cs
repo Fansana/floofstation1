@@ -58,7 +58,7 @@ public sealed class StationRecordKeyStorageSystem : EntitySystem
 
         var key = keyStorage.Key;
         keyStorage.Key = null;
-        Dirty(uid, keyStorage);
+        Dirty(keyStorage);
 
         return key;
     }

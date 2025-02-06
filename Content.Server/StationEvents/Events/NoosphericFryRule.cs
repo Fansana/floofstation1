@@ -3,7 +3,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
-using Content.Shared.GameTicking.Components;
+using Content.Server.GameTicking.Components;
 using Content.Shared.Construction.EntitySystems;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Popups;
@@ -18,7 +18,6 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Psionics.Glimmer;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.Map.Components;
 
 namespace Content.Server.StationEvents.Events;
 
@@ -27,7 +26,7 @@ namespace Content.Server.StationEvents.Events;
 /// </summary>
 internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleComponent>
 {
-    [Dependency] private readonly SharedMapSystem _sharedMapSystem = default!;
+    [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
@@ -112,14 +111,10 @@ internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleCo
             {
                 var coordinates = xform.Coordinates;
                 var gridUid = xform.GridUid;
-
-                if (gridUid == null)
+                if (!_mapManager.TryGetGrid(gridUid, out var grid))
                     continue;
 
-                if (!TryComp<MapGridComponent>(gridUid, out var grid))
-                    continue;
-
-                var tileIndices = _sharedMapSystem.TileIndicesFor((EntityUid) gridUid, grid, coordinates);
+                var tileIndices = grid.TileIndicesFor(coordinates);
 
                 if (_anchorableSystem.TileFree(grid, tileIndices, physics.CollisionLayer, physics.CollisionMask))
                     _transformSystem.AnchorEntity(reactive, xform);

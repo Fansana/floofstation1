@@ -20,7 +20,6 @@ public sealed class LightningSystem : SharedLightningSystem
     [Dependency] private readonly BeamSystem _beam = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {
@@ -75,33 +74,28 @@ public sealed class LightningSystem : SharedLightningSystem
         //To Do: This is still pretty bad for perf but better than before and at least it doesn't re-allocate
         // several hashsets every time
 
-        var userCoords = _transform.GetMapCoordinates(user);
-        var targetEnts = _lookup.GetEntitiesInRange<LightningTargetComponent>(userCoords, range);
-        var targets = targetEnts.Select(x => x.Comp).ToList();
-
+        var targets = _lookup.GetComponentsInRange<LightningTargetComponent>(Transform(user).MapPosition, range).ToList();
         _random.Shuffle(targets);
         targets.Sort((x, y) => y.Priority.CompareTo(x.Priority));
 
-        int shotCount = 0;
+        int shootedCount = 0;
         int count = -1;
-
-        while (shotCount < boltCount)
+        while(shootedCount < boltCount)
         {
             count++;
 
             if (count >= targets.Count) { break; }
-            var curTarget = targets[count];
 
-            // Chance to ignore target
-            if (!_random.Prob(curTarget.HitProbability))
+            var curTarget = targets[count];
+            if (!_random.Prob(curTarget.HitProbability)) //Chance to ignore target
                 continue;
 
             ShootLightning(user, targets[count].Owner, lightningPrototype, triggerLightningEvents);
-
             if (arcDepth - targets[count].LightningResistance > 0)
+            {
                 ShootRandomLightnings(targets[count].Owner, range, 1, lightningPrototype, arcDepth - targets[count].LightningResistance, triggerLightningEvents);
-
-            shotCount++;
+            }
+            shootedCount++;
         }
     }
 }

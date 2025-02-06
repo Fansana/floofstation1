@@ -3,7 +3,7 @@
 - type: entity
   id: Ninja
   parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: GenericAntagRule
     agentName: ninja-round-end-agent-name
@@ -19,7 +19,7 @@
 
 # stores configuration for dragon
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseGameRule
   id: Dragon
   components:
@@ -30,7 +30,7 @@
     - DragonSurviveObjective
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseGameRule
   id: Thief
   components:
@@ -55,7 +55,7 @@
         sound: "/Audio/Misc/thief_greeting.ogg"
 
 #- type: entity
-#  categories: [ HideSpawnMenu ]
+#  noSpawn: true
 #  parent: BaseGameRule
 #  id: Exterminator
 #  components:

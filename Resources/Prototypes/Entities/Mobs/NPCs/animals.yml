@@ -398,8 +398,7 @@
         damageType: Blunt
         damage: 10
       behaviors:
-      - !type:GibBehavior
-        gibContents: Skip
+      - !type:GibBehavior { }
   - type: NonSpreaderZombie
   - type: LanguageKnowledge
     speaks: [Hissing]
@@ -571,11 +570,6 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation - moffroach my beloved
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 # Note that the mallard duck is actually a male drake mallard, with the brown duck being the female variant of the same species, however ss14 lacks sex specific textures
 # The white duck is more akin to a pekin or call duck.
@@ -658,11 +652,6 @@
     barkType: chicken # Duh
     barkMultiplier: 0.7
   - type: LeashAnchor # Floofstation
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 - type: entity
   name: white duck #Quack
@@ -919,11 +908,6 @@
     prototype: AnimalHemocyanin
   - type: RandomBark
     barkType: crab
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 - type: entity
   name: goat
@@ -1016,11 +1000,6 @@
     rootTask:
       task: RuminantHostileCompound
   - type: LeashAnchor # Floofstation
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 # Note that we gotta make this bitch vomit someday when you feed it anthrax or sumthin. Needs to be a small item thief too and aggressive if attacked.
 - type: entity
@@ -1183,8 +1162,6 @@
   abstract: true
   components:
   - type: CombatMode
-  - type: SurgeryTarget
-  - type: Targeting
   - type: Inventory
     templateId: monkey
     speciesId: monkey
@@ -1212,8 +1189,6 @@
     interfaces:
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1551,7 +1526,7 @@
 - type: entity
   name: guidebook monkey
   parent: MobMonkey
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   id: MobGuidebookMonkey
   description: A hopefully helpful monkey whose only purpose in life is for you to click on. Does this count as having a monkey give you a tutorial?
   components:
@@ -1722,11 +1697,6 @@
     whitelist:
       types:
       - Landmine
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 - type: entity
   parent: MobMouse
@@ -2357,11 +2327,6 @@
   - type: BloodSucker
     webRequired: true
   - type: Cocooner
-  - type: SurgeryTarget
-  - type: UserInterface
-    interfaces:
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
 
 - type: entity
   name: tarantula

@@ -91,7 +91,7 @@ public sealed class ClientAlertsSystem : AlertsSystem
         ClearAlerts?.Invoke(this, EventArgs.Empty);
     }
 
-    public void AlertClicked(ProtoId<AlertPrototype> alertType)
+    public void AlertClicked(AlertType alertType)
     {
         RaiseNetworkEvent(new ClickAlertEvent(alertType));
     }

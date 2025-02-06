@@ -2,7 +2,7 @@
   id: ActionKnock
   name: Knock
   description: This spell opens nearby doors.
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: InstantAction
     useDelay: 10

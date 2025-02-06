@@ -21,12 +21,12 @@ public sealed class FoldableSystem : EntitySystem
         SubscribeLocalEvent<FoldableComponent, GetVerbsEvent<AlternativeVerb>>(AddFoldVerb);
         SubscribeLocalEvent<FoldableComponent, AfterAutoHandleStateEvent>(OnHandleState);
 
-        SubscribeLocalEvent<FoldableComponent, MapInitEvent>(OnFoldableInit);
+        SubscribeLocalEvent<FoldableComponent, ComponentInit>(OnFoldableInit);
         SubscribeLocalEvent<FoldableComponent, ContainerGettingInsertedAttemptEvent>(OnInsertEvent);
         SubscribeLocalEvent<FoldableComponent, StoreMobInItemContainerAttemptEvent>(OnStoreThisAttempt);
         SubscribeLocalEvent<FoldableComponent, StorageOpenAttemptEvent>(OnFoldableOpenAttempt);
 
-        SubscribeLocalEvent<FoldableComponent, StrapAttemptEvent>(OnStrapAttempt);
+        SubscribeLocalEvent<FoldableComponent, BuckleAttemptEvent>(OnBuckleAttempt);
     }
 
     private void OnHandleState(EntityUid uid, FoldableComponent component, ref AfterAutoHandleStateEvent args)
@@ -34,7 +34,7 @@ public sealed class FoldableSystem : EntitySystem
         SetFolded(uid, component, component.IsFolded);
     }
 
-    private void OnFoldableInit(EntityUid uid, FoldableComponent component, MapInitEvent args)
+    private void OnFoldableInit(EntityUid uid, FoldableComponent component, ComponentInit args)
     {
         SetFolded(uid, component, component.IsFolded);
     }
@@ -53,9 +53,9 @@ public sealed class FoldableSystem : EntitySystem
             args.Cancelled = true;
     }
 
-    public void OnStrapAttempt(EntityUid uid, FoldableComponent comp, ref StrapAttemptEvent args)
+    public void OnBuckleAttempt(EntityUid uid, FoldableComponent comp, ref BuckleAttemptEvent args)
     {
-        if (comp.IsFolded)
+        if (args.Buckling && comp.IsFolded)
             args.Cancelled = true;
     }
 

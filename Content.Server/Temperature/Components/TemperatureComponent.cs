@@ -1,9 +1,7 @@
 using Content.Server.Temperature.Systems;
-using Content.Shared.Alert;
 using Content.Shared.Atmos;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
-using Robust.Shared.Prototypes;
 
 namespace Content.Server.Temperature.Components;
 
@@ -80,10 +78,4 @@ public sealed partial class TemperatureComponent : Component
     /// </summary>
     [DataField]
     public bool TakingDamage = false;
-
-    [DataField]
-    public ProtoId<AlertPrototype> HotAlert = "Hot";
-
-    [DataField]
-    public ProtoId<AlertPrototype> ColdAlert = "Cold";
 }

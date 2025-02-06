@@ -1,10 +1,10 @@
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelClown
   id: ClothingBackpackDuffelClownFilled
   components:
@@ -13,7 +13,7 @@
       - id: RubberStampClown
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelBrigmedic
   id: ClothingBackpackDuffelBrigmedicFilled
   components:
@@ -29,7 +29,7 @@
         amount: 2
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ClothingBackpackDuffelSecurityFilled
   components:
@@ -38,7 +38,7 @@
       - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ClothingBackpackDuffelSecurityFilledDetective
   components:
@@ -48,12 +48,12 @@
       - id: ForensicScanner
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelMedical
   id: ClothingBackpackDuffelMedicalFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelMedical
   id: ClothingBackpackDuffelParamedicFilled
   components:
@@ -62,7 +62,7 @@
       - id: EmergencyRollerBedSpawnFolded
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelCaptain
   id: ClothingBackpackDuffelCaptainFilled
   components:
@@ -73,7 +73,7 @@
       #- name: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelEngineering
   id: ClothingBackpackDuffelChiefEngineerFilled
   components:
@@ -83,7 +83,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelScience
   id: ClothingBackpackDuffelResearchDirectorFilled
   components:
@@ -93,7 +93,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelHOPFilled
   components:
@@ -103,7 +103,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelMedical
   id: ClothingBackpackDuffelCMOFilled
   components:
@@ -113,7 +113,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelCargo
   id: ClothingBackpackDuffelQuartermasterFilled
   components:
@@ -123,7 +123,7 @@
       #- id: TelescopicBaton
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelSecurity
   id: ClothingBackpackDuffelHOSFilled
   components:
@@ -133,32 +133,32 @@
       - id: MagazinePistol
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelEngineering
   id: ClothingBackpackDuffelEngineeringFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelAtmospherics
   id: ClothingBackpackDuffelAtmosphericsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelScience
   id: ClothingBackpackDuffelScienceFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelRobotics
   id: ClothingBackpackDuffelRoboticsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelHydroponics
   id: ClothingBackpackDuffelHydroponicsFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelMime
   id: ClothingBackpackDuffelMimeFilled
   components:
@@ -167,12 +167,12 @@
       - id: RubberStampMime
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelChemistry
   id: ClothingBackpackDuffelChemistryFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelChaplainFilled
   components:
@@ -182,7 +182,7 @@
       - id: RubberStampChaplain
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelMusicianFilled
   components:
@@ -192,7 +192,7 @@
         - id: SaxophoneInstrument
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelLibrarianFilled
   components:
@@ -201,7 +201,7 @@
         - id: BookRandom
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelDetectiveFilled
   components:
@@ -213,11 +213,11 @@
       - id: HandLabeler
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelCargo
   id: ClothingBackpackDuffelCargoFilled
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackDuffelSalvage
   id: ClothingBackpackDuffelSalvageFilled

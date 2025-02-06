@@ -14,7 +14,7 @@ public sealed class ParacusiaSystem : SharedParacusiaSystem
             return;
         }
         component.Sounds = sounds;
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     public void SetTime(EntityUid uid, float minTime, float maxTime, ParacusiaComponent? component = null)
@@ -25,7 +25,7 @@ public sealed class ParacusiaSystem : SharedParacusiaSystem
         }
         component.MinTimeBetweenIncidents = minTime;
         component.MaxTimeBetweenIncidents = maxTime;
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     public void SetDistance(EntityUid uid, float maxSoundDistance, ParacusiaComponent? component = null)
@@ -35,6 +35,6 @@ public sealed class ParacusiaSystem : SharedParacusiaSystem
             return;
         }
         component.MaxSoundDistance = maxSoundDistance;
-        Dirty(uid, component);
+        Dirty(component);
     }
 }

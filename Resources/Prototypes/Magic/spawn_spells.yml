@@ -2,7 +2,7 @@
   id: ActionSpawnMagicarpSpell
   name: Summon Magicarp
   description: This spell summons three Magi-Carp to your aid! May or may not turn on user.
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: WorldTargetAction
     useDelay: 10

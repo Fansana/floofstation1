@@ -21,10 +21,16 @@ namespace Content.Shared.CCVar
             CVarDef.Create("server.id", "unknown_server_id", CVar.REPLICATED | CVar.SERVER);
 
         /// <summary>
-        ///     Guide Entry Prototype ID to be displayed as the server rules.
+        ///     Name of the rules txt file in the "Resources/Server Info" dir. Include the extension.
         /// </summary>
         public static readonly CVarDef<string> RulesFile =
-            CVarDef.Create("server.rules_file", "FloofstationRuleset", CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("server.rules_file", "Rules.txt", CVar.REPLICATED | CVar.SERVER);
+
+        /// <summary>
+        ///     A loc string for what should be displayed as the title on the Rules window.
+        /// </summary>
+        public static readonly CVarDef<string> RulesHeader =
+            CVarDef.Create("server.rules_header", "ui-rules-header", CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Ambience
@@ -2065,13 +2071,7 @@ namespace Content.Shared.CCVar
         ///     Don't show rules to localhost/loopback interface.
         /// </summary>
         public static readonly CVarDef<bool> RulesExemptLocal =
-            CVarDef.Create("rules.exempt_local", true, CVar.CLIENT);
-
-        /// <summary>
-        /// The next time the rules will popup for this client, expressed in minutes
-        /// </summary>
-        public static readonly CVarDef<string> RulesNextPopupTime =
-            CVarDef.Create("rules.next_popup_time", "Jan 1, 1997", CVar.CLIENTONLY | CVar.ARCHIVE);
+            CVarDef.Create("rules.exempt_local", true, CVar.SERVERONLY);
 
 
         /*
@@ -2638,13 +2638,6 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> GhostAllowSameCharacter =
             CVarDef.Create("ghost.allow_same_character", false, CVar.SERVERONLY);
-
-        #endregion
-
-        #region Surgery
-
-        public static readonly CVarDef<bool> CanOperateOnSelf =
-            CVarDef.Create("surgery.can_operate_on_self", false, CVar.SERVERONLY);
 
         #endregion
 

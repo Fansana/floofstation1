@@ -1,8 +1,6 @@
-﻿using Content.Shared.Alert;
-using Content.Shared.Whitelist;
+﻿using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Silicons.Borgs.Components;
@@ -78,12 +76,6 @@ public sealed partial class BorgChassisComponent : Component
     [DataField("noMindState")]
     public string NoMindState = string.Empty;
     #endregion
-
-    [DataField]
-    public ProtoId<AlertPrototype> BatteryAlert = "BorgBattery";
-
-    [DataField]
-    public ProtoId<AlertPrototype> NoBatteryAlert = "BorgBatteryNone";
 }
 
 [Serializable, NetSerializable]

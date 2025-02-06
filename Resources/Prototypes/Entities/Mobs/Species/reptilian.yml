@@ -82,7 +82,7 @@
 - type: entity
   parent: BaseSpeciesDummy
   id: MobReptilianDummy
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   description: A dummy reptilian meant to be used in character setup.
   components:
   - type: HumanoidAppearance

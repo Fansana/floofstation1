@@ -144,7 +144,7 @@
 # Construction Frames
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   id: BaseGeneratorWallmountFrame
   name: wallmount generator frame
   description: A construction frame for a wallmount generator.

@@ -21,7 +21,7 @@ public sealed partial class ResearchSystem
         primaryDb.UnlockedTechnologies = otherDb.UnlockedTechnologies;
         primaryDb.UnlockedRecipes = otherDb.UnlockedRecipes;
 
-        Dirty(primaryUid, primaryDb);
+        Dirty(primaryDb);
 
         var ev = new TechnologyDatabaseModifiedEvent();
         RaiseLocalEvent(primaryUid, ref ev);
@@ -125,7 +125,7 @@ public sealed partial class ResearchSystem
                 continue;
             component.UnlockedRecipes.Add(unlock);
         }
-        Dirty(uid, component);
+        Dirty(component);
 
         var ev = new TechnologyDatabaseModifiedEvent();
         RaiseLocalEvent(uid, ref ev);
@@ -144,7 +144,7 @@ public sealed partial class ResearchSystem
             return;
 
         component.UnlockedRecipes.Add(recipe);
-        Dirty(uid, component);
+        Dirty(component);
 
         var ev = new TechnologyDatabaseModifiedEvent();
         RaiseLocalEvent(uid, ref ev);
@@ -185,6 +185,6 @@ public sealed partial class ResearchSystem
         component.SupportedDisciplines = new List<string>();
         component.UnlockedTechnologies = new List<string>();
         component.UnlockedRecipes = new List<string>();
-        Dirty(uid, component);
+        Dirty(component);
     }
 }

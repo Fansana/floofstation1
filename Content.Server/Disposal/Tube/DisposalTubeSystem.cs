@@ -31,9 +31,6 @@ namespace Content.Server.Disposal.Tube
         [Dependency] private readonly DisposableSystem _disposableSystem = default!;
         [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
         [Dependency] private readonly AtmosphereSystem _atmosSystem = default!;
-        [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
-        [Dependency] private readonly SharedMapSystem _mapSystem = default!;
-
         public override void Initialize()
         {
             base.Initialize();
@@ -340,7 +337,6 @@ namespace Content.Server.Disposal.Tube
         {
             if (!Resolve(target, ref targetTube))
                 return null;
-
             var oppositeDirection = nextDirection.GetOpposite();
 
             var xform = Transform(target);
@@ -348,18 +344,22 @@ namespace Content.Server.Disposal.Tube
                 return null;
 
             var position = xform.Coordinates;
-            var entities = _mapSystem.GetInDir((EntityUid) xform.GridUid, grid, position, nextDirection);
-
-            foreach (var entity in entities)
+            foreach (var entity in grid.GetInDir(position, nextDirection))
             {
                 if (!TryComp(entity, out DisposalTubeComponent? tube))
+                {
                     continue;
+                }
 
                 if (!CanConnect(entity, tube, oppositeDirection))
+                {
                     continue;
+                }
 
                 if (!CanConnect(target, targetTube, nextDirection))
+                {
                     continue;
+                }
 
                 return entity;
             }
@@ -422,8 +422,7 @@ namespace Content.Server.Disposal.Tube
                 return false;
 
             var xform = Transform(uid);
-            var mapCoords = _transformSystem.GetMapCoordinates(xform);
-            var holder = Spawn(DisposalEntryComponent.HolderPrototypeId, mapCoords);
+            var holder = Spawn(DisposalEntryComponent.HolderPrototypeId, xform.MapPosition);
             var holderComponent = Comp<DisposalHolderComponent>(holder);
 
             foreach (var entity in from.Container.ContainedEntities.ToArray())

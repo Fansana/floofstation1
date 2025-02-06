@@ -24,7 +24,7 @@ public abstract partial class SharedGravitySystem
                 ShakeGrid(uid, gravity);
                 comp.ShakeTimes--;
                 comp.NextShake += TimeSpan.FromSeconds(ShakeCooldown);
-                Dirty(uid, comp);
+                Dirty(comp);
             }
         }
     }
@@ -44,7 +44,7 @@ public abstract partial class SharedGravitySystem
         }
 
         shake.ShakeTimes = 10;
-        Dirty(uid, shake);
+        Dirty(shake);
     }
 
     protected virtual void ShakeGrid(EntityUid uid, GravityComponent? comp = null) {}

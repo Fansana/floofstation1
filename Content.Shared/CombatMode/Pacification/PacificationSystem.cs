@@ -7,6 +7,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Popups;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Timing;
 
 namespace Content.Shared.CombatMode.Pacification;
@@ -108,7 +109,7 @@ public sealed class PacificationSystem : EntitySystem
             _actionsSystem.SetEnabled(combatMode.CombatToggleActionEntity, false);
         }
 
-        _alertsSystem.ShowAlert(uid, component.PacifiedAlert);
+        _alertsSystem.ShowAlert(uid, AlertType.Pacified);
     }
 
     private void OnShutdown(EntityUid uid, PacifiedComponent component, ComponentShutdown args)
@@ -120,7 +121,7 @@ public sealed class PacificationSystem : EntitySystem
             _combatSystem.SetCanDisarm(uid, true, combatMode);
 
         _actionsSystem.SetEnabled(combatMode.CombatToggleActionEntity, true);
-        _alertsSystem.ClearAlert(uid, component.PacifiedAlert);
+        _alertsSystem.ClearAlert(uid, AlertType.Pacified);
     }
 
     private void OnBeforeThrow(Entity<PacifiedComponent> ent, ref BeforeThrowEvent args)

@@ -2,7 +2,7 @@
   id: OrganAnimalRuminantStomach
   parent: OrganAnimalStomach
   name: ruminant stomach
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: SolutionContainerManager
     solutions:

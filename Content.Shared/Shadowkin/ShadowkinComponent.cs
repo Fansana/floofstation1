@@ -1,6 +1,4 @@
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
-using Content.Shared.Alert;
 
 namespace Content.Shared.Shadowkin;
 
@@ -41,7 +39,4 @@ public sealed partial class ShadowkinComponent : Component
 
     [DataField]
     public EntityUid? ShadowkinSleepAction;
-
-    [DataField]
-    public ProtoId<AlertPrototype> ShadowkinPowerAlert = "ShadowkinPower";
 }

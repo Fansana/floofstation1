@@ -193,8 +193,6 @@
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
         requireInputValidation: false
-      enum.SurgeryUIKey.Key:
-        type: SurgeryBui
   - type: Puller
   - type: Speech
     speechSounds: Alto
@@ -225,8 +223,6 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-  - type: Targeting
-  - type: SurgeryTarget
   - type: FootPrints
   - type: Wagging
 

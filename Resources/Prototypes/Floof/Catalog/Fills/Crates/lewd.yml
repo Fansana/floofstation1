@@ -4,67 +4,36 @@
   name: sex toys crate
   description: Improve your station's mood by introducing some fun "toys"! Careful, work may plummet and the station may become a mess.
   components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:AllSelector
-        children:
-        - !type:EntSelector
-          id: LewdWand
-        - !type:EntSelector
-          id: LewdVibeGreen
-        - !type:EntSelector
-          id: LewdVibeTeal
-        - !type:EntSelector
-          id: LewdVibePink
-        - !type:EntSelector
-          id: LewdVibeRed
-        - !type:EntSelector
-          id: LewdVibeYellow
-        - !type:EntSelector
-          id: LewdFleshlightGreen
-        - !type:EntSelector
-          id: LewdFleshlightTeal
-        - !type:EntSelector
-          id: LewdFleshlightPink
-        - !type:EntSelector
-          id: LewdFleshlightRed
-        - !type:EntSelector
-          id: LewdFleshlightYellow
-        - !type:EntSelector
-          id: AvianDildo
-        - !type:GroupSelector
-          children:
-          - !type:EntSelector
-            id: CanineDildo
-          - !type:EntSelector
-            id: CanineDildoRed
-        - !type:EntSelector
-          id: HorseDildo
-        - !type:EntSelector
-          id: DragonDildo
-        - !type:EntSelector
-          id: NormalDildo
-        - !type:EntSelector
-          id: TentacleDildo
-        - !type:EntSelector
-          id: DoubleDildo
-        - !type:EntSelector
-          id: WhipPink
-        - !type:EntSelector
-          id: WhipTeal
-        - !type:EntSelector
-          id: WhipPinkCrotch
-        - !type:EntSelector
-          id: WhipTealCrotch
-        - !type:EntSelector
-          id: SpankPinkPaddle
-        - !type:EntSelector
-          id: SpankTealPaddle
-        - !type:EntSelector
-          id: DrinkCumBottleFull
-          amount: !type:ConstantNumberSelector { value: 2 }
-        - !type:EntSelector
-          id: LeashBasic
-          amount: !type:ConstantNumberSelector { value: 2 }
-        - !type:EntSelector
-          id: ClothingEyesHypnoVisor
+  - type: StorageFill
+    contents:
+      - id: LewdWand
+      - id: LewdVibeGreen
+      - id: LewdVibeTeal
+      - id: LewdVibePink
+      - id: LewdVibeRed
+      - id: LewdVibeYellow
+      - id: LewdFleshlightGreen
+      - id: LewdFleshlightTeal
+      - id: LewdFleshlightPink
+      - id: LewdFleshlightRed
+      - id: LewdFleshlightYellow
+      - id: AvianDildo
+      - id: CanineDildo
+        orGroup: canine
+      - id: CanineDildoRed
+        orGroup: canine
+      - id: HorseDildo
+      - id: DragonDildo
+      - id: NormalDildo
+      - id: TentacleDildo
+      - id: DoubleDildo
+      - id: WhipPink
+      - id: WhipTeal
+      - id: WhipPinkCrotch
+      - id: WhipTealCrotch
+      - id: SpankPinkPaddle
+      - id: SpankTealPaddle
+      - id: DrinkCumBottleFull
+        amount: 2
+      - id: LeashBasic
+        amount: 2

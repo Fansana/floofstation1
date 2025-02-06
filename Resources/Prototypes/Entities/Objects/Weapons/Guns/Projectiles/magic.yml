@@ -3,7 +3,7 @@
   name: fireball
   description: You better GITTAH WEIGH.
   parent: BulletRocket
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     color: "#E25822"
@@ -31,7 +31,7 @@
     fireStacks: 0.35
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseBulletTrigger
   id: ProjectileDragonsBreath
   name: dragon's breath
@@ -68,7 +68,7 @@
   name: fireball
   description: Hovering blob of flame.
   parent: ProjectileFireball
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 30
@@ -82,7 +82,7 @@
 - type: entity
   id: ProjectilePolyboltBase
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -99,7 +99,7 @@
   parent: ProjectilePolyboltBase
   name: carp polybolt
   description: Nooo, I don't wanna be fish!
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PolymorphOnCollide
     polymorph: WizardForcedCarp
@@ -112,7 +112,7 @@
   parent: ProjectilePolyboltBase
   name: monkey polybolt
   description: Nooo, I don't wanna be monkey!
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PolymorphOnCollide
     polymorph: WizardForcedMonkey
@@ -125,7 +125,7 @@
   parent: ProjectilePolyboltBase
   name: door polybolt
   description: Nooo, I don't wanna be door!
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -146,7 +146,7 @@
   name: healing bolt
   description: I COMMAND YOU TO LIVE!
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -166,7 +166,7 @@
   id: BulletInstakillMagic
   name: magical lead cylinder
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   description: This looks familiar.
   components:
   - type: Projectile
@@ -180,7 +180,7 @@
   parent: ProjectilePolyboltBase
   name: cluwne polybolt
   description: knoH KnoH!
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PolymorphOnCollide
     polymorph: WizardForcedCluwne
@@ -193,7 +193,7 @@
   parent: BaseBullet
   name: Icicle
   description: Brrrrr.
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/ice_anom.rsi
@@ -209,7 +209,7 @@
   id: ProjectilePolyboltBread
   name: bread polybolt
   description: Nooo, I don't wanna be bread!
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PolymorphOnCollide
     polymorph: BreadMorph

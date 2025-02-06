@@ -111,7 +111,7 @@
 # This empty parcel is allowed to exist and evade the tests for the admin
 # mailto command.
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseMail
   id: MailAdminFun
   suffix: adminfun

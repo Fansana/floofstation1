@@ -258,7 +258,6 @@
     - ActionFabricateGumball
   - type: SiliconLawProvider
     laws: Medical
-  - type: SurgeryTarget
 
 - type: entity
   id: BorgChassisService

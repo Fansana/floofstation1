@@ -1,4 +1,3 @@
-using Content.Shared.Alert;
 using Content.Shared.Ninja.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -54,7 +53,4 @@ public sealed partial class SpaceNinjaComponent : Component
     /// </summary>
     [DataField]
     public EntProtoId SpiderChargeObjective = "SpiderChargeObjective";
-
-    [DataField]
-    public ProtoId<AlertPrototype> SuitPowerAlert = "SuitPower";
 }

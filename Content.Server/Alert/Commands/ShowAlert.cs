@@ -9,7 +9,6 @@ namespace Content.Server.Alert.Commands
     [AdminCommand(AdminFlags.Debug)]
     public sealed class ShowAlert : IConsoleCommand
     {
-        [Dependency] private readonly IEntityManager _e = default!;
         public string Command => "showalert";
         public string Description => "Shows an alert for a player, defaulting to current player";
         public string Help => "showalert <alertType> <severity, -1 if no severity> <name or userID, omit for current player>";
@@ -39,8 +38,8 @@ namespace Content.Server.Alert.Commands
 
             var alertType = args[0];
             var severity = args[1];
-            var alertsSystem = _e.System<AlertsSystem>();
-            if (!alertsSystem.TryGet(alertType, out var alert))
+            var alertsSystem = EntitySystem.Get<AlertsSystem>();
+            if (!alertsSystem.TryGet(Enum.Parse<AlertType>(alertType), out var alert))
             {
                 shell.WriteLine("unrecognized alertType " + alertType);
                 return;
@@ -52,7 +51,7 @@ namespace Content.Server.Alert.Commands
             }
 
             short? severity1 = sevint == -1 ? null : sevint;
-            alertsSystem.ShowAlert(attachedEntity, alert.ID, severity1, null);
+            alertsSystem.ShowAlert(attachedEntity, alert.AlertType, severity1, null);
         }
     }
 }

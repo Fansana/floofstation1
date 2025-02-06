@@ -108,7 +108,7 @@
     mediumVoltageNode: ame
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: AmeController
   id: AmeControllerUnanchored
   suffix: Unanchored

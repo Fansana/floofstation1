@@ -52,7 +52,7 @@
 
 - type: entity
   id: HotPotatoEffect
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 0.6

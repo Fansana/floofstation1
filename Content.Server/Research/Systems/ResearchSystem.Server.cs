@@ -18,7 +18,7 @@ public sealed partial class ResearchSystem
         var unusedId = EntityQuery<ResearchServerComponent>(true)
             .Max(s => s.Id) + 1;
         component.Id = unusedId;
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     private void OnServerShutdown(EntityUid uid, ResearchServerComponent component, ComponentShutdown args)
@@ -74,7 +74,7 @@ public sealed partial class ResearchSystem
         SyncClientWithServer(client, clientComponent: clientComponent);
 
         if (dirtyServer)
-            Dirty(server, serverComponent);
+            Dirty(serverComponent);
 
         var ev = new ResearchRegistrationChangedEvent(server);
         RaiseLocalEvent(client, ref ev);
@@ -117,7 +117,7 @@ public sealed partial class ResearchSystem
 
         if (dirtyServer)
         {
-            Dirty(server, serverComponent);
+            Dirty(serverComponent);
         }
 
         var ev = new ResearchRegistrationChangedEvent(null);
@@ -167,6 +167,6 @@ public sealed partial class ResearchSystem
         {
             RaiseLocalEvent(client, ref ev);
         }
-        Dirty(uid, component);
+        Dirty(component);
     }
 }

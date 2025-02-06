@@ -1,6 +1,6 @@
 # PSB, Prepacked Sustenance Bar. With variety.
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: FoodPacketTrash
   id: FoodPSBTrash
   name: psb wrapper

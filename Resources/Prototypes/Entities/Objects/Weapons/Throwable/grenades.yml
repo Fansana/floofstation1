@@ -83,7 +83,7 @@
 
 - type: entity
   id: GrenadeFlashEffect
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
     - type: PointLight
       enabled: true
@@ -125,7 +125,7 @@
   description: Go out on your own terms!
   parent: GrenadeBase
   id: SelfDestructSeq
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: ExplodeOnTrigger
   - type: Explosive

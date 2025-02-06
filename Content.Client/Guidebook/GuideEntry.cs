@@ -39,9 +39,6 @@ public class GuideEntry
     ///     If the guide is the child of some other guide, the order simply determined by the order of children in <see cref="Children"/>.
     /// </summary>
     [DataField("priority")] public int Priority = 0;
-
-    // Floof
-    [DataField] public bool DefaultCollapsed = false;
 }
 
 [Prototype("guideEntry")]

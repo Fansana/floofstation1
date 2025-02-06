@@ -67,7 +67,7 @@ public sealed class HungerSystem : EntitySystem
 
     private void OnShutdown(EntityUid uid, HungerComponent component, ComponentShutdown args)
     {
-        _alerts.ClearAlertCategory(uid, component.HungerAlertCategory);
+        _alerts.ClearAlertCategory(uid, AlertCategory.Hunger);
     }
 
     private void OnRefreshMovespeed(EntityUid uid, HungerComponent component, RefreshMovementSpeedModifiersEvent args)
@@ -112,7 +112,7 @@ public sealed class HungerSystem : EntitySystem
             component.Thresholds[HungerThreshold.Dead],
             component.Thresholds[HungerThreshold.Overfed]);
         UpdateCurrentThreshold(uid, component);
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     private void UpdateCurrentThreshold(EntityUid uid, HungerComponent? component = null)
@@ -125,7 +125,7 @@ public sealed class HungerSystem : EntitySystem
             return;
         component.CurrentThreshold = calculatedHungerThreshold;
         DoHungerThresholdEffects(uid, component);
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     private void DoHungerThresholdEffects(EntityUid uid, HungerComponent? component = null, bool force = false)
@@ -153,7 +153,7 @@ public sealed class HungerSystem : EntitySystem
         }
         else
         {
-            _alerts.ClearAlertCategory(uid, component.HungerAlertCategory);
+            _alerts.ClearAlertCategory(uid, AlertCategory.Hunger);
         }
 
         if (component.HungerThresholdDecayModifiers.TryGetValue(component.CurrentThreshold, out var modifier))

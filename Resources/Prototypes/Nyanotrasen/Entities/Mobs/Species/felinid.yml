@@ -90,5 +90,5 @@
   name: Urist McHands
   parent: MobHumanDummy
   id: MobFelinidDummy
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   description: A dummy felinid meant to be used in character setup.

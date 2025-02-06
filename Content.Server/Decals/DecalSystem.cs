@@ -89,11 +89,10 @@ namespace Content.Server.Decals
                 playerData.Clear();
             }
 
-            var query = EntityQueryEnumerator<DecalGridComponent, MetaDataComponent>();
-            while (query.MoveNext(out var uid, out var grid, out var meta))
+            foreach (var (grid, meta) in EntityQuery<DecalGridComponent, MetaDataComponent>(true))
             {
                 grid.ForceTick = _timing.CurTick;
-                Dirty(uid, grid, meta);
+                Dirty(grid, meta);
             }
         }
 

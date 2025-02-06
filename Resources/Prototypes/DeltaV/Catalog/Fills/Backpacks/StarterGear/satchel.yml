@@ -1,5 +1,5 @@
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSatchelMedical
   id: ClothingBackpackSatchelParamedicFilledDV
   components:
@@ -10,7 +10,7 @@
       - id: Portafib
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSatchelMedical
   id: ClothingBackpackSatchelPsychologistFilled
   components:
@@ -20,7 +20,7 @@
 
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: ClothingBackpackSatchel
   id: ClothingBackpackSatchelLawyerFilled
   components:

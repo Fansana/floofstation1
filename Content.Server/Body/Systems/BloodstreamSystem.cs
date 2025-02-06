@@ -280,9 +280,6 @@ public sealed class BloodstreamSystem : EntitySystem
         Entity<BloodstreamComponent> ent,
         ref ApplyMetabolicMultiplierEvent args)
     {
-        // TODO REFACTOR THIS
-        // This will slowly drift over time due to floating point errors.
-        // Instead, raise an event with the base rates and allow modifiers to get applied to it.
         if (args.Apply)
         {
             ent.Comp.UpdateInterval *= args.Multiplier;
@@ -415,11 +412,11 @@ public sealed class BloodstreamSystem : EntitySystem
         component.BleedAmount = Math.Clamp(component.BleedAmount, 0, component.MaxBleedAmount);
 
         if (component.BleedAmount == 0)
-            _alertsSystem.ClearAlert(uid, component.BleedingAlert);
+            _alertsSystem.ClearAlert(uid, AlertType.Bleed);
         else
         {
             var severity = (short) Math.Clamp(Math.Round(component.BleedAmount, MidpointRounding.ToZero), 0, 10);
-            _alertsSystem.ShowAlert(uid, component.BleedingAlert, severity);
+            _alertsSystem.ShowAlert(uid, AlertType.Bleed, severity);
         }
 
         return true;

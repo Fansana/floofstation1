@@ -13,6 +13,6 @@ public sealed partial class GunSystem
             return;
 
         component.CurrentIndex = index;
-        Dirty(revolverUid, component);
+        Dirty(component);
     }
 }

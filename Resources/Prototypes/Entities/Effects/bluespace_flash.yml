@@ -1,6 +1,6 @@
 - type: entity
   id: EffectFlashBluespace
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 10.5
@@ -14,7 +14,7 @@
 
 - type: entity
   id: EffectFlashTelekineticPulse
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 10
@@ -28,7 +28,7 @@
 
 - type: entity
   id: EffectFlashShadeskip
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 5
@@ -42,7 +42,7 @@
 
 - type: entity
   id: EffectFlashShadowkinShadeskip
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 5
@@ -56,7 +56,7 @@
 
 - type: entity
   id: EffectFlashShadowkinDarkSwapOn
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 5
@@ -70,7 +70,7 @@
 
 - type: entity
   id: EffectFlashShadowkinDarkSwapOff
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: PointLight
     radius: 5
@@ -84,7 +84,7 @@
 
 - type: entity
   id: EffectPyrokineticFlare
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
     - type: Sprite
       sprite: /Textures/Interface/Actions/psionics.rsi

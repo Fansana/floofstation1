@@ -20,7 +20,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Utility;
 using Robust.Shared.Configuration;
-using Robust.Shared.Map.Components;
 
 namespace Content.Server.Cargo.Systems;
 
@@ -92,7 +91,14 @@ public sealed partial class CargoSystem
     }
 
     private void OnPalletUIOpen(EntityUid uid, CargoPalletConsoleComponent component, BoundUIOpenedEvent args)
-        => UpdatePalletConsoleInterface(uid);
+    {
+        var player = args.Actor;
+
+        if (player == null)
+            return;
+
+        UpdatePalletConsoleInterface(uid);
+    }
 
     /// <summary>
     /// Ok so this is just the same thing as opening the UI, its a refresh button.
@@ -103,10 +109,20 @@ public sealed partial class CargoSystem
     /// </summary>
 
     private void OnPalletAppraise(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletAppraiseMessage args)
-        => UpdatePalletConsoleInterface(uid);
+    {
+        var player = args.Actor;
+
+        if (player == null)
+            return;
+
+        UpdatePalletConsoleInterface(uid);
+    }
 
     private void OnCargoShuttleConsoleStartup(EntityUid uid, CargoShuttleConsoleComponent component, ComponentStartup args)
-        => UpdateShuttleState(uid, _station.GetOwningStation(uid));
+    {
+        var station = _station.GetOwningStation(uid);
+        UpdateShuttleState(uid, station);
+    }
 
     private void UpdateShuttleState(EntityUid uid, EntityUid? station = null)
     {
@@ -323,6 +339,10 @@ public sealed partial class CargoSystem
     private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args)
     {
         var player = args.Actor;
+
+        if (player == null)
+            return;
+
         var xform = Transform(uid);
 
         if (xform.GridUid is not EntityUid gridUid)
@@ -360,7 +380,7 @@ public sealed partial class CargoSystem
 
     private void CleanupTradeStation()
     {
-        if (CargoMap == null || !_sharedMapSystem.MapExists(CargoMap.Value))
+        if (CargoMap == null || !_mapManager.MapExists(CargoMap.Value))
         {
             CargoMap = null;
             DebugTools.Assert(!EntityQuery<CargoShuttleComponent>().Any());
@@ -373,14 +393,13 @@ public sealed partial class CargoSystem
 
     private void SetupTradePost()
     {
-        if (CargoMap != null && _sharedMapSystem.MapExists(CargoMap.Value))
+        if (CargoMap != null && _mapManager.MapExists(CargoMap.Value))
         {
             return;
         }
 
         // It gets mapinit which is okay... buuutt we still want it paused to avoid power draining.
-        var mapEntId = _mapSystem.CreateMap();
-        CargoMap = _entityManager.GetComponent<MapComponent>(mapEntId).MapId;
+        CargoMap = _mapManager.CreateMap();
 
         var options = new MapLoadOptions
         {
@@ -401,12 +420,11 @@ public sealed partial class CargoSystem
             var shuttleComponent = EnsureComp<ShuttleComponent>(grid);
             shuttleComponent.AngularDamping = 10000;
             shuttleComponent.LinearDamping = 10000;
-            Dirty(grid, shuttleComponent);
+            Dirty(shuttleComponent);
         }
 
-        var mapUid = _sharedMapSystem.GetMap(CargoMap.Value);
-        var ftl = EnsureComp<FTLDestinationComponent>(mapUid);
-
+        var mapUid = _mapManager.GetMapEntityId(CargoMap.Value);
+        var ftl = EnsureComp<FTLDestinationComponent>(_mapManager.GetMapEntityId(CargoMap.Value));
         ftl.Whitelist = new EntityWhitelist()
         {
             Components =

@@ -62,7 +62,7 @@
         state: narsian
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   id: SpawnPointGhostNukeOperative
   name: ghost role spawn point
   suffix: nukeops
@@ -82,7 +82,7 @@
         state: radiation
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   id: SpawnPointLoneNukeOperative
   name: ghost role spawn point
   suffix: loneops
@@ -111,7 +111,7 @@
 - type: entity
   parent: MarkerBase
   id: SpawnPointGhostDragon
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   name: ghost role spawn point
   suffix: dragon
   components:

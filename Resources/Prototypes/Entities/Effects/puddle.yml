@@ -187,17 +187,17 @@
       color: "#FFFFFF80"
     - type: Physics
       bodyType: Static
-#    - type: Fixtures # Floof - hell nah
-#      fixtures:
-#        slipFixture:
-#          shape:
-#            !type:PhysShapeAabb
-#            bounds: "-0.4,-0.4,0.4,0.4"
-#          mask:
-#            - ItemMask
-#          layer:
-#            - SlipLayer
-#          hard: false
+    - type: Fixtures
+      fixtures:
+        slipFixture:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.4,-0.4,0.4,0.4"
+          mask:
+            - ItemMask
+          layer:
+            - SlipLayer
+          hard: false
     - type: SolutionContainerManager
       solutions:
         step: { maxVol: 2 }

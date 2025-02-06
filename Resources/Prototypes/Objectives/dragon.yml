@@ -13,7 +13,7 @@
       - DragonRole
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseDragonObjective
   id: CarpRiftsObjective
   components:
@@ -30,7 +30,7 @@
   - type: CarpRiftsCondition
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: [BaseDragonObjective, BaseSurviveObjective]
   id: DragonSurviveObjective
   name: Survive

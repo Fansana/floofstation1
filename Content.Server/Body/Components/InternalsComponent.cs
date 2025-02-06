@@ -1,6 +1,3 @@
-using Content.Shared.Alert;
-using Robust.Shared.Prototypes;
-
 namespace Content.Server.Body.Components
 {
     /// <summary>
@@ -21,8 +18,5 @@ namespace Content.Server.Body.Components
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField]
         public TimeSpan Delay = TimeSpan.FromSeconds(3);
-
-        [DataField]
-        public ProtoId<AlertPrototype> InternalsAlert = "Internals";
     }
 }

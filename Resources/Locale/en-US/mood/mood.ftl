@@ -68,8 +68,6 @@ mood-effect-NicotineBenefit =
 mood-effect-NicotineWithdrawal =
     I could really go for a smoke right now.
 
-# Surgery
-mood-effect-SurgeryPain = The surgery hurts.
 # Drugs
 mood-effect-EthanolBenefit =
     I feel so relaxed from drinking.

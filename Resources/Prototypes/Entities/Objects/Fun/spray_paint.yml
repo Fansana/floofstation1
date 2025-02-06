@@ -4,7 +4,7 @@
   id: PaintBase
   name: spray paint
   description: A tin of spray paint.
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Appearance
   - type: Sprite
@@ -290,57 +290,3 @@
         enum.OpenableVisuals.Layer:
           True: {state: "spray_colors" , color: "#f2f2f2"}
           False: {state: "spray_cap_colors" , color: "#f2f2f2"}
-
-# ======================================== #
-# Floof - Spray paint loot table & spawner #
-- type: entityTable
-  id: SprayPaintTable
-  table: !type:GroupSelector
-    children:
-    # Common Group
-    - !type:GroupSelector
-      weight: 75
-      children:
-      - !type:EntSelector
-        id: SprayPaintRed
-      - !type:EntSelector
-        id: SprayPaintBlue
-      - !type:EntSelector
-        id: SprayPaintGreen
-      - !type:EntSelector
-        id: SprayPaintBlack
-      - !type:EntSelector
-        id: SprayPaintOrange
-      - !type:EntSelector
-        id: SprayPaintPurple
-      - !type:EntSelector
-        id: SprayPaintWhite
-    # Uncommon Group
-    - !type:GroupSelector
-      weight: 25
-      children:
-      - !type:EntSelector
-        id: DeathPaint
-      - !type:EntSelector
-        id: DeathPaintTwo
-      - !type:EntSelector
-        id: FunnyPaint
-        weight: 0.5
-
-- type: entity
-  name: Spray Paint Spawner
-  suffix: 1, 60%
-  id: SprayPaintSpawner
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: red
-    - sprite: Objects/Fun/spraycans.rsi
-      state: death2
-  - type: EntityTableSpawner
-    table: !type:NestedSelector
-      tableId: SprayPaintTable
-      prob: 0.6
-# Floof section end
-# ======================================== #

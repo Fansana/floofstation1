@@ -17,8 +17,7 @@ public sealed class LegsParalyzedSystem : EntitySystem
     {
         SubscribeLocalEvent<Components.LegsParalyzedComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<Components.LegsParalyzedComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<Components.LegsParalyzedComponent, BuckledEvent>(OnBuckled);
-        SubscribeLocalEvent<Components.LegsParalyzedComponent, UnbuckledEvent>(OnUnbuckled);
+        SubscribeLocalEvent<Components.LegsParalyzedComponent, BuckleChangeEvent>(OnBuckleChange);
         SubscribeLocalEvent<Components.LegsParalyzedComponent, ThrowPushbackAttemptEvent>(OnThrowPushbackAttempt);
         SubscribeLocalEvent<Components.LegsParalyzedComponent, UpdateCanMoveEvent>(OnUpdateCanMoveEvent);
     }
@@ -35,11 +34,25 @@ public sealed class LegsParalyzedSystem : EntitySystem
         _bodySystem.UpdateMovementSpeed(uid);
     }
 
-    private void OnBuckled(EntityUid uid, Components.LegsParalyzedComponent component, ref BuckledEvent args) => _standingSystem.Stand(uid);
+    private void OnBuckleChange(EntityUid uid, Components.LegsParalyzedComponent component, ref BuckleChangeEvent args)
+    {
+        if (args.Buckling)
+        {
+            _standingSystem.Stand(args.BuckledEntity);
+        }
+        else
+        {
+            _standingSystem.Down(args.BuckledEntity);
+        }
+    }
 
-    private void OnUnbuckled(EntityUid uid, Components.LegsParalyzedComponent component, ref UnbuckledEvent args) => _standingSystem.Down(uid);
+    private void OnUpdateCanMoveEvent(EntityUid uid, Components.LegsParalyzedComponent component, UpdateCanMoveEvent args)
+    {
+        args.Cancel();
+    }
 
-    private void OnUpdateCanMoveEvent(EntityUid uid, Components.LegsParalyzedComponent component, UpdateCanMoveEvent args) => args.Cancel();
-
-    private void OnThrowPushbackAttempt(EntityUid uid, Components.LegsParalyzedComponent component, ThrowPushbackAttemptEvent args) => args.Cancel();
+    private void OnThrowPushbackAttempt(EntityUid uid, Components.LegsParalyzedComponent component, ThrowPushbackAttemptEvent args)
+    {
+        args.Cancel();
+    }
 }

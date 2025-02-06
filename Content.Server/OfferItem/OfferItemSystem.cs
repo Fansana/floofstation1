@@ -39,11 +39,11 @@ public sealed class OfferItemSystem : SharedOfferItemSystem
 
             if (!offerItem.IsInReceiveMode)
             {
-                _alertsSystem.ClearAlert(uid, offerItem.OfferAlert);
+                _alertsSystem.ClearAlert(uid, AlertType.Offer);
                 continue;
             }
 
-            _alertsSystem.ShowAlert(uid, offerItem.OfferAlert);
+            _alertsSystem.ShowAlert(uid, AlertType.Offer);
         }
     }
 

@@ -34,7 +34,7 @@
 
 - type: entity
   id: ActionRgbLight
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: EntityTargetAction
     whitelist: { components: [ PointLight ] }

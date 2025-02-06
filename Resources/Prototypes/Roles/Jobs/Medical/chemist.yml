@@ -14,8 +14,6 @@
   - !type:AddComponentSpecial
     components:
     - type: CPRTraining
-    - type: SurgerySpeedModifier
-      SpeedModifier: 1.75
 
 - type: startingGear
   id: ChemistGear

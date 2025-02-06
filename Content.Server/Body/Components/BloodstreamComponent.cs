@@ -2,7 +2,6 @@ using Content.Server.Body.Systems;
 using Content.Server.Chemistry.EntitySystems;
 using Content.Server.Traits;
 using Content.Server.Traits.Assorted;
-using Content.Shared.Alert;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
@@ -182,8 +181,5 @@ namespace Content.Server.Body.Components
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         public TimeSpan StatusTime;
-
-        [DataField]
-        public ProtoId<AlertPrototype> BleedingAlert = "Bleed";
     }
 }

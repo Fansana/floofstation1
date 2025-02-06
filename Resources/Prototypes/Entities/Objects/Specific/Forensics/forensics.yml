@@ -21,7 +21,7 @@
 
 - type: entity
   id: ScentTrackEffect
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: TimedDespawn
     lifetime: 1

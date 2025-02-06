@@ -29,11 +29,11 @@ public sealed class MagbootsSystem : SharedMagbootsSystem
 
         if (state)
         {
-            _alerts.ShowAlert(parent, component.MagbootsAlert);
+            _alerts.ShowAlert(parent, AlertType.Magboots);
         }
         else
         {
-            _alerts.ClearAlert(parent, component.MagbootsAlert);
+            _alerts.ClearAlert(parent, AlertType.Magboots);
         }
     }
 

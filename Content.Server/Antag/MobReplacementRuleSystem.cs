@@ -1,8 +1,11 @@
 using System.Numerics;
 using Content.Server.Antag.Mimic;
+using Content.Server.Chat.Systems;
 using Content.Server.GameTicking.Rules;
-using Content.Server.GameTicking.Rules.Components;
-using Content.Shared.GameTicking.Components;
+using Content.Server.GameTicking.Components;
+using Content.Server.NPC.Systems;
+using Content.Server.Station.Systems;
+using Content.Server.GameTicking;
 using Content.Shared.VendingMachines;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -20,10 +23,6 @@ using Content.Server.Advertise.EntitySystems;
 using Content.Server.Advertise.Components;
 using Content.Server.Power.Components;
 using Content.Shared.CombatMode;
-using Content.Server.Station.Systems;
-using Content.Server.GameTicking;
-using Content.Server.Chat.Systems;
-using Content.Server.NPC.Systems;
 
 namespace Content.Server.Antag;
 

@@ -33,4 +33,4 @@
 - type: entity
   parent: BaseSpeciesDummy
   id: MobHumanDummy
-  categories: [ HideSpawnMenu ]
+  noSpawn: true

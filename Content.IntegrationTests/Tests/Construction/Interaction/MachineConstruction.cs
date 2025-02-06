@@ -14,8 +14,9 @@ public sealed class MachineConstruction : InteractionTest
     public async Task ConstructProtolathe()
     {
         await StartConstruction(MachineFrame);
-        await InteractUsing(Steel, 5);
-        ClientAssertPrototype(Unfinished, Target);
+        await Interact(Steel, 5);
+        ClientAssertPrototype(Unfinished, ClientTarget);
+        Target = CTestSystem.Ghosts[ClientTarget!.Value.GetHashCode()];
         await Interact(Wrench, Cable);
         AssertPrototype(MachineFrame);
         await Interact(ProtolatheBoard, Bin1, Bin1, Manipulator1, Manipulator1, Beaker, Beaker, Screw);
@@ -50,7 +51,7 @@ public sealed class MachineConstruction : InteractionTest
         AssertPrototype(MachineFrame);
 
         // Change it into an autolathe
-        await InteractUsing("AutolatheMachineCircuitboard");
+        await Interact("AutolatheMachineCircuitboard");
         AssertPrototype(MachineFrame);
         await Interact(Bin1, Bin1, Bin1, Manipulator1, Glass, Screw);
         AssertPrototype("Autolathe");

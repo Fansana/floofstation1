@@ -54,7 +54,6 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
-    [Dependency] private readonly SharedMapSystem _sharedMapSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
 
     public override void Initialize()
@@ -311,7 +310,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
         if (!args.Powered)
         {
             component.NextFlush = null;
-            Dirty(uid, component);
+            Dirty(component);
             return;
         }
 
@@ -367,7 +366,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
         component.State = state;
         UpdateVisualState(uid, component);
         UpdateInterface(uid, component, component.Powered);
-        Dirty(uid, component, metadata);
+        Dirty(component, metadata);
 
         if (state == DisposalsPressureState.Ready)
         {
@@ -448,7 +447,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
         }
 
         if (count != component.RecentlyEjected.Count)
-            Dirty(uid, component, metadata);
+            Dirty(component, metadata);
     }
 
     public bool TryInsert(EntityUid unitId, EntityUid toInsertId, EntityUid? userId, DisposalUnitComponent? unit = null)
@@ -517,7 +516,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
             return false;
 
         var coords = xform.Coordinates;
-        var entry = _sharedMapSystem.GetLocal((EntityUid) xform.GridUid, grid, coords)
+        var entry = grid.GetLocal(coords)
             .FirstOrDefault(HasComp<DisposalEntryComponent>);
 
         if (entry == default || component is not DisposalUnitComponent sDisposals)
@@ -755,7 +754,7 @@ public sealed class DisposalUnitSystem : SharedDisposalUnitSystem
         var flushTime = TimeSpan.FromSeconds(Math.Min((component.NextFlush ?? TimeSpan.MaxValue).TotalSeconds, automaticTime.TotalSeconds));
 
         component.NextFlush = flushTime;
-        Dirty(uid, component);
+        Dirty(component);
     }
 
     public void AfterInsert(EntityUid uid, SharedDisposalUnitComponent component, EntityUid inserted, EntityUid? user = null, bool doInsert = false)

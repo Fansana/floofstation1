@@ -460,16 +460,11 @@ namespace Content.Server.GameTicking
         public EntityCoordinates GetObserverSpawnPoint()
         {
             _possiblePositions.Clear();
-            var spawnPointQuery = EntityManager.EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
-            while (spawnPointQuery.MoveNext(out var uid, out var point, out var transform))
+
+            foreach (var (point, transform) in EntityManager.EntityQuery<SpawnPointComponent, TransformComponent>(true))
             {
-                if (point.SpawnType != SpawnPointType.Observer
-                   || TerminatingOrDeleted(uid)
-                   || transform.MapUid == null
-                   || TerminatingOrDeleted(transform.MapUid.Value))
-                {
+                if (point.SpawnType != SpawnPointType.Observer)
                     continue;
-                }
 
                 _possiblePositions.Add(transform.Coordinates);
             }
@@ -511,9 +506,7 @@ namespace Content.Server.GameTicking
 
             if (_mapManager.MapExists(DefaultMap))
             {
-                var mapUid = _mapManager.GetMapEntityId(DefaultMap);
-                if (!TerminatingOrDeleted(mapUid))
-                    return new EntityCoordinates(mapUid, Vector2.Zero);
+                return new EntityCoordinates(_mapManager.GetMapEntityId(DefaultMap), Vector2.Zero);
             }
 
             // Just pick a point at this point I guess.

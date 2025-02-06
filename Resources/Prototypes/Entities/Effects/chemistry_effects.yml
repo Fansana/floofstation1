@@ -36,7 +36,7 @@
   parent: BaseFoam
   id: Smoke
   name: smoke
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Occluder
   - type: Sprite
@@ -52,7 +52,7 @@
   parent: BaseFoam
   id: Foam
   name: foam
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   components:
   - type: Sprite
     color: "#ffffffcc"
@@ -87,7 +87,7 @@
 - type: entity
   id: MetalFoam
   name: metal foam
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: Foam
   components:
   - type: Sprite
@@ -111,7 +111,7 @@
 - type: entity
   id: IronMetalFoam
   name: iron metal foam
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: MetalFoam
   components:
   - type: SpawnOnDespawn
@@ -120,7 +120,7 @@
 - type: entity
   id: AluminiumMetalFoam
   name: aluminium metal foam
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: MetalFoam
   components:
   - type: SpawnOnDespawn

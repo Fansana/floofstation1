@@ -1,6 +1,6 @@
 # Base Nyano Mail
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseMail
   id: MailCommandPinpointerNuclear
   suffix: pinpointer mail ops
@@ -10,7 +10,7 @@
     - id: PinpointerNuclear
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseMail
   id: MailStationRepNFNukeDisk
   suffix: nuke disk
@@ -22,7 +22,7 @@
       - id: PaperMailNFAntivirus
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  noSpawn: true
   parent: BaseMail
   id: MailCommandNFPipebombIntern
   suffix: pipe and bomb
