@@ -1,6 +1,6 @@
 using Content.Server.Antag;
 using Content.Server.Communications;
-using Content.Server.GameTicking.Components; // TODO: Shared when upstream merged
+using Content.Shared.GameTicking.Components; // Floofstation - GameTicking got moved to Shared
 using Content.Server.Paper;
 using Content.Server.StationEvents.Components;
 using Content.Shared.Ghost;
