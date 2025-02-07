@@ -1,12 +1,11 @@
 - type: constructionGraph
-  id: Cyborg
+  id: Qborg
   start: start
   graph:
   - node: start
     entity: CyborgEndoskeleton
     edges:
-
-    # empty the parts via prying
+    
     - to: start
       conditions:
       - !type:ContainerNotEmpty
@@ -17,9 +16,9 @@
         completed:
           - !type:EmptyAllContainers
 
-    - to: cyborg
+    - to: Quadborg
       steps:
-      - assemblyId: generic
+      - assemblyId: quadborg
         guideString: borg-construction-guide-string
 
       - material: Cable
@@ -43,10 +42,10 @@
 
       - tool: Screwing
         doAfter: 0.5
-
-    - to: engineer
+        
+    - to: Quadsalv
       steps:
-      - assemblyId: engineer
+      - assemblyId: quadsalv
         guideString: borg-construction-guide-string
 
       - material: Cable
@@ -70,10 +69,10 @@
 
       - tool: Screwing
         doAfter: 0.5
-
-    - to: janitor
+        
+    - to: Quadserv
       steps:
-      - assemblyId: janitor
+      - assemblyId: quadserv
         guideString: borg-construction-guide-string
 
       - material: Cable
@@ -97,111 +96,42 @@
 
       - tool: Screwing
         doAfter: 0.5
-
-    - to: medical
-      steps:
-      - assemblyId: medical
-        guideString: borg-construction-guide-string
-
-      - material: Cable
-        amount: 1
-        doAfter: 1
-        store: part-container
-
-      - component: Flash
-        name: flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - component: Flash
-        name: second flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - tool: Screwing
-        doAfter: 0.5
-
-    - to: mining
-      steps:
-      - assemblyId: mining
-        guideString: borg-construction-guide-string
-
-      - material: Cable
-        amount: 1
-        doAfter: 1
-        store: part-container
-
-      - component: Flash
-        name: flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - component: Flash
-        name: second flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - tool: Screwing
-        doAfter: 0.5
-
-    - to: service
-      steps:
-      - assemblyId: service
-        guideString: borg-construction-guide-string
-
-      - material: Cable
-        amount: 1
-        doAfter: 1
-        store: part-container
-
-      - component: Flash
-        name: flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - component: Flash
-        name: second flash
-        store: part-container
-        icon:
-          sprite: Objects/Weapons/Melee/flash.rsi
-          state: flash
-
-      - tool: Screwing
-        doAfter: 0.5
-
-  - node: cyborg
-    entity: BorgChassisGeneric
     
-  - node: engineer
-    entity: BorgChassisEngineer
+    - to: Quadmed
+      steps:
+      - assemblyId: quadmed
+        guideString: borg-construction-guide-string
 
-  - node: janitor
-    entity: BorgChassisJanitor
+      - material: Cable
+        amount: 1
+        doAfter: 1
+        store: part-container
 
-  - node: mining
-    entity: BorgChassisMining
+      - component: Flash
+        name: flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
 
-  - node: medical
-    entity: BorgChassisMedical
+      - component: Flash
+        name: second flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
 
-  - node: service
-    entity: BorgChassisService
-
-  - node: syndicateassault
-    entity: BorgChassisSyndicateAssault
-
-  - node: syndicatemedical
-    entity: BorgChassisSyndicateMedical
-
-  - node: syndicatesaboteur
-    entity: BorgChassisSyndicateSaboteur
+      - tool: Screwing
+        doAfter: 0.5
+        
+  - node: Quadborg
+    entity: BorgChassisQuad
+    
+  - node: Quadsalv
+    entity: BorgChassisQuadsalv
+    
+  - node: Quadserv
+    entity: BorgChassisQuadserv
+    
+  - node: Quadmed
+    entity: BorgChassisQuadmed

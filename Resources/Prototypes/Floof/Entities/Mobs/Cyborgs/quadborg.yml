@@ -46,7 +46,7 @@
       state: quadsprite
     name: cyborg
   - type: Construction
-    node: cyborg
+    node: Qborg
   - type: Speech
     speechVerb: Robotic
   - type: LayingDown
@@ -103,8 +103,6 @@
     - Binary
     - Common
     - Science
-  - type: Construction
-    node: cyborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -148,8 +146,6 @@
     - Binary
     - Common
     - Science
-  - type: Construction
-    node: cyborg
   - type: BorgChassis
     maxModules: 6
     moduleWhitelist:
@@ -193,8 +189,6 @@
     - Binary
     - Common
     - Science
-  - type: Construction
-    node: cyborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -244,8 +238,6 @@
     - Binary
     - Common
     - Science
-  - type: Construction
-    node: cyborg
   - type: BorgChassis
     maxModules: 8
     moduleWhitelist:
