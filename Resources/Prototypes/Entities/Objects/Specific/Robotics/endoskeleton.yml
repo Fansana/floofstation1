@@ -287,6 +287,54 @@
         whitelist:
           tags:
             - BorgMiningTorso
+      borg_l_servarm+o:
+        whitelist:
+          tags:
+            - BorgServiceLLeg
+      borg_r_servarm+o:
+        whitelist:
+          tags:
+            - BorgServiceRLeg
+      borg_l_servleg+o:
+        whitelist:
+          tags:
+            - BorgServiceLLeg
+      borg_r_servleg+o:
+        whitelist:
+          tags:
+            - BorgServiceRLeg
+      borg_servhead+o:
+        whitelist:
+          tags:
+            - BorgServiceHead
+      borg_servchest+o:
+        whitelist:
+          tags:
+            - BorgServiceTorso
+      borg_l_medarm+o:
+        whitelist:
+          tags:
+            - BorgMedicalLLeg
+      borg_r_medarm+o:
+        whitelist:
+          tags:
+            - BorgMedicalRLeg
+      borg_l_medleg+o:
+        whitelist:
+          tags:
+            - BorgMedicalLLeg
+      borg_r_medleg+o:
+        whitelist:
+          tags:
+            - BorgMedicalRLeg
+      borg_medhead+o:
+        whitelist:
+          tags:
+            - BorgMedicalHead
+      borg_medchest+o:
+        whitelist:
+          tags:
+            - BorgMedicalTorso
             
   - type: PartAssembly
     parts:
@@ -304,6 +352,20 @@
       - BorgMiningRLeg
       - BorgMiningHead
       - BorgMiningTorso
+      quadserv:
+      - BorgServiceLLeg
+      - BorgServiceRLeg
+      - BorgServiceLLeg
+      - BorgServiceRLeg
+      - BorgServiceHead
+      - BorgServiceTorso
+      quadmed:
+      - BorgMedicalLLeg
+      - BorgMedicalRLeg
+      - BorgMedicalLLeg
+      - BorgMedicalRLeg
+      - BorgMedicalHead
+      - BorgMedicalTorso
   - type: Construction
     graph: Cyborg
     node: start
