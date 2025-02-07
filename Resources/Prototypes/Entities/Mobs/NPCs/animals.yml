@@ -1669,6 +1669,7 @@
         - ReagentId: UncookedAnimalProteins
           Quantity: 3
   - type: Butcherable
+    gibBody: false # Floofstation
     spawned:
     - id: FoodMeatRat
       amount: 1
@@ -1711,10 +1712,6 @@
   - type: FelinidFood # Nyanotrasen - Felinid, ability to eat mice, see Content.Server/Nyanotrasen/Abilities/Felinid/FelinidSystem.cs
   - type: BadFood
   - type: NonSpreaderZombie
-  - type: PreventSpiller
-  - type: RandomBark
-    barkMultiplier: 0.3
-    barkType: mouse
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
@@ -1842,6 +1839,7 @@
       Dead:
         Base: dead
   - type: Butcherable
+    gibBody: false # Floofstation
     spawned:
     - id: FoodMeatLizard
       amount: 1
@@ -1899,6 +1897,7 @@
       Dead:
         Base: dead
   - type: Butcherable
+    gibBody: false # Floofstation
     spawned:
     - id: FoodMeat
       amount: 1
@@ -1953,6 +1952,7 @@
       Dead:
         Base: dead
   - type: Butcherable
+    gibBody: false # Floofstation
     spawned:
     - id: FoodMeat
       amount: 1
