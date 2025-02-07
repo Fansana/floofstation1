@@ -1,3 +1,5 @@
+# GLOVES
+
 - type: loadout
   id: LoadoutClothingHandsSecurityWarmers
   category: JobsSecurityAUncategorized
@@ -9,6 +11,9 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Security
+
+
+#Shoes
 
 - type: loadout
   id: LoadoutClothingUnderSocksSecurity
@@ -27,6 +32,9 @@
     departments:
     - Security
 
+
+#Uniform
+
 - type: loadout
   id: LoadoutClothingUniformSecurityThong
   category: JobsSecurityAUncategorized
@@ -38,6 +46,41 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Security
+
+- type: loadout
+  id: ClothingUniformJumpskirtSec
+  category: JobsSecurityAUncategorized
+  cost: 0 # same as the other uniforms
+  exclusive: true
+  items:
+  - ClothingUniformJumpskirtSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security
+
+
+# OUTERWEAR
+
+- type: loadout
+  id: LoadoutClothingLongcoatSec
+  category: JobsSecurityAUncategorized
+  cost: 0 # same as the other armor
+  exclusive: true
+  items:
+  - ClothingLongcoatSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityOuter
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security
+
+
+
+#Neck/Tie
 
 - type: loadout
   id: LoadoutSecurityNeckCollar
