@@ -204,13 +204,13 @@
     
 - type: entity
   id: BorgChassisApex
-  parent: BorgChassisApex
+  parent: BorgChassisQuad
   components:
   - type: Sprite
     sprite: Floof/Mobs/Silicon/quad.rsi
     scale: 0.7, 0.7
     layers:
-    - state: quadspriteApex
+    - state: Apex
       map: ["movement"]
     - state: quadspritel
       map: ["enum.BorgVisualLayers.Light"]

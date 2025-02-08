@@ -3,7 +3,7 @@
   start: start
   graph:
   - node: start
-    entity: CyborgEndoskeleton
+    entity: Quadborgendoskeleton
     edges:
     
     - to: start
