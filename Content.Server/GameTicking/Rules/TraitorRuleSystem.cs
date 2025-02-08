@@ -83,7 +83,8 @@ public sealed class TraitorRuleSystem : GameRuleSystem<TraitorRuleComponent>
         if (TryComp<AutoTraitorComponent>(traitor, out var autoTraitorComponent))
         {
             giveUplink = autoTraitorComponent.GiveUplink;
-            giveObjectives = autoTraitorComponent.GiveObjectives;
+			//Floofstation - commented out due to conflict following merge of wizden PR #28216
+            //giveObjectives = autoTraitorComponent.GiveObjectives; 
         }
 
         Note[]? code = null;

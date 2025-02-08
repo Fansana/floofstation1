@@ -52,7 +52,6 @@ public sealed partial class DragonSystem : EntitySystem
         SubscribeLocalEvent<DragonComponent, DragonSpawnRiftActionEvent>(OnSpawnRift);
         SubscribeLocalEvent<DragonComponent, RefreshMovementSpeedModifiersEvent>(OnDragonMove);
         SubscribeLocalEvent<DragonComponent, MobStateChangedEvent>(OnMobStateChanged);
-        SubscribeLocalEvent<DragonComponent, EntityZombifiedEvent>(OnZombified);
     }
 
     public override void Update(float frameTime)
@@ -181,12 +180,6 @@ public sealed partial class DragonSystem : EntitySystem
 
         // objective is explicitly not reset so that it will show how many you got before dying in round end text
         DeleteRifts(uid, false, component);
-    }
-
-    private void OnZombified(Entity<DragonComponent> ent, ref EntityZombifiedEvent args)
-    {
-        // prevent carp attacking zombie dragon
-        _faction.AddFaction(ent.Owner, ent.Comp.Faction);
     }
 
     private void Roar(EntityUid uid, DragonComponent comp)
