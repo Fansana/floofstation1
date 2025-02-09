@@ -2447,3 +2447,12 @@ Entries:
   id: 305
   time: '2025-01-24T17:45:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/501
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Borgs can stand up after falling again, and buckle layering should no
+        longer break when the grid you are standing on is incorrectly oriented.
+  id: 306
+  time: '2025-02-09T13:11:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/541
