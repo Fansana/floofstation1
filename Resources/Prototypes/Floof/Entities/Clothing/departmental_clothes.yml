@@ -779,6 +779,21 @@
 
 #Corpsmen Outfits
 - type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCorpsmanWarmers
+  name: corpsman arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Corpsman roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+
+- type: entity
   parent: [ ClothingShoesBase, ClothingShoesMilitaryBase ]
   id: ClothingUnderSocksCorpsman
   name: corpsman thigh-high socks
@@ -788,6 +803,20 @@
     sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCorpsmanThong
+  name: corpsman thong
+  description: Styled for a Corpsmen, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Service Outfits
 #
