@@ -53,6 +53,11 @@
   - type: SiliconLawProvider
     laws: Qborg
   - type: LeashAnchor # Floofstation
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
+
 
 - type: entity
   id: BorgChassisQuadCC
