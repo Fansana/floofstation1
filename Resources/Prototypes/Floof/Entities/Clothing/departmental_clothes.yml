@@ -785,12 +785,12 @@
   description: A pair of rather nice arm-warmers, styled for Corpsman roles.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmanwarmer.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Departmental/Medical/paramedwarmer.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmanwarmer.rsi
   - type: Fiber
     fiberMaterial: fibers-latex
-    fiberColor: fibers-blue
+    fiberColor: fibers-white
   - type: FingerprintMask
 
 - type: entity
@@ -800,9 +800,9 @@
   description: A pair of thigh-high socks, styled for Corpsman roles.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -811,9 +811,9 @@
   description: Styled for a Corpsmen, but is this even considered a piece of clothing?
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmanthong.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Departmental/Medical/paramedthong.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmanthong.rsi
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
     - Skirt
