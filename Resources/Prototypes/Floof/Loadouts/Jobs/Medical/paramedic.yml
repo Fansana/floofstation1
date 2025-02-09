@@ -1,3 +1,4 @@
+# Paramedic
 - type: loadout
   id: LoadoutClothingHandsParaMedicWarmers
   category: JobsMedicalParamedic
@@ -38,3 +39,67 @@
   - !type:CharacterJobRequirement
     jobs:
     - Paramedic
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+- type: loadout
+  id: LoadoutMedicalHeadParamedicSoft
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatParamedicsoft
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutMedicalOuterParamedicWB
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterCoatParamedicWB
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+# Shoes
+- type: loadout
+  id: LoadoutMedicalShoesParamedicWinter
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterParamedic
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+# Uniforms

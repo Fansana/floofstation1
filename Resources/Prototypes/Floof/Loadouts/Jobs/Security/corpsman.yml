@@ -1,3 +1,4 @@
+# Corpsman
 - type: loadout
   id: LoadoutClothingHandCorpsmanWarmers
   category: JobsSecurityCorpsman
@@ -38,3 +39,43 @@
   - !type:CharacterJobRequirement
     jobs:
     - Brigmedic
+
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+- type: loadout
+  id: LoadoutMaskCorpsmanBreathMedicalSecurity
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskBreathMedicalSecurity
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
+
+
+# Outer
+
+# Shoes
+
+# Uniforms

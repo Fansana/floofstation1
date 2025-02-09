@@ -1,3 +1,4 @@
+# Uncategorized
 - type: loadout
   id: LoadoutClothingHandsSecurityWarmers
   category: JobsSecurityAUncategorized
@@ -49,3 +50,48 @@
     - Security
   items:
   - ClothingNeckCollarSec
+
+# Backpack
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Service Weapon
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+- type: loadout
+  id: LoadoutSecurityMaskGasSecurity
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskGasSecurity
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityMask
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Brigmedic
+
+# Outer
+
+# Shoes
+
+# Uniforms

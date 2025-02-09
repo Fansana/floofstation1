@@ -60,11 +60,13 @@
     - type: loadout
       id: LoadoutBedsheetBrigmedic
 
-#- type: characterItemGroup
-#  id: LoadoutCorpsmanMask
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutCorpsmanMask
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMaskCorpsmanBreathMedicalSecurity
+
 #- type: characterItemGroup
 #  id: LoadoutCorpsmanOuter
 #  maxItems: 1
