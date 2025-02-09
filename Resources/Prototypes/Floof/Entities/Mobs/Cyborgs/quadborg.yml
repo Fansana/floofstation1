@@ -152,7 +152,7 @@
     - Common
     - Science
   - type: BorgChassis
-    maxModules: 6
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
