@@ -67,7 +67,6 @@
   abstract: true
   parent: BaseGameRule
   categories: [ HideSpawnMenu ]
-  components:
   id: BaseNukeopsRule
   components:
   - type: RandomMetadata #this generates the random operation name cuz it's cool.

@@ -34,6 +34,6 @@ public sealed class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoadProfile
             species = _proto.Index<SpeciesPrototype>(SharedHumanoidAppearanceSystem.DefaultSpecies);
 
         args.Entity = Spawn(species.Prototype);
-        _humanoid.LoadProfile(args.Entity.Value, profile);
+		_humanoid.LoadProfile(args.Entity.Value, profile ?? HumanoidCharacterProfile.RandomWithSpecies()); //Floofstation - workaround for errors thrown due to a nullable type, should be reverted when possible. Yes, this theoretically means RandomWithSpecies could get called twice... 
     }
 }
