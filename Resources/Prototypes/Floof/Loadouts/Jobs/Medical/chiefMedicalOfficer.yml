@@ -1,3 +1,4 @@
+# Chief Medical Officer
 - type: loadout
   id: LoadoutClothingHandsCMOWarmers
   category: JobsMedicalChiefMedicalOfficer
@@ -38,3 +39,40 @@
   - !type:CharacterJobRequirement
     jobs:
     - ChiefMedicalOfficer
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutCommandCMOOuterLongcoat
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChiefMedicalOfficerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+  items:
+    - ClothingLongcoatCMO
+
+# Shoes
+
+# Uniforms
