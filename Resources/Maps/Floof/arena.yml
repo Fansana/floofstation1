@@ -11457,6 +11457,14 @@ entities:
       id: Arena
     - type: GasTileOverlay
     - type: SpreaderGrid
+- proto: ActionStethoscope
+  entities:
+  - uid: 3717
+    components:
+    - type: Transform
+      parent: 6123
+    - type: EntityTargetAction
+      container: 6123
 - proto: AirAlarm
   entities:
   - uid: 304
@@ -17879,6 +17887,16 @@ entities:
       parent: 6747
 - proto: Autolathe
   entities:
+  - uid: 1069
+    components:
+    - type: Transform
+      pos: 20.5,-3.5
+      parent: 6747
+  - uid: 2646
+    components:
+    - type: Transform
+      pos: 50.5,15.5
+      parent: 6747
   - uid: 6860
     components:
     - type: Transform
@@ -58821,9 +58839,19 @@ entities:
   - uid: 6123
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 47.289085,-41.478985
+      pos: 55.476044,-42.8875
       parent: 6747
+    - type: Stethoscope
+      actionEntity: 3717
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 3717
 - proto: ClothingOuterApronBotanist
   entities:
   - uid: 27351
@@ -59790,6 +59818,12 @@ entities:
     - type: Transform
       pos: -26.5,-46.5
       parent: 6747
+  - uid: 14669
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 46.5,-43.5
+      parent: 6747
   - uid: 27879
     components:
     - type: Transform
@@ -59917,12 +59951,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 24.5,-21.5
-      parent: 6747
-  - uid: 18507
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 46.5,-43.5
       parent: 6747
 - proto: ComputerPowerMonitoring
   entities:
@@ -74002,13 +74030,6 @@ entities:
       parent: 8368
     - type: Physics
       canCollide: False
-- proto: EngineeringTechFab
-  entities:
-  - uid: 2646
-    components:
-    - type: Transform
-      pos: 50.5,15.5
-      parent: 6747
 - proto: ExosuitFabricator
   entities:
   - uid: 27043
@@ -74380,11 +74401,6 @@ entities:
       parent: 6747
 - proto: filingCabinetTallRandom
   entities:
-  - uid: 3717
-    components:
-    - type: Transform
-      pos: 22.5,-21.5
-      parent: 6747
   - uid: 23599
     components:
     - type: Transform
@@ -122965,10 +122981,20 @@ entities:
       parent: 6747
 - proto: LockerParamedicFilledHardsuit
   entities:
+  - uid: 18507
+    components:
+    - type: Transform
+      pos: 22.5,-21.5
+      parent: 6747
   - uid: 26944
     components:
     - type: Transform
       pos: 12.5,-29.5
+      parent: 6747
+  - uid: 28249
+    components:
+    - type: Transform
+      pos: 47.5,-41.5
       parent: 6747
 - proto: LockerQuarterMasterFilled
   entities:
@@ -131164,9 +131190,11 @@ entities:
   - uid: 23956
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 46.934917,-41.510258
+      pos: 46.1798,-41.357124
       parent: 6747
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: PersonalAI
   entities:
   - uid: 2951
@@ -149297,13 +149325,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 60.203426,-22.401964
       parent: 6747
-- proto: ServiceTechFab
-  entities:
-  - uid: 1069
-    components:
-    - type: Transform
-      pos: 20.5,-3.5
-      parent: 6747
 - proto: ShardGlass
   entities:
   - uid: 3806
@@ -157577,12 +157598,6 @@ entities:
     components:
     - type: Transform
       pos: -7.5,-13.5
-      parent: 6747
-  - uid: 14669
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 47.5,-41.5
       parent: 6747
   - uid: 17971
     components:
