@@ -20,7 +20,7 @@
             - Passenger
             #- Anomaly # Floofstation
           availableJobs:
-            #Anomaly: [ 4, 4 ] # Floofstation # Nevermind, there are no spawnpoints for it right now. TODO: fix this.
+            Anomaly: [ 4, 4 ] # Floofstation
           #civilian
             Passenger: [ -1, -1 ]
             Librarian: [ 1, 1 ]
