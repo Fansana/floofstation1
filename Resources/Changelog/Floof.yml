@@ -2472,3 +2472,10 @@ Entries:
   id: 308
   time: '2025-02-09T17:18:37.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/533
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Submarine is back to the map pool.
+  id: 309
+  time: '2025-02-09T17:18:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/536
