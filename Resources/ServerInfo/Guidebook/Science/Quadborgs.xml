@@ -7,12 +7,12 @@
   <GuideEntityEmbed Entity="Quadborgendoskeleton" Caption="Quadborg Endoskeleton"/>
   <GuideEntityEmbed Entity="ExosuitFabricator" Caption="Exosuit Fabricator"/>
   </Box>
-  All quadborgs start off as a four-legged endoskeleton. Much like the cyborg endoskeleton, this is crafted at the [color=#a4885c]Exosuit Fabricator[/color], and uses cyborg parts. Assembly steps can be followed by [color=#a4885c]examining[/color] the endoskeleton. 
+  All quadborgs start off as a [color=#a4885c]four-legged[/color] endoskeleton. Much like the cyborg endoskeleton, this is crafted at the [color=#a4885c]Exosuit Fabricator[/color], and uses cyborg parts. Assembly steps can be followed by [color=#a4885c]examining[/color] the endoskeleton. While assembly is similiar, [bold]Quadborgs do not have arms, and instead utilize two right legs, and two left legs as part of it's construction.[/bold]
     
   Once built, further upgrades such as additional tooling and better power cells can be installed later on.
     
   ## Chassis
-  Quadborg chassis are similiar in function to the cyborg chassis, bearing the same nuances revolving [color=#a4885c]radio communication[/color] and [color=#a4885c]all-access[/color] except command areas. [bold]Quadborg chassis can fit up to 4 modules, with exception to the Service chassis which can fit up to 6.[/bold]
+  Quadborg chassis are similiar in function to the cyborg chassis, bearing the same nuances revolving [color=#a4885c]radio communication[/color] and [color=#a4885c]all-access[/color] except command areas. [bold]Quadborg chassis can fit up to 4 modules, with exception to the Service chassis which can fit up to 6,[/bold] made possible from it's [italic]"auxillary hardware"[/italic] purpose-built for it.
   <Box>
   <GuideEntityEmbed Entity="BorgChassisQuadserv" Caption="Service" Rotation="270"/>
   <GuideEntityEmbed Entity="BorgChassisQuad" Caption="Security" Rotation="270"/>
@@ -24,7 +24,7 @@
   </Box>
   If you wish to change the chassis of an already existing quadborg, you have to construct a whole new one, parts and endoskeleton included. The brain, power cell and modules [italic](if it can fit in the new chassis,)[/italic] can be carried over from the old chassis, if desired.
 
-  ## Security Quadborg
+  ## Security Applications
   Unique to quadborgs is the capability to serve in the security department as a silicon. [bold]Using generic cyborg parts on a quadborg endoskeleton will construct the security chassis.[/bold]
   <Box>
   <GuideEntityEmbed Entity="BorgChassisQuad" Caption="Security Quadborg" Rotation="270"/>
