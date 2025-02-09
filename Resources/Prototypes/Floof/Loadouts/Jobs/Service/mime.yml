@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsStripeWhiteWarmers
   category: JobsServiceMime
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsStripeWhiteWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksStripedWhite
   category: JobsServiceMime
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksStripedWhite
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformStripedThongWhite
   category: JobsServiceMime
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformStripedThongWhite

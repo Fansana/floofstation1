@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsSecurityWarmers
   category: JobsSecurityAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsSecurityWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksSecurity
   category: JobsSecurityAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksSecurity
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformSecurityThong
   category: JobsSecurityAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformSecurityThong

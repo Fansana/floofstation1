@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsMedicWarmers
   category: JobsMedicalAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsMedicWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksMedic
   category: JobsMedicalAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksMedic
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformMedicThong
   category: JobsMedicalAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformMedicThong
