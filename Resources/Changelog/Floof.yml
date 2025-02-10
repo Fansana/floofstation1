@@ -2479,3 +2479,22 @@ Entries:
   id: 309
   time: '2025-02-09T17:18:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/536
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: Missing Logistics Officer items to loadout.
+    - type: Add
+      message: Chief Medical Officer longcoat loadout.
+    - type: Add
+      message: Paramedic cap, wind breaker, and winter boots loadout.
+    - type: Add
+      message: Various mask loadouts.
+    - type: Add
+      message: Corpsman arm warmers, thong, and thigh high socks.
+    - type: Tweak
+      message: >-
+        Reduced the cost of departmental arm warmers, thongs, and thigh high
+        socks to 0.
+  id: 310
+  time: '2025-02-10T15:35:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/543
