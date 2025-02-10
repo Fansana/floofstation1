@@ -161,7 +161,7 @@
     duration: null
   - type: RuleGrids
   - type: LoadFarGridRule
-    path: /Maps/Shuttles/DeltaV/listening_post.yml
+    path: /Maps/Floof/pirateradio.yml # Floofstation
     distanceModifier: 13
   - type: DebrisSpawnerRule
     count: 6

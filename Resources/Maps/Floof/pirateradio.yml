@@ -5721,7 +5721,7 @@ entities:
     - type: Transform
       pos: 2.5,2.5
       parent: 1
-- proto: SpawnPointGhostSyndicateListener
+- proto: SpawnPointNukies # Floofstation - Changed to follow Delta-V PR 1369
   entities:
   - uid: 832
     components:
