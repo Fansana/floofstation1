@@ -143,6 +143,8 @@
     understands:
     - Xeno
   - type: Vore # Floofstation - Vore
+    canVore: true
+    canBeVored: false
 
 - type: entity
   name: Praetorian
