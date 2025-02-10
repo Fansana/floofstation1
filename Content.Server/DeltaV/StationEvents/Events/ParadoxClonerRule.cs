@@ -16,7 +16,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using System.Diagnostics.CodeAnalysis;
-using Content.Server.Consent;
+using Content.Server.Consent; //Floofstation
 
 namespace Content.Server.StationEvents.Events;
 
@@ -26,7 +26,7 @@ namespace Content.Server.StationEvents.Events;
 /// </summary>
 public sealed class ParadoxClonerRule : StationEventSystem<ParadoxClonerRuleComponent>
 {
-    [Dependency] private readonly ConsentSystem _consent = default!;
+    [Dependency] private readonly ConsentSystem _consent = default!; //Floofstation
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PsionicsSystem _psionics = default!;
@@ -69,7 +69,7 @@ public sealed class ParadoxClonerRule : StationEventSystem<ParadoxClonerRuleComp
                 _mind.GetMind(uid, mindContainer) is {} mindId &&
                 TryComp<JobComponent>(mindId, out var job) &&
                 !_role.MindIsAntagonist(mindId) && 
-                !(_consent.HasConsent(uid, "NoClone")))
+                !(_consent.HasConsent(uid, "NoClone"))) //Floofstation - added consent functionality
             {
                 candidates.Add((uid, (mindId, job), profile));
             }
