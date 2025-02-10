@@ -99,8 +99,9 @@ public sealed class ParadoxClonerRule : StationEventSystem<ParadoxClonerRuleComp
         _terminator.SetTarget(spawned, mindId);
 
         // guaranteed psionic power
-        var psi = EnsureComp<PotentialPsionicComponent>(spawned);
-        _psionics.RollPsionics(spawned, psi, false, 100);
+        // Floofstation - we seem to be missing some dependency sooo, disabling this for now
+        /* var psi = EnsureComp<PotentialPsionicComponent>(spawned);
+        _psionics.RollPsionics(spawned, psi, false, 100); */
 
         return spawned;
     }
