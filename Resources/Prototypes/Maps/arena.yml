@@ -50,7 +50,7 @@
             SecurityOfficer: [ 5, 7 ]
             SecurityCadet: [ 1, 2 ]
             Warden: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
+            SeniorOfficer: [ 0, 1 ]
           #service
             Bartender: [ 1, 2 ]
             Botanist: [ 2, 2 ]
