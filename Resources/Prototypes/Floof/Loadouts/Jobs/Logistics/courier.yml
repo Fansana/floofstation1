@@ -3,7 +3,7 @@
 - type: loadout
   id: LoadoutClothingHandsCourierWarmers
   category: JobsLogisticsCourier
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsCourierWarmers
@@ -15,7 +15,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksCourier
   category: JobsLogisticsCourier
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksCourier
@@ -34,7 +34,7 @@
 - type: loadout
   id: LoadoutClothingUniformCourierThong
   category: JobsLogisticsCourier
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformCourierThong

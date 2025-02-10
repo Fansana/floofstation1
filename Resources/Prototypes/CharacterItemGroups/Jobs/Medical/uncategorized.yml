@@ -94,11 +94,15 @@
     - type: loadout
       id: LoadoutMedicalBedsheetMedical
 
-#- type: characterItemGroup
-#  id: LoadoutMedicalMask
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutMedicalMask
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMedicalMaskSterile
+    - type: loadout
+      id: LoadoutMedicalMaskBreathMedical
+
 - type: characterItemGroup
   id: LoadoutMedicalOuter
   maxItems: 1

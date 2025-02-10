@@ -163,6 +163,8 @@
   items:
     - type: loadout
       id: LoadoutSecurityMaskGasSwat
+    - type: loadout
+      id: LoadoutSecurityMaskGasSecurity
 
 - type: characterItemGroup
   id: LoadoutSecurityOuter

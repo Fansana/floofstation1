@@ -68,6 +68,8 @@
   maxItems: 1
   items:
     - type: loadout
+      id: LoadoutCommandCMOOuterLongcoat
+    - type: loadout
       id: LoadoutCommandCMOOuterWinter
     - type: loadout
       id: LoadoutCommandCMOOuterLab

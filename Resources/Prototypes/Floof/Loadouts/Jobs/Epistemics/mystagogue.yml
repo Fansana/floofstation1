@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsEpiHeadWarmers
   category: JobsEpistemicsMystagogue
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsEpiHeadWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksEpiHead
   category: JobsEpistemicsMystagogue
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksEpiHead
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformEpiHeadThong
   category: JobsEpistemicsMystagogue
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformEpiHeadThong
