@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: AtmosphericsNitrousMix
+  icon:
+    sprite: Structures/Storage/canister.rsi
+    state: redws
+  product: NitrousOxideMixCanister
+  cost: 2100
+  category: cargoproduct-category-name-atmospherics
+  group: market
+
+- type: cargoProduct
+  id: AtmosphericsLiquidNitrousMix
+  icon:
+    sprite: Structures/Storage/canister.rsi
+    state: redws
+  product: LiquidNitrousOxideMixCanister
+  cost: 5200
+  category: cargoproduct-category-name-atmospherics
+  group: market
