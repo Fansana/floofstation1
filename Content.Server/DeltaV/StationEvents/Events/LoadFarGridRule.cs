@@ -4,7 +4,7 @@
 * See AGPLv3.txt for details.
 */
 
-using Content.Server.GameTicking.Components;
+using Content.Shared.GameTicking.Components; // Floofstation - GameTicking.Components was moved to Shared
 using Content.Server.GameTicking.Rules;
 using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
