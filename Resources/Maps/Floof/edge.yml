@@ -2219,12 +2219,6 @@ entities:
             2201: -7,-32
             2202: -4,-28
         - node:
-            cleanable: True
-            color: '#FFFFFFF7'
-            id: Dirt
-          decals:
-            1312: -33,2
-        - node:
             color: '#FFFFFFFF'
             id: Dirt
           decals:
@@ -2676,7 +2670,6 @@ entities:
             1781: -22,-26
             1783: -7,-22
             1784: -8,-21
-            1811: -32,0
             2487: 10,-27
             2491: 9,-21
             2494: 20,-32
@@ -2699,7 +2692,6 @@ entities:
             color: '#5D2C00D3'
             id: DirtLight
           decals:
-            1812: -32,-1
             1813: -33,5
         - node:
             cleanable: True
@@ -3174,13 +3166,6 @@ entities:
             1295: -57,-10
         - node:
             cleanable: True
-            color: '#FFFFFFF7'
-            id: DirtMedium
-          decals:
-            1313: -33,0
-            1314: -34,0
-        - node:
-            cleanable: True
             color: '#FFFFFFFF'
             id: DirtMedium
           decals:
@@ -3464,26 +3449,21 @@ entities:
             2261: 26,24
             2262: 26,26
             2263: 26,25
-        - node:
-            cleanable: True
-            color: '#52B4E996'
-            id: FullTileOverlayGreyscale
-          decals:
-            1297: -31,-1
-            1298: -34,-1
-            1299: -33,-1
-            1300: -31,0
-            1301: -34,0
-            1302: -33,0
-            1303: -34,1
-            1304: -33,1
-            1305: -31,1
-            1306: -31,2
-            1307: -33,2
-            1308: -34,2
-            1309: -34,3
-            1310: -33,3
-            1311: -31,3
+            2725: -34,3
+            2726: -34,2
+            2727: -34,1
+            2728: -34,0
+            2729: -34,-1
+            2730: -32,3
+            2731: -32,2
+            2732: -31,2
+            2733: -31,3
+            2734: -32,1
+            2735: -31,1
+            2736: -31,0
+            2737: -32,0
+            2738: -32,-1
+            2739: -31,-1
         - node:
             color: '#9FED5896'
             id: FullTileOverlayGreyscale
@@ -3512,6 +3492,13 @@ entities:
             2100: -25,-74
             2101: -26,-74
             2102: -31,-77
+        - node:
+            color: '#FA750096'
+            id: FullTileOverlayGreyscale
+          decals:
+            2740: -30,3
+            2741: -29,3
+            2742: -28,3
         - node:
             color: '#FFFFFFFF'
             id: Grassa2
@@ -10811,6 +10798,18 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-49.5
+      parent: 2
+- proto: Autolathe
+  entities:
+  - uid: 5856
+    components:
+    - type: Transform
+      pos: -6.5,-16.5
+      parent: 2
+  - uid: 10978
+    components:
+    - type: Transform
+      pos: 19.5,-12.5
       parent: 2
 - proto: AutolatheMachineCircuitboard
   entities:
@@ -49906,13 +49905,6 @@ entities:
       parent: 7468
     - type: Physics
       canCollide: False
-- proto: EngineeringTechFab
-  entities:
-  - uid: 5856
-    components:
-    - type: Transform
-      pos: -6.5,-16.5
-      parent: 2
 - proto: EpinephrineChemistryBottle
   entities:
   - uid: 7484
@@ -94694,13 +94686,6 @@ entities:
     - type: Transform
       pos: -21.5,7.5
       parent: 2
-- proto: ServiceTechFab
-  entities:
-  - uid: 10978
-    components:
-    - type: Transform
-      pos: 19.5,-12.5
-      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 13932
@@ -98819,6 +98804,34 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-12.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 18694
+    components:
+    - type: Transform
+      pos: 0.5,-24.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 18693
+    components:
+    - type: Transform
+      pos: -37.5,-12.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 16429
+    components:
+    - type: Transform
+      pos: 21.5,7.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 18644
+    components:
+    - type: Transform
+      pos: -38.5,27.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:
