@@ -1,9 +1,9 @@
 - type: job
   id: SeniorOfficer
-  name: job-name-senior-officer
+  name: Senior Officer #floof
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
-  setPreference: false # DeltaV - Disable Senior Roles round start selection
+  setPreference: false # DeltaV - Disable Senior Roles round start selection #floof - toggle to true to reenable
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security

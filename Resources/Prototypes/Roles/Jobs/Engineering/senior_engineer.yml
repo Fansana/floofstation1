@@ -1,8 +1,9 @@
 - type: job
   id: SeniorEngineer
-  name: job-name-senior-engineer
+  name: Senior Engineer #floof
   description: job-description-senior-engineer
   playTimeTracker: JobSeniorEngineer
+  setPreference: false #floof - false makes it unable to be selected in round start selection #stub / tbr # Crow: Disabling senior roles until further review or better implimentation
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering

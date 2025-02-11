@@ -68,7 +68,7 @@
     - JobsEngineeringAAUncategorized
     - JobsEngineeringAtmosphericTechnician
     - JobsEngineeringChiefEngineer
-    - JobsEngineeringSeniorEngineer
+#    - JobsEngineeringSeniorEngineer #floof stub / tbr #Crow : these senior roles are referenced in loadout creation, however, no map has slots for these roles so players cant actually play the job yet. Opting to comment them out until further review or implimentation.
     - JobsEngineeringStationEngineer
     - JobsEngineeringTechnicalAssistant
 
@@ -81,8 +81,8 @@
 - type: loadoutCategory
   id: JobsEngineeringChiefEngineer
 
-- type: loadoutCategory
-  id: JobsEngineeringSeniorEngineer
+#- type: loadoutCategory #floof stub / tbr
+#  id: JobsEngineeringSeniorEngineer #floof stub / tbr
 
 - type: loadoutCategory
   id: JobsEngineeringStationEngineer
@@ -100,7 +100,7 @@
     - JobsEpistemicsChaplain
     - JobsEpistemicsGolemancer
     - JobsEpistemicsMystagogue
-    - JobsEpistemicsMystic
+#    - JobsEpistemicsMystic #floof stub / tbr
     - JobsEpistemicsNoviciate
     - JobsEpistemicsPsionicMantis
 
@@ -122,8 +122,8 @@
 - type: loadoutCategory
   id: JobsEpistemicsMystagogue
 
-- type: loadoutCategory
-  id: JobsEpistemicsMystic
+#- type: loadoutCategory #floof stub / tbr
+#  id: JobsEpistemicsMystic #floof stub / tbr
 
 - type: loadoutCategory
   id: JobsEpistemicsNoviciate
@@ -167,7 +167,7 @@
     - JobsMedicalMedicalIntern
     - JobsMedicalParamedic
     - JobsMedicalPsychologist
-    - JobsMedicalSeniorPhysician
+#    - JobsMedicalSeniorPhysician #floof stub / tbr
 
 - type: loadoutCategory
   id: JobsMedicalAUncategorized
@@ -190,8 +190,8 @@
 - type: loadoutCategory
   id: JobsMedicalPsychologist
 
-- type: loadoutCategory
-  id: JobsMedicalSeniorPhysician
+#- type: loadoutCategory #floof stub / tbr
+#  id: JobsMedicalSeniorPhysician #floof stub / tbr
 
 # Security
 - type: loadoutCategory
@@ -203,7 +203,7 @@
     - JobsSecurityDetective
     - JobsSecurityHeadOfSecurity
     - JobsSecuritySecurityOfficer
-    - JobsSecuritySeniorOfficer
+#    - JobsSecuritySeniorOfficer #floof stub / tbr
     - JobsSecurityWarden
 
 - type: loadoutCategory
@@ -224,8 +224,8 @@
 - type: loadoutCategory
   id: JobsSecuritySecurityOfficer
 
-- type: loadoutCategory
-  id: JobsSecuritySeniorOfficer
+#- type: loadoutCategory #floof stub / tbr
+#  id: JobsSecuritySeniorOfficer #floof stub / tbr
 
 - type: loadoutCategory
   id: JobsSecurityWarden

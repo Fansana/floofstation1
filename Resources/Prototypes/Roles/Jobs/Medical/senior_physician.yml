@@ -1,8 +1,9 @@
 - type: job
   id: SeniorPhysician
-  name: job-name-senior-physician
+  name: Senior Physician #floof
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
+  setPreference: false #floof - false makes it unable to be selected in round start selection #stub / tbr # Crow: Disabling senior roles until further review or better implimentation
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
