@@ -12045,7 +12045,7 @@ entities:
       pos: -33.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -48439.027
+      secondsUntilStateChange: -48532.746
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12076,7 +12076,7 @@ entities:
       pos: -48.5,-20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -39077.164
+      secondsUntilStateChange: -39170.883
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -12092,7 +12092,7 @@ entities:
       pos: -44.5,-17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21215.63
+      secondsUntilStateChange: -21309.352
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15581,6 +15581,16 @@ entities:
     components:
     - type: Transform
       pos: -19.5,1.5
+      parent: 2
+  - uid: 13383
+    components:
+    - type: Transform
+      pos: 25.5,50.5
+      parent: 2
+  - uid: 19311
+    components:
+    - type: Transform
+      pos: 25.5,39.5
       parent: 2
 - proto: AutolatheMachineCircuitboard
   entities:
@@ -57814,13 +57824,6 @@ entities:
     - type: Transform
       pos: 11.415391,54.62904
       parent: 2
-- proto: EngineeringTechFab
-  entities:
-  - uid: 13383
-    components:
-    - type: Transform
-      pos: 25.5,50.5
-      parent: 2
 - proto: EvidenceMarkerOne
   entities:
   - uid: 7630
@@ -79866,8 +79869,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -73.5,16.5
       parent: 2
-    - type: GasVolumePump
-      enabled: True
     - type: AtmosPipeColor
       color: '#CC0000FF'
 - proto: GavelBlock
@@ -105505,13 +105506,6 @@ entities:
     - type: Transform
       pos: -26.5,13.5
       parent: 2
-- proto: ServiceTechFab
-  entities:
-  - uid: 19311
-    components:
-    - type: Transform
-      pos: 25.5,39.5
-      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 14292
@@ -108899,6 +108893,54 @@ entities:
     components:
     - type: Transform
       pos: -5.5,19.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 19428
+    components:
+    - type: Transform
+      pos: 20.5,46.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 19430
+    components:
+    - type: Transform
+      pos: -7.5,20.5
+      parent: 2
+  - uid: 19431
+    components:
+    - type: Transform
+      pos: -19.5,37.5
+      parent: 2
+  - uid: 19432
+    components:
+    - type: Transform
+      pos: -11.5,31.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 19425
+    components:
+    - type: Transform
+      pos: 15.5,-0.5
+      parent: 2
+  - uid: 19426
+    components:
+    - type: Transform
+      pos: 9.5,1.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 19427
+    components:
+    - type: Transform
+      pos: 31.5,-18.5
+      parent: 2
+  - uid: 19429
+    components:
+    - type: Transform
+      pos: 32.5,-22.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
