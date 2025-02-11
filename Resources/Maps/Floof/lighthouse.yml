@@ -9411,7 +9411,7 @@ entities:
       pos: -49.5,31.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -3401.0684
+      secondsUntilStateChange: -3497.6558
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13157,6 +13157,18 @@ entities:
     components:
     - type: Transform
       pos: -8.5,-56.5
+      parent: 2
+- proto: Autolathe
+  entities:
+  - uid: 697
+    components:
+    - type: Transform
+      pos: -2.5,7.5
+      parent: 2
+  - uid: 698
+    components:
+    - type: Transform
+      pos: 14.5,-43.5
       parent: 2
 - proto: BalloonCorgi
   entities:
@@ -51888,13 +51900,6 @@ entities:
     components:
     - type: Transform
       pos: -12.458726,40.51046
-      parent: 2
-- proto: EngineeringTechFab
-  entities:
-  - uid: 698
-    components:
-    - type: Transform
-      pos: 14.5,-43.5
       parent: 2
 - proto: EuphoniumInstrument
   entities:
@@ -107133,13 +107138,6 @@ entities:
     - type: Transform
       pos: 35.5,53.5
       parent: 2
-- proto: ServiceTechFab
-  entities:
-  - uid: 697
-    components:
-    - type: Transform
-      pos: -2.5,7.5
-      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 16109
@@ -111110,6 +111108,54 @@ entities:
     components:
     - type: Transform
       pos: 9.5,43.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 19406
+    components:
+    - type: Transform
+      pos: 12.5,-45.5
+      parent: 2
+  - uid: 19407
+    components:
+    - type: Transform
+      pos: 7.5,-44.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 19405
+    components:
+    - type: Transform
+      pos: 7.5,43.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 19402
+    components:
+    - type: Transform
+      pos: -12.5,41.5
+      parent: 2
+  - uid: 19403
+    components:
+    - type: Transform
+      pos: -5.5,34.5
+      parent: 2
+  - uid: 19404
+    components:
+    - type: Transform
+      pos: -12.5,36.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 19400
+    components:
+    - type: Transform
+      pos: -8.5,-5.5
+      parent: 2
+  - uid: 19401
+    components:
+    - type: Transform
+      pos: -10.5,-11.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
