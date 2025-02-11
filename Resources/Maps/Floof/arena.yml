@@ -154926,6 +154926,18 @@ entities:
     - type: Transform
       pos: 65.5,14.5
       parent: 6747
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 28250
+    components:
+    - type: Transform
+      pos: -20.5,1.5
+      parent: 6747
+  - uid: 28251
+    components:
+    - type: Transform
+      pos: -11.5,2.5
+      parent: 6747
 - proto: SpawnPointSeniorPhysician
   entities:
   - uid: 28252
