@@ -5417,7 +5417,7 @@ entities:
       pos: 16.5,-21.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1771.1742
+      secondsUntilStateChange: -1841.8569
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -6848,6 +6848,18 @@ entities:
     components:
     - type: Transform
       pos: 23.5,9.5
+      parent: 2
+- proto: Autolathe
+  entities:
+  - uid: 8445
+    components:
+    - type: Transform
+      pos: 10.5,-10.5
+      parent: 2
+  - uid: 10298
+    components:
+    - type: Transform
+      pos: 24.5,-2.5
       parent: 2
 - proto: AutolatheMachineCircuitboard
   entities:
@@ -31852,13 +31864,6 @@ entities:
       parent: 3968
     - type: Physics
       canCollide: False
-- proto: EngineeringTechFab
-  entities:
-  - uid: 10298
-    components:
-    - type: Transform
-      pos: 24.5,-2.5
-      parent: 2
 - proto: ExosuitFabricator
   entities:
   - uid: 2558
@@ -59459,13 +59464,6 @@ entities:
     - type: Transform
       pos: -13.5,-12.5
       parent: 2
-- proto: ServiceTechFab
-  entities:
-  - uid: 8445
-    components:
-    - type: Transform
-      pos: 10.5,-10.5
-      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 3270
@@ -61818,6 +61816,34 @@ entities:
     components:
     - type: Transform
       pos: -30.5,7.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 11973
+    components:
+    - type: Transform
+      pos: 34.5,8.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 11971
+    components:
+    - type: Transform
+      pos: -31.5,7.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 11972
+    components:
+    - type: Transform
+      pos: 30.5,-19.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 11970
+    components:
+    - type: Transform
+      pos: -29.5,-17.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:
