@@ -167,8 +167,8 @@
     gasMixture:
       volume: 1000
       moles:
-        - 393.0592071 # oxygen 21%
-        - 1478.6513029 # nitrogen 79%
+        - 430.4934173 # oxygen 23%
+        - 1441.2170927 # nitrogen 77%
       temperature: 293.15
   - type: Destructible
     thresholds:
