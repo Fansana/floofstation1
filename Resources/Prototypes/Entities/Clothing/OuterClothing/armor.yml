@@ -23,7 +23,7 @@
 
 #Alternate / slim basic armor vest
 - type: entity
-  parent: ClothingOuterArmorBasic
+  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing] #floof added by popular demand
   id: ClothingOuterArmorBasicSlim
   name: armor vest
   suffix: slim
@@ -57,7 +57,7 @@
   - type: GroupExamine
 
 - type: entity
-  parent: ClothingOuterArmorBasic
+  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing] #floof added by popular demand
   id: ClothingOuterArmorBulletproof
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
@@ -77,7 +77,7 @@
     damageCoefficient: 0.80
 
 - type: entity
-  parent: ClothingOuterArmorBasic
+  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing] #floof added by popular demand
   id: ClothingOuterArmorReflective
   name: reflective vest
   description: An armored vest with advanced shielding to protect against energy weapons.
