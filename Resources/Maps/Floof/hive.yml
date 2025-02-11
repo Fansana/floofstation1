@@ -13714,7 +13714,7 @@ entities:
       pos: -39.5,1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2065.7227
+      secondsUntilStateChange: -2149.7888
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14824,7 +14824,7 @@ entities:
       pos: 14.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1762.6906
+      secondsUntilStateChange: -1846.7567
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -14837,7 +14837,7 @@ entities:
       pos: 19.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1759.1572
+      secondsUntilStateChange: -1843.2234
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18282,6 +18282,16 @@ entities:
       parent: 2
 - proto: Autolathe
   entities:
+  - uid: 839
+    components:
+    - type: Transform
+      pos: 0.5,-17.5
+      parent: 2
+  - uid: 840
+    components:
+    - type: Transform
+      pos: -46.5,4.5
+      parent: 2
   - uid: 841
     components:
     - type: Transform
@@ -60828,7 +60838,7 @@ entities:
       pos: 14.5,-7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1769.3073
+      secondsUntilStateChange: -1853.3734
       state: Opening
   - uid: 8635
     components:
@@ -60837,7 +60847,7 @@ entities:
       pos: 14.5,-10.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1776.3572
+      secondsUntilStateChange: -1860.4233
       state: Opening
   - uid: 8651
     components:
@@ -60846,7 +60856,7 @@ entities:
       pos: 14.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1770.0739
+      secondsUntilStateChange: -1854.14
       state: Opening
   - uid: 17438
     components:
@@ -60855,7 +60865,7 @@ entities:
       pos: 15.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1767.6073
+      secondsUntilStateChange: -1851.6735
       state: Opening
   - uid: 17442
     components:
@@ -60864,7 +60874,7 @@ entities:
       pos: 16.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1767.0739
+      secondsUntilStateChange: -1851.14
       state: Opening
   - uid: 17797
     components:
@@ -60873,7 +60883,7 @@ entities:
       pos: 14.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1768.1906
+      secondsUntilStateChange: -1852.2567
       state: Opening
   - uid: 19053
     components:
@@ -60882,7 +60892,7 @@ entities:
       pos: 14.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1768.7239
+      secondsUntilStateChange: -1852.79
       state: Opening
   - uid: 19054
     components:
@@ -60891,7 +60901,7 @@ entities:
       pos: 14.5,-11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1776.5573
+      secondsUntilStateChange: -1860.6234
       state: Opening
   - uid: 19056
     components:
@@ -60900,7 +60910,7 @@ entities:
       pos: 20.5,-5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1766.5072
+      secondsUntilStateChange: -1850.5734
       state: Opening
   - uid: 19057
     components:
@@ -60909,7 +60919,7 @@ entities:
       pos: 14.5,-13.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1765.4906
+      secondsUntilStateChange: -1849.5568
       state: Opening
   - uid: 26594
     components:
@@ -72085,13 +72095,6 @@ entities:
       parent: 10829
     - type: Physics
       canCollide: False
-- proto: EngineeringTechFab
-  entities:
-  - uid: 840
-    components:
-    - type: Transform
-      pos: -46.5,4.5
-      parent: 2
 - proto: ExosuitFabricator
   entities:
   - uid: 10845
@@ -138703,13 +138706,6 @@ entities:
     - type: Transform
       pos: 71.5,37.5
       parent: 2
-- proto: ServiceTechFab
-  entities:
-  - uid: 839
-    components:
-    - type: Transform
-      pos: 0.5,-17.5
-      parent: 2
 - proto: ShardGlass
   entities:
   - uid: 8480
@@ -144344,6 +144340,69 @@ entities:
     components:
     - type: Transform
       pos: 17.5,-46.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 26614
+    components:
+    - type: Transform
+      pos: -40.5,10.5
+      parent: 2
+  - uid: 26615
+    components:
+    - type: Transform
+      pos: -42.5,5.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 26619
+    components:
+    - type: Transform
+      pos: 79.5,21.5
+      parent: 2
+  - uid: 26620
+    components:
+    - type: Transform
+      pos: 84.5,21.5
+      parent: 2
+  - uid: 26621
+    components:
+    - type: Transform
+      pos: 71.5,13.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 26622
+    components:
+    - type: Transform
+      pos: 66.5,-8.5
+      parent: 2
+  - uid: 26623
+    components:
+    - type: Transform
+      pos: 84.5,-15.5
+      parent: 2
+  - uid: 26624
+    components:
+    - type: Transform
+      pos: 90.5,-6.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 26616
+    components:
+    - type: Transform
+      pos: 11.5,43.5
+      parent: 2
+  - uid: 26617
+    components:
+    - type: Transform
+      pos: 6.5,43.5
+      parent: 2
+  - uid: 26618
+    components:
+    - type: Transform
+      pos: 20.5,45.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
