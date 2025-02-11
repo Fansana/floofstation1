@@ -15870,6 +15870,11 @@ entities:
     - type: Transform
       pos: -50.5,-36.5
       parent: 2
+  - uid: 5625
+    components:
+    - type: Transform
+      pos: -19.5,-40.5
+      parent: 2
   - uid: 5765
     components:
     - type: Transform
@@ -15993,7 +15998,7 @@ entities:
       pos: 59.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2901.0242
+      secondsUntilStateChange: -3055.1987
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -19471,11 +19476,6 @@ entities:
     - type: Transform
       pos: -4.5,-21.5
       parent: 2
-  - uid: 5625
-    components:
-    - type: Transform
-      pos: 28.5,17.5
-      parent: 2
   - uid: 7138
     components:
     - type: Transform
@@ -20388,13 +20388,6 @@ entities:
     - type: Transform
       pos: -30.485527,6.269905
       parent: 2
-  - uid: 8188
-    components:
-    - type: Transform
-      parent: 16656
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: BiomassReclaimer
   entities:
   - uid: 992
@@ -21006,15 +20999,6 @@ entities:
     - type: Transform
       pos: 58.383793,26.371101
       parent: 2
-- proto: BoxCleanerGrenades
-  entities:
-  - uid: 2142
-    components:
-    - type: Transform
-      parent: 156
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: BoxFolderBlack
   entities:
   - uid: 176
@@ -50029,6 +50013,13 @@ entities:
     - type: Transform
       pos: 7.5130057,-48.2883
       parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 156
+    components:
+    - type: Transform
+      pos: 28.5,17.5
+      parent: 2
 - proto: Carpet
   entities:
   - uid: 179
@@ -60316,42 +60307,6 @@ entities:
     - type: Transform
       pos: 29.5,-35.5
       parent: 2
-- proto: ClosetJanitorFilled
-  entities:
-  - uid: 156
-    components:
-    - type: Transform
-      pos: -13.5,-26.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.7459903
-        - 6.568249
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2142
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: ClosetL3JanitorFilled
   entities:
   - uid: 871
@@ -61112,15 +61067,6 @@ entities:
     - type: Transform
       pos: 75.5,-4.5
       parent: 2
-- proto: ClothingBackpackClown
-  entities:
-  - uid: 8189
-    components:
-    - type: Transform
-      parent: 16656
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingBackpackDuffel
   entities:
   - uid: 6997
@@ -61165,31 +61111,6 @@ entities:
     - type: Transform
       pos: 15.512184,31.628899
       parent: 2
-- proto: ClothingBackpackMime
-  entities:
-  - uid: 9269
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: GroupExamine
-      group:
-      - hoverMessage: ""
-        contextText: verb-examine-group-other
-        icon: /Textures/Interface/examine-star.png
-        components:
-        - Armor
-        - ClothingSpeedModifier
-        entries:
-        - message: >-
-            It provides the following protection:
-
-            - [color=orange]Explosion[/color] damage [color=white]to contents[/color] reduced by [color=lightblue]10%[/color].
-          priority: 0
-          component: Armor
-        title: null
-    - type: InsideEntityStorage
 - proto: ClothingBeltJanitorFilled
   entities:
   - uid: 879
@@ -61395,15 +61316,6 @@ entities:
     - type: Transform
       pos: -45.485172,9.516606
       parent: 2
-- proto: ClothingHeadHatMimesoftFlipped
-  entities:
-  - uid: 9270
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingHeadHatOutlawHat
   entities:
   - uid: 2143
@@ -61561,15 +61473,6 @@ entities:
     - type: Transform
       pos: 37.5265,-16.39656
       parent: 2
-- proto: ClothingMaskSexyMime
-  entities:
-  - uid: 8192
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingNeckAromanticPin
   entities:
   - uid: 21450
@@ -61699,15 +61602,6 @@ entities:
     - type: Transform
       pos: 4.709385,33.519436
       parent: 2
-- proto: ClothingOuterClownPriest
-  entities:
-  - uid: 335
-    components:
-    - type: Transform
-      parent: 16656
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingOuterHardsuitAncientEVA
   entities:
   - uid: 17544
@@ -61757,15 +61651,6 @@ entities:
     - type: Transform
       pos: 37.107964,-4.375332
       parent: 2
-- proto: ClothingOuterWinterClown
-  entities:
-  - uid: 320
-    components:
-    - type: Transform
-      parent: 16656
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingOuterWinterCoat
   entities:
   - uid: 7050
@@ -61773,15 +61658,6 @@ entities:
     - type: Transform
       pos: 57.579605,-6.501329
       parent: 2
-- proto: ClothingOuterWinterMime
-  entities:
-  - uid: 8690
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingOuterWinterMusician
   entities:
   - uid: 15984
@@ -74763,6 +74639,11 @@ entities:
       deviceLists:
       - 17618
       - 9188
+  - uid: 8188
+    components:
+    - type: Transform
+      pos: -19.5,-40.5
+      parent: 2
   - uid: 8536
     components:
     - type: Transform
@@ -75473,7 +75354,7 @@ entities:
       pos: -37.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -2800.6082
+      secondsUntilStateChange: -2954.7827
       state: Closing
   - uid: 15128
     components:
@@ -76144,15 +76025,6 @@ entities:
     - type: Transform
       pos: 27.073427,-31.36135
       parent: 2
-- proto: FoodBreadBaguette
-  entities:
-  - uid: 2125
-    components:
-    - type: Transform
-      parent: 16657
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: FoodBurgerCheese
   entities:
   - uid: 6763
@@ -104658,14 +104530,14 @@ entities:
     - type: Transform
       pos: 12.5,-18.5
       parent: 2
-- proto: LockerBoozeFilled
+- proto: LockerBartenderFilled
   entities:
-  - uid: 1482
+  - uid: 1483
     components:
     - type: Transform
       pos: -17.5,6.5
       parent: 2
-  - uid: 1483
+  - uid: 2125
     components:
     - type: Transform
       pos: -17.5,5.5
@@ -104817,45 +104689,13 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerClown
+- proto: LockerClownFilled
   entities:
-  - uid: 16656
+  - uid: 320
     components:
     - type: Transform
       pos: -29.5,-19.5
       parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.8968438
-        - 7.1357465
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 8188
-          - 8189
-          - 320
-          - 335
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerDetectiveFilled
   entities:
   - uid: 9166
@@ -105043,6 +104883,18 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+- proto: LockerJanitorFilled
+  entities:
+  - uid: 335
+    components:
+    - type: Transform
+      pos: -19.5,-25.5
+      parent: 2
+  - uid: 2142
+    components:
+    - type: Transform
+      pos: -13.5,-26.5
+      parent: 2
 - proto: LockerMedicalFilled
   entities:
   - uid: 6575
@@ -105222,46 +105074,13 @@ entities:
     - type: Transform
       pos: 13.5,28.5
       parent: 2
-- proto: LockerMime
+- proto: LockerMimeFilled
   entities:
-  - uid: 16657
+  - uid: 1482
     components:
     - type: Transform
       pos: -34.5,-18.5
       parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-        - 1.8968438
-        - 7.1357465
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 9269
-          - 8690
-          - 8192
-          - 9270
-          - 2125
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerParamedicFilled
   entities:
   - uid: 6668
@@ -123300,12 +123119,58 @@ entities:
     - type: Transform
       pos: -7.5,33.5
       parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 8189
+    components:
+    - type: Transform
+      pos: -9.5,-21.5
+      parent: 2
+  - uid: 8192
+    components:
+    - type: Transform
+      pos: -7.5,-21.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 8690
+    components:
+    - type: Transform
+      pos: -8.5,32.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 9269
+    components:
+    - type: Transform
+      pos: 48.5,3.5
+      parent: 2
+  - uid: 9270
+    components:
+    - type: Transform
+      pos: 55.5,2.5
+      parent: 2
+  - uid: 16656
+    components:
+    - type: Transform
+      pos: 51.5,-2.5
+      parent: 2
 - proto: SpawnPointSeniorResearcher
   entities:
   - uid: 6777
     components:
     - type: Transform
       pos: 68.5,-12.5
+      parent: 2
+  - uid: 16657
+    components:
+    - type: Transform
+      pos: 59.5,-14.5
+      parent: 2
+  - uid: 22802
+    components:
+    - type: Transform
+      pos: 70.5,-12.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:
