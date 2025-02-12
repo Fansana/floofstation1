@@ -68,7 +68,7 @@
     - JobsEngineeringAAUncategorized
     - JobsEngineeringAtmosphericTechnician
     - JobsEngineeringChiefEngineer
-#    - JobsEngineeringSeniorEngineer #floof stub / tbr #Crow : these senior roles are referenced in loadout creation, however, no map has slots for these roles so players cant actually play the job yet. Opting to comment them out until further review or implimentation.
+    - JobsEngineeringSeniorEngineer 
     - JobsEngineeringStationEngineer
     - JobsEngineeringTechnicalAssistant
 
@@ -81,8 +81,8 @@
 - type: loadoutCategory
   id: JobsEngineeringChiefEngineer
 
-#- type: loadoutCategory #floof stub / tbr
-#  id: JobsEngineeringSeniorEngineer #floof stub / tbr
+- type: loadoutCategory 
+  id: JobsEngineeringSeniorEngineer 
 
 - type: loadoutCategory
   id: JobsEngineeringStationEngineer
@@ -100,7 +100,7 @@
     - JobsEpistemicsChaplain
     - JobsEpistemicsGolemancer
     - JobsEpistemicsMystagogue
-    - JobsEpistemicsMystic #floof stub / tbr
+    - JobsEpistemicsMystic
     - JobsEpistemicsNoviciate
     - JobsEpistemicsPsionicMantis
 
