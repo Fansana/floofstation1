@@ -38,3 +38,19 @@
   - !type:CharacterJobRequirement
     jobs:
     - ForensicMantis
+
+- type: loadout
+  id: LoadoutWeaponExcommunicantMantis
+  category: JobsEpistemicsPsionicMantis
+  cost: 3
+  exclusive: true
+  items:
+  - WeaponShotgunSawnExcommunicant
+  - BoxShellSoulbreaker
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ForensicMantis
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobEpistemicsPsionicMantis
+      min: 36000 # 10 hours
