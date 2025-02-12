@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server.DeviceNetwork;
 using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Power.EntitySystems; // DeltaV
+using Content.Server.Power.Components; // Floofstation
 using Content.Server.PowerCell;
 using Content.Shared.Medical.CrewMonitoring;
 using Content.Shared.Medical.SuitSensor;
@@ -55,7 +56,7 @@ public sealed class CrewMonitoringConsoleSystem : EntitySystem
             return;
 
         // station power (for the machine version)
-        if (!this.IsPowered(uid, EntityManager))
+        if (this.HasComp<ApcPowerReceiverComponent>(uid) && !this.IsPowered(uid, EntityManager)) // Floofstation - our IsPowered differs from Delta-V currently so added an extra check
             return;
 
         // cell power (for the handheld)
