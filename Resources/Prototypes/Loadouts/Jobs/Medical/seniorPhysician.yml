@@ -6,40 +6,40 @@
 # Ears
 
 # Equipment
-#- type: loadout
-#  id: LoadoutSeniorPhysicianBeltMedical
-#  category: JobsMedicalSeniorPhysician
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorPhysicianBelt
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - MedicalDoctor
-#  items:
-#    - ClothingBeltMedical
+- type: loadout
+  id: LoadoutSeniorPhysicianBeltMedical
+  category: JobsMedicalSeniorPhysician
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+  items:
+    - ClothingBeltMedical
 
 #- type: loadout
-#  id: LoadoutSeniorPhysicianBeltMedicalAdvancedFilled
-#  category: JobsMedicalSeniorPhysician
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorPhysicianBelt
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorPhysician
-#  items:
-#    - ClothingBeltMedicalAdvancedFilled
+  id: LoadoutSeniorPhysicianBeltMedicalAdvancedFilled
+  category: JobsMedicalSeniorPhysician
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+  items:
+    - ClothingBeltMedicalAdvancedFilled
 
 # Eyes
 
 # Gloves
 
 # Head
-#- type: loadout #floof stub / tbr
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
 #  id: LoadoutMedicalHeadBeretSeniorPhysician
 #  category: JobsMedicalSeniorPhysician
 #  cost: 0
@@ -64,7 +64,7 @@
 # Shoes
 
 # Uniforms
-#- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
 #  id: LoadoutMedicalUniformJumpskirtSenior
 #  category: JobsMedicalSeniorPhysician
 #  cost: 0
@@ -78,7 +78,7 @@
 #  items:
 #    - ClothingUniformJumpskirtSeniorPhysician
 
-#- type: loadout #floof stub / tbr
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
 #  id: LoadoutMedicalUniformJumpsuitSenior
 #  category: JobsMedicalSeniorPhysician
 #  cost: 0

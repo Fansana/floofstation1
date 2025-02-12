@@ -2,116 +2,116 @@
 # Backpacks
 
 # Belt
-#- type: loadout
-#  id: LoadoutSeniorEngineerBeltUtility
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerBelt
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - ClothingBeltUtility
+- type: loadout
+  id: LoadoutSeniorEngineerBeltUtility
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - ClothingBeltUtility
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerBeltUtilityEngineering
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerBelt
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - ClothingBeltUtilityEngineering
+- type: loadout
+  id: LoadoutSeniorEngineerBeltUtilityEngineering
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - ClothingBeltUtilityEngineering
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerBeltUtilityAtmos
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerBelt
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - ClothingBeltUtilityAtmos
+- type: loadout
+  id: LoadoutSeniorEngineerBeltUtilityAtmos
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - ClothingBeltUtilityAtmos
 
 # Ears
 
 # Equipment
-#- type: loadout
-#  id: LoadoutSeniorEngineerEquipmentBoxInflatable
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerEquipment
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - BoxInflatable
+- type: loadout
+  id: LoadoutSeniorEngineerEquipmentBoxInflatable
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - BoxInflatable
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerEquipmentMedkitOxygen
-# category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerEquipment
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - MedkitOxygenFilled
+- type: loadout
+  id: LoadoutSeniorEngineerEquipmentMedkitOxygen
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - MedkitOxygenFilled
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerEquipmentRCD
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 0
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerEquipment
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - RCD
-#    - RCDAmmo
+- type: loadout
+  id: LoadoutSeniorEngineerEquipmentRCD
+  category: JobsEngineeringSeniorEngineer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - RCD
+    - RCDAmmo
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerEquipmentRCDAmmo1
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 1
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerEquipment
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - RCDAmmo
+- type: loadout
+  id: LoadoutSeniorEngineerEquipmentRCDAmmo1
+  category: JobsEngineeringSeniorEngineer
+  cost: 1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - RCDAmmo
 
-#- type: loadout
-#  id: LoadoutSeniorEngineerEquipmentRCDAmmo2
-#  category: JobsEngineeringSeniorEngineer
-#  cost: 1
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorEngineerEquipment
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorEngineer
-#  items:
-#    - RCDAmmo
+- type: loadout
+  id: LoadoutSeniorEngineerEquipmentRCDAmmo2
+  category: JobsEngineeringSeniorEngineer
+  cost: 1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorEngineerEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorEngineer
+  items:
+    - RCDAmmo
 
 # Eyes
 
@@ -130,7 +130,7 @@
 # Shoes
 
 # Uniforms
-#- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
 #  id: LoadoutEngineeringUniformJumpskirtSenior
 #  category: JobsEngineeringSeniorEngineer
 #  cost: 0
@@ -144,7 +144,7 @@
 #  items:
 #    - ClothingUniformJumpskirtSeniorEngineer
 
-#- type: loadout #floof stub / tbr
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
 #  id: LoadoutEngineeringUniformJumpsuitSenior
 #  category: JobsEngineeringSeniorEngineer
 #  cost: 0
