@@ -59,10 +59,10 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutSeniorOfficerUniforms
-#  items:
-#    - type: loadout
-#      id: LoadoutSecurityUniformJumpskirtSenior
-#    - type: loadout
-#      id: LoadoutSecurityUniformJumpsuitSenior
+- type: characterItemGroup
+  id: LoadoutSeniorOfficerUniforms
+  items:
+    - type: loadout
+      id: LoadoutSecurityUniformJumpskirtSenior
+    - type: loadout
+      id: LoadoutSecurityUniformJumpsuitSenior
