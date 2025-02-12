@@ -1,0 +1,92 @@
+#  MolesCellStandard = (OneAtmosphere * CellVolume / (T20C * R));
+#  MolesCellStandard = 103.9279922815
+#  To increase pressure, multiply standard moles.
+#  To increase volume without affecting pressure, multiply standard moles.
+#  To increase temperature without affecting pressure, divide standard moles.
+
+
+- type: entity
+  abstract: true
+  name: gas tester
+  suffix: DEBUG
+  description: Used for testing gas mixes. continiually updates the atmosphere around it to match its internal specifications.
+  id: GasTesterBase
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+    - type: Transform
+      anchored: true
+    - type: Sprite
+      sprite: Structures/Piping/Atmospherics/miners.rsi
+      state: miner
+    - type: AtmosDevice
+    - type: GasTester
+      mixzero:
+        volume: 2500
+        moles:
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+      mix-x:
+        volume: 2500
+        moles:
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+      mix-y:
+        volume: 2500
+        moles:
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+- type: entity
+  suffix: N2, O2, CO2, DEBUG
+  id: GasTesterNOC
+  parent: GasTesterBase
+  components:
+    - type: GasTester
+      mixzero:
+        volume: 2500
+        moles:
+          - 21.824878379 # 21% oxygen
+          - 82.103113902 # 79% nitrogen
+          # total: 103.927992281 # 101.325 kPa
+        temperature: 293.15
+      mix-x:
+        moles:
+          - 0.519639961 # oxygen # +0.5%
+          - -0.519639961 # nitrogen # -0.5%
+        temperature: 293.15
+      mix-y:
+        moles:
+          - 0 # oxygen
+          - -0.207855985 # nitrogen # -0.2%
+          - 0.207855985 # CO2 # +0.2%
+        temperature: 293.15
