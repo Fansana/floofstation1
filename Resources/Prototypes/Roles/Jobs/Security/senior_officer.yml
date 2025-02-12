@@ -1,6 +1,6 @@
 - type: job
   id: SeniorOfficer
-  name: Senior Officer #floof
+  name: job-name-senior-officer # needs localization
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
   setPreference: false # DeltaV - Disable Senior Roles round start selection #floof - toggle to true to reenable

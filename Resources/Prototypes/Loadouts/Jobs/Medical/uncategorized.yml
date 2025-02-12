@@ -336,6 +336,28 @@
   items:
     - ClothingHeadHatSurgcapCybersun
 
+- type: loadout #floof stub / tbr
+  id: LoadoutMedicalHeadBeretSeniorPhysician
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalHead
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all subroles minus intern
+      jobs:
+#        - SeniorPhysician
+        - Chemist
+        - MedicalDoctor
+        - ChiefMedicalOfficer
+        - Paramedic
+        - Psychologist
+  items:
+    - ClothingHeadHatBeretSeniorPhysician
+
 # Id
 
 # Neck
@@ -503,3 +525,48 @@
         - Paramedic
   items:
     - UniformScrubsColorCybersun
+
+
+- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+  id: LoadoutMedicalUniformJumpskirtSenior
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all subroles minus intern
+      jobs:
+#        - SeniorPhysician
+        - Chemist
+        - MedicalDoctor
+        - ChiefMedicalOfficer
+        - Paramedic
+        - Psychologist
+  items:
+    - ClothingUniformJumpskirtSeniorPhysician
+
+- type: loadout #floof stub / tbr
+  id: LoadoutMedicalUniformJumpsuitSenior
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all subroles minus intern
+      jobs:
+#        - SeniorPhysician
+        - Chemist
+        - MedicalDoctor
+        - ChiefMedicalOfficer
+        - Paramedic
+        - Psychologist
+  items:
+    - ClothingUniformJumpsuitSeniorPhysician

@@ -1,6 +1,6 @@
 - type: job
   id: SeniorResearcher
-  name: job-name-senior-researcher #floof/crow- senior role name in preround selection is overwritten to mystic in another file, however, unable to track down *which* file
+  name: job-name-senior-researcher
   description: job-description-senior-researcher
   playTimeTracker: JobSeniorResearcher
   setPreference: false #floof - false makes it unable to be selected in round start selection #stub / tbr # Crow: Disabling senior roles until further review or better implimentation

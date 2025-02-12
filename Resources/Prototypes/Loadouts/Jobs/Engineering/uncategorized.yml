@@ -255,3 +255,43 @@
         - StationEngineer
   items:
     - ClothingUniformJumpsuitEngineeringHazard
+
+- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+  id: LoadoutEngineeringUniformJumpskirtSenior
+  category: JobsEngineeringAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEngineeringUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
+    - !type:CharacterJobRequirement #all job roles but intern
+      jobs:
+#        - SeniorEngineer
+        - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
+  items:
+    - ClothingUniformJumpskirtSeniorEngineer
+
+- type: loadout #floof stub / tbr
+  id: LoadoutEngineeringUniformJumpsuitSenior
+  category: JobsEngineeringAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEngineeringUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
+    - !type:CharacterJobRequirement #all job roles but intern
+      jobs:
+#        - SeniorEngineer
+        - StationEngineer
+        - AtmosphericTechnician
+        - ChiefEngineer
+  items:
+    - ClothingUniformJumpsuitSeniorEngineer

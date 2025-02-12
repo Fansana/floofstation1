@@ -1003,3 +1003,47 @@
         - Security
   items:
     - ClothingUniformJumpsuitSecSummer
+
+- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+  id: LoadoutSecurityUniformJumpskirtSenior
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement #All security jobs but cadet
+      jobs:
+#        - SeniorOfficer
+        - Brigmedic
+        - Detective
+        - HeadOfSecurity
+        - SecurityOfficer
+        - Warden
+  items:
+    - ClothingUniformJumpskirtSeniorOfficer
+
+- type: loadout #floof stub / tbr
+  id: LoadoutSecurityUniformJumpsuitSenior
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement #All security jobs but cadet
+      jobs:
+#        - SeniorOfficer
+        - Brigmedic
+        - Detective
+        - HeadOfSecurity
+        - SecurityOfficer
+        - Warden
+  items:
+    - ClothingUniformJumpsuitSeniorOfficer

@@ -242,16 +242,41 @@
 
 - type: loadout
   id: LoadoutOuterRobeTechPriest
-  category: Outer
+  category: JobsEpistemicsAAUncategorized
   cost: 0
-  items:
-    - ClothingOuterRobeTechPriest
+  exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEpistemicsOuter
     - !type:CharacterDepartmentRequirement
       departments:
         - Epistemics
+  items:
+    - ClothingOuterRobeTechPriest
+
+- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+  id: LoadoutScienceOuterLabcoatSeniorResearcher
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all jobs but intern
+      jobs:
+#        - SeniorResearcher
+        - ForensicMantis
+        - ResearchDirector
+        - Chaplain
+        - Librarian
+        - Roboticist
+        - Scientist
+  items:
+    - ClothingOuterCoatLabSeniorResearcher
+
 
 # Shoes
 - type: loadout
@@ -269,3 +294,48 @@
     - ClothingShoesBootsWinterSci
 
 # Uniforms
+- type: loadout #floof stub / tbr
+  id: LoadoutScienceUniformJumpskirtSenior
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all jobs but intern
+      jobs:
+#        - SeniorResearcher
+        - ForensicMantis
+        - ResearchDirector
+        - Chaplain
+        - Librarian
+        - Roboticist
+        - Scientist
+  items:
+    - ClothingUniformJumpskirtSeniorResearcher
+
+- type: loadout #floof stub / tbr
+  id: LoadoutScienceUniformJumpsuitSenior
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all jobs but intern
+      jobs:
+#        - SeniorResearcher
+        - ForensicMantis
+        - ResearchDirector
+        - Chaplain
+        - Librarian
+        - Roboticist
+        - Scientist
+  items:
+    - ClothingUniformJumpsuitSeniorResearcher

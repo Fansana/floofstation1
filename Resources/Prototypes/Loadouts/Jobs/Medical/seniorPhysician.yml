@@ -6,52 +6,52 @@
 # Ears
 
 # Equipment
-- type: loadout
-  id: LoadoutSeniorPhysicianBeltMedical
-  category: JobsMedicalSeniorPhysician
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorPhysicianBelt
-    - !type:CharacterJobRequirement
-      jobs:
-        - MedicalDoctor
-  items:
-    - ClothingBeltMedical
+#- type: loadout
+#  id: LoadoutSeniorPhysicianBeltMedical
+#  category: JobsMedicalSeniorPhysician
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorPhysicianBelt
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - MedicalDoctor
+#  items:
+#    - ClothingBeltMedical
 
-- type: loadout
-  id: LoadoutSeniorPhysicianBeltMedicalAdvancedFilled
-  category: JobsMedicalSeniorPhysician
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorPhysicianBelt
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorPhysician
-  items:
-    - ClothingBeltMedicalAdvancedFilled
+#- type: loadout
+#  id: LoadoutSeniorPhysicianBeltMedicalAdvancedFilled
+#  category: JobsMedicalSeniorPhysician
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorPhysicianBelt
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorPhysician
+#  items:
+#    - ClothingBeltMedicalAdvancedFilled
 
 # Eyes
 
 # Gloves
 
 # Head
-- type: loadout
-  id: LoadoutMedicalHeadBeretSeniorPhysician
-  category: JobsMedicalSeniorPhysician
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorPhysicianHead
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorPhysician
-  items:
-    - ClothingHeadHatBeretSeniorPhysician
+#- type: loadout #floof stub / tbr
+#  id: LoadoutMedicalHeadBeretSeniorPhysician
+#  category: JobsMedicalSeniorPhysician
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorPhysicianHead
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorPhysician
+#  items:
+#    - ClothingHeadHatBeretSeniorPhysician
 
 # Id
 
@@ -64,30 +64,30 @@
 # Shoes
 
 # Uniforms
-- type: loadout
-  id: LoadoutMedicalUniformJumpskirtSenior
-  category: JobsMedicalSeniorPhysician
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorPhysicianUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorPhysician
-  items:
-    - ClothingUniformJumpskirtSeniorPhysician
+#- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+#  id: LoadoutMedicalUniformJumpskirtSenior
+#  category: JobsMedicalSeniorPhysician
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorPhysicianUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorPhysician
+#  items:
+#    - ClothingUniformJumpskirtSeniorPhysician
 
-- type: loadout
-  id: LoadoutMedicalUniformJumpsuitSenior
-  category: JobsMedicalSeniorPhysician
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorPhysicianUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorPhysician
-  items:
-    - ClothingUniformJumpsuitSeniorPhysician
+#- type: loadout #floof stub / tbr
+#  id: LoadoutMedicalUniformJumpsuitSenior
+#  category: JobsMedicalSeniorPhysician
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorPhysicianUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorPhysician
+#  items:
+#    - ClothingUniformJumpsuitSeniorPhysician

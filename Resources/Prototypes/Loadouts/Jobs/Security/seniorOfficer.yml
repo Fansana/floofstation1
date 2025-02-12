@@ -24,30 +24,30 @@
 # Shoes
 
 # Uniforms
-- type: loadout
-  id: LoadoutSecurityUniformJumpskirtSenior
-  category: JobsSecuritySeniorOfficer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorOfficerUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorOfficer
-  items:
-    - ClothingUniformJumpskirtSeniorOfficer
+#- type: loadout #floof stub / tbr
+#  id: LoadoutSecurityUniformJumpskirtSenior
+#  category: JobsSecuritySeniorOfficer
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorOfficerUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorOfficer
+#  items:
+#    - ClothingUniformJumpskirtSeniorOfficer
 
-- type: loadout
-  id: LoadoutSecurityUniformJumpsuitSenior
-  category: JobsSecuritySeniorOfficer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorOfficerUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorOfficer
-  items:
-    - ClothingUniformJumpsuitSeniorOfficer
+#- type: loadout #floof stub / tbr
+#  id: LoadoutSecurityUniformJumpsuitSenior
+#  category: JobsSecuritySeniorOfficer
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorOfficerUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorOfficer
+#  items:
+#    - ClothingUniformJumpsuitSeniorOfficer

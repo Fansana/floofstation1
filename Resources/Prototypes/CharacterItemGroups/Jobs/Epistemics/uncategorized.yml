@@ -94,7 +94,11 @@
     - type: loadout
       id: LoadoutScienceShoesBootsWinterSci
 
-#- type: characterItemGroup
-#  id: LoadoutEpistemicsUniforms
-#  maxItems: 1
-#  items:
+- type: characterItemGroup
+  id: LoadoutEpistemicsUniforms
+  maxItems: 1
+  items:
+      - type: loadout
+        id: LoadoutScienceUniformJumpsuitSenior
+      - type: loadout
+        id: LoadoutScienceUniformJumpskirtSenior
