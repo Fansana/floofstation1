@@ -254,7 +254,7 @@
   items:
     - ClothingOuterRobeTechPriest
 
-- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutScienceOuterLabcoatSeniorResearcher
   category: JobsEpistemicsAAUncategorized
   cost: 0
@@ -267,7 +267,7 @@
         - Epistemics
     - !type:CharacterJobRequirement #all jobs but intern
       jobs:
-#        - SeniorResearcher
+        - SeniorResearcher
         - ForensicMantis
         - ResearchDirector
         - Chaplain
@@ -297,7 +297,7 @@
     - ClothingShoesBootsWinterSci
 
 # Uniforms
-- type: loadout #floof stub / tbr
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutScienceUniformJumpskirtSenior
   category: JobsEpistemicsAAUncategorized
   cost: 0
@@ -310,7 +310,7 @@
         - Epistemics
     - !type:CharacterJobRequirement #all jobs but intern
       jobs:
-#        - SeniorResearcher
+        - SeniorResearcher
         - ForensicMantis
         - ResearchDirector
         - Chaplain
@@ -323,7 +323,7 @@
   items:
     - ClothingUniformJumpskirtSeniorResearcher
 
-- type: loadout #floof stub / tbr
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutScienceUniformJumpsuitSenior
   category: JobsEpistemicsAAUncategorized
   cost: 0
@@ -336,7 +336,7 @@
         - Epistemics
     - !type:CharacterJobRequirement #all jobs but intern
       jobs:
-#        - SeniorResearcher
+        - SeniorResearcher
         - ForensicMantis
         - ResearchDirector
         - Chaplain

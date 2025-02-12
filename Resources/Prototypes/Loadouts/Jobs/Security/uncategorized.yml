@@ -1004,7 +1004,7 @@
   items:
     - ClothingUniformJumpsuitSecSummer
 
-- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutSecurityUniformJumpskirtSenior
   category: JobsSecurityAUncategorized
   cost: 0
@@ -1017,7 +1017,7 @@
         - Security
     - !type:CharacterJobRequirement #All security jobs but cadet
       jobs:
-#        - SeniorOfficer
+        - SeniorOfficer
         - Brigmedic
         - Detective
         - HeadOfSecurity
@@ -1029,7 +1029,7 @@
   items:
     - ClothingUniformJumpskirtSeniorOfficer
 
-- type: loadout #floof stub / tbr
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutSecurityUniformJumpsuitSenior
   category: JobsSecurityAUncategorized
   cost: 0
@@ -1042,7 +1042,7 @@
         - Security
     - !type:CharacterJobRequirement #All security jobs but cadet
       jobs:
-#        - SeniorOfficer
+        - SeniorOfficer
         - Brigmedic
         - Detective
         - HeadOfSecurity

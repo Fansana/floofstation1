@@ -256,7 +256,7 @@
   items:
     - ClothingUniformJumpsuitEngineeringHazard
 
-- type: loadout #floof stub / tbr #floof / crow - temporarily adding senior clothing to Auncategorized to make it obtainable for players while senior roles are reviewed / better implimented
+- type: loadout  #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutEngineeringUniformJumpskirtSenior
   category: JobsEngineeringAAUncategorized
   cost: 0
@@ -269,7 +269,7 @@
         - Engineering
     - !type:CharacterJobRequirement #all job roles but intern
       jobs:
-#        - SeniorEngineer
+        - SeniorEngineer
         - StationEngineer
         - AtmosphericTechnician
         - ChiefEngineer
@@ -279,7 +279,7 @@
   items:
     - ClothingUniformJumpskirtSeniorEngineer
 
-- type: loadout #floof stub / tbr
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
   id: LoadoutEngineeringUniformJumpsuitSenior
   category: JobsEngineeringAAUncategorized
   cost: 0
@@ -292,7 +292,7 @@
         - Engineering
     - !type:CharacterJobRequirement #all job roles but intern
       jobs:
-#        - SeniorEngineer
+        - SeniorEngineer
         - StationEngineer
         - AtmosphericTechnician
         - ChiefEngineer
