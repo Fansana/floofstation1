@@ -265,15 +265,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Epistemics
-    - !type:CharacterJobRequirement #all jobs but intern
-      jobs:
-        - SeniorResearcher
-        - ForensicMantis
-        - ResearchDirector
-        - Chaplain
-        - Librarian
-        - Roboticist
-        - Scientist
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics
       min: 144000 #40 hours
@@ -308,15 +302,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Epistemics
-    - !type:CharacterJobRequirement #all jobs but intern
-      jobs:
-        - SeniorResearcher
-        - ForensicMantis
-        - ResearchDirector
-        - Chaplain
-        - Librarian
-        - Roboticist
-        - Scientist
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics
       min: 144000 #40 hours
@@ -334,15 +322,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Epistemics
-    - !type:CharacterJobRequirement #all jobs but intern
-      jobs:
-        - SeniorResearcher
-        - ForensicMantis
-        - ResearchDirector
-        - Chaplain
-        - Librarian
-        - Roboticist
-        - Scientist
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics
       min: 144000 #40 hours

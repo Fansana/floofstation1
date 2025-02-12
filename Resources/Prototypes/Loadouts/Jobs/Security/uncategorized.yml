@@ -1015,14 +1015,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
-    - !type:CharacterJobRequirement #All security jobs but cadet
-      jobs:
-        - SeniorOfficer
-        - Brigmedic
-        - Detective
-        - HeadOfSecurity
-        - SecurityOfficer
-        - Warden
+    - !type:CharacterJobRequirement #all sec jobs but cadet
+      inverted: true
+      jobs: [SecurityCadet]
     - !type:CharacterDepartmentTimeRequirement
       department: Security
       min: 144000 #40 hours
@@ -1040,14 +1035,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
-    - !type:CharacterJobRequirement #All security jobs but cadet
-      jobs:
-        - SeniorOfficer
-        - Brigmedic
-        - Detective
-        - HeadOfSecurity
-        - SecurityOfficer
-        - Warden
+    - !type:CharacterJobRequirement #all sec jobs but cadet
+      inverted: true
+      jobs: [SecurityCadet]
     - !type:CharacterDepartmentTimeRequirement
       department: Security
       min: 144000 #40 hours

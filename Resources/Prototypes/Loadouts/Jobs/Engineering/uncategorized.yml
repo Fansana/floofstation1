@@ -267,12 +267,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Engineering
-    - !type:CharacterJobRequirement #all job roles but intern
-      jobs:
-        - SeniorEngineer
-        - StationEngineer
-        - AtmosphericTechnician
-        - ChiefEngineer
+    - !type:CharacterJobRequirement #all engineering jobs but TA
+      inverted: true
+      jobs: [TechnicalAssistant]
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
       min: 144000 #40 hours
@@ -290,12 +287,9 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Engineering
-    - !type:CharacterJobRequirement #all job roles but intern
-      jobs:
-        - SeniorEngineer
-        - StationEngineer
-        - AtmosphericTechnician
-        - ChiefEngineer
+    - !type:CharacterJobRequirement #all engineering jobs but TA
+      inverted: true
+      jobs: [TechnicalAssistant]
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
       min: 144000 #40 hours
