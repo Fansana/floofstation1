@@ -51,6 +51,3 @@
   - !type:CharacterJobRequirement
     jobs:
     - ForensicMantis
-    - !type:CharacterPlaytimeRequirement
-      tracker: JobEpistemicsPsionicMantis
-      min: 36000 # 10 hours
