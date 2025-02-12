@@ -355,6 +355,9 @@
         - ChiefMedicalOfficer
         - Paramedic
         - Psychologist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
   items:
     - ClothingHeadHatBeretSeniorPhysician
 
@@ -546,6 +549,9 @@
         - ChiefMedicalOfficer
         - Paramedic
         - Psychologist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpskirtSeniorPhysician
 
@@ -568,5 +574,8 @@
         - ChiefMedicalOfficer
         - Paramedic
         - Psychologist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpsuitSeniorPhysician

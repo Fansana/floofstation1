@@ -1023,6 +1023,9 @@
         - HeadOfSecurity
         - SecurityOfficer
         - Warden
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpskirtSeniorOfficer
 
@@ -1045,5 +1048,8 @@
         - HeadOfSecurity
         - SecurityOfficer
         - Warden
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpsuitSeniorOfficer

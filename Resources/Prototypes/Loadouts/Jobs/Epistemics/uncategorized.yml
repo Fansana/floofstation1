@@ -274,6 +274,9 @@
         - Librarian
         - Roboticist
         - Scientist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
   items:
     - ClothingOuterCoatLabSeniorResearcher
 
@@ -314,6 +317,9 @@
         - Librarian
         - Roboticist
         - Scientist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpskirtSeniorResearcher
 
@@ -337,5 +343,8 @@
         - Librarian
         - Roboticist
         - Scientist
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpsuitSeniorResearcher

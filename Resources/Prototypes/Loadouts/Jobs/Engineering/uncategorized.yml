@@ -273,6 +273,9 @@
         - StationEngineer
         - AtmosphericTechnician
         - ChiefEngineer
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpskirtSeniorEngineer
 
@@ -293,5 +296,8 @@
         - StationEngineer
         - AtmosphericTechnician
         - ChiefEngineer
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 144000 #40 hours
   items:
     - ClothingUniformJumpsuitSeniorEngineer
