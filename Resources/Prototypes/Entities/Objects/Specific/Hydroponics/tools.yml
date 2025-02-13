@@ -181,27 +181,4 @@
         - Seed
   - type: Dumpable
 
-- type: entity
-  parent: PlantBag
-  id: ClothingHarvestBag
-  name: Harvest bag
-  description: A backpack that opens into a localized pocket of bluespace.
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Specific/Hydroponics/a_equipement/Harvestbag.rsi
-    state: icon
-  - type: Clothing
-    sprite: Floof/Objects/Specific/Hydroponics/a_equipement/Harvestbag.rsi
-    quickEquip: false
-    slots:
-     - belt
-  - type: Storage
-    grid:
-    - 0,0,19,9
-    maxItemSize: Small
-    quickInsert: true
-    areaInsert: true
-    whitelist:
-      components:
-        - Produce
-        - Seed
+

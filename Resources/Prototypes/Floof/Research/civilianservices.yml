@@ -1,3 +1,19 @@
+# Tier 1
+
+- type: technology   #this would match where the Ore bag of holding is at. a t1  7.5k research. if people add much more to hydroponics best to move it to t2
+  id: advanceHydroponics
+  name: research-technology-harvestbag
+  icon:
+    sprite: Floof/Objects/Specific/Hydroponics/a_equipment/Harvestbag.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - ClothingHarvestBag
+
+# Tier 3
+
 - type: technology
   id: MiniHypo
   name: research-technology-mini-hypo
