@@ -221,8 +221,9 @@
   - type: ParadoxClonerRule
   - type: AntagObjectives
     objectives:
-    - ParadoxAnomalyKillObjective
-    - ParadoxAnomalyFriendObjective
+    # Floofstation - disable kill and friend objectives
+#    - ParadoxAnomalyKillObjective
+#    - ParadoxAnomalyFriendObjective
     - ParadoxAnomalyEscapeObjective
   - type: AntagSelection
     agentName: paradox-anomaly-round-end-agent-name
@@ -233,7 +234,7 @@
       pickPlayer: false
       mindComponents:
       - type: RoleBriefing
-        briefing: paradox-anomaly-role-briefing
+        briefing: paradox-anomaly-role-briefing-floof #Floofstation
       - type: TerminatorRole
         prototype: Terminator
 

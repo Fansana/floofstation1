@@ -1,0 +1,1 @@
+ghost-role-information-paradox-anomaly-rules-floof = Try and replace your twin with this funny roleplay antag rather than plasma flooding the station or something. You can also just befriend them. ERP requires consent from the original's player.

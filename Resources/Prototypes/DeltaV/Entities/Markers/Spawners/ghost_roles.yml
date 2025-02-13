@@ -47,7 +47,7 @@
   - type: GhostRole
     name: ghost-role-information-paradox-anomaly-name
     description: ghost-role-information-paradox-anomaly-description
-    rules: ghost-role-information-paradox-anomaly-rules
+    rules: ghost-role-information-paradox-anomaly-rules-floof # Floofstation
 
 - type: entity
   categories: [ HideSpawnMenu ]
