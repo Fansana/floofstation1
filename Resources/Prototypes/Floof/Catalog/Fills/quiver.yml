@@ -1,0 +1,11 @@
+- type: entity
+  id: ClothingBeltQuiverFilled
+  suffix: Filled
+  parent: ClothingBeltQuiver
+  components:
+  - type: StorageFill
+    contents:
+    - id: ArrowRegular
+      amount: 13
+    - id: Plunger
+      amount: 2

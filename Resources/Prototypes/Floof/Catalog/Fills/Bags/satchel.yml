@@ -1,0 +1,17 @@
+- type: entity
+  id: SatchelGlacierLocalFilled
+  suffix: Glacier Local, Filled
+  parent: ClothingBackpackSatchelLeather
+  components:
+  - type: StorageFill
+    contents:
+    - id: PinpointerUniversal
+    - id: CombatKnife
+    - id: HandheldGPSBasic
+    - id: PowerCellHyper
+    - id: OcarinaInstrument
+    - id: BowImprovised
+    - id: Bola
+      amount: 2
+    - id: FoodPSB
+      amount: 8

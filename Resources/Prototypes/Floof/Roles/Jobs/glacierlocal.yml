@@ -1,0 +1,15 @@
+- type: startingGear
+  id: GlacierLocal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetective
+    shoes: ClothingShoesBootsRyuzo
+    neck: ClothingNeckCloakGoliathCloak
+    eyes: ClothingEyesGlassesThermalBudget
+    gloves: ClothingHandsDispelGloves
+    outerClothing: ClothingOuterCoatRyuzo
+    back: SatchelGlacierLocalFilled
+    id: HandHeldMassScanner
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltQuiverFilled
+    pocket1: EnergySwordDouble
+    pocket2: RadioHandheld
