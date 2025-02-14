@@ -139,7 +139,7 @@
     - id: PaperStickyNoteStackFilledBlue
     # End DeltaV: sticky notes
     - id: NewtonCradle
-    - id: BoxEnvelope
+    #- id: BoxEnvelope Floof - Removed until envelopes are added.
     - id: BrbSign
     # Start DeltaV - More folders & colored paper reams in the bureaucracy crate
     - id: BoxFolderBlack
