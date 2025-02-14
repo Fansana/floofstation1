@@ -236,7 +236,7 @@
   description: Brighten up your records and more with Papermoon colored paper, in the six classic colors you've come to know and love. Dyed throughout for maximum colorfastness.
   components:
   - type: Sprite
-    sprite: _DV/Objects/Misc/bureaucracy.rsi
+    sprite: DeltaV/Objects/Misc/bureaucracy.rsi
     layers:
     - state: ream-classic
   - type: ContainerContainer
@@ -271,7 +271,7 @@
   description: Make getting a pink slip a joyous occassion with Papermoon colored paper, in six cheerful and vibrant colors. Dyed throughout for maximum colorfastness.
   components:
   - type: Sprite
-    sprite: _DV/Objects/Misc/bureaucracy.rsi
+    sprite: DeltaV/Objects/Misc/bureaucracy.rsi
     layers:
     - state: ream-bright
   - type: StorageFill
@@ -296,7 +296,7 @@
   description: Create reports that are sure to get noticed with this Papermoon white-as-glimmer paper. Harvested with sustainable noöspheric practices.
   components:
   - type: Sprite
-    sprite: _DV/Objects/Misc/bureaucracy.rsi
+    sprite: DeltaV/Objects/Misc/bureaucracy.rsi
     layers:
     - state: ream-white
   - type: StorageFill
