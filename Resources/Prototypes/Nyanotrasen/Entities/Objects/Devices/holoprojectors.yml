@@ -19,7 +19,7 @@
 #        locked: true
 
 - type: entity
-  parent: HoloprojectorEngineeringEmpty
+  parent: HoloprojectorEngineering
   id: HoloprojectorEngineeringEmpty
   suffix: Empty
   components:
