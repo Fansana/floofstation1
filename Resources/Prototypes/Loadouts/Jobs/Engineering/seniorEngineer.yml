@@ -130,30 +130,30 @@
 # Shoes
 
 # Uniforms
-- type: loadout
-  id: LoadoutEngineeringUniformJumpskirtSenior
-  category: JobsEngineeringSeniorEngineer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorEngineerUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorEngineer
-  items:
-    - ClothingUniformJumpskirtSeniorEngineer
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+#  id: LoadoutEngineeringUniformJumpskirtSenior
+#  category: JobsEngineeringSeniorEngineer
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorEngineerUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorEngineer
+#  items:
+#    - ClothingUniformJumpskirtSeniorEngineer
 
-- type: loadout
-  id: LoadoutEngineeringUniformJumpsuitSenior
-  category: JobsEngineeringSeniorEngineer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSeniorEngineerUniforms
-    - !type:CharacterJobRequirement
-      jobs:
-        - SeniorEngineer
-  items:
-    - ClothingUniformJumpsuitSeniorEngineer
+#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+#  id: LoadoutEngineeringUniformJumpsuitSenior
+#  category: JobsEngineeringSeniorEngineer
+#  cost: 0
+#  exclusive: true
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutSeniorEngineerUniforms
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - SeniorEngineer
+#  items:
+#    - ClothingUniformJumpsuitSeniorEngineer
