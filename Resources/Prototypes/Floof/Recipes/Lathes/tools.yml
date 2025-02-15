@@ -25,6 +25,7 @@
     Plasma: 1000
     Bluespace: 200
 
+- type: latheRecipe
   id: ToolRadioHandheld
   result: RadioHandheld
   completetime: 3.5
