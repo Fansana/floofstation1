@@ -47,7 +47,7 @@ public sealed class IdLockSystem : EntitySystem
 
     private void OnExamined(Entity<IdLockComponent> ent, ref ExaminedEvent args)
     {
-        if (!args.IsInDetailsRange)
+        if (!args.IsInDetailsRange || !ent.Comp.Enabled)
             return;
 
         using (args.PushGroup(nameof(IdLockComponent)))
@@ -69,7 +69,7 @@ public sealed class IdLockSystem : EntitySystem
     {
         // We allow to toggle the normal lock on even if the ID lock is enabled, as a failsafe.
         // Ideally, if an ID lock is active, the underlying regular lock should always be active as well.
-        if (args.Cancelled || !ent.Comp.Active || TryComp<LockComponent>(ent, out var normalLock) && !normalLock.Locked)
+        if (args.Cancelled || !ent.Comp.Enabled || !ent.Comp.Active || TryComp<LockComponent>(ent, out var normalLock) && !normalLock.Locked)
             return;
 
         args.Cancelled = true;
@@ -105,10 +105,14 @@ public sealed class IdLockSystem : EntitySystem
             return;
         }
 
-        if (args.Enable)
-            EnsureComp<IdLockComponent>(ent);
-        else if (TryComp<IdLockComponent>(ent, out var lockComp))
-            RemComp(ent, lockComp);
+        // We do not remove the ID lock component either way to presereve master accesses on the entity.
+        var lockComp = EnsureComp<IdLockComponent>(ent);
+        lockComp.Enabled = args.Enable;
+
+        if (!args.Enable)
+            lockComp.Active = false;
+
+        Dirty(ent, lockComp);
     }
 
 
@@ -187,6 +191,7 @@ public sealed class IdLockSystem : EntitySystem
 
         ent.Comp.Active = true;
         ent.Comp.Info = new() { OwnerName = id.Comp.FullName, OwnerJobTitle = id.Comp.JobTitle };
+        Dirty(ent);
 
         _popups.PopupPredicted(Loc.GetString("id-lock-locked", ("ent", ent.Owner)), ent, user);
         _audio.PlayPredicted(ent.Comp.LockSound, ent, user, ent.Comp.LockSound?.Params);
@@ -201,6 +206,8 @@ public sealed class IdLockSystem : EntitySystem
             return;
 
         ent.Comp.Active = false;
+        Dirty(ent);
+
         _popups.PopupPredicted(Loc.GetString("id-lock-unlocked", ("ent", ent.Owner)), ent, user);
         _audio.PlayPredicted(ent.Comp.UnlockSound, ent, user, ent.Comp.UnlockSound?.Params);
     }

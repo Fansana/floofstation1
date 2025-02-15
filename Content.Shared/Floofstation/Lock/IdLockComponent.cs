@@ -16,6 +16,12 @@ namespace Content.Shared.FloofStation.Lock;
 public sealed partial class IdLockComponent : Component
 {
     /// <summary>
+    ///     Whether this lock is enabled. A disabled ID lock will not affect the entity in any way.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool Enabled = true;
+
+    /// <summary>
     ///     Whether this lockable entity has an active ID-lock.
     ///     While active, the ID lock prevents the regular lock from being opened.
     /// </summary>
@@ -37,7 +43,7 @@ public sealed partial class IdLockComponent : Component
     /// <summary>
     ///     "Master" access types. If the user has any of these, they can unlock the lock regardless of whether it was locked by them.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField, AutoNetworkedField, AlwaysPushInheritance]
     public HashSet<ProtoId<AccessLevelPrototype>> MasterAccesses = new();
 
     [DataField, AutoNetworkedField]
