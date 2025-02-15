@@ -5,8 +5,9 @@ namespace Content.Shared.Repairable;
 
 public abstract partial class SharedRepairableSystem : EntitySystem
 {
+    // Floof - made public because WHY THE FUCK WAS THIS PRIVATE?!
     [Serializable, NetSerializable]
-    protected sealed partial class RepairFinishedEvent : SimpleDoAfterEvent
+    public sealed partial class RepairFinishedEvent : SimpleDoAfterEvent
     {
     }
 }

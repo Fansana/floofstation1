@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared.Atmos.Rotting;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Events;
 using Content.Shared.Body.Organ;
@@ -14,6 +15,7 @@ public partial class SharedBodySystem
     private void InitializeOrgans()
     {
         SubscribeLocalEvent<OrganComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<OrganComponent, IsRottingEvent>(OnCheckRotting); // Floofstation
         SubscribeLocalEvent<OrganComponent, OrganEnableChangedEvent>(OnOrganEnableChanged);
     }
 
@@ -21,6 +23,14 @@ public partial class SharedBodySystem
     {
         if (ent.Comp.OnAdd is not null || ent.Comp.OnRemove is not null)
             EnsureComp<OrganEffectComponent>(ent);
+    }
+
+    // Floofstation
+    private void OnCheckRotting(Entity<OrganComponent> ent, ref IsRottingEvent args)
+    {
+        // Check if the body exists. If so, do not allow rotting to progress.
+        // This won't reset rotting, so med has to be careful when transplanting organs.
+        args.Handled |= Exists(ent.Comp.Body);
     }
 
     private void AddOrgan(
@@ -132,7 +142,8 @@ public partial class SharedBodySystem
     {
         if (!Resolve(organId, ref organ, logMissing: false)
             || !Resolve(partId, ref part, logMissing: false)
-            || !CanInsertOrgan(partId, slotId, part))
+            || !CanInsertOrgan(partId, slotId, part)
+            || HasComp<RottingComponent>(organId)) // Floofstation - do not allow rotting organs to be used in surgeries
         {
             return false;
         }

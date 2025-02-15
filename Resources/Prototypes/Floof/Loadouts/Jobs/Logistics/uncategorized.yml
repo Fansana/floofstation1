@@ -1,0 +1,52 @@
+# General logistics
+- type: loadout
+  id: LoadoutClothingHandsLogisWarmers
+  category: JobsLogisticsAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsLogisWarmers
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Logistics
+
+- type: loadout
+  id: LoadoutClothingUnderSocksLogis
+  category: JobsLogisticsAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksLogis
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Logistics
+
+- type: loadout
+  id: LoadoutClothingUniformLogisThong
+  category: JobsLogisticsAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformLogisThong
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Logistics
+
+- type: loadout
+  id: LoadoutCargoNeckCollar
+  category: JobsLogisticsAUncategorized
+  cost: 1
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Logistics
+  items:
+  - ClothingNeckCollarLogi

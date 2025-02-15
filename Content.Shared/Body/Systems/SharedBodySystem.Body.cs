@@ -140,6 +140,10 @@ public partial class SharedBodySystem
 
     private void OnStandAttempt(Entity<BodyComponent> ent, ref StandAttemptEvent args)
     {
+        // Floof - why did you not check for this???
+        if (ent.Comp.RequiredLegs <= 0)
+            return;
+
         if (ent.Comp.LegEntities.Count == 0)
             args.Cancel();
     }

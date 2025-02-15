@@ -1,0 +1,67 @@
+- type: entity
+  parent: GasCanister
+  id: NitrousOxideMixCanister
+  name: general anesthesia canister
+  description: A canister that can contain any type of gas. This one is supposed to contain nitrous oxide and oxygen in a 3-to-7 ratio. It can be attached to connector ports using a wrench.
+  components:
+    - type: Sprite
+      layers:
+        - state: redws
+    - type: GasCanister
+      gasMixture:
+        volume: 1000
+        moles:
+          - 1310.19735 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 #  Water vapor
+          - 0 # Ammonia
+          - 561.51315 # N2O
+        temperature: 293.15
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 600
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            NitrousOxideCanisterBroken:
+              min: 1
+              max: 1
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:DumpCanisterBehavior
+    - type: AccessReader
+      access: [["Atmospherics"],["Medical"],["Research"]]
+
+- type: entity
+  parent: NitrousOxideMixCanister
+  id: LiquidNitrousOxideMixCanister
+  name: liquid general anesthesia canister
+  description: A canister that can contain any type of gas. This one is supposed to contain liquid nitrous oxide and oxygen in a 3-to-7 ratio. It can be attached to connector ports using a wrench.
+  components:
+    - type: GasCanister
+      gasMixture:
+        volume: 1000
+        moles:
+          - 13100.19735 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 #  Water vapor
+          - 0 # Ammonia
+          - 5610.51315 # N2O
+        temperature: 72

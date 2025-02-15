@@ -1,0 +1,17 @@
+# Base for organs that can rot and perish
+- type: entity
+  id: BaseOrganRotting
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Perishable
+    rotAfter: 300 # 5 minutes outside a body until rotting, 15 to completely perish
+  - type: RotInto
+    entity: AshOrganic
+    stage: 2
+
+# Simply to distinguish from normal ash. TODO: make this an actual unique entity rather than just renamed ash.
+- type: entity
+  id: AshOrganic
+  parent: Ash
+  name: perished remains

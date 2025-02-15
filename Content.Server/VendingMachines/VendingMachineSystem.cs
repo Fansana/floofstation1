@@ -16,6 +16,7 @@ using Content.Shared.Emag.Components;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Emp;
 using Content.Shared.Popups;
+using Content.Shared.Repairable;
 using Content.Shared.Throwing;
 using Content.Shared.UserInterface;
 using Content.Shared.VendingMachines;
@@ -46,6 +47,7 @@ namespace Content.Server.VendingMachines
             SubscribeLocalEvent<VendingMachineComponent, MapInitEvent>(OnComponentMapInit);
             SubscribeLocalEvent<VendingMachineComponent, PowerChangedEvent>(OnPowerChanged);
             SubscribeLocalEvent<VendingMachineComponent, BreakageEventArgs>(OnBreak);
+            SubscribeLocalEvent<VendingMachineComponent, SharedRepairableSystem.RepairFinishedEvent>(OnRepaired); // Floofstation
             SubscribeLocalEvent<VendingMachineComponent, GotEmaggedEvent>(OnEmagged);
             SubscribeLocalEvent<VendingMachineComponent, DamageChangedEvent>(OnDamage);
             SubscribeLocalEvent<VendingMachineComponent, PriceCalculationEvent>(OnVendingPrice);
@@ -88,7 +90,6 @@ namespace Content.Server.VendingMachines
 
             args.Price += price;
         }
-
         protected override void OnComponentInit(EntityUid uid, VendingMachineComponent component, ComponentInit args)
         {
             base.OnComponentInit(uid, component, args);
@@ -137,6 +138,17 @@ namespace Content.Server.VendingMachines
         {
             vendComponent.Broken = true;
             TryUpdateVisualState(uid, vendComponent);
+        }
+
+        // Floofstation
+        private void OnRepaired(EntityUid uid, VendingMachineComponent component, SharedRepairableSystem.RepairFinishedEvent args)
+        {
+            if (args.Cancelled)
+                return;
+
+            // TODO it is not actually safe to assume that the repair repaired enough damage
+            component.Broken = false;
+            TryUpdateVisualState(uid, component);
         }
 
         private void OnEmagged(EntityUid uid, VendingMachineComponent component, ref GotEmaggedEvent args)

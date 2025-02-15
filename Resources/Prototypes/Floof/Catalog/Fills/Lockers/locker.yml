@@ -1,0 +1,111 @@
+- type: entity
+  id: LockerJanitorFilled
+  parent: LockerJanitor
+  name: janitor locker
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: MopItem
+      amount: 2
+    - id: BoxMousetrap
+      amount: 2
+    - id: WetFloorSign
+      amount: 3
+    - id: TrashBag
+      amount: 2
+    - id: LightReplacer
+    - id: BoxLightMixed
+    - id: Holoprojector
+    - id: SoapNT
+      amount: 2
+    - id: FlashlightLantern
+      amount: 2
+    - id: Plunger
+      amount: 2
+    - id: LunchboxServiceFilledRandom # Delta-V Lunchboxes!
+      prob: 0.3
+
+- type: entity
+  id: LockerClownFilled
+  suffix: Clown, Filled
+  parent: LockerClown
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodCakeClown
+    - id: ToyFigurineClown
+    - id: ClownRecorder
+    - id: ClothingShoesClown
+    - id: ClothingUniformJumpsuitClown
+    - id: ClothingMaskClown
+    - id: RubberStampClown
+    - id: DrinkSpaceGlue
+    - id: DrinkSpaceLube
+    - id: ClothingShoeSlippersDuck
+    - id: RevolverCapGun
+    - id: ClothingMaskSexyClown
+    - id: LauncherCreamPie
+    - id: WhoopieCushion
+    - id: CrayonRainbow
+    - id: ToyHammer
+    - id: HappyHonk
+    - id: ClothingBackpackClown
+    - id: MrDips
+    - id: LunchboxService
+      prob: 0.8
+
+- type: entity
+  id: LockerMimeFilled
+  suffix: Mime, Filled
+  parent: LockerMime
+  components:
+  - type: StorageFill
+    contents:
+    - id: FoodTartMime
+    - id: RevolverCapGun
+    - id: ToyFigurineMime
+    - id: ClothingUniformJumpsuitMime
+    - id: ClothingUniformJumpskirtMime
+    - id: ClothingHeadHatMimesoft
+    - id: RubberStampMime
+    - id: HappyHonkMime
+    - id: CrayonMime
+    - id: ClothingMaskMime
+    - id: ClothingBackpackMime
+    - id: MrChips
+    - id: DrinkBottleOfNothingFull
+    - id: FoodBreadBaguette
+    - id: DrinkWineGlass
+    - id: ClothingMaskSadMime
+    - id: ClothingMaskSexyMime
+    - id: ClothingMaskScaredMime
+
+- type: entity
+  id: LockerSurgeonGeneralFilled
+  suffix: Surgeon general, Filled
+  parent: LockerSurgeonGeneral
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingCloakSurgeonGeneral
+    - id: ClothingHeadHatBeretSurgeongeneral
+    - id: ClothingEyesPrescriptionMedHud
+    - id: ClothingOuterWinterSurgeonGeneral
+    - id: ClothingHandsGlovesNitrile
+    - id: ClothingUniformSurgeonGerneralThong
+    - id: ClothingBeltMedicalSurgeonGeneralFilled
+    - id: SurgeonGeneralIDCard
+    - id: Hypospray
+    - id: RubberStampSurgery
+    - id: ClothingHeadsetAltCentCom
+    - id: ClothingShoesBootsCombatFilled
+    - id: ClothingBackpackSatchelMedicalSurgeonGeneral
+    - id: WeaponPistolN1984
+    - id: ClothingMaskGasCentcom
+    - id: ClothingOuterHardsuitMedical
+    - id: IceCreamBloodDrop
+    - id: MedkitCombatFilled
+    - id: ClothingOuterHardsuitSurgeonGeneral
+    - id: DrinkBloodGlass
+      amount: 2

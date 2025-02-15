@@ -1,0 +1,40 @@
+- type: loadout
+  id: LoadoutClothingHandsDetectiveWarmers
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsDetectiveWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Detective
+
+- type: loadout
+  id: LoadoutClothingUnderSocksDetective
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksDetective
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Detective
+
+- type: loadout
+  id: LoadoutClothingUniformDetectiveThong
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformDetectiveThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Detective

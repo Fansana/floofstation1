@@ -1,13 +1,13 @@
 - type: job
   id: SeniorResearcher
-  name: job-name-senior-researcher
+  name: job-name-senior-researcher #localized to mystic
   description: job-description-senior-researcher
   playTimeTracker: JobSeniorResearcher
-  setPreference: true
+  setPreference: true #floof - this toggle allows players to ready up / create loadouts as senior roles. false disables it from the job list.
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 14400 # Floofstation 4 hrs
+      min: 144000 # Floofstation 40 hrs
   startingGear: SeniorResearcherGear
   icon: "JobIconSeniorResearcher"
   supervisors: job-supervisors-rd

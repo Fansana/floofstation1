@@ -199,6 +199,7 @@
       - ShockCollar # FloofStation
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
+      - ToolRadioHandheld # Floofstation
       - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
@@ -935,6 +936,14 @@
       - SurveillanceCameraMonitorCircuitboard
       - SurveillanceWirelessCameraMonitorCircuitboard
       - SurveillanceCameraWirelessRouterCircuitboard
+      - MagazineUniversalMagnumRubber
+      - MagazinePistolSubMachineGunRubber
+      - MagazineRifleRubber
+      - MagazineLightRifleRubber
+      - MagazineMagnumRubber
+      - MagazinePistolRubber
+      - SpeedLoaderMagnumRubber
+      - ShellShotgunBeanbag
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes

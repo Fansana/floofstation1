@@ -1,0 +1,143 @@
+# Logistics Officer
+- type: loadout
+  id: LoadoutClothingHandsLOLogisWarmers
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsLOLogisWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Quartermaster
+
+- type: loadout
+  id: LoadoutClothingUnderSocksLOLogis
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksLOLogis
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Quartermaster
+
+- type: loadout
+  id: LoadoutClothingUniformLOLogisThong
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformLOLogisThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Quartermaster
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+- type: loadout
+  id: LoadoutCommandQMGlovesBrown
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingHandsGlovesColorBrown
+
+# Head
+- type: loadout
+  id: LoadoutCommandQMHeadBeret
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingHeadHatBeretQM
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutCommandQMNeckMantle
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingNeckMantleQM
+
+# Outer
+- type: loadout
+  id: LoadoutCommandQMOuterLongcoat
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingLongcoatLO
+
+- type: loadout
+  id: LoadoutCommandQMOuterWinter
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingOuterWinterQM
+
+# Shoes
+
+# Uniforms
+- type: loadout
+  id: LoadoutCommandQMUniformFormal
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingUniformJumpsuitQMFormal

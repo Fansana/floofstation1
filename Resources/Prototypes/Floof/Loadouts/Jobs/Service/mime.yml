@@ -1,0 +1,40 @@
+- type: loadout
+  id: LoadoutClothingHandsStripeWhiteWarmers
+  category: JobsServiceMime
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsStripeWhiteWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime
+
+- type: loadout
+  id: LoadoutClothingUnderSocksStripedWhite
+  category: JobsServiceMime
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksStripedWhite
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime
+
+- type: loadout
+  id: LoadoutClothingUniformStripedThongWhite
+  category: JobsServiceMime
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformStripedThongWhite
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Mime

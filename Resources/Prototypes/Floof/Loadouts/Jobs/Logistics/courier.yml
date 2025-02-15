@@ -1,0 +1,92 @@
+#SHOES
+
+- type: loadout
+  id: LoadoutClothingHandsCourierWarmers
+  category: JobsLogisticsCourier
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsCourierWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCourier
+  category: JobsLogisticsCourier
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksCourier
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+#UNIFORMS
+
+- type: loadout
+  id: LoadoutClothingUniformCourierThong
+  category: JobsLogisticsCourier
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformCourierThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformCourier
+  category: JobsLogisticsCourier
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformCourier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformSkirtCourier
+  category: JobsLogisticsCourier
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformSkirtCourier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformMailCarrier
+  category: JobsLogisticsCourier
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformMailCarrier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier
+
+- type: loadout
+  id: LoadoutClothingUniformSkirtMailCarrier
+  category: JobsLogisticsCourier
+  cost: 0 # why are jumpsuits costing points?
+  exclusive: true
+  items:
+  - ClothingUniformSkirtMailCarrier
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - MailCarrier

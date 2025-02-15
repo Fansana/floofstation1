@@ -1,0 +1,40 @@
+- type: loadout
+  id: LoadoutClothingHandsChefWarmers
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsChefWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChef
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksChef
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef
+
+- type: loadout
+  id: LoadoutClothingUniformChefThong
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformChefThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chef

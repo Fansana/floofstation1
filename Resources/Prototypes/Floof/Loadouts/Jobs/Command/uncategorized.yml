@@ -1,0 +1,80 @@
+# Uncategorized
+- type: loadout
+  id: LoadoutClothingHandsCommandWarmers
+  category: JobsCommandAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsCommandWarmers
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Command
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCommand
+  category: JobsCommandAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksCommand
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Command
+
+- type: loadout
+  id: LoadoutClothingUniformCommandThong
+  category: JobsCommandAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformCommandThong
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Command
+
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+- type: loadout
+  id: LoadoutCommandEyesCommand
+  category: JobsCommandAUncategorized
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCommandEyes
+    - !type:CharacterDepartmentRequirement
+      departments:
+      - Command
+  items:
+  - ClothingEyesGlassesCommand
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+
+# Shoes
+
+# Uniforms

@@ -1,0 +1,78 @@
+# Chief Medical Officer
+- type: loadout
+  id: LoadoutClothingHandsCMOWarmers
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsCMOWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ChiefMedicalOfficer
+
+- type: loadout
+  id: LoadoutClothingUnderSocksCMO
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksCMO
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - ChiefMedicalOfficer
+
+- type: loadout
+  id: LoadoutClothingUniformCMOThong
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformCMOThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ChiefMedicalOfficer
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutCommandCMOOuterLongcoat
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChiefMedicalOfficerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+  items:
+    - ClothingLongcoatCMO
+
+# Shoes
+
+# Uniforms

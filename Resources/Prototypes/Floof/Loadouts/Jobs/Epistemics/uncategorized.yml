@@ -1,0 +1,51 @@
+- type: loadout
+  id: LoadoutClothingHandsEpiWarmers
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsEpiWarmers
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Epistemics
+
+- type: loadout
+  id: LoadoutClothingUnderSocksEpi
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksEpi
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Epistemics
+
+- type: loadout
+  id: LoadoutClothingUniformEpiThong
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformEpiThong
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Epistemics
+
+- type: loadout
+  id: LoadoutScienceNeckCollar
+  category: JobsEpistemicsAAUncategorized
+  cost: 1
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Epistemics
+  items:
+  - ClothingNeckCollarEpi

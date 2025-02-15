@@ -44,6 +44,9 @@ public sealed class RandomHumanoidSystem : EntitySystem
 
         _metaData.SetEntityName(humanoid, prototype.RandomizeName ? profile.Name : name);
 
+        // Floof - moved initialization of the humanoid to before the profile load,
+        // as initializing a humanoid appearance overrides the random appearance applied here. Move back down if/when it's fixed.
+        EntityManager.InitializeAndStartEntity(humanoid);
         _humanoid.LoadProfile(humanoid, profile);
 
         if (prototype.Components != null)
@@ -56,8 +59,6 @@ public sealed class RandomHumanoidSystem : EntitySystem
                 EntityManager.AddComponent(humanoid, comp);
             }
         }
-
-        EntityManager.InitializeAndStartEntity(humanoid);
 
         return humanoid;
     }

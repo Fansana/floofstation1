@@ -1,3 +1,4 @@
+using Content.Shared.Gibbing.Events;
 using Content.Shared.Storage;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -24,6 +25,20 @@ namespace Content.Shared.Nutrition.Components
         /// </summary>
         [ViewVariables]
         public bool BeingButchered;
+
+        // Floof section begin
+        /// <summary>
+        ///     Whether the entities body should be gibbed by butchering.
+        /// </summary>
+        [DataField]
+        public bool GibBody = true, GibOrgans = false;
+
+        /// <summary>
+        ///     How to handle the contents of the gib.
+        /// </summary>
+        [DataField]
+        public GibContentsOption GibContents = GibContentsOption.Drop;
+        // Floof section end
     }
 
     [Serializable, NetSerializable]

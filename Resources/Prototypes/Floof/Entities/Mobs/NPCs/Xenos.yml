@@ -1,8 +1,7 @@
 - type: entity
   name: Acid runner
-  id: MobXenoacidrunner
+  id: MobXenoAcidRunner
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -23,18 +22,16 @@
 
 - type: entity
   name: Acid runner primed
-  id: MobXenoacidrunnerprimed
-  parent: MobXenoacidrunner
-  description: They mostly come at night. Mostly.
+  id: MobXenoAcidRunnerPrimed
+  parent: MobXenoAcidRunner
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/acider_runner_primed.rsi
 
 - type: entity
   name: Larva
-  id: MobXenolarva
+  id: MobXenoLarva
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -53,8 +50,8 @@
         fix1:
           shape:
             !type:PhysShapeCircle
-            radius: 0.45
-          density: 15500
+            radius: 0.25
+          density: 20 # 5 kg
           mask:
           - SmallMobMask
           layer:
@@ -67,12 +64,11 @@
         types:
           Blunt: 1
           Piercing: 1
-          
+
 - type: entity
   name: Boiler
-  id: MobXenoboiler
+  id: MobXenoBoiler
   parent: MobXenoSpitterNPC
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -101,12 +97,11 @@
       availableModes:
         - FullAuto
       soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
-      
+
 - type: entity
   name: Boxer Warrior
-  id: MobXenoboxerwarrior
+  id: MobXenoBoxerWarrior
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -132,7 +127,6 @@
   name: Carrier
   id: MobXenoCarrier
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -153,12 +147,11 @@
         types:
           Blunt: 3
           Piercing: 2
-          
+
 - type: entity
   name: Crusher
-  id: MobXenocrusher
+  id: MobXenoCrusher
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -178,22 +171,20 @@
       damage:
         types:
           Blunt: 8
-          
+
 - type: entity
   name: Charger Crusher
-  id: MobXenochargercrusher
-  parent: MobXenocrusher
-  description: They mostly come at night. Mostly.
+  id: MobXenoChargerCrusher
+  parent: MobXenoCrusher
   components:
     - type: Sprite
       drawdepth: Mobs
       sprite: Mobs/Aliens/Xenos/charger_crusher.rsi
-          
+
 - type: entity
   name: Dancer Praetorian
-  id: MobXenodancerpraetorian
+  id: MobXenoDancerPraetorian
   parent: MobXenoPraetorianNPC
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/dancer_praetorian.rsi
@@ -213,9 +204,8 @@
 
 - type: entity
   name: Defender
-  id: MobXenodefender
+  id: MobXenoDefender
   parent: MobXeno
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/defender.rsi
@@ -235,18 +225,16 @@
 
 - type: entity
   name: Sentinel
-  id: MobXenosentinel
+  id: MobXenoSentinel
   parent: MobXenoSpitterNPC
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/sentinel.rsi
 
 - type: entity
   name: Hive Lord
-  id: MobXenohivelord
+  id: MobXenoHivelord
   parent: MobXenoQueenNPC
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/hivelord.rsi
@@ -263,39 +251,35 @@
         types:
           Blunt: 3
           Piercing: 3
-          
+
 - type: entity
   name: Bloody Larva
-  id: MobXenobloodylarva
-  parent: MobXenolarva
-  description: They mostly come at night. Mostly.
+  id: MobXenoBloodyLarva
+  parent: MobXenoLarva
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/bloody_larva.rsi
-      
+
 - type: entity
   name: Parasite
-  id: MobXenoparasite
-  parent: MobXenolarva
-  description: They mostly come at night. Mostly.
+  id: MobXenoParasite
+  parent: MobXenoLarva
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/parasite.rsi
 
 - type: entity
   name: Lurker
-  id: MobXenolurker
+  id: MobXenoLurker
   parent: MobXenoRavagerNPC
-  description: They mostly come at night. Mostly.
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/lurker.rsi
-      
+
 - type: entity
   name: Warrior
-  id: MobXenowarrior
-  parent: MobXenocrusher
-  description: They mostly come at night. Mostly.
+  id: MobXenoWarrior
+  parent: MobXenoCrusher
   components:
     - type: Sprite
       sprite: Mobs/Aliens/Xenos/warrior.rsi
