@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingBeltMedicalSurgeonGeneral
+  id: ClothingBeltMedicalSurgeonGeneralFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Hemostat
+      - id: Saw
+      - id: Drill
+      - id: Cautery
+      - id: Retractor
+      - id: Scalpel
+      - id: BoneGel

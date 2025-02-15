@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "copyright": "Taken from tgstation, Taken from Wizden,  Modified by VividPups for Surgeon general ",
+  "license": "CC-BY-SA-3.0",
+  "states": [
+    {
+      "name": "surgeon_secure_door"
+    },
+    {
+      "name": "surgeon_secure_open"
+    },
+    {
+      "name": "surgeon_secure"
+    },
+    {
+        "name": "locked"
+    },
+    {
+        "name": "unlocked"
+    },
+    {
+        "name": "generic"
+    },
+    {
+        "name": "generic_icon"
+    },
+    {
+        "name": "generic_door"
+    },
+    {
+        "name": "generic_open"
+    },
+    {
+        "name": "welded"
+    }
+  ]
+}
