@@ -87,6 +87,8 @@
       id: LoadoutScienceOuterExplorerLabcoat
     - type: loadout
       id: LoadoutOuterRobeTechPriest
+    - type: loadout
+      id: LoadoutScienceOuterLabcoatSeniorResearcher
 
 - type: characterItemGroup
   id: LoadoutEpistemicsShoes
@@ -94,7 +96,11 @@
     - type: loadout
       id: LoadoutScienceShoesBootsWinterSci
 
-#- type: characterItemGroup
-#  id: LoadoutEpistemicsUniforms
-#  maxItems: 1
-#  items:
+- type: characterItemGroup
+  id: LoadoutEpistemicsUniforms
+  maxItems: 1
+  items:
+      - type: loadout
+        id: LoadoutScienceUniformJumpsuitSenior
+      - type: loadout
+        id: LoadoutScienceUniformJumpskirtSenior

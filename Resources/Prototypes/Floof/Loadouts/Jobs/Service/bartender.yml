@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsBartenderWarmers
   category: JobsServiceBartender
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsBartenderWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksBartender
   category: JobsServiceBartender
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksBartender
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformBartenderThong
   category: JobsServiceBartender
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformBartenderThong

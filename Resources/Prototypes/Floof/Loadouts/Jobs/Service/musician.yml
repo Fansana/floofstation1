@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsMusicianWarmers
   category: JobsServiceMusician
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsMusicianWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksMusician
   category: JobsServiceMusician
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksMusician
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformMusicianThong
   category: JobsServiceMusician
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformMusicianThong
