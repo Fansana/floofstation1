@@ -23,16 +23,20 @@
 #  id: LoadoutLogisticsOfficerEyes
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutLogisticsOfficerGloves
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutLogisticsOfficerGloves
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutCommandQMGlovesBrown
+
 - type: characterItemGroup
   id: LoadoutLogisticsOfficerHead
   maxItems: 1
   items:
+    - type: loadout
+      id: LoadoutCommandQMHeadBeret
     - type: loadout
       id: LoadoutCommandQMHeadSoft
 
@@ -49,17 +53,23 @@
   items:
     - type: loadout
       id: LoadoutCommandQMNeckCloak
+    - type: loadout
+      id: LoadoutCommandQMNeckMantle
 
 #- type: characterItemGroup
 #  id: LoadoutLogisticsOfficerMask
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutLogisticsOfficerOuter
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutLogisticsOfficerOuter
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutCommandQMOuterLongcoat
+    - type: loadout
+      id: LoadoutCommandQMOuterWinter
+
 - type: characterItemGroup
   id: LoadoutLogisticsOfficerShoes
   maxItems: 1
@@ -75,3 +85,5 @@
       id: LoadoutCommandQMUniformTurtleneck
     - type: loadout
       id: LoadoutCommandQMUniformTurtleneckSkirt
+    - type: loadout
+      id: LoadoutCommandQMUniformFormal

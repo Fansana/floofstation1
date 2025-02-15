@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsChemistsWarmers
   category: JobsMedicalChemist
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsChemistsWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksChemists
   category: JobsMedicalChemist
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksChemists
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformChemistsThong
   category: JobsMedicalChemist
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformChemistsThong

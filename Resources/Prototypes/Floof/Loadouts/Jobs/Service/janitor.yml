@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsJanitorWarmers
   category: JobsServiceJanitor
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsJanitorWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksJanitor
   category: JobsServiceJanitor
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksJanitor
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformJanitorThong
   category: JobsServiceJanitor
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformJanitorThong

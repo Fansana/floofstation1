@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsServiceWarmers
   category: JobsServiceAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsServiceWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksService
   category: JobsServiceAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksService
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformServiceThong
   category: JobsServiceAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformServiceThong

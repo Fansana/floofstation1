@@ -16,6 +16,7 @@
   id: LoadoutCommandQMHeadSoft
   category: JobsLogisticsLogisticsOfficer
   cost: 0
+  exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutLogisticsOfficerHead

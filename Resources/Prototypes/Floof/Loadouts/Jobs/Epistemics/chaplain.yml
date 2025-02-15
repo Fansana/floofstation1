@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandChaplainWarmers
   category: JobsEpistemicsChaplain
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsChaplainWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksChaplain
   category: JobsEpistemicsChaplain
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksChaplain
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformChaplainThong
   category: JobsEpistemicsChaplain
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformChaplainThong
