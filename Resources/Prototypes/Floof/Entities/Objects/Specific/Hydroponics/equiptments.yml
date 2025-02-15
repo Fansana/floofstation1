@@ -2,7 +2,7 @@
   parent: PlantBag
   id: ClothingHarvestBag
   name: Harvest bag
-  description: A bag design by SESWC using bluespace technology to assisted and help botanists everyday needs.
+  description: A plant bag designed by SESWC that uses bluespace technology to help botanists easily move their huge harvests.
   components:
   - type: Sprite
     sprite: Floof/Objects/Specific/Hydroponics/a_equipment/Harvestbag.rsi
