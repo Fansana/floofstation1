@@ -9,6 +9,12 @@ namespace Content.Shared.FloofStation;
 public sealed partial class VoreComponent : Component
 {
     [DataField]
+    public bool CanVore = false;
+
+    [DataField]
+    public bool CanBeVored = true;
+
+    [DataField]
     public float Delay = 5f;
 
     [DataField]
