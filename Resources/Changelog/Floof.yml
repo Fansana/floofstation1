@@ -2538,3 +2538,12 @@ Entries:
   id: 314
   time: '2025-02-15T19:36:40.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/544
+- author: Crow
+  changes:
+    - type: Fix
+      message: fixed localization bug relating to senior roles.
+    - type: Fix
+      message: moved senior cosmetics to job/[department]/all tab
+  id: 315
+  time: '2025-02-15T19:43:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/549
