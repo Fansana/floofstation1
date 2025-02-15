@@ -2498,3 +2498,52 @@ Entries:
   id: 310
   time: '2025-02-10T15:35:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/543
+- author: VividPups
+  changes:
+    - type: Add
+      message: General Surgeon
+  id: 311
+  time: '2025-02-14T22:32:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/516
+- author: sowelipililimute
+  changes:
+    - type: Add
+      message: Sticky notes exist, and can be found in the bureaucracy crate
+    - type: Add
+      message: Bureaucracy crate has more and more varied folders
+    - type: Add
+      message: >-
+        Papermoon white and dyed paper reams are now available to spice up your
+        paperwork in the Bureaucracy crate
+    - type: Tweak
+      message: >-
+        Loose papers in the bureaucracy crate have been replaced with a ream of
+        white paper
+  id: 312
+  time: '2025-02-14T22:33:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/556
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added the Handheld radio to the autolathe.
+  id: 313
+  time: '2025-02-15T19:06:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/554
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Vore features are now hidden if the vore option is toggled off.
+    - type: Tweak
+      message: Merged Vore Prey / Pred into one consent option.
+  id: 314
+  time: '2025-02-15T19:36:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/544
+- author: Crow
+  changes:
+    - type: Fix
+      message: fixed localization bug relating to senior roles.
+    - type: Fix
+      message: moved senior cosmetics to job/[department]/all tab
+  id: 315
+  time: '2025-02-15T19:43:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/549

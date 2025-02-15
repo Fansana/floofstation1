@@ -1,0 +1,16 @@
+- type: startingGear
+  id: SurgeonGeneral
+  equipment:
+    jumpsuit: ClothingUniformSurgeonGerneralThong
+    shoes: ClothingShoesBootsCombatFilled
+    neck: ClothingCloakSurgeonGeneral
+    head: ClothingHeadHatBeretSurgeongeneral
+    eyes: ClothingEyesPrescriptionMedHud
+    gloves: ClothingHandsGlovesNitrile
+    outerClothing: ClothingOuterWinterSurgeonGeneral
+    back: ClothingBackpackSatchelMedicalSurgeonGeneral
+    id: SurgeonGeneralPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltMedicalSurgeonGeneralFilled
+    pocket1: RubberStampSurgery
+    pocket2: Hypospray

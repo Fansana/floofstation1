@@ -1003,3 +1003,43 @@
         - Security
   items:
     - ClothingUniformJumpsuitSecSummer
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutSecurityUniformJumpskirtSenior
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement #all sec jobs but cadet
+      inverted: true
+      jobs: [SecurityCadet]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpskirtSeniorOfficer
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutSecurityUniformJumpsuitSenior
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement #all sec jobs but cadet
+      inverted: true
+      jobs: [SecurityCadet]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpsuitSeniorOfficer

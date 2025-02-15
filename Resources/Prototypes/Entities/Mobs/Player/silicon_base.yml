@@ -5,6 +5,7 @@
   abstract: true
   components:
     - type: Vore # Floofstation - Vore
+      canVore: true
     - type: ContentEye
     - type: CameraRecoil
     - type: Reactive
