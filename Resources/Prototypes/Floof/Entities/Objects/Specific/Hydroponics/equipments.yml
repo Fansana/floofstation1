@@ -15,9 +15,3 @@
   - type: Storage
     grid:
     - 0,0,19,9
-    quickInsert: true
-    areaInsert: true
-    whitelist:
-      components:
-        - Produce
-        - Seed
