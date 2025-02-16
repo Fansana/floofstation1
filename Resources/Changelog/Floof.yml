@@ -2556,3 +2556,12 @@ Entries:
   id: 316
   time: '2025-02-16T01:51:53.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/548
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added new Quad borgs
+    - type: Fix
+      message: Fixed the other quad sprites
+  id: 317
+  time: '2025-02-16T01:52:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/539
