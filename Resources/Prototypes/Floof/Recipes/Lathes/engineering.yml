@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: HoloprojectorEngineering
+  result: HoloprojectorEngineeringEmpty
+  completetime: 3
+  materials:
+    Plastic: 250
+    Glass: 150

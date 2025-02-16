@@ -80,3 +80,32 @@
     - id: ClothingMaskSadMime
     - id: ClothingMaskSexyMime
     - id: ClothingMaskScaredMime
+
+- type: entity
+  id: LockerSurgeonGeneralFilled
+  suffix: Surgeon general, Filled
+  parent: LockerSurgeonGeneral
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingCloakSurgeonGeneral
+    - id: ClothingHeadHatBeretSurgeongeneral
+    - id: ClothingEyesPrescriptionMedHud
+    - id: ClothingOuterWinterSurgeonGeneral
+    - id: ClothingHandsGlovesNitrile
+    - id: ClothingUniformSurgeonGerneralThong
+    - id: ClothingBeltMedicalSurgeonGeneralFilled
+    - id: SurgeonGeneralIDCard
+    - id: Hypospray
+    - id: RubberStampSurgery
+    - id: ClothingHeadsetAltCentCom
+    - id: ClothingShoesBootsCombatFilled
+    - id: ClothingBackpackSatchelMedicalSurgeonGeneral
+    - id: WeaponPistolN1984
+    - id: ClothingMaskGasCentcom
+    - id: ClothingOuterHardsuitMedical
+    - id: IceCreamBloodDrop
+    - id: MedkitCombatFilled
+    - id: ClothingOuterHardsuitSurgeonGeneral
+    - id: DrinkBloodGlass
+      amount: 2

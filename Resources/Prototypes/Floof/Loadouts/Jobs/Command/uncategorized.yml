@@ -1,7 +1,8 @@
+# Uncategorized
 - type: loadout
   id: LoadoutClothingHandsCommandWarmers
   category: JobsCommandAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsCommandWarmers
@@ -13,7 +14,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksCommand
   category: JobsCommandAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksCommand
@@ -30,7 +31,7 @@
 - type: loadout
   id: LoadoutClothingUniformCommandThong
   category: JobsCommandAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformCommandThong
@@ -38,3 +39,42 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Command
+
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+- type: loadout
+  id: LoadoutCommandEyesCommand
+  category: JobsCommandAUncategorized
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCommandEyes
+    - !type:CharacterDepartmentRequirement
+      departments:
+      - Command
+  items:
+  - ClothingEyesGlassesCommand
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+
+# Shoes
+
+# Uniforms

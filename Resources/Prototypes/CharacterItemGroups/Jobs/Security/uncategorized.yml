@@ -163,6 +163,8 @@
   items:
     - type: loadout
       id: LoadoutSecurityMaskGasSwat
+    - type: loadout
+      id: LoadoutSecurityMaskGasSecurity
 
 - type: characterItemGroup
   id: LoadoutSecurityOuter
@@ -202,3 +204,7 @@
       id: LoadoutUniformJumpsuitSecFormal
     - type: loadout
       id: LoadoutUniformJumpsuitSecSummer
+    - type: loadout
+      id: LoadoutSecurityUniformJumpskirtSenior
+    - type: loadout
+      id: LoadoutSecurityUniformJumpsuitSenior

@@ -26,6 +26,22 @@
          - Command
 
 - type: loadout
+  id: LoadoutUniformClassicalMaidDress
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformClassicalMaidDress
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
+
+- type: loadout
   id: LoadoutUniformJumpskirtJanimaid
   category: Uniform
   cost: 0
@@ -40,6 +56,7 @@
        departments:
          - Security
          - Command
+
 
 - type: loadout
   id: LoadoutUniformJumpskirtJanimaidmini

@@ -5,6 +5,8 @@ using Content.Shared.Rotation;
 using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Shared.GameStates;
+using Robust.Shared.Timing;
+
 
 namespace Content.Client.Buckle;
 
@@ -12,6 +14,8 @@ internal sealed class BuckleSystem : SharedBuckleSystem
 {
     [Dependency] private readonly RotationVisualizerSystem _rotationVisualizerSystem = default!;
     [Dependency] private readonly IPlayerManager _player = default!; // Floof
+    [Dependency] private readonly IGameTiming _timing = default!; // Floof
+    [Dependency] private readonly SharedTransformSystem _xform = default!; // Floof
 
     public override void Initialize()
     {
@@ -87,6 +91,10 @@ internal sealed class BuckleSystem : SharedBuckleSystem
         if (!TryComp<SpriteComponent>(uid, out var strapSprite))
             return;
 
+        // Floof - man, fuck prediction.
+        if (!_timing.IsFirstTimePredicted)
+            return;
+
         var isNorth = GetEntityOrientation(uid) == Direction.North; // Floof - replaced with a method call
         foreach (var buckledEntity in component.BuckledEntities)
         {
@@ -124,9 +132,15 @@ internal sealed class BuckleSystem : SharedBuckleSystem
     // Floof section - method for getting the direction of an entity perceived by the local player
     private Direction GetEntityOrientation(EntityUid uid)
     {
-        var ownRotation = Transform(uid).LocalRotation;
+        var xform = Transform(uid);
+        var ownRotation = xform.LocalRotation;
         var eyeRotation =
-            TryComp<EyeComponent>(_player.LocalEntity, out var eye) ? eye.Rotation : Angle.Zero;
+            TryComp<EyeComponent>(_player.LocalEntity, out var eye) ? eye.Eye.Rotation : Angle.Zero;
+
+        // This is TOTALLY dumb, but the eye stores camera rotation relative to the WORLD, so we need to convert it to local rotation as well
+        // Cameras are also relative to grids (NOT direct parents), so we cannot just GetWorldRotation of the entity or something similar.
+        if (xform.GridUid is { Valid: true } grid)
+            eyeRotation += _xform.GetWorldRotation(grid);
 
         // Note: we subtract instead of adding because e.g. rotating an eye +90° visually rotates all entities in vision by -90°
         return (ownRotation + eyeRotation).GetCardinalDir();

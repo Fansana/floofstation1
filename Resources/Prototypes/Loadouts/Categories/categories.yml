@@ -68,7 +68,7 @@
     - JobsEngineeringAAUncategorized
     - JobsEngineeringAtmosphericTechnician
     - JobsEngineeringChiefEngineer
-    - JobsEngineeringSeniorEngineer
+    - JobsEngineeringSeniorEngineer 
     - JobsEngineeringStationEngineer
     - JobsEngineeringTechnicalAssistant
 
@@ -81,8 +81,8 @@
 - type: loadoutCategory
   id: JobsEngineeringChiefEngineer
 
-- type: loadoutCategory
-  id: JobsEngineeringSeniorEngineer
+- type: loadoutCategory 
+  id: JobsEngineeringSeniorEngineer 
 
 - type: loadoutCategory
   id: JobsEngineeringStationEngineer
@@ -123,7 +123,7 @@
   id: JobsEpistemicsMystagogue
 
 - type: loadoutCategory
-  id: JobsEpistemicsMystic
+  id: JobsEpistemicsMystic #floof senior scientist
 
 - type: loadoutCategory
   id: JobsEpistemicsNoviciate

@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsMantisEpiWarmers
   category: JobsEpistemicsPsionicMantis
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsMantisEpiWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksMantisEpi
   category: JobsEpistemicsPsionicMantis
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksMantisEpi
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformMantisEpiThong
   category: JobsEpistemicsPsionicMantis
-  cost: 1
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformMantisEpiThong

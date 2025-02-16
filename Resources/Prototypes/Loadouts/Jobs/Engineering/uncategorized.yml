@@ -255,3 +255,43 @@
         - StationEngineer
   items:
     - ClothingUniformJumpsuitEngineeringHazard
+
+- type: loadout  #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutEngineeringUniformJumpskirtSenior
+  category: JobsEngineeringAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEngineeringUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
+    - !type:CharacterJobRequirement #all engineering jobs but TA
+      inverted: true
+      jobs: [TechnicalAssistant]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpskirtSeniorEngineer
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutEngineeringUniformJumpsuitSenior
+  category: JobsEngineeringAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEngineeringUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
+    - !type:CharacterJobRequirement #all engineering jobs but TA
+      inverted: true
+      jobs: [TechnicalAssistant]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Engineering
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpsuitSeniorEngineer

@@ -1,0 +1,15 @@
+#uniform
+
+- type: loadout
+  id: LoadoutEngineeringClothingUniformJumpsuitAtmosCasual
+  category: JobsEngineeringAtmosphericTechnician
+  cost: 0 # its an Jumpsuit
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutAtmosphericTechnicianUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - AtmosphericTechnician
+  items:
+    - ClothingUniformJumpsuitAtmosCasual
