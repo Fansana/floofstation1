@@ -51,6 +51,12 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     public bool MayTransfer;
 
     /// <summary>
+    /// Does this entity load ammo it is used on directly?
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField]
+    public bool LoadOnUse = false;
+
+    /// <summary>
     /// DoAfter delay for filling a bullet into another ballistic ammo provider.
     /// </summary>
     [DataField]

@@ -5,6 +5,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
@@ -14,6 +15,7 @@ namespace Content.Shared.Weapons.Ranged.Systems;
 public abstract partial class SharedGunSystem
 {
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
 
     protected virtual void InitializeBallistic()
     {
@@ -41,44 +43,62 @@ public abstract partial class SharedGunSystem
 
     private void OnBallisticInteractUsing(EntityUid uid, BallisticAmmoProviderComponent component, InteractUsingEvent args)
     {
-        if (args.Handled || component.Whitelist?.IsValid(args.Used, EntityManager) != true)
+        if (args.Handled)
             return;
 
-        if (GetBallisticShots(component) >= component.Capacity)
-            return;
-
-        component.Entities.Add(args.Used);
-        Containers.Insert(args.Used, component.Container);
-        // Not predicted so
-        Audio.PlayPredicted(component.SoundInsert, uid, args.User);
-        args.Handled = true;
-        UpdateBallisticAppearance(uid, component);
-        Dirty(uid, component);
+        if (TryInsertAmmo(uid, component, args.Used))
+        {
+            Audio.PlayPredicted(component.SoundInsert, uid, args.User);
+            args.Handled = true;
+        }
     }
 
     private void OnBallisticAfterInteract(EntityUid uid, BallisticAmmoProviderComponent component, AfterInteractEvent args)
     {
         if (args.Handled ||
-            !component.MayTransfer ||
             !Timing.IsFirstTimePredicted ||
             args.Target == null ||
             args.Used == args.Target ||
-            Deleted(args.Target) ||
-            !TryComp<BallisticAmmoProviderComponent>(args.Target, out var targetComponent) ||
-            targetComponent.Whitelist == null)
+            Deleted(args.Target))
         {
             return;
         }
 
-        args.Handled = true;
-
-        _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.FillDelay, new AmmoFillDoAfterEvent(), used: uid, target: args.Target, eventTarget: uid)
+        // Try to fill the target component with this.
+        if (component.MayTransfer &&
+            TryComp<BallisticAmmoProviderComponent>(args.Target, out var targetComponent) &&
+            targetComponent.Whitelist != null)
         {
-            BreakOnTargetMove = true,
-            BreakOnUserMove = true,
-            BreakOnDamage = false,
-            NeedHand = true
-        });
+            args.Handled = true;
+
+            _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.FillDelay, new AmmoFillDoAfterEvent(), used: uid, target: args.Target, eventTarget: uid)
+            {
+                BreakOnTargetMove = true,
+                BreakOnUserMove = true,
+                BreakOnDamage = false,
+                NeedHand = true
+            });
+        }
+        else if (component.LoadOnUse && TryInsertAmmo(uid, component, (EntityUid) args.Target))
+        {
+            Audio.PlayPredicted(component.SoundInsert, uid, args.User);
+            args.Handled = true;
+        }
+    }
+
+    private bool TryInsertAmmo(EntityUid uid, BallisticAmmoProviderComponent ammoProviderComponent, EntityUid ammo)
+    {
+        if (ammoProviderComponent.Whitelist != null && !_whitelist.IsValid(ammoProviderComponent.Whitelist, ammo)
+            || GetBallisticShots(ammoProviderComponent) >= ammoProviderComponent.Capacity)
+            return false;
+
+        ammoProviderComponent.Entities.Add(ammo);
+        Containers.Insert(ammo, ammoProviderComponent.Container);
+        // Not predicted so
+        UpdateBallisticAppearance(uid, ammoProviderComponent);
+        Dirty(uid, ammoProviderComponent);
+
+        return true;
     }
 
     private void OnBallisticAmmoFillDoAfter(EntityUid uid, BallisticAmmoProviderComponent component, AmmoFillDoAfterEvent args)
