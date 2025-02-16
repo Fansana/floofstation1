@@ -37,6 +37,11 @@ namespace Content.Shared.Explosion.Components
         [DataField] public bool StartOnStick;
 
         /// <summary>
+        ///     Should timer be started when it is shot from a gun.
+        /// </summary>
+        [DataField] public bool StartOnShoot = false;
+
+        /// <summary>
         ///     Allows changing the start-on-stick quality.
         /// </summary>
         [DataField("canToggleStartOnStick")] public bool AllowToggleStartOnStick;
