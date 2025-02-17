@@ -19,3 +19,17 @@
     - !type:TraitAddComponent
       components:
       - type: DrunkardAccent
+# Floof - M3739 - Been attempting to get this thing to work, but the debug console is screaming at me for some reason I cannot put together right now.
+- type: trait
+  id: AudioPlayer
+  Category: Auditory
+  points: -2
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - IPC
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: Singer
+          proto: NormalSinger
