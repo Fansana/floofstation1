@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: Clothing
+  parent: [Clothing, ClothingOuterStorageBase]
   id: ClothingOuterBase
   components:
   - type: Clothing
