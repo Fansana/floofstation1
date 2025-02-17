@@ -102,8 +102,16 @@
   metabolisms:
     Drink:
       effects:
+      # Satiates thirst directly instead of breaking down into ice to avoid creating more ice cream in the body if drank alongside cream.
       - !type:SatiateThirst
         factor: 1.5
+      # Breaks down into more than the sum of its parts to reward the effort of making it. Less nutriment than sugar means that it's rewarding to eat alongside other food.
+      - !type:AdjustReagent
+        reagent: Nutriment # Representing fat. Fat itself is not used because sugar needs nutriment to metabolise.
+        amount: 0.15
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.25
       - !type:ChemAddMoodlet
         moodPrototype: IceCreamBenefit
         conditions:

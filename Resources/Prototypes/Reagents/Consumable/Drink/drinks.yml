@@ -53,6 +53,9 @@
       effects:
       - !type:SatiateThirst
         factor: 1
+      - !type:AdjustReagent # Floof - Cream breaks down into fat.
+        reagent: Nutriment # Representing fat. Fat itself is not used because sugar needs nutriment to metabolise.
+        amount: 0.15
 
 - type: reagent
   id: CoconutWater
@@ -426,26 +429,6 @@
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 1
-  # Floof - section start
-  metabolisms:
-    Drink:
-      effects:
-      - !type:AdjustReagent
-        reagent: Water
-        amount: 0.5 # Given ice is less dense than water, 0.46 would be more scientifically accurate.
-      - !type:AdjustTemperature
-        conditions:
-        - !type:Temperature
-          min: 273
-        amount: -4000
-      - !type:HealthChange
-        conditions:
-        - !type:Temperature
-          max: 272
-        damage:
-          types:
-            Cold: 0.5
-  # Floof - section end
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/iceglass.rsi
     state: icon_empty
