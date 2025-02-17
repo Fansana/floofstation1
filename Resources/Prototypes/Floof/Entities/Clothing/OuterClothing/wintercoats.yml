@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatAL
   name: arashi labs longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of Arashi Laboratories, A biotech corporation claiming to hail from the 'Long Rim', wherever that is. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -10,7 +10,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatAL.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatNT
   name: nanotrasen longcoat
   description: A Double-Breasted longcoat, specifically. This one is in the colors of NanoTrasen, The general-purpose spacefaring corporation that you (hopefully) work for! Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -21,7 +21,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatNT.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBlack
   name: black longcoat
   description: A Double-Breasted longcoat, specifically. This one is matte black with gold-tinted brass buttons. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -32,7 +32,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatBlack.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBrown
   name: brown longcoat
   description: A Double-Breasted longcoat, specifically. This one is matte brown with onyx buttons. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -43,7 +43,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatBrown.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatLO
   name: logistics officer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a saturated brown with mossy trim, fit for the Logistics Officer. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -54,7 +54,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatLO.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatRD
   name: mystagogue's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a pure white with a purple stripe, fit for the Mystagogue. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -65,7 +65,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatRD.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCMO
   name: chief medical officer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a deep cyan with a green cross, fit for the CMO. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -76,7 +76,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatCMO.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCE
   name: chief engineer's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a dark green with LED strip trim, fit for the CE. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -98,7 +98,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatHoP.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCap
   name: captain's longcoat
   description: A Double-Breasted longcoat, specifically. This one is a navy blue with gold embelleshments, fit for the Captain. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.
@@ -109,7 +109,7 @@
     sprite: Floof/Clothing/OuterClothing/WinterCoats/longcoatCap.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatSec
   name: security officer's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons and red armbands. Security longcoats sport protective plate carriers underneath, but are fairly heavy.
@@ -133,7 +133,7 @@
     sprintModifier: 0.9
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatWarden
   name: warden's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons and red band and cuffs, fit for the Warden. Security longcoats sport protective plate carriers underneath, but are fairly heavy.
@@ -157,7 +157,7 @@
     sprintModifier: 0.9
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatBrigmedic
   name: corpsman's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with silver buttons, red and blue bands, and sterile fabric cuffs fit for the Corpsman. Security longcoats sport protective plate carriers underneath, though this one comes with lighter plates that traditional Armored Longcoats.
@@ -181,7 +181,7 @@
     sprintModifier: 0.95
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatHoS
   name: head of security's armored longcoat
   description: A Double-Breasted longcoat, specifically. This one is black with gold buttons and gray sleeves with velvet trim along the whole outfit. A heavier alternative to the Armored Coat.
@@ -205,7 +205,7 @@
     sprintModifier: 0.9
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing] #floof added by popular demand to allow backslot
+  parent: ClothingOuterWinterCoat
   id: ClothingLongcoatCC
   name: central command longcoat
   description: A Double-Breasted longcoat, specifically. This one is a royal green with gold embellishments, fit for a Central Command Agent. Longcoats are fairly robust, offering some protection from the wear and tear of the universe.

@@ -2,7 +2,7 @@
 # NOTE: Half of the kind of armor you're probably thinking of is in vests.yml. These should probably be merged some day.
 
 - type: entity
-  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  parent: ClothingOuterBaseMedium
   id: ClothingOuterArmorBasic
   name: armor vest
   description: A standard Type I armored vest that provides decent protection against most types of damage.
@@ -23,7 +23,7 @@
 
 #Alternate / slim basic armor vest
 - type: entity
-  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing] #floof added by popular demand
+  parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorBasicSlim
   name: armor vest
   suffix: slim
@@ -35,7 +35,7 @@
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorRiot
   name: riot suit
   description: A suit of semi-flexible polycarbonate body armor with heavy padding to protect against melee attacks. Perfect for fighting delinquents around the station.
@@ -57,7 +57,7 @@
   - type: GroupExamine
 
 - type: entity
-  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing] #floof added by popular demand
+  parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorBulletproof
   name: bulletproof vest
   description: A Type III heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent.
@@ -119,7 +119,7 @@
   - type: GroupExamine
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorHeavy
   name: heavy armor suit
   description: A heavily armored suit that protects against excessive damage.

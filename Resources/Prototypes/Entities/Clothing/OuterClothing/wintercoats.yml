@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterWinterCoat
+  id: [ClothingOuterWinterCoat, AllowSuitStorageClothing]
   name: winter coat
   description: A heavy jacket made from 'synthetic' animal furs.
   components:
