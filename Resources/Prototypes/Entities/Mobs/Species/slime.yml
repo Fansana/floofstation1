@@ -35,6 +35,9 @@
         type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
+      enum.InstrumentUiKey.Key: # Floof - M3739 - It seems like rerunning the UserInterface component will effectively overwrite any interfaces from the parent. Ergo, unfortunately, we have to respecify.
+        type: InstrumentBoundUserInterface
+        requireInputValidation: false
   # to prevent bag open/honk spam
   - type: UseDelay
     delay: 0.5
