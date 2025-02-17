@@ -173,7 +173,7 @@
       inverted: true
       species:
         - Harpy
-        - IPC # Floof - M3739 - Turns out machines don't have vocal chords. Possible work-around by checking species type? I could be stupid with this.
+        #- IPC # Floof - M3739 - Turns out machines don't have vocal chords. Possible work-around by checking species type? I could be stupid with this.
   functions:
     - !type:TraitAddComponent
       components:
