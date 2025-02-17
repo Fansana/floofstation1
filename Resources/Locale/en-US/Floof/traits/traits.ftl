@@ -31,4 +31,4 @@ trait-name-DrunkardAccent = Drunkard accent
 trait-description-DrunkardAccent = You always sound like you're drunk.
 
 trait-name-AudioPlayer = Audio Player
-trait-description-AudioPlayer = You have an audio player installed, which allows you to play music. This was a triumph.
+trait-description-AudioPlayer = You have an audio player installed, which allows you to play music.
