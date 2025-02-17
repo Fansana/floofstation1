@@ -35,7 +35,7 @@
         type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
-      enum.InstrumentUiKey.Key: # Floof - M3739 - It seems like using the UserInterface component will effectively overwrite any UserInterface component inherited from the parent. Ergo, unfortunately, we have to respecify.
+      enum.InstrumentUiKey.Key: # Floof - M3739 - It seems like using the UserInterface component with the Interfaces complex field will effectively overwrite any Interfaces inherited from the parent. Ergo, unfortunately, we have to respecify as shown here.
         type: InstrumentBoundUserInterface
         requireInputValidation: false
   # to prevent bag open/honk spam
