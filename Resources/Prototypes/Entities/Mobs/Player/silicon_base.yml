@@ -211,7 +211,7 @@
           type: StrippableBoundUserInterface
         enum.SurgeryUIKey.Key:
           type: SurgeryBui
-        enum.InstrumentUiKey.Key: # Floof - M3739 - Funnily enough, this was never given to this prototype, resulting in it being unable to "sing" at all.
+        enum.InstrumentUiKey.Key: # Floof - M3739 - Funnily enough, this was never given to this prototype at first, resulting in it being unable to utilize the singing trait at all.
           type: InstrumentBoundUserInterface
           requireInputValidation: false
     - type: Emoting

@@ -1,0 +1,11 @@
+#- type: entity
+#  id: ActionIPCPlayMidi
+#  name: Play MIDI
+#  description: Play some tunes to remember the passage of time.
+#  categories: [ HideSpawnMenu ]
+#  components:
+#  - type: InstantAction
+#    checkCanInteract: false
+#    icon: DeltaV/Interface/Actions/harpy_sing.png
+#    event: !type:OpenUiActionEvent
+#      key: enum.InstrumentUiKey.Key

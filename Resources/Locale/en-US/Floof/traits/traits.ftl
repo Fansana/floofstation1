@@ -29,6 +29,6 @@ trait-description-GermanAccent = You seem to come from space Germany.
 
 trait-name-DrunkardAccent = Drunkard accent
 trait-description-DrunkardAccent = You always sound like you're drunk.
-# Floof - M3739 - Am I an idiot?
-# trait-name-AudioPlayer = Audio Player
-# trait-description-AudioPlayer = You have a audio player installed to allow for playing music.
+
+trait-name-AudioPlayer = Audio Player
+trait-description-AudioPlayer = You have an audio player installed, which allows you to play music.
