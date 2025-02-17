@@ -17,8 +17,6 @@
         - id: ClothingEyesGlassesGar
         - id: ClothingEyesGlassesGarOrange
         - id: ClothingEyesGlassesGarGiga
-      - id: Wristwatch
-        weight: 0.5
       - id: ClothingHeadHatCake
       - id: ClothingHeadHatSkub
       - id: ClothingHeadHatCone
@@ -216,7 +214,7 @@
       - id: Soap
       - id: Wirecutter
       - id: Screwdriver
-      - id: Wrench
+      - id: Wrnch
       - id: Crowbar
       - id: Multitool
       - id: Shovel
