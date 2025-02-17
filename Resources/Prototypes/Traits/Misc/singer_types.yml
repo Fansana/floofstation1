@@ -23,13 +23,3 @@
   defaultInstrument: "Voice"
   midiUi: Key
   midiActionId: ActionHarpyPlayMidi # TODO: custom action maybe?
-
-# Floof - M3739 - Because machines do not have vocal chords. Instrument given is comparable to a personal AI.
-#- type: SingerInstrument
-#  id: SiliconSinger
-#  instrumentList:
-#    "Digital": {2: 1}
-#  defaultInstrument: "Digital"
-#  midiUi: Key
-#  midiActionId: ActionHarpyPlayMidi
-

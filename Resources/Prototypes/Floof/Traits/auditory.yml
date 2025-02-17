@@ -1,4 +1,4 @@
-# Floof - M3739 - Been attempting to get this thing to work, but the debug console is screaming at me for some reason I cannot put together right now.
+# Floof - M3739 - tfw your habit of capitalizing the first letter in a sentence led to you bashing your head against the table for 5+ hours
 - type: trait
   id: AudioPlayer
   category: Auditory
@@ -11,4 +11,4 @@
     - !type:TraitAddComponent
       components:
         - type: Singer
-          proto: NormalSinger
+          proto: SiliconSinger
