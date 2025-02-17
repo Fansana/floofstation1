@@ -147,23 +147,5 @@ namespace Content.Server.Spawners.EntitySystems
                 Spawn(proto, trueCoords);
             }
         }
-
-        private void Spawn(Entity<EntityTableSpawnerComponent> ent)
-        {
-            if (TerminatingOrDeleted(ent) || !Exists(ent))
-                return;
-
-            var coords = Transform(ent).Coordinates;
-
-            var spawns = _entityTable.GetSpawns(ent.Comp.Table);
-            foreach (var proto in spawns)
-            {
-                var xOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
-                var yOffset = _robustRandom.NextFloat(-ent.Comp.Offset, ent.Comp.Offset);
-                var trueCoords = coords.Offset(new Vector2(xOffset, yOffset));
-
-                Spawn(proto, trueCoords);
-            }
-        }
     }
 }
