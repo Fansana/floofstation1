@@ -12,6 +12,7 @@
   femaleFirstNames: DionaFirst
   lastNames: DionaLast
   naming: TheFirstofLast
+  customName: true # Floof
 
 - type: speciesBaseSprites
   id: MobDionaSprites
