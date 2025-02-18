@@ -69,3 +69,25 @@
   id: ClothingOuterStasecSweater
   result: ClothingOuterStasecSweater
   category: ClothingSecurity # Floof - add uniform printer clothing categories
+
+#Centcomm Clothing
+
+- type: latheRecipe
+  parent: BaseHatRecipe
+  id: ClothingHeadHatBeretCentcomm
+  result: ClothingHeadHatBeretCentcomm
+
+- type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
+  id: ClothingUniformJumpskirtCentcomAgent
+  result: ClothingUniformJumpskirtCentcomAgent
+
+- type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
+  id: ClothingUniformJumpskirtCentcomOfficer
+  result: ClothingUniformJumpskirtCentcomOfficer
+
+- type: latheRecipe
+  parent: BaseCommandJumpsuitRecipe
+  id: ClothingUniformJumpskirtCentcomOfficial
+  result: ClothingUniformJumpskirtCentcomOfficial
