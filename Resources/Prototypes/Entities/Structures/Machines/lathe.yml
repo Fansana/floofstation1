@@ -1346,6 +1346,9 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
+      - ClothingUniformJumpsuitAtmos # Floof
+      - ClothingUniformJumpskirtAtmos # Floof
+      - ClothingUniformJumpsuitAtmosCasual # Floof
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingHeadHatCapcap
@@ -1432,6 +1435,9 @@
       - ClothingHeadHatBeretRND
       - ClothingUniformJumpsuitResearchDirector
       - ClothingUniformJumpskirtResearchDirector
+      - ClothingUniformJumpsuitRoboticist # Floof
+      - ClothingUniformJumpskirtRoboticist # Floof
+      - ClothingOuterRoboOveralls # Floof
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingUniformJumpsuitSeniorResearcher
