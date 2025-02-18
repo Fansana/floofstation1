@@ -1549,27 +1549,69 @@
       - ClothingHandsEngiWarmers
       - ClothingUnderSocksEngi
       - ClothingUniformEngiThong
+      - ClothingHandsChiefEngiWarmers
+      - ClothingUnderSocksChiefEngi
+      - ClothingUniformChiefEngiThong
       - ClothingHandsEpiWarmers
       - ClothingUnderSocksEpi
       - ClothingUniformEpiThong
       - ClothingHandsChaplainWarmers
       - ClothingUnderSocksChaplain
       - ClothingUniformChaplainThong
+      - ClothingHandsEpiHeadWarmers
+      - ClothingUnderSocksEpiHead
+      - ClothingUniformEpiHeadThong
+      - ClothingHandsMantisEpiWarmers
+      - ClothingUnderSocksMantisEpi
+      - ClothingUniformMantisEpiThong
       - ClothingHandsLogisWarmers
       - ClothingUnderSocksLogis
       - ClothingUniformLogisThong
+      - ClothingHandsLOLogisWarmers
+      - ClothingUnderSocksLOLogis
+      - ClothingUniformLOLogisThong
+      - ClothingHandsCourierWarmers
+      - ClothingUnderSocksCourier
+      - ClothingUniformCourierThong
       - ClothingHandsMedicWarmers
       - ClothingUnderSocksMedic
       - ClothingUniformMedicThong
+      - ClothingHandsChemistsWarmers
+      - ClothingUnderSocksChemists
+      - ClothingUniformChemistsThong
+      - ClothingHandsParaMedicWarmers
+      - ClothingUnderSocksParaMedic
+      - ClothingUniformParaMedicThong
+      - ClothingHandsCMOWarmers
+      - ClothingUnderSocksCMO
+      - ClothingUniformCMOThong
       - ClothingHandsSecurityWarmers
       - ClothingUnderSocksSecurity
       - ClothingUniformSecurityThong
+      - ClothingHandsHeadSecurityWarmers
+      - ClothingUnderSocksHeadSecurity
+      - ClothingUniformHeadSecurityThong
+      - ClothingHandsDetectiveWarmers
+      - ClothingUnderSocksDetective
+      - ClothingUniformDetectiveThong
+      - ClothingHandsCorpsmanWarmers
+      - ClothingUnderSocksCorpsman
+      - ClothingUniformCorpsmanThong
       - ClothingHandsServiceWarmers
       - ClothingUnderSocksService
       - ClothingUniformServiceThong
       - ClothingHandsJanitorWarmers
       - ClothingUnderSocksJanitor
       - ClothingUniformJanitorThong
+      - ClothingHandsBartenderWarmers
+      - ClothingUnderSocksBartender
+      - ClothingUniformBartenderThong
+      - ClothingHandsMusicianWarmers
+      - ClothingUnderSocksMusician
+      - ClothingUniformMusicianThong
+      - ClothingHandsChefWarmers
+      - ClothingUnderSocksChef
+      - ClothingUniformChefThong
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap

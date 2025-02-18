@@ -73,6 +73,28 @@
   materials:
     Cloth: 100
 
+# Chief Engineer
+- type: latheRecipe
+  id: ClothingHandsChiefEngiWarmers
+  result: ClothingHandsChiefEngiWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksChiefEngi
+  result: ClothingUnderSocksChiefEngi
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformChiefEngiThong
+  result: ClothingUniformChiefEngiThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
 #Epistemics
 - type: latheRecipe
   id: ClothingHandsEpiWarmers
@@ -91,6 +113,50 @@
 - type: latheRecipe
   id: ClothingUniformEpiThong
   result: ClothingUniformEpiThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Mystagogue
+- type: latheRecipe
+  id: ClothingHandsEpiHeadWarmers
+  result: ClothingHandsEpiHeadWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksEpiHead
+  result: ClothingUnderSocksEpiHead
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformEpiHeadThong
+  result: ClothingUniformEpiHeadThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Mantis
+- type: latheRecipe
+  id: ClothingHandsMantisEpiWarmers
+  result: ClothingHandsMantisEpiWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksMantisEpi
+  result: ClothingUnderSocksMantisEpi
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformMantisEpiThong
+  result: ClothingUniformMantisEpiThong
   completetime: 2
   materials:
     Cloth: 100
@@ -139,6 +205,50 @@
   materials:
     Cloth: 100
 
+# Logistics Officer
+- type: latheRecipe
+  id: ClothingHandsLOLogisWarmers
+  result: ClothingHandsLOLogisWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksLOLogis
+  result: ClothingUnderSocksLOLogis
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformLOLogisThong
+  result: ClothingUniformLOLogisThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Courier
+- type: latheRecipe
+  id: ClothingHandsCourierWarmers
+  result: ClothingHandsCourierWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksCourier
+  result: ClothingUnderSocksCourier
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformCourierThong
+  result: ClothingUniformCourierThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
 #Medical
 - type: latheRecipe
   id: ClothingHandsMedicWarmers
@@ -157,6 +267,72 @@
 - type: latheRecipe
   id: ClothingUniformMedicThong
   result: ClothingUniformMedicThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Chemist
+- type: latheRecipe
+  id: ClothingHandsChemistsWarmers
+  result: ClothingHandsChemistsWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksChemists
+  result: ClothingUnderSocksChemists
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformChemistsThong
+  result: ClothingUniformChemistsThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Paramedic
+- type: latheRecipe
+  id: ClothingHandsParaMedicWarmers
+  result: ClothingHandsParaMedicWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksParaMedic
+  result: ClothingUnderSocksParaMedic
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformParaMedicThong
+  result: ClothingUniformParaMedicThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Chief Medical Officer
+- type: latheRecipe
+  id: ClothingHandsCMOWarmers
+  result: ClothingHandsCMOWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksCMO
+  result: ClothingUnderSocksCMO
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformCMOThong
+  result: ClothingUniformCMOThong
   completetime: 2
   materials:
     Cloth: 100
@@ -181,6 +357,81 @@
 - type: latheRecipe
   id: ClothingUniformSecurityThong
   result: ClothingUniformSecurityThong
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
+
+# Head of Security
+- type: latheRecipe
+  id: ClothingHandsHeadSecurityWarmers
+  result: ClothingHandsHeadSecurityWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUnderSocksHeadSecurity
+  result: ClothingUnderSocksHeadSecurity
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformHeadSecurityThong
+  result: ClothingUniformHeadSecurityThong
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
+
+# Detective
+- type: latheRecipe
+  id: ClothingHandsDetectiveWarmers
+  result: ClothingHandsDetectiveWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUnderSocksDetective
+  result: ClothingUnderSocksDetective
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformDetectiveThong
+  result: ClothingUniformDetectiveThong
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
+
+# Corpsman
+- type: latheRecipe
+  id: ClothingHandsCorpsmanWarmers
+  result: ClothingHandsCorpsmanWarmers
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUnderSocksCorpsman
+  result: ClothingUnderSocksCorpsman
+  completetime: 2
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformCorpsmanThong
+  result: ClothingUniformCorpsmanThong
   completetime: 2
   materials:
     Cloth: 100
@@ -270,6 +521,28 @@
 - type: latheRecipe
   id: ClothingUniformMusicianThong
   result: ClothingUniformMusicianThong
+  completetime: 2
+  materials:
+    Cloth: 100
+
+# Chef
+- type: latheRecipe
+  id: ClothingHandsChefWarmers
+  result: ClothingHandsChefWarmers
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUnderSocksChef
+  result: ClothingUnderSocksChef
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformChefThong
+  result: ClothingUniformChefThong
   completetime: 2
   materials:
     Cloth: 100
