@@ -21,3 +21,6 @@ reagent-desc-healthviolation = Allegedly it's a cocktail. The warning cone motif
 
 reagent-name-mothamphetamine = mothamphetamine
 reagent-desc-mothamphetamine = A strangely... fuzzy drink. It has a chaotic aura.
+
+reagent-name-lemon-lime-bitters = lemon lime bitters
+reagent-desc-lemon-lime-bitters = Western Australians love this shit.
