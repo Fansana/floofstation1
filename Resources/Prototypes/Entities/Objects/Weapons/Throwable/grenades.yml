@@ -16,6 +16,7 @@
     - Belt
   - type: OnUseTimerTrigger
     delay: 3.5
+    startOnShoot: true
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -404,6 +405,9 @@
       reagents:
       - ReagentId: SpaceCleaner
         Quantity: 30
+  - type: Tag
+    tags:
+    - Cleanade
 
 - type: entity
   parent: SmokeGrenade

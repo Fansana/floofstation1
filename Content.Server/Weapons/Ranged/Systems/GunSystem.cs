@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Numerics;
 using Content.Server.Cargo.Systems;
+using Content.Server.Explosion.EntitySystems;
 using Content.Server.Interaction;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Stunnable;
@@ -10,6 +11,7 @@ using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
 using Content.Shared.Effects;
+using Content.Shared.Explosion.Components;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Melee;
@@ -39,6 +41,7 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly StunSystem _stun = default!;
     [Dependency] private readonly ContestsSystem _contests = default!;
+    [Dependency] private readonly TriggerSystem _trigger = default!;
 
     private const float DamagePitchVariation = 0.05f;
     public const float GunClumsyChance = 0.5f;
@@ -285,6 +288,16 @@ public sealed partial class GunSystem : SharedGunSystem
             var targeted = EnsureComp<TargetedProjectileComponent>(uid);
             targeted.Target = target;
             Dirty(uid, targeted);
+        }
+
+        if (TryComp<OnUseTimerTriggerComponent>(uid, out var triggerComponent) && triggerComponent.StartOnShoot)
+        {
+            _trigger.HandleTimerTrigger(uid,
+                user,
+                triggerComponent.Delay,
+                triggerComponent.BeepInterval,
+                triggerComponent.InitialBeepDelay,
+                triggerComponent.BeepSound);
         }
 
         // Do a throw
