@@ -2565,3 +2565,14 @@ Entries:
   id: 317
   time: '2025-02-16T01:52:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/539
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Janitor cyborgs have access to the all-new cleanade launcher! Compatible
+        with all officially licensed Cleanade® products.
+    - type: Tweak
+      message: Janitor cyborg spray bottle replaced with mega spray bottle.
+  id: 318
+  time: '2025-02-18T13:50:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/559
