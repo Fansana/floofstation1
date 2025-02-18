@@ -426,6 +426,26 @@
   recognizable: true
   meltingPoint: 0.0
   boilingPoint: 100.0
+  # Floof - section start
+  metabolisms:
+    Drink:
+      effects:
+      - !type:AdjustReagent
+        reagent: Water
+        amount: 0.5 # Given ice is less dense than water, 0.46 would be more scientifically accurate.
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          min: 273
+        amount: -4000
+      - !type:HealthChange
+        conditions:
+        - !type:Temperature
+          max: 272
+        damage:
+          types:
+            Cold: 0.5
+  # Floof - section end
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 1
