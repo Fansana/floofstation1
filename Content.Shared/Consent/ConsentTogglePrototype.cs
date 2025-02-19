@@ -18,7 +18,7 @@ public sealed partial class ConsentTogglePrototype : IPrototype, IComparable
     [DataField("priority")]
     public int priority { get; private set; } = 0;
 
-    public int CompareTo(object? obj) { // Allow for granular sorting to make the menu display consistently and intuitively
+    public override int CompareTo(object? obj) { // Allow for granular sorting to make the menu display consistently and intuitively
         if (obj == null) return -1;
 
         ConsentTogglePrototype? other = obj as ConsentTogglePrototype;
