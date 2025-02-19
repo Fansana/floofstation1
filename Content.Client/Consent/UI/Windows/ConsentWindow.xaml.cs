@@ -158,7 +158,7 @@ public sealed partial class ConsentWindow : FancyWindow
 
         _entries.Clear();
 
-        var consentprototypelist = Enumerable.ToList<ConsentTogglePrototype>(_protoManager.EnumeratePrototypes<ConsentTogglePrototype>());
+        var consentprototypelist = _protoManager.EnumeratePrototypes<ConsentTogglePrototype>().ToList();
         consentprototypelist.Sort();
 
         foreach (var prototype in consentprototypelist)
