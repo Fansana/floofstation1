@@ -2,3 +2,28 @@
 - type: loadoutCategory
   id: ItemsLewd
   root: true
+
+# Justice
+- type: loadoutCategory
+  id: JobsJustice
+  subCategories:
+    - JobsJusticeAUncategorized
+    - JobsJusticeAttorney
+    - JobsJusticeClerk
+    - JobsJusticeChiefJustice
+    - JobsJusticeProsecutor
+
+- type: loadoutCategory
+  id: JobsJusticeAUncategorized
+
+- type: loadoutCategory
+  id: JobsJusticeAttorney
+
+- type: loadoutCategory
+  id: JobsJusticeClerk
+
+- type: loadoutCategory
+  id: JobsJusticeChiefJustice
+
+- type: loadoutCategory
+  id: JobsJusticeProsecutor
