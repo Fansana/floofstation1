@@ -7,17 +7,14 @@
 - type: loadoutCategory
   id: JobsJustice
   subCategories:
-    - JobsJusticeAUncategorized
-    - JobsJusticeAttorney
+    - JobsJusticeAAUncategorized
+    - JobsServiceLawyer
     - JobsJusticeClerk
     - JobsJusticeChiefJustice
     - JobsJusticeProsecutor
 
 - type: loadoutCategory
-  id: JobsJusticeAUncategorized
-
-- type: loadoutCategory
-  id: JobsJusticeAttorney
+  id: JobsJusticeAAUncategorized
 
 - type: loadoutCategory
   id: JobsJusticeClerk
