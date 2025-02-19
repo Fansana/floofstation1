@@ -13,12 +13,12 @@ public sealed partial class ConsentTogglePrototype : IPrototype, IComparable
     public string ID { get; private set; } = default!;
 
     [DataField("category")]
-    public string Category { get; private set; } = default!;
+    public string Category { get; private set; } = "";
 
     [DataField("priority")]
     public int priority { get; private set; } = 0;
 
-    public override int CompareTo(object? obj) { // Allow for granular sorting to make the menu display consistently and intuitively
+    public int CompareTo(object? obj) { // Allow for granular sorting to make the menu display consistently and intuitively
         if (obj is not ConsentTogglePrototype other)
             return -1;
         
