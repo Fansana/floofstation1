@@ -8447,3 +8447,26 @@ Entries:
   id: 6563
   time: '2024-12-06T16:12:44.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1319
+- author: VMSolidus
+  changes:
+    - type: Fix
+      message: Server rules work again.
+  id: 6564
+  time: '2024-12-06T20:30:45.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1321
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Moved the uplink deception category into utility.
+  id: 6565
+  time: '2024-12-07T13:31:16.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1309
+- author: Remuchi
+  changes:
+    - type: Add
+      message: >-
+        Reintroduced 3 traitors objectives: steal Ian's meat, Die Glorious Death
+        and Hijack Evacuation Shuttle
+  id: 6566
+  time: '2024-12-07T14:46:48.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1323
