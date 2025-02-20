@@ -69,3 +69,12 @@
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
       state: skullbird
+
+- type: marking
+  id: LizardChestUnderbellyFeminine
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: Floof/Mobs/Customization/underbellyfemale.rsi
+    state: body_underbelly
