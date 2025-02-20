@@ -8767,3 +8767,38 @@ Entries:
   id: 6591
   time: '2024-12-22T19:57:10.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1334
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Added server config options for basic "Soft-Crit". When enabled,
+        characters who are critically injured can still slowly crawl, but are
+        otherwise still helpless and dying.
+  id: 6592
+  time: '2024-12-26T03:50:10.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1370
+- author: SiN Mapping Team
+  changes:
+    - type: Add
+      message: Another big update for Saltern
+  id: 6593
+  time: '2024-12-29T01:51:30.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1372
+- author: sleepyyapril
+  changes:
+    - type: Remove
+      message: '*Temporarily* removed Europa from map pool, pending some refurbishing.'
+  id: 6594
+  time: '2024-12-30T00:46:05.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1380
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Shadowkins has returned and has been reworked.
+    - type: Add
+      message: DarkSwap is now in the Psionic Power Pool.
+    - type: Tweak
+      message: Psionics can now see their mana pools.
+  id: 6595
+  time: '2024-12-30T02:10:53.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1200

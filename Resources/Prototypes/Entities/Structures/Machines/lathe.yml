@@ -831,10 +831,10 @@
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
-      - BorgModuleStun
-      - BorgModuleKill
-      - BorgModuleInvestigation
-      - ShadowkinRestraints
+      - BorgModuleStun # Floof (why was this not commented?)
+      - BorgModuleKill # Floof (why was this not commented?)
+      - BorgModuleInvestigation # Floof (why was this not commented?)
+      - ShadowkinRestraints # Floof
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial
       - MagazineBoxSpecialPractice
