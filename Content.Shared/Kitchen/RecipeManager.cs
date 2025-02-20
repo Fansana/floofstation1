@@ -38,7 +38,15 @@ namespace Content.Shared.Kitchen
 
                 var nx = x.IngredientCount();
                 var ny = y.IngredientCount();
-                return -nx.CompareTo(ny);
+                if (-nx.CompareTo(ny) != 0)
+                {
+                    return -nx.CompareTo(ny);//If total solid ingredients and unique reagents are different, return result.
+                }
+
+                var vx = x.ReagentQuantity();
+                var vy = y.ReagentQuantity();
+
+                return -vx.CompareTo(vy);//Fallback result based on total amount of reagents.
             }
         }
     }

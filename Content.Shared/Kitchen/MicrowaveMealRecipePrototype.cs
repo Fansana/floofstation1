@@ -52,5 +52,21 @@ namespace Content.Shared.Kitchen
             }
             return n;
         }
+
+        /// <summary>
+        ///     Sums the quantity of reagents in a recipe for sorting the recipe list.
+        ///     A fallback check if the IngredientCount is equal when sorting the
+        ///     recipe list.
+        /// </summary>
+        /// <returns></returns>
+        public FixedPoint2 ReagentQuantity()
+        {
+            FixedPoint2 n = 0;
+            foreach (FixedPoint2 i in _ingsReagents.Values)
+            {
+                n += i;
+            }
+            return n;
+        }
     }
 }
