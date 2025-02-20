@@ -95,7 +95,8 @@ namespace Content.Client.Lobby.UI
             IPlayerManager playerManager,
             IPrototypeManager prototypeManager,
             JobRequirementsManager requirements,
-            MarkingManager markings)
+            MarkingManager markings
+            )
         {
             RobustXamlLoader.Load(this);
             _cfgManager = cfgManager;
@@ -1362,7 +1363,11 @@ namespace Content.Client.Lobby.UI
 
             HeightSlider.MinValue = species.MinHeight;
             HeightSlider.MaxValue = species.MaxHeight;
-            HeightSlider.SetValueWithoutEvent(height1);
+            HeightSlider.SetValueWithoutEvent(Profile?.Height ?? species.DefaultHeight);
+
+            WidthSlider.MinValue = species.MinWidth;
+            WidthSlider.MaxValue = species.MaxWidth;
+            WidthSlider.SetValueWithoutEvent(Profile?.Width ?? species.DefaultWidth);
 
             var height = MathF.Round(species.AverageHeight * HeightSlider.Value);
             HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
