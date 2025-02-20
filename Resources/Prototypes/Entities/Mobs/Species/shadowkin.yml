@@ -160,6 +160,8 @@
         - map: ["enum.HumanoidVisualLayers.LFoot"]
         - map: ["enum.HumanoidVisualLayers.RFoot"]
         - map: ["socks"]
+        - map: [ "enum.HumanoidVisualLayers.Underwear" ]
+        - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
         - map: ["underpants"]
         - map: ["undershirt"]
         - map: ["jumpsuit"]

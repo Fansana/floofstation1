@@ -25,6 +25,8 @@
     Head: MobReptilianHead
     Snout: MobHumanoidAnyMarking
     Chest: MobReptilianTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -43,6 +45,13 @@
   id: MobReptilianMarkingLimits
   onlyWhitelisted: true
   points:
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ UnderwearBoxers ]
+    Undershirt:
+      points: 1
+      required: false
     Hair:
       points: 0
       required: false

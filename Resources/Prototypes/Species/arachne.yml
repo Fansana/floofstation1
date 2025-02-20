@@ -18,6 +18,13 @@
 - type: markingPoints
   id: MobArachneMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ UnderwearBoxers ]
+    Undershirt:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
@@ -59,6 +66,8 @@
     Head: MobHumanHead
     Hair: MobHumanoidAnyMarking
     Chest: MobHumanTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     Eyes: MobArachneEyes
     LArm: MobHumanLArm
     RArm: MobHumanRArm

@@ -16,6 +16,8 @@
   sprites:
     Head: MobSkeletonHead
     Chest: MobSkeletonTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     LArm: MobSkeletonLArm
     RArm: MobSkeletonRArm
     LHand: MobSkeletonLHand

@@ -18,6 +18,8 @@
     FacialHair: MobSlimeMarkingFollowSkin
     Snout: MobSlimeMarkingFollowSkin
     Chest: MobSlimeTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     HeadTop: MobSlimeMarkingFollowSkin
     HeadSide: MobSlimeMarkingFollowSkin
     Tail: MobSlimeMarkingFollowSkin
@@ -35,6 +37,13 @@
 - type: markingPoints
   id: MobSlimeMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ UnderwearBoxers ]
+    Undershirt:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false

@@ -4,6 +4,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Contests;
 using Content.Shared.DoAfter;
 using Content.Shared.Ghost;
+using Content.Shared.Humanoid;
 using Content.Shared.Interaction;
 using Content.Shared.InteractionVerbs.Events;
 using Content.Shared.Popups;
@@ -32,6 +33,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _containers = default!;
     [Dependency] private readonly ContestsSystem _contests = default!;
     [Dependency] private readonly SharedInteractionSystem _interactions = default!;
+    [Dependency] private readonly SharedHumanoidAppearanceSystem _humanoid = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedPopupSystem _popups = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;

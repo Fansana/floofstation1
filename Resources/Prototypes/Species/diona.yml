@@ -21,6 +21,8 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Chest: MobDionaTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     Eyes: MobDionaEyes
     LArm: MobDionaLArm
     RArm: MobDionaRArm
@@ -37,6 +39,13 @@
   id: MobDionaMarkingLimits
   onlyWhitelisted: true
   points:
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ UnderwearBoxers ]
+    Undershirt:
+      points: 1
+      required: false
     Head:
       points: 2
       required: false
