@@ -2513,14 +2513,14 @@ Entries:
   changes:
     - type: Fix
       message: >- 
-        Did another wave of bugfixes. Vending machines can be repaired, 
+        Did another wave of bugfixes. Vending machines can be repaired,
         pseudo-items (small people in bags) are less broken, wagging can
-        be toggled while cuffed/sleeping, cryptobiollin no longer leaves 
+        be toggled while cuffed/sleeping, cryptobiollin no longer leaves
         you stuttering for 50 hours, and xeno larvae no longer weigh 50 terragrams.
     - type: Tweak
       message: >- 
-        PKAs now have lower spread when not wielded, and their accuracy 
-        increases the more you wait between shots, but sawn-off PKAs in turn 
+        PKAs now have lower spread when not wielded, and their accuracy
+        increases the more you wait between shots, but sawn-off PKAs in turn
         cannot be wielded.
     - type: Tweak
       message: The mood buffs from hugging and kissing now last longer.
@@ -2549,7 +2549,7 @@ Entries:
   changes:
     - type: Tweak
       message: >-
-        Tweaked the CC Outpost by adding missing rooms and renovating the bar, 
+        Tweaked the CC Outpost by adding missing rooms and renovating the bar,
         and improved the decals on the CC shuttle.
   id: 000 # Manual add
   time: '2025-02-02T18:56:00.0000000+00:00'
@@ -2597,17 +2597,17 @@ Entries:
   changes:
     - type: Tweak
       message: >-
-        In order to perform surgery, you now have to right-click a lying entity 
+        In order to perform surgery, you now have to right-click a lying entity
         while holding a surgical tool and use the "perform surgery" verb instead
         of just clicking on the said entity.
     - type: Add
       message: >-
-        Organs without a host will now rot within 5 and perish within 15 minutes. 
+        Organs without a host will now rot within 5 and perish within 15 minutes.
         Rotting organs cannot be transplanted.
     - type: Fix
       message: >-
-        Performed yet another wave of fixes. Blood deficiency no longer causes 
-        constant bleeding, buckling should no longer break your entity's draw 
+        Performed yet another wave of fixes. Blood deficiency no longer causes
+        constant bleeding, buckling should no longer break your entity's draw
         depth, and more.
   id: 000 # Manual add
   time: '2025-02-06T19:32:00.0000000+00:00'
@@ -2623,7 +2623,7 @@ Entries:
   changes:
     - type: Add
       message: >-
-        General anesthesia and Liquid general anesthesia canisters can now be 
+        General anesthesia and Liquid general anesthesia canisters can now be
         purchased from Logistics.
   id: 000 # Manual add
   time: '2025-02-06T19:37:00.0000000+00:00'
@@ -2632,7 +2632,7 @@ Entries:
   changes:
     - type: Tweak
       message: >-
-        Made it overall harder to severe body parts via damage, and made 
+        Made it overall harder to severe body parts via damage, and made
         environmental hazards less harmful to body parts.
   id: 000 # Manual add
   time: '2025-02-06T20:04:00.0000000+00:00'
@@ -2789,11 +2789,11 @@ Entries:
   changes:
     - type: Tweak
       message: >-
-        The crew monitor handheld and console now beep when a crew member goes into 
+        The crew monitor handheld and console now beep when a crew member goes into
         critical condition or dies!
     - type: Tweak
       message: >-
-        surgical duffels and syndicate surgical duffels now contain a nitrous oxide 
+        surgical duffels and syndicate surgical duffels now contain a nitrous oxide
         tank
   id: 000 # Manual add
   time: '2025-02-16T01:52:20.0000000+00:00'
