@@ -231,6 +231,8 @@
   - type: Vore # Floofstation - Vore
     canVore: true
     canBeVored: false
+  - type: TwistedConstructionTarget
+    replacementProto: ConstructShell
 
 - type: entity
   abstract: true

@@ -7,7 +7,7 @@
     - PetsNT
     - Zombie
     - Revolutionary
-    - Gorilla
+    - Gorilla # Floof
 
 - type: npcFaction
   id: NanoTrasen
@@ -17,7 +17,7 @@
   - Xeno
   - Zombie
   - Revolutionary
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: Mouse
@@ -34,7 +34,7 @@
   - SimpleHostile
   - Zombie
   - Xeno
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: SimpleHostile
@@ -47,7 +47,8 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - Gorilla
+  - Gorilla  # Floof
+  - GeometerOfBlood
 
 - type: npcFaction
   id: SimpleNeutral
