@@ -337,6 +337,26 @@
   items:
     - ClothingHeadHatSurgcapCybersun
 
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutMedicalHeadBeretSeniorPhysician
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalHead
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all medical jobs but intern
+      inverted: true
+      jobs: [MedicalIntern]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
+  items:
+    - ClothingHeadHatBeretSeniorPhysician
+
 # Id
 
 # Neck
@@ -506,6 +526,27 @@
   items:
     - UniformScrubsColorCybersun
 
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutMedicalUniformJumpskirtSenior
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all medical jobs but intern
+      inverted: true
+      jobs: [MedicalIntern]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpskirtSeniorPhysician
+
 - type: loadout
   id: LoadoutMedicalUniformScrubsWhite
   category: JobsMedicalAUncategorized
@@ -518,5 +559,11 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Medical
+    - !type:CharacterJobRequirement #all medical jobs but intern
+      inverted: true
+      jobs: [MedicalIntern]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 144000 #40 hours
   items:
     - UniformScrubsColorWhite

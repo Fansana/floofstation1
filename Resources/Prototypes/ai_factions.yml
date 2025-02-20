@@ -61,7 +61,7 @@
   - Xeno
   - PetsNT
   - Zombie
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: Xeno
@@ -72,7 +72,7 @@
   - PetsNT
   - Zombie
   - Revolutionary
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: Zombie
@@ -84,7 +84,7 @@
   - Passive
   - PetsNT
   - Revolutionary
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: Revolutionary
@@ -93,7 +93,7 @@
   - Zombie
   - SimpleHostile
   - Dragon
-  - Gorilla
+  - Gorilla # Floof
 
 - type: npcFaction
   id: Pibble
