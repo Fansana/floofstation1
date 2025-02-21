@@ -1,0 +1,8 @@
+- type: characterItemGroup
+  id: LoadoutLawyerNeck
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutJusticeProsecutorBadge
+    - type: loadout
+      id: LoadoutJusticeAttorneyBadge

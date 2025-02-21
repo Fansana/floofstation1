@@ -16,6 +16,19 @@
 # Id
 
 # Neck
+- type: loadout
+  id: LoadoutJusticeProsecutorBadge
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingNeckProsecutorbadge
 
 # Mask
 
@@ -24,3 +37,30 @@
 # Shoes
 
 # Uniforms
+- type: loadout
+  id: LoadoutJusticeProsecutorUniformRedSuit
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingUniformJumpsuitProsecutor
+
+- type: loadout
+  id: LoadoutJusticeProsecutorUniformRedSkirt
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingUniformJumpskirtProsecutor
