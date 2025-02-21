@@ -2,7 +2,7 @@
   parent: [BaseGlobal, BaseHands]
   id: ToggleUndershirt
   priority: -11
-  delay: 2.5
+  delay: 3
   allowSelfInteract: true
   hideByRequirement: true
   requirement:
@@ -27,6 +27,7 @@
   parent: ToggleUndershirt
   id: ToggleUnderwear
   priority: -12
+  delay: 2.2
   effectSuccess:
     popup: Obvious
     sound: {path: /Audio/Effects/thudswoosh.ogg}
