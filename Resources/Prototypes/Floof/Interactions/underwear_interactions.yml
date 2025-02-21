@@ -2,7 +2,7 @@
   parent: [BaseGlobal, BaseHands]
   id: ToggleUndershirt
   priority: -11
-  delay: 3.5
+  delay: 2.5
   allowSelfInteract: true
   hideByRequirement: true
   requirement:
