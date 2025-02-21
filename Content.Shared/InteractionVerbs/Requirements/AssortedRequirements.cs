@@ -1,4 +1,3 @@
-using Content.Shared.Inventory;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Standing;
@@ -70,19 +69,5 @@ public sealed partial class SelfTargetRequirement : InvertableInteractionRequire
     public override bool IsMet(InteractionArgs args, InteractionVerbPrototype proto, InteractionAction.VerbDependencies deps)
     {
         return (args.Target == args.User) ^ Inverted;
-    }
-}
-
-/// <summary>
-///     Requires a mob to not be wearing anything in this slot.
-/// </summary>
-[Serializable, NetSerializable]
-public sealed partial class ClothingSlotBlacklistRequirement : InvertableInteractionRequirement
-{
-    [DataField] public string Slot;
-
-    public override bool IsMet(InteractionArgs args, InteractionVerbPrototype proto, InteractionAction.VerbDependencies deps)
-    {
-        return !deps.EntMan.System<InventorySystem>().TryGetSlotEntity(args.Target, Slot, out _);
     }
 }

@@ -1,5 +1,4 @@
 using Content.Shared.DoAfter;
-using Content.Shared.Humanoid;
 using Content.Shared.InteractionVerbs.Events;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
