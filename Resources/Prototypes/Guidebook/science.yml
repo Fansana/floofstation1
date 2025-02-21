@@ -70,6 +70,13 @@
   id: Cyborgs
   name: guide-entry-cyborgs
   text: "/ServerInfo/Guidebook/Science/Cyborgs.xml"
+  children:
+  - Quadborgs
+
+- type: guideEntry
+  id: Quadborgs
+  name: guide-entry-quadborgs
+  text: "/ServerInfo/Guidebook/Science/Quadborgs.xml"
 
 - type: guideEntry
   id: GlimmerCreatures

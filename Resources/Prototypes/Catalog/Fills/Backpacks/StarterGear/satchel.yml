@@ -244,4 +244,10 @@
     contents:
     - id: GasAnalyzer
     - id: trayScanner
+    - id: Multitool # Floof, but this is also in upstream
+    - id: AccessConfiguratorUniversal # Floof, but this is also in upstream
+    - id: HandLabeler # Floof
+    - id: PowerDrill # Floof
+    - id: JawsOfLife # Floof
+    - id: WelderExperimental # Floof
   - type: Unremoveable

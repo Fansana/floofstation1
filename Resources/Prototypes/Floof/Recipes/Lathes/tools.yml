@@ -16,6 +16,16 @@
     Steel: 75
 
 - type: latheRecipe
+  id: ClothingHarvestBag
+  result: ClothingHarvestBag
+  completetime: 5
+  materials:
+    Steel: 2000
+    Silver: 750
+    Plasma: 1000
+    Bluespace: 200
+
+- type: latheRecipe
   id: ToolRadioHandheld
   result: RadioHandheld
   completetime: 3.5

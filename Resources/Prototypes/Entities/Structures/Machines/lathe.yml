@@ -167,6 +167,7 @@
       - SprayBottle
       - MopItem
       - Holoprojector
+      - HoloprojectorEngineering # Floof
       - Mousetrap
       - LightReplacer
       - TrashBag
@@ -327,6 +328,7 @@
       - SynthesizerInstrument
       - RPED
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -370,6 +372,7 @@
       - MofficTranslator
       - ArachnicTranslatorImplanter # Floofstation
       - ArachnicTranslator # Floofstation
+      - ClothingHarvestBag # Floofstation
       - RCDAmmo #DeltaV
       - RCD #EE
   - type: EmagLatheRecipes
