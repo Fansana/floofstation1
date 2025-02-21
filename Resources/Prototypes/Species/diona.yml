@@ -21,8 +21,8 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Chest: MobDionaTorso
-    Underwear: MobHumanoidAnyMarking
-    Undershirt: MobHumanoidAnyMarking
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     Eyes: MobDionaEyes
     LArm: MobDionaLArm
     RArm: MobDionaRArm
@@ -42,10 +42,10 @@
     Underwear:
       points: 1
       required: true
-      defaultMarkings: [ UnderwearBoxers ]
+      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
     Undershirt:
       points: 1
-      required: false
+      required: false # Floof, add underwear
     Head:
       points: 2
       required: false
