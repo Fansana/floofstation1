@@ -6,3 +6,14 @@
       id: LoadoutJusticeProsecutorBadge
     - type: loadout
       id: LoadoutJusticeAttorneyBadge
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeCloak
+
+- type: characterItemGroup
+  id: LoadoutLawyerOuter
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeOuter
+    - type: loadout
+      id: LoadoutJusticeClerkVest

@@ -38,7 +38,7 @@
 
 # Uniforms
 - type: loadout
-  id: LoadoutJusticeProsecutorUniformRedSuit
+  id: LoadoutJusticeProsecutorUniformSuit
   category: JobsJusticeProsecutor
   cost: 0
   exclusive: true
@@ -52,7 +52,7 @@
     - ClothingUniformJumpsuitProsecutor
 
 - type: loadout
-  id: LoadoutJusticeProsecutorUniformRedSkirt
+  id: LoadoutJusticeProsecutorUniformSkirt
   category: JobsJusticeProsecutor
   cost: 0
   exclusive: true
