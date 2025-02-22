@@ -12,6 +12,19 @@
 # Gloves
 
 # Head
+- type: loadout
+  id: LoadoutJusticeChiefJusticeToque
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingHeadHatCJToque
 
 # Id
 
@@ -105,3 +118,30 @@
         - ChiefJustice
   items:
     - ClothingUniformJumpsuitChiefJusticeWhite
+
+# Equipment
+# Floof - As of writing, the CJ has only one equipment unique to it, and that is a gavel. This will be part of the loadout system until DeltaV finally puts it into your pocket.
+- type: loadout
+  id: LoadoutJusticeGavel
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - Gavel
+
+# Floof - Cause you never know if someone took the funny piece of wood.
+- type: loadout
+  id: LoadoutJusticeGavelBlock
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - GavelBlock
