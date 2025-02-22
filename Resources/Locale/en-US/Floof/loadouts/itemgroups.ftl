@@ -8,5 +8,4 @@ character-item-group-LoadoutShoes2 = Civilian Shoes
 character-item-group-LoadoutUniformsCivilian2 = Civilian Uniforms
 character-item-group-LoadoutFun = Fun
 character-item-group-LoadoutLewd = Lewd
-# Floof - Justice
 
