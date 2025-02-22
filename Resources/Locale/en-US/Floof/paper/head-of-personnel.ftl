@@ -1,4 +1,4 @@
-paperwork-header-hop = {"["}color=#1b67a5] ◥[bold]N[/bold]◣ [head=3][bold]HEAD OF PERSONAL[/bold][/head][/color]
+paperwork-header-hop = {"["}color=#1b67a5] ◥[bold]N[/bold]◣ [head=3][bold]HEAD OF PERSONNEL[/bold][/head][/color]
 paperwork-separator-hop = {"["}color=#1b67a5]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
 paperwork-hop-access-permit =
@@ -17,10 +17,10 @@ paperwork-hop-access-permit =
     {"•"} Other Notes:
     {"["}color=red]This document gives {"{"}insert name{"}"} the ability to Access stated areas unhindered.
 
-    This document must be signed, and stamped by the Head of Personal to be considered valid.[/color]
+    This document must be signed, and stamped by the Head of Personnel to be considered valid.[/color]
 
     {"["}bold]Applicant's Signature:[/bold]
-    {"["}bold]Head of Personal's Signature:[/bold]
+    {"["}bold]Head of Personnel's Signature:[/bold]
 
 paperwork-hop-job-transfer-request =
     { paperwork-header-hop }
@@ -242,7 +242,7 @@ paperwork-hop-restricted-weapons-permit =
 
     {"["}color=gray]Class three armaments include but are not limited to: automatic weapons, combat explosives, and energy based melee weaponry.[/color]
 
-    {"["}color=red]This document must be signed and stamped by Head of Personals & Head of Security to be considered valid.[/color]
+    {"["}color=red]This document must be signed and stamped by Head of Personnels & Head of Security to be considered valid.[/color]
 
     {"["}bold]Head of Personnels' Stamp & Signature:[/bold]
     {"["}bold]Head of Security Stamp & Signature:[/bold]
