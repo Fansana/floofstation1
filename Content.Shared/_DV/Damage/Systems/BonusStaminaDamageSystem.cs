@@ -9,10 +9,10 @@ public sealed partial class BonusStaminaDamageSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<BonusStaminaDamageComponent, StaminaMeleeHitEvent>(OnStamHit);
+        SubscribeLocalEvent<BonusStaminaDamageComponent, TakeStaminaDamageEvent>(OnStamHit); // Floof - StaminaMeleeHitEvent replaced with TakeStaminaDamageEvent
     }
 
-    private void OnStamHit(Entity<BonusStaminaDamageComponent> ent, ref StaminaMeleeHitEvent args)
+    private void OnStamHit(Entity<BonusStaminaDamageComponent> ent, ref TakeStaminaDamageEvent args) // Floof - StaminaMeleeHitEvent replaced with TakeStaminaDamageEvent
     {
         args.Multiplier *= ent.Comp.Multiplier;
     }

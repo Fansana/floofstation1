@@ -5,8 +5,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage # Floof - Oni refactor
+          damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
           coefficients:
             Blunt: 1.2
             Slash: 1.35
@@ -28,8 +28,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage # Floof - oni refector
+        damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
           coefficients:
             Blunt: 1.2
             Slash: 1.2
@@ -51,8 +51,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage # Floof - Oni refactor
+        damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
           coefficients:
             Blunt: 1.25
             Slash: 1.25
