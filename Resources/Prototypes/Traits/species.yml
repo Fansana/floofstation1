@@ -6,11 +6,12 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - Oni refactor
-          damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
+        damageModifierSet:
           coefficients:
             Blunt: 1.2
             Slash: 1.35
             Piercing: 1.2
+            Asphyxiation: 1.35 # Floof - since these traits override the damage modifier set, asphxiation needs re-added. Not that it uh, does anything?
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
@@ -29,11 +30,12 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - oni refector
-        damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
+        damageModifierSet: 
           coefficients:
             Blunt: 1.2
             Slash: 1.2
             Piercing: 1.35
+            Asphyxiation: 1.35 # Floof
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
@@ -52,11 +54,12 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - Oni refactor
-        damageModifierSet: # Does this override the Asphyxiation damage to 1 or leave it at 1.35?
+        damageModifierSet: 
           coefficients:
             Blunt: 1.25
             Slash: 1.25
             Piercing: 1.25
+            Asphyxiation: 1.35 # Floof
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
