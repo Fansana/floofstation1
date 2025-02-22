@@ -3,6 +3,7 @@
 - type: latheRecipe
   id: ClothingHandsPlainWarmers
   result: ClothingHandsPlainWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -10,6 +11,7 @@
 - type: latheRecipe
   id: ClothingHandsStripeRainbowWarmers
   result: ClothingHandsStripeRainbowWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -17,6 +19,7 @@
 - type: latheRecipe
   id: ClothingHandsStripePurpleWarmers
   result: ClothingHandsStripePurpleWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -24,6 +27,7 @@
 - type: latheRecipe
   id: ClothingHandsStripeWhiteWarmers
   result: ClothingHandsStripeWhiteWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -31,6 +35,7 @@
 - type: latheRecipe
   id: ClothingHandsBeeWarmers
   result: ClothingHandsBeeWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -38,6 +43,7 @@
 - type: latheRecipe
   id: ClothingHandsCoderWarmers
   result: ClothingHandsCoderWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -45,6 +51,7 @@
 - type: latheRecipe
   id: ClothingHandsCoderValidWarmers
   result: ClothingHandsCoderValidWarmers
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -54,6 +61,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksPlain
   result: ClothingUnderSocksPlain
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -61,6 +69,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksStripedRainbow
   result: ClothingUnderSocksStripedRainbow
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -68,6 +77,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksStripedPurple
   result: ClothingUnderSocksStripedPurple
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -75,6 +85,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksStripedWhite
   result: ClothingUnderSocksStripedWhite
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -82,6 +93,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksBee
   result: ClothingUnderSocksBee
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -89,6 +101,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksCoder
   result: ClothingUnderSocksCoder
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -96,6 +109,7 @@
 - type: latheRecipe
   id: ClothingUnderSocksCoderValid
   result: ClothingUnderSocksCoderValid
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -105,6 +119,7 @@
 - type: latheRecipe
   id: ClothingUniformThongPlain
   result: ClothingUniformThongPlain
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -112,6 +127,7 @@
 - type: latheRecipe
   id: ClothingUniformStripedThongRainbow
   result: ClothingUniformStripedThongRainbow
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -119,6 +135,7 @@
 - type: latheRecipe
   id: ClothingUniformStripedThongPurple
   result: ClothingUniformStripedThongPurple
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -126,6 +143,7 @@
 - type: latheRecipe
   id: ClothingUniformStripedThongWhite
   result: ClothingUniformStripedThongWhite
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -133,6 +151,7 @@
 - type: latheRecipe
   id: ClothingUniformThongBee
   result: ClothingUniformThongBee
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -140,6 +159,7 @@
 - type: latheRecipe
   id: ClothingUniformThongCoder
   result: ClothingUniformThongCoder
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
@@ -147,6 +167,7 @@
 - type: latheRecipe
   id: ClothingUniformThongCoderValid
   result: ClothingUniformThongCoderValid
+  category: ClothingOther
   completetime: 2
   materials:
     Cloth: 200
