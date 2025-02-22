@@ -53,6 +53,7 @@ namespace Content.Shared.Kitchen
             return n;
         }
 
+        //Floofstation specific method - Start
         /// <summary>
         ///     Sums the quantity of reagents in a recipe for sorting the recipe list.
         ///     A fallback check if the IngredientCount is equal when sorting the
@@ -68,5 +69,6 @@ namespace Content.Shared.Kitchen
             }
             return n;
         }
+        //Floofstation specific method - End
     }
 }
