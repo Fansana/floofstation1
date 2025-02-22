@@ -1,13 +1,1 @@
-# Floof - Justice
-- type: loadout
-  id: LoadoutJusticeTemplateFolder
-  category: JobsJusticeAAUncategorized
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Justice
-  items:
-    - BoxFolderJustice # Floof - M3739 - Granted, this is a stop-gap solution to the problem that some maps are lacking in the "Drawer'o'Templates" department, especially Glacier.
-    - BoxFolderSecurity # But that fact will never stop us from delivering justice. Until the issue is properly rectified, and it is standardized across all maps, this will remain.
+# Uncategorized
