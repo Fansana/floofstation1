@@ -21,7 +21,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';
     public const char SubtlePrefix = '-';
-    public const char SubtleOOCPrefix = '.';
+    public const char SubtleOOCPrefix = '{'; // Floof - changed to "{"
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char TelepathicPrefix = '='; //Nyano - Summary: Adds the telepathic channel's prefix.
