@@ -7,13 +7,13 @@ using Robust.Shared.Enums;
 namespace Content.Server.Chat.Commands
 {
     [AnyCommand]
-    internal sealed class SubtleCommand : IConsoleCommand
+    internal sealed class SubtleOOCCommand : IConsoleCommand
     {
-        public string Command => "subtle";
+        public string Command => "subtleooc";
         public string Description => "Perform an subtle action.";
-        public string Help => "subtle <text>";
+        public string Help => "subtleooc <text>";
 
-        private const string SubtleColor = "#d3d3ff";
+        private const string SubtleOOCColor = "#ff7782";
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
@@ -40,7 +40,7 @@ namespace Content.Server.Chat.Commands
                 return;
 
             IoCManager.Resolve<IEntitySystemManager>().GetEntitySystem<ChatSystem>()
-                .TrySendInGameICMessage(playerEntity, message, InGameICChatType.Subtle, ChatTransmitRange.NoGhosts, false, shell, player, color: SubtleColor);
+                .TrySendInGameICMessage(playerEntity, message, InGameICChatType.SubtleOOC, ChatTransmitRange.NoGhosts, false, shell, player, color: SubtleOOCColor);
         }
     }
 }
