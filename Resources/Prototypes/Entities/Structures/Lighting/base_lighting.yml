@@ -351,7 +351,6 @@
     damage:
       types:
         Heat: 1
-    popupText: powered-light-component-burn-hand
 
 - type: entity
   id: PoweredWarmSmallLight
@@ -371,7 +370,6 @@
     damage:
       types:
         Heat: 2
-    popupText: powered-light-component-burn-hand
 
 - type: entity
   id: PoweredSmallLight
