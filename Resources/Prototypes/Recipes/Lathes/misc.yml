@@ -62,6 +62,16 @@
     Glass: 50
 
 - type: latheRecipe
+  id: WarmLightBulb
+  result: WarmLightBulb
+  category: Lights
+  completetime: 2
+  materials:
+    Steel: 50
+    Glass: 50
+
+- type: latheRecipe
+  parent: BaseLightRecipe
   id: GlowstickRed
   result: GlowstickRed
   category: Lights
