@@ -70,9 +70,7 @@
     Steel: 50
     Glass: 50
 
-- type: latheRecipe
-  parent: BaseLightRecipe
-  id: GlowstickRed
+- type: latheRecipey
   result: GlowstickRed
   category: Lights
   completetime: 2
