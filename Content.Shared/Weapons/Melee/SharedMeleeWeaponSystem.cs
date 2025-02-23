@@ -220,10 +220,12 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
 
         // Begin DeltaV additions
         // Allow users of melee weapons to have bonuses applied
-        var userEv = new GetMeleeDamageEvent(uid, new(component.Damage), new(), user);// Floof - removed component.ResistanceBypass arg TODO: figure out why we don't have it
-        RaiseLocalEvent(user, ref userEv);
+        if (user != uid)
+        {
+            RaiseLocalEvent(user, ref ev);
+        }
 
-        return DamageSpecifier.ApplyModifierSets(ev.Damage, ev.Modifiers.Concat(userEv.Modifiers));
+        return DamageSpecifier.ApplyModifierSets(ev.Damage, ev.Modifiers);
         // End DeltaV additions
     }
 
