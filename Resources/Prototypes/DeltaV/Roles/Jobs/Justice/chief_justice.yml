@@ -3,6 +3,7 @@
   name: job-name-chief-justice
   description: job-description-chief-justice
   playTimeTracker: JobChiefJustice
+  whitelisted: true # Floof - CJ whitelist
   requirements:
     - !type:CharacterPlaytimeRequirement
       tracker: JobClerk
@@ -15,7 +16,7 @@
       min: 36000 # 10 hours
     - !type:CharacterOverallTimeRequirement
       min: 90000 # 25 hours
-    - !type:CharacterWhitelistRequirement # whitelist requirement because I don't want any dingus judges
+    #- !type:CharacterWhitelistRequirement # whitelist requirement because I don't want any dingus judges | Floof - M3739 - How this made it past prod for this long is beyond me.
   weight: 20
   startingGear: CJGear
   icon: "JobIconChiefJustice"

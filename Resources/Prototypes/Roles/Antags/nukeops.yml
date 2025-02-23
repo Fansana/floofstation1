@@ -30,6 +30,7 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-nuclear-operative-commander-objective
+  whitelisted: true # Floof - Whitelist
   requirements:
   - !type:CharacterOverallTimeRequirement
     min: 54000 # Floofstation - 15 hours
@@ -39,7 +40,7 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
     min: 14400 # Floofstation - 4 hours
-  - !type:CharacterWhitelistRequirement
+  # - !type:CharacterWhitelistRequirement | Floof - M3739 - How this made it past prod for this long is beyond me.
 
 #Lone Operative Gear
 - type: startingGear
