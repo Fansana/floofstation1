@@ -348,7 +348,6 @@
     color: "#ba473f"
   - type: PoweredLight
     hasLampOnSpawn: DimLightBulb
-  - type: DamageOnInteract
     damage:
       types:
         Heat: 1
@@ -369,7 +368,6 @@
     color: "#FF8A0C"
   - type: PoweredLight
     hasLampOnSpawn: WarmLightBulb
-  - type: DamageOnInteract
     damage:
       types:
         Heat: 2

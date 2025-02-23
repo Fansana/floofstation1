@@ -154,10 +154,6 @@
     lightEnergy: 0.5
     lightRadius: 5
     lightSoftness: 3
-  - type: Tag
-    tags:
-    - LightBulb
-    - Trash
 
 - type: entity
   parent: BaseLightbulb
@@ -171,10 +167,6 @@
     lightEnergy: 1
     lightRadius: 6
     lightSoftness: 3
-  - type: Tag
-    tags:
-    - LightBulb
-    - Trash
 
 - type: entity
   parent: LightBulb
@@ -423,7 +415,7 @@
   - type: Construction
     graph: CyanLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
@@ -438,7 +430,7 @@
   - type: Construction
     graph: BlueLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
@@ -453,7 +445,7 @@
   - type: Construction
     graph: PinkLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
@@ -468,7 +460,7 @@
   - type: Construction
     graph: OrangeLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
@@ -483,7 +475,7 @@
   - type: Construction
     graph: RedLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
@@ -498,7 +490,7 @@
   - type: Construction
     graph: GreenLightBulb
     node: icon
-  - type: ToolRefinable
+  - type: WelderRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
