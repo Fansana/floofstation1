@@ -261,6 +261,9 @@
 
 - type: Tag
   id: CableCoil
+  
+- type: Tag
+  id: Candle
 
 - type: Tag
   id: CaneBlade
@@ -1379,10 +1382,13 @@
   id: BrassKnuckles
 
 - type: Tag
-  id: WeaponDisabler
+  id: Cleanade
+
+- type: Tag
+  id: ClothingHeadHelmetBasic
 
 - type: Tag
   id: Stunbaton
 
 - type: Tag
-  id: ClothingHeadHelmetBasic
+  id: WeaponDisabler

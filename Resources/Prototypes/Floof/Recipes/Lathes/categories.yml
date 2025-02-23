@@ -1,0 +1,35 @@
+- type: latheCategory
+  id: ClothingCommand
+  name: lathe-category-clothing-command
+
+- type: latheCategory
+  id: ClothingEngineering
+  name: lathe-category-clothing-engineering
+
+- type: latheCategory
+  id: ClothingEpistemics
+  name: lathe-category-clothing-epistemics
+
+- type: latheCategory
+  id: ClothingLogistics
+  name: lathe-category-clothing-logistics
+
+- type: latheCategory
+  id: ClothingMedical
+  name: lathe-category-clothing-medical
+
+- type: latheCategory
+  id: ClothingSecurity
+  name: lathe-category-clothing-security
+
+- type: latheCategory
+  id: ClothingService
+  name: lathe-category-clothing-service
+
+- type: latheCategory
+  id: ClothingOther
+  name: lathe-category-clothing-other
+
+- type: latheCategory
+  id: Carpet
+  name: lathe-category-carpet

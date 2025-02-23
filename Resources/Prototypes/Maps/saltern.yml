@@ -35,12 +35,14 @@
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 4, 6 ]
             TechnicalAssistant: [ 4, 4 ]
+            SeniorEngineer: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 5 ]
             MedicalIntern: [ 4, 6 ]
             Paramedic: [ 1, 2 ]
+            SeniorPhysician: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 4, 6 ]
@@ -49,6 +51,7 @@
             Chaplain: [ 1, 1 ]
             ForensicMantis: [ 1, 1 ]
             Librarian: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -56,6 +59,7 @@
             SecurityOfficer: [ 4, 6 ]
             SecurityCadet: [ 4, 6 ]
             Prisoner: [ 1, 2 ]
+            SeniorOfficer: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 1, 3 ]
