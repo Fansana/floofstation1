@@ -823,6 +823,7 @@
       - SpeedLoaderMagnumEmpty
       - MagazineMagnumEmpty #floof
       - MagazineMagnum #floof
+      - SterileBag #floof
       - Stunbaton
       - TargetClown
       - ClothingOuterArmorPlateCarrier
@@ -1076,6 +1077,7 @@
       - WhiteCane
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - SterileBag # floof
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
