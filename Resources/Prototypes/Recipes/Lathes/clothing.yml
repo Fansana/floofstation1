@@ -1183,13 +1183,3 @@
   id: CarpetWhite
   result: FloorCarpetItemWhite
   category: Carpet # Floof - add uniform printer clothing categories
-
-# Floofstation - Collars
-- type: latheRecipe
-  id: ClothingNeckCollarCmd
-  result: ClothingNeckCollarCmd
-  category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50

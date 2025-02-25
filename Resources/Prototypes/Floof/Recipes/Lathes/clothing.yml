@@ -1,3 +1,14 @@
+# Command
+
+- type: latheRecipe
+  id: ClothingNeckCollarCmd
+  result: ClothingNeckCollarCmd
+  category: ClothingCommand
+  completetime: 2
+  materials:
+    Cloth: 100
+    Durathread: 50
+
 # Engineering
 
 - type: latheRecipe
