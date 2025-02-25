@@ -241,23 +241,6 @@
     access: [["Medical"], ["Salvage"], ["Command"], ["Research"]]
   - type: SiliconLawProvider
     laws: Medical
-  - type: LanguageKnowledge
-    speaks:
-    - TauCetiBasic
-    - SolCommon
-    - Tradeband
-    - Freespeak
-    - Elyran
-    - RobotTalk
-    - Sign
-    understands:
-    - TauCetiBasic
-    - SolCommon
-    - Tradeband
-    - Freespeak
-    - Elyran
-    - RobotTalk
-    - Sign
     
 - type: entity
   id: BorgChassisApex
