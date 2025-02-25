@@ -52,5 +52,6 @@
     jobs:
     - ForensicMantis
   - !type:CharacterPlaytimeRequirement
-      tracker: ForensicMantis
-      min: 36000 # 10 hours
+     tracker: JobForensicMantis
+     min: 36000 # 10 hours
+#
