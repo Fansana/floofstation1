@@ -155,20 +155,6 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  - type: Instrument
-    allowPercussion: false
-    handheld: false
-    bank: 1
-    program: 2
-  - type: UserInterface
-    interfaces:
-      enum.InstrumentUiKey.Key:
-        type: InstrumentBoundUserInterface
-        requireInputValidation: false
-      enum.StationMapUiKey.Key:
-        type: UntrackedStationMapBoundUserInterface
-        requireInputValidation: false
-  - type: StationMap
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -286,20 +272,6 @@
       shader: unshaded
       map: ["light"]
       visible: false
-  - type: Instrument
-    allowPercussion: false
-    handheld: false
-    bank: 1
-    program: 2
-  - type: UserInterface
-    interfaces:
-      enum.InstrumentUiKey.Key:
-        type: InstrumentBoundUserInterface
-        requireInputValidation: false
-      enum.StationMapUiKey.Key:
-        type: UntrackedStationMapBoundUserInterface
-        requireInputValidation: false
-  - type: StationMap
   - type: SpriteMovement
     movementLayers:
       movement:
