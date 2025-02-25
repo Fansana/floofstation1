@@ -60,6 +60,16 @@
   materials:
     Cloth: 200
 
+# Floof section - Add base command mantle recipe
+- type: latheRecipe
+  abstract: true
+  id: BaseCommandMantleRecipe
+  completetime: 2.8
+  materials:
+    Cloth: 200
+    Durathread: 150
+# Floof section end
+
 # Recipes
 
 # Jumpsuits/skirts
@@ -719,67 +729,46 @@
 
 # Mantles
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleCap
   result: ClothingNeckMantleCap
   category: ClothingCommand # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleCE
   result: ClothingNeckMantleCE
   category: ClothingEngineering # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleCMO
   result: ClothingNeckMantleCMO
   category: ClothingMedical # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleHOP
   result: ClothingNeckMantleHOP
   category: ClothingService # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleHOS
   result: ClothingNeckMantleHOS
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleRD
   result: ClothingNeckMantleRD
   category: ClothingEpistemics # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 - type: latheRecipe
+  parent: BaseCommandMantleRecipe # Floof - Add base command mantle recipe
   id: ClothingNeckMantleQM
   result: ClothingNeckMantleQM
   category: ClothingLogistics # Floof - add uniform printer clothing categories
-  completetime: 2.8
-  materials:
-    Cloth: 200
-    Durathread: 150
 
 # Winter coats
 - type: latheRecipe
