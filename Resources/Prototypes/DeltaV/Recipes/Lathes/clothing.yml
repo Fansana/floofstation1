@@ -76,18 +76,22 @@
   parent: BaseHatRecipe
   id: ClothingHeadHatBeretCentcomm
   result: ClothingHeadHatBeretCentcomm
+  category: ClothingOther # Floof - Add categories to Centcomm drip recipes
 
 - type: latheRecipe
   parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCentcomAgent
   result: ClothingUniformJumpskirtCentcomAgent
+  category: ClothingOther # Floof - Add categories to Centcomm drip recipes
 
 - type: latheRecipe
   parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCentcomOfficer
   result: ClothingUniformJumpskirtCentcomOfficer
+  category: ClothingOther # Floof - Add categories to Centcomm drip recipes
 
 - type: latheRecipe
   parent: BaseCommandJumpsuitRecipe
   id: ClothingUniformJumpskirtCentcomOfficial
   result: ClothingUniformJumpskirtCentcomOfficial
+  category: ClothingOther # Floof - Add categories to Centcomm drip recipes
