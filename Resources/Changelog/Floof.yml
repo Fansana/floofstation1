@@ -2993,3 +2993,27 @@ Entries:
   id: 0
   time: '2025-02-25T23:34:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/584
+- author: M3739
+  changes:
+    - type: Add
+      message: The Justice department now has it's own loadout tab under 'Jobs'.
+    - type: Tweak
+      message: >-
+        The Chief Justice now properly appears on the manifest as a member of command,
+        and their starting gear has been adjusted to be more in line with their fellow
+        Command members.
+    - type: Tweak
+      message: >-
+        The Attorney and the Prosecutor now has a lawyer stamp as part of their
+        starting gear.
+    - type: Tweak
+      message: >-
+        The Lawyer loadout tab is no longer under Service, It is now under Justice as
+        'Attorney'.
+    - type: Tweak
+      message: >-
+        Some document templates have received a revision. No more "Head of Personal" as
+        the header of every Justice paperwork template.
+  id: 0
+  time: '2025-02-26T00:44:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/577
