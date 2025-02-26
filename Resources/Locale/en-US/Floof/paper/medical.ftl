@@ -1,5 +1,5 @@
-paperwork-header-medical = {"["}color=#b18644] ◥[bold]N[/bold]◣ [bold]MEDICAL[/bold][/color]
-paperwork-separator-medical = {"["}color=#b18644]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+paperwork-header-medical = {"["}color=#5b97bc] ◥[bold]N[/bold]◣ [bold]MEDICAL[/bold][/color]
+paperwork-separator-medical = {"["}color=#5b97bc]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
 paperwork-medical-death-certificate =
     { paperwork-header-medical }
@@ -20,7 +20,7 @@ paperwork-medical-death-certificate =
     { paperwork-separator-medical }
     {"["}color=red]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
-    {"["}italic]NOTE: The belongings of an employee who died at the workplace must be transferred to the department in which they worked. It is allowed not to transfer items for objective reasons.[/italic]
+    {"["}italic]NOTE: The belongings of an employee who died at the workplace must be transferred to the department in which they worked. Items may be withheld from transfer for objective reasons.[/italic]
 
     {"["}bold]Chief Medical Officers Signature:[/bold]
 
@@ -44,7 +44,7 @@ paperwork-medical-order-of-dismissal =
     { paperwork-separator-medical }
     {"["}color=red]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
-    {"["}italic][color=gray]NOTE: The initialization of dismissal can only be carried out by the stations Chief Medical Officer in agreement with the Head of Personal & Security ([bold]with the permission of the Central Command[/bold]). This document must have the signature of the dismissed persons (except for direct disregard to sign the report). The document is only valid if all three listed department heads seals & signatures are present.[/italic][/color]
+    {"["}italic][color=gray]NOTE: The initialization of dismissal can only be carried out by the station's Chief Medical Officer in agreement with the Head of Personnel and the Head of Security ([bold]with the permission of Central Command[/bold]). This document must have the signature of the dismissed person (except in cases of direct refusal to sign the order). The document is only valid if all three listed department heads seals and signatures are present.[/italic][/color]
 
     {"["}bold]Chief Medical Officer's Signature:[/bold]
     {"["}bold]Head Of Personnel's Signature:[/bold]
