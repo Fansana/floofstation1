@@ -94,7 +94,7 @@
 
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: ClothingBackpackDuffel
+  parent: ClothingHopDuffel # Floof - Use DeltaV HoP bags
   id: ClothingBackpackDuffelHOPFilled
   components:
   - type: StorageFill
