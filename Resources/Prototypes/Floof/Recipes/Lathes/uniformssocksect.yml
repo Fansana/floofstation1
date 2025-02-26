@@ -1,386 +1,290 @@
 #Captain
 
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsCaptainWarmers
   result: ClothingHandsCaptainWarmers
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksCaptain
   result: ClothingUnderSocksCaptain
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformCaptainThong
   result: ClothingUniformCaptainThong
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 #Command
 
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsCommandWarmers
   result: ClothingHandsCommandWarmers
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksCommand
   result: ClothingUnderSocksCommand
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 300
-    Durathread: 100
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformCommandThong
   result: ClothingUniformCommandThong
   category: ClothingCommand
-  completetime: 2
-  materials:
-    Cloth: 100
-    Durathread: 50
 
 #Engineering
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsEngiWarmers
   result: ClothingHandsEngiWarmers
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksEngi
   result: ClothingUnderSocksEngi
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformEngiThong
   result: ClothingUniformEngiThong
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Chief Engineer
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsChiefEngiWarmers
   result: ClothingHandsChiefEngiWarmers
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksChiefEngi
   result: ClothingUnderSocksChiefEngi
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformChiefEngiThong
   result: ClothingUniformChiefEngiThong
   category: ClothingEngineering
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Epistemics
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsEpiWarmers
   result: ClothingHandsEpiWarmers
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksEpi
   result: ClothingUnderSocksEpi
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformEpiThong
   result: ClothingUniformEpiThong
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Mystagogue
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsEpiHeadWarmers
   result: ClothingHandsEpiHeadWarmers
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksEpiHead
   result: ClothingUnderSocksEpiHead
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformEpiHeadThong
   result: ClothingUniformEpiHeadThong
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Mantis
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsMantisEpiWarmers
   result: ClothingHandsMantisEpiWarmers
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksMantisEpi
   result: ClothingUnderSocksMantisEpi
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformMantisEpiThong
   result: ClothingUniformMantisEpiThong
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Chaplain
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsChaplainWarmers
   result: ClothingHandsChaplainWarmers
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksChaplain
   result: ClothingUnderSocksChaplain
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformChaplainThong
   result: ClothingUniformChaplainThong
   category: ClothingEpistemics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Logistics
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsLogisWarmers
   result: ClothingHandsLogisWarmers
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksLogis
   result: ClothingUnderSocksLogis
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformLogisThong
   result: ClothingUniformLogisThong
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Logistics Officer
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsLOLogisWarmers
   result: ClothingHandsLOLogisWarmers
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksLOLogis
   result: ClothingUnderSocksLOLogis
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformLOLogisThong
   result: ClothingUniformLOLogisThong
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Courier
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsCourierWarmers
   result: ClothingHandsCourierWarmers
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksCourier
   result: ClothingUnderSocksCourier
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformCourierThong
   result: ClothingUniformCourierThong
   category: ClothingLogistics
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Medical
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsMedicWarmers
   result: ClothingHandsMedicWarmers
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksMedic
   result: ClothingUnderSocksMedic
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformMedicThong
   result: ClothingUniformMedicThong
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Chemist
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsChemistsWarmers
   result: ClothingHandsChemistsWarmers
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksChemists
   result: ClothingUnderSocksChemists
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformChemistsThong
   result: ClothingUniformChemistsThong
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Paramedic
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsParaMedicWarmers
   result: ClothingHandsParaMedicWarmers
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksParaMedic
   result: ClothingUnderSocksParaMedic
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformParaMedicThong
   result: ClothingUniformParaMedicThong
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Chief Medical Officer
 - type: latheRecipe
+  parent: BaseCommandHandsWarmersRecipe
   id: ClothingHandsCMOWarmers
   result: ClothingHandsCMOWarmers
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUnderSocksRecipe
   id: ClothingUnderSocksCMO
   result: ClothingUnderSocksCMO
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformCMOThong
   result: ClothingUniformCMOThong
   category: ClothingMedical
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Security
 - type: latheRecipe
@@ -496,134 +400,103 @@
 
 #Service
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsServiceWarmers
   result: ClothingHandsServiceWarmers
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksService
   result: ClothingUnderSocksService
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformServiceThong
   result: ClothingUniformServiceThong
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Janitor
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsJanitorWarmers
   result: ClothingHandsJanitorWarmers
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksJanitor
   result: ClothingUnderSocksJanitor
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformJanitorThong
   result: ClothingUniformJanitorThong
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Bartender
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsBartenderWarmers
   result: ClothingHandsBartenderWarmers
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksBartender
   result: ClothingUnderSocksBartender
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformBartenderThong
   result: ClothingUniformBartenderThong
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 100
 
 #Musician
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsMusicianWarmers
   result: ClothingHandsMusicianWarmers
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksMusician
   result: ClothingUnderSocksMusician
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformMusicianThong
   result: ClothingUniformMusicianThong
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Chef
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsChefWarmers
   result: ClothingHandsChefWarmers
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksChef
   result: ClothingUnderSocksChef
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformChefThong
   result: ClothingUniformChefThong
   category: ClothingService
-  completetime: 2
-  materials:
-    Cloth: 100
 
 # Surgeon General
 - type: latheRecipe
+  parent: BaseCommandUniformThongRecipe
   id: ClothingUniformSurgeonGerneralThong
   result: ClothingUniformSurgeonGerneralThong
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 100
+

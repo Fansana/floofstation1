@@ -1,93 +1,71 @@
 # Jumpsuits - Security
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpsuitSecBlue
   result: ClothingUniformJumpsuitSecBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpsuitSecGrey
   result: ClothingUniformJumpsuitSecGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpsuitWardenBlue
   result: ClothingUniformJumpsuitWardenBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpsuitWardenGrey
   result: ClothingUniformJumpsuitWardenGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 # Jumpskirts - Security
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtSecBlue
   result: ClothingUniformJumpskirtSecBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtSecGrey
   result: ClothingUniformJumpskirtSecGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtHoSBlue
   result: ClothingUniformJumpskirtHoSBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtHoSGrey
   result: ClothingUniformJumpskirtHoSGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtWardenBlue
   result: ClothingUniformJumpskirtWardenBlue
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingUniformJumpskirtWardenGrey
   result: ClothingUniformJumpskirtWardenGrey
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 300
 
 # Security Sweater
 
 - type: latheRecipe
+  parent: BaseCoatRecipe # Floof - Add base clothing recipes to fork clothing files
   id: ClothingOuterStasecSweater
   result: ClothingOuterStasecSweater
   category: ClothingSecurity # Floof - add uniform printer clothing categories
-  completetime: 4
-  materials:
-    Cloth: 500
