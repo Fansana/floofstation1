@@ -73,7 +73,7 @@
 #Centcomm Clothing
 
 - type: latheRecipe
-  parent: BaseHatRecipe
+  parent: BaseCommandHatRecipe # Floof - Switch centcomm beret to command hat recipe base
   id: ClothingHeadHatBeretCentcomm
   result: ClothingHeadHatBeretCentcomm
   category: ClothingOther # Floof - Add categories to Centcomm drip recipes
