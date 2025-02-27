@@ -30,7 +30,7 @@
 
 - type: entity
   id: BaseHumanOrgan
-  parent: [BaseHumanOrganUnGibbable, BaseOrganRotting] # Floof - added the rotting parent
+  parent: [ BaseHumanOrganUnGibbable, BaseOrganRotting ] # Floof - added the rotting parent
   abstract: true
   components:
   - type: Gibbable
