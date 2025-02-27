@@ -2,7 +2,7 @@
 - type: loadout
   id: LoadoutClothingHandsLogisWarmers
   category: JobsLogisticsAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsLogisWarmers
@@ -14,7 +14,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksLogis
   category: JobsLogisticsAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksLogis
@@ -31,7 +31,7 @@
 - type: loadout
   id: LoadoutClothingUniformLogisThong
   category: JobsLogisticsAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformLogisThong

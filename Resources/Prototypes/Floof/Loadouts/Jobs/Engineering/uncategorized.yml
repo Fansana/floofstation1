@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsEngiWarmers
   category: JobsEngineeringAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsEngiWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksEngi
   category: JobsEngineeringAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksEngi
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformEngiThong
   category: JobsEngineeringAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformEngiThong

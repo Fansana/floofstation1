@@ -652,6 +652,23 @@
     tags:
     - Skirt
 
+# Surgeon Outfit
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformSurgeonGerneralThong
+  name: surgeon general thong
+  description: Styled for the surgeon general, but is this even considered a piece of clothing? Tailor by SESWC
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Medical/surgeongeneralthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Medical/surgeongeneralthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
+
+
 #Security Outfits
 #
 #General Security
@@ -779,15 +796,44 @@
 
 #Corpsmen Outfits
 - type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsCorpsmanWarmers
+  name: corpsman arm-warmers
+  description: A pair of rather nice arm-warmers, styled for Corpsman roles.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/corpsmanwarmer.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/corpsmanwarmer.rsi
+  - type: Fiber
+    fiberMaterial: fibers-latex
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
   parent: [ ClothingShoesBase, ClothingShoesMilitaryBase ]
   id: ClothingUnderSocksCorpsman
   name: corpsman thigh-high socks
   description: A pair of thigh-high socks, styled for Corpsman roles.
   components:
   - type: Sprite
-    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Departmental/Medical/paramedsocks.rsi
+    sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCorpsmanThong
+  name: corpsman thong
+  description: Styled for a Corpsmen, but is this even considered a piece of clothing?
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Departmental/Security/corpsmanthong.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Departmental/Security/corpsmanthong.rsi
+  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    tags:
+    - Skirt
 
 #Service Outfits
 #

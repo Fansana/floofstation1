@@ -61,8 +61,9 @@ public sealed partial class AtmosphereSystem
        mixtures[5].Temperature = 5000f;
 
        // 6: (Walk-In) Freezer
-       mixtures[6].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard);
-       mixtures[6].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard);
+	   // TODO: Adjust pressure? (test first)
+       mixtures[6].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesStandard * Atmospherics.T20C / 235f);
+       mixtures[6].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesStandard * Atmospherics.T20C / 235f);
        mixtures[6].Temperature = 235f; // Little colder than an actual freezer but gives a grace period to get e.g. themomachines set up, should keep warm for a few door openings
 
        foreach (var arg in args)

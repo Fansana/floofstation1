@@ -1,0 +1,13 @@
+- type: trait
+  id: AudioPlayer
+  category: Auditory
+  points: -2
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - IPC
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: Singer
+          proto: SiliconSinger

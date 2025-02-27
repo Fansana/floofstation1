@@ -173,6 +173,7 @@
       inverted: true
       species:
         - Harpy
+        - IPC # Floof - M3739 - Audio Player trait is the IPC equivalent of this. Silicons are built different.
   functions:
     - !type:TraitAddComponent
       components:

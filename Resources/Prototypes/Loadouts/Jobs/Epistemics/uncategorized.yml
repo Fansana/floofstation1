@@ -242,16 +242,38 @@
 
 - type: loadout
   id: LoadoutOuterRobeTechPriest
-  category: Outer
+  category: JobsEpistemicsAAUncategorized
   cost: 0
-  items:
-    - ClothingOuterRobeTechPriest
+  exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEpistemicsOuter
     - !type:CharacterDepartmentRequirement
       departments:
         - Epistemics
+  items:
+    - ClothingOuterRobeTechPriest
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutScienceOuterLabcoatSeniorResearcher
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
+  items:
+    - ClothingOuterCoatLabSeniorResearcher
+
 
 # Shoes
 - type: loadout
@@ -269,3 +291,42 @@
     - ClothingShoesBootsWinterSci
 
 # Uniforms
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutScienceUniformJumpskirtSenior
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpskirtSeniorResearcher
+
+- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
+  id: LoadoutScienceUniformJumpsuitSenior
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsUniforms
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
+    - !type:CharacterJobRequirement #all epistemics jobs but intern
+      inverted: true
+      jobs: [ResearchAssistant]
+    - !type:CharacterDepartmentTimeRequirement
+      department: Epistemics
+      min: 144000 #40 hours
+  items:
+    - ClothingUniformJumpsuitSeniorResearcher

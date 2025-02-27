@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutClothingHandsEpiWarmers
   category: JobsEpistemicsAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingHandsEpiWarmers
@@ -13,7 +13,7 @@
 - type: loadout
   id: LoadoutClothingUnderSocksEpi
   category: JobsEpistemicsAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUnderSocksEpi
@@ -30,7 +30,7 @@
 - type: loadout
   id: LoadoutClothingUniformEpiThong
   category: JobsEpistemicsAAUncategorized
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingUniformEpiThong
