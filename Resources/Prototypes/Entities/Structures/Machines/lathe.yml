@@ -150,6 +150,8 @@
       - ExteriorLightTube
       - LightBulb
       - LedLightBulb
+      - DimLightBulb
+      - WarmLightBulb
       - Bucket
       - DrinkMug
       - DrinkMugMetal
@@ -824,6 +826,7 @@
       - SpeedLoaderMagnumEmpty
       - MagazineMagnumEmpty #floof
       - MagazineMagnum #floof
+      - SterileBag #floof
       - Stunbaton
       - TargetClown
       - ClothingOuterArmorPlateCarrier
@@ -1077,6 +1080,7 @@
       - WhiteCane # Floof
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - SterileBag # floof
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -1350,6 +1354,9 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
+      - ClothingUniformJumpsuitAtmos # Floof
+      - ClothingUniformJumpskirtAtmos # Floof
+      - ClothingUniformJumpsuitAtmosCasual # Floof
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingHeadHatCapcap
@@ -1436,6 +1443,9 @@
       - ClothingHeadHatBeretRND
       - ClothingUniformJumpsuitResearchDirector
       - ClothingUniformJumpskirtResearchDirector
+      - ClothingUniformJumpsuitRoboticist # Floof
+      - ClothingUniformJumpskirtRoboticist # Floof
+      - ClothingOuterRoboOveralls # Floof
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingUniformJumpsuitSeniorResearcher
@@ -1519,6 +1529,7 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      # Floofstation section start
       # Floofstation - Collars
       - ClothingNeckCollarCmd
       # Floofstation - Socks, Armwarmers ect
@@ -1553,27 +1564,70 @@
       - ClothingHandsEngiWarmers
       - ClothingUnderSocksEngi
       - ClothingUniformEngiThong
+      - ClothingHandsChiefEngiWarmers
+      - ClothingUnderSocksChiefEngi
+      - ClothingUniformChiefEngiThong
       - ClothingHandsEpiWarmers
       - ClothingUnderSocksEpi
       - ClothingUniformEpiThong
       - ClothingHandsChaplainWarmers
       - ClothingUnderSocksChaplain
       - ClothingUniformChaplainThong
+      - ClothingHandsEpiHeadWarmers
+      - ClothingUnderSocksEpiHead
+      - ClothingUniformEpiHeadThong
+      - ClothingHandsMantisEpiWarmers
+      - ClothingUnderSocksMantisEpi
+      - ClothingUniformMantisEpiThong
       - ClothingHandsLogisWarmers
       - ClothingUnderSocksLogis
       - ClothingUniformLogisThong
+      - ClothingHandsLOLogisWarmers
+      - ClothingUnderSocksLOLogis
+      - ClothingUniformLOLogisThong
+      - ClothingHandsCourierWarmers
+      - ClothingUnderSocksCourier
+      - ClothingUniformCourierThong
       - ClothingHandsMedicWarmers
       - ClothingUnderSocksMedic
       - ClothingUniformMedicThong
+      - ClothingHandsChemistsWarmers
+      - ClothingUnderSocksChemists
+      - ClothingUniformChemistsThong
+      - ClothingHandsParaMedicWarmers
+      - ClothingUnderSocksParaMedic
+      - ClothingUniformParaMedicThong
+      - ClothingHandsCMOWarmers
+      - ClothingUnderSocksCMO
+      - ClothingUniformCMOThong
       - ClothingHandsSecurityWarmers
       - ClothingUnderSocksSecurity
       - ClothingUniformSecurityThong
+      - ClothingHandsHeadSecurityWarmers
+      - ClothingUnderSocksHeadSecurity
+      - ClothingUniformHeadSecurityThong
+      - ClothingHandsDetectiveWarmers
+      - ClothingUnderSocksDetective
+      - ClothingUniformDetectiveThong
+      - ClothingHandsCorpsmanWarmers
+      - ClothingUnderSocksCorpsman
+      - ClothingUniformCorpsmanThong
       - ClothingHandsServiceWarmers
       - ClothingUnderSocksService
       - ClothingUniformServiceThong
       - ClothingHandsJanitorWarmers
       - ClothingUnderSocksJanitor
       - ClothingUniformJanitorThong
+      - ClothingHandsBartenderWarmers
+      - ClothingUnderSocksBartender
+      - ClothingUniformBartenderThong
+      - ClothingHandsMusicianWarmers
+      - ClothingUnderSocksMusician
+      - ClothingUniformMusicianThong
+      - ClothingHandsChefWarmers
+      - ClothingUnderSocksChef
+      - ClothingUniformChefThong
+      # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
@@ -1598,6 +1652,8 @@
       - ClothingOuterWinterCentcom
       - ClothingOuterWinterSyndie
       - ClothingOuterWinterSyndieCap
+      # Floofstation - Department Socks, Armwarmers ect
+      - ClothingUniformSurgeonGerneralThong
   - type: MaterialStorage
     whitelist:
       tags:

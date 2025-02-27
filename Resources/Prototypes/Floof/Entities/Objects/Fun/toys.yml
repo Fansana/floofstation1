@@ -277,7 +277,7 @@
         volume: 1
 
 - type: entity
-  parent: PlushieCentCom
+  parent: BaseHypnoTempPlush
   id: Plushiegirlfailure
   name: girl failure plushie
   description: Smells like body odor and cheese! Design by SESWC!
@@ -285,3 +285,23 @@
   - type: Sprite
     sprite: Floof/Objects/Fun/floof_plush.rsi
     state: girlfailure
+  - type: SolutionContainerManager
+    solutions:
+      absorbed:
+        maxVol: 30
+        reagents:
+        - ReagentId: RootBeerFloat
+          Quantity: 30
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Human/cry_female_3.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1

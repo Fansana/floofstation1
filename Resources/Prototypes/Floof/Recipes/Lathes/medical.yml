@@ -15,3 +15,10 @@
   materials:
     Steel: 100
     Plastic: 100
+
+- type: latheRecipe
+  id: SterileBag
+  result: SterileBag
+  completetime: 2
+  materials:
+    Plastic: 50
