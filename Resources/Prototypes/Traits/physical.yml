@@ -266,6 +266,7 @@
       species:
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
+        - Resomi # Floof - have this by default after porting Goob changes
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
@@ -289,6 +290,7 @@
       inverted: true
       species:
         - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
+        - Resomi # Floof - Resomi have modified temperature interactions after porting Goob changes
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -337,6 +339,7 @@
         - Shadowkin # Shadowkins also have claws.
         # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
         - Rodentia # Floof - Rodentia already has it
+        - Resomi # Floof - they have claws after port of Goob changes
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -365,7 +368,6 @@
         - Human
         - Oni
         - SlimePerson
-        - Resomi # Floofstation
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -397,7 +399,6 @@
       species:
         - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
                 # When we get the Character Records system in, I also want to make this require certain Backgrounds.
-        - Resomi # Floofstation.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -514,7 +515,6 @@
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
-        - Resomi
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
