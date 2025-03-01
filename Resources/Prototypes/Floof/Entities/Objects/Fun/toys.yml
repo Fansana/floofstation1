@@ -250,6 +250,12 @@
       path: /Audio/Voice/Slime/slime_squish.ogg
       params:
         volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Slime/slime_squish.ogg
+      params:
+        variation: 0.05
+        volume: 4
 
 - type: entity
   parent: PlushieHuman
@@ -304,4 +310,36 @@
     sound:
       path: /Audio/Animals/mouse_squeak.ogg
       params:
+        variation: 0.05
         volume: 1
+            
+- type: entity
+  parent: PlushieHuman
+  id: PlushieKitsuneCaptain
+  name: Kitsune captain plushie
+  description: A Kitsune captain, this one seems to be particularly fluffy, especially their tails. the label reads 'Be careful around fire'.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: kitsune
+  - type: UseDelay
+    delay: 3.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        variation: 0.05
+        volume: 4
