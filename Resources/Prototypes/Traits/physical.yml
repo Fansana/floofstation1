@@ -290,7 +290,6 @@
       inverted: true
       species:
         - Vulpkanin # This trait functions exactly as-is for the Vulpkanin trait.
-        - Resomi # Floof - Resomi have modified temperature interactions after porting Goob changes
   functions:
     - !type:TraitReplaceComponent
       components:
