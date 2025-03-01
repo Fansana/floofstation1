@@ -9,17 +9,6 @@
     state: floof_neckfull
 
 - type: marking
-  id: LizardFinTop
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Reptilian, Human, SlimePerson]
-  sprites:
-  - sprite: Floof/Mobs/Customization/Reptilian/fin.rsi
-    state: primary
-  - sprite: Floof/Mobs/Customization/Reptilian/fin.rsi
-    state: secondary
-
-- type: marking
   id: LizardCrestLargeTop
   bodyPart: HeadTop
   markingCategory: HeadTop

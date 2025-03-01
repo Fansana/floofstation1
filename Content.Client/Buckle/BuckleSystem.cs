@@ -98,7 +98,7 @@ internal sealed class BuckleSystem : SharedBuckleSystem
         var isNorth = GetEntityOrientation(uid) == Direction.North; // Floof - replaced with a method call
         foreach (var buckledEntity in component.BuckledEntities)
         {
-            if (!TryComp<BuckleComponent>(buckledEntity, out var buckle))
+            if (!TryComp<BuckleComponent>(buckledEntity, out var buckle) || buckle.BuckledTo != uid)
                 continue;
 
             if (!TryComp<SpriteComponent>(buckledEntity, out var buckledSprite))

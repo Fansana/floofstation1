@@ -740,6 +740,10 @@
     damage:
       types:
         Blunt: 10
+  - type: DeviceLinkSource #Floof
+    range: 200
+    ports:
+      - OrderSender
   - type: StealTarget
     stealGroup: BoxFolderQmClipboard
 

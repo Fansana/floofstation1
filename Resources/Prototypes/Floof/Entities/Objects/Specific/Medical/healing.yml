@@ -1,0 +1,26 @@
+- type: entity
+  id: Bloodpack1
+  parent: Bloodpack
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: Bloodpack
+    count: 1
+
+- type: entity
+  id: Bloodpack5
+  parent: Bloodpack
+  suffix: 5
+  components:
+  - type: Stack
+    stackType: Bloodpack
+    count: 5
+
+- type: entity
+  id: Bloodpack10
+  parent: Bloodpack
+  suffix: 10
+  components:
+  - type: Stack
+    stackType: Bloodpack
+    count: 10

@@ -29,7 +29,7 @@
       amount: 1
   products:
     SalicylicAcid: 3
-    
+
 - type: reaction
   id : Formaldehyde
   reactants:
@@ -39,3 +39,18 @@
       amount: 1
   products:
     Formaldehyde: 3
+
+- type: reaction
+  id : PFCBlood
+  minTemp: 310
+  reactants:
+    Nutriment:
+      amount: 6
+    Vitamin:
+      amount: 3
+    Saline:
+      amount: 10
+    Bleach:
+      amount: 1
+  products:
+    Blood: 20

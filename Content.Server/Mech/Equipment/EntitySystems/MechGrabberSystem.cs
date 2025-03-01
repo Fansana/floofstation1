@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Numerics;
 using Content.Server.Interaction;
 using Content.Server.Mech.Equipment.Components;
 using Content.Server.Mech.Systems;
@@ -83,7 +84,7 @@ public sealed class MechGrabberSystem : EntitySystem
         var xform = Transform(toRemove);
         _transform.AttachToGridOrMap(toRemove, xform);
         var (mechPos, mechRot) = _transform.GetWorldPositionRotation(mechxform);
-        var toRemoveWorldPos = _transform.GetWorldPosition(xform);
+        var toRemoveWorldPos = Vector2.Zero; // _transform.GetWorldPosition(xform); // Floof - this used to add the item's position twice.
 
         var offset = mechPos + mechRot.RotateVec(component.DepositOffset);
         _transform.SetWorldPositionRotation(toRemove, toRemoveWorldPos + offset, Angle.Zero);
@@ -156,7 +157,7 @@ public sealed class MechGrabberSystem : EntitySystem
 
         args.Handled = true;
         var audio = _audio.PlayPvs(component.GrabSound, uid);
-        
+
         if (audio == null)
             return;
 

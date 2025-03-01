@@ -17,6 +17,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadsprite_moving
+    noMovementLayers:
+      movement:
+        state: quadsprite
   - type: Stripping
   - type: IntrinsicRadioTransmitter
     channels:
@@ -77,6 +84,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspriteCC_moving
+    noMovementLayers:
+      movement:
+        state: quadspriteCC
       
 - type: entity
   id: BorgChassisQuadsalv
@@ -96,6 +110,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspritesalv_moving
+    noMovementLayers:
+      movement:
+        state: quadspritesalv
   - type: IntrinsicRadioTransmitter
     channels:
     - Supply
@@ -139,6 +160,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspriteserv_moving
+    noMovementLayers:
+      movement:
+        state: quadspriteserv
   - type: IntrinsicRadioTransmitter
     channels:
     - Service
@@ -182,6 +210,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspritemed_moving
+    noMovementLayers:
+      movement:
+        state: quadspritemed
   - type: IntrinsicRadioTransmitter
     channels:
     - Medical
@@ -225,6 +260,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: Apex_moving
+    noMovementLayers:
+      movement:
+        state: Apex
   - type: IntrinsicRadioTransmitter
     channels:
     - Medical
@@ -244,7 +286,7 @@
     - Common
     - Science
   - type: BorgChassis
-    maxModules: 8
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
