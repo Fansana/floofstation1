@@ -1,173 +1,178 @@
+# Base prototypes
+
+- type: latheRecipe
+  abstract: true
+  id: BaseHandsWarmersRecipe
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseHandsWarmersRecipe
+  id: BaseCommandHandsWarmersRecipe
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  abstract: true
+  id: BaseUnderSocksRecipe
+  completetime: 2
+  materials:
+    Cloth: 200
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseUnderSocksRecipe
+  id: BaseCommandUnderSocksRecipe
+  materials:
+    Cloth: 200
+    Durathread: 100
+
+- type: latheRecipe
+  abstract: true
+  id: BaseUniformThongRecipe
+  completetime: 2
+  materials:
+    Cloth: 100
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseUniformThongRecipe
+  id: BaseCommandUniformThongRecipe
+  materials:
+    Cloth: 100
+    Durathread: 50
+
 #Arm-Warmers
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsPlainWarmers
   result: ClothingHandsPlainWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsStripeRainbowWarmers
   result: ClothingHandsStripeRainbowWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsStripePurpleWarmers
   result: ClothingHandsStripePurpleWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsStripeWhiteWarmers
   result: ClothingHandsStripeWhiteWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsBeeWarmers
   result: ClothingHandsBeeWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsCoderWarmers
   result: ClothingHandsCoderWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseHandsWarmersRecipe
   id: ClothingHandsCoderValidWarmers
   result: ClothingHandsCoderValidWarmers
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 #Socks
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksPlain
   result: ClothingUnderSocksPlain
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksStripedRainbow
   result: ClothingUnderSocksStripedRainbow
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksStripedPurple
   result: ClothingUnderSocksStripedPurple
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksStripedWhite
   result: ClothingUnderSocksStripedWhite
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksBee
   result: ClothingUnderSocksBee
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksCoder
   result: ClothingUnderSocksCoder
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUnderSocksRecipe
   id: ClothingUnderSocksCoderValid
   result: ClothingUnderSocksCoderValid
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 #Thongs
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformThongPlain
   result: ClothingUniformThongPlain
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformStripedThongRainbow
   result: ClothingUniformStripedThongRainbow
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformStripedThongPurple
   result: ClothingUniformStripedThongPurple
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformStripedThongWhite
   result: ClothingUniformStripedThongWhite
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformThongBee
   result: ClothingUniformThongBee
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformThongCoder
   result: ClothingUniformThongCoder
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
 
 - type: latheRecipe
+  parent: BaseUniformThongRecipe
   id: ClothingUniformThongCoderValid
   result: ClothingUniformThongCoderValid
   category: ClothingOther
-  completetime: 2
-  materials:
-    Cloth: 200
