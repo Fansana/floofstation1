@@ -7,3 +7,4 @@ guide-entry-policy-appearancestandards = Appearance Standards
 guide-entry-policy-dangersfromcompetitors = Dangers from our Competitors
 guide-entry-mutinyguidelines = Mutiny Guidelines
 guide-entry-permits = Permits
+guide-entry-generalregulations = General Regulations

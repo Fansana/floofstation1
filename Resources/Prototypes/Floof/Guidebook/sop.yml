@@ -6,6 +6,7 @@
   - Company Policy
   - Mutiny Guidelines
   - Permits
+  - General Regulations
 
 - type: guideEntry
   id: Company Policy
@@ -53,3 +54,8 @@
   id: Permits
   name: guide-entry-permits
   text: "/ServerInfo/Floof/Guidebook/SOP/Permits.xml"
+  
+- type: guideEntry
+  id: General Regulations
+  name: guide-entry-generalregulations
+  text: "/ServerInfo/Floof/Guidebook/SOP/GeneralRegulations.xml"
