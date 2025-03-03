@@ -272,6 +272,7 @@
     graph: Gauze
     node: gauze
   - type: Healing
+    selfHealPenaltyMultiplier: 1.5 # Floof - useful gauze
     damageContainers:
       - Biological
     damage:
