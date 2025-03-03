@@ -27,8 +27,7 @@ paperwork-security-arrest-report =
     \[  ] Code:SL1-12 (Trespass) - 2mins
     \[  ] Code:SL1-15 (Hooliganism) - 'As Determined'
     \[  ] Code:SL1-17 (Failure To Comply) - 2mins
-    Misdemeanor Crimes:
-    {"["}color=gray]Warnings may be issued for a first offense.[/color]
+    {"["}color=gray]Warnings may be issued for a first misdemeanor offense.[/color]
     { paperwork-separator-security }
     2XX Felony Crimes:
     \[  ] Code:SL2-01 (Perjury or False Report) - 3 mins
@@ -67,7 +66,7 @@ paperwork-security-arrest-report =
     {"["}color=gray]150% max additional modifier of original sentence.[/color]
     \[  ] Deadly Weapon
     \[  ] Aggravation
-    \[  ] Discriminatory
+    \[  ] Discriminatory Intent
     {"["}color=gray]200% max additional modifier of original sentence.[/color]
     \[  ] Recidivism
     {"["}color=gray]Sentence reduction or pardon.[/color]
@@ -100,7 +99,7 @@ paperwork-security-arrest-warrant =
     { paperwork-separator-security }
     • Reason for arrest:
     { paperwork-separator-security }
-    {"["}color=gray]Warrants are only valid when issued by either the Chief Justice or Court Clerk, or in both of their absences, the CO, Head of Security, or Warden.[/color]
+    {"["}color=gray]Warrants are only valid when issued by either the Chief Justice or the Clerk of Court, or in their absence, the Commanding Officer, the Head of Security, or the Warden.[/color]
     {"["}color=#cb0000]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
     {"["}color=gray]This form follows NT space law.[/color]
@@ -127,7 +126,7 @@ paperwork-security-department-search-warrant =
     { paperwork-separator-security }
     If illegal items are found in the searched department they will be confiscated and the owner of these items may be detained at the officer's discretion. Search Warrants should include an area, a brief description of the probable cause, and a list of individuals if applicable.
 
-    {"["}bold]Warrants are only valid when issued by either the Chief Justice or Court Clerk, or in both of their absences, the CO, Head of Security, or Warden.[/bold]
+    {"["}bold]Warrants are only valid when issued by either the Chief Justice or the Clerk of Court, or in their absence, the Commanding Officer, the Head of Security, or the Warden.[/bold]
     {"["}color=#cb0000]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
     {"["}color=gray]This form follows NT space law.[/color]
@@ -151,9 +150,9 @@ paperwork-security-detective-report =
     { paperwork-separator-security }
     {"["}color=red]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
-    {"["}color=gray]Evidence not provided to the Court Clerk, if avaliable, for certification prior to the court will not be accepted into the record. All evidence collected should be shared with the Defendant's Attorney.[/color]
+    {"["}color=gray]Evidence not provided to the Clerk of Court for certification prior to the court proceedings, if available, will not be accepted into the record. All evidence collected should be shared with the Defendant's Attorney.[/color]
 
-    {"["}color=gray]Failure to appear to a Court Summons is a violation of Space Law & will be considered Contempt of Court.[/color]
+    {"["}color=gray]Failure to appear to a Court Summons is a violation of Space Law and will be considered Contempt of Court.[/color]
 
     { paperwork-separator-security }
     {"["}bold]Prosecutor's Signature:[/bold]
@@ -164,15 +163,15 @@ paperwork-security-furlough-request =
     { paperwork-separator-security }
         {"["}head=2]FURLOUGH REQUEST[/head]
     { paperwork-separator-security }
-    This document if approved, allows an inmate to leave his cell under direct supervision of security personel for no more than 20 minutes. Inmate agrees to a strip search after furlough has concluded to ensure there is no contraband.
+    This document if approved, allows an inmate to leave his cell under direct supervision of security personnel for no more than 20 minutes. Inmate agrees to a strip search after furlough has concluded to ensure there is no contraband.
     {"["}color=red][bold]This document must be approved and stamped by the Warden or Head of Security, and signed by the inmate to be valid![/bold][/color]
 
-    Inmate:[color=#002AAF]Name Here[/color]
-                                         ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Warden:[color=#002AAF]Name Here[/color]
-                                          ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Head of Security:[color=#002AAF]Name Here[/color]
-                                          ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Inmate:  [color=#002AAF]Name Here[/color]
+                ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Warden: [color=#002AAF]Name Here[/color]
+                 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Head of Security:   [color=#002AAF]Name Here[/color]
+                               ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     If contraband is discovered or given to the inmate, sentences may be applied or extended.
     Furlough may end early at the Warden's discretion, for the safety of employees and inmates. Public displays of affection must be limited to single kiss, or hug.
     { paperwork-separator-security }
@@ -215,7 +214,7 @@ paperwork-security-individual-search-warrant =
     { paperwork-separator-security }
     If illegal items are found in the posession of the searched individual they will be confiscated and the owner of these items may be detained at the officer's discretion.
 
-    {"["}bold]Warrants are only valid when issued by either the Chief Justice or Court Clerk, or in both of their absences, the CO, Head of Security, or Warden.[/bold]
+    {"["}bold]Warrants are only valid when issued by either the Chief Justice or the Clerk of Court, or in their absence, the Commanding Officer, the Head of Security, or the Warden.[/bold]
     {"["}color=#cb0000]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
     {"["}color=gray]This form follows NT space law.[/color]
@@ -225,7 +224,7 @@ paperwork-security-individual-search-warrant =
     {"["}bold]Issuer's Signature:[/bold]
 
 
-    paperwork-security-arrest-report =
+paperwork-security-inmate-request =
     { paperwork-header-security }
     { paperwork-separator-security }
         {"["}head=2]Inmate Request form [/head]
@@ -244,33 +243,10 @@ paperwork-security-individual-search-warrant =
     { paperwork-separator-security }
     {"["}color=red]This document is not valid unless stamped by either the Warden or Head of Security.[/color]
 
-    {"["}color=gray]You're request will be considered & approved within reason.[/color]
+    {"["}color=gray]Your request will be considered and approved within reason.[/color]
     { paperwork-separator-security }
     {"["}bold]Inmate's Signature:[/bold]
     {"["}bold]Approver's Signature:[/bold]
-
-
-paperwork-security-inmate-request =
-    { paperwork-header-security }
-    { paperwork-separator-security }
-        {"["}head=2]Inmate Request [/head]
-    { paperwork-separator-security }
-        {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
-        {"["}bold]SHIFT TIME:[/bold] XX:XX
-        {"["}bold]WARDEN:[/bold]
-        {"["}bold]INMATE:[/bold]
-    { paperwork-separator-security }
-    {"["} Items Requested:
-    {"["}italic]NOTE: Please place an X with the number of items desired.[/italic]
-    { paperwork-separator-security }
-    {"["}color=red]This document is not valid unless stamped by either the Warden or Head of Security.[/color]
-
-    {"["}color=gray]You're request will be considered & approved within reason.[/color]
-    { paperwork-separator-security }
-    {"["}bold]Inmate's Signature:[/bold]
-    {"["}bold]Approver's Signature:[/bold]
-
 
 paperwork-security-visitation-request =
     { paperwork-header-security }
@@ -280,12 +256,12 @@ paperwork-security-visitation-request =
     This document, if approved, allows the one time visitation between an inmate and an employee of NanoTressen stations. Visitor agrees to be searched before entering the vistation area. The inmate also agrees to be strip searched after the visitation has concluded.
     {"["}color=red][bold]This document must be approved and stamped by the Warden, and signed by both the visitor and inmate to be valid![/bold][/color]
 
-    Inmate:[color=#002AAF]Name Here[/color]
-                        ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Warden:[color=#002AAF]Name Here[/color]
-                        ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-    Visitor[color=#002AAF]Name Here[/color]
-                        ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Inmate: [color=#002AAF]Name Here[/color]
+                  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Warden: [color=#002AAF]Name Here[/color]
+                   ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+    Visitor: [color=#002AAF]Name Here[/color]
+                ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
     {"["}bold]General visitation will not exceed 10 minutes. If contraband is discovered on the vistior or inmate, sentences may be applied or extended.[/bold]
 
     { paperwork-separator-security }

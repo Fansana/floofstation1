@@ -131,92 +131,6 @@
     animation: WeaponArcBite # Rrrr!
 
 - type: entity
-  parent: BasePlushie
-  id: PlushieDragon
-  name: dragon plushie
-  description: Rawr Im'ma eat ya!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: dragon
-    color: "#ff0000"
-  - type: PhysicalComposition
-    materialComposition:
-      Plastic: 100
-  - type: StaticPrice
-    price: 75
-  - type: UseDelay
-    delay: 3.0
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnCollide
-    sound:
-      collection: ToyFall
-      params:
-        variation: 0.03
-        volume: 3
-  - type: MeleeWeapon
-    soundHit:
-      collection: ToyFall
-      params:
-        variation: 0.05
-        volume: 4
-
-- type: entity
-  parent: BasePlushie
-  id: PlushieDino
-  name: dino plushie
-  suffix: DO NOT MAP
-  description: It'S just a generic dino, nothing to see here.
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: dino
-  - type: PhysicalComposition
-    materialComposition:
-      Plastic: 100
-  - type: StaticPrice
-    price: 75
-  - type: UseDelay
-    delay: 3.0
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Animals/space_dragon_roar.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnCollide
-    sound:
-      collection: ToyFall
-      params:
-        variation: 0.03
-        volume: 3
-  - type: MeleeWeapon
-    soundHit:
-      collection: ToyFall
-      params:
-        variation: 0.05
-        volume: 4
-
-- type: entity
   parent: PlushieHuman
   id: PlushieChillHuman
   name: chill human plushie
@@ -277,7 +191,7 @@
         volume: 1
 
 - type: entity
-  parent: PlushieCentCom
+  parent: BaseHypnoTempPlush
   id: Plushiegirlfailure
   name: girl failure plushie
   description: Smells like body odor and cheese! Design by SESWC!
@@ -285,3 +199,23 @@
   - type: Sprite
     sprite: Floof/Objects/Fun/floof_plush.rsi
     state: girlfailure
+  - type: SolutionContainerManager
+    solutions:
+      absorbed:
+        maxVol: 30
+        reagents:
+        - ReagentId: RootBeerFloat
+          Quantity: 30
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Human/cry_female_3.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/mouse_squeak.ogg
+      params:
+        volume: 1

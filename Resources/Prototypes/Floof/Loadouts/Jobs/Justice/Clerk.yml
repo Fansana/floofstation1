@@ -1,0 +1,65 @@
+# Clerk
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutJusticeClerkVest
+  category: JobsJusticeClerk
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Clerk
+  items:
+    - ClothingOuterClerkVest
+# Shoes
+
+# Uniforms
+- type: loadout
+  id: LoadoutJusticeClerkUniformSuit
+  category: JobsJusticeClerk
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Clerk
+  items:
+    - ClothingUniformJumpsuitClerk
+
+- type: loadout
+  id: LoadoutJusticeClerkUniformSkirt
+  category: JobsJusticeClerk
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Clerk
+  items:
+    - ClothingUniformJumpskirtClerk

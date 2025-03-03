@@ -42,7 +42,7 @@
   parent: ClothingOuterBase
   id: ClothingOuterClerkVest
   name: clerk's vest
-  description: a silken magenta vest with a pocket to put your notary stamp.
+  description: a silken magenta vest with a pocket to put your notary stamp. # TODO - Floof - M3739 - Make this description tell the truth, the whole truth, and nothing but the truth.
   components:
   - type: Sprite
     sprite: DeltaV/Clothing/OuterClothing/Vests/clerkvest.rsi
