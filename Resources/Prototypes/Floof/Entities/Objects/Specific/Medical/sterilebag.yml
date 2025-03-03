@@ -9,3 +9,6 @@
     state: bloodpack-empty
   - type: StaticPrice
     price: 0
+  - type: Tag
+    tags:
+    - Sterilebag

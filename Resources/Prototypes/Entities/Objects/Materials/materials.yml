@@ -363,6 +363,9 @@
         reagents:
         - ReagentId: Carbon
           Quantity: 20
+  - type: Tag  #Floof
+    tags:
+    - Diamond
 
 - type: entity
   parent: MaterialDiamond
