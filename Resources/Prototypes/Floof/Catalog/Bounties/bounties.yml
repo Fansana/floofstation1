@@ -1,5 +1,16 @@
+#Misc
 
-# Sextoys
+- type: cargoBounty
+  id: BountyDiamond
+  reward: 25000
+  description: bounty-description-diamond
+  entries:
+  - name: bounty-item-diamond
+    amount: 1
+    whitelist:
+      tags:
+      - Diamond
+
 
 - type: cargoBounty
   id: BountyDildo
@@ -9,7 +20,7 @@
   - name: bounty-item-dildo
     amount: 7
     whitelist:
-      taga:
+      tags:
       - Dildo
 
 - type: cargoBounty
