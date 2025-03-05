@@ -2,11 +2,11 @@
 
 - type: cargoBounty
   id: BountyDiamond
-  reward: 25000
+  reward: 15000
   description: bounty-description-diamond
   entries:
   - name: bounty-item-diamond
-    amount: 1
+    amount: 10
     whitelist:
       tags:
       - Diamond
@@ -35,7 +35,7 @@
       - Fleshlight
 
 - type: cargoBounty
-  id: BountyPaddle
+  id: BountyPaddleWhip
   reward: 1000
   description: bounty-description-whip
   entries:
