@@ -1,0 +1,66 @@
+# Prosecutor
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutJusticeProsecutorBadge
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingNeckProsecutorbadge
+
+# Mask
+
+# Outer
+
+# Shoes
+
+# Uniforms
+- type: loadout
+  id: LoadoutJusticeProsecutorUniformSuit
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingUniformJumpsuitProsecutor
+
+- type: loadout
+  id: LoadoutJusticeProsecutorUniformSkirt
+  category: JobsJusticeProsecutor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Prosecutor
+  items:
+    - ClothingUniformJumpskirtProsecutor

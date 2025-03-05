@@ -39,6 +39,7 @@
             AtmosphericTechnician: [ 1, 2 ]
             StationEngineer: [ 3, 5 ]
             TechnicalAssistant: [ 2, 5 ]
+            SeniorEngineer: [ 1, 1 ]
           #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 1, 2 ]
@@ -46,6 +47,7 @@
             Psychologist: [ 1, 1 ]
             MedicalDoctor: [ 3, 5 ]
             MedicalIntern: [ 2, 4 ]
+            SeniorPhysician: [ 1, 1 ]
           #science
             ResearchDirector: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
@@ -55,6 +57,7 @@
             Librarian: [ 1, 1 ]
             Roboticist: [ 1, 1 ]
             Borg: [ 1, 2 ]
+            SeniorResearcher: [ 1, 1 ]
           #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -63,6 +66,7 @@
             SecurityCadet: [ 1, 4 ]
             Brigmedic: [ 1, 1 ]
             Prisoner: [ 2, 3 ]
+            SeniorOfficer: [ 1, 1 ]
           #supply
             Quartermaster: [ 1, 1 ]
             MailCarrier: [ 1, 2 ]

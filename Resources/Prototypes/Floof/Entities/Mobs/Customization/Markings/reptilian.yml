@@ -9,17 +9,6 @@
     state: floof_neckfull
 
 - type: marking
-  id: LizardFinTop
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Reptilian, Human, SlimePerson]
-  sprites:
-  - sprite: Floof/Mobs/Customization/Reptilian/fin.rsi
-    state: primary
-  - sprite: Floof/Mobs/Customization/Reptilian/fin.rsi
-    state: secondary
-
-- type: marking
   id: LizardCrestLargeTop
   bodyPart: HeadTop
   markingCategory: HeadTop
@@ -69,3 +58,12 @@
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/snouts.rsi
       state: skullbird
+
+- type: marking
+  id: LizardChestUnderbellyFeminine
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: Floof/Mobs/Customization/Reptilian/underbellyfemale.rsi
+    state: body_underbelly
