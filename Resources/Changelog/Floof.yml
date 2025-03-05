@@ -3028,3 +3028,10 @@ Entries:
   id: 325
   time: '2025-03-05T23:43:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/597
+- author: Southbridge
+  changes:
+    - type: Fix
+      message: Cherry-picked fixes from Wizden for linking devices.
+  id: 326
+  time: '2025-03-05T23:47:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/591
