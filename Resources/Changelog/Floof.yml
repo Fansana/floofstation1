@@ -3035,3 +3035,22 @@ Entries:
   id: 326
   time: '2025-03-05T23:47:32.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/591
+- author: AstroDogeDX and Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Resomi can tolerate much colder temperatures before taking damage, but
+        can't tolerate much heat as a consequence.
+    - type: Tweak
+      message: Resomi can move faster in Zero-G, on account of their wings.
+    - type: Tweak
+      message: >-
+        Like the other animal-type species, Resomi can digest uncooked animal
+        proteins, but get poisoned by theobromine. No coffee for you.
+    - type: Tweak
+      message: Resomi can now be male and female, and are smaller on average
+    - type: Tweak
+      message: Resomi now have ammonia-based blood
+  id: 327
+  time: '2025-03-05T23:50:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/585
