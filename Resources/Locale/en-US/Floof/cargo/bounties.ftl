@@ -32,14 +32,15 @@ bounty-item-brassknuckles = Brassknuckles
 # Descriptons List
 
 # Medical
-bounty-description-bodybags = The Stations morge was blown up and now we dont have enough for the mass cas that has happen. Please send us body bags to help with the dead
-bounty-description-anal = Hello, this is NT Medical Training Facility. We have recenlty gotten a lot of new inters waiting to be taught! But, unfortunately we have ran out of Healthscanners and with the medical Techfab being stolen we have no way to make more.
-bounty-description-defib = Some ass hole emp medical and it destory all the defibs in the room by chance do you have some you can spare.
-bounty-description-canal = During the researching of a new chemical. there was a violant reaction and which melt that faces off of research chemist team that was in there. In the proccess their goggles too.
-bounty-description-implanter = The loyalty Implanter plant logi Tech didnt order enough plastic for the implant casing to be made for the full stack. He is trying to not get fired and fix his mistakes before the Manager finds out.
-bounty-description-bloodpack = Hello, this is the NT Medical Training Facility. A recent storm took out the power and hit the back-up batterys so, we are running a blood drive to replenish the spoil blood.
-bounty-description-sterilebag = Hello, this is the NT Medical Training Facility.
-bounty-description-surgerytools = Captain of the station was hit by a rod we are trying to do surgery but someone lost the TOOLS!!
+bounty-description-bodybags = The station's morgue was blown up, and now we don't have enough body bags for the mass casualties that have occurred. Please send us body bags to help with the deceased.
+bounty-description-anal = Hello, this is the NT Medical Training Facility. We have recently received a lot of new interns waiting to be taught! Unfortunately, we have run out of health scanners, and with the medical Techfab being stolen, we have no way to make more.
+bounty-description-defib = Some asshole EMP-ed the medical area, and it destroyed all the defibs in the room. By any chance, do you have some you can spare?
+bounty-description-canal = During the research of a new chemical, there was a violent reaction that melted the faces off of the research chemist team that was in there. In the process, their goggles were also affected.
+bounty-description-implanter = The loyalty implanter plant logitech didn't order enough plastic for the implant casings to be made for the full stack. He is trying not to get fired and fix his mistakes before the manager finds out.
+bounty-description-bloodpack = Hello, this is the NT Medical Training Facility. A recent storm took out the power and damaged the backup batteries, so we are running a blood drive to replenish the spoiled blood.
+bounty-description-sterilebag = Hello, this is the NT Medical Training Facility. We need some sterile bags to replenish our supplies.
+bounty-description-surgerytools = The captain of the station was hit by a rod. We are trying to perform surgery, but someone lost the tools!!
+
 
 
 
