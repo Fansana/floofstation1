@@ -161,10 +161,10 @@
   description: bounty-description-sterilebag
   entries:
   - name: bounty-item-sterilebag
-    amount: 5
+    amount: 30
     whitelist:
       tags:
-      - SterileBag
+      - Sterilebag
 
 
 - type: cargoBounty
