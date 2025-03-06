@@ -25,7 +25,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Blunt: 12
+        Blunt: 24
   - type: ItemToggleSize
     activatedSize: Normal
   - type: UseDelay
@@ -38,12 +38,12 @@
     attackRate: 0.8
     bluntStaminaDamageFactor: 1.5
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 5
+    heavyStaminaCost: 0.3
     maxTargets: 1
     angle: 40
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -68,4 +68,4 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Blunt: 20
+        Blunt: 40

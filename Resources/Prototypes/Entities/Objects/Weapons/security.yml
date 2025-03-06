@@ -36,17 +36,17 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 7
+        Blunt: 14
     bluntStaminaDamageFactor: 2.5
     heavyRateModifier: 0.75
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 1
+    heavyStaminaCost: 0.1
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
-    damage: 35
+    damage: 70
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 70
     sound: /Audio/Weapons/egloves.ogg
   - type: Battery
     maxCharge: 1000
@@ -105,13 +105,13 @@
     attackRate: 0.8
     damage:
       types:
-        Blunt: 15
+        Blunt: 30
     soundHit:
       collection: MetalThud
     bluntStaminaDamageFactor: 2
     heavyRateModifier: 1
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 7.5
+    heavyStaminaCost: 0.5
   - type: Item
     size: Normal
   - type: Tag

@@ -60,7 +60,7 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Piercing: 14
+        Piercing: 28
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: TimedDespawn
@@ -76,7 +76,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 7 # more damage than a punch.
+        Blunt: 14 # more damage than a punch.
   - type: Fixtures
     fixtures:
       projectile:
@@ -102,7 +102,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: BaseBulletRubber
@@ -117,11 +117,11 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 6
     soundHit:
       path: /Audio/Weapons/Guns/Hits/snap.ogg
   - type: StaminaDamageOnCollide
-    damage: 22 # 5 hits to stun sounds reasonable
+    damage: 44 # 5 hits to stun sounds reasonable
 
 - type: entity
   id: BaseBulletIncendiary
@@ -132,7 +132,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 14
+        Blunt: 28
   - type: PointLight
     enabled: true
     color: "#ff4300"
@@ -154,7 +154,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 11 # 20% decrease
+        Piercing: 22 # 20% decrease
     ignoreResistances: true
 
 - type: entity
@@ -170,7 +170,7 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 11
+        Radiation: 22
 
 # Energy projectiles
 - type: entity
@@ -207,13 +207,13 @@
   - type: Projectile
     damage:
       types:
-        Heat: 5
+        Heat: 10
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
     forceSound: true
   - type: StunOnCollide
-    stunAmount: 5
-    knockdownAmount: 5
+    stunAmount: 10
+    knockdownAmount: 10
 
 - type: entity
   name : disabler bolt
@@ -248,12 +248,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 60
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 5
+        Heat: 10
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -288,12 +288,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 1
+    damage: 2
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 1
+        Heat: 2
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -326,7 +326,7 @@
 #   soundHit:  Waiting on serv3
     damage:
       types:
-        Heat: 14
+        Heat: 28
   # mining laser real
   - type: GatheringProjectile
   - type: Tag
@@ -365,13 +365,13 @@
         - Opaque
       fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
-    damage: 40
+    damage: 80
   - type: Projectile
     #   soundHit:  Waiting on serv3
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Cold: 10
+        Cold: 20
   - type: TimedDespawn
     lifetime: 3
 
@@ -392,7 +392,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 10
+        Heat: 20
 
 - type: entity
   id: BulletKinetic
@@ -414,8 +414,8 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 25
-        Structural: 30
+        Blunt: 50
+        Structural: 60
   # Short lifespan
   - type: TimedDespawn
     lifetime: 0.4
@@ -435,8 +435,8 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 30
-        Structural: 35
+        Blunt: 60
+        Structural: 70
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn
@@ -470,8 +470,8 @@
         - MobState
     damage:
       types:
-        Blunt: 20
-        Slash: 5
+        Blunt: 40
+        Slash: 10
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
@@ -515,7 +515,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 5
+        Heat: 10
   - type: TimedDespawn
     lifetime: 3
   - type: Reflective
@@ -622,7 +622,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Heat: 20
+        Heat: 40
 
 - type: entity
   parent: AnomalousParticleDelta
@@ -714,7 +714,7 @@
     soundHit:
       path: /Audio/Effects/gen_hit.ogg
   - type: StaminaDamageOnCollide
-    damage: 80
+    damage: 160
 
 - type: entity
   id: BulletGrenadeBlast
@@ -815,7 +815,7 @@
     - type: Projectile
       damage:
         types:
-          Caustic: 5
+          Caustic: 10
     - type: Sprite
       sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
       layers:
@@ -832,7 +832,7 @@
     - type: Projectile
       damage:
         types:
-          Caustic: 8
+          Caustic: 16
     - type: Sprite
       sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
       scale: 1.2, 1.2
@@ -973,12 +973,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 30
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 2
+        Heat: 4
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -997,7 +997,7 @@
     - state: tesla_projectile
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 15
+    damage: 30
   - type: EmbeddableProjectile
   - type: Projectile
     deleteOnCollide: false
@@ -1056,7 +1056,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 20 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
+        Heat: 40 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
     soundHit:
       collection: MeatLaserImpact
 
@@ -1070,7 +1070,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 5
+        Heat: 10
 
 - type: entity
   name: wide laser barrage

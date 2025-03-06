@@ -20,13 +20,13 @@
     animation: WeaponArcFist
     mustBeEquippedToUse: true
   - type: StaminaDamageOnHit
-    damage: 11
+    damage: 22
   - type: Armor
     modifiers:
       coefficients:
-        Shock: 1.05 # oh no so conductive
+        Shock: 2.1 # oh no so conductive
   - type: Insulated
-    coefficient: 1.5 # Extra damage. Don't punch wires, kids.
+    coefficient: 3 # Extra damage. Don't punch wires, kids.
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -71,13 +71,13 @@
     graph: GraphWeaponBrassKnucklesWhoopie
     node: WeaponBrassKnucklesWhoopie
   - type: StaminaDamageOnHit
-    damage: 4 # 8 per second, similar to the toy hammer
+    damage: 8 # 8 per second, similar to the toy hammer
   - type: Armor
     modifiers:
       coefficients:
-        Shock: 1.0 # Nothing special.
+        Shock: 2.0 # Nothing special.
   - type: Insulated
-    coefficient: 1 # Nothing special.
+    coefficient: 2 # Nothing special.
   - type: Tag
     tags:
     - WhitelistChameleon

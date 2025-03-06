@@ -35,9 +35,9 @@
         variation: 0.125
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 10
-            Structural: 20
+            Slash: 16
+            Heat: 20
+            Structural: 40
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
     layers:
@@ -52,7 +52,7 @@
     attackRate: 1.25
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 9
   - type: Item
     size: Small
     sprite: DeltaV/Objects/Weapons/Melee/e_sword.rsi # Delta-V
@@ -135,8 +135,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 4
-            Heat: 8
+            Slash: 8
+            Heat: 16
     deactivatedSecret: true
   - type: ItemToggleActiveSound
     activeSound:
@@ -160,7 +160,7 @@
     hidden: true
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/e_dagger.rsi
@@ -217,8 +217,8 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
         types:
-            Slash: 10
-            Heat: 12
+            Slash: 20
+            Heat: 24
     deactivatedSecret: true
   - type: ItemToggleDisarmMalus
     activatedDisarmMalus: 0.6
@@ -237,7 +237,7 @@
       path: /Audio/Weapons/eblade1.ogg
     damage:
       types:
-        Blunt: 6
+        Blunt: 12
   - type: Item
     size: Small
     sprite: DeltaV/Objects/Weapons/Melee/e_cutlass.rsi #DeltaV
@@ -275,9 +275,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 13
-            Structural: 15
+            Slash: 16
+            Heat: 26
+            Structural: 30
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -292,7 +292,7 @@
     angle: 100
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 9
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword_double.rsi
     layers:

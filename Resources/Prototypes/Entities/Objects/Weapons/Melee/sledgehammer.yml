@@ -13,12 +13,12 @@
     range: 1.75
     damage:
       types:
-        Blunt: 6
-        Structural: 10
+        Blunt: 12
+        Structural: 20
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 0.75
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 7.5
+    heavyStaminaCost: 0.5
     maxTargets: 10
     angle: 120
     soundHit:
@@ -27,7 +27,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 10
-        Structural: 10
+        Blunt: 20
+        Structural: 20
   - type: Item
     size: Large

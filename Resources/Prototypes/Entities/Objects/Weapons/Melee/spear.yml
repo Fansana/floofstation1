@@ -38,12 +38,12 @@
     range: 1.75
     damage:
       types:
-        Piercing: 7
-        Slash: 1
+        Piercing: 14
+        Slash: 2
     heavyRateModifier: 0.75
     heavyRangeModifier: 1.25
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 5
+    heavyStaminaCost: 0.3
     maxTargets: 3
     angle: 20
     animation: WeaponArcThrust
@@ -52,7 +52,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 10
+        Piercing: 20
   - type: Item
     size: Ginormous
   - type: Clothing
@@ -82,8 +82,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 3
-        Slash: 3
+        Piercing: 6
+        Slash: 6
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -132,12 +132,12 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 8.5
-        Slash: 1
+        Piercing: 17
+        Slash: 2
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 12
+        Piercing: 24
   - type: Construction
     graph: SpearReinforced
 
@@ -153,12 +153,12 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 9.5
-        Slash: 1.5
+        Piercing: 19
+        Slash: 3
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 14
+        Piercing: 24
   - type: Construction
     graph: SpearPlasma
 
@@ -174,13 +174,13 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 8
-        Radiation: 8
+        Piercing: 16
+        Radiation: 16
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 8
-        Radiation: 8
+        Piercing: 16
+        Radiation: 16
   - type: Construction
     graph: SpearUranium
 

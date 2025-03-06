@@ -20,8 +20,8 @@
         volume: -3
     damage:
       types:
-        Blunt: 6
-        Piercing: 3
+        Blunt: 12
+        Piercing: 6
     bluntStaminaDamageFactor: 2.0
     heavyDamageBaseModifier: 1.75
     maxTargets: 5
@@ -30,8 +30,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
-        Structural: 30
+        Blunt: 10
+        Structural: 60
   - type: Item
     size: Normal
     shape:
@@ -66,9 +66,9 @@
     range: 1.5
     damage:
       types:
-        Blunt: 2
-        Slash: 1
-        Structural: 15
+        Blunt: 4
+        Slash: 2
+        Structural: 30
     bluntStaminaDamageFactor: 1
     heavyRateModifier: 1
     heavyRangeModifier: 2

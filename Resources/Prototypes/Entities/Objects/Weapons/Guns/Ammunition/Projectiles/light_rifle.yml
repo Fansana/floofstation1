@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 19
+        Piercing: 38
 
 - type: entity
   id: BulletLightRiflePractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 4
 
 - type: entity
   id: BulletLightRifleRubber
@@ -29,7 +29,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 6
 
 - type: entity
   id: BulletLightRifleIncendiary
@@ -40,8 +40,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 16
+        Blunt: 6
+        Heat: 32
 
 - type: entity
   id: BulletLightRifleUranium
@@ -52,5 +52,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 9
-        Piercing: 10
+        Radiation: 18
+        Piercing: 20

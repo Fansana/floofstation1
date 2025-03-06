@@ -95,7 +95,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 10
+        Blunt: 20
   - type: Damageable
     damageContainer: Inorganic
   - type: EmitSoundOnTrigger
@@ -127,7 +127,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ClusterGrenade
     fillPrototype: PelletClusterRubber
-    maxGrenadesCount: 30
+    maxGrenadesCount: 60
     grenadeType: enum.GrenadeType.Shoot
   - type: FlashOnTrigger
     range: 7
@@ -156,7 +156,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ClusterGrenade
     fillPrototype: PelletClusterIncendiary
-    maxGrenadesCount: 30
+    maxGrenadesCount: 60
     grenadeType: enum.GrenadeType.Shoot
   - type: OnUseTimerTrigger
     beepSound:
@@ -185,7 +185,7 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ClusterGrenade
     fillPrototype: PelletClusterLethal
-    maxGrenadesCount: 30
+    maxGrenadesCount: 60
     grenadeType: enum.GrenadeType.Shoot
   - type: OnUseTimerTrigger
     beepSound:
@@ -214,7 +214,7 @@
   - type: Appearance
   - type: ClusterGrenade
     fillPrototype: SoapletSyndie
-    maxGrenadesCount: 30
+    maxGrenadesCount: 60
     grenadeTriggerIntervalMax: 0
     grenadeTriggerIntervalMin: 0
     baseTriggerDelay: 60
@@ -223,7 +223,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 10
+        Blunt: 20
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"

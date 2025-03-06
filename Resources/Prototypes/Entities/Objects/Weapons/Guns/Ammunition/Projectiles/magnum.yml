@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 70
 
 - type: entity
   id: BulletMagnumPractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: BulletMagnumRubber
@@ -29,9 +29,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
+        Blunt: 6
   - type: StaminaDamageOnCollide
-    damage: 35 # 3 hits to stun cuz revolver
+    damage: 70 # 3 hits to stun cuz revolver
 
 - type: entity
   id: BulletMagnumIncendiary
@@ -42,8 +42,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 32
+        Blunt: 6
+        Heat: 64
         
 - type: entity
   id: BulletMagnumAP
@@ -54,7 +54,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 26 # 20% decrease
+        Piercing: 52 # 20% decrease
     ignoreResistances: true
 
 - type: entity
@@ -66,5 +66,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 15
-        Piercing: 20
+        Radiation: 30
+        Piercing: 40

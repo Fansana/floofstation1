@@ -18,11 +18,11 @@
     damage:
       types:
         # axes are kinda like sharp hammers, you know?
-        Blunt: 4
-        Slash: 6
-        Structural: 10
+        Blunt: 8
+        Slash: 12
+        Structural: 20
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 10
+    heavyStaminaCost: 1
     angle: 100
     soundHit:
       collection: MetalThud
@@ -30,9 +30,9 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 2
-        Slash: 5
-        Structural: 40
+        Blunt: 4
+        Slash: 10
+        Structural: 80
   - type: Item
     size: Ginormous
   - type: Clothing
