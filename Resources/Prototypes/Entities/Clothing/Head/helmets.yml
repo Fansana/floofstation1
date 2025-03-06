@@ -15,10 +15,10 @@
   - type: Armor #Values seem to let the user survive one extra hit if attacked consistently.
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -50,14 +50,14 @@
   - type: Armor #This is intentionally not spaceproof, when the time comes to port the values from SS13 this should be buffed from what it was.
     modifiers:
       coefficients:
-        Blunt: 0.80
-        Slash: 0.80
-        Piercing: 0.80
-        Heat: 0.80
-        Radiation: 0.80
-        Caustic: 0.95
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.9
   - type: ExplosionResistance
-    damageCoefficient: 0.75
+    damageCoefficient: 0.5
 
 #Syndicate SWAT Helmet
 - type: entity
@@ -87,9 +87,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.95
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.9
 
 #Bombsuit Helmet
 - type: entity
@@ -104,13 +104,13 @@
     sprite: Clothing/Head/Helmets/bombsuit.rsi
   - type: IngestionBlocker
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 0.8
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
   - type: HideLayerClothing
     slots:
     - Hair
@@ -144,10 +144,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.8
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.6
+        Piercing: 0.8
+        Heat: 0.8
 
 #Space Ninja Helmet
 - type: entity
@@ -224,9 +224,9 @@
     quickEquip: true
   - type: IngestionBlocker
   - type: TemperatureProtection
-    coefficient: 0.005
+    coefficient: 0.003
   - type: FireProtection
-    reduction: 0.15 # not fully sealed so less protection
+    reduction: 0.08 # not fully sealed so less protection
   - type: IdentityBlocker
   - type: Tag
     tags:
@@ -252,7 +252,7 @@
   - type: TemperatureProtection
     coefficient: 0.005
   - type: FireProtection
-    reduction: 0.2
+    reduction: 0.1
   - type: PressureProtection
     highPressureMultiplier: 0.25
     lowPressureMultiplier: 1000
@@ -279,10 +279,10 @@
   - type: Armor #admeme item so it should be fine being overpowered while helmets are still intentionally kneecapped.
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.9
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Heat: 0.8
 
 #ERT HELMETS
 #ERT Leader Helmet

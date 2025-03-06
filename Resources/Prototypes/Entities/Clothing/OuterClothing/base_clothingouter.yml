@@ -112,9 +112,9 @@
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    coefficient: 0.01
+    coefficient: 0.005
   - type: FireProtection
-    reduction: 0.75 # almost perfectly sealed, atmos firesuit is better
+    reduction: 0.50 # almost perfectly sealed, atmos firesuit is better
   - type: ClothingSpeedModifier
     walkModifier: 0.4
     sprintModifier: 0.6
@@ -124,11 +124,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.90
-        Slash: 0.90
-        Piercing: 0.95
-        Heat: 0.90
-        Radiation: 0.25
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.8
+        Radiation: 0.13
   - type: ToggleableClothing
     slot: head
   - type: ContainerContainer
@@ -148,7 +148,7 @@
     attachedToSuit: true
     localSoundOnly: true
   - type: StaminaDamageResistance
-    coefficient: 0.75 # 25%
+    coefficient: 0.50 # 25%
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
 

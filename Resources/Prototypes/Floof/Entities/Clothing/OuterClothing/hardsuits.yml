@@ -11,4 +11,4 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
   - type: StaminaDamageResistance
-    coefficient: 0.5 # 50%
+    coefficient: 0.25 # 50%

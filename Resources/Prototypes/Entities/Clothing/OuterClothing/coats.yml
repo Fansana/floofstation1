@@ -26,10 +26,10 @@
   - type: Armor #same as regular sec armor
     modifiers:
       coefficients:
-        Blunt: 0.70
-        Slash: 0.70
-        Piercing: 0.70
-        Heat: 0.80
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.6
 
 - type: entity
   parent: ClothingOuterCoatDetective
@@ -59,13 +59,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
-        Caustic: 0.75 # not the full 90% from ss13 because of the head
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.4
+        Caustic: 0.50 # not the full 90% from ss13 because of the head
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 0.8
 
 - type: entity
   abstract: true
@@ -75,12 +75,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.4
   - type: ExplosionResistance
-    damageCoefficient: 0.9
+    damageCoefficient: 0.8
 
 - type: entity
   parent: [ClothingOuterArmorHoS, ClothingOuterStorageBase]
@@ -128,11 +128,11 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/trenchcoat.rsi
   - type: TemperatureProtection
-    coefficient: 0.1
+    coefficient: 0.05
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.95
+        Slash: 0.90
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
@@ -156,7 +156,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLab]
@@ -176,7 +176,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabChem]
@@ -196,7 +196,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabViro]
@@ -216,7 +216,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabGene]
@@ -236,9 +236,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.95
-        Heat: 0.95
-        Caustic: 0.65
+        Slash: 0.9
+        Heat: 0.9
+        Caustic: 0.3
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabCmo]
@@ -258,7 +258,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRnd]
@@ -278,7 +278,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRobo]
@@ -298,8 +298,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
-        Radiation: 0.9
+        Caustic: 0.5
+        Radiation: 0.8
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRD]
@@ -363,9 +363,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.65
-        Piercing: 0.85
+        Blunt: 0.6
+        Slash: 0.3
+        Piercing: 0.7
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -413,11 +413,11 @@
   - type: Armor # DeltaV - tweak for Velta armour
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.85
-        Heat: 0.75
-        Caustic: 0.75
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.5
+        Caustic: 0.5
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -432,7 +432,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -447,7 +447,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.5
 
 - type: entity
   parent: ClothingOuterStorageBase

@@ -46,11 +46,11 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/eva_emergency.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 0.4
+    sprintModifier: 0.4
   - type: HeldSpeedModifier
   - type: TemperatureProtection
-    coefficient: 0.5
+    coefficient: 0.25
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetEVALarge
     slot: head
