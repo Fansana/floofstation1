@@ -46,9 +46,9 @@ bounty-description-surgerytools = The captain of the station was hit by a rod. W
 
 
 # Misc
-bounty-description-diamond = A Jeweral just got his store rob and needing replacment diamonds said he will pay a pretty penny for them.
-bounty-description-dildo = Shippment of dildo's was stolen by pirate's when making it way to the Breeding department. Do you have any replacements?
-bounty-description-fleshlight = Shippment of Fleshlights for the annual company wide orgy was stolen by pirate's when making it way to Station. Do you have any replacements?
-bounty-description-whip = Looks like the paddles and whips we had for our more er.. freakier customers have broken.
-bounty-description-brassknuckles = Some guy is talkin smash about our bosses lady, and well the boss doesnt like it. He wants us to teach them a lesson..a long unforgettable one. You know what im sayin?
+bounty-description-diamond = A jeweler just got his store robbed and needs replacement diamonds. He said he will pay a pretty penny for them.
+bounty-description-dildo = A shipment of dildos was stolen by pirates while making its way to the Breeding Department. Do you have any replacements?
+bounty-description-fleshlight = A shipment of fleshlights for the annual company-wide orgy was stolen by pirates while making its way to the station. Do you have any replacements?
+bounty-description-whip = It looks like the paddles and whips we had for our more, er... freakier customers have broken.
+bounty-description-brassknuckles = Some guy is talking smack about our boss's lady, and well, the boss doesn't like it. He wants us to teach them a lesson... a long, unforgettable one. You know what I’m saying?
 
