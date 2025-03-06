@@ -59,7 +59,7 @@
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
   - type: TemperatureProtection
-    coefficient: 0.005
+    coefficient: 0.003
 
 #Engineering Hardsuit
 - type: entity
@@ -151,10 +151,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Paramedic Void Helmet
 - type: entity
@@ -171,8 +171,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.90
-        Radiation: 0.75
+        Heat: 0.8
+        Radiation: 0.5
 
 
 #Security Hardsuit
@@ -195,10 +195,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Brigmedic Hardsuit
 - type: entity
@@ -217,12 +217,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
-        Heat: 0.95
-        Radiation: 0.90
-        Caustic: 0.90
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.8
+        Caustic: 0.8
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
@@ -247,10 +247,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Captain's Hardsuit
 - type: entity
@@ -342,10 +342,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -387,10 +387,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Blood-red Medic Hardsuit
 - type: entity
@@ -412,10 +412,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -437,14 +437,14 @@
   - type: TemperatureProtection
     coefficient: 0.005
   - type: FireProtection
-    reduction: 0.2
+    reduction: 0.1
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -466,10 +466,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -489,10 +489,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Wizard Hardsuit
 - type: entity
@@ -514,10 +514,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Organic Space Suit
 - type: entity
@@ -587,10 +587,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -624,10 +624,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #ERT Medical Hardsuit
 - type: entity
@@ -661,10 +661,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -715,10 +715,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
 
 #Deathsquad Hardsuit
 - type: entity
@@ -738,12 +738,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.80
-        Slash: 0.80
-        Piercing: 0.80
-        Heat: 0.80
-        Radiation: 0.80
-        Caustic: 0.95
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.9
 
 #MISC. HARDSUITS
 #Clown Hardsuit

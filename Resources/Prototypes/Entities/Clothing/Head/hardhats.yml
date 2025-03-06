@@ -145,7 +145,7 @@
   - type: Armor #Copied from the sec helmet, as it's hard to give these sane values without locational damage existing.
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.9
-        Heat: 0.8
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.8
+        Heat: 0.6
