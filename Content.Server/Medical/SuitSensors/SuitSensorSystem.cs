@@ -16,6 +16,7 @@ using Content.Shared.Medical.SuitSensor;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Verbs;
+using Content.Shared.Silicon.Components; // Floofstation
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
@@ -339,6 +340,10 @@ public sealed class SuitSensorSystem : EntitySystem
         var isAlive = false;
         if (EntityManager.TryGetComponent(sensor.User.Value, out MobStateComponent? mobState))
             isAlive = !_mobStateSystem.IsDead(sensor.User.Value, mobState);
+        
+        // Floofstation - get IPC battery status. If no power, set status as dead
+        if (EntityManager.TryGetComponent(sensor.User.Value, out SiliconComponent? SiliconComp) && (SiliconComp.ChargeState == 0))
+            isAlive = false;
 
         // get mob total damage
         var totalDamage = 0;
