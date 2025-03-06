@@ -19,10 +19,10 @@ bounty-item-scalpel = scalpel
 
 
 # Misc
-bounty-item-diamond = Diamond's
-bounty-item-dildo = Dildo's
-bounty-item-fleshlight = Fleshlight's
-bounty-item-whip = Whip's or paddle's
+bounty-item-diamond = Diamonds
+bounty-item-dildo = Dildos
+bounty-item-fleshlight = Fleshlights
+bounty-item-whip = Whips or paddles
 
 # Weapons
 
