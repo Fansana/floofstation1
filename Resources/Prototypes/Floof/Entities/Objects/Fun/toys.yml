@@ -143,7 +143,7 @@
 - type: entity
   parent: PlushieHuman
   id: PlushieSlimeTider
-  name: slime tider plushie
+  name: Slime tider plushie
   description: A generic tider, this one seems to be particularly slimy. The label reads 'Product not insulated'
   components:
   - type: Sprite
@@ -161,9 +161,15 @@
       path: /Audio/Voice/Slime/slime_squish.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Voice/Slime/slime_squish.ogg
+      path: /Audio/Voice/Human/female_sigh.ogg
       params:
         volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Slime/slime_laugh_f1.ogg
+      params:
+        variation: 0.20
+        volume: 4
 
 - type: entity
   parent: PlushieHuman
@@ -218,4 +224,160 @@
     sound:
       path: /Audio/Animals/mouse_squeak.ogg
       params:
+        variation: 0.05
         volume: 1
+            
+- type: entity
+  parent: PlushieHuman
+  id: PlushieKitsuneCaptain
+  name: Kitsune captain plushie
+  description: A Kitsune captain, this one seems to be particularly fluffy, especially their tails. the label reads 'Be careful around fire'.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: kitsune
+  - type: UseDelay
+    delay: 3.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+      params:
+        variation: 0.05
+        volume: 4
+
+- type: entity
+  parent: PlushieHuman
+  id: PlushieSapphicHarpyPlushie
+  name: Sapphic harpy plushie
+  description: A Plushie of a harpy. A attached label reads 'Come to the orchard in Spring...'.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: harpy
+  - type: UseDelay
+    delay: 3.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/DeltaV/Voice/Harpy/chirp1.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/DeltaV/Voice/Harpy/caw1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/DeltaV/Voice/Harpy/chirp1.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_scream1.ogg
+      params:
+        variation: 0.05
+        volume: 4
+        
+- type: entity
+  parent: PlushieHuman
+  id: PlushieFeistyBartender
+  name: Feisty Bartender Plushie
+  description: The Station mom, Loveable!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: vulp1
+  - type: UseDelay
+    delay: 300.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/Nuke/nuke_alarm.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/toysqueak2.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+      params:
+        variation: 0.05
+        volume: 4
+         
+- type: entity
+  parent: PlushieHuman
+  id: PlushieCoolVulp
+  name: Cool vulp plushie
+  description: Just one cool guy!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: vulp2
+  - type: UseDelay
+    delay: 300.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/Nuke/nuke_alarm.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/toysqueak2.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+      params:
+        variation: 0.05
+        volume: 4
+        
+- type: entity
+  parent: PlushieHuman
+  id: PlushieNoticeableSecurityOfficer
+  name: Noticeable security officer plushie
+  description: A wolf security officer, watch out she bites!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: vulp3
+  - type: UseDelay
+    delay: 300.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/Nuke/nuke_alarm.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/DeltaV/Voice/Vulpkanin/dog_growl3.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/toysqueak2.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Items/Toys/weh.ogg
+      params:
+        variation: 0.05
+        volume: 4
