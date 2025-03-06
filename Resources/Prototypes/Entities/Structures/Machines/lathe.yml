@@ -1078,6 +1078,7 @@
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
+      - BaseChemistryEmptyVial #floof
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
