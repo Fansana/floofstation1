@@ -266,7 +266,7 @@
   components:
   - type: Sprite
     sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: Harpy
+    state: harpy
   - type: UseDelay
     delay: 3.0
   - type: EmitSoundOnUse
