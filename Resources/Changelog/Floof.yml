@@ -2890,6 +2890,45 @@ Entries:
   id: 323
   time: '2025-02-22T20:37:55.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/570
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        New uniform printer recipes for many missing departmental lingerie
+        items.
+  id: 0
+  time: '2025-02-22T20:38:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/569
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Train is now in lower orbit
+    - type: Tweak
+      message: Added senior job roles to every station
+    - type: Tweak
+      message: Tweaked Hive based on community feedback
+    - type: Tweak
+      message: Added a job slot for Golemancer on more stations
+    - type: Tweak
+      message: Added back Anomaly spawns on Arena
+    - type: Tweak
+      message: Added docking spots for the pathfinder on all stations
+    - type: Tweak
+      message: >-
+        Glaciers Psych office was given a face lift and the court house has
+        proper atmos
+  id: 0
+  time: '2025-02-22T20:39:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/542
+- author: Eagle0600
+  changes:
+    - type: Tweak
+      message: Ice now satiates thirst, but also makes you cold. Don't drink too much!
+    - type: Tweak
+      message: Cream and ice cream satiate hunger.
+  id: 0
+  time: '2025-02-22T20:40:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/562
 - author: Forzii
   changes:
     - type: Add
@@ -2899,3 +2938,126 @@ Entries:
   id: 324
   time: '2025-02-22T20:40:40.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/553
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Ported subtle OOC (Prefix { )
+  id: 0
+  time: '2025-02-23T19:33:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/571
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Added Dim, Warm, Red, Pink, Orange, Green, Cyan, and Blue Light Bulbs
+  id: 0
+  time: '2025-02-23T20:02:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/579
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Emote Chat
+  id: 0
+  time: '2025-02-24T07:08:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/583
+- author: VividPups
+  changes:
+    - type: Add
+      message: add blackslot back to all security armor
+  id: 0
+  time: '2025-02-24T22:15:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/545
+- author: sprkl
+  changes:
+    - type: Add
+      message: >-
+        Added sterile bags which can be processed into blood packs via a
+        microwave.
+    - type: Add
+      message: Added a recipe to synthesize blood.
+  id: 0
+  time: '2025-02-24T22:20:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/572
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Cargo technicians now get orders access by default.
+  id: 0
+  time: '2025-02-24T22:33:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/581
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Quad borg animations
+  id: 0
+  time: '2025-02-25T23:34:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/584
+- author: M3739
+  changes:
+    - type: Add
+      message: The Justice department now has it's own loadout tab under 'Jobs'.
+    - type: Tweak
+      message: >-
+        The Chief Justice now properly appears on the manifest as a member of
+        command, and their starting gear has been adjusted to be more in line
+        with their fellow Command members.
+    - type: Tweak
+      message: >-
+        The Attorney and the Prosecutor now has a lawyer stamp as part of their
+        starting gear.
+    - type: Tweak
+      message: >-
+        The Lawyer loadout tab is no longer under Service, It is now under
+        Justice as 'Attorney'.
+    - type: Tweak
+      message: >-
+        Some document templates have received a revision. No more "Head of
+        Personal" as the header of every Justice paperwork template.
+  id: 0
+  time: '2025-02-26T00:44:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/577
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        The healing amounts of topicals (bruise packs, ointments, and so on)
+        were reduced to pre-surgery-update amounts.
+    - type: Fix
+      message: >-
+        Theobromine gained from coffee and similar drinks will now properly
+        accumulate in your body and deal damage to those with animal stomachs.
+  id: 325
+  time: '2025-03-05T23:43:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/597
+- author: Southbridge
+  changes:
+    - type: Fix
+      message: Cherry-picked fixes from Wizden for linking devices.
+  id: 326
+  time: '2025-03-05T23:47:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/591
+- author: AstroDogeDX and Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Resomi can tolerate much colder temperatures before taking damage, but
+        can't tolerate much heat as a consequence.
+    - type: Tweak
+      message: Resomi can move faster in Zero-G, on account of their wings.
+    - type: Tweak
+      message: >-
+        Like the other animal-type species, Resomi can digest uncooked animal
+        proteins, but get poisoned by theobromine. No coffee for you.
+    - type: Tweak
+      message: Resomi can now be male and female, and are smaller on average
+    - type: Tweak
+      message: Resomi now have ammonia-based blood
+  id: 327
+  time: '2025-03-05T23:50:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/585
+- author: VividPups
+  changes:
+    - type: Add
+      message: Vials to the medicalfab
+  id: 328
+  time: '2025-03-06T05:21:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/601
