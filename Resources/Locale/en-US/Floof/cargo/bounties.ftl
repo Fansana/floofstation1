@@ -1,7 +1,7 @@
 # items list
 
 # Medical
-bounty-item-bodybags = body bag's
+bounty-item-bodybags = body bags
 bounty-item-anal = Health Analyzer
 bounty-item-defib = Defibrillator
 bounty-item-canal = Chemical analysis goggles
