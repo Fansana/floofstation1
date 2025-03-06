@@ -12,10 +12,10 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 4
-        Piercing: 8
-        Blunt: 1
-        Structural: 4
+        Slash: 8
+        Piercing: 16
+        Blunt: 2
+        Structural: 8
   - type: MobState
   - type: Sprite
     drawdepth: Mobs
@@ -104,10 +104,10 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 2
-        Piercing: 5
-        Blunt: 0.5
-        Structural: 2
+        Slash: 4
+        Piercing: 10
+        Blunt: 1
+        Structural: 4
   - type: Fixtures
     fixtures:
       fix1:

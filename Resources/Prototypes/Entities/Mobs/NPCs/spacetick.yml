@@ -41,9 +41,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      15: Dead
+      30: Dead
   - type: Stamina
-    critThreshold: 15
+    critThreshold: 30
   - type: MovementAlwaysTouching
   - type: DamageStateVisuals
     states:
@@ -65,7 +65,7 @@
     animation: WeaponArcBite
     damage:
       groups:
-        Brute: 2
+        Brute: 4
   - type: SolutionContainerManager
     solutions:
       melee:

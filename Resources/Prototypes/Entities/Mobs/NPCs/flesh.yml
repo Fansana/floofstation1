@@ -34,9 +34,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      75: Dead
+      150: Dead
   - type: Stamina
-    critThreshold: 50
+    critThreshold: 150
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -51,7 +51,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 6
+        Slash: 12
   - type: ReplacementAccent
     accent: genericAggressive
 
@@ -78,7 +78,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 16
 
 - type: entity
   parent: BaseMobFlesh
@@ -99,7 +99,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -107,7 +107,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 16
 
 - type: entity
   parent: BaseMobFlesh
@@ -128,7 +128,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      60: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -152,7 +152,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      60: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -182,7 +182,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      200: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 2.5
@@ -193,6 +193,7 @@
     animation: WeaponArcClaw
     damage:
       types:
+        Piercing: 10
         Blunt: 10
 
 - type: entity
@@ -232,9 +233,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      75: Dead
+      150: Dead
   - type: Stamina
-    critThreshold: 50
+    critThreshold: 150
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -249,7 +250,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 6
+        Slash: 12
   - type: ReplacementAccent
     accent: genericAggressive
   - type: SalvageMobRestrictions
@@ -277,7 +278,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 16
 
 - type: entity
   parent: BaseMobFleshSalvage
@@ -298,7 +299,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -306,7 +307,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 8
+        Slash: 16
 
 - type: entity
   parent: BaseMobFleshSalvage
@@ -327,7 +328,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      60: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -351,7 +352,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      60: Dead
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5

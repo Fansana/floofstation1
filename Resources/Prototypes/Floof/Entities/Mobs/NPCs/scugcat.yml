@@ -64,7 +64,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 5 # NOM - Do NOT mess with skugs.
+        Piercing: 10 # NOM - Do NOT mess with skugs.
   - type: Physics
   - type: Fixtures
     fixtures:

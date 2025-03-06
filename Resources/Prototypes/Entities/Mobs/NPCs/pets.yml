@@ -688,7 +688,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Dead
+      300: Dead
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcBite
@@ -696,7 +696,7 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 8
+        Piercing: 24
         Poison: 8
   - type: Grammar
     attributes:
@@ -757,7 +757,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Dead
+      400: Dead
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/slime1.ogg

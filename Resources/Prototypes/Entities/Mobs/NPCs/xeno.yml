@@ -8,7 +8,7 @@
   - type: Insulated
   - type: CombatMode
     canDisarm: true
-    disarmFailChance: 0.55
+    disarmFailChance: 0.1
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -70,8 +70,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Critical
-      100: Dead
+      100: Critical
+      200: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.5
@@ -89,7 +89,8 @@
     animation: WeaponArcBite
     damage:
       groups:
-        Brute: 6
+        Brute: 12
+    Range: 3
   - type: DamageStateVisuals
     rotate: true
     states:
@@ -161,8 +162,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Critical
-      200: Dead
+      300: Critical
+      400: Dead
   - type: Stamina
     critThreshold: 300
   - type: MovementSpeedModifier
@@ -198,15 +199,15 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Critical
-      130: Dead
+      160: Critical
+      260: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 6
+        Brute: 12
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: Fixtures
@@ -236,8 +237,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Critical
-      350: Dead
+      600: Critical
+      700: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.7
@@ -247,7 +248,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 12
+       Brute: 24
   - type: Fixtures
     fixtures:
       fix1:
@@ -285,14 +286,14 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      150: Dead
+      200: Critical
+      300: Dead
   - type: MovementSpeedModifier
-    baseSprintSpeed: 4
+    baseSprintSpeed: 5
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 10
+       Brute: 20
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -326,7 +327,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 10
+       Brute: 20
   - type: Fixtures
     fixtures:
       fix1:
@@ -376,7 +377,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.7
@@ -445,7 +446,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 5
+        Piercing: 10
   - type: SolutionContainerManager
     solutions:
       melee:

@@ -17,8 +17,8 @@
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 3
-          Caustic: 3
+          Blunt: 6
+          Caustic: 6
 
 - type: entity
   name: Acid runner primed
@@ -43,8 +43,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        10: Critical
-        20: Dead
+        20: Critical
+        40: Dead
     - type: Fixtures
       fixtures:
         fix1:
@@ -62,8 +62,8 @@
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 1
-          Piercing: 1
+          Blunt: 2
+          Piercing: 2
 
 - type: entity
   name: Boiler
@@ -79,8 +79,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        50: Critical
-        100: Dead
+        100: Critical
+        200: Dead
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1
     - type: BasicEntityAmmoProvider
@@ -112,16 +112,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        120: Critical
-        200: Dead
+        240: Critical
+        400: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 5
       baseSprintSpeed : 5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 4
-          Piercing: 1
+          Blunt: 8
+          Piercing: 2
 
 - type: entity
   name: Carrier
@@ -137,16 +137,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Critical
-        200: Dead
+        200: Critical
+        400: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 4.5
       baseSprintSpeed : 4.5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 3
-          Piercing: 2
+          Blunt: 6
+          Piercing: 4
 
 - type: entity
   name: Crusher
@@ -162,15 +162,15 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        130: Critical
-        200: Dead
+        260: Critical
+        400: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 3
       baseSprintSpeed : 7
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 8
+          Blunt: 16
 
 - type: entity
   name: Charger Crusher
@@ -191,16 +191,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Critical
-        200: Dead
+        200: Critical
+        400: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 5
       baseSprintSpeed : 5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 3
-          Piercing: 1
+          Blunt: 6
+          Piercing: 2
 
 - type: entity
   name: Defender
@@ -212,16 +212,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        250: Critical
-        350: Dead
+        500: Critical
+        700: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 3
       baseSprintSpeed : 3
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 2
-          Piercing: 2
+          Blunt: 4
+          Piercing: 4
 
 - type: entity
   name: Sentinel
@@ -241,16 +241,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        400: Critical
-        500: Dead
+        800: Critical
+        1000: Dead
     - type: MovementSpeedModifier
       baseWalkSpeed : 3.5
       baseSprintSpeed : 3.5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 3
-          Piercing: 3
+          Blunt: 6
+          Piercing: 6
 
 - type: entity
   name: Bloody Larva
@@ -286,5 +286,5 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Critical
-        300: Dead
+        400: Critical
+        600: Dead

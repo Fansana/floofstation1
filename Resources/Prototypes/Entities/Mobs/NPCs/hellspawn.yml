@@ -78,7 +78,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      450: Dead
+      900: Dead
   - type: Butcherable
     spawned:
       - id: ArtifactFragment
@@ -90,8 +90,9 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Blunt: 150
-        Structural: 70
+        Piercing: 250
+        Blunt: 50
+        Structural: 140
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepThud
