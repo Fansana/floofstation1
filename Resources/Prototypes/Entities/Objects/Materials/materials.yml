@@ -365,7 +365,7 @@
           Quantity: 20
   - type: Tag  #Floof
     tags:
-    - Diamond
+     - Diamond
 
 - type: entity
   parent: MaterialDiamond
