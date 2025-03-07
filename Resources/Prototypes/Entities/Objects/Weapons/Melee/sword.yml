@@ -16,11 +16,11 @@
       path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
     damage:
       types:
-        Slash: 15
+        Slash: 30
     heavyRateModifier: 0.8
     heavyRangeModifier: 1
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: 5
+    heavyStaminaCost: 0.3
     maxTargets: 7
     angle: 80
   - type: Reflect
@@ -60,11 +60,11 @@
       path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
     damage:
       types:
-        Slash: 12
+        Slash: 24
     heavyRateModifier: 0.5
     heavyRangeModifier: 2.75 #Superior Japanese folded steel
     heavyDamageBaseModifier: 1.25
-    heavyStaminaCost: 15
+    heavyStaminaCost: 1
     maxTargets: 1
     angle: 20
   - type: Item
@@ -85,7 +85,7 @@
     wideAnimationRotation: -60
     damage:
       types:
-        Slash: 25
+        Slash: 50
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/energykatana.rsi
@@ -124,7 +124,7 @@
     attackRate: 0.8
     damage:
       types:
-        Slash: 15
+        Slash: 30
     heavyRateModifier: 0.8
     heavyRangeModifier: 1.25
     heavyDamageBaseModifier: 1.2
@@ -153,13 +153,13 @@
     range: 1.85
     damage:
       types:
-        Slash: 19
-        Blunt: 1
+        Slash: 28
+        Blunt: 2
     bluntStaminaDamageFactor: 25.0
     heavyRateModifier: 0.5
     heavyRangeModifier: 1
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: 15
+    heavyStaminaCost: 1
     maxTargets: 10
     angle: 200
     soundHit:
@@ -190,11 +190,11 @@
     attackRate: 1.25
     damage:
       types:
-        Slash: 12
+        Slash: 24
     heavyRateModifier: 0.8
     heavyRangeModifier: 1.2
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 7.5
+    heavyStaminaCost: 0.8
     maxTargets: 3
     angle: 40
     soundHit:
@@ -219,12 +219,12 @@
       attackRate: 10
       damage:
         types:
-          Structural: 150
-          Slash: 20 #Horror
-          Blunt: 20
-          Heat: 20
-          Piercing: 20
-          Radiation: 10
+          Structural: 300
+          Slash: 40 #Horror
+          Blunt: 40
+          Heat: 40
+          Piercing: 40
+          Radiation: 20
       soundHit:
         path: /Audio/Effects/explosion_small1.ogg
     - type: Reflect

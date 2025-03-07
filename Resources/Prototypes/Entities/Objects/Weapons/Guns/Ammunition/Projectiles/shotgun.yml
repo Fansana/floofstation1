@@ -10,7 +10,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
+        Piercing: 56
 
 - type: entity
   id: PelletShotgunBeanbag
@@ -24,9 +24,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 10
+        Blunt: 20
   - type: StaminaDamageOnCollide
-    damage: 40 # 3 hits to stun
+    damage: 80 # 3 hits to stun
 
 - type: entity
   id: PelletShotgun
@@ -40,7 +40,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 20
 
 - type: entity
   id: PelletShotgunIncendiary
@@ -54,8 +54,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 3
-        Heat: 7
+        Blunt: 6
+        Heat: 14
   - type: IgnitionSource
     ignited: true
 
@@ -71,7 +71,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
 
 - type: entity
   id: PelletShotgunImprovised
@@ -85,8 +85,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
-        Slash: 3
+        Piercing: 4
+        Slash: 4
 
 
 - type: entity
@@ -101,7 +101,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -161,7 +161,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 5
+        Heat: 6
 
 - type: entity
   id: PelletShotgunUranium
@@ -175,8 +175,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 5
-        Piercing: 5
+        Radiation: 6
+        Piercing: 6
 
 - type: entity
   id: PelletGrapeshot #tally fucking ho
@@ -193,8 +193,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
-        Structural: 5
+        Piercing: 26
+        Structural: 6
 
 - type: entity
   id: PelletGlass
@@ -214,4 +214,4 @@
     deleteOnCollide: false
     damage:
       types:
-        Slash: 25
+        Slash: 26
