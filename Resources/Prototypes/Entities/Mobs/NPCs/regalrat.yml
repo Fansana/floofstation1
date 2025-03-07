@@ -54,8 +54,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 12
-        Piercing: 8
+        Slash: 24
+        Piercing: 16
   - type: Body
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg
@@ -152,7 +152,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      350: Dead
+      700: Dead
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
@@ -161,7 +161,7 @@
     animation: WeaponArcFist
     damage:
       types:
-        Blunt: 66 #oof ouch owie my bones
+        Blunt: 132 #oof ouch owie my bones
   - type: SlowOnDamage
     speedModifierThresholds:
       200: 0.7
@@ -240,10 +240,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      15: Critical
-      30: Dead
+      30: Critical
+      60: Dead
   - type: Stamina
-    critThreshold: 60
+    critThreshold: 120
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
@@ -251,8 +251,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 5
-        Piercing: 3
+        Slash: 10
+        Piercing: 6
   - type: Body
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg

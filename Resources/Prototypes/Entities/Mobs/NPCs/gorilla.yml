@@ -56,7 +56,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      220: Dead
+      440: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -71,8 +71,9 @@
       collection: Punch
     damage:
       types:
+        Piercing: 18
         Blunt: 18
-        Structural: 20
+        Structural: 40
     animation: WeaponArcFist
   - type: MeleeThrowOnHit
     speed: 20
@@ -133,14 +134,16 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      350: Dead
+      700: Dead
   - type: MeleeWeapon
     soundHit:
       collection: Punch
     damage:
       types:
-        Blunt: 35
-        Structural: 20
+        Piercing: 35
+        Slash: 20
+        Blunt: 15
+        Structural: 40
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 4

@@ -34,9 +34,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      200: Dead
   - type: Stamina
-    critThreshold: 150
+    critThreshold: 300
   - type: MovementAlwaysTouching
   - type: Bloodstream
     bloodMaxVolume: 300
@@ -52,8 +52,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Blunt: 5
-        Slash: 10
+        Blunt: 10
+        Slash: 20
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -140,8 +140,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Blunt: 9
-        Slash: 2
+        Blunt: 18
+        Slash: 4
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.5
     baseSprintSpeed: 4.5
@@ -155,7 +155,7 @@
       Dead:
         Base: kangaroo-space-dead
   - type: Stamina
-    critThreshold: 180
+    critThreshold: 360
   - type: Inventory
     speciesId: kangaroo
     templateId: spacekangaroo
@@ -202,9 +202,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      90: Dead
+      180: Dead
   - type: Stamina
-    critThreshold: 150
+    critThreshold: 300
   - type: DamageStateVisuals
     states:
       Alive:
@@ -240,8 +240,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 6
-        Poison: 4
+        Piercing: 12
+        Poison: 8
   - type: SolutionContainerManager
     solutions:
       melee:
@@ -309,9 +309,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Dead
+        200: Dead
     - type: Stamina
-      critThreshold: 150
+      critThreshold: 300
     - type: DamageStateVisuals
       states:
         Alive:
@@ -350,8 +350,8 @@
       animation: WeaponArcBite
       damage:
         types:
-          Piercing: 6
-          Poison: 4
+          Piercing: 12
+          Poison: 8
     - type: SolutionContainerManager
       solutions:
         melee:

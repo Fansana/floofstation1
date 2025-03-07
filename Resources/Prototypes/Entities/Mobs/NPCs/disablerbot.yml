@@ -40,17 +40,17 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      120: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 100
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 60
+        damage: 120
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

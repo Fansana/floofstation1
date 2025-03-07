@@ -51,19 +51,19 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead
+      240: Dead
   - type: Stamina
-    critThreshold: 120
+    critThreshold: 240
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 200
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 120
+        damage: 240
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -93,7 +93,7 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Blunt: 6
+        Blunt: 12
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 2.5
@@ -119,7 +119,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 40
+        damage: 80
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -142,7 +142,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 5
+        Blunt: 10
   - type: MovementSpeedModifier
     baseWalkSpeed : 1.5
     baseSprintSpeed : 2
@@ -150,7 +150,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 80
+        damage: 160
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -181,7 +181,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 80
+        damage: 160
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -209,12 +209,12 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 5
+        Blunt: 10
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 70
+        damage: 140
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -260,7 +260,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       20: 0.4
@@ -277,7 +277,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 3
+        Slash: 6
   - type: MeleeChemicalInjector
     solution: bloodstream
     transferAmount: 2
@@ -336,20 +336,20 @@
         - ReagentSlimePomelustine # Floofstation
         - ReagentSlimePhilterex # Floofstation
         - ReagentSlimeLibidozenithizine # Floofstation
-        #- ReagentSlimeIchor
-        #- ReagentSlimeBleach
-        #- ReagentSlimeSoap
-        #- ReagentSlimeSpacelube
-        #- ReagentSlimeBuzzachloricbees
-        #- ReagentSlimeWehjuice
-        #- ReagentCognizine
+        - ReagentSlimeIchor
+        - ReagentSlimeBleach
+        - ReagentSlimeSoap
+        - ReagentSlimeSpacelube
+        - ReagentSlimeBuzzachloricbees
+        - ReagentSlimeWehjuice
+        - ReagentCognizine
         - ReagentSlimeOpporozidone # Floofstation
-        #- ReagentSlimeNecrosol
-        #- ReagentSlimeSpaceDrugs
-        #- ReagentSlimeUnstableMutagen
-        #- ReagentSlimeLead
-        #- ReagentSlimechlorinetriflouride
-        #- ReagentSlimePotassium
+        - ReagentSlimeNecrosol
+        - ReagentSlimeSpaceDrugs
+        - ReagentSlimeUnstableMutagen
+        - ReagentSlimeLead
+        - ReagentSlimechlorinetriflouride
+        - ReagentSlimePotassium
         - ReagentSlimeLotophagoiOil
       chance: 1
 

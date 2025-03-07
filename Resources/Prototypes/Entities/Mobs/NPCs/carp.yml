@@ -40,9 +40,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        50: Dead
+        100: Dead
     - type: Stamina
-      critThreshold: 100
+      critThreshold: 200
     - type: DamageStateVisuals
       states:
         Alive:
@@ -63,8 +63,8 @@
         path: /Audio/Effects/bite.ogg
       damage:
         types:
-          Piercing: 5
-          Slash: 10
+          Piercing: 10
+          Slash: 20
     - type: TypingIndicator
       proto: alien
     - type: Tag
@@ -189,14 +189,14 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.7
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 6
+        Slash: 12
 
 - type: entity
   name: sharkminnow
@@ -226,9 +226,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        180: Dead
+        360: Dead
     - type: Stamina
-      critThreshold: 150
+      critThreshold: 300
     - type: DamageStateVisuals
       states:
         Alive:
@@ -247,7 +247,7 @@
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 12
+          Slash: 29
           Bloodloss: 5
     - type: SurgeryTarget
     - type: UserInterface
