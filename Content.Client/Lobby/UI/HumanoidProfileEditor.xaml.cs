@@ -1817,7 +1817,7 @@ namespace Content.Client.Lobby.UI
                 foreach (var (key, value) in tree)
                 {
                     // If the category's container exists already, ignore it
-                    if (parent.Contents.Any(c => c.Name == key))
+                    if (parent.AllTabContents.Any(c => c.Name == key))
                         continue;
 
                     // If the value is a list of TraitPrototypes, create a final tab for them
@@ -1934,7 +1934,7 @@ namespace Content.Client.Lobby.UI
                 // If it has a parent tab container, hide it if it's empty
                 if (tab?.Parent?.Parent is NeoTabContainer parent)
                 {
-                    var parentCats = parent.Contents.Select(c => _prototypeManager.Index<TraitCategoryPrototype>(c.Name!)).ToList();
+                    var parentCats = parent.AllTabContents.Select(c => _prototypeManager.Index<TraitCategoryPrototype>(c.Name!)).ToList();
                     HideEmptyTabs(parentCats);
                 }
             }
@@ -2060,7 +2060,7 @@ namespace Content.Client.Lobby.UI
             }
 
 
-            var uncategorized = LoadoutsTabs.Contents.FirstOrDefault(c => c.Name == "Uncategorized");
+            var uncategorized = LoadoutsTabs.AllTabContents.FirstOrDefault(c => c.Name == "Uncategorized");
             if (uncategorized == null)
             {
                 uncategorized = new BoxContainer
@@ -2178,7 +2178,7 @@ namespace Content.Client.Lobby.UI
                 foreach (var (key, value) in tree)
                 {
                     // If the category's container exists already, ignore it
-                    if (parent.Contents.Any(c => c.Name == key))
+                    if (parent.AllTabContents.Any(c => c.Name == key))
                         continue;
 
                     // If the value is a list of LoadoutPrototypes, create a final tab for them
@@ -2293,7 +2293,7 @@ namespace Content.Client.Lobby.UI
         private BoxContainer? FindCategory(string id, NeoTabContainer parent)
         {
             BoxContainer? match = null;
-            foreach (var child in parent.Contents)
+            foreach (var child in parent.AllTabContents) // Floof - changed to AllTabContents
             {
                 if (string.IsNullOrEmpty(child.Name))
                     continue;
@@ -2305,7 +2305,8 @@ namespace Content.Client.Lobby.UI
             if (match != null)
                 return match;
 
-            foreach (var subcategory in parent.Contents.Where(c => c is NeoTabContainer).Cast<NeoTabContainer>())
+            // Floofstation - replaced Contents with AllTabContents
+            foreach (var subcategory in parent.AllTabContents.Where(c => c is NeoTabContainer).Cast<NeoTabContainer>())
                 match ??= FindCategory(id, subcategory);
 
             return match;
@@ -2313,6 +2314,9 @@ namespace Content.Client.Lobby.UI
 
         private void HideEmptyTabs(List<LoadoutCategoryPrototype> cats)
         {
+            // Floof - this method is extremely dumb and it never even worked in the first place
+            return;
+
             foreach (var tab in cats.Select(category => FindCategory(category.ID, LoadoutsTabs)))
             {
                 // If it's empty, hide it
@@ -2322,7 +2326,7 @@ namespace Content.Client.Lobby.UI
                 // If it has a parent tab container, hide it if it's empty
                 if (tab?.Parent?.Parent is NeoTabContainer parent)
                 {
-                    var parentCats = parent.Contents.Select(c => _prototypeManager.Index<LoadoutCategoryPrototype>(c.Name!)).ToList();
+                    var parentCats = parent.AllTabContents.Select(c => _prototypeManager.Index<LoadoutCategoryPrototype>(c.Name!)).ToList();
                     HideEmptyTabs(parentCats);
                 }
             }
