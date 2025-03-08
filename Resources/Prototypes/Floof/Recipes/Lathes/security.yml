@@ -21,3 +21,11 @@
   materials:
      Steel: 1000
      Plastic: 500
+
+# Brought back after EE removed those
+- type: latheRecipe
+  id: ShadowkinRestraints
+  result: ClothingOuterShadowkinRestraints
+  completetime: 6
+  materials:
+    Steel: 300

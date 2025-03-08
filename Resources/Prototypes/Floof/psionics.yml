@@ -1,7 +1,6 @@
 - type: psionicPower
   id: HypnosisPower
   name: Psionic Hypnosis
-  description: action-description-hypno
   powerCategories:
   - Mentalic
   initializeFunctions:
