@@ -40,6 +40,23 @@
         },
         {
             "name": "chitinid2"
+        },
+		{
+            "name": "rodentia0"
+			"delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+			]
+        },
+		{
+            "name": "rodentia1"
+        },
+		{
+            "name": "rodentia2"
         }
     ]
 }
