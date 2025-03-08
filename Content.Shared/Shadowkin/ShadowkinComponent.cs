@@ -29,4 +29,12 @@ public sealed partial class ShadowkinComponent : Component
 
     [DataField]
     public EntityUid? ShadowkinSleepAction;
+
+    // Floofstation section begin
+    /// <summary>
+    ///     If true, the shadowkin will spawn with no abilities.
+    /// </summary>
+    [DataField]
+    public bool BlackeyeSpawn = false;
+    // Floofstation section end
 }

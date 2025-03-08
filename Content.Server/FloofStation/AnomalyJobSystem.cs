@@ -17,7 +17,6 @@ public sealed class AnomalyJobSystem : EntitySystem
             return;
 
         shadowkin.BlackeyeSpawn = false;
-
         RaiseLocalEvent(uid, new RejuvenateEvent());
     }
 }
