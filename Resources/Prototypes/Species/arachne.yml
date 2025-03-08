@@ -22,9 +22,6 @@
     FacialHair:
       points: 1
       required: false
-    HeadSide:
-      points: 3
-      required: false
     Tail:
       points: 1
       required: false
@@ -73,7 +70,6 @@
     RHand: MobHumanRHand
     Wings: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking
 
 - type: humanoidBaseSprite
   id: MobArachneEyes
