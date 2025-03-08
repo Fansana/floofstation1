@@ -2,6 +2,7 @@ using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.UI.MapObjects;
+using Content.Shared.Whitelist;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
@@ -16,6 +17,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] protected readonly SharedMapSystem Maps = default!;
     [Dependency] protected readonly SharedTransformSystem XformSystem = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public const float FTLRange = 512f;
     public const float FTLBufferRange = 8f;
@@ -84,7 +86,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
         if (HasComp<FTLMapComponent>(mapUid))
             return false;
 
-        return destination.Whitelist?.IsValid(shuttleUid, EntityManager) != false;
+        return _whitelistSystem.IsWhitelistPassOrNull(destination.Whitelist, shuttleUid);
     }
 
     /// <summary>

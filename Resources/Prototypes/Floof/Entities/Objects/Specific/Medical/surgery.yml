@@ -5,10 +5,10 @@
   suffix: debug, DO NOT MAP
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/Surgery/omnimed.rsi
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/omnimed.rsi
     state: omnimed
   - type: Item
-    sprite: Objects/Specific/Medical/Surgery/omnimed.rsi
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/omnimed.rsi
   - type: SurgeryTool
     startSound:
       path: /Audio/Medical/Surgery/saw.ogg

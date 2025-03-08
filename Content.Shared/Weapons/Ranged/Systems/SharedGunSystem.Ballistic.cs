@@ -46,6 +46,12 @@ public abstract partial class SharedGunSystem
         if (args.Handled)
             return;
 
+        if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used))
+            return;
+
+        if (GetBallisticShots(component) >= component.Capacity)
+            return;
+
         if (TryInsertAmmo(uid, component, args.Used))
         {
             Audio.PlayPredicted(component.SoundInsert, uid, args.User);
