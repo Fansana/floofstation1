@@ -208,12 +208,9 @@ public sealed partial class CrewMonitoringWindow : FancyWindow
             if (!sensor.IsAlive)
             {
                 specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Alerts/human_crew_monitoring.rsi"), "dead");
-            }
-            
-            // Floofstation - unique state for IPC
-            else if (sensor.IsDischarged)
+            }    
+            else if (sensor.IsDischarged) // Floofstation - unique state for IPC
                 specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Alerts/human_crew_monitoring.rsi"), "critbatt");
-
             else if (sensor.DamagePercentage != null)
             {
                 var index = MathF.Round(4f * sensor.DamagePercentage.Value);

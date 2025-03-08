@@ -342,9 +342,7 @@ public sealed class SuitSensorSystem : EntitySystem
             isAlive = !_mobStateSystem.IsDead(sensor.User.Value, mobState);
         
         // Floofstation - get IPC battery status
-        var isDischarged = false;
-        if (EntityManager.TryGetComponent(sensor.User.Value, out SiliconComponent? SiliconComp) && (SiliconComp.ChargeState == 0))
-            isDischarged = true;
+        var isDischarged = TryComp(sensor.User.Value, out SiliconComponent? SiliconComp) && (SiliconComp.ChargeState == 0);
 
         // get mob total damage
         var totalDamage = 0;
