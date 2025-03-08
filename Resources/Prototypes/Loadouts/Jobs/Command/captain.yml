@@ -6,7 +6,7 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingBackpackCaptain
+    - ClothingBackpackCaptainFilled
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCaptainBackpacks
@@ -20,48 +20,6 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingBackpackSatchelCaptain
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutCaptainBackpacks
-    - !type:CharacterJobRequirement
-      jobs:
-        - Captain
-
-- type: loadout
-  id: LoadoutBackpackDuffelCaptain
-  category: JobsCommandCaptain
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingBackpackDuffelCaptain
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutCaptainBackpacks
-    - !type:CharacterJobRequirement
-      jobs:
-        - Captain
-
-- type: loadout
-  id: LoadoutBackpackCaptainFilled
-  category: JobsCommandCaptain
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingBackpackCaptainFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutCaptainBackpacks
-    - !type:CharacterJobRequirement
-      jobs:
-        - Captain
-
-- type: loadout
-  id: LoadoutBackpackSatchelCaptainFilled
-  category: JobsCommandCaptain
-  cost: 0
-  exclusive: true
-  items:
     - ClothingBackpackSatchelCaptainFilled
   requirements:
     - !type:CharacterItemGroupRequirement
@@ -71,7 +29,7 @@
         - Captain
 
 - type: loadout
-  id: LoadoutBackpackDuffelCaptainFilled
+  id: LoadoutBackpackDuffelCaptain
   category: JobsCommandCaptain
   cost: 0
   exclusive: true
