@@ -1,7 +1,8 @@
 <Control xmlns="https://spacestation14.io"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    xmlns:ui="clr-namespace:Content.Client.Lobby.UI">
     <BoxContainer Name="Container" Orientation="Vertical" HorizontalExpand="True">
         <controls:StyledButtonGroup Name="ButtonGroup" Orientation="Horizontal" HorizontalExpand="True">
             <Button
@@ -36,42 +37,9 @@
 
         <Collapsible Name="SpecialMenu" HorizontalExpand="True">
             <Button Name="HeadingButton" Text="{Loc 'humanoid-profile-editor-loadouts-customize'}" ToggleMode="True" />
-
-            <CollapsibleBody HorizontalExpand="True" Margin="0 0 0 5">
-                <PanelContainer HorizontalExpand="True">
-                    <PanelContainer.PanelOverride>
-                        <graphics:StyleBoxFlat BackgroundColor="#2f2f2f" BorderColor="#2f2f2faf" BorderThickness="1" />
-                    </PanelContainer.PanelOverride>
-
-                    <BoxContainer Orientation="Vertical" Margin="3" HorizontalExpand="True">
-                        <BoxContainer Name="SpecialName" Orientation="Vertical" HorizontalExpand="True">
-                            <Label Text="{Loc 'humanoid-profile-editor-loadouts-customize-name'}" />
-                            <LineEdit Name="NameEdit" HorizontalExpand="True" />
-                        </BoxContainer>
-
-                        <BoxContainer Name="SpecialDescription" Orientation="Vertical" HorizontalExpand="True">
-                            <Label Text="{Loc 'humanoid-profile-editor-loadouts-customize-description'}" />
-                            <PanelContainer HorizontalExpand="True">
-                                <PanelContainer.PanelOverride>
-                                    <graphics:StyleBoxFlat BackgroundColor="#222222" />
-                                </PanelContainer.PanelOverride>
-
-                                <controls:ResizableControl
-                                    AllowedResizeDirection="Vertical"
-                                    HorizontalExpand="True"
-                                    MinSize="128 64">
-                                    <TextEdit Name="DescriptionEdit" HorizontalExpand="True" VerticalExpand="True" Margin="3" />
-                                </controls:ResizableControl>
-                            </PanelContainer>
-                        </BoxContainer>
-
-                        <Button Name="SpecialColorTintToggle" Text="{Loc 'humanoid-profile-editor-loadouts-customize-color'}" ToggleMode="True" Margin="0 3 0 0" StyleClasses="OpenBoth" />
-                        <ColorSelectorSliders Name="ColorEdit" Color="#fff" HorizontalExpand="True" />
-
-                        <Button Name="SaveButton" Text="{Loc 'humanoid-profile-editor-loadouts-customize-save'}" HorizontalExpand="True" Margin="0 3 0 0" StyleClasses="OpenBoth" />
-                    </BoxContainer>
-                </PanelContainer>
-            </CollapsibleBody>
+            <!-- Floofstation - fixing EE's blunders again. Be very mindful when merging upstream changes. -->
+            <!-- The rest of the collapsible is only created when the toggle button is pressed, and destroyed afterwards. -->
+            <CollapsibleBody HorizontalExpand="True" Margin="0 0 0 5"/>
         </Collapsible>
     </BoxContainer>
 </Control>

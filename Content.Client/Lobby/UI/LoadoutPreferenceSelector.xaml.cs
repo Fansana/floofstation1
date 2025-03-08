@@ -33,7 +33,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
     public const string DefaultLoadoutInfoGuidebook = "LoadoutInfo";
 
     public EntityUid DummyEntityUid;
-    private readonly IEntityManager _entityManager;
+    public readonly IEntityManager _entityManager; // Floof - making this public because fuck privacy and fuck introducing even more merge conflicts in the future
 
     public LoadoutPrototype Loadout { get; }
 
@@ -44,9 +44,11 @@ public sealed partial class LoadoutPreferenceSelector : Control
         set
         {
             _preference = value;
-            NameEdit.Text = value.CustomName ?? "";
-            DescriptionEdit.TextRope = new Rope.Leaf(value.CustomDescription ?? "");
-            ColorEdit.Color = Color.FromHex(value.CustomColorTint, Color.White);
+            // Floof - moved to LoadoutPreferenceSelectorSpecial
+            // NameEdit.Text = value.CustomName ?? "";
+            // DescriptionEdit.TextRope = new Rope.Leaf(value.CustomDescription ?? "");
+            // ColorEdit.Color = Color.FromHex(value.CustomColorTint, Color.White);
+            _special?.UpdateState(); // Floof
             if (value.CustomColorTint != null)
                 UpdatePaint(new(DummyEntityUid, _entityManager.GetComponent<PaintedComponent>(DummyEntityUid)), _entityManager);
             HeirloomButton.Pressed = value.CustomHeirloom ?? false;
@@ -82,6 +84,10 @@ public sealed partial class LoadoutPreferenceSelector : Control
     }
 
     public event Action<LoadoutPreference>? PreferenceChanged;
+    // Floofstation - adding this here only because C# won't allow it from other classes otherwise
+    public void InvokePreferenceChanged() => PreferenceChanged?.Invoke(Preference);
+    // Floofstation - this holds the special edit fields and is created at runtime
+    private LoadoutPreferenceSelectorSpecial? _special = null;
 
 
     public LoadoutPreferenceSelector(LoadoutPrototype loadout, JobPrototype highJob,
@@ -97,9 +103,10 @@ public sealed partial class LoadoutPreferenceSelector : Control
         // Show/hide the special menu and items depending on what's allowed
         HeirloomButton.Visible = loadout.CanBeHeirloom;
         SpecialMenu.Visible = Loadout.CustomName || Loadout.CustomDescription || Loadout.CustomColorTint;
-        SpecialName.Visible = Loadout.CustomName;
-        SpecialDescription.Visible = Loadout.CustomDescription;
-        SpecialColorTintToggle.Visible = Loadout.CustomColorTint;
+        // Floof - moved to LoadoutPreferenceSelectorSpecial
+        // SpecialName.Visible = Loadout.CustomName;
+        // SpecialDescription.Visible = Loadout.CustomDescription;
+        // SpecialColorTintToggle.Visible = Loadout.CustomColorTint;
 
 
         SpriteView previewLoadout;
@@ -204,28 +211,40 @@ public sealed partial class LoadoutPreferenceSelector : Control
             _preference.CustomHeirloom = args.Pressed ? true : null;
             PreferenceChanged?.Invoke(Preference);
         };
-        SaveButton.OnPressed += _ =>
-        {
-            _preference.CustomColorTint = SpecialColorTintToggle.Pressed ? ColorEdit.Color.ToHex() : null;
-            _preference.Selected = PreferenceButton.Pressed;
-            PreferenceChanged?.Invoke(Preference);
-        };
 
+        // Floofstation section - this is horrible, absolute garbage
+        HeadingButton.OnToggled += args =>
+        {
+            if (!args.Pressed)
+            {
+                // Destroy, annihilate
+                _special?.Dispose();
+                _special = null;
+            }
+            else
+            {
+                _special = new LoadoutPreferenceSelectorSpecial(this);
+                SpecialMenu.Body?.AddChild(_special);
+            }
+        };
+        // Floofstation section end
+
+        // Floofstation - moved all the stuff below to LoadoutPreferenceSelectorSpecial
         // Update prefs cache when something changes
-        NameEdit.OnTextChanged += _ =>
-            _preference.CustomName = string.IsNullOrEmpty(NameEdit.Text) ? null : NameEdit.Text;
-        DescriptionEdit.OnTextChanged += _ =>
-            _preference.CustomDescription = string.IsNullOrEmpty(Rope.Collapse(DescriptionEdit.TextRope)) ? null : Rope.Collapse(DescriptionEdit.TextRope);
-        SpecialColorTintToggle.OnToggled += args =>
-            ColorEdit.Visible = args.Pressed;
-        ColorEdit.OnColorChanged += _ =>
-        {
-            _preference.CustomColorTint = SpecialColorTintToggle.Pressed ? ColorEdit.Color.ToHex() : null;
-            UpdatePaint(new Entity<PaintedComponent>(dummyLoadoutItem, paint), entityManager);
-        };
-
-        NameEdit.PlaceHolder = loadoutName;
-        DescriptionEdit.Placeholder = new Rope.Leaf(Loc.GetString(loadoutDesc));
+        // NameEdit.OnTextChanged += _ =>
+        //     _preference.CustomName = string.IsNullOrEmpty(NameEdit.Text) ? null : NameEdit.Text;
+        // DescriptionEdit.OnTextChanged += _ =>
+        //     _preference.CustomDescription = string.IsNullOrEmpty(Rope.Collapse(DescriptionEdit.TextRope)) ? null : Rope.Collapse(DescriptionEdit.TextRope);
+        // SpecialColorTintToggle.OnToggled += args =>
+        //     ColorEdit.Visible = args.Pressed;
+        // ColorEdit.OnColorChanged += _ =>
+        // {
+        //     _preference.CustomColorTint = SpecialColorTintToggle.Pressed ? ColorEdit.Color.ToHex() : null;
+        //     UpdatePaint(new Entity<PaintedComponent>(dummyLoadoutItem, paint), entityManager);
+        // // };
+        //
+        // NameEdit.PlaceHolder = loadoutName;
+        // DescriptionEdit.Placeholder = new Rope.Leaf(Loc.GetString(loadoutDesc));
 
 
         var tooltip = new StringBuilder();
@@ -260,6 +279,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             return;
 
         // Move the special editor
+        // Floof - this is SO dumb. WHY NOT JUST ADD THE BUTTON AS THE HEADING MANUALLY IF YOU WANT IT TO ACT LIKE THAT ANYWAY?!
         var heading = SpecialMenu.Heading;
         heading.Orphan();
         ButtonGroup.AddChild(heading);
@@ -268,11 +288,11 @@ public sealed partial class LoadoutPreferenceSelector : Control
 
         // These guys are here too for reasons
         HeadingButton.SetHeight = HeirloomButton.SetHeight = GuidebookButton.SetHeight = PreferenceButton.Size.Y;
-        SpecialColorTintToggle.Pressed = ColorEdit.Visible = _preference.CustomColorTint != null;
+        // Floof - why was this ever even here? Hello?
+        // SpecialColorTintToggle.Pressed = ColorEdit.Visible = _preference.CustomColorTint != null;
 
         _initialized = true;
     }
-
 
     private void UpdatePaint(Entity<PaintedComponent> entity, IEntityManager entityManager)
     {
@@ -287,5 +307,12 @@ public sealed partial class LoadoutPreferenceSelector : Control
         var app = entityManager.System<SharedAppearanceSystem>();
         app.TryGetData(entity, PaintVisuals.Painted, out bool value);
         app.SetData(entity, PaintVisuals.Painted, !value);
+    }
+
+    // Floof - who the hell wrote the above method?
+    public void UpdatePaint()
+    {
+        var paint = _entityManager.EnsureComponent<PaintedComponent>(DummyEntityUid);
+        UpdatePaint((DummyEntityUid, paint), _entityManager);
     }
 }
