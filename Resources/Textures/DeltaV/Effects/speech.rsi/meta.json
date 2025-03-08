@@ -25,21 +25,21 @@
             "name": "felinid2"
         },
         {
-            "name": "rodentia0",
+            "name": "chitinid0",
             "delays": [
                 [
                     0.2,
                     0.3,
                     0.3,
-                    0.5
+                    0.3
                 ]
             ]
         },
         {
-            "name": "rodentia1"
+            "name": "chitinid1"
         },
         {
-            "name": "rodentia2"
+            "name": "chitinid2"
         }
     ]
 }
