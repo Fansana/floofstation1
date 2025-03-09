@@ -22,19 +22,6 @@
     jobs:
     - ChiefEngineer
 
-- type: loadout
-  id: LoadoutChiefEngineerGlovesColorYellow
-  category: JobsEngineeringChiefEngineer
-  cost: 0
-  items:
-    - ClothingHandsGlovesColorYellow
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefEngineerGloves
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefEngineer
-
 # Head
 
 # Id

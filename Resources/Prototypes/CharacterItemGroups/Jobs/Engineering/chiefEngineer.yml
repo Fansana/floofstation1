@@ -40,16 +40,12 @@
 #  id: LoadoutChiefEngineerEyes
 #  maxItems: 1
 #  items:
-
-# Floof section - Add missing Chief Engineer loadout items
-- type: characterItemGroup
-  id: LoadoutChiefEngineerGloves
-  maxItems: 1
-  items:
-    - type: loadout
-      id: LoadoutChiefEngineerGlovesColorYellow
-# Floof section end
-
+#
+#- type: characterItemGroup
+#  id: LoadoutChiefEngineerGloves
+#  maxItems: 1
+#  items:
+#
 #- type: characterItemGroup
 #  id: LoadoutChiefEngineerHead
 #  maxItems: 1

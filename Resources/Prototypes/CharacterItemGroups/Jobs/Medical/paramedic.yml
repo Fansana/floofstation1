@@ -1,15 +1,15 @@
 # Paramedic
 # Floof section - Paramedics get filled backpacks
 - type: characterItemGroup
- id: LoadoutParamedicBackpacks
- maxItems: 1
- items:
-   - type: loadout
-     id: LoadoutBackpackParamedic
-   - type: loadout
-     id: LoadoutDuffelParamedic
-   - type: loadout
-     id: LoadoutSatchelParamedic
+  id: LoadoutParamedicBackpacks
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutParamedicBagBackpack
+    - type: loadout
+      id: LoadoutParamedicBagDuffel
+    - type: loadout
+      id: LoadoutParamedicBagSatchel
 # Floof section end
 
 #- type: characterItemGroup
