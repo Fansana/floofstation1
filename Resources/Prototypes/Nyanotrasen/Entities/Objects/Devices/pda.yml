@@ -26,6 +26,14 @@
   components:
   - type: Pda
     id: PrisonGuardIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"

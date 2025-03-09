@@ -24,7 +24,7 @@
   - type: Pda
     state: pda
     paiSlot:
-      priority: -2
+      priority: -3
       whitelist:
         components:
         - PAI
@@ -36,7 +36,7 @@
         - Write
     # Frontier: space law slot
     bookSlot:
-      priority: -3
+      priority: -2
       whitelist:
         tags:
         - BookSpaceLaw
@@ -187,6 +187,14 @@
   components:
   - type: Pda
     id: SecurityCadetIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-interncadet
   - type: PdaBorderColor
     borderColor: "#717059"
@@ -483,6 +491,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
@@ -834,6 +850,14 @@
   components:
   - type: Pda
     id: HoSIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-hos
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -856,6 +880,14 @@
   components:
   - type: Pda
     id: HoSIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-hosnano
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -878,6 +910,14 @@
   components:
   - type: Pda
     id: WardenIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-warden
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -900,6 +940,14 @@
   components:
   - type: Pda
     id: SecurityIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -1204,6 +1252,14 @@
   components:
   - type: Pda
     id: DetectiveIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-detective
   - type: PdaBorderColor
     borderColor: "#774705"
@@ -1330,6 +1386,14 @@
   components:
   - type: Pda
     id: SeniorOfficerIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-seniorofficer
   - type: PdaBorderColor
     borderColor: "#A32D26"

@@ -25,6 +25,14 @@
       - SecWatchCartridge
   - type: Pda
     id: BrigmedicIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     state: pda-corpsman
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -64,6 +72,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
   - type: PdaBorderColor
     borderColor: "#470823"
   - type: Icon
@@ -103,6 +119,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
   - type: PdaBorderColor
     borderColor: "#611528"
   - type: Icon
@@ -142,6 +166,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
