@@ -19,12 +19,12 @@
     attackRate: 4
     damage:
       types:
-        Slash: 2
-        Blunt: 2
-        Structural: 4
+        Slash: 4
+        Blunt: 4
+        Structural: 8
     heavyRateModifier: 0.5
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 15
+    heavyStaminaCost: 1.1
     maxTargets: 20
     angle: 160
     soundHit:
@@ -34,8 +34,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 4
-        Structural: 4
+        Slash: 8
+        Structural: 8
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/chainsaw.rsi

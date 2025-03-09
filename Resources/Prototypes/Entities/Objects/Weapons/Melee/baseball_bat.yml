@@ -12,12 +12,12 @@
     range: 1.6
     damage:
       types:
-        Blunt: 7.5
-        Structural: 5
+        Blunt: 15
+        Structural: 10
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 0.5
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 10
+    heavyStaminaCost: 0.9
     maxTargets: 2
     angle: 120
     soundHit:
