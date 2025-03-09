@@ -5,3 +5,4 @@ guide-entry-policy-self-defence = Self-Defence
 guide-entry-policy-conductunbecoming = Conduct Unbecoming
 guide-entry-policy-appearancestandards = Appearance Standards
 guide-entry-policy-dangersfromcompetitors = Dangers from our Competitors
+guide-entry-policy-spacelaw = Space Law
