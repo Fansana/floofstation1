@@ -39,7 +39,49 @@
   - !type:CharacterJobRequirement
     jobs:
     - Paramedic
+
 # Backpacks
+- type: loadout
+  id: LoadoutParamedicBagBackpack
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackParamedicFilled
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutParamedicBagDuffel
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackDuffelParamedicFilled
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutParamedicBagSatchel
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackSatchelParamedicFilled
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
 
 # Belt
 
