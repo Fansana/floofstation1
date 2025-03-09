@@ -34,6 +34,12 @@
       whitelist:
         tags:
         - Write
+    # Frontier: space law slot
+    bookSlot:
+      priority: -3
+      whitelist:
+        tags:
+        - BookSpaceLaw
     idSlot:
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
