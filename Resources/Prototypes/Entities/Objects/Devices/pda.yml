@@ -40,6 +40,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
+        - BookJusticeSop
+        - BookSecuritySop
     idSlot:
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
