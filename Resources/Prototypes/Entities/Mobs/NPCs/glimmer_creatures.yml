@@ -119,7 +119,7 @@
   - type: DamageOnDispel
     damage:
       types:
-        Heat: 100
+        Heat: 200
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.8

@@ -28,7 +28,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      100: Dead
   - type: Damageable
     damageContainer: CorporealSpirit
     damageModifierSet: CorporealSpirit
@@ -128,7 +128,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 5
+        Piercing: 10
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -155,8 +155,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 8
-        Slash: 7
+        Piercing: 16
+        Slash: 14
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -221,7 +221,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 9
+        Heat: 18
     soundHit:
       path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
       params:
