@@ -34,6 +34,8 @@
       color: "#e8b59b"
       sprite: Mobs/Species/Human/parts.rsi
       state: l_arm
+    - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+    - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
     - map: [ "jumpsuit" ]
     - map: [ "enum.HumanoidVisualLayers.LHand" ]
       color: "#e8b59b"
