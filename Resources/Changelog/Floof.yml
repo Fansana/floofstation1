@@ -3086,3 +3086,13 @@ Entries:
   id: 331
   time: '2025-03-09T12:44:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/605
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Central Command has conducted a review of it's assignment system. Chief
+        Justice should no longer be erroneously reporting that the job needs a
+        whitelist.
+  id: 332
+  time: '2025-03-09T12:47:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/580
