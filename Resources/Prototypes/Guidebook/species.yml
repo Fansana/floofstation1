@@ -14,6 +14,13 @@
     - Harpy
     - Rodentia # Floofstation
     - Shadowkin
+    - Resomi # Goob
+    # DeltaV additions
+    - Vulpkanin
+    # Floofstation already has a harpy entry
+    #- Harpy
+    - Felinid
+    - Oni
     - Chitinid
 
 - type: guideEntry
@@ -81,11 +88,11 @@
   name: species-name-felinid
   text: "/ServerInfo/Guidebook/Mobs/DeltaV/Felinid.xml"
 
-# Floofstation already had a Harpy guide entry, so this conflicts
-#- type: guideEntry
-#  id: Harpy
-#  name: species-name-harpy
-#  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Harpy.xml"
+# Goob
+- type: guideEntry
+  id: Resomi
+  name: species-name-resomi
+  text: "/ServerInfo/Guidebook/Mobs/Resomi.xml"
 
 - type: guideEntry
   id: Vulpkanin
