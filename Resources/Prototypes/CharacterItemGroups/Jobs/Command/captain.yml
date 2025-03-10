@@ -8,6 +8,14 @@
       id: LoadoutBackpackSatchelCaptain
     - type: loadout
       id: LoadoutBackpackDuffelCaptain
+# Floof removal - Captain bags are now filled by default. Indistinguishable duplicate loadouts removed.
+#    - type: loadout
+#      id: LoadoutBackpackCaptainFilled
+#    - type: loadout
+#      id: LoadoutBackpackSatchelCaptainFilled
+#    - type: loadout
+#      id: LoadoutBackpackDuffelCaptainFilled
+# Floof removal end
 
 - type: characterItemGroup
   id: LoadoutCaptainBelt

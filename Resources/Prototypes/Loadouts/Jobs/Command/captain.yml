@@ -6,7 +6,7 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingBackpackCaptainFilled
+    - ClothingBackpackCaptainFilled # Floof - Captain bags are now filled by default.
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCaptainBackpacks
@@ -20,7 +20,7 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingBackpackSatchelCaptainFilled
+    - ClothingBackpackSatchelCaptainFilled # Floof - Captain bags are now filled by default.
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCaptainBackpacks
@@ -34,13 +34,57 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingBackpackDuffelCaptainFilled
+    - ClothingBackpackDuffelCaptainFilled # Floof - Captain bags are now filled by default.
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCaptainBackpacks
     - !type:CharacterJobRequirement
       jobs:
         - Captain
+
+# Floof removal - Captain bags are now filled by default. Indistinguishable duplicate loadouts removed.
+#- type: loadout
+#  id: LoadoutBackpackCaptainFilled
+#  category: JobsCommandCaptain
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackCaptainFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutCaptainBackpacks
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - Captain
+#
+#- type: loadout
+#  id: LoadoutBackpackSatchelCaptainFilled
+#  category: JobsCommandCaptain
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackSatchelCaptainFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutCaptainBackpacks
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - Captain
+#
+#- type: loadout
+#  id: LoadoutBackpackDuffelCaptainFilled
+#  category: JobsCommandCaptain
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackDuffelCaptainFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutCaptainBackpacks
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - Captain
+# Floof removal end
 
 # Belt
 - type: loadout
