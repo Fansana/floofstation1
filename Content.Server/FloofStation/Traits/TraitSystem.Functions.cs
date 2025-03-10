@@ -1,13 +1,11 @@
 using Content.Shared.Traits;
-//using JetBrains.Annotations;
 using Robust.Shared.Serialization.Manager;
-using Robust.Server.GameObjects; // Floofstation
-using System.Numerics; //Floofstation
+using Robust.Server.GameObjects;
+using System.Numerics;
 
 namespace Content.Server.FloofStation.Traits;
 
 // Scales/modifies the visual size of the character. DOES NOT MODIFY DENSITY/WEIGHT. Use in conjunction with FixtureDensityModifier component.
-//[UsedImplicitly]
 public sealed partial class TraitScaleVisualSize : TraitFunction 
 {
     [DataField]
