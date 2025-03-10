@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend",
+    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend, Feroxi sprites made by BlitzTheSquishy",
     "states": [
         {
             "name": "felinid0",
@@ -40,6 +40,78 @@
         },
         {
             "name": "rodentia2"
+<<<<<<< HEAD:Resources/Textures/DeltaV/Effects/speech.rsi/meta.json
+=======
+        },
+        {
+            "name": "chitinid0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "chitinid1"
+        },
+        {
+            "name": "chitinid2"
+        },
+        {
+            "name": "thaven1"
+        },
+        {
+            "name": "thaven2"
+        },
+        {
+            "name": "thaven0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "feroxi0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "feroxi1"
+        },
+        {
+            "name": "feroxi2"
+>>>>>>> ab719410330 (Shark Race - Feroxi (#1669)):Resources/Textures/_DV/Effects/speech.rsi/meta.json
+    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend, Feroxi sprites made by BlitzTheSquishy",
+        },
+        {
+            "name": "feroxi0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "feroxi1"
+        },
+        {
+            "name": "feroxi2"
         }
     ]
 }
