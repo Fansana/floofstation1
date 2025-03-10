@@ -352,38 +352,74 @@
 
 # Leg Markings
 - type: marking
-  id: FeroxiLegStripesBlitz
+  id: FeroxiLeftLegStripesBlitz
   bodyPart: LLeg
   markingCategory: LeftLeg
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
-    state: feroxi-leg-stripes-blitz
+    state: feroxi-left-leg-stripes-blitz
+    
+- type: marking
+  id: FeroxiRightLegStripesBlitz
+  bodyPart: RLeg
+  markingCategory: RightLeg
+  speciesRestriction: [ Feroxi ]
+  sprites:
+   - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
+     state: feroxi-right-leg-stripes-blitz
 
 - type: marking
-  id: FeroxiLegStripesTiger
+  id: FeroxiLeftLegStripesTiger
   bodyPart: LLeg
   markingCategory: LeftLeg
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
-    state: feroxi-leg-stripes-tiger
+    state: feroxi-left-leg-stripes-tiger
+    
+- type: marking
+  id: FeroxiRightLegStripesTiger
+  bodyPart: RLeg
+  markingCategory: RightLeg
+  speciesRestriction: [ Feroxi ]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
+    state: feroxi-right-leg-stripes-tiger
 
 # Arm Markings
 - type: marking
-  id: FeroxiArmStripesBlitz
+  id: FeroxiLeftArmStripesBlitz
   bodyPart: LArm
   markingCategory: LeftArm
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
-    state: feroxi-arm-stripes-blitz
+    state: feroxi-left-arm-stripes-blitz
 
 - type: marking
-  id: FeroxiArmStripesTiger
+  id: FeroxiRightArmStripesBlitz
+  bodyPart: RArm
+  markingCategory: RightArm
+  speciesRestriction: [ Feroxi ]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
+    state: feroxi-right-arm-stripes-blitz
+
+- type: marking
+  id: FeroxiLeftArmStripesTiger
   bodyPart: LArm
   markingCategory: LeftArm
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
-    state: feroxi-arm-stripes-tiger
+    state: feroxi-left-arm-stripes-tiger
+
+- type: marking
+  id: FeroxiRightArmStripesTiger
+  bodyPart: RArm
+  markingCategory: RightArm
+  speciesRestriction: [ Feroxi ]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/Feroxi/body_markings.rsi
+    state: feroxi-right-arm-stripes-tiger

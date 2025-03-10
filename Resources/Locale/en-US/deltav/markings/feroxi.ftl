@@ -130,14 +130,18 @@ marking-FeroxiTorsoCountershadingF-feroxi-torso-countershading-f = Countershadin
 marking-FeroxiTorsoCountershadingM = Countershading (Masculine)
 marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = Countershading
 
-marking-FeroxiLegStripesBlitz = Calf Stripes
+marking-FeroxiLeftLegStripesBlitz = Calf Stripes
+marking-FeroxiRightLegStripesBlitz = Calf Stripes
 marking-FeroxiLegStripesBlitz-feroxi-leg-stripes-blitz = Stripes
 
-marking-FeroxiLegStripesTiger = Full Stripes
+marking-FeroxiLeftLegStripesTiger = Full Stripes
+marking-FeroxiRightLegStripesTiger = Full Stripes
 marking-FeroxiLegStripesTiger-feroxi-leg-stripes-tiger = Stripes
 
-marking-FeroxiArmStripesBlitz = Shoulder Stripes
+marking-FeroxiLeftArmStripesBlitz = Shoulder Stripes
+marking-FeroxiRightArmStripesBlitz = Shoulder Stripes
 marking-FeroxiArmStripesBlitz-feroxi-arm-stripes-blitz = Stripes
 
-marking-FeroxiArmStripesTiger = Full Stripes
+marking-FeroxiLeftArmStripesTiger = Full Stripes
+marking-FeroxiRightArmStripesTiger = Full Stripes
 marking-FeroxiArmStripesTiger-feroxi-arm-stripes-tiger = Stripes
