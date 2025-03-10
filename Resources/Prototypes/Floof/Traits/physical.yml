@@ -96,6 +96,10 @@
     - Felinid # They don't need to be lighter
     - IPC
     - Rodentia
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+      - Tiny
   functions:
   - !type:TraitAddComponent
     components:
@@ -103,3 +107,37 @@
       min: 100
       factor: 0.6 # still not as light as felinids due to different fixture size
 
+- type: trait
+  id: Tiny
+  category: Physical
+  points: -4 # Maybe??
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterHeightRequirement
+    max: 158
+  - !type:CharacterWidthRequirement
+    max: 34
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+      - Lightweight
+      - Small
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: FixtureDensityModifier
+      min: 100 # I'm not actually sure the unit for this. It's definitely not Kg.  - ask Mnemo for advice? They almost certainly know what it is
+      factor: 0.5
+  - !type:TraitReplaceComponent
+    components:
+    - type: PseudoItem
+      size: Normal
+    - type: Carriable
+      freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
+      pickupDuration: 2 # Default is 3, plus they will already be lighter due to the FixtureDensityModifier
+  - !type:TraitScaleVisualSize
+    scale: 0.5, 0.5
