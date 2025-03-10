@@ -240,6 +240,10 @@
   category: Physical
   points: -3
   requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+      - Feroxi # Floof - Throwing hands? Nah, they are biting you.
   - !type:CharacterJobRequirement
     inverted: true
     jobs:
@@ -309,6 +313,7 @@
       species:
         - Harpy # Harpies already have talons
         - Arachnid # Apparently they have a "piercing" bite
+        - Feroxi # Floof - They bite. Piercing damage. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -339,6 +344,7 @@
         # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
         - Rodentia # Floof - Rodentia already has it
         - Resomi # Floof - they have claws after port of Goob changes
+        - Feroxi # Floof - They bite. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
