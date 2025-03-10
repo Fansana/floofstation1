@@ -25,3 +25,13 @@
     - h'ss
     - tzz
     - tzz
+
+# Cenvfr Ratvar, unyybjrq or gul anzr. Spoken by true Ratvarre.
+- type: language
+  id: Ratvarian
+  isVisibleLanguage: true
+  speech:
+    color: "#B5A642"
+    fontId: RulerGold
+  obfuscation:
+    !type:RatvarianObfuscation
