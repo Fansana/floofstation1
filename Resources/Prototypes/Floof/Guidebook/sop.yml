@@ -4,6 +4,10 @@
   text: "/ServerInfo/Floof/Guidebook/SOP/StandardOperatingProcedures.xml"
   children:
   - Company Policy
+  - Mutiny Guidelines
+  - Permits
+  - General Regulations
+  - Command Hierarchy
 
 - type: guideEntry
   id: Company Policy
@@ -41,3 +45,23 @@
   id: Dangers from our Competitors
   name: guide-entry-policy-dangersfromcompetitors
   text: "/ServerInfo/Floof/Guidebook/SOP/DangersfromCompetitors.xml"
+  
+- type: guideEntry
+  id: Mutiny Guidelines
+  name: guide-entry-mutinyguidelines
+  text: "/ServerInfo/Floof/Guidebook/SOP/MutinyGuidelines.xml"
+  
+- type: guideEntry
+  id: Permits
+  name: guide-entry-permits
+  text: "/ServerInfo/Floof/Guidebook/SOP/Permits.xml"
+  
+- type: guideEntry
+  id: General Regulations
+  name: guide-entry-generalregulations
+  text: "/ServerInfo/Floof/Guidebook/SOP/GeneralRegulations.xml"
+  
+- type: guideEntry
+  id: Command Hierarchy
+  name: guide-entry-commandhierarchy
+  text: "/ServerInfo/Floof/Guidebook/SOP/CommandHierarchy.xml"
