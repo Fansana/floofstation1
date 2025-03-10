@@ -7,6 +7,7 @@
   - Mutiny Guidelines
   - Permits
   - General Regulations
+  - Command Hierarchy
 
 - type: guideEntry
   id: Company Policy
@@ -59,3 +60,8 @@
   id: General Regulations
   name: guide-entry-generalregulations
   text: "/ServerInfo/Floof/Guidebook/SOP/GeneralRegulations.xml"
+  
+- type: guideEntry
+  id: Command Hierarchy
+  name: guide-entry-commandhierarchy
+  text: "/ServerInfo/Floof/Guidebook/SOP/CommandHierarchy.xml"
