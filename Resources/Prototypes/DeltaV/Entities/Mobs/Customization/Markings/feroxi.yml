@@ -354,7 +354,7 @@
 - type: marking
   id: FeroxiLegStripesBlitz
   bodyPart: LLeg
-  markingCategory: Legs
+  markingCategory: LeftLeg
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: _DV/Mobs/Customization/Feroxi/body_markings.rsi
@@ -363,7 +363,7 @@
 - type: marking
   id: FeroxiLegStripesTiger
   bodyPart: LLeg
-  markingCategory: Legs
+  markingCategory: LeftLeg
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: _DV/Mobs/Customization/Feroxi/body_markings.rsi
@@ -373,7 +373,7 @@
 - type: marking
   id: FeroxiArmStripesBlitz
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: _DV/Mobs/Customization/Feroxi/body_markings.rsi
@@ -382,7 +382,7 @@
 - type: marking
   id: FeroxiArmStripesTiger
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm
   speciesRestriction: [ Feroxi ]
   sprites:
   - sprite: _DV/Mobs/Customization/Feroxi/body_markings.rsi
