@@ -5,7 +5,7 @@
   name: feroxi body part
   components:
     - type: Sprite
-      sprite: _DV/Mobs/Species/Feroxi/parts.rsi
+      sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
 
 - type: entity
   parent: [ PartFeroxiBase, BaseTorso ]

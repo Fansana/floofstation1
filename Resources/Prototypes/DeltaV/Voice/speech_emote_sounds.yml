@@ -64,6 +64,8 @@
       collection: Mars
     Wurble:
       collection: Wurble
+    Gnash:
+      collection: FeroxiGnashes
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -230,8 +232,6 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -240,10 +240,6 @@
       collection: MaleYawn
     Gnash:
       collection: FeroxiGnashes
-    Gasp:
-      collection: MaleGasp
-    DefaultDeathgasp:
-      collection: MaleDeathGasp
 
 - type: emoteSounds
   id: FemaleFeroxi
@@ -272,11 +268,5 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Hew:
-      collection: Hew
     Gnash:
       collection: FeroxiGnashes
-    Gasp:
-      collection: FemaleGasp
-    DefaultDeathgasp:
-      collection: FemaleDeathGasp
