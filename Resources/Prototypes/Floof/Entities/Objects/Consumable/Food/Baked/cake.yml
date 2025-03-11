@@ -5,7 +5,7 @@
 
 - type: entity
   name: incomplete cake
-  parent: BaseItem # Not food because we have to slice it to eat it.
+  parent: FoodCakeBase
   id: FoodCakeTieredBase
   abstract: true
   description: A frosted cake. Too large to eat in without slicing.
@@ -16,6 +16,8 @@
     - 0,0,2,2
   - type: Sprite
     sprite: Floof/Objects/Consumable/Food/Baked/cake_tiered.rsi
+  - type: Food
+    requiresSpecialDigestion: true # Prevent eating huge cakes without slicing them.
 
 - type: entity
   parent: FoodCakeTieredBase
