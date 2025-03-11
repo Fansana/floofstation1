@@ -2,7 +2,7 @@
   id: GauzeLefteyePatch
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Harpy, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
   coloring:
     default:
       type:
@@ -16,7 +16,7 @@
   id: GauzeLefteyePad
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin, Harpy, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
   coloring:
     default:
       type:
@@ -30,7 +30,7 @@
   id: GauzeRighteyePatch
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Harpy, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
   coloring:
     default:
       type:
@@ -44,7 +44,7 @@
   id: GauzeRighteyePad
   bodyPart: Eyes
   markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin, Harpy, Rodentia, Feroxi] # Delta V - Felinid, Oni, Vulpkanin, Rodentia, Feroxi
   coloring:
     default:
       type:
