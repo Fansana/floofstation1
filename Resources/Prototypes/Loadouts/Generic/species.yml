@@ -39,7 +39,7 @@
       group: LoadoutAirTank
   items:
     - DoubleEmergencyNitrogenTankFilled
-# Floof - M3739 - Delta-V Feroxi port to current loadout systems
+# Floof - Feroxi port to current loadout systems
 - type: loadout
   id: LoadoutSpeciesEmergencyWaterVaporTank
   category: Species
@@ -78,4 +78,4 @@
     group: LoadoutAirTank
   items:
   - DoubleEmergencyWaterVaporTankFilled
-# Floof - M3739 - Feroxi end
+# Floof - M3739 - Feroxi port end
