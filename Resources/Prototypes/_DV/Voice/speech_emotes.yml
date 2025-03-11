@@ -1,4 +1,3 @@
-
 # Feroxi
 - type: emote
   id: Gnash
@@ -11,7 +10,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [gnashes.]
+  chatMessages: ["chat-emote-msg-gnash"]
   chatTriggers:
     - gnash
     - gnashes
