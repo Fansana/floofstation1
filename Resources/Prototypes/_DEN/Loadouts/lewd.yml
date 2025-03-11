@@ -1,15 +1,4 @@
 - type: loadout
-  id: LoadoutItemDoubleDildo
-  category: ItemsLewd
-  cost: 0
-  exclusive: true
-  items:
-  - DoubleDildo
-  requirements:
-  - !type:CharacterItemGroupRequirement
-    group: LoadoutLewd
-
-- type: loadout
   id: LoadoutItemDroneMask
   category: ItemsLewd
   cost: 0
