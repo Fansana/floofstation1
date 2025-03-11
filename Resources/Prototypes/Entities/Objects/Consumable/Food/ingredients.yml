@@ -478,9 +478,11 @@
           Quantity: 5
   - type: Extractable # Floof - Make butter slices grindable.
     grindableSolutionName: food
-  - type: Tag
-    tags:
-    - Slice
+# Floof removal - Removed nonexistant Slice tag. This will undoubtedly need to be re-added later
+#  - type: Tag
+#    tags:
+#    - Slice
+# Floof removal end
 
 - type: entity
   name: stick of cannabis butter
