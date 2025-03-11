@@ -3105,3 +3105,18 @@ Entries:
   id: 333
   time: '2025-03-11T15:05:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/615
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: Filled paramedic bag loadouts
+    - type: Add
+      message: >-
+        Loadouts for chief engineer's longcoat, as well as turtleneck jumpsuit
+        and jumpskirt
+    - type: Add
+      message: Administration HUD command loadout
+    - type: Remove
+      message: Removed unfilled captain bag loadouts. Filled captain bags remain.
+  id: 334
+  time: '2025-03-11T15:06:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/610
