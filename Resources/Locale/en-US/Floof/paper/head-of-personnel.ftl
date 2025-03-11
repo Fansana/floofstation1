@@ -1,4 +1,4 @@
-paperwork-header-hop = {"["}color=#1b67a5] ◥[bold]N[/bold]◣ [head=3][bold]HEAD OF PERSONAL[/bold][/head][/color]
+paperwork-header-hop = {"["}color=#1b67a5] ◥[bold]N[/bold]◣ [head=3][bold]HEAD OF PERSONNEL[/bold][/head][/color]
 paperwork-separator-hop = {"["}color=#1b67a5]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
 paperwork-hop-access-permit =
@@ -17,10 +17,10 @@ paperwork-hop-access-permit =
     {"•"} Other Notes:
     {"["}color=red]This document gives {"{"}insert name{"}"} the ability to Access stated areas unhindered.
 
-    This document must be signed, and stamped by the Head of Personal to be considered valid.[/color]
+    This document must be signed, and stamped by the Head of Personnel to be considered valid.[/color]
 
     {"["}bold]Applicant's Signature:[/bold]
-    {"["}bold]Head of Personal's Signature:[/bold]
+    {"["}bold]Head of Personnel's Signature:[/bold]
 
 paperwork-hop-job-transfer-request =
     { paperwork-header-hop }
@@ -120,7 +120,7 @@ paperwork-hop-formal-complaint =
 
     {"["}bold]Signature of Complaintant:[/bold]
 
-paperwork-hop-oder-of-dismissal =
+paperwork-hop-order-of-dismissal =
     { paperwork-header-hop }
     { paperwork-separator-hop }
         {"["}head=2]ORDER OF DISMISSAL [/head]
@@ -150,7 +150,7 @@ paperwork-hop-dismissal-of-department-head =
         {"["}bold]SECTOR:[/bold] Floof Station
         {"["}bold]STATION:[/bold] NT14-NAME-XXX
         {"["}bold]SHIFT TIME:[/bold] XX:XX
-        {"["}bold]CAPTAIN:[/bold]
+        {"["}bold]COMMANDING OFFICER:[/bold]
         {"["}bold]ACCOUNTABLE PERSON:[/bold]
         {"["}bold]JOB:[/bold]
     { paperwork-separator-hop }
@@ -162,9 +162,9 @@ paperwork-hop-dismissal-of-department-head =
 
     {"["}color=red]This document is not valid unless stamped by at least one of the required personnel.[/color]
 
-    {"["}italic]NOTE: The initialization of dismissal can only be carried out by the station captain or the Head of Personnel (with the permission of the station Captain or Central Command). The document must necessarily have the signature of the person being dismissed (except for direct disregard to sign the report). This document is recognized as valid only if there is a stamp of the station Captain.[/italic]
+    {"["}italic]NOTE: The initialization of dismissal can only be carried out by the Commanding Officer or the Head of Personnel (with the permission of the Commanding Officer or Central Command). This document must have the signature of the dismissed person (except in cases of direct refusal to sign the order). This document is only valid if there is a stamp of the Commanding Officer, or the stamp of Central Command.[/italic]
 
-    {"["}bold]Captain's Signature:
+    {"["}bold]Commanding Officer's Signature:
     Head Of Personnel's Signature:[/bold]
 
     Signature of the dismissed:
@@ -242,7 +242,7 @@ paperwork-hop-restricted-weapons-permit =
 
     {"["}color=gray]Class three armaments include but are not limited to: automatic weapons, combat explosives, and energy based melee weaponry.[/color]
 
-    {"["}color=red]This document must be signed and stamped by Head of Personals & Head of Security to be considered valid.[/color]
+    {"["}color=red]This document must be signed and stamped by Head of Personnels & Head of Security to be considered valid.[/color]
 
     {"["}bold]Head of Personnels' Stamp & Signature:[/bold]
     {"["}bold]Head of Security Stamp & Signature:[/bold]

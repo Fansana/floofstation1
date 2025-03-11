@@ -823,6 +823,7 @@
       - SpeedLoaderMagnumEmpty
       - MagazineMagnumEmpty #floof
       - MagazineMagnum #floof
+      - SterileBag #floof
       - Stunbaton
       - TargetClown
       - ClothingOuterArmorPlateCarrier
@@ -1076,6 +1077,8 @@
       - WhiteCane
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - SterileBag # floof
+      - BaseChemistryEmptyVial #floof
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -1890,8 +1893,6 @@
       - PlushieCentCom
       - PlushieSlimeTider
       - PlushieChillHuman
-      #- PlushieDino DO NOT ADD THIS!!
-      - PlushieDragon
       - PlushieFRavager
       - PlushieFPraetorian
       - PlushieFDrone

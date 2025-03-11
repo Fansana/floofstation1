@@ -1,0 +1,105 @@
+#Singular blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeBloodPack1
+  name: single blood pack recipe
+  result: Bloodpack1
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 30 #Bloodpacks are 30 per use.
+
+#Single hybrid blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeHybridBloodPack1
+  name: single hybrid blood pack recipe
+  result: Bloodpack1
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 15
+    Saline: 15
+
+#Five blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeBloodPack5
+  name: five blood pack recipe
+  result: Bloodpack5
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 150 #5 stack of 30 units per use.
+
+#Five hybrid blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeHybridBloodPack5
+  name: five hybrid blood pack recipe
+  result: Bloodpack5
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 75
+    Saline: 75
+
+#Ten blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeBloodPack10
+  name: ten blood pack recipe
+  result: Bloodpack10
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 300 #10 stack of 30 units per use.
+
+#Ten hybrid blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeHybridBloodPack10
+  name: ten hybrid blood pack recipe
+  result: Bloodpack10
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 150
+    Saline: 150
+
+#Full blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeBloodPack
+  name: full blood pack recipe
+  result: Bloodpack
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 450 #450 = 15 stack of 30 units per use.
+
+#Full hybrid blood pack recipe
+- type: microwaveMealRecipe
+  id: RecipeHybridBloodPack
+  name: full hybrid blood pack recipe
+  result: Bloodpack
+  time: 5
+  solids:
+    SterileBag: 1
+  reagents:
+    Blood: 225
+    Saline: 225
+
+#PFC based blood substitute recipe
+- type: microwaveMealRecipe
+  id: RecipePFCSubstitute
+  name: PFC blood substitute recipe
+  result: Bloodpack
+  time: 10
+  solids:
+    SterileBag: 1
+  reagents:
+    Nutriment: 30
+    Vitamin: 15
+    Saline: 50
+    Bleach: 5

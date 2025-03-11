@@ -37,6 +37,7 @@
     - JobsLogistics
     - JobsMedical
     - JobsSecurity
+    - JobsJustice # Floof
     - JobsService
 
 - type: loadoutCategory
@@ -240,7 +241,7 @@
     - JobsServiceChef
     - JobsServiceClown
     - JobsServiceJanitor
-    - JobsServiceLawyer
+    # - JobsServiceLawyer - Floof
     - JobsServiceMime
     - JobsServiceMusician
     - JobsServiceReporter
