@@ -1,8 +1,8 @@
 ﻿- type: constructionGraph
   id: CakeTiered
-  start: singleUnfrosted
+  start: start
   graph:
-    - node: singleUnfrosted
+    - node: start
       entity: FoodCakePlain # Can change this to FoodCakeTieredSingleUnfrosted if such an entity is created at some point.
       edges:
         - to: singleFrosted

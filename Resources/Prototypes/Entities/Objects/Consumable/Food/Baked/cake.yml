@@ -90,7 +90,7 @@
   components:
   - type: Construction # Floof - Add tiered cakes
     graph: CakeTiered
-    node: singleUnfrosted
+    node: start
   - type: Sprite
     state: plain
   - type: SliceableFood

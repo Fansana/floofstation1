@@ -24,6 +24,7 @@
   - type: Construction
     graph: CakeTiered
     node: singleFrosted
+    defaultTarget: doubleFrosted
   - type: Item
     size: Normal
     shape:
@@ -38,6 +39,7 @@
   - type: Construction
     graph: CakeTiered
     node: doubleUnfrosted
+    defaultTarget: doubleFrosted
   - type: Sprite
     state: double-unfrosted
 
@@ -74,6 +76,7 @@
   - type: Construction
     graph: CakeTiered
     node: tripleUnfrosted
+    defaultTarget: tripleFrosted
   - type: Sprite
     state: triple-unfrosted
 
