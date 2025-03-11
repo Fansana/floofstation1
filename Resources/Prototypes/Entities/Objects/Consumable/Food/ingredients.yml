@@ -476,6 +476,8 @@
         reagents:
         - ReagentId: Butter
           Quantity: 5
+  - type: Extractable # Floof - Make butter slices grindable.
+    grindableSolutionName: food
   - type: Tag
     tags:
     - Slice
