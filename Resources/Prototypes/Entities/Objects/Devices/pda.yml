@@ -1261,7 +1261,7 @@
   - type: Unremoveable
 
 - type: entity
-  parent: EngineerPDA
+  parent: EngineerPDA # Floof - reparented
   id: SeniorEngineerPDA
   name: senior engineer PDA
   description: Seems to have been taken apart and put back together several times.
@@ -1314,7 +1314,7 @@
     state: pda-seniorphysician
 
 - type: entity
-  parent: SecurityPDA
+  parent: SecurityPDA # Floof - reparented
   id: SeniorOfficerPDA
   name: senior officer PDA
   description: Beaten, battered and broken, but just barely useable.
