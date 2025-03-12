@@ -124,6 +124,8 @@
   items:
     - type: loadout
       id: LoadoutCommandCEOuterWinter
+    - type: loadout # Floof - Add missing Chief Engineer loadout items
+      id: LoadoutChiefEngineerOuterLongcoat
 
 - type: characterItemGroup
   id: LoadoutChiefEngineerShoes
@@ -140,3 +142,9 @@
       id: LoadoutChiefEngineerUniformSuit
     - type: loadout
       id: LoadoutEngineeringChiefEngineerUniformSkirt
+# Floof section - Add missing Chief Engineer loadout items
+    - type: loadout
+      id: LoadoutChiefEngineerUniformTurtle
+    - type: loadout
+      id: LoadoutChiefEngineerUniformTurtleSkirt
+# Floof section end

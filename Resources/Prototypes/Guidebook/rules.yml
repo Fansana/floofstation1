@@ -35,13 +35,13 @@
   id: RuleC1
   name: guide-entry-rules-c1
   priority: 1
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC1Community.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC1OutofCharacter.xml"
 
 - type: guideEntry
   id: RuleC2
   name: guide-entry-rules-c2
   priority: 2
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC2Gameplay.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC2Consent.xml"
 
 - type: guideEntry
   id: RuleC3
@@ -53,49 +53,49 @@
   id: RuleC4
   name: guide-entry-rules-c4
   priority: 4
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC4NewLife.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC4Powergaming.xml"
 
 - type: guideEntry
   id: RuleC5
   name: guide-entry-rules-c5
   priority: 5
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC5Naming.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC5RoleplayandCharacters.xml"
 
 - type: guideEntry
   id: RuleC6
   name: guide-entry-rules-c6
   priority: 6
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC6Roleplay.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC6EroticRoleplayandNSFW.xml"
 
 - type: guideEntry
   id: RuleC7
   name: guide-entry-rules-c7
   priority: 7
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC7Powergaming.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC7DeathandNewLife.xml"
 
 - type: guideEntry
   id: RuleC8
   name: guide-entry-rules-c8
   priority: 8
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC8EOR.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC8EndofRoundandEvacuation.xml"
 
 - type: guideEntry
   id: RuleC9
   name: guide-entry-rules-c9
   priority: 9
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC9ERP.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC9GeneralRolesandJobs.xml"
 
 - type: guideEntry
   id: RuleC10
   name: guide-entry-rules-c10
   priority: 10
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC10CommandAndSec.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC10CommandandSecurity.xml"
 
 - type: guideEntry
   id: RuleC11
   name: guide-entry-rules-c11
   priority: 11
-  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC11Antags.xml"
+  text: "/ServerInfo/Guidebook/ServerRules/CoreRules/RuleC11Antagonists.xml"
 
 
 # Floof: those are yet to be rework and approved before they can be added
