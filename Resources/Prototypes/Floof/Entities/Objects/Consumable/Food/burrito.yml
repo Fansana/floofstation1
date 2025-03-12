@@ -40,3 +40,30 @@
   components:
   - type: Sprite
     state: testBurrito
+ 
+- type: entity
+  name: burritoChicken
+  parent: FoodBurritoBase
+  id: FoodBurritoChicken
+  description: A very basic and run of the mill burrito, with rice chicken and cheese!
+  components:
+  - type: Sprite
+    state: testBurrito
+ 
+- type: entity
+  name: burritoGrande
+  parent: FoodBurritoBase
+  id: FoodBurritoGrande
+  description: A massive burrito with all the fillings!  Hope you're hungry!
+  components:
+  - type: Sprite
+    state: testBurrito
+ 
+- type: entity
+  name: burritoSpicy
+  parent: FoodBurritoBase
+  id: FoodBurritoSpicy
+  description: A spicy burrito, with rice, meat, cheese and extra chilis!
+  components:
+  - type: Sprite
+    state: testBurrito

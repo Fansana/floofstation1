@@ -280,3 +280,47 @@
     FoodRiceBoiled: 1
   reagents:
     Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoChicken
+  name: burrito chicken recipe
+  result: FoodBurritoChicken
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodMeatChicken: 1
+  reagents:
+    Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoGrande
+  name: burrito grande recipe
+  result: FoodBurritoGrande
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodSoybeans: 1
+    FoodTomato: 1
+    FoodCabbage: 1
+  reagents:
+    Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoSpicy
+  name: burrito spicy recipe
+  result: FoodBurritoSpicy
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodChiliPepper: 1
+  reagents:
+    Hotsauce: 5
+
