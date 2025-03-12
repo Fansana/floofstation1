@@ -1,4 +1,3 @@
-# Floof - M3739 - I really hate the fact I have to replace the 'FoodPSB' with the 'FoodTinMRE' but Feroxi need to eat so....
 - type: entity
   parent: BoxSurvivalBrigmedic
   id: BoxSurvivalBrigmedicWaterVapor
@@ -11,7 +10,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   # Intentionally wrong picture on the box. NT did not care enough to change it.
   - type: Label
@@ -29,7 +28,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -46,7 +45,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -63,7 +62,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -80,7 +79,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -97,7 +96,7 @@
     - id: EmergencyMedipen
     - id: SpaceMedipen
     - id: Flare
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -113,7 +112,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodBreadBaguette # TODO: Find a meat equivalent that is hella french - M3739
+    - id: FoodBreadBaguette
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -129,7 +128,7 @@
     - id: ExtendedEmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: SpaceMedipen
-    - id: FoodTinMRE # Floof - M3739
+    - id: FoodPSB
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
