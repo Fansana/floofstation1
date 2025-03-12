@@ -28,6 +28,8 @@
       state: "head_m"
     - type: Icon
       state: "head_m"
+    - type: InputMover
+    - type: GhostOnMove
       
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftArm ]
