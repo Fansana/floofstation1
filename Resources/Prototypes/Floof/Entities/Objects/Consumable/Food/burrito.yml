@@ -1,0 +1,42 @@
+# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_single.yml
+
+# Base
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodBurritoBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - cheesy
+      - spicy
+  - type: Food
+    transferAmount: 10
+  - type: Sprite
+    sprite: Floof/Objects/Consumable/Food/burrito.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 55
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 45
+        - ReagentId: Protein
+          Quantity: 5
+  - type: Item
+    sprite: Floof/Objects/Consumable/Food/burrito.rsi
+    storedRotation: -90
+  - type: Tag
+    tags:
+      - Meat
+
+- type: entity
+  name: burrito
+  parent: FoodBurritoBase
+  id: FoodBurritoPlain
+  description: A very basic and run of the mill burrito, with rice meat and cheese!
+  components:
+  - type: Sprite
+    state: testBurrito

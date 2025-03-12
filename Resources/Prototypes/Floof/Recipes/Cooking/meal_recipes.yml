@@ -266,3 +266,17 @@
     Cream: 15
   solids:
     FoodBowlBig: 1
+
+# Burritos
+- type: microwaveMealRecipe
+  id: RecipeBurritoPlain
+  name: burrito recipe
+  result: FoodBurritoPlain
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+  reagents:
+    Hotsauce: 5
