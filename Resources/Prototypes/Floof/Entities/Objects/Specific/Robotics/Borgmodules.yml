@@ -46,8 +46,8 @@
   - type: ItemBorgModule
     items:
     - WeaponAdvancedLaser
-    - WeaponborgPistolMk58
-    - CombatKnife
+    - BorgWeaponPistolMk58
+    - BorgChainsaw
   - type: GuideHelp
     guides:
     - Quadborgs
@@ -85,7 +85,7 @@
     - state: icon-Advmeasures
   - type: ItemBorgModule
     items:
-    - WeaponBorgEnergyShotgun
+    - BorgWeaponRifleLecter
     - BorgWeaponXrayCannon
   - type: GuideHelp
     guides:
