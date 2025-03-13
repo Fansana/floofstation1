@@ -360,7 +360,8 @@ public sealed class BloodstreamSystem : EntitySystem
     /// <summary>
     ///     Attempts to modify the blood level of this entity directly.
     /// </summary>
-    public bool TryModifyBloodLevel(EntityUid uid, FixedPoint2 amount, BloodstreamComponent? component = null, bool allowBleeding = true) // Floof - added allowBleeding
+    public bool TryModifyBloodLevel(EntityUid uid, FixedPoint2 amount, BloodstreamComponent? component = null,
+        bool createPuddle = true)
     {
         if (!Resolve(uid, ref component, logMissing: false)
             || !_solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution))
@@ -380,12 +381,12 @@ public sealed class BloodstreamSystem : EntitySystem
             return true;
 
         // Floof - if bleeding is not allowed (e.g. because blood loss was caused by negative natural regeneration), do not spill the blood
-        if (!allowBleeding)
+        if (!createPuddle)
             return true;
 
         tempSolution.AddSolution(newSol, _prototypeManager);
 
-        if (tempSolution.Volume > component.BleedPuddleThreshold)
+        if (tempSolution.Volume > component.BleedPuddleThreshold && createPuddle)
         {
             // Pass some of the chemstream into the spilled blood.
             if (_solutionContainerSystem.ResolveSolution(uid, component.ChemicalSolutionName, ref component.ChemicalSolution))
@@ -531,6 +532,6 @@ public sealed class BloodstreamSystem : EntitySystem
         if (usedThirst > 0 && thirstComp is not null)
             _thirst.ModifyThirst(ent, thirstComp, (float) -usedThirst);
 
-        return TryModifyBloodLevel(ent, ev.Amount, ent.Comp, allowBleeding: false);
+        return TryModifyBloodLevel(ent, ev.Amount, ent.Comp, createPuddle: false);
     }
 }
