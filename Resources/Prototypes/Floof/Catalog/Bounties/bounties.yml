@@ -18,7 +18,7 @@
   description: bounty-description-dildo
   entries:
   - name: bounty-item-dildo
-    amount: 7
+    amount: 8
     whitelist:
       tags:
       - Dildo
@@ -95,7 +95,7 @@
   description: bounty-description-bodybags
   entries:
   - name: bounty-item-bodybags
-    amount: 5
+    amount: 9
     whitelist:
       tags:
       - BodyBag
