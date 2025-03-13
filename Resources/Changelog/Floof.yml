@@ -3127,3 +3127,12 @@ Entries:
   id: 335
   time: '2025-03-13T17:36:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/599
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        New toolshed command to manipulate factions for NPCs and have it
+        actually reflect in who they aggro against
+  id: 336
+  time: '2025-03-13T17:41:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/613
