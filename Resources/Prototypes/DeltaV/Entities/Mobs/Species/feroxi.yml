@@ -19,7 +19,6 @@
   - type: Body
     prototype: Feroxi
     requiredLegs: 2
-  # - type: Wagging | Floof - M3739 - If we ever gave them a waggable tail to begin with. Swish swish!
   - type: Speech
     speechSounds: Tenor
     speechVerb: Feroxi
