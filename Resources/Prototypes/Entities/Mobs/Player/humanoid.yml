@@ -52,7 +52,7 @@
       state: ertleader
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
+      - NamesFirstERTLeader
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTLeader
@@ -75,7 +75,7 @@
       prototypes: [ ERTLeaderGear ]
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitaryLeader
+      - NamesFirstERTLeader
       - NamesLastMilitary
     - type: InitialInfectedExempt
 
@@ -83,7 +83,7 @@
   id: RandomHumanoidSpawnerERTLeaderEVA
   parent: RandomHumanoidSpawnerERTLeader
   name: ERT leader
-  suffix: ERTRole, Armored EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -108,17 +108,18 @@
     - type: InitialInfectedExempt
 
 - type: entity
-  id: RandomHumanoidSpawnerERTLeaderEVALecter
+  id: RandomHumanoidSpawnerERTMarinesLeader
   parent: RandomHumanoidSpawnerERTLeaderEVA
-  suffix: ERTRole, Lecter, EVA
+  name: ERT marines leader
+  suffix: ERTRole, EVA, Armed
   components:
     - type: RandomHumanoidSpawner
-      settings: ERTLeaderEVALecter
+      settings: ERTMarinesLeader
     - type: InitialInfectedExempt
 
 - type: randomHumanoidSettings
-  id: ERTLeaderEVALecter
-  parent: ERTLeaderEVA
+  id: ERTMarinesLeader
+  parent: ERTLeader
   components:
     - type: MindShield
     - type: GhostRole
@@ -128,7 +129,7 @@
         settings: short
     - type: GhostTakeoverAvailable
     - type: Loadout
-      prototypes: [ ERTLeaderGearEVALecter ]
+      prototypes: [ ERTMarinesGearLeader ]
     - type: InitialInfectedExempt
 
 ## ERT Chaplain
@@ -144,7 +145,7 @@
       state: chaplain #needs an ERT variant once a good suit it made.
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTChaplain
@@ -162,7 +163,7 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTChaplainGear ]
@@ -172,7 +173,7 @@
   id: RandomHumanoidSpawnerERTChaplainEVA
   parent: RandomHumanoidSpawnerERTChaplain
   name: ERT chaplain
-  suffix: ERTRole, Enviro EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -195,6 +196,30 @@
       prototypes: [ ERTChaplainGearEVA ]
     - type: InitialInfectedExempt
 
+- type: entity
+  id: RandomHumanoidSpawnerERTMarinesPaladin
+  parent: RandomHumanoidSpawnerERTChaplainEVA
+  name: ERT marines paladin
+  suffix: ERTRole, EVA, Armed
+  components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTPaladin
+    - NamesLastMilitary
+  - type: RandomHumanoidSpawner
+    settings: ERTMarinesPaladin
+
+- type: randomHumanoidSettings
+  id: ERTMarinesPaladin
+  parent: ERTChaplainEVA
+  components:
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTPaladin
+      - NamesLastMilitary
+    - type: Loadout
+      prototypes: [ ERTMarinesGearPaladin ]
+
 ## ERT Janitor
 
 - type: entity
@@ -208,7 +233,7 @@
       state: ertjanitor
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTJanitor
@@ -226,7 +251,7 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTJanitorGear ]
@@ -236,7 +261,7 @@
   id: RandomHumanoidSpawnerERTJanitorEVA
   parent: RandomHumanoidSpawnerERTJanitor
   name: ERT janitor
-  suffix: ERTRole, Enviro EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -272,7 +297,7 @@
       state: ertengineer
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTEngineer
@@ -290,7 +315,7 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSpecialist
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTEngineerGear ]
@@ -300,7 +325,7 @@
   id: RandomHumanoidSpawnerERTEngineerEVA
   parent: RandomHumanoidSpawnerERTEngineer
   name: ERT engineer
-  suffix: ERTRole, Enviro EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -336,7 +361,7 @@
       state: ertsecurity
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSecurity
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTSecurity
@@ -354,7 +379,7 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTSecurity
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTSecurityGear ]
@@ -364,7 +389,7 @@
   id: RandomHumanoidSpawnerERTSecurityEVA
   parent: RandomHumanoidSpawnerERTSecurity
   name: ERT security
-  suffix: ERTRole, Armored EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -388,15 +413,20 @@
     - type: InitialInfectedExempt
 
 - type: entity
-  id: RandomHumanoidSpawnerERTSecurityEVALecter
+  id: RandomHumanoidSpawnerERTMarinesBreacher
   parent: RandomHumanoidSpawnerERTSecurityEVA
-  suffix: ERTRole, Lecter, EVA
+  name: ERT marines breacher
+  suffix: ERTRole, EVA, Armed
   components:
     - type: RandomHumanoidSpawner
-      settings: ERTSecurityEVALecter
+      settings: ERTMarinesBreacher
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTBreacher
+      - NamesLastMilitary
 
 - type: randomHumanoidSettings
-  id: ERTSecurityEVALecter
+  id: ERTMarinesBreacher
   parent: ERTSecurityEVA
   components:
     - type: MindShield
@@ -406,9 +436,109 @@
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTBreacher
+      - NamesLastMilitary
     - type: Loadout
-      prototypes: [ ERTSecurityGearEVALecter ]
+      prototypes: [ ERTMarinesGearBreacher ]
     - type: InitialInfectedExempt
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMarinesRifleman
+  parent: RandomHumanoidSpawnerERTSecurityEVA
+  name: ERT marines rifleman
+  suffix: ERTRole, EVA, Armed
+  components:
+  - type: RandomHumanoidSpawner
+    settings: ERTMarinesRifleman
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTRifleman
+    - NamesLastMilitary
+
+- type: randomHumanoidSettings
+  id: ERTMarinesRifleman
+  parent: ERTSecurityEVA
+  components:
+  - type: MindShield
+  - type: GhostRole
+    name: ghost-role-information-ert-security-name
+    description: ghost-role-information-ert-security-description
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTRifleman
+    - NamesLastMilitary
+  - type: Loadout
+    prototypes: [ ERTMarinesGearRifleman ]
+  - type: InitialInfectedExempt
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMarinesLaserRifleman
+  parent: RandomHumanoidSpawnerERTSecurityEVA
+  name: ERT marines laser rifleman
+  suffix: ERTRole, EVA, Armed
+  components:
+  - type: RandomHumanoidSpawner
+    settings: ERTMarinesLaserRifleman
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTRifleman
+    - NamesLastMilitary
+
+- type: randomHumanoidSettings
+  id: ERTMarinesLaserRifleman
+  parent: ERTSecurityEVA
+  components:
+  - type: MindShield
+  - type: GhostRole
+    name: ghost-role-information-ert-security-name
+    description: ghost-role-information-ert-security-description
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTRifleman
+    - NamesLastMilitary
+  - type: Loadout
+    prototypes: [ ERTMarinesGearLaserRifleman ]
+  - type: InitialInfectedExempt
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMarinesGrenadier
+  parent: RandomHumanoidSpawnerERTSecurityEVA
+  name: ERT marines grenadier
+  suffix: ERTRole, EVA, Armed
+  components:
+  - type: RandomHumanoidSpawner
+    settings: ERTMarinesGrenadier
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTGrenadier
+    - NamesLastMilitary
+
+- type: randomHumanoidSettings
+  id: ERTMarinesGrenadier
+  parent: ERTSecurityEVA
+  components:
+  - type: MindShield
+  - type: GhostRole
+    name: ghost-role-information-ert-security-name
+    description: ghost-role-information-ert-security-description
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTGrenadier
+    - NamesLastMilitary
+  - type: Loadout
+    prototypes: [ ERTMarinesGearGrenadier ]
+  - type: InitialInfectedExempt
 
 ## ERT Medic
 
@@ -423,7 +553,7 @@
       state: ertmedical
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTMedical
       - NamesLastMilitary
     - type: RandomHumanoidSpawner
       settings: ERTMedical
@@ -441,7 +571,7 @@
     - type: GhostTakeoverAvailable
     - type: RandomMetadata
       nameSegments:
-      - NamesFirstMilitary
+      - NamesFirstERTMedical
       - NamesLastMilitary
     - type: Loadout
       prototypes: [ ERTMedicalGear ]
@@ -451,7 +581,7 @@
   id: RandomHumanoidSpawnerERTMedicalEVA
   parent: RandomHumanoidSpawnerERTMedical
   name: ERT medic
-  suffix: ERTRole, Armored EVA
+  suffix: ERTRole, EVA
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -472,6 +602,30 @@
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTMedicalGearEVA ]
+    - type: InitialInfectedExempt
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMarinesMedic
+  parent: RandomHumanoidSpawnerERTMedicalEVA
+  name: ERT marines medic
+  suffix: ERTRole, EVA, Armed
+  components:
+  - type: RandomHumanoidSpawner
+    settings: ERTMarinesMedic
+
+- type: randomHumanoidSettings
+  id: ERTMarinesMedic
+  parent: ERTMedicalEVA
+  components:
+    - type: MindShield
+    - type: GhostRole
+      name: ghost-role-information-ert-medical-name
+      description: ghost-role-information-ert-medical-description
+      raffle:
+        settings: short
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTMarinesGearMedic ]
     - type: InitialInfectedExempt
 
 ## CBURN

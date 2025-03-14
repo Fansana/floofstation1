@@ -222,6 +222,34 @@
     price: 20
 
 - type: entity
+  suffix: saline
+  parent: LargeBeaker
+  id: LargeBeakerSaline
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: Saline
+          Quantity: 100
+
+- type: entity
+  suffix: dexalin+
+  parent: LargeBeaker
+  id: LargeBeakerDex
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: DexalinPlus
+          Quantity: 100
+
+- type: entity
   name: cryostasis beaker
   parent: BaseBeakerMetallic
   description: Used to contain chemicals or solutions without reactions.
