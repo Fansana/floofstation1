@@ -15,4 +15,4 @@ marking-WingsFly = Insectoid Wings
 marking-WingsFly-fly = Wings
 
 marking-WingsDragon = Draconic Wings
-marking-WingsDragon = Wings
+marking-WingsDragon-dragon = Wings
