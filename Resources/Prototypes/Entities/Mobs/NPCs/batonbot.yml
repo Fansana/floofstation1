@@ -28,24 +28,24 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Shock: 4
+        Shock: 8
   - type: StaminaDamageOnHit
-    damage: 20
+    damage: 40
     sound: /Audio/Weapons/egloves.ogg
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      120: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 100
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 60
+        damage: 120
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

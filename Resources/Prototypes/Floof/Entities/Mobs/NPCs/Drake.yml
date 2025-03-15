@@ -138,8 +138,8 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Piercing: 5
-        Slash: 5
+        Piercing: 10
+        Slash: 10
   - type: Puller
     needsHands: false
   - type: ReplacementAccent
@@ -223,4 +223,4 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 15
+        Heat: 30

@@ -10,7 +10,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Dead #Tweak for "Acidify on Crit"
+        200: Dead #Tweak for "Acidify on Crit"
     - type: MindContainer
       showExamineInfo: False
     - type: Loadout

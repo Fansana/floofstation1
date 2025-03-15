@@ -92,8 +92,9 @@
         collection: Punch
       damage:
         types:
+          Slash: 20
           Blunt: 20
-          Structural: 20
+          Structural: 40
     - type: MeleeSpeech
     - type: UserInterface
       interfaces:
@@ -244,6 +245,7 @@
         collection: BikeHorn
       damage:
         types:
+          Slash: 5
           Blunt: 5
     - type: Loadout
       prototypes: [ HoloClownGear ]
