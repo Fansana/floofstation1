@@ -38,6 +38,8 @@
   items:
     - type: loadout
       id: LoadoutCommandEyesCommand
+    - type: loadout # Floof - Add administration HUD to command loadout
+      id: LoadoutCommandEyesHudCommand
 
 #- type: characterItemGroup
 #  id: LoadoutCommandGloves

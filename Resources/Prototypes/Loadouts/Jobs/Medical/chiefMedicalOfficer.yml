@@ -160,7 +160,7 @@
 
 - type: loadout
   id: LoadoutChiefMedicalOfficerShoesLaceup
-  category: JobsCommandCaptain
+  category: JobsMedicalChiefMedicalOfficer
   cost: 0
   exclusive: true
   requirements:
@@ -174,7 +174,7 @@
 
 - type: loadout
   id: LoadoutChiefMedicalOfficerShoesLeather
-  category: JobsCommandCaptain
+  category: JobsMedicalChiefMedicalOfficer
   cost: 0
   exclusive: true
   requirements:
@@ -212,3 +212,29 @@
         - ChiefMedicalOfficer
   items:
     - ClothingUniformJumpskirtCMO
+      
+- type: loadout
+  id: LoadoutChiefMedicalOfficerJumpsuitTurtle
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChiefMedicalOfficerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+  items:
+    - ClothingUniformJumpsuitCMOTurtle
+
+- type: loadout
+  id: LoadoutChiefMedicalOfficerJumpskirtTurtle
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChiefMedicalOfficerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+  items:
+    - ClothingUniformJumpskirtCMOTurtle

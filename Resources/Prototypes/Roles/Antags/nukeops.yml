@@ -39,7 +39,6 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
     min: 14400 # Floofstation - 4 hours
-  - !type:CharacterWhitelistRequirement
 
 #Lone Operative Gear
 - type: startingGear

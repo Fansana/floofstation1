@@ -13,3 +13,11 @@
   completetime: 2
   materials:
     Plastic: 50
+
+
+- type: latheRecipe
+  id: BaseChemistryEmptyVial
+  result: BaseChemistryEmptyVial
+  completetime: 2
+  materials:
+    Glass: 50
