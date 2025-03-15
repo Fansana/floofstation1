@@ -8,6 +8,7 @@
   - Permits
   - General Regulations
   - Command Hierarchy
+  - Alert Procedure
 
 - type: guideEntry
   id: Company Policy
@@ -65,3 +66,8 @@
   id: Command Hierarchy
   name: guide-entry-commandhierarchy
   text: "/ServerInfo/Floof/Guidebook/SOP/CommandHierarchy.xml"
+  
+- type: guideEntry
+  id: Alert Procedure
+  name: guide-entry-alertprocedure
+  text: "/ServerInfo/Floof/Guidebook/SOP/AlertProcedure.xml"
