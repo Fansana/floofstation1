@@ -1,10 +1,10 @@
 - type: loadout
-  id: LoadoutItemDroneMask
-  category: ItemsLewd
+  id: LoadoutMaskDroneMask # Floofstation
+  category: Mask # Floofstation 
   cost: 0
   exclusive: true
   items:
   - ClothingMaskGasDrone
   requirements:
   - !type:CharacterItemGroupRequirement
-    group: LoadoutLewd
+    group: LoadoutMasks2 # Floofstation

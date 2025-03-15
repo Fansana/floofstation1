@@ -345,9 +345,6 @@
   - type: AddAccentClothing
     accent: ReplacementAccent
     replacement: mumble
-  - type: Tag
-    tags:
-    - IPCMaskWearable
   - type: Construction
     graph: Muzzle
     node: muzzle
@@ -355,6 +352,7 @@
     tags:
     - WhitelistChameleon
     - MuzzleIngredient
+    - IPCMaskWearable # TheDen
 
 - type: entity
   parent: ClothingMaskPullableBase
