@@ -14,12 +14,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.75
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.5
   - type: ExplosionResistance
-    damageCoefficient: 0.15
+    damageCoefficient: 0.08
   - type: GroupExamine
   - type: Tag
     tags:
@@ -45,7 +45,7 @@
     walkModifier: 0.8
     sprintModifier: 0.8
   - type: ExplosionResistance
-    damageCoefficient: 0.15
+    damageCoefficient: 0.08
   - type: GroupExamine
   - type: Tag
     tags:
@@ -64,17 +64,17 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/fire.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.04
+    highPressureMultiplier: 0.02
   - type: TemperatureProtection
-    coefficient: 0.005
+    coefficient: 0.003
   - type: FireProtection
-    reduction: 0.65 # doesnt have a full seal so not as good
+    reduction: 0.45 # doesnt have a full seal so not as good
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.9
-        Heat: 0.8
-        Cold: 0.8
+        Slash: 0.8
+        Heat: 0.6
+        Cold: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.7
@@ -103,13 +103,13 @@
     - type: TemperatureProtection
       coefficient: 0.001
     - type: FireProtection
-      reduction: 0.8 # atmos firesuit offers best protection, hardsuits are a little vulnerable
+      reduction: 0.6 # atmos firesuit offers best protection, hardsuits are a little vulnerable
     - type: Armor
       modifiers:
         coefficients:
-          Slash: 0.9
-          Heat: 0.8
-          Cold: 0.8
+          Slash: 0.8
+          Heat: 0.6
+          Cold: 0.6
     - type: ClothingSpeedModifier
       walkModifier: 0.8
       sprintModifier: 0.8
@@ -134,7 +134,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.90
+        Heat: 0.8
         Radiation: 0.001
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/rad.rsi
@@ -174,10 +174,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
-        Heat: 0.8
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
   - type: NinjaSuit
   - type: PowerCellSlot
     cellSlotId: cell_slot

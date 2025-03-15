@@ -13,7 +13,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.9
+        Caustic: 0.4
   - type: HideLayerClothing
     slots:
     - Hair

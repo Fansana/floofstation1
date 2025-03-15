@@ -13,16 +13,16 @@
     highPressureMultiplier: 0.50
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.50
+    damageCoefficient: 0.25
   - type: Armor # Good armour resistance across the board, comparable to the standard security hardsuit.
     modifiers:
       coefficients:
-        Blunt: 0.60
-        Slash: 0.60
-        Piercing: 0.60
-        Radiation: 0.75
-        Caustic: 0.75
-        Heat: 0.75
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Radiation: 0.5
+        Caustic: 0.5
+        Heat: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -57,16 +57,16 @@
     highPressureMultiplier: 0.60
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.60
+    damageCoefficient: 0.4
   - type: Armor # Slightly less armour than the standard hardsuit, but far higher mobility.
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
+        Blunt: 0.45
+        Slash: 0.45
         Piercing: 0.65
-        Radiation: 0.80
-        Caustic: 0.80
-        Heat: 0.80
+        Radiation: 0.6
+        Caustic: 0.6
+        Heat: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -105,12 +105,12 @@
   - type: Armor # More protective than a standard security hardsuit, but far slower.
     modifiers:
       coefficients:
-        Blunt: 0.50
-        Slash: 0.50
-        Piercing: 0.50
-        Radiation: 0.70
-        Caustic: 0.70
-        Heat: 0.70
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Radiation: 0.45
+        Caustic: 0.45
+        Heat: 0.45
   - type: ClothingSpeedModifier
     walkModifier: 0.65
     sprintModifier: 0.65
@@ -149,12 +149,12 @@
   - type: Armor # About as protective as a riot hardsuit but with far less movement penalty.
     modifiers:
       coefficients:
-        Blunt: 0.50
-        Slash: 0.50
-        Piercing: 0.50
-        Radiation: 0.75
-        Caustic: 0.75
-        Heat: 0.75
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Radiation: 0.5
+        Caustic: 0.5
+        Heat: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.80
     sprintModifier: 0.80
