@@ -324,3 +324,50 @@
   reagents:
     Hotsauce: 5
 
+# Cotton Candy
+- type: microwaveMealRecipe
+  id: RecipeCottonCandy
+  name: cotton candy recipe
+  result: FoodCottonCandyBerry
+  time: 10
+  reagents:
+    JuiceBerry: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyCherry
+  name: cotton candy cherry recipe
+  result: FoodCottonCandyCherry
+  time: 10
+  reagents:
+    JuiceCherry: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyLime
+  name: cotton candy lime recipe
+  result: FoodCottonCandyLime
+  time: 10
+  reagents:
+    JuiceLime: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandySpecial
+  name: cotton candy special recipe
+  result: FoodCottonCandySpecial
+  time: 10
+  reagents:
+    JuiceBerry: 5
+    Sugar: 10
+    Gold: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyCotton
+  name: cotton candy cotton recipe
+  result: FoodCottonCandyCotton
+  time: 10
+  solids:
+    CottonBol: 1
+  reagents:
+    Sugar: 10

@@ -1,0 +1,97 @@
+# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_single.yml
+
+# Base
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodCottonCandyBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+  - type: Food
+    transferAmount: 4
+  - type: Sprite
+    sprite: Floof/Objects/Consumable/Food/cotton_candy.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Sugar
+          Quantity: 10
+  - type: Item
+    sprite: Floof/Objects/Consumable/Food/cotton_candy.rsi
+    storedRotation: -90
+  - type: Tag
+    tags:
+      - FoodSnack
+
+- type: entity
+  name: Berry blend cotton candy
+  parent: FoodCottonCandyBase
+  id: FoodCottonCandyBerry
+  description: A delicious blend of berry flavored cotton candy!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fruity
+  - type: Sprite
+    state: CottonCandyBerryBlend
+
+- type: entity
+  name: Cherry cotton candy
+  parent: FoodCottonCandyBase
+  id: FoodCottonCandyCherry
+  description: Sugery sweet cherry flavored cotton candy!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fruity
+      - sour
+  - type: Sprite
+    state: CottonCandyCherry
+
+- type: entity
+  name: Cotton Candy
+  parent: FoodCottonCandyBase
+  id: FoodCottonCandyCotton
+  description: Sugery strands of cotton spun out into a sweet moth treat!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fiber
+  - type: Sprite
+    state: CottonCandyCotton
+
+- type: entity
+  name: Ame's special cotton candy
+  parent: FoodCottonCandyBase
+  id: FoodCottonCandySpecial
+  description: Cotton candy shimmering with strands of gold!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - fruity
+      - profits
+  - type: Sprite
+    state: CottonCandySpecial
+
+- type: entity
+  name: Lime cotton candy
+  parent: FoodCottonCandyBase
+  id: FoodCottonCandyLime
+  description: Sugery sweet lime flavored cotton candy!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - sour
+      - fruity
+  - type: Sprite
+    state: CottonCandyLime
