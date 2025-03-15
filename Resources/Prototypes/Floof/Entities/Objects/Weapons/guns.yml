@@ -59,11 +59,31 @@
     autoRechargeRate: 30
 
 - type: entity
-  parent: WeaponXrayCannon
+  name: x-ray cannon
   suffix: Robot
+  parent: BaseWeaponBattery
   id: BorgWeaponXrayCannon
-  description: A weapon that is almost as infamous as its users.
+  description: Cyborg-mounted version of the experimental x-ray cannon, automatically recharging from the cyborg's power supply.
   components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-0
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: XrayLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 30
@@ -72,7 +92,7 @@
   name: mk 58
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
-  id: WeaponborgPistolMk58
+  id: BorgWeaponPistolMk58
   description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
   components:
   - type: Sprite
@@ -98,56 +118,31 @@
     startingCharge: 1000
 
 - type: entity
-  name: energy shotgun
-  parent: BaseWeaponBattery
-  id: BaseWeaponEnergyShotgun
-  abstract: true
-  description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
+  name: lecter ROW
+  parent: BaseWeaponBatterySmall
+  suffix: Robot, energy based
+  id: BorgWeaponRifleLecter
+  description: Cyborg adaptation of Nanotrasen's popular combat rifle. Reloads over time from a internal ammo fabricator.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-4
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
   - type: Gun
-    fireRate: 2
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+      path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+    fireOnDropChance: 0.5
   - type: ProjectileBatteryAmmoProvider
-    proto: eShellShotgun
-    fireCost: 150
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,1
-    sprite: Objects/Weapons/Guns/Battery/inhands_64x.rsi
-    heldPrefix: energy
-  - type: Battery
-    maxCharge: 1200
-    startingCharge: 1200
+    proto: CartridgeRifle
+    fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 24
-
-- type: entity
-  name: energy shotgun
-  parent: BaseWeaponEnergyShotgun
-  id: WeaponEnergyShotgun
-  components:
-  - type: GunRequiresWield
-  - type: Wieldable
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: WeaponEnergyShotgun
-
-- type: entity
-  suffix: Robot
-  parent: BaseWeaponEnergyShotgun
-  id: WeaponBorgEnergyShotgun
+    autoRechargeRate: 30
+  - type: Battery
+    maxCharge: 5000
+    startingCharge: 5000

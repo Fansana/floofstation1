@@ -91,3 +91,39 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 40
+
+- type: entity
+  name: chainsaw
+  suffix: Robot
+  parent: BaseItem
+  id: BorgChainsaw
+  description: I may analyze my orders, but I may not disobey them.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
+    state: icon
+  - type: MeleeWeapon
+    autoAttack: true
+    wideAnimationRotation: -135
+    attackRate: 4
+    damage:
+      types:
+        Slash: 4
+        Piercing: 3
+        Structural: 10
+    heavyRateModifier: 1
+    heavyDamageBaseModifier: 1.0
+    heavyStaminaCost: 15
+    maxTargets: 3
+    angle: 45
+    soundHit:
+      path: /Audio/Weapons/chainsaw.ogg
+      params:
+        volume: -3
+  - type: Item
+    size: Normal
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
+  - type: DisarmMalus
+  - type: UseDelay
+    delay: 1
