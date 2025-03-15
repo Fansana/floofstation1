@@ -1,8 +1,19 @@
 
 - type: trait
   id: Unborgable
-  name: trait-unborgable-name
-  description: trait-unborgable-desc
-  category: Disabilities
-  components:
-  - type: Unborgable # Automatically gets moved to the brain
+  category: Mental # Floof
+  points: 1
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: Unborgable # Automatically gets moved to the brain
