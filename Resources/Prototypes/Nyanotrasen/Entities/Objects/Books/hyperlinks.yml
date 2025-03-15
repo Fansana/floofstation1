@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseItem
+  id: BaseHyperlinkBook
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+  - type: Tag
+    tags:
+    - Book
+  - type: StaticPrice
+    price: 35
+
+- type: entity
+  parent: BaseHyperlinkBook
+  id: HyperlinkBookSupernanny
+  name: book of unsanctioned space punishments
+  description: The ravings of a madman.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Objects/Misc/books.rsi
+    layers:
+    - state: law_space
+  - type: HyperlinkBook
+    url: https://supernannyfanon.fandom.com/wiki/Category:Discipline_Techniques
