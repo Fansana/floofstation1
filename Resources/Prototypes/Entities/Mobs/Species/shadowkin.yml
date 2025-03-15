@@ -160,6 +160,8 @@
         - map: ["enum.HumanoidVisualLayers.LFoot"]
         - map: ["enum.HumanoidVisualLayers.RFoot"]
         - map: ["socks"]
+        - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+        - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
         - map: ["underpants"]
         - map: ["undershirt"]
         - map: ["jumpsuit"]
