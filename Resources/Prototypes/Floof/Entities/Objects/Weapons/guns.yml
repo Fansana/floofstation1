@@ -93,7 +93,7 @@
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
   id: BorgWeaponPistolMk58
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  description: Cyborg-mounted version of the basic mk 58 pistol, it reloads over time from a internal ammo fabricator.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -118,31 +118,56 @@
     startingCharge: 1000
 
 - type: entity
-  name: lecter ROW
-  parent: BaseWeaponBatterySmall
-  suffix: Robot, energy based
-  id: BorgWeaponRifleLecter
-  description: Cyborg adaptation of Nanotrasen's popular combat rifle. Reloads over time from a internal ammo fabricator.
+  name: energy shotgun
+  parent: BaseWeaponBattery
+  id: BaseWeaponEnergyShotgun
+  abstract: true
+  description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
   - type: Gun
-    fireRate: 5
-    selectedMode: FullAuto
-    availableModes:
-    - FullAuto
+    fireRate: 2
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
-    fireOnDropChance: 0.5
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: CartridgeRifle
-    fireCost: 100
+    proto: eShellShotgun
+    fireCost: 150
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+    sprite: Objects/Weapons/Guns/Battery/inhands_64x.rsi
+    heldPrefix: energy
+  - type: Battery
+    maxCharge: 1200
+    startingCharge: 1200
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 30
-  - type: Battery
-    maxCharge: 5000
-    startingCharge: 5000
+    autoRechargeRate: 24
+
+- type: entity
+  name: energy shotgun
+  parent: BaseWeaponEnergyShotgun
+  id: WeaponEnergyShotgun
+  components:
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: WeaponEnergyShotgun
+
+- type: entity
+  suffix: Robot
+  parent: BaseWeaponEnergyShotgun
+  id: BorgWeaponEnergyShotgun
