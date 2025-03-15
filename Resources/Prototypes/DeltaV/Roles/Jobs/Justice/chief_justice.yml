@@ -3,6 +3,7 @@
   name: job-name-chief-justice
   description: job-description-chief-justice
   playTimeTracker: JobChiefJustice
+  # whitelisted: true # whitelist requirement because I don't want any dingus judges | Floof - Chief Justice is not whitelisted.
   requirements:
     - !type:CharacterPlaytimeRequirement
       tracker: JobClerk
@@ -15,7 +16,6 @@
       min: 36000 # 10 hours
     - !type:CharacterOverallTimeRequirement
       min: 90000 # 25 hours
-    - !type:CharacterWhitelistRequirement # whitelist requirement because I don't want any dingus judges
   weight: 20
   startingGear: CJGear
   icon: "JobIconChiefJustice"

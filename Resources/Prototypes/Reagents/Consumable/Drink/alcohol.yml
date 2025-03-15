@@ -2085,7 +2085,7 @@
           amount: 0.10
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.25
 
 - type: reagent
@@ -2112,7 +2112,7 @@
           amount: 0.15
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.15
 
 - type: reagent
@@ -2139,7 +2139,7 @@
           amount: 0.10
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.15
 
 - type: reagent
@@ -2166,7 +2166,7 @@
           amount: 0.15
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.25
 
 - type: reagent
@@ -2193,7 +2193,7 @@
           amount: 0.07
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.15
 
 - type: reagent
@@ -2220,5 +2220,5 @@
           amount: 0.15
         - !type:AdjustReagent
           reagent: Theobromine
-          amount: 0.05
+          amount: 0.1
   fizziness: 0.25

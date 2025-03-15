@@ -210,7 +210,7 @@
       - SecWatchCartridge
 
 - type: entity
-  parent: BasePDA
+  parent: SciencePDA # Floof - reparented
   id: ResearchAssistantPDA
   name: research assistant PDA
   description: Why isn't it purple?
@@ -1326,7 +1326,7 @@
   - type: Unremoveable
 
 - type: entity
-  parent: BasePDA
+  parent: EngineerPDA # Floof - reparented
   id: SeniorEngineerPDA
   name: senior engineer PDA
   description: Seems to have been taken apart and put back together several times.
@@ -1341,7 +1341,7 @@
     state: pda-seniorengineer
 
 - type: entity
-  parent: BasePDA
+  parent: SciencePDA # Floof - reparented
   id: SeniorResearcherPDA
   name: senior researcher PDA
   description: Looks like it's been through years of chemical burns and explosions.
@@ -1379,7 +1379,7 @@
     state: pda-seniorphysician
 
 - type: entity
-  parent: BasePDA
+  parent: SecurityPDA # Floof - reparented
   id: SeniorOfficerPDA
   name: senior officer PDA
   description: Beaten, battered and broken, but just barely useable.
