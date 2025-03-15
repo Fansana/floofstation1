@@ -2274,11 +2274,10 @@
     access: [["Kitchen"], ["Theatre"]]
 
 # Gas Tank Dispenser
-
 - type: entity
   parent: VendingMachine
   id: VendingMachineTankDispenserEVA
-  suffix: EVA [O2, N2]
+  suffix: EVA [O2, N2, H2O] # Floof - Feroxi Port
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks.
   components:

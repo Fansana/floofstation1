@@ -195,6 +195,12 @@
         - id: DoubleEmergencyNitrogenTankFilled
       - id: EmergencyFunnyOxygenTankFilled
         weight: 0.5
+      - !type:GroupSelector # DeltaV - Random water vapor tanks spawn too
+        children:
+        - !type:EntSelector
+          id: WaterVaporTankFilled
+        - !type:EntSelector
+          id: DoubleEmergencyWaterVaporTankFilled
       - !type:GroupSelector
         weight: 3
         children:

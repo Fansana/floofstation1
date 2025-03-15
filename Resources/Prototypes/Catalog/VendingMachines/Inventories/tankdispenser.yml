@@ -3,6 +3,7 @@
   startingInventory:
     OxygenTankFilled: 10
     NitrogenTankFilled: 10
+    WaterVaporTankFilled: 10 # Floof - Feroxi Port
 
 - type: vendingMachineInventory
   id: TankDispenserEngineeringInventory

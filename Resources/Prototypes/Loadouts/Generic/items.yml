@@ -452,6 +452,10 @@
   items:
     - BoxSurvival
   requirements:
+    - !type:CharacterSpeciesRequirement
+       inverted: true
+       species:
+          - Feroxi
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
@@ -466,15 +470,59 @@
       group: LoadoutBoxKits
 
 - type: loadout
+  id: LoadoutItemBoxSurvivalWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+     species:
+       - Feroxi
+    - !type:CharacterDepartmentRequirement
+     inverted: true
+     departments:
+       - Security
+       - Medical
+       - Engineering
+    - !type:CharacterJobRequirement
+     inverted: true
+     jobs:
+        - Clown
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
   id: LoadoutItemBoxSurvivalEngineering
   category: Items
   cost: 0
   items:
     - BoxSurvivalEngineering
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
        departments:
          - Engineering
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalEngineeringWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalEngineeringWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -483,15 +531,39 @@
   category: Items
   cost: 0
   items:
-    - BoxSurvivalSecurity
+  - BoxSurvivalSecurity
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
-       departments:
-         - Security
+      departments:
+        - Security
     - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - Brigmedic
+      inverted: true
+      jobs:
+        - Brigmedic
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalSecurityWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalSecurityWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Brigmedic
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -500,11 +572,31 @@
   category: Items
   cost: 0
   items:
-    - BoxSurvivalBrigmedic
+  - BoxSurvivalBrigmedic
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterJobRequirement
-       jobs:
-         - Brigmedic
+      jobs:
+        - Brigmedic
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalBrigmedicWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalBrigmedicWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -515,6 +607,26 @@
   items:
     - BoxSurvivalMedical
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+       departments:
+         - Medical
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalMedicalWaterVapor
+  category: Items
+  cost: 0
+  items:
+    - BoxSurvivalMedicalWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
        departments:
          - Medical
@@ -528,6 +640,26 @@
   items:
     - BoxHug
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+    - !type:CharacterJobRequirement
+       jobs:
+         - Clown
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxHugWaterVapor
+  category: Items
+  cost: 0
+  items:
+    - BoxHugWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
     - !type:CharacterJobRequirement
        jobs:
          - Clown
