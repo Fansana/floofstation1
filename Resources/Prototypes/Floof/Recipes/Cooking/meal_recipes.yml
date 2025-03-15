@@ -266,3 +266,108 @@
     Cream: 15
   solids:
     FoodBowlBig: 1
+
+# Burritos
+- type: microwaveMealRecipe
+  id: RecipeBurritoPlain
+  name: burrito recipe
+  result: FoodBurritoPlain
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+  reagents:
+    Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoChicken
+  name: burrito chicken recipe
+  result: FoodBurritoChicken
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodMeatChicken: 1
+  reagents:
+    Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoGrande
+  name: burrito grande recipe
+  result: FoodBurritoGrande
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodSoybeans: 1
+    FoodTomato: 1
+    FoodCabbage: 1
+  reagents:
+    Hotsauce: 5
+
+- type: microwaveMealRecipe
+  id: RecipeBurritoSpicy
+  name: burrito spicy recipe
+  result: FoodBurritoSpicy
+  time: 15
+  solids:
+    FoodDoughTortillaFlat: 1
+    FoodMeat: 1
+    FoodCheeseSlice: 1
+    FoodRiceBoiled: 1
+    FoodChiliPepper: 1
+  reagents:
+    Hotsauce: 5
+
+# Cotton Candy
+- type: microwaveMealRecipe
+  id: RecipeCottonCandy
+  name: cotton candy recipe
+  result: FoodCottonCandyBerry
+  time: 10
+  reagents:
+    JuiceBerry: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyCherry
+  name: cotton candy cherry recipe
+  result: FoodCottonCandyCherry
+  time: 10
+  reagents:
+    JuiceCherry: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyLime
+  name: cotton candy lime recipe
+  result: FoodCottonCandyLime
+  time: 10
+  reagents:
+    JuiceLime: 5
+    Sugar: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandySpecial
+  name: cotton candy special recipe
+  result: FoodCottonCandySpecial
+  time: 10
+  reagents:
+    JuiceBerry: 5
+    Sugar: 10
+    Gold: 10
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCandyCotton
+  name: cotton candy cotton recipe
+  result: FoodCottonCandyCotton
+  time: 10
+  solids:
+    CottonBol: 1
+  reagents:
+    Sugar: 10
