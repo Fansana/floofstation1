@@ -40,7 +40,7 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Piercing: 25
+        Piercing: 50
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -79,7 +79,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
+        Piercing: 70
 
 - type: entity
   parent: BaseArrow
@@ -102,7 +102,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25
+        Piercing: 50
   - type: Construction
     graph: ImprovisedArrow
     node: ImprovisedArrow
