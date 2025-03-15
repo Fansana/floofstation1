@@ -143,7 +143,7 @@ entities:
     components:
     - type: MetaData
     - type: Transform
-      pos: 0.7117233,0.4580269
+      pos: 0.0,0.0
       parent: 1
     - type: PassiveDampening
       angularDampening: 1
@@ -688,7 +688,6 @@ entities:
             1664: 23,-40
             1667: 20,-25
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Basalt2
@@ -706,7 +705,6 @@ entities:
             4337: -50.251453,-3.7628045
             4338: -50.251453,-3.7784295
         - node:
-            cleanable: True
             zIndex: 100
             angle: -1.5707963267948966 rad
             color: '#FFFFFFFF'
@@ -768,7 +766,6 @@ entities:
           decals:
             1618: -32,34
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Basalt4
@@ -819,7 +816,6 @@ entities:
             1662: 14,-38
             1665: 28,-40
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Basalt5
@@ -842,7 +838,6 @@ entities:
             4577: -52.1701,-4.199877
             4578: -51.68668,4.9905357
         - node:
-            cleanable: True
             zIndex: 100
             angle: -1.5707963267948966 rad
             color: '#FFFFFFFF'
@@ -872,7 +867,6 @@ entities:
             1671: 24,-46
             1672: 21,-42
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Basalt6
@@ -921,7 +915,6 @@ entities:
             1663: 18,-41
             1673: 26,-44
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Basalt7
@@ -1529,7 +1522,9 @@ entities:
             5978: 73,4
             5979: 73,3
         - node:
-            color: '#373CAEFB'
+            cleanable: True
+            color: '#FFFFFF7F'
+            zIndex: 5
             id: Dirt
           decals:
             791: 31,43
@@ -1565,10 +1560,6 @@ entities:
             821: 43,43
             822: 43,42
             823: 44,43
-        - node:
-            color: '#5A699EFF'
-            id: Dirt
-          decals:
             675: 30,20
             676: 31,20
             677: 29,20
@@ -1595,10 +1586,6 @@ entities:
             698: 26,19
             699: 26,18
             700: 25,18
-        - node:
-            color: '#5E7C16FF'
-            id: Dirt
-          decals:
             1166: 26,3
             1167: 27,3
             1168: 27,4
@@ -1633,10 +1620,6 @@ entities:
             1197: 29,0
             1198: 30,0
             1199: 31,0
-        - node:
-            color: '#5E7C5FFF'
-            id: Dirt
-          decals:
             1801: 29,9
             1802: 28,9
             1803: 27,9
@@ -1655,16 +1638,7 @@ entities:
             1816: 28,12
             1817: 27,12
             1818: 26,12
-        - node:
-            cleanable: True
-            color: '#80544DE2'
-            id: Dirt
-          decals:
             2049: -26,11
-        - node:
-            color: '#B1B5C0AB'
-            id: Dirt
-          decals:
             586: 9,17
             587: 9,18
             588: 10,18
@@ -1707,10 +1681,6 @@ entities:
             625: 14,17
             626: 14,18
             627: 13,18
-        - node:
-            color: '#BD161BFF'
-            id: Dirt
-          decals:
             1132: 65,-21
             1133: 65,-22
             1134: 67,-29
@@ -1718,10 +1688,6 @@ entities:
             1136: 69,-29
             1137: 70,-29
             1138: 71,-29
-        - node:
-            color: '#D4D4D4EF'
-            id: Dirt
-          decals:
             1092: 65,-27
             1093: 65,-28
             1094: 64,-28
@@ -1743,10 +1709,6 @@ entities:
             1110: 63,-24
             1111: 64,-24
             1112: 65,-24
-        - node:
-            color: '#D60060FF'
-            id: Dirt
-          decals:
             628: 10,21
             629: 9,21
             630: 8,21
@@ -1794,10 +1756,6 @@ entities:
             672: 18,21
             673: 18,22
             674: 19,22
-        - node:
-            color: '#F38BAAFF'
-            id: Dirt
-          decals:
             1261: -34,43
             1262: -35,43
             1263: -35,42
@@ -1835,44 +1793,17 @@ entities:
             1295: -31,45
             1296: -31,46
             1297: -30,46
-        - node:
-            cleanable: True
-            color: '#FF8587CF'
-            id: Dirt
-          decals:
             1971: -35,44
-        - node:
-            color: '#FFFFFF29'
-            id: Dirt
-          decals:
             1681: -20,42
             1682: -19,43
             1683: -18,42
-        - node:
-            color: '#FFFFFF40'
-            id: Dirt
-          decals:
             1684: -19,44
-        - node:
-            zIndex: 1
-            color: '#FFFFFF42'
-            id: Dirt
-          decals:
             1610: -15,24
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#FFFFFF50'
-            id: Dirt
-          decals:
             3412: -27,47
             3413: -26,47
             3414: -27,46
             3415: -43,6
             3416: -42,6
-        - node:
-            color: '#FFFFFF7A'
-            id: Dirt
-          decals:
             4548: -51,23
             4549: -51,23
             4550: -55,27
@@ -1882,60 +1813,27 @@ entities:
             4554: -51,31
             4555: -51,35
             4556: -51,35
-        - node:
-            zIndex: 1
-            color: '#FFFFFF85'
-            id: Dirt
-          decals:
             1602: -18,27
-        - node:
-            zIndex: 1
-            color: '#FFFFFF95'
-            id: Dirt
-          decals:
             1603: -18,24
-        - node:
-            zIndex: 1
-            color: '#FFFFFFDC'
-            id: Dirt
-          decals:
             1601: -19,25
-        - node:
-            color: '#FFFFFFE3'
-            id: Dirt
-          decals:
             4558: -51,35
             4559: -51,35
-        - node:
-            color: '#FFFFFFEC'
-            id: Dirt
-          decals:
-            4405: -14.020673,-28.049881
-            4406: -14.546588,-27.475044
-            4407: -13.678216,-27.42612
-        - node:
-            zIndex: 100
-            angle: -1.5707963267948966 rad
-            color: '#FFFFFFFF'
-            id: Dirt
-          decals:
+            4405: -14,-28
+            4406: -14,-27
+            4407: -13,-27
             5898: 68,4
-        - node:
-            color: '#FFFFFFFF'
-            id: Dirt
-          decals:
-            3088: -43.959206,8.071768
-            3089: -44.931538,7.961693
-            3146: -49.02495,9.058941
-            3147: -48.492916,8.61864
-            3148: -48.401188,7.738036
-            3149: -47.53893,8.141646
-            3150: -47.777428,7.7013445
-            3151: -46.768402,7.627961
-            3152: -47.31878,7.774729
-            3153: -54.125107,4.747656
-            3154: -48.783947,2.5302687
-            3155: -50.196583,1.8698158
+            3088: -43,8
+            3089: -45,7
+            3146: -49,9
+            3147: -48,8
+            3148: -48,7
+            3149: -47,8
+            3150: -47,7
+            3151: -46,7
+            3152: -47,7
+            3153: -54,4
+            3154: -48,2
+            3155: -50,1
             3290: -43,-2
             4459: -18,-34
             4460: -20,-33
@@ -1962,11 +1860,6 @@ entities:
             4494: -20,-38
             5236: 34,-12
             5689: -1,27
-        - node:
-            cleanable: True
-            color: '#FFFFFFFF'
-            id: Dirt
-          decals:
             5690: -1,26
             5691: -3,25
             5751: -37,-20
@@ -1980,12 +1873,6 @@ entities:
             5759: -34,-23
             5760: -34,-22
             5761: -35,-22
-        - node:
-            cleanable: True
-            zIndex: 100
-            color: '#FFFFFFFF'
-            id: Dirt
-          decals:
             5941: 63,-2
             5942: 63,-3
             5943: 64,-2
@@ -2026,11 +1913,6 @@ entities:
             5990: 73,2
             5991: 73,3
             5992: 61,-2
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#FFFFFFFF'
-            id: Dirt
-          decals:
             3406: -27,45
             3407: -28,47
             3408: -26,48
@@ -2038,7 +1920,9 @@ entities:
             3410: -25,48
             3417: -43,6
         - node:
-            color: '#1D1D215D'
+            cleanable: True
+            color: '#FFFFFF7F'
+            zIndex: 5
             id: DirtHeavy
           decals:
             4657: -16,10
@@ -2054,52 +1938,21 @@ entities:
             4667: -17,12
             4668: -16,12
             4669: -20,11
-        - node:
-            color: '#1D1D21A1'
-            id: DirtHeavy
-          decals:
             4648: -22,10
             4649: -19,11
             4650: -16,11
             4651: -18,10
             4652: -21,11
             4653: -22,11
-        - node:
-            color: '#1D1D21FF'
-            id: DirtHeavy
-          decals:
             4647: -22,9
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#474F52FF'
-            id: DirtHeavy
-          decals:
             3320: -43,-2
-        - node:
-            color: '#4F4C4BCA'
-            id: DirtHeavy
-          decals:
             4192: -3,-12
             4195: -3,-13
             4196: -2,-11
             4197: -1,-11
             4198: -3,-11
-        - node:
-            angle: 3.141592653589793 rad
-            color: '#4F4C4BCA'
-            id: DirtHeavy
-          decals:
             4194: -1,-12
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#4F4C4BCA'
-            id: DirtHeavy
-          decals:
             4193: -2,-12
-        - node:
-            color: '#88566079'
-            id: DirtHeavy
-          decals:
             1045: -64,-12
             1046: -63,-12
             1047: -62,-12
@@ -2132,67 +1985,31 @@ entities:
             1074: -66,-6
             1075: -66,-5
             1076: -67,-5
-        - node:
-            color: '#9D9D97FF'
-            id: DirtHeavy
-          decals:
             3287: -43,-2
             3288: -43,-2
-        - node:
-            color: '#FFFFFF44'
-            id: DirtHeavy
-          decals:
             4938: -9,-6
             4939: -9,-5
-        - node:
-            angle: 1.5707963267948966 rad
-            color: '#FFFFFF44'
-            id: DirtHeavy
-          decals:
             4946: -7,-7
             4947: -8,-7
             4948: -8,-7
             4949: -9,-6
             4950: -8,-4
-        - node:
-            angle: 3.141592653589793 rad
-            color: '#FFFFFF44'
-            id: DirtHeavy
-          decals:
             4940: -9,-6
             4941: -9,-6
             4942: -9,-5
             4943: -9,-5
             4944: -8,-7
             4945: -7,-7
-        - node:
-            angle: 1.5707963267948966 rad
-            color: '#FFFFFF7F'
-            id: DirtHeavy
-          decals:
             4951: -4,-12
             4952: -4,-12
-        - node:
-            color: '#FFFFFF84'
-            id: DirtHeavy
-          decals:
             4936: -9,-4
             4937: -8,-5
-        - node:
-            color: '#FFFFFFFF'
-            id: DirtHeavy
-          decals:
             3289: -43,-2
             4084: -54,-12
             4085: -55,-13
             4086: -55,-10
             4934: -6,-5
             4935: -7,-5
-        - node:
-            cleanable: True
-            color: '#FFFFFFFF'
-            id: DirtHeavy
-          decals:
             959: 46,-27
             960: 35,3
             961: 34,14
@@ -2274,12 +2091,6 @@ entities:
             5725: -24,38
             5726: -24,36
             5728: -24,39
-        - node:
-            cleanable: True
-            zIndex: 100
-            color: '#FFFFFFFF'
-            id: DirtHeavy
-          decals:
             5906: 71,0
             5919: 71,2
             5920: 72,2
@@ -2295,34 +2106,19 @@ entities:
             5930: 73,-2
             5968: 73,6
             5969: 68,5
-        - node:
-            angle: 3.141592653589793 rad
-            color: '#FFFFFFFF'
-            id: DirtHeavy
-          decals:
             4087: -50,-13
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#FFFFFFFF'
-            id: DirtHeavy
-          decals:
             3404: -28,45
             3405: -27,45
             4088: -51,-13
         - node:
             cleanable: True
-            color: '#FFFFFFFF'
+            color: '#FFFFFF7F'
+            zIndex: 5
             id: DirtHeavyMonotile
           decals:
             5710: -16,30
             5713: -9,26
             5716: -8,28
-        - node:
-            cleanable: True
-            zIndex: 100
-            color: '#FFFFFFFF'
-            id: DirtHeavyMonotile
-          decals:
             5900: 72,-1
             5901: 65,-1
             5902: 70,-1
@@ -2334,32 +2130,17 @@ entities:
             5975: 69,3
             5976: 69,4
         - node:
-            color: '#1D1D21A1'
+            cleanable: True
+            color: '#FFFFFF7F'
+            zIndex: 5
             id: DirtLight
           decals:
             4654: -20,10
             4655: -21,9
-        - node:
-            color: '#4F4C4BCA'
-            id: DirtLight
-          decals:
             4199: -3,-11
             4200: -2,-12
-        - node:
-            color: '#4F6D5766'
-            id: DirtLight
-          decals:
             1918: 37,32
-        - node:
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             1917: 44,32
-        - node:
-            cleanable: True
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             874: 54,41
             875: 59,41
             876: 58,37
@@ -2505,18 +2286,7 @@ entities:
             5745: -10,32
             5746: -6,29
             5747: -5,29
-        - node:
-            zIndex: 1
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             1594: 28,27
-        - node:
-            cleanable: True
-            zIndex: 100
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             5931: 72,0
             5932: 73,-1
             5933: 70,-3
@@ -2530,18 +2300,7 @@ entities:
             5970: 73,5
             5971: 73,4
             5972: 73,3
-        - node:
-            cleanable: True
-            angle: 1.5707963267948966 rad
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             2560: 59,-12
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#FFFFFFFF'
-            id: DirtLight
-          decals:
             4092: -50,-10
             4093: -51,-10
             4094: -51,-10
@@ -2552,27 +2311,15 @@ entities:
             4099: -55,-12
             4100: -55,-12
         - node:
-            color: '#1D1D21A1'
             id: DirtMedium
+            cleanable: True
+            color: '#FFFFFF7F'
+            zIndex: 5
           decals:
             4656: -17,10
-        - node:
-            color: '#474F52FF'
-            id: DirtMedium
-          decals:
             3316: -43,-2
             3319: -43,-2
-        - node:
-            angle: 1.5707963267948966 rad
-            color: '#FFFFFF7F'
-            id: DirtMedium
-          decals:
             4953: -5,-12
-        - node:
-            cleanable: True
-            color: '#FFFFFFFF'
-            id: DirtMedium
-          decals:
             925: 36,41
             926: 30,36
             927: 31,32
@@ -2637,11 +2384,6 @@ entities:
             5748: -5,28
             5749: -6,26
             5750: -6,24
-        - node:
-            angle: 4.71238898038469 rad
-            color: '#FFFFFFFF'
-            id: DirtMedium
-          decals:
             3411: -26,48
             4089: -52,-13
             4090: -50,-12
@@ -4951,7 +4693,6 @@ entities:
             1616: 31,16
             1643: 56,-20
         - node:
-            cleanable: True
             zIndex: 100
             color: '#FFFFFFFF'
             id: Rock06
@@ -6645,6 +6386,7 @@ entities:
             3324: -41.941578,-1.8322244
         - node:
             color: '#00000026'
+            cleanable: True
             id: footprint
           decals:
             2751: -11.098538,9.7046175
@@ -6658,6 +6400,7 @@ entities:
         - node:
             angle: 3.141592653589793 rad
             color: '#0000003F'
+            cleanable: True
             id: footprint
           decals:
             2740: -10.755599,9.845897
@@ -6673,11 +6416,13 @@ entities:
             2750: -11.25695,9.644487
         - node:
             angle: -0.3490658503988659 rad
+            cleanable: True
             color: '#00000049'
             id: footprint
           decals:
             2573: 4.1039333,27.617561
         - node:
+            cleanable: True
             color: '#0000004C'
             id: footprint
           decals:
@@ -6686,6 +6431,7 @@ entities:
             2831: -10.981426,-5.853427
         - node:
             angle: 3.141592653589793 rad
+            cleanable: True
             color: '#0000004C'
             id: footprint
           decals:
@@ -6700,6 +6446,7 @@ entities:
             2828: -10.939279,7.8074503
         - node:
             angle: 4.1887902047863905 rad
+            cleanable: True
             color: '#0000004C'
             id: footprint
           decals:
@@ -6708,6 +6455,7 @@ entities:
             2803: 31.60801,-11.2237215
         - node:
             angle: 4.71238898038469 rad
+            cleanable: True
             color: '#0000004C'
             id: footprint
           decals:
@@ -6716,6 +6464,7 @@ entities:
             2822: 44.868904,-11.955917
         - node:
             angle: 5.061454830783556 rad
+            cleanable: True
             color: '#0000004C'
             id: footprint
           decals:
@@ -6724,6 +6473,7 @@ entities:
             2807: 31.149231,-11.233366
         - node:
             angle: -0.6981317007977318 rad
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
@@ -6733,6 +6483,7 @@ entities:
             2710: -19.597534,-13.135519
         - node:
             angle: -0.5235987755982988 rad
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
@@ -6740,6 +6491,7 @@ entities:
             2850: 18.561588,12.485915
             2851: 18.795038,12.319249
         - node:
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
@@ -6762,12 +6514,14 @@ entities:
             2907: 6.2306848,35.998558
         - node:
             angle: 0.6981317007977318 rad
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
             2691: 34.925564,-12.353004
         - node:
             angle: 1.5707963267948966 rad
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
@@ -6798,6 +6552,7 @@ entities:
         - node:
             angle: 3.141592653589793 rad
             color: '#00000059'
+            cleanable: True
             id: footprint
           decals:
             2579: 3.8467746,18.600864
@@ -6826,6 +6581,7 @@ entities:
         - node:
             angle: 4.71238898038469 rad
             color: '#00000059'
+            cleanable: True
             id: footprint
           decals:
             2584: 4.544463,21.13601
@@ -6849,6 +6605,7 @@ entities:
             2820: 40.370266,-11.894952
         - node:
             angle: 5.1487212933832724 rad
+            cleanable: True
             color: '#00000059'
             id: footprint
           decals:
@@ -6856,12 +6613,14 @@ entities:
             2606: 17.05508,10.843181
         - node:
             angle: -0.6981317007977318 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
             2705: -12.416942,5.147974
             2706: -13.300714,4.397974
         - node:
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
@@ -6883,18 +6642,21 @@ entities:
             2765: 3.4993868,23.14687
         - node:
             angle: 0.17453292519943295 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
             2689: 33.516533,-10.053005
         - node:
             angle: 0.6981317007977318 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
             2690: 34.95891,-11.878004
         - node:
             angle: 0.8726646259971648 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
@@ -6905,6 +6667,7 @@ entities:
             2797: 31.731052,-11.087325
         - node:
             angle: 1.5707963267948966 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
@@ -6929,6 +6692,7 @@ entities:
             2903: 8.0320635,37.183163
         - node:
             angle: 3.141592653589793 rad
+            cleanable: True
             color: '#00000066'
             id: footprint
           decals:
@@ -6947,6 +6711,7 @@ entities:
         - node:
             angle: 4.71238898038469 rad
             color: '#00000066'
+            cleanable: True
             id: footprint
           decals:
             2592: 2.0131662,6.8312235
@@ -6959,6 +6724,7 @@ entities:
             2817: 43.986233,-11.936619
             2818: 40.69489,-12.236618
         - node:
+            cleanable: True
             angle: 5.1487212933832724 rad
             color: '#00000066'
             id: footprint
@@ -6968,18 +6734,21 @@ entities:
         - node:
             angle: -0.6981317007977318 rad
             color: '#00000072'
+            cleanable: True
             id: footprint
           decals:
             2702: -13.275701,4.8813066
             2703: -12.900516,4.8396406
             2704: -12.833816,5.2563066
         - node:
+            cleanable: True
             angle: -0.3490658503988659 rad
             color: '#00000072'
             id: footprint
           decals:
             2572: 37.748882,-10.8032675
         - node:
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7010,6 +6779,7 @@ entities:
             2763: 3.1825628,22.938538
         - node:
             angle: 0.17453292519943295 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7017,6 +6787,7 @@ entities:
             2688: 33.95008,-10.211338
         - node:
             angle: 0.5235987755982988 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7026,6 +6797,7 @@ entities:
             2686: 34.216877,-10.778005
         - node:
             angle: 1.5707963267948966 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7065,6 +6837,7 @@ entities:
             2902: 7.521394,36.860245
         - node:
             angle: 3.141592653589793 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7078,6 +6851,7 @@ entities:
             2678: 69.09016,-15.333186
         - node:
             angle: 4.71238898038469 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7101,6 +6875,7 @@ entities:
             2816: 43.462997,-12.178286
         - node:
             angle: 5.1487212933832724 rad
+            cleanable: True
             color: '#00000072'
             id: footprint
           decals:
@@ -7111,17 +6886,20 @@ entities:
             2602: 16.458714,10.4127035
         - node:
             angle: -0.3490658503988659 rad
+            cleanable: True
             color: '#0000007F'
             id: footprint
           decals:
             2571: 38.090717,-10.6366005
         - node:
+            cleanable: True
             color: '#0000007F'
             id: footprint
           decals:
             2570: 38.065704,-9.668319
         - node:
             angle: 1.5707963267948966 rad
+            cleanable: True
             color: '#0000007F'
             id: footprint
           decals:
@@ -7132,11 +6910,13 @@ entities:
             2836: -7.325843,5.2193165
             2837: -6.731452,5.4693165
         - node:
+            cleanable: True
             color: '#0000008C'
             id: footprint
           decals:
             2569: 37.832256,-9.934986
         - node:
+            cleanable: True
             color: '#00000099'
             id: footprint
           decals:
@@ -7186,6 +6966,7 @@ entities:
             1732: 4.83913,35.217064
             1733: 5.266424,35.467064
         - node:
+            cleanable: True
             color: '#4D4D4DFF'
             id: footprint
           decals:
@@ -7193,12 +6974,14 @@ entities:
             3179: -52.312943,-0.40795946
         - node:
             angle: -0.3490658503988659 rad
+            cleanable: True
             color: '#8285813C'
             id: footprint
           decals:
             1723: 5.4926143,34.46163
             1724: 5.4821925,35.0658
         - node:
+            cleanable: True
             angle: -0.17453292519943295 rad
             color: '#8285813C'
             id: footprint
@@ -7218,6 +7001,7 @@ entities:
             1722: 4.982773,34.241306
         - node:
             angle: -0.17453292519943295 rad
+            cleanable: True
             color: '#82858193'
             id: footprint
           decals:
@@ -7225,6 +7009,7 @@ entities:
             1708: 4.5526347,28.148472
             1709: 4.761071,27.641556
         - node:
+            cleanable: True
             color: '#82858193'
             id: footprint
           decals:
@@ -7244,6 +7029,7 @@ entities:
             1706: 5.2508974,34.77191
         - node:
             angle: 1.5707963267948966 rad
+            cleanable: True
             color: '#ABACB4FF'
             id: footprint
           decals:
@@ -7253,6 +7039,7 @@ entities:
             5135: 23.582914,-36.991627
         - node:
             angle: 4.71238898038469 rad
+            cleanable: True
             color: '#ABACB4FF'
             id: footprint
           decals:
@@ -7262,6 +7049,7 @@ entities:
             5139: 19.582914,-34.976
         - node:
             angle: -1.5707963267948966 rad
+            cleanable: True
             color: '#FFFFFF0F'
             id: footprint
           decals:
@@ -7269,6 +7057,7 @@ entities:
             5382: 75.9365,-29.886435
             5383: 76.045876,-29.511435
         - node:
+            cleanable: True
             color: '#FFFFFF0F'
             id: footprint
           decals:
@@ -7289,7 +7078,6 @@ entities:
             3402: -51.086,-4.817685
             3403: -51.086,-4.817685
         - node:
-            cleanable: True
             angle: 1.5707963267948966 rad
             color: '#FFFFFF04'
             id: grasssnow
@@ -7345,13 +7133,11 @@ entities:
             2177: 3,-26
             2178: 4,-24
         - node:
-            cleanable: True
             color: '#FFFFFF08'
             id: grasssnow
           decals:
             1685: 31,-11
         - node:
-            cleanable: True
             angle: 1.5707963267948966 rad
             color: '#FFFFFF08'
             id: grasssnow
@@ -7439,7 +7225,6 @@ entities:
             5364: 76,-30
             5365: 86,-25
         - node:
-            cleanable: True
             angle: 1.5707963267948966 rad
             color: '#FFFFFF0C'
             id: grasssnow
@@ -7520,7 +7305,6 @@ entities:
             2183: 5,-26
             2184: 6,-26
         - node:
-            cleanable: True
             angle: 1.5707963267948966 rad
             color: '#FFFFFF11'
             id: grasssnow
