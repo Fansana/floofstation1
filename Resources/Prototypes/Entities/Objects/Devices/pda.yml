@@ -1105,6 +1105,16 @@
     id: ERTSecurityIDCard
 
 - type: entity
+  parent: ERTSecurityPDA
+  id: ERTMarinePDA
+  name: ERT marine PDA
+  suffix: Marines
+  description: Red for firepower, it has tally marks etched on the side.
+  components:
+  - type: Pda
+    id: ERTMarineIDCard
+
+- type: entity
   parent: ERTLeaderPDA
   id: CBURNPDA
   name: CBURN PDA

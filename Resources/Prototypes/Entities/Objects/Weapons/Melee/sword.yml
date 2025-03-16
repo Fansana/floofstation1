@@ -173,10 +173,10 @@
   - type: DisarmMalus
 
 - type: entity
-  name: holy claymore
+  name: sanctified blade
   parent: BaseItem
   id: ClaymoreHoly
-  description: A enchanted blade wielded by ERT Paladins, it smites anyone who it cuts.
+  description: A enchanted sword wielded by ERT Paladins, it carries the power of god in every swing.
   components:
   - type: Sharp
   - type: Sprite
@@ -184,12 +184,12 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 0.8
+    attackRate: 0.9
     range: 1.85
     damage:
       types:
         Slash: 25
-        Cellular: 5
+        Holy: 50
     bluntStaminaDamageFactor: 25.0
     heavyRateModifier: 1
     heavyRangeModifier: 1

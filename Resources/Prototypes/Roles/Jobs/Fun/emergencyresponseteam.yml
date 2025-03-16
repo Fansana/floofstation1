@@ -133,7 +133,7 @@
     - BoxCandle
     - DrinkWaterMelonJuiceJug
     - AirTankFilled
-    - Lighter
+    - FlippoEngravedLighter
     - FoodBakedBunHotX
     - FoodBakedBunHotX
     - FoodBakedBunHotX
@@ -164,7 +164,7 @@
     - BoxCandle
     - DrinkWaterMelonJuiceJug
     - AirTankFilled
-    - Lighter
+    - FlippoEngravedLighter
     - FoodBakedBunHotX
     - FoodBakedBunHotX
     - FoodBakedBunHotX
@@ -184,7 +184,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTChaplain
     suitstorage: AirTankFilled
-    id: ERTChaplainPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledChaplain
     pocket1: WeaponPistolMk58
@@ -196,7 +196,7 @@
     - ClaymoreHoly
     - MedkitCombatFilled
     - AirTankFilled
-    - Lighter
+    - FlippoEngravedLighter
 
 # Engineer
 - type: job
@@ -222,7 +222,7 @@
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskGasERT
     head: ClothingHeadHelmetERTEngineer
-    eyes: ClothingEyesGlassesMeson
+    eyes: ClothingEyesHudDiagnostic
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBasicSlim
     suitstorage: AirTankFilled
@@ -255,7 +255,7 @@
     back: ClothingBackpackERTEngineer
     shoes: ClothingShoesBootsMagSci
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesMeson
+    eyes: ClothingEyesHudDiagnostic
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     suitstorage: AirTankFilled
@@ -355,7 +355,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
-    id: ERTSecurityPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledSecurity
     pocket1: WeaponPistolMk58
@@ -386,7 +386,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
-    id: ERTSecurityPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledSecurity
     pocket1: WeaponPistolMk58
@@ -412,7 +412,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
-    id: ERTSecurityPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledSecurity
     pocket1: WeaponPistolMk58
@@ -440,7 +440,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: AirTankFilled
-    id: ERTSecurityPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledSecurity
     pocket1: WeaponPistolMk58
@@ -552,11 +552,11 @@
     back: ClothingBackpackERTMedical
     shoes: ClothingShoesBootsMagSci
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesHudMedical
+    eyes: ClothingEyesHudMedSec
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     suitstorage: AirTankFilled
-    id: ERTMedicPDA
+    id: ERTMarinePDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingFilledMedical
     pocket1: WeaponPistolMk58
@@ -632,7 +632,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTJanitor
     back: ClothingBackpackERTJanitor
-    shoes: ClothingShoesBootsMag
+    shoes: ClothingShoesBootsMagSci
     mask: ClothingMaskGasERT
     gloves: ClothingHandsGlovesColorPurple
     outerClothing: ClothingOuterHardsuitERTJanitor

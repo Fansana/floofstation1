@@ -680,7 +680,7 @@
       color: "#1B67A5"
     - state: captain
   - type: IdCard
-    jobTitle: ERT Company Commander
+    jobTitle: ERT Squad Leader
   - type: Item
     heldPrefix: gold
 
@@ -748,7 +748,7 @@
       color: "#5B97BC"
     - state: medicaldoctor
   - type: IdCard
-    jobTitle: ERT Medical Doctor
+    jobTitle: ERT Field Medic
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -765,6 +765,14 @@
     - state: securityofficer
   - type: IdCard
     jobTitle: ERT Field Officer
+
+- type: entity
+  parent: ERTSecurityIDCard
+  id: ERTMarineIDCard
+  name: ERT marine ID card
+  components:
+  - type: IdCard
+    jobTitle: ERT Marine
 
 - type: entity
   parent: IDCardStandard
