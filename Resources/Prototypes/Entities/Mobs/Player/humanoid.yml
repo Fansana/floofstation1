@@ -610,6 +610,10 @@
   name: ERT marines medic
   suffix: ERTRole, EVA, Armed
   components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstERTCorpsman
+    - NamesLastMilitary
   - type: RandomHumanoidSpawner
     settings: ERTMarinesMedic
 
@@ -623,6 +627,10 @@
       description: ghost-role-information-ert-medical-description
       raffle:
         settings: short
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstERTCorpsman
+      - NamesLastMilitary
     - type: GhostTakeoverAvailable
     - type: Loadout
       prototypes: [ ERTMarinesGearMedic ]

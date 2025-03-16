@@ -43,6 +43,11 @@
   - type: dataset
     id: NamesFirstERTMedical
     values:
+    - Doctor
+
+  - type: dataset
+    id: NamesFirstERTCorpsman
+    values:
     - Corpsman
 
   - type: dataset
