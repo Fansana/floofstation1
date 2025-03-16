@@ -218,7 +218,15 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         if (component.ContestArgs is not null)
             ev.Damage *= _contests.ContestConstructor(user, component.ContestArgs);
 
+        // Begin DeltaV additions
+        // Allow users of melee weapons to have bonuses applied
+        if (user != uid)
+        {
+            RaiseLocalEvent(user, ref ev);
+        }
+
         return DamageSpecifier.ApplyModifierSets(ev.Damage, ev.Modifiers);
+        // End DeltaV additions
     }
 
     public float GetAttackRate(EntityUid uid, EntityUid user, MeleeWeaponComponent? component = null)
