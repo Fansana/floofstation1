@@ -1375,7 +1375,25 @@
 
 - type: Tag
   id: WriteIgnoreStamps
+# EE Emote Fix Start
+- type: Tag
+  id: FelinidEmotes
 
+- type: Tag
+  id: HarpyEmotes
+
+- type: Tag
+  id: VulpEmotes
+
+- type: Tag
+  id: ShadowkinEmotes
+
+- type: Tag
+  id: SiliconEmotes
+
+- type: Tag
+  id: UnathiEmotes
+# EE Emote Fix End
 #Floof tags
 
 - type: Tag

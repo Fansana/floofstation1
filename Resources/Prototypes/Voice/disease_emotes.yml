@@ -14,8 +14,10 @@
     components:
     - Vocal
   blacklist:
+    tags:
+      - SiliconEmotes
     components:
-    - BorgChassischatMessages
+    - BorgChassis
   chatTriggers:
     - coughs
 
@@ -53,8 +55,10 @@
     components:
     - Vocal
   blacklist:
+    tags:
+      - SiliconEmotes
     components:
-    - BorgChassischatMessages
+    - BorgChassis
   chatTriggers:
     - yawns
 
