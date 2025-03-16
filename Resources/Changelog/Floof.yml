@@ -3185,3 +3185,10 @@ Entries:
   id: 341
   time: '2025-03-16T16:44:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/593
+- author: BarryNorfolk and Forzii
+  changes:
+    - type: Tweak
+      message: Oni will no longer shoot behind themselves
+  id: 342
+  time: '2025-03-16T16:44:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/578
