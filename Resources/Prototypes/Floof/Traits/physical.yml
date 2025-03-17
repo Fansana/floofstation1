@@ -110,7 +110,7 @@
 - type: trait
   id: Tiny
   category: Physical
-  points: -4 # Maybe??
+  points: -2 # with the downsides it shouldn't need to cost a lot
   requirements:
   - !type:CharacterJobRequirement
     inverted: true
@@ -118,20 +118,34 @@
     - Borg
     - MedicalBorg
   - !type:CharacterHeightRequirement
-    max: 158
+    max: 158 # was based on minimum Oni size but now Oni are restricted - still ends up smaller than the current smallest races can be
   - !type:CharacterWidthRequirement
-    max: 34
+    max: 34 # was based on minimum Oni size but now Oni are restricted - still ends up smaller than the current smallest races can be
   - !type:CharacterTraitRequirement
     inverted: true
     traits:
-      - Lightweight
-      - Small
+      - Lightweight # conflicts with FixtureDensityModifier changes
+      - Small # conflicts with PseudoItem changes
+  - !type:CharacterSpeciesRequirement 
+    inverted: true
+    species:
+    - Oni # incompatable due to use of the PlayerToolModifier and BonusMeleeDamage - a special trait will need to be made
   functions:
   - !type:TraitAddComponent
     components:
-    - type: FixtureDensityModifier
-      min: 100 # I'm not actually sure the unit for this. It's definitely not Kg.  - ask Mnemo for advice? They almost certainly know what it is
-      factor: 0.5
+    - type: FixtureDensityModifier 
+      min: 100 # kilograms per square meter, it's off because the size of the sprite is being reduced directly
+      factor: 0.5 # fear space wind
+    - type: PlayerToolModifier # this currently will not work with any race (like Oni) or trait that also uses this component
+      pryTimeMultiplier: 1.4 # 40% longer prying time
+    - type: BonusMeleeDamage # this currently will not work with any race (like Oni) or trait that also uses this component
+      damageModifierSet:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+    - type: BonusStaminaDamage # this currently will not work with any race (like Oni) or trait that also uses this component
+      multiplier: 0.8
   - !type:TraitReplaceComponent
     components:
     - type: PseudoItem
