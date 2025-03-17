@@ -275,6 +275,10 @@
       max: 150
     - !type:CharacterWidthRequirement
       max: 32
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Tiny # Floofstation
   functions:
     - !type:TraitAddComponent
       components:
