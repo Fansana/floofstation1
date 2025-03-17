@@ -70,9 +70,6 @@ language-ValyrianStandard-description =
     It is rarely spoken outside of the worlds of its native speakers, and has in modern times been supplanted by the 'Conlangs of the Sol Alliance.
     Its speakers are those who wish to uphold the traditions and beliefs of ancient peoples from before the colonial era.
 
-language-Ratvarian-name = Ratvarian
-language-Ratvarian-description = The language of the cult of Ratvar. Some have worked out how to decipher the language, but be it through growing up Ratvarian or divine intervention, speaking and understanding it comes naturally to you.
-
 language-Cat-name = Cat
 language-Cat-description = Meow
 
@@ -123,3 +120,9 @@ language-ScugSign-description = Wawa! The secret ScugSign making you able to und
 
 language-Arachnic-name = Arachnic
 language-Arachnic-description = The language of arachnids is composed of mostly clicks and hisses, it almost has a rhythmic character to it at times.
+
+language-Ratvarian-name = Ratvarian
+language-Ratvarian-description = The language of the cult of Ratvar. Some have worked out how to decipher the language, but be it through growing up Ratvarian or divine intervention, speaking and understanding it comes naturally to you.
+
+language-Schechi-name = Schechi
+language-Schechi-description = The language of Resomi, primarily featuring frontal sounds made without rounding. Fluent speakers sound quite close to birdsong.

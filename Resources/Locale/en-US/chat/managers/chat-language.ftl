@@ -17,3 +17,4 @@ chat-language-Arachnic-name = Arachnic
 chat-language-Mouse-name = Mouse
 chat-language-Marish-name = Marish
 chat-language-Ratvarian-name = Ratvarian
+chat-language-Schechi-name = Schechi
