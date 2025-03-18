@@ -16,3 +16,4 @@ chat-language-ValyrianStandard-name = Valyrian
 chat-language-Arachnic-name = Arachnic
 chat-language-Mouse-name = Mouse
 chat-language-Marish-name = Marish
+chat-language-Nehina-name = Nēhina

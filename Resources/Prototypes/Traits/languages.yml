@@ -89,6 +89,24 @@
         - ValyrianStandard
       languagesUnderstood:
         - ValyrianStandard
+        
+- type: trait
+  id: Nehina
+  category: TraitsSpeechLanguages
+  points: 1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesRacial
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+  functions:
+    - !type:TraitModifyLanguages
+      languagesSpoken:
+        - Nehina
+      languagesUnderstood:
+        - Nehina
 
 - type: trait
   id: Azaziba
