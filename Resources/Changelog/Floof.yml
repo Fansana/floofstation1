@@ -3215,3 +3215,10 @@ Entries:
   id: 345
   time: '2025-03-18T14:18:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/634
+- author: Nox38
+  changes:
+    - type: Tweak
+      message: Added semi-auto firemode to all automatic weapons.
+  id: 346
+  time: '2025-03-18T14:20:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/627
