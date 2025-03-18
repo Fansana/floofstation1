@@ -113,6 +113,12 @@
         state: "creampie_moth"
         visible: false
   - type: FootPrints
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - MothEmotes
 
 - type: entity
   parent: BaseSpeciesDummy

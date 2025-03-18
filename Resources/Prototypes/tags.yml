@@ -1393,9 +1393,18 @@
 
 - type: Tag
   id: UnathiEmotes
-# EE Emote Fix End
-#Floof tags
+  
+- type: Tag
+  id: MothEmotes
 
+- type: Tag
+  id: ArachnidEmotes
+
+- type: Tag
+  id: DionaEmotes
+# EE Emote Fix End
+
+# Floof tags
 - type: Tag
   id: BrassKnuckles
 
@@ -1430,5 +1439,4 @@
 #medical tags
 - type: Tag
   id: Sterilebag
-
 #floof tag ends
