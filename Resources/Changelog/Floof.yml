@@ -3206,3 +3206,12 @@ Entries:
   id: 344
   time: '2025-03-17T19:20:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/611
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Fixed chaplain showing up under Unknown department on crew monitor and
+        other strange behavior with chaplain ID
+  id: 345
+  time: '2025-03-18T14:18:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/634
