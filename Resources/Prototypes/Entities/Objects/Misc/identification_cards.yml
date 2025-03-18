@@ -370,8 +370,8 @@
     - state: subdepartment
       color: "#58C800"
     - state: chaplain
-    - type: PresetIdCard
-      job: Chaplain
+  - type: PresetIdCard
+    job: Chaplain
 
 - type: entity
   parent: IDCardStandard
