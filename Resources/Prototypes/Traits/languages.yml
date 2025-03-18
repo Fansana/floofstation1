@@ -96,7 +96,7 @@
   points: 1
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: TraitsLanguagesRacial
+      group: TraitsLanguagesBasic
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
