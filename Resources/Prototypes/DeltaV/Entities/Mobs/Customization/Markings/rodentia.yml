@@ -125,7 +125,7 @@
   id: RodentiaHeadTopEarSmall
   markingCategory: HeadTop
   bodyPart: HeadTop
-  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne Felinid]
+  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: small
