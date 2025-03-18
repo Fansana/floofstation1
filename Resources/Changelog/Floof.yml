@@ -3236,3 +3236,16 @@ Entries:
   id: 348
   time: '2025-03-18T21:23:49.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/612
+- author: themias
+  changes:
+    - type: Tweak
+      message: Butter can be sliced, cookie and toast recipes now use butter slices.
+    - type: Tweak
+      message: Chefvend butter reduced from 4 to 3.
+    - type: Add
+      message: >-
+        Multi-tiered celebration and wedding cakes. Don't wait for a wedding,
+        any excuse will do.
+  id: 349
+  time: '2025-03-18T22:26:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/614
