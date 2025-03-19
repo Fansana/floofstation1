@@ -17,6 +17,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadsprite_moving
+    noMovementLayers:
+      movement:
+        state: quadsprite
   - type: Stripping
   - type: IntrinsicRadioTransmitter
     channels:
@@ -53,6 +60,11 @@
   - type: SiliconLawProvider
     laws: Qborg
   - type: LeashAnchor # Floofstation
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
+
 
 - type: entity
   id: BorgChassisQuadCC
@@ -72,6 +84,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspriteCC_moving
+    noMovementLayers:
+      movement:
+        state: quadspriteCC
       
 - type: entity
   id: BorgChassisQuadsalv
@@ -91,6 +110,13 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspritesalv_moving
+    noMovementLayers:
+      movement:
+        state: quadspritesalv
   - type: IntrinsicRadioTransmitter
     channels:
     - Supply
@@ -103,8 +129,6 @@
     - Binary
     - Common
     - Science
-  - type: Construction
-    node: cyborg
   - type: BorgChassis
     maxModules: 4
     moduleWhitelist:
@@ -117,3 +141,163 @@
     access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
   - type: SiliconLawProvider
     laws: Corporate
+
+- type: entity
+  id: BorgChassisQuadserv
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: quadspriteserv
+      map: ["movement"]
+    - state: quadspriteservl
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspriteservr
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspriteserv_moving
+    noMovementLayers:
+      movement:
+        state: quadspriteserv
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleService
+    hasMindState: quadspriteservl
+    noMindState: quadspriteservr
+  - type: AccessReader
+    access: [["Cargo"], ["Service"], ["Command"], ["Research"]]
+  - type: SiliconLawProvider
+    laws: StationEfficiency
+    
+- type: entity
+  id: BorgChassisQuadmed
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: quadspritemed
+      map: ["movement"]
+    - state: quadspritemedl
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspritemedr
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: quadspritemed_moving
+    noMovementLayers:
+      movement:
+        state: quadspritemed
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleMedical
+    hasMindState: quadspritemedl
+    noMindState: quadspritemedr
+  - type: AccessReader
+    access: [["Medical"], ["Salvage"], ["Command"], ["Research"]]
+  - type: SiliconLawProvider
+    laws: Medical
+    
+- type: entity
+  id: BorgChassisApex
+  parent: BorgChassisQuad
+  components:
+  - type: Sprite
+    sprite: Floof/Mobs/Silicon/quad.rsi
+    scale: 0.7, 0.7
+    layers:
+    - state: Apex
+      map: ["movement"]
+    - state: quadspritel
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: quadspriter
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: Apex_moving
+    noMovementLayers:
+      movement:
+        state: Apex
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Medical
+    - Supply
+    - Service
+    - Security
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Medical
+    - Supply
+    - Service
+    - Security
+    - Binary
+    - Common
+    - Science
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleMedical
+      - BorgModuleService
+      - BorgModuleSecurity
+      - BorgModuleCargo
+      - BorgModuleEngineering
+    hasMindState: quadspritel
+    noMindState: quadspriter
+  - type: AccessReader
+    access: [["Medical"], ["Salvage"], ["Service"], ["Security"], ["Command"], ["Research"]]
+  - type: SiliconLawProvider
+    laws: Qborg

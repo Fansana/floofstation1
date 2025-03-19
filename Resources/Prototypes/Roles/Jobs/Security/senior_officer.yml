@@ -3,11 +3,11 @@
   name: job-name-senior-officer
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
-  setPreference: false # DeltaV - Disable Senior Roles round start selection
+  setPreference: true # DeltaV - Disable Senior Roles round start selection #floof - toggle to true to reenable
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
-      min: 3600 # Floofstation - 1 hour
+      min: 144000 # Floofstation 40 hrs
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos

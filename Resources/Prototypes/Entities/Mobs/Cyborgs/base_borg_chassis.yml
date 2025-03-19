@@ -211,6 +211,7 @@
     - DoorBumpOpener
     - FootstepSound
     - CanPilot
+    - SiliconEmotes
   - type: Emoting
   - type: GuideHelp
     guides:
@@ -229,6 +230,8 @@
     - RobotTalk
   - type: PsionicInsulation
   - type: Vore # Floofstation - Vore
+    canVore: true
+    canBeVored: false
 
 - type: entity
   abstract: true

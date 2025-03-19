@@ -6,3 +6,18 @@
     PlasmaGlass: 500
     Plasteel: 500
     Silver: 500
+
+- type: latheRecipe
+  id: SterileBag
+  result: SterileBag
+  completetime: 2
+  materials:
+    Plastic: 50
+
+
+- type: latheRecipe
+  id: BaseChemistryEmptyVial
+  result: BaseChemistryEmptyVial
+  completetime: 2
+  materials:
+    Glass: 50

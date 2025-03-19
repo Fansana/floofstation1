@@ -150,6 +150,8 @@
       - ExteriorLightTube
       - LightBulb
       - LedLightBulb
+      - DimLightBulb
+      - WarmLightBulb
       - Bucket
       - DrinkMug
       - DrinkMugMetal
@@ -167,6 +169,7 @@
       - SprayBottle
       - MopItem
       - Holoprojector
+      - HoloprojectorEngineering # Floof
       - Mousetrap
       - LightReplacer
       - TrashBag
@@ -199,6 +202,7 @@
       - ShockCollar # FloofStation
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
+      - ToolRadioHandheld # Floofstation
       - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
@@ -326,6 +330,7 @@
       - SynthesizerInstrument
       - RPED
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -369,6 +374,7 @@
       - MofficTranslator
       - ArachnicTranslatorImplanter # Floofstation
       - ArachnicTranslator # Floofstation
+      - ClothingHarvestBag # Floofstation
       - RCDAmmo #DeltaV
       - RCD #EE
   - type: EmagLatheRecipes
@@ -817,6 +823,7 @@
       - SpeedLoaderMagnumEmpty
       - MagazineMagnumEmpty #floof
       - MagazineMagnum #floof
+      - SterileBag #floof
       - Stunbaton
       - TargetClown
       - ClothingOuterArmorPlateCarrier
@@ -1070,6 +1077,8 @@
       - WhiteCane
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - SterileBag # floof
+      - BaseChemistryEmptyVial #floof
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -1342,6 +1351,9 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
+      - ClothingUniformJumpsuitAtmos # Floof
+      - ClothingUniformJumpskirtAtmos # Floof
+      - ClothingUniformJumpsuitAtmosCasual # Floof
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingHeadHatCapcap
@@ -1368,6 +1380,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ClothingUniformJumpsuitCMOTurtle
+      - ClothingUniformJumpskirtCMOTurtle
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -1428,6 +1442,9 @@
       - ClothingHeadHatBeretRND
       - ClothingUniformJumpsuitResearchDirector
       - ClothingUniformJumpskirtResearchDirector
+      - ClothingUniformJumpsuitRoboticist # Floof
+      - ClothingUniformJumpskirtRoboticist # Floof
+      - ClothingOuterRoboOveralls # Floof
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingUniformJumpsuitSeniorResearcher
@@ -1511,6 +1528,7 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      # Floofstation section start
       # Floofstation - Collars
       - ClothingNeckCollarCmd
       # Floofstation - Socks, Armwarmers ect
@@ -1545,27 +1563,70 @@
       - ClothingHandsEngiWarmers
       - ClothingUnderSocksEngi
       - ClothingUniformEngiThong
+      - ClothingHandsChiefEngiWarmers
+      - ClothingUnderSocksChiefEngi
+      - ClothingUniformChiefEngiThong
       - ClothingHandsEpiWarmers
       - ClothingUnderSocksEpi
       - ClothingUniformEpiThong
       - ClothingHandsChaplainWarmers
       - ClothingUnderSocksChaplain
       - ClothingUniformChaplainThong
+      - ClothingHandsEpiHeadWarmers
+      - ClothingUnderSocksEpiHead
+      - ClothingUniformEpiHeadThong
+      - ClothingHandsMantisEpiWarmers
+      - ClothingUnderSocksMantisEpi
+      - ClothingUniformMantisEpiThong
       - ClothingHandsLogisWarmers
       - ClothingUnderSocksLogis
       - ClothingUniformLogisThong
+      - ClothingHandsLOLogisWarmers
+      - ClothingUnderSocksLOLogis
+      - ClothingUniformLOLogisThong
+      - ClothingHandsCourierWarmers
+      - ClothingUnderSocksCourier
+      - ClothingUniformCourierThong
       - ClothingHandsMedicWarmers
       - ClothingUnderSocksMedic
       - ClothingUniformMedicThong
+      - ClothingHandsChemistsWarmers
+      - ClothingUnderSocksChemists
+      - ClothingUniformChemistsThong
+      - ClothingHandsParaMedicWarmers
+      - ClothingUnderSocksParaMedic
+      - ClothingUniformParaMedicThong
+      - ClothingHandsCMOWarmers
+      - ClothingUnderSocksCMO
+      - ClothingUniformCMOThong
       - ClothingHandsSecurityWarmers
       - ClothingUnderSocksSecurity
       - ClothingUniformSecurityThong
+      - ClothingHandsHeadSecurityWarmers
+      - ClothingUnderSocksHeadSecurity
+      - ClothingUniformHeadSecurityThong
+      - ClothingHandsDetectiveWarmers
+      - ClothingUnderSocksDetective
+      - ClothingUniformDetectiveThong
+      - ClothingHandsCorpsmanWarmers
+      - ClothingUnderSocksCorpsman
+      - ClothingUniformCorpsmanThong
       - ClothingHandsServiceWarmers
       - ClothingUnderSocksService
       - ClothingUniformServiceThong
       - ClothingHandsJanitorWarmers
       - ClothingUnderSocksJanitor
       - ClothingUniformJanitorThong
+      - ClothingHandsBartenderWarmers
+      - ClothingUnderSocksBartender
+      - ClothingUniformBartenderThong
+      - ClothingHandsMusicianWarmers
+      - ClothingUnderSocksMusician
+      - ClothingUniformMusicianThong
+      - ClothingHandsChefWarmers
+      - ClothingUnderSocksChef
+      - ClothingUniformChefThong
+      # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
@@ -1590,6 +1651,8 @@
       - ClothingOuterWinterCentcom
       - ClothingOuterWinterSyndie
       - ClothingOuterWinterSyndieCap
+      # Floofstation - Department Socks, Armwarmers ect
+      - ClothingUniformSurgeonGerneralThong
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1832,13 +1895,16 @@
       - PlushieCentCom
       - PlushieSlimeTider
       - PlushieChillHuman
-      #- PlushieDino DO NOT ADD THIS!!
-      - PlushieDragon
       - PlushieFRavager
       - PlushieFPraetorian
       - PlushieFDrone
       - PlushieFRouny
       - Plushiegirlfailure
+      - PlushieKitsuneCaptain
+      - PlushieSapphicHarpyPlushie
+      - PlushieFeistyBartender
+      - PlushieCoolVulp
+      - PlushieNoticeableSecurityOfficer
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:

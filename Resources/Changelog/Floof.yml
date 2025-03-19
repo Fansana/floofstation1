@@ -2063,7 +2063,7 @@ Entries:
     - type: Add
       message: >-
         Added a job slot for a corpsmen, a librarian and a roboticist on
-        Lighthouse 
+        Lighthouse
     - type: Tweak
       message: Tweaked Core based on community feedback
     - type: Add
@@ -2447,6 +2447,203 @@ Entries:
   id: 305
   time: '2025-01-24T17:45:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/501
+- author: VividPups
+  changes:
+    - type: Add
+      message: Girl failure plushie added to the spawner
+  id: 0
+  time: '2025-01-25T18:16:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/507
+- author: WhiteLightningTwister
+  changes:
+    - type: Fix
+      message: Fixed incorrect doors either granting access or denying access.
+  id: 0
+  time: '2025-01-25T21:39:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/494
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Added the girl failure plushie to the prize counter and prize balls.
+  id: 0
+  time: '2025-01-26T12:05:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/513
+- author: Dzordz
+  changes:
+    - type: Tweak
+      message: Modified Marking data to allow slimes to use markis of other races
+    - type: Tweak
+      message: >-
+        Modified Slime spieces to allow use of snowts, tails, head top and side,
+        markings
+  id: 0
+  time: '2025-01-26T13:54:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/417
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Hypno Visor
+  id: 0
+  time: '2025-01-26T13:55:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/497
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Replaced Submarine's broken decals and added missing things.
+    - type: Tweak
+      message: Changed Arena based on community feedback.
+  id: 0
+  time: '2025-01-26T14:39:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/510
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Updated the rules, adding new sections and functionality.
+  id: 0
+  time: '2025-01-30T15:11:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/518
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added the shark tail to reptilian markings.
+  id: 0
+  time: '2025-01-30T19:25:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/519
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Did another wave of bugfixes. Vending machines can be repaired,
+        pseudo-items (small people in bags) are less broken, wagging can be
+        toggled while cuffed/sleeping, cryptobiollin no longer leaves you
+        stuttering for 50 hours, and xeno larvae no longer weigh 50 terragrams.
+    - type: Tweak
+      message: >-
+        PKAs now have lower spread when not wielded, and their accuracy
+        increases the more you wait between shots, but sawn-off PKAs in turn
+        cannot be wielded.
+    - type: Tweak
+      message: The mood buffs from hugging and kissing now last longer.
+  id: 0
+  time: '2025-01-31T21:35:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/515
+- author: ItsDzordz
+  changes:
+    - type: Fix
+      message: Made the moth wings appiear again
+  id: 0
+  time: '2025-02-02T13:51:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/522
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Merged a number of QOL changes and fixes from upstream.
+    - type: Fix
+      message: >-
+        Fixed random humanoids all having the default placeholder humanoid
+        profiles.
+  id: 0
+  time: '2025-02-02T18:56:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/505
+- author: JenreyDominos
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked the CC Outpost by adding missing rooms and renovating the bar,
+        and improved the decals on the CC shuttle.
+  id: 0
+  time: '2025-02-02T18:56:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/506
+- author: VividPups
+  changes:
+    - type: Add
+      message: SEWSC added the ability to print pre-filled non-lethal magazines.
+    - type: Tweak
+      message: SEWSC fixed the visual problems with some of the standard magazines.
+  id: 0
+  time: '2025-02-02T18:57:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/512
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added fland as a high pop map
+  id: 0
+  time: '2025-02-02T18:59:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/502
+- author: Errant-4
+  changes:
+    - type: Fix
+      message: Map labels no longer suddenly disappear for the rest of the round.
+  id: 0
+  time: '2025-02-03T18:45:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/517
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: >-
+        Bio-synthetic left legs now properly expect and allow a left foot to be
+        attached.
+  id: 0
+  time: '2025-02-05T13:32:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/528
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: Resomi now can have limbs reattached after having them removed.
+  id: 0
+  time: '2025-02-05T13:33:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/526
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        In order to perform surgery, you now have to right-click a lying entity
+        while holding a surgical tool and use the "perform surgery" verb instead
+        of just clicking on the said entity.
+    - type: Add
+      message: >-
+        Organs without a host will now rot within 5 and perish within 15
+        minutes. Rotting organs cannot be transplanted.
+    - type: Fix
+      message: >-
+        Performed yet another wave of fixes. Blood deficiency no longer causes
+        constant bleeding, buckling should no longer break your entity's draw
+        depth, and more.
+  id: 0
+  time: '2025-02-06T19:32:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/531
+- author: Eagle0600
+  changes:
+    - type: Tweak
+      message: Increased CO2 alarm thresholds.
+  id: 0
+  time: '2025-02-06T19:36:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/530
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        General anesthesia and Liquid general anesthesia canisters can now be
+        purchased from Logistics.
+  id: 0
+  time: '2025-02-06T19:37:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/527
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Made it overall harder to severe body parts via damage, and made
+        environmental hazards less harmful to body parts.
+  id: 0
+  time: '2025-02-06T20:04:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/535
+- author: Forzii
+  changes:
+    - type: Add
+      message: Vulpkanin, Felinid, and Oni guidebook entries from Delta-V
+  id: 0
+  time: '2025-02-06T20:14:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/532
 - author: Mnemotechnician
   changes:
     - type: Fix
@@ -2498,3 +2695,566 @@ Entries:
   id: 310
   time: '2025-02-10T15:35:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/543
+- author: VividPups
+  changes:
+    - type: Add
+      message: General Surgeon
+  id: 311
+  time: '2025-02-14T22:32:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/516
+- author: sowelipililimute
+  changes:
+    - type: Add
+      message: Sticky notes exist, and can be found in the bureaucracy crate
+    - type: Add
+      message: Bureaucracy crate has more and more varied folders
+    - type: Add
+      message: >-
+        Papermoon white and dyed paper reams are now available to spice up your
+        paperwork in the Bureaucracy crate
+    - type: Tweak
+      message: >-
+        Loose papers in the bureaucracy crate have been replaced with a ream of
+        white paper
+  id: 312
+  time: '2025-02-14T22:33:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/556
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added the Handheld radio to the autolathe.
+  id: 313
+  time: '2025-02-15T19:06:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/554
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Vore features are now hidden if the vore option is toggled off.
+    - type: Tweak
+      message: Merged Vore Prey / Pred into one consent option.
+  id: 314
+  time: '2025-02-15T19:36:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/544
+- author: Crow
+  changes:
+    - type: Fix
+      message: fixed localization bug relating to senior roles.
+    - type: Fix
+      message: moved senior cosmetics to job/[department]/all tab
+  id: 315
+  time: '2025-02-15T19:43:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/549
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added NT Company Policy to guidebook
+  id: 0
+  time: '2025-02-16T01:50:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/525
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: Added an engineering holoprojector autolathe recipe.
+    - type: Tweak
+      message: Engineering holoprojector power cells can now be removed and recharged.
+  id: 0
+  time: '2025-02-16T01:51:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/557
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added a new blue space bag for botany
+  id: 0
+  time: '2025-02-16T01:51:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/551
+- author: Eagle0600
+  changes:
+    - type: Tweak
+      message: >-
+        Changed standard station atmos to be 23% Oxygen. This change will only
+        be apparent after remapping.
+  id: 316
+  time: '2025-02-16T01:51:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/548
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added Moon Boots! Time to explain the team-building benefits of zero-g
+        water-gun fights to CC.
+  id: 0
+  time: '2025-02-16T01:52:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/547
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        The crew monitor handheld and console now beep when a crew member goes
+        into critical condition or dies!
+    - type: Tweak
+      message: >-
+        surgical duffels and syndicate surgical duffels now contain a nitrous
+        oxide tank
+  id: 0
+  time: '2025-02-16T01:52:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/546
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added new Quad borgs
+    - type: Fix
+      message: Fixed the other quad sprites
+  id: 317
+  time: '2025-02-16T01:52:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/539
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: Diona can now have custom species names. Plants rejoice!
+  id: 0
+  time: '2025-02-18T13:48:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/567
+- author: Forzii
+  changes:
+    - type: Fix
+      message: CourierDrobes are now restockable with clothing restocks
+  id: 0
+  time: '2025-02-18T13:49:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/566
+- author: Forzii and Chokovit
+  changes:
+    - type: Add
+      message: Added custom rodentia scream
+  id: 0
+  time: '2025-02-18T13:49:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/565
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Janitor cyborgs have access to the all-new cleanade launcher! Compatible
+        with all officially licensed Cleanade® products.
+    - type: Tweak
+      message: Janitor cyborg spray bottle replaced with mega spray bottle.
+  id: 318
+  time: '2025-02-18T13:50:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/559
+- author: M3739
+  changes:
+    - type: Fix
+      message: Slime people, and IPCs, can now be singers.
+    - type: Tweak
+      message: >-
+        IPCs can no longer take the 'Singing' trait. Instead, they now have
+        their own equivalent; the 'Audio Player' trait.
+  id: 319
+  time: '2025-02-18T13:50:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/561
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: Unique popup for inserting yourself into a pred
+    - type: Tweak
+      message: Vore consent options are separate again
+    - type: Tweak
+      message: Consent menu has been given consistent sorting
+    - type: Fix
+      message: >-
+        Insert Yourself verb now checks the stamina/downed status of the pred
+        for doafter speed
+    - type: Fix
+      message: >-
+        Devouring or inserting yourself into someone you're carrying no longer
+        causes issues
+  id: 320
+  time: '2025-02-19T15:19:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/568
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added a feminine unathi underbelly marking.
+  id: 321
+  time: '2025-02-22T20:36:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/576
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Added some missing changelog entries.
+  id: 322
+  time: '2025-02-22T20:37:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/573
+- author: BlitzTheSquishy
+  changes:
+    - type: Add
+      message: Lemon lime and bitters! Australians Rejoice!
+  id: 323
+  time: '2025-02-22T20:37:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/570
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        New uniform printer recipes for many missing departmental lingerie
+        items.
+  id: 0
+  time: '2025-02-22T20:38:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/569
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Train is now in lower orbit
+    - type: Tweak
+      message: Added senior job roles to every station
+    - type: Tweak
+      message: Tweaked Hive based on community feedback
+    - type: Tweak
+      message: Added a job slot for Golemancer on more stations
+    - type: Tweak
+      message: Added back Anomaly spawns on Arena
+    - type: Tweak
+      message: Added docking spots for the pathfinder on all stations
+    - type: Tweak
+      message: >-
+        Glaciers Psych office was given a face lift and the court house has
+        proper atmos
+  id: 0
+  time: '2025-02-22T20:39:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/542
+- author: Eagle0600
+  changes:
+    - type: Tweak
+      message: Ice now satiates thirst, but also makes you cold. Don't drink too much!
+    - type: Tweak
+      message: Cream and ice cream satiate hunger.
+  id: 0
+  time: '2025-02-22T20:40:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/562
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added envelopes to the PTech and bureaucracy crate.
+    - type: Tweak
+      message: Candle boxes can now only hold candles.
+  id: 324
+  time: '2025-02-22T20:40:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/553
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Ported subtle OOC (Prefix { )
+  id: 0
+  time: '2025-02-23T19:33:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/571
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Added Dim, Warm, Red, Pink, Orange, Green, Cyan, and Blue Light Bulbs
+  id: 0
+  time: '2025-02-23T20:02:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/579
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: Emote Chat
+  id: 0
+  time: '2025-02-24T07:08:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/583
+- author: VividPups
+  changes:
+    - type: Add
+      message: add blackslot back to all security armor
+  id: 0
+  time: '2025-02-24T22:15:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/545
+- author: sprkl
+  changes:
+    - type: Add
+      message: >-
+        Added sterile bags which can be processed into blood packs via a
+        microwave.
+    - type: Add
+      message: Added a recipe to synthesize blood.
+  id: 0
+  time: '2025-02-24T22:20:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/572
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Cargo technicians now get orders access by default.
+  id: 0
+  time: '2025-02-24T22:33:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/581
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added Quad borg animations
+  id: 0
+  time: '2025-02-25T23:34:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/584
+- author: M3739
+  changes:
+    - type: Add
+      message: The Justice department now has it's own loadout tab under 'Jobs'.
+    - type: Tweak
+      message: >-
+        The Chief Justice now properly appears on the manifest as a member of
+        command, and their starting gear has been adjusted to be more in line
+        with their fellow Command members.
+    - type: Tweak
+      message: >-
+        The Attorney and the Prosecutor now has a lawyer stamp as part of their
+        starting gear.
+    - type: Tweak
+      message: >-
+        The Lawyer loadout tab is no longer under Service, It is now under
+        Justice as 'Attorney'.
+    - type: Tweak
+      message: >-
+        Some document templates have received a revision. No more "Head of
+        Personal" as the header of every Justice paperwork template.
+  id: 0
+  time: '2025-02-26T00:44:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/577
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        The healing amounts of topicals (bruise packs, ointments, and so on)
+        were reduced to pre-surgery-update amounts.
+    - type: Fix
+      message: >-
+        Theobromine gained from coffee and similar drinks will now properly
+        accumulate in your body and deal damage to those with animal stomachs.
+  id: 325
+  time: '2025-03-05T23:43:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/597
+- author: Southbridge
+  changes:
+    - type: Fix
+      message: Cherry-picked fixes from Wizden for linking devices.
+  id: 326
+  time: '2025-03-05T23:47:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/591
+- author: AstroDogeDX and Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Resomi can tolerate much colder temperatures before taking damage, but
+        can't tolerate much heat as a consequence.
+    - type: Tweak
+      message: Resomi can move faster in Zero-G, on account of their wings.
+    - type: Tweak
+      message: >-
+        Like the other animal-type species, Resomi can digest uncooked animal
+        proteins, but get poisoned by theobromine. No coffee for you.
+    - type: Tweak
+      message: Resomi can now be male and female, and are smaller on average
+    - type: Tweak
+      message: Resomi now have ammonia-based blood
+  id: 327
+  time: '2025-03-05T23:50:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/585
+- author: VividPups
+  changes:
+    - type: Add
+      message: Vials to the medicalfab
+  id: 328
+  time: '2025-03-06T05:21:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/601
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: Zookeeper description no longer indicates the job is unavailable
+  id: 329
+  time: '2025-03-09T12:43:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/609
+- author: VividPups
+  changes:
+    - type: Add
+      message: >-
+        Clippers, hatchet, ez nutrients, and Plant be gone added to the Botanist
+        filled belt
+  id: 330
+  time: '2025-03-09T12:43:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/606
+- author: Forzii and Dzordz
+  changes:
+    - type: Tweak
+      message: >-
+        IPCs now have a unique status on crew monitors if their battery is
+        discharged or missing. Better turn coords or vitals on!
+  id: 331
+  time: '2025-03-09T12:44:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/605
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Central Command has conducted a review of it's assignment system. Chief
+        Justice should no longer be erroneously reporting that the job needs a
+        whitelist.
+  id: 332
+  time: '2025-03-09T12:47:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/580
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Research seniors and interns should now have the glimmer monitor app
+        installed on their PDAs by default.
+  id: 333
+  time: '2025-03-11T15:05:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/615
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: Filled paramedic bag loadouts
+    - type: Add
+      message: >-
+        Loadouts for chief engineer's longcoat, as well as turtleneck jumpsuit
+        and jumpskirt
+    - type: Add
+      message: Administration HUD command loadout
+    - type: Remove
+      message: Removed unfilled captain bag loadouts. Filled captain bags remain.
+  id: 334
+  time: '2025-03-11T15:06:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/610
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added a variety of new cargo bounties.
+  id: 335
+  time: '2025-03-13T17:36:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/599
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: >-
+        New toolshed command to manipulate factions for NPCs and have it
+        actually reflect in who they aggro against
+  id: 336
+  time: '2025-03-13T17:41:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/613
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Two new hairstyles, CMO turtlenecks, and a head mirror has been added!
+        You do know how to use the head mirror, right?...
+  id: 337
+  time: '2025-03-13T17:44:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/620
+- author: M3739
+  changes:
+    - type: Add
+      message: 'Bionic Harpy wings are now available as a generic wing marking. '
+  id: 338
+  time: '2025-03-15T17:46:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/622
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added Floof Mutiny Guidelines, General Regulations, Command Hierarchy,
+        Alert Procedure, and Permits guidebook entries
+    - type: Tweak
+      message: modified the guidebook Glossary
+  id: 339
+  time: '2025-03-15T17:50:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/564
+- author: LucasTheDrgn
+  changes:
+    - type: Tweak
+      message: >-
+        Admins can now adjust paint using spray cans/soap on any items as long
+        as they can get verbs on them.
+  id: 340
+  time: '2025-03-16T16:43:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/616
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: The Kitsune captain plushie
+    - type: Tweak
+      message: Tider Plushie on attack sound
+    - type: Tweak
+      message: Modified Pr
+    - type: Add
+      message: 4 extra plushies
+  id: 341
+  time: '2025-03-16T16:44:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/593
+- author: BarryNorfolk and Forzii
+  changes:
+    - type: Tweak
+      message: Oni will no longer shoot behind themselves
+  id: 342
+  time: '2025-03-16T16:44:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/578
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Loadouts now contain .38 special speedloaders and spares for them.
+  id: 343
+  time: '2025-03-16T22:45:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/600
+- author: Forzii
+  changes:
+    - type: Add
+      message: Adds a tiny trait! Now you can live out your small dreams.
+  id: 344
+  time: '2025-03-17T19:20:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/611
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Fixed chaplain showing up under Unknown department on crew monitor and
+        other strange behavior with chaplain ID
+  id: 345
+  time: '2025-03-18T14:18:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/634
+- author: Nox38
+  changes:
+    - type: Tweak
+      message: Added semi-auto firemode to all automatic weapons.
+  id: 346
+  time: '2025-03-18T14:20:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/627
+- author: Tk420634
+  changes: []
+  id: 347
+  time: '2025-03-18T21:23:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/632
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        The Feroxi are now here! A collection of shark-like people, who can use
+        Water Vapor instead of Oxygen!
+  id: 348
+  time: '2025-03-18T21:23:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/612
+- author: themias
+  changes:
+    - type: Tweak
+      message: Butter can be sliced, cookie and toast recipes now use butter slices.
+    - type: Tweak
+      message: Chefvend butter reduced from 4 to 3.
+    - type: Add
+      message: >-
+        Multi-tiered celebration and wedding cakes. Don't wait for a wedding,
+        any excuse will do.
+  id: 349
+  time: '2025-03-18T22:26:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/614
+- author: ElusiveCoin
+  changes:
+    - type: Add
+      message: Added a new species, the Chitinid.
+    - type: Add
+      message: Added Chitinid species
+  id: 350
+  time: '2025-03-19T02:23:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/608

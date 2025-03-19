@@ -15,6 +15,8 @@ using Content.Server.Nutrition.EntitySystems;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
+using Content.Shared.Administration;
+using Content.Shared.Administration.Managers;
 
 namespace Content.Server.Paint;
 
@@ -30,6 +32,7 @@ public sealed class PaintSystem : SharedPaintSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly ISharedAdminManager _admin = default!;
 
 
     public override void Initialize()
@@ -53,7 +56,7 @@ public sealed class PaintSystem : SharedPaintSystem
 
     private void OnPaintVerb(EntityUid uid, PaintComponent component, GetVerbsEvent<UtilityVerb> args)
     {
-        if (!args.CanInteract || !args.CanAccess)
+        if ((!args.CanInteract || !args.CanAccess) && !_admin.HasAdminFlag(args.User, AdminFlags.Admin)) // Floof: Admins can remove paint on anything they can get verbs for
             return;
 
         var paintText = Loc.GetString("paint-verb");

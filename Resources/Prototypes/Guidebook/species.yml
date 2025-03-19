@@ -14,12 +14,15 @@
     - Harpy
     - Rodentia # Floofstation
     - Shadowkin
+    - Resomi # Goob
     # DeltaV additions
     - Vulpkanin
     # Floofstation already has a harpy entry
     #- Harpy
     - Felinid
     - Oni
+    - Chitinid
+    - Feroxi
 
 - type: guideEntry
   id: Arachnid
@@ -62,11 +65,37 @@
   text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
 
 - type: guideEntry
+  id: Shadowkin
+  name: species-name-shadowkin
+  text: "/ServerInfo/Guidebook/Mobs/Shadowkin.xml"
+
+- type: guideEntry
   id: Harpy
   name: species-name-harpy
   text: "/ServerInfo/Guidebook/Mobs/Harpy.xml"
 
 - type: guideEntry
-  id: Shadowkin
-  name: species-name-shadowkin
-  text: "/ServerInfo/Guidebook/Mobs/Shadowkin.xml"
+  id: Oni
+  name: species-name-oni
+  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Oni.xml"
+  
+- type: guideEntry
+  id: Rodentia
+  name: species-name-rodentia
+  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Rodentia.xml"
+
+- type: guideEntry
+  id: Felinid
+  name: species-name-felinid
+  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Felinid.xml"
+
+# Goob
+- type: guideEntry
+  id: Resomi
+  name: species-name-resomi
+  text: "/ServerInfo/Guidebook/Mobs/Resomi.xml"
+
+- type: guideEntry
+  id: Vulpkanin
+  name: species-name-vulpkanin
+  text: "/ServerInfo/Guidebook/Mobs/DeltaV/Vulpkanin.xml"

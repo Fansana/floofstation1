@@ -1,0 +1,8 @@
+# Floof - M3739 - Because machines do not have vocal chords. Instrument given is comparable to a personal AI, or a Musician's PDA.
+- type: SingerInstrument
+  id: SiliconSinger
+  instrumentList:
+    "Digital": {2: 1}
+  defaultInstrument: "Digital"
+  midiUi: Key
+  midiActionId: ActionHarpyPlayMidi

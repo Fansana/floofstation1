@@ -215,6 +215,7 @@
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: CanEscapeInventory # Carrying system from nyanotrasen.
   - type: Vore # Floofstation - Vore
+    canVore: true
   - type: LanguageKnowledge # This is here so even if species doesn't have a defined language, they at least speak GC
     speaks:
     - TauCetiBasic
@@ -288,6 +289,11 @@
     heatDamage:
       types:
         Heat: 1.5 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      293: 0.8
+      280: 0.6
+      260: 0.4
   - type: ThermalRegulator
     metabolismHeat: 800
     radiatedHeat: 100

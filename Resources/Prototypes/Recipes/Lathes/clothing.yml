@@ -3,6 +3,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitColorGrey # Tide
   result: ClothingUniformJumpsuitColorGrey
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -10,6 +11,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtColorGrey
   result: ClothingUniformJumpskirtColorGrey
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -17,6 +19,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitBartender
   result: ClothingUniformJumpsuitBartender
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -24,6 +27,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtBartender
   result: ClothingUniformJumpskirtBartender
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -31,6 +35,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCaptain
   result: ClothingUniformJumpsuitCaptain
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -39,6 +44,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCapFormal
   result: ClothingUniformJumpsuitCapFormal
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -48,6 +54,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtCapFormalDress
   result: ClothingUniformJumpskirtCapFormalDress
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -56,6 +63,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtCaptain
   result: ClothingUniformJumpskirtCaptain
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -64,6 +72,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCargo
   result: ClothingUniformJumpsuitCargo
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -71,6 +80,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtCargo
   result: ClothingUniformJumpskirtCargo
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -78,6 +88,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSalvageSpecialist
   result: ClothingUniformJumpsuitSalvageSpecialist
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 500 #It's armored but I don't want to include durathread for a non-head
@@ -85,6 +96,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCentcomAgent
   result: ClothingUniformJumpsuitCentcomAgent
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -93,6 +105,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCentcomFormal
   result: ClothingUniformJumpsuitCentcomFormal
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -101,6 +114,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtCentcomFormalDress
   result: ClothingUniformJumpskirtCentcomFormalDress
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -109,6 +123,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCentcomOfficer
   result: ClothingUniformJumpsuitCentcomOfficer
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -117,6 +132,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCentcomOfficial
   result: ClothingUniformJumpsuitCentcomOfficial
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -125,6 +141,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitChiefEngineer
   result: ClothingUniformJumpsuitChiefEngineer
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -133,6 +150,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtChiefEngineer
   result: ClothingUniformJumpskirtChiefEngineer
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -141,6 +159,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitChiefEngineerTurtle
   result: ClothingUniformJumpsuitChiefEngineerTurtle
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -148,6 +167,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtChiefEngineerTurtle
   result: ClothingUniformJumpskirtChiefEngineerTurtle
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -155,6 +175,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitChaplain
   result: ClothingUniformJumpsuitChaplain
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -162,6 +183,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtChaplain
   result: ClothingUniformJumpskirtChaplain
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -169,6 +191,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitChef
   result: ClothingUniformJumpsuitChef
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -176,6 +199,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtChef
   result: ClothingUniformJumpskirtChef
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -183,6 +207,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitChemistry
   result: ClothingUniformJumpsuitChemistry
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -190,6 +215,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtChemistry
   result: ClothingUniformJumpskirtChemistry
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -197,6 +223,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitClown
   result: ClothingUniformJumpsuitClown
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -204,6 +231,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitCMO
   result: ClothingUniformJumpsuitCMO
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -212,6 +240,23 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtCMO
   result: ClothingUniformJumpskirtCMO
+  category: ClothingMedical # Floof - add uniform printer clothing categories
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitCMOTurtle
+  result: ClothingUniformJumpsuitCMOTurtle
+  completetime: 4
+  materials:
+    Cloth: 300
+    Durathread: 100
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtCMOTurtle
+  result: ClothingUniformJumpskirtCMOTurtle
   completetime: 4
   materials:
     Cloth: 300
@@ -220,6 +265,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitDetective
   result: ClothingUniformJumpsuitDetective
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -227,6 +273,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtDetective
   result: ClothingUniformJumpskirtDetective
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -234,6 +281,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitEngineering
   result: ClothingUniformJumpsuitEngineering
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -241,6 +289,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtEngineering
   result: ClothingUniformJumpskirtEngineering
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -248,6 +297,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSeniorEngineer
   result: ClothingUniformJumpsuitSeniorEngineer
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -255,6 +305,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSeniorEngineer
   result: ClothingUniformJumpskirtSeniorEngineer
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -262,6 +313,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoP
   result: ClothingUniformJumpsuitHoP
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -270,6 +322,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHoP
   result: ClothingUniformJumpskirtHoP
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -278,6 +331,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoS
   result: ClothingUniformJumpsuitHoS
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -286,6 +340,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHoS
   result: ClothingUniformJumpskirtHoS
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -294,6 +349,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHosFormal
   result: ClothingUniformJumpsuitHosFormal
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -302,6 +358,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHosFormal
   result: ClothingUniformJumpskirtHosFormal
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -310,6 +367,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoSParadeMale
   result: ClothingUniformJumpsuitHoSParadeMale
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 5
   materials:
     Cloth: 300
@@ -318,6 +376,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHoSParadeMale
   result: ClothingUniformJumpskirtHoSParadeMale
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 5
   materials:
     Cloth: 300
@@ -326,6 +385,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoSAlt
   result: ClothingUniformJumpsuitHoSAlt
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -334,6 +394,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoSBlue
   result: ClothingUniformJumpsuitHoSBlue
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -342,6 +403,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHoSGrey
   result: ClothingUniformJumpsuitHoSGrey
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -350,6 +412,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHoSAlt
   result: ClothingUniformJumpskirtHoSAlt
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -358,6 +421,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitHydroponics
   result: ClothingUniformJumpsuitHydroponics
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -365,6 +429,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtHydroponics
   result: ClothingUniformJumpskirtHydroponics
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -372,6 +437,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitJanitor
   result: ClothingUniformJumpsuitJanitor
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -379,6 +445,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtJanitor
   result: ClothingUniformJumpskirtJanitor
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -386,6 +453,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitLawyerBlack
   result: ClothingUniformJumpsuitLawyerBlack
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -393,6 +461,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitLibrarian
   result: ClothingUniformJumpsuitLibrarian
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -400,6 +469,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtColorLightBrown #Librarian
   result: ClothingUniformJumpskirtColorLightBrown
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -407,6 +477,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitMedicalDoctor
   result: ClothingUniformJumpsuitMedicalDoctor
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -414,6 +485,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtMedicalDoctor
   result: ClothingUniformJumpskirtMedicalDoctor
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -421,6 +493,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSeniorPhysician
   result: ClothingUniformJumpsuitSeniorPhysician
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -428,6 +501,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSeniorPhysician
   result: ClothingUniformJumpskirtSeniorPhysician
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -435,6 +509,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitMime
   result: ClothingUniformJumpsuitMime
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -442,6 +517,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtMime
   result: ClothingUniformJumpskirtMime
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -449,6 +525,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitMusician
   result: ClothingUniformJumpsuitMusician
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -456,6 +533,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitOperative
   result: ClothingUniformJumpsuitOperative
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -463,6 +541,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtOperative
   result: ClothingUniformJumpskirtOperative
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -470,6 +549,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitParamedic
   result: ClothingUniformJumpsuitParamedic
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -477,6 +557,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtParamedic
   result: ClothingUniformJumpskirtParamedic
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -484,6 +565,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSeniorOfficer
   result: ClothingUniformJumpsuitSeniorOfficer
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -491,6 +573,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSeniorOfficer
   result: ClothingUniformJumpskirtSeniorOfficer
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -498,6 +581,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitPrisoner
   result: ClothingUniformJumpsuitPrisoner
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -505,6 +589,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtPrisoner
   result: ClothingUniformJumpskirtPrisoner
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -512,6 +597,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitQM
   result: ClothingUniformJumpsuitQM
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -519,6 +605,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitQMFormal
   result: ClothingUniformJumpsuitQMFormal
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -526,6 +613,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtQM
   result: ClothingUniformJumpskirtQM
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -533,6 +621,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitQMTurtleneck
   result: ClothingUniformJumpsuitQMTurtleneck
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -540,6 +629,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtQMTurtleneck
   result: ClothingUniformJumpskirtQMTurtleneck
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -547,6 +637,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitResearchDirector
   result: ClothingUniformJumpsuitResearchDirector
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -555,6 +646,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtResearchDirector
   result: ClothingUniformJumpskirtResearchDirector
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -563,6 +655,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitScientist
   result: ClothingUniformJumpsuitScientist
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -570,6 +663,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtScientist
   result: ClothingUniformJumpskirtScientist
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -577,6 +671,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSeniorResearcher
   result: ClothingUniformJumpsuitSeniorResearcher
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -584,6 +679,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSeniorResearcher
   result: ClothingUniformJumpskirtSeniorResearcher
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -591,6 +687,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSec
   result: ClothingUniformJumpsuitSec
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -598,6 +695,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSec
   result: ClothingUniformJumpskirtSec
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -605,6 +703,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitBrigmedic
   result: ClothingUniformJumpsuitBrigmedic
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -612,6 +711,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtBrigmedic
   result: ClothingUniformJumpskirtBrigmedic
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -619,6 +719,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitSyndieFormal
   result: ClothingUniformJumpsuitSyndieFormal
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -626,6 +727,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtSyndieFormalDress
   result: ClothingUniformJumpskirtSyndieFormalDress
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -633,6 +735,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicateBlack
   result: ClothingUniformJumpsuitPyjamaSyndicateBlack
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -640,6 +743,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicatePink
   result: ClothingUniformJumpsuitPyjamaSyndicatePink
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -647,6 +751,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitPyjamaSyndicateRed
   result: ClothingUniformJumpsuitPyjamaSyndicateRed
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -654,6 +759,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpsuitWarden
   result: ClothingUniformJumpsuitWarden
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -661,6 +767,7 @@
 - type: latheRecipe
   id: ClothingUniformJumpskirtWarden
   result: ClothingUniformJumpskirtWarden
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -668,6 +775,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCap
   result: ClothingOuterWinterCap
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -676,6 +784,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCE
   result: ClothingOuterWinterCE
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -684,6 +793,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCentcom
   result: ClothingOuterWinterCentcom
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -692,6 +802,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCMO
   result: ClothingOuterWinterCMO
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -700,6 +811,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterHoP
   result: ClothingOuterWinterHoP
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -708,6 +820,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterHoSUnarmored
   result: ClothingOuterWinterHoSUnarmored
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -716,6 +829,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterWardenUnarmored
   result: ClothingOuterWinterWardenUnarmored
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -724,6 +838,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterQM
   result: ClothingOuterWinterQM
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -732,6 +847,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterRD
   result: ClothingOuterWinterRD
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -740,6 +856,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleCap
   result: ClothingNeckMantleCap
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -748,6 +865,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleCE
   result: ClothingNeckMantleCE
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -756,6 +874,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleCMO
   result: ClothingNeckMantleCMO
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -764,6 +883,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleHOP
   result: ClothingNeckMantleHOP
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -772,6 +892,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleHOS
   result: ClothingNeckMantleHOS
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -780,6 +901,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleRD
   result: ClothingNeckMantleRD
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -788,6 +910,7 @@
 - type: latheRecipe
   id: ClothingNeckMantleQM
   result: ClothingNeckMantleQM
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 2.8
   materials:
     Cloth: 200
@@ -796,6 +919,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterMusician
   result: ClothingOuterWinterMusician
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -804,6 +928,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterClown
   result: ClothingOuterWinterClown
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -812,6 +937,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterMime
   result: ClothingOuterWinterMime
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -820,6 +946,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCoat
   result: ClothingOuterWinterCoat
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -828,6 +955,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterJani
   result: ClothingOuterWinterJani
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -836,6 +964,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterBar
   result: ClothingOuterWinterBar
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -844,6 +973,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterChef
   result: ClothingOuterWinterChef
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -852,6 +982,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterHydro
   result: ClothingOuterWinterHydro
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -860,6 +991,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterAtmos
   result: ClothingOuterWinterAtmos
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -868,6 +1000,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterEngi
   result: ClothingOuterWinterEngi
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -876,6 +1009,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterCargo
   result: ClothingOuterWinterCargo
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -884,6 +1018,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterMiner
   result: ClothingOuterWinterMiner
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -892,6 +1027,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterMed
   result: ClothingOuterWinterMed
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -900,6 +1036,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterPara
   result: ClothingOuterWinterPara
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -908,6 +1045,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterChem
   result: ClothingOuterWinterChem
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -916,6 +1054,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterGen
   result: ClothingOuterWinterGen
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -924,6 +1063,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterViro
   result: ClothingOuterWinterViro
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -932,6 +1072,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterSci
   result: ClothingOuterWinterSci
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -940,6 +1081,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterRobo
   result: ClothingOuterWinterRobo
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -948,6 +1090,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterSec
   result: ClothingOuterWinterSec
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -956,6 +1099,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterSyndie
   result: ClothingOuterWinterSyndie
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -964,6 +1108,7 @@
 - type: latheRecipe
   id: ClothingOuterWinterSyndieCap
   result: ClothingOuterWinterSyndieCap
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 3.2
   materials:
     Cloth: 500
@@ -972,6 +1117,7 @@
 - type: latheRecipe
   id: ClothingHeadHatCaptain
   result: ClothingHeadHatCaptain
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -980,6 +1126,7 @@
 - type: latheRecipe
   id: ClothingHeadHatCapcap
   result: ClothingHeadHatCapcap
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -988,6 +1135,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretHoS
   result: ClothingHeadHatBeretHoS
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -996,6 +1144,7 @@
 - type: latheRecipe
   id: ClothingHeadHatHoshat
   result: ClothingHeadHatHoshat
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1004,6 +1153,7 @@
 - type: latheRecipe
   id: ClothingHeadHatWarden
   result: ClothingHeadHatWarden
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1012,6 +1162,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretWarden
   result: ClothingHeadHatBeretWarden
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1020,6 +1171,7 @@
 - type: latheRecipe
   id: ClothingHeadHatHopcap
   result: ClothingHeadHatHopcap
+  category: ClothingService # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1028,6 +1180,7 @@
 - type: latheRecipe
   id: ClothingHeadHatQMsoft
   result: ClothingHeadHatQMsoft
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1036,6 +1189,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretRND
   result: ClothingHeadHatBeretRND
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1044,6 +1198,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretEngineering
   result: ClothingHeadHatBeretEngineering
+  category: ClothingEngineering # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1052,6 +1207,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretQM
   result: ClothingHeadHatBeretQM
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1060,6 +1216,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretCmo
   result: ClothingHeadHatBeretCmo
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1068,6 +1225,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretMedic
   result: ClothingHeadHatBeretMedic
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1075,6 +1233,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretBrigmedic
   result: ClothingHeadHatBeretBrigmedic
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1082,6 +1241,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretSecurity
   result: ClothingHeadHatBeretSecurity
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1089,6 +1249,7 @@
 - type: latheRecipe
   id: ClothingHeadHatBeretSeniorPhysician
   result: ClothingHeadHatBeretSeniorPhysician
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1096,6 +1257,7 @@
 - type: latheRecipe
   id: ClothingHeadHatCentcom
   result: ClothingHeadHatCentcom
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1104,6 +1266,7 @@
 - type: latheRecipe
   id: ClothingHeadHatCentcomcap
   result: ClothingHeadHatCentcomcap
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1112,6 +1275,7 @@
 - type: latheRecipe
   id: ClothingHeadHatSyndie
   result: ClothingHeadHatSyndie
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1119,6 +1283,7 @@
 - type: latheRecipe
   id: ClothingHeadHatSyndieMAA
   result: ClothingHeadHatSyndieMAA
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1126,6 +1291,7 @@
 - type: latheRecipe
   id: ClothingHeadPyjamaSyndicateBlack
   result: ClothingHeadPyjamaSyndicateBlack
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1133,6 +1299,7 @@
 - type: latheRecipe
   id: ClothingHeadPyjamaSyndicatePink
   result: ClothingHeadPyjamaSyndicatePink
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1140,6 +1307,7 @@
 - type: latheRecipe
   id: ClothingHeadPyjamaSyndicateRed
   result: ClothingHeadPyjamaSyndicateRed
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100
@@ -1147,6 +1315,7 @@
 - type: latheRecipe
   id: ClothingHeadHatParamedicsoft
   result: ClothingHeadHatParamedicsoft
+  category: ClothingMedical # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1154,6 +1323,7 @@
 - type: latheRecipe
   id: ClothingNeckTieRed
   result: ClothingNeckTieRed
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1161,6 +1331,7 @@
 - type: latheRecipe
   id: ClothingNeckTieDet
   result: ClothingNeckTieDet
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1168,6 +1339,7 @@
 - type: latheRecipe
   id: ClothingNeckTieSci
   result: ClothingNeckTieSci
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1175,6 +1347,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedGreen
   result: ClothingNeckScarfStripedGreen
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1182,6 +1355,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedBlue
   result: ClothingNeckScarfStripedBlue
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1189,6 +1363,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedRed
   result: ClothingNeckScarfStripedRed
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1196,6 +1371,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedBrown
   result: ClothingNeckScarfStripedBrown
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1203,6 +1379,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedLightBlue
   result: ClothingNeckScarfStripedLightBlue
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1210,6 +1387,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedOrange
   result: ClothingNeckScarfStripedOrange
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1217,6 +1395,7 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedBlack
   result: ClothingNeckScarfStripedBlack
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
@@ -1224,13 +1403,16 @@
 - type: latheRecipe
   id: ClothingNeckScarfStripedPurple
   result: ClothingNeckScarfStripedPurple
+  category: ClothingOther # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 200
+
 # Carpets
 - type: latheRecipe
   id: Carpet
   result: FloorCarpetItemRed
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1238,6 +1420,7 @@
 - type: latheRecipe
   id: CarpetBlack
   result: FloorCarpetItemBlack
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1245,6 +1428,7 @@
 - type: latheRecipe
   id: CarpetPink
   result: FloorCarpetItemPink
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1252,6 +1436,7 @@
 - type: latheRecipe
   id: CarpetBlue
   result: FloorCarpetItemBlue
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1259,6 +1444,7 @@
 - type: latheRecipe
   id: CarpetGreen
   result: FloorCarpetItemGreen
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1266,6 +1452,7 @@
 - type: latheRecipe
   id: CarpetOrange
   result: FloorCarpetItemOrange
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1273,6 +1460,7 @@
 - type: latheRecipe
   id: CarpetPurple
   result: FloorCarpetItemPurple
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1280,6 +1468,7 @@
 - type: latheRecipe
   id: CarpetCyan
   result: FloorCarpetItemCyan
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1287,6 +1476,7 @@
 - type: latheRecipe
   id: CarpetWhite
   result: FloorCarpetItemWhite
+  category: Carpet # Floof - add uniform printer clothing categories
   completetime: 1
   materials:
     Cloth: 100
@@ -1295,6 +1485,7 @@
 - type: latheRecipe
   id: ClothingNeckCollarCmd
   result: ClothingNeckCollarCmd
+  category: ClothingCommand # Floof - add uniform printer clothing categories
   completetime: 2
   materials:
     Cloth: 100

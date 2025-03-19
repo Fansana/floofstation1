@@ -240,6 +240,10 @@
   category: Physical
   points: -3
   requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+      - Feroxi # Floof - Throwing hands? Nah, they are biting you.
   - !type:CharacterJobRequirement
     inverted: true
     jobs:
@@ -266,10 +270,15 @@
       species:
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
+        - Resomi # Floof - have this by default after porting Goob changes
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
       max: 32
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Tiny # Floofstation
   functions:
     - !type:TraitAddComponent
       components:
@@ -308,6 +317,7 @@
       species:
         - Harpy # Harpies already have talons
         - Arachnid # Apparently they have a "piercing" bite
+        - Feroxi # Floof - They bite. Piercing damage. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -337,6 +347,8 @@
         - Shadowkin # Shadowkins also have claws.
         # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
         - Rodentia # Floof - Rodentia already has it
+        - Resomi # Floof - they have claws after port of Goob changes
+        - Feroxi # Floof - They bite. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -365,7 +377,6 @@
         - Human
         - Oni
         - SlimePerson
-        - Resomi # Floofstation
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -397,7 +408,6 @@
       species:
         - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
                 # When we get the Character Records system in, I also want to make this require certain Backgrounds.
-        - Resomi # Floofstation.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -514,7 +524,6 @@
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
-        - Resomi
   functions:
     - !type:TraitAddArmor
       damageModifierSets:

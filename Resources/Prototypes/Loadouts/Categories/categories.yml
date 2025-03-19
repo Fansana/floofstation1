@@ -37,6 +37,7 @@
     - JobsLogistics
     - JobsMedical
     - JobsSecurity
+    - JobsJustice # Floof
     - JobsService
 
 - type: loadoutCategory
@@ -68,7 +69,7 @@
     - JobsEngineeringAAUncategorized
     - JobsEngineeringAtmosphericTechnician
     - JobsEngineeringChiefEngineer
-    - JobsEngineeringSeniorEngineer
+    - JobsEngineeringSeniorEngineer 
     - JobsEngineeringStationEngineer
     - JobsEngineeringTechnicalAssistant
 
@@ -81,8 +82,8 @@
 - type: loadoutCategory
   id: JobsEngineeringChiefEngineer
 
-- type: loadoutCategory
-  id: JobsEngineeringSeniorEngineer
+- type: loadoutCategory 
+  id: JobsEngineeringSeniorEngineer 
 
 - type: loadoutCategory
   id: JobsEngineeringStationEngineer
@@ -123,7 +124,7 @@
   id: JobsEpistemicsMystagogue
 
 - type: loadoutCategory
-  id: JobsEpistemicsMystic
+  id: JobsEpistemicsMystic #floof senior scientist
 
 - type: loadoutCategory
   id: JobsEpistemicsNoviciate
@@ -240,7 +241,7 @@
     - JobsServiceChef
     - JobsServiceClown
     - JobsServiceJanitor
-    - JobsServiceLawyer
+    # - JobsServiceLawyer - Floof
     - JobsServiceMime
     - JobsServiceMusician
     - JobsServiceReporter
