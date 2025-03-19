@@ -15,10 +15,10 @@
   - type: Armor #Values seem to let the user survive one extra hit if attacked consistently.
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.45
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -50,12 +50,12 @@
   - type: Armor #This is intentionally not spaceproof, when the time comes to port the values from SS13 this should be buffed from what it was.
     modifiers:
       coefficients:
-        Blunt: 0.80
-        Slash: 0.80
-        Piercing: 0.80
-        Heat: 0.80
-        Radiation: 0.80
-        Caustic: 0.95
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.4
+        Radiation: 0.4
+        Caustic: 0.47
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -87,9 +87,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.95
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.47
 
 #Bombsuit Helmet
 - type: entity
@@ -108,9 +108,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.95
-        Slash: 0.95
-        Piercing: 0.95
+        Blunt: 0.47
+        Slash: 0.47
+        Piercing: 0.47
   - type: HideLayerClothing
     slots:
     - Hair
@@ -144,10 +144,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.8
-        Piercing: 0.9
-        Heat: 0.9
+        Blunt: 0.45
+        Slash: 0.4
+        Piercing: 0.45
+        Heat: 0.45
 
 #Space Ninja Helmet
 - type: entity
@@ -279,10 +279,10 @@
   - type: Armor #admeme item so it should be fine being overpowered while helmets are still intentionally kneecapped.
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.9
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Heat: 0.45
 
 #ERT HELMETS
 #ERT Leader Helmet

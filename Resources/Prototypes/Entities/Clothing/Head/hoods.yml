@@ -151,8 +151,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.95
-        Radiation: 0.65
+        Heat: 0.47
+        Radiation: 0.37
   - type: BreathMask
   - type: HideLayerClothing
     slots:

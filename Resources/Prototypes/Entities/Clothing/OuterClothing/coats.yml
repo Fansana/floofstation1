@@ -26,10 +26,10 @@
   - type: Armor #same as regular sec armor
     modifiers:
       coefficients:
-        Blunt: 0.70
-        Slash: 0.70
-        Piercing: 0.70
-        Heat: 0.80
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.4
 
 - type: entity
   parent: ClothingOuterCoatDetective
@@ -59,11 +59,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
-        Caustic: 0.75 # not the full 90% from ss13 because of the head
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Caustic: 0.37 # not the full 90% from ss13 because of the head
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -75,10 +75,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -236,9 +236,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.95
-        Heat: 0.95
-        Caustic: 0.65
+        Slash: 0.47
+        Heat: 0.47
+        Caustic: 0.33
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabCmo]
@@ -258,7 +258,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.37
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRnd]
@@ -278,7 +278,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.37
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRobo]
@@ -298,8 +298,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
-        Radiation: 0.9
+        Caustic: 0.37
+        Radiation: 0.45
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRD]
@@ -363,9 +363,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.65
-        Piercing: 0.85
+        Blunt: 0.4
+        Slash: 0.33
+        Piercing: 0.43
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -413,11 +413,11 @@
   - type: Armor # DeltaV - tweak for Velta armour
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.85
-        Heat: 0.75
-        Caustic: 0.75
+        Blunt: 0.43
+        Slash: 0.43
+        Piercing: 0.43
+        Heat: 0.37
+        Caustic: 0.37
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -432,7 +432,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.37
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -447,7 +447,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.75
+        Caustic: 0.37
 
 - type: entity
   parent: ClothingOuterStorageBase
