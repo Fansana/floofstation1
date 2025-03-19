@@ -9,6 +9,7 @@
     state: gohei
   - type: MeleeWeapon
     wideAnimationRotation: -150
+    heavyStaminaCost: 0.1
     damage:
       types:
         Blunt: 0

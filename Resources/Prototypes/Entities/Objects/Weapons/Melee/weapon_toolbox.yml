@@ -14,6 +14,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
+    heavyStaminaCost: 0.1
     damage:
       types:
         Blunt: 40

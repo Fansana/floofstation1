@@ -36,6 +36,7 @@
       types:
         Blunt: 15
     bluntStaminaDamageFactor: 2.0
+    heavyStaminaCost: 0.1
     heavyRateModifier: 0.8
     heavyDamageBaseModifier: 1.2
     animation: WeaponArcThrust

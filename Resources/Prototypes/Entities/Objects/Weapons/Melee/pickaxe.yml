@@ -24,6 +24,7 @@
         Piercing: 6
     bluntStaminaDamageFactor: 2.0
     heavyDamageBaseModifier: 1.75
+    heavyStaminaCost: 0.1
     maxTargets: 5
     angle: 80
   - type: Wieldable
@@ -31,7 +32,7 @@
     damage:
       types:
         Blunt: 10
-        Structural: 60
+        Structural: 30
   - type: Item
     size: Normal
     shape:
@@ -68,7 +69,7 @@
       types:
         Blunt: 4
         Slash: 2
-        Structural: 30
+        Structural: 15
     bluntStaminaDamageFactor: 1
     heavyRateModifier: 1
     heavyRangeModifier: 2

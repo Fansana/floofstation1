@@ -19,6 +19,7 @@
         Slash: 16
     heavyRateModifier: 0.8
     heavyDamageBaseModifier: 1.2
+    heavyStaminaCost: 0.1
     maxTargets: 3
     angle: 40
     soundHit:
@@ -101,6 +102,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
+    heavyStaminaCost: 0.1
     damage:
       types:
         Slash: 18
@@ -164,6 +166,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: 90
     attackRate: 1.2
+    heavyStaminaCost: 0.1
     damage:
       types:
         Slash: 10

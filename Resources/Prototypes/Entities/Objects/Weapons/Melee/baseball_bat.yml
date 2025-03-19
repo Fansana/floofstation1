@@ -13,7 +13,7 @@
     damage:
       types:
         Blunt: 15
-        Structural: 10
+        Structural: 5
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 0.5
     heavyDamageBaseModifier: 1.75
@@ -27,7 +27,7 @@
     damage:
       types:
         Blunt: 4
-        Structural: 10
+        Structural: 5
   - type: Item
     size: Normal
   - type: Tool
@@ -74,6 +74,7 @@
   components:
   - type: MeleeThrowOnHit
   - type: MeleeWeapon
+    heavyStaminaCost: 0.1
     damage:
       types:
         Blunt: 1

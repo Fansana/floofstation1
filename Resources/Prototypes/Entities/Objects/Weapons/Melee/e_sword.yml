@@ -37,7 +37,7 @@
         types:
             Slash: 16
             Heat: 20
-            Structural: 40
+            Structural: 20
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
     layers:
@@ -50,6 +50,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.25
+    heavyStaminaCost: 0.1
     damage:
       types:
         Blunt: 9
@@ -157,6 +158,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1
+    heavyStaminaCost: 0.1
     hidden: true
     damage:
       types:
@@ -233,6 +235,7 @@
         map: [ "blade" ]
   - type: MeleeWeapon # DeltaV - reduced attack rate of e-cutlass; slower, more brutal swings
     attackRate: 0.75
+    heavyStaminaCost: 0.1
     soundHit:
       path: /Audio/Weapons/eblade1.ogg
     damage:
@@ -277,7 +280,7 @@
         types:
             Slash: 16
             Heat: 26
-            Structural: 30
+            Structural: 15
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -289,6 +292,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
+    heavyStaminaCost: 0.1
     angle: 100
     damage:
       types:

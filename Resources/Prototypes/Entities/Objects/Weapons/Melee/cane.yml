@@ -13,6 +13,7 @@
   - type: Appearance
   - type: MeleeWeapon
     wideAnimationRotation: 45
+    heavyStaminaCost: 0.1
     damage:
       types:
         Blunt: 10
@@ -39,6 +40,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: 65
     attackRate: 1.5
+    heavyStaminaCost: 0.1
     damage:
       types:
         Slash: 28

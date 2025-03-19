@@ -415,7 +415,7 @@
     damage:
       types:
         Blunt: 50
-        Structural: 60
+        Structural: 30
   # Short lifespan
   - type: TimedDespawn
     lifetime: 0.4
@@ -436,7 +436,7 @@
     damage:
       types:
         Blunt: 60
-        Structural: 70
+        Structural: 35
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn

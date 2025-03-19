@@ -11,6 +11,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: 90
     attackRate: 0.75
+    heavyStaminaCost: 0.1
     damage:
       types:
         Slash: 50

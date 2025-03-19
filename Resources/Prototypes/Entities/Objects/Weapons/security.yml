@@ -152,6 +152,7 @@
       charges: 5
     - type: MeleeWeapon
       wideAnimationRotation: 180
+      heavyStaminaCost: 0.1
       damage:
         types:
           Blunt: 0 # melee weapon to allow flashing individual targets

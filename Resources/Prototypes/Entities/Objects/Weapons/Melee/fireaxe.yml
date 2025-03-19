@@ -20,7 +20,7 @@
         # axes are kinda like sharp hammers, you know?
         Blunt: 8
         Slash: 12
-        Structural: 20
+        Structural: 10
     heavyDamageBaseModifier: 1.0
     heavyStaminaCost: 1
     angle: 100
@@ -32,7 +32,7 @@
       types:
         Blunt: 4
         Slash: 10
-        Structural: 80
+        Structural: 40
   - type: Item
     size: Ginormous
   - type: Clothing
