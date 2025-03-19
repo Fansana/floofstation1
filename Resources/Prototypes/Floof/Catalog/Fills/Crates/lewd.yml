@@ -32,7 +32,7 @@
         children:
         - !type:NestedSelector
           tableId: LewdImpactPlay
-          rolls: !type:ConstantNumberSelector { value: 4 }
+          rolls: !type:ConstantNumberSelector { value: 3 }
         - !type:NestedSelector
           tableId: LewdKinkClothing
           rolls: !type:ConstantNumberSelector { value: 4 }
