@@ -3249,3 +3249,12 @@ Entries:
   id: 349
   time: '2025-03-18T22:26:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/614
+- author: ElusiveCoin
+  changes:
+    - type: Add
+      message: Added a new species, the Chitinid.
+    - type: Add
+      message: Added Chitinid species
+  id: 350
+  time: '2025-03-19T02:23:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/608
