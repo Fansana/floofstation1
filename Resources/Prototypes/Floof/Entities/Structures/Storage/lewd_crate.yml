@@ -2,7 +2,6 @@
   parent: CrateBaseWeldable
   id: CrateLewd
   name: lewd crate
-  suffix: Empty
   components:
   - type: Icon
     sprite: Floof/Structures/lewdcrate.rsi
@@ -18,7 +17,6 @@
   parent: CrateBaseWeldable
   id: CrateKink
   name: kink crate
-  suffix: Empty
   components:
   - type: Icon
     sprite: Floof/Structures/kinkcrate.rsi

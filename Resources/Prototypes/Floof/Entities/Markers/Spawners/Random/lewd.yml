@@ -136,6 +136,7 @@
     - id: SpankPinkPaddle
     - id: SpankTealPaddle
     - id: Shinai
+      weight: 0.5
 
 - type: entityTable
   id: LewdKinkClothing
@@ -283,7 +284,9 @@
     - id: ClothingMaskGasMuffled
     - id: ClothingMaskMuzzle
     - id: ClothingEyesBlindfold
+    - id: DrinkCumBottleFull
     - id: Handcuffs
+      weight: 0.5 # Making these a little rarer since they're power items
     - id: Zipties # These should never actually be used for kink
     - id: BoxCandle
     - id: BoxCandleSmall
