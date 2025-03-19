@@ -206,7 +206,7 @@
     sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/musiciankingblack.rsi
-    
+
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformClassicalMaidDress
@@ -217,4 +217,16 @@
     sprite: Floof/Clothing/Uniforms/ClassicalMaidDress.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/ClassicalMaidDress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformFlamenco
+  name: Flamenco Dress
+  description: A traditional flowing flamenco dress, dance your sorrow away!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/flamencodress.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/flamencodress.rsi
+
 
