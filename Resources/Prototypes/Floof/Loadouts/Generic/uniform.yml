@@ -205,3 +205,19 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian2
+
+- type: loadout
+  id: LoadoutUniformFlemenco
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformFlamenco
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
