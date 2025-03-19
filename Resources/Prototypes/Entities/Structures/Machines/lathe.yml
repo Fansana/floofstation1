@@ -1380,6 +1380,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ClothingUniformJumpsuitCMOTurtle
+      - ClothingUniformJumpskirtCMOTurtle
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -1898,6 +1900,11 @@
       - PlushieFDrone
       - PlushieFRouny
       - Plushiegirlfailure
+      - PlushieKitsuneCaptain
+      - PlushieSapphicHarpyPlushie
+      - PlushieFeistyBartender
+      - PlushieCoolVulp
+      - PlushieNoticeableSecurityOfficer
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:

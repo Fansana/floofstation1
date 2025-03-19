@@ -154,6 +154,9 @@
           Quantity: 8
         - ReagentId: Vitamin
           Quantity: 4
+  - type: Tag  # Floof
+    tags:
+     - NachosCuban
 # Tastes like nachos, hot pepper.
 
 - type: entity
