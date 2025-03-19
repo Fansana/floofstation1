@@ -32,12 +32,12 @@
         children:
         - !type:NestedSelector
           tableId: LewdImpactPlay
-          rolls: !type:ConstantNumberSelector { value: 3 }
+          rolls: !type:ConstantNumberSelector { value: 4 }
         - !type:NestedSelector
           tableId: LewdKinkClothing
           rolls: !type:ConstantNumberSelector { value: 4 }
         - !type:NestedSelector
           tableId: LewdKinkTools
-          rolls: !type:ConstantNumberSelector { value: 4 }
+          rolls: !type:ConstantNumberSelector { value: 5 }
         - id: Brutepack
           prob: 0.5
