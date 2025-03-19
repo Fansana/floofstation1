@@ -1375,9 +1375,36 @@
 
 - type: Tag
   id: WriteIgnoreStamps
+# EE Emote Fix Start
+- type: Tag
+  id: FelinidEmotes
 
-#Floof tags
+- type: Tag
+  id: HarpyEmotes
 
+- type: Tag
+  id: VulpEmotes
+
+- type: Tag
+  id: ShadowkinEmotes
+
+- type: Tag
+  id: SiliconEmotes
+
+- type: Tag
+  id: UnathiEmotes
+  
+- type: Tag
+  id: MothEmotes
+
+- type: Tag
+  id: ArachnidEmotes
+
+- type: Tag
+  id: DionaEmotes
+# EE Emote Fix End
+
+# Floof tags
 - type: Tag
   id: BrassKnuckles
 
@@ -1412,5 +1439,4 @@
 #medical tags
 - type: Tag
   id: Sterilebag
-
 #floof tag ends

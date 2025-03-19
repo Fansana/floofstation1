@@ -35,3 +35,17 @@ loadout-name-LoadoutItemBoxSurvivalSecurity = survival box (security)
 loadout-name-LoadoutItemBoxSurvivalBrigmedic = survival box (corpsman)
 loadout-name-LoadoutItemBoxSurvivalMedical = survival box (medical)
 loadout-name-LoadoutItemBoxHug = box of hugs (clown)
+
+loadout-name-LoadoutItemBoxSurvivalWaterVapor = survival box (standard, H2O)
+loadout-name-LoadoutItemBoxSurvivalEngineeringWaterVapor = extended-capacity survival box (engineering, H2O)
+loadout-name-LoadoutItemBoxSurvivalSecurityWaterVapor = survival box (security, H2O)
+loadout-name-LoadoutItemBoxSurvivalBrigmedicWaterVapor = survival box (corpsman, H2O)
+loadout-name-LoadoutItemBoxSurvivalMedicalWaterVapor = survival box (medical, H2O)
+loadout-name-LoadoutItemBoxHugWaterVapor = box of hugs (clown, H2O)
+
+loadout-description-LoadoutItemBoxSurvivalWaterVapor = It's a box with basic internals inside, intended for aquatic crewmates.
+loadout-description-LoadoutItemBoxSurvivalEngineeringWaterVapor = It's a box with basic internals inside, intended for aquatic crewmates. This one is labelled to contain an extended-capacity tank.
+loadout-description-LoadoutItemBoxSurvivalSecurityWaterVapor = It's a box with basic internals inside, intended for aquatic crewmates.
+loadout-description-LoadoutItemBoxSurvivalBrigmedicWaterVapor = It's a box with basic internals inside, intended for aquatic crewmates.
+loadout-description-LoadoutItemBoxSurvivalMedicalWaterVapor = It's a box with basic internals inside, intended for aquatic crewmates.
+loadout-description-LoadoutItemBoxHugWaterVapor = A special box for sensitive people, intended for aquatic crewmates.

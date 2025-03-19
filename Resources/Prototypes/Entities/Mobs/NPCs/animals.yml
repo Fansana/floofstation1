@@ -1399,7 +1399,7 @@
   - type: Speech
     speechSounds: Lizard
     speechVerb: Reptilian
-    allowedEmotes: ['Thump']
+    allowedEmotes: [ 'Thump', 'Yip' ]
   - type: Vocal
     sounds:
       Male: MaleReptilian

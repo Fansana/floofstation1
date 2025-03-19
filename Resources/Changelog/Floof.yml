@@ -3206,3 +3206,46 @@ Entries:
   id: 344
   time: '2025-03-17T19:20:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/611
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Fixed chaplain showing up under Unknown department on crew monitor and
+        other strange behavior with chaplain ID
+  id: 345
+  time: '2025-03-18T14:18:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/634
+- author: Nox38
+  changes:
+    - type: Tweak
+      message: Added semi-auto firemode to all automatic weapons.
+  id: 346
+  time: '2025-03-18T14:20:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/627
+- author: Tk420634
+  changes: []
+  id: 347
+  time: '2025-03-18T21:23:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/632
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        The Feroxi are now here! A collection of shark-like people, who can use
+        Water Vapor instead of Oxygen!
+  id: 348
+  time: '2025-03-18T21:23:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/612
+- author: themias
+  changes:
+    - type: Tweak
+      message: Butter can be sliced, cookie and toast recipes now use butter slices.
+    - type: Tweak
+      message: Chefvend butter reduced from 4 to 3.
+    - type: Add
+      message: >-
+        Multi-tiered celebration and wedding cakes. Don't wait for a wedding,
+        any excuse will do.
+  id: 349
+  time: '2025-03-18T22:26:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/614
