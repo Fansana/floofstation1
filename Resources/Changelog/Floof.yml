@@ -3274,3 +3274,12 @@ Entries:
   id: 352
   time: '2025-03-19T20:16:51.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/550
+- author: Fenny
+  changes:
+    - type: Tweak
+      message: >-
+        Examine range to 16 tiles so you no longer have to walk up to people and
+        oogle them from point blank range to read about their heaving cleavage.
+  id: 353
+  time: '2025-03-20T01:46:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/641
