@@ -145,7 +145,7 @@
   - type: Armor #Copied from the sec helmet, as it's hard to give these sane values without locational damage existing.
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.45
-        Heat: 0.4
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling

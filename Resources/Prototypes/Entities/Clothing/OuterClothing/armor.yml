@@ -14,10 +14,10 @@
   - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.35 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
-        Heat: 0.4
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.35 #Floofstation - Combat doubling
+        Piercing: 0.35  #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.90
 
@@ -47,11 +47,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.35
-        Heat: 0.45
-        Caustic: 0.45
+        Blunt: 0.2 #Floofstation - Combat doubling
+        Slash: 0.2 #Floofstation - Combat doubling
+        Piercing: 0.35 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: GroupExamine
@@ -69,10 +69,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.2
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.2 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.80
 
@@ -89,10 +89,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.2 # this technically means it protects against fires pretty well? -heat is just for lasers and stuff, not atmos temperature
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.2 #Floofstation - Combat doubling
   - type: Reflect
     reflectProb: 1
     innate: true # armor grants a passive shield that does not require concentration to maintain
@@ -112,10 +112,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.37
-        Heat: 0.25
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.37 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
   - type: GroupExamine
 
 - type: entity
@@ -131,12 +131,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.25
-        Radiation: 0
-        Caustic: 0.37
+        Blunt: 0.1 #Floofstation - Combat doubling
+        Slash: 0.1 #Floofstation - Combat doubling
+        Piercing: 0.1 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
+        Radiation: 0 #Floofstation - Combat doubling
+        Caustic: 0.37 #Floofstation - Combat doubling
   - type: GroupExamine
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
@@ -201,11 +201,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.3
-        Heat: 0.25
-        Caustic: 0.45
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -227,11 +227,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.25
-        Heat: 0.45
-        Radiation: 0.4
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
+        Radiation: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.65
@@ -258,9 +258,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.4
-        Piercing: 0.2
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.2 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
   - type: HeldSpeedModifier
@@ -286,10 +286,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.3
-        Heat: 0.25
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
   - type: GroupExamine
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET

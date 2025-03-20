@@ -12,7 +12,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.25
+        Caustic: 0.25  #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterBioGeneral

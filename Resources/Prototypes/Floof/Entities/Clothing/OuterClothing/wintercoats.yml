@@ -148,11 +148,11 @@
   - type: Armor #A stylish but solid middle-ground between the Durathread Vest and Plate Carrier, but not as good as the Armored Trenchcoat or Armored Longcoat.
     modifiers:
       coefficients:
-        Blunt: 0.37
-        Slash: 0.35
-        Piercing: 0.37
-        Heat: 0.45
-        Caustic: 0.47
+        Blunt: 0.37 #Floofstation - Combat doubling
+        Slash: 0.35 #Floofstation - Combat doubling
+        Piercing: 0.37 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
+        Caustic: 0.47 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: ClothingSpeedModifier
@@ -172,11 +172,11 @@
   - type: Armor #overall better than the Secoff Armored Longcoat, Warden Longcoat defense stats have parity to Warden's Armored Jacket, being slightly better than the Armored Jacket but maintaining the slowdown.
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.33
-        Piercing: 0.35
-        Heat: 0.35
-        Caustic: 0.45
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.33 #Floofstation - Combat doubling
+        Piercing: 0.35 #Floofstation - Combat doubling
+        Heat: 0.35 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.85
   - type: ClothingSpeedModifier
@@ -196,11 +196,11 @@
   - type: Armor #Trades physical resistances for heat/caust/explosive compared to secoff armored longcoat, and is only 5% slow.
     modifiers:
       coefficients:
-        Blunt: 0.43
-        Slash: 0.43
-        Piercing: 0.43
-        Heat: 0.33
-        Caustic: 0.17
+        Blunt: 0.43 #Floofstation - Combat doubling
+        Slash: 0.43 #Floofstation - Combat doubling
+        Piercing: 0.43 #Floofstation - Combat doubling
+        Heat: 0.33 #Floofstation - Combat doubling
+        Caustic: 0.17 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.75
   - type: ClothingSpeedModifier
@@ -220,11 +220,11 @@
   - type: Armor #Effectively a heavier Armored Trenchcoat, trading speed for slightly better Slash and Explosion resistance.
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.3
-        Piercing: 0.35
-        Heat: 0.35
-        Caustic: 0.37
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.35 #Floofstation - Combat doubling
+        Heat: 0.35 #Floofstation - Combat doubling
+        Caustic: 0.37 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.75
   - type: ClothingSpeedModifier

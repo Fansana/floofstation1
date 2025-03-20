@@ -15,10 +15,10 @@
   - type: Armor #Values seem to let the user survive one extra hit if attacked consistently.
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -50,12 +50,12 @@
   - type: Armor #This is intentionally not spaceproof, when the time comes to port the values from SS13 this should be buffed from what it was.
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
-        Radiation: 0.4
-        Caustic: 0.47
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
+        Radiation: 0.4 #Floofstation - Combat doubling
+        Caustic: 0.47 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -87,9 +87,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.47
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
 
 #Bombsuit Helmet
 - type: entity
@@ -108,9 +108,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.47
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
   - type: HideLayerClothing
     slots:
     - Hair
@@ -144,10 +144,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.4
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Space Ninja Helmet
 - type: entity
@@ -279,10 +279,10 @@
   - type: Armor #admeme item so it should be fine being overpowered while helmets are still intentionally kneecapped.
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.25
-        Heat: 0.45
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #ERT HELMETS
 #ERT Leader Helmet

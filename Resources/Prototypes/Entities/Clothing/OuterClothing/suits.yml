@@ -14,10 +14,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.37
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.37 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.15
   - type: GroupExamine
@@ -72,9 +72,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.45
-        Heat: 0.4
-        Cold: 0.4
+        Slash: 0.45 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
+        Cold: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.7
@@ -107,9 +107,9 @@
     - type: Armor
       modifiers:
         coefficients:
-          Slash: 0.45
-          Heat: 0.4
-          Cold: 0.4
+          Slash: 0.45 #Floofstation - Combat doubling
+          Heat: 0.4 #Floofstation - Combat doubling
+          Cold: 0.4 #Floofstation - Combat doubling
     - type: ClothingSpeedModifier
       walkModifier: 0.8
       sprintModifier: 0.8
@@ -134,8 +134,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.45
-        Radiation: 0.001
+        Heat: 0.45 #Floofstation - Combat doubling
+        Radiation: 0.001 #Floofstation - Combat doubling
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/rad.rsi
   - type: GroupExamine
@@ -174,10 +174,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
   - type: NinjaSuit
   - type: PowerCellSlot
     cellSlotId: cell_slot

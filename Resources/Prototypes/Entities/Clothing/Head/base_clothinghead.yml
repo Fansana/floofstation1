@@ -168,11 +168,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.47
-        Heat: 0.45
-        Radiation: 0.17
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
+        Radiation: 0.17 #Floofstation - Combat doubling
   - type: GroupExamine
   - type: IngestionBlocker
   - type: Tag

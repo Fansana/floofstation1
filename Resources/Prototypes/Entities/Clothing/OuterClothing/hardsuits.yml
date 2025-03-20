@@ -17,10 +17,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Caustic: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.80
     sprintModifier: 0.80
@@ -49,11 +49,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.4
-        Radiation: 0.25
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
+        Radiation: 0.25 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -80,12 +80,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Shock: 0.4
-        Caustic: 0.25
-        Radiation: 0.1
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Shock: 0.4 #Floofstation - Combat doubling
+        Caustic: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.1 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -93,7 +93,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineering
   - type: StaminaDamageResistance
-    coefficient: 0.75 # 25%
+    coefficient: 0.37 #Floofstation - Combat doubling
 
 #Spationaut Hardsuit
 - type: entity
@@ -112,11 +112,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Radiation: 0.15 #salv is supposed to have radiation hazards in the future
-        Caustic: 0.4
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Radiation: 0.15 #Floofstation - Combat doubling
+        Caustic: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.8
@@ -143,11 +143,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.25
-        Radiation: 0.15
-        Caustic: 0.35
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.35 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.15 #Floofstation - Combat doubling
+        Caustic: 0.35 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -174,9 +174,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Heat: 0.45
-        Radiation: 0.37
-        Caustic: 0.25
+        Heat: 0.45 #Floofstation - Combat doubling
+        Radiation: 0.37 #Floofstation - Combat doubling
+        Caustic: 0.25 #Floofstation - Combat doubling
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitVoidParamed
   - type: ClothingSpeedModifier
@@ -206,11 +206,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.25
-        Heat: 0.15
-        Radiation: 0.05
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Heat: 0.15 #Floofstation - Combat doubling
+        Radiation: 0.05 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: TemperatureProtection
@@ -237,10 +237,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Caustic: 0.35
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Caustic: 0.35 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -248,8 +248,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurity
   - type: StaminaDamageResistance
-    coefficient: 0.37 # 25%
-
+    coefficient: 0.37 #Floofstation - Combat doubling
 #Brigmedic Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -267,9 +266,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.35
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.35 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.65
     sprintModifier: 0.65
@@ -277,7 +276,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
   - type: StaminaDamageResistance
-    coefficient: 0.37 # 25%
+    coefficient: 0.37 #Floofstation - Combat doubling
 
 #Warden's Hardsuit
 - type: entity
@@ -298,10 +297,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.3
-        Piercing: 0.3
-        Caustic: 0.35
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Caustic: 0.35 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -309,7 +308,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWarden
   - type: StaminaDamageResistance
-    coefficient: 0.37 # 35%
+    coefficient: 0.37 #Floofstation - Combat doubling
 
 #Captain's Hardsuit
 - type: entity
@@ -330,12 +329,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.3
-        Heat: 0.25
-        Radiation: 0.25
-        Caustic: 0.3
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.25 #Floofstation - Combat doubling
+        Caustic: 0.3 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -343,7 +342,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Chief Engineer's Hardsuit
 - type: entity
@@ -364,12 +363,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.2
-        Radiation: 0.0
-        Caustic: 0.35
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.2 #Floofstation - Combat doubling
+        Radiation: 0.0 #Floofstation - Combat doubling
+        Caustic: 0.35 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.8
@@ -380,7 +379,7 @@
     component:
     - type: SupermatterImmune
   - type: StaminaDamageResistance
-    coefficient: 0.33 # 35%
+    coefficient: 0.33 #Floofstation - Combat doubling
 
 #Chief Medical Officer's Hardsuit
 - type: entity
@@ -399,7 +398,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.05
+        Caustic: 0.05 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.95
@@ -424,12 +423,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.4
-        Piercing: 0.45
-        Heat: 0.15
-        Radiation: 0.05
-        Caustic: 0.1
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.15 #Floofstation - Combat doubling
+        Radiation: 0.05 #Floofstation - Combat doubling
+        Caustic: 0.1 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.1
   - type: ClothingSpeedModifier
@@ -451,7 +450,7 @@
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
   - type: StaminaDamageResistance
-    coefficient: 0.37 # 25% as in "shock resistance" :trollface:
+    coefficient: 0.37 #Floofstation - Combat doubling
 
 #Head of Security's Hardsuit
 - type: entity
@@ -472,11 +471,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.25
-        Piercing: 0.25
-        Radiation: 0.25
-        Caustic: 0.3
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.25 #Floofstation - Combat doubling
+        Caustic: 0.3 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -484,7 +483,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -505,11 +504,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.4
-        Radiation: 0.25
-        Caustic: 0.4
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Radiation: 0.25 #Floofstation - Combat doubling
+        Caustic: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.9
@@ -539,12 +538,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.25
-        Slash: 0.25
-        Piercing: 0.25
-        Heat: 0.25
-        Radiation: 0.25
-        Caustic: 0.25
+        Blunt: 0.25 #Floofstation - Combat doubling
+        Slash: 0.25 #Floofstation - Combat doubling
+        Piercing: 0.25 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.25 #Floofstation - Combat doubling
+        Caustic: 0.25 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -558,7 +557,7 @@
     - WhitelistChameleon
     - HidesHarpyWings
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -579,7 +578,7 @@
     - WhitelistChameleon
     - HidesHarpyWings
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -604,12 +603,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.1
-        Radiation: 0.005
-        Caustic: 0.25
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Heat: 0.1 #Floofstation - Combat doubling
+        Radiation: 0.005 #Floofstation - Combat doubling
+        Caustic: 0.25 #Floofstation - Combat doubling
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
@@ -619,7 +618,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -640,12 +639,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.15
-        Heat: 0.25
-        Radiation: 0.17
-        Caustic: 0.2
+        Blunt: 0.2 #Floofstation - Combat doubling
+        Slash: 0.2 #Floofstation - Combat doubling
+        Piercing: 0.15 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
+        Radiation: 0.17 #Floofstation - Combat doubling
+        Caustic: 0.2 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -653,7 +652,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -674,12 +673,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.1
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-        Radiation: 0.1
-        Caustic: 0.1
+        Blunt: 0.1 #Floofstation - Combat doubling
+        Slash: 0.1 #Floofstation - Combat doubling
+        Piercing: 0.1 #Floofstation - Combat doubling
+        Heat: 0.1 #Floofstation - Combat doubling
+        Radiation: 0.1 #Floofstation - Combat doubling
+        Caustic: 0.1 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.65
@@ -687,7 +686,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Wizard Hardsuit
 - type: entity
@@ -708,12 +707,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.2
-        Heat: 0.17
-        Radiation: 0.17
-        Caustic: 0.37
+        Blunt: 0.3 #Floofstation - Combat doubling
+        Slash: 0.3 #Floofstation - Combat doubling
+        Piercing: 0.2 #Floofstation - Combat doubling
+        Heat: 0.17 #Floofstation - Combat doubling
+        Radiation: 0.17 #Floofstation - Combat doubling
+        Caustic: 0.37 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -721,7 +720,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWizard
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Ling Space Suit
 - type: entity
@@ -742,10 +741,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.5
-        Heat: 0.25
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.5 #Floofstation - Combat doubling
+        Heat: 0.25 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -771,11 +770,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.45
-        Heat: 0.2
-        Caustic: 0.37
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.2 #Floofstation - Combat doubling
+        Caustic: 0.37 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
@@ -804,11 +803,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.4
-        Piercing: 0.43
-        Heat: 0.2
-        Caustic: 0.37
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.43 #Floofstation - Combat doubling
+        Heat: 0.2 #Floofstation - Combat doubling
+        Caustic: 0.37 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -818,7 +817,7 @@
   - type: StaticPrice
     price: 0
   - type: StaminaDamageResistance
-    coefficient: 0.37 # 25%
+    coefficient: 0.37 #Floofstation - Combat doubling
 
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
@@ -835,7 +834,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -851,7 +850,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -867,7 +866,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #ERT Medic Hardsuit
 - type: entity
@@ -883,7 +882,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #ERT Security Hardsuit
 - type: entity
@@ -903,7 +902,7 @@
     - Hardsuit
     - WhitelistChameleon
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -919,7 +918,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
   - type: StaminaDamageResistance
-    coefficient: 0.25 # 50%
+    coefficient: 0.25 #Floofstation - Combat doubling
 
 #Deathsquad
 - type: entity
@@ -942,12 +941,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.05 #best armor in the game
-        Slash: 0.05
-        Piercing: 0.05
-        Heat: 0.05
-        Radiation: 0.05
-        Caustic: 0.05
+        Blunt: 0.05 #Floofstation - Combat doubling
+        Slash: 0.05 #Floofstation - Combat doubling
+        Piercing: 0.05 #Floofstation - Combat doubling
+        Heat: 0.05 #Floofstation - Combat doubling
+        Radiation: 0.05 #Floofstation - Combat doubling
+        Caustic: 0.05 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -955,7 +954,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
   - type: StaminaDamageResistance
-    coefficient: 0.05 # 90%
+    coefficient: 0.05 #Floofstation - Combat doubling
 
 #CBURN Hardsuit
 - type: entity
@@ -978,14 +977,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.35
-        Slash: 0.35
-        Piercing: 0.3
-        Heat: 0.05
-        Cold: 0.05
-        Shock: 0.05
-        Radiation: 0.05
-        Caustic: 0.05
+        Blunt: 0.35 #Floofstation - Combat doubling
+        Slash: 0.35 #Floofstation - Combat doubling
+        Piercing: 0.3 #Floofstation - Combat doubling
+        Heat: 0.05 #Floofstation - Combat doubling
+        Cold: 0.05 #Floofstation - Combat doubling
+        Shock: 0.05 #Floofstation - Combat doubling
+        Radiation: 0.05 #Floofstation - Combat doubling
+        Caustic: 0.05 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -1013,10 +1012,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Caustic: 0.4
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Caustic: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -1063,10 +1062,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.47
-        Caustic: 0.4
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
+        Caustic: 0.4 #Floofstation - Combat doubling
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9

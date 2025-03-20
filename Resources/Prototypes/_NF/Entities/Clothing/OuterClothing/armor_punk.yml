@@ -12,11 +12,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.37
-        Slash: 0.37
-        Piercing: 0.37 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
-        Heat: 0.4
-        Caustic: 0.45
+        Blunt: 0.37 #Floofstation - Combat doubling
+        Slash: 0.37 #Floofstation - Combat doubling
+        Piercing: 0.37 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: ExplosionResistance
     damageCoefficient: 0.90
 

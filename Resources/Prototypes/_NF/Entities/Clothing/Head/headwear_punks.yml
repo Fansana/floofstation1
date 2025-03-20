@@ -13,7 +13,7 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.45
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: HideLayerClothing
     slots:
     - Hair

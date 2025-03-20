@@ -12,10 +12,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -30,10 +30,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -50,8 +50,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.45
-        Heat: 0.37
+        Slash: 0.45 #Floofstation - Combat doubling
+        Heat: 0.37 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -68,10 +68,10 @@
   - type: Armor # MAKE SURE THE STATS ALIGN WITH SEC WINTER COAT!!!
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.47
-        Heat: 0.37
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
+        Heat: 0.37 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -88,8 +88,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.45
-        Heat: 0.37
+        Slash: 0.45 #Floofstation - Combat doubling
+        Heat: 0.37 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -106,10 +106,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.47
-        Heat: 0.37
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
+        Heat: 0.37 #Floofstation - Combat doubling
 
 - type: entity
   parent: ClothingOuterStorageBase

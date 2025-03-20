@@ -12,6 +12,6 @@
   - type: Armor
     modifiers:
       coefficients:
-        Caustic: 0.17
+        Caustic: 0.17 #Floofstation - Combat doubling
   - type: TemperatureProtection
     coefficient: 1

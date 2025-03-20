@@ -151,10 +151,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Paramedic Void Helmet
 - type: entity
@@ -195,10 +195,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Brigmedic Hardsuit
 - type: entity
@@ -217,12 +217,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.47
-        Slash: 0.47
-        Piercing: 0.47
-        Heat: 0.47
-        Radiation: 0.45
-        Caustic: 0.45
+        Blunt: 0.47 #Floofstation - Combat doubling
+        Slash: 0.47 #Floofstation - Combat doubling
+        Piercing: 0.47 #Floofstation - Combat doubling
+        Heat: 0.47 #Floofstation - Combat doubling
+        Radiation: 0.45 #Floofstation - Combat doubling
+        Caustic: 0.45 #Floofstation - Combat doubling
   - type: PressureProtection
     highPressureMultiplier: 0.6
     lowPressureMultiplier: 1000
@@ -247,10 +247,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Captain's Hardsuit
 - type: entity
@@ -342,10 +342,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Luxury Mining Hardsuit
 - type: entity
@@ -387,10 +387,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Blood-red Medic Hardsuit
 - type: entity
@@ -412,10 +412,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -441,10 +441,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -466,10 +466,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -489,10 +489,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Wizard Hardsuit
 - type: entity
@@ -514,10 +514,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Organic Space Suit
 - type: entity
@@ -587,10 +587,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -624,10 +624,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #ERT Medical Hardsuit
 - type: entity
@@ -661,10 +661,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -715,10 +715,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
+        Blunt: 0.45 #Floofstation - Combat doubling
+        Slash: 0.45 #Floofstation - Combat doubling
+        Piercing: 0.45 #Floofstation - Combat doubling
+        Heat: 0.45 #Floofstation - Combat doubling
 
 #Deathsquad Hardsuit
 - type: entity
@@ -738,12 +738,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.4
-        Radiation: 0.4
-        Caustic: 0.47
+        Blunt: 0.4 #Floofstation - Combat doubling
+        Slash: 0.4 #Floofstation - Combat doubling
+        Piercing: 0.4 #Floofstation - Combat doubling
+        Heat: 0.4 #Floofstation - Combat doubling
+        Radiation: 0.4 #Floofstation - Combat doubling
+        Caustic: 0.47 #Floofstation - Combat doubling
 
 #MISC. HARDSUITS
 #Clown Hardsuit
