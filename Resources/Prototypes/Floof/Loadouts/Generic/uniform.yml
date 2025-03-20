@@ -253,3 +253,19 @@
        departments:
          - Security
          - Command
+
+- type: loadout
+  id: LoadoutUniformRedSidelessDress
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformRedSidelessDress
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command

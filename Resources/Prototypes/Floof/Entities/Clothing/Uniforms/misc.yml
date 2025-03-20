@@ -251,4 +251,15 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/bandeddancersgarb.rsi
 
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformRedSidelessDress
+  name: Red Sideless Dress
+  description: A red dress that leaves VERY LITTLE to the imagination.  Great for laying on top of pianos!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/redsidelessdress.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/redsidelessdress.rsi
+
 
