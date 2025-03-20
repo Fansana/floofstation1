@@ -32,3 +32,8 @@ trait-description-DrunkardAccent = You always sound like you're drunk.
 
 trait-name-AudioPlayer = Audio Player
 trait-description-AudioPlayer = You have an audio player installed, which allows you to play music.
+
+trait-name-Ratvarian = Ratvarian
+trait-description-Ratvarian =
+    The language of the cult of Ratvar. Enigmatic, gutteral, and difficult to pronounce. 
+    With some effort it can be understood by those not affiliated with the cult, but for you it comes naturally.

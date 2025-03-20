@@ -8,8 +8,10 @@
   - type: LanguageKnowledge
     speaks:
       - TauCetiBasic
+      - Schechi
     understands:
       - TauCetiBasic
+      - Schechi
   - type: Fixtures
     fixtures:
       fix1:
