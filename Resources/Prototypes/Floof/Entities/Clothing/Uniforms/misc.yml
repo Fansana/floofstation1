@@ -229,4 +229,14 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/flamencodress.rsi
 
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformRedDancersGarb
+  name: Red Dancers Garb
+  description: A red top and matching skirt that reveals a LOT of thigh!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/reddancersgarb.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/reddancersgarb.rsi
 
