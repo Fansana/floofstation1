@@ -240,3 +240,15 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/reddancersgarb.rsi
 
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformBandedDancersGarb
+  name: Banded Dancers Garb
+  description: A red top and matching skirt that rides high but hides the thigh!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/bandeddancersgarb.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/bandeddancersgarb.rsi
+
+
