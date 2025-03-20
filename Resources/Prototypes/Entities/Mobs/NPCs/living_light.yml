@@ -90,7 +90,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 50
+          damage: 50 #Floofstation - Combat doubling
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -105,10 +105,10 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 20
+        Heat: 20 #Floofstation - Combat doubling
     animation: WeaponArcFist
   - type: StaminaDamageOnHit
-    damage: 32
+    damage: 32 #Floofstation - Combat doubling
 
 - type: entity
   id: MobLuminousObject
@@ -135,7 +135,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 12
+        Heat: 12 #Floofstation - Combat doubling
 
 - type: entity
   id: MobLuminousEntity
@@ -162,7 +162,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 10
+        Heat: 10 #Floofstation - Combat doubling
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 140

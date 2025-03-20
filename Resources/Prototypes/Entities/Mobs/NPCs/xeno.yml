@@ -8,7 +8,7 @@
   - type: Insulated
   - type: CombatMode
     canDisarm: true
-    disarmFailChance: 0.1
+    disarmFailChance: 0.1 #Floofstation in prep of Xeno update
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -70,11 +70,11 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      200: Dead
+      100: Critical #Floofstation - Combat doubling
+      200: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.5
+      50: 0.5 #Floofstation - Combat doubling
   - type: Stamina
     critThreshold: 200
   - type: Bloodstream
@@ -89,7 +89,7 @@
     animation: WeaponArcBite
     damage:
       groups:
-        Brute: 12
+        Brute: 12 #Floofstation - Combat doubling
   - type: DamageStateVisuals
     rotate: true
     states:
@@ -161,8 +161,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Critical
-      400: Dead
+      300: Critical #Floofstation - Combat doubling
+      400: Dead #Floofstation - Combat doubling
   - type: Stamina
     critThreshold: 300
   - type: MovementSpeedModifier
@@ -170,7 +170,7 @@
     baseSprintSpeed : 3
   - type: SlowOnDamage
     speedModifierThresholds:
-      50: 0.7
+      150: 0.7 #Floofstation - Combat doubling
   - type: Fixtures
     fixtures:
       fix1:
@@ -198,15 +198,15 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      160: Critical
-      260: Dead
+      160: Critical #Floofstation - Combat doubling
+      260: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      40: 0.7
+      100: 0.7 #Floofstation - Combat doubling
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 12
+        Brute: 12 #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: Fixtures
@@ -236,18 +236,18 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      600: Critical
-      700: Dead
+      600: Critical #Floofstation - Combat doubling
+      700: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      150: 0.7
+      300: 0.7 #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 3
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 24
+       Brute: 24 #Floofstation - Combat doubling
   - type: Fixtures
     fixtures:
       fix1:
@@ -285,17 +285,17 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Critical
-      300: Dead
+      200: Critical #Floofstation - Combat doubling
+      300: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseSprintSpeed: 5
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 20
+       Brute: 20 #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      50: 0.7
+      100: 0.7 #Floofstation - Combat doubling
   - type: Fixtures
     fixtures:
       fix1:
@@ -326,7 +326,7 @@
   - type: MeleeWeapon
     damage:
      groups:
-       Brute: 20
+       Brute: 20 #Floofstation - Combat doubling
   - type: Fixtures
     fixtures:
       fix1:
@@ -376,10 +376,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.7
+      50: 0.7 #Floofstation - Combat doubling
   - type: HTN
     rootTask:
       task: SimpleRangedHostileCompound
@@ -445,7 +445,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 10
+        Piercing: 10 #Floofstation - Combat doubling
   - type: SolutionContainerManager
     solutions:
       melee:

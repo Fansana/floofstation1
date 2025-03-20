@@ -34,9 +34,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Dead
+      200: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 300
+    critThreshold: 300 #Floofstation - Combat doubling
   - type: MovementAlwaysTouching
   - type: Bloodstream
     bloodMaxVolume: 300
@@ -52,8 +52,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Blunt: 10
-        Slash: 20
+        Blunt: 10 #Floofstation - Combat doubling
+        Slash: 20 #Floofstation - Combat doubling
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -140,8 +140,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Blunt: 18
-        Slash: 4
+        Blunt: 18 #Floofstation - Combat doubling
+        Slash: 4 #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.5
     baseSprintSpeed: 4.5
@@ -155,7 +155,7 @@
       Dead:
         Base: kangaroo-space-dead
   - type: Stamina
-    critThreshold: 360
+    critThreshold: 360 #Floofstation - Combat doubling
   - type: Inventory
     speciesId: kangaroo
     templateId: spacekangaroo
@@ -202,9 +202,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      180: Dead
+      180: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 300
+    critThreshold: 300 #Floofstation - Combat doubling
   - type: DamageStateVisuals
     states:
       Alive:
@@ -240,8 +240,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 12
-        Poison: 8
+        Piercing: 12 #Floofstation - Combat doubling
+        Poison: 8 #Floofstation - Combat doubling
   - type: SolutionContainerManager
     solutions:
       melee:
@@ -309,9 +309,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Dead
+        200: Dead #Floofstation - Combat doubling
     - type: Stamina
-      critThreshold: 300
+      critThreshold: 300 #Floofstation - Combat doubling
     - type: DamageStateVisuals
       states:
         Alive:
@@ -350,8 +350,8 @@
       animation: WeaponArcBite
       damage:
         types:
-          Piercing: 12
-          Poison: 8
+          Piercing: 12 #Floofstation - Combat doubling
+          Poison: 8 #Floofstation - Combat doubling
     - type: SolutionContainerManager
       solutions:
         melee:

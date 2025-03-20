@@ -10,7 +10,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Dead #Tweak for "Acidify on Crit"
+        200: Dead #Floofstation - Combat doubling
     - type: MindContainer
       showExamineInfo: False
     - type: Loadout

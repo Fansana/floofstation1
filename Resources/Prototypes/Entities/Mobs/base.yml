@@ -126,8 +126,8 @@
       collection: MetalThud
     damage:
       types:
-        Slash: 5
-        Blunt: 5
+        Slash: 5 #Floofstation - Combat doubling
+        Blunt: 5 #Floofstation - Combat doubling
 
 # Used for mobs that are affected by atmospherics, pressure, and heat
 - type: entity

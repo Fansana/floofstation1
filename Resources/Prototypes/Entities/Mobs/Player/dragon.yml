@@ -85,12 +85,12 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      900: Critical
-      1000: Dead
+      900: Critical #Floofstation - Combat doubling
+      1000: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      350: 0.7
-      500: 0.5
+      350: 0.7 #Floofstation - Combat doubling
+      500: 0.5 #Floofstation - Combat doubling
   # disable taking damage from fire, since its a fire breathing dragon
   - type: Flammable
     damage:
@@ -121,13 +121,13 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Piercing: 30
-        Slash: 30
+        Piercing: 30 #Floofstation - Combat doubling
+        Slash: 30 #Floofstation - Combat doubling
   - type: Devourer
     foodPreference: Humanoid
     shouldStoreDevoured: true
     chemical: Ichor
-    healRate: 30.0
+    healRate: 30.0 #Floofstation - Combat doubling
     whitelist:
       components:
       - MobState
@@ -185,11 +185,11 @@
       settings: default
   - type: SlowOnDamage
     speedModifierThresholds:
-      200: 0.7
+      200: 0.7 #Floofstation - Combat doubling
   - type: MobThresholds
     thresholds:
       0: Alive
-      400: Dead
+      400: Dead #Floofstation - Combat doubling
   # less meat spawned since it's a lot easier to kill
   - type: Butcherable
     spawned:
@@ -198,7 +198,7 @@
   - type: MeleeWeapon
     damage:
       groups:
-        Brute: 24
+        Brute: 24 #Floofstation - Combat doubling
 
 - type: entity
   id: ActionSpawnRift

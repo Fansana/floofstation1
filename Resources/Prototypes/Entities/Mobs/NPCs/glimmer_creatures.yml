@@ -101,7 +101,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 600 #Floofstation - Combat doubling
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -119,12 +119,12 @@
   - type: DamageOnDispel
     damage:
       types:
-        Heat: 200
+        Heat: 200 #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      150: 0.8
-      200: 0.6
-      250: 0.3
+      200: 0.8
+      300: 0.6
+      400: 0.3
   - type: StatusEffects
     allowed:
     - Stun

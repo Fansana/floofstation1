@@ -99,10 +99,10 @@
   - type: MobThresholds
     thresholds: # BIG DOG. STRONG DOG
       0: Alive
-      200: Critical
-      400: Dead
+      200: Critical #Floofstation - Combat doubling
+      400: Dead #Floofstation - Combat doubling
   - type: StaminaDamageOnHit
-    damage: 44
+    damage: 44 #Floofstation - Combat doubling
   - type: MeleeWeapon
     hidden: true
     altDisarm: false
@@ -112,7 +112,7 @@
     attackRate: 1
     damage:
       types:
-        Slash: 20
+        Slash: 20 #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.70

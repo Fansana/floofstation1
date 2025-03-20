@@ -37,7 +37,7 @@
     angle: 0
     damage:
       types:
-        Heat: 20
+        Heat: 20 #Floofstation - Combat doubling
     animation: WeaponArcPunch
   - type: MobState
   - type: MobThresholds
@@ -48,7 +48,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 120
+        damage: 120 #Floofstation - Combat doubling
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

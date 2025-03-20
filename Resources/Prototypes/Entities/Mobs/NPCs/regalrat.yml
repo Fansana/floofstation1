@@ -46,7 +46,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Dead
+      400: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
@@ -54,8 +54,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 24
-        Piercing: 16
+        Slash: 24 #Floofstation - Combat doubling
+        Piercing: 16 #Floofstation - Combat doubling
   - type: Body
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg
@@ -152,7 +152,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      700: Dead
+      700: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh2.ogg
@@ -161,7 +161,8 @@
     animation: WeaponArcFist
     damage:
       types:
-        Blunt: 132 #oof ouch owie my bones
+        Piercing: 80 #Floofstation - Combat doubling
+        Blunt: 60  #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
       200: 0.7
@@ -240,8 +241,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Critical
-      60: Dead
+      30: Critical #Floofstation - Combat doubling
+      60: Dead #Floofstation - Combat doubling
   - type: Stamina
     critThreshold: 120
   - type: MeleeWeapon
@@ -251,8 +252,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 10
-        Piercing: 6
+        Slash: 10 #Floofstation - Combat doubling
+        Piercing: 6 #Floofstation - Combat doubling
   - type: Body
     prototype: Rat
     requiredLegs: 1 # TODO: More than 1 leg

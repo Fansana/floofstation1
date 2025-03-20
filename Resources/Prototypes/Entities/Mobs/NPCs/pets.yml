@@ -688,7 +688,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      300: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcBite
@@ -696,8 +696,8 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 24
-        Poison: 8
+        Piercing: 24 #Floofstation - Combat doubling
+        Poison: 8 #Floofstation - Combat doubling
   - type: Grammar
     attributes:
       proper: true
@@ -757,7 +757,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      400: Dead
+      400: Dead #Floofstation - Combat doubling
   - type: FootstepModifier
     footstepSoundCollection:
       path: /Audio/Effects/Footsteps/slime1.ogg
@@ -795,8 +795,8 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 1
-        Caustic: 1
+        Blunt: 2 #Floofstation - Combat doubling
+        Caustic: 2 #Floofstation - Combat doubling
   - type: MultiHandedItem
   - type: Item
     size: Huge

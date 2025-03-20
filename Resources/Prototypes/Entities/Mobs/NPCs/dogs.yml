@@ -12,10 +12,10 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 8
-        Piercing: 16
-        Blunt: 2
-        Structural: 8
+        Slash: 8 #Floofstation - Combat doubling
+        Piercing: 16 #Floofstation - Combat doubling
+        Blunt: 2 #Floofstation - Combat doubling
+        Structural: 4
   - type: MobState
   - type: Sprite
     drawdepth: Mobs
@@ -104,10 +104,10 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 4
-        Piercing: 10
-        Blunt: 1
-        Structural: 4
+        Slash: 4 #Floofstation - Combat doubling
+        Piercing: 10 #Floofstation - Combat doubling
+        Blunt: 1 #Floofstation - Combat doubling
+        Structural: 2
   - type: Fixtures
     fixtures:
       fix1:

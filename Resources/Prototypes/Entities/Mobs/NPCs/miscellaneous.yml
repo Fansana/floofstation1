@@ -36,7 +36,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Dead
+        200: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed: 2
       baseSprintSpeed: 5

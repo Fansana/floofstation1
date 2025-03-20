@@ -83,7 +83,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        1000: Dead
+        1000: Dead #Floofstation - Combat doubling
     - type: Metabolizer
       solutionOnBody: false
       updateInterval: 0.25
@@ -102,8 +102,8 @@
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
       damage:
         types:
-          Piercing: 20
-          Slash: 20
+          Piercing: 20 #Floofstation - Combat doubling
+          Slash: 20 #Floofstation - Combat doubling
     - type: Anomaly
       pulseSound:
         collection: BananiumHorn

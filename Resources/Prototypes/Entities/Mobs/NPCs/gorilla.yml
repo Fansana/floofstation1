@@ -56,7 +56,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      440: Dead
+      440: Dead #Floofstation - Combat doubling
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -71,9 +71,9 @@
       collection: Punch
     damage:
       types:
-        Piercing: 18
-        Blunt: 18
-        Structural: 40
+        Piercing: 18 #Floofstation - Combat doubling
+        Blunt: 18 #Floofstation - Combat doubling
+        Structural: 20
     animation: WeaponArcFist
   - type: MeleeThrowOnHit
     speed: 20
@@ -134,16 +134,16 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      700: Dead
+      700: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     soundHit:
       collection: Punch
     damage:
       types:
-        Piercing: 35
-        Slash: 20
-        Blunt: 15
-        Structural: 40
+        Piercing: 35 #Floofstation - Combat doubling
+        Slash: 20 #Floofstation - Combat doubling
+        Blunt: 15 #Floofstation - Combat doubling
+        Structural: 20
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 4

@@ -111,8 +111,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Critical
-      300: Dead
+      400: Critical #Floofstation - Combat doubling
+      600: Dead #Floofstation - Combat doubling
   - type: Metabolizer
     solutionOnBody: false
     metabolizerTypes: [ Dragon ]
@@ -138,8 +138,8 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Piercing: 10
-        Slash: 10
+        Piercing: 10 #Floofstation - Combat doubling
+        Slash: 10 #Floofstation - Combat doubling
   - type: Puller
     needsHands: false
   - type: ReplacementAccent
@@ -223,4 +223,4 @@
     deleteOnCollide: false
     damage:
       types:
-        Heat: 30
+        Heat: 30 #Floofstation - Combat doubling

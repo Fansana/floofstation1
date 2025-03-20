@@ -48,8 +48,8 @@
     group: GenericNumber
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      80: 0.5
+      600: 0.7
+      800: 0.5
   - type: MobPrice
     price: 1000 # Living critters are valuable in space.
   - type: Perishable
@@ -78,7 +78,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      900: Dead
+      900: Dead #Floofstation - Combat doubling
   - type: Butcherable
     spawned:
       - id: ArtifactFragment
@@ -90,9 +90,9 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Piercing: 250
-        Blunt: 50
-        Structural: 140
+        Piercing: 250 #Floofstation - Combat doubling
+        Blunt: 50 #Floofstation - Combat doubling
+        Structural: 70
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepThud

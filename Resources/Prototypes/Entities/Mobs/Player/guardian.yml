@@ -92,8 +92,8 @@
         collection: Punch
       damage:
         types:
-          Slash: 20
-          Blunt: 20
+          Slash: 20 #Floofstation - Combat doubling
+          Blunt: 20 #Floofstation - Combat doubling
           Structural: 40
     - type: MeleeSpeech
     - type: UserInterface
@@ -245,8 +245,8 @@
         collection: BikeHorn
       damage:
         types:
-          Slash: 5
-          Blunt: 5
+          Slash: 5 #Floofstation - Combat doubling
+          Blunt: 5 #Floofstation - Combat doubling
     - type: Loadout
       prototypes: [ HoloClownGear ]
     - type: RandomMetadata

@@ -34,9 +34,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Dead
+      150: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 150
+    critThreshold: 100 #Floofstation - Combat doubling
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -51,7 +51,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 12
+        Slash: 12 #Floofstation - Combat doubling
   - type: ReplacementAccent
     accent: genericAggressive
 
@@ -78,7 +78,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 16
+        Slash: 16 #Floofstation - Combat doubling
 
 - type: entity
   parent: BaseMobFlesh
@@ -99,7 +99,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -107,7 +107,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 16
+        Slash: 16 #Floofstation - Combat doubling
 
 - type: entity
   parent: BaseMobFlesh
@@ -128,7 +128,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      60: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -152,7 +152,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      60: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -182,7 +182,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      200: Dead
+      200: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 2.5
@@ -193,8 +193,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Piercing: 10
-        Blunt: 10
+        Piercing: 10 #Floofstation - Combat doubling
+        Blunt: 10 #Floofstation - Combat doubling
 
 - type: entity
   parent: [ SimpleSpaceMobBase, MobCombat ]
@@ -233,9 +233,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      150: Dead
+      150: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 150
+    critThreshold: 100 #Floofstation - Combat doubling
   - type: Butcherable
     spawned:
     - id: FoodMeat
@@ -250,7 +250,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 12
+        Slash: 12 #Floofstation - Combat doubling
   - type: ReplacementAccent
     accent: genericAggressive
   - type: SalvageMobRestrictions
@@ -278,7 +278,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 16
+        Slash: 16 #Floofstation - Combat doubling
 
 - type: entity
   parent: BaseMobFleshSalvage
@@ -299,7 +299,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -307,7 +307,7 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 16
+        Slash: 16 #Floofstation - Combat doubling
 
 - type: entity
   parent: BaseMobFleshSalvage
@@ -328,7 +328,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      60: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
@@ -352,7 +352,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      60: Dead
+      60: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5

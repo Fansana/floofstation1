@@ -26,7 +26,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead # Floof
+      120: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 4
@@ -101,9 +101,9 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Blunt: 12
-        Structural: 8
-        Caustic: 8
+        Blunt: 12 #Floofstation - Combat doubling
+        Structural: 4
+        Caustic: 8 #Floofstation - Combat doubling
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-slimes
@@ -177,7 +177,7 @@
     attackRate: 2
     damage:
       types:
-        Blunt: 8
+        Blunt: 8 #Floofstation - Combat doubling
   - type: DamageStateVisuals
     states:
       Alive:
@@ -225,10 +225,10 @@
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 12
-          Structural: 8
-          Caustic: 9
-          Poison: 4
+          Blunt: 12 #Floofstation - Combat doubling
+          Structural: 4
+          Caustic: 9 #Floofstation - Combat doubling
+          Poison: 8 #Floofstation - Combat doubling
 
 - type: entity
   name: green slime
@@ -260,10 +260,10 @@
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 12
-          Structural: 8
-          Caustic: 2
-          Cellular: 6
+          Blunt: 12 #Floofstation - Combat doubling
+          Structural: 4
+          Caustic: 2 #Floofstation - Combat doubling
+          Cellular: 6 #Floofstation - Combat doubling
 
 - type: entity
   name: yellow slime

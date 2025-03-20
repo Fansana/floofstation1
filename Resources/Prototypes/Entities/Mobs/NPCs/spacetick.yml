@@ -41,9 +41,9 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      30: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 30
+    critThreshold: 30 #Floofstation - Combat doubling
   - type: MovementAlwaysTouching
   - type: DamageStateVisuals
     states:
@@ -65,7 +65,7 @@
     animation: WeaponArcBite
     damage:
       groups:
-        Brute: 4
+        Brute: 4 #Floofstation - Combat doubling
   - type: SolutionContainerManager
     solutions:
       melee:

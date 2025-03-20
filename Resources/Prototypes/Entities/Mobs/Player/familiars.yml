@@ -28,7 +28,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: Damageable
     damageContainer: CorporealSpirit
     damageModifierSet: CorporealSpirit
@@ -65,7 +65,7 @@
   - type: DamageOnDispel
     damage:
       types:
-        Heat: 100
+        Heat: 100 #Floofstation - Combat doubling
 
 - type: entity
   name: Remilia
@@ -128,11 +128,11 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 10
+        Piercing: 10 #Floofstation - Combat doubling
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead
+      60: Dead #Floofstation - Combat doubling
 
 - type: entity
   name: Cerberus
@@ -155,8 +155,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 16
-        Slash: 14
+        Piercing: 16 #Floofstation - Combat doubling
+        Slash: 14 #Floofstation - Combat doubling
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -174,7 +174,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead
+      240: Dead #Floofstation - Combat doubling
   - type: Grammar
     attributes:
       gender: male
@@ -221,7 +221,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 18
+        Heat: 18 #Floofstation - Combat doubling
     soundHit:
       path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
       params:

@@ -28,24 +28,24 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Shock: 8
+        Shock: 8 #Floofstation - Combat doubling
   - type: StaminaDamageOnHit
-    damage: 40
+    damage: 40 #Floofstation - Combat doubling
     sound: /Audio/Weapons/egloves.ogg
   - type: MobThresholds
     thresholds:
       0: Alive
-      120: Dead
+      120: Dead #Floofstation - Combat doubling
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 100 #Floofstation - Combat doubling
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 120
+        damage: 120 #Floofstation - Combat doubling
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

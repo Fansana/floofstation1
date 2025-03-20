@@ -73,22 +73,22 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      240: Dead
+      240: Dead #Floofstation - Combat doubling
     stateAlertDict:
       Alive: BorgHealth
     showOverlays: false
   - type: Stamina
-    critThreshold: 240
+    critThreshold: 240 #Floofstation - Combat doubling
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 200 #Floofstation - Combat doubling
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 240 #Floofstation - Combat doubling
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

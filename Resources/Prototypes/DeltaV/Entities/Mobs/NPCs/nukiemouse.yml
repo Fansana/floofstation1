@@ -55,8 +55,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      40: Critical
-      60: Dead
+      80: Critical #Floofstation - Combat doubling
+      120: Dead #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed : 3
     baseSprintSpeed : 4.9
@@ -138,8 +138,8 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 10
-        Piercing: 6
+        Slash: 10 #Floofstation - Combat doubling
+        Piercing: 6 #Floofstation - Combat doubling
         Structural: 3
   - type: Body
     prototype: Rat

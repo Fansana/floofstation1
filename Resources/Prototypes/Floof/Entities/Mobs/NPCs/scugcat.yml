@@ -64,7 +64,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Piercing: 10 # NOM - Do NOT mess with skugs.
+        Piercing: 10 #Floofstation - Combat doubling
   - type: Physics
   - type: Fixtures
     fixtures:

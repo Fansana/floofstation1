@@ -51,19 +51,19 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      240: Dead
+      240: Dead #Floofstation - Combat doubling
   - type: Stamina
-    critThreshold: 240
+    critThreshold: 240 #Floofstation - Combat doubling
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 200 #Floofstation - Combat doubling
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 240 #Floofstation - Combat doubling
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -93,7 +93,7 @@
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
     damage:
       types:
-        Blunt: 12
+        Blunt: 12 #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed : 2
     baseSprintSpeed : 2.5
@@ -119,7 +119,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 80
+        damage: 80 #Floofstation - Combat doubling
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -142,7 +142,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 #Floofstation - Combat doubling
   - type: MovementSpeedModifier
     baseWalkSpeed : 1.5
     baseSprintSpeed : 2
@@ -150,7 +150,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 160
+        damage: 160 #Floofstation - Combat doubling
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -181,7 +181,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 160
+        damage: 160 #Floofstation - Combat doubling
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -209,12 +209,12 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 #Floofstation - Combat doubling
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 140
+        damage: 140 #Floofstation - Combat doubling
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -260,10 +260,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      20: 0.4
+      50: 0.4
   - type: Bloodstream
     bloodReagent: Water
     chemicalMaxVolume: 50
@@ -277,7 +277,7 @@
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 6
+        Slash: 6 #Floofstation - Combat doubling
   - type: MeleeChemicalInjector
     solution: bloodstream
     transferAmount: 2

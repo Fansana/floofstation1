@@ -40,9 +40,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Dead
+        100: Dead #Floofstation - Combat doubling
     - type: Stamina
-      critThreshold: 200
+      critThreshold: 200 #Floofstation - Combat doubling
     - type: DamageStateVisuals
       states:
         Alive:
@@ -63,8 +63,8 @@
         path: /Audio/Effects/bite.ogg
       damage:
         types:
-          Piercing: 10
-          Slash: 20
+          Piercing: 10 #Floofstation - Combat doubling
+          Slash: 20 #Floofstation - Combat doubling
     - type: TypingIndicator
       proto: alien
     - type: Tag
@@ -189,14 +189,14 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead #Floofstation - Combat doubling
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.7
+      50: 0.7 #Floofstation - Combat doubling
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 12
+        Slash: 12 #Floofstation - Combat doubling
 
 - type: entity
   name: sharkminnow
@@ -226,9 +226,9 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        360: Dead
+        360: Dead #Floofstation - Combat doubling
     - type: Stamina
-      critThreshold: 300
+      critThreshold: 300 #Floofstation - Combat doubling
     - type: DamageStateVisuals
       states:
         Alive:
@@ -247,7 +247,7 @@
     - type: MeleeWeapon
       damage:
         types:
-          Slash: 29
+          Slash: 29 #Floofstation - Combat doubling
           Bloodloss: 5
     - type: SurgeryTarget
     - type: UserInterface

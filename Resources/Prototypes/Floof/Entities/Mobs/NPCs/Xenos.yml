@@ -12,13 +12,13 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        30: Critical
-        50: Dead
+        60: Critical #Floofstation - Combat doubling
+        100: Dead #Floofstation - Combat doubling
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 6
-          Caustic: 6
+          Blunt: 6 #Floofstation - Combat doubling
+          Caustic: 6 #Floofstation - Combat doubling
 
 - type: entity
   name: Acid runner primed
@@ -43,8 +43,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        20: Critical
-        40: Dead
+        20: Critical #Floofstation - Combat doubling
+        40: Dead #Floofstation - Combat doubling
     - type: Fixtures
       fixtures:
         fix1:
@@ -62,8 +62,8 @@
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 2
-          Piercing: 2
+          Blunt: 2 #Floofstation - Combat doubling
+          Piercing: 2 #Floofstation - Combat doubling
 
 - type: entity
   name: Boiler
@@ -79,8 +79,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        100: Critical
-        200: Dead
+        100: Critical #Floofstation - Combat doubling
+        200: Dead #Floofstation - Combat doubling
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1
     - type: BasicEntityAmmoProvider
@@ -112,16 +112,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        240: Critical
-        400: Dead
+        240: Critical #Floofstation - Combat doubling
+        400: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 5
       baseSprintSpeed : 5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 8
-          Piercing: 2
+          Blunt: 8 #Floofstation - Combat doubling
+          Piercing: 2 #Floofstation - Combat doubling
 
 - type: entity
   name: Carrier
@@ -137,16 +137,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Critical
-        400: Dead
+        200: Critical #Floofstation - Combat doubling
+        400: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 4.5
       baseSprintSpeed : 4.5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 6
-          Piercing: 4
+          Blunt: 6 #Floofstation - Combat doubling
+          Piercing: 4 #Floofstation - Combat doubling
 
 - type: entity
   name: Crusher
@@ -162,15 +162,15 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        260: Critical
-        400: Dead
+        260: Critical #Floofstation - Combat doubling
+        400: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 3
       baseSprintSpeed : 7
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 16
+          Blunt: 16 #Floofstation - Combat doubling
 
 - type: entity
   name: Charger Crusher
@@ -191,16 +191,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        200: Critical
-        400: Dead
+        200: Critical #Floofstation - Combat doubling
+        400: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 5
       baseSprintSpeed : 5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 6
-          Piercing: 2
+          Blunt: 6 #Floofstation - Combat doubling
+          Piercing: 2 #Floofstation - Combat doubling
 
 - type: entity
   name: Defender
@@ -212,16 +212,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        500: Critical
-        700: Dead
+        500: Critical #Floofstation - Combat doubling
+        700: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 3
       baseSprintSpeed : 3
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 4
-          Piercing: 4
+          Blunt: 4 #Floofstation - Combat doubling
+          Piercing: 4 #Floofstation - Combat doubling
 
 - type: entity
   name: Sentinel
@@ -241,16 +241,16 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        800: Critical
-        1000: Dead
+        800: Critical #Floofstation - Combat doubling
+        1000: Dead #Floofstation - Combat doubling
     - type: MovementSpeedModifier
       baseWalkSpeed : 3.5
       baseSprintSpeed : 3.5
     - type: MeleeWeapon
       damage:
         types:
-          Blunt: 6
-          Piercing: 6
+          Blunt: 6 #Floofstation - Combat doubling
+          Piercing: 6 #Floofstation - Combat doubling
 
 - type: entity
   name: Bloody Larva
@@ -286,5 +286,5 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        400: Critical
-        600: Dead
+        400: Critical #Floofstation - Combat doubling
+        600: Dead #Floofstation - Combat doubling
