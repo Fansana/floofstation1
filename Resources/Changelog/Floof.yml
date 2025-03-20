@@ -3258,3 +3258,28 @@ Entries:
   id: 350
   time: '2025-03-19T02:23:30.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/608
+- author: Tk420634
+  changes:
+    - type: Add
+      message: 'Flamenco Dress to loadout and theater vending machine.  '
+  id: 351
+  time: '2025-03-19T20:15:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/636
+- author: VividPups
+  changes:
+    - type: Add
+      message: Excommunicant is now added to Mantis Loadout
+    - type: Tweak
+      message: Zipties, psi-breaker, headcages can now go into the mantis belt
+  id: 352
+  time: '2025-03-19T20:16:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/550
+- author: Fenny
+  changes:
+    - type: Tweak
+      message: >-
+        Examine range to 16 tiles so you no longer have to walk up to people and
+        oogle them from point blank range to read about their heaving cleavage.
+  id: 353
+  time: '2025-03-20T01:46:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/641
