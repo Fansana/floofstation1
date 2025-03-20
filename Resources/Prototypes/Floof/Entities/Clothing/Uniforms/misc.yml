@@ -266,10 +266,21 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformPurpleNightclubDress
   name: Purple Nightclub Dress
-  description: A purple 'dress' that was clearly made to be taken off rather than be worn for extended periods!
+  description: A purple dress made more for taking off than for wearing.
   components:
   - type: Sprite
     sprite: Floof/Clothing/Uniforms/purplenightclubdress.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/purplenightclubdress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformBlackPetticoatDress
+  name: Black Petticoat Dress
+  description: Aahhh, yes dahling.  You're ravashing!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/blackpetticoatdress.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/blackpetticoatdress.rsi
 

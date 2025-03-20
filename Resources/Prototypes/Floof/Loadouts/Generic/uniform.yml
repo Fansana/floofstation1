@@ -296,3 +296,19 @@
        departments:
          - Security
          - Command
+
+- type: loadout
+  id: LoadoutUniformBlackPetticoatDress
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformBlackPetticoatDress
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
