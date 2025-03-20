@@ -3290,3 +3290,12 @@ Entries:
   id: 354
   time: '2025-03-20T21:12:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/639
+- author: Forzii and Rosycup
+  changes:
+    - type: Add
+      message: Added rubber gas masks and latex catsuits
+    - type: Tweak
+      message: IPCs can now wear muzzles
+  id: 355
+  time: '2025-03-20T21:13:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/617
