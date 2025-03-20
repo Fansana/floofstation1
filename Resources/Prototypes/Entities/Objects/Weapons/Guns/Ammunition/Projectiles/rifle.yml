@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 34
+        Piercing: 34 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletRiflePractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
+        Blunt: 4 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletRifleRubber
@@ -29,7 +29,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletRifleIncendiary
@@ -40,8 +40,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
-        Heat: 30
+        Blunt: 4 #Floofstation - Combat doubling
+        Heat: 30 #Floofstation - Combat doubling
   
 - type: entity
   id: BulletRifleUranium
@@ -52,6 +52,6 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 14
-        Piercing: 16
+        Radiation: 14 #Floofstation - Combat doubling
+        Piercing: 16 #Floofstation - Combat doubling
         

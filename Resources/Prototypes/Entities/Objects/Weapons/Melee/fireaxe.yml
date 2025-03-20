@@ -18,11 +18,11 @@
     damage:
       types:
         # axes are kinda like sharp hammers, you know?
-        Blunt: 8
-        Slash: 12
+        Blunt: 8 #Floofstation - Combat doubling
+        Slash: 12 #Floofstation - Combat doubling
         Structural: 10
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 1
+    heavyStaminaCost: 1 #Floofstation - Combat doubling
     angle: 100
     soundHit:
       collection: MetalThud
@@ -30,8 +30,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 4
-        Slash: 10
+        Blunt: 4 #Floofstation - Combat doubling
+        Slash: 10 #Floofstation - Combat doubling
         Structural: 40
   - type: Item
     size: Ginormous

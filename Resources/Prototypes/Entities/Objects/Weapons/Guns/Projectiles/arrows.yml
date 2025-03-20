@@ -40,7 +40,7 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Piercing: 50
+        Piercing: 50 #Floofstation - Combat doubling
   - type: SolutionContainerManager
     solutions:
       ammo:
@@ -79,7 +79,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 70
+        Piercing: 70 #Floofstation - Combat doubling
 
 - type: entity
   parent: BaseArrow
@@ -102,7 +102,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 50
+        Piercing: 50 #Floofstation - Combat doubling
   - type: Construction
     graph: ImprovisedArrow
     node: ImprovisedArrow

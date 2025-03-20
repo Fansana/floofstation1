@@ -20,7 +20,7 @@
   id: RedLaser
   damage:
     types:
-      Heat: 28
+      Heat: 28 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -35,7 +35,7 @@
   id: RedLaserPractice
   damage:
     types:
-      Heat: 2
+      Heat: 2 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -50,7 +50,7 @@
   id: RedMediumLaser
   damage:
     types:
-      Heat: 34
+      Heat: 34 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -65,7 +65,7 @@
   id: RedLightLaser
   damage:
     types:
-      Heat: 14
+      Heat: 14 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -80,8 +80,8 @@
   id: XrayLaser
   damage:
     types:
-      Heat: 20
-      Radiation: 20
+      Heat: 20 #Floofstation - Combat doubling
+      Radiation: 20 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_xray
@@ -96,7 +96,7 @@
   id: RedHeavyLaser
   damage:
     types:
-      Heat: 56
+      Heat: 56 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_beam_heavy
@@ -111,7 +111,7 @@
   id: Pulse
   damage:
     types:
-      Heat: 70
+      Heat: 70 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -127,7 +127,7 @@
   maxLength: 60
   damage:
     types:
-      Heat: 90
+      Heat: 90 #Floofstation - Combat doubling
       Structural: 10
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -144,8 +144,8 @@
   id: WispLash
   damage:
     types:
-      Cold: 16
-      Shock: 16
+      Cold: 16 #Floofstation - Combat doubling
+      Shock: 16 #Floofstation - Combat doubling
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_omni

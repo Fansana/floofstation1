@@ -13,17 +13,17 @@
   - type: Appearance
   - type: MeleeWeapon
     wideAnimationRotation: 45
-    heavyStaminaCost: 0.1
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 #Floofstation - Combat doubling
   - type: StaminaDamageOnHit
     damage: 10
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling
   - type: UseDelay
     delay: 1
 
@@ -40,10 +40,10 @@
   - type: MeleeWeapon
     wideAnimationRotation: 65
     attackRate: 1.5
-    heavyStaminaCost: 0.1
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     damage:
       types:
-        Slash: 28
+        Slash: 28 #Floofstation - Combat doubling
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item

@@ -7,5 +7,5 @@
     - type: Projectile
       damage:
         types:
-          Piercing: 10
-          Blunt: 14
+          Piercing: 10 #Floofstation - Combat doubling
+          Blunt: 14 #Floofstation - Combat doubling

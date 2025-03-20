@@ -38,12 +38,12 @@
     range: 1.75
     damage:
       types:
-        Piercing: 14
-        Slash: 2
+        Piercing: 14 #Floofstation - Combat doubling
+        Slash: 2 #Floofstation - Combat doubling
     heavyRateModifier: 0.75
     heavyRangeModifier: 1.25
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 0.3
+    heavyStaminaCost: 0.3 #Floofstation - Combat doubling
     maxTargets: 3
     angle: 20
     animation: WeaponArcThrust
@@ -52,7 +52,7 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 20
+        Piercing: 20 #Floofstation - Combat doubling
   - type: Item
     size: Ginormous
   - type: Clothing
@@ -82,8 +82,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Piercing: 6
-        Slash: 6
+        Piercing: 6 #Floofstation - Combat doubling
+        Slash: 6 #Floofstation - Combat doubling
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -113,7 +113,7 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 5
+        Blunt: 10 #Floofstation - Combat doubling
   - type: UseDelay
   - type: Appearance
   - type: SolutionContainerVisuals
@@ -132,12 +132,12 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 17
-        Slash: 2
+        Piercing: 17 #Floofstation - Combat doubling
+        Slash: 2 #Floofstation - Combat doubling
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 24
+        Piercing: 24 #Floofstation - Combat doubling
   - type: Construction
     graph: SpearReinforced
 
@@ -153,12 +153,12 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 19
-        Slash: 3
+        Piercing: 19 #Floofstation - Combat doubling
+        Slash: 3 #Floofstation - Combat doubling
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 24
+        Piercing: 24 #Floofstation - Combat doubling
   - type: Construction
     graph: SpearPlasma
 
@@ -174,13 +174,13 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 16
-        Radiation: 16
+        Piercing: 16 #Floofstation - Combat doubling
+        Radiation: 16 #Floofstation - Combat doubling
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 16
-        Radiation: 16
+        Piercing: 16 #Floofstation - Combat doubling
+        Radiation: 16 #Floofstation - Combat doubling
   - type: Construction
     graph: SpearUranium
 

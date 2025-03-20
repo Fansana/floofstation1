@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 38
+        Piercing: 38 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletCaselessRiflePractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 4
+        Blunt: 4 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletCaselessRifleRubber
@@ -29,4 +29,4 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling

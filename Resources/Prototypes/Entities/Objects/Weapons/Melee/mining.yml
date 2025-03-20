@@ -48,12 +48,12 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 16
-        Slash: 8
+        Blunt: 16 #Floofstation - Combat doubling
+        Slash: 8 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 0.75
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 0.5
+    heavyStaminaCost: 0.5 #Floofstation - Combat doubling
     angle: 120
     soundHit:
       collection: MetalThud
@@ -61,8 +61,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
-        Slash: 5
+        Blunt: 5 #Floofstation - Combat doubling
+        Slash: 5 #Floofstation - Combat doubling
         Structural: 60
   - type: GunRequiresWield
   - type: Item
@@ -89,9 +89,9 @@
     range: 1.4
     damage:
       types:
-        Slash: 18
+        Slash: 18 #Floofstation - Combat doubling
     heavyRateModifier: 0.9
-    heavyDamageBaseModifier: 1.2
+    heavyDamageBaseModifier: 1.2 #Floofstation - Combat doubling
     maxTargets: 2
     angle: 20
   - type: Tag
@@ -112,7 +112,7 @@
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -42
+        Brute: -42 #Floofstation - Combat doubling
   - type: MeleeWeapon
   - type: Tag
     tags:

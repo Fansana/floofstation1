@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 38
+        Piercing: 38 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletMinigun
@@ -18,4 +18,4 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Piercing: 10 #Floofstation - Combat doubling

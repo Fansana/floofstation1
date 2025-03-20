@@ -11,7 +11,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Blunt: 8
+        Blunt: 8 #Floofstation - Combat doubling
   - type: StaminaDamageOnCollide
     damage: 110
   - type: TimedDespawn
@@ -30,7 +30,7 @@
     deleteOnCollide: false
     damage:
       types:
-        Piercing: 70
+        Piercing: 70 #Floofstation - Combat doubling
   - type: TimedDespawn
     lifetime: 0.25
 
@@ -47,8 +47,8 @@
     deleteOnCollide: false
     damage:
       types:
-        Blunt: 2
-        Heat: 4
+        Blunt: 2 #Floofstation - Combat doubling
+        Heat: 4 #Floofstation - Combat doubling
   - type: IgniteOnCollide
     fireStacks: 1
     count: 10

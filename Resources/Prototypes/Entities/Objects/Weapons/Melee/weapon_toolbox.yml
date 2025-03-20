@@ -14,9 +14,9 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
-    heavyStaminaCost: 0.1
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     damage:
       types:
-        Blunt: 40
+        Blunt: 40 #Floofstation - Combat doubling
     soundHit:
       path: "/Audio/Weapons/smash.ogg"

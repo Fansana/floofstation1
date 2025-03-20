@@ -17,13 +17,13 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 #Floofstation - Combat doubling
   - type: Ensnaring
     freeTime: 2.0
     breakoutTime: 3.5
     walkSpeed: 0.7
     sprintSpeed: 0.7
-    staminaDamage: 55
+    staminaDamage: 110 #Floofstation - Combat doubling
     canThrowTrigger: true
     canMoveBreakout: true
 
@@ -67,6 +67,6 @@
   - type: DamageOnLand
     damage:
       types:
-      Heat: 10
+      Heat: 10 #Floofstation - Combat doubling
   - type: Ensnaring
     destroyOnRemove: true

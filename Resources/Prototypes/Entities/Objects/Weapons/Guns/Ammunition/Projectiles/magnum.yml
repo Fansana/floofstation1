@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 70
+        Piercing: 70 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletMagnumPractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 2 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletMagnumRubber
@@ -29,9 +29,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling
   - type: StaminaDamageOnCollide
-    damage: 70 # 3 hits to stun cuz revolver
+    damage: 70 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletMagnumIncendiary
@@ -42,8 +42,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
-        Heat: 64
+        Blunt: 6 #Floofstation - Combat doubling
+        Heat: 64 #Floofstation - Combat doubling
         
 - type: entity
   id: BulletMagnumAP
@@ -54,7 +54,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30 # 20% decrease
+        Piercing: 30 #Floofstation - Combat doubling
     ignoreResistances: true
 
 - type: entity
@@ -66,5 +66,5 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 30
-        Piercing: 40
+        Radiation: 30 #Floofstation - Combat doubling
+        Piercing: 40 #Floofstation - Combat doubling

@@ -36,17 +36,17 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 14
+        Blunt: 14 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.5
     heavyRateModifier: 0.75
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 0.1
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit
-    damage: 70
+    damage: 70 #Floofstation - Combat doubling
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
-    damage: 70
+    damage: 70 #Floofstation - Combat doubling
     sound: /Audio/Weapons/egloves.ogg
   - type: Battery
     maxCharge: 1000
@@ -105,13 +105,13 @@
     attackRate: 0.8
     damage:
       types:
-        Blunt: 30
+        Blunt: 30 #Floofstation - Combat doubling
     soundHit:
       collection: MetalThud
     bluntStaminaDamageFactor: 2
     heavyRateModifier: 1
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 0.5
+    heavyStaminaCost: 0.5 #Floofstation - Combat doubling
   - type: Item
     size: Normal
   - type: Tag
@@ -152,7 +152,7 @@
       charges: 5
     - type: MeleeWeapon
       wideAnimationRotation: 180
-      heavyStaminaCost: 0.1
+      heavyStaminaCost: 0.1 #Floofstation - Combat doubling
       damage:
         types:
           Blunt: 0 # melee weapon to allow flashing individual targets

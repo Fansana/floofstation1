@@ -20,18 +20,18 @@
         volume: -3
     damage:
       types:
-        Blunt: 12
-        Piercing: 6
+        Blunt: 12 #Floofstation - Combat doubling
+        Piercing: 6 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.0
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 0.1
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     maxTargets: 5
     angle: 80
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 10
+        Blunt: 10 #Floofstation - Combat doubling
         Structural: 30
   - type: Item
     size: Normal
@@ -67,14 +67,14 @@
     range: 1.5
     damage:
       types:
-        Blunt: 4
-        Slash: 2
+        Blunt: 4 #Floofstation - Combat doubling
+        Slash: 2 #Floofstation - Combat doubling
         Structural: 15
     bluntStaminaDamageFactor: 1
     heavyRateModifier: 1
     heavyRangeModifier: 2
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: 0
+    heavyStaminaCost: 0 #Floofstation - Combat doubling
     angle: 20
 
   - type: ReverseEngineering # Nyano

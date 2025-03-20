@@ -60,7 +60,7 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Piercing: 28
+        Piercing: 28 #Floofstation - Combat doubling
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: TimedDespawn
@@ -76,7 +76,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 14 # more damage than a punch.
+        Blunt: 14 #Floofstation - Combat doubling
   - type: Fixtures
     fixtures:
       projectile:
@@ -102,7 +102,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 2 #Floofstation - Combat doubling
 
 - type: entity
   id: BaseBulletRubber
@@ -117,11 +117,11 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling
     soundHit:
       path: /Audio/Weapons/Guns/Hits/snap.ogg
   - type: StaminaDamageOnCollide
-    damage: 44 # 5 hits to stun sounds reasonable
+    damage: 44 #Floofstation - Combat doubling
 
 - type: entity
   id: BaseBulletIncendiary
@@ -132,7 +132,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 28
+        Blunt: 28 #Floofstation - Combat doubling
   - type: PointLight
     enabled: true
     color: "#ff4300"
@@ -154,7 +154,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 22 # 20% decrease
+        Piercing: 22 #Floofstation - Combat doubling
     ignoreResistances: true
 
 - type: entity
@@ -170,7 +170,7 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 22
+        Radiation: 22 #Floofstation - Combat doubling
 
 # Energy projectiles
 - type: entity
@@ -207,7 +207,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 10
+        Heat: 10 #Floofstation - Combat doubling
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
     forceSound: true
@@ -248,12 +248,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 60 #Floofstation - Combat doubling
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 10
+        Heat: 10 #Floofstation - Combat doubling
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -288,12 +288,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 2
+    damage: 2 #Floofstation - Combat doubling
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 2
+        Heat: 2 #Floofstation - Combat doubling
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -326,7 +326,7 @@
 #   soundHit:  Waiting on serv3
     damage:
       types:
-        Heat: 28
+        Heat: 28 #Floofstation - Combat doubling
   # mining laser real
   - type: GatheringProjectile
   - type: Tag
@@ -365,13 +365,13 @@
         - Opaque
       fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
-    damage: 80
+    damage: 80 #Floofstation - Combat doubling
   - type: Projectile
     #   soundHit:  Waiting on serv3
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Cold: 20
+        Cold: 20 #Floofstation - Combat doubling
   - type: TimedDespawn
     lifetime: 3
 
@@ -392,7 +392,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 20
+        Heat: 20 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletKinetic
@@ -414,7 +414,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 50
+        Blunt: 50 #Floofstation - Combat doubling
         Structural: 30
   # Short lifespan
   - type: TimedDespawn
@@ -435,7 +435,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 60
+        Blunt: 60 #Floofstation - Combat doubling
         Structural: 35
   - type: Ammo
     muzzleFlash: HitscanEffect
@@ -470,8 +470,8 @@
         - MobState
     damage:
       types:
-        Blunt: 40
-        Slash: 10
+        Blunt: 40 #Floofstation - Combat doubling
+        Slash: 10 #Floofstation - Combat doubling
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
@@ -515,7 +515,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 10
+        Heat: 10 #Floofstation - Combat doubling
   - type: TimedDespawn
     lifetime: 3
   - type: Reflective
@@ -622,7 +622,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Heat: 40
+        Heat: 40 #Floofstation - Combat doubling
 
 - type: entity
   parent: AnomalousParticleDelta
@@ -710,11 +710,11 @@
     deleteOnCollide: false
     damage:
       types:
-        Blunt: 1
+        Blunt: 1 #Floofstation - Combat doubling
     soundHit:
       path: /Audio/Effects/gen_hit.ogg
   - type: StaminaDamageOnCollide
-    damage: 160
+    damage: 160 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletGrenadeBlast
@@ -815,7 +815,7 @@
     - type: Projectile
       damage:
         types:
-          Caustic: 10
+          Caustic: 10 #Floofstation - Combat doubling
     - type: Sprite
       sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
       layers:
@@ -832,7 +832,7 @@
     - type: Projectile
       damage:
         types:
-          Caustic: 16
+          Caustic: 16 #Floofstation - Combat doubling
     - type: Sprite
       sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
       scale: 1.2, 1.2
@@ -973,12 +973,12 @@
       fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 30 #Floofstation - Combat doubling
   - type: Projectile
     impactEffect: BulletImpactEffectDisabler
     damage:
       types:
-        Heat: 4
+        Heat: 4 #Floofstation - Combat doubling
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -997,7 +997,7 @@
     - state: tesla_projectile
       shader: unshaded
   - type: StaminaDamageOnCollide
-    damage: 30
+    damage: 30 #Floofstation - Combat doubling
   - type: EmbeddableProjectile
   - type: Projectile
     deleteOnCollide: false
@@ -1056,7 +1056,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 40 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun
+        Heat: 40 #Floofstation - Combat doubling
     soundHit:
       collection: MeatLaserImpact
 
@@ -1070,7 +1070,7 @@
     impactEffect: BulletImpactEffectRedDisabler
     damage:
       types:
-        Heat: 10
+        Heat: 10 #Floofstation - Combat doubling
 
 - type: entity
   name: wide laser barrage

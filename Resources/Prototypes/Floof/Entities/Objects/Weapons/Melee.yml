@@ -14,19 +14,19 @@
     attackRate: 2 # ~12 dps
     damage:
       types:
-       Blunt: 6
+       Blunt: 6 #Floofstation - Combat doubling
     soundHit:
       collection: Punch
     animation: WeaponArcFist
     mustBeEquippedToUse: true
   - type: StaminaDamageOnHit
-    damage: 22
+    damage: 22 #Floofstation - Combat doubling
   - type: Armor
     modifiers:
       coefficients:
-        Shock: 2.1 # oh no so conductive
+        Shock: 2.1  #Floofstation - Combat doubling
   - type: Insulated
-    coefficient: 3 # Extra damage. Don't punch wires, kids.
+    coefficient: 3 #Floofstation - Combat doubling
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -71,13 +71,13 @@
     graph: GraphWeaponBrassKnucklesWhoopie
     node: WeaponBrassKnucklesWhoopie
   - type: StaminaDamageOnHit
-    damage: 8 # 8 per second, similar to the toy hammer
+    damage: 8  #Floofstation - Combat doubling
   - type: Armor
     modifiers:
       coefficients:
-        Shock: 2.0 # Nothing special.
+        Shock: 2.0  #Floofstation - Combat doubling
   - type: Insulated
-    coefficient: 2 # Nothing special.
+    coefficient: 2 #Floofstation - Combat doubling
   - type: Tag
     tags:
     - WhitelistChameleon

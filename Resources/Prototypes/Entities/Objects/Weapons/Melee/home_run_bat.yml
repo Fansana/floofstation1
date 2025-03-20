@@ -10,11 +10,11 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 22
+        Blunt: 22 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 0.5
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 1.5
+    heavyStaminaCost: 1.5 #Floofstation - Combat doubling
     angle: 120
     soundHit:
       collection: ExplosionSmall

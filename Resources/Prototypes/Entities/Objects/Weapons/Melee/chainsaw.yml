@@ -19,12 +19,12 @@
     attackRate: 4
     damage:
       types:
-        Slash: 4
-        Blunt: 4
+        Slash: 4 #Floofstation - Combat doubling
+        Blunt: 4 #Floofstation - Combat doubling
         Structural: 4
     heavyRateModifier: 0.5
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 1.1
+    heavyStaminaCost: 1.1 #Floofstation - Combat doubling
     maxTargets: 20
     angle: 160
     soundHit:
@@ -34,7 +34,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 8
+        Slash: 8 #Floofstation - Combat doubling
         Structural: 8
   - type: Item
     size: Normal

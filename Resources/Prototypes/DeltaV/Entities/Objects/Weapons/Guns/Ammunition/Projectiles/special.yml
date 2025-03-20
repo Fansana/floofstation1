@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 60
+        Piercing: 60 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialPractice
@@ -18,7 +18,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 2 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialRubber
@@ -29,9 +29,9 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
+        Blunt: 6 #Floofstation - Combat doubling
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 60 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialIncendiary
@@ -42,8 +42,8 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 6
-        Heat: 54
+        Blunt: 6 #Floofstation - Combat doubling
+        Heat: 54 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialUranium
@@ -54,8 +54,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 24
-        Piercing: 36
+        Radiation: 24 #Floofstation - Combat doubling
+        Piercing: 36 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialHoly
@@ -66,8 +66,8 @@
   - type: Projectile
     damage:
       types:
-        Holy: 12
-        Piercing: 50
+        Holy: 12 #Floofstation - Combat doubling
+        Piercing: 50 #Floofstation - Combat doubling
 
 - type: entity
   id: BulletSpecialMindbreaker
@@ -78,7 +78,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 2
+        Blunt: 2 #Floofstation - Combat doubling
   - type: SolutionContainerManager
     solutions:
       ammo:

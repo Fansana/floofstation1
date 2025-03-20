@@ -14,10 +14,10 @@
     range: 1.5
     damage:
       types:
-        Slash: 16
+        Slash: 16 #Floofstation - Combat doubling
     heavyRateModifier: 0.9
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 0.3
+    heavyStaminaCost: 0.3 #Floofstation - Combat doubling
   - type: Item
     size: Normal
   - type: Clothing
@@ -42,9 +42,9 @@
     range: 1.65
     damage:
       types:
-        Slash: 24
+        Slash: 24 #Floofstation - Combat doubling
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 0.4
+    heavyStaminaCost: 0.4 #Floofstation - Combat doubling
     maxTargets: 6
     angle: 90
   - type: Item
@@ -74,12 +74,12 @@
     range: 1.75
     damage:
       types:
-        Blunt: 2
-        Slash: 26
+        Blunt: 2 #Floofstation - Combat doubling
+        Slash: 26 #Floofstation - Combat doubling
         Structural: 10
     heavyRateModifier: 0.9
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 0.4
+    heavyStaminaCost: 0.4 #Floofstation - Combat doubling
     angle: 100
     soundHit:
       collection: MetalThud
@@ -87,8 +87,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 4
-        Slash: 10
+        Blunt: 4 #Floofstation - Combat doubling
+        Slash: 10 #Floofstation - Combat doubling
         Structural: 10
   - type: Item
     size: Ginormous
