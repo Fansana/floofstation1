@@ -262,4 +262,14 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/redsidelessdress.rsi
 
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformPurpleNightclubDress
+  name: Purple Nightclub Dress
+  description: A purple 'dress' that was clearly made to be taken off rather than be worn for extended periods!
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/purplenightclubdress.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/purplenightclubdress.rsi
 

@@ -269,3 +269,19 @@
        departments:
          - Security
          - Command
+
+- type: loadout
+  id: LoadoutUniformPurpleNightclubDress
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformPurpleNightclubDress
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
