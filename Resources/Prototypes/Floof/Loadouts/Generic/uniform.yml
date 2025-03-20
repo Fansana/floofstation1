@@ -319,7 +319,7 @@
   cost: 0
   exclusive: true
   items:
-    - ClothingUniformBlackFancyLad
+    - ClothingUniformBlueFancyLad
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian2
