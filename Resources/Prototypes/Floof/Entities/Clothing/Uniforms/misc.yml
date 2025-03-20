@@ -284,3 +284,13 @@
   - type: Clothing
     sprite: Floof/Clothing/Uniforms/blackpetticoatdress.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBlueFancylad
+  name: Blue Fancy Lad Outfit
+  description: Crisp blue, velvety blacks. Smoother than melted butter on ice.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uniforms/bluefancylad.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uniforms/bluefancylad.rsi
