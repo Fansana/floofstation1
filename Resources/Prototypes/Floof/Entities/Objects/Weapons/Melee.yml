@@ -2,7 +2,7 @@
   name: brass knuckles
   parent: ClothingHandsBase
   id: WeaponBrassKnuckles
-  description: Ever wanted to protect your bar but your hands are too big for guns? S.E.S.W.C has what you need!
+  description: Ever wanted to protect your bar but your hands are too big for guns? SESWC has what you need!
   components:
   - type: Sprite
     sprite: Floof/Objects/Weapons/Melee/brassknuckles.rsi
@@ -91,3 +91,79 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 40
+
+- type: entity
+  name: Halberd
+  parent: UnholyHalberd
+  id: Halberd
+  description: A polarm with an axe blade topped with a spike mounted on a long shaft. Produced by SESWC!
+  components:
+  - type: MeleeRequiresWield
+  - type: MeleeWeapon
+    heavyStaminaCost: 10
+  - type: Clothing
+    sprite: Floof/Objects/Weapons/Melee/halberd.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: Sprite
+    sprite: Floof/Objects/Weapons/Melee/halberd.rsi
+    state: icon
+
+- type: entity
+  name: EHalberd
+  parent: EnergySwordDouble
+  id: EHalberd
+  description: A polarm handle with an engery based axe head to it. Produced by SESWC!
+  components:
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.75
+    angle: 100
+    heavyStaminaCost: 10
+    heavyDamageBaseModifier: 1.10
+    damage:
+      types:
+        Blunt: 6.5 #its still a metal stick
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 3
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 8
+            Heat: 20
+            Structural: 15
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: 3
+  - type: Reflect # so it doenst inherit the reflect from the Dsword
+    reflectProb: .00
+    minReflectProb: .00
+  - type: Item
+    size: Huge
+    sprite: Floof/Objects/Weapons/Melee/e_halberd-inhands.rsi
+  - type: Sprite
+    sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi
+    layers:
+      - state: e_halberd
+      - state: e_halberd_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
