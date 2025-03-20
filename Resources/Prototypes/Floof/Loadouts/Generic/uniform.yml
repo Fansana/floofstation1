@@ -207,6 +207,17 @@
       group: LoadoutUniformsCivilian2
 
 - type: loadout
+  id: LoadoutClothingUniformSwimsuitBlue
+  category: Uniform
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformSwimsuitBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+
+- type: loadout
   id: LoadoutUniformFlemenco
   category: Uniform
   cost: 0
@@ -221,3 +232,4 @@
        departments:
          - Security
          - Command
+
