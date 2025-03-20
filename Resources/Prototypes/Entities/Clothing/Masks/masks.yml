@@ -352,6 +352,7 @@
     tags:
     - WhitelistChameleon
     - MuzzleIngredient
+    - IPCMaskWearable # TheDen
 
 - type: entity
   parent: ClothingMaskPullableBase
