@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-3.0",
+    "copyright": "Stripes made by BlitzTheSquishy, Countershading made by Emily9031",
+    "size":{
+        "x": 32,
+        "y": 32
+    },
+        "states": [
+        {
+            "name": "feroxi-torso-stripes-blitz",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-left-arm-stripes-blitz",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-right-arm-stripes-blitz",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-left-leg-stripes-blitz",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-right-leg-stripes-blitz",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-torso-countershading-m",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-torso-countershading-f",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-torso-stripes-tiger",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-left-arm-stripes-tiger",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-right-arm-stripes-tiger",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-left-leg-stripes-tiger",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-right-leg-stripes-tiger",
+            "directions": 4
+        },
+        {
+            "name": "feroxi-head-stripes-tiger",
+            "directions": 4
+        }
+    ]
+}

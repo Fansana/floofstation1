@@ -114,7 +114,7 @@
   id: RodentiaHeadTopEarRabbit
   markingCategory: HeadTop
   bodyPart: HeadTop
-  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne]
+  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: rabbit
@@ -125,7 +125,7 @@
   id: RodentiaHeadTopEarSmall
   markingCategory: HeadTop
   bodyPart: HeadTop
-  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne]
+  speciesRestriction: [Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: small
