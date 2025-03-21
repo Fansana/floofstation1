@@ -360,9 +360,6 @@ trait-description-ValyrianStandard =
     It is rarely spoken outside of the worlds of its native speakers, and has in modern times been supplanted by the 'Conlangs of the Sol Alliance.
     Its speakers are those who wish to uphold the traditions and beliefs of ancient peoples from before the colonial era.
 
-trait-name-Nehina = Nēhina
-trait-description-Nehina =  A language spoken by the Feroxi, well adapted to speaking under the waters of ocean planets.
-
 trait-name-LowPotential = Low Psi-Potential
 trait-description-LowPotential =
     You possess an unusually weak connection to the noösphere, which makes it more difficult to obtain new psionic powers.
