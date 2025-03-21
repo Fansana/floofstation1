@@ -9,6 +9,7 @@
   - General Regulations
   - Command Hierarchy
   - Alert Procedure
+  - Epistemics SOP
 
 - type: guideEntry
   id: Company Policy
@@ -71,3 +72,8 @@
   id: Alert Procedure
   name: guide-entry-alertprocedure
   text: "/ServerInfo/Floof/Guidebook/SOP/AlertProcedure.xml"
+
+- type: guideEntry
+  id: Epistemics SOP
+  name: guide-entry-epistemicsSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/EpistemicsStandardOperatingProcedure.xml"
