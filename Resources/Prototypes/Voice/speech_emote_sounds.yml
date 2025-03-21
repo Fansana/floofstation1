@@ -94,6 +94,7 @@
     Hiss:
       collection: ReptilianHiss
     # Floof end
+    #TODO - M3739 - Give Unathi a sneeze.
 
 - type: emoteSounds
   id: FemaleReptilian
@@ -581,7 +582,7 @@
       path: /Audio/Voice/IPC/pai_whistle.ogg
       params:
         variation: 0.125
-    CatMeow:
+    CatMeow: # Floof - M3739 begin omission from emote wheel, for some odd reason the respective emotes are in disease_emotes.yml
       collection: CatMeows
       params:
         variation: 0.125
@@ -592,7 +593,7 @@
     MonkeyScreeches:
       collection: MonkeyScreeches
       params:
-        variation: 0.125
+        variation: 0.125 # Floof - M3739 -  end omission 
     RobotBeep: # disease
       path: /Audio/Effects/tesla_consume.ogg
       params:
