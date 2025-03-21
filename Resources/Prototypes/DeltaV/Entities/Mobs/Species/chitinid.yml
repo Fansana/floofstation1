@@ -159,6 +159,7 @@
     understands:
     - TauCetiBasic
     - Chittin
+    naturalLanguage: Chittin
 
 - type: entity
   parent: BaseSpeciesDummy

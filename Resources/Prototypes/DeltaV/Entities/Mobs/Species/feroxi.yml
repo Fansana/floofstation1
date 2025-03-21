@@ -33,6 +33,7 @@
   #    - TauCetiBasic
   #  understands:
   #    - TauCetiBasic
+  #  naturalLanguage: [insert natural language id here]
   - type: Sprite
     netsync: false
     noRot: true
