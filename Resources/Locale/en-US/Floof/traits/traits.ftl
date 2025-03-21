@@ -35,5 +35,10 @@ trait-description-AudioPlayer = You have an audio player installed, which allows
 
 trait-name-Ratvarian = Ratvarian
 trait-description-Ratvarian =
-    The language of the cult of Ratvar. Enigmatic, gutteral, and difficult to pronounce. 
+    The language of the cult of Ratvar. Enigmatic, guttural, and difficult to pronounce. 
     With some effort it can be understood by those not affiliated with the cult, but for you it comes naturally.
+
+trait-name-NaturalRatvarian = Natural Ratvarian Speaker
+trait-description-NaturalRatvarian =
+    The language of the cult of Ratvar. Enigmatic, guttural, and difficult to pronounce. 
+    You speak this instead of your species's usual natural language.

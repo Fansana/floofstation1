@@ -99,6 +99,7 @@
     understands:
     - TauCetiBasic
     - Canilunzt
+    naturalLanguage: Canilunzt
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
     drinkDelayMultiplier: 0.5

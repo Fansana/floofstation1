@@ -121,6 +121,7 @@
     understands:
     - TauCetiBasic
     - ValyrianStandard
+    naturalLanguage: ValyrianStandard
   - type: StepTriggerImmune
     whitelist:
       types:

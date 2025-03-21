@@ -120,3 +120,16 @@
         - Ratvarian
       languagesUnderstood:
         - Ratvarian
+
+- type: trait
+  id: NaturalRatvarian
+  category: TraitsSpeechLanguages
+  points: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Ratvarian

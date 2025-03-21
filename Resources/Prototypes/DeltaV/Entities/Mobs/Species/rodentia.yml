@@ -116,6 +116,7 @@
     understands:
     - TauCetiBasic
     - Mouse
+    naturalLanguage: Mouse
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
     drinkDelayMultiplier: 0.5
