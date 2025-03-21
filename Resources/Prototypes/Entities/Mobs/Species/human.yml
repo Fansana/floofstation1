@@ -28,7 +28,7 @@
     understands:
     - TauCetiBasic
     - SolCommon
-    naturalLanguage: SolCommon
+    naturalLanguage: SolCommon # Floof: explicitly stated natural languages
   - type: FootPrints
 
 - type: entity

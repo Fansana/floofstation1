@@ -33,7 +33,7 @@
   #    - TauCetiBasic
   #  understands:
   #    - TauCetiBasic
-  #  naturalLanguage: [insert natural language id here]
+  #  naturalLanguage: [insert natural language id here]  # Floof: explicitly stated natural languages
   - type: Sprite
     netsync: false
     noRot: true

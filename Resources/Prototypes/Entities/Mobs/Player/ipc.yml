@@ -101,7 +101,7 @@
     understands:
     - TauCetiBasic
     - RobotTalk
-    naturalLanguage: RobotTalk
+    naturalLanguage: RobotTalk # Floof: explicitly stated natural languages
   - type: WeldingHealable
   - type: PsionicInsulation
   - type: OfferItem

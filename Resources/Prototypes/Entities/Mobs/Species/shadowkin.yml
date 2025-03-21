@@ -232,7 +232,7 @@
       understands:
         - TauCetiBasic
         - Marish
-      naturalLanguage: Marish
+      naturalLanguage: Marish # Floof: explicitly stated natural languages
     - type: Tag
       tags:
       - CanPilot

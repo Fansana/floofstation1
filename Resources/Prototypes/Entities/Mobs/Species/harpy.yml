@@ -124,7 +124,7 @@
     understands:
     - TauCetiBasic
     - ValyrianStandard
-    naturalLanguage: ValyrianStandard
+    naturalLanguage: ValyrianStandard # Floof: explicitly stated natural languages
   - type: StepTriggerImmune
     whitelist:
       types:

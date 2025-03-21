@@ -15,8 +15,6 @@ chat-language-RobotTalk-name = Binary
 chat-language-ValyrianStandard-name = Valyrian
 chat-language-Arachnic-name = Arachnic
 chat-language-Marish-name = Marish
-chat-language-Ratvarian-name = Ratvarian
-chat-language-Schechi-name = Schechi
 chat-language-Chittin-name = Chittin
 
 # Animal Languages

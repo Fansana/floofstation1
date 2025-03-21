@@ -12,7 +12,7 @@
     understands:
       - TauCetiBasic
       - Schechi
-    naturalLanguage: Schechi
+    naturalLanguage: Schechi # Floof: explicitly stated natural languages
   - type: Fixtures
     fixtures:
       fix1:

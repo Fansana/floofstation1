@@ -117,7 +117,7 @@
     understands:
     - TauCetiBasic
     - Mouse
-    naturalLanguage: Mouse
+    naturalLanguage: Mouse  # Floof: explicitly stated natural languages
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
     drinkDelayMultiplier: 0.5

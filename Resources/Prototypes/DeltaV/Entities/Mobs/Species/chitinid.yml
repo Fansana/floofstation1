@@ -159,7 +159,7 @@
     understands:
     - TauCetiBasic
     - Chittin
-    naturalLanguage: Chittin
+    naturalLanguage: Chittin # Floof: explicitly stated natural languages
 
 - type: entity
   parent: BaseSpeciesDummy

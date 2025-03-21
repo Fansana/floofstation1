@@ -1,10 +1,11 @@
 using System.Text;
 using System.Text.RegularExpressions;
+using Content.Shared.Language;
 using Content.Shared.Language.Systems;
 
-namespace Content.Shared.Language;
+namespace Content.Shared.FloofStation.Language;
 
-public partial class RatvarianObfuscation : ObfuscationMethod
+public sealed partial class RatvarianObfuscation : ObfuscationMethod
 {
     /// <summary>
     ///     Applies the Ratvarian language transformation to the original message.
