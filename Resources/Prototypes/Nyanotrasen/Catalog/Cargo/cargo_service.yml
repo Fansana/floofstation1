@@ -4,7 +4,7 @@
     sprite: Objects/Power/light_bulb.rsi
     state: normal
   product: CrateServiceReplacementColoredLights
-  cost: 600
+  cost: 1200 # Floof Station, increased the price here since we add more things to it.
   category: Service
   group: market
 
