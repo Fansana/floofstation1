@@ -39,7 +39,7 @@ public sealed partial class ForeignerTraitSystem : EntitySystem
         }
 
         // Floof: If the entity has a natural language specified, use that. Otherwise, anything but Basic
-        var alternateLanguage = knowledge.NaturalLanguage ?: knowledge.SpokenLanguages.Find(it => it != entity.Comp.BaseLanguage);
+        var alternateLanguage = knowledge.NaturalLanguage != default ? knowledge.NaturalLanguage : knowledge.SpokenLanguages.Find(it => it != entity.Comp.BaseLanguage);
 
         if (TryComp<NaturalSpeakerTraitComponent>(entity, out var natural)) // Floof: Check for natural language replacement trait, override species prototype
         {
