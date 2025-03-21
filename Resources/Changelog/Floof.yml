@@ -3299,3 +3299,12 @@ Entries:
   id: 355
   time: '2025-03-20T21:13:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/617
+- author: Forzii and TGRCDev
+  changes:
+    - type: Add
+      message: Crew manifest now shows pronouns
+    - type: Fix
+      message: Crew manifest should no longer overlap long names and titles
+  id: 356
+  time: '2025-03-21T14:16:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/630
