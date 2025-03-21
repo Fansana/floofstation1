@@ -26,5 +26,5 @@ public sealed partial class LanguageKnowledgeComponent : Component
     ///     The entity's base natural language. Not guaranteed the entity knows this, but this is the protoype's default.
     /// </summary>
     [DataField("naturalLanguage", required: false)]
-    public ProtoId<LanguagePrototype> NaturalLanguage = default;
+    public ProtoId<LanguagePrototype>? NaturalLanguage = default!;
 }

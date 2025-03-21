@@ -44,18 +44,18 @@ public sealed partial class ForeignerTraitSystem : EntitySystem
             alternateLanguage = natural.Language;
         }
 
-        if (alternateLanguage == default)
+        if (alternateLanguage == null)
         {
             alternateLanguage = knowledge.SpokenLanguages.Find(it => it != entity.Comp.BaseLanguage); // Floof: We're explicitly marking natural languages, use this as a fallback
         }
 
-            if (alternateLanguage == default)
+        if (alternateLanguage == null)
         {
             Log.Warning($"Entity {entity.Owner} does not have an alternative language to choose from (must have at least one non-GC for ForeignerTrait)!");
             return;
         }
 
-        if (TryGiveTranslator(entity.Owner, entity.Comp.BaseTranslator, entity.Comp.BaseLanguage, alternateLanguage, out var translator))
+        if (TryGiveTranslator(entity.Owner, entity.Comp.BaseTranslator, entity.Comp.BaseLanguage, alternateLanguage.Value, out var translator))
         {
             _languages.RemoveLanguage(entity.Owner, entity.Comp.BaseLanguage, entity.Comp.CantSpeak, entity.Comp.CantUnderstand);
         }

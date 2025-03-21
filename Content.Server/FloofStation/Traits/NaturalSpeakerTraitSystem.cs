@@ -36,13 +36,13 @@ public sealed partial class NaturalSpeakerTraitSystem : EntitySystem
         }
 
         var targetLanguage = knowledge.NaturalLanguage;
-        if (targetLanguage == default)
+        if (targetLanguage == null)
         {
             Log.Warning($"Entity {entity.Owner} does not have a natural language, so NaturalSpeakerTrait is providing one for free");
         }
         else
         {
-            _languages.RemoveLanguage(entity.Owner, targetLanguage, true, true);
+            _languages.RemoveLanguage(entity.Owner, targetLanguage.Value, true, true);
         }
         _languages.AddLanguage(entity.Owner, entity.Comp.Language, true, true);
     }
