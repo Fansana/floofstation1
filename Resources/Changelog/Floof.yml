@@ -3416,3 +3416,14 @@ Entries:
   id: 365
   time: '2025-03-22T15:05:32.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/647
+- author: BlitzTheSquishy and M3739
+  changes:
+    - type: Add
+      message: >-
+        Introducing Nēhina, the native language of the Feroxi! It is also
+        learnable via a trait, just like Valyrian Standard.
+    - type: Add
+      message: Feroxis now have their own name list for random generation.
+  id: 366
+  time: '2025-03-22T15:08:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/635
