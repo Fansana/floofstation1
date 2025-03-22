@@ -20,4 +20,11 @@ public sealed partial class LanguageKnowledgeComponent : Component
     /// </summary>
     [DataField("understands", required: true)]
     public List<ProtoId<LanguagePrototype>> UnderstoodLanguages = new();
+
+    /// <summary>
+    ///     Floof: Traits can replace or reference natural given languages, define this for roundstart species that have a natural language
+    ///     The entity's base natural language. Not guaranteed the entity knows this, but this is the protoype's default.
+    /// </summary>
+    [DataField("naturalLanguage", required: false)]
+    public ProtoId<LanguagePrototype>? NaturalLanguage = default!;
 }

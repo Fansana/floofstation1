@@ -52,6 +52,7 @@
     understands:
     - TauCetiBasic
     - Nekomimetic
+    naturalLanguage: Nekomimetic # Floof: explicitly stated natural languages
   - type: PotentiaModifier
     potentiaMultiplier: 0.5
 

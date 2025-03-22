@@ -8,8 +8,11 @@
   - type: LanguageKnowledge
     speaks:
       - TauCetiBasic
+      - Schechi
     understands:
       - TauCetiBasic
+      - Schechi
+    naturalLanguage: Schechi # Floof: explicitly stated natural languages
   - type: Fixtures
     fixtures:
       fix1:

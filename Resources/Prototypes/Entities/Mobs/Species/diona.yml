@@ -117,6 +117,7 @@
     understands:
     - TauCetiBasic
     - RootSpeak
+    naturalLanguage: RootSpeak # Floof: explicitly stated natural languages
   - type: TraitSpeedModifier
     sprintModifier: 0.75
     walkModifier: 0.75

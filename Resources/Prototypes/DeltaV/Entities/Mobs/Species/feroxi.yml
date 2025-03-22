@@ -105,6 +105,7 @@
     understands:
     - TauCetiBasic
     - Nehina
+    naturalLanguage: Nehina  # Floof: explicitly stated natural languages
 
 - type: entity
   parent: MobHumanDummy
