@@ -50,7 +50,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             // ColorEdit.Color = Color.FromHex(value.CustomColorTint, Color.White);
             _special?.UpdateState(); // Floof
             if (value.CustomColorTint != null)
-                UpdatePaint(new(DummyEntityUid, _entityManager.GetComponent<PaintedComponent>(DummyEntityUid)), _entityManager);
+                UpdatePaint(); // Floof - simpler method call
             HeirloomButton.Pressed = value.CustomHeirloom ?? false;
             PreferenceButton.Pressed = value.Selected;
         }
@@ -67,7 +67,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             Visible = Valid && _wearable || _showUnusable;
             // PreferenceButton.RemoveStyleClass(StyleBase.ButtonDanger);
             // PreferenceButton.AddStyleClass(Valid ? "" : StyleBase.ButtonDanger);
-            // Floofstation - the above, but less shitcode-y and less performance-intensive
+            // Floofstation - the above, but less performance-intensive
             if (!Valid && !PreferenceButton.HasStyleClass(StyleBase.ButtonDanger))
                 PreferenceButton.AddStyleClass(StyleBase.ButtonDanger);
             else if (Valid && PreferenceButton.HasStyleClass(StyleBase.ButtonDanger))
@@ -85,7 +85,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             Visible = Valid && _wearable || _showUnusable;
             // PreferenceButton.RemoveStyleClass(StyleBase.ButtonCaution);
             // PreferenceButton.AddStyleClass(_wearable ? "" : StyleBase.ButtonCaution);
-            // Floofstation - the above, but less shitcode-y and less performance-intensive
+            // Floofstation - the above, but less performance-intensive
             if (!Valid && !PreferenceButton.HasStyleClass(StyleBase.ButtonCaution))
                 PreferenceButton.RemoveStyleClass(StyleBase.ButtonCaution);
             else if (Valid && PreferenceButton.HasStyleClass(StyleBase.ButtonCaution))
@@ -246,7 +246,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             PreferenceChanged?.Invoke(Preference);
         };
 
-        // Floofstation section - this is horrible, absolute garbage
+        // Floofstation section - making the heading button not just collapse/open the special menu, but also handle its creation and disposal
         HeadingButton.OnToggled += args =>
         {
             if (!args.Pressed)
@@ -332,14 +332,13 @@ public sealed partial class LoadoutPreferenceSelector : Control
         ActuallyCreateEverythingInADeferredMannerThatWillNotLagTheLobby(); // Floofstation
 
         // Move the special editor
-        // Floof - this is SO dumb. WHY NOT JUST ADD THE BUTTON AS THE HEADING MANUALLY IF YOU WANT IT TO ACT LIKE THAT ANYWAY?!
         var heading = SpecialMenu.Heading;
         heading.Orphan();
         ButtonGroup.AddChild(heading);
         GuidebookButton.Orphan();
         ButtonGroup.AddChild(GuidebookButton);
 
-        // Floof - why was this ever even here? Hello? Just use Expand parameters!
+        // Floof - no clue why this even existed. Replaced with Expand parameters.
         // These guys are here too for reasons
         // HeadingButton.SetHeight = HeirloomButton.SetHeight = GuidebookButton.SetHeight = PreferenceButton.Size.Y;
         // SpecialColorTintToggle.Pressed = ColorEdit.Visible = _preference.CustomColorTint != null;
@@ -362,9 +361,13 @@ public sealed partial class LoadoutPreferenceSelector : Control
         app.SetData(entity, PaintVisuals.Painted, !value);
     }
 
-    // Floof - who the hell wrote the above method?
+    // Floofstation convenience method
     public void UpdatePaint()
     {
+        // Can occur if preference is set before the loadout is initialized. Shouldn't matter, hopefully.
+        if (DummyEntityUid is not { Valid: true })
+            return;
+
         var paint = _entityManager.EnsureComponent<PaintedComponent>(DummyEntityUid);
         UpdatePaint((DummyEntityUid, paint), _entityManager);
     }

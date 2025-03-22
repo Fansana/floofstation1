@@ -40,7 +40,7 @@
 
         <Collapsible Name="SpecialMenu" HorizontalExpand="True">
             <Button Name="HeadingButton" Text="{Loc 'humanoid-profile-editor-loadouts-customize'}" ToggleMode="True" VerticalExpand="True" />
-            <!-- Floofstation - fixing EE's blunders again. Be very mindful when merging upstream changes. -->
+            <!-- Floofstation - fixing upstream mistakes. Be very mindful when merging upstream changes. -->
             <!-- The rest of the collapsible is only created when the toggle button is pressed, and destroyed afterwards. -->
             <CollapsibleBody HorizontalExpand="True" Margin="0 0 0 5"/>
         </Collapsible>
