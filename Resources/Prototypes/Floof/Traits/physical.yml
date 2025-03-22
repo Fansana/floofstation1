@@ -117,10 +117,11 @@
     jobs:
     - Borg
     - MedicalBorg
+    - Captain # Balance, sorry for the tiny captains out there!
   - !type:CharacterHeightRequirement
-    max: 158 # was based on minimum Oni size but now Oni are restricted - still ends up smaller than the current smallest races can be
+    max: 132 # Minimum size for humans/standard humanoids
   - !type:CharacterWidthRequirement
-    max: 34 # was based on minimum Oni size but now Oni are restricted - still ends up smaller than the current smallest races can be
+    max: 28 # Minimum size for humans/standard humanoids
   - !type:CharacterTraitRequirement
     inverted: true
     traits:
@@ -130,28 +131,36 @@
     inverted: true
     species:
     - Oni # incompatable due to use of the PlayerToolModifier and BonusMeleeDamage - a special trait will need to be made
+  - !type:CharacterDepartmentRequirement
+      inverted: true
+      departments:
+        - Security # No tiny sec, sad
   functions:
-  - !type:TraitAddComponent
+  - !type:TraitAddComponent # TODO: add a new component/system to increase damage taken or reduce damage thresholds.
     components:
-    - type: FixtureDensityModifier 
-      min: 100 # kilograms per square meter, it's off because the size of the sprite is being reduced directly
-      factor: 0.5 # fear space wind
-    - type: PlayerToolModifier # this currently will not work with any race (like Oni) or trait that also uses this component
+    # - type: FixtureDensityModifier 
+      # min: 100 # kilograms per square meter, it's off because the size of the sprite is being reduced directly
+      # factor: 0.5 # fear space wind
+    - type: PlayerToolModifier # TODO: switch to using a tiny component/system to remove compatibility issues?
       pryTimeMultiplier: 1.4 # 40% longer prying time
-    - type: BonusMeleeDamage # this currently will not work with any race (like Oni) or trait that also uses this component
+    - type: BonusMeleeDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
       damageModifierSet:
         coefficients:
           Blunt: 0.8
           Slash: 0.8
           Piercing: 0.8
-    - type: BonusStaminaDamage # this currently will not work with any race (like Oni) or trait that also uses this component
+    - type: BonusStaminaDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
       multiplier: 0.8
   - !type:TraitReplaceComponent
     components:
-    - type: PseudoItem
+    - type: PseudoItem # TODO: fix PseudoItem direct insertion bug - not created by this trait, but particularly noticeable when using it
       size: Normal
     - type: Carriable
       freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
       pickupDuration: 2 # Default is 3, plus they will already be lighter due to the FixtureDensityModifier
-  - !type:TraitScaleVisualSize
-    scale: 0.5, 0.5
+    # - type: Sprite
+      # scale: 0.5, 0.5
+  # - !type:TraitScaleVisualSize
+    # scale: 0.4, 0.4
+  - !type:TraitSetScale
+    scale: 0.5

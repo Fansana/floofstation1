@@ -23,9 +23,9 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, float scale)
+    public bool SetScale(EntityUid uid, float scale, bool restricted = true) // Floofstation - added restricted flag
     {
-        return SetScale(uid, new Vector2(scale, scale));
+        return SetScale(uid, new Vector2(scale, scale), restricted);
     }
 
     /// <summary>
@@ -34,7 +34,7 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, Vector2 scale)
+    public bool SetScale(EntityUid uid, Vector2 scale, bool restricted = true) // Floofstation - added restricted flag
     {
         var succeeded = true;
         var avg = (scale.X + scale.Y) / 2;
@@ -50,8 +50,10 @@ public sealed class HeightAdjustSystem : EntitySystem
         else
             succeeded = false;
 
-        if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid))
+        if (restricted && EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation - added restricted check
             _appearance.SetScale(uid, scale);
+        else if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation
+            _appearance.SetScaleUnrestricted(uid, scale); // Floofstation
         else
             succeeded = false;
 
