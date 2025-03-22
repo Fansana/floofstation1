@@ -311,6 +311,7 @@
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalHead
@@ -355,26 +356,26 @@
       min: 144000 #40 hours
   items:
     - ClothingHeadHatBeretSeniorPhysician
-      
+
 - type: loadout #Floof - Another item denoting experience.
   id: LoadoutMedicalHeadMirror
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
   requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalHead
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-    - !type:CharacterJobRequirement #all medical jobs but intern
-      inverted: true
-      jobs: [MedicalIntern]
-    - !type:CharacterDepartmentTimeRequirement
-      department: Medical
-      min: 72000 #20 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutMedicalHead
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+  - !type:CharacterJobRequirement #all medical jobs but intern
+    inverted: true
+    jobs: [MedicalIntern]
+  - !type:CharacterDepartmentTimeRequirement
+    department: Medical
+    min: 72000 #20 hours
   items:
-    - ClothingHeadMirror
+  - ClothingHeadMirror
 
 # Id
 
@@ -415,6 +416,7 @@
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalOuter
@@ -566,10 +568,11 @@
     - ClothingUniformJumpskirtSeniorPhysician
 
 - type: loadout
-  id: LoadoutMedicalUniformJumpsuitSenior
+  id: LoadoutMedicalUniformScrubsWhite
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalUniforms
@@ -583,4 +586,4 @@
       department: Medical
       min: 144000 #40 hours
   items:
-    - ClothingUniformJumpsuitSeniorPhysician
+    - UniformScrubsColorWhite

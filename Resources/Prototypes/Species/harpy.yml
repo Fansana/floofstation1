@@ -55,6 +55,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    HeadSide:
+      points: 3
+      required: false
     Chest:
       points: 1
       required: true
@@ -79,9 +82,6 @@
       required: false
     LeftHand:
       points: 2
-      required: false
-    HeadSide:
-      points: 1
       required: false
     Wings:
       points: 1
