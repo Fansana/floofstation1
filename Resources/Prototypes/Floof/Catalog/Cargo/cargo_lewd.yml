@@ -1,9 +1,19 @@
 - type: cargoProduct
-  id: LewdCrateToys
+  id: CrateToysOrder
   icon:
     sprite: Floof/Objects/Fun/Lewd/lewd_icons.rsi
     state: dildo
   product: CrateLewdToys
-  cost: 2000
+  cost: 1000
+  category: cargoproduct-category-name-fun
+  group: market
+
+- type: cargoProduct
+  id: CrateKinkOrder
+  icon:
+    sprite: Floof/Objects/Fun/Lewd/Weapons/crotch_pink.rsi
+    state: icon
+  product: CrateLewdKink
+  cost: 1000
   category: cargoproduct-category-name-fun
   group: market

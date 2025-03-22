@@ -19,6 +19,7 @@
   - type: Speech
     speechVerb: Rodentia
     speechSounds: Squeak
+    allowedEmotes: ['Squeak'] # Floof - M3739 - Normally, I'd rather just give Rodentia their own emote tag, but since this is their only race-specific emote, this is a less disruptive change.
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:

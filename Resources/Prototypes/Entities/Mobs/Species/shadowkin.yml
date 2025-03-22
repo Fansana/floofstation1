@@ -232,6 +232,12 @@
       understands:
         - TauCetiBasic
         - Marish
+    - type: Tag
+      tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ShadowkinEmotes
 
 - type: entity
   save: false

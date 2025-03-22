@@ -85,6 +85,8 @@
   - type: Speech
     speechSounds: Harpy
     speechVerb: Harpy
+    # Floof - M3739 - Temporary. Seems redundant. Came from the Feroxi port. Kept for posterity until I get a better understanding of it.
+    # allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Awoo', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Gnash',]
   - type: Vocal
     sounds:
       Male: SoundsHarpy
@@ -110,6 +112,7 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+    - HarpyEmotes
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic

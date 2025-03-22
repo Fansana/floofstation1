@@ -21,6 +21,7 @@
     fireRate: 5
     selectedMode: FullAuto
     availableModes:
+      - SemiAuto
       - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg

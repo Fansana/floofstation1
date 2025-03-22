@@ -457,6 +457,32 @@
           Quantity: 15
   - type: Extractable
     grindableSolutionName: food
+  - type: SliceableFood
+    count: 3
+    slice: FoodButterSlice
+
+- type: entity
+  name: butter slice
+  parent: FoodBakingBase
+  id: FoodButterSlice
+  description: A pat of delicious, golden, fatty goodness.
+  components:
+  - type: Sprite
+    state: butter-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Butter
+          Quantity: 5
+  - type: Extractable # Floof - Make butter slices grindable.
+    grindableSolutionName: food
+# Floof removal - Removed nonexistant Slice tag. This will undoubtedly need to be re-added later
+#  - type: Tag
+#    tags:
+#    - Slice
+# Floof removal end
 
 - type: entity
   name: stick of cannabis butter

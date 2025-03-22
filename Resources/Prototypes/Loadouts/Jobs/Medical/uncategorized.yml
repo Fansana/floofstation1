@@ -357,6 +357,26 @@
   items:
     - ClothingHeadHatBeretSeniorPhysician
 
+- type: loadout #Floof - Another item denoting experience.
+  id: LoadoutMedicalHeadMirror
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutMedicalHead
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+  - !type:CharacterJobRequirement #all medical jobs but intern
+    inverted: true
+    jobs: [MedicalIntern]
+  - !type:CharacterDepartmentTimeRequirement
+    department: Medical
+    min: 72000 #20 hours
+  items:
+  - ClothingHeadMirror
+
 # Id
 
 # Neck
