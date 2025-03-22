@@ -3086,12 +3086,13 @@ Entries:
   id: 331
   time: '2025-03-09T12:44:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/605
-- author: Mnemotechnician 
+- author: Mnemotechnician
   changes:
     - type: Tweak
       message: >-
         Adjusted the damage scaling of mousetraps, making them less deadly to
-        minimum size rodentia and felinids, but more dangerous to mid-small species.
+        minimum size rodentia and felinids, but more dangerous to mid-small
+        species.
   id: 0
   time: '2025-03-09T12:45:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/598
@@ -3185,8 +3186,8 @@ Entries:
   changes:
     - type: Fix
       message: >-
-        Fixes some moth wings not actually replacing the default wings, particularly
-        noticeable with the charred wings.
+        Fixes some moth wings not actually replacing the default wings,
+        particularly noticeable with the charred wings.
   id: 0
   time: '2025-03-16T16:44:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/595
@@ -3237,8 +3238,8 @@ Entries:
   changes:
     - type: Fix
       message: >-
-        The emote wheel has been de-cluttered. In addition, only emotes your species
-        can do will be shown.
+        The emote wheel has been de-cluttered. In addition, only emotes your
+        species can do will be shown.
     - type: Add
       message: Most emote icons have been updated, now with color!
   id: 0
@@ -3401,3 +3402,10 @@ Entries:
   id: 363
   time: '2025-03-22T15:02:41.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/653
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Two new mixed-lights boxes are now available in the colored lights crate
+  id: 364
+  time: '2025-03-22T15:03:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/652
