@@ -65,8 +65,13 @@ public sealed partial class LoadoutPreferenceSelector : Control
         {
             _showUnusable = value;
             Visible = Valid && _wearable || _showUnusable;
-            PreferenceButton.RemoveStyleClass(StyleBase.ButtonDanger);
-            PreferenceButton.AddStyleClass(Valid ? "" : StyleBase.ButtonDanger);
+            // PreferenceButton.RemoveStyleClass(StyleBase.ButtonDanger);
+            // PreferenceButton.AddStyleClass(Valid ? "" : StyleBase.ButtonDanger);
+            // Floofstation - the above, but less shitcode-y and less performance-intensive
+            if (!Valid && !PreferenceButton.HasStyleClass(StyleBase.ButtonDanger))
+                PreferenceButton.AddStyleClass(StyleBase.ButtonDanger);
+            else if (Valid && PreferenceButton.HasStyleClass(StyleBase.ButtonDanger))
+                PreferenceButton.RemoveStyleClass(StyleBase.ButtonDanger);
         }
     }
 
@@ -78,17 +83,32 @@ public sealed partial class LoadoutPreferenceSelector : Control
         {
             _wearable = value;
             Visible = Valid && _wearable || _showUnusable;
-            PreferenceButton.RemoveStyleClass(StyleBase.ButtonCaution);
-            PreferenceButton.AddStyleClass(_wearable ? "" : StyleBase.ButtonCaution);
+            // PreferenceButton.RemoveStyleClass(StyleBase.ButtonCaution);
+            // PreferenceButton.AddStyleClass(_wearable ? "" : StyleBase.ButtonCaution);
+            // Floofstation - the above, but less shitcode-y and less performance-intensive
+            if (!Valid && !PreferenceButton.HasStyleClass(StyleBase.ButtonCaution))
+                PreferenceButton.RemoveStyleClass(StyleBase.ButtonCaution);
+            else if (Valid && PreferenceButton.HasStyleClass(StyleBase.ButtonCaution))
+                PreferenceButton.AddStyleClass(StyleBase.ButtonCaution);
         }
     }
 
     public event Action<LoadoutPreference>? PreferenceChanged;
-    // Floofstation - adding this here only because C# won't allow it from other classes otherwise
+    // Floofstation section
+    // Adding this here only because C# won't allow it from other classes otherwise
     public void InvokePreferenceChanged() => PreferenceChanged?.Invoke(Preference);
-    // Floofstation - this holds the special edit fields and is created at runtime
+    // This holds the special edit fields and is created at runtime
     private LoadoutPreferenceSelectorSpecial? _special = null;
 
+    // Constructor parameters that were passed but not stored
+    private readonly JobPrototype _highJob;
+    private readonly HumanoidCharacterProfile _profile;
+    private readonly Dictionary<string, EntityUid> _entities;
+    private readonly IPrototypeManager _prototypeManager;
+    private readonly IConfigurationManager _configManager;
+    private readonly CharacterRequirementsSystem _characterRequirementsSystem;
+    private readonly JobRequirementsManager _jobRequirementsManager;
+    // Floofstation section end
 
     public LoadoutPreferenceSelector(LoadoutPrototype loadout, JobPrototype highJob,
         HumanoidCharacterProfile profile, ref Dictionary<string, EntityUid> entities,
@@ -100,8 +120,22 @@ public sealed partial class LoadoutPreferenceSelector : Control
         _entityManager = entityManager;
         Loadout = loadout;
 
+        // Floofstation section
+        _highJob = highJob;
+        _profile = profile;
+        _entities = entities; // This is fine(tm), so long as references in C# are not pointers
+        _prototypeManager = prototypeManager;
+        _configManager = configManager;
+        _characterRequirementsSystem = characterRequirementsSystem;
+        _jobRequirementsManager = jobRequirementsManager;
+        // Floofstation section end
+    }
+
+    // Floofstation - EVERYTHING INSIDE THIS METHOD USED TO BE IN THE CONSTRUCTOR ABOVE.
+    private void ActuallyCreateEverythingInADeferredMannerThatWillNotLagTheLobby()
+    {
         // Show/hide the special menu and items depending on what's allowed
-        HeirloomButton.Visible = loadout.CanBeHeirloom;
+        HeirloomButton.Visible = Loadout.CanBeHeirloom;
         SpecialMenu.Visible = Loadout.CustomName || Loadout.CustomDescription || Loadout.CustomColorTint;
         // Floof - moved to LoadoutPreferenceSelectorSpecial
         // SpecialName.Visible = Loadout.CustomName;
@@ -110,11 +144,11 @@ public sealed partial class LoadoutPreferenceSelector : Control
 
 
         SpriteView previewLoadout;
-        if (!entities.TryGetValue(loadout.ID + 0, out var dummyLoadoutItem))
+        if (!_entities.TryGetValue(Loadout.ID + 0, out var dummyLoadoutItem))
         {
             // Get the first item in the loadout to be the preview
-            dummyLoadoutItem = entityManager.SpawnEntity(loadout.Items.First(), MapCoordinates.Nullspace);
-            entities.Add(loadout.ID + 0, dummyLoadoutItem);
+            dummyLoadoutItem = _entityManager.SpawnEntity(Loadout.Items.First(), MapCoordinates.Nullspace);
+            _entities.Add(Loadout.ID + 0, dummyLoadoutItem);
 
             // Create a sprite preview of the loadout item
             previewLoadout = new SpriteView
@@ -140,36 +174,36 @@ public sealed partial class LoadoutPreferenceSelector : Control
         }
         DummyEntityUid = dummyLoadoutItem;
 
-        entityManager.EnsureComponent<AppearanceComponent>(dummyLoadoutItem);
-        entityManager.EnsureComponent<PaintedComponent>(dummyLoadoutItem, out var paint);
+        _entityManager.EnsureComponent<AppearanceComponent>(dummyLoadoutItem);
+        _entityManager.EnsureComponent<PaintedComponent>(dummyLoadoutItem, out var paint);
 
         var loadoutName =
-            Loc.GetString($"loadout-name-{loadout.ID}") == $"loadout-name-{loadout.ID}"
-                ? entityManager.GetComponent<MetaDataComponent>(dummyLoadoutItem).EntityName
-                : Loc.GetString($"loadout-name-{loadout.ID}");
+            Loc.GetString($"loadout-name-{Loadout.ID}") == $"loadout-name-{Loadout.ID}"
+                ? _entityManager.GetComponent<MetaDataComponent>(dummyLoadoutItem).EntityName
+                : Loc.GetString($"loadout-name-{Loadout.ID}");
         var loadoutDesc =
-            !Loc.TryGetString($"loadout-description-{loadout.ID}", out var description)
-                ? entityManager.GetComponent<MetaDataComponent>(dummyLoadoutItem).EntityDescription
+            !Loc.TryGetString($"loadout-description-{Loadout.ID}", out var description)
+                ? _entityManager.GetComponent<MetaDataComponent>(dummyLoadoutItem).EntityDescription
                 : description;
 
 
         // Manage the info button
         void UpdateGuidebook() => GuidebookButton.Visible =
-            prototypeManager.HasIndex<GuideEntryPrototype>(loadout.GuideEntry);
+            _prototypeManager.HasIndex<GuideEntryPrototype>(Loadout.GuideEntry);
         UpdateGuidebook();
-        prototypeManager.PrototypesReloaded += _ => UpdateGuidebook();
+        _prototypeManager.PrototypesReloaded += _ => UpdateGuidebook();
 
         GuidebookButton.OnPressed += _ =>
         {
-            if (!prototypeManager.TryIndex<GuideEntryPrototype>(loadout.GuideEntry, out var guideRoot))
+            if (!_prototypeManager.TryIndex<GuideEntryPrototype>(Loadout.GuideEntry, out var guideRoot))
                 return;
 
             var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
             //TODO: Don't close the guidebook if its already open, just go to the correct page
             guidebookController.ToggleGuidebook(
-                new Dictionary<string, GuideEntry> { { loadout.GuideEntry, guideRoot } },
+                new Dictionary<string, GuideEntry> { { Loadout.GuideEntry, guideRoot } },
                 includeChildren: true,
-                selected: loadout.GuideEntry);
+                selected: Loadout.GuideEntry);
         };
 
         // Create a checkbox to get the loadout
@@ -179,7 +213,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             {
                 new Label
                 {
-                    Text = loadout.Cost.ToString(),
+                    Text = Loadout.Cost.ToString(),
                     StyleClasses = { StyleBase.StyleClassLabelHeading },
                     MinWidth = 32,
                     MaxWidth = 32,
@@ -253,10 +287,10 @@ public sealed partial class LoadoutPreferenceSelector : Control
             tooltip.Append($"{Loc.GetString(loadoutDesc)}");
 
         // Get requirement reasons
-        characterRequirementsSystem.CheckRequirementsValid(
-            loadout.Requirements, highJob, profile, new Dictionary<string, TimeSpan>(),
-            jobRequirementsManager.IsWhitelisted(), loadout,
-            entityManager, prototypeManager, configManager,
+        _characterRequirementsSystem.CheckRequirementsValid(
+            Loadout.Requirements, _highJob, _profile, new Dictionary<string, TimeSpan>(),
+            _jobRequirementsManager.IsWhitelisted(), Loadout,
+            _entityManager, _prototypeManager, _configManager,
             out var reasons);
 
         // Add requirement reasons to the tooltip
@@ -272,11 +306,30 @@ public sealed partial class LoadoutPreferenceSelector : Control
         }
     }
 
+    // Floofstation section - delegation of the above
+    private bool _layoutInitialized;
+    protected override Vector2 MeasureCore(Vector2 availableSize)
+    {
+        // We override this here to inject additional elements BEFORE this element measures itself
+        // This way we can ensure that the first measure is valid,
+        // AND ALSO ensure that redundant stuff is not initilalized unless this element is visible and is about to get drawn
+        if (!_layoutInitialized && Visible)
+        {
+            ActuallyCreateEverythingInADeferredMannerThatWillNotLagTheLobby();
+            _layoutInitialized = true;
+        }
+
+        return base.MeasureCore(availableSize);
+    }
+    // Floofstation section end
+
     private bool _initialized;
     protected override void FrameUpdate(FrameEventArgs args)
     {
         if (_initialized || SpecialMenu.Heading == null)
             return;
+
+        ActuallyCreateEverythingInADeferredMannerThatWillNotLagTheLobby(); // Floofstation
 
         // Move the special editor
         // Floof - this is SO dumb. WHY NOT JUST ADD THE BUTTON AS THE HEADING MANUALLY IF YOU WANT IT TO ACT LIKE THAT ANYWAY?!
@@ -286,9 +339,9 @@ public sealed partial class LoadoutPreferenceSelector : Control
         GuidebookButton.Orphan();
         ButtonGroup.AddChild(GuidebookButton);
 
+        // Floof - why was this ever even here? Hello? Just use Expand parameters!
         // These guys are here too for reasons
-        HeadingButton.SetHeight = HeirloomButton.SetHeight = GuidebookButton.SetHeight = PreferenceButton.Size.Y;
-        // Floof - why was this ever even here? Hello?
+        // HeadingButton.SetHeight = HeirloomButton.SetHeight = GuidebookButton.SetHeight = PreferenceButton.Size.Y;
         // SpecialColorTintToggle.Pressed = ColorEdit.Visible = _preference.CustomColorTint != null;
 
         _initialized = true;

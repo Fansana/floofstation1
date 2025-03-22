@@ -4,6 +4,7 @@
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:ui="clr-namespace:Content.Client.Lobby.UI">
     <BoxContainer Name="Container" Orientation="Vertical" HorizontalExpand="True">
+        <!-- Floofstation notice - VerticalExpand has been added to numerous buttons -->
         <controls:StyledButtonGroup Name="ButtonGroup" Orientation="Horizontal" HorizontalExpand="True">
             <Button
                 Name="PreferenceButton"
@@ -17,26 +18,28 @@
                 Text="{Loc 'humanoid-profile-editor-loadouts-heirloom'}"
                 ToolTip="{Loc 'humanoid-profile-editor-loadouts-heirloom-tooltip'}"
                 ToggleMode="True"
+                VerticalExpand="True"
                 VerticalAlignment="Center" />
 
             <!-- Yes I know I can use a TextureButton, but I'm doing this for style -->
             <Button
                 Name="GuidebookButton"
                 ToolTip="{Loc 'humanoid-profile-editor-loadouts-guidebook-button-tooltip'}"
-                VerticalAlignment="Center"
-                StyleClasses="OpenLeft">
+                VerticalAlignment="Center">
+                <!--StyleClasses="OpenLeft"> floof - removed this -->
                 <TextureRect
                     Name="GuidebookButtonIcon"
                     TexturePath="/Textures/Interface/VerbIcons/information.svg.192dpi.png"
                     TextureScale="0.4 0.4"
                     VerticalAlignment="Center"
+                    VerticalExpand="True"
                     Margin="5" />
             </Button>
         </controls:StyledButtonGroup>
 
 
         <Collapsible Name="SpecialMenu" HorizontalExpand="True">
-            <Button Name="HeadingButton" Text="{Loc 'humanoid-profile-editor-loadouts-customize'}" ToggleMode="True" />
+            <Button Name="HeadingButton" Text="{Loc 'humanoid-profile-editor-loadouts-customize'}" ToggleMode="True" VerticalExpand="True" />
             <!-- Floofstation - fixing EE's blunders again. Be very mindful when merging upstream changes. -->
             <!-- The rest of the collapsible is only created when the toggle button is pressed, and destroyed afterwards. -->
             <CollapsibleBody HorizontalExpand="True" Margin="0 0 0 5"/>

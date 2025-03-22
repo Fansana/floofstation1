@@ -30,13 +30,14 @@ public sealed partial class LoadoutPreferenceSelectorSpecial : PanelContainer
             Preference.CustomColorTint = GetColorTint()?.ToHex();
             Preference.Selected = Parent.PreferenceButton.Pressed;
             Parent.InvokePreferenceChanged();
+            UpdateState();
         };
         NameEdit.OnTextChanged += _ =>
             Preference.CustomName = string.IsNullOrEmpty(NameEdit.Text) ? null : NameEdit.Text;
         DescriptionEdit.OnTextChanged += _ =>
             Preference.CustomDescription = string.IsNullOrEmpty(Rope.Collapse(DescriptionEdit.TextRope)) ? null : Rope.Collapse(DescriptionEdit.TextRope);
         SpecialColorTintToggle.OnToggled += args =>
-            UpdateState();
+            UpdateState(false);
         ColorEdit.OnColorChanged += _ =>
         {
             Preference.CustomColorTint = GetColorTint()?.ToHex();
@@ -46,12 +47,19 @@ public sealed partial class LoadoutPreferenceSelectorSpecial : PanelContainer
         UpdateState();
     }
 
-    public void UpdateState()
+    /// <summary>
+    ///     Updates the UI state.
+    /// </summary>
+    /// <param name="fetchPreferenceData">Whether the states of toggle buttons and fields should be fetched from the parent on this invocation.</param>
+    public void UpdateState(bool fetchPreferenceData = true)
     {
-        NameEdit.Text = Parent.Preference.CustomName ?? "";
-        DescriptionEdit.TextRope = new Rope.Leaf(Parent.Preference.CustomDescription ?? "");
-        SpecialColorTintToggle.Pressed = Parent.Preference.CustomColorTint != null;
-        ColorEdit.Color = Color.FromHex(Parent.Preference.CustomColorTint, Color.White);
+        if (fetchPreferenceData)
+        {
+            NameEdit.Text = Parent.Preference.CustomName ?? "";
+            DescriptionEdit.TextRope = new Rope.Leaf(Parent.Preference.CustomDescription ?? "");
+            SpecialColorTintToggle.Pressed = Parent.Preference.CustomColorTint != null;
+            ColorEdit.Color = Color.FromHex(Parent.Preference.CustomColorTint, Color.White);
+        }
 
         SpecialName.Visible = Parent.Loadout.CustomName;
         SpecialDescription.Visible = Parent.Loadout.CustomDescription;
