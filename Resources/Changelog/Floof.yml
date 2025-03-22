@@ -3350,3 +3350,12 @@ Entries:
   id: 361
   time: '2025-03-21T17:27:50.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/638
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Interaction verbs (looking, petting, etc) should no longer reveal the
+        target's or user's identity.
+  id: 362
+  time: '2025-03-22T15:02:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/654
