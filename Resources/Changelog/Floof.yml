@@ -3086,6 +3086,15 @@ Entries:
   id: 331
   time: '2025-03-09T12:44:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/605
+- author: Mnemotechnician 
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted the damage scaling of mousetraps, making them less deadly to
+        minimum size rodentia and felinids, but more dangerous to mid-small species.
+  id: 0
+  time: '2025-03-09T12:45:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/598
 - author: M3739
   changes:
     - type: Fix
@@ -3172,6 +3181,15 @@ Entries:
   id: 340
   time: '2025-03-16T16:43:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/616
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Fixes some moth wings not actually replacing the default wings, particularly
+        noticeable with the charred wings.
+  id: 0
+  time: '2025-03-16T16:44:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/595
 - author: ItsDzordz
   changes:
     - type: Add
@@ -3215,6 +3233,17 @@ Entries:
   id: 345
   time: '2025-03-18T14:18:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/634
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The emote wheel has been de-cluttered. In addition, only emotes your species
+        can do will be shown.
+    - type: Add
+      message: Most emote icons have been updated, now with color!
+  id: 0
+  time: '2025-03-18T14:19:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/631
 - author: Nox38
   changes:
     - type: Tweak
@@ -3222,12 +3251,18 @@ Entries:
   id: 346
   time: '2025-03-18T14:20:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/627
-- author: Tk420634
-  changes: []
+- author: Fenny
+  changes:
+    - type: Add
+      message: Adds Rodentia Rabbit & Small Ears to Felinids
+    - type: Add
+      message: Adds many vulp ears to Rodentia
+    - type: Add
+      message: Adds many vulp tails to Rodentia
   id: 347
   time: '2025-03-18T21:23:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/632
-- author: M3739
+- author: BlitzTheSquishy and M3739
   changes:
     - type: Add
       message: >-
@@ -3236,7 +3271,7 @@ Entries:
   id: 348
   time: '2025-03-18T21:23:49.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/612
-- author: themias
+- author: themias, Eagle0600, meowyrm, chlymerine
   changes:
     - type: Tweak
       message: Butter can be sliced, cookie and toast recipes now use butter slices.
@@ -3258,10 +3293,10 @@ Entries:
   id: 350
   time: '2025-03-19T02:23:30.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/608
-- author: Tk420634
+- author: Fenny
   changes:
     - type: Add
-      message: 'Flamenco Dress to loadout and theater vending machine.  '
+      message: Flamenco Dress to loadout and theater vending machine.
   id: 351
   time: '2025-03-19T20:15:08.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/636
