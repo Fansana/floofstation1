@@ -59,11 +59,31 @@
     autoRechargeRate: 30
 
 - type: entity
-  parent: WeaponXrayCannon
+  name: x-ray cannon
   suffix: Robot
+  parent: BaseWeaponBattery
   id: BorgWeaponXrayCannon
-  description: A weapon that is almost as infamous as its users.
+  description: Cyborg-mounted version of the experimental x-ray cannon, automatically recharging from the cyborg's power supply.
   components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-0
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: XrayLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 30
@@ -72,8 +92,8 @@
   name: mk 58
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
-  id: WeaponborgPistolMk58
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  id: BorgWeaponPistolMk58
+  description: Cyborg-mounted version of the basic mk 58 pistol, it reloads over time from a internal ammo fabricator.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -107,11 +127,11 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-4
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
   - type: Gun
@@ -150,4 +170,4 @@
 - type: entity
   suffix: Robot
   parent: BaseWeaponEnergyShotgun
-  id: WeaponBorgEnergyShotgun
+  id: BorgWeaponEnergyShotgun
