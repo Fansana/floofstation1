@@ -154,6 +154,10 @@ namespace Content.Client.Stylesheets
 
         public static readonly Color ChatBackgroundColor = Color.FromHex("#25252ADD");
 
+        //Delta-V - Manifest pronouns
+        public const string StyleClassCrewManifestGender = "CrewManifestGender";
+
+
         public override Stylesheet Stylesheet { get; }
 
         public StyleNano(IResourceCache resCache) : base(resCache)
@@ -1262,6 +1266,12 @@ namespace Content.Client.Stylesheets
                     .Class(StyleClassItemStatusNotHeld)
                     .Prop("font", notoSansItalic10)
                     .Prop("font-color", ItemStatusNotHeldColor),
+
+                // Delta-V add style for pronouns on the crew manifest
+                Element<RichTextLabel>()
+                    .Class(StyleClassCrewManifestGender)
+                    .Prop("font", notoSansItalic10)
+                    .Prop("font-style", "italic"),
 
                 Element<RichTextLabel>()
                     .Class(StyleClassItemStatus)

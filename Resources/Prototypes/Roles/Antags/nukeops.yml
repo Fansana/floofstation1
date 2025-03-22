@@ -10,6 +10,10 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Security dept time requirement
     department: Security
     min: 14400 # Floofstation - 4 hours
+  - !type:CharacterTraitRequirement # Floofstation
+    inverted: true
+    traits:
+      - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
 
 - type: antag
   id: NukeopsMedic
@@ -23,6 +27,10 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Medical dept time requirement
     department: Medical
     min: 14400 # Floofstation - 4 hours
+  - !type:CharacterTraitRequirement # Floofstation
+    inverted: true
+    traits:
+      - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
 
 - type: antag
   id: NukeopsCommander
@@ -39,6 +47,10 @@
   - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
     department: Command
     min: 14400 # Floofstation - 4 hours
+  - !type:CharacterTraitRequirement # Floofstation
+    inverted: true
+    traits:
+      - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
 
 #Lone Operative Gear
 - type: startingGear
