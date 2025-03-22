@@ -16,6 +16,7 @@ chat-language-ValyrianStandard-name = Valyrian
 chat-language-Arachnic-name = Arachnic
 chat-language-Marish-name = Marish
 chat-language-Chittin-name = Chittin
+chat-language-Nehina-name = Nēhina
 
 # Animal Languages
 

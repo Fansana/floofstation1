@@ -75,6 +75,9 @@ language-Chittin-description =
     A language consisting of clicks, buzzes, and some variety of harsh insect sounds.
     Most of what makes up their speech comes from their antennae, making it a near-impossible language for those without to learn.
 
+language-Nehina-name = Nēhina
+language-Nehina-description =  A language spoken by the Feroxi, well adapted to speaking under the waters of ocean planets.
+
 # Animal Languages
 
 language-Cat-name = Cat
