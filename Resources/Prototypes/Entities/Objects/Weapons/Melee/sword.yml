@@ -173,6 +173,41 @@
   - type: DisarmMalus
 
 - type: entity
+  name: sanctified blade
+  parent: BaseItem
+  id: ClaymoreHoly
+  description: A enchanted sword wielded by ERT Paladins, it carries the power of god in every swing.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/claymore.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.9
+    range: 1.85
+    damage:
+      types:
+        Slash: 25
+        Holy: 50
+    bluntStaminaDamageFactor: 25.0
+    heavyRateModifier: 1
+    heavyRangeModifier: 1
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 15
+    maxTargets: 10
+    angle: 80
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/claymore.rsi
+    slots:
+    - back
+  - type: DisarmMalus
+
+- type: entity
   name: cutlass
   parent: BaseItem
   id: Cutlass

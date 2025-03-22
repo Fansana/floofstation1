@@ -72,7 +72,7 @@
       price: 90
 
 - type: entity
-  name: riot laser shield
+  name: ablative shield
   parent: BaseShield
   id: RiotLaserShield
   description: A riot shield built for withstanding lasers, but not much else.
@@ -92,7 +92,7 @@
           Heat: 2
 
 - type: entity
-  name: riot bullet shield
+  name: ballistic shield
   parent: BaseShield
   id: RiotBulletShield
   description: A ballistic riot shield built for withstanding bullets, but not much else.

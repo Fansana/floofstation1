@@ -224,3 +224,98 @@
     contents:
     - id: FoodShakerSalt
     - id: FoodShakerPepper
+
+# ERT
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledLeader
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Leader
+  components:
+  - type: StorageFill
+    contents:
+    - id: Stunbaton
+    - id: GrenadeFlashBang
+    - id: GrenadeStinger
+    - id: MagazineMagnum
+    - id: MagazineMagnum
+    - id: PinpointerNuclear
+    - id: CrowbarRed
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledChaplain
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Chaplain
+  components:
+  - type: StorageFill
+    contents:
+    - id: Bible
+    - id: Lantern
+    - id: Lantern
+    - id: Lantern
+    - id: Lantern
+    - id: MagazinePistol
+    - id: MagazinePistol
+    - id: CrowbarRed
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledEngineer
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Engineer
+  components:
+  - type: StorageFill
+    contents:
+    - id: JawsOfLife
+    - id: PowerDrill
+    - id: WelderExperimental
+    - id: Multitool
+    - id: HolofanProjector
+    - id: GasAnalyzer
+    - id: trayScanner
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledSecurity
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+    - id: Stunbaton
+    - id: GrenadeFlashBang
+    - id: GrenadeStinger
+    - id: MagazinePistol
+    - id: MagazinePistol
+    - id: HoloprojectorSecurity
+    - id: CrowbarRed
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledMedical
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Medical
+  components:
+  - type: StorageFill
+    contents:
+    - id: Portafib
+    - id: HandheldCrewMonitor
+    - id: CrowbarRed
+    - id: MagazinePistol
+    - id: MagazinePistol
+    - id: AntiPoisonMedipen
+    - id: AntiPoisonMedipen
+    - id: RadAutoInjector
+    - id: RadAutoInjector
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingFilledJanitor
+  parent: ClothingBeltMilitaryWebbing
+  suffix: Janitor
+  components:
+  - type: StorageFill
+    contents:
+    - id: LightReplacer
+    - id: MegaSprayBottleSpaceCleaner
+    - id: SoapNT
+    - id: SoapOmega
+    - id: Plunger
+    - id: CrowbarRed
+    - id: MagazinePistol
+    - id: MagazinePistol
