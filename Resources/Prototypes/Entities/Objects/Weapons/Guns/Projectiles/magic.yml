@@ -12,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 10
+        Heat: 20 #Floofstation - Combat doubling
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -92,7 +92,7 @@
   - type: Projectile
     damage:
       types:
-        Poison: 5
+        Poison: 10 #Floofstation - Combat doubling
 
 - type: entity
   id: ProjectilePolyboltCarp
@@ -172,7 +172,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 300
+        Piercing: 600 #Floofstation - Combat doubling
     ignoreResistances: true
 
 - type: entity
@@ -200,8 +200,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
-        Cold: 20
+        Piercing: 40 #Floofstation - Combat doubling
+        Cold: 40 #Floofstation - Combat doubling
         Structural: 50
 
 - type: entity

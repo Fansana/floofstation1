@@ -35,8 +35,8 @@
         variation: 0.125
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 10
+            Slash: 16 #Floofstation - Combat doubling
+            Heat: 20 #Floofstation - Combat doubling
             Structural: 20
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
@@ -50,9 +50,10 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.25
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 9 #Floofstation - Combat doubling
   - type: Item
     size: Small
     sprite: DeltaV/Objects/Weapons/Melee/e_sword.rsi # Delta-V
@@ -135,8 +136,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 4
-            Heat: 8
+            Slash: 8 #Floofstation - Combat doubling
+            Heat: 16 #Floofstation - Combat doubling
     deactivatedSecret: true
   - type: ItemToggleActiveSound
     activeSound:
@@ -160,7 +161,7 @@
     hidden: true
     damage:
       types:
-        Blunt: 1
+        Blunt: 2
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/e_dagger.rsi
@@ -217,8 +218,8 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
         types:
-            Slash: 10
-            Heat: 12
+            Slash: 20 #Floofstation - Combat doubling
+            Heat: 24 #Floofstation - Combat doubling
     deactivatedSecret: true
   - type: ItemToggleDisarmMalus
     activatedDisarmMalus: 0.6
@@ -237,7 +238,7 @@
       path: /Audio/Weapons/eblade1.ogg
     damage:
       types:
-        Blunt: 6
+        Blunt: 12 #Floofstation - Combat doubling
   - type: Item
     size: Small
     sprite: DeltaV/Objects/Weapons/Melee/e_cutlass.rsi #DeltaV
@@ -275,8 +276,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 13
+            Slash: 16 #Floofstation - Combat doubling
+            Heat: 26 #Floofstation - Combat doubling
             Structural: 15
   - type: ItemToggleActiveSound
     activeSound:
@@ -292,7 +293,7 @@
     angle: 100
     damage:
       types:
-        Blunt: 4.5
+        Blunt: 9 #Floofstation - Combat doubling
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword_double.rsi
     layers:

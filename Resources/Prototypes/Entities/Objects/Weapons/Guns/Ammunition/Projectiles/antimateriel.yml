@@ -7,7 +7,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
+        Piercing: 80 #Floofstation - Combat doubling
         Structural: 30
   - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 70 #Floofstation - Combat doubling
