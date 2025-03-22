@@ -11,3 +11,4 @@ guide-entry-generalregulations = General Regulations
 guide-entry-commandhierarchy = Command Hierarchy
 guide-entry-alertprocedure = Alert Procedure
 guide-entry-epistemicsSOP = Epistemics SOP
+guide-entry-engineeringSOP = Engineering SOP

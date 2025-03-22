@@ -10,6 +10,7 @@
   - Command Hierarchy
   - Alert Procedure
   - Epistemics SOP
+  - Engineering SOP
 
 - type: guideEntry
   id: Company Policy
@@ -77,3 +78,8 @@
   id: Epistemics SOP
   name: guide-entry-epistemicsSOP
   text: "/ServerInfo/Floof/Guidebook/SOP/EpistemicsStandardOperatingProcedure.xml"
+  
+- type: guideEntry
+  id: Engineering SOP
+  name: guide-entry-engineeringSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/EngineeringStandardOperatingProcedure.xml"
