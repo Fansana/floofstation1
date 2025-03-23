@@ -49,7 +49,7 @@ namespace Content.Client.RoundEnd
             };
 
             // <summary>
-            // Search filter Box
+            // Floofstation Search filter Box
             // Search container for round end text
             // </summary>
             var searchContainer = new BoxContainer
@@ -77,7 +77,7 @@ namespace Content.Client.RoundEnd
             searchContainer.AddChild(searchLabel);
             searchContainer.AddChild(searchInput);
             roundEndSummaryTab.AddChild(searchContainer);
-            // of Search container
+            // Floofstation End of Search container
 
             var roundEndSummaryContainerScrollbox = new ScrollContainer
             {
@@ -106,7 +106,7 @@ namespace Content.Client.RoundEnd
                                                    ("seconds", roundDuration.Seconds)));
             roundEndSummaryContainer.AddChild(roundTimeLabel);
 
-            //Round end text
+            // Floofstation Round end text
             if (!string.IsNullOrEmpty(roundEnd))
             {
                 var roundEndLabel = new RichTextLabel();
@@ -136,7 +136,7 @@ namespace Content.Client.RoundEnd
         }
 
         // <summary>
-        // Search filter Box
+        // Floofstation Search filter Box
         // This adds the filter input box. Skip this part if you only want to know how the list gets populated.
         // </summary>
         private bool UpdateRoundEndTextForSearch(RichTextLabel label, string fullText, string searchTerm)
@@ -172,7 +172,7 @@ namespace Content.Client.RoundEnd
                 return true;
             }
         }
-        // End of Search filter Box
+        // Floofstation End of Search filter Box
 
         private BoxContainer MakePlayerManifestTab(RoundEndMessageEvent.RoundEndPlayerInfo[] playersInfo)
         {
@@ -224,7 +224,7 @@ namespace Content.Client.RoundEnd
             searchContainer.AddChild(searchInput);
 
             playerManifestTab.AddChild(searchContainer);
-            // End of search box
+            // Floofstation End of search box
 
             populatePlayManifestList(playerInfoContainer, playersInfo);
 
@@ -291,6 +291,7 @@ namespace Content.Client.RoundEnd
             }
         }
 
+        // Floofstation OnSearchTextChanged
         private void OnSearchTextChanged(LineEdit.LineEditEventArgs searchTerm, BoxContainer playerInfoContainer, RoundEndMessageEvent.RoundEndPlayerInfo[] playersInfo)
         {
             // Empty the result box when we star typing
@@ -315,6 +316,7 @@ namespace Content.Client.RoundEnd
             // Populate the player list with filtered results
             populatePlayManifestList(playerInfoContainer, filteredPlayersInfo);
         }
+        // Floofstation End of OnSearchTextChanged
     }
 
 }
