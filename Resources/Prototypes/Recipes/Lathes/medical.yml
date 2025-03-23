@@ -311,3 +311,15 @@
     Gold: 150
     Silver: 150
     Plasma: 150
+
+# Project Panoptes
+- type: latheRecipe
+  id: ClothingEyesNightVisionMedicalGoggles
+  result: ClothingEyesNightVisionMedicalGoggles
+  completetime: 7
+  materials:
+    Steel: 300
+    Glass: 300
+    Silver: 100
+    Gold: 100
+    Plasma: 200
