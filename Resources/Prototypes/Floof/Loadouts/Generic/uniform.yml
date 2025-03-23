@@ -328,3 +328,19 @@
        departments:
          - Security
          - Command
+
+- type: loadout
+  id: LoadoutUniformGrayJumpSkirt
+  category: Uniform
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtColorGrey
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian2
+    - !type:CharacterDepartmentRequirement
+       inverted: true
+       departments:
+         - Security
+         - Command
