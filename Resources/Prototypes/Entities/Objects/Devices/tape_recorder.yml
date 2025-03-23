@@ -1,0 +1,31 @@
+- type: entity
+  name: tape recorder
+  description: Records anything heard nearby. A lawyer's friend.
+  parent: BaseItem
+  id: VoiceTapeRecorder
+  components:
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Items/Handling/taperecorder_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/Handling/taperecorder_drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Handling/taperecorder_drop.ogg
+      params:
+        volume: -2
+  - type: VoiceTapeRecorder
+  - type: Sprite
+    sprite: Objects/Devices/tape_recorder.rsi
+    layers:
+    - state: icon
+      visible: true
+    - state: playing
+      visible: false
+    - state: recording
+      visible: false
