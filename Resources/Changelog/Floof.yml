@@ -3453,3 +3453,10 @@ Entries:
   id: 369
   time: '2025-03-24T00:37:37.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/659
+- author: Fenny
+  changes:
+    - type: Fix
+      message: Does a sick kickflip over the check out verb to fix its description.
+  id: 370
+  time: '2025-03-24T00:39:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/663
