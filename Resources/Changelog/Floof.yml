@@ -3469,3 +3469,10 @@ Entries:
   id: 371
   time: '2025-03-24T00:45:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/623
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Amber Station has been ported to Floof.
+  id: 372
+  time: '2025-03-24T00:54:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/662
