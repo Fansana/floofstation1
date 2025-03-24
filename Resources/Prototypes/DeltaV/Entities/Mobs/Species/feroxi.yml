@@ -28,11 +28,6 @@
       Male: MaleFeroxi
       Female: FemaleFeroxi
       Unsexed: MaleFeroxi
-  #- type: LanguageKnowledge # Floof - M3739 - Commented out for convenience when we implement the unique language for Feroxi. For now, it inherits from BaseMobSpeciesOrganic.
-  #  speaks:
-  #    - TauCetiBasic
-  #  understands:
-  #    - TauCetiBasic
   - type: Sprite
     netsync: false
     noRot: true
@@ -103,6 +98,13 @@
     hydratedMetabolizer: Feroxi
     dehydratedMetabolizer: FeroxiDehydrated
     dehydrationThreshold: 150
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Nehina
+    understands:
+    - TauCetiBasic
+    - Nehina
 
 - type: entity
   parent: MobHumanDummy
