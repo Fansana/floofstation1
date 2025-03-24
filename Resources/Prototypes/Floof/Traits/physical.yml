@@ -96,10 +96,6 @@
     - Felinid # They don't need to be lighter
     - IPC
     - Rodentia
-  - !type:CharacterTraitRequirement
-    inverted: true
-    traits:
-      - Tiny
   functions:
   - !type:TraitAddComponent
     components:
@@ -125,7 +121,6 @@
   - !type:CharacterTraitRequirement
     inverted: true
     traits:
-      - Lightweight # conflicts with FixtureDensityModifier changes
       - Small # conflicts with PseudoItem changes
   - !type:CharacterSpeciesRequirement 
     inverted: true
@@ -148,12 +143,23 @@
           Piercing: 0.8
     - type: BonusStaminaDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
       multiplier: 0.8
+    - type: SizeTrait
+      damgeModifierSet: # Increase physical damage taken by 10%
+        coefficients: 
+         Blunt: 1.1
+         Slash: 1.1
+         Piercing: 1.1
+      critThresholdModifier: -20 # reduce health to crit by 20%
+      staminaCritThresholdModifier: -20 # reduce stamina by 20%
+      deadThresholdModifier: -20 # reduce health to dead by 20%
   - !type:TraitReplaceComponent
     components:
     - type: PseudoItem # TODO: fix PseudoItem direct insertion bug - not created by this trait, but particularly noticeable when using it
       size: Normal
     - type: Carriable
       freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
-      pickupDuration: 2 # Default is 3, plus they will already be lighter due to the FixtureDensityModifier
+      pickupDuration: 2 # Default is 3, plus they will already be lighter
+    - type: CanEscapeInventory
+      baseResistTime: 8 # Default is 5, takes 60% longer when tiny
   - !type:TraitSetScale
     scale: 0.7
