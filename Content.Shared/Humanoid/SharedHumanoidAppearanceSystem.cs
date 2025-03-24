@@ -343,35 +343,15 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     /// <param name="scale">The scale to set the mob to</param>
     /// <param name="sync">Whether to immediately synchronize this to the humanoid mob, or not</param>
     /// <param name="humanoid">Humanoid component of the entity</param>
-    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null)
+    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null, bool restricted = true) // Floofstation - added restricted
     {
-        SetScaleUnrestricted(uid, scale, sync, humanoid, restricted: true); // Floofstation - moved logic to SetScaleUnrestricted
-        
-        /* if (!Resolve(uid, ref humanoid))
-            return;
+/*         SetScaleUnrestricted(uid, scale, sync, humanoid, restricted: true); // Floofstation - moved logic to SetScaleUnrestricted */
 
-        var species = _proto.Index(humanoid.Species);
-        humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
-        humanoid.Width = Math.Clamp(scale.X, species.MinWidth, species.MaxWidth);
-
-        if (sync)
-            Dirty(uid, humanoid); */
-    }
-    
-    /// <summary>
-    ///     Set the scale of a humanoid mob with a flag to restrict height/width based on species - added by Floofstation
-    /// </summary>
-    /// <param name="uid">The humanoid mob's UID</param>
-    /// <param name="scale">The scale to set the mob to</param>
-    /// <param name="sync">Whether to immediately synchronize this to the humanoid mob, or not</param>
-    /// <param name="humanoid">Humanoid component of the entity</param>
-    /// <param name="unrestricted">Humanoid component of the entity</param>
-    public void SetScaleUnrestricted(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null, bool restricted = false)
-    {
         if (!Resolve(uid, ref humanoid))
             return;
 
         var species = _proto.Index(humanoid.Species);
+        // Floofstation - added restricted check and an unrestricted scaling
         if (restricted)
         {
             humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
@@ -385,6 +365,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         if (sync)
             Dirty(uid, humanoid);
+        
     }
 
     /// <summary>

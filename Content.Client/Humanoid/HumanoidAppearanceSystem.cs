@@ -33,8 +33,8 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 
         var speciesPrototype = _prototypeManager.Index(component.Species);
 
-        var height = component.Height;//Math.Clamp(component.Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
-        var width = component.Width;//Math.Clamp(component.Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
+        var height = component.Height;// Floofstation - removed size protections - Math.Clamp(component.Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+        var width = component.Width;// Floofstation - removed size protections - Math.Clamp(component.Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
         component.Height = height;
         component.Width = width;
 

@@ -3,7 +3,6 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Server.GameObjects;
 using System.Numerics;
 using Content.Shared.HeightAdjust;
-using Content.Shared.Humanoid;
 
 namespace Content.Server.FloofStation.Traits;
 
@@ -36,13 +35,7 @@ public sealed partial class TraitSetScale : TraitFunction
         IComponentFactory factory,
         IEntityManager entityManager,
         ISerializationManager serializationManager)
-    {
-        // get current player size and adjust based on the scale
-        var appearance = entityManager.EnsureComponent<HumanoidAppearanceComponent>(uid);
-        float height = appearance.Height * scale;
-        float width = appearance.Width * scale;
-        
-        // Does the actual size adjustment!
-        entityManager.System<HeightAdjustSystem>().SetScale(uid, new Vector2(height, width), restricted: false);
+    { 
+        entityManager.System<HeightAdjustSystem>().SetScale(uid, scale, restricted: false);
     }
 }
