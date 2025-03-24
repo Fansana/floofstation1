@@ -3434,3 +3434,13 @@ Entries:
   id: 367
   time: '2025-03-24T00:33:11.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/664
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: >-
+        You can now select underwear and undershirts in the markings menu. They
+        are toggleable in-game via the interaction menu, but you must not be
+        wearing a jumpsuit to toggle them.
+  id: 368
+  time: '2025-03-24T00:35:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/575
