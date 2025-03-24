@@ -138,9 +138,6 @@
   functions:
   - !type:TraitAddComponent # TODO: add a new component/system to increase damage taken or reduce damage thresholds.
     components:
-    # - type: FixtureDensityModifier 
-      # min: 100 # kilograms per square meter, it's off because the size of the sprite is being reduced directly
-      # factor: 0.5 # fear space wind
     - type: PlayerToolModifier # TODO: switch to using a tiny component/system to remove compatibility issues?
       pryTimeMultiplier: 1.4 # 40% longer prying time
     - type: BonusMeleeDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
@@ -158,9 +155,5 @@
     - type: Carriable
       freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
       pickupDuration: 2 # Default is 3, plus they will already be lighter due to the FixtureDensityModifier
-    # - type: Sprite
-      # scale: 0.5, 0.5
-  # - !type:TraitScaleVisualSize
-    # scale: 0.4, 0.4
   - !type:TraitSetScale
     scale: 0.7
