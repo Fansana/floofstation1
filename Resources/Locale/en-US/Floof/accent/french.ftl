@@ -135,10 +135,10 @@ accent-french-words-replace-45 = hôpital
 #  The stuff above this is basically taken from the German accent. It's a pretty solid base, the stuff below will be specific to the French Accent.
 
 accent-french-words-46 = my love
-accent-french-words-replace-45 = mon amour
+accent-french-words-replace-46 = mon amour
 
 accent-french-words-47 = handsome
-accent-french-words-replace-45 = beau
+accent-french-words-replace-47 = beau
 
 accent-french-words-48 = my beautiful
 accent-french-words-replace-48 = ma beauté
@@ -178,12 +178,12 @@ accent-french-words-replace-58 = monstre
 
 accent-french-words-59 = pookie
 accent-french-words-59-2 = plushie
-accent-french-words-replace-57 = doudou
+accent-french-words-replace-59 = doudou
 
 accent-french-words-60 = grand
 accent-french-words-60-1 = large
 accent-french-words-60-2 = big
-accent-french-words-replace-58 = grande
+accent-french-words-replace-60 = grande
 
 accent-french-words-61 = shrimp
 accent-french-words-replace-61 = crevette
@@ -203,3 +203,4 @@ accent-french-words-replace-65 = nounours
 accent-french-words-66 = rabbit
 accent-french-words-66-2 = bunny
 accent-french-words-replace-66 = lapin
+
