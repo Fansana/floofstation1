@@ -119,9 +119,9 @@
     - MedicalBorg
     - Captain # Balance, sorry for the tiny captains out there!
   - !type:CharacterHeightRequirement
-    max: 132 # Minimum size for humans/standard humanoids
+    max: 133 # Minimum size +1 for humans/standard humanoids
   - !type:CharacterWidthRequirement
-    max: 28 # Minimum size for humans/standard humanoids
+    max: 29 # Minimum size +1 for humans/standard humanoids
   - !type:CharacterTraitRequirement
     inverted: true
     traits:
@@ -163,4 +163,4 @@
   # - !type:TraitScaleVisualSize
     # scale: 0.4, 0.4
   - !type:TraitSetScale
-    scale: 0.5
+    scale: 0.7

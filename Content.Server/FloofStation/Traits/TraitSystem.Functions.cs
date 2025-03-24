@@ -43,6 +43,6 @@ public sealed partial class TraitSetScale : TraitFunction
         float width = appearance.Width * scale;
         
         // Does the actual size adjustment!
-        entityManager.System<HeightAdjustSystem>().SetScale(uid, new Vector2(height, width), false);
+        entityManager.System<HeightAdjustSystem>().SetScale(uid, new Vector2(height, width), restricted: false);
     }
 }

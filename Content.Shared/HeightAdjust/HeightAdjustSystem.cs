@@ -25,7 +25,7 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <returns>True if all operations succeeded</returns>
     public bool SetScale(EntityUid uid, float scale, bool restricted = true) // Floofstation - added restricted flag
     {
-        return SetScale(uid, new Vector2(scale, scale), restricted);
+        return SetScale(uid, new Vector2(scale, scale), restricted: restricted);
     }
 
     /// <summary>
@@ -49,11 +49,13 @@ public sealed class HeightAdjustSystem : EntitySystem
                 _physics.SetRadius(uid, fixture.Key, fixture.Value, fixture.Value.Shape, MathF.MinMagnitude(fixture.Value.Shape.Radius * avg, 0.49f));
         else
             succeeded = false;
-
-        if (restricted && EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation - added restricted check
+        
+        if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid))
+            _appearance.SetScaleUnrestricted(uid, scale, restricted: restricted);
+/*         if (restricted && EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation - added restricted check
             _appearance.SetScale(uid, scale);
         else if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation
-            _appearance.SetScaleUnrestricted(uid, scale); // Floofstation
+            _appearance.SetScaleUnrestricted(uid, scale); // Floofstation */
         else
             succeeded = false;
 
