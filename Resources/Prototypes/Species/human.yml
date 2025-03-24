@@ -23,6 +23,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobHumanTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     Eyes: MobHumanoidEyes
     LArm: MobHumanLArm
     RArm: MobHumanRArm
@@ -40,6 +42,13 @@
 - type: markingPoints
   id: MobHumanMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: true
+      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
+    Undershirt:
+      points: 1
+      required: false # Floof, add underwear
     Hair:
       points: 1
       required: false
