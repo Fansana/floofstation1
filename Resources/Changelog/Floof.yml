@@ -3444,3 +3444,12 @@ Entries:
   id: 368
   time: '2025-03-24T00:35:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/575
+- author: Forzii
+  changes:
+    - type: Add
+      message: Epistemics SOP and Engineering SOP guidebook entries
+    - type: Tweak
+      message: Floofed up the Role Types guidebook entry
+  id: 369
+  time: '2025-03-24T00:37:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/659
