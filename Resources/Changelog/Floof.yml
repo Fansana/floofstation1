@@ -3460,3 +3460,12 @@ Entries:
   id: 370
   time: '2025-03-24T00:39:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/663
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        A negative trait that prevents the use of man-machine interfaces on your
+        brain, has been added.
+  id: 371
+  time: '2025-03-24T00:45:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/623
