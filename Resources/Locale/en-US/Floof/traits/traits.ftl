@@ -41,3 +41,4 @@ trait-description-Tiny =
     Due to a mutation, transformation, or other metaphysical circumstance you are significantly smaller than even the tiniest of your species.
     Your size and weight are reduced by half, you can quickly be picked up with one hand, and you easily fit in most bags.
     Due to your size, you will struggle to use crowbars (40% longer pry times) and can't put as much force in your swings (20% reduced melee and stamina damage).
+
