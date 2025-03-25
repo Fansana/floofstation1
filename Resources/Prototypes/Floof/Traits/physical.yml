@@ -149,9 +149,9 @@
       size: Normal
     - type: Carriable
       freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
-      pickupDuration: 2 # Default is 3, plus they will already be lighter
+      pickupDuration: 2 # Default is 3, plus they will already be lighter. Get scooped.
     - type: CanEscapeInventory
-      baseResistTime: 8 # Default is 5, takes 60% longer when tiny
+      baseResistTime: 8 # Default is 5, takes 60% longer when tiny TODO: fix players able to drag themselves out of bags instantly!
     - type: CritModifier
       critThresholdModifier: -20 # reduce health to crit by 20%
     - type: DeadModifier
