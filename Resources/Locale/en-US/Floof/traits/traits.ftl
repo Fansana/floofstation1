@@ -27,6 +27,9 @@ trait-description-Lightweight =
 trait-name-GermanAccent = German accent
 trait-description-GermanAccent = You seem to come from space Germany.
 
+trait-name-FrenchAccent = French accent
+trait-description-FrenchAccent = You seem to come from space France.
+
 trait-name-DrunkardAccent = Drunkard accent
 trait-description-DrunkardAccent = You always sound like you're drunk.
 
@@ -44,7 +47,7 @@ trait-description-NaturalRatvarian =
     You speak this instead of your species's usual natural language.
 
 trait-name-Tiny = Tiny
-trait-description-Tiny = 
-    Due to a mutation, transformation, or other metaphysical circumstance you are significantly smaller than even the tiniest of your species. 
+trait-description-Tiny =
+    Due to a mutation, transformation, or other metaphysical circumstance you are significantly smaller than even the tiniest of your species.
     Your size and weight are reduced by half, you can quickly be picked up with one hand, and you easily fit in most bags.
     Due to your size, you will struggle to use crowbars (40% longer pry times) and can't put as much force in your swings (20% reduced melee and stamina damage).

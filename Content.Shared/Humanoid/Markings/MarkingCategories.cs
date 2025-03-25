@@ -12,6 +12,8 @@ namespace Content.Shared.Humanoid.Markings
         HeadSide,
         Snout,
         Chest,
+        Underwear, // Floof, add underwear
+        Undershirt, // Floof, add underwear
         RightArm,
         RightHand,
         LeftArm,
@@ -38,6 +40,8 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.HeadSide => MarkingCategories.HeadSide,
                 HumanoidVisualLayers.Snout => MarkingCategories.Snout,
                 HumanoidVisualLayers.Chest => MarkingCategories.Chest,
+                HumanoidVisualLayers.Underwear => MarkingCategories.Underwear, // Floof, add underwear
+                HumanoidVisualLayers.Undershirt => MarkingCategories.Undershirt, // Floof, add underwear
                 HumanoidVisualLayers.RArm => MarkingCategories.RightArm,
                 HumanoidVisualLayers.LArm => MarkingCategories.LeftArm,
                 HumanoidVisualLayers.RHand => MarkingCategories.RightHand,
