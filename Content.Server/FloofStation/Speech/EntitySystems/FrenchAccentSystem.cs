@@ -44,3 +44,4 @@ public sealed class FrenchAccentSystem : EntitySystem
         args.Message = Accentuate(args.Message, component);
     }
 }
+
