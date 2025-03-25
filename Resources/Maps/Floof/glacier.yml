@@ -224,7 +224,7 @@ entities:
           version: 6
         3,1:
           ind: 3,1
-          tiles: YAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAPQAAAAAAPQAAAAAAYQAAAAAARwAAAAADYQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAYQAAAAAARwAAAAABYQAAAAAAPQAAAAAAYQAAAAAAYAAAAAAAYAAAAAAARwAAAAAARwAAAAAARwAAAAAARwAAAAACRwAAAAADRwAAAAACRwAAAAADRwAAAAAARwAAAAABRwAAAAAARwAAAAABRwAAAAAARwAAAAABPQAAAAAACQAAAAAAYAAAAAAARwAAAAADRwAAAAADRwAAAAACRwAAAAADRwAAAAABRwAAAAAARwAAAAACRwAAAAAARwAAAAABRwAAAAADRwAAAAADRwAAAAACRwAAAAAAPQAAAAAACQAAAAAACQAAAAAGRwAAAAADRwAAAAADRwAAAAAARwAAAAADRwAAAAAARwAAAAADRwAAAAAARwAAAAADRwAAAAADRwAAAAADRwAAAAAARwAAAAABRwAAAAADPQAAAAAACQAAAAAACQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAYQAAAAAANwAAAAAANwAAAAAANwAAAAAAPQAAAAAAYQAAAAAANwAAAAAANwAAAAAANwAAAAAAYQAAAAAAYQAAAAAAPQAAAAAAPQAAAAAACQAAAAAMCQAAAAAACQAAAAAEYQAAAAAARwAAAAABRwAAAAADRwAAAAACRwAAAAACRwAAAAABRwAAAAADRwAAAAAARwAAAAABNwAAAAAAUQAAAAAAUQAAAAAAUQAAAAAA
+          tiles: YAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAPQAAAAAAPQAAAAAAYQAAAAAARwAAAAADYQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAYQAAAAAARwAAAAABYQAAAAAAPQAAAAAAYQAAAAAAYAAAAAAAYAAAAAAARwAAAAAARwAAAAAARwAAAAAARwAAAAACRwAAAAADRwAAAAACRwAAAAADRwAAAAAARwAAAAABRwAAAAAARwAAAAABRwAAAAAARwAAAAABPQAAAAAACQAAAAAAYAAAAAAARwAAAAADRwAAAAADRwAAAAACRwAAAAADRwAAAAABRwAAAAAARwAAAAACRwAAAAAARwAAAAABRwAAAAADRwAAAAADRwAAAAACRwAAAAAAPQAAAAAACQAAAAAACQAAAAAGRwAAAAADRwAAAAADRwAAAAAARwAAAAADRwAAAAAARwAAAAADRwAAAAAARwAAAAADRwAAAAADRwAAAAADRwAAAAAARwAAAAABRwAAAAADPQAAAAAACQAAAAAACQAAAAAAPQAAAAAAPQAAAAAAPQAAAAAAYQAAAAAANwAAAAAANwAAAAAANwAAAAAAPQAAAAAAYQAAAAAANwAAAAAANwAAAAAANwAAAAAAYQAAAAAAYQAAAAAAPQAAAAAAPQAAAAAACQAAAAAMCQAAAAAACQAAAAAEYQAAAAAARwAAAAABRwAAAAADRwAAAAACRwAAAAACRwAAAAABRwAAAAADRwAAAAAARwAAAAABNwAAAAAAUQAAAAAAUQAAAAAAUQAAAAAA
           version: 6
         1,4:
           ind: 1,4
@@ -4120,6 +4120,13 @@ entities:
             5952: 35,-33
             5963: 32,-23
         - node:
+            color: '#D381C972'
+            id: HalfTileOverlayGreyscale180
+          decals:
+            5951: 34,-33
+            5952: 35,-33
+            5963: 32,-23
+        - node:
             color: '#0E7F1BA3'
             id: HalfTileOverlayGreyscale270
           decals:
@@ -6391,6 +6398,7 @@ entities:
             cleanable: True
             color: '#00000026'
             id: footprint
+            zIndex: 6
           decals:
             2740: -11.098538,9.7046175
             2741: -10.981814,10.154618
@@ -6405,6 +6413,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#0000003F'
             id: footprint
+            zIndex: 6
           decals:
             2729: -10.755599,9.845897
             2730: -10.588849,10.270898
@@ -6422,12 +6431,14 @@ entities:
             angle: -0.3490658503988659 rad
             color: '#00000049'
             id: footprint
+            zIndex: 6
           decals:
             2567: 4.1039333,27.617561
         - node:
             cleanable: True
             color: '#0000004C'
             id: footprint
+            zIndex: 6
           decals:
             2818: -20.982452,-3.519151
             2819: -11.206538,-5.6867604
@@ -6437,6 +6448,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#0000004C'
             id: footprint
+            zIndex: 6
           decals:
             2797: 34.93062,-4.670577
             2798: 35.164066,-5.070577
@@ -6452,6 +6464,7 @@ entities:
             angle: 4.1887902047863905 rad
             color: '#0000004C'
             id: footprint
+            zIndex: 6
           decals:
             2790: 31.0494,-10.740388
             2791: 31.574657,-10.698721
@@ -6461,6 +6474,7 @@ entities:
             angle: 4.71238898038469 rad
             color: '#0000004C'
             id: footprint
+            zIndex: 6
           decals:
             2793: 32.816036,-10.657055
             2810: 40.02964,-12.205917
@@ -6470,6 +6484,7 @@ entities:
             angle: 5.061454830783556 rad
             color: '#0000004C'
             id: footprint
+            zIndex: 6
           decals:
             2794: 30.390522,-11.958366
             2795: 30.707344,-11.750033
@@ -6479,6 +6494,7 @@ entities:
             angle: -0.6981317007977318 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2696: -13.792624,4.26464
             2697: -12.433617,5.656307
@@ -6489,6 +6505,7 @@ entities:
             angle: -0.5235987755982988 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2838: 18.386501,11.985915
             2839: 18.561588,12.485915
@@ -6497,6 +6514,7 @@ entities:
             cleanable: True
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2560: 32.876743,-6.954507
             2602: -8.184889,4.6175995
@@ -6519,6 +6537,7 @@ entities:
             angle: 0.6981317007977318 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2683: 34.925564,-12.353004
         - node:
@@ -6526,6 +6545,7 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2572: 2.721216,27.083786
             2617: -16.786346,5.0384912
@@ -6555,6 +6575,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2573: 3.8467746,18.600864
             2577: 3.8300972,17.067532
@@ -6578,6 +6599,7 @@ entities:
             angle: 4.71238898038469 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2578: 4.544463,21.13601
             2586: 2.438377,7.2145567
@@ -6601,6 +6623,7 @@ entities:
             angle: 5.1487212933832724 rad
             color: '#00000059'
             id: footprint
+            zIndex: 6
           decals:
             2597: 14.55651,8.946036
             2598: 17.05508,10.843181
@@ -6609,6 +6632,7 @@ entities:
             angle: -0.6981317007977318 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2694: -12.416942,5.147974
             2695: -13.300714,4.397974
@@ -6616,6 +6640,7 @@ entities:
             cleanable: True
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2556: 32.91843,-8.17948
             2557: 33.135204,-7.87948
@@ -6637,6 +6662,7 @@ entities:
             angle: 0.17453292519943295 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2681: 33.516533,-10.053005
         - node:
@@ -6644,6 +6670,7 @@ entities:
             angle: 0.6981317007977318 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2682: 34.95891,-11.878004
         - node:
@@ -6651,6 +6678,7 @@ entities:
             angle: 0.8726646259971648 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2782: 30.221973,-9.887358
             2783: 29.93016,-9.870691
@@ -6662,6 +6690,7 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2571: 2.4230378,26.852211
             2615: -19.112503,4.7468243
@@ -6687,6 +6716,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2574: 4.0802217,18.159199
             2576: 4.155258,17.49253
@@ -6699,6 +6729,7 @@ entities:
             angle: 4.71238898038469 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2584: 2.0131662,6.8312235
             2585: -0.75487375,6.8645563
@@ -6714,6 +6745,7 @@ entities:
             angle: 5.1487212933832724 rad
             color: '#00000066'
             id: footprint
+            zIndex: 6
           decals:
             2595: 14.966305,8.787703
             2596: 16.967297,10.254369
@@ -6722,6 +6754,7 @@ entities:
             angle: -0.6981317007977318 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2691: -13.275701,4.8813066
             2692: -12.900516,4.8396406
@@ -6731,12 +6764,14 @@ entities:
             angle: -0.3490658503988659 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2566: 37.748882,-10.8032675
         - node:
             cleanable: True
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2603: -13.980548,-5.2225666
             2604: -13.722087,-4.764233
@@ -6767,6 +6802,7 @@ entities:
             angle: 0.17453292519943295 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2679: 33.724968,-10.661338
             2680: 33.95008,-10.211338
@@ -6775,6 +6811,7 @@ entities:
             angle: 0.5235987755982988 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2675: 34.483677,-11.869671
             2676: 34.56705,-11.336338
@@ -6785,6 +6822,7 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2568: 1.3058171,27.160545
             2569: 1.7143528,26.90221
@@ -6825,6 +6863,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2575: 3.8384347,17.842533
             2644: 43.97929,-19.233694
@@ -6839,6 +6878,7 @@ entities:
             angle: 4.71238898038469 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2579: -0.32738662,7.1728897
             2580: 0.064474344,6.8812237
@@ -6863,6 +6903,7 @@ entities:
             angle: 5.1487212933832724 rad
             color: '#00000072'
             id: footprint
+            zIndex: 6
           decals:
             2590: 15.099704,9.212703
             2591: 15.599953,9.346036
@@ -6874,12 +6915,14 @@ entities:
             angle: -0.3490658503988659 rad
             color: '#0000007F'
             id: footprint
+            zIndex: 6
           decals:
             2565: 38.090717,-10.6366005
         - node:
             cleanable: True
             color: '#0000007F'
             id: footprint
+            zIndex: 6
           decals:
             2564: 38.065704,-9.668319
         - node:
@@ -6887,23 +6930,25 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#0000007F'
             id: footprint
+            zIndex: 6
           decals:
             2821: -9.19943,5.45265
             2822: -8.6241455,5.6026497
             2823: -8.449059,5.3359833
-            2824: -7.709367,5.569317
             2825: -7.325843,5.2193165
             2826: -6.731452,5.4693165
         - node:
             cleanable: True
             color: '#0000008C'
             id: footprint
+            zIndex: 6
           decals:
             2563: 37.832256,-9.934986
         - node:
             cleanable: True
             color: '#00000099'
             id: footprint
+            zIndex: 6
           decals:
             2561: 37.84893,-10.435874
             2562: 38.065704,-10.135874
@@ -6911,6 +6956,7 @@ entities:
             cleanable: True
             color: '#42414936'
             id: footprint
+            zIndex: 6
           decals:
             1728: 33.1593,-3.062941
             1729: 32.825806,-2.7114851
@@ -6918,6 +6964,7 @@ entities:
             cleanable: True
             color: '#42414968'
             id: footprint
+            zIndex: 6
           decals:
             1725: 32.75742,-4.049373
             1726: 33.184715,-3.5745826
@@ -6927,6 +6974,7 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#42414968'
             id: footprint
+            zIndex: 6
           decals:
             1724: 31.886757,-10.748468
         - node:
@@ -6934,6 +6982,7 @@ entities:
             angle: 3.141592653589793 rad
             color: '#42414968'
             id: footprint
+            zIndex: 6
           decals:
             1723: 11.869004,5.016307
         - node:
@@ -6941,12 +6990,14 @@ entities:
             angle: -0.3490658503988659 rad
             color: '#4C484B53'
             id: footprint
+            zIndex: 6
           decals:
             1732: 6.09474,35.383728
         - node:
             cleanable: True
             color: '#4C484B53'
             id: footprint
+            zIndex: 6
           decals:
             1730: 4.83913,35.217064
             1731: 5.266424,35.467064
@@ -6954,6 +7005,7 @@ entities:
             cleanable: True
             color: '#4D4D4DFF'
             id: footprint
+            zIndex: 6
           decals:
             3144: -53.54211,-0.39407063
             3145: -52.312943,-0.40795946
@@ -6962,6 +7014,7 @@ entities:
             angle: -0.3490658503988659 rad
             color: '#8285813C'
             id: footprint
+            zIndex: 6
           decals:
             1721: 5.4926143,34.46163
             1722: 5.4821925,35.0658
@@ -6970,6 +7023,7 @@ entities:
             angle: -0.17453292519943295 rad
             color: '#8285813C'
             id: footprint
+            zIndex: 6
           decals:
             1708: 4.453151,27.762356
             1709: 4.776228,28.189442
@@ -6989,6 +7043,7 @@ entities:
             angle: -0.17453292519943295 rad
             color: '#82858193'
             id: footprint
+            zIndex: 6
           decals:
             1705: 4.959087,28.44014
             1706: 4.5526347,28.148472
@@ -6997,6 +7052,7 @@ entities:
             cleanable: True
             color: '#82858193'
             id: footprint
+            zIndex: 6
           decals:
             1691: 4.7165256,28.89534
             1692: 5.018759,29.245625
@@ -7017,6 +7073,7 @@ entities:
             angle: 1.5707963267948966 rad
             color: '#ABACB4FF'
             id: footprint
+            zIndex: 6
           decals:
             5073: 24.207914,-37.304127
             5074: 23.97354,-37.085377
@@ -7027,6 +7084,7 @@ entities:
             angle: 4.71238898038469 rad
             color: '#ABACB4FF'
             id: footprint
+            zIndex: 6
           decals:
             5077: 18.989164,-34.726
             5078: 19.16104,-34.976
@@ -7037,6 +7095,7 @@ entities:
             angle: -1.5707963267948966 rad
             color: '#FFFFFF0F'
             id: footprint
+            zIndex: 6
           decals:
             5319: 75.639626,-29.667685
             5320: 75.9365,-29.886435
@@ -7045,13 +7104,14 @@ entities:
             cleanable: True
             color: '#FFFFFF0F'
             id: footprint
+            zIndex: 6
           decals:
             5317: 73.233376,-31.542685
             5318: 72.90525,-31.730185
         - node:
             cleanable: True
             angle: 4.71238898038469 rad
-            color: '#FFFFFF02'
+            color: '#FFFFFF12'
             id: grasssnow
           decals:
             2096: 50,-45
@@ -7228,7 +7288,6 @@ entities:
             2175: 4,-24
             2178: 1,-26
             2179: 6,-24
-            2183: -8,6
             2184: -7,5
             2201: -13,3
             2211: -13,-5
@@ -7484,7 +7543,6 @@ entities:
             2479: 4,25
             2481: -14,6
             2482: -16,4
-            2483: -14,3
             2488: -13,-13
             2489: -20,-13
             2490: -13,-10
@@ -7613,7 +7671,7 @@ entities:
         - node:
             cleanable: True
             angle: 4.71238898038469 rad
-            color: '#FFFFFF30'
+            color: '#FFFFFF18'
             id: grasssnow
           decals:
             1684: 28,-11
@@ -7926,6 +7984,353 @@ entities:
             5986: -44,7
             5989: -58,9
             5990: -59,7
+        - node:
+            cleanable: True
+            angle: -1.5707963267948966 rad
+            color: '#FFFFFF22'
+            id: grasssnow
+          decals:
+            6000: -4,5
+            6001: -3,5
+            6002: -3,6
+            6003: 0,6
+            6004: 5,6
+            6005: 6,6
+            6006: 4,6
+            6007: 3,10
+            6008: 3,12
+            6009: 4,11
+            6010: 3,14
+            6011: 2,15
+            6012: 3,15
+            6013: 3,19
+            6014: 4,21
+            6015: 5,21
+            6016: 4,22
+            6017: 3,23
+            6018: 11,9
+            6019: 9,9
+            6020: 6,7
+            6021: 12,10
+            6022: 14,9
+            6023: 13,9
+            6024: 14,8
+            6025: 15,8
+            6026: 16,8
+            6027: 17,9
+            6028: 17,11
+            6029: 15,13
+            6030: 13,6
+            6031: 13,7
+            6032: 10,8
+            6033: -14,1
+            6034: -15,1
+            6035: -14,-2
+            6036: -13,-2
+            6037: -13,-3
+            6038: -14,-5
+            6039: -15,-3
+            6040: -13,-8
+            6041: -13,-9
+            6042: -13,-11
+            6043: -14,-12
+            6044: -15,-12
+            6045: -17,-12
+            6046: -17,-13
+            6047: -12,-7
+            6048: -20,-40
+            6049: -64,1
+            6050: -65,1
+            6051: -65,2
+            6052: -66,1
+            6053: -70,-20
+            6054: -69,-20
+            6055: -70,-21
+            6056: -56,-21
+            6057: -57,-19
+            6058: -57,-18
+            6059: -57,-21
+            6060: -58,-20
+            6061: -58,-19
+            6062: -38,-8
+            6063: -38,-7
+            6064: -43,7
+            6065: -42,7
+            6066: -42,6
+            6067: -41,6
+            6068: -49,11
+            6069: -47,11
+            6070: -48,11
+            6071: -50,11
+            6072: -51,11
+            6073: -52,11
+            6074: -53,11
+            6075: -54,10
+            6076: -49,12
+            6077: -51,16
+            6078: -53,17
+            6079: -51,21
+            6080: -57,24
+            6081: -58,24
+            6082: -55,27
+            6083: -53,28
+            6084: -53,29
+            6085: -51,26
+            6086: -53,31
+            6087: -54,34
+            6088: -55,32
+            6089: -50,31
+            6090: -49,35
+            6091: -48,35
+            6092: -43,33
+            6093: -20,5
+            6094: -17,5
+            6095: -13,3
+            6096: -13,6
+            6097: -12,5
+            6098: -9,4
+            6099: -10,5
+            6100: -11,8
+            6101: -5,5
+            6102: -5,6
+            6103: -4,6
+            6104: -4,9
+            6105: 0,7
+            6106: 4,12
+            6107: -14,0
+            6108: -13,-4
+            6109: -14,-10
+            6110: -20,-12
+            6113: -14,3
+            6114: -8,6
+            6115: 7,7
+            6116: 16,10
+            6117: 15,10
+            6118: 16,11
+            6119: 7,-3
+            6120: 7,-4
+            6121: 6,-3
+            6122: 2,-3
+            6123: 2,-5
+            6124: 2,-6
+            6125: 0,-4
+            6126: -3,-5
+            6127: -2,-3
+            6128: 1,-3
+            6129: 43,25
+            6130: 42,24
+            6131: 50,31
+            6132: 49,31
+            6133: 48,31
+            6134: 48,32
+            6135: 50,32
+            6137: 44,37
+            6138: 43,38
+            6139: 45,36
+            6140: 50,42
+            6141: 46,42
+            6142: 28,41
+            6143: 27,41
+            6144: 27,42
+            6145: 28,42
+            6146: 23,60
+            6147: 24,60
+            6148: 22,59
+            6149: 12,59
+            6150: 27,60
+            6151: 26,60
+            6152: 25,60
+            6153: 4,57
+            6154: 4,58
+            6155: 2,59
+            6156: 5,41
+            6157: 4,41
+            6158: 2,41
+            6159: 0,41
+            6160: 0,42
+            6161: 1,41
+            6162: 5,42
+            6163: 5,43
+            6164: 5,44
+            6165: 3,41
+            6166: 0,43
+            6167: -10,40
+            6168: -10,47
+            6169: -11,47
+            6170: -11,48
+            6171: -10,48
+            6172: -12,51
+            6173: -12,52
+            6174: -14,52
+            6175: -17,54
+            6176: -17,56
+            6177: -17,57
+            6178: -17,59
+            6179: -15,63
+            6180: -14,63
+            6181: -16,61
+            6182: -14,62
+            6183: -26,56
+            6184: -26,55
+            6185: -25,55
+            6186: -28,50
+            6187: -31,49
+            6188: -34,49
+            6189: -23,51
+            6190: -22,52
+            6191: -4,51
+            6192: -5,52
+            6193: -1,51
+            6194: -1,52
+            6195: 0,53
+            6196: 1,49
+            6197: 0,49
+            6198: 0,48
+            6199: 0,47
+            6200: 5,44
+            6201: 4,44
+            6202: 47,-7
+            6203: 46,-7
+            6204: 48,-16
+            6205: 48,-15
+            6206: 47,-19
+            6207: 46,-19
+            6208: 39,-19
+            6209: 40,-17
+            6210: 38,-13
+            6211: 43,-15
+            6212: 43,-11
+            6213: 45,-11
+            6214: 44,-11
+            6215: 40,-11
+            6216: 63,-13
+            6217: 64,-13
+            6218: 64,-14
+            6219: 63,-14
+            6220: 65,-14
+            6221: 66,-14
+            6222: 67,-14
+            6223: 68,-13
+            6224: 68,-14
+            6225: 69,-14
+            6226: 70,-15
+            6227: 69,-17
+            6228: 70,-18
+            6229: 71,-12
+            6230: 72,-13
+            6231: 74,-12
+            6232: 72,-14
+            6233: 73,-14
+            6234: 75,-14
+            6235: 75,-13
+            6236: 76,-12
+            6237: 76,-13
+            6238: 76,-15
+            6239: 75,-15
+            6240: 76,-14
+            6241: 74,-14
+            6242: 77,-15
+            6243: 76,-16
+            6244: 76,-18
+            6245: 76,-20
+            6246: 76,-22
+            6247: 77,-22
+            6248: 77,-23
+            6249: 76,-23
+            6250: 78,-26
+            6251: 78,-27
+            6252: 78,-28
+            6253: 77,-28
+            6254: 77,-29
+            6255: 78,-29
+            6256: 77,-30
+            6257: 81,-31
+            6258: 82,-31
+            6259: 85,-28
+            6260: 84,-28
+            6261: 84,-27
+            6262: 83,-27
+            6263: 83,-26
+            6264: 82,-26
+            6265: 81,-26
+            6266: 80,-26
+            6267: 83,-30
+            6268: 81,-33
+            6269: 84,-33
+            6270: 86,-32
+            6271: 87,-31
+            6272: 87,-30
+            6273: 87,-25
+            6274: 86,-25
+            6275: 87,-26
+            6276: 78,-20
+            6277: 85,-15
+            6278: 75,-25
+            6279: 73,-21
+            6280: 69,-16
+            6281: 69,-15
+            6282: 63,-11
+            6283: 63,-16
+            6284: 64,-17
+            6285: 65,-19
+            6286: 67,-19
+            6287: 68,-18
+            6288: 70,-12
+            6289: 69,-12
+            6290: 77,-12
+            6291: 77,-27
+            6292: 77,-26
+            6293: 79,-26
+            6294: 79,-29
+            6295: 79,-28
+            6296: 83,-29
+            6297: 83,-28
+            6298: 80,-27
+            6299: 82,-27
+            6300: 55,-34
+            6301: 55,-33
+            6302: 45,-46
+            6303: 46,-46
+            6304: 47,-46
+            6305: 47,-47
+            6306: 49,-47
+            6307: 49,-46
+            6308: 49,-45
+            6309: 50,-45
+            6310: 44,-45
+            6311: 41,-45
+            6312: 37,-45
+            6313: 36,-45
+            6314: 33,-45
+            6315: 6,-26
+            6316: 7,-26
+            6317: 6,-25
+            6318: 7,-24
+            6319: 10,-24
+            6320: 11,-24
+            6321: 2,-25
+            6322: 1,-26
+            6323: 0,-26
+            6324: -1,-28
+            6325: -4,-28
+            6326: -6,-26
+            6327: -6,-23
+            6328: -2,-22
+            6329: 0,-21
+            6330: 14,-21
+            6331: 12,-22
+            6332: 12,-27
+            6333: 12,-28
+            6334: 13,-25
+            6335: 13,-26
+            6336: 17,-24
+            6337: 17,-23
+            6338: 10,-16
+            6339: 2,-16
+            6340: 2,-17
+            6341: 1,-18
+            6342: -32,-21
+            6343: -25,-21
         - node:
             angle: -0.12217304763960307 rad
             color: '#FFFFFF8F'
@@ -46564,6 +46969,16 @@ entities:
     - type: Transform
       pos: -35.5,5.5
       parent: 2
+  - uid: 6955
+    components:
+    - type: Transform
+      pos: -33.5,6.5
+      parent: 2
+  - uid: 7372
+    components:
+    - type: Transform
+      pos: -35.5,5.5
+      parent: 2
   - uid: 7678
     components:
     - type: Transform
@@ -47289,21 +47704,6 @@ entities:
     components:
     - type: Transform
       pos: 64.5,23.5
-      parent: 2
-  - uid: 20020
-    components:
-    - type: Transform
-      pos: 63.5,23.5
-      parent: 2
-  - uid: 20021
-    components:
-    - type: Transform
-      pos: 63.5,22.5
-      parent: 2
-  - uid: 20022
-    components:
-    - type: Transform
-      pos: 63.5,21.5
       parent: 2
   - uid: 20074
     components:
@@ -53038,6 +53438,13 @@ entities:
     - type: Transform
       pos: 66.5,-26.5
       parent: 2
+- proto: CurtainsWhiteOpen
+  entities:
+  - uid: 6752
+    components:
+    - type: Transform
+      pos: 66.5,-26.5
+      parent: 2
 - proto: DarkTile
   entities:
   - uid: 6649
@@ -53784,6 +54191,11 @@ entities:
     - type: Transform
       pos: -39.5,12.5
       parent: 2
+  - uid: 5328
+    components:
+    - type: Transform
+      pos: -39.5,12.5
+      parent: 2
   - uid: 6843
     components:
     - type: Transform
@@ -53809,6 +54221,24 @@ entities:
       pos: 58.5,38.5
       parent: 2
   - uid: 6850
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 58.5,28.5
+      parent: 2
+  - uid: 6855
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,21.5
+      parent: 2
+  - uid: 6856
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 13.5,28.5
+      parent: 2
+  - uid: 6858
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -53858,10 +54288,26 @@ entities:
   - uid: 6874
     components:
     - type: Transform
+      pos: -4.5,30.5
+      parent: 2
+  - uid: 6870
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,2.5
+      parent: 2
+  - uid: 6874
+    components:
+    - type: Transform
       rot: -1.5707963267948966 rad
       pos: -13.5,-9.5
       parent: 2
   - uid: 6883
+    components:
+    - type: Transform
+      pos: -57.5,12.5
+      parent: 2
+  - uid: 6884
     components:
     - type: Transform
       pos: -57.5,12.5
@@ -54898,6 +55344,40 @@ entities:
       pos: 25.5,11.5
       parent: 2
   - uid: 6916
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 5.5,37.5
+      parent: 2
+  - uid: 6917
+    components:
+    - type: Transform
+      pos: 30.5,29.5
+      parent: 2
+  - uid: 6918
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 27.5,37.5
+      parent: 2
+  - uid: 6920
+    components:
+    - type: Transform
+      pos: 37.5,-16.5
+      parent: 2
+  - uid: 6921
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 35.5,1.5
+      parent: 2
+  - uid: 6922
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 29.5,35.5
+      parent: 2
+  - uid: 6923
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -58430,6 +58910,23 @@ entities:
   - uid: 19585
     components:
     - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -32.5,6.5
+      parent: 2
+- proto: DisposalRouter
+  entities:
+  - uid: 5544
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 33.5,-2.5
+      parent: 2
+    - type: DisposalRouter
+      tags:
+      - Trash
+  - uid: 6935
+    components:
+    - type: Transform
       rot: -1.5707963267948966 rad
       pos: 11.5,9.5
       parent: 2
@@ -60590,12 +61087,17 @@ entities:
   - uid: 10809
     components:
     - type: Transform
-      pos: 26.5,23.5
+      pos: 32.5,-25.5
       parent: 2
   - uid: 18343
     components:
     - type: Transform
       pos: 54.5,8.5
+      parent: 2
+  - uid: 19511
+    components:
+    - type: Transform
+      pos: -0.5,12.5
       parent: 2
   - uid: 19511
     components:
@@ -80711,6 +81213,16 @@ entities:
       - 19825
     - type: AtmosPipeColor
       color: '#0000CCFF'
+  - uid: 7707
+    components:
+    - type: Transform
+      pos: -47.5,-27.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 19825
+    - type: AtmosPipeColor
+      color: '#0000CCFF'
   - uid: 8239
     components:
     - type: Transform
@@ -82293,6 +82805,17 @@ entities:
     - type: Transform
       pos: -42.5,-16.5
       parent: 2
+    - type: AtmosPipeColor
+      color: '#CC0000FF'
+  - uid: 10790
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -63.5,16.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 19496
     - type: AtmosPipeColor
       color: '#CC0000FF'
   - uid: 10790
@@ -85337,6 +85860,16 @@ entities:
     - type: Transform
       pos: 8.5,33.5
       parent: 2
+  - uid: 14773
+    components:
+    - type: Transform
+      pos: 63.5,18.5
+      parent: 2
+  - uid: 14774
+    components:
+    - type: Transform
+      pos: 63.5,19.5
+      parent: 2
   - uid: 17279
     components:
     - type: Transform
@@ -85854,27 +86387,22 @@ entities:
   - uid: 20011
     components:
     - type: Transform
-      pos: 62.5,19.5
-      parent: 2
-  - uid: 20012
-    components:
-    - type: Transform
-      pos: 62.5,20.5
+      pos: 63.5,21.5
       parent: 2
   - uid: 20013
     components:
     - type: Transform
-      pos: 62.5,22.5
-      parent: 2
-  - uid: 20014
-    components:
-    - type: Transform
-      pos: 62.5,23.5
+      pos: 63.5,25.5
       parent: 2
   - uid: 20016
     components:
     - type: Transform
-      pos: 62.5,24.5
+      pos: 63.5,22.5
+      parent: 2
+  - uid: 20020
+    components:
+    - type: Transform
+      pos: 63.5,24.5
       parent: 2
 - proto: GrilleBroken
   entities:
@@ -104331,6 +104859,11 @@ entities:
     - type: Transform
       pos: 10.5,27.5
       parent: 2
+  - uid: 19998
+    components:
+    - type: Transform
+      pos: 10.5,27.5
+      parent: 2
 - proto: RandomInstruments
   entities:
   - uid: 13499
@@ -106366,6 +106899,17 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 52.5,36.5
+      parent: 2
+  - uid: 18296
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 52.5,33.5
+      parent: 2
+  - uid: 19540
+    components:
+    - type: Transform
+      pos: -36.5,-15.5
       parent: 2
   - uid: 18296
     components:
@@ -108567,6 +109111,11 @@ entities:
     - type: Transform
       pos: 23.5,32.5
       parent: 2
+  - uid: 17795
+    components:
+    - type: Transform
+      pos: 23.5,32.5
+      parent: 2
   - uid: 17893
     components:
     - type: Transform
@@ -108597,6 +109146,21 @@ entities:
     components:
     - type: Transform
       pos: -47.5,-35.5
+      parent: 2
+  - uid: 18197
+    components:
+    - type: Transform
+      pos: -32.5,-34.5
+      parent: 2
+  - uid: 18403
+    components:
+    - type: Transform
+      pos: -32.5,-35.5
+      parent: 2
+  - uid: 18405
+    components:
+    - type: Transform
+      pos: -32.5,-33.5
       parent: 2
   - uid: 18197
     components:
@@ -110206,25 +110770,25 @@ entities:
       radius: 1.1
 - proto: SignDangerMed
   entities:
+  - uid: 20012
+    components:
+    - type: Transform
+      pos: 63.5,18.5
+      parent: 2
+  - uid: 20014
+    components:
+    - type: Transform
+      pos: 63.5,22.5
+      parent: 2
   - uid: 20023
     components:
     - type: Transform
       pos: 59.5,16.5
       parent: 2
-  - uid: 20024
-    components:
-    - type: Transform
-      pos: 62.5,19.5
-      parent: 2
   - uid: 20025
     components:
     - type: Transform
       pos: 51.5,16.5
-      parent: 2
-  - uid: 20026
-    components:
-    - type: Transform
-      pos: 62.5,23.5
       parent: 2
 - proto: SignDirectionaCourt
   entities:
@@ -112565,15 +113129,10 @@ entities:
     - type: Transform
       pos: 67.5,-8.5
       parent: 2
-  - uid: 14773
+  - uid: 20021
     components:
     - type: Transform
-      pos: 67.5,-9.5
-      parent: 2
-  - uid: 14774
-    components:
-    - type: Transform
-      pos: 69.5,-8.5
+      pos: 66.5,-9.5
       parent: 2
 - proto: SpawnPointResearchAssistant
   entities:

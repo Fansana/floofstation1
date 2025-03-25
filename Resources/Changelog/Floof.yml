@@ -3086,6 +3086,16 @@ Entries:
   id: 331
   time: '2025-03-09T12:44:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/605
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted the damage scaling of mousetraps, making them less deadly to
+        minimum size rodentia and felinids, but more dangerous to mid-small
+        species.
+  id: 0
+  time: '2025-03-09T12:45:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/598
 - author: M3739
   changes:
     - type: Fix
@@ -3172,6 +3182,15 @@ Entries:
   id: 340
   time: '2025-03-16T16:43:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/616
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Fixes some moth wings not actually replacing the default wings,
+        particularly noticeable with the charred wings.
+  id: 0
+  time: '2025-03-16T16:44:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/595
 - author: ItsDzordz
   changes:
     - type: Add
@@ -3215,6 +3234,17 @@ Entries:
   id: 345
   time: '2025-03-18T14:18:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/634
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The emote wheel has been de-cluttered. In addition, only emotes your
+        species can do will be shown.
+    - type: Add
+      message: Most emote icons have been updated, now with color!
+  id: 0
+  time: '2025-03-18T14:19:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/631
 - author: Nox38
   changes:
     - type: Tweak
@@ -3222,12 +3252,18 @@ Entries:
   id: 346
   time: '2025-03-18T14:20:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/627
-- author: Tk420634
-  changes: []
+- author: Fenny
+  changes:
+    - type: Add
+      message: Adds Rodentia Rabbit & Small Ears to Felinids
+    - type: Add
+      message: Adds many vulp ears to Rodentia
+    - type: Add
+      message: Adds many vulp tails to Rodentia
   id: 347
   time: '2025-03-18T21:23:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/632
-- author: M3739
+- author: BlitzTheSquishy and M3739
   changes:
     - type: Add
       message: >-
@@ -3236,7 +3272,7 @@ Entries:
   id: 348
   time: '2025-03-18T21:23:49.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/612
-- author: themias
+- author: themias, Eagle0600, meowyrm, chlymerine
   changes:
     - type: Tweak
       message: Butter can be sliced, cookie and toast recipes now use butter slices.
@@ -3258,3 +3294,203 @@ Entries:
   id: 350
   time: '2025-03-19T02:23:30.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/608
+- author: Fenny
+  changes:
+    - type: Add
+      message: Flamenco Dress to loadout and theater vending machine.
+  id: 351
+  time: '2025-03-19T20:15:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/636
+- author: VividPups
+  changes:
+    - type: Add
+      message: Excommunicant is now added to Mantis Loadout
+    - type: Tweak
+      message: Zipties, psi-breaker, headcages can now go into the mantis belt
+  id: 352
+  time: '2025-03-19T20:16:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/550
+- author: Fenny
+  changes:
+    - type: Tweak
+      message: >-
+        Examine range to 16 tiles so you no longer have to walk up to people and
+        oogle them from point blank range to read about their heaving cleavage.
+  id: 353
+  time: '2025-03-20T01:46:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/641
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added the blue swim suit to loadouts.
+  id: 354
+  time: '2025-03-20T21:12:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/639
+- author: Forzii and Rosycup
+  changes:
+    - type: Add
+      message: Added rubber gas masks and latex catsuits
+    - type: Tweak
+      message: IPCs can now wear muzzles
+  id: 355
+  time: '2025-03-20T21:13:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/617
+- author: Forzii and TGRCDev
+  changes:
+    - type: Add
+      message: Crew manifest now shows pronouns
+    - type: Fix
+      message: Crew manifest should no longer overlap long names and titles
+  id: 356
+  time: '2025-03-21T14:16:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/630
+- author: Southbridge
+  changes:
+    - type: Add
+      message: A new kink-focused crate has been added.
+    - type: Tweak
+      message: The contents and price of the Sex Toys Crate have been reduced.
+  id: 357
+  time: '2025-03-21T14:20:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/637
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        Check Out interact function to check people out from across rooms and be
+        a lot less subtle about wanting to come onto them.
+  id: 358
+  time: '2025-03-21T14:22:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/642
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: increase the price for emp grenades/implanter
+  id: 359
+  time: '2025-03-21T14:22:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/644
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        Dresses added - Red Dancers Garb, Banded Dancers Garb, Red Sideless
+        Dress, Purple Nightclub Dress, & Black Petticoat Dress.  All are in
+        loadout or theater vendor.
+  id: 360
+  time: '2025-03-21T14:24:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/645
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: Captain, Security, and some antags can no longer be tiny
+  id: 361
+  time: '2025-03-21T17:27:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/638
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Interaction verbs (looking, petting, etc) should no longer reveal the
+        target's or user's identity.
+  id: 362
+  time: '2025-03-22T15:02:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/654
+- author: Emily9031
+  changes:
+    - type: Tweak
+      message: EMP Pulse got a new visual look thanks to dvir001!
+  id: 363
+  time: '2025-03-22T15:02:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/653
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Two new mixed-lights boxes are now available in the colored lights crate
+  id: 364
+  time: '2025-03-22T15:03:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/652
+- author: Southbridge
+  changes:
+    - type: Fix
+      message: Fixed the weather command.
+  id: 365
+  time: '2025-03-22T15:05:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/647
+- author: BlitzTheSquishy and M3739
+  changes:
+    - type: Add
+      message: >-
+        Introducing Nēhina, the native language of the Feroxi! It is also
+        learnable via a trait, just like Valyrian Standard.
+    - type: Add
+      message: Feroxis now have their own name list for random generation.
+  id: 366
+  time: '2025-03-22T15:08:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/635
+- author: Fenny
+  changes:
+    - type: Add
+      message: Gray Jumpskirt added to loadout clothing selection!
+  id: 367
+  time: '2025-03-24T00:33:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/664
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: >-
+        You can now select underwear and undershirts in the markings menu. They
+        are toggleable in-game via the interaction menu, but you must not be
+        wearing a jumpsuit to toggle them.
+  id: 368
+  time: '2025-03-24T00:35:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/575
+- author: Forzii
+  changes:
+    - type: Add
+      message: Epistemics SOP and Engineering SOP guidebook entries
+    - type: Tweak
+      message: Floofed up the Role Types guidebook entry
+  id: 369
+  time: '2025-03-24T00:37:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/659
+- author: Fenny
+  changes:
+    - type: Fix
+      message: Does a sick kickflip over the check out verb to fix its description.
+  id: 370
+  time: '2025-03-24T00:39:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/663
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        A negative trait that prevents the use of man-machine interfaces on your
+        brain, has been added.
+  id: 371
+  time: '2025-03-24T00:45:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/623
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Amber Station has been ported to Floof.
+  id: 372
+  time: '2025-03-24T00:54:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/662
+- author: B1773rm4n
+  changes:
+    - type: Add
+      message: Implement search box for the Player Manifest Tab search at Round End
+    - type: Add
+      message: Implement search box for the Round Information Tab search at Round End
+  id: 373
+  time: '2025-03-24T23:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/661
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        French Accent trait pulled up out of somewhere you don't wanna think
+        about.
+  id: 374
+  time: '2025-03-25T00:14:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/668
