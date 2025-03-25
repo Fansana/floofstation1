@@ -124,6 +124,7 @@
   kind: source
   path: "/Textures/Shaders/ethereal.swsl"
 
+# NightVision shaders
 - type: shader
   id: NightVision
   kind: source
