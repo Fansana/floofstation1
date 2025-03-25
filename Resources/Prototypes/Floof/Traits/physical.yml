@@ -106,7 +106,7 @@
 - type: trait
   id: Tiny
   category: Physical
-  points: -2 # with the downsides it shouldn't need to cost a lot
+  points: 0 # At this point, this RP-focused trait is intended to be self-balancing
   requirements:
   - !type:CharacterJobRequirement
     inverted: true
@@ -115,7 +115,7 @@
     - MedicalBorg
     - Captain # Balance, sorry for the tiny captains out there!
   - !type:CharacterHeightRequirement
-    max: 133 # Minimum size +1 for humans/standard humanoids
+    max: 140 # Minimum size +8 for humans/standard humanoids, to give people more leeway on how skinny they appear when tiny
   - !type:CharacterWidthRequirement
     max: 29 # Minimum size +1 for humans/standard humanoids
   - !type:CharacterTraitRequirement
@@ -131,7 +131,7 @@
       departments:
         - Security # No tiny sec, sad
   functions:
-  - !type:TraitAddComponent # TODO: add a new component/system to increase damage taken or reduce damage thresholds.
+  - !type:TraitAddComponent
     components:
     - type: PlayerToolModifier # TODO: switch to using a tiny component/system to remove compatibility issues?
       pryTimeMultiplier: 1.4 # 40% longer prying time
