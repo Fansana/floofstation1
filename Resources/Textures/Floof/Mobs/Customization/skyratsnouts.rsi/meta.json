@@ -72,11 +72,19 @@
       "directions": 4
     },
     {
+      "name": "m_snout_fscanidalt_ADJ_primary",
+      "directions": 4
+    },
+    {
       "name": "m_snout_fscanidalt_FRONT_secondary",
       "directions": 4
     },
     {
       "name": "m_snout_fscanidalt2_FRONT_primary",
+      "directions": 4
+    },
+    {
+      "name": "m_snout_fscanidalt2_ADJ_primary",
       "directions": 4
     },
     {
@@ -436,11 +444,19 @@
       "directions": 4
     },
     {
+      "name": "m_snout_rodent_ADJ_primary",
+      "directions": 4
+    },
+    {
       "name": "m_snout_sharp_ADJ",
       "directions": 4
     },
     {
       "name": "snout_round",
+      "directions": 4
+    },
+    {
+      "name": "m_snout_round_ADJ",
       "directions": 4
     },
     {
