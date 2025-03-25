@@ -143,15 +143,6 @@
           Piercing: 0.8
     - type: BonusStaminaDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
       multiplier: 0.8
-    - type: SizeTrait
-      damgeModifierSet: # Increase physical damage taken by 10%
-        coefficients: 
-         Blunt: 1.1
-         Slash: 1.1
-         Piercing: 1.1
-      critThresholdModifier: -20 # reduce health to crit by 20%
-      staminaCritThresholdModifier: -20 # reduce stamina by 20%
-      deadThresholdModifier: -20 # reduce health to dead by 20%
   - !type:TraitReplaceComponent
     components:
     - type: PseudoItem # TODO: fix PseudoItem direct insertion bug - not created by this trait, but particularly noticeable when using it
@@ -161,5 +152,17 @@
       pickupDuration: 2 # Default is 3, plus they will already be lighter
     - type: CanEscapeInventory
       baseResistTime: 8 # Default is 5, takes 60% longer when tiny
+    - type: CritModifier
+      critThresholdModifier: -20 # reduce health to crit by 20%
+    - type: DeadModifier
+      deadThresholdModifier: -20 # reduce health to dead by 20%
+    - type: StaminaCritModifier 
+      critThresholdModifier: -20 # reduce stamina by 20%
   - !type:TraitSetScale
     scale: 0.7
+  - !type:TraitAddArmor
+    damageModifierSets: 
+      - TinyTrait # Increase physical damage taken by 10%
+  - !type:TraitPushDescription
+    descriptionExtensions:
+      - description: examine-tiny-trait-message

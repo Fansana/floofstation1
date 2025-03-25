@@ -1,7 +1,5 @@
 using Content.Shared.Traits;
 using Robust.Shared.Serialization.Manager;
-//using Robust.Server.GameObjects;
-//using System.Numerics;
 using Content.Shared.HeightAdjust;
 
 namespace Content.Server.FloofStation.Traits;

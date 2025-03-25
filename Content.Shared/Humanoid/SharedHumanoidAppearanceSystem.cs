@@ -345,8 +345,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     /// <param name="humanoid">Humanoid component of the entity</param>
     public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null, bool restricted = true) // Floofstation - added restricted
     {
-/*         SetScaleUnrestricted(uid, scale, sync, humanoid, restricted: true); // Floofstation - moved logic to SetScaleUnrestricted */
-
         if (!Resolve(uid, ref humanoid))
             return;
 
@@ -364,8 +362,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         if (sync)
-            Dirty(uid, humanoid);
-        
+            Dirty(uid, humanoid);    
     }
 
     /// <summary>
