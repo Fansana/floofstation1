@@ -1,25 +1,46 @@
+// Floof - M3739 - This shader has been altered with inputs and advice gathered from LLMs. I'm going to tell you right 
+// now, this is ARCANE to me. I hate math, I hate this. I have the technical intuition to figure out logic and mechanica
+// but god forbid if I ever have to figure out a mathmatical formula to draw a CIRCLE. I suck at this. I hate that I did
+// this to achieve the results I wanted. This comment has been left here because I am angry at myself. I have sinned.
+// Also, this shader is heavily modified for Floof, cherry-picked from Einstein Engines PR No. 1492. While the file
+// itself originates from WWDP.
 light_mode unshaded;
 
 uniform sampler2D SCREEN_TEXTURE;
 uniform highp vec3 tint; // Colour of the tint
+uniform highp float NVDSnow; // Floof - Visual artifact intensity, a number between 0 and 1
 uniform highp float luminance_threshold; // number between 0 and 1
 uniform highp float noise_amount; // number between 0 and 1
 
-lowp float rand (lowp vec2 n) {
-  return 0.5 + 0.5 * fract (sin (dot (n.xy, vec2 (12.9898, 78.233)))* 43758.5453);
+// Floof - Improved hash function for better randomness
+lowp float hash(lowp vec2 p) {
+    p = fract(p * vec2(123.34, 456.21));
+    p += dot(p, p + 45.32);
+    return fract(p.x * p.y);
+}
+
+// Floof - Multi-layer static noise for snow effect
+lowp float snow_noise(lowp vec2 uv) {
+    // Floof - Base noise layer
+    lowp float n = hash(uv * 100.0 + fract(TIME));
+    
+    // Floof - High-frequency noise
+    n += hash(uv * 500.0 + fract(TIME * 0.5)) * 0.5;
+    
+    return fract(n * 12345.56);
 }
 
 void fragment() {
 
     highp vec4 color = zTextureSpec(SCREEN_TEXTURE, FRAGCOORD.xy * SCREEN_PIXEL_SIZE);
 
-    // convert color to grayscale using luminance
+    // Convert color to grayscale using luminance
     highp float grey = dot(color.rgb, vec3(0.298, 0.5882, 0.1137));
 
-    // calculate local threshold
+    // Calculate local threshold
     highp float threshold = grey * luminance_threshold;
 
-    // amplify low luminance parts
+    // Amplify low luminance parts
     if (grey < threshold) {
         grey += (threshold - grey) * 0.5;
         if (grey > 1.0) {
@@ -27,12 +48,15 @@ void fragment() {
         }
     }
 
-    // apply night vision color tint
+    // Apply night vision color tint
     color.rgb = mix(color.rgb, tint, grey);
 
-    // add some noise for realism
-    lowp float noise = rand(FRAGCOORD.xy + TIME) * noise_amount / 10.0;
-    color.rgb += noise;
+    //Floof - Add snow-like static noise for realism
+    highp vec2 snow_uv = FRAGCOORD.xy * 0.005; // Static scaled to screen space
+    lowp float snow = snow_noise(snow_uv) * NVDSnow;
+    
+    //Floof - Apply snow effect to the final color
+    color.rgb += snow * 0.15;
 
     COLOR = color;
 }

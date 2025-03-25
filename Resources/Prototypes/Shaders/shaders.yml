@@ -124,8 +124,10 @@
   kind: source
   path: "/Textures/Shaders/ethereal.swsl"
 
-# NightVision shaders
+# Night vision shaders
 - type: shader
   id: NightVision
   kind: source
   path: "/Textures/Shaders/nightvision.swsl"
+  params:
+    NVDSnow: 1.0 # Floof - M3739 - A temporary solution while I figure out how to make this a component parameter
