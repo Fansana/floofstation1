@@ -1113,7 +1113,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             // which doesn't really work for modes that are supposed to go through walls, like Speak
             var inRange = distance <= voiceGetRange;
 
-            var isVisible = observer || inRange && _examine.InRangeUnOccluded(source, playerEntity, voiceGetRange);
+            var isVisible = observer || (inRange && _examine.InRangeUnOccluded(source, playerEntity, voiceGetRange));
 
             // even if they are a ghost hearer, in some situations we still need the range
             if (inRange)
