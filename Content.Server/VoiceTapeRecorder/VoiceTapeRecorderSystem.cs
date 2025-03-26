@@ -46,6 +46,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         if (nextPlayCheck is null || nextPlayCheck > when)
             nextPlayCheck = when;
     }
+
     public override void Update(float frameTime)
     {
         if (nextPlayCheck is null) return;
@@ -69,10 +70,13 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                     voiceOverride.SpeechVerbOverride = m.Speech;
                     voiceOverride.Enabled = true;
                     language.CurrentLanguage = m.Language.ID;
-                    _chat.TrySendInGameICMessage(uid, m.Message,
+                    _chat.TrySendInGameICMessage(
+                        uid,
+                        m.Message,
                         chatType,
                         ChatTransmitRange.GhostRangeLimit,
-                        checkRadioPrefix: false);
+                        checkRadioPrefix: false
+                    );
                     component.NextMessageIndex++;
                     ScheduleNextRecorder(component);
                 }
@@ -85,10 +89,13 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                         voiceOverride.Enabled = false;
                         RemCompDeferred<VoiceOverrideComponent>(uid);
                     }
-                    _chat.TrySendInGameICMessage(uid, Loc.GetString("voice-tape-recorder-end-of-tape"),
+                    _chat.TrySendInGameICMessage(
+                        uid,
+                        Loc.GetString("voice-tape-recorder-end-of-tape"),
                         chatType,
                         ChatTransmitRange.GhostRangeLimit,
-                        checkRadioPrefix: false);
+                        checkRadioPrefix: false
+                    );
                     ChangeState(uid, component, RecorderState.Idle);
                     RemCompDeferred<LanguageSpeakerComponent>(uid);
                 }
@@ -96,11 +103,16 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         }
     }
 
-    private void OnInit(EntityUid uid, VoiceTapeRecorderComponent component, ComponentInit args)
+    private void OnInit(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        ComponentInit args
+    )
     {
         EnsureComp<SpeechComponent>(uid);
         OnStateChange(uid, component, RecorderState.Idle, component.State);
     }
+
     private void OnListen(EntityUid uid, VoiceTapeRecorderComponent component, ListenEvent args)
     {
         // Name and Speech finding ripped from Content.Server.Chat.Systems.SendEntitySpeak
@@ -122,7 +134,12 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             )
         );
     }
-    private void OnAttemptListen(EntityUid uid, VoiceTapeRecorderComponent component, ListenAttemptEvent args)
+
+    private void OnAttemptListen(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        ListenAttemptEvent args
+    )
     {
         if (component.State != RecorderState.Recording) args.Cancel();
     }
@@ -165,36 +182,57 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         }
     }
 
-    private void OnUse(EntityUid uid, VoiceTapeRecorderComponent component)
-        => ChangeState(uid, component,
-            component.State != RecorderState.Playing ?
-                RecorderState.Playing : RecorderState.Idle
-        );
+    private void OnUse(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component
+    )
+    => ChangeState(uid, component,
+        component.State != RecorderState.Playing ?
+            RecorderState.Playing : RecorderState.Idle
+    );
 
-    private void OnAltUse(EntityUid uid, VoiceTapeRecorderComponent component)
-        => ChangeState(uid, component,
-            component.State != RecorderState.Recording ?
-                RecorderState.Recording : RecorderState.Idle
-        );
+    private void OnAltUse(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component
+    )
+    => ChangeState(uid, component,
+        component.State != RecorderState.Recording ?
+            RecorderState.Recording : RecorderState.Idle
+    );
 
-    private void EraseTape(EntityUid uid, VoiceTapeRecorderComponent component)
+    private void EraseTape(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component
+    )
     {
         ChangeState(uid, component, RecorderState.Idle);
         component.RecordedSoFar = TimeSpan.Zero;
         component.RecordedMessages = [];
     }
 
-    private void OnActivate(EntityUid uid, VoiceTapeRecorderComponent component, ActivateInWorldEvent args)
-        => OnUse(uid, component);
+    private void OnActivate(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        ActivateInWorldEvent args
+    )
+    => OnUse(uid, component);
 
-    private void OnActivateVerb(EntityUid uid, VoiceTapeRecorderComponent component, GetVerbsEvent<ActivationVerb> args)
-        => args.Verbs.Add(new ActivationVerb()
-        {
-            Text = Loc.GetString("voice-tape-recorder-play"),
-            Act = () => OnUse(uid, component)
-        });
+    private void OnActivateVerb(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        GetVerbsEvent<ActivationVerb> args
+    )
+    => args.Verbs.Add(new ActivationVerb()
+    {
+        Text = Loc.GetString("voice-tape-recorder-play"),
+        Act = () => OnUse(uid, component)
+    });
 
-    private void OnAltActivateVerb(EntityUid uid, VoiceTapeRecorderComponent component, GetVerbsEvent<AlternativeVerb> args)
+    private void OnAltActivateVerb(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        GetVerbsEvent<AlternativeVerb> args
+    )
     {
         args.Verbs.Add(new AlternativeVerb()
         {
@@ -210,13 +248,13 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         });
         args.Verbs.Add(new AlternativeVerb()
         {
-            Text = component.NormalVolume ? Loc.GetString("voice-tape-recorder-volume-low") : Loc.GetString("voice-tape-recorder-volume-high"),
+            Text = component.NormalVolume ?
+                Loc.GetString("voice-tape-recorder-volume-low") :
+                Loc.GetString("voice-tape-recorder-volume-high"),
             Act = () => component.NormalVolume = !component.NormalVolume,
             Priority = 1
         });
     }
-
-
 }
 
 public record struct RecordedMessage(
