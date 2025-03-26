@@ -242,16 +242,16 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         });
         args.Verbs.Add(new AlternativeVerb()
         {
-            Text = Loc.GetString("voice-tape-recorder-erase"),
-            Act = () => EraseTape(uid, component),
-            Priority = 5
-        });
-        args.Verbs.Add(new AlternativeVerb()
-        {
             Text = component.NormalVolume ?
                 Loc.GetString("voice-tape-recorder-volume-low") :
                 Loc.GetString("voice-tape-recorder-volume-high"),
             Act = () => component.NormalVolume = !component.NormalVolume,
+            Priority = 5
+        });
+        args.Verbs.Add(new AlternativeVerb()
+        {
+            Text = Loc.GetString("voice-tape-recorder-erase"),
+            Act = () => EraseTape(uid, component),
             Priority = 1
         });
     }
