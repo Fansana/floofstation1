@@ -153,11 +153,11 @@
     - type: CanEscapeInventory
       baseResistTime: 8 # Default is 5, takes 60% longer when tiny TODO: fix players able to drag themselves out of bags instantly!
     - type: CritModifier
-      critThresholdModifier: -20 # reduce health to crit by 20%
+      critThresholdModifier: -20 # reduce health to crit by 20 (20% for most standard races)
     - type: DeadModifier
-      deadThresholdModifier: -20 # reduce health to dead by 20%
+      deadThresholdModifier: -20 # reduce health to dead by 20 to align with the crit modifier. This effectively means they have the same health after being crit as someone without the trait.
     - type: StaminaCritModifier 
-      critThresholdModifier: -20 # reduce stamina by 20%
+      critThresholdModifier: -20 # reduce stamina by 20 (20% for standard races)
   - !type:TraitSetScale
     scale: 0.7
   - !type:TraitAddArmor
