@@ -3501,3 +3501,14 @@ Entries:
   id: 375
   time: '2025-03-26T17:15:34.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/673
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Tiny trait overhaul! Lowered size maximums, changed size scaling,
+        increased fragility, added examine text, and much more!
+    - type: Fix
+      message: Tiny now scales properly and the visual bugs should be squashed!
+  id: 376
+  time: '2025-03-26T20:59:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/658
