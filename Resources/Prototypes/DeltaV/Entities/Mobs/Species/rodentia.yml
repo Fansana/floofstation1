@@ -43,6 +43,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ]
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -117,6 +119,7 @@
     understands:
     - TauCetiBasic
     - Mouse
+    naturalLanguage: Mouse  # Floof: explicitly stated natural languages
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
     drinkDelayMultiplier: 0.5

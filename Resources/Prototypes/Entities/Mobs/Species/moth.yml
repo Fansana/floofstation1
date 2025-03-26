@@ -31,6 +31,7 @@
     understands:
     - TauCetiBasic
     - Moffic
+    naturalLanguage: Moffic # Floof: explicitly stated natural languages
   - type: TypingIndicator
     proto: moth
   - type: Butcherable
@@ -68,6 +69,11 @@
     heatDamage:
       types:
         Heat : 3 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      289: 0.8
+      275: 0.6
+      250: 0.4
   - type: Sprite # sprite again because we want different layer ordering
     noRot: true
     drawdepth: Mobs
@@ -80,6 +86,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]

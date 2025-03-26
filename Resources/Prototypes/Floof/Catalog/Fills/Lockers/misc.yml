@@ -1,81 +1,16 @@
 - type: entityTable
-  id: LewdMaintLoot
-  table: !type:GroupSelector
-    children:
-    # Vibes
-    - !type:EntSelector
-      id: LewdWand
-    - !type:EntSelector
-      id: LewdVibeGreen
-    - !type:EntSelector
-      id: LewdVibeTeal
-    - !type:EntSelector
-      id: LewdVibePink
-    - !type:EntSelector
-      id: LewdVibeRed
-    - !type:EntSelector
-      id: LewdVibeYellow
-    # Fleshlights
-    - !type:EntSelector
-      id: LewdFleshlightGreen
-    - !type:EntSelector
-      id: LewdFleshlightTeal
-    - !type:EntSelector
-      id: LewdFleshlightPink
-    - !type:EntSelector
-      id: LewdFleshlightRed
-    - !type:EntSelector
-      id: LewdFleshlightYellow
-    # Dildos
-    - !type:EntSelector
-      id: AvianDildo
-    - !type:EntSelector
-      id: CanineDildo
-    - !type:EntSelector
-      id: CanineDildoRed
-    - !type:EntSelector
-      id: HorseDildo
-    - !type:EntSelector
-      id: DragonDildo
-    - !type:EntSelector
-      id: NormalDildo
-    - !type:EntSelector
-      id: TentacleDildo
-    - !type:EntSelector
-      id: DoubleDildo
-    # Whips
-    - !type:EntSelector
-      id: WhipPink
-    - !type:EntSelector
-      id: WhipTeal
-    - !type:EntSelector
-      id: WhipPinkCrotch
-    - !type:EntSelector
-      id: WhipTealCrotch
-    - !type:EntSelector
-      id: SpankPinkPaddle
-    - !type:EntSelector
-      id: SpankTealPaddle
-
-- type: entityTable
   id: HypnoTempMaintLoot
   table: !type:GroupSelector
     children:
-    - !type:EntSelector
-      id: PlushieHypnoTempCap
+    - id: PlushieHypnoTempCap
       weight: 5
-    - !type:EntSelector
-      id: PlushieHypnoTempMysta
+    - id: PlushieHypnoTempMysta
       weight: 10
-    - !type:EntSelector
-      id: PlushieHypnoTempHoS
+    - id: PlushieHypnoTempHoS
       weight: 10
-    - !type:EntSelector
-      id: PlushieHypnoTempLO
+    - id: PlushieHypnoTempLO
       weight: 25
-    - !type:EntSelector
-      id: PlushieHypnoTempHoP
+    - id: PlushieHypnoTempHoP
       weight: 25
-    - !type:EntSelector
-      id: PlushieHypnoTempCMO
+    - id: PlushieHypnoTempCMO
       weight: 25
