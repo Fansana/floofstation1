@@ -60,7 +60,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             if (component.State != RecorderState.Playing) continue;
             if (currentTime >= component.WhenToSayNextMessage)
             {
-                var chatType = component.NormalVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
+                var chatType = component.HighVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
                 if (component.NextMessageIndex < component.RecordedMessages.Count)
                 {
                     var language = EnsureComp<LanguageSpeakerComponent>(uid);
@@ -242,10 +242,10 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         });
         args.Verbs.Add(new AlternativeVerb()
         {
-            Text = component.NormalVolume ?
+            Text = component.HighVolume ?
                 Loc.GetString("voice-tape-recorder-volume-low") :
                 Loc.GetString("voice-tape-recorder-volume-high"),
-            Act = () => component.NormalVolume = !component.NormalVolume,
+            Act = () => component.HighVolume = !component.HighVolume,
             Priority = 5
         });
         args.Verbs.Add(new AlternativeVerb()

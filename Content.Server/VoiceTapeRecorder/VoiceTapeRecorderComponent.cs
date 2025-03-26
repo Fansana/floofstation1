@@ -21,7 +21,7 @@ public sealed partial class VoiceTapeRecorderComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     public int ListenRange = 4;
     [ViewVariables(VVAccess.ReadWrite)]
-    public bool NormalVolume = false;
+    public bool HighVolume = false;
 }
 
 public enum RecorderState
