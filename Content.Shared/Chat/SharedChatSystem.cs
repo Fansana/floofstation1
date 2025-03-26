@@ -17,7 +17,6 @@ public abstract class SharedChatSystem : EntitySystem
     public const char ConsolePrefix = '/';
     public const char DeadPrefix = '\\';
     public const char LOOCPrefix = '(';
-    public const char LLOOCPrefix = '$'; // Floofstation - Localer LOOC
     public const char OOCPrefix = '[';
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';
@@ -295,7 +294,6 @@ public enum InGameOOCChatType : byte
 {
     Looc,
     Dead,
-    LocalerLooc // Floofstation - adds in LOOC, but it respects LOS
 }
 
 /// <summary>

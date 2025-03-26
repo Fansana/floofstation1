@@ -15,6 +15,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
+using Content.Shared.Examine;
 using Content.Shared.Ghost;
 using Content.Shared.Language;
 using Content.Shared.IdentityManagement;
@@ -74,6 +75,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly LanguageSystem _language = default!;
     [Dependency] private readonly TelepathicChatSystem _telepath = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
+    [Dependency] private readonly ExamineSystemShared _examine = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -92,7 +94,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     public const bool SubtleOOCRespectsLOS = true; // do subtles go through walls? nope!
     public const bool TelepathicRespectsLOS = false; // do telepathic messages go through walls? yes!
     public const bool LocalOOCRespectsLOS = false; // do LOOC messages go through walls? yes!
-    public const bool LocalerOOCRespectsLOS = true; // do localer OOC messages go through walls? nope!
     // Floofstation END
 
     private bool _loocEnabled = true;
@@ -385,9 +386,6 @@ public sealed partial class ChatSystem : SharedChatSystem
         {
             case InGameOOCChatType.Dead:
                 SendDeadChat(source, player, message, hideChat);
-                break;
-            case InGameOOCChatType.LocalerLooc: // Floof: LOOC that doesnt go through walls
-                SendLOOC(source, player, message, hideChat, checkLOS: LocalerOOCRespectsLOS);
                 break;
             case InGameOOCChatType.Looc:
                 SendLOOC(source, player, message, hideChat, checkLOS: LocalOOCRespectsLOS);
@@ -1111,9 +1109,11 @@ public sealed partial class ChatSystem : SharedChatSystem
 
             sourceCoords.TryDistance(EntityManager, transformEntity.Coordinates, out var distance);
 
-            var inRange = distance < voiceGetRange;
+            // InRangeUnOccluded does this check, but it also checks for occlusion
+            // which doesn't really work for modes that are supposed to go through walls, like Speak
+            var inRange = distance <= voiceGetRange;
 
-            var isVisible = observer || _interactionSystem.InRangeUnobstructed(source, playerEntity, voiceGetRange);
+            var isVisible = observer || inRange && _examine.InRangeUnOccluded(source, playerEntity, voiceGetRange);
 
             // even if they are a ghost hearer, in some situations we still need the range
             if (inRange)

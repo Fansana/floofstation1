@@ -17,7 +17,6 @@ public sealed class ChannelSelectorPopup : Popup
         ChatSelectChannel.Radio,
         ChatSelectChannel.Telepathic, //Nyano - Summary: determines the order in which telepathic shows.
         ChatSelectChannel.LOOC,
-        ChatSelectChannel.LLOOC, // Floofstation - Localer OOC
         ChatSelectChannel.OOC,
         ChatSelectChannel.Dead,
         ChatSelectChannel.Admin

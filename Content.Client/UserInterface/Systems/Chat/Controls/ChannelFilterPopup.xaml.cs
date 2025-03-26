@@ -20,7 +20,6 @@ public sealed partial class ChannelFilterPopup : Popup
         ChatChannel.Radio,
         ChatChannel.Telepathic, //Nyano - Summary: adds telepathic chat to where it belongs in order in the chat.
         ChatChannel.Notifications,
-        ChatChannel.LLOOC, // Localer OOC - Floofstation
         ChatChannel.LOOC,
         ChatChannel.OOC,
         ChatChannel.Dead,
