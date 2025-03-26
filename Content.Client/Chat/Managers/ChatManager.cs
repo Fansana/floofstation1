@@ -81,6 +81,13 @@ namespace Content.Client.Chat.Managers
                     _consoleHost.ExecuteCommand($"tsay \"{CommandParsing.Escape(str)}\"");
                     break;
 
+                /// <summary>
+                ///     Localer out-of-character channel - Floofstation
+                /// </summary>
+                case ChatSelectChannel.LLOOC:
+                    _consoleHost.ExecuteCommand($"llooc \"{CommandParsing.Escape(str)}\"");
+                    break;
+
                 default:
                     throw new ArgumentOutOfRangeException(nameof(channel), channel, null);
             }

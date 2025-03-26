@@ -101,6 +101,11 @@ namespace Content.Shared.Chat
         SubtleOOC = 1 << 17,
 
         /// <summary>
+        ///     Localer OOC - Floofstation
+        /// </summary>
+        LLOOC = 1 << 18,
+
+        /// <summary>
         ///     Channels considered to be IC.
         /// </summary>
         IC = Local | Whisper | Radio | Dead | Emotes | Subtle | Damage | Visual | Telepathic | Notifications, //Nyano - Summary: Adds telepathic as an 'IC' labelled chat..

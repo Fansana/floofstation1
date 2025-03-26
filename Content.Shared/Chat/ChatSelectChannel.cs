@@ -66,6 +66,11 @@
         /// </summary>
         Telepathic = ChatChannel.Telepathic,
 
+        /// <summary>
+        ///     Localer out-of-character channel - Floofstation
+        /// </summary>
+        LLOOC = ChatChannel.LLOOC,
+
         Console = ChatChannel.Unspecified
     }
 }
