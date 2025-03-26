@@ -248,12 +248,13 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             Act = () => component.HighVolume = !component.HighVolume,
             Priority = 5
         });
-        args.Verbs.Add(new AlternativeVerb()
-        {
-            Text = Loc.GetString("voice-tape-recorder-erase"),
-            Act = () => EraseTape(uid, component),
-            Priority = 1
-        });
+        if (component.State == RecorderState.Idle)
+            args.Verbs.Add(new AlternativeVerb()
+            {
+                Text = Loc.GetString("voice-tape-recorder-erase"),
+                Act = () => EraseTape(uid, component),
+                Priority = 1
+            });
     }
 }
 
