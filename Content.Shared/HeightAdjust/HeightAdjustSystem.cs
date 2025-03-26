@@ -23,9 +23,9 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, float scale)
+    public bool SetScale(EntityUid uid, float scale, bool restricted = true) // Floofstation - added restricted flag, only set false if you know what you're doing!
     {
-        return SetScale(uid, new Vector2(scale, scale));
+        return SetScale(uid, new Vector2(scale, scale), restricted: restricted); // Floofstation - added restricted flag
     }
 
     /// <summary>
@@ -34,8 +34,16 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, Vector2 scale)
+    public bool SetScale(EntityUid uid, Vector2 scale, bool restricted = true) // Floofstation - added restricted flag, only set false if you know what you're doing!
     {
+        
+        // Floofstation start - get current player size and adjust based on the scale
+        var appearance = EntityManager.EnsureComponent<HumanoidAppearanceComponent>(uid);
+        float height = appearance.Height * scale.Y;
+        float width = appearance.Width * scale.X;
+        var adjScale = new Vector2(height, width);
+        // Floofstation end
+        
         var succeeded = true;
         var avg = (scale.X + scale.Y) / 2;
 
@@ -49,9 +57,9 @@ public sealed class HeightAdjustSystem : EntitySystem
                 _physics.SetRadius(uid, fixture.Key, fixture.Value, fixture.Value.Shape, MathF.MinMagnitude(fixture.Value.Shape.Radius * avg, 0.49f));
         else
             succeeded = false;
-
+        
         if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid))
-            _appearance.SetScale(uid, scale);
+            _appearance.SetScale(uid, adjScale, restricted: restricted); // Floofstation - added restricted flag and switched to using adjusted scale
         else
             succeeded = false;
 
