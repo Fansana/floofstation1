@@ -16,6 +16,8 @@
       id: ValyrianStandard
     - type: trait
       id: Azaziba
+    - type: trait # Floof
+      id: Ratvarian
 
 - type: characterItemGroup
   id: TraitsAccents
@@ -39,4 +41,3 @@
       id: DrunkardAccent
     - type: trait # Floof
       id: FrenchAccent
-
