@@ -78,7 +78,6 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                         checkRadioPrefix: false
                     );
                     component.NextMessageIndex++;
-                    ScheduleNextRecorder(component);
                 }
                 else
                 {
@@ -100,6 +99,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                     RemCompDeferred<LanguageSpeakerComponent>(uid);
                 }
             }
+            ScheduleNextRecorder(component);
         }
     }
 
