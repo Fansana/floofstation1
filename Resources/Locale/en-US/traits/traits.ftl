@@ -475,6 +475,7 @@ trait-description-Redshirt =
     Something is pulling me up the hill.
     I look down in my red shirt.
     I look down in my red shirt.
+    This trait halves your crit threshold from 100 to 50.
 
 trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
 trait-description-BrittleBoneDisease =
