@@ -23,9 +23,9 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, float scale, bool restricted = true) // Floofstation - added restricted flag, only set false if you know what you're doing!
+    public bool SetScale(EntityUid uid, float scale)
     {
-        return SetScale(uid, new Vector2(scale, scale), restricted: restricted); // Floofstation - added restricted flag
+        return SetScale(uid, new Vector2(scale, scale));
     }
 
     /// <summary>
@@ -34,16 +34,8 @@ public sealed class HeightAdjustSystem : EntitySystem
     /// <param name="uid">The entity to modify values for</param>
     /// <param name="scale">The scale to multiply values by</param>
     /// <returns>True if all operations succeeded</returns>
-    public bool SetScale(EntityUid uid, Vector2 scale, bool restricted = true) // Floofstation - added restricted flag, only set false if you know what you're doing!
+    public bool SetScale(EntityUid uid, Vector2 scale)
     {
-        
-        // Floofstation start - get current player size and adjust based on the scale
-        var appearance = EntityManager.EnsureComponent<HumanoidAppearanceComponent>(uid);
-        float height = appearance.Height * scale.Y;
-        float width = appearance.Width * scale.X;
-        var adjScale = new Vector2(width, height);
-        // Floofstation end
-        
         var succeeded = true;
         var avg = (scale.X + scale.Y) / 2;
 
@@ -57,10 +49,11 @@ public sealed class HeightAdjustSystem : EntitySystem
                 _physics.SetRadius(uid, fixture.Key, fixture.Value, fixture.Value.Shape, MathF.MinMagnitude(fixture.Value.Shape.Radius * avg, 0.49f));
         else
             succeeded = false;
-        
 
-        // Floofstation - removed EntityManager.HasComponent<HumanoidAppearanceComponent>(uid) gate due to addition of EnsureComponent earlier
-        _appearance.SetScale(uid, restricted ? scale : adjScale, restricted: restricted); // Floofstation - if restricted is true fallback to default scaling, otherwise use adjusted scaling based on current size
+        if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid))
+            _appearance.SetScale(uid, scale);
+        else
+            succeeded = false;
 
         RaiseLocalEvent(uid, new HeightAdjustedEvent { NewScale = scale });
 
