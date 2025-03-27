@@ -147,7 +147,7 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fwolfalt
+    state: snout_fwolfalt_primary
 
 - type: marking
   id: SnoutWolfAlt
@@ -295,7 +295,7 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fbigbeak
+    state: snout_fbigbeak_primary
 
 - type: marking
   id: SnoutBigBeak
@@ -694,6 +694,8 @@
   markingCategory: Snout
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
+  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+    state:  snout_fbug_FRONT_primary
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_fbug_primary
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi

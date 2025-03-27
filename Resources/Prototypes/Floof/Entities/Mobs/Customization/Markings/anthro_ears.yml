@@ -33,11 +33,11 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_antenna_fuzzballv2_FRONT_secondary
+    state: m_ears_antenna_fuzzballv2_FRONT_primary
   - sprite: Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_antenna_fuzzballv2_FRONT_tertiary
   - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_antenna_fuzzballv2_ADJ_secondary
+    state: m_ears_antenna_fuzzballv2_ADJ_primary
   - sprite: Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_antenna_fuzzballv2_ADJ_tertiary
 

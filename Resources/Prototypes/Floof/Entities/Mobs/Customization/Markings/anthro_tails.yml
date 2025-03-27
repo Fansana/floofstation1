@@ -119,9 +119,9 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_cat_FRONT_primary
+    state: m_tail_cat_FRONT
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_cat_BEHIND_primary
+    state: m_tail_cat_BEHIND
 
 - type: marking
   id: TailCatBig
@@ -130,9 +130,9 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_catbig_FRONT_primary
+    state: m_tail_catbig_FRONT
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_catbig_BEHIND_primary
+    state: m_tail_catbig_BEHIND
 
 - type: marking
   id: TailCow
