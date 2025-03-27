@@ -11,6 +11,7 @@ uniform highp vec3 tint; // Colour of the tint
 uniform highp float NVDSnow; // Floof - Visual artifact intensity, a number between 0 and 1
 uniform highp float luminance_threshold; // number between 0 and 1
 uniform highp float noise_amount; // number between 0 and 1
+uniform highp float darkvision; // Floof - 1.0 = grayscale, 0.0 = color
 
 // Floof - Improved hash function for better randomness
 lowp float hash(lowp vec2 p) {
@@ -34,8 +35,9 @@ void fragment() {
 
     highp vec4 color = zTextureSpec(SCREEN_TEXTURE, FRAGCOORD.xy * SCREEN_PIXEL_SIZE);
 
-    // Convert color to grayscale using luminance
+    //Floof -  Convert color to grayscale, if darkvision = 1.0, converts all color to grayscale
     highp float grey = dot(color.rgb, vec3(0.298, 0.5882, 0.1137));
+    color.rgb = mix(color.rgb, vec3(grey), darkvision);
 
     // Calculate local threshold
     highp float threshold = grey * luminance_threshold;
@@ -47,6 +49,9 @@ void fragment() {
             grey = 1.0;
         }
     }
+    
+    // Apply greyscale
+    
 
     // Apply night vision color tint
     color.rgb = mix(color.rgb, tint, grey);
