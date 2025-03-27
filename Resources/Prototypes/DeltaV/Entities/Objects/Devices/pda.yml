@@ -23,6 +23,7 @@
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
+      - NanoChatCartridge # DeltaV
   - type: Pda
     id: BrigmedicIDCard
     state: pda-corpsman
@@ -75,6 +76,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -114,6 +116,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -153,6 +156,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: SyndiPDA

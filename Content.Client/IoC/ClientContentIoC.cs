@@ -2,6 +2,7 @@ using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
+using Content.Client.DeltaV.NanoChat;
 using Content.Client.Consent;
 using Content.Client.DiscordAuth;
 using Content.Client.JoinQueue;
@@ -58,6 +59,7 @@ namespace Content.Client.IoC
 
             // Floof
             collection.Register<IClientConsentManager, ClientConsentManager>();
+            collection.Register<NanoChatSystem>();
         }
     }
 }
