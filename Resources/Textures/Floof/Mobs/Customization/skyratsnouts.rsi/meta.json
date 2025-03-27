@@ -8,355 +8,347 @@
   },
   "states": [
     {
-      "name": "m_snout_flcanid_FRONT_primary",
+      "name": "snout_flcanid_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanid_FRONT_secondary",
+      "name": "snout_flcanid_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanidalt_FRONT_primary",
+      "name": "snout_flcanidalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanidstripe_FRONT_primary",
+      "name": "snout_flcanidstripe_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanidstripe_FRONT_secondary",
+      "name": "snout_flcanidstripe_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanidstripealt_FRONT_primary",
+      "name": "snout_flcanidstripealt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_flcanidstripealt_FRONT_secondary",
+      "name": "snout_flcanidstripealt_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwolfalt_FRONT_primary",
+      "name": "snout_fwolfalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbird_FRONT_primary",
+      "name": "snout_fbird_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbird_FRONT_secondary",
+      "name": "snout_fbird_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbird_FRONT_tertiary",
+      "name": "snout_fbird_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_fhusky_FRONT_primary",
+      "name": "snout_fhusky_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fhusky_FRONT_secondary",
+      "name": "snout_fhusky_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanid_FRONT_primary",
+      "name": "snout_fscanid_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanid_FRONT_secondary",
+      "name": "snout_fscanid_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt_FRONT_primary",
+      "name": "snout_fscanidalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt_ADJ_primary",
+      "name": "snout_fscanidalt_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt_FRONT_secondary",
+      "name": "snout_fscanidalt2_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt2_FRONT_primary",
+      "name": "snout_fscanidalt3_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt2_ADJ_primary",
+      "name": "snout_fscanidalt3_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt3_FRONT_primary",
+      "name": "snout_fwah_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fscanidalt3_FRONT_secondary",
+      "name": "snout_fwah_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwah_FRONT_primary",
+      "name": "snout_fwah_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwah_FRONT_secondary",
+      "name": "snout_fwahalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwah_FRONT_tertiary",
+      "name": "snout_fwahalt_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwahalt_FRONT_primary",
+      "name": "snout_fotie_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwahalt_FRONT_secondary",
+      "name": "snout_fotie_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fotie_FRONT_primary",
+      "name": "snout_fotiesmile_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fotie_FRONT_secondary",
+      "name": "snout_fotiesmile_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fotiesmile_FRONT_primary",
+      "name": "snout_fpede_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fotiesmile_FRONT_secondary",
+      "name": "snout_fpede_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fpede_FRONT_primary",
+      "name": "snout_frodent_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fpede_FRONT_secondary",
+      "name": "snout_fsergal_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_frodent_FRONT_primary",
+      "name": "snout_fsergal_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fsergal_FRONT_primary",
+      "name": "snout_frhino_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fsergal_FRONT_secondary",
+      "name": "snout_frhino_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_frhino_FRONT_primary",
+      "name": "snout_frhino_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_frhino_FRONT_secondary",
+      "name": "snout_fbovine_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_frhino_FRONT_tertiary",
+      "name": "snout_fbovine_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbovine_FRONT_primary",
+      "name": "snout_fbovine_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbovine_FRONT_secondary",
+      "name": "snout_felephant_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbovine_FRONT_tertiary",
+      "name": "snout_felephant_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_felephant_FRONT_primary",
+      "name": "snout_fwolf_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_felephant_FRONT_secondary",
+      "name": "snout_fwolf_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwolf_FRONT_primary",
+      "name": "snout_fbigbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fwolf_FRONT_secondary",
+      "name": "snout_fcorvidbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbigbeak_FRONT_primary",
+      "name": "snout_ftoucan_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fcorvidbeak_FRONT_primary",
+      "name": "snout_ftoucan_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_ftoucan_FRONT_primary",
+      "name": "snout_fsharp",
       "directions": 4
     },
     {
-      "name": "m_snout_ftoucan_FRONT_tertiary",
+      "name": "snout_fround",
       "directions": 4
     },
     {
-      "name": "m_snout_fsharp_FRONT",
+      "name": "snout_fsharplight",
       "directions": 4
     },
     {
-      "name": "m_snout_fround_FRONT",
+      "name": "snout_froundlight",
       "directions": 4
     },
     {
-      "name": "m_snout_fsharplight_FRONT",
+      "name": "snout_fshark_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_froundlight_FRONT",
+      "name": "snout_fbug_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fshark_FRONT_primary",
+      "name": "snout_fbug_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbug_FRONT_primary",
+      "name": "snout_fbug_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbug_ADJ_primary",
+      "name": "snout_sergal_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fbug_FRONT_secondary",
+      "name": "snout_sergal_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_sergal_ADJ_primary",
+      "name": "snout_rhino_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_sergal_ADJ_secondary",
+      "name": "snout_rhino_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_rhino_ADJ_primary",
+      "name": "snout_rhino_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_rhino_ADJ_secondary",
+      "name": "snout_bovine_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_rhino_ADJ_tertiary",
+      "name": "snout_bovine_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_bovine_ADJ_primary",
+      "name": "snout_bovine_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_bovine_ADJ_secondary",
+      "name": "snout_elephant_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_bovine_ADJ_tertiary",
+      "name": "snout_elephant_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_elephant_ADJ_primary",
+      "name": "snout_wolf_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_elephant_ADJ_secondary",
+      "name": "snout_wolf_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_wolf_ADJ_primary",
+      "name": "snout_wolfalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_wolf_ADJ_secondary",
+      "name": "snout_birdsmall_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_wolfalt_ADJ_primary",
+      "name": "snout_birdsmall_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_birdsmall_ADJ_primary",
+      "name": "snout_bird_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_birdsmall_ADJ_secondary",
+      "name": "snout_bird_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_bird_ADJ_primary",
+      "name": "snout_bird_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_bird_ADJ_secondary",
+      "name": "snout_birdsmall_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_bird_ADJ_tertiary",
+      "name": "snout_husky_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_birdsmall_ADJ_tertiary",
+      "name": "snout_husky_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_husky_ADJ_primary",
+      "name": "snout_lcanid_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_husky_ADJ_secondary",
+      "name": "snout_lcanid_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanid_ADJ_primary",
+      "name": "snout_lcanidalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanid_ADJ_secondary",
+      "name": "snout_lcanidstripe_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanidalt_ADJ_primary",
+      "name": "snout_lcanidstripe_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanidstripe_ADJ_primary",
+      "name": "snout_lcanidstripealt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanidstripe_ADJ_secondary",
+      "name": "snout_lcanidstripealt_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanidstripealt_ADJ_primary",
+      "name": "snout_scanid_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_lcanidstripealt_ADJ_secondary",
-      "directions": 4
-    },
-    {
-      "name": "m_snout_scanid_ADJ_primary",
-      "directions": 4
-    },
-    {
-      "name": "m_snout_scanid_ADJ_secondary",
+      "name": "snout_scanid_secondary",
       "directions": 4
     },
     {
@@ -364,7 +356,11 @@
       "directions": 4
     },
     {
-      "name": "m_snout_scanidalt_ADJ_secondary",
+      "name": "snout_scanidalt_primary",
+      "directions": 4
+    },
+    {
+      "name": "snout_scanidalt_secondary",
       "directions": 4
     },
     {
@@ -372,71 +368,71 @@
       "directions": 4
     },
     {
-      "name": "m_snout_scanidalt3_ADJ_primary",
+      "name": "snout_scanidalt3_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_scanidalt3_ADJ_secondary",
+      "name": "snout_scanidalt3_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_wah_ADJ_primary",
+      "name": "snout_wah_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_wah_ADJ_secondary",
+      "name": "snout_wah_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_wah_ADJ_tertiary",
+      "name": "snout_wah_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_wahalt_ADJ_primary",
+      "name": "snout_wahalt_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_wahalt_ADJ_secondary",
+      "name": "snout_wahalt_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_otie_ADJ_primary",
+      "name": "snout_otie_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_otie_ADJ_secondary",
+      "name": "snout_otie_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_otiesmile_ADJ_primary",
+      "name": "snout_otiesmile_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_otiesmile_ADJ_secondary",
+      "name": "snout_otiesmile_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_bigbeak_ADJ_primary",
+      "name": "snout_bigbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_corvidbeak_ADJ_primary",
+      "name": "snout_corvidbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_toucan_ADJ_primary",
+      "name": "snout_toucan_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_toucan_ADJ_tertiary",
+      "name": "snout_toucan_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_pede_ADJ_primary",
+      "name": "snout_pede_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_pede_ADJ_secondary",
+      "name": "snout_pede_secondary",
       "directions": 4
     },
     {
@@ -444,11 +440,11 @@
       "directions": 4
     },
     {
-      "name": "m_snout_rodent_ADJ_primary",
+      "name": "snout_rodent_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_sharp_ADJ",
+      "name": "snout_sharp",
       "directions": 4
     },
     {
@@ -456,183 +452,183 @@
       "directions": 4
     },
     {
-      "name": "m_snout_round_ADJ",
+      "name": "snout_round",
       "directions": 4
     },
     {
-      "name": "m_snout_sharplight_ADJ",
+      "name": "snout_sharplight",
       "directions": 4
     },
     {
-      "name": "m_snout_roundlight_ADJ",
+      "name": "snout_roundlight",
       "directions": 4
     },
     {
-      "name": "m_snout_shark_ADJ_primary",
+      "name": "snout_shark_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_bug_ADJ_primary",
+      "name": "snout_bug_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_bug_FRONT_secondary",
+      "name": "snout_bug_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_bug_no_eyes_ADJ",
+      "name": "snout_bug_no_eyes",
       "directions": 4
     },
     {
-      "name": "m_snout_hshark_ADJ_primary",
+      "name": "snout_hshark_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hshark_ADJ_secondary",
+      "name": "snout_hshark_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hshark_eyes_ADJ_primary",
+      "name": "snout_hshark_eyes_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hshark_eyes_ADJ_secondary",
+      "name": "snout_hshark_eyes_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hshark_eyes_ADJ_tertiary",
+      "name": "snout_hshark_eyes_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_hhorse_ADJ_primary",
+      "name": "snout_hhorse_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hhorse_ADJ_secondary",
+      "name": "snout_hhorse_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hzebra_ADJ_primary",
+      "name": "snout_hzebra_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hzebra_ADJ_secondary",
+      "name": "snout_hzebra_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hanubus_ADJ_primary",
+      "name": "snout_hanubus_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hanubus_ADJ_secondary",
+      "name": "snout_hanubus_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hpanda_ADJ_primary",
+      "name": "snout_hpanda_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hpanda_ADJ_secondary",
+      "name": "snout_hpanda_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hjackal_ADJ_primary",
+      "name": "snout_hjackal_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hjackal_ADJ_secondary",
+      "name": "snout_hjackal_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_hspots_ADJ_primary",
+      "name": "snout_hspots_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hspots_ADJ_secondary",
+      "name": "snout_hspots_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fskulldog_FRONT_primary",
+      "name": "snout_fskulldog_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_fskulldog_FRONT_secondary",
+      "name": "snout_fskulldog_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_skulldog_ADJ_primary",
+      "name": "snout_skulldog_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_skulldog_ADJ_secondary",
+      "name": "snout_skulldog_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_fskulldog_FRONT_tertiary",
+      "name": "snout_fskulldog_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_skulldog_ADJ_tertiary",
+      "name": "snout_skulldog_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_sharkblubber_ADJ_primary",
+      "name": "snout_sharkblubber_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_sharkblubber_ADJ_secondary",
+      "name": "snout_sharkblubber_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_rat_ADJ_primary",
+      "name": "snout_rat_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_rat_ADJ_tertiary",
+      "name": "snout_rat_tertiary",
       "directions": 4
     },
     {
-      "name": "m_snout_ntajaran_ADJ",
+      "name": "snout_ntajaran",
       "directions": 4
     },
     {
-      "name": "m_snout_stubby_ADJ_primary",
+      "name": "snout_stubby_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_stubby_ADJ_secondary",
+      "name": "snout_stubby_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_leporid_ADJ_primary",
+      "name": "snout_leporid_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_leporid_ADJ_secondary",
+      "name": "snout_leporid_secondary",
       "directions": 4
     },
     {
-      "name": "m_snout_bigbeakshort_ADJ_primary",
+      "name": "snout_bigbeakshort_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_slimbeak_ADJ_primary",
+      "name": "snout_slimbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_slimbeakshort_ADJ_primary",
+      "name": "snout_slimbeakshort_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hookbeak_ADJ_primary",
+      "name": "snout_hookbeak_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_hookbeakbig_ADJ_primary",
+      "name": "snout_hookbeakbig_primary",
       "directions": 4
     },
     {
-      "name": "m_snout_slimbeakalt_ADJ_primary",
+      "name": "snout_slimbeakalt_primary",
       "directions": 4
     }
   ]

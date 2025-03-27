@@ -57,32 +57,6 @@
     state: m_tail_avian2_BEHIND_secondary
 
 - type: marking
-  id: TailAxolotl
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_axolotl_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_axolotl_BEHIND_primary
-
-- type: marking
-  id: TailBatl
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_batl_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_batl_FRONT_secondary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_batl_BEHIND_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_batl_BEHIND_secondary
-
-- type: marking
   id: TailBatl
   bodyPart: Tail
   markingCategory: Tail
@@ -280,18 +254,7 @@
     state: m_tail_fennec_BEHIND_secondary
 
 - type: marking
-  id: TailFish
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_fish_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_fish_BEHIND_primary
-
-- type: marking
-  id: TailFox
+  id: TailMFox
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
@@ -908,17 +871,6 @@
     state: m_tail_stripe_BEHIND_secondary
 
 - type: marking
-  id: TailMaw
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tailmaw_FRONT
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tailmaw_BEHIND
-
-- type: marking
   id: TailMawWag
   bodyPart: Tail
   markingCategory: Tail
@@ -928,17 +880,6 @@
     state: m_tail_tailmawwag_FRONT
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tailmawwag_BEHIND
-
-- type: marking
-  id: TailTentacle
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tentacle_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tentacle_BEHIND_primary
 
 - type: marking
   id: TailThreeCat
