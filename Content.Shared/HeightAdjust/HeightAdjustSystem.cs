@@ -58,12 +58,8 @@ public sealed class HeightAdjustSystem : EntitySystem
         else
             succeeded = false;
         
-        if (restricted && EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation - if restricted is true assume unmodified behavior
-            _appearance.SetScale(uid, scale);
-        else if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid)) // Floofstation - if restricted is false use adjusted scale and passthrough restricted flag
-            _appearance.SetScale(uid, adjScale, restricted: restricted); 
-        else
-            succeeded = false;
+        // Floofstation - removed EntityManager.HasComponent<HumanoidAppearanceComponent>(uid) gate due to addition of EnsureComponent earlier
+        _appearance.SetScale(uid, restricted ? scale : adjScale, restricted: restricted); // Floofstation - if restricted is true fallback to default scaling, otherwise use adjusted scaling based on current size
 
         RaiseLocalEvent(uid, new HeightAdjustedEvent { NewScale = scale });
 
