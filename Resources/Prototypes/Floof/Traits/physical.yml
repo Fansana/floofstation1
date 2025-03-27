@@ -117,7 +117,6 @@
     jobs:
     - Borg
     - MedicalBorg
-    - Captain # Balance, sorry for the tiny captains out there!
   - !type:CharacterHeightRequirement
     max: 158 # was based on minimum Oni size but now Oni are restricted - still ends up smaller than the current smallest races can be
   - !type:CharacterWidthRequirement
@@ -131,10 +130,6 @@
     inverted: true
     species:
     - Oni # incompatable due to use of the PlayerToolModifier and BonusMeleeDamage - a special trait will need to be made
-  - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Security # No tiny sec, sad
   functions:
   - !type:TraitAddComponent
     components:
