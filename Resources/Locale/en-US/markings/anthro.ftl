@@ -90,12 +90,12 @@ marking-SnoutFBird-snout_fbird_secondary = F Bird Beak (Secondary)
 marking-SnoutFBird-snout_fbird_tertiary = F Bird Beak (Tertiary)
 
 marking-SnoutBird = Bird Beak
-marking-SnoutBird-snout_bird_primary = Bird Beak (Primary)
-marking-SnoutBird-snout_bird_secondary = Bird Beak (Secondary)
-marking-SnoutBird-snout_bird_tertiary = Bird Beak (Tertiary)
+marking-SnoutBird-snout_bird_ADJ_primary = Bird Beak (Primary)
+marking-SnoutBird-snout_bird_ADJ_secondary = Bird Beak (Secondary)
+marking-SnoutBird-snout_bird_ADJ_tertiary = Bird Beak (Tertiary)
 
 marking-SnoutBigBeak = Big Beak
-marking-SnoutBigBeak-snout_bigbeak = Big Beak
+marking-SnoutBigBeak-snout_bigbeakshort_ADJ_primary = Big Beak
 
 marking-SnoutFBigBeak = F Big Beak
 marking-SnoutFBigBeak-snout_bigbeak = F Big Beak
@@ -120,7 +120,7 @@ marking-SnoutBirdSmall-snout_birdsmall_secondary = Small Bird Beak (Secondary)
 marking-SnoutBirdSmall-snout_birdsmall_tertiary = Small Bird Beak (Tertiary)
 
 marking-SnoutBigBeakShort = Big, Short Bird Beak
-marking-SnoutBigBeakShort-snout_bigbeakshort = Big, Short Bird Beak
+marking-SnoutBigBeakShort-snout_bigbeakshort_ADJ_primary = Big, Short Bird Beak
 
 marking-SnoutSlimBeak = Slim Bird Beak
 marking-SnoutSlimBeak-snout_slimbeak_primary = Slim Bird Beak
@@ -135,7 +135,7 @@ marking-SnoutHookBeak = Hooked Bird Beak
 marking-SnoutHookBeak-snout_hookbeak_primary = Hooked Bird Beak
 
 marking-SnoutHookBeakBig = Big, Hooked Bird Beak
-marking-SnoutHookBeakBig-snout_hookbeakbig_primary = Big, Hooked Bird Beak
+marking-SnoutHookBeakBig-snout_hookbeakbig_ADJ_primary = Big, Hooked Bird Beak
 
 ### MISC SNOUTS ###
 
@@ -193,9 +193,9 @@ marking-SnoutElephant-snout_elephant_secondary = Elephant Snout (Secondary)
 marking-SnoutShark = Shark Snout
 marking-SnoutShark-snout_shark_primary = Shark Snout (Primary)
 
-marking-SnoutShark = H Shark Snout
-marking-SnoutShark-snout_hshark_primary = H Shark Snout (Primary)
-marking-SnoutShark-snout_hshark_secondary = H Shark Snout (Secondary)
+marking-SnoutHShark = H Shark Snout
+marking-SnoutHShark-snout_hshark_primary = H Shark Snout (Primary)
+marking-SnoutHShark-snout_hshark_secondary = H Shark Snout (Secondary)
 
 marking-SnoutSharkEyes = H Shark Snout with Eyes
 marking-SnoutSharkEyes-snout_hshark_eyes_primary = H Shark Snout with Eyes (Primary)
@@ -261,6 +261,16 @@ marking-EarsFox-ears_fox_secondary = Fox Ears (Inside)
 marking-EarsFox-ears_fox_primary = Fox Ears (Outside)
 marking-EarsFox = Fox Ears
 
+marking-MEarsFox-m_ears_fox_FRONT_secondary = Fox Ears (Inside)
+marking-MEarsFox-m_ears_fox_FRONT_primary = Fox Ears (Outside)
+marking-MEarsFox-m_ears_fox_ADJ_secondary = Fox Ears (Inside)
+marking-MEarsFox-m_ears_fox_ADJ_primary = Fox Ears (Outside)
+marking-MEarsFox = Fox Ears (M)
+
 marking-TailFox-tail_fox_primary = Fox Tail (Primary)
 marking-TailFox-tail_fox_secondary = Fox Tail (Secondary)
 marking-TailFox = Fox Tail
+
+marking-TailMFox-tail_fox_primary = Fox Tail (Primary)
+marking-TailMFox-tail_fox_secondary = Fox Tail (Secondary)
+marking-TailMFox = Fox Tail

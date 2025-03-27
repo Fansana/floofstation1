@@ -304,7 +304,7 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_bigbeak
+    state: snout_bigbeak_primary
 
 - type: marking
   id: SnoutFCorvidBeak
@@ -314,15 +314,6 @@
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_fcorvidbeak_primary
-
-- type: marking
-  id: SnoutFCorvidBeak
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_corvidbeak_primary
 
 - type: marking
   id: SnoutFToucan
@@ -366,7 +357,7 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_bigbeakshort
+    state: snout_bigbeakshort_primary
 
 - type: marking
   id: SnoutSlimBeak
@@ -883,29 +874,3 @@
     state: snout_leporid_primary
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_leporid_secondary
-
-#####    EARS    #####
-
-- type: marking
-  id: EarsFox
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: ears_fox_primary
-  - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: ears_fox_secondary
-
-##### TAILS #####
-
-- type: marking
-  id: TailFox
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: tail_fox_secondary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: tail_fox_primary
