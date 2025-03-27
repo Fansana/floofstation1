@@ -9,3 +9,4 @@ namespace Content.Server.Speech.Components;
 [Access(typeof(FrenchAccentSystem))]
 public sealed partial class FrenchAccentComponent : Component
 { }
+

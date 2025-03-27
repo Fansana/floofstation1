@@ -670,14 +670,15 @@
   materials:
     PrizeTicket: 50
 
-- type: latheRecipe
-  id: Plushiegirlfailure
-  result: Plushiegirlfailure
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
-    
+# Banned individual
+# - type: latheRecipe
+#   id: Plushiegirlfailure
+#   result: Plushiegirlfailure
+#   applyMaterialDiscount: false
+#   completetime: 0.1
+#   materials:
+#     PrizeTicket: 50
+
 - type: latheRecipe
   id: PlushieKitsuneCaptain
   result: PlushieKitsuneCaptain
@@ -694,29 +695,30 @@
   materials:
     PrizeTicket: 50
 
-- type: latheRecipe
-  id: PlushieFeistyBartender
-  result: PlushieFeistyBartender
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
-    
-- type: latheRecipe
-  id: PlushieCoolVulp
-  result: PlushieCoolVulp
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
-    
-- type: latheRecipe
-  id: PlushieNoticeableSecurityOfficer
-  result: PlushieNoticeableSecurityOfficer
-  applyMaterialDiscount: false
-  completetime: 0.1
-  materials:
-    PrizeTicket: 50
+# Banned individual
+# - type: latheRecipe
+#   id: PlushieFeistyBartender
+#   result: PlushieFeistyBartender
+#   applyMaterialDiscount: false
+#   completetime: 0.1
+#   materials:
+#     PrizeTicket: 50
+
+# - type: latheRecipe
+#   id: PlushieCoolVulp
+#   result: PlushieCoolVulp
+#   applyMaterialDiscount: false
+#   completetime: 0.1
+#   materials:
+#     PrizeTicket: 50
+
+# - type: latheRecipe
+#   id: PlushieNoticeableSecurityOfficer
+#   result: PlushieNoticeableSecurityOfficer
+#   applyMaterialDiscount: false
+#   completetime: 0.1
+#   materials:
+#     PrizeTicket: 50
 
 # HypnoTemp Plushies - Start
 - type: latheRecipe
