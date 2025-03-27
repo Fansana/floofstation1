@@ -3534,3 +3534,10 @@ Entries:
   id: 378
   time: '2025-03-26T22:36:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/648
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Scaling definitely wasn't messed up - it was all a dream
+  id: 379
+  time: '2025-03-27T03:44:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/677
