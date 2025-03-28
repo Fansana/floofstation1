@@ -138,7 +138,7 @@
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
-        - Dionia
+        - Diona
   functions:
     - !type:TraitAddComponent
       components:
