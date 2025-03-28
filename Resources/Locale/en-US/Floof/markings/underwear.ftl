@@ -25,45 +25,7 @@ marking-UndershirtSports-snow_sports = Bra
 marking-UndershirtStrapless = Bra (Strapless)
 marking-UndershirtStrapless-snow_strapless = Bra
 
-marking-UndershirtStandard = Undershirt (Standard)
-marking-UndershirtStandard-t_undershirt = Undershirt
-
-marking-UndershirtSleeveless = Undershirt (Sleeveless)
-marking-UndershirtSleeveless-t_undershirt_sleeveless = Undershirt
-
-marking-UndershirtRolled = Undershirt (Rolled)
-marking-UndershirtRolled-t_rolled_undershirt = Undershirt
-
-marking-UndershirtRolledSleeveless = Undershirt (Sleeveless Rolled)
-marking-UndershirtRolledSleeveless-t_rolled_undershirt_sleeveless = Undershirt
-
-marking-UndershirtLong = Undershirt (Long)
-marking-UndershirtLong-t_long_undershirt = Undershirt
-
-marking-UndershirtClassic = Bra (Classic)
-marking-UndershirtClassic-snow_classic = Bra
-
-marking-UndershirtSports = Bra (Sport)
-marking-UndershirtSports-snow_sports = Bra
-
-marking-UndershirtStrapless = Bra (Strapless)
-marking-UndershirtStrapless-snow_strapless = Bra
-
 marking-UnderwearBoxers = Boxers
-marking-UnderwearBoxers-snow_boxers = Boxers
-
-marking-UnderwearBriefs = Briefs
-marking-UnderwearBriefs-snow_briefs = Briefs
-
-marking-UnderwearLowriders = Lowrides
-marking-UnderwearLowriders-snow_lowriders = Lowrides
-
-marking-UnderwearSatin = Satin
-marking-UnderwearSatin-snow_satin = Satin
-
-marking-UnderwearTanga = Tanga
-marking-UnderwearTanga-snow_tanga = Tanga
- = Boxers
 marking-UnderwearBoxers-snow_boxers = Boxers
 
 marking-UnderwearBriefs = Briefs
@@ -167,30 +129,6 @@ marking-UnderwearClassicthongbowbabydoll-bowthong_babydoll =  Thong, Bow & Babyd
 
 marking-UnderwearClassicpantiescow = Panties, Cow
 marking-UnderwearClassicpantiescow-panties_cow = Panties, Cow
-
-marking-UndershirtStandard = Undershirt, Standard
-marking-UndershirtStandard-t_undershirt = Undershirt, Standard
-
-marking-UndershirtSleeveless = Undershirt, Sleeveless
-marking-UndershirtSleeveless-t_undershirt_sleeveless = Undershirt, Sleeveless
-
-marking-UndershirtRolled = Undershirt, Rolled
-marking-UndershirtRolled-t_rolled_undershirt = Undershirt, Rolled
-
-marking-UndershirtRolledSleeveless = Undershirt, Rolled & Sleeveless
-marking-UndershirtRolledSleeveless-t_rolled_undershirt_sleeveless = Undershirt, Rolled & Sleeveless
-
-marking-UndershirtLong = Undershirt, Long
-marking-UndershirtLong-t_long_undershirt = Undershirt, Long
-
-marking-UndershirtClassic = Undershirt, Classic
-marking-UndershirtClassic-snow_bra = Undershirt, Classic
-
-marking-UndershirtSports = Undershirt, Sports
-marking-UndershirtSports-snow_sports = Undershirt, Sports
-
-marking-UndershirtStrapless = Undershirt, Strapless
-marking-UndershirtStrapless-snow_strapless = Undershirt, Strapless
 
 marking-UndershirtBra = Bra, Classic
 marking-UndershirtBra-bra = Bra, Classic
