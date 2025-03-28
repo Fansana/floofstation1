@@ -110,8 +110,8 @@ trait-description-NaturalBubblish =
     The language of Slimes. Being a mixture of bubbling noises and pops it's very difficult to speak for humans without the use of mechanical aids.
     Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
 
-trait-name-NaturalSchenchi = Natural Schenchi Speaker
-trait-description-NaturalSchenchi =
+trait-name-NaturalSchechi = Natural Schechi Speaker
+trait-description-NaturalSchechi =
     The language of Resomi, primarily featuring frontal sounds made without rounding. Fluent speakers sound quite close to birdsong.
     Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
 

@@ -231,7 +231,7 @@
           language: Bubblish
 
 - type: trait
-  id: NaturalSchenchi
+  id: NaturalSchechi
   category: TraitsSpeechLanguages
   points: -1
   requirements:
@@ -245,7 +245,7 @@
     - !type:TraitAddComponent
       components:
         - type: NaturalSpeakerTrait
-          language: Schenchi
+          language: Schechi
 
 - type: trait
   id: NaturalNekomimetic
