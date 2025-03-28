@@ -540,19 +540,19 @@ namespace Content.Shared.CCVar
         ///     Enable Discord linking, show linking button and modal window
         /// </summary>
         public static readonly CVarDef<bool> DiscordAuthEnabled =
-            CVarDef.Create("discord.auth_enabled", true, CVar.SERVERONLY);
+            CVarDef.Create("discord.auth_enabled", false, CVar.SERVERONLY);
 
         /// <summary>
         ///     URL of the Discord auth server API
         /// </summary>
         public static readonly CVarDef<string> DiscordAuthApiUrl =
-            CVarDef.Create("discord.auth_api_url", "http://91.163.112.3:35006/auth/verify", CVar.SERVERONLY);
+            CVarDef.Create("discord.auth_api_url", "", CVar.SERVERONLY);
 
         /// <summary>
         ///     Secret key of the Discord auth server API
         /// </summary>
         public static readonly CVarDef<string> DiscordAuthApiKey =
-            CVarDef.Create("discord.auth_api_key", "Blep", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+            CVarDef.Create("discord.auth_api_key", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
         /*
          * Tips
@@ -1393,7 +1393,7 @@ namespace Content.Shared.CCVar
         ///     Controls whether the server will deny any players that are not whitelisted in the DB.
         /// </summary>
         public static readonly CVarDef<bool> WhitelistEnabled =
-            CVarDef.Create("whitelist.enabled", true, CVar.REPLICATED);
+            CVarDef.Create("whitelist.enabled", false, CVar.REPLICATED);
 
         /// <summary>
         ///     The loc string to display as a disconnect reason when someone is not whitelisted.
