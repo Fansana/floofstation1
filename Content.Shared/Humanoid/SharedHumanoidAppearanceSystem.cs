@@ -343,26 +343,17 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     /// <param name="scale">The scale to set the mob to</param>
     /// <param name="sync">Whether to immediately synchronize this to the humanoid mob, or not</param>
     /// <param name="humanoid">Humanoid component of the entity</param>
-    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null, bool restricted = true) // Floofstation - added restricted
+    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null)
     {
         if (!Resolve(uid, ref humanoid))
             return;
 
         var species = _proto.Index(humanoid.Species);
-        // Floofstation - added restricted check and an unrestricted scaling
-        if (restricted)
-        {
-            humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
-            humanoid.Width = Math.Clamp(scale.X, species.MinWidth, species.MaxWidth);
-        }
-        else
-        {
-            humanoid.Height = scale.Y;
-            humanoid.Width = scale.X;
-        }
+        humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
+        humanoid.Width = Math.Clamp(scale.X, species.MinWidth, species.MaxWidth);
 
         if (sync)
-            Dirty(uid, humanoid);    
+            Dirty(uid, humanoid);
     }
 
     /// <summary>

@@ -3548,3 +3548,19 @@ Entries:
   id: 380
   time: '2025-03-27T03:45:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/680
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Underwear markings are now fully optional.
+  id: 381
+  time: '2025-03-27T14:57:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/678
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed sliders
+    - type: Remove
+      message: Temporarily removed the Tiny trait.
+  id: 382
+  time: '2025-03-27T15:41:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/682
