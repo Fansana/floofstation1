@@ -1121,20 +1121,6 @@
     state: shapely_curvy
 
 - type: marking
-  id: UndershirtShapelyshirtcurvy
-  bodyPart: Undershirt
-  markingCategory: Undershirt
-  speciesRestriction: [Shadowkin, Diona, Arachnid, Reptilian, Moth, SlimePerson, Resomi, Rodentia, Human, Rodentia, Felinid, Oni, Vulpkanin, Harpy]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
-  sprites:
-  - sprite: Floof/Mobs/Customization/undershirt.rsi
-    state: shapely_curvy
-
-- type: marking
   id: UndershirtShapelyshirtbusty
   bodyPart: Undershirt
   markingCategory: Undershirt
