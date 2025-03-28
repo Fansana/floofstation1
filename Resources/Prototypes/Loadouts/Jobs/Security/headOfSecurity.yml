@@ -195,6 +195,19 @@
     - ClothingOuterWinterHoS
 
 - type: loadout
+  id: LoadoutCommandHOSLongcoat
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutHeadOfSecurityOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - HeadOfSecurity
+  items:
+    - ClothingLongcoatHoS
+    
+- type: loadout
   id: LoadoutCommandHOSOuterTrench
   category: JobsSecurityHeadOfSecurity
   cost: 0
