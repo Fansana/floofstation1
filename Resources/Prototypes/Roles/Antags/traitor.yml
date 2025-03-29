@@ -7,3 +7,7 @@
   requirements:
   - !type:CharacterOverallTimeRequirement # DeltaV - Playtime requirement
     min: 14400 # Floofstation - 4 hours
+  - !type:CharacterTraitRequirement # Floofstation
+    inverted: true
+    traits:
+      - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
