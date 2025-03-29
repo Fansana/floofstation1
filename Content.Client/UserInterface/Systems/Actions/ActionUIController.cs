@@ -604,7 +604,9 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
                 if (_pages.Count <= _currentPageIndex)
                     return;
                 // Add the button to the next page if there's no space on the current one
-                var nextPage = _pages[_currentPageIndex + 1];
+                if (!_pages.TryGetValue(_currentPageIndex + 1, out var nextPage)) // Floofstation - replaced unsafe indexing with this
+                    return;
+
                 int i;
                 for (i = 0; i < nextPage.Size; i++)
                     if (nextPage[i] == null)
