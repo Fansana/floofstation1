@@ -18,7 +18,8 @@ using Content.Shared.Inventory; // Floofstation Edit
 using Robust.Shared.Physics.Systems; // Floofstation Edit
 using Robust.Shared.Random; // Floofstation Edit
 using Robust.Shared.Utility; // Floofstation Edit
-using System.Linq; // Floofstation Edit
+using System.Linq;
+using Microsoft.CodeAnalysis; // Floofstation Edit
 
 namespace Content.Server.Shadowkin;
 
@@ -127,7 +128,8 @@ public sealed class ShadowkinSystem : EntitySystem
             Dirty(uid, humanoid);
         }
 
-        if (TryComp<StaminaComponent>(uid, out var stamina))
+        // Floofstation - do not stun the shadowkin if they are just spawning in
+        if (TryComp<StaminaComponent>(uid, out var stamina) && MetaData(uid).LifeStage > ComponentLifeStage.Starting)
             _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
     }
 
@@ -215,7 +217,7 @@ public sealed class ShadowkinSystem : EntitySystem
             return;
 
         magic.Removable = true;
-        _psionicAbilitiesSystem.MindBreak(uid);
+        _psionicAbilitiesSystem.MindBreak(uid, allowScarierMindbreak: false);
     }
 
     private void OnAttemptPowerUse(EntityUid uid, ShadowkinComponent component, OnAttemptPowerUseEvent args)

@@ -184,7 +184,7 @@ public sealed class PsionicAbilitiesSystem : EntitySystem
     ///     A more advanced form of removing powers. Mindbreaking not only removes all psionic powers,
     ///     it also disables the possibility of obtaining new ones.
     /// </summary>
-    public void MindBreak(EntityUid uid)
+    public void MindBreak(EntityUid uid, bool allowScarierMindbreak = true) // Floofstation - parametrize scarier mindbreaking
     {
         if (!TryComp<PsionicComponent>(uid, out var psionic))
             return;
@@ -205,7 +205,7 @@ public sealed class PsionicAbilitiesSystem : EntitySystem
         var ev = new OnMindbreakEvent();
         RaiseLocalEvent(uid, ref ev);
 
-        if (_config.GetCVar(CCVars.ScarierMindbreaking))
+        if (_config.GetCVar(CCVars.ScarierMindbreaking) && allowScarierMindbreak) // Floofstation - parametrize scarier mindbreaking
             ScarierMindbreak(uid, psionic);
     }
 
