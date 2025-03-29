@@ -128,9 +128,9 @@ public sealed class ShadowkinSystem : EntitySystem
             Dirty(uid, humanoid);
         }
 
-        // Floofstation - do not stun the shadowkin if they are just spawning in
-        if (TryComp<StaminaComponent>(uid, out var stamina) && MetaData(uid).LifeStage > ComponentLifeStage.Starting)
-            _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
+        // Floofstation - do not stun the shadowkin, this is causing issues on startup and fucks up tests.
+        // if (TryComp<StaminaComponent>(uid, out var stamina))
+        //     _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
     }
 
     private void OnRejuvenate(EntityUid uid, ShadowkinComponent component, RejuvenateEvent args)
@@ -156,7 +156,7 @@ public sealed class ShadowkinSystem : EntitySystem
         magic.MindbreakingFeedback = "shadowkin-blackeye";
         magic.NoMana = "shadowkin-tired";
 
-        if (_prototypeManager.TryIndex<PsionicPowerPrototype>("ShadowkinPowers", out var shadowkinPowers))
+        if (_prototypeManager.TryIndex<PsionicPowerPrototype>("DarkSwapPower", out var shadowkinPowers))
             _psionicAbilitiesSystem.InitializePsionicPower(uid, shadowkinPowers);
     }
 
