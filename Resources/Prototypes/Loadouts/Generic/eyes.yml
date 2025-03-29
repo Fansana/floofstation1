@@ -7,7 +7,7 @@
     - ClothingEyesEyepatch
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlasses
@@ -18,7 +18,7 @@
     - ClothingEyesGlasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlassesJamjar
@@ -30,7 +30,7 @@
     - ClothingEyesGlassesJamjar
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlassesJensen
@@ -41,7 +41,7 @@
     - ClothingEyesGlassesJensen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesBlindfold
@@ -51,7 +51,7 @@
     - ClothingEyesBlindfold
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemCheapSunglasses
@@ -62,7 +62,7 @@
     - ClothingEyesGlassesCheapSunglasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemSunglasses
@@ -73,7 +73,7 @@
     - ClothingEyesGlassesSunglasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemBlindfoldFake
@@ -84,4 +84,4 @@
     - ClothingEyesBlindfoldFake
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes

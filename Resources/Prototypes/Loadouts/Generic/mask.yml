@@ -8,7 +8,7 @@
     - ClothingMaskSterile
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutMasks2
+      group: LoadoutMasks
 
 - type: loadout
   id: LoadoutMaskMuzzle
@@ -19,7 +19,7 @@
     - ClothingMaskMuzzle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutMasks2
+      group: LoadoutMasks
 
 - type: loadout
   id: LoadoutMaskGas
@@ -31,7 +31,7 @@
     - ClothingMaskGas
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutMasks2
+      group: LoadoutMasks
 
 # Maskbands
 - type: loadout
@@ -44,7 +44,7 @@
     - ClothingMaskBandWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutMasks2
+      group: LoadoutMasks
 
 - type: loadout
   id: LoadoutMaskBandSkull
@@ -69,4 +69,4 @@
     - ClothingMaskNeckGaiterWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutMasks2
+      group: LoadoutMasks

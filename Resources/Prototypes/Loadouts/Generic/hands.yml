@@ -9,7 +9,7 @@
     - ClothingHandsGlovesColorWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
 
 - type: loadout
   id: LoadoutHandsColorYellowBudget
@@ -22,7 +22,7 @@
       jobs:
         - Passenger
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
   items:
     - ClothingHandsGlovesColorYellowBudget
 
@@ -35,7 +35,7 @@
     - ClothingHandsGlovesLeather
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
 
 - type: loadout
   id: LoadoutHandsGlovesPowerglove
@@ -47,7 +47,7 @@
     - ClothingHandsGlovesPowerglove
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
 
 - type: loadout
   id: LoadoutHandsGlovesRobohands
@@ -58,7 +58,7 @@
     - ClothingHandsGlovesRobohands
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
 
 - type: loadout
   id: LoadoutHandsGlovesFingerlessWhite
@@ -70,7 +70,7 @@
     - ClothingHandsGlovesFingerlessWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
 
 - type: loadout
   id: LoadoutGoldRing
@@ -81,4 +81,4 @@
     - ClothingHandsGoldRing
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves2
+      group: LoadoutGloves
