@@ -116,7 +116,7 @@ binds:
 - function: FocusSubtleOOC # floof
   type: State
   mod1: Shift
-  key: Minus
+  key: LBracket
 - function: FocusWhisperChatWindow
   type: State
   key: Comma
