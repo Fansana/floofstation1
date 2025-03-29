@@ -117,7 +117,8 @@
   description: Gross.
   components:
   - type: Sprite
-    state: plain
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawhuman
   - type: SolutionContainerManager
     solutions:
       food:
@@ -159,6 +160,7 @@
 - type: entity
   name: raw bacon
   # bacon is cured so not raw = cant rot
+  # counterpoint namig makes it easy to distiguish
   parent: FoodMeatBase
   id: FoodMeatBacon
   description: A raw piece of bacon.
@@ -168,7 +170,8 @@
     - Raw
     - Meat
   - type: Sprite
-    state: bacon
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawbacon
   - type: SolutionContainerManager
     solutions:
       food:
@@ -218,7 +221,8 @@
   description: A slab of raw penguin meat. Can be used as a substitute for fish in recipes.
   components:
   - type: Sprite
-    state: bird
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawpenguin
   - type: SolutionContainerManager
     solutions:
       food:
@@ -268,7 +272,8 @@
   description: A slab of raw duck. Remember to wash your hands!
   components:
   - type: Sprite
-    state: bird
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawduck
   - type: SolutionContainerManager
     solutions:
       food:
@@ -391,7 +396,8 @@
   description: Prime meat from maintenance!
   components:
   - type: Sprite
-    state: plain
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawrat
   - type: SolutionContainerManager
     solutions:
       food:
@@ -576,7 +582,8 @@
     - Raw
     - Meat
   - type: Sprite
-    state: rouny
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawrouny
   - type: SolutionContainerManager
     solutions:
       food:
@@ -748,14 +755,8 @@
     - Cooked
     - Meat
   - type: Sprite
-    layers:
-    - state: bacon-cooked
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-  - type: RandomSprite
-    available:
-      - enum.DamageStateVisualLayers.Base:
-          bacon-cooked: ""
-          bacon2-cooked: ""
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedbacon
   - type: SolutionContainerManager
     solutions:
       food:
@@ -805,8 +806,8 @@
     - Cooked
     - Meat
   - type: Sprite
-    layers:
-    - state: bird-cooked
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedpenguin
   - type: SolutionContainerManager
     solutions:
       food:
@@ -889,8 +890,8 @@
     - Cooked
     - Meat
   - type: Sprite
-    layers:
-    - state: bird-cooked
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedduck
   - type: SolutionContainerManager
     solutions:
       food:
@@ -976,8 +977,8 @@
     - Meat
     - Steak
   - type: Sprite
-    layers:
-    - state: rouny-cooked
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedrouny
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1078,7 +1079,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawbasecutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1125,8 +1127,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawpenguincutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1148,8 +1150,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawchikencutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1171,8 +1173,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawduckcutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1194,11 +1196,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    layers:
-    - state: cutlet
-      color: green
-    - state: cutlet-alpha
-      color: pink
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: rawlizardcutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1304,7 +1303,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet-cooked
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedbasecutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1351,8 +1351,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet-cooked
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedpenguincutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1374,8 +1374,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet-cooked
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedchikencutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1397,8 +1397,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    state: cutlet-cooked
-    color: white
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedduckcutlet
   - type: SolutionContainerManager
     solutions:
       food:
@@ -1420,9 +1420,8 @@
     - Cutlet
     - Meat
   - type: Sprite
-    layers:
-    - state: cutlet-cooked
-      color: green
+    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    state: cookedlizardcutlet
   - type: SolutionContainerManager
     solutions:
       food:

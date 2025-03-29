@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Dzordz",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "rawchikencutlet"
+    },
+    {
+      "name": "cookedchikencutlet"
+    },
+    {
+      "name": "rawpenguincutlet"
+    },
+    {
+      "name": "rawpenguin"
+    },
+    {
+      "name": "cookedpenguin"
+    },
+    {
+      "name": "cookedpenguincutlet"
+    },
+    {
+      "name": "cookedduckcutlet"
+    },
+    {
+      "name": "rawduckcutlet"
+    },
+    {
+      "name": "rawduck"
+    },
+    {
+      "name": "cookedduck"
+    },
+    {
+      "name": "rawhumancutlet"
+    },
+    {
+      "name": "cookedhumancutlet"
+    },
+    {
+      "name": "rawhuman"
+    },
+    {
+      "name": "cookedhuman"
+    },
+    {
+      "name": "rawlizardcutlet"
+    },
+    {
+      "name": "cookedlizardcutlet"
+    },
+    {
+      "name": "rawbasecutlet"
+    },
+    {
+      "name": "cookedbasecutlet"
+    },
+    {
+      "name": "rawrat"
+    },
+    {
+      "name": "rawbacon"
+    },
+    {
+      "name": "cookedbacon"
+    },
+    {
+      "name": "rawrouny"
+    },
+    {
+      "name": "cookedrouny"
+    },
+    {
+      "name": "lizardtail"
+    }
+  ]
+}
