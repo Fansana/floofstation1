@@ -61,7 +61,7 @@ public sealed class HeightAdjustSystem : EntitySystem
         // Floofstation - removed EntityManager.HasComponent<HumanoidAppearanceComponent>(uid) gate due to addition of EnsureComponent earlier
         _appearance.SetScale(uid, restricted ? scale : adjScale, restricted: restricted); // Floofstation - if restricted is true fallback to default scaling, otherwise use adjusted scaling based on current size
 
-        RaiseLocalEvent(uid, new HeightAdjustedEvent { NewScale = scale });
+        RaiseLocalEvent(uid, new HeightAdjustedEvent { NewScale = restricted ? scale : adjScale });
 
         return succeeded;
     }
