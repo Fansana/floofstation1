@@ -77,6 +77,8 @@
       id: LoadoutCommandRDOuterWinter
     - type: loadout
       id: LoadoutCommandRDOuterMysta
+    - type: loadout
+      id: LoadoutCommandRDOuterLongcoat
 
 - type: characterItemGroup
   id: LoadoutMystagogueShoes

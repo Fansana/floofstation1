@@ -178,6 +178,8 @@
       id: LoadoutClothingOuterArmorBasic
     - type: loadout
       id: LoadoutClothingOuterArmorSlim
+    - type: loadout
+      id: LoadoutClothingOuterCoatGreatcoat
 
 - type: characterItemGroup
   id: LoadoutSecurityShoes

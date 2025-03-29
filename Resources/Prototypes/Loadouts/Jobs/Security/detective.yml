@@ -51,3 +51,58 @@
 # Shoes
 
 # Uniforms
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitDetective
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpsuitDetective
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtDetective
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpskirtDetective
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitDetectiveGrey
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpsuitDetectiveGrey
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtDetectiveGrey
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpskirtDetectiveGrey

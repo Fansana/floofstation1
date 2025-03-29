@@ -17,6 +17,8 @@
       id: LoadoutJusticeChiefJusticeOuter
     - type: loadout
       id: LoadoutJusticeClerkVest
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeJudge
 
 - type: characterItemGroup
   id: LoadoutLawyerHead
@@ -24,3 +26,5 @@
   items:
     - type: loadout
       id: LoadoutJusticeChiefJusticeToque
+    - type: loadout
+      id: LoadoutJusticeChiefJusticePwig

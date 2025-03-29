@@ -213,6 +213,17 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutHead2
 
+- type: loadout
+  id: LoadoutHeadLily
+  category: Head
+  cost: 0
+  exclusive: true
+  items:
+    - FoodLily
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutHead2
+
 # Color Hats
 - type: loadout
   id: LoadoutHeadHatBluesoft
