@@ -112,7 +112,7 @@ binds:
   key: Apostrophe
 - function: FocusSubtle
   type: State
-  key: Equal
+  key: Minus
 - function: FocusWhisperChatWindow
   type: State
   key: Comma
