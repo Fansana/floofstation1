@@ -110,6 +110,13 @@ binds:
   type: State
   mod1: Shift
   key: Apostrophe
+- function: FocusSubtle # floof
+  type: State
+  key: Minus
+- function: FocusSubtleOOC # floof
+  type: State
+  mod1: Shift
+  key: LBracket
 - function: FocusWhisperChatWindow
   type: State
   key: Comma

@@ -172,6 +172,12 @@ ui-options-function-target-right-arm = Target right arm
 ui-options-function-target-left-leg = Target left leg
 ui-options-function-target-right-leg = Target right leg
 
+
+# Floofstation Edits Start
+ui-options-function-focus-subtle = Focus chat (Subtle)
+ui-options-function-focus-subtle-ooc = Focus chat (SubtleOOC)
+# Floofstation Edits End
+
 ui-options-function-focus-chat-input-window = Focus chat
 ui-options-function-focus-local-chat-window = Focus chat (IC)
 ui-options-function-focus-emote = Focus chat (Emote)
