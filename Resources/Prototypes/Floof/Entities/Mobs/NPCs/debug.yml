@@ -1,0 +1,118 @@
+# Annoying chatty bats that exist to sit in one place and say things
+# For testing speech stuff, dont actually spawn these in oh geez
+- type: entity
+  name: debug chatterboy
+  parent: [ SimpleMobBase, FlyingMobBase, MobCombat ]
+  id: DebugChatterboy
+  description: This boy loves to chat.
+  components:
+  - type: Emoting
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 0
+    baseSprintSpeed : 0
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bat
+      sprite: Mobs/Animals/bat.rsi
+  - type: Carriable
+  - type: Speech
+    speechSounds: Squeak
+    speechVerb: SmallMob
+    allowedEmotes: ['Squeak']
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 0.8
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bat
+      Dead:
+        Base: dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: InteractionPopup
+    successChance: 0.2
+    interactSuccessString: petting-success-soft-floofy
+    interactFailureString: petting-failure-bat
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-organic
+  - type: Bloodstream
+    bloodMaxVolume: 50
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+  - type: RandomBark
+    barkType: chatterboySpeak
+    barkChatKind: "Speak"
+    minTime: 1
+    maxTime: 1
+    chatLog: true
+
+- type: entity
+  name: debug emotelad
+  parent: DebugChatterboy
+  id: DebugChatterEmoteboy
+  description: This boy loves to emote.
+  components:
+  - type: RandomBark
+    barkType: chatterboyEmote
+    barkChatKind: "Emote"
+    minTime: 1
+    maxTime: 1
+    chatLog: true
+
+- type: entity
+  name: debug Subtleboy
+  parent: DebugChatterboy
+  id: DebugChatterSubtleboy
+  description: This boy loves to erp.
+  components:
+  - type: RandomBark
+    barkType: chatterboySubtle
+    barkChatKind: "Subtle"
+    minTime: 1
+    maxTime: 1
+    chatLog: true
+
+- type: entity
+  name: debug SubtleOOCboy
+  parent: DebugChatterboy
+  id: DebugChatterSubtleOOCboy
+  description: This boy loves to do whatever subtleOOC is for.
+  components:
+  - type: RandomBark
+    barkType: chatterboySubtleOOC
+    barkChatKind: "SubtleOOC"
+    minTime: 1
+    maxTime: 1
+    chatLog: true
+
+- type: entity
+  name: debug Whisperboy
+  parent: DebugChatterboy
+  id: DebugChatterWhisperboy
+  description: This boy loves to whisper.
+  components:
+  - type: RandomBark
+    barkType: chatterboyWhisper
+    barkChatKind: "Whisper"
+    minTime: 1
+    maxTime: 1
+    chatLog: true
