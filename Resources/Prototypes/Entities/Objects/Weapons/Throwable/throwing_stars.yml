@@ -34,12 +34,12 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 8
-        Piercing: 10
+        Slash: 16 #Floofstation - Combat doubling
+        Piercing: 20 #Floofstation - Combat doubling
   - type: StaminaDamageOnCollide
-    damage: 45
+    damage: 90 #Floofstation - Combat doubling
   - type: StaminaDamageOnEmbed
-    damage: 10
+    damage: 20 #Floofstation - Combat doubling
 
 - type: entity
   parent: ThrowingStar
