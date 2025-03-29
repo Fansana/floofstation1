@@ -28,7 +28,6 @@ public sealed partial class NaturalSpeakerTraitSystem : EntitySystem
 
     private void OnSpawn(Entity<NaturalSpeakerTraitComponent> entity, ref ComponentInit args)
     {
-
         if (!TryComp<LanguageKnowledgeComponent>(entity, out var knowledge))
         {
             Log.Warning($"Entity {entity.Owner} does not have a LanguageKnowledge but has a NaturalSpeakerTrait!");
