@@ -45,6 +45,7 @@ character-item-group-LoadoutCommandId = Command Id
 character-item-group-LoadoutCommandNeck = Command Neckwear
 character-item-group-LoadoutCommandMask = Command Masks
 character-item-group-LoadoutCommandOuter = Command Outerwear
+character-item-group-LoadoutCommandSelfDefense = Command Self-Defense
 character-item-group-LoadoutCommandShoes = Command Shoes
 character-item-group-LoadoutCommandUniforms = Command Uniforms
 

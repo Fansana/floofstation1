@@ -97,6 +97,8 @@
       id: LoadoutHeadOfPersonnelOuterArmoredCoat
     - type: loadout
       id: LoadoutHeadOfPersonnelOuterDuraVest
+    - type: loadout
+      id: LoadoutHeadOfPersonnelOuterLongcoat
 
 - type: characterItemGroup
   id: LoadoutHeadOfPersonnelShoes
