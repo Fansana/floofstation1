@@ -24,6 +24,7 @@
     - WhitelistChameleon
   - type: StealTarget
     stealGroup: IDCard
+  - type: NanoChatCard # DeltaV
 
 #IDs with layers
 
@@ -665,6 +666,8 @@
     - AllAccess
     tags:
     - CentralCommand
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: CentcomIDCard
@@ -683,6 +686,8 @@
     jobTitle: ERT Company Commander
   - type: Item
     heldPrefix: gold
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: ERTLeaderIDCard
@@ -701,6 +706,8 @@
     jobTitle: ERT Soul Officer
   - type: Item
     heldPrefix: blue
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -717,6 +724,8 @@
     - state: stationengineer
   - type: IdCard
     jobTitle: ERT Field Engineer
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -733,6 +742,8 @@
     - state: janitor
   - type: IdCard
     jobTitle: ERT Custodian
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -749,6 +760,8 @@
     - state: medicaldoctor
   - type: IdCard
     jobTitle: ERT Medical Doctor
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: ERTChaplainIDCard
@@ -765,6 +778,8 @@
     - state: securityofficer
   - type: IdCard
     jobTitle: ERT Field Officer
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -821,6 +836,8 @@
     heldPrefix: blue
   - type: IdCard
     jobTitle: Centcom Agent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   name: passenger ID card
@@ -917,6 +934,8 @@
         type: ChameleonBoundUserInterface
   - type: ClothingAddFaction
     faction: Syndicate
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   name: passenger ID card
@@ -967,6 +986,8 @@
     - SyndicateAgent
   - type: ClothingAddFaction
     faction: Syndicate
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -987,6 +1008,8 @@
     - SyndicateAgent
   - type: ClothingAddFaction
     faction: Syndicate
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1086,6 +1109,8 @@
     heldPrefix: blue
   - type: IdCard
     jobTitle: Centcom Quarantine Officer
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
