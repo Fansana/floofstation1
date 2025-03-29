@@ -185,6 +185,19 @@
   items:
     - ClothingOuterCoatRndMysta
 
+- type: loadout
+  id: LoadoutCommandRDOuterLongcoat
+  category: JobsEpistemicsMystagogue
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMystagogueOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ResearchDirector
+  items:
+    - ClothingLongcoatRD
+
 # Shoes
 - type: loadout
   id: LoadoutCommandRDShoesBootsWinter
