@@ -14,7 +14,7 @@ public sealed partial class ShadowkinComponent : Component
     public bool SleepManaRegen = true;
 
     /// <summary>
-    ///     What do edit the ManaRegenMultiplier when on Sleep.
+    ///     What do edit the ManaRegenMultiplier when on Sleep?
     /// </summary>
     [DataField]
     public float SleepManaRegenMultiplier = 4;
@@ -35,6 +35,6 @@ public sealed partial class ShadowkinComponent : Component
     ///     If true, the shadowkin will spawn with no abilities.
     /// </summary>
     [DataField]
-    public bool BlackeyeSpawn = false;
+    public bool BlackeyeSpawn = true;
     // Floofstation section end
 }
