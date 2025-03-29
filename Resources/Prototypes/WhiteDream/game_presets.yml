@@ -3,7 +3,7 @@
   alias:
   - bloodcult
   name: blood-cult-title
-  showInVote: true
+  showInVote: false # Floof
   description: blood-cult-description
   rules:
   - BloodCult
