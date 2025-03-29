@@ -7,7 +7,7 @@
     - ClothingUniformJumpsuitCatsuit
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
 
 - type: loadout
   id: LoadoutClothingUniformJumpsuitCatsuitShiny
@@ -18,4 +18,4 @@
     - ClothingUniformJumpsuitCatsuitShiny
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian

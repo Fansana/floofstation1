@@ -65,10 +65,11 @@ namespace Content.IntegrationTests.Tests
             "Submarine", //DeltaV
             "Gax",
             "Rad",
-            "Kettle",
-            "Train",
-            "Fland",
-            "Amber"
+            "Kettle", // Floof
+            "Train", // Floof
+            "Fland", // Floof,
+            "Amber", // Apparently, floof?
+            "Europa"
         };
 
         /// <summary>

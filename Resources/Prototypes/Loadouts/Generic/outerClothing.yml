@@ -2,11 +2,12 @@
   id: LoadoutOuterCoatBomberjacket
   category: Outer
   cost: 1
+  customColorTint: true
   items:
     - ClothingOuterCoatBomber
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatHoodieBlack
@@ -16,47 +17,51 @@
     - ClothingOuterHoodieBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatHoodieGrey
   category: Outer
   cost: 0
+  customColorTint: true
   items:
     - ClothingOuterHoodieGrey
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatWinterCoat
   category: Outer
   cost: 1
+  customColorTint: true
   items:
     - ClothingOuterWinterCoat
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatHyenhSweater
   category: Outer
   cost: 1
+  customColorTint: true
   items:
     - ClothingOuterCoatHyenhSweater
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterWinterCoatLong
   category: Outer
   cost: 1
+  customColorTint: true
   items:
     - ClothingOuterWinterCoatLong
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterWinterCoatPlaid
@@ -66,7 +71,7 @@
     - ClothingOuterWinterCoatPlaid
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterVestValet
@@ -76,7 +81,7 @@
     - ClothingOuterVestValet
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterVest
@@ -86,7 +91,7 @@
     - ClothingOuterVest
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 # Letterman Jackets
 - type: loadout
@@ -97,7 +102,7 @@
     - ClothingOuterCoatLettermanBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatLettermanRed
@@ -107,18 +112,19 @@
     - ClothingOuterCoatLettermanRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 # MNK
 - type: loadout
   id: LoadoutOuterCoatMNKWhiteHoodie
   category: Outer
   cost: 1
+  customColorTint: true
   items:
     - ClothingOuterCoatMNKWhiteHoodie
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatMNKBlackTopCoat
@@ -128,7 +134,7 @@
     - ClothingOuterCoatMNKBlackTopCoat
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatMNKBlackJacket
@@ -138,18 +144,19 @@
     - ClothingOuterCoatMNKBlackJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 # Contractor Jackets
 - type: loadout
   id: LoadoutOuterCorporateJacket
   category: Outer
   cost: 0
+  guideEntry: NanoTrasen
   items:
     - ClothingOuterCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCsCorporateJacket
@@ -159,27 +166,29 @@
     - ClothingOuterCsCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterEeCorporateJacket
   category: Outer
   cost: 0
+  guideEntry: EinsteinEngines
   items:
     - ClothingOuterEeCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterHiCorporateJacket
   category: Outer
   cost: 0
+  guideEntry: HephaestusIndustries
   items:
     - ClothingOuterHiCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterHmCorporateJacket
@@ -189,7 +198,7 @@
     - ClothingOuterHmCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterIdCorporateJacket
@@ -199,7 +208,7 @@
     - ClothingOuterIdCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterBcCorporateJacket
@@ -209,7 +218,7 @@
     - ClothingOuterBcCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterDdCorporateJacket
@@ -219,7 +228,7 @@
     - ClothingOuterDdCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterFaCorporateJacket
@@ -229,7 +238,7 @@
     - ClothingOuterFaCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterGeCorporateJacket
@@ -239,17 +248,18 @@
     - ClothingOuterGeCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterZhCorporateJacket
   category: Outer
   cost: 0
+  guideEntry: ZengHuPharmaceuticals
   items:
     - ClothingOuterZhCorporateJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterDenimJacket
@@ -259,7 +269,7 @@
     - ClothingOuterDenimJacket
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 # Flannel
 - type: loadout
@@ -270,7 +280,7 @@
     - ClothingOuterFlannelRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterFlannelGreen
@@ -280,7 +290,7 @@
     - ClothingOuterFlannelGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterFlannelBlue
@@ -290,7 +300,7 @@
     - ClothingOuterFlannelBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatTrench
@@ -300,7 +310,7 @@
     - ClothingOuterCoatTrench
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatJensen
@@ -310,7 +320,7 @@
     - ClothingOuterCoatJensen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatGentle
@@ -320,7 +330,7 @@
     - ClothingOuterCoatGentle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatInspector
@@ -330,7 +340,7 @@
     - ClothingOuterCoatInspector
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter
 
 - type: loadout
   id: LoadoutOuterCoatOvercoat
@@ -340,4 +350,4 @@
     - ClothingOuterCoatOvercoat
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutOuter2
+      group: LoadoutOuter

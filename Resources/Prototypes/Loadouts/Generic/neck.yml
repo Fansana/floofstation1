@@ -7,7 +7,7 @@
     - ClothingNeckHeadphones
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckBellCollar
@@ -18,29 +18,33 @@
     - ClothingNeckBellCollar
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckOldMantle
   category: Neck
   cost: 0
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - ClothingNeckOldMantle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckUnathiMantle
   category: Neck
   cost: 0
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - ClothingNeckUnathiMantle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 # Scarves
 - type: loadout
@@ -52,7 +56,7 @@
     - ClothingNeckScarfStripedRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedBlue
@@ -63,7 +67,7 @@
     - ClothingNeckScarfStripedBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedGreen
@@ -74,7 +78,7 @@
     - ClothingNeckScarfStripedGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedBlack
@@ -85,7 +89,7 @@
     - ClothingNeckScarfStripedBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedBrown
@@ -96,7 +100,7 @@
     - ClothingNeckScarfStripedBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedLightBlue
@@ -107,7 +111,7 @@
     - ClothingNeckScarfStripedLightBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedOrange
@@ -118,7 +122,7 @@
     - ClothingNeckScarfStripedOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedPurple
@@ -129,7 +133,7 @@
     - ClothingNeckScarfStripedPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutNeckScarfStripedZebra
@@ -140,63 +144,21 @@
     - ClothingNeckScarfStripedZebra
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 # Ties
-- type: loadout
-  id: LoadoutNeckTieRed
-  category: Neck
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingNeckTieRed
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-
 - type: loadout
   id: LoadoutNeckTieWhite
   category: Neck
   cost: 0
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - ClothingNeckTieWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-
-- type: loadout
-  id: LoadoutNeckTieBlack
-  category: Neck
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingNeckTieBlack
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-
-- type: loadout
-  id: LoadoutNeckTieBlue
-  category: Neck
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingNeckTieBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-
-- type: loadout
-  id: LoadoutNeckTieGreen
-  category: Neck
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingNeckTieGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 #Pride Accessories
 - type: loadout
@@ -208,7 +170,7 @@
     - ClothingNeckLGBTPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideAromanticPin
@@ -219,7 +181,7 @@
     - ClothingNeckAromanticPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideAsexualPin
@@ -230,7 +192,7 @@
     - ClothingNeckAsexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideBisexualPin
@@ -241,7 +203,7 @@
     - ClothingNeckBisexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideIntersexPin
@@ -252,7 +214,7 @@
     - ClothingNeckIntersexPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideLesbianPin
@@ -263,7 +225,7 @@
     - ClothingNeckLesbianPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideNonBinaryPin
@@ -274,7 +236,7 @@
     - ClothingNeckNonBinaryPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPridePansexualPin
@@ -285,7 +247,7 @@
     - ClothingNeckPansexualPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 - type: loadout
   id: LoadoutItemsPrideTransPin
@@ -296,73 +258,20 @@
     - ClothingNeckTransPin
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
 
 # Bedsheets
-- type: loadout
-  id: LoadoutNeckBedsheetBlack
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetBlack
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-    - !type:CharacterDepartmentRequirement
-       inverted: true
-       departments:
-         - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetBlue
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-    - !type:CharacterDepartmentRequirement
-       inverted: true
-       departments:
-         - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetBrown
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetBrown
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-    - !type:CharacterDepartmentRequirement
-       inverted: true
-       departments:
-         - Command
-
 - type: loadout
   id: LoadoutNeckBedsheetCosmos
   category: Neck
   cost: 2
   exclusive: true
+  canBeHeirloom: true
   items:
     - BedsheetCosmos
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -370,80 +279,6 @@
        inverted: true
        departments:
          - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetGreen
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-    - !type:CharacterDepartmentRequirement
-       inverted: true
-       departments:
-         - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetGrey
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetGrey
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-    - !type:CharacterDepartmentRequirement
-       inverted: true
-       departments:
-         - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetOrange
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetOrange
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-         - Logistics
-    - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - HeadOfPersonnel # Need to blacklist HoP and not command so other heads can wear this bedsheet
-
-- type: loadout
-  id: LoadoutNeckBedsheetPurple
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetPurple
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-         - Epistemics
-    - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - HeadOfPersonnel # Need to blacklist HoP and not command so other heads can wear this bedsheet
 
 - type: loadout
   id: LoadoutNeckBedsheetRainbow
@@ -454,7 +289,7 @@
     - BedsheetRainbow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -462,36 +297,18 @@
        inverted: true
        departments:
          - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetRed
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetRed
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-         - Security
-    - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - HeadOfPersonnel # Need to blacklist HoP and not command so other heads can wear this bedsheet
 
 - type: loadout
   id: LoadoutNeckBedsheetWhite
   category: Neck
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - BedsheetWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
@@ -499,25 +316,6 @@
        inverted: true
        departments:
          - Command
-
-- type: loadout
-  id: LoadoutNeckBedsheetYellow
-  category: Neck
-  cost: 1
-  exclusive: true
-  items:
-    - BedsheetYellow
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
-    - !type:CharacterDepartmentRequirement
-       departments:
-         - Civilian
-         - Engineering
-    - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - HeadOfPersonnel # Need to blacklist HoP and not command so other heads can wear this bedsheet
 
 - type: loadout
   id: LoadoutNeckBedsheetNT
@@ -528,7 +326,7 @@
     - BedsheetNT
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutNeck2
+      group: LoadoutNeck
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian

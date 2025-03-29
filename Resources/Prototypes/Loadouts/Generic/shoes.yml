@@ -1,102 +1,15 @@
 # Colored
 - type: loadout
-  id: LoadoutShoesBlack
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorBlack
-
-- type: loadout
-  id: LoadoutShoesBlue
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorBlue
-
-- type: loadout
-  id: LoadoutShoesBrown
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorBrown
-
-- type: loadout
-  id: LoadoutShoesGreen
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorGreen
-
-- type: loadout
-  id: LoadoutShoesOrange
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorOrange
-
-- type: loadout
-  id: LoadoutShoesPurple
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorPurple
-
-- type: loadout
-  id: LoadoutShoesRed
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorRed
-
-- type: loadout
   id: LoadoutShoesWhite
   category: Shoes
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesColorWhite
-
-- type: loadout
-  id: LoadoutShoesYellow
-  category: Shoes
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesColorYellow
 
 - type: loadout
   id: LoadoutShoesGeta
@@ -105,7 +18,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesGeta
 
@@ -116,7 +29,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesTourist
 
@@ -128,9 +41,20 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsWork
+
+- type: loadout
+  id: LoadoutShoesBootsJackFake
+  category: Shoes
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutShoes
+  items:
+    - ClothingShoesBootsJackFake
 
 - type: loadout
   id: LoadoutShoesBootsLaceup
@@ -139,7 +63,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsLaceup
 
@@ -150,40 +74,20 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsWinter
-
-- type: loadout
-  id: LoadoutShoesBootsCowboyBrown
-  category: Shoes
-  cost: 1
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesBootsCowboyBrown
-
-- type: loadout
-  id: LoadoutShoesBootsCowboyBlack
-  category: Shoes
-  cost: 1
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
-  items:
-    - ClothingShoesBootsCowboyBlack
 
 - type: loadout
   id: LoadoutShoesBootsCowboyWhite
   category: Shoes
   cost: 1
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsCowboyWhite
 
@@ -192,9 +96,11 @@
   category: Shoes
   cost: 1
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsCowboyFancy
 
@@ -205,7 +111,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesBootsFishing
 
@@ -215,11 +121,12 @@
   category: Shoes
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingShoeSlippersDuck
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
     - !type:CharacterJobRequirement
       jobs:
         - Clown
@@ -231,7 +138,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesLeather
 
@@ -240,9 +147,10 @@
   category: Shoes
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesMiscWhite
 
@@ -253,7 +161,7 @@
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingShoesHighheelBoots
 
@@ -291,8 +199,9 @@
   category: Shoes
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutShoes2
+      group: LoadoutShoes
   items:
     - ClothingClothWrap
