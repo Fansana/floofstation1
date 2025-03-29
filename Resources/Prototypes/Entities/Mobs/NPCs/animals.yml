@@ -449,6 +449,7 @@
     allowMovement: true
     name: ghost-role-information-mothroach-name
     description: ghost-role-information-mothroach-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: Fixtures
     fixtures:
       fix1:
@@ -1132,6 +1133,7 @@
     prob: 0.25
     name: ghost-role-information-kangaroo-name
     description: ghost-role-information-kangaroo-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Vocal
     sounds:
@@ -1317,6 +1319,7 @@
     makeSentient: true
     name: ghost-role-information-monkey-name
     description: ghost-role-information-monkey-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Clumsy
     clumsyDamage:
@@ -1357,6 +1360,7 @@
     makeSentient: true
     name: ghost-role-information-monkey-name
     description: ghost-role-information-monkey-description
+    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -1495,6 +1499,7 @@
     makeSentient: true
     name: ghost-role-information-kobold-name
     description: ghost-role-information-kobold-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: RandomBark
     barkMultiplier: 0.65
     barkType: kobold
@@ -1525,6 +1530,14 @@
       0: Alive
       75: Critical
       200: Dead
+  - type: GhostRole # Floof station - This component needs to be set here in case it rolls randomly, thereby giving people a possibly-incorrect rule set for the ghost role
+    prob: 0.05
+    makeSentient: true
+    name: ghost-role-information-kobold-name
+    description: ghost-role-information-kobold-description
+    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
+    raffle:
+      settings: default
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -1572,6 +1585,7 @@
     allowMovement: true
     name: ghost-role-information-mouse-name
     description: ghost-role-information-mouse-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Speech
     speechSounds: Squeak
@@ -2382,7 +2396,7 @@
       makeSentient: true
       name: ghost-role-information-giant-spider-name
       description: ghost-role-information-giant-spider-description
-      rules: deltav-ghost-role-information-softantag-rules
+      rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -2444,7 +2458,6 @@
     removes:
     - type: ReplacementAccent
       accent: xeno  #let this wizard speak
-
 - type: entity
   name: possum
   parent: SimpleMobBase
@@ -2964,7 +2977,7 @@
     name: ghost-role-information-SyndiCat-name
     allowMovement: true
     description: ghost-role-information-SyndiCat-description
-    rules: ghost-role-information-SyndiCat-rules
+    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -3248,6 +3261,7 @@
     allowMovement: true
     name: ghost-role-information-hamster-name
     description: ghost-role-information-hamster-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: SmallMob
