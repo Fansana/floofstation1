@@ -175,6 +175,7 @@ ui-options-function-target-right-leg = Target right leg
 ui-options-function-focus-chat-input-window = Focus chat
 ui-options-function-focus-local-chat-window = Focus chat (IC)
 ui-options-function-focus-emote = Focus chat (Emote)
+ui-options-function-focus-subtle = Focus chat (Subtle)
 ui-options-function-focus-whisper-chat-window = Focus chat (Whisper)
 ui-options-function-focus-radio-window = Focus chat (Radio)
 ui-options-function-focus-looc-window = Focus chat (LOOC)
