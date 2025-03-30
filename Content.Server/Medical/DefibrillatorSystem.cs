@@ -6,7 +6,7 @@ using Content.Server.EUI;
 using Content.Server.Ghost;
 using Content.Server.Popups;
 using Content.Server.PowerCell;
-using Content.Server.Traits.Assorted;
+using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Chat;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
