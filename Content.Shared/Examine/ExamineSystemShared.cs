@@ -112,7 +112,10 @@ namespace Content.Shared.Examine
 
             // Floofstation edit - if the examined thing is a player, just return true
             if (examined != null)
-                if (EntityManager.TryGetComponent<ActorComponent>(examined, out var _))
+                if (EntityManager.TryGetComponent<ActorComponent>(examined, out var _)
+                    && examined.HasValue
+                    && Transform(examiner).Coordinates.TryDistance(EntityManager, _transform, Transform(examined.Value).Coordinates, out var distance)
+                    && distance <= GetExaminerRange(examiner))
                     return true;
 
             return InRangeUnOccluded(
