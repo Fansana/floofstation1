@@ -47,6 +47,7 @@
   id: NaturalNehina
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
