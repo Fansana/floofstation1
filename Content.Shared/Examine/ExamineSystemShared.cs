@@ -110,7 +110,7 @@ namespace Content.Shared.Examine
             if (EntityManager.GetComponent<TransformComponent>(examiner).MapID != target.MapId)
                 return false;
 
-            // if the examined thing is a player, just return true
+            // Floofstation edit - if the examined thing is a player, just return true
             if (examined != null)
                 if (EntityManager.TryGetComponent<ActorComponent>(examined, out var _))
                     return true;
