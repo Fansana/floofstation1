@@ -13,7 +13,7 @@
 
 # Head
 - type: loadout
-  id: LoadoutServiceHeadChef
+  id: LoadoutServiceHeadChef # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -74,7 +74,7 @@
 
 # Mask
 - type: loadout
-  id: LoadoutServiceMaskChefItalianMoustache
+  id: LoadoutServiceMaskChefItalianMoustache # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -131,7 +131,7 @@
     - ClothingOuterJacketChefOrion
 
 - type: loadout
-  id: LoadoutServiceOuterChefWinter
+  id: LoadoutServiceOuterChefWinter # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -145,7 +145,7 @@
     - ClothingOuterWinterChef
 
 - type: loadout
-  id: LoadoutServiceOuterChefJacket
+  id: LoadoutServiceOuterChefJacket # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -159,7 +159,7 @@
     - ClothingOuterJacketChef
 
 - type: loadout
-  id: LoadoutServiceOuterChefApron
+  id: LoadoutServiceOuterChefApron # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -217,7 +217,7 @@
     - ClothingUniformJumpsuitChefOrion
 
 - type: loadout
-  id: LoadoutServiceJumpsuitChef
+  id: LoadoutServiceJumpsuitChef # Floof
   category: JobsServiceChef
   cost: 0
   exclusive: true
@@ -231,7 +231,7 @@
     - ClothingUniformJumpsuitChef
 
 - type: loadout
-  id: LoadoutServiceJumpskirtChef
+  id: LoadoutServiceJumpskirtChef # Floof 
   category: JobsServiceChef
   cost: 0
   exclusive: true
