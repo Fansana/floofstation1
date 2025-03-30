@@ -137,7 +137,7 @@
         types:
             Slash: 8
             Heat: 20
-            Structural: 15
+            Structural: 50
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
