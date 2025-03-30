@@ -47,15 +47,29 @@ public sealed class TraitSystem : EntitySystem
     {
         var pointsTotal = _configuration.GetCVar(CCVars.GameTraitsDefaultPoints);
         var traitSelections = _configuration.GetCVar(CCVars.GameTraitsMax);
+        
+        // Begin Floof: Sort traits by priority so we can specify some traits that may be reliant on other traits to properly function
+        var sortedTraits = new List<TraitPrototype>();
 
         foreach (var traitId in args.Profile.TraitPreferences)
         {
-            if (!_prototype.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
+            if (_prototype.TryIndex<TraitPrototype>(traitId, out var traitPrototype))
+            {
+                sortedTraits.Add(traitPrototype);
+            }
+            else
             {
                 DebugTools.Assert($"No trait found with ID {traitId}!");
                 return;
             }
+        }
 
+        sortedTraits.Sort();
+        // End Floof
+
+        foreach (var traitPrototype in sortedTraits) // Floof - changed to use the sorted list
+        {
+            // Moved converting to prototypes to above loop in order to sort before applying them. End Floof modifications.
             if (!_characterRequirements.CheckRequirementsValid(
                 traitPrototype.Requirements,
                 _prototype.Index<JobPrototype>(args.JobId ?? _prototype.EnumeratePrototypes<JobPrototype>().First().ID),

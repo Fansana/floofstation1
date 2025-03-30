@@ -3639,3 +3639,12 @@ Entries:
   id: 390
   time: '2025-03-29T20:17:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/688
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: >-
+        Natural Ratvarian + Foreigner should now deterministically give you a
+        Ratvarian translator
+  id: 391
+  time: '2025-03-30T09:33:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/691
