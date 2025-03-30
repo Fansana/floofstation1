@@ -326,6 +326,9 @@ namespace Content.Shared.Examine
             _hasDescription = hasDescription;
         }
 
+        /// <summary>
+        ///     Returns <see cref="Message"/> with all <see cref="Parts"/> appended according to their priority.
+        /// </summary>
         public FormattedMessage GetTotalMessage()
         {
             int Comparison(ExamineMessagePart a, ExamineMessagePart b)
