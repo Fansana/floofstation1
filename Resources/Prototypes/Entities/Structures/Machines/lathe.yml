@@ -1079,6 +1079,7 @@
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
       - BaseChemistryEmptyVial #floof
+      - AACTablet # DeltaV
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker

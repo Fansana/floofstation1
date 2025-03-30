@@ -889,3 +889,10 @@
   cost: 1
   items:
     - DrinkVacuumFlask
+
+- type: loadout
+  id: LoadoutItemAACTablet
+  category: Items
+  cost: 2
+  items:
+    - AACTablet
