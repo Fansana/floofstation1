@@ -11,6 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Utility;
+using Robust.Shared.Player;
 using static Content.Shared.Interaction.SharedInteractionSystem;
 
 namespace Content.Shared.Examine
@@ -108,6 +109,11 @@ namespace Content.Shared.Examine
 
             if (EntityManager.GetComponent<TransformComponent>(examiner).MapID != target.MapId)
                 return false;
+
+            // if the examined thing is a player, just return true
+            if (examined != null)
+                if (EntityManager.TryGetComponent<ActorComponent>(examined, out var _))
+                    return true;
 
             return InRangeUnOccluded(
                 _transform.GetMapCoordinates(examiner),
@@ -320,9 +326,6 @@ namespace Content.Shared.Examine
             _hasDescription = hasDescription;
         }
 
-        /// <summary>
-        ///     Returns <see cref="Message"/> with all <see cref="Parts"/> appended according to their priority.
-        /// </summary>
         public FormattedMessage GetTotalMessage()
         {
             int Comparison(ExamineMessagePart a, ExamineMessagePart b)
