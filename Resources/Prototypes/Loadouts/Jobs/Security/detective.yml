@@ -51,6 +51,7 @@
 # Shoes
 
 # Uniforms
+# Floof Loadout Revision begin
 - type: loadout
   id: LoadoutClothingUniformJumpsuitDetective
   category: JobsSecurityDetective
@@ -106,3 +107,4 @@
         - Detective
   items:
     - ClothingUniformJumpskirtDetectiveGrey
+# Floof Loadout Revision end

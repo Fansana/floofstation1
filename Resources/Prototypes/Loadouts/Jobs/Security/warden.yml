@@ -27,7 +27,7 @@
     - ClothingHeadHatBeretWarden
     
 - type: loadout
-  id: LoadoutClothingHeadHatWarden
+  id: LoadoutClothingHeadHatWarden # Floof
   category: JobsSecurityWarden
   cost: 0
   exclusive: true
@@ -62,7 +62,7 @@
     - ClothingOuterCoatWarden
     
 - type: loadout
-  id: LoadoutClothingOuterWinterWarden
+  id: LoadoutClothingOuterWinterWarden # Floof
   category: JobsSecurityWarden
   cost: 0
   exclusive: true
@@ -76,7 +76,7 @@
     - ClothingOuterWinterWarden
     
 - type: loadout
-  id: LoadoutClothingLongcoatWarden
+  id: LoadoutClothingLongcoatWarden # Floof
   category: JobsSecurityWarden
   cost: 0
   exclusive: true
@@ -92,7 +92,7 @@
 # Shoes
 
 - type: loadout
-  id: LoadoutClothingShoesBootsWinterWarden
+  id: LoadoutClothingShoesBootsWinterWarden # Floof
   category: JobsSecurityWarden
   cost: 0
   exclusive: true
