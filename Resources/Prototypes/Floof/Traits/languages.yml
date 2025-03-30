@@ -101,6 +101,7 @@
   id: NaturalRobotTalk
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -118,6 +119,7 @@
   id: NaturalArachnic
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -136,6 +138,7 @@
   id: NaturalRootSpeak
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -153,6 +156,7 @@
   id: NaturalSolCommon
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -170,6 +174,7 @@
   id: NaturalValyrianStandard
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -187,6 +192,7 @@
   id: NaturalMoffic
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -204,6 +210,7 @@
   id: NaturalDraconic
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -221,6 +228,7 @@
   id: NaturalBubblish
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -238,6 +246,7 @@
   id: NaturalSchechi
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
@@ -255,6 +264,7 @@
   id: NaturalNekomimetic
   category: TraitsSpeechLanguages
   points: -1
+  priority: -1
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
