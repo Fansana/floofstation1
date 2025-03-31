@@ -73,7 +73,7 @@
   id: SpeciesChitinidPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-chitinid
-  
+
 - type: quickPhrase
   id: SpeciesFeroxiPhrase
   parent: BaseCrewSpeciesPhrase
@@ -88,12 +88,12 @@
   id: SpeciesShadowkinPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-shadowkin
-  
+
 - type: quickPhrase
   id: SpeciesArachnePhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-arachne
-  
+
 - type: quickPhrase
   id: SpeciesResomiPhrase
   parent: BaseCrewSpeciesPhrase
