@@ -66,16 +66,16 @@
   parent: BaseCommandJobPhrase
   id: CentralCommandOfficialPhrase
   text: job-name-centcomoff
-
-- type: quickPhrase
-  parent: BaseCommandJobPhrase
-  id: AdminAssistantPhrase
-  text: job-name-admin-assistant
-
-- type: quickPhrase
-  parent: BaseCommandJobPhrase
-  id: StationAIPhrase 
-  text: job-name-station-ai
+# Floof - M3739 - Neither of these roles exist yet. Uncommented for posterity.
+#- type: quickPhrase
+#  parent: BaseCommandJobPhrase
+#  id: AdminAssistantPhrase
+#  text: job-name-admin-assistant
+#
+#- type: quickPhrase
+#  parent: BaseCommandJobPhrase
+#  id: StationAIPhrase 
+#  text: job-name-station-ai
 
 # Engineering
 

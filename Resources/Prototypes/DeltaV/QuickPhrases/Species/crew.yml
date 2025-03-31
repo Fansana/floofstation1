@@ -68,3 +68,34 @@
   id: SpeciesRodentiaPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-rodentia  
+# Floof - Changes begin
+- type: quickPhrase
+  id: SpeciesChitinidPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-chitinid
+  
+- type: quickPhrase
+  id: SpeciesFeroxiPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-feroxi
+
+- type: quickPhrase
+  id: SpeciesIPCPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-ipc
+
+- type: quickPhrase
+  id: SpeciesShadowkinPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-shadowkin
+  
+- type: quickPhrase
+  id: SpeciesArachnePhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-arachne
+  
+- type: quickPhrase
+  id: SpeciesResomiPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-resomi
+# Floof - Changes end
