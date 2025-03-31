@@ -113,6 +113,11 @@
 
 - type: quickPhrase
   parent: BaseEpistemicsJobPhrase
+  id: LibrarianPhrase
+  text: job-name-librarian # Floof - Cataloguer is part of Epistemics
+
+- type: quickPhrase
+  parent: BaseEpistemicsJobPhrase
   id: ScientistPhrase
   text: job-name-scientist
 
@@ -255,11 +260,6 @@
   parent: BaseServiceJobPhrase
   id: JanitorPhrase
   text: job-name-janitor
-
-- type: quickPhrase
-  parent: BaseServiceJobPhrase
-  id: LibrarianPhrase
-  text: job-name-librarian
 
 - type: quickPhrase
   parent: BaseServiceJobPhrase
