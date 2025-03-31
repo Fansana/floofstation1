@@ -82,4 +82,15 @@
 - type: quickPhrase
   id: NotPhrase
   parent: BaseQualitativePhrase
-  text: phrase-not  
+  text: phrase-not
+# Floof - Changes begin
+- type: quickPhrase
+  id: BigPhrase
+  parent: BaseQualitativePhrase
+  text: phrase-big
+  
+- type: quickPhrase
+  id: SmallPhrase
+  parent: BaseQualitativePhrase
+  text: phrase-small
+# Floof - Changes end

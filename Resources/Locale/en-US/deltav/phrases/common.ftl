@@ -103,3 +103,7 @@ phrase-call = Call
 phrase-this = This
 phrase-actiondrink = Drink
 phrase-know = Know
+# Floof - Changes begin
+phrase-big = Big
+phrase-small = Small
+# Floof - Changes end

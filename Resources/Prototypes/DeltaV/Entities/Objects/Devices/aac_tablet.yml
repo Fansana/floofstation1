@@ -42,7 +42,7 @@
     speechSounds: Alto
   - type: AACTablet
   - type: VoiceOverride # Floof - M3739 - Previously used the VoiceMask component. This fits our needs better.
-  - type: Clothing # Floof - M3739 - able to be kept on your neck, like other translators.
+  - type: Clothing # Floof - M3739 - able to be kept on your neck, like translators.
     slots: [ neck ]
     equipDelay: 0.3
     unequipDelay: 0.3
