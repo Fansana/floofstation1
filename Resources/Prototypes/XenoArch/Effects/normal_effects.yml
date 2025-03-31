@@ -181,9 +181,6 @@
     - Sodium
     - Water
     - Sulfur
-    - Blood # Floof - Artifact tweaks  
-    - Cum # Floof - Artifact tweaks
-    - Pomelustine # Floof - Artifact tweaks
 
 - type: artifactEffect
   id: EffectCold
@@ -672,12 +669,13 @@
     intensitySlope: 2.5
     maxIntensity: 50
 
-- type: artifactEffect
-  id: EffectPortal
-  targetDepth: 3
-  effectHint: artifact-effect-hint-displacement
-  components:
-  - type: PortalArtifact
+# Floof Station - Removed portal effect since it interrupts things
+# - type: artifactEffect
+#   id: EffectPortal
+#   targetDepth: 3
+#   effectHint: artifact-effect-hint-displacement
+#   components:
+#   - type: PortalArtifact
 
 - type: artifactEffect
   id: EffectSingulo
