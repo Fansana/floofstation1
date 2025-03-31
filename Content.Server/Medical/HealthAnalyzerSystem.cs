@@ -3,7 +3,7 @@ using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Medical.Components;
 using Content.Server.PowerCell;
 using Content.Server.Temperature.Components;
-using Content.Server.Traits.Assorted;
+using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
@@ -250,9 +250,9 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             bleeding = bloodstream.BleedAmount > 0;
         }
 
-        /*if (HasComp<UnrevivableComponent>(target)) Somehow we dont have unrevivable???
+        // Floofstation - we DO have unrevivable.
+        if (HasComp<UnrevivableComponent>(target)) // Somehow we dont have unrevivable???
             unrevivable = true;
-        */
 
         // Start-Shitmed
         Dictionary<TargetBodyPart, TargetIntegrity>? body = null;
