@@ -4,7 +4,6 @@
     entity: MobMothroach
     forced: true
     transferName: true
-    transferHumanoidAppearance: true
     inventory: None
     revertOnDeath: true
     revertOnCrit: true
@@ -16,8 +15,8 @@
     entity: MobKobold
     forced: true
     transferName: true
-    transferHumanoidAppearance: true
-    inventory: None
+    allowRepeatedMorphs: true
+    inventory: Transfer
     revertOnDeath: true
     revertOnCrit: true
     duration: 20

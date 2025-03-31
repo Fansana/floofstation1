@@ -87,3 +87,21 @@
   components:
   - type: PolyOthersArtifact
     polymorphPrototypeName: ArtifactKobold
+
+- type: artifactEffect
+  id: EffectNightclub
+  targetDepth: 3
+  effectHint: artifact-effect-hint-environment
+  components:
+  - type: NightclubArtifact
+    replacements:
+    - PoweredLightColoredBlack
+    - PoweredWarmSmallLight
+  - type: SpawnArtifact
+    maxSpawns: 1
+    spawns:
+    - id: StripperPole
+      amount: 1
+      maxAmount: 1
+  - type: ReplaceFloorArtifact
+    replacement: FloorEighties
