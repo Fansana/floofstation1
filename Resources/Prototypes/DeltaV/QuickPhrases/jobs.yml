@@ -66,7 +66,7 @@
   parent: BaseCommandJobPhrase
   id: CentralCommandOfficialPhrase
   text: job-name-centcomoff
-# Floof - M3739 - Neither of these roles exist yet. Uncommented for posterity.
+# Floof - M3739 - Neither of these roles exist yet. commented for posterity.
 #- type: quickPhrase
 #  parent: BaseCommandJobPhrase
 #  id: AdminAssistantPhrase
