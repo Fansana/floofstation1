@@ -893,6 +893,14 @@
 - type: loadout
   id: LoadoutItemAACTablet
   category: Items
-  cost: 2
+  cost: 0 # Floof - M3739 - Assistive technologies shall be free for mute people.
   items:
     - AACTablet
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Mime # Floof - M3739 - See AACTabletSystem.cs, lines 38 to 39. We're just saving them the trouble.
+    - !type:CharacterTraitRequirement
+      traits:
+        - Muted # Floof - M3739 - But for it to be free, you must be officially vocally impaired.
