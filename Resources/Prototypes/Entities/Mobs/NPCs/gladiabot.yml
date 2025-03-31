@@ -43,21 +43,21 @@
     animation: WeaponArcPunch
     damage:
       types:
-        Slash: 3
+        Slash: 6 #Floofstation - Combat doubling
   - type: MobThresholds
     thresholds:
       0: Alive
-      40: Dead
+      80: Dead #Floofstation - Combat doubling
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 30
+        damage: 60 #Floofstation - Combat doubling
       behaviors:
       - !type:TriggerBehavior
     - trigger:
         !type:DamageTrigger
-        damage: 40
+        damage: 80 #Floofstation - Combat doubling
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:

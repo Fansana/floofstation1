@@ -125,8 +125,9 @@
     soundHit:
       collection: MetalThud
     damage:
-      groups:
-        Brute: 5
+      types:
+        Slash: 5 #Floofstation - Combat doubling
+        Blunt: 5 #Floofstation - Combat doubling
 
 # Used for mobs that are affected by atmospherics, pressure, and heat
 - type: entity
