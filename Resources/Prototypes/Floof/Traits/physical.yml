@@ -114,7 +114,6 @@
         - Borg
         - MedicalBorg
     - !type:CharacterSpeciesRequirement
-      inverted: true
       species:
       - Felinid
       - Feroxi
