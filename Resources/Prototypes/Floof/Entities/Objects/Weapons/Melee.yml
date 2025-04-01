@@ -111,7 +111,7 @@
     state: icon
 
 - type: entity
-  name: EHalberd
+  name: Energy Halberd
   parent: EnergySwordDouble
   id: EHalberd
   description: A polarm handle with an engery based axe head to it. Produced by SESWC!
@@ -121,7 +121,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 0.75
-    angle: 100
+    angle: 80
     heavyStaminaCost: 10
     heavyDamageBaseModifier: 1.10
     damage:
@@ -135,8 +135,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 20
+            Slash: 4
+            Heat: 18
             Structural: 50
   - type: ItemToggleActiveSound
     activeSound:
@@ -154,7 +154,7 @@
     layers:
       - state: e_halberd
       - state: e_halberd_blade
-        color: "#FFFFFF"
+        color: "#9b0909"
         visible: false
         shader: unshaded
         map: [ "blade" ]
@@ -167,3 +167,19 @@
       right:
       - state: inhand-right-blade
         shader: unshaded
+
+- type: entity
+  name: Antique energy halberd
+  parent: EHalberd
+  id: EHalberdAntque
+  description: Desgin and produced by SESWC! This two-handed polarm also know as an halberd is a perfect weapon for an warden to protect his armory!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi
+    layers:
+      - state: e_halberd
+      - state: e_halberd_blade
+        color: "#ffffff"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]

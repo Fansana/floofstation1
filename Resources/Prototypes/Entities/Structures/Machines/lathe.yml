@@ -933,7 +933,7 @@
       - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
       #- WeaponEnergyShotgun
-      - WeaponGrapplingGun # Floof
+      - WeaponGrapplingGun
       - JawsOfLife
       - HandHeldMassScanner
       - HoloprojectorField
@@ -950,6 +950,10 @@
       - MagazinePistolRubber
       - SpeedLoaderMagnumRubber
       - ShellShotgunBeanbag
+      - Halberd
+      - EHalberd
+      - EnergySword
+      - ClothingOuterArmorReflective
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes

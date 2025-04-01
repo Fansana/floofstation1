@@ -59,6 +59,18 @@
   - UplinkWeapons
   saleLimit: 2
 
+- type: listing #floof the other file just doesnt work
+  id: UplinkEHalberd
+  name: uplink-ehalberd-name
+  description: uplink-ehalberd-desc
+  icon: { sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
+  productEntity: EHalberd
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeapons
+  saleLimit: 1
+
 - type: listing
   id: UplinkEnergyDagger
   name: uplink-edagger-name
