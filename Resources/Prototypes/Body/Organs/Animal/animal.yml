@@ -133,7 +133,10 @@
   - type: Heart
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [ Animal ]
+    metabolizerTypes: [
+      Animal,
+      TheobromineIntolerant
+    ]
     groups:
     - id: Medicine
     - id: Poison

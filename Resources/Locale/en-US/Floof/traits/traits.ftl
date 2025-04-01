@@ -45,3 +45,8 @@ trait-name-NaturalRatvarian = Natural Ratvarian Speaker
 trait-description-NaturalRatvarian =
     The language of the cult of Ratvar. Enigmatic, guttural, and difficult to pronounce.
     You speak this instead of your species's usual natural language.
+
+trait-name-CulinaryAdaptationTheobromine = Culinary Adaptation (Theobromine)
+trait-description-CulinaryAdaptationTheobromine =
+    You have a natural adaptation to theobromine, allowing you to eat chocolate without any negative effects.
+    Note: [color=red]this will not have any effect if your species already can eat chocolate![/color]

@@ -1,0 +1,11 @@
+# If your species wants to metabolize stuff differently,
+# you'll likely have to tag its metabolizers with something other than Human.
+
+- type: metabolizerType
+  id: TheobromineIntolerant
+  name: metabolizer-type-theobromine-intolerant
+
+- type: metabolizerType
+  id: AllicinIntolerant
+  name: metabolizer-type-allicin-intolerant
+

@@ -20,7 +20,6 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
     [Dependency] private readonly IConfigurationManager _configuration = default!;
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
-
     public override void Initialize()
     {
         base.Initialize();
