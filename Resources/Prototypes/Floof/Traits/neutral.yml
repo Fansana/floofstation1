@@ -8,15 +8,3 @@
     - !type:TraitAddComponent
       components:
       - type: DrunkardAccent
-
-- type: trait
-  id: FrenchAccent
-  category: TraitsSpeechAccents
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: TraitsAccents
-  functions:
-    - !type:TraitAddComponent
-      components:
-        - type: FrenchAccent
-
