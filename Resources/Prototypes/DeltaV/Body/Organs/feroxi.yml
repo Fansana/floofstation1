@@ -14,7 +14,12 @@
       - Paper
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [ Feroxi, Animal ]
+    metabolizerTypes: [
+      Feroxi,
+      TheobromineIntolerant,
+      AllicinIntolerant,
+      Animal
+    ]
   - type: SolutionContainerManager
     solutions:
       stomach:

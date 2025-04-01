@@ -117,12 +117,36 @@
       species:
       - Felinid
       - Feroxi
-      - Harpy
       - Vulpkanin
       - Rodentia
   functions:
     - !type:TraitModifyMetabolism
       types: [ TheobromineIntolerant ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
+
+- type: trait
+  id: CulinaryAdaptationAllicin
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Felinid
+      - Feroxi
+      - Vulpkanin
+      - Rodentia
+  functions:
+    - !type:TraitModifyMetabolism
+      types: [ AllicinIntolerant ]
       groups: [
         Poison,
         Food,

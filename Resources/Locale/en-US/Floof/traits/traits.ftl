@@ -48,5 +48,10 @@ trait-description-NaturalRatvarian =
 
 trait-name-CulinaryAdaptationTheobromine = Culinary Adaptation (Theobromine)
 trait-description-CulinaryAdaptationTheobromine =
-    You have a natural adaptation to theobromine, allowing you to eat chocolate without any negative effects.
-    Note: [color=red]this will not have any effect if your species already can eat chocolate![/color]
+    Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize theobromine.
+    You can eat chocolate and drink coffee without being poisoned by it!
+
+trait-name-CulinaryAdaptationAllicin = Culinary Adaptation (Allicin)
+trait-description-CulinaryAdaptationAllicin =
+    Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize allicin.
+    You can eat garlic and onions without being poisoned by it!

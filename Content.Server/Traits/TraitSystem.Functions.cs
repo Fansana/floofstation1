@@ -407,6 +407,7 @@ public sealed partial class TraitModifyStamina : TraitFunction
     }
 }
 
+// FLOOF START
 [UsedImplicitly]
 public sealed partial class TraitModifyMetabolism : TraitFunction
 {
@@ -467,12 +468,13 @@ public sealed partial class TraitModifyMetabolism : TraitFunction
     {
         foreach (var metabType in Types)
         {
-        if (Add)
-            metabolizer.MetabolizerTypes?.Add(metabType);
-        else
-            metabolizer.MetabolizerTypes?.Remove(metabType);
+            if (Add)
+                metabolizer.MetabolizerTypes?.Add(metabType);
+            else
+                metabolizer.MetabolizerTypes?.Remove(metabType);
         }
     }
 }
+// FLOOF END
 
 

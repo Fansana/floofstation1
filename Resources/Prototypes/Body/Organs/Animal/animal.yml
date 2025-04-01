@@ -135,7 +135,8 @@
     maxReagents: 2
     metabolizerTypes: [
       Animal,
-      TheobromineIntolerant
+      TheobromineIntolerant,
+      AllicinIntolerant
     ]
     groups:
     - id: Medicine
