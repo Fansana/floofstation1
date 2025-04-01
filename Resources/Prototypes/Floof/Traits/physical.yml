@@ -113,12 +113,6 @@
       jobs:
         - Borg
         - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      species:
-      - Felinid
-      - Feroxi
-      - Vulpkanin
-      - Rodentia
   functions:
     - !type:TraitModifyMetabolism
       types: [ TheobromineIntolerant ]
@@ -138,12 +132,6 @@
       jobs:
         - Borg
         - MedicalBorg
-    - !type:CharacterSpeciesRequirement
-      species:
-      - Felinid
-      - Feroxi
-      - Vulpkanin
-      - Rodentia
   functions:
     - !type:TraitModifyMetabolism
       types: [ AllicinIntolerant ]
