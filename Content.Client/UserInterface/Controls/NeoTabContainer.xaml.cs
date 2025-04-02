@@ -39,6 +39,16 @@ public sealed partial class NeoTabContainer : BoxContainer
         _ => null,
     };
 
+    // Floofstation section
+    // If true, the contents of this container will be populated *lazily*, aka only when they are needed.
+    // I would make all NTCs lazy by default, but the damn *** that the EE codebase is won't allow it!
+    // Why would you ask? Because some systems dynamically fetch things from NTCs and use those as sources of data.
+    // Do not change at runtime unless you know what you're doing.
+    public bool Lazy { get; set; } = false;
+
+    // Just because I don't want to fix death's mistake here and change the semantics of _controls.
+    public List<Control> AllTabContents => _controls;
+    // Floofstation section end
 
     /// <inheritdoc cref="NeoTabContainer"/>
     public NeoTabContainer()
@@ -117,13 +127,13 @@ public sealed partial class NeoTabContainer : BoxContainer
             button.Text = title;
 
         TabContainer.AddChild(button);
-        ContentContainer.AddChild(control);
+        if (!Lazy && !ContentContainer.Children.Contains(control)) // Floofstation
+            ContentContainer.AddChild(control);
         _controls.Add(control);
         _tabs.Add(control, button);
 
-        // Show it if it has content
-        if (ContentContainer.ChildCount > 1)
-            control.Visible = false;
+        if (_tabs.Count > 1) // Floofstation - changed from content container children count to tab count
+            control.Visible &= Lazy; // If not lazy and there's more tabs, hide it
         else
             // Select it if it's the only tab
             SelectTab(control);
@@ -212,8 +222,15 @@ public sealed partial class NeoTabContainer : BoxContainer
     public void SelectTab(Control control)
     {
         if (CurrentControl != null)
+        {
             CurrentControl.Visible = false;
+            // FLoofstation
+            if (Lazy && ContentContainer.Children.Contains(CurrentControl))
+                ContentContainer.RemoveChild(CurrentControl);
+        }
 
+        if (Lazy && !ContentContainer.Children.Contains(control)) // Floofstation
+            ContentContainer.AddChild(control); // Floofstation
         var button = _tabs[control];
         button.Pressed = true;
         control.Visible = true;

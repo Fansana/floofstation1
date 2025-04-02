@@ -2,32 +2,35 @@
   id: LoadoutEyesEyepatch
   category: Eyes
   cost: 0
+  canBeHeirloom: true
   items:
     - ClothingEyesEyepatch
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlasses
   category: Eyes
   cost: 0
+  customColorTint: true
   items:
     - ClothingEyesGlasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlassesJamjar
   category: Eyes
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingEyesGlassesJamjar
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesGlassesJensen
@@ -38,7 +41,7 @@
     - ClothingEyesGlassesJensen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutEyesBlindfold
@@ -48,7 +51,7 @@
     - ClothingEyesBlindfold
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemCheapSunglasses
@@ -59,7 +62,7 @@
     - ClothingEyesGlassesCheapSunglasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemSunglasses
@@ -70,7 +73,7 @@
     - ClothingEyesGlassesSunglasses
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes
 
 - type: loadout
   id: LoadoutItemBlindfoldFake
@@ -81,4 +84,4 @@
     - ClothingEyesBlindfoldFake
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutEyes2
+      group: LoadoutEyes

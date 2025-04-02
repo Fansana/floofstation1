@@ -3648,3 +3648,20 @@ Entries:
   id: 391
   time: '2025-03-30T09:33:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/691
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged about two months worth of content from upstream- *incoherent
+        screaming*
+    - type: Add
+      message: >-
+        Kill objectives on regular crew are back, but changed to "teach a
+        lesson" (upstream change)
+    - type: Add
+      message: >-
+        Identical chat messages will now stack together in the chat panel
+        (upstream change, can be disabled in settings)
+  id: 392
+  time: '2025-04-02T00:31:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/574
