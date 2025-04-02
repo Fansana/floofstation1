@@ -7,6 +7,15 @@
     Plasteel: 500
     Silver: 500
 
+# No clue what this is, but it was in the upstream file and had to be moved because it caused conflicts on every upstream merge...
+- type: latheRecipe
+  id: WhiteCane
+  result: WhiteCane
+  completetime: 2
+  materials:
+    Steel: 100
+    Plastic: 100
+
 - type: latheRecipe
   id: SterileBag
   result: SterileBag

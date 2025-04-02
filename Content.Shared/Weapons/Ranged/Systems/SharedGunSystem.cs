@@ -22,6 +22,7 @@ using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -64,6 +65,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected readonly TagSystem TagSystem = default!;
     [Dependency] protected readonly ThrowingSystem ThrowingSystem = default!;
     [Dependency] private   readonly UseDelaySystem _useDelay = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     private const float InteractNextFire = 0.3f;
     private const double SafetyNextFire = 0.5;
@@ -96,6 +98,8 @@ public abstract partial class SharedGunSystem : EntitySystem
         SubscribeLocalEvent<GunComponent, CycleModeEvent>(OnCycleMode);
         SubscribeLocalEvent<GunComponent, HandSelectedEvent>(OnGunSelected);
         SubscribeLocalEvent<GunComponent, MapInitEvent>(OnMapInit);
+
+        InitializeHolders(); // DeltaV
     }
 
     private void OnMapInit(Entity<GunComponent> gun, ref MapInitEvent args)
@@ -112,14 +116,18 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     private void OnGunMelee(EntityUid uid, GunComponent component, MeleeHitEvent args)
     {
-        if (!TryComp<MeleeWeaponComponent>(uid, out var melee))
-            return;
+        var curTime = Timing.CurTime;
 
-        if (melee.NextAttack > component.NextFire)
-        {
-            component.NextFire = melee.NextAttack;
-            Dirty(uid, component);
-        }
+        if (component.NextFire < curTime)
+            component.NextFire = curTime;
+
+        var meleeCooldown = TimeSpan.FromSeconds(component.MeleeCooldown);
+
+        component.NextFire += meleeCooldown;
+        while (component.NextFire <= curTime)
+            component.NextFire += meleeCooldown;
+
+        Dirty(uid, component);
     }
 
     private void OnShootRequest(RequestShootEvent msg, EntitySessionEventArgs args)
@@ -516,6 +524,14 @@ public abstract partial class SharedGunSystem : EntitySystem
             comp.FireRate,
             comp.ProjectileSpeed
         );
+
+        // Begin DeltaV additions
+        // Raise an event at the user of the gun so they have a chance to modify the gun's details.
+        if (gun.Comp.Holder != null)
+        {
+            RaiseLocalEvent(gun.Comp.Holder.Value, ref ev);
+        }
+        // End DeltaV additions
 
         RaiseLocalEvent(gun, ref ev);
 

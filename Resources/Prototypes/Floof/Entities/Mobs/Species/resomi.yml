@@ -8,8 +8,11 @@
   - type: LanguageKnowledge
     speaks:
       - TauCetiBasic
+      - Schechi
     understands:
       - TauCetiBasic
+      - Schechi
+    naturalLanguage: Schechi # Floof: explicitly stated natural languages
   - type: Fixtures
     fixtures:
       fix1:
@@ -205,7 +208,7 @@
 - type: entity
   parent: BaseSpeciesDummy
   id: MobResomiDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy resomi meant to be used in character setup.
   components:
   - type: HumanoidAppearance

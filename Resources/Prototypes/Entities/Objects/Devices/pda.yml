@@ -108,6 +108,10 @@
   - type: LanguageKnowledge
     speaks: [TauCetiBasic, RobotTalk]
     understands: [TauCetiBasic, RobotTalk]
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
 
 - type: entity
   parent: BasePDA
@@ -193,7 +197,7 @@
       - SecWatchCartridge
 
 - type: entity
-  parent: BasePDA
+  parent: SciencePDA # Floof - reparented
   id: ResearchAssistantPDA
   name: research assistant PDA
   description: Why isn't it purple?
@@ -504,7 +508,7 @@
   parent: BasePDA
   id: CaptainPDA
   name: captain PDA
-  description: Surprisingly no different from your PDA.
+  description: Surprisingly no different from your PDA... Wait, it's a fair bit heavy to hold.
   components:
   - type: Pda
     id: CaptainIDCard
@@ -519,6 +523,13 @@
     borderColor: "#7C5D00"
   - type: Icon
     state: pda-captain
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+    staminaCost: 5
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   parent: BasePDA
@@ -1261,7 +1272,7 @@
   - type: Unremoveable
 
 - type: entity
-  parent: BasePDA
+  parent: EngineerPDA # Floof - reparented
   id: SeniorEngineerPDA
   name: senior engineer PDA
   description: Seems to have been taken apart and put back together several times.
@@ -1276,7 +1287,7 @@
     state: pda-seniorengineer
 
 - type: entity
-  parent: BasePDA
+  parent: SciencePDA # Floof - reparented
   id: SeniorResearcherPDA
   name: senior researcher PDA
   description: Looks like it's been through years of chemical burns and explosions.
@@ -1314,7 +1325,7 @@
     state: pda-seniorphysician
 
 - type: entity
-  parent: BasePDA
+  parent: SecurityPDA # Floof - reparented
   id: SeniorOfficerPDA
   name: senior officer PDA
   description: Beaten, battered and broken, but just barely useable.

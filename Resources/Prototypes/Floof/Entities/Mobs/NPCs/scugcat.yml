@@ -187,7 +187,7 @@
 - type: entity
   id: ScugCatSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true

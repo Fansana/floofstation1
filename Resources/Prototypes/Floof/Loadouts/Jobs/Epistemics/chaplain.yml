@@ -1,3 +1,15 @@
+# Chaplain
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
 - type: loadout
   id: LoadoutClothingHandChaplainWarmers
   category: JobsEpistemicsChaplain
@@ -6,10 +18,63 @@
   items:
   - ClothingHandsChaplainWarmers
   requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainGloves
   - !type:CharacterJobRequirement
     jobs:
     - Chaplain
 
+# Head
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutChaplainNeckScarfChaplainStole
+  category: JobsEpistemicsChaplain
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingNeckScarfChaplainStole
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainNeck
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chaplain
+
+- type: loadout
+  id: LoadoutChaplainNeckCrucifix
+  category: JobsEpistemicsChaplain
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingNeckCrucifix
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainNeck
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chaplain
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutClothingChaplainEpiMantle
+  category: JobsEpistemicsChaplain
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingOuterEpiChaplainMantle
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - Chaplain
+
+# Shoes
 - type: loadout
   id: LoadoutClothingUnderSocksChaplain
   category: JobsEpistemicsChaplain
@@ -18,6 +83,8 @@
   items:
   - ClothingUnderSocksChaplain
   requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainShoes
   - !type:CharacterSpeciesRequirement
     inverted: true
     species:
@@ -27,6 +94,7 @@
     jobs:
     - Chaplain
 
+# Uniforms
 - type: loadout
   id: LoadoutClothingUniformChaplainThong
   category: JobsEpistemicsChaplain
@@ -35,18 +103,8 @@
   items:
   - ClothingUniformChaplainThong
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Chaplain
-
-- type: loadout
-  id: LoadoutClothingChaplainEpiMantle
-  category: JobsEpistemicsChaplain
-  cost: 1
-  exclusive: true
-  items:
-  - ClothingOuterEpiChaplainMantle
-  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutChaplainUniforms
   - !type:CharacterJobRequirement
     jobs:
     - Chaplain

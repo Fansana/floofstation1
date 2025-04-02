@@ -1,5 +1,4 @@
 using Content.Shared.Damage;
-using Content.Shared.Nyanotrasen.Abilities.Oni;
 using Content.Shared.Tag;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
@@ -11,7 +10,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 namespace Content.Shared.Weapons.Ranged.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
-[Access(typeof(SharedGunSystem), typeof(SharedOniSystem))] // DeltaV - I didn't feel like rewriting big chunks of code
+[Access(typeof(SharedGunSystem))]
 public sealed partial class GunComponent : Component
 {
     #region Sound
@@ -146,6 +145,14 @@ public sealed partial class GunComponent : Component
     [ViewVariables]
     public EntityUid? Target = null;
 
+    // Begin DeltaV additions
+    /// <summary>
+    /// Who the gun is being held by
+    /// </summary>
+    [ViewVariables]
+    public EntityUid? Holder = null;
+    // End DeltaV additions
+
     /// <summary>
     ///     The base value for how many shots to fire per burst.
     /// </summary>
@@ -207,6 +214,12 @@ public sealed partial class GunComponent : Component
     [AutoNetworkedField]
     [AutoPausedField]
     public TimeSpan NextFire = TimeSpan.Zero;
+
+    /// <summary>
+    ///   After dealing a melee attack with this gun, the minimum cooldown in seconds before the gun can shoot again.
+    /// </summary>
+    [DataField]
+    public float MeleeCooldown = 0.528f;
 
     /// <summary>
     /// What firemodes can be selected.
