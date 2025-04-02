@@ -275,7 +275,7 @@
     - LargeBeaker
     - Dropper
     - ClothingEyesGlassesChemical
-    - ShadowkinRestraints
+    - ClothingOuterShadowkinRestraints
     dynamicRecipes:
       - PowerDrill
       - MiningDrill
@@ -294,9 +294,6 @@
       - CryostasisBeaker
       - SyringeCryostasis
       - Syringe
-      - EnergyScalpel
-      - EnergyCautery
-      - AdvancedRetractor
       - Implanter
       - PillCanister
       - ChemistryEmptyBottle01
@@ -377,6 +374,10 @@
       - ClothingHarvestBag # Floofstation
       - RCDAmmo #DeltaV
       - RCD #EE
+      # Shitmed Change
+      - EnergyScalpel
+      - EnergyCautery
+      - AdvancedRetractor
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -503,7 +504,7 @@
       - SolarTrackerElectronics
       - TurboItemRechargerCircuitboard
       - PowerComputerCircuitboard
-      - AlertsComputerCircuitboard # Floof - port to EE if possible
+      - AlertsComputerCircuitboard
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
       - CircuitImprinterHyperConvectionMachineCircuitboard
@@ -562,6 +563,8 @@
       - MetempsychoticMachineCircuitboard
       - SalvageExpeditionsComputerCircuitboard
       - JukeboxCircuitBoard
+      - AutodocCircuitboard # Shitmed Change
+      - OperatingTableCircuitboard # Shitmed Change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -834,10 +837,10 @@
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
-      - BorgModuleStun
-      - BorgModuleKill
-      - BorgModuleInvestigation
-      - ShadowkinRestraints
+      - BorgModuleStun # Floof (why was this not commented?)
+      - BorgModuleKill # Floof (why was this not commented?)
+      - BorgModuleInvestigation # Floof (why was this not commented?)
+      - ClothingOuterShadowkinRestraints # Floof
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial
       - MagazineBoxSpecialPractice
@@ -1067,14 +1070,14 @@
       - MedkitRadiation
       - MedkitCombat
       - Scalpel
-      - BoneGel
       - Retractor
       - Cautery
       - Drill
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
-      - WhiteCane
+      - BoneGel # Shitmed Change
+      - WhiteCane # Floof
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
@@ -1105,6 +1108,7 @@
       - FatExtractorMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
       # Floof section end
+      # Shitmed Change
       - EnergyScalpel
       - EnergyCautery
       - AdvancedRetractor
@@ -1936,7 +1940,7 @@
   description: Produces organs and other organic matter that can be surgically grafted onto patients with biomass.
   components:
   - type: Sprite
-    sprite: Structures/Machines/limbgrower.rsi
+    sprite: _Shitmed/Structures/Machines/limbgrower.rsi
     snapCardinals: true
     layers:
     - state: limbgrower_idleoff
