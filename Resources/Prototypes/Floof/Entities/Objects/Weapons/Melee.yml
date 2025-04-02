@@ -111,10 +111,10 @@
     state: icon
 
 - type: entity
-  name: Energy Halberd
-  parent: EnergySwordDouble
-  id: EHalberd
-  description: A polarm handle with an engery based axe head to it. Produced by SESWC!
+  name: energy halberd
+  parent: WeaponEnergySwordDouble
+  id: WeaponEnergyHalberd
+  description: A polarm handle with an energy-based axe head to it. Produced by SESWC!
   components:
   - type: ItemToggleSize
     activatedSize: Huge
