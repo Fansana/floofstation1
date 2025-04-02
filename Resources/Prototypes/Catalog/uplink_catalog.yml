@@ -60,9 +60,9 @@
   saleLimit: 2
 
 - type: listing #floof the other file just doesnt work
-  id: UplinkEHalberd
-  name: uplink-ehalberd-name
-  description: uplink-ehalberd-desc
+  id: UplinkEnergyHalberd
+  name: uplink-energy-halberd-name
+  description: uplink-energy-halberd-desc
   icon: { sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
   productEntity: EHalberd
   cost:
