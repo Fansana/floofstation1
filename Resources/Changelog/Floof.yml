@@ -3690,3 +3690,10 @@ Entries:
   id: 395
   time: '2025-04-02T16:06:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/710
+- author: VividPups
+  changes:
+    - type: Remove
+      message: 'Blukie suits from cargo '
+  id: 396
+  time: '2025-04-02T16:31:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/712
