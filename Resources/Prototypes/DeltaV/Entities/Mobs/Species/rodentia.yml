@@ -19,6 +19,7 @@
   - type: Speech
     speechVerb: Rodentia
     speechSounds: Squeak
+    allowedEmotes: ['Squeak'] # Floof - M3739 - Normally, I'd rather just give Rodentia their own emote tag, but since this is their only race-specific emote, this is a less disruptive change.
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -42,6 +43,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ]
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -116,6 +119,7 @@
     understands:
     - TauCetiBasic
     - Mouse
+    naturalLanguage: Mouse  # Floof: explicitly stated natural languages
   - type: ConsumeDelayModifier
     foodDelayMultiplier: 0.5
     drinkDelayMultiplier: 0.5
@@ -135,7 +139,7 @@
   name: Rodentia Dummy
   parent: MobHumanDummy
   id: MobRodentiaDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy rodentia meant to be used in character setup.
   components:
   - type: HumanoidAppearance

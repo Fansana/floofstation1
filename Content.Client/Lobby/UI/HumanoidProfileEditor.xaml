@@ -198,7 +198,7 @@
                         StyleClasses="OpenLeft" />
                 </BoxContainer>
 
-                <ui:NeoTabContainer Name="LoadoutsTabs" VerticalExpand="True" SeparatorMargin="0" />
+                <ui:NeoTabContainer Name="LoadoutsTabs" VerticalExpand="True" SeparatorMargin="0" Lazy="True" />
             </BoxContainer>
             <BoxContainer Name="MarkingsTab" HorizontalExpand="True" Orientation="Vertical" Margin="10">
                 <ScrollContainer HorizontalExpand="True" HScrollEnabled="True" VerticalExpand="True" VScrollEnabled="True">
@@ -210,7 +210,7 @@
     </BoxContainer>
     <!-- Right side -->
     <BoxContainer Orientation="Vertical" VerticalExpand="True" VerticalAlignment="Center">
-        <SpriteView Name="SpriteView" Scale="8 8" SizeFlagsStretchRatio="1" />
+        <SpriteView Name="SpriteView" Scale="4 4" SizeFlagsStretchRatio="1" MaxSize="256, 256" /> <!-- Floof - added a size limit and reduced scale -->
         <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5">
             <Button Name="SpriteRotateLeft" Text="◀" StyleClasses="OpenRight" />
             <cc:VSeparator Margin="2 0 3 0" />

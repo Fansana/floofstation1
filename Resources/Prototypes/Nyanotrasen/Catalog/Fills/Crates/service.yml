@@ -7,6 +7,8 @@
     contents:
       - id: BoxColoredLighttube
         amount: 2
+      - id: BoxLighttubeColorMixed # Floof Station
+      - id: BoxLightbulbColorMixed # Floof Station
 
 - type: entity
   id: CrateServiceReplacementMaintenanceLights

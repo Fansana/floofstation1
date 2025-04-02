@@ -242,7 +242,7 @@
   description: uplink-emp-grenade-desc
   productEntity: EmpGrenade
   cost:
-    Telecrystal: 2
+    Telecrystal: 5 #floof change
   categories:
   - UplinkExplosives
 
@@ -865,7 +865,7 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: shield }
   productEntity: EmpImplanter
   cost:
-    Telecrystal: 2
+    Telecrystal: 7 #Floof change
   categories:
     - UplinkImplants
 
@@ -1437,6 +1437,16 @@
  # categories:
  #   - UplinkUtility
 
+- type: listing
+  id: UplinkEmpFlashlight
+  name: uplink-emp-flashlight-name
+  description: uplink-emp-flashlight-desc
+  productEntity: FlashlightEmp
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkUtility
+
 # Armor
 
 - type: listing
@@ -1798,6 +1808,7 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
+
 
 
 

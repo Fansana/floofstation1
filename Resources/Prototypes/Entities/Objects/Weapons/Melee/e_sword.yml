@@ -38,6 +38,14 @@
             Slash: 16 #Floofstation - Combat doubling
             Heat: 20 #Floofstation - Combat doubling
             Structural: 20
+  - type: ItemToggleDamageOtherOnHit
+    activatedStaminaCost: 6
+  - type: ItemToggleEmbedPassiveDamage
+  - type: ItemToggleEmbeddableProjectile
+    activatedEmbedOnThrow: true
+  - type: ItemToggleThrowingAngle
+    activatedAngle: 225
+    deleteOnDeactivate: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
     layers:
@@ -86,6 +94,7 @@
       - NoPaint
   - type: IgnitionSource
     temperature: 700
+  # Shitmed Change
   - type: Scalpel
     speed: 0.75
   - type: Cautery
@@ -146,6 +155,12 @@
         volume: -6
   - type: ItemToggleDisarmMalus
     activatedDisarmMalus: 0.4
+  - type: ItemToggleEmbeddableProjectile
+    activatedOffset: 0.0,0.0
+    activatedRemovalTime: 3
+  - type: ItemToggleThrowingAngle
+    activatedAngle: 135
+    deleteOnDeactivate: false
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger.rsi
     layers:
@@ -289,7 +304,7 @@
   - type: Wieldable
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 1.5
+    attackRate: .6666
     angle: 100
     damage:
       types:

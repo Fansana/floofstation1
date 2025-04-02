@@ -14,7 +14,7 @@
 - type: entity
   id: ActionToggleMagbootsSecurity
   parent: ActionBaseToggleMagboots
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     icon: { sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi, state: icon }

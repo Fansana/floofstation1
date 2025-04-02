@@ -1,0 +1,80 @@
+- type: gameMap
+  id: Amber
+  mapName: 'Amber'
+  mapPath: /Maps/Floof/amber.yml
+  minPlayers: 20
+  stations:
+    Amber:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Amber Station {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14-SB'
+      - type: StationEmergencyShuttle
+        emergencyShuttlePath: /Maps/Shuttles/emergency_amber.yml
+      - type: StationJobs
+        availableJobs:
+          # command
+          Captain: [ 1, 1 ]
+          #service
+          HeadOfPersonnel: [ 1, 1 ]
+          Bartender: [ 2, 3 ]
+          Botanist: [ 3, 3 ]
+          Chef: [ 2, 2 ]
+          Janitor: [ 2, 2 ]
+          ServiceWorker: [ 2, 2 ]
+          #engineering
+          ChiefEngineer: [ 1, 1 ]
+          AtmosphericTechnician: [ 3, 3 ]
+          StationEngineer: [ 2, 4 ]
+          TechnicalAssistant: [ 2, 2 ]
+          SeniorEngineer: [ 1, 1 ]
+          #medical
+          ChiefMedicalOfficer: [ 1, 1 ]
+          Chemist: [ 2, 2 ]
+          MedicalDoctor: [ 4, 6 ]
+          Paramedic: [ 2, 2 ]
+          MedicalIntern: [ 2, 2 ]
+          Psychologist: [ 1, 1 ]
+          SeniorPhysician: [ 1, 1 ]
+          #science
+          ResearchDirector: [ 1, 1 ]
+          Scientist: [ 4, 6 ]
+          ResearchAssistant: [ 2, 2 ]
+          Chaplain: [ 1, 1 ]
+          Librarian: [ 1, 1 ]
+          ForensicMantis: [ 1, 1 ]
+          Roboticist: [ 1, 1 ]
+          SeniorResearcher: [ 1, 1 ]
+          #security
+          HeadOfSecurity: [ 1, 1 ]
+          Brigmedic: [ 1, 1 ]
+          Warden: [ 1, 1 ]
+          SecurityOfficer: [ 4, 6 ]
+          Detective: [ 1, 1 ]
+          SecurityCadet: [ 2, 2 ]
+          Prisoner: [ 3, 4 ]
+          PrisonGuard: [ 1, 2 ]
+          SeniorOfficer: [ 1, 1 ]
+          #justice added by FloofStation
+          ChiefJustice: [ 1, 1 ] #FloofStation
+          Clerk: [ 1, 1 ] #FloofStation
+          Lawyer: [ 2, 2 ] #FloofStation
+          Prosecutor: [ 1, 1 ] #FloofStation
+          #supply
+          Quartermaster: [ 1, 1 ]
+          SalvageSpecialist: [ 3, 3 ]
+          CargoTechnician: [ 3, 4 ]
+          MailCarrier: [ 2, 3 ]
+          #civilian
+          Passenger: [ -1, -1 ]
+          Clown: [ 1, 1 ]
+          Mime: [ 1, 1 ]
+          Musician: [ 1, 1 ]
+          Reporter: [ 1, 1 ]
+          Anomaly: [ 4, 4 ] # Floofstation
+          # #silicon
+          #StationAi: [ 1, 1 ]
+          Borg: [ 3, 3 ]
