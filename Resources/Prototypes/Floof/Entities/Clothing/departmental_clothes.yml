@@ -697,6 +697,8 @@
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingUniformBase
