@@ -169,10 +169,10 @@
         shader: unshaded
 
 - type: entity
-  name: Antique energy halberd
-  parent: EHalberd
-  id: EHalberdAntque
-  description: Desgin and produced by SESWC! This two-handed polarm also know as an halberd is a perfect weapon for an warden to protect his armory!
+  name: antique energy halberd
+  parent: WeaponEnergyHalberd
+  id: WeaponEnergyHalberdAntique
+  description: A two-handed polarm, also know as a halberd. Servers as a perfect weapon for an warden to protect his armory! Designed and produced by SESWC! 
   components:
   - type: Sprite
     sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi
