@@ -83,13 +83,15 @@
         - PlushieHypnoTempCMO
         - PlushieHypnoTempLO
         - PlushieHypnoTempMysta
-        - Plushiegirlfailure 
-        - PlushieKitsuneCaptain 
+        # - Plushiegirlfailure
+        - PlushieKitsuneCaptain
         - PlushieSapphicHarpyPlushie
-        - PlushieFeistyBartender
-        - PlushieCoolVulp
-        - PlushieNoticeableSecurityOfficer
+        # - PlushieFeistyBartender
+        # - PlushieCoolVulp
+        # - PlushieNoticeableSecurityOfficer
         # Floof Plushies End
+        - PlushieHarpy
+        - PlushieMort
       chance: 0.5
       offset: 0.2
 

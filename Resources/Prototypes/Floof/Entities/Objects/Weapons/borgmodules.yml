@@ -2,7 +2,7 @@
   id: WeaponProtoKineticAcceleratorborg
   parent: WeaponProtoKineticAccelerator
   name: proto-kinetic accelerator borg
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Gun
     fireRate: 0.5

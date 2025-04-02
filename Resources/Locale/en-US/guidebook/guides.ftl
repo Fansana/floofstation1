@@ -37,10 +37,6 @@ guide-entry-chef = Chef
 guide-entry-foodrecipes = Food Recipes
 guide-entry-medical = Medical
 guide-entry-medicaldoctor = Medical Doctor
-guide-entry-surgery = Surgery
-guide-entry-partmanipulation = Part Manipulation
-guide-entry-organmanipulation = Organ Manipulation
-guide-entry-utilitysurgeries = Utility Surgeries
 guide-entry-chemist = Chemist
 guide-entry-medicine = Medicine
 guide-entry-brute = Advanced Brute Medication
@@ -72,6 +68,7 @@ guide-entry-zombies = Zombies
 guide-entry-revolutionaries = Revolutionaries
 guide-entry-minor-antagonists = Minor Antagonists
 guide-entry-space-ninja = Space Ninja
+guide-entry-blood-cult = Blood Cult
 
 guide-entry-rules = Server Rules
 guide-entry-rules-core = Core Rules
@@ -128,3 +125,7 @@ guide-entry-glossary = Glossary
 guide-entry-altars-golemancy = Altars and Golemancy
 guide-entry-glimmer-creatures = Glimmer Creatures
 guide-entry-reverse-engineering = Reverse Engineering
+   
+
+guide-entry-loadout-info = Loadouts
+guide-entry-loadout-eyes-eyepatch = Eyepatch
