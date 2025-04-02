@@ -142,7 +142,7 @@ trait-description-Tenacity =
 trait-name-GlassJaw = Glass Jaw
 trait-description-GlassJaw =
     Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
-    Your damage threshold for becoming Critical is decreased by 7 points.
+    Your damage threshold for becoming Critical is decreased by 10 points.
 
 trait-name-HighAdrenaline = High Adrenaline
 trait-description-HighAdrenaline =
@@ -475,7 +475,7 @@ trait-description-Redshirt =
     Something is pulling me up the hill.
     I look down in my red shirt.
     I look down in my red shirt.
-    This trait halves your crit threshold from 100 to 50.
+    This trait reduces your death threshold by 100. This means you likely WILL NOT have a critical state.
 
 trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
 trait-description-BrittleBoneDisease =
