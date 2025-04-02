@@ -1,10 +1,10 @@
 - type: loadout
   id: LoadoutMaskDroneMask # Floofstation
-  category: Mask # Floofstation 
+  category: Mask # Floofstation
   cost: 1 # Floofstation - it acts as a gas mask. I WISH I UNDERSTOOD HOW THE LOADOUT COSTS ARE BALANCED IT SEEMS RANDOM!!
   exclusive: true
   items:
   - ClothingMaskGasDrone
   requirements:
   - !type:CharacterItemGroupRequirement
-    group: LoadoutMasks2 # Floofstation
+    group: LoadoutMasks # Floofstation

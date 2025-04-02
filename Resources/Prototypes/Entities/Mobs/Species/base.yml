@@ -144,6 +144,8 @@
   - type: Identity
   - type: IdExaminable
   - type: Hands
+  - type: ComplexInteraction
+  - type: Internals
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
@@ -195,6 +197,10 @@
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
         requireInputValidation: false
+      enum.RadialSelectorUiKey.Key:
+        type: RadialSelectorMenuBUI
+      enum.ListViewSelectorUiKey.Key:
+        type: ListViewSelectorBUI
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Puller
@@ -331,6 +337,7 @@
   abstract: true
   components:
   - type: Hands
+  - type: ComplexInteraction
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:

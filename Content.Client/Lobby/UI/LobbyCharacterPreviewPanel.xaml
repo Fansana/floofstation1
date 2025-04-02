@@ -8,7 +8,7 @@
         </controls:NanoHeading>
         <BoxContainer Name="Loaded" Orientation="Vertical" Visible="False">
             <Label Name="Summary" HorizontalAlignment="Center" Margin="3 3"/>
-            <BoxContainer Name="ViewBox" Orientation="Horizontal" HorizontalAlignment="Center">
+            <BoxContainer Name="ViewBox" Orientation="Horizontal" HorizontalAlignment="Center" MaxSize="256, 256"> <!-- Floof - added a size limit -->
 
             </BoxContainer>
             <controls:VSpacer/>
