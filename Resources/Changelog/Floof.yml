@@ -3697,3 +3697,10 @@ Entries:
   id: 396
   time: '2025-04-02T16:31:21.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/712
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: DarkSwap EE Issues.
+  id: 397
+  time: '2025-04-02T16:45:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/715
