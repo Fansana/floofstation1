@@ -73,7 +73,7 @@
     heavyRateModifier: 1
     heavyRangeModifier: 2
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: 2
+    heavyStaminaCost: 0 # Floof change
     angle: 20
   - type: DamageOtherOnHit
     staminaCost: 8
