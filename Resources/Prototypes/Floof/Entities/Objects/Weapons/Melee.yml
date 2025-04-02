@@ -112,7 +112,7 @@
 
 - type: entity
   name: energy halberd
-  parent: WeaponEnergySwordDouble
+  parent: EnergySwordDouble
   id: WeaponEnergyHalberd
   description: A polarm handle with an energy-based axe head to it. Produced by SESWC!
   components:
@@ -172,7 +172,7 @@
   name: antique energy halberd
   parent: WeaponEnergyHalberd
   id: WeaponEnergyHalberdAntique
-  description: A two-handed polarm, also know as a halberd. Servers as a perfect weapon for an warden to protect his armory! Designed and produced by SESWC! 
+  description: A two-handed polarm, also know as a halberd. Servers as a perfect weapon for an warden to protect his armory! Designed and produced by SESWC!
   components:
   - type: Sprite
     sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi

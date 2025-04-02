@@ -1017,8 +1017,8 @@
 ## FLOOF
 
 - type: latheRecipe
-  id: EHalberd
-  result: EHalberd
+  id: WeaponEnergyHalberd
+  result: WeaponEnergyHalberd
   category: Weapons
   completetime: 5
   materials:
@@ -1030,8 +1030,8 @@
     Plasma: 400
 
 - type: latheRecipe
-  id: Halberd
-  result: Halberd
+  id: WeaponHalberd
+  result: WeaponHalberd
   category: Weapons
   completetime: 5
   materials:

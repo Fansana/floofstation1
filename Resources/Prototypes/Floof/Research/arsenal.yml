@@ -1,6 +1,6 @@
 - type: technology
   id: AdvancedEngeryArmaments
-  name: research-technology-advanced-engery-armaments
+  name: research-technology-advanced-energy-armaments
   icon:
     sprite: Objects/Weapons/Melee/truncheon.rsi
     state: icon
@@ -8,7 +8,7 @@
   tier: 3
   cost: 8000
   recipeUnlocks:
-  - EHalberd
+  - WeaponEnergyHalberd
   - EnergySword
   - ClothingOuterArmorReflective
   technologyPrerequisites:
