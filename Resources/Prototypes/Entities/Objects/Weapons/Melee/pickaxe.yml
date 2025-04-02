@@ -75,8 +75,8 @@
     heavyDamageBaseModifier: 1
    # heavyStaminaCost: 2 Floof change
     angle: 20
-  # type: DamageOtherOnHit
-  # staminaCost: 8
+  - type: DamageOtherOnHit
+    staminaCost: 8
   - type: ThrowingAngle
     angle: 270
 
