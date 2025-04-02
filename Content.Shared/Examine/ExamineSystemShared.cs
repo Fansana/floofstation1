@@ -11,6 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Utility;
+using Robust.Shared.Player;
 using static Content.Shared.Interaction.SharedInteractionSystem;
 
 namespace Content.Shared.Examine
@@ -108,6 +109,14 @@ namespace Content.Shared.Examine
 
             if (EntityManager.GetComponent<TransformComponent>(examiner).MapID != target.MapId)
                 return false;
+
+            // Floofstation edit - if the examined thing is a player, just return true
+            if (examined != null)
+                if (TryComp<ActorComponent>(examined, out var _)
+                    && examined.HasValue
+                    && Transform(examiner).Coordinates.TryDistance(EntityManager, _transform, Transform(examined.Value).Coordinates, out var distance)
+                    && distance <= GetExaminerRange(examiner))
+                    return true;
 
             return InRangeUnOccluded(
                 _transform.GetMapCoordinates(examiner),

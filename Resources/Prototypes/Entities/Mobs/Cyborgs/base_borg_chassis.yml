@@ -84,6 +84,7 @@
   - type: Hands
     showInHands: false
     disableExplosionRecursion: true
+  - type: ComplexInteraction
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
@@ -232,6 +233,8 @@
   - type: Vore # Floofstation - Vore
     canVore: true
     canBeVored: false
+  - type: TwistedConstructionTarget
+    replacementProto: ConstructShell
 
 - type: entity
   abstract: true

@@ -5,8 +5,8 @@ using Robust.Shared.Prototypes;
 namespace Content.Server.FloofStation.Traits;
 
 /// <summary>
-///     When applied to a not-yet-spawned player entity, removes <see cref="BaseLanguage"/> from the lists of their languages
-///     and gives them a translator instead.
+///     When applied to a not-yet-spawned player entity, removes their natural language from the lists of their languages
+///     and gives them a replacement instead.
 /// </summary>
 [RegisterComponent]
 public sealed partial class NaturalSpeakerTraitComponent : Component

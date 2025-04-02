@@ -24,6 +24,7 @@ namespace Content.Client.Launcher
         private readonly IRobustRandom _random;
         private readonly IPrototypeManager _prototype;
         private readonly IConfigurationManager _cfg;
+        private readonly IUriOpener _uri = default!;
 
         private float _redialWaitTime = RedialWaitTimeSeconds;
 
@@ -52,6 +53,9 @@ namespace Content.Client.Launcher
             RetryButton.OnPressed += _ => _state.RetryConnect();
             ExitButton.OnPressed += _ => _state.Exit();
 
+            WhitelistApplyButton.OnPressed += _ => _uri.OpenUri("https://discord.gg/floofstation"); // Floof discord link
+            WhitelistApplyButtonDisconnect.OnPressed += _ => _uri.OpenUri("https://discord.gg/floofstation"); // Floof discord link
+
             var addr = state.Address;
             if (addr != null)
                 ConnectingAddress.Text = addr;
@@ -73,6 +77,9 @@ namespace Content.Client.Launcher
             ConnectFailReason.SetMessage(reason == null
                 ? ""
                 : Loc.GetString("connecting-fail-reason", ("reason", reason)));
+
+            if (reason!.ToUpper().Contains("WHITELIST"))
+                WhitelistApplyButton.Visible = true;
         }
 
         private void LastNetDisconnectedArgsChanged(NetDisconnectedArgs? args)
@@ -128,7 +135,12 @@ namespace Content.Client.Launcher
             Disconnected.Visible = page == LauncherConnecting.Page.Disconnected;
 
             if (page == LauncherConnecting.Page.Disconnected)
+            {
                 DisconnectReason.Text = _state.LastDisconnectReason;
+
+                if (_state.LastDisconnectReason!.ToUpper().Contains("WHITELIST"))
+                    WhitelistApplyButtonDisconnect.Visible = true;
+            }
         }
 
         private void ConnectionStateChanged(ClientConnectionState state)

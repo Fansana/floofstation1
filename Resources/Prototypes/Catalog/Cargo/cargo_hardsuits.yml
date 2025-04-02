@@ -40,26 +40,27 @@
   category: cargoproduct-category-name-hardsuits
   group: market
 
-# Security
-# - type: cargoProduct
-#   id: SecurityShanlinTacsuit
-#   icon:
-#     sprite: Nyanotrasen/Clothing/OuterClothing/ReverseEngineering/syndicate.rsi
-#     state: icon
-#   product: CrateSecurityShanlinTacsuit
-#   cost: 17500
-#   category: cargoproduct-category-name-hardsuits
-#   group: market
+# Security     #FLOOF
+# Can't abuse em if you only got 1, good luck spamming frezon
+# type: cargoProduct
+# id: SecurityShanlinTacsuit
+# icon:
+#   sprite: Nyanotrasen/Clothing/OuterClothing/ReverseEngineering/syndicate.rsi
+#   state: icon
+# product: CrateSecurityShanlinTacsuit
+# cost: 75000
+# category: cargoproduct-category-name-hardsuits
+# group: market
 
-# - type: cargoProduct
-#   id: SecurityGuanYuTacsuit
-#   icon:
-#     sprite: Nyanotrasen/Clothing/OuterClothing/ReverseEngineering/juggernaut.rsi
-#     state: icon
-#   product: CrateSecurityGuanYuTacsuit
-#   cost: 30000
-#   category: cargoproduct-category-name-hardsuits
-#   group: market
+# type: cargoProduct   #FLOOF
+# id: SecurityGuanYuTacsuit
+# icon:
+#   sprite: Nyanotrasen/Clothing/OuterClothing/ReverseEngineering/juggernaut.rsi
+#   state: icon
+# product: CrateSecurityGuanYuTacsuit
+# cost: 125000
+# category: cargoproduct-category-name-hardsuits
+# group: market
 
 - type: cargoProduct
   id: SecurityBaghaturTacsuit
