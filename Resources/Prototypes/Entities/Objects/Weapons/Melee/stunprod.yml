@@ -25,8 +25,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Shock: 5
-  - type: ItemToggleDamageOtherOnHit
+        Shock: 10
   - type: Stunbaton
     energyPerUse: 120
   - type: MeleeWeapon
@@ -35,17 +34,18 @@
     range: 1.5
     damage:
       types:
-        Blunt: 7.5
+        Blunt: 15 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.0
-    heavyRateModifier: 1.25
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
+    heavyRateModifier: 0.8
     heavyDamageBaseModifier: 1.2
     animation: WeaponArcThrust
   - type: DamageOtherOnHit
   - type: StaminaDamageOnHit
-    damage: 22
+    damage: 44 #Floofstation - Combat doubling
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
-    damage: 22
+    damage: 44 #Floofstation - Combat doubling
     sound: /Audio/Weapons/egloves.ogg
   - type: Battery
     maxCharge: 360

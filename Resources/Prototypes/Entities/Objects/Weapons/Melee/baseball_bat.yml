@@ -12,12 +12,12 @@
     range: 1.6
     damage:
       types:
-        Blunt: 7.5
+        Blunt: 15 #Floofstation - Combat doubling
         Structural: 5
     bluntStaminaDamageFactor: 2.0
     heavyRateModifier: 2
     heavyDamageBaseModifier: 1.75
-    heavyStaminaCost: 10
+    heavyStaminaCost: 0.9 #Floofstation - Combat doubling
     maxTargets: 2
     angle: 120
     soundHit:
@@ -26,8 +26,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 4
-        Structural: 10
+        Blunt: 4 #Floofstation - Combat doubling
+        Structural: 5
   - type: DamageOtherOnHit
     staminaCost: 10
   - type: Item
@@ -78,4 +78,4 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 1
+        Blunt: 2 #Floofstation - Combat doubling

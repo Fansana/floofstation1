@@ -20,10 +20,11 @@
         volume: -3
     damage:
       types:
-        Blunt: 6
-        Piercing: 3
+        Blunt: 12 #Floofstation - Combat doubling
+        Piercing: 6 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.0
     heavyDamageBaseModifier: 1.75
+    heavyStaminaCost: 0.1 #Floofstation - Combat doubling
     maxTargets: 5
     angle: 80
   - type: DamageOtherOnHit
@@ -32,7 +33,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 5
+        Blunt: 10 #Floofstation - Combat doubling
         Structural: 30
   - type: Item
     size: Normal
@@ -66,14 +67,14 @@
     range: 1.5
     damage:
       types:
-        Blunt: 2
-        Slash: 1
+        Blunt: 4 #Floofstation - Combat doubling
+        Slash: 2 #Floofstation - Combat doubling
         Structural: 15
     bluntStaminaDamageFactor: 1
     heavyRateModifier: 1
     heavyRangeModifier: 2
     heavyDamageBaseModifier: 1
-    heavyStaminaCost: 2
+    heavyStaminaCost: 0 #Floofstation - Combat doubling
     angle: 20
   - type: DamageOtherOnHit
     staminaCost: 8

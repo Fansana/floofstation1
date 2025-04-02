@@ -19,12 +19,12 @@
     attackRate: .25
     damage:
       types:
-        Slash: 2
-        Blunt: 2
+        Slash: 4 #Floofstation - Combat doubling
+        Blunt: 4 #Floofstation - Combat doubling
         Structural: 4
     heavyRateModifier: 2
     heavyDamageBaseModifier: 1.0
-    heavyStaminaCost: 15
+    heavyStaminaCost: 1.1 #Floofstation - Combat doubling
     maxTargets: 20
     angle: 160
     soundHit:
@@ -34,8 +34,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 4
-        Structural: 4
+        Slash: 8 #Floofstation - Combat doubling
+        Structural: 8
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/chainsaw.rsi

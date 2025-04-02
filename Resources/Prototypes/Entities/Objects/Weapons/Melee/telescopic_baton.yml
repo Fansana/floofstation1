@@ -25,8 +25,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Blunt: 12
-  - type: ItemToggleDamageOtherOnHit
+        Blunt: 24 #Floofstation - Combat doubling
   - type: ItemToggleSize
     activatedSize: Normal
   - type: UseDelay
@@ -39,14 +38,12 @@
     attackRate: 1.25
     bluntStaminaDamageFactor: 1.5
     heavyDamageBaseModifier: 1.2
-    heavyStaminaCost: 5
+    heavyStaminaCost: 0.3 #Floofstation - Combat doubling
     maxTargets: 1
     angle: 40
     damage:
       types:
-        Blunt: 1
-  - type: DamageOtherOnHit
-    staminaCost: 6
+        Blunt: 2 #Floofstation - Combat doubling
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -71,4 +68,4 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Blunt: 20
+        Blunt: 40 #Floofstation - Combat doubling

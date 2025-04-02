@@ -10,11 +10,12 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: 90
-    attackRate: 1.3333
+    attackRate: 0.75
+    heavyStaminaCost: 0.1
     damage:
       types:
-        Slash: 25
-        Piercing: 15
+        Slash: 50 #Floofstation - Combat doubling
+        Piercing: 30 #Floofstation - Combat doubling
   - type: Item
     size: Normal
     sprite: Objects/Weapons/Melee/armblade.rsi

@@ -16,7 +16,7 @@
     range: 1.6
     damage:
       types:
-        Blunt: 6
+        Blunt: 12 #Floofstation - Combat doubling
     bluntStaminaDamageFactor: 2.5
     heavyRateModifier: 2
     heavyRangeModifier: 1.75
@@ -29,6 +29,6 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 2
+        Blunt: 4 #Floofstation - Combat doubling
   - type: UseDelay
     delay: 1
