@@ -18,6 +18,8 @@
     Head: MobChitinidHead
     Snout: MobHumanoidAnyMarking
     Chest: MobChitinidTorso
+    Underwear: MobHumanoidAnyMarking # Floofstation
+    Undershirt: MobHumanoidAnyMarking # Floofstation
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -41,6 +43,12 @@
   id: MobChitinidMarkingLimits
   onlyWhitelisted: true
   points:
+    Underwear: # Floofstation
+      points: 1
+      required: false
+    Undershirt: # Floofstation
+      points: 1
+      required: false
     Hair:
       points: 0
       required: false
