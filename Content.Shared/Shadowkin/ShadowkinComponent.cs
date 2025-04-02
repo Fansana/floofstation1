@@ -14,22 +14,10 @@ public sealed partial class ShadowkinComponent : Component
     public bool SleepManaRegen = true;
 
     /// <summary>
-    ///     What do edit the ManaRegenMultiplier when on Sleep.
+    ///     What do edit the ManaRegenMultiplier when on Sleep?
     /// </summary>
     [DataField]
     public float SleepManaRegenMultiplier = 4;
-
-    /// <summary>
-    ///     On MapInitEvent, will Blackeye the Shadowkin.
-    /// </summary>
-    [DataField]
-    public bool BlackeyeSpawn;
-
-    /// <summary>
-    ///     If mana is equal or lower then this value, blackeye the shadowkin.
-    /// </summary>
-    [DataField]
-    public float BlackEyeMana;
 
     /// <summary>
     ///     Set the Black-Eye Color.
@@ -42,6 +30,11 @@ public sealed partial class ShadowkinComponent : Component
     [DataField]
     public EntityUid? ShadowkinSleepAction;
 
+    // Floofstation section begin
+    /// <summary>
+    ///     If true, the shadowkin will spawn with no abilities.
+    /// </summary>
     [DataField]
-    public ProtoId<AlertPrototype> ShadowkinPowerAlert = "ShadowkinPower";
+    public bool BlackeyeSpawn = true;
+    // Floofstation section end
 }
