@@ -59,8 +59,8 @@ public sealed class StatusIconSystem : SharedStatusIconSystem
 
         if (meta.EntityLifeStage >= EntityLifeStage.Terminating)
             return list;
-
-        var ev = new GetStatusIconsEvent(list);
+        var inContainer = (meta.Flags & MetaDataFlags.InContainer) != 0;
+        var ev = new GetStatusIconsEvent(list, inContainer);
         RaiseLocalEvent(uid, ref ev);
         return ev.StatusIcons;
     }

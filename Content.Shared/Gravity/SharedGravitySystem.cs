@@ -44,7 +44,6 @@ namespace Content.Shared.Gravity
             // If grid / map has gravity
             if (EntityGridOrMapHaveGravity((uid, xform)))
                 return false;
-            }
 
             return true;
         }

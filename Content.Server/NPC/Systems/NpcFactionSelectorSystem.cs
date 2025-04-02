@@ -5,6 +5,8 @@ using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Shared.NPC.Components;
+using Content.Shared.NPC.Prototypes;
+using Content.Shared.NPC.Systems;
 
 
 namespace Content.Server.NPC.Systems;

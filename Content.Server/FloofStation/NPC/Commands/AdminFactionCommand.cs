@@ -6,6 +6,8 @@ using Robust.Shared.Toolshed;
 using Robust.Shared.Toolshed.Syntax;
 using Robust.Shared.Toolshed.TypeParsers;
 using Content.Server.NPC.Components;
+using Content.Shared.NPC.Systems;
+
 
 namespace Content.Server.FloofStation.NPC.Commands;
 
