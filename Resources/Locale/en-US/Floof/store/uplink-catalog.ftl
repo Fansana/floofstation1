@@ -7,5 +7,5 @@ uplink-Cryptobiolininjector-name = Cryptobiolin injector
 uplink-Cryptobiolininjector-desc = Made by SESWC. This item is prefilled with 20u of Cryptobiolin to help you get rid of those pesky psionic weirdo's.
 
 # Melee
-uplink-ehalberd-name = Energy halberd
-uplink-ehalberd-desc = A polarm handle with an engery based axe head to it to strike down all that is in your way. Produced by SESWC!
+uplink-energy-halberd-name = Energy halberd
+uplink-energy-halberd-desc = A polarm handle with an energy-based axe head attached to it to strike down all that is in your way. Produced by SESWC!
