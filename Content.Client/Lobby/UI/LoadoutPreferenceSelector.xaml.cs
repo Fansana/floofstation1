@@ -237,11 +237,17 @@ public sealed partial class LoadoutPreferenceSelector : Control
         });
         PreferenceButton.OnToggled += args =>
         {
+            if (args.Pressed == _preference.Selected) // Floofstation
+                return;
+
             _preference.Selected = args.Pressed;
             PreferenceChanged?.Invoke(Preference);
         };
         HeirloomButton.OnToggled += args =>
         {
+            if (args.Pressed == _preference.Selected) // Floofstation
+                return;
+
             _preference.CustomHeirloom = args.Pressed ? true : null;
             PreferenceChanged?.Invoke(Preference);
         };
