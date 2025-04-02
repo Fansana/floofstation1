@@ -93,10 +93,10 @@
     autoRechargeRate: 40
 
 - type: entity
-  name: Halberd
+  name: halberd
   parent: UnholyHalberd
-  id: Halberd
-  description: A polarm with an axe blade topped with a spike mounted on a long shaft. Produced by SESWC!
+  id: WeaponHalberd
+  description: A polarm with an axe blade, topped with a spike, mounted on a long shaft. Produced by SESWC!
   components:
   - type: MeleeRequiresWield
   - type: MeleeWeapon
