@@ -1581,6 +1581,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> WhitelistPrototypeList =
             CVarDef.Create("whitelist.prototype_list", "basicWhitelist", CVar.SERVERONLY);
 
+        /// <summary>
+        ///     The loc string to display as a disconnect reason when someone is not whitelisted.
+        /// </summary>
+        public static readonly CVarDef<string> WhitelistReason =
+            CVarDef.Create("whitelist.reason", "whitelist-not-whitelisted", CVar.SERVERONLY);
+
         /*
          * VOTE
          */
