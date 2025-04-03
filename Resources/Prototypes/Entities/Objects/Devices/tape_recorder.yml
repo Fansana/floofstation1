@@ -8,24 +8,80 @@
     sound:
       path: /Audio/Items/Handling/taperecorder_pickup.ogg
       params:
-        volume: -2
+        volume: -5
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/Handling/taperecorder_drop.ogg
       params:
-        volume: -2
+        volume: -5
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/Handling/taperecorder_drop.ogg
       params:
-        volume: -2
+        volume: -5
   - type: VoiceTapeRecorder
+    startSound:
+      path: /Audio/Items/TapeRecorder/taperecorder_play.ogg
+      params:
+        volume: -10
+    stopSound:
+      path: /Audio/Items/TapeRecorder/taperecorder_stop.ogg
+      params:
+        volume: -10
+    insertSound:
+      path: /Audio/Items/TapeRecorder/taperecorder_close.ogg
+      params:
+        volume: -10
+    ejectSound:
+      path: /Audio/Items/TapeRecorder/taperecorder_open.ogg
+      params:
+        volume: -10
+    seekSound:
+      path: /Audio/Items/TapeRecorder/taperecorder_seek.ogg
+      params:
+        volume: -10
   - type: Sprite
     sprite: Objects/Devices/tape_recorder.rsi
     layers:
     - state: icon
-      visible: true
-    - state: playing
-      visible: false
-    - state: recording
-      visible: false
+      map: [ "state" ]
+  - type: AmbientSound
+    enabled: false
+    volume: -20
+    range: 2
+    sound:
+      path: /Audio/Items/TapeRecorder/taperecorder_hiss_mid.ogg
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.VoiceTapeRecorder.RecorderVisuals.State:
+        state:
+          Idle: { state: icon }
+          Recording: { state: recording }
+          Playing: { state: playing }
+          Ejected: { state: ejected }
+  - type: ContainerContainer
+    containers:
+      recorder-cassette: !type:ContainerSlot
+
+- type: entity
+  name: cassette
+  description: Stores recordings from a tape recorder.
+  parent: BaseItem
+  id: VoiceTapeRecorderCassette
+  components:
+  - type: VoiceTapeRecorderCassette
+    capacity: 300
+  - type: Sprite
+    sprite: Objects/Devices/cassette.rsi
+    layers:
+    - state: white
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          blue: ""
+          purple: ""
+          red: ""
+          white: ""
+          yellow: ""

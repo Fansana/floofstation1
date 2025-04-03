@@ -1,10 +1,21 @@
 - files:
   - "taperecorder_close.ogg"
+  - "taperecorder_open.ogg"
+  license: "CC-BY-SA-3.0"
+  copyright: "Bertrof@freesound.org"
+  source: "https://freesound.org/people/Bertrof/sounds/351567/"
+
+- files:
   - "taperecorder_hiss_mid.ogg"
   - "taperecorder_hiss_start.ogg"
-  - "taperecorder_open.ogg"
+  license: "CC0-1.0"
+  copyright: "ovejota@freesound.org"
+  source: "https://freesound.org/people/ovejota/sounds/541643/"
+
+- files:
   - "taperecorder_play.ogg"
   - "taperecorder_stop.ogg"
-  license: "CC-BY-SA-3.0"
-  copyright: "Taken from ParadiseSS13."
-  source: "https://github.com/ParadiseSS13/Paradise/tree/2429fa5674d1f95801e6242075e448582314c56c/sound/items/taperecorder"
+  - "taperecorder_seek.ogg"
+  license: "CC-SAMPLING-PLUS-1.0"
+  copyright: "Pogotron@freesound.org"
+  source: "https://freesound.org/people/Bertrof/sounds/351567/"
