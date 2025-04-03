@@ -1,0 +1,22 @@
+- type: polymorph
+  id: ArtifactMothroach
+  configuration:
+    entity: MobMothroach
+    forced: true
+    transferName: true
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 20
+
+- type: polymorph
+  id: ArtifactKobold
+  configuration:
+    entity: MobKobold
+    forced: true
+    transferName: true
+    allowRepeatedMorphs: true
+    inventory: Transfer
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 20

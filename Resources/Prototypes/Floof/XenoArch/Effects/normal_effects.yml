@@ -1,0 +1,107 @@
+- type: artifactEffect # Sex toy spawns
+  id: EffectLewdToySpawn
+  targetDepth: 0
+  effectHint: artifact-effect-hint-creation
+  components:
+  - type: SpawnArtifact
+    maxSpawns: 20
+    spawns:
+    - id: LewdLootSpawnerToys
+      amount: 1
+      maxAmount: 2
+  - type: ChemicalPuddleArtifact
+    chemicalSolution:
+      maxVol: 100
+      canReact: false
+    possibleChemicals:
+    - Cum
+    - NaturalLubricant
+    - Pomelustine
+
+- type: artifactEffect # Sex toy spawns
+  id: EffectLewdKinkSpawn
+  targetDepth: 0
+  effectHint: artifact-effect-hint-creation
+  components:
+  - type: SpawnArtifact
+    maxSpawns: 20
+    spawns:
+    - id: LewdLootSpawnerKinky
+      amount: 1
+      maxAmount: 2
+  - type: ChemicalPuddleArtifact
+    chemicalSolution:
+      maxVol: 100
+      canReact: false
+    possibleChemicals:
+    - Blood
+    - Cum
+    - NaturalLubricant
+    - Pomelustine
+
+- type: artifactEffect
+  id: EffectHornyFeeling
+  targetDepth: 0
+  effectHint: artifact-effect-hint-mental
+  components:
+  - type: TelepathicArtifact
+    messages:
+    - reagent-effect-aphrodisiac-mild1
+    - reagent-effect-aphrodisiac-mild2
+    - reagent-effect-aphrodisiac-mild3
+    - reagent-effect-aphrodisiac-mild4
+    - reagent-effect-aphrodisiac-mild5
+    - reagent-effect-aphrodisiac-normal1
+    - reagent-effect-aphrodisiac-normal2
+    - reagent-effect-aphrodisiac-normal3
+    - reagent-effect-aphrodisiac-normal4
+    - reagent-effect-aphrodisiac-normal5
+    - reagent-effect-aphrodisiac-strong1
+    - reagent-effect-aphrodisiac-strong2
+    - reagent-effect-aphrodisiac-strong3
+    drastic:
+    - reagent-effect-aphrodisiac-mildoverdose
+    - reagent-effect-aphrodisiac-normaloverdose1
+    - reagent-effect-aphrodisiac-normaloverdose2
+    - reagent-effect-aphrodisiac-normaloverdose3
+    - reagent-effect-aphrodisiac-normaloverdose4
+    - reagent-effect-aphrodisiac-normaloverdose5
+    - reagent-effect-aphrodisiac-normaloverdose6
+    - reagent-effect-aphrodisiac-strongoverdose1
+    - reagent-effect-aphrodisiac-strongoverdose2
+    - reagent-effect-aphrodisiac-strongoverdose3
+    - reagent-effect-aphrodisiac-strongoverdose4
+
+- type: artifactEffect
+  id: EffectPolyMothroach
+  targetDepth: 2
+  effectHint: artifact-effect-hint-polymorph
+  components:
+  - type: PolyOthersArtifact
+    polymorphPrototypeName: ArtifactMothroach
+
+- type: artifactEffect
+  id: EffectPolyKobold
+  targetDepth: 2
+  effectHint: artifact-effect-hint-polymorph
+  components:
+  - type: PolyOthersArtifact
+    polymorphPrototypeName: ArtifactKobold
+
+- type: artifactEffect
+  id: EffectNightclub
+  targetDepth: 3
+  effectHint: artifact-effect-hint-environment
+  components:
+  - type: NightclubArtifact
+    replacements:
+    - PoweredLightColoredBlack
+    - PoweredWarmSmallLight
+  - type: SpawnArtifact
+    maxSpawns: 1
+    spawns:
+    - id: StripperPole
+      amount: 1
+      maxAmount: 1
+  - type: ReplaceFloorArtifact
+    replacement: FloorEighties
