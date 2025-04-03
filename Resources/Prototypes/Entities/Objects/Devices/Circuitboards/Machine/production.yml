@@ -1727,21 +1727,3 @@
       materialRequirements:
         Steel: 5
         Cable: 1
-
-# Floof - early ported
-- type: entity
-  parent: BaseMachineCircuitboard
-  id: StationAnchorCircuitboard
-  name: station anchor machine board
-  description: A machine printed circuit board for a station anchor.
-  components:
-  - type: MachineBoard
-    prototype: StationAnchor
-    requirements:
-      Capacitor: 4
-      MatterBin: 3
-    materialRequirements:
-      Steel: 10
-      Glass: 5
-      CableHV: 8
-      Uranium: 2

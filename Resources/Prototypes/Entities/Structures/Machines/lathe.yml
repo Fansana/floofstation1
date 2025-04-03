@@ -16,7 +16,7 @@
         mask:
         - MachineMask
         layer:
-          - MachineLayer  
+          - MachineLayer
   - type: Lathe
   - type: MaterialStorage
   - type: Destructible
@@ -203,7 +203,6 @@
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
       - ToolRadioHandheld # Floofstation
-      - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot

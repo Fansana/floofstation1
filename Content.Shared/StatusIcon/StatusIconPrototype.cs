@@ -77,6 +77,7 @@ public partial class StatusIconData : IComparable<StatusIconData>
 /// <summary>
 /// <see cref="StatusIconData"/> but in new convenient prototype form!
 /// </summary>
+[Prototype("statusIcon")]
 public abstract partial class StatusIconPrototype : StatusIconData, IPrototype
 {
     /// <inheritdoc/>
@@ -203,6 +204,22 @@ public sealed partial class SsdIconPrototype : StatusIconPrototype, IInheritingP
 {
     /// <inheritdoc />
     [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<SsdIconPrototype>))]
+    public string[]? Parents { get; }
+
+    /// <inheritdoc />
+    [NeverPushInheritance]
+    [AbstractDataField]
+    public bool Abstract { get; }
+}
+
+/// <summary>
+/// StatusIcons for the Hypno indicator
+/// </summary>
+[Prototype]
+public sealed partial class HypnoIconPrototype : StatusIconPrototype, IInheritingPrototype
+{
+    /// <inheritdoc />
+    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<HypnoIconPrototype>))]
     public string[]? Parents { get; }
 
     /// <inheritdoc />

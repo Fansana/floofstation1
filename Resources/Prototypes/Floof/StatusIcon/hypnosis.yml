@@ -1,11 +1,11 @@
-- type: statusIcon
+- type: hypnoIcon
   id: HypnoMaster
   priority: 11
   icon:
     sprite: /Textures/Floof/Interface/Misc/hypno_icons.rsi
     state: master
 
-- type: statusIcon
+- type: hypnoIcon
   id: HypnoSubject
   priority: 11
   icon:

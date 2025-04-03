@@ -1003,14 +1003,3 @@
   materials:
     Steel: 100
     Glass: 500
-
-- type: latheRecipe
-  id: StationAnchorCircuitboard
-  result: StationAnchorCircuitboard
-  category: Circuitry
-  completetime: 8
-  materials:
-    Steel: 100
-    Glass: 900
-    Gold: 100
-

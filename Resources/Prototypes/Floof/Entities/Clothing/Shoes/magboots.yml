@@ -13,7 +13,7 @@
 
 - type: entity
   id: ActionToggleMagbootsSecurity
-  parent: ActionBaseToggleMagboots
+  parent: ActionToggleMagboots
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction

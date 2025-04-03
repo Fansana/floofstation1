@@ -135,19 +135,6 @@
     autoRechargeRate: 24
 
 - type: entity
-  name: energy shotgun
-  parent: BaseWeaponEnergyShotgun
-  id: WeaponEnergyShotgun
-  components:
-  - type: GunRequiresWield
-  - type: Wieldable
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: WeaponEnergyShotgun
-
-- type: entity
   suffix: Robot
   parent: BaseWeaponEnergyShotgun
   id: WeaponBorgEnergyShotgun
