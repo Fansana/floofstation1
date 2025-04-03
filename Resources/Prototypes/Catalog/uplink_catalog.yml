@@ -630,7 +630,6 @@
     Telecrystal: 6
   categories:
   - UplinkChemicals
-  saleLimit: 1
 
 - type: listing
   id: UplinkCombatMedkit
@@ -644,7 +643,6 @@
     Telecrystal: 5
   categories:
   - UplinkChemicals
-  saleLimit: 1
 
 - type: listing
   id: UplinkCombatMedipen
@@ -658,7 +656,6 @@
     Telecrystal: 4
   categories:
   - UplinkChemicals
-  saleLimit: 1
 
 - type: listing
   id: UplinkStimpack
@@ -672,7 +669,6 @@
     Telecrystal: 4
   categories:
   - UplinkChemicals
-  saleLimit: 1
 
 - type: listing
   id: UplinkStimkit
@@ -686,7 +682,6 @@
     Telecrystal: 12
   categories:
   - UplinkChemicals
-  saleLimit: 1
 
 - type: listing
   id: UplinkCigarettes
