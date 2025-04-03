@@ -1,4 +1,6 @@
-using Content.Shared.Language;
+using Robust.Shared.Audio;
+using Robust.Shared.Containers;
+using Content.Shared.VoiceTapeRecorder;
 
 namespace Content.Server.VoiceTapeRecorder;
 
@@ -6,27 +8,23 @@ namespace Content.Server.VoiceTapeRecorder;
 [Access(typeof(VoiceTapeRecorderSystem))]
 public sealed partial class VoiceTapeRecorderComponent : Component
 {
-    [ViewVariables(VVAccess.ReadWrite)]
+    public ContainerSlot Cassette = default!;
     public RecorderState State = RecorderState.Idle;
-    [ViewVariables(VVAccess.ReadOnly)]
-    public List<RecordedMessage> RecordedMessages = [];
-    [ViewVariables(VVAccess.ReadOnly)]
-    public TimeSpan RecordedSoFar = TimeSpan.Zero;
-    [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan PlayRecordingStarted = TimeSpan.Zero;
-    [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan WhenToSayNextMessage = TimeSpan.Zero;
-    [ViewVariables(VVAccess.ReadOnly)]
+    public bool SkipSilence = false;
+    public TimeSpan TimeShift = TimeSpan.Zero;
     public int NextMessageIndex = 0;
-    [ViewVariables(VVAccess.ReadWrite)]
     public int ListenRange = 4;
-    [ViewVariables(VVAccess.ReadWrite)]
     public bool HighVolume = false;
-}
-
-public enum RecorderState
-{
-    Idle,
-    Recording,
-    Playing
+    [DataField]
+    public SoundSpecifier? StartSound;
+    [DataField]
+    public SoundSpecifier? StopSound;
+    [DataField]
+    public SoundSpecifier? InsertSound;
+    [DataField]
+    public SoundSpecifier? EjectSound;
+    [DataField]
+    public SoundSpecifier? SeekSound;
 }
