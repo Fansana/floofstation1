@@ -75,6 +75,19 @@
 
 
 # Outer
+- type: loadout
+  id: LoadoutCorpsmanLongcoat
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingLongcoatBrigmedic
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Shoes
 
