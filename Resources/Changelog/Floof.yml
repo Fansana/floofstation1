@@ -3704,3 +3704,12 @@ Entries:
   id: 397
   time: '2025-04-02T16:45:31.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/715
+- author: Southbridge
+  changes:
+    - type: Add
+      message: >-
+        Artifacts now have more effects, including a brand new "Nightclub"
+        effect.
+  id: 398
+  time: '2025-04-03T05:12:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/704
