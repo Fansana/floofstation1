@@ -4,6 +4,8 @@
   parent: BaseItem
   id: VoiceTapeRecorder
   components:
+  - type: Item
+    size: Small
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/Items/Handling/taperecorder_pickup.ogg
@@ -70,6 +72,8 @@
   parent: BaseItem
   id: VoiceTapeRecorderCassette
   components:
+  - type: Item
+    size: Tiny
   - type: VoiceTapeRecorderCassette
     capacity: 600 # Ten minutes
   - type: Sprite
