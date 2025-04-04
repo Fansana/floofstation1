@@ -11,7 +11,7 @@ public sealed partial class VoiceTapeRecorderComponent : Component
     public ContainerSlot Cassette = default!;
     public RecorderState State = RecorderState.Idle;
     public TimeSpan PlayRecordingStarted = TimeSpan.Zero;
-    public TimeSpan WhenToDoSomething = TimeSpan.Zero;
+    public TimeSpan WhenNextEvent = TimeSpan.Zero;
     public bool SkipSilence = false;
     public TimeSpan TimeShift = TimeSpan.Zero;
     public int NextMessageIndex = 0;

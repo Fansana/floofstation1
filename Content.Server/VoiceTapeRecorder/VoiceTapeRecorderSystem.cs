@@ -31,7 +31,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     [Dependency] private readonly SharedAmbientSoundSystem _ambientSoundSystem = default!;
     [Dependency] private readonly ContainerSystem _containerSystem = default!;
 
-    private TimeSpan? _nextRecorderCheck;
+    private TimeSpan? _whenNextEvent;
 
     public override void Initialize()
     {
@@ -81,9 +81,9 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             {
                 when = component.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar;
             }
-            component.WhenToDoSomething = when;
-            if (_nextRecorderCheck is null || _nextRecorderCheck > when)
-                _nextRecorderCheck = when;
+            component.WhenNextEvent = when;
+            if (_whenNextEvent is null || _whenNextEvent > when)
+                _whenNextEvent = when;
         }
     }
 
@@ -131,24 +131,24 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        if (_nextRecorderCheck is null) return;
+        if (_whenNextEvent is null) return;
         var currentTime = _timing.CurTime;
-        if (currentTime < _nextRecorderCheck) return;
-        _nextRecorderCheck = null;
+        if (currentTime < _whenNextEvent) return;
+        _whenNextEvent = null;
 
         var query = EntityQueryEnumerator<VoiceTapeRecorderComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
             if (component.State == RecorderState.Idle) continue;
-            if (currentTime >= component.WhenToDoSomething)
+            if (currentTime >= component.WhenNextEvent)
             {
                 switch (component.State)
                 {
                     case RecorderState.Playing:
-                        HandlePlayingRecorder(uid, component);
+                        OnPlayingEvent(uid, component);
                         break;
                     case RecorderState.Recording:
-                        HandleRecordingRecorder(uid, component);
+                        OnRecordingEvent(uid, component);
                         break;
                     default: break;
                 }
@@ -163,12 +163,12 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         }
     }
 
-    private void HandleRecordingRecorder(
+    private void OnRecordingEvent(
         EntityUid uid,
         VoiceTapeRecorderComponent component
     ) => ChangeState(uid, component, RecorderState.Idle);
 
-    private void HandlePlayingRecorder(
+    private void OnPlayingEvent(
         EntityUid uid,
         VoiceTapeRecorderComponent component
     )
