@@ -2,7 +2,7 @@ action-name-hypno = Psionic Hypnosis
 action-description-hypno = You are capable to mentally interfere with people's thoughts, and make them do your bidding.
 
 hypnosis-power-initialization-feedback = I am able to place other in a trance and have them do my bidding, cementing my will in the deepest parts of their mind.
-hypnosis-power-feedback = The air around {CAPITALIZE($entity)} shimmers hypnotically from the force of their personality"
+hypnosis-power-feedback = The air around {CAPITALIZE($entity)} shimmers hypnotically from the force of their personality.
 
 hypno-already-under = {CAPITALIZE($target)} is already under hypnosis.
 examined-hypno = Seems completely content with everything

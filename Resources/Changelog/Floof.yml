@@ -3648,3 +3648,68 @@ Entries:
   id: 391
   time: '2025-03-30T09:33:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/691
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged about two months worth of content from upstream- *incoherent
+        screaming*
+    - type: Add
+      message: >-
+        Kill objectives on regular crew are back, but changed to "teach a
+        lesson" (upstream change)
+    - type: Add
+      message: >-
+        Identical chat messages will now stack together in the chat panel
+        (upstream change, can be disabled in settings)
+  id: 392
+  time: '2025-04-02T00:31:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/574
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Mining drill no longer used stamina
+  id: 393
+  time: '2025-04-02T14:57:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/711
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Player examine tooltips will persist even if they go out of line of
+        sight.
+  id: 394
+  time: '2025-04-02T16:03:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/699
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Fixed loadouts being unusable unless you have 2x their loadout point
+        cost.
+  id: 395
+  time: '2025-04-02T16:06:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/710
+- author: VividPups
+  changes:
+    - type: Remove
+      message: 'Blukie suits from cargo '
+  id: 396
+  time: '2025-04-02T16:31:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/712
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: DarkSwap EE Issues.
+  id: 397
+  time: '2025-04-02T16:45:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/715
+- author: Southbridge
+  changes:
+    - type: Add
+      message: >-
+        Artifacts now have more effects, including a brand new "Nightclub"
+        effect.
+  id: 398
+  time: '2025-04-03T05:12:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/704

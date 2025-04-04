@@ -226,7 +226,7 @@
       removable: false
     - type: InnatePsionicPowers
       powersToAdd:
-        - ShadowkinPowers
+        - DarkSwapPower
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
