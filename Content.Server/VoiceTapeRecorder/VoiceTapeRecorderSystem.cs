@@ -139,8 +139,20 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         var query = EntityQueryEnumerator<VoiceTapeRecorderComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
-            HandlePlayingRecorder(currentTime, uid, component);
-            HandleRecordingRecorder(currentTime, uid, component);
+            if (component.State == RecorderState.Idle) continue;
+            if (currentTime >= component.WhenToDoSomething)
+            {
+                switch (component.State)
+                {
+                    case RecorderState.Playing:
+                        HandlePlayingRecorder(uid, component);
+                        break;
+                    case RecorderState.Recording:
+                        HandleRecordingRecorder(uid, component);
+                        break;
+                    default: break;
+                }
+            }
             var timeShift = component.TimeShift;
             ScheduleNextRecorder(component);
             if (timeShift != component.TimeShift)
@@ -152,47 +164,27 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     }
 
     private void HandleRecordingRecorder(
-        TimeSpan currentTime,
         EntityUid uid,
         VoiceTapeRecorderComponent component
-    )
-    {
-        if (component.State != RecorderState.Recording) return;
-        if (
-            currentTime >= component.WhenToDoSomething &&
-            TryGetCassetteComponent(component, out var cassette) &&
-            currentTime >= component.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar
-        )
-            ChangeState(
-                uid,
-                component,
-                RecorderState.Idle
-            );
-    }
+    ) => ChangeState(uid, component, RecorderState.Idle);
 
     private void HandlePlayingRecorder(
-        TimeSpan currentTime,
         EntityUid uid,
         VoiceTapeRecorderComponent component
     )
     {
-        if (component.State != RecorderState.Playing) return;
         if (
-            currentTime >= component.WhenToDoSomething &&
-            TryGetCassetteComponent(component, out var cassette)
-        )
+            TryGetCassetteComponent(component, out var cassette) &&
+            component.NextMessageIndex < cassette.RecordedMessages.Count)
         {
-            if (component.NextMessageIndex < cassette.RecordedMessages.Count)
-            {
-                Impersonate(uid, component,
-                    cassette.RecordedMessages[component.NextMessageIndex++]
-                );
-            }
-            else
-            {
-                //Say(uid, component, Loc.GetString("voice-tape-recorder-end-of-tape"));
-                ChangeState(uid, component, RecorderState.Idle);
-            }
+            Impersonate(uid, component,
+                cassette.RecordedMessages[component.NextMessageIndex++]
+            );
+        }
+        else
+        {
+            //Say(uid, component, Loc.GetString("voice-tape-recorder-end-of-tape"));
+            ChangeState(uid, component, RecorderState.Idle);
         }
     }
 
