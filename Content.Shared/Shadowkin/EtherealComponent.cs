@@ -29,7 +29,7 @@ public sealed partial class EtherealComponent : Component
 
     /// Drain Mana if this entity is psionic?
     [DataField]
-    public bool DrainMana = true;
+    public bool DrainMana = false;
 
     public List<EntityUid> DarkenedLights = new();
 
