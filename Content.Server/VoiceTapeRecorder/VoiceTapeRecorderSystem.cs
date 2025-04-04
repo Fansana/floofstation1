@@ -31,7 +31,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     [Dependency] private readonly SharedAmbientSoundSystem _ambientSoundSystem = default!;
     [Dependency] private readonly ContainerSystem _containerSystem = default!;
 
-    private TimeSpan? _nextPlayCheck;
+    private TimeSpan? _nextRecorderCheck;
 
     public override void Initialize()
     {
@@ -49,28 +49,41 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     public void ScheduleNextRecorder(VoiceTapeRecorderComponent component)
     {
-        if (TryGetCassetteComponent(component, out var cassette))
+        if (
+            TryGetCassetteComponent(component, out var cassette) &&
+            (
+                component.State == RecorderState.Playing ||
+                component.State == RecorderState.Recording
+            )
+        )
         {
             var offset = component.PlayRecordingStarted - component.TimeShift;
             TimeSpan when;
-            if (component.NextMessageIndex < cassette.RecordedMessages.Count)
-                when = offset + cassette.RecordedMessages[component.NextMessageIndex].When;
-            else
-                when = offset + cassette.RecordedSoFar;
-
-            if (component.SkipSilence)
+            if (component.State == RecorderState.Playing)
             {
-                var currentTime = _timing.CurTime;
-                var diff = when - currentTime;
-                if (diff > _maxSilence)
+                if (component.NextMessageIndex < cassette.RecordedMessages.Count)
+                    when = offset + cassette.RecordedMessages[component.NextMessageIndex].When;
+                else
+                    when = offset + cassette.RecordedSoFar;
+
+                if (component.SkipSilence)
                 {
-                    when = currentTime + _maxSilence;
-                    component.TimeShift += diff - _maxSilence;
+                    var currentTime = _timing.CurTime;
+                    var diff = when - currentTime;
+                    if (diff > _maxSilence)
+                    {
+                        when = currentTime + _maxSilence;
+                        component.TimeShift += diff - _maxSilence;
+                    }
                 }
             }
-            component.WhenToSayNextMessage = when;
-            if (_nextPlayCheck is null || _nextPlayCheck > when)
-                _nextPlayCheck = when;
+            else // Recording
+            {
+                when = component.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar;
+            }
+            component.WhenToDoSomething = when;
+            if (_nextRecorderCheck is null || _nextRecorderCheck > when)
+                _nextRecorderCheck = when;
         }
     }
 
@@ -118,32 +131,16 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        if (_nextPlayCheck is null) return;
+        if (_nextRecorderCheck is null) return;
         var currentTime = _timing.CurTime;
-        if (currentTime < _nextPlayCheck) return;
-        _nextPlayCheck = null;
+        if (currentTime < _nextRecorderCheck) return;
+        _nextRecorderCheck = null;
 
         var query = EntityQueryEnumerator<VoiceTapeRecorderComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
-            if (component.State != RecorderState.Playing) continue;
-            if (
-                currentTime >= component.WhenToSayNextMessage &&
-                TryGetCassetteComponent(component, out var cassette)
-            )
-            {
-                if (component.NextMessageIndex < cassette.RecordedMessages.Count)
-                {
-                    Impersonate(uid, component,
-                        cassette.RecordedMessages[component.NextMessageIndex++]
-                    );
-                }
-                else
-                {
-                    //Say(uid, component, Loc.GetString("voice-tape-recorder-end-of-tape"));
-                    ChangeState(uid, component, RecorderState.Idle);
-                }
-            }
+            HandlePlayingRecorder(currentTime, uid, component);
+            HandleRecordingRecorder(currentTime, uid, component);
             var timeShift = component.TimeShift;
             ScheduleNextRecorder(component);
             if (timeShift != component.TimeShift)
@@ -151,6 +148,43 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                     component.SeekSound,
                     uid
                 );
+        }
+    }
+
+    private void HandleRecordingRecorder(TimeSpan currentTime, EntityUid uid, VoiceTapeRecorderComponent component)
+    {
+        if (component.State != RecorderState.Recording) return;
+        if (
+            currentTime >= component.WhenToDoSomething &&
+            TryGetCassetteComponent(component, out var cassette) &&
+            currentTime >= component.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar
+        )
+            ChangeState(
+                uid,
+                component,
+                RecorderState.Idle
+            );
+    }
+
+    private void HandlePlayingRecorder(TimeSpan currentTime, EntityUid uid, VoiceTapeRecorderComponent component)
+    {
+        if (component.State != RecorderState.Playing) return;
+        if (
+            currentTime >= component.WhenToDoSomething &&
+            TryGetCassetteComponent(component, out var cassette)
+        )
+        {
+            if (component.NextMessageIndex < cassette.RecordedMessages.Count)
+            {
+                Impersonate(uid, component,
+                    cassette.RecordedMessages[component.NextMessageIndex++]
+                );
+            }
+            else
+            {
+                //Say(uid, component, Loc.GetString("voice-tape-recorder-end-of-tape"));
+                ChangeState(uid, component, RecorderState.Idle);
+            }
         }
     }
 
@@ -254,8 +288,11 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                 component.NextMessageIndex = 0;
                 ScheduleNextRecorder(component);
             }
-            else if (to == RecorderState.Recording)
+            else // Recording
+            {
                 EnsureComp<ActiveListenerComponent>(uid).Range = component.ListenRange;
+                ScheduleNextRecorder(component);
+            }
         }
         if (to != RecorderState.Recording)
             RemCompDeferred<ActiveListenerComponent>(uid);
