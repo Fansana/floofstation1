@@ -151,7 +151,11 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         }
     }
 
-    private void HandleRecordingRecorder(TimeSpan currentTime, EntityUid uid, VoiceTapeRecorderComponent component)
+    private void HandleRecordingRecorder(
+        TimeSpan currentTime,
+        EntityUid uid,
+        VoiceTapeRecorderComponent component
+    )
     {
         if (component.State != RecorderState.Recording) return;
         if (
@@ -166,7 +170,11 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             );
     }
 
-    private void HandlePlayingRecorder(TimeSpan currentTime, EntityUid uid, VoiceTapeRecorderComponent component)
+    private void HandlePlayingRecorder(
+        TimeSpan currentTime,
+        EntityUid uid,
+        VoiceTapeRecorderComponent component
+    )
     {
         if (component.State != RecorderState.Playing) return;
         if (
@@ -199,7 +207,11 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         ChangeState(uid, component, component.State);
     }
 
-    private void OnListen(EntityUid uid, VoiceTapeRecorderComponent component, ListenEvent args)
+    private void OnListen(
+        EntityUid uid,
+        VoiceTapeRecorderComponent component,
+        ListenEvent args
+    )
     {
         // Name and Speech finding ripped from Content.Server.Chat.Systems.SendEntitySpeak
         var speech = _chat.GetSpeechVerb(args.Source, args.Message);
@@ -378,7 +390,6 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             TryGetCassette(component, out var ent) &&
             TryComp(ent, out cassette);
     }
-
 
     private void EjectCassette(
         EntityUid uid,
