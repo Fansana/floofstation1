@@ -8,12 +8,12 @@
     sound:
       path: /Audio/Items/Handling/taperecorder_pickup.ogg
       params:
-        volume: -5
+        volume: -10
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/Handling/taperecorder_drop.ogg
       params:
-        volume: -5
+        volume: -10
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/Handling/taperecorder_drop.ogg
@@ -71,7 +71,7 @@
   id: VoiceTapeRecorderCassette
   components:
   - type: VoiceTapeRecorderCassette
-    capacity: 300
+    capacity: 600 # Ten minutes
   - type: Sprite
     sprite: Objects/Devices/cassette.rsi
     layers:
