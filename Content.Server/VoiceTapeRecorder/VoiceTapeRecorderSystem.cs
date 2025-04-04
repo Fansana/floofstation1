@@ -240,8 +240,6 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         if (!Resolve(uid, ref appearance, false))
             return;
 
-        // Ejected is a special case. RecorderState doesn't have a Ejected state
-        // so specify the Ejected layer explicitly.
         if (TryGetCassette(component, out _))
             _appearance.SetData(uid, RecorderVisuals.State, component.State, appearance);
         else
