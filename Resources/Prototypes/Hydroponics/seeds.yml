@@ -1223,11 +1223,11 @@
     Pomelustine:
       Min: 5
       Max: 30
-      potencyDivisor: 10
+      PotencyDivisor: 10
     Nutriment:
       Min: 1
       Max: 10
-      potencyDivisor: 25
+      PotencyDivisor: 25
 
 - type: seed
   id: ambrosiaVulgaris
