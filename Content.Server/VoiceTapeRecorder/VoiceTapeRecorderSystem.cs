@@ -51,10 +51,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     {
         if (
             TryGetCassetteComponent(component, out var cassette) &&
-            (
-                component.State == RecorderState.Playing ||
-                component.State == RecorderState.Recording
-            )
+            component.State != RecorderState.Idle
         )
         {
             var offset = component.PlayRecordingStarted - component.TimeShift;
@@ -281,7 +278,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         )
             cassette.RecordedSoFar = cassette.RecordedSoFar + _timing.CurTime - component.PlayRecordingStarted;
 
-        if (to == RecorderState.Recording || to == RecorderState.Playing)
+        if (to != RecorderState.Idle)
         {
             component.TimeShift = TimeSpan.Zero;
             component.PlayRecordingStarted = _timing.CurTime;
