@@ -38,3 +38,17 @@
   - !type:CharacterJobRequirement
     jobs:
     - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutCommandHoSEnergySheath
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutHeadOfSecurityWeapon
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+  items:
+  - ClothingBeltEnergySheathFilledHoS
