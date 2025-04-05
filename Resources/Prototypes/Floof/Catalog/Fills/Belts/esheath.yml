@@ -12,6 +12,7 @@
   id: ClothingBeltEnergySheathFilledHoS
   parent: ClothingBeltEnergySheath
   suffix: Filled
+  categories: [ HideSpawnMenu ]
   components:
   - type: ContainerFill
     containers:
