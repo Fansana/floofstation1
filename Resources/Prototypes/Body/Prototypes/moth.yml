@@ -13,7 +13,7 @@
     torso:
       part: TorsoMoth
       organs:
-        heart: OrganAnimalHeart
+        heart: OrganHumanHeart # Floofstation - let Moths have their tea and coffee!!
         lungs: OrganHumanLungs
         stomach: OrganMothStomach
         liver: OrganAnimalLiver
