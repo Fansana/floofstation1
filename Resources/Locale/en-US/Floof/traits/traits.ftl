@@ -119,3 +119,13 @@ trait-name-NaturalNekomimetic = Natural Nekomimetic Speaker
 trait-description-NaturalNekomimetic =
     To the casual observer, this language is an incomprehensible mess of broken Japanese. To the Felinids and Oni, it's somehow comprehensible.
     Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
+
+trait-name-CulinaryAdaptationTheobromine = Culinary Adaptation (Theobromine)
+trait-description-CulinaryAdaptationTheobromine =
+    Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize theobromine.
+    You can eat chocolate and drink coffee without being poisoned by it!
+
+trait-name-CulinaryAdaptationAllicin = Culinary Adaptation (Allicin)
+trait-description-CulinaryAdaptationAllicin =
+    Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize allicin.
+    You can eat garlic and onions without being poisoned by it!
