@@ -26,7 +26,7 @@
   - type: Pda
     id: BrigmedicIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -73,7 +73,7 @@
         tags:
         - Write
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSpaceLaw
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -120,7 +120,7 @@
         tags:
         - Write
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSpaceLaw
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -167,7 +167,7 @@
         tags:
         - Write
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSpaceLaw
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:

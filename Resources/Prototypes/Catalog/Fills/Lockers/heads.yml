@@ -314,7 +314,7 @@
       - id: HoSIDCard # Delta-V
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
-      - id: HyperlinkBookSpaceLaw
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -345,7 +345,7 @@
       - id: HoSIDCard # Delta-V
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
-      - id: HyperlinkBookSpaceLaw
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerFreezerVaultFilled

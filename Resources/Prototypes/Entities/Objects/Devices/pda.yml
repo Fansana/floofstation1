@@ -188,7 +188,7 @@
   - type: Pda
     id: SecurityCadetIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -492,7 +492,7 @@
         tags:
         - Write
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSpaceLaw
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -851,7 +851,7 @@
   - type: Pda
     id: HoSIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -881,7 +881,7 @@
   - type: Pda
     id: HoSIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -911,7 +911,7 @@
   - type: Pda
     id: WardenIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -941,7 +941,7 @@
   - type: Pda
     id: SecurityIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -1253,7 +1253,7 @@
   - type: Pda
     id: DetectiveIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
@@ -1387,7 +1387,7 @@
   - type: Pda
     id: SeniorOfficerIDCard
     bookSlot: # Frontier
-      startingItem: HyperlinkBookSecuritySop
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
       priority: -2
       whitelist:
         tags:
