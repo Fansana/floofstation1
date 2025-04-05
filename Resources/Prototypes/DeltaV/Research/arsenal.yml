@@ -12,7 +12,10 @@
   recipeUnlocks:
   - CartridgeSpecialHoly
   - CartridgeSpecialMindbreaker
+  - ShellShotgunHoly
+  - BoxShellHoly
   - ShellSoulbreaker # Nyanotrasen - Soulbreaker shotgun ammo
+  - BoxShellSoulbreaker
 
 - type: technology
   id: EnergyGuns
