@@ -36,7 +36,7 @@
   parent: BaseHyperlinkBook
   id: HyperlinkBookSecuritySop
   name: security operations manual
-  description: A book containing the standard operating procedures of the security department, reinforced with silver rivets. A notice on the cover reads "PROPERTY OF NANOTRASEN SECTOR SECURITY, FOR INTERNAL USE ONLY".
+  description: A book containing the standard operating procedures of the security department, reinforced with silver rivets. It is written in a cipher only security or justice personnel will understand.
   components:
   - type: Sprite
     sprite: Objects/Misc/books.rsi
