@@ -25,20 +25,6 @@
         - Warden
   items:
     - ClothingHeadHatBeretWarden
-    
-- type: loadout
-  id: LoadoutClothingHeadHatWarden # Floof
-  category: JobsSecurityWarden
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutWardenHead
-    - !type:CharacterJobRequirement
-      jobs:
-        - Warden
-  items:
-    - ClothingHeadHatWarden
 
 # Id
 
@@ -60,50 +46,8 @@
         - Warden
   items:
     - ClothingOuterCoatWarden
-    
-- type: loadout
-  id: LoadoutClothingOuterWinterWarden # Floof
-  category: JobsSecurityWarden
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutWardenOuter
-    - !type:CharacterJobRequirement
-      jobs:
-        - Warden
-  items:
-    - ClothingOuterWinterWarden
-    
-- type: loadout
-  id: LoadoutClothingLongcoatWarden # Floof
-  category: JobsSecurityWarden
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutWardenOuter
-    - !type:CharacterJobRequirement
-      jobs:
-        - Warden
-  items:
-    - ClothingLongcoatWarden
 
 # Shoes
-
-- type: loadout
-  id: LoadoutClothingShoesBootsWinterWarden # Floof
-  category: JobsSecurityWarden
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutWardenShoes
-    - !type:CharacterJobRequirement
-      jobs:
-        - Warden
-  items:
-    - ClothingShoesBootsWinterWarden
 
 # Uniforms
 - type: loadout
