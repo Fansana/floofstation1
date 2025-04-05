@@ -11,6 +11,8 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
+using Content.Server.Database;
+using System.Drawing.Printing;
 
 namespace Content.Server.DiscordAuth;
 
@@ -24,6 +26,7 @@ public sealed class DiscordAuthManager
     [Dependency] private readonly IServerNetManager _net = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IConfigurationManager _configuration = default!;
+    [Dependency] private readonly IServerDbManager _db = default!;
 
 
     private ISawmill _sawmill = default!;
@@ -52,7 +55,6 @@ public sealed class DiscordAuthManager
         _player.PlayerStatusChanged += OnPlayerStatusChanged;
     }
 
-
     private async void OnAuthCheck(DiscordAuthCheckMessage message)
     {
         var isVerified = await IsVerified(message.MsgChannel.UserId);
@@ -60,6 +62,29 @@ public sealed class DiscordAuthManager
         {
             var session = _player.GetSessionById(message.MsgChannel.UserId);
 
+            if (_configuration.GetCVar(CCVars.WhitelistEnabled))
+            {
+                if (await _db.GetAdminDataForAsync(session.UserId) is not null)
+                {
+                    PlayerVerified?.Invoke(this, session);
+                    return;
+                }
+
+                if (await _db.GetWhitelistStatusAsync(session.UserId))
+                {
+                    PlayerVerified?.Invoke(this, session);
+                    return;
+                }
+
+                if (await IsWhitelisted(session.UserId))
+                {
+                    PlayerVerified?.Invoke(this, session);
+                    return;
+                }
+
+                session.Channel.Disconnect(Loc.GetString(_configuration.GetCVar(CCVars.WhitelistReason)));
+                return;
+            }
             PlayerVerified?.Invoke(this, session);
         }
     }
@@ -111,7 +136,7 @@ public sealed class DiscordAuthManager
     {
         _sawmill.Debug($"Player {userId} check Discord verification");
 
-        var requestUrl = $"{_apiUrl}/{WebUtility.UrlEncode(userId.ToString())}";
+        var requestUrl = $"{_apiUrl}/{WebUtility.UrlEncode(userId.ToString())}?key={_apiKey}";
         var response = await _httpClient.GetAsync(requestUrl, cancel);
         if (!response.IsSuccessStatusCode)
         {
@@ -123,7 +148,24 @@ public sealed class DiscordAuthManager
         return data!.IsLinked;
     }
 
+    public async Task<bool> IsWhitelisted(NetUserId userId, CancellationToken cancel = default)
+    {
+        _sawmill.Debug($"Player {userId} check Discord whitelist");
+
+        var requestUrl = $"{_apiUrl}/{WebUtility.UrlEncode(userId.ToString())}?key={_apiKey}";
+        var response = await _httpClient.GetAsync(requestUrl, cancel);
+        if (!response.IsSuccessStatusCode)
+        {
+            var content = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Verification API returned bad status code: {response.StatusCode}\nResponse: {content}");
+        }
+
+        var data = await response.Content.ReadFromJsonAsync<DiscordWhitelistInfoResponse>(cancellationToken: cancel);
+        return data!.IsWhitelisted;
+    }
+
 
     [UsedImplicitly] private sealed record DiscordGenerateLinkResponse(string Url);
     [UsedImplicitly] private sealed record DiscordAuthInfoResponse(bool IsLinked);
+    [UsedImplicitly] private sealed record DiscordWhitelistInfoResponse(bool IsWhitelisted);
 }

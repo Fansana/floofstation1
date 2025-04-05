@@ -400,3 +400,6 @@ public sealed partial class TraitModifyStamina : TraitFunction
         staminaComponent.Cooldown += CooldownModifier;
     }
 }
+
+
+

@@ -104,6 +104,44 @@
       factor: 0.6 # still not as light as felinids due to different fixture size
 
 - type: trait
+  id: CulinaryAdaptationTheobromine
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitModifyMetabolism
+      types: [ TheobromineIntolerant ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
+
+- type: trait
+  id: CulinaryAdaptationAllicin
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitModifyMetabolism
+      types: [ AllicinIntolerant ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
+
+- type: trait
   id: Tiny
   category: Physical
   points: 0 # At this point, this RP-focused trait is intended to be self-balancing

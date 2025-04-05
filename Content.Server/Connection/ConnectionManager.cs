@@ -12,7 +12,7 @@ using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
-
+using Content.Server.DiscordAuth;
 
 namespace Content.Server.Connection
 {
@@ -49,6 +49,8 @@ namespace Content.Server.Connection
         [Dependency] private readonly ServerDbEntryManager _serverDbEntry = default!;
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+
 
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
         private ISawmill _sawmill = default!;
@@ -228,6 +230,20 @@ namespace Content.Server.Connection
                         msg += "\n" + Loc.GetString("whitelist-playercount-invalid", ("min", min), ("max", max));
                     return (ConnectionDenyReason.Whitelist, msg, null);
                 }
+            }
+
+            if (_cfg.GetCVar(CCVars.DiscordAuthEnabled) && _cfg.GetCVar(CCVars.WhitelistEnabled))
+            {
+                if (await _discordAuthManager.IsVerified(userId) == false)
+                    return null;
+
+                if (adminData is not null)
+                    return null;
+
+                if (await _discordAuthManager.IsWhitelisted(userId) || await _db.GetWhitelistStatusAsync(userId))
+                    return null;
+
+                return (ConnectionDenyReason.Whitelist, Loc.GetString(_cfg.GetCVar(CCVars.WhitelistReason)), null);
             }
 
             // DeltaV - Soft whitelist improvements

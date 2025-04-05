@@ -1,4 +1,5 @@
 namespace Content.Server.Speech.Components;
+using Content.Shared.Chat;
 
 /// <summary>
 ///     Sends a random message from a list with a provided min/max time.
@@ -48,4 +49,18 @@ public sealed partial class RandomBarkComponent : Component
     /// </summary>
     [DataField]
     public int? BarkLocaleCount = null;
+
+    /// <summary>
+    ///     What chat type is the bark? Comes from the InGameICChatType enum
+    ///     it can be one of these:
+    ///     "Speak",
+    ///     "Emote",
+    ///     "Subtle", // Floofstation
+    ///     "SubtleOOC", // Den
+    ///     "Whisper",
+    ///     "Telepathic"
+    ///   Floof Addition
+    /// </summary>
+    [DataField]
+    public string BarkChatKind = "Speak";
 }
