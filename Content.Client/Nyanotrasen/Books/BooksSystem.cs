@@ -1,4 +1,5 @@
 using Content.Shared.Books;
+// Floof - M3739 - #607 - Content.Client.Links used to be here. Not anymore.
 using Robust.Client.UserInterface;
 
 namespace Content.Client.Books

@@ -1,24 +1,24 @@
 using Content.Shared.Interaction;
 using Content.Shared.Books;
-using Content.Shared.Verbs;
-using Robust.Shared.Player;
+using Content.Shared.Verbs; // Floof - M3739 - #607 - Much of the following was spliced from Flooftier's code regarding
+using Robust.Shared.Player; // Floof - M3739 - #607 - hyperlink books. The cherry-pick did not work well out of the box.
 
 namespace Content.Server.Books
 {
-    public sealed class BookSystem : EntitySystem
+    public sealed class BookSystem : EntitySystem // Floof - M3739 - #607
     {
         public override void Initialize()
         {
             base.Initialize();
             SubscribeLocalEvent<HyperlinkBookComponent, ActivateInWorldEvent>(OnActivate);
-            SubscribeLocalEvent<HyperlinkBookComponent, GetVerbsEvent<AlternativeVerb>>(AddAltVerb);
+            SubscribeLocalEvent<HyperlinkBookComponent, GetVerbsEvent<AlternativeVerb>>(AddAltVerb); // Floof - M3739 - #607
         }
 
         private void OnActivate(EntityUid uid, HyperlinkBookComponent component, ActivateInWorldEvent args)
         {
             if (!TryComp<ActorComponent>(args.User, out var actor))
                 return;
-
+// Begin Floof
             OpenURL(actor.PlayerSession, component.URL);
         }
 
@@ -44,6 +44,7 @@ namespace Content.Server.Books
 
         public void OpenURL(ICommonSession session, string url)
         {
+// End Floof
             var ev = new OpenURLEvent(url);
             RaiseNetworkEvent(ev, session.Channel);
         }

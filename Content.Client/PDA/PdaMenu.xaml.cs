@@ -189,7 +189,7 @@ namespace Content.Client.PDA
             EjectIdButton.IsActive = state.PdaOwnerInfo.IdOwner != null || state.PdaOwnerInfo.JobTitle != null;
             EjectPenButton.IsActive = state.HasPen;
             EjectPaiButton.IsActive = state.HasPai;
-            EjectBookButton.IsActive = state.HasBook;
+            EjectBookButton.IsActive = state.HasBook; // Floof - M3739 - #607 - Cherry-pick lacked this crucial part.
             ActivateMusicButton.Visible = state.CanPlayMusic;
             ShowUplinkButton.Visible = state.HasUplink;
             LockUplinkButton.Visible = state.HasUplink;
