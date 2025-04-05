@@ -11,7 +11,7 @@ namespace Content.Shared.PDA
         public bool FlashlightEnabled;
         public bool HasPen;
         public bool HasPai;
-        public bool HasBook;
+        public bool HasBook; // Frontier
         public PdaIdInfoText PdaOwnerInfo;
         public string? StationName;
         public bool HasUplink;
@@ -24,7 +24,7 @@ namespace Content.Shared.PDA
             bool flashlightEnabled,
             bool hasPen,
             bool hasPai,
-            bool hasBook,
+            bool hasBook, // Frontier
             PdaIdInfoText pdaOwnerInfo,
             string? stationName,
             bool hasUplink = false,
@@ -35,7 +35,7 @@ namespace Content.Shared.PDA
             FlashlightEnabled = flashlightEnabled;
             HasPen = hasPen;
             HasPai = hasPai;
-            HasBook = hasBook;
+            HasBook = hasBook; // Frontier
             PdaOwnerInfo = pdaOwnerInfo;
             HasUplink = hasUplink;
             CanPlayMusic = canPlayMusic;

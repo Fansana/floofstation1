@@ -43,12 +43,12 @@ namespace Content.Client.PDA
             {
                 SendPredictedMessage(new ItemSlotButtonPressedEvent(PdaComponent.PdaPaiSlotId));
             };
-
+// Begin Frontier
             _menu.EjectBookButton.OnPressed += _ =>
             {
                 SendMessage(new ItemSlotButtonPressedEvent(PdaComponent.PdaBookSlotId));
             };
-
+// End Frontier
             _menu.ActivateMusicButton.OnPressed += _ =>
             {
                 SendMessage(new PdaShowMusicMessage());

@@ -12,7 +12,7 @@ namespace Content.Shared.PDA
         public const string PdaIdSlotId = "PDA-id";
         public const string PdaPenSlotId = "PDA-pen";
         public const string PdaPaiSlotId = "PDA-pai";
-        public const string PdaBookSlotId = "PDA-book";
+        public const string PdaBookSlotId = "PDA-book"; // Frontier
 
         /// <summary>
         /// The base PDA sprite state, eg. "pda", "pda-clown"
@@ -28,7 +28,7 @@ namespace Content.Shared.PDA
         [DataField("paiSlot")]
         public ItemSlot PaiSlot = new();
 
-        [DataField("bookSlot")]
+        [DataField("bookSlot")] // Frontier
         public ItemSlot BookSlot = new();
 
         // Really this should just be using ItemSlot.StartingItem. However, seeing as we have so many different starting
