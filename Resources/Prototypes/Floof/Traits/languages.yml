@@ -25,3 +25,257 @@
       components:
         - type: NaturalSpeakerTrait
           language: Ratvarian
+
+- type: trait
+  id: NaturalChittin
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Chitinid
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Chittin
+
+- type: trait
+  id: NaturalNehina
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Nehina
+
+- type: trait
+  id: NaturalMouse
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Rodentia
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Mouse
+
+- type: trait
+  id: NaturalCanilunzt
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Vulpkanin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Canilunzt
+
+- type: trait
+  id: NaturalRobotTalk
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: RobotTalk
+
+- type: trait
+  id: NaturalArachnic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Arachne
+        - Arachnid
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Arachnic
+
+- type: trait
+  id: NaturalRootSpeak
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: RootSpeak
+
+- type: trait
+  id: NaturalSolCommon
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Human
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: SolCommon
+
+- type: trait
+  id: NaturalValyrianStandard
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Harpy
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: ValyrianStandard
+
+- type: trait
+  id: NaturalMoffic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Moth
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Moffic
+
+- type: trait
+  id: NaturalDraconic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Reptilian
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Draconic
+
+- type: trait
+  id: NaturalBubblish
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - SlimePerson
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Bubblish
+
+- type: trait
+  id: NaturalSchechi
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Resomi
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Schechi
+
+- type: trait
+  id: NaturalNekomimetic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+        - Oni
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Nekomimetic
