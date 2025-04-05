@@ -96,6 +96,10 @@
     - Felinid # They don't need to be lighter
     - IPC
     - Rodentia
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Heavyweight
   functions:
   - !type:TraitAddComponent
     components:
@@ -103,3 +107,26 @@
       min: 100
       factor: 0.6 # still not as light as felinids due to different fixture size
 
+- type: trait
+  id: Heavyweight
+  category: Physical
+  points: -2 # Has pros and cons, not sure
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement 
+    inverted: true
+    species:
+    - Harpy # Doesn't really make sense with their wings and flight ability
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Lightweight
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: FixtureDensityModifier
+      factor: 1.4 # Lets try the opposite of lightweight, yeah?
