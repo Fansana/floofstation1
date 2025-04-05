@@ -7,3 +7,13 @@
     containers:
       item:
       - EnergySabre
+
+- type: entity
+  id: ClothingBeltEnergySheathFilledHoS
+  parent: ClothingBeltEnergySheath
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - EnergySabreHoS
