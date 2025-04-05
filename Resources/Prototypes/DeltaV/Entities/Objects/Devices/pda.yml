@@ -31,8 +31,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-corpsman
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -78,8 +78,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#470823"
   - type: Icon
@@ -125,8 +125,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#611528"
   - type: Icon
@@ -172,8 +172,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon

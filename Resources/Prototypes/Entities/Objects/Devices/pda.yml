@@ -40,8 +40,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     idSlot:
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
@@ -193,8 +193,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-interncadet
   - type: PdaBorderColor
     borderColor: "#717059"
@@ -497,8 +497,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
@@ -856,8 +856,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-hos
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -886,8 +886,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-hosnano
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -916,8 +916,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-warden
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -946,8 +946,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -1258,8 +1258,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-detective
   - type: PdaBorderColor
     borderColor: "#774705"
@@ -1392,8 +1392,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-seniorofficer
   - type: PdaBorderColor
     borderColor: "#A32D26"

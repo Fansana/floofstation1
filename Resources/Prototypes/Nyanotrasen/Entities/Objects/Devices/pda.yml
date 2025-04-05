@@ -32,8 +32,8 @@
       whitelist:
         tags:
         - BookSpaceLaw
-        - BookJusticeSop
-        - BookSecuritySop
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
