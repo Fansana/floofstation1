@@ -37,7 +37,7 @@
   parent: [ TranslatorUnpowered, PowerCellSlotMediumItem ]
   components:
   - type: PowerCellDraw
-    drawRate: 1
+    drawRate: 0.666 # Floofstation - reduced to 2/3 the normal rate
   - type: ItemSlots
     slots:
       cell_slot:
