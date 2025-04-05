@@ -35,6 +35,8 @@
   items:
     - type: loadout
       id: LoadoutClothingHeadHatBeretWarden
+    - type: loadout # Floof - Add missing warden loadouts
+      id: LoadoutClothingHeadHatWarden
 
 #- type: characterItemGroup
 #  id: LoadoutWardenId
@@ -57,12 +59,20 @@
   items:
     - type: loadout
       id: LoadoutClothingOuterCoatWarden
+# Floof region - Add missing warden loadouts
+    - type: loadout
+      id: LoadoutClothingOuterWinterWarden
+    - type: loadout
+      id: LoadoutClothingOuterLongcoatWarden
+# Floof region end
 
-#- type: characterItemGroup
-#  id: LoadoutWardenShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutWardenShoes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add missing warden loadouts
+      id: LoadoutWardenShoesBootsWinter
+
 - type: characterItemGroup
   id: LoadoutWardenUniforms
   maxItems: 1
