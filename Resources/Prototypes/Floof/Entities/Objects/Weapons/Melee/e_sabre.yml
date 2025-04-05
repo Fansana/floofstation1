@@ -16,7 +16,7 @@
         shader: unshaded
         map: [ "blade" ]
   - type: Item
-    size: Ginormous
+    size: Normal
     sprite: Floof/Objects/Weapons/Melee/e_sabre_inhand.rsi
   - type: Tag
     tags:
