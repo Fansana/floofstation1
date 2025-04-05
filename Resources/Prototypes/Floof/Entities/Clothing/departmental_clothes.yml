@@ -697,6 +697,8 @@
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/secsocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingUniformBase
@@ -738,6 +740,8 @@
     sprite: Floof/Clothing/Departmental/Security/hossocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/hossocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingUniformBase
@@ -779,6 +783,8 @@
     sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/detectsocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingUniformBase
@@ -820,6 +826,8 @@
     sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
   - type: Clothing
     sprite: Floof/Clothing/Departmental/Security/corpsmansocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
 
 - type: entity
   parent: ClothingUniformBase
