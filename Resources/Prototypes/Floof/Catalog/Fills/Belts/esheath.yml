@@ -1,0 +1,9 @@
+﻿- type: entity
+  id: ClothingBeltEnergySheathFilled
+  parent: ClothingBeltEnergySheath
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - EnergySabre
