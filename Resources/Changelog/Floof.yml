@@ -3740,3 +3740,12 @@ Entries:
   id: 401
   time: '2025-04-05T22:10:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/722
+- author: faefyr
+  changes:
+    - type: Add
+      message: >-
+        Added the Energy Sabre, added to both uplink and loadout, this is an
+        E-Sword alternative.
+  id: 402
+  time: '2025-04-05T22:11:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/721
