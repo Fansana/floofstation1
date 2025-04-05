@@ -66,7 +66,7 @@
     materialComposition:
       Glass: 25
   - type: SpaceGarbage
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
 
@@ -308,7 +308,7 @@
   - type: Construction
     graph: CyanLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
@@ -323,7 +323,7 @@
   - type: Construction
     graph: BlueLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
@@ -338,7 +338,7 @@
   - type: Construction
     graph: PinkLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
@@ -353,7 +353,7 @@
   - type: Construction
     graph: OrangeLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
@@ -368,7 +368,7 @@
   - type: Construction
     graph: RedLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
@@ -383,7 +383,7 @@
   - type: Construction
     graph: GreenLight
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
@@ -415,7 +415,7 @@
   - type: Construction
     graph: CyanLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
@@ -430,7 +430,7 @@
   - type: Construction
     graph: BlueLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
@@ -445,7 +445,7 @@
   - type: Construction
     graph: PinkLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
@@ -460,7 +460,7 @@
   - type: Construction
     graph: OrangeLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
@@ -475,7 +475,7 @@
   - type: Construction
     graph: RedLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
@@ -490,7 +490,7 @@
   - type: Construction
     graph: GreenLightBulb
     node: icon
-  - type: WelderRefinable
+  - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen

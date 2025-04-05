@@ -215,9 +215,8 @@ public sealed class VoreSystem : EntitySystem
 
         _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, length, new VoreDoAfterEvent(), uid, target: target)
         {
-            BreakOnTargetMove = true,
             BreakOnDamage = true,
-            BreakOnUserMove = true,
+            BreakOnMove = true,
             RequireCanInteract = true
         });
     }

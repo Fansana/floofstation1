@@ -25,7 +25,7 @@
       min: 28800 # Floofstation - 8 hour
   weight: 20
   startingGear: CaptainGear
-  icon: "JobIconCaptain"
+  icon: JobIconCaptain
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom

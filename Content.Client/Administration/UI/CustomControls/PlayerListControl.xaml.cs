@@ -25,7 +25,7 @@ public sealed partial class PlayerListControl : BoxContainer
     private PlayerInfo? _selectedPlayer;
 
     private List<PlayerInfo> _playerList = new();
-    private readonly List<PlayerInfo> _sortedPlayerList = new();
+    private List<PlayerInfo> _sortedPlayerList = new();
 
     public Comparison<PlayerInfo>? Comparison;
     public Func<PlayerInfo, string, string>? OverrideText;
@@ -118,11 +118,25 @@ public sealed partial class PlayerListControl : BoxContainer
             PlayerListContainer.Select(new PlayerListData(_selectedPlayer));
     }
 
+
     public void PopulateList(IReadOnlyList<PlayerInfo>? players = null)
     {
+        // Maintain existing pin statuses
+        var pinnedPlayers = _playerList.Where(p => p.IsPinned).ToDictionary(p => p.SessionId);
+
         players ??= _adminSystem.PlayerList;
 
         _playerList = players.ToList();
+
+        // Restore pin statuses
+        foreach (var player in _playerList)
+        {
+            if (pinnedPlayers.TryGetValue(player.SessionId, out var pinnedPlayer))
+            {
+                player.IsPinned = pinnedPlayer.IsPinned;
+            }
+        }
+
         if (_selectedPlayer != null && !_playerList.Contains(_selectedPlayer))
             _selectedPlayer = null;
 
