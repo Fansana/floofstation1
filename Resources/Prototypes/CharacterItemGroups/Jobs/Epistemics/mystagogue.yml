@@ -83,6 +83,8 @@
       id: LoadoutCommandRDOuterWinter
     - type: loadout
       id: LoadoutCommandRDOuterMysta
+    - type: loadout
+      id: LoadoutCommandRDOuterLongcoat # Floof
 
 - type: characterItemGroup
   id: LoadoutMystagogueShoes

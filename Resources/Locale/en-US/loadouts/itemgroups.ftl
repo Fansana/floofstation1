@@ -46,6 +46,7 @@ character-item-group-LoadoutCommandId = Command Id
 character-item-group-LoadoutCommandNeck = Command Neckwear
 character-item-group-LoadoutCommandMask = Command Masks
 character-item-group-LoadoutCommandOuter = Command Outerwear
+character-item-group-LoadoutCommandSelfDefense = Command Self-Defense
 character-item-group-LoadoutCommandShoes = Command Shoes
 character-item-group-LoadoutCommandUniforms = Command Uniforms
 
@@ -623,6 +624,21 @@ character-item-group-LoadoutWardenMask = Warden Masks
 character-item-group-LoadoutWardenOuter = Warden Outerwear
 character-item-group-LoadoutWardenShoes = Warden Shoes
 character-item-group-LoadoutWardenUniforms = Warden Uniforms
+
+# Floof - Security - Prison Guard
+character-item-group-LoadoutPrisonGuardBackpacks = Prison Guard Backpacks
+character-item-group-LoadoutPrisonGuardBelt = Prison Guard Belt
+character-item-group-LoadoutPrisonGuardEars = Prison Guard Ears
+character-item-group-LoadoutPrisonGuardEquipment = Prison Guard Equipment
+character-item-group-LoadoutPrisonGuardEyes = Prison Guard Eyewear
+character-item-group-LoadoutPrisonGuardGloves = Prison Guard Gloves
+character-item-group-LoadoutPrisonGuardHead = Prison Guard Headgear
+character-item-group-LoadoutPrisonGuardId = Prison Guard Id
+character-item-group-LoadoutPrisonGuardNeck = Prison Guard Neckwear
+character-item-group-LoadoutPrisonGuardMask = Prison Guard Masks
+character-item-group-LoadoutPrisonGuardOuter = Prison Guard Outerwear
+character-item-group-LoadoutPrisonGuardShoes = Prison Guard Shoes
+character-item-group-LoadoutPrisonGuardUniforms = Prison Guard Uniforms
 
 # Service
 character-item-group-LoadoutServiceBackpacks = Service Backpacks
