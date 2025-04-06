@@ -3720,3 +3720,78 @@ Entries:
   id: 399
   time: '2025-04-04T08:04:41.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/717
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added underwear and undershirts to Feroxi and Chitinid. The tailors have
+        been hard at work.
+  id: 400
+  time: '2025-04-05T09:27:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/714
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Added loadouts for the warden's cap, longcoat, and winter coat and
+        boots.
+    - type: Tweak
+      message: The warden spawns with the head of security's headset.
+  id: 401
+  time: '2025-04-05T22:10:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/722
+- author: faefyr
+  changes:
+    - type: Add
+      message: >-
+        Added the Energy Sabre, added to both uplink and loadout, this is an
+        E-Sword alternative.
+  id: 402
+  time: '2025-04-05T22:11:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/721
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Fixed redshirt and glass jaw descriptions
+  id: 403
+  time: '2025-04-05T22:12:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/716
+- author: Superlagg
+  changes:
+    - type: Add
+      message: >-
+        Added two traits that'll let your dog (or mouse, or cat, or fish) eat
+        theobromine and/or allicin!
+  id: 404
+  time: '2025-04-05T22:16:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/707
+- author: LaCumbiaDelCoronavirus
+  changes:
+    - type: Tweak
+      message: Slime people look a bit less bald now.
+  id: 405
+  time: '2025-04-05T22:51:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/723
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Handheld translators now use 1.5 times less power.
+  id: 406
+  time: '2025-04-05T23:39:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/698
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added Security and Brigging SOPs to the guidebook.
+  id: 407
+  time: '2025-04-05T23:42:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/697
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The security department's socks have been retrofitted to meet new
+        footwear requirements.
+  id: 408
+  time: '2025-04-06T05:35:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/713
