@@ -16,6 +16,7 @@
       inverted: true
       traits:
       - HollowFangs
+      - Succubus
   functions:
   - !type:TraitAddComponent
     components:
@@ -46,6 +47,7 @@
     inverted: true
     traits:
     - Vampirism
+    - Succubus
   functions:
   - !type:TraitAddComponent
     components:
@@ -140,5 +142,37 @@
         Food,
         Drink,
       ]
+
+
+- type: trait
+  id: Succubus
+  category: Physical
+  points: -3 # MD - Change from "3" tp "-3" for balancing.
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - HollowFangs
+      - Vampirism
+  functions:
+  - !type:TraitAddComponent
+    components:
+      - type: Vampirism
+        succDelay: 3
+        specialDigestible: # Vampires cannot eat food chat is that real
+          tags:
+          - IceCream
+          - Pill
+          - Crayon
+          - Paper
 
 
