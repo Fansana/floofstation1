@@ -827,7 +827,7 @@
   id: BulletAcid2
   name: boileracid spit
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       damage:
@@ -1064,7 +1064,7 @@
   name: energy bolt
   id: BulletEnergyGun
   parent: BulletEnergyGunLaser
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     impactEffect: BulletImpactEffectRedDisabler

@@ -8,12 +8,13 @@
     HorizontalExpand="False"
 >
     <BoxContainer Orientation="Vertical">
+        <controls:ActionPageButtons Name="PageButtons" Access="Public" /> <!-- Floofstation - moved up -->
         <controls:ActionButtonContainer
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             MaxSize="64 9999"
             Name="ActionsContainer"
             Access="Public"
-            Rows="1"/>
+            Rows="1" />
     </BoxContainer>
 </widgets:ActionsBar>
