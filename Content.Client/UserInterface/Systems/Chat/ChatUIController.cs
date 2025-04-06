@@ -851,12 +851,10 @@ public sealed class ChatUIController : UIController
 
     public void ProcessChatMessage(ChatMessage msg, bool speechBubble = true)
     {
-        // color the name unless it's something like "the old man"
-        if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
+        // color the name if it's got [Name] in it
+        if (_chatNameColorsEnabled)
         {
-            var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
-            if (grammar != null && grammar.ProperNoun == true)
-                msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
+            msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
         }
 
         // Color any codewords for minds that have roles that use them
