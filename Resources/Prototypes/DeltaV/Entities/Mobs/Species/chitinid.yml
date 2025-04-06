@@ -162,6 +162,12 @@
     - TauCetiBasic
     - Chittin
     naturalLanguage: Chittin # Floof: explicitly stated natural languages
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ChitinidEmotes # Floof - M3739
 
 - type: entity
   parent: BaseSpeciesDummy

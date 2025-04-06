@@ -20,6 +20,7 @@
       - DionaEmotes
       - ArachnidEmotes
       - MothEmotes
+      - ChitinidEmotes
     components:
     - BorgChassis
   chatTriggers:
@@ -64,6 +65,7 @@
       - ArachnidEmotes
       - DionaEmotes
       - MothEmotes
+      - ChitinidEmotes
      # Floof - M3739 - I was going to blacklist the Unathi from yawning, but as it turns out IRL lizards can in fact yawn, albeit, silently.
     components:
     - BorgChassis

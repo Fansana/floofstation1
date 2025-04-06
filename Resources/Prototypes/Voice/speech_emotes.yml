@@ -38,6 +38,7 @@
     tags:
       - ArachnidEmotes
       - MothEmotes
+      - ChitinidEmotes
   chatMessages: ["chat-emote-msg-honk"]
   chatTriggers:
     - honks
@@ -56,6 +57,7 @@
       - UnathiEmotes
       - ArachnidEmotes
       - MothEmotes
+      - ChitinidEmotes
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sighs
@@ -73,6 +75,7 @@
       - DionaEmotes
       - ArachnidEmotes
       - MothEmotes
+      - ChitinidEmotes
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistles
@@ -90,6 +93,7 @@
       - DionaEmotes
       - ArachnidEmotes
       - MothEmotes
+      - ChitinidEmotes
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cries

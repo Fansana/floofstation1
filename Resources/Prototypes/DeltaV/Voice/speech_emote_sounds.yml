@@ -242,6 +242,10 @@
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
     Crying:
       collection: FemaleCry
+    Hiss: # Delta-V - M3739 - Not too sure how this wasn't retained in the port. Did we begin the process before it merged?
+      path: /Audio/Animals/snake_hiss.ogg
+    Weh: # Floof - M3739 - the wehpocalypse claims the ants
+      collection: Weh
 
 - type: emoteSounds
   id: MaleFeroxi
