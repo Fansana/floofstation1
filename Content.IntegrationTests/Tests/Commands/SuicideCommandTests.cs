@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Linq;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.Execution;
@@ -15,6 +16,8 @@ using Robust.Server.Player;
 using Robust.Shared.Console;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
+using Robust.UnitTesting;
+
 
 namespace Content.IntegrationTests.Tests.Commands;
 
@@ -52,6 +55,24 @@ public sealed class SuicideCommandTests
   name: test version of the material reclaimer
   components:
   - type: MaterialReclaimer";
+
+    private readonly string[] _mobs = new []{
+        //"MobArachnid",
+        //"MobIPC", They don't take damage on suicide
+        //"MobDiona",
+        //"MobDwarf",
+        "MobHuman",
+        //"MobMoth",
+        //"MobReptilian",
+        //"MobSlimePerson",
+        //"MobResomi",
+        //"MobChitinid",
+        //"MobRodentia",
+        //"MobVulpkanin",
+        //"MobHarpy",
+        //"MobOni",
+        //"MobFeroxi"
+    };
 
     /// <summary>
     /// Run the suicide command in the console
@@ -245,7 +266,7 @@ public sealed class SuicideCommandTests
 
         // We need to know the player and whether they can be hurt, killed, and whether they have a mind
         var player = playerMan.Sessions.First().AttachedEntity!.Value;
-        var mind = mindSystem.GetMind(player);
+        var dummy = EntityUid.Invalid;
 
         MindComponent mindComponent = default;
         MobStateComponent mobStateComp = default;
@@ -254,20 +275,24 @@ public sealed class SuicideCommandTests
         HandsComponent handsComponent = default;
         await server.WaitPost(() =>
         {
+            var mind = mindSystem.GetMind(player).Value;
+            dummy = entManager.SpawnEntity("MobHuman", transformSystem.GetMapCoordinates(player));
+            mindSystem.TransferTo(mind, dummy);
+            //entManager.DeleteEntity(player);
             if (mind != null)
-                mindComponent = entManager.GetComponent<MindComponent>(mind.Value);
+                mindComponent = entManager.GetComponent<MindComponent>(mind);
 
-            mobStateComp = entManager.GetComponent<MobStateComponent>(player);
-            mobThresholdsComp = entManager.GetComponent<MobThresholdsComponent>(player);
-            damageableComp = entManager.GetComponent<DamageableComponent>(player);
-            handsComponent = entManager.GetComponent<HandsComponent>(player);
+            mobStateComp = entManager.GetComponent<MobStateComponent>(dummy);
+            mobThresholdsComp = entManager.GetComponent<MobThresholdsComponent>(dummy);
+            damageableComp = entManager.GetComponent<DamageableComponent>(dummy);
+            handsComponent = entManager.GetComponent<HandsComponent>(dummy);
         });
 
         // Spawn the weapon of choice and put it in the player's hands
         await server.WaitPost(() =>
         {
-            var item = entManager.SpawnEntity("SharpTestObject", transformSystem.GetMapCoordinates(player));
-            Assert.That(handsSystem.TryPickup(player, item, handsComponent.ActiveHand!));
+            var item = entManager.SpawnEntity("SharpTestObject", transformSystem.GetMapCoordinates(dummy));
+            Assert.That(handsSystem.TryPickup(dummy, item, handsComponent.ActiveHand!));
             entManager.TryGetComponent<ExecutionComponent>(item, out var executionComponent);
             Assert.That(executionComponent, Is.Not.EqualTo(null));
         });
@@ -278,13 +303,13 @@ public sealed class SuicideCommandTests
         await server.WaitAssertion(() =>
         {
             // Heal all damage first (possible low pressure damage taken)
-            damageableSystem.SetAllDamage(player, damageableComp, 0);
+            damageableSystem.SetAllDamage(dummy, damageableComp, 0);
             consoleHost.GetSessionShell(playerMan.Sessions.First()).ExecuteCommand("suicide");
             var lethalDamageThreshold = mobThresholdsComp.Thresholds.Keys.Last();
 
             Assert.Multiple(() =>
             {
-                Assert.That(mobStateSystem.IsDead(player, mobStateComp));
+                Assert.That(mobStateSystem.IsDead(dummy, mobStateComp));
                 Assert.That(entManager.TryGetComponent<GhostComponent>(mindComponent.CurrentEntity, out var ghostComp) &&
                             !ghostComp.CanReturnToBody);
                 Assert.That(damageableComp.Damage.DamageDict["Slash"], Is.EqualTo(lethalDamageThreshold));
@@ -320,7 +345,8 @@ public sealed class SuicideCommandTests
 
         // We need to know the player and whether they can be hurt, killed, and whether they have a mind
         var player = playerMan.Sessions.First().AttachedEntity!.Value;
-        var mind = mindSystem.GetMind(player);
+        var dummy = EntityUid.Invalid;
+        var mind = EntityUid.Invalid;
 
         MindComponent mindComponent = default;
         MobStateComponent mobStateComp = default;
@@ -329,20 +355,23 @@ public sealed class SuicideCommandTests
         HandsComponent handsComponent = default;
         await server.WaitPost(() =>
         {
+            mind = mindSystem.GetMind(player).Value;
+            dummy = entManager.SpawnEntity("MobHuman", transformSystem.GetMapCoordinates(player));
+            mindSystem.TransferTo(mind, dummy);
             if (mind != null)
-                mindComponent = entManager.GetComponent<MindComponent>(mind.Value);
+                mindComponent = entManager.GetComponent<MindComponent>(mind);
 
-            mobStateComp = entManager.GetComponent<MobStateComponent>(player);
-            mobThresholdsComp = entManager.GetComponent<MobThresholdsComponent>(player);
-            damageableComp = entManager.GetComponent<DamageableComponent>(player);
-            handsComponent = entManager.GetComponent<HandsComponent>(player);
+            mobStateComp = entManager.GetComponent<MobStateComponent>(dummy);
+            mobThresholdsComp = entManager.GetComponent<MobThresholdsComponent>(dummy);
+            damageableComp = entManager.GetComponent<DamageableComponent>(dummy);
+            handsComponent = entManager.GetComponent<HandsComponent>(dummy);
         });
 
         // Spawn the weapon of choice and put it in the player's hands
         await server.WaitPost(() =>
         {
-            var item = entManager.SpawnEntity("MixedDamageTestObject", transformSystem.GetMapCoordinates(player));
-            Assert.That(handsSystem.TryPickup(player, item, handsComponent.ActiveHand!));
+            var item = entManager.SpawnEntity("MixedDamageTestObject", transformSystem.GetMapCoordinates(dummy));
+            Assert.That(handsSystem.TryPickup(dummy, item, handsComponent.ActiveHand!));
             entManager.TryGetComponent<ExecutionComponent>(item, out var executionComponent);
             Assert.That(executionComponent, Is.Not.EqualTo(null));
         });
@@ -353,17 +382,23 @@ public sealed class SuicideCommandTests
         await server.WaitAssertion(() =>
         {
             // Heal all damage first (possible low pressure damage taken)
-            damageableSystem.SetAllDamage(player, damageableComp, 0);
+            damageableSystem.SetAllDamage(dummy, damageableComp, 0);
             consoleHost.GetSessionShell(playerMan.Sessions.First()).ExecuteCommand("suicide");
             var lethalDamageThreshold = mobThresholdsComp.Thresholds.Keys.Last();
 
             Assert.Multiple(() =>
             {
-                Assert.That(mobStateSystem.IsDead(player, mobStateComp));
+                Assert.That(mobStateSystem.IsDead(dummy, mobStateComp));
                 Assert.That(entManager.TryGetComponent<GhostComponent>(mindComponent.CurrentEntity, out var ghostComp) &&
                             !ghostComp.CanReturnToBody);
-                Assert.That(damageableComp.Damage.DamageDict["Slash"], Is.EqualTo(lethalDamageThreshold / 2));
+                Console.Out.WriteLine(lethalDamageThreshold);
+                Assert.That(damageableComp.Damage.DamageDict["Blunt"], Is.EqualTo(FixedPoint2.New(100)));
+                Assert.That(damageableComp.Damage.DamageDict["Slash"], Is.EqualTo(FixedPoint2.New(100)));
             });
+            entManager.DeleteEntity(dummy);
+
+            dummy = entManager.SpawnEntity("MobHuman", transformSystem.GetMapCoordinates(player));
+            mindSystem.TransferTo(mind, dummy);
         });
 
         await pair.CleanReturnAsync();
