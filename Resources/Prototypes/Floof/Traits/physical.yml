@@ -163,7 +163,7 @@
       - HollowFangs
       - Vampirism
   functions:
-  - !type:TraitAddComponent
+  - !type:TraitReplaceComponent
     components:
       - type: Succubus
 
