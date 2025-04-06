@@ -17,3 +17,18 @@
       whitelist:
         tags:
         - Write
+
+- type: entity
+  parent: BasePDA
+  id: FeelancerPDA
+  name: Freelancer PDA
+  description: Refurbished standard PDA
+  components:
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Pda
+    id: FreelancerIDCard
+    path: "/Floof/Objects/Devices/pda.rsi"
+    state: pda-free

@@ -35,3 +35,16 @@
     - AllAccess
     tags:
     - CentralCommand
+    
+#Freelancer
+
+- type: entity
+  parent: IDCardStandard
+  id: FreelancerIDCard
+  name: Freelancer ID card
+  components:
+  - type: PresetIdCard
+    job: Freelancer
+  - type: Sprite
+    sprite: Floof/Objects/Misc/id_cards.rsi
+    state: "freelancer"

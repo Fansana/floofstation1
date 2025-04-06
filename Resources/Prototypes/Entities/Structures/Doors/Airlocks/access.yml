@@ -1234,3 +1234,51 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicateAgent ]
+      
+ #Freelancer
+
+- type: entity
+  parent: AirlockFreelancer
+  id: AirlockFreelancerLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+    
+- type: entity
+  parent: AirlockFreelancerCamo
+  id: AirlockFreelancerCamoLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+    
+   #Freelancer Glass
+    
+- type: entity
+  parent: AirlockFreelancerGlass
+  id: AirlockFreelancerGlassLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+    
+- type: entity
+  parent: AirlockFreelancerCamoGlass
+  id: AirlockFreelancerCamoGlassLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer

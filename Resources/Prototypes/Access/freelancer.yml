@@ -1,0 +1,8 @@
+- type: accessLevel
+  id: Freelancer
+  name: Freelancer
+
+- type: accessGroup
+  id: Freelancer
+  tags:
+  - Freelancer
