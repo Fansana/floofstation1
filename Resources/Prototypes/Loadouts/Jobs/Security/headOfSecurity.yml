@@ -16,7 +16,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -30,7 +30,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -44,7 +44,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -58,7 +58,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -72,7 +72,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -86,7 +86,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -100,7 +100,7 @@
   canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
