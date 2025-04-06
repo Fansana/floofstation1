@@ -46,7 +46,7 @@ namespace Content.Server.Body.Components
         ///     List of metabolizer types that this organ is. ex. Human, Slime, Felinid, w/e.
         /// </summary>
         [DataField]
-        [Access(typeof(MetabolizerSystem), typeof(LiquorLifelineSystem), typeof(VampirismSystem), Other = AccessPermissions.ReadExecute)] // FIXME Friends (Floofstation edited)
+        [Access(typeof(MetabolizerSystem), typeof(LiquorLifelineSystem), typeof(VampirismSystem), typeof(SuccubusSystem), Other = AccessPermissions.ReadExecute)] // FIXME Friends (Floofstation edited)
         public HashSet<ProtoId<MetabolizerTypePrototype>>? MetabolizerTypes = null;
 
         /// <summary>
