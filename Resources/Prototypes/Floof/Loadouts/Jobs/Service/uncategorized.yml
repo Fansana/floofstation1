@@ -13,6 +13,8 @@
     inverted: true
     jobs:
       - Passenger
+      - Prisoner
+      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUnderSocksService
@@ -34,6 +36,8 @@
     inverted: true
     jobs:
       - Passenger
+      - Prisoner
+      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUniformServiceThong
@@ -50,6 +54,8 @@
     inverted: true
     jobs:
       - Passenger
+      - Prisoner
+      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUniformServiceUni
@@ -66,3 +72,5 @@
     inverted: true
     jobs:
       - Passenger
+      - Prisoner
+      - Gladiator
