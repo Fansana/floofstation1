@@ -54,4 +54,8 @@ trait-description-CulinaryAdaptationTheobromine =
 trait-name-CulinaryAdaptationAllicin = Culinary Adaptation (Allicin)
 trait-description-CulinaryAdaptationAllicin =
     Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize allicin.
-    You can eat garlic and onions without being poisoned by it!
+
+trait-name-Succubus = Succubus
+trait-description-Succubus =
+    Your body has evolved to be able to drink cum and metabolize it into useful compounds.
+    Drinking cum satiates your hunger and thirst, and also improves your health.
