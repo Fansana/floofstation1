@@ -23,6 +23,10 @@
   id: Drink
   name: metabolism-group-drink
 
+- type: metabolismGroup
+  id: Natural Sauce
+  name: metabolism-group-naturalsauce
+
 # Used for gases that have effects on being inhaled
 - type: metabolismGroup
   id: Gas
