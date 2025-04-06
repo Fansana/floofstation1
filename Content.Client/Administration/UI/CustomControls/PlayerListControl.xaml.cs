@@ -21,7 +21,7 @@ public sealed partial class PlayerListControl : BoxContainer
 
     private readonly IEntityManager _entManager;
     private readonly IUserInterfaceManager _uiManager;
-    
+
     private PlayerInfo? _selectedPlayer;
 
     private List<PlayerInfo> _playerList = new();
@@ -111,7 +111,7 @@ public sealed partial class PlayerListControl : BoxContainer
             _sortedPlayerList.Sort((a, b) => Comparison(a, b));
 
         // Ensure pinned players are always at the top
-        _sortedPlayerList.Sort((a, b) => a.IsPinned != b.IsPinned && a.IsPinned ? -1 : 1);
+        _sortedPlayerList.Sort((a, b) => -a.IsPinned.CompareTo(b.IsPinned)); // Floofstation - fix unstable sorting
 
         PlayerListContainer.PopulateList(_sortedPlayerList.Select(info => new PlayerListData(info)).ToList());
         if (_selectedPlayer != null)
