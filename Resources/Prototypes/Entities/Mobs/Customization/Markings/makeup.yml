@@ -29,8 +29,8 @@
 - type: marking
   id: MakeupNailPolishRight
   bodyPart: RHand
-  markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: RightHand
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -43,8 +43,8 @@
 - type: marking
   id: MakeupNailPolishLeft
   bodyPart: LHand
-  markingCategory: Overlay
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: LeftHand
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin, Arachne, Feroxi] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:

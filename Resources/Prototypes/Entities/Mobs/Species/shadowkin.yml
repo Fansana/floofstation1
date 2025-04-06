@@ -226,7 +226,7 @@
       removable: false
     - type: InnatePsionicPowers
       powersToAdd:
-        - ShadowkinPowers
+        - DarkSwapPower
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
@@ -234,6 +234,7 @@
       understands:
         - TauCetiBasic
         - Marish
+      naturalLanguage: Marish # Floof: explicitly stated natural languages
     - type: Tag
       tags:
       - CanPilot

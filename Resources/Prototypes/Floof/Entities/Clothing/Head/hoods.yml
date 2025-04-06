@@ -14,3 +14,18 @@
   - type: HideLayerClothing
     slots:
     - Hair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatShrimpFishermanHood
+  categories: [ HideSpawnMenu ]
+  name: shrimp fisherman hood
+  description: A hood in the shape of a shrimp head, whiskers included.
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Head/Hoods/shrimpfishermansuit.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Head/Hoods/shrimpfishermansuit.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

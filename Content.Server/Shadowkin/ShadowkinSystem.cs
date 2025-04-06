@@ -18,7 +18,8 @@ using Content.Shared.Inventory; // Floofstation Edit
 using Robust.Shared.Physics.Systems; // Floofstation Edit
 using Robust.Shared.Random; // Floofstation Edit
 using Robust.Shared.Utility; // Floofstation Edit
-using System.Linq; // Floofstation Edit
+using System.Linq;
+using Microsoft.CodeAnalysis; // Floofstation Edit
 
 namespace Content.Server.Shadowkin;
 
@@ -44,27 +45,26 @@ public sealed class ShadowkinSystem : EntitySystem
         SubscribeLocalEvent<ShadowkinComponent, ComponentStartup>(OnInit);
         SubscribeLocalEvent<ShadowkinComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<ShadowkinComponent, OnMindbreakEvent>(OnMindbreak);
-        SubscribeLocalEvent<ShadowkinComponent, OnAttemptPowerUseEvent>(OnAttemptPowerUse);
         SubscribeLocalEvent<ShadowkinComponent, OnManaUpdateEvent>(OnManaUpdate);
         SubscribeLocalEvent<ShadowkinComponent, RejuvenateEvent>(OnRejuvenate);
         SubscribeLocalEvent<ShadowkinComponent, EyeColorInitEvent>(OnEyeColorChange);
-        SubscribeLocalEvent<ShadowkinComponent, MobStateChangedEvent>(OnMobStateChanged); // Floofstation Edit
+        SubscribeLocalEvent<ShadowkinComponent, MobStateChangedEvent>(OnMobStateChanged); // Floofstation
+        SubscribeLocalEvent<ShadowkinComponent, OnAttemptPowerUseEvent>(OnAttemptPowerUse); // Floofstation
     }
 
     private void OnInit(EntityUid uid, ShadowkinComponent component, ComponentStartup args)
     {
+        // Floofstation
         if (component.BlackeyeSpawn)
             ApplyBlackEye(uid);
 
         _actionsSystem.AddAction(uid, ref component.ShadowkinSleepAction, ShadowkinSleepActionId, uid);
-
-        UpdateShadowkinAlert(uid, component);
     }
 
     private void OnEyeColorChange(EntityUid uid, ShadowkinComponent component, EyeColorInitEvent args)
     {
         if (!TryComp<HumanoidAppearanceComponent>(uid, out var humanoid)
-            || !component.BlackeyeSpawn
+            || !component.BlackeyeSpawn // Floofstation
             || humanoid.EyeColor == component.OldEyeColor)
             return;
 
@@ -96,26 +96,6 @@ public sealed class ShadowkinSystem : EntitySystem
             ));
     }
 
-    /// <summary>
-    /// Update the Shadowkin Alert, if Blackeye will remove the Alert, if not will update to its current power status.
-    /// </summary>
-    public void UpdateShadowkinAlert(EntityUid uid, ShadowkinComponent component)
-    {
-        if (TryComp<PsionicComponent>(uid, out var magic))
-        {
-            var severity = (short) ContentHelpers.RoundToLevels(magic.Mana, magic.MaxMana, 8);
-            _alerts.ShowAlert(uid, component.ShadowkinPowerAlert, severity);
-        }
-        else
-            _alerts.ClearAlert(uid, component.ShadowkinPowerAlert);
-    }
-
-    private void OnAttemptPowerUse(EntityUid uid, ShadowkinComponent component, OnAttemptPowerUseEvent args)
-    {
-        if (HasComp<ShadowkinCuffComponent>(uid))
-            args.Cancel();
-    }
-
     private void OnManaUpdate(EntityUid uid, ShadowkinComponent component, ref OnManaUpdateEvent args)
     {
         if (!TryComp<PsionicComponent>(uid, out var magic))
@@ -127,27 +107,13 @@ public sealed class ShadowkinSystem : EntitySystem
         else
             magic.ManaGainMultiplier = 1;
 
-        if (magic.Mana <= component.BlackEyeMana)
-            ApplyBlackEye(uid);
+        // if (magic.Mana <= component.BlackEyeMana)
+        //     ApplyBlackEye(uid);
 
         if (magic.Mana >= magic.MaxMana)
             RemComp<ForcedSleepingComponent>(uid);
 
         Dirty(uid, magic); // Update Shadowkin Overlay.
-        UpdateShadowkinAlert(uid, component);
-    }
-
-    /// <summary>
-    /// Blackeye the Shadowkin, its just a function to mindbreak the shadowkin but making sure "Removable" is checked true during it.
-    /// </summary>
-    /// <param name="uid"></param>
-    public void ApplyBlackEye(EntityUid uid)
-    {
-        if (!TryComp<PsionicComponent>(uid, out var magic))
-            return;
-
-        magic.Removable = true;
-        _psionicAbilitiesSystem.MindBreak(uid);
     }
 
     private void OnMindbreak(EntityUid uid, ShadowkinComponent component, ref OnMindbreakEvent args)
@@ -162,17 +128,14 @@ public sealed class ShadowkinSystem : EntitySystem
             Dirty(uid, humanoid);
         }
 
-        if (component.BlackeyeSpawn)
-            return;
-
-        if (TryComp<StaminaComponent>(uid, out var stamina))
-            _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
+        // Floofstation - do not stun the shadowkin, this is causing issues on startup and fucks up tests.
+        // if (TryComp<StaminaComponent>(uid, out var stamina))
+        //     _stamina.TakeStaminaDamage(uid, stamina.CritThreshold, stamina, uid);
     }
 
     private void OnRejuvenate(EntityUid uid, ShadowkinComponent component, RejuvenateEvent args)
     {
-        if (component.BlackeyeSpawn
-            || !HasComp<MindbrokenComponent>(uid))
+        if (!HasComp<MindbrokenComponent>(uid))
             return;
 
         RemComp<MindbrokenComponent>(uid);
@@ -191,11 +154,10 @@ public sealed class ShadowkinSystem : EntitySystem
         magic.NoMana = "shadowkin-tired"; // FloofStation Edit
         magic.Removable = false;
         magic.MindbreakingFeedback = "shadowkin-blackeye";
+        magic.NoMana = "shadowkin-tired";
 
-        if (_prototypeManager.TryIndex<PsionicPowerPrototype>("ShadowkinPowers", out var shadowkinPowers))
+        if (_prototypeManager.TryIndex<PsionicPowerPrototype>("DarkSwapPower", out var shadowkinPowers))
             _psionicAbilitiesSystem.InitializePsionicPower(uid, shadowkinPowers);
-
-        UpdateShadowkinAlert(uid, component);
     }
 
     // FloofStation Edit
@@ -243,4 +205,35 @@ public sealed class ShadowkinSystem : EntitySystem
             }
         }
     }
+
+    // Floof section begin
+    /// <summary>
+    /// Blackeye the Shadowkin, its just a function to mindbreak the shadowkin but making sure "Removable" is checked true during it.
+    /// </summary>
+    /// <param name="uid"></param>
+    public void ApplyBlackEye(EntityUid uid)
+    {
+        if (!TryComp<PsionicComponent>(uid, out var magic))
+            return;
+
+        magic.Removable = true;
+        _psionicAbilitiesSystem.MindBreak(uid, allowScarierMindbreak: false);
+    }
+
+    private void OnAttemptPowerUse(EntityUid uid, ShadowkinComponent component, OnAttemptPowerUseEvent args)
+    {
+        var query = _inventorySystem.GetSlotEnumerator(uid, SlotFlags.WITHOUT_POCKET);
+        var cuffQuery = GetEntityQuery<ShadowkinCuffComponent>();
+
+        // Cancel the attempt if the shadowkin has any clothing with the shadowkin cuff component on them
+        while (query.MoveNext(out var container))
+        {
+            if (!cuffQuery.TryComp(container.ContainedEntity, out var cuff))
+                return;
+
+            args.Cancel();
+            return;
+        }
+    }
+    // Floof section end
 }

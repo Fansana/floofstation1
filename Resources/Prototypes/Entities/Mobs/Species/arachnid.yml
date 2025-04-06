@@ -76,6 +76,7 @@
     understands:
     - TauCetiBasic
     - Arachnic
+    naturalLanguage: Arachnic # Floof: explicitly stated natural languages
   - type: Vocal
     sounds:
       Male: UnisexArachnid

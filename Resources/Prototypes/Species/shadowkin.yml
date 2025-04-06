@@ -52,8 +52,7 @@
   points:
     Underwear:
       points: 1
-      required: true
-      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
+      required: false # Floof, add underwear
     Undershirt:
       points: 1
       required: false # Floof, add underwear

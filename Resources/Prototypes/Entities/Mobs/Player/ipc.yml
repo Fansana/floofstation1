@@ -101,11 +101,14 @@
     understands:
     - TauCetiBasic
     - RobotTalk
+    naturalLanguage: RobotTalk # Floof: explicitly stated natural languages
   - type: WeldingHealable
   - type: PsionicInsulation
   - type: OfferItem
   - type: LayingDown
   - type: Carriable
+  - type: StatusIcon
+    bounds: -0.5,-0.5,0.5,0.5
   - type: StepTriggerImmune
     whitelist:
       types:
