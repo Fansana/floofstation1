@@ -143,7 +143,6 @@
         Drink,
       ]
 
-
 - type: trait
   id: Succubus
   category: Physical
@@ -167,12 +166,4 @@
   - !type:TraitAddComponent
     components:
       - type: Succubus
-        succDelay: 3
-        specialDigestible: # Vampires cannot eat food chat is that real
-          tags:
-          - IceCream
-          - Pill
-          - Crayon
-          - Paper
-
 
