@@ -33,6 +33,33 @@
           type: Succubus
         reagent: Omnizine
         amount: 0.3
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        type: Local
+        visualType: LargeCaution
+        probability: 0.2
+        messages:
+        - reagent-effect-aphrodisiac-strongoverdose1
+        - reagent-effect-aphrodisiac-strongoverdose2
+        - reagent-effect-aphrodisiac-strongoverdose3
+        - reagent-effect-aphrodisiac-strongoverdose4
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.0
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        type: Local
+        visualType: Small
+        probability: 0.2
+        messages:
+          - "reagent-effect-aphrodisiac-fade"
+        conditions:
+          - !type:ReagentThreshold
+            max: 0.1
   footstepSound:
     collection: FootstepSticky
     params:
