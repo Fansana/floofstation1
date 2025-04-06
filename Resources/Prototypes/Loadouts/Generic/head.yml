@@ -134,17 +134,6 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutHead
 
-- type: loadout
-  id: LoadoutHeadLily # Floof
-  category: Head
-  cost: 0
-  exclusive: true
-  items:
-    - FoodLily
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutHead
-
 # Color Hats
 - type: loadout
   id: LoadoutHeadHatCorpsoft
