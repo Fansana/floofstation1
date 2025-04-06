@@ -15,6 +15,24 @@
         factor: 0.2
       - !type:SatiateHunger
         factor: 1
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Water
+        amount: 0.3
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Protein
+        amount: 0.25 # See below
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Omnizine
+        amount: 0.3
   footstepSound:
     collection: FootstepSticky
     params:
