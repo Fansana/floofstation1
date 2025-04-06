@@ -21,6 +21,7 @@
             #- Anomaly # Floofstation
           availableJobs:
             Anomaly: [ 4, 4 ] # Floofstation
+            CentralCommandOfficial: [ 1, 1 ] # Admin
           #civilian
             Passenger: [ -1, -1 ]
             Librarian: [ 1, 1 ]

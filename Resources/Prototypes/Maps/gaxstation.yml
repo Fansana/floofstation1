@@ -22,6 +22,7 @@
           #- Anomaly # Floofstation
           availableJobs:
             Anomaly: [ 4, 4 ] # Floofstation
+            CentralCommandOfficial: [ 1, 1 ] # Admin
             #service
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
