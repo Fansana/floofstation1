@@ -166,7 +166,7 @@
   functions:
   - !type:TraitAddComponent
     components:
-      - type: Vampirism
+      - type: Succubus
         succDelay: 3
         specialDigestible: # Vampires cannot eat food chat is that real
           tags:
