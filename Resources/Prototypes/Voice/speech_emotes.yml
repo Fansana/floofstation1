@@ -38,7 +38,7 @@
     tags:
       - ArachnidEmotes # Floof - M3739 - #631
       - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - Chitinid-Revision
+      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-honk"]
   chatTriggers:
     - honks
@@ -57,7 +57,7 @@
       - UnathiEmotes
       - ArachnidEmotes # Floof - M3739 - #631
       - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - Chitinid-Revision
+      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-sigh"]
   chatTriggers:
     - sighs
@@ -75,7 +75,7 @@
       - DionaEmotes # Floof - M3739 - #631
       - ArachnidEmotes # Floof - M3739 - #631
       - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - Chitinid-Revision
+      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-whistle"]
   chatTriggers:
     - whistles
@@ -93,7 +93,7 @@
       - DionaEmotes # Floof - M3739 - #631
       - ArachnidEmotes # Floof - M3739 - #631
       - MothEmotes # Floof - M3739 - #631
-      - ChitinidEmotes # Floof - M3739 - Chitinid-Revision
+      - ChitinidEmotes # Floof - M3739 - #726
   chatMessages: ["chat-emote-msg-crying"]
   chatTriggers:
     - cries

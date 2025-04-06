@@ -23,7 +23,7 @@
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Wings: MobHumanoidAnyMarking # Floof - M3739 - Chitinid-Revision
+    Wings: MobHumanoidAnyMarking # Floof - M3739 - #726
     Eyes: MobChitinidEyes
     LArm: MobChitinidLArm
     RArm: MobChitinidRArm
@@ -60,7 +60,7 @@
       points: 1
       required: true
       defaultMarkings: [ ChitinidWingsDefault ]
-    Wings: # Floof - M3739 - Chitinid-Revision
+    Wings: # Floof - M3739 - #726
       points: 1
       required: false
     Snout:
