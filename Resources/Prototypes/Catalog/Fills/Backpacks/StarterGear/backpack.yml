@@ -37,7 +37,7 @@
         amount: 2
       - id: BurnAutoInjector
         amount: 2
-      - id: MagazinePistol
+      # - id: MagazinePistol | Floof - M3739 - #690 - Redundant due to weapon choices
 
 - type: entity
   categories: [ HideSpawnMenu ]
