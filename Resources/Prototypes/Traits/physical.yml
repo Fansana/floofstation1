@@ -14,7 +14,7 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToDie
         - Redshirt
   functions:
@@ -39,7 +39,7 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToLive
         - Redshirt
   functions:
