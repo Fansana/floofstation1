@@ -20,7 +20,7 @@
 
 - type: entity
   parent: BasePDA
-  id: FeelancerPDA
+  id: FreelancerPDA
   name: Freelancer PDA
   description: Refurbished standard PDA
   components:
@@ -28,7 +28,9 @@
     scanDelay: 1
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Sprite
+    sprite: Floof/Objects/Devices/pda.rsi
   - type: Pda
     id: FreelancerIDCard
-    path: "/Floof/Objects/Devices/pda.rsi"
     state: pda-free
+    
