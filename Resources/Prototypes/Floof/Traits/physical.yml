@@ -214,6 +214,11 @@
   category: Physical
   points: -2 # Has pros and cons, not sure
   requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
   - !type:CharacterSpeciesRequirement 
     inverted: true
     species:
