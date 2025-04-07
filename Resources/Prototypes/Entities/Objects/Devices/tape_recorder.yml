@@ -22,20 +22,26 @@
       params:
         volume: -5
   - type: VoiceTapeRecorder
+    cassetteSlot:
+      name: voice-tape-recorder-cassette-slot
+      swap: true
+      insertSound:
+        path: /Audio/Items/TapeRecorder/taperecorder_close.ogg
+        params:
+          volume: -10
+      ejectSound:
+        path: /Audio/Items/TapeRecorder/taperecorder_open.ogg
+        params:
+          volume: -10
+      whitelist:
+        components:
+        - VoiceTapeRecorderCassette
     startSound:
       path: /Audio/Items/TapeRecorder/taperecorder_play.ogg
       params:
         volume: -10
     stopSound:
       path: /Audio/Items/TapeRecorder/taperecorder_stop.ogg
-      params:
-        volume: -10
-    insertSound:
-      path: /Audio/Items/TapeRecorder/taperecorder_close.ogg
-      params:
-        volume: -10
-    ejectSound:
-      path: /Audio/Items/TapeRecorder/taperecorder_open.ogg
       params:
         volume: -10
     seekSound:
@@ -62,9 +68,6 @@
           Recording: { state: recording }
           Playing: { state: playing }
           Ejected: { state: ejected }
-  - type: ContainerContainer
-    containers:
-      recorder-cassette: !type:ContainerSlot
 
 - type: entity
   name: cassette

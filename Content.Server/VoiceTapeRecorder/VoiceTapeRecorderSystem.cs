@@ -10,8 +10,8 @@ using Content.Shared.Speech;
 using Content.Shared.Interaction;
 using Content.Shared.Verbs;
 using Content.Shared.Audio;
-using Robust.Server.Containers;
 using Robust.Shared.Containers;
+using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.Timing;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Audio.Systems;
@@ -29,7 +29,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly SharedAmbientSoundSystem _ambientSoundSystem = default!;
-    [Dependency] private readonly ContainerSystem _containerSystem = default!;
+    [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
 
     private TimeSpan? _whenNextEvent;
 
@@ -44,7 +44,10 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         SubscribeLocalEvent<VoiceTapeRecorderComponent, ActivateInWorldEvent>(OnActivate);
         SubscribeLocalEvent<VoiceTapeRecorderComponent, GetVerbsEvent<AlternativeVerb>>(OnAltActivateVerb);
 
-        SubscribeLocalEvent<VoiceTapeRecorderComponent, InteractUsingEvent>(OnInteractUsing);
+        SubscribeLocalEvent<VoiceTapeRecorderComponent, ItemSlotInsertAttemptEvent>(OnInsertAttempt);
+        SubscribeLocalEvent<VoiceTapeRecorderComponent, EntInsertedIntoContainerMessage>(OnInsert);
+        SubscribeLocalEvent<VoiceTapeRecorderComponent, ItemSlotEjectAttemptEvent>(OnEjectAttempt);
+        SubscribeLocalEvent<VoiceTapeRecorderComponent, EntRemovedFromContainerMessage>(OnEject);
     }
 
     private record struct ScheduleRecorderResult(
@@ -197,7 +200,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     )
     {
         EnsureComp<SpeechComponent>(uid);
-        recorder.Cassette = _containerSystem.EnsureContainer<ContainerSlot>(uid, $"recorder-cassette");
+        _itemSlots.AddItemSlot(uid, "cassetteSlot", recorder.CassetteSlot);
         ChangeState(uid, recorder, recorder.State);
     }
 
@@ -362,16 +365,8 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         [NotNullWhen(true)] out EntityUid? cassette
     )
     {
-        if (recorder.Cassette.ContainedEntity is { Valid: true } contained)
-        {
-            cassette = contained;
-            return true;
-        }
-        else
-        {
-            cassette = null;
-            return false;
-        }
+        cassette = recorder.CassetteSlot.Item;
+        return cassette != null;
     }
 
     private bool TryGetCassetteComponent(
@@ -385,54 +380,51 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             TryComp(ent, out cassette);
     }
 
-    private void EjectCassette(
+    private void OnInsertAttempt(
         EntityUid uid,
         VoiceTapeRecorderComponent recorder,
-        EntityUid? who
+        ItemSlotInsertAttemptEvent args
     )
     {
-        if (TryGetCassette(recorder, out var cassette))
-        {
-            ChangeState(uid, recorder, RecorderState.Idle);
-            if (_containerSystem.Remove(cassette.Value, recorder.Cassette))
-            {
-                _audioSystem.PlayPvs(
-                    recorder.EjectSound,
-                    uid
-                );
-                UpdateAppearance(uid, recorder);
-            }
-        }
+        if (args.Slot != recorder.CassetteSlot)
+            return;
     }
 
-    private void InsertCassette(
+    private void OnInsert(
         EntityUid uid,
         VoiceTapeRecorderComponent recorder,
-        EntityUid insert,
-        EntityUid? who
+        EntInsertedIntoContainerMessage args
     )
     {
-        if (!HasComp<VoiceTapeRecorderCassetteComponent>(insert))
+        if (args.Container.ID != recorder.CassetteSlot.ID)
+            return;
+                UpdateAppearance(uid, recorder);
+    }
+
+    private void OnEjectAttempt(
+        EntityUid uid,
+        VoiceTapeRecorderComponent recorder,
+        ItemSlotEjectAttemptEvent args
+    )
+    {
+        if (args.Slot != recorder.CassetteSlot)
             return;
 
-        if (recorder.Cassette.ContainedEntity != null)
-            EjectCassette(uid, recorder, who);
-
-        if (_containerSystem.Insert(insert, recorder.Cassette))
-        {
-            _audioSystem.PlayPvs(
-                recorder.InsertSound,
-                uid
-            );
-            UpdateAppearance(uid, recorder);
+        // Change the state so the cassette information is updated.
+        ChangeState(uid, recorder, RecorderState.Idle);
         }
-    }
-    private void OnInteractUsing(
+
+
+    private void OnEject(
         EntityUid uid,
         VoiceTapeRecorderComponent recorder,
-        InteractUsingEvent args
+        EntRemovedFromContainerMessage args
     )
-    => InsertCassette(uid, recorder, args.Used, args.User);
+    {
+        if (args.Container.ID != recorder.CassetteSlot.ID)
+            return;
+        UpdateAppearance(uid, recorder);
+    }
 
     private void OnAltActivateVerb(
         EntityUid uid,
@@ -453,13 +445,6 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
                 Loc.GetString("voice-tape-recorder-volume-high"),
             Act = () => recorder.HighVolume = !recorder.HighVolume,
             Priority = 5
-        });
-
-        args.Verbs.Add(new AlternativeVerb()
-        {
-            Text = Loc.GetString("voice-tape-recorder-eject"),
-            Act = () => EjectCassette(uid, recorder, args.User),
-            Priority = 3
         });
 
         args.Verbs.Add(new AlternativeVerb()

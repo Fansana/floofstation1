@@ -6,3 +6,4 @@ voice-tape-recorder-volume-low = Low Volume
 voice-tape-recorder-volume-high = High Volume
 voice-tape-recorder-skip-silence-on = Skip Silence On
 voice-tape-recorder-skip-silence-off = Skip Silence Off
+voice-tape-recorder-cassette-slot = Cassette
