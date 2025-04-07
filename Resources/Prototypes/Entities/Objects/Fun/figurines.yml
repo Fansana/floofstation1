@@ -151,7 +151,7 @@
   parent: BaseFigurine
   id: ToyFigurineCargoTech
   name: cargo technican figure
-  description: A figurine depicting a reptillian Cargo Technican.
+  description: A figurine depicting a Reptile Cargo Technican.
   components:
   - type: Sprite
     state: cargotech

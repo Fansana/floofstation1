@@ -113,6 +113,15 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement # M3739 - #690 - Did I miss any? Let me know.
+      species:
+        - Felinid
+        - Feroxi
+        - Rodentia
+        - Moth
+        - Vulpkanin
+        - Reptilian
+        - Chitinid
   functions:
     - !type:TraitModifyMetabolism
       types: [ TheobromineIntolerant ]
@@ -132,6 +141,15 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement # M3739 - #690 - Did I miss any? Let me know.
+      species:
+        - Felinid
+        - Feroxi
+        - Rodentia
+        - Moth
+        - Vulpkanin
+        - Reptilian
+        - Chitinid
   functions:
     - !type:TraitModifyMetabolism
       types: [ AllicinIntolerant ]
