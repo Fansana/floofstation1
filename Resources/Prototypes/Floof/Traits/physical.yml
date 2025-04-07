@@ -213,6 +213,7 @@
   id: Heavyweight
   category: Physical
   points: -2 # Has pros and cons, not sure
+  requirements:
   - !type:CharacterSpeciesRequirement 
     inverted: true
     species:
