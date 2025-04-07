@@ -284,7 +284,7 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
             from == RecorderState.Recording &&
             TryGetCassetteComponent(recorder, out var cassette)
         )
-            cassette.RecordedSoFar = cassette.RecordedSoFar + _timing.CurTime - recorder.PlayRecordingStarted;
+            cassette.Commit(recorder.PlayRecordingStarted, _timing.CurTime);
 
         if (to != RecorderState.Idle)
         {
@@ -409,9 +409,6 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     {
         if (args.Slot != recorder.CassetteSlot)
             return;
-
-        // Change the state so the cassette information is updated.
-        ChangeState(uid, recorder, RecorderState.Idle);
         }
 
 
@@ -423,7 +420,14 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     {
         if (args.Container.ID != recorder.CassetteSlot.ID)
             return;
-        UpdateAppearance(uid, recorder);
+
+        if (
+            recorder.State == RecorderState.Recording &&
+            TryComp<VoiceTapeRecorderCassetteComponent>(args.Entity, out var cassette)
+        )
+            cassette.Commit(recorder.PlayRecordingStarted, _timing.CurTime);
+
+        ChangeState(uid, recorder, RecorderState.Idle);
     }
 
     private void OnAltActivateVerb(
