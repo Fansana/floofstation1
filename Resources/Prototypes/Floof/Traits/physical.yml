@@ -103,3 +103,104 @@
       min: 100
       factor: 0.6 # still not as light as felinids due to different fixture size
 
+- type: trait
+  id: CulinaryAdaptationTheobromine
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitModifyMetabolism
+      types: [ TheobromineIntolerant ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
+
+- type: trait
+  id: CulinaryAdaptationAllicin
+  category: Physical
+  points: -1
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitModifyMetabolism
+      types: [ AllicinIntolerant ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
+
+- type: trait
+  id: Tiny
+  category: Physical
+  points: 0 # At this point, this RP-focused trait is intended to be self-balancing
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+    - Captain # Balance, sorry for the tiny captains out there!
+  - !type:CharacterHeightRequirement
+    max: 136 # Minimum size +4 for humans/standard humanoids
+  - !type:CharacterWidthRequirement
+    max: 30 # Minimum size +2 for humans/standard humanoids
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+      - Small # conflicts with PseudoItem changes
+  - !type:CharacterSpeciesRequirement 
+    inverted: true
+    species:
+    - Oni # incompatable due to use of the PlayerToolModifier and BonusMeleeDamage - a special trait will need to be made
+  - !type:CharacterDepartmentRequirement
+      inverted: true
+      departments:
+        - Security # No tiny sec, sad
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: PlayerToolModifier # TODO: switch to using a tiny component/system to remove compatibility issues?
+      pryTimeMultiplier: 1.4 # 40% longer prying time
+    - type: BonusMeleeDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
+      damageModifierSet:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+    - type: BonusStaminaDamage # TODO: switch to using a tiny component/system to remove compatibility issues?
+      multiplier: 0.8
+  - !type:TraitReplaceComponent
+    components:
+    - type: PseudoItem # TODO: fix PseudoItem direct insertion bug - not created by this trait, but particularly noticeable when using it
+      size: Normal
+    - type: Carriable
+      freeHandsRequired: 1 #Default is 2, they are tiny enough to be carried in one hand
+      pickupDuration: 2 # Default is 3, plus they will already be lighter. Get scooped.
+    - type: CanEscapeInventory
+      baseResistTime: 8 # Default is 5, takes 60% longer when tiny TODO: fix players able to drag themselves out of bags instantly!
+    - type: CritModifier
+      critThresholdModifier: -20 # reduce health to crit by 20 (20% for most standard races)
+    - type: DeadModifier
+      deadThresholdModifier: -20 # reduce health to dead by 20 to align with the crit modifier. This effectively means they have the same health after being crit as someone without the trait.
+    - type: StaminaCritModifier 
+      critThresholdModifier: -20 # reduce stamina by 20 (20% for standard races)
+  - !type:TraitSetScale
+    scale: 0.7
+  - !type:TraitAddArmor
+    damageModifierSets: 
+      - TinyTrait # Increase physical damage taken by 10%
+  - !type:TraitPushDescription
+    descriptionExtensions:
+      - description: examine-tiny-trait-message

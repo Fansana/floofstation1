@@ -1,3 +1,4 @@
+
 using System.Threading;
 using Content.Server.Administration.Commands;
 using Content.Server.Administration.Components;
@@ -50,6 +51,10 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
+
+// Floof Station - For our own smites
+using Content.Server.Floofstation.Administration;
+using Content.Server.Floofstation.Administration.Components;
 
 namespace Content.Server.Administration.Systems;
 
@@ -537,6 +542,22 @@ public sealed partial class AdminVerbSystem
                 Message = Loc.GetString("admin-smite-kill-sign-description")
             };
             args.Verbs.Add(killSign);
+
+            // Floof Station Start - Horny admin smite
+            Verb hornySign = new()
+            {
+                Text = "Horny sign",
+                Category = VerbCategory.Smite,
+                Icon = new SpriteSpecifier.Rsi(new ("/Textures/Floof/Objects/Misc/hornysign.rsi"), "icon"),
+                Act = () =>
+                {
+                    EnsureComp<HornySignComponent>(args.Target);
+                },
+                Impact = LogImpact.Extreme,
+                Message = Loc.GetString("admin-smite-horny-sign-description")
+            };
+            args.Verbs.Add(hornySign);
+            // Floof Station End
 
             Verb cluwne = new()
             {

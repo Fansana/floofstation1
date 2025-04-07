@@ -10,6 +10,17 @@
   categories:
     - UplinkPointless
 
+- type: listing
+  id: UplinkEsabre
+  name: uplink-EnergySabre-name
+  description: uplink-EnergySabre-desc
+  icon: { sprite: /Textures/Floof/Objects/Weapons/Melee/e_sabre.rsi, state: icon }
+  productEntity: ClothingBeltEnergySheathFilled
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeapons
+  saleLimit: 2
 
 # type: listing
  # id: UplinkCryoinjector
