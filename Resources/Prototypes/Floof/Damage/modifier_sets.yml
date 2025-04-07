@@ -20,3 +20,10 @@
   coefficients: # Goobstation - natural cold resistance should reduce damage, but higher intolerance to heat should take more damage.
     Heat: 1.1
     Cold: 0.7
+
+- type: damageModifierSet
+  id: TinyTrait
+  coefficients: # make tiny folks take 10% more brute damage
+    Blunt: 1.1
+    Slash: 1.1
+    Piercing: 1.1

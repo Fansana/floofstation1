@@ -59,3 +59,13 @@ trait-name-Succubus = Succubus
 trait-description-Succubus =
     Your body has evolved to be able to drink cum and metabolize it into useful compounds.
     Drinking cum satiates your hunger and thirst, and also improves your health.
+
+trait-name-Tiny = Tiny
+trait-description-Tiny = 
+    Due to a mutation, transformation, or other metaphysical circumstance you are significantly smaller than even the tiniest of your species. 
+    Your [color=red]size is reduced by 30%[/color], you can quickly be picked up with one hand, and you easily fit in most bags (though you find it takes longer to escape them).
+    Due to your size, you struggle to move things (40% longer pry times) and can't put as much force in your swings (20% reduced melee and stamina damage).
+    You also are more vulnerable (10% increased brute damage, 20% reduced crit and death thresholds) and have to exert more effort (20% reduced stamina).  
+    Note: [color=red]this will not display in the character creation menu, and will only apply the effects in-game.[/color]
+
+examine-tiny-trait-message = {CAPITALIZE(SUBJECT($entity))} is tiny. Handle with care!
