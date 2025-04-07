@@ -19,13 +19,19 @@ loadout-name-LoadoutParamedicBagSatchel = paramedic satchel (filled)
 loadout-description-LoadoutParamedicBagSatchel = This sterile satchel comes with a bodybag, portafib, and rollerbed. Essential EMT equipment.
 # Security
 # Detective
+loadout-name-LoadoutDetectiveBackpackBackpack = detective backpack (filled, colorable)
+loadout-description-LoadoutDetectiveBackpackBackpack = This inconspicious backpack comes with a box of forensic pads and a hand labeler. Neccessary to gather and organize your clues.
+loadout-name-LoadoutDetectiveBackpackDuffel = detective duffel bag (filled, colorable)
+loadout-description-LoadoutDetectiveBackpackDuffel = This inconspicious duffel bag comes with a box of forensic pads and a hand labeler. Neccessary to gather and organize your clues.
+loadout-name-LoadoutDetectiveBackpackSatchel = detective satchel (filled, colorable)
+loadout-description-LoadoutDetectiveBackpackSatchel = This inconspicious satchel comes with a box of forensic pads and a hand labeler. Neccessary to gather and organize your clues.
 # Corpsman
-loadout-name-LoadoutCorpsmanBagBackpack = corpsman backpack (filled)
-loadout-description-LoadoutCorpsmanBagBackpack = This sterile backpack comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
- Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.
-loadout-name-LoadoutCorpsmanBagDuffel = corpsman duffel bag (filled)
-loadout-description-LoadoutCorpsmanBagDuffel = This sterile duffel bag comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
- Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.
-loadout-name-LoadoutCorpsmanBagSatchel = corpsman satchel (filled)
-loadout-description-LoadoutCorpsmanBagSatchel = This sterile satchel comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
- Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.
+loadout-name-LoadoutCorpsmanBackpackBackpack = corpsman backpack (filled)
+loadout-description-LoadoutCorpsmanBackpackBackpack = This sterile backpack comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
+                                                      Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.
+loadout-name-LoadoutCorpsmanBackpackDuffel = corpsman duffel bag (filled)
+loadout-description-LoadoutCorpsmanBackpackDuffel = This sterile duffel bag comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
+                                                    Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.
+loadout-name-LoadoutCorpsmanBackpackSatchel = corpsman satchel (filled)
+loadout-description-LoadoutCorpsmanBackpackSatchel = This sterile satchel comes with equipment, essential to a corpsman, brigmedic, or combat medic in the field.
+                                                     Contains the following: portafib, rollerbed, bodybag, 2 brute auto-injectors, and 2 burn auto-injectors.

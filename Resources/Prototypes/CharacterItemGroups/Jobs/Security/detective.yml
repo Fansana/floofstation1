@@ -1,9 +1,15 @@
 # Detective
-#- type: characterItemGroup
-#  id: LoadoutDetectiveBackpacks
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutDetectiveBackpacks
+  maxItems: 1
+  items: # Floof - M3739 - #690 - Filled Detective bags
+    - type: loadout
+      id: LoadoutDetectiveBackpackBackpack
+    - type: loadout
+      id: LoadoutDetectiveBackpackDuffel
+    - type: loadout
+      id: LoadoutDetectiveBackpackSatchel
+
 #- type: characterItemGroup
 #  id: LoadoutDetectiveBelt
 #  maxItems: 1
@@ -14,20 +20,24 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutDetectiveEquipment
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutDetectiveEquipment
+  maxItems: 1
+  items: # Floof - M3739 - #690 - Spare equipment in case the station's equipment is missing.
+    - type: loadout
+      id: LoadoutDetectiveEquipmentScanner
+
 #- type: characterItemGroup
 #  id: LoadoutDetectiveEyes
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutDetectiveGloves
-#  maxItems: 1
-#  items:
+- type: characterItemGroup
+  id: LoadoutDetectiveGloves
+  maxItems: 1
+  items: # Floof - M3739 - #690 - If you are an IPC, the gloves in your locker being missing wouldn't be a problem, ergo...
+    - type: loadout
+      id: LoadoutDetectiveGlovesForensic
 #
 #- type: characterItemGroup
 #  id: LoadoutDetectiveHead

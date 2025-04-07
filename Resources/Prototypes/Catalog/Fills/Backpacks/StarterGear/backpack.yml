@@ -200,8 +200,8 @@
   components:
     - type: StorageFill
       contents:
-      - id: Lighter
-      - id: CigPackBlack
+        #- id: Lighter | Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
+        #- id: CigPackBlack| Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
       - id: HandLabeler
       - id: BoxForensicPad
 
