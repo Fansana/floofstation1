@@ -11,6 +11,7 @@
   maleFirstNames: NamesChitinidFirstMale
   femaleFirstNames: NamesChitinidFirstFemale
   naming: First
+  customName: true # Floof - M3739 - #726
 
 - type: speciesBaseSprites
   id: MobChitinidSprites
