@@ -3765,3 +3765,40 @@ Entries:
   id: 404
   time: '2025-04-05T22:16:49.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/707
+- author: LaCumbiaDelCoronavirus
+  changes:
+    - type: Tweak
+      message: Slime people look a bit less bald now.
+  id: 405
+  time: '2025-04-05T22:51:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/723
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Handheld translators now use 1.5 times less power.
+  id: 406
+  time: '2025-04-05T23:39:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/698
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added Security and Brigging SOPs to the guidebook.
+  id: 407
+  time: '2025-04-05T23:42:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/697
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The security department's socks have been retrofitted to meet new
+        footwear requirements.
+  id: 408
+  time: '2025-04-06T05:35:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/713
+- author: Forzii
+  changes:
+    - type: Add
+      message: Brought back the tiny trait. NT cloning tech has been acting up lately.
+  id: 409
+  time: '2025-04-07T08:26:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/689
