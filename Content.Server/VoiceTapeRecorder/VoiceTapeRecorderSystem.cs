@@ -47,50 +47,57 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         SubscribeLocalEvent<VoiceTapeRecorderComponent, InteractUsingEvent>(OnInteractUsing);
     }
 
-    public void ScheduleNextRecorder(VoiceTapeRecorderComponent component)
+    private record struct ScheduleRecorderResult(
+        bool TimeShifted
+    );
+
+    private ScheduleRecorderResult ScheduleNextRecorder(VoiceTapeRecorderComponent recorder)
     {
+        var timeShifted = false;
         if (
-            TryGetCassetteComponent(component, out var cassette) &&
-            component.State != RecorderState.Idle
+            TryGetCassetteComponent(recorder, out var cassette) &&
+            recorder.State != RecorderState.Idle
         )
         {
-            var offset = component.PlayRecordingStarted - component.TimeShift;
+            var offset = recorder.PlayRecordingStarted - recorder.TimeShift;
             TimeSpan when;
-            if (component.State == RecorderState.Playing)
+            if (recorder.State == RecorderState.Playing)
             {
-                if (component.NextMessageIndex < cassette.RecordedMessages.Count)
-                    when = offset + cassette.RecordedMessages[component.NextMessageIndex].When;
+                if (recorder.NextMessageIndex < cassette.RecordedMessages.Count)
+                    when = offset + cassette.RecordedMessages[recorder.NextMessageIndex].When;
                 else
                     when = offset + cassette.RecordedSoFar;
 
-                if (component.SkipSilence)
+                if (recorder.SkipSilence)
                 {
                     var currentTime = _timing.CurTime;
                     var diff = when - currentTime;
                     if (diff > _maxSilence)
                     {
                         when = currentTime + _maxSilence;
-                        component.TimeShift += diff - _maxSilence;
+                        recorder.TimeShift += diff - _maxSilence;
+                        timeShifted = true;
                     }
                 }
             }
             else // Recording
             {
-                when = component.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar;
+                when = recorder.PlayRecordingStarted + cassette.Capacity - cassette.RecordedSoFar;
             }
-            component.WhenNextEvent = when;
+            recorder.WhenNextEvent = when;
             if (_whenNextEvent is null || _whenNextEvent > when)
                 _whenNextEvent = when;
         }
+        return new ScheduleRecorderResult(timeShifted);
     }
 
     private void Say(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         string message
     )
     {
-        var chatType = component.HighVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
+        var chatType = recorder.HighVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
         var language = EnsureComp<LanguageSpeakerComponent>(uid);
         language.CurrentLanguage = Shared.Language.Systems.SharedLanguageSystem.Universal.ID;
         if (TryComp<VoiceOverrideComponent>(uid, out var voiceOverride))
@@ -106,11 +113,11 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     private void Impersonate(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         RecordedMessage recordedMessage
     )
     {
-        var chatType = component.HighVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
+        var chatType = recorder.HighVolume ? InGameICChatType.Speak : InGameICChatType.Whisper;
         var language = EnsureComp<LanguageSpeakerComponent>(uid);
         var voiceOverride = EnsureComp<VoiceOverrideComponent>(uid);
         voiceOverride.NameOverride = recordedMessage.Who;
@@ -134,27 +141,25 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         _whenNextEvent = null;
 
         var query = EntityQueryEnumerator<VoiceTapeRecorderComponent>();
-        while (query.MoveNext(out var uid, out var component))
+        while (query.MoveNext(out var uid, out var recorder))
         {
-            if (component.State == RecorderState.Idle) continue;
-            if (currentTime >= component.WhenNextEvent)
+            if (recorder.State == RecorderState.Idle) continue;
+            if (currentTime >= recorder.WhenNextEvent)
             {
-                switch (component.State)
+                switch (recorder.State)
                 {
                     case RecorderState.Playing:
-                        OnPlayingEvent(uid, component);
+                        OnPlayingEvent(uid, recorder);
                         break;
                     case RecorderState.Recording:
-                        OnRecordingEvent(uid, component);
+                        OnRecordingEvent(uid, recorder);
                         break;
                     default: break;
                 }
             }
-            var timeShift = component.TimeShift;
-            ScheduleNextRecorder(component);
-            if (timeShift != component.TimeShift)
+            if (ScheduleNextRecorder(recorder).TimeShifted)
                 _audioSystem.PlayPvs(
-                    component.SeekSound,
+                    recorder.SeekSound,
                     uid
                 );
         }
@@ -162,43 +167,43 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     private void OnRecordingEvent(
         EntityUid uid,
-        VoiceTapeRecorderComponent component
-    ) => ChangeState(uid, component, RecorderState.Idle);
+        VoiceTapeRecorderComponent recorder
+    ) => ChangeState(uid, recorder, RecorderState.Idle);
 
     private void OnPlayingEvent(
         EntityUid uid,
-        VoiceTapeRecorderComponent component
+        VoiceTapeRecorderComponent recorder
     )
     {
         if (
-            TryGetCassetteComponent(component, out var cassette) &&
-            component.NextMessageIndex < cassette.RecordedMessages.Count)
+            TryGetCassetteComponent(recorder, out var cassette) &&
+            recorder.NextMessageIndex < cassette.RecordedMessages.Count)
         {
-            Impersonate(uid, component,
-                cassette.RecordedMessages[component.NextMessageIndex++]
+            Impersonate(uid, recorder,
+                cassette.RecordedMessages[recorder.NextMessageIndex++]
             );
         }
         else
         {
             //Say(uid, component, Loc.GetString("voice-tape-recorder-end-of-tape"));
-            ChangeState(uid, component, RecorderState.Idle);
+            ChangeState(uid, recorder, RecorderState.Idle);
         }
     }
 
     private void OnInit(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         ComponentInit args
     )
     {
         EnsureComp<SpeechComponent>(uid);
-        component.Cassette = _containerSystem.EnsureContainer<ContainerSlot>(uid, $"recorder-cassette");
-        ChangeState(uid, component, component.State);
+        recorder.Cassette = _containerSystem.EnsureContainer<ContainerSlot>(uid, $"recorder-cassette");
+        ChangeState(uid, recorder, recorder.State);
     }
 
     private void OnListen(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         ListenEvent args
     )
     {
@@ -211,10 +216,10 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         if (nameEv.SpeechVerb != null && _prototypeManager.TryIndex(nameEv.SpeechVerb, out var proto))
             speech = proto;
 
-        if (TryGetCassetteComponent(component, out var cassette))
+        if (TryGetCassetteComponent(recorder, out var cassette))
             cassette.RecordedMessages.Add(
                 new RecordedMessage(
-                    cassette.RecordedSoFar + (_timing.CurTime - component.PlayRecordingStarted),
+                    cassette.RecordedSoFar + (_timing.CurTime - recorder.PlayRecordingStarted),
                     name,
                     speech,
                     _language.GetLanguage(args.Source),
@@ -225,79 +230,79 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     private void OnAttemptListen(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         ListenAttemptEvent args
     )
     {
-        if (component.State != RecorderState.Recording) args.Cancel();
+        if (recorder.State != RecorderState.Recording) args.Cancel();
     }
 
     private void UpdateAppearance(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         AppearanceComponent? appearance = null
     )
     {
         if (!Resolve(uid, ref appearance, false))
             return;
 
-        if (TryGetCassette(component, out _))
-            _appearance.SetData(uid, RecorderVisuals.State, component.State, appearance);
+        if (TryGetCassette(recorder, out _))
+            _appearance.SetData(uid, RecorderVisuals.State, recorder.State, appearance);
         else
             _appearance.SetData(uid, RecorderVisuals.State, RecorderState.Ejected, appearance);
     }
 
     private void ChangeState(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         RecorderState to
     )
     {
-        var from = component.State;
-        if (!TryGetCassetteComponent(component, out _))
+        var from = recorder.State;
+        if (!TryGetCassetteComponent(recorder, out _))
             to = RecorderState.Idle;
 
         if (from != to) // Prevents freshly-spawned tapes clicking (Idle to Idle)
         {
-            component.State = to;
-            OnStateChange(uid, component, from, to);
+            recorder.State = to;
+            OnStateChange(uid, recorder, from, to);
         }
-        UpdateAppearance(uid, component);
+        UpdateAppearance(uid, recorder);
     }
 
     private void OnStateChange(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         RecorderState from,
         RecorderState to
     )
     {
         if (
             from == RecorderState.Recording &&
-            TryGetCassetteComponent(component, out var cassette)
+            TryGetCassetteComponent(recorder, out var cassette)
         )
-            cassette.RecordedSoFar = cassette.RecordedSoFar + _timing.CurTime - component.PlayRecordingStarted;
+            cassette.RecordedSoFar = cassette.RecordedSoFar + _timing.CurTime - recorder.PlayRecordingStarted;
 
         if (to != RecorderState.Idle)
         {
-            component.TimeShift = TimeSpan.Zero;
-            component.PlayRecordingStarted = _timing.CurTime;
+            recorder.TimeShift = TimeSpan.Zero;
+            recorder.PlayRecordingStarted = _timing.CurTime;
             if (to == RecorderState.Playing)
             {
-                component.NextMessageIndex = 0;
-                ScheduleNextRecorder(component);
+                recorder.NextMessageIndex = 0;
+                ScheduleNextRecorder(recorder);
             }
             else // Recording
             {
-                EnsureComp<ActiveListenerComponent>(uid).Range = component.ListenRange;
-                ScheduleNextRecorder(component);
+                EnsureComp<ActiveListenerComponent>(uid).Range = recorder.ListenRange;
+                ScheduleNextRecorder(recorder);
             }
         }
         if (to != RecorderState.Recording)
             RemCompDeferred<ActiveListenerComponent>(uid);
 
         _audioSystem.PlayPvs(
-            to == RecorderState.Idle ? component.StopSound : component.StartSound,
+            to == RecorderState.Idle ? recorder.StopSound : recorder.StartSound,
             uid
         );
         _ambientSoundSystem.SetAmbience(uid, to != RecorderState.Idle);
@@ -305,29 +310,29 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     private void OnUse(
         EntityUid uid,
-        VoiceTapeRecorderComponent component
+        VoiceTapeRecorderComponent recorder
     )
-    => ChangeState(uid, component,
-        component.State != RecorderState.Playing ?
+    => ChangeState(uid, recorder,
+        recorder.State != RecorderState.Playing ?
             RecorderState.Playing : RecorderState.Idle
     );
 
     private void OnAltUse(
         EntityUid uid,
-        VoiceTapeRecorderComponent component
+        VoiceTapeRecorderComponent recorder
     )
-    => ChangeState(uid, component,
-        component.State != RecorderState.Recording ?
+    => ChangeState(uid, recorder,
+        recorder.State != RecorderState.Recording ?
             RecorderState.Recording : RecorderState.Idle
     );
 
     private void EraseTape(
         EntityUid uid,
-        VoiceTapeRecorderComponent component
+        VoiceTapeRecorderComponent recorder
     )
     {
-        ChangeState(uid, component, RecorderState.Idle);
-        if (TryGetCassetteComponent(component, out var cassette))
+        ChangeState(uid, recorder, RecorderState.Idle);
+        if (TryGetCassetteComponent(recorder, out var cassette))
         {
             cassette.RecordedSoFar = TimeSpan.Zero;
             cassette.RecordedMessages = [];
@@ -336,28 +341,28 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
 
     private void OnActivate(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         ActivateInWorldEvent args
     )
-    => OnUse(uid, component);
+    => OnUse(uid, recorder);
 
     private void OnActivateVerb(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         GetVerbsEvent<ActivationVerb> args
     )
     => args.Verbs.Add(new ActivationVerb()
     {
         Text = Loc.GetString("voice-tape-recorder-play"),
-        Act = () => OnUse(uid, component)
+        Act = () => OnUse(uid, recorder)
     });
 
     private static bool TryGetCassette(
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         [NotNullWhen(true)] out EntityUid? cassette
     )
     {
-        if (component.Cassette.ContainedEntity is { Valid: true } contained)
+        if (recorder.Cassette.ContainedEntity is { Valid: true } contained)
         {
             cassette = contained;
             return true;
@@ -370,39 +375,39 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
     }
 
     private bool TryGetCassetteComponent(
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         [NotNullWhen(true)] out VoiceTapeRecorderCassetteComponent? cassette
     )
     {
         cassette = null;
         return
-            TryGetCassette(component, out var ent) &&
+            TryGetCassette(recorder, out var ent) &&
             TryComp(ent, out cassette);
     }
 
     private void EjectCassette(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         EntityUid? who
     )
     {
-        if (TryGetCassette(component, out var cassette))
+        if (TryGetCassette(recorder, out var cassette))
         {
-            ChangeState(uid, component, RecorderState.Idle);
-            if (_containerSystem.Remove(cassette.Value, component.Cassette))
+            ChangeState(uid, recorder, RecorderState.Idle);
+            if (_containerSystem.Remove(cassette.Value, recorder.Cassette))
             {
                 _audioSystem.PlayPvs(
-                    component.EjectSound,
+                    recorder.EjectSound,
                     uid
                 );
-                UpdateAppearance(uid, component);
+                UpdateAppearance(uid, recorder);
             }
         }
     }
 
     private void InsertCassette(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         EntityUid insert,
         EntityUid? who
     )
@@ -410,67 +415,67 @@ public sealed class VoiceTapeRecorderSystem : EntitySystem
         if (!HasComp<VoiceTapeRecorderCassetteComponent>(insert))
             return;
 
-        if (component.Cassette.ContainedEntity != null)
-            EjectCassette(uid, component, who);
+        if (recorder.Cassette.ContainedEntity != null)
+            EjectCassette(uid, recorder, who);
 
-        if (_containerSystem.Insert(insert, component.Cassette))
+        if (_containerSystem.Insert(insert, recorder.Cassette))
         {
             _audioSystem.PlayPvs(
-                component.InsertSound,
+                recorder.InsertSound,
                 uid
             );
-            UpdateAppearance(uid, component);
+            UpdateAppearance(uid, recorder);
         }
     }
     private void OnInteractUsing(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         InteractUsingEvent args
     )
-    => InsertCassette(uid, component, args.Used, args.User);
+    => InsertCassette(uid, recorder, args.Used, args.User);
 
     private void OnAltActivateVerb(
         EntityUid uid,
-        VoiceTapeRecorderComponent component,
+        VoiceTapeRecorderComponent recorder,
         GetVerbsEvent<AlternativeVerb> args
     )
     {
         args.Verbs.Add(new AlternativeVerb()
         {
             Text = Loc.GetString("voice-tape-recorder-record"),
-            Act = () => OnAltUse(uid, component),
+            Act = () => OnAltUse(uid, recorder),
             Priority = 10
         });
         args.Verbs.Add(new AlternativeVerb()
         {
-            Text = component.HighVolume ?
+            Text = recorder.HighVolume ?
                 Loc.GetString("voice-tape-recorder-volume-low") :
                 Loc.GetString("voice-tape-recorder-volume-high"),
-            Act = () => component.HighVolume = !component.HighVolume,
+            Act = () => recorder.HighVolume = !recorder.HighVolume,
             Priority = 5
         });
 
         args.Verbs.Add(new AlternativeVerb()
         {
             Text = Loc.GetString("voice-tape-recorder-eject"),
-            Act = () => EjectCassette(uid, component, args.User),
+            Act = () => EjectCassette(uid, recorder, args.User),
             Priority = 3
         });
 
         args.Verbs.Add(new AlternativeVerb()
         {
-            Text = component.SkipSilence ?
+            Text = recorder.SkipSilence ?
                 Loc.GetString("voice-tape-recorder-skip-silence-off") :
                 Loc.GetString("voice-tape-recorder-skip-silence-on"),
-            Act = () => component.SkipSilence = !component.SkipSilence,
+            Act = () => recorder.SkipSilence = !recorder.SkipSilence,
             Priority = 2
         });
 
-        if (component.State == RecorderState.Idle)
+        if (recorder.State == RecorderState.Idle)
             args.Verbs.Add(new AlternativeVerb()
             {
                 Text = Loc.GetString("voice-tape-recorder-erase"),
-                Act = () => EraseTape(uid, component),
+                Act = () => EraseTape(uid, recorder),
                 Priority = 1
             });
     }
