@@ -564,7 +564,7 @@ character-item-group-LoadoutDetectiveOuter = Detective Outerwear
 character-item-group-LoadoutDetectiveShoes = Detective Shoes
 character-item-group-LoadoutDetectiveUniforms = Detective Uniforms
 
-# Security - Head Of Security | Floof - M3739 - 690 - HoS Weapons renamed to better suit it's selection.
+# Security - Head Of Security | Floof - M3739 - #690 - HoS Weapons renamed to better suit it's selection.
 character-item-group-LoadoutHeadOfSecurityBackpacks = Head Of Security Backpacks
 character-item-group-LoadoutHeadOfSecurityBelt = Head Of Security Belt
 character-item-group-LoadoutHeadOfSecurityEars = Head Of Security Ears
