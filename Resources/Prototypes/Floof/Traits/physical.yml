@@ -163,8 +163,8 @@
       - HollowFangs
       - Vampirism
   functions:
-  - !type:TraitReplaceComponent
-    components:
+    - !type:TraitReplaceComponent
+      components:
       - type: Succubus
 
   id: Tiny
