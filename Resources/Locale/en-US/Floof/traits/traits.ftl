@@ -54,6 +54,7 @@ trait-description-CulinaryAdaptationTheobromine =
 trait-name-CulinaryAdaptationAllicin = Culinary Adaptation (Allicin)
 trait-description-CulinaryAdaptationAllicin =
     Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize allicin.
+    You can eat garlic and onions without being poisoned by it!
 
 trait-name-Succubus = Succubus
 trait-description-Succubus =
