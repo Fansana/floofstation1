@@ -854,6 +854,10 @@ public sealed class ChatUIController : UIController
         // color the name if it's got [Name] in it
         if (_chatNameColorsEnabled)
         {
+            // Floofstation - unconditional name coloring
+            // var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
+            // if (grammar != null && grammar.ProperNoun == true)
+            //     msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
             msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
         }
 
