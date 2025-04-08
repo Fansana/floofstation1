@@ -2,7 +2,7 @@
   parent: VendingMachine
   id: VendingMachineFreelancer
   name: Freelancer Vend
-  description: PTech vending! Providing a ROBUST selection of PDAs, cartridges, and anything else a dull paper pusher needs!
+  description: Freelancer Vend! When you need dispense some unaffilated freedom!
   components:
   - type: VendingMachine
     pack: VMFreelancerInventory
