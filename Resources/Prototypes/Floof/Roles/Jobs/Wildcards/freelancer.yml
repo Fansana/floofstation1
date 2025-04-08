@@ -8,7 +8,7 @@
   overrideConsoleVisibility: true
   canBeAntag: false
   canBeAntagTarget: false
-  icon: "JobIconNoId"
+  icon: "JobIconFreelancer"
   joinNotifyCrew: false
   whitelisted: true
   access:
@@ -23,7 +23,6 @@
     shoes: ClothingShoesBootsMercFilled
     mask: ClothingMaskGasMerc
     neck: ClothingNeckOldMantle
-    eyes: ClothingEyesGlassesMercenary
     gloves: ClothingHandsMercGlovesCombat
     outerClothing: ClothingOuterVestWebMercenary
     back: ClothingBackpackMerc

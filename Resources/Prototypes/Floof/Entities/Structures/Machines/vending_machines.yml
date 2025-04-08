@@ -1,0 +1,36 @@
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineFreelancer
+  name: Freelancer Vend
+  description: PTech vending! Providing a ROBUST selection of PDAs, cartridges, and anything else a dull paper pusher needs!
+  components:
+  - type: VendingMachine
+    pack: VMFreelancerInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: Sprite
+    noRot: true
+    sprite: Floof/Structures/Machines/VendingMachines/freelancervend.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 2
+    energy: 1.3
+    color: "#ffb0b0"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: AccessReader
+    access: [["Freelancer"]]
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+    rotateWhileAnchored: false

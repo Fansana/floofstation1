@@ -1282,4 +1282,48 @@
       board: [ DoorElectronicsFreelancer ]
   - type: Wires
     layoutId: AirlockFreelancer
+ 
+- type: entity
+  parent: AirlockShuttle
+  id: AirlockFreelancerLockedShuttle
+  suffix: Freelancer, Locked, Docking
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockFreelancerGlassLockedShuttle
+  suffix: Freelancer, Locked, Docking
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalFreelancerLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
+    
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalFreelancerGlassLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+  - type: Wires
+    layoutId: AirlockFreelancer
     
