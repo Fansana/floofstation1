@@ -68,7 +68,7 @@
       id: LoadoutMaskCorpsmanBreathMedicalSecurity
 
 - type: characterItemGroup
-  id: LoadoutCorpsmanOuter # Floof
+  id: LoadoutCorpsmanOuter # Floof - M3739 - #690
   maxItems: 1
   items:
     - type: loadout
@@ -80,7 +80,7 @@
 #  items:
 #
 - type: characterItemGroup
-  id: LoadoutCorpsmanUniforms # Floof
+  id: LoadoutCorpsmanUniforms # Floof - M3739 - #690
   maxItems: 1
   items:
     - type: loadout

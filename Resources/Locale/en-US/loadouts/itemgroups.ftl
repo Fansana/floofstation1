@@ -47,6 +47,7 @@ character-item-group-LoadoutCommandNeck = Command Neckwear
 character-item-group-LoadoutCommandMask = Command Masks
 character-item-group-LoadoutCommandOuter = Command Outerwear
 character-item-group-LoadoutCommandSelfDefense = Command Self-Defense
+# Floof - M3739 - #690 - Somehow, the FTL for LoadoutCommandSelfDefense vanished, again. Ergo...
 character-item-group-LoadoutCommandShoes = Command Shoes
 character-item-group-LoadoutCommandUniforms = Command Uniforms
 

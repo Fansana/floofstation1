@@ -128,7 +128,7 @@
 
 # Outer
 - type: loadout
-  id: LoadoutClothingLongcoatBrigmedic # Floof
+  id: LoadoutClothingLongcoatBrigmedic # Floof - M3739 - #690
   category: JobsSecurityCorpsman
   cost: 0
   exclusive: true
@@ -145,7 +145,7 @@
 
 # Uniforms
 - type: loadout
-  id: LoadoutClothingUniformJumpsuitBrigmedic # Floof
+  id: LoadoutClothingUniformJumpsuitBrigmedic # Floof - M3739 - #690
   category: JobsSecurityCorpsman
   cost: 0
   exclusive: true
@@ -159,7 +159,7 @@
     - ClothingUniformJumpsuitBrigmedic
     
 - type: loadout
-  id: LoadoutClothingUniformJumpskirtBrigmedic # Floof
+  id: LoadoutClothingUniformJumpskirtBrigmedic # Floof - M3739 - #690
   category: JobsSecurityCorpsman
   cost: 0
   exclusive: true

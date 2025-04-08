@@ -206,7 +206,7 @@
     - JobsSecuritySecurityOfficer
     - JobsSecuritySeniorOfficer
     - JobsSecurityWarden
-    - JobsSecurityPrisonGuard # - Floof
+    - JobsSecurityPrisonGuard # Floof - Prison Guard
 
 - type: loadoutCategory
   id: JobsSecurityAUncategorized
@@ -233,7 +233,7 @@
   id: JobsSecurityWarden
 
 - type: loadoutCategory
-  id: JobsSecurityPrisonGuard # - Floof
+  id: JobsSecurityPrisonGuard # Floof - Prison Guard
   
 # Service
 - type: loadoutCategory

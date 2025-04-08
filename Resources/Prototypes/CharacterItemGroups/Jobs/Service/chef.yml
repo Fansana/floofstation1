@@ -39,7 +39,7 @@
     - type: loadout
       id: LoadoutServiceHeadChefOrion
     - type: loadout
-      id: ClothingHeadHatChef # Floof
+      id: ClothingHeadHatChef # Floof - M3739 - #690
 
 #- type: characterItemGroup
 #  id: LoadoutChefId
@@ -56,7 +56,7 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutServiceMaskItalianMoustache # Floof
+      id: LoadoutServiceMaskItalianMoustache # Floof - M3739 - #690
 
 - type: characterItemGroup
   id: LoadoutChefOuter
@@ -68,11 +68,11 @@
     - type: loadout
       id: LoadoutServiceOuterChefOrion
     - type: loadout
-      id: LoadoutServiceOuterChefJacket # Floof
+      id: LoadoutServiceOuterChefJacket # Floof - M3739 - #690
     - type: loadout
-      id: LoadoutServiceOuterChefWinter # Floof
+      id: LoadoutServiceOuterChefWinter # Floof - M3739 - #690
     - type: loadout
-      id: LoadoutServiceOuterChefApron # Floof
+      id: LoadoutServiceOuterChefApron # Floof - M3739 - #690
 
 #- type: characterItemGroup
 #  id: LoadoutChefShoes
@@ -89,6 +89,6 @@
     - type: loadout
       id: LoadoutServiceJumpsuitChefOrion
     - type: loadout
-      id: LoadoutServiceJumpsuitChef # Floof
+      id: LoadoutServiceJumpsuitChef # Floof - M3739 - #690
     - type: loadout
-      id: LoadoutServiceJumpskirtChef # Floof
+      id: LoadoutServiceJumpskirtChef # Floof - M3739 - #690
