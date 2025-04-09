@@ -1576,9 +1576,9 @@
   desc: reagent-desc-gin-and-pussy
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: ginandpussy
-  color: "#004166"
+  color: "#fcf0f9"
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/GinandPussy.rsi
+    sprite: Objects/Consumable/Drinks/ginandpussy.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 6
   metamorphicFillBaseName: fill-
