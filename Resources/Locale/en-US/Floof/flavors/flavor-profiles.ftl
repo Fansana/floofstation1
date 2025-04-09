@@ -77,3 +77,4 @@ flavor-complex-walnut = like walnuts
 flavor-complex-despair = despair
 flavor-complex-eggnog = eggnog
 flavor-complex-syndicate-eggnog = like eggnog, and war profiteering
+flavor-complex-ginandpussy = like wet pussy, with extra gin

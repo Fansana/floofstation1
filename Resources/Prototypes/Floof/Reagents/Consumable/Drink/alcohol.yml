@@ -1568,3 +1568,26 @@
   - type: Icon
     sprite: Floof/Objects/Consumable/Drinks/syndicate_eggnog.rsi
     state: icon
+
+- type: reagent
+  id: GinandPussy
+  name: reagent-name-gin-and-pussy
+  parent: BaseAlcohol
+  desc: reagent-desc-gin-and-pussy
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: ginandpussy
+  color: "#004166"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/GinandPussy.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.15

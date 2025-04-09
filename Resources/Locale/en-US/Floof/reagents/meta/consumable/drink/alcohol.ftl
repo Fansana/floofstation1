@@ -195,3 +195,6 @@ reagent-desc-eggnog = creamy, pale yellow and topped with a sprinkle of cinnamon
 
 reagent-name-syndicate-eggnog = Syndicate Eggnog
 reagent-desc-syndicate-eggnog = creamy, pale yellow and topped with a sprinkle of cinnamon and strongly alcoholic.
+
+reagent-name-gin-and-pussy = Gin and Pussy
+reagent-desc-gin-and-pussy = A Sapphic twist on the classic Gin and Tonic, featuring locally sourced Natural Lubricant as a replacement for Tonic, A favorite of Maintenance Bars everywhere.

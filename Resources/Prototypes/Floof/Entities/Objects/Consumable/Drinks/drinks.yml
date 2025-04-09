@@ -574,3 +574,19 @@
     sprite: Floof/Objects/Consumable/Drinks/yeolhandy.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlass
+  id: DrinkGinandPussyGlass
+  suffix: Gin and Pussy
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: GinandPussy
+          Quantity: 30
+  - type: Icon
+    sprite: Floof/Objects/Consumable/Drinks/ginandpussy.rsi
+    state: icon
+
