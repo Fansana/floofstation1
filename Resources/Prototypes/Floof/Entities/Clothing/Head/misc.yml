@@ -68,6 +68,8 @@
     slots:
     - Hair
     - Snout
+    - HeadSide
+    - HeadTop
   - type: IngestionBlocker
   - type: IdentityBlocker
 
@@ -97,6 +99,8 @@
     slots:
     - Hair
     - Snout
+    - HeadSide
+    - HeadTop
   - type: IngestionBlocker
   - type: IdentityBlocker
   
@@ -126,5 +130,7 @@
     slots:
     - Hair
     - Snout
+    - HeadSide
+    - HeadTop
   - type: IngestionBlocker
   - type: IdentityBlocker
