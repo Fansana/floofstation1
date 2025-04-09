@@ -818,3 +818,12 @@
   products:
     Hallelujah : 6
 
+- type: reaction
+  id: GinandPussy
+  reactants:
+    Gin:
+      amount: 1
+    NaturalLubricant:
+      amount: 2
+  products:
+    GinandPussy: 3
