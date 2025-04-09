@@ -35,7 +35,7 @@
 
 #uplink categoires
 - type: storeCategory
-  id: UplinkWeapons
+  id: UplinkWeaponry # Floofstation - fixed the name
   name: store-category-weapons
   priority: 0
 
