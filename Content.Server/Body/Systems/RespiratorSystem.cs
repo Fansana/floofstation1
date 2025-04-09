@@ -186,7 +186,7 @@ public sealed class RespiratorSystem : EntitySystem
     /// </summary>
     public bool CanMetabolizeInhaledAir(Entity<RespiratorComponent?> ent)
     {
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(ent, ref ent.Comp, logMissing: false)) // Floofstation - do not fail tests if respirator is missing, duh.
             return false;
 
         var ev = new InhaleLocationEvent();
