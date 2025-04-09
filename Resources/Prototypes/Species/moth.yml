@@ -19,6 +19,8 @@
     Head: MobMothHead
     Snout: MobHumanoidAnyMarking
     Chest: MobMothTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -42,6 +44,12 @@
   id: MobMothMarkingLimits
   onlyWhitelisted: true
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1 # Floof, add underwear
+      required: false
     Hair:
       points: 0
       required: false

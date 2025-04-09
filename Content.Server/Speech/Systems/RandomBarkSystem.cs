@@ -44,7 +44,28 @@ public sealed class RandomBarkSystem : EntitySystem
                 || GetNextBark((uid, barker)) is not { } bark)
                 continue;
 
-            _chat.TrySendInGameICMessage(uid, bark, InGameICChatType.Speak, barker.ChatLog ? ChatTransmitRange.Normal : ChatTransmitRange.HideChat);
+            // FLOOF START - allows barks to be things other than "Speak"
+            var chatMode = InGameICChatType.Speak;
+            switch (barker.BarkChatKind)
+            {
+                case "Emote":
+                    chatMode = InGameICChatType.Emote;
+                    break;
+                case "Subtle":
+                    chatMode = InGameICChatType.Subtle;
+                    break;
+                case "SubtleOOC":
+                    chatMode = InGameICChatType.SubtleOOC;
+                    break;
+                case "Whisper":
+                    chatMode = InGameICChatType.Whisper;
+                    break;
+                default:
+                    chatMode = InGameICChatType.Speak;
+                    break;
+            }
+
+            _chat.TrySendInGameICMessage(uid, bark, chatMode, barker.ChatLog ? ChatTransmitRange.Normal : ChatTransmitRange.HideChat);
         }
     }
 

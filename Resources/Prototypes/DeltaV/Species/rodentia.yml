@@ -28,6 +28,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobRodentiaTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -45,6 +47,12 @@
 - type: markingPoints
   id: MobRodentiaMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1 # Floof, add underwear
+      required: false
     Hair:
       points: 1
       required: false

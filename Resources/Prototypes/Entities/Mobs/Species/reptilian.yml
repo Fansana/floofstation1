@@ -80,6 +80,7 @@
     understands:
     - TauCetiBasic
     - Draconic
+    naturalLanguage: Draconic # Floof: explicitly stated natural languages
   - type: FootPrints
     leftBarePrint: "footprint-left-bare-lizard"
     rightBarePrint: "footprint-right-bare-lizard"

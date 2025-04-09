@@ -76,6 +76,7 @@
     understands:
     - TauCetiBasic
     - Arachnic
+    naturalLanguage: Arachnic # Floof: explicitly stated natural languages
   - type: Vocal
     sounds:
       Male: UnisexArachnid
@@ -93,6 +94,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
       - map: ["jumpsuit"]
       - map: ["enum.HumanoidVisualLayers.LFoot"]
       - map: ["enum.HumanoidVisualLayers.RFoot"]

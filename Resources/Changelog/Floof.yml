@@ -3427,3 +3427,383 @@ Entries:
   id: 366
   time: '2025-03-22T15:08:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/635
+- author: Fenny
+  changes:
+    - type: Add
+      message: Gray Jumpskirt added to loadout clothing selection!
+  id: 367
+  time: '2025-03-24T00:33:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/664
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: >-
+        You can now select underwear and undershirts in the markings menu. They
+        are toggleable in-game via the interaction menu, but you must not be
+        wearing a jumpsuit to toggle them.
+  id: 368
+  time: '2025-03-24T00:35:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/575
+- author: Forzii
+  changes:
+    - type: Add
+      message: Epistemics SOP and Engineering SOP guidebook entries
+    - type: Tweak
+      message: Floofed up the Role Types guidebook entry
+  id: 369
+  time: '2025-03-24T00:37:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/659
+- author: Fenny
+  changes:
+    - type: Fix
+      message: Does a sick kickflip over the check out verb to fix its description.
+  id: 370
+  time: '2025-03-24T00:39:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/663
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        A negative trait that prevents the use of man-machine interfaces on your
+        brain, has been added.
+  id: 371
+  time: '2025-03-24T00:45:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/623
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Amber Station has been ported to Floof.
+  id: 372
+  time: '2025-03-24T00:54:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/662
+- author: B1773rm4n
+  changes:
+    - type: Add
+      message: Implement search box for the Player Manifest Tab search at Round End
+    - type: Add
+      message: Implement search box for the Round Information Tab search at Round End
+  id: 373
+  time: '2025-03-24T23:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/661
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        French Accent trait pulled up out of somewhere you don't wanna think
+        about.
+  id: 374
+  time: '2025-03-25T00:14:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/668
+- author: Fansana
+  changes:
+    - type: Add
+      message: added more Lizard markings!
+  id: 375
+  time: '2025-03-26T17:15:34.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/673
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Tiny trait overhaul! Lowered size maximums, changed size scaling,
+        increased fragility, added examine text, and much more!
+    - type: Fix
+      message: Tiny now scales properly and the visual bugs should be squashed!
+  id: 376
+  time: '2025-03-26T20:59:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/658
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added the Shrimp Fisherman Suit
+    - type: Add
+      message: Added the Shrimp Fisherman Suit to the theather vend
+    - type: Add
+      message: Added resomi compatibility textures
+  id: 377
+  time: '2025-03-26T22:36:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/657
+- author: LucasTheDrgn
+  changes:
+    - type: Add
+      message: Schechi, the birdsong-like language of the Resomi
+    - type: Add
+      message: >-
+        Ratvarian, the enigmatic language of the cult of Ratvar, available as a
+        bonus language or as an alternative to your natural language
+  id: 378
+  time: '2025-03-26T22:36:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/648
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Scaling definitely wasn't messed up - it was all a dream
+  id: 379
+  time: '2025-03-27T03:44:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/677
+- author: fenndragon
+  changes:
+    - type: Tweak
+      message: Tweaked Rules
+  id: 380
+  time: '2025-03-27T03:45:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/680
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Underwear markings are now fully optional.
+  id: 381
+  time: '2025-03-27T14:57:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/678
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed sliders
+    - type: Remove
+      message: Temporarily removed the Tiny trait.
+  id: 382
+  time: '2025-03-27T15:41:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/682
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Emotes, Subtles, SubtleOOCs, and LocalerOOCs are now blocked by walls
+        and doors.
+    - type: Add
+      message: Some debug bats that sit and spam chat, for testing purposes.
+  id: 383
+  time: '2025-03-29T04:24:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/672
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Returned the lost engineering belts to their rightful place in the
+        engineering lockers.
+  id: 384
+  time: '2025-03-29T13:11:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/695
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        Keybinding for Subtle & Subtle OOC.  Default is ( - ) and ( { )
+        respectively, but much like your erp partner it can be whatever you want
+        it to be.  Baby.
+  id: 385
+  time: '2025-03-29T17:46:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/692
+- author: ElectroJr
+  changes:
+    - type: Fix
+      message: >-
+        Fixed RGB lights & eswords sometimes not working and showing up as
+        black.
+  id: 386
+  time: '2025-03-29T17:49:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/687
+- author: Fenny
+  changes:
+    - type: Add
+      message: >-
+        Over 100 Undershirts & Underwear (total) from SS13, including Shapely
+        Shirts from Coyote Bayou
+  id: 387
+  time: '2025-03-29T17:52:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/685
+- author: Southbridge
+  changes:
+    - type: Add
+      message: Added Amber to the map rotation
+  id: 388
+  time: '2025-03-29T20:15:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/693
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: new meat textures
+    - type: Tweak
+      message: stiched a few textures with new ones
+  id: 389
+  time: '2025-03-29T20:16:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/696
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        The width slider in the profile editor view now moves correctly
+        regarding the height slider.
+    - type: Fix
+      message: Fixed alerts being halfway down the screen
+  id: 390
+  time: '2025-03-29T20:17:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/688
+- author: LucasTheDrgn
+  changes:
+    - type: Fix
+      message: >-
+        Natural Ratvarian + Foreigner should now deterministically give you a
+        Ratvarian translator
+  id: 391
+  time: '2025-03-30T09:33:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/691
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Merged about two months worth of content from upstream- *incoherent
+        screaming*
+    - type: Add
+      message: >-
+        Kill objectives on regular crew are back, but changed to "teach a
+        lesson" (upstream change)
+    - type: Add
+      message: >-
+        Identical chat messages will now stack together in the chat panel
+        (upstream change, can be disabled in settings)
+  id: 392
+  time: '2025-04-02T00:31:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/574
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Mining drill no longer used stamina
+  id: 393
+  time: '2025-04-02T14:57:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/711
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Player examine tooltips will persist even if they go out of line of
+        sight.
+  id: 394
+  time: '2025-04-02T16:03:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/699
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Fixed loadouts being unusable unless you have 2x their loadout point
+        cost.
+  id: 395
+  time: '2025-04-02T16:06:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/710
+- author: VividPups
+  changes:
+    - type: Remove
+      message: 'Blukie suits from cargo '
+  id: 396
+  time: '2025-04-02T16:31:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/712
+- author: FoxxoTrystan
+  changes:
+    - type: Fix
+      message: DarkSwap EE Issues.
+  id: 397
+  time: '2025-04-02T16:45:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/715
+- author: Southbridge
+  changes:
+    - type: Add
+      message: >-
+        Artifacts now have more effects, including a brand new "Nightclub"
+        effect.
+  id: 398
+  time: '2025-04-03T05:12:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/704
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Update splash screen
+  id: 399
+  time: '2025-04-04T08:04:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/717
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added underwear and undershirts to Feroxi and Chitinid. The tailors have
+        been hard at work.
+  id: 400
+  time: '2025-04-05T09:27:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/714
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Added loadouts for the warden's cap, longcoat, and winter coat and
+        boots.
+    - type: Tweak
+      message: The warden spawns with the head of security's headset.
+  id: 401
+  time: '2025-04-05T22:10:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/722
+- author: faefyr
+  changes:
+    - type: Add
+      message: >-
+        Added the Energy Sabre, added to both uplink and loadout, this is an
+        E-Sword alternative.
+  id: 402
+  time: '2025-04-05T22:11:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/721
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Fixed redshirt and glass jaw descriptions
+  id: 403
+  time: '2025-04-05T22:12:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/716
+- author: Superlagg
+  changes:
+    - type: Add
+      message: >-
+        Added two traits that'll let your dog (or mouse, or cat, or fish) eat
+        theobromine and/or allicin!
+  id: 404
+  time: '2025-04-05T22:16:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/707
+- author: LaCumbiaDelCoronavirus
+  changes:
+    - type: Tweak
+      message: Slime people look a bit less bald now.
+  id: 405
+  time: '2025-04-05T22:51:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/723
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Handheld translators now use 1.5 times less power.
+  id: 406
+  time: '2025-04-05T23:39:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/698
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added Security and Brigging SOPs to the guidebook.
+  id: 407
+  time: '2025-04-05T23:42:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/697
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The security department's socks have been retrofitted to meet new
+        footwear requirements.
+  id: 408
+  time: '2025-04-06T05:35:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/713
+- author: Forzii
+  changes:
+    - type: Add
+      message: Brought back the tiny trait. NT cloning tech has been acting up lately.
+  id: 409
+  time: '2025-04-07T08:26:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/689
+- author: ProtoLady
+  changes: []
+  id: 410
+  time: '2025-04-09T16:30:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/737

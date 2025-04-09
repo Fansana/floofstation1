@@ -35,6 +35,8 @@
     HeadSide: MobShadowkinAnyMarkingFollowSkin
     Tail: MobShadowkinAnyMarkingFollowSkin
     Chest: MobShadowkinTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     Eyes: MobShadowkinEyes
     LArm: MobShadowkinLArm
     RArm: MobShadowkinRArm
@@ -48,6 +50,12 @@
 - type: markingPoints
   id: MobShadowkinMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1
+      required: false # Floof, add underwear
     Tail:
       points: 1
       required: true

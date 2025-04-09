@@ -1,0 +1,1 @@
+character-item-group-TraitsLanguagesNatural = Natural Languages

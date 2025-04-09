@@ -23,6 +23,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobHarpyTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -41,6 +43,12 @@
 - type: markingPoints
   id: MobHarpyMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1 # Floof, add underwear
+      required: false
     Hair:
       points: 1
       required: false
@@ -55,6 +63,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    HeadSide:
+      points: 3
+      required: false
     Chest:
       points: 1
       required: true
@@ -79,9 +90,6 @@
       required: false
     LeftHand:
       points: 2
-      required: false
-    HeadSide:
-      points: 1
       required: false
     Wings:
       points: 1

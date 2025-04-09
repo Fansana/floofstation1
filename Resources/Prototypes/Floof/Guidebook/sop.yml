@@ -9,6 +9,10 @@
   - General Regulations
   - Command Hierarchy
   - Alert Procedure
+  - Epistemics SOP
+  - Engineering SOP
+  - Security SOP
+  - Brigging SOP
 
 - type: guideEntry
   id: Company Policy
@@ -71,3 +75,23 @@
   id: Alert Procedure
   name: guide-entry-alertprocedure
   text: "/ServerInfo/Floof/Guidebook/SOP/AlertProcedure.xml"
+
+- type: guideEntry
+  id: Epistemics SOP
+  name: guide-entry-epistemicsSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/EpistemicsStandardOperatingProcedure.xml"
+  
+- type: guideEntry
+  id: Engineering SOP
+  name: guide-entry-engineeringSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/EngineeringStandardOperatingProcedure.xml"
+  
+- type: guideEntry
+  id: Security SOP
+  name: guide-entry-securitySOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/SecurityStandardOperatingProcedure.xml"
+
+- type: guideEntry
+  id: Brigging SOP
+  name: guide-entry-briggingSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/BriggingStandardOperatingProcedure.xml"

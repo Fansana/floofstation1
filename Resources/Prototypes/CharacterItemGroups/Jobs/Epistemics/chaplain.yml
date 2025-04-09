@@ -16,23 +16,31 @@
 #
 - type: characterItemGroup
   id: LoadoutChaplainEquipment
-  maxItems: 2
+  maxItems: 3
   items:
     - type: loadout
       id: LoadoutChaplainBible
     - type: loadout
       id: LoadoutChaplainStamp
+    - type: loadout
+      id: LoadoutChaplainEquipmentCandles
+    - type: loadout
+      id: LoadoutChaplainEquipmentCandlesSmall
+    - type: loadout
+      id: LoadoutChaplainPillCanisterSpaceDrugs
 
 #- type: characterItemGroup
 #  id: LoadoutChaplainEyes
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutChaplainGloves
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutChaplainGloves
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add lingerie
+      id: LoadoutClothingHandChaplainWarmers
+
 - type: characterItemGroup
   id: LoadoutChaplainHead
   maxItems: 1
@@ -57,6 +65,12 @@
   items:
     - type: loadout
       id: LoadoutScienceNeckStoleChaplain
+# Floof section - Add missing chaplain loadouts
+    - type: loadout
+      id: LoadoutChaplainNeckScarfChaplainStole
+    - type: loadout
+      id: LoadoutChaplainNeckCrucifix
+# Floof section end
 
 - type: characterItemGroup
   id: LoadoutChaplainMask
@@ -77,12 +91,16 @@
       id: LoadoutScienceOuterHoodieBlack
     - type: loadout
       id: LoadoutScienceOuterHoodieChaplain
+    - type: loadout # Floof - Add missing chaplain loadouts
+      id: LoadoutClothingChaplainEpiMantle
 
-#- type: characterItemGroup
-#  id: LoadoutChaplainShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutChaplainShoes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add lingerie
+      id: LoadoutClothingUnderSocksChaplain
+
 - type: characterItemGroup
   id: LoadoutChaplainUniforms
   maxItems: 1
@@ -95,3 +113,5 @@
       id: LoadoutScienceUniformJumpsuitMonasticRobeDark
     - type: loadout
       id: LoadoutScienceUniformJumpsuitMonasticRobeLight
+    - type: loadout # Floof - Add lingerie
+      id: LoadoutClothingUniformChaplainThong
