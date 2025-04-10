@@ -16,6 +16,7 @@
       inverted: true
       traits:
       - HollowFangs
+      - Succubus
   functions:
   - !type:TraitAddComponent
     components:
@@ -46,6 +47,7 @@
     inverted: true
     traits:
     - Vampirism
+    - Succubus
   functions:
   - !type:TraitAddComponent
     components:
@@ -146,6 +148,29 @@
       ]
 
 - type: trait
+  id: Succubus
+  category: Physical
+  points: -3 # MD - Change from "3" tp "-3" for balancing.
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - HollowFangs
+      - Vampirism
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+      - type: Succubus
+
   id: Tiny
   category: Physical
   points: 0 # At this point, this RP-focused trait is intended to be self-balancing
