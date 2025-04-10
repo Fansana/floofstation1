@@ -89,7 +89,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 6.5
+    weight: 5 # Floof - changed from 6.5
     duration: 1
     earliestStart: 120 # Floof
     reoccurrenceDelay: 60
@@ -116,7 +116,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 7.5
+    weight: 6 # Floof - Changed from 7.5
     duration: 1
     earliestStart: 45
     minimumPlayers: 20
@@ -197,8 +197,8 @@
       prob: 0.02
     - id: MobMouse2
       prob: 0.02
-    - id: MobMouseCancer
-      prob: 0.001
+#    - id: MobMouseCancer # Floof - Removed Cancer mouse spawns
+#      prob: 0.001
     specialEntries:
     - id: SpawnPointGhostRatKing
       prob: 0.001
@@ -388,9 +388,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    earliestStart: 35
-    weight: 5.5
-    minimumPlayers: 20
+    earliestStart: 60 # Floof - Changed from 35
+    weight: 3 # Floof - Changed from 5.5
+    minimumPlayers: 30 # Floof - changed from 20
     duration: 1
   - type: LoadMapRule
     preloadedGrid: ShuttleStriker
