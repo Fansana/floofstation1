@@ -623,7 +623,7 @@ public sealed class MailSystem : EntitySystem
 
         if (candidateList.Count <= 0)
         {
-            _sawmill.Error("List of mail candidates was empty!");
+            _sawmill.Warning("List of mail candidates was empty!"); // Floofstation - this should warn, not error out.
             return;
         }
 
