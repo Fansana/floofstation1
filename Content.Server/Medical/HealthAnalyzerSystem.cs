@@ -3,7 +3,7 @@ using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Medical.Components;
 using Content.Server.PowerCell;
 using Content.Server.Temperature.Components;
-using Content.Server.Traits.Assorted;
+using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
@@ -256,6 +256,11 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             bloodAmount = bloodSolution.FillFraction;
             bleeding = bloodstream.BleedAmount > 0;
         }
+        
+        // Floofstation - we DO have unrevivable.
+        if (HasComp<UnrevivableComponent>(target)) // Somehow we dont have unrevivable???
+            unrevivable = true;
+
 
         // Shitmed Change Start
         Dictionary<TargetBodyPart, TargetIntegrity>? body = null;
