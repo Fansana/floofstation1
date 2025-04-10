@@ -917,6 +917,7 @@
       - WeaponDisablerSMG
       - WeaponLaserCannon
       - WeaponLaserCarbine
+      - ClothingEyesNightVisionSecurityGoggles
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear
       - ClothingHeadCage # Nyanotrasen - Insulative headgear
       - WeaponXrayCannon
@@ -1114,6 +1115,7 @@
       - AdvancedRetractor
       - OmnimedTool
       - MedicalCyberneticEyes
+      - ClothingEyesNightVisionMedicalGoggles
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
