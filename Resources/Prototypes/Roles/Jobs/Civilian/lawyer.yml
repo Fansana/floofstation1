@@ -20,7 +20,7 @@
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
     ears: ClothingHeadsetSecurity
-    # pocket1: BookSecurity | Floof - M3739 - If sec's lawyer, the prosecutor, doesn't have one, why should the lawyer have it? Yoink until we get Space Law in a book.
+    pocket1: HyperlinkBookSecuritySop # Floof - M3739 - Replacement of the standard BookSecurity that came originally. Throw the book at em!
     pocket2: RubberStampLawyer # Floof - M3739 - DeltaV's Lawyer stamp addition is now a pocket item instead to ensure deployment across loadouts. ClothingBackpackLawyerFilled and it's variants don't really work when people can choose their bags.
   inhand:
     - BriefcaseBrownFilled
