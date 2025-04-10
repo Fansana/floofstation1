@@ -3,23 +3,24 @@
   name: job-name-centcomoff
   description: job-description-centcomoff
   playTimeTracker: JobCentralCommandOfficial
-  setPreference: true
-  joinNotifyCrew: false # Prevents players from getting spooked on CC spawn into round.
-  whitelisted: true # Admin only role.
+  mustHaveJobSpawner: false # Floofstation
+  setPreference: true # Floofstation
+  joinNotifyCrew: false # Floofstation
+  whitelisted: true # Floofstation
   startingGear: CentcomGear
   icon: "JobIconNanotrasen"
-  supervisors: job-supervisors-centcom # Adjusted from HoS, CC answers to CC so.
+  supervisors: job-supervisors-centcom # Floofstation
   canBeAntag: false
-  canBeAntagTarget: false # Prevention for worst case scenario of an antag rolling for CC.
+  canBeAntagTarget: false # Floofstation
   accessGroups:
   - AllAccess
   access:
   - CentralCommand
-  special: # Mindshield for lore purposes
+  special: # Floofstation
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
-- type: startingGear # Adjusted for Floof based on typical CC outfitting.
+- type: startingGear # Floofstation
   id: CentcomGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomFormal

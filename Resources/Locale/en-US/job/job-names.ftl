@@ -26,7 +26,7 @@ job-name-hop = Head of Personnel
 job-name-captain = Captain
 job-name-serviceworker = Service Worker
 job-name-centcomoff = Central Commander
-# Floof - Our CentCom Officials are called Commanders.
+# Floofstation
 job-name-reporter = Reporter
 job-name-musician = Musician
 job-name-librarian = Cataloguer
