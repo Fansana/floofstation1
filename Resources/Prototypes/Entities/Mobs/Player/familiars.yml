@@ -18,7 +18,7 @@
     allowSpeech: true
     name: ghost-role-information-familiar-name
     description: ghost-role-information-familiar-description
-    rules: ghost-role-information-familiar-rules
+    rules: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -79,7 +79,7 @@
     allowSpeech: true
     name: ghost-role-information-remilia-name
     description: ghost-role-information-remilia-description
-    rules: ghost-role-information-remilia-rules
+    rules: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Grammar
     attributes:
@@ -146,7 +146,7 @@
     allowSpeech: true
     name: ghost-role-information-cerberus-name
     description: ghost-role-information-cerberus-description
-    rules: ghost-role-information-cerberus-rules
+    rules: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

@@ -23,7 +23,7 @@
   - type: GhostRole
     name: ghost-role-information-friendlyxeno-name
     description: ghost-role-information-friendlyxeno-description
-    rules: ghost-role-information-friendlyxeno-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno
@@ -80,7 +80,7 @@
   - type: GhostRole
     name: ghost-role-information-friendlyxeno-name
     description: ghost-role-information-friendlyxeno-description
-    rules: ghost-role-information-friendlyxeno-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno
@@ -137,7 +137,7 @@
   - type: GhostRole
     name: ghost-role-information-friendlyxeno-name
     description: ghost-role-information-friendlyxeno-description
-    rules: ghost-role-information-friendlyxeno-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno
@@ -194,7 +194,7 @@
   - type: GhostRole
     name: ghost-role-information-friendlyxeno-name
     description: ghost-role-information-friendlyxeno-description
-    rules: ghost-role-information-friendlyxeno-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Inventory
     templateId: friendxeno

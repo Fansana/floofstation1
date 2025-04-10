@@ -136,7 +136,7 @@
     makeSentient: true
     name: ghost-role-information-slimes-name
     description: ghost-role-information-slimes-description
-    rules: deltav-ghost-role-information-softantag-rules
+    rules: floof-ghost-role-information-solo-antag-rules
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime

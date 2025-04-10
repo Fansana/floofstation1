@@ -16,6 +16,7 @@
     makeSentient: true
     name: ghost-role-information-space-dragon-name
     description: ghost-role-information-space-dragon-description
+    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
