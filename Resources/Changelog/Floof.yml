@@ -3844,3 +3844,14 @@ Entries:
   id: 415
   time: '2025-04-10T06:20:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/686
+- author: faefyr
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted head markings to include left and right eye for heterochromia,
+        this is done on species with standard eye sprites, this change comes
+        with an addition head marking slot to accommodate for the change so it
+        can be added on top of existing markings.
+  id: 416
+  time: '2025-04-10T17:43:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/734
