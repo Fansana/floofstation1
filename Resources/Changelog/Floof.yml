@@ -3814,3 +3814,10 @@ Entries:
   id: 411
   time: '2025-04-10T06:10:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/738
+- author: M3739
+  changes:
+    - type: Fix
+      message: The Chitinid's emote wheel has been revised and corrected.
+  id: 412
+  time: '2025-04-10T06:16:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/726
