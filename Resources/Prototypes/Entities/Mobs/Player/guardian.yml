@@ -12,7 +12,7 @@
       allowSpeech: true
       makeSentient: true
       name: ghost-role-information-guardian-name
-      description: ghost-role-information-guardian-description
+      description: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -118,7 +118,7 @@
       allowSpeech: true
       makeSentient: true
       name: ghost-role-information-holoparasite-name
-      description: ghost-role-information-holoparasite-description
+      description: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -150,7 +150,7 @@
       allowSpeech: true
       makeSentient: true
       name: ghost-role-information-ifrit-name
-      description: ghost-role-information-ifrit-description
+      description: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
@@ -183,7 +183,7 @@
       allowSpeech: true
       makeSentient: true
       name: ghost-role-information-holoclown-name
-      description: ghost-role-information-holoclown-description
+      description: floof-ghost-role-information-familiar-rules # Floof station - Setting ghost role rules
       raffle:
         settings: default
     - type: GhostTakeoverAvailable

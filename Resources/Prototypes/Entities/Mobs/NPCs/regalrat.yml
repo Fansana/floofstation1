@@ -89,7 +89,7 @@
     makeSentient: true
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
-    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

@@ -679,7 +679,7 @@
     name: ghost-role-information-Cak-name
     allowMovement: true
     description: ghost-role-information-Cak-description
-    rules: ghost-role-information-Cak-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
     raffle:
       settings: short
   - type: GhostTakeoverAvailable

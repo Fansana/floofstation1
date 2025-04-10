@@ -35,5 +35,5 @@
   - type: GhostRole
     name: ghost-role-information-ert-mothroach-name
     description: ghost-role-information-ert-mothroach-description
-    rule: floof-ghost-role-information-friendly-rules
+    rules: floof-ghost-role-information-crew-aligned-rules
   - type: GhostTakeoverAvailable

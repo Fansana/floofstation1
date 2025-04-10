@@ -59,7 +59,7 @@
     makeSentient: true
     name: ghost-role-information-revenant-name
     description: ghost-role-information-revenant-description
-    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

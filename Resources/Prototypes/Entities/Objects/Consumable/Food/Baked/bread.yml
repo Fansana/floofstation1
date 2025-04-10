@@ -809,7 +809,7 @@
     name: ghost-role-information-BreadDog-name
     allowMovement: true
     description: ghost-role-information-BreadDog-description
-    rules: ghost-role-information-BreadDog-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
     raffle:
       settings: short
   - type: GhostTakeoverAvailable

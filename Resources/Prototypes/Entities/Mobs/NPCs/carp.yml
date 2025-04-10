@@ -174,7 +174,7 @@
       makeSentient: true
       name: ghost-role-information-sentient-carp-name
       description: ghost-role-information-sentient-carp-description
-      rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
+      rules: floof-ghost-role-information-team-antag-rules # Floof station - Setting ghost role rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable

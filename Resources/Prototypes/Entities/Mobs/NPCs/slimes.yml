@@ -136,7 +136,7 @@
     makeSentient: true
     name: ghost-role-information-slimes-name
     description: ghost-role-information-slimes-description
-    rules: floof-ghost-role-information-hostile-rules
+    rules: floof-ghost-role-information-solo-antag-rules
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime

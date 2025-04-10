@@ -166,7 +166,7 @@
     makeSentient: true
     name: ghost-role-information-honkbot-name
     description: ghost-role-information-honkbot-description
-    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -194,7 +194,7 @@
     makeSentient: true
     name: ghost-role-information-jonkbot-name
     description: ghost-role-information-jonkbot-description
-    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: InteractionPopup
@@ -333,7 +333,7 @@
     makeSentient: true
     name: ghost-role-information-mimebot-name
     description: ghost-role-information-mimebot-description
-    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -357,7 +357,7 @@
     makeSentient: true
     name: ghost-role-information-supplybot-name
     description: ghost-role-information-supplybot-description
-    rules: floof-ghost-role-information-friendly-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
