@@ -1,55 +1,348 @@
+# Janitor
+# Backpacks
+
+# Belt
+- type: loadout
+  id: LoadoutJanitorBelt
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingBeltJanitorFilled
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Ears
+
+# Equipment
+- type: loadout
+  id: LoadoutJanitorEquipmentMopItem
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - MopItem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentBoxMousetrap
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - BoxMousetrap
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentWetFloorSign
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - WetFloorSign
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentTrashBag
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - TrashBag
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentLightReplacer
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - LightReplacer
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentBoxLightMixed
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - BoxLightMixed
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentHoloprojector
+  category: JobsServiceJanitor
+  cost: 1
+  exclusive: true
+  items:
+    - Holoprojector
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorEquipmentPlunger
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - Plunger
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Eyes
+
+# Gloves
 - type: loadout
   id: LoadoutClothingHandsJanitorWarmers
   category: JobsServiceJanitor
   cost: 0
   exclusive: true
   items:
-  - ClothingHandsJanitorWarmers
+    - ClothingHandsJanitorWarmers
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Janitor
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
 
+- type: loadout
+  id: LoadoutJanitorGloves
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsGlovesJanitor
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Head
+- type: loadout
+  id: LoadoutJanitorHeadHatPurplesoft
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatPurplesoft
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutClothingNeckCloakJanitor
+  category: JobsServiceJanitor
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingNeckCloakJanitor
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+    - !type:CharacterPlaytimeRequirement
+      tracker: JobJanitor
+      min: 36000 # 10 hours
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutJanitorOuterWinter
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterJani
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Shoes
 - type: loadout
   id: LoadoutClothingUnderSocksJanitor
   category: JobsServiceJanitor
   cost: 0
   exclusive: true
   items:
-  - ClothingUnderSocksJanitor
+    - ClothingUnderSocksJanitor
   requirements:
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-    - Diona
-    - Harpy
-  - !type:CharacterJobRequirement
-    jobs:
-    - Janitor
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorShoes
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
 
+- type: loadout
+  id: LoadoutJanitorShoesGaloshes
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesGaloshes
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorShoes
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutJanitorShoesWinter
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterJani
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorShoes
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+# Uniforms
 - type: loadout
   id: LoadoutClothingUniformJanitorThong
   category: JobsServiceJanitor
   cost: 0
   exclusive: true
   items:
-  - ClothingUniformJanitorThong
+    - ClothingUniformJanitorThong
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Janitor
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
 
 - type: loadout
-  id: LoadoutClothingNeckCloakJanitor
+  id: LoadoutServiceJumpsuitJanitor
   category: JobsServiceJanitor
-  cost: 2
+  cost: 0
   exclusive: true
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Janitor
-  - !type:CharacterPlaytimeRequirement
-    tracker: JobJanitor
-    min: 36000 # 10 hours
   items:
-  - ClothingNeckCloakJanitor
+    - ClothingUniformJumpsuitJanitor
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutServiceJumpsuitJanitorSkirt
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJanitor
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutServiceJumpsuitJanitorJanimaidSkirt
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJanimaid
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutServiceJumpsuitJanitorJanimaidMini
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtJanimaidmini
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
+
+- type: loadout
+  id: LoadoutServiceJumpsuitJanitorClassicalMaidDress
+  category: JobsServiceJanitor
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformClassicalMaidDress
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutJanitorUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Janitor
