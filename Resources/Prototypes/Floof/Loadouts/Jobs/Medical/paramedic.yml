@@ -47,7 +47,7 @@
   cost: 0
   exclusive: true
   items:
-  - ClothingBackpackParamedicFilled
+  - ClothingBackpackParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutParamedicBackpacks
@@ -61,7 +61,7 @@
   cost: 0
   exclusive: true
   items:
-  - ClothingBackpackDuffelParamedicFilled
+  - ClothingBackpackDuffelParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutParamedicBackpacks
@@ -75,7 +75,7 @@
   cost: 0
   exclusive: true
   items:
-  - ClothingBackpackSatchelParamedicFilled
+  - ClothingBackpackSatchelParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutParamedicBackpacks

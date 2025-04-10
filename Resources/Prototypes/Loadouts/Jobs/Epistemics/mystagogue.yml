@@ -223,6 +223,19 @@
   items:
     - ClothingOuterCoatRndMysta
 
+- type: loadout
+  id: LoadoutCommandRDOuterLongcoat # Floof - M3739 - #690
+  category: JobsEpistemicsMystagogue
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMystagogueOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ResearchDirector
+  items:
+    - ClothingLongcoatRD
+
 # Shoes
 - type: loadout
   id: LoadoutCommandRDShoesBootsWinter

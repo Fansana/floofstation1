@@ -13,6 +13,20 @@
 
 # Head
 - type: loadout
+  id: LoadoutServiceHeadChef # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingHeadHatChef
+
+- type: loadout
   id: LoadoutServiceHeadChefNt
   category: JobsServiceChef
   cost: 0
@@ -59,6 +73,19 @@
 # Neck
 
 # Mask
+- type: loadout
+  id: LoadoutServiceMaskChefItalianMoustache # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingMaskItalianMoustache
 
 # Outer
 - type: loadout
@@ -103,6 +130,47 @@
   items:
     - ClothingOuterJacketChefOrion
 
+- type: loadout
+  id: LoadoutServiceOuterChefWinter # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingOuterWinterChef
+
+- type: loadout
+  id: LoadoutServiceOuterChefJacket # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingOuterJacketChef
+
+- type: loadout
+  id: LoadoutServiceOuterChefApron # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingOuterApronChef
 # Shoes
 
 # Uniforms
@@ -147,3 +215,31 @@
         - Chef
   items:
     - ClothingUniformJumpsuitChefOrion
+
+- type: loadout
+  id: LoadoutServiceJumpsuitChef # Floof - M3739 - #690
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingUniformJumpsuitChef
+
+- type: loadout
+  id: LoadoutServiceJumpskirtChef # Floof - M3739 - #690 
+  category: JobsServiceChef
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChefUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chef
+  items:
+    - ClothingUniformJumpskirtChef

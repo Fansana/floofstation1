@@ -1,0 +1,87 @@
+- type: entity
+  parent: PaperStickyNoteStack
+  id: LoadoutPaperStickyNoteStackFilled
+  name: sticky note stack
+  suffix: yellow, loadout
+  components:
+    - type: Bin
+      whitelist:
+        tags:
+          - StickyNoteYellow
+      initialContents:
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+        - PaperStickyNote
+
+- type: entity
+  parent: PaperStickyNoteStackPink
+  id: LoadoutPaperStickyNoteStackFilledPink
+  name: sticky note stack
+  suffix: pink, loadout
+  components:
+    - type: Bin
+      whitelist:
+        tags:
+          - StickyNotePink
+      initialContents:
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        - PaperStickyNotePink
+        
+- type: entity
+  parent: PaperStickyNoteStackGreen
+  id: LoadoutPaperStickyNoteStackFilledGreen
+  name: sticky note stack
+  suffix: green, loadout
+  components:
+    - type: Bin
+      whitelist:
+        tags:
+          - StickyNoteGreen
+      initialContents:
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+        - PaperStickyNoteGreen
+
+- type: entity
+  parent: PaperStickyNoteStackBlue
+  id: LoadoutPaperStickyNoteStackFilledBlue
+  name: sticky note stack
+  suffix: blue, loadout
+  components:
+    - type: Bin
+      whitelist:
+        tags:
+          - StickyNoteBlue
+      initialContents:
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue
+        - PaperStickyNoteBlue

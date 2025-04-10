@@ -19,7 +19,7 @@
   id: PaperStickyNote
   name: sticky note
   suffix: yellow
-  description: A sticky note, for when you want your reminders to stick
+  description: A sticky note, for when you want your reminders to stick.
   components:
   - type: Sprite
     sprite: _DV/Objects/Misc/stickies.rsi

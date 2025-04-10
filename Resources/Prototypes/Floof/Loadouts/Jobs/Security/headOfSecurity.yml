@@ -46,7 +46,7 @@
   canBeHeirloom: true
   requirements:
   - !type:CharacterItemGroupRequirement
-    group: LoadoutHeadOfSecurityWeapon
+    group: LoadoutHeadOfSecurityWeapons # M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
   - !type:CharacterJobRequirement
     jobs:
     - HeadOfSecurity

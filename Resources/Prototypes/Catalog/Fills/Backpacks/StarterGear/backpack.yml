@@ -37,7 +37,7 @@
         amount: 2
       - id: BurnAutoInjector
         amount: 2
-      - id: MagazinePistol
+      # - id: MagazinePistol | Floof - M3739 - #690 - Redundant due to weapon choices
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -200,8 +200,8 @@
   components:
     - type: StorageFill
       contents:
-      - id: Lighter
-      - id: CigPackBlack
+        #- id: Lighter | Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
+        #- id: CigPackBlack| Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
       - id: HandLabeler
       - id: BoxForensicPad
 
