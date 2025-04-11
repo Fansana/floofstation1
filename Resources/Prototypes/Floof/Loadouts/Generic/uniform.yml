@@ -133,6 +133,7 @@
   id: LoadoutClothingUniformLoinClothWhite
   category: Uniform
   cost: 0
+  customColorTint: true # Floof - M3739 - ChromaClothes
   exclusive: true
   items:
     - ClothingUniformLoinClothWhite

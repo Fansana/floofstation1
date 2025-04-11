@@ -82,6 +82,7 @@
   id: LoadoutClothingOuterCyberJacketWhite
   category: Outer
   cost: 0
+  customColorTint: true # Floof - M3739 - ChromaClothes
   items:
     - ClothingOuterCyberJacketWhite
   requirements:
