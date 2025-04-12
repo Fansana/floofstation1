@@ -65,56 +65,56 @@ entities:
             color: '#FF0000FF'
             id: BrickBoxOverlay
           decals:
-            127: 4,5
+            119: 4,5
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkCornerNe
           decals:
-            30: 3,-2
-            31: 4,-3
-            69: -6,2
-            75: -10,3
-            81: 11,3
+            29: 3,-2
+            30: 4,-3
+            68: -6,2
+            74: -10,3
+            80: 11,3
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkCornerNw
           decals:
-            27: -4,-3
-            29: -3,-2
-            74: -11,3
-            80: 10,3
-            82: 6,2
-            97: -1,9
+            26: -4,-3
+            28: -3,-2
+            73: -11,3
+            79: 10,3
+            81: 6,2
+            94: -1,9
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkCornerSe
           decals:
-            23: 6,1
-            24: 4,-5
-            33: -3,-5
-            76: -10,2
-            79: 11,2
-            102: 0,7
+            22: 6,1
+            23: 4,-5
+            32: -3,-5
+            75: -10,2
+            78: 11,2
+            98: 0,7
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkCornerSw
           decals:
-            26: -4,-5
-            34: 3,-5
-            68: -6,1
-            77: -11,2
-            78: 10,2
-            101: -1,7
+            25: -4,-5
+            33: 3,-5
+            67: -6,1
+            76: -11,2
+            77: 10,2
+            97: -1,7
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkEndE
           decals:
             0: 1,1
             1: 1,4
-            11: 1,-12
-            19: 7,2
-            21: -3,1
-            104: 1,9
+            10: 1,-12
+            18: 7,2
+            20: -3,1
+            100: 1,9
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkEndN
@@ -124,163 +124,163 @@ entities:
             4: 0,-7
             5: 2,-8
             6: -2,-8
-            98: 0,10
+            95: 0,10
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkEndS
           decals:
-            12: 2,-9
-            13: -2,-9
-            14: 0,-10
-            25: 0,-5
+            11: 2,-9
+            12: -2,-9
+            13: 0,-10
+            24: 0,-5
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkEndW
           decals:
-            8: -1,4
-            9: -1,1
-            10: -1,-12
-            20: -7,2
-            22: 3,1
+            7: -1,4
+            8: -1,1
+            9: -1,-12
+            19: -7,2
+            21: 3,1
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkInnerNe
           decals:
-            54: 0,-2
-            58: 3,-3
-            63: 0,1
-            72: -6,1
-            92: 0,4
-            106: 0,9
+            53: 0,-2
+            57: 3,-3
+            62: 0,1
+            71: -6,1
+            91: 0,4
+            102: 0,9
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkInnerNw
           decals:
-            52: -3,-3
-            53: 0,-2
-            64: 0,1
-            87: 6,1
-            90: 0,4
-            107: 0,9
+            51: -3,-3
+            52: 0,-2
+            63: 0,1
+            86: 6,1
+            89: 0,4
+            103: 0,9
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkInnerSe
           decals:
-            51: -3,-2
-            55: 0,-2
-            88: 6,2
-            89: 0,4
-            105: 0,9
-            114: -5,6
+            50: -3,-2
+            54: 0,-2
+            87: 6,2
+            88: 0,4
+            101: 0,9
+            110: -5,6
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkInnerSw
           decals:
-            56: 0,-2
-            57: 3,-2
-            73: -6,2
-            91: 0,4
+            55: 0,-2
+            56: 3,-2
+            72: -6,2
+            90: 0,4
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkLineE
           decals:
-            17: 0,-8
-            18: 0,-9
-            32: 4,-4
-            39: -3,-4
-            40: -3,-3
-            49: 0,-3
-            50: 0,-4
-            59: 0,2
-            60: 0,3
-            103: 0,8
-            110: -5,5
-            111: -5,4
+            16: 0,-8
+            17: 0,-9
+            31: 4,-4
+            38: -3,-4
+            39: -3,-3
+            48: 0,-3
+            49: 0,-4
+            58: 0,2
+            59: 0,3
+            99: 0,8
+            106: -5,5
+            107: -5,4
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkLineN
           decals:
-            45: -2,-2
-            46: -1,-2
-            47: 1,-2
-            48: 2,-2
-            70: -5,1
-            71: -4,1
-            85: 4,1
-            86: 5,1
-            96: 0,-12
-            112: -4,3
-            113: -3,3
+            44: -2,-2
+            45: -1,-2
+            46: 1,-2
+            47: 2,-2
+            69: -5,1
+            70: -4,1
+            84: 4,1
+            85: 5,1
+            93: 0,-12
+            108: -4,3
+            109: -3,3
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkLineS
           decals:
-            41: -2,-2
-            42: -1,-2
-            43: 1,-2
-            44: 2,-2
-            65: 0,1
-            66: -4,1
-            67: -5,1
-            83: 5,1
-            84: 4,1
-            95: 0,-12
-            108: -3,6
-            109: -4,6
+            40: -2,-2
+            41: -1,-2
+            42: 1,-2
+            43: 2,-2
+            64: 0,1
+            65: -4,1
+            66: -5,1
+            82: 5,1
+            83: 4,1
+            92: 0,-12
+            104: -3,6
+            105: -4,6
         - node:
             color: '#FF0000FF'
             id: BrickTileDarkLineW
           decals:
-            15: 0,-9
-            16: 0,-8
-            28: -4,-4
-            35: 0,-4
-            36: 0,-3
-            37: 3,-4
-            38: 3,-3
-            61: 0,3
-            62: 0,2
-            100: -1,8
+            14: 0,-9
+            15: 0,-8
+            27: -4,-4
+            34: 0,-4
+            35: 0,-3
+            36: 3,-4
+            37: 3,-3
+            60: 0,3
+            61: 0,2
+            96: -1,8
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteCornerNe
           decals:
-            117: 5,6
+            111: 5,6
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteCornerNw
           decals:
-            118: 3,6
+            112: 3,6
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteCornerSe
           decals:
-            119: 5,4
+            113: 5,4
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteCornerSw
           decals:
-            120: 3,4
+            114: 3,4
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteLineE
           decals:
-            121: 5,5
+            115: 5,5
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteLineN
           decals:
-            122: 4,6
+            116: 4,6
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteLineS
           decals:
-            124: 4,4
+            118: 4,4
         - node:
             color: '#FF0000FF'
             id: BrickTileWhiteLineW
           decals:
-            123: 3,5
+            117: 3,5
     - type: RadiationGridResistance
     - type: GridAtmosphere
       version: 2
@@ -900,60 +900,102 @@ entities:
       parent: 1
 - proto: BlastDoor
   entities:
-  - uid: 166
-    components:
-    - type: Transform
-      pos: -4.5,-2.5
-      parent: 1
-  - uid: 195
-    components:
-    - type: Transform
-      pos: -4.5,-3.5
-      parent: 1
-  - uid: 196
-    components:
-    - type: Transform
-      pos: -4.5,-4.5
-      parent: 1
-  - uid: 197
-    components:
-    - type: Transform
-      pos: 5.5,-2.5
-      parent: 1
-  - uid: 198
+  - uid: 112
     components:
     - type: Transform
       pos: 5.5,-3.5
       parent: 1
+  - uid: 113
+    components:
+    - type: Transform
+      pos: 5.5,-2.5
+      parent: 1
+  - uid: 166
+    components:
+    - type: Transform
+      pos: -5.5,-1.5
+      parent: 1
+  - uid: 198
+    components:
+    - type: Transform
+      pos: -6.5,-1.5
+      parent: 1
   - uid: 199
+    components:
+    - type: Transform
+      pos: -6.5,-0.5
+      parent: 1
+  - uid: 243
+    components:
+    - type: Transform
+      pos: 7.5,-1.5
+      parent: 1
+  - uid: 244
+    components:
+    - type: Transform
+      pos: 6.5,-1.5
+      parent: 1
+  - uid: 245
     components:
     - type: Transform
       pos: 5.5,-4.5
       parent: 1
-  - uid: 234
+  - uid: 250
     components:
     - type: Transform
-      pos: -7.5,2.5
+      pos: 7.5,-0.5
       parent: 1
-  - uid: 235
+  - uid: 350
+    components:
+    - type: Transform
+      pos: -4.5,-4.5
+      parent: 1
+  - uid: 822
+    components:
+    - type: Transform
+      pos: -4.5,-2.5
+      parent: 1
+  - uid: 823
+    components:
+    - type: Transform
+      pos: -4.5,-3.5
+      parent: 1
+- proto: BlastDoorOpen
+  entities:
+  - uid: 217
     components:
     - type: Transform
       pos: -7.5,3.5
       parent: 1
+  - uid: 218
+    components:
+    - type: Transform
+      pos: -7.5,2.5
+      parent: 1
+  - uid: 234
+    components:
+    - type: Transform
+      pos: 8.5,3.5
+      parent: 1
+  - uid: 235
+    components:
+    - type: Transform
+      pos: 8.5,2.5
+      parent: 1
   - uid: 236
     components:
     - type: Transform
-      pos: -2.5,10.5
+      pos: 1.5,12.5
       parent: 1
   - uid: 237
     components:
     - type: Transform
-      pos: -2.5,11.5
+      pos: 0.5,12.5
       parent: 1
   - uid: 238
     components:
     - type: Transform
-      pos: -1.5,11.5
+      pos: -0.5,12.5
       parent: 1
   - uid: 239
     components:
@@ -963,83 +1005,37 @@ entities:
   - uid: 240
     components:
     - type: Transform
-      pos: -0.5,12.5
+      pos: -1.5,11.5
       parent: 1
   - uid: 241
     components:
     - type: Transform
-      pos: 0.5,12.5
+      pos: -2.5,11.5
       parent: 1
   - uid: 242
     components:
     - type: Transform
-      pos: 1.5,12.5
-      parent: 1
-  - uid: 243
-    components:
-    - type: Transform
-      pos: 2.5,12.5
-      parent: 1
-  - uid: 244
-    components:
-    - type: Transform
-      pos: 2.5,11.5
-      parent: 1
-  - uid: 245
-    components:
-    - type: Transform
-      pos: 3.5,11.5
-      parent: 1
-  - uid: 246
-    components:
-    - type: Transform
-      pos: 3.5,10.5
+      pos: -2.5,10.5
       parent: 1
   - uid: 349
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,-1.5
-      parent: 1
-  - uid: 350
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,-1.5
+      pos: 3.5,10.5
       parent: 1
   - uid: 351
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,-0.5
-      parent: 1
-  - uid: 352
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,-1.5
+      pos: 2.5,12.5
       parent: 1
   - uid: 353
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,-1.5
+      pos: 2.5,11.5
       parent: 1
   - uid: 354
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 7.5,-0.5
-      parent: 1
-  - uid: 822
-    components:
-    - type: Transform
-      pos: 8.5,3.5
-      parent: 1
-  - uid: 823
-    components:
-    - type: Transform
-      pos: 8.5,2.5
+      pos: 3.5,11.5
       parent: 1
 - proto: BorgCharger
   entities:
@@ -3791,22 +3787,6 @@ entities:
       angularDamping: 0
       linearDamping: 0
       canCollide: False
-  - uid: 113
-    components:
-    - type: Transform
-      parent: 112
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 218
-    components:
-    - type: Transform
-      parent: 217
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
   - uid: 226
     components:
     - type: Transform
@@ -3815,6 +3795,26 @@ entities:
       angularDamping: 0
       linearDamping: 0
       canCollide: False
+  - uid: 826
+    components:
+    - type: Transform
+      pos: 1.2986872,8.835338
+      parent: 1
+  - uid: 827
+    components:
+    - type: Transform
+      pos: 1.7361872,8.835338
+      parent: 1
+  - uid: 875
+    components:
+    - type: Transform
+      pos: 1.7518122,8.554088
+      parent: 1
+  - uid: 876
+    components:
+    - type: Transform
+      pos: 1.3299372,8.585338
+      parent: 1
 - proto: PoweredLightColoredFrostyBlue
   entities:
   - uid: 751
@@ -4158,121 +4158,21 @@ entities:
       parent: 1
 - proto: ShuttleGunSvalinnMachineGun
   entities:
-  - uid: 112
+  - uid: 352
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,11.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 113
-  - uid: 217
+  - uid: 451
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,11.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        machine_board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        machine_parts: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 218
 - proto: SignalButton
   entities:
-  - uid: 249
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 0.5,11.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        217:
-        - Pressed: Toggle
-        - Pressed: Trigger
-        112:
-        - Pressed: Toggle
-        - Pressed: Trigger
-  - uid: 250
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 0.5,11.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        236:
-        - Pressed: Toggle
-        237:
-        - Pressed: Toggle
-        238:
-        - Pressed: Toggle
-        239:
-        - Pressed: Toggle
-        240:
-        - Pressed: Toggle
-        241:
-        - Pressed: Toggle
-        242:
-        - Pressed: Toggle
-        243:
-        - Pressed: Toggle
-        244:
-        - Pressed: Toggle
-        245:
-        - Pressed: Toggle
-        246:
-        - Pressed: Toggle
-  - uid: 451
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -3.5,-5.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        196:
-        - Pressed: Toggle
-        195:
-        - Pressed: Toggle
-        166:
-        - Pressed: Toggle
-  - uid: 457
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -2.5,-5.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        350:
-        - Pressed: Toggle
-        349:
-        - Pressed: Toggle
-        351:
-        - Pressed: Toggle
-  - uid: 458
+  - uid: 195
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -4280,13 +4180,13 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        352:
+        244:
         - Pressed: Toggle
-        353:
+        243:
         - Pressed: Toggle
-        354:
+        250:
         - Pressed: Toggle
-  - uid: 459
+  - uid: 196
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -4294,33 +4194,102 @@ entities:
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        199:
+        113:
         - Pressed: Toggle
-        198:
+        112:
         - Pressed: Toggle
-        197:
+        245:
         - Pressed: Toggle
-  - uid: 826
+  - uid: 197
     components:
     - type: Transform
       pos: -4.5,2.5
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        234:
+        218:
         - Pressed: Toggle
-        235:
+        217:
         - Pressed: Toggle
-  - uid: 827
+  - uid: 246
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -3.5,-5.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        822:
+        - Pressed: Toggle
+        823:
+        - Pressed: Toggle
+        350:
+        - Pressed: Toggle
+  - uid: 249
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -2.5,-5.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        199:
+        - Pressed: Toggle
+        166:
+        - Pressed: Toggle
+        198:
+        - Pressed: Toggle
+  - uid: 457
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,11.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        451:
+        - Pressed: Toggle
+        - Pressed: Trigger
+  - uid: 458
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 0.5,11.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        242:
+        - Pressed: Toggle
+        241:
+        - Pressed: Toggle
+        240:
+        - Pressed: Toggle
+        239:
+        - Pressed: Toggle
+        238:
+        - Pressed: Toggle
+        236:
+        - Pressed: Toggle
+        351:
+        - Pressed: Toggle
+        353:
+        - Pressed: Toggle
+        354:
+        - Pressed: Toggle
+        349:
+        - Pressed: Toggle
+        237:
+        - Pressed: Toggle
+  - uid: 459
     components:
     - type: Transform
       pos: 5.5,2.5
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:
-        823:
+        234:
         - Pressed: Toggle
-        822:
+        235:
         - Pressed: Toggle
 - proto: SignArmory
   entities:
