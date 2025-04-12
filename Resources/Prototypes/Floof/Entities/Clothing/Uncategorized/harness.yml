@@ -1,0 +1,61 @@
+- type: entity
+  parent: ClothingBeltBase
+  id: ClothingUncategorizedHarnessBase
+  abstract: true
+  name: harness
+  description: |-
+    A safety harness to secure yourself (or your co-workers) when performing dangerous jobs. Or when having fun.
+
+    Can be equipped almost anywhere on your body, but does not include suit sensors or protection. A leash can be attached to it.
+  components:
+  - type: Clothing
+    equipDelay: 2
+    unequipDelay: 2
+    quickEquip: false # Would conflict due to having multiple allowed slots
+    slots:
+    - neck
+    - innerClothing
+    - outerClothing
+    - back
+    - belt
+    clothingVisuals: {} # I am 90% sure this is a redundancy coming from ClothingBeltBase, so we're removing it here
+  - type: LeashAnchor
+  - type: ClothingLimit
+    limitGroups:
+    - harness
+    maxCount: 1
+
+# Simple harness, colorable
+- type: entity
+  parent: ClothingUncategorizedHarnessBase
+  id: ClothingUncategorizedHarnessColorable
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uncategorized/harness_white.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uncategorized/harness_white.rsi
+
+# Colored as gray
+- type: entity
+  parent: ClothingUncategorizedHarnessBase
+  id: ClothingUncategorizedHarnessGray
+  components:
+  - type: Painted
+    color: "#94A1B5" # silver-ish, for style
+
+# Colored as pink
+- type: entity
+  parent: ClothingUncategorizedHarnessBase
+  id: ClothingUncategorizedHarnessPink
+  components:
+  - type: Painted
+    color: "#E1B1E3"
+
+# Colored as blue
+- type: entity
+  parent: ClothingUncategorizedHarnessBase
+  id: ClothingUncategorizedHarnessPink
+  components:
+  - type: Painted
+    color: "#93C9DB"
+
