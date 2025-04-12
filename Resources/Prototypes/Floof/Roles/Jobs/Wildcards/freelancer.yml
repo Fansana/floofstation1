@@ -1,0 +1,34 @@
+- type: job
+  id: Freelancer
+  name: Freelancer
+  description: Freelancers and Merceneries of the free space
+  playTimeTracker: JobFreelancer
+  startingGear: FreelancerGear
+  alwaysUseSpawner: false
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  canBeAntagTarget: false
+  icon: "JobIconFreelancer"
+  joinNotifyCrew: false
+  whitelisted: true
+  access:
+  - Maintenance
+  - Freelancer
+  - External
+
+- type: startingGear
+  id: FreelancerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    shoes: ClothingShoesBootsMercFilled
+    mask: ClothingMaskGasMerc
+    neck: ClothingNeckOldMantle
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestWebMercenary
+    back: ClothingBackpackMerc
+    id: FreelancerPDA
+    ears: ClothingHeadsetAltFreelancer
+    belt: ClothingBeltUtilityFilled
+    pocket1: WeaponPistolPollock
+    pocket2: HarmonicaInstrument
+    

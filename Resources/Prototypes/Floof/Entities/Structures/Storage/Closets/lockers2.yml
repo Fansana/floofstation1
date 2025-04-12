@@ -12,3 +12,18 @@
     stateBaseClosed: surgeon_secure
     stateDoorOpen: surgeon_secure_open
     stateDoorClosed: surgeon_secure_door
+    
+- type: entity
+  id: LockerFreelancerCamo
+  name: Generic Freelancer secure locker
+  parent: LockerBaseSecure
+  components:
+  - type: Sprite
+    sprite: Floof/Structures/Storage/Closets/closet.rsi
+  - type: Appearance
+  - type: AccessReader
+    access: [["Freelancer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: camo
+    stateDoorOpen: camo_open
+    stateDoorClosed: camo_door
