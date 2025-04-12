@@ -1,5 +1,29 @@
+# Gorillas
+- type: damageModifierSet
+  id: Gorilla
+  coefficients:
+    Asphyxiation: 1.5
+    Heat: 1.5
+    Cellular: 0
+    Poison: 1.5
+
+- type: damageModifierSet
+  id: GorillaRampaging
+  coefficients:
+    Blunt: 1.25
+    Cellular: 0
+    Poison: 1.5
+
+# Other
 - type: damageModifierSet
   id: Resomi
   coefficients: # Goobstation - natural cold resistance should reduce damage, but higher intolerance to heat should take more damage.
     Heat: 1.1
     Cold: 0.7
+
+- type: damageModifierSet
+  id: TinyTrait
+  coefficients: # make tiny folks take 10% more brute damage
+    Blunt: 1.1
+    Slash: 1.1
+    Piercing: 1.1

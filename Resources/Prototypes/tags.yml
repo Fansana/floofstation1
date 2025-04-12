@@ -1393,7 +1393,7 @@
 
 - type: Tag
   id: UnathiEmotes
-  
+# Floof - M3739 - Begin Floof species tags
 - type: Tag
   id: MothEmotes
 
@@ -1402,6 +1402,10 @@
 
 - type: Tag
   id: DionaEmotes
+  
+- type: Tag
+  id: ChitinidEmotes
+# Floof - M3739 - End Floof species tags
 # EE Emote Fix End
 
 # Floof tags
