@@ -31,7 +31,7 @@ entities:
       name: Strange Asteroid
     - type: Transform
       pos: -1.5625,-0.90625
-      parent: invalid
+      parent: 2673
     - type: MapGrid
       chunks:
         0,0:
@@ -321,6 +321,18 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+  - uid: 2673
+    components:
+    - type: MetaData
+      name: Map Entity
+    - type: Transform
+    - type: Map
+      mapPaused: True
+    - type: PhysicsMap
+    - type: GridTree
+    - type: MovedGrids
+    - type: Broadphase
+    - type: OccluderTree
 - proto: AirlockExternalShuttleSyndicateLocked
   entities:
   - uid: 499
@@ -5390,48 +5402,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 12.5,1.5
       parent: 1
-- proto: BoxHandcuff
-  entities:
-  - uid: 3428
-    components:
-    - type: Transform
-      pos: 1.0354443,0.6339065
-      parent: 1
-    - type: Storage
-      storedItems:
-        3429:
-          position: 0,0
-          _rotation: West
-        3430:
-          position: 2,0
-          _rotation: West
-        3431:
-          position: 0,1
-          _rotation: West
-        3432:
-          position: 2,1
-          _rotation: West
-        3433:
-          position: 0,2
-          _rotation: West
-        3434:
-          position: 2,2
-          _rotation: West
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 3429
-          - 3430
-          - 3431
-          - 3432
-          - 3433
-          - 3434
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
 - proto: CableApcExtension
   entities:
   - uid: 1630
@@ -9574,23 +9544,39 @@ entities:
   - uid: 2716
     components:
     - type: Transform
-      pos: 1.3614585,-21.416443
-      parent: 1
+      parent: 2714
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2717
     components:
     - type: Transform
-      pos: 1.6270835,-21.416443
-      parent: 1
+      parent: 2714
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2718
     components:
     - type: Transform
-      pos: 1.6427085,-21.728943
-      parent: 1
+      parent: 2714
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2719
     components:
     - type: Transform
-      pos: 1.3145835,-21.713318
-      parent: 1
+      parent: 2714
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2720
     components:
     - type: Transform
@@ -11988,8 +11974,11 @@ entities:
   - uid: 3420
     components:
     - type: Transform
-      pos: -0.658406,10.390609
+      pos: -0.7558069,10.531245
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: ComfyChair
   entities:
   - uid: 2628
@@ -12113,37 +12102,36 @@ entities:
     - type: Transform
       pos: -2.5,2.5
       parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 2709
     components:
     - type: Transform
       pos: -2.5,3.5
-      parent: 1
-  - uid: 2710
-    components:
-    - type: Transform
-      pos: -1.5,3.5
-      parent: 1
-  - uid: 2711
-    components:
-    - type: Transform
-      pos: 2.5,3.5
-      parent: 1
-  - uid: 2712
-    components:
-    - type: Transform
-      pos: 3.5,3.5
-      parent: 1
-  - uid: 2713
-    components:
-    - type: Transform
-      pos: 3.5,2.5
-      parent: 1
-- proto: CratePirateChestCaptain
-  entities:
-  - uid: 2714
-    components:
-    - type: Transform
-      pos: 1.5,-21.5
       parent: 1
     - type: Fixtures
       fixtures:
@@ -12171,6 +12159,152 @@ entities:
       removedMasks: 20
     - type: PlaceableSurface
       isPlaceable: True
+  - uid: 2710
+    components:
+    - type: Transform
+      pos: -1.5,3.5
+      parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
+  - uid: 2711
+    components:
+    - type: Transform
+      pos: 2.5,3.5
+      parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
+  - uid: 2712
+    components:
+    - type: Transform
+      pos: 3.5,3.5
+      parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
+  - uid: 2713
+    components:
+    - type: Transform
+      pos: 3.5,2.5
+      parent: 1
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.4,-0.4
+            - 0.4,-0.4
+            - 0.4,0.29
+            - -0.4,0.29
+          mask:
+          - Impassable
+          - HighImpassable
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 50
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
+- proto: CratePirateChestCaptain
+  entities:
+  - uid: 2714
+    components:
+    - type: Transform
+      pos: 1.5,-21.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2715
+          - 2718
+          - 2719
+          - 2716
+          - 2717
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: CurtainsBlackOpen
   entities:
   - uid: 2649
@@ -15316,56 +15450,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 15.5,-10.5
       parent: 1
-- proto: Handcuffs
-  entities:
-  - uid: 3429
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 3430
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 3431
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 3432
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 3433
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-  - uid: 3434
-    components:
-    - type: Transform
-      parent: 3428
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
 - proto: HandheldGPSBasic
   entities:
   - uid: 70
@@ -15572,7 +15656,7 @@ entities:
       parent: 1
 - proto: PaperBin20
   entities:
-  - uid: 2673
+  - uid: 3428
     components:
     - type: Transform
       pos: -15.5,-3.5
@@ -16872,7 +16956,7 @@ entities:
   - uid: 3410
     components:
     - type: Transform
-      pos: 0.49955583,0.5714065
+      pos: 0.827672,0.56956077
       parent: 1
     - type: Physics
       angularDamping: 0
@@ -17617,31 +17701,199 @@ entities:
     - type: Transform
       pos: -2.5,-1.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 618
     components:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 619
     components:
     - type: Transform
       pos: -1.5,-2.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 620
     components:
     - type: Transform
       pos: 2.5,-2.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 621
     components:
     - type: Transform
       pos: 3.5,-2.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
   - uid: 622
     components:
     - type: Transform
       pos: 3.5,-1.5
       parent: 1
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - TableLayer
+          - LowImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 350
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: EntityStorage
+      open: True
+      removedMasks: 20
+    - type: PlaceableSurface
+      isPlaceable: True
 - proto: SuitStoragePirateCap
   entities:
   - uid: 623
@@ -17943,27 +18195,39 @@ entities:
   - uid: 3415
     components:
     - type: Transform
-      pos: 0.591594,10.765609
+      pos: 0.5723181,10.79687
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
   - uid: 3416
     components:
     - type: Transform
-      pos: 0.40409398,10.390609
+      pos: 0.41606808,10.437495
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: ToolboxMechanicalFilled
   entities:
   - uid: 3417
     components:
     - type: Transform
-      pos: -0.580281,10.718734
+      pos: -0.7401819,10.781245
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: ToolboxSyndicateFilled
   entities:
   - uid: 3418
     components:
     - type: Transform
-      pos: -0.33028102,10.468734
+      pos: -0.27143192,10.437495
       parent: 1
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: VendingMachineBoozeUnlocked
   entities:
   - uid: 2831
@@ -20509,8 +20773,12 @@ entities:
   - uid: 2715
     components:
     - type: Transform
-      pos: 1.3927085,-21.572693
-      parent: 1
+      parent: 2714
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: WindoorSecure
   entities:
   - uid: 3595
