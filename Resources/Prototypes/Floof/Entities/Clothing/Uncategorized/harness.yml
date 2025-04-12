@@ -25,37 +25,62 @@
     - harness
     maxCount: 1
 
-# Simple harness, colorable
+# Simple harness, colorable - for use in loadouts
 - type: entity
   parent: ClothingUncategorizedHarnessBase
   id: ClothingUncategorizedHarnessColorable
+  name: simple harness
+  suffix: Greyscale
   components:
   - type: Sprite
     sprite: Floof/Clothing/Uncategorized/harness_white.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uncategorized/harness_white.rsi
+    equippedState: equipped
+
+# Precolored base
+- type: entity
+  parent: ClothingUncategorizedHarnessColorable
+  id: ClothingUncategorizedHarnessColoredBase
+  suffix: White
+  components:
+  - type: Painted
+    enabled: true
+  - type: Appearance
+    appearanceDataInit:
+      enum.PaintVisuals.Painted: true # This sucks soooo much
 
 # Colored as gray
 - type: entity
-  parent: ClothingUncategorizedHarnessBase
+  parent: ClothingUncategorizedHarnessColoredBase
   id: ClothingUncategorizedHarnessGray
+  name: simple gray harness
   components:
   - type: Painted
     color: "#94A1B5" # silver-ish, for style
+    enabled: true
 
 # Colored as pink
 - type: entity
-  parent: ClothingUncategorizedHarnessBase
+  parent: ClothingUncategorizedHarnessColoredBase
   id: ClothingUncategorizedHarnessPink
+  name: simple pink harness
   components:
   - type: Painted
     color: "#E1B1E3"
+    enabled: true
 
 # Colored as blue
 - type: entity
-  parent: ClothingUncategorizedHarnessBase
-  id: ClothingUncategorizedHarnessPink
+  parent: ClothingUncategorizedHarnessColoredBase
+  id: ClothingUncategorizedHarnessBlue
+  name: simple blue harness
   components:
   - type: Painted
     color: "#93C9DB"
+    enabled: true
 
+# TODO: Sprite sux
+# The middle strap should be lower
+# The width of the strap in NS should be higher
+# Still not rendered as colored
