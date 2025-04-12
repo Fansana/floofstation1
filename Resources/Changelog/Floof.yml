@@ -3795,3 +3795,68 @@ Entries:
   id: 408
   time: '2025-04-06T05:35:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/713
+- author: Forzii
+  changes:
+    - type: Add
+      message: Brought back the tiny trait. NT cloning tech has been acting up lately.
+  id: 409
+  time: '2025-04-07T08:26:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/689
+- author: ProtoLady
+  changes: []
+  id: 410
+  time: '2025-04-09T16:30:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/737
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: Rules have been updated, make sure to read them.
+  id: 411
+  time: '2025-04-10T06:10:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/738
+- author: M3739
+  changes:
+    - type: Fix
+      message: The Chitinid's emote wheel has been revised and corrected.
+  id: 412
+  time: '2025-04-10T06:16:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/726
+- author: Forzii
+  changes:
+    - type: Add
+      message: Added a heavyweight trait. Some of ya'll be dense.
+  id: 413
+  time: '2025-04-10T06:17:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/703
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Epistemics confirms that mortality is indeed real. Unrevivable people
+        can no longer be revived via CPR or healing psionic powers.
+  id: 414
+  time: '2025-04-10T06:20:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/700
+- author: XenoOutlier
+  changes:
+    - type: Add
+      message: More natural languages have been added!
+  id: 415
+  time: '2025-04-10T06:20:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/686
+- author: faefyr
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted head markings to include left and right eye for heterochromia,
+        this is done on species with standard eye sprites, this change comes
+        with an addition head marking slot to accommodate for the change so it
+        can be added on top of existing markings.
+  id: 416
+  time: '2025-04-10T17:43:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/734
+- author: Fenny
+  changes: []
+  id: 417
+  time: '2025-04-12T01:55:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/740
