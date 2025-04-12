@@ -163,8 +163,9 @@ public sealed class PaintSystem : SharedPaintSystem
 
     public void Paint(EntityWhitelist? whitelist, EntityWhitelist? blacklist, EntityUid target, Color color)
     {
-        if (!whitelist?.IsValid(target, EntityManager) != true
-            || !blacklist?.IsValid(target, EntityManager) != false)
+        // Floofstation - fixed the calls to proceed when whitelists are null instead of returning
+        if (!whitelist?.IsValid(target, EntityManager) == false
+            || !blacklist?.IsValid(target, EntityManager) == true)
             return;
 
         EnsureComp<PaintedComponent>(target, out var paint);

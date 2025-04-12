@@ -9,8 +9,8 @@
     Can be equipped almost anywhere on your body, but does not include suit sensors or protection. A leash can be attached to it.
   components:
   - type: Clothing
-    equipDelay: 2
-    unequipDelay: 2
+    equipDelay: 1
+    unequipDelay: 1
     quickEquip: false # Would conflict due to having multiple allowed slots
     slots:
     - neck
@@ -38,49 +38,32 @@
     sprite: Floof/Clothing/Uncategorized/harness_white.rsi
     equippedState: equipped
 
-# Precolored base
-- type: entity
-  parent: ClothingUncategorizedHarnessColorable
-  id: ClothingUncategorizedHarnessColoredBase
-  suffix: White
-  components:
-  - type: Painted
-    enabled: true
-  - type: Appearance
-    appearanceDataInit:
-      enum.PaintVisuals.Painted: true # This sucks soooo much
-
 # Colored as gray
 - type: entity
-  parent: ClothingUncategorizedHarnessColoredBase
+  parent: ClothingUncategorizedHarnessColorable
   id: ClothingUncategorizedHarnessGray
   name: simple gray harness
+  suffix: Gray
   components:
-  - type: Painted
+  - type: PaintOnInit
     color: "#94A1B5" # silver-ish, for style
-    enabled: true
 
 # Colored as pink
 - type: entity
-  parent: ClothingUncategorizedHarnessColoredBase
+  parent: ClothingUncategorizedHarnessColorable
   id: ClothingUncategorizedHarnessPink
   name: simple pink harness
+  suffix: Pink
   components:
-  - type: Painted
+  - type: PaintOnInit
     color: "#E1B1E3"
-    enabled: true
 
 # Colored as blue
 - type: entity
-  parent: ClothingUncategorizedHarnessColoredBase
+  parent: ClothingUncategorizedHarnessColorable
   id: ClothingUncategorizedHarnessBlue
   name: simple blue harness
+  suffix: Blue
   components:
-  - type: Painted
+  - type: PaintOnInit
     color: "#93C9DB"
-    enabled: true
-
-# TODO: Sprite sux
-# The middle strap should be lower
-# The width of the strap in NS should be higher
-# Still not rendered as colored
