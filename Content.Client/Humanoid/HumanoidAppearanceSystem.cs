@@ -278,29 +278,40 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
             spriteComp.RemoveLayer(index);
         }
     }
-    private void ApplyMarking(MarkingPrototype markingPrototype,
+    private void ApplyMarking(
+        MarkingPrototype markingPrototype,
         IReadOnlyList<Color>? colors,
         bool visible,
         HumanoidAppearanceComponent humanoid,
-        SpriteComponent sprite)
+        SpriteComponent sprite
+        )
     {
-        if (!sprite.LayerMapTryGet(markingPrototype.BodyPart, out int targetLayer))
-        {
-            return;
-        }
-
-        visible &= !IsHidden(humanoid, markingPrototype.BodyPart);
-        visible &= humanoid.BaseLayers.TryGetValue(markingPrototype.BodyPart, out var setting)
-           && setting.AllowsMarkings;
-
         for (var j = 0; j < markingPrototype.Sprites.Count; j++)
         {
             var markingSprite = markingPrototype.Sprites[j];
-
             if (markingSprite is not SpriteSpecifier.Rsi rsi)
             {
                 continue;
             }
+
+            var layerSlot = markingPrototype.BodyPart;
+            // first, try to see if there are any custom layers for this marking
+            if (markingPrototype.Layering != null)
+            {
+                var name = rsi.RsiState;
+                if (markingPrototype.Layering.TryGetValue(name, out var layerName))
+                {
+                    layerSlot = Enum.Parse<HumanoidVisualLayers>(layerName);
+                }
+            }
+            if (!sprite.LayerMapTryGet(layerSlot, out var targetLayer))
+            {
+                continue;
+            }
+
+            visible &= !IsHidden(humanoid, markingPrototype.BodyPart);
+            visible &= humanoid.BaseLayers.TryGetValue(markingPrototype.BodyPart, out var setting)
+               && setting.AllowsMarkings;
 
             var layerId = $"{markingPrototype.ID}-{rsi.RsiState}";
 

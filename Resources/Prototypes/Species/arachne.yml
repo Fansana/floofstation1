@@ -60,6 +60,8 @@
 - type: speciesBaseSprites
   id: MobArachneSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobHumanHead
     HeadSide: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
