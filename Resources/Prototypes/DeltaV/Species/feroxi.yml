@@ -21,6 +21,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobFeroxiTorso
+    Underwear: MobHumanoidAnyMarking # Floofstation
+    Undershirt: MobHumanoidAnyMarking # Floofstation
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -37,6 +39,12 @@
 - type: markingPoints
   id: MobFeroxiMarkingLimits
   points:
+    Underwear: # Floofstation
+      points: 1
+      required: false
+    Undershirt: # Floofstation
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false

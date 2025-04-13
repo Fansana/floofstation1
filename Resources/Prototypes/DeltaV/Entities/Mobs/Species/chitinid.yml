@@ -117,6 +117,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floofstation, add underwear
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floofstation, add underwear
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -160,6 +162,12 @@
     - TauCetiBasic
     - Chittin
     naturalLanguage: Chittin # Floof: explicitly stated natural languages
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ChitinidEmotes # Floof - M3739 - #726
 
 - type: entity
   parent: BaseSpeciesDummy

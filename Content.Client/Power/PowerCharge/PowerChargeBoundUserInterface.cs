@@ -23,7 +23,7 @@ public sealed class PowerChargeBoundUserInterface : BoundUserInterface
         if (!EntMan.TryGetComponent(Owner, out PowerChargeComponent? component))
             return;
 
-        _window = new PowerChargeWindow();
+        _window = this.CreateWindow<PowerChargeWindow>();
         _window.UpdateWindow(this, Loc.GetString(component.WindowTitle));
 
     }

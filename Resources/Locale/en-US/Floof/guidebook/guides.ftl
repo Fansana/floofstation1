@@ -12,3 +12,5 @@ guide-entry-commandhierarchy = Command Hierarchy
 guide-entry-alertprocedure = Alert Procedure
 guide-entry-epistemicsSOP = Epistemics SOP
 guide-entry-engineeringSOP = Engineering SOP
+guide-entry-securitySOP = Security SOP
+guide-entry-briggingSOP = Brigging SOP
