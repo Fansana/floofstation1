@@ -3879,3 +3879,10 @@ Entries:
   id: 418
   time: '2025-04-13T02:33:53.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/739
+- author: M3739
+  changes:
+    - type: Tweak
+      message: The white cyberjacket and loincloth are now colorable.
+  id: 419
+  time: '2025-04-13T02:45:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/741
