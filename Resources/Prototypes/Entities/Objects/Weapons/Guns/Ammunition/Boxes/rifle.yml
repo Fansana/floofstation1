@@ -51,7 +51,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeRifleRubber # Floof - Fix the ammo in the .20 Rifle Rubber Box.
+    proto: CartridgeRifleRubber
   - type: Sprite
     layers:
     - state: base-b

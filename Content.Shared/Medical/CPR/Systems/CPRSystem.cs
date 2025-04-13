@@ -6,6 +6,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
@@ -85,18 +86,20 @@ namespace Content.Shared.Medical.CPR
                 _popupSystem.PopupEntity(Loc.GetString("cpr-start-second-person", ("target", target)), target, performer, PopupType.Medium);
                 _popupSystem.PopupEntity(Loc.GetString("cpr-start-second-person-patient", ("user", performer)), target, target, PopupType.Medium);
 
-                var playingStream = _audio.PlayPvs(cprComponent.CPRSound, performer);
+                // Floofstation - cancel the old cpr sound when a new one begins
+                if (cprComponent.CPRPlayingStream is { Valid: true } oldStream)
+                    _audio.Stop(oldStream);
 
+                var playingStream = _audio.PlayPvs(cprComponent.CPRSound, performer);
                 if (playingStream == null)
                     return;
 
-                cprComponent.CPRPlayingStream = _audio.PlayPvs(cprComponent.CPRSound, performer)!.Value.Entity;
+                cprComponent.CPRPlayingStream = playingStream.Value.Entity; // Floof - do not create double audio streams
             }
 
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, performer, cprComponent.DoAfterDuration, new CPRDoAfterEvent(), performer, target, performer)
             {
-                BreakOnTargetMove = true,
-                BreakOnUserMove = true,
+                BreakOnMove = true,
                 NeedHand = true,
                 BlockDuplicate = true
             });
@@ -126,6 +129,7 @@ namespace Content.Shared.Medical.CPR
                 _rottingSystem.ReduceAccumulator((EntityUid) args.Target, component.DoAfterDuration * RotReductionMultiplier);
 
             if (_robustRandom.Prob(ResuscitationChance)
+                && !HasComp<UnrevivableComponent>(args.Target.Value)
                 && _mobThreshold.TryGetThresholdForState((EntityUid) args.Target, MobState.Dead, out var threshold)
                 && TryComp<DamageableComponent>(args.Target, out var damageableComponent)
                 && TryComp<MobStateComponent>(args.Target, out var state)

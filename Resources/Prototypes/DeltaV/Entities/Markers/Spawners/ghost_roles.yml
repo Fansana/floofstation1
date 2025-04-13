@@ -47,6 +47,7 @@
       - state: green
       - sprite: Structures/Wallmounts/signs.rsi
         state: radiation
+  - type: GhostRoleAntagSpawner
 
 - type: entity
   parent: MarkerBase
@@ -58,6 +59,7 @@
     description: ghost-role-information-paradox-anomaly-description
     rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: ParadoxAnomalySpawner
+  - type: GhostRoleAntagSpawner
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
