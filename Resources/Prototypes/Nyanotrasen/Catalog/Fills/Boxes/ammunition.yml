@@ -1,5 +1,5 @@
 - type: entity
-  name: shotgun soulbreaker cartridges dispenser
+  name: shotgun soulbreaker cartridges dispenser #Change made to make them load from hand and fit with naming conventions, can be left
   parent: AmmoProviderShotgunShell
   id: BoxShellSoulbreaker
   description: A box full of anti-psionic soulbreaker cartridges, designed for riot shotguns.

@@ -67,7 +67,7 @@
     damage:
       types:
         Holy: 20
-        Piercing: 10
+        Piercing: 10 #This is a tweak to the damage values and can be left here.
 
 - type: entity
   id: BulletSpecialMindbreaker
