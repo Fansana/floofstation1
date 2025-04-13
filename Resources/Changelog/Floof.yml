@@ -3914,3 +3914,52 @@ Entries:
   id: 423
   time: '2025-04-13T02:52:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/724
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed re spawn message
+  id: 424
+  time: '2025-04-13T12:09:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/753
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed mail delivery
+  id: 425
+  time: '2025-04-13T12:10:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/751
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fix sec not having access to nanochat
+  id: 426
+  time: '2025-04-13T12:12:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/750
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed jug labels being doubled up.
+  id: 427
+  time: '2025-04-13T12:41:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/752
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed crayons only giving a thumbs up 👍
+  id: 428
+  time: '2025-04-13T13:03:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/755
+- author: Fansana
+  changes:
+    - type: Fix
+      message: Fixed Block Game not responding.
+  id: 429
+  time: '2025-04-13T13:03:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/754
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed the attack rates of some melee weapons
+  id: 430
+  time: '2025-04-13T14:19:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/756
