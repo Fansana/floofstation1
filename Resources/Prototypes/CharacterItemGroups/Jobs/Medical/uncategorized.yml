@@ -21,8 +21,8 @@
       id: LoadoutBackpackDuffelVirology
     - type: loadout
       id: LoadoutBackpackDuffelGenetics
-    - type: loadout
-      id: LoadoutBackpackMedicalDuffelSurgeryFilled
+#    - type: loadout # Floof -  Move surgical duffel bag to equipment
+#      id: LoadoutBackpackMedicalDuffelSurgeryFilled
 
 #- type: characterItemGroup
 #  id: LoadoutMedicalBelt
@@ -33,12 +33,14 @@
 #  id: LoadoutMedicalEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutMedicalEquipment
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutMedicalEquipment
+  maxItems: 1
+  items:
+    - type: loadout # Move surgical duffel bag to equipment
+      id: LoadoutMedicalEquipmentDuffelSurgeryFilled
+
 - type: characterItemGroup
   id: LoadoutMedicalEyes
   maxItems: 1

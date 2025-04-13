@@ -6,6 +6,21 @@
 # Ears
 
 # Equipment
+- type: loadout
+  id: LoadoutMedicalEquipmentDuffelSurgeryFilled
+  category: JobsMedicalAUncategorized
+  cost: 3
+  exclusive: false
+  items:
+    - ClothingBackpackDuffelSurgeryFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+        - ChiefMedicalOfficer
 
 # Eyes
 

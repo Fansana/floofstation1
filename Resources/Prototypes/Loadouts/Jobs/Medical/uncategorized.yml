@@ -126,19 +126,21 @@
       departments:
         - Medical
 
-- type: loadout
-  id: LoadoutBackpackMedicalDuffelSurgeryFilled
-  category: JobsMedicalAUncategorized
-  cost: 3
-  exclusive: true
-  items:
-    - ClothingBackpackDuffelSurgeryFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalBackpacks
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
+# Floof section - Move surgical duffel bag to equipment
+#- type: loadout
+#  id: LoadoutBackpackMedicalDuffelSurgeryFilled
+#  category: JobsMedicalAUncategorized
+#  cost: 3
+#  exclusive: true
+#  items:
+#    - ClothingBackpackDuffelSurgeryFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutMedicalBackpacks
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#        - Medical
+# Floof section end
 
 # Belt
 
