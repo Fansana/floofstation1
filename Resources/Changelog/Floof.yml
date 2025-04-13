@@ -3860,3 +3860,22 @@ Entries:
   id: 417
   time: '2025-04-12T01:55:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/740
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Only Heads can be chosen for the "Teach a Lesson" objective.
+    - type: Tweak
+      message: Reduced weights for Dragon, LoneOp, and Revenant.
+    - type: Tweak
+      message: Increased earliest start requirement for LoneOp.
+    - type: Tweak
+      message: Increased minimum player requirement for LoneOp.
+    - type: Tweak
+      message: Reduced number of traitors in a round.
+    - type: Remove
+      message: Cancer mouse no longer spawns from "Mouse Migration" event
+    - type: Remove
+      message: Removed "Die a Glorious Death" objective.
+  id: 418
+  time: '2025-04-13T02:33:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/739
