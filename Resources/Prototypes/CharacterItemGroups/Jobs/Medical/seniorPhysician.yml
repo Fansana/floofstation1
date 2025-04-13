@@ -59,7 +59,6 @@
   id: LoadoutSeniorPhysicianOuter
   maxItems: 1
   items:
-  items:
     - type: loadout # Floof - Add missing medical loadout items
       id: LoadoutSeniorPhysicianOuterLabcoat
 
