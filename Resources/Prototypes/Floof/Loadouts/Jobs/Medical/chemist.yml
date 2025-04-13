@@ -1,40 +1,70 @@
+# Chemist
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
 - type: loadout
   id: LoadoutClothingHandsChemistsWarmers
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
   items:
-  - ClothingHandsChemistsWarmers
+    - ClothingHandsChemistsWarmers
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Chemist
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
 
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+
+# Shoes
 - type: loadout
   id: LoadoutClothingUnderSocksChemists
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
   items:
-  - ClothingUnderSocksChemists
+    - ClothingUnderSocksChemists
   requirements:
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-    - Diona
-    - Harpy
-  - !type:CharacterJobRequirement
-    jobs:
-    - Chemist
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
 
+# Uniforms
 - type: loadout
   id: LoadoutClothingUniformChemistsThong
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
   items:
-  - ClothingUniformChemistsThong
+    - ClothingUniformChemistsThong
   requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Chemist
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
