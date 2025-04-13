@@ -55,7 +55,7 @@
 # Head
 - type: loadout
   id: LoadoutMedicalHeadNurse
-  category: JobsMedicalAUncategorized
+  category: JobsMedicalMedicalDoctor # Floof - Put nurse hat in correct category
   cost: 0
   exclusive: true
   requirements:
