@@ -5,7 +5,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Gun
-    fireRate: 2 # once in two seconds, NOT attacks per minute!
+    fireRate: 0.5
     selectedMode: SemiAuto
     minAngle: 1
     maxAngle: 3
