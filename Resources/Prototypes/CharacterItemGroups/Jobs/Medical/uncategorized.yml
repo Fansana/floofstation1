@@ -58,6 +58,8 @@
       id: LoadoutMedicalGlovesNitrile
     - type: loadout
       id: LoadoutMedicalGlovesLatex
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingHandsMedicWarmers
 
 - type: characterItemGroup
   id: LoadoutMedicalHead
@@ -112,11 +114,13 @@
     - type: loadout
       id: LoadoutMedicalOuterCybersunWindbreaker
 
-#- type: characterItemGroup
-#  id: LoadoutMedicalShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutMedicalShoes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingUnderSocksMedic
+
 - type: characterItemGroup
   id: LoadoutMedicalUniforms
   maxItems: 1
@@ -137,3 +141,5 @@
       id: LoadoutMedicalUniformScrubsCybersun
     - type: loadout
       id: LoadoutMedicalUniformScrubsWhite
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingUniformMedicThong
