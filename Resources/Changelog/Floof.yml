@@ -3956,3 +3956,10 @@ Entries:
   id: 429
   time: '2025-04-13T13:03:52.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/754
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed the attack rates of some melee weapons
+  id: 430
+  time: '2025-04-13T14:19:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/756
