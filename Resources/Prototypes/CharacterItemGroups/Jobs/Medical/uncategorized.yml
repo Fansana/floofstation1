@@ -118,6 +118,8 @@
   id: LoadoutMedicalShoes
   maxItems: 1
   items:
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutMedicalShoesWhite
     - type: loadout # Floof - Add loadout groups to medical lingerie
       id: LoadoutClothingUnderSocksMedic
 

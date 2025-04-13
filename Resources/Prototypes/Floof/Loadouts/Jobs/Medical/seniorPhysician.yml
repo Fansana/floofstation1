@@ -1,0 +1,57 @@
+# Senior Physician
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutSeniorPhysicianOuterCoatLab
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterCoatLabSeniorPhysician
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+
+# Shoes
+- type: loadout
+  id: LoadoutSeniorPhysicianShoesBlack
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesColorBlack
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+# Uniforms

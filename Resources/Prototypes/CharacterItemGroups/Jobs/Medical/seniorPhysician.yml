@@ -54,17 +54,22 @@
 #  id: LoadoutSeniorPhysicianMask
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutSeniorPhysicianOuter
-#  maxItems: 1
-#  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutSeniorPhysicianShoes
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutSeniorPhysicianOuter
+  maxItems: 1
+  items:
+  items:
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutSeniorPhysicianOuterCoatLab
+
+- type: characterItemGroup
+  id: LoadoutSeniorPhysicianShoes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutSeniorPhysicianShoesBlack
+
 - type: characterItemGroup
   id: LoadoutSeniorPhysicianUniforms
   maxItems: 1

@@ -73,6 +73,25 @@
 
 # Shoes
 - type: loadout
+  id: LoadoutMedicalShoesWhite
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesColorWhite
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalShoes
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+- type: loadout
   id: LoadoutClothingUnderSocksMedic
   category: JobsMedicalAUncategorized
   cost: 0
