@@ -25,6 +25,22 @@
         - Medical
 
 # Head
+- type: loadout
+  id: LoadoutMedicalHeadBeret
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalDoctorHead
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterJobRequirement #all medical jobs but intern
+      inverted: true
+      jobs: [MedicalIntern]
+  items:
+    - ClothingHeadHatBeretMedic
 
 # Id
 
@@ -70,6 +86,79 @@
         - Medical
 
 # Outer
+- type: loadout
+  id: LoadoutMedicalOuterLabcoatGene
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterCoatLabGene
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalOuterLabcoatViro
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterCoatLabViro
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalOuterWinter
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterMed
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+
+- type: loadout
+  id: LoadoutMedicalOuterWinterGen
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterGen
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalOuterWinterViro
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterViro
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
 
 # Shoes
 - type: loadout
@@ -85,6 +174,65 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Medical
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+- type: loadout
+  id: LoadoutMedicalShoesWinter
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterMed
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalShoes
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Medical
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+- type: loadout
+  id: LoadoutMedicalShoesWinterGenetics
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterGenetics
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+- type: loadout
+  id: LoadoutMedicalShoesWinterViro
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterViro
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -111,6 +259,66 @@
         - Harpy
 
 # Uniforms
+- type: loadout
+  id: LoadoutMedicalUniformJumpskirtGenetics
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtGenetics
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalUniformJumpskirtVirology
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpskirtVirology
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalUniformJumpsuitGenetics
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpsuitGenetics
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
+- type: loadout
+  id: LoadoutMedicalUniformJumpsuitVirology
+  category: JobsMedicalAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformJumpsuitVirology
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+        - SeniorPhysician
+
 - type: loadout
   id: LoadoutClothingUniformMedicThong
   category: JobsMedicalAUncategorized

@@ -332,6 +332,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:
@@ -403,6 +404,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
   items:
     - ClothingOuterCoatLab
@@ -418,6 +420,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:
@@ -521,6 +524,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:

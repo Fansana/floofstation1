@@ -95,6 +95,8 @@
       id: LoadoutMedicalOuterLabcoatChem
     - type: loadout
       id: LoadoutMedicalOuterApronChemist
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutChemistOuterWinter
 
 - type: characterItemGroup
   id: LoadoutChemistShoes
@@ -102,6 +104,8 @@
   items:
     - type: loadout
       id: LoadoutMedicalShoesEnclosedChem
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutChemistShoesWinterChem
     - type: loadout # Floof - Add loadout groups to medical lingerie
       id: LoadoutClothingUnderSocksChemists
 

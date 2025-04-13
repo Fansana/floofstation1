@@ -33,8 +33,40 @@
 # Mask
 
 # Outer
+- type: loadout
+  id: LoadoutChemistOuterWinter
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterChem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
 
 # Shoes
+- type: loadout
+  id: LoadoutChemistShoesWinterChem
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterChem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
 - type: loadout
   id: LoadoutClothingUnderSocksChemists
   category: JobsMedicalChemist

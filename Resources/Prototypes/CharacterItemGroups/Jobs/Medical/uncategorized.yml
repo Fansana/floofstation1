@@ -81,6 +81,8 @@
       id: LoadoutMedicalHeadSurgcapWhite
     - type: loadout
       id: LoadoutMedicalHeadSurgcapCybersun
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutMedicalHeadBeret
 
 #- type: characterItemGroup
 #  id: LoadoutMedicalId
@@ -113,15 +115,36 @@
       id: LoadoutMedicalOuterLabcoat
     - type: loadout
       id: LoadoutMedicalOuterCybersunWindbreaker
+# Floof section - Add missing medical loadout items
+    - type: loadout
+      id: LoadoutMedicalOuterLabcoatGene
+    - type: loadout
+      id: LoadoutMedicalOuterLabcoatViro
+    - type: loadout
+      id: LoadoutMedicalOuterWinter
+    - type: loadout
+      id: LoadoutMedicalOuterWinterGen
+    - type: loadout
+      id: LoadoutMedicalOuterWinterViro
+# Floof section end
 
 - type: characterItemGroup
   id: LoadoutMedicalShoes
   maxItems: 1
   items:
-    - type: loadout # Floof - Add missing medical loadout items
+# Floof section - Add missing medical loadout items
+    - type: loadout
       id: LoadoutMedicalShoesWhite
-    - type: loadout # Floof - Add loadout groups to medical lingerie
+    - type: loadout
+      id: LoadoutMedicalShoesWinter
+    - type: loadout
+      id: LoadoutMedicalShoesWinterGenetics
+    - type: loadout
+      id: LoadoutMedicalShoesWinterViro
+# Floof section - Add loadout groups to medical lingerie
+    - type: loadout
       id: LoadoutClothingUnderSocksMedic
+# Floof section end
 
 - type: characterItemGroup
   id: LoadoutMedicalUniforms
@@ -143,5 +166,16 @@
       id: LoadoutMedicalUniformScrubsCybersun
     - type: loadout
       id: LoadoutMedicalUniformScrubsWhite
-    - type: loadout # Floof - Add loadout groups to medical lingerie
+# Floof section - Add missing medical loadout items
+    - type: loadout
+      id: LoadoutMedicalUniformJumpskirtGenetics
+    - type: loadout
+      id: LoadoutMedicalUniformJumpskirtVirology
+    - type: loadout
+      id: LoadoutMedicalUniformJumpsuitGenetics
+    - type: loadout
+      id: LoadoutMedicalUniformJumpsuitVirology
+# Floof section - Add loadout groups to medical lingerie
+    - type: loadout
       id: LoadoutClothingUniformMedicThong
+# Floof section end
