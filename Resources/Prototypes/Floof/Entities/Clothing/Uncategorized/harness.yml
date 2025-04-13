@@ -18,6 +18,7 @@
     - outerClothing
     - back
     - belt
+    equippedState: equipped
     clothingVisuals: {} # I am 90% sure this is a redundancy coming from ClothingBeltBase, so we're removing it here
   - type: LeashAnchor
   - type: ClothingLimit
@@ -36,7 +37,6 @@
     sprite: Floof/Clothing/Uncategorized/harness_white.rsi
   - type: Clothing
     sprite: Floof/Clothing/Uncategorized/harness_white.rsi
-    equippedState: equipped
 
 # Colored as gray
 - type: entity
@@ -56,7 +56,7 @@
   suffix: Pink
   components:
   - type: PaintOnInit
-    color: "#E1B1E3"
+    color: "#e37cd3"
 
 # Colored as blue
 - type: entity
@@ -66,4 +66,15 @@
   suffix: Blue
   components:
   - type: PaintOnInit
-    color: "#93C9DB"
+    color: "#7195db"
+
+# Safety harness, for engineers!
+- type: entity
+  parent: ClothingUncategorizedHarnessBase
+  id: ClothingUncategorizedHarnessSafety
+  name: safety harness
+  components:
+  - type: Sprite
+    sprite: Floof/Clothing/Uncategorized/safety_harness.rsi
+  - type: Clothing
+    sprite: Floof/Clothing/Uncategorized/safety_harness.rsi
