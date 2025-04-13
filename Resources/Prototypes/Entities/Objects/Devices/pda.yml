@@ -378,7 +378,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - MailMetricsCartridge
-      - NanoChatCartridge
+      - NanoChatCartridge # DeltaV - NanoChat
       - StockTradingCartridge # DeltaV - StockTrading
 
 - type: entity
@@ -947,7 +947,6 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
-      - SecWatchCartridge
       - NanoChatCartridge
 
 - type: entity
@@ -1168,7 +1167,7 @@
       - MedTekCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
-
+      - NanoChatCartridge # DeltaV
 - type: entity
   parent: ERTLeaderPDA
   id: ERTSecurityPDA
