@@ -146,7 +146,7 @@
 - type: trait
   id: Succubus
   category: Physical
-  points: -3 # MD - Change from "3" tp "-3" for balancing.
+  points: -3
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -160,8 +160,8 @@
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
-      - HollowFangs
-      - Vampirism
+        - HollowFangs
+        - Vampirism
   functions:
     - !type:TraitReplaceComponent
       components:
