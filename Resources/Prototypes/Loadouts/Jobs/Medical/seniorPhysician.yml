@@ -39,19 +39,19 @@
 # Gloves
 
 # Head
-#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
-#  id: LoadoutMedicalHeadBeretSeniorPhysician
-#  category: JobsMedicalSeniorPhysician
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorPhysicianHead
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorPhysician
-#  items:
-#    - ClothingHeadHatBeretSeniorPhysician
+- type: loadout
+  id: LoadoutMedicalHeadBeretSeniorPhysician
+  category: JobsMedicalSeniorPhysician
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+  items:
+    - ClothingHeadHatBeretSeniorPhysician
 
 # Id
 
@@ -64,30 +64,30 @@
 # Shoes
 
 # Uniforms
-#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
-#  id: LoadoutMedicalUniformJumpskirtSenior
-#  category: JobsMedicalSeniorPhysician
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorPhysicianUniforms
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorPhysician
-#  items:
-#    - ClothingUniformJumpskirtSeniorPhysician
+- type: loadout
+  id: LoadoutMedicalUniformJumpskirtSenior
+  category: JobsMedicalSeniorPhysician
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+  items:
+    - ClothingUniformJumpskirtSeniorPhysician
 
-#- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
-#  id: LoadoutMedicalUniformJumpsuitSenior
-#  category: JobsMedicalSeniorPhysician
-#  cost: 0
-#  exclusive: true
-#  requirements:
-#    - !type:CharacterItemGroupRequirement
-#      group: LoadoutSeniorPhysicianUniforms
-#    - !type:CharacterJobRequirement
-#      jobs:
-#        - SeniorPhysician
-#  items:
-#    - ClothingUniformJumpsuitSeniorPhysician
+- type: loadout
+  id: LoadoutMedicalUniformJumpsuitSenior
+  category: JobsMedicalSeniorPhysician
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSeniorPhysicianUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - SeniorPhysician
+  items:
+    - ClothingUniformJumpsuitSeniorPhysician
