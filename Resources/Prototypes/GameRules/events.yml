@@ -1,11 +1,43 @@
 - type: entity
-  id: AnomalySpawn
+  id: BaseStationEvent
   parent: BaseGameRule
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    delay:
+      min:  10
+      max:  20
+
+- type: entity
+  id: BaseStationEventShortDelay
+  parent: BaseGameRule
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    delay:
+      min:  10
+      max:  20
+
+- type: entity
+  id: BaseStationEventLongDelay
+  parent: BaseGameRule
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GameRule
+    delay:
+      min:  40
+      max:  60
+
+- type: entity
+  id: AnomalySpawn
+  parent: BaseStationEventLongDelay
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     weight: 8
-    startDelay: 30
     duration: 35
     conditions: # Floof - at least one epi member
     - !type:DepartmentCountCondition
@@ -15,12 +47,11 @@
 
 - type: entity
   id: BluespaceArtifact
-  parent: BaseGameRule
+  parent: BaseStationEventLongDelay
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     weight: 8
-    startDelay: 30
     duration: 35
   - type: BluespaceArtifactRule
 
@@ -105,10 +136,46 @@
   - type: StationEvent
     weight: 6
     duration: 1
-    earliestStart: 90 # Floof
+    earliestStart: 90 #Floof
     reoccurrenceDelay: 60 # Floof
-    minimumPlayers: 30 # Floof
-  - type: NinjaSpawnRule
+    minimumPlayers: 30
+  - type: SpaceSpawnRule
+  - type: AntagLoadProfileRule
+  - type: AntagObjectives
+    objectives:
+    - StealResearchObjective
+    - DoorjackObjective
+    - SpiderChargeObjective
+    - TerrorObjective
+    - MassArrestObjective
+    - NinjaSurviveObjective
+  - type: AntagSelection
+    agentName: ninja-round-end-agent-name
+    definitions:
+    - spawnerPrototype: SpawnPointGhostSpaceNinja
+      min: 1
+      max: 1
+      pickPlayer: false
+      startingGear: SpaceNinjaGear
+      briefing:
+        text: ninja-role-greeting
+        color: Green
+        sound: /Audio/Misc/ninja_greeting.ogg
+      components:
+      - type: SpaceNinja
+      - type: NpcFactionMember
+        factions:
+        - Syndicate
+      - type: AutoImplant
+        implants:
+        - DeathAcidifierImplant
+      - type: RandomMetadata
+        nameSegments:
+        - names_ninja_title
+        - names_ninja
+      mindComponents:
+      - type: NinjaRole
+        prototype: SpaceNinja
 
 - type: entity
   parent: BaseGameRule
@@ -219,6 +286,45 @@
       prob: 0.03
     - id: MobMothroach
       prob: 0.008
+
+- type: entity
+  id: SnailMigrationLowPop
+  parent: BaseGameRule
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    startDelay: 10
+    weight: 6
+    duration: 50
+  - type: VentCrittersRule
+    entries:
+    - id: MobSnail
+      prob: 0.02
+    - id: MobSnailSpeed
+      prob: 0.002
+    - id: MobSnailMoth
+      prob: 0.002
+
+- type: entity
+  id: SnailMigration
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 15
+    weight: 6
+    duration: 50
+    minimumPlayers: 30
+  - type: VentCrittersRule
+    entries:
+    - id: MobSnail
+      prob: 0.02
+    - id: MobSnailSpeed
+      prob: 0.002
+    - id: MobSnailMoth
+      prob: 0.002
+    - id: MobSnailInstantDeath
+      prob: 0.00001 #  ~ 1:2000 snails
 
 - type: entity
   id: PowerGridCheck
@@ -354,7 +460,6 @@
 #  components:
 #  - type: StationEvent
 #    earliestStart: 60
-#    reoccurrenceDelay: 60
 #    minimumPlayers: 15
 #    weight: 2
 #    duration: 1
@@ -367,7 +472,7 @@
 #      blacklist:
 #        components:
 #        - ZombieImmune
-#        - InitialInfectedExempt
+#        - AntagImmune
 #      briefing:
 #        text: zombie-patientzero-role-greeting
 #        color: Plum
@@ -417,9 +522,9 @@
         prototype: Nukeops
 
 - type: entity
-  id: SleeperAgentsRule
-  parent: BaseGameRule
   categories: [ HideSpawnMenu ]
+  parent: BaseTraitorRule
+  id: SleeperAgents
   components:
   - type: StationEvent
     earliestStart: 25
@@ -427,17 +532,20 @@
     minimumPlayers: 15
     reoccurrenceDelay: 30
     startAnnouncement: false
-  - type: AlertLevelInterceptionRule
-  - type: TraitorRule
+# - type: AlertLevelInterceptionRule - Disable setting to blue with sleeper agents. Uncomment to enable.
   - type: AntagSelection
     definitions:
-    - prefRoles: [ Traitor ]
+    - prefRoles: [ TraitorSleeper ]
+      fallbackRoles: [ Traitor ]
       min: 1
       max: 2
       playerRatio: 10
+      blacklist:
+        components:
+        - AntagImmune
       mindComponents:
       - type: TraitorRole
-        prototype: Traitor
+        prototype: TraitorSleeper
 
 - type: entity
   id: MassHallucinations
