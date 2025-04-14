@@ -3970,3 +3970,10 @@ Entries:
   id: 431
   time: '2025-04-14T00:08:31.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/762
+- author: Carlen White
+  changes:
+    - type: Tweak
+      message: AutoDoc's storage is now refrigerated, preventing organs rotting
+  id: 432
+  time: '2025-04-14T00:50:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/761
