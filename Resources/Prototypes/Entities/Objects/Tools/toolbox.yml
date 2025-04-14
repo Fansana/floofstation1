@@ -21,7 +21,7 @@
   - type: Item
     size: Ginormous
   - type: MeleeWeapon
-    attackRate: 1.1
+    attackRate: 0.9 # Floofstation - this is hertz, not seconds
     range: 1.75
     damage:
       types:
