@@ -85,7 +85,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: carbon
   id: JugCarbon
   categories: [ HideSpawnMenu ]
   components:
@@ -100,7 +100,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: iodine
   id: JugIodine
   categories: [ HideSpawnMenu ]
   components:
@@ -115,7 +115,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: fluorine
   id: JugFluorine
   categories: [ HideSpawnMenu ]
   components:
@@ -130,7 +130,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: chlorine
   id: JugChlorine
   categories: [ HideSpawnMenu ]
   components:
@@ -145,7 +145,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: aluminium
   id: JugAluminium
   categories: [ HideSpawnMenu ]
   components:
@@ -160,7 +160,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: phosphorus
   id: JugPhosphorus
   categories: [ HideSpawnMenu ]
   components:
@@ -175,7 +175,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: sulfur
   id: JugSulfur
   categories: [ HideSpawnMenu ]
   components:
@@ -190,7 +190,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: silicon
   id: JugSilicon
   categories: [ HideSpawnMenu ]
   components:
@@ -205,7 +205,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: hydrogen
   id: JugHydrogen
   categories: [ HideSpawnMenu ]
   components:
@@ -220,7 +220,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: lithium
   id: JugLithium
   categories: [ HideSpawnMenu ]
   components:
@@ -235,7 +235,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: sodium
   id: JugSodium
   categories: [ HideSpawnMenu ]
   components:
@@ -250,7 +250,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: potassium
   id: JugPotassium
   categories: [ HideSpawnMenu ]
   components:
@@ -265,7 +265,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: radium
   id: JugRadium
   categories: [ HideSpawnMenu ]
   components:
@@ -280,7 +280,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: iron
   id: JugIron
   categories: [ HideSpawnMenu ]
   components:
@@ -295,7 +295,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: copper
   id: JugCopper
   categories: [ HideSpawnMenu ]
   components:
@@ -310,7 +310,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: gold
   id: JugGold
   categories: [ HideSpawnMenu ]
   components:
@@ -325,7 +325,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: mercury
   id: JugMercury
   categories: [ HideSpawnMenu ]
   components:
@@ -340,7 +340,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: silver
   id: JugSilver
   categories: [ HideSpawnMenu ]
   components:
@@ -355,7 +355,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: ethanol
   id: JugEthanol
   categories: [ HideSpawnMenu ]
   components:
@@ -370,7 +370,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: sugar
   id: JugSugar
   categories: [ HideSpawnMenu ]
   components:
@@ -385,7 +385,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: nitrogen
   id: JugNitrogen
   categories: [ HideSpawnMenu ]
   components:
@@ -400,7 +400,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: oxygen
   id: JugOxygen
   categories: [ HideSpawnMenu ]
   components:
@@ -415,7 +415,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: Plant-B-Gone
   id: JugPlantBGone
   categories: [ HideSpawnMenu ]
   components:
@@ -430,7 +430,7 @@
 
 - type: entity
   parent: Jug
-  name: jug
+  suffix: welding fuel
   id: JugWeldingFuel
   categories: [ HideSpawnMenu ]
   components:
