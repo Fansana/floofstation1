@@ -76,7 +76,7 @@ public sealed class LoadMapRuleSystem : GameRuleSystem<LoadMapRuleComponent>
             // TODO: If there are no preloaded grids left, any rule announcements will still go off!
             if (!_gridPreloader.TryGetPreloadedGrid(comp.PreloadedGrid.Value, out var loadedShuttle))
             {
-                Log.Error($"Rule {ToPrettyString(uid)} tried to get a preloaded grid, but none were loaded. Is the grid preloader initialized? If you are in a debug build, it may not be enabled by default."); // Floofstation
+                Log.Warning($"Rule {ToPrettyString(uid)} tried to get a preloaded grid, but none were loaded. Is the grid preloader initialized? If you are in a debug build, it may not be enabled by default."); // Floofstation
                 _mapManager.DeleteMap(mapId);
                 return;
             }
