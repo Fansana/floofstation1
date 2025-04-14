@@ -1,3 +1,4 @@
+
 using System.Threading;
 using Content.Server.Administration.Commands;
 using Content.Server.Administration.Components;
@@ -22,6 +23,7 @@ using Content.Shared.Administration;
 using Content.Shared.Administration.Components;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Part;
+using Content.Shared.Clumsy;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Cluwne;
 using Content.Shared.Damage;
@@ -49,6 +51,10 @@ using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
+
+// Floof Station - For our own smites
+using Content.Server.Floofstation.Administration;
+using Content.Server.Floofstation.Administration.Components;
 
 namespace Content.Server.Administration.Systems;
 
@@ -100,7 +106,7 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/smite.svg.192dpi.png")),
             Act = () =>
             {
-                var coords = Transform(args.Target).MapPosition;
+                var coords = _transformSystem.GetMapCoordinates(args.Target);
                 Timer.Spawn(_gameTiming.TickPeriod,
                     () => _explosionSystem.QueueExplosion(coords, ExplosionSystem.DefaultExplosionPrototypeId,
                         4, 1, 2, maxTileBreak: 0), // it gibs, damage doesn't need to be high.
@@ -536,6 +542,22 @@ public sealed partial class AdminVerbSystem
                 Message = Loc.GetString("admin-smite-kill-sign-description")
             };
             args.Verbs.Add(killSign);
+
+            // Floof Station Start - Horny admin smite
+            Verb hornySign = new()
+            {
+                Text = "Horny sign",
+                Category = VerbCategory.Smite,
+                Icon = new SpriteSpecifier.Rsi(new ("/Textures/Floof/Objects/Misc/hornysign.rsi"), "icon"),
+                Act = () =>
+                {
+                    EnsureComp<HornySignComponent>(args.Target);
+                },
+                Impact = LogImpact.Extreme,
+                Message = Loc.GetString("admin-smite-horny-sign-description")
+            };
+            args.Verbs.Add(hornySign);
+            // Floof Station End
 
             Verb cluwne = new()
             {
