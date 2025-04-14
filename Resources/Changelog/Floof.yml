@@ -3995,3 +3995,14 @@ Entries:
   id: 434
   time: '2025-04-14T07:48:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/766
+- author: Southbridge
+  changes:
+    - type: Add
+      message: The ERT Mothroach now has a description for its ghost role.
+    - type: Tweak
+      message: >-
+        Most ghost role rule pages now actually reinforce the rules for the
+        server.
+  id: 435
+  time: '2025-04-14T07:48:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/656
