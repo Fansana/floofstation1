@@ -336,8 +336,7 @@ public sealed class NPCUtilitySystem : EntitySystem
             {
                 if (TryComp<MeleeWeaponComponent>(targetUid, out var melee))
                 {
-                    // Floof - attack rate is in seconds, so inverted
-                    return melee.Damage.GetTotal().Float() * (1f / melee.AttackRate) / 100f;
+                    return melee.Damage.GetTotal().Float() * melee.AttackRate / 100f;
                 }
 
                 return 0f;

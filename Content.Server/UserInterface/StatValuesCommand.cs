@@ -189,8 +189,8 @@ public sealed class StatValuesCommand : IConsoleCommand
             values.Add(new[]
             {
                 proto.ID,
-                (comp.Damage.GetTotal() * (1f / comp.AttackRate)).ToString(), // Floof - attack rate is in seconds
-                (1 / comp.AttackRate).ToString(CultureInfo.CurrentCulture), // Floof - attack rate is in seconds
+                (comp.Damage.GetTotal() * comp.AttackRate).ToString(),
+                comp.AttackRate.ToString(CultureInfo.CurrentCulture),
                 comp.Damage.GetTotal().ToString(),
                 comp.Range.ToString(CultureInfo.CurrentCulture),
             });

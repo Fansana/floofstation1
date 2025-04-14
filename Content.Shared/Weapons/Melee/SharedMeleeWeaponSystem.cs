@@ -150,8 +150,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
     private void OnGetBonusMeleeAttackRate(EntityUid uid, BonusMeleeAttackRateComponent component, ref GetMeleeAttackRateEvent args)
     {
-        args.Rate += component.FlatModifier;      // NOTICE FOR FUTURE MERGES: attack rate is expressed in seconds in the MeleeWeaponComponent,
-        args.Multipliers *= component.Multiplier; // BUT in hertz here! If EE changes this, make sure GetAttackRate() is updated accordingly.
+        args.Rate += component.FlatModifier;
+        args.Multipliers *= component.Multiplier;
     }
 
     private void OnStopAttack(StopAttackEvent msg, EntitySessionEventArgs args)
@@ -241,11 +241,10 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return 0;
 
-        var ev = new GetMeleeAttackRateEvent(uid, 1f / component.AttackRate, 1, user); // Floof - attack rate is in seconds
+        var ev = new GetMeleeAttackRateEvent(uid, component.AttackRate, 1, user);
         RaiseLocalEvent(uid, ref ev);
 
-        return ev.Rate * ev.Multipliers; // NOTICE FOR FUTURE MERGES: this is in HERTZ.
-        // If EE changes the output of this function to be in seconds as well, further adjustments will be neeed
+        return ev.Rate * ev.Multipliers;
     }
 
     public FixedPoint2 GetHeavyDamageModifier(EntityUid uid, EntityUid user, MeleeWeaponComponent? component = null)
@@ -394,7 +393,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         }
 
         // Windup time checked elsewhere.
-        var fireRate = TimeSpan.FromSeconds(1 / GetAttackRate(weaponUid, user, weapon));
+        var fireRate = TimeSpan.FromSeconds(1f / GetAttackRate(weaponUid, user, weapon));
         var swings = 0;
 
         // TODO: If we get autoattacks then probably need a shotcounter like guns so we can do timing properly.
