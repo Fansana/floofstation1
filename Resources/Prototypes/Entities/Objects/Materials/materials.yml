@@ -381,6 +381,7 @@
   - type: Tag  #Floof
     tags:
     - Diamond
+    - RawMaterial
 
 - type: entity
   parent: MaterialDiamond
