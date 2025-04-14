@@ -32,3 +32,8 @@
   - type: PressureImmunity
   - type: Insulated
   - type: RespiratorImmune
+  - type: GhostRole
+    name: ghost-role-information-ert-mothroach-name
+    description: ghost-role-information-ert-mothroach-description
+    rules: floof-ghost-role-information-crew-aligned-rules
+  - type: GhostTakeoverAvailable
