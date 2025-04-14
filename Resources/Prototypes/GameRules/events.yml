@@ -501,6 +501,7 @@
     preloadedGrid: ShuttleStriker
   - type: NukeopsRule
     roundEndBehavior: Nothing
+  - type: AntagLoadProfileRule # Floofstation
   - type: AntagSelection
     definitions:
     - spawnerPrototype: SpawnPointLoneNukeOperative

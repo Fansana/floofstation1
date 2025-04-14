@@ -69,7 +69,7 @@
   - type: KnockdownOnHit
     duration: 60 #
   - type: MeleeWeapon
-    attackRate: .83
+    attackRate: 1.2 # Floofstation - this is hertz, not seconds
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
