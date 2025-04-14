@@ -189,3 +189,14 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutHead
+
+- type: loadout
+  id: LoadoutHeadLily
+  category: Head
+  cost: 0
+  exclusive: true
+  items:
+    - FoodLily
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutHead
