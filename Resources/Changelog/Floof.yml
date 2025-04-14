@@ -3963,3 +3963,10 @@ Entries:
   id: 430
   time: '2025-04-13T14:19:26.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/756
+- author: Eagle0600
+  changes:
+    - type: Fix
+      message: The chemvend displays jug labels properly again.
+  id: 431
+  time: '2025-04-14T00:08:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/762
