@@ -41,3 +41,11 @@
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutFun
+
+- type: loadout
+  id: LoadoutItemPaintbrush
+  category: Items
+  cost: 2
+  exclusive: false
+  items:
+  - CrayonBrush  
