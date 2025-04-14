@@ -4017,3 +4017,16 @@ Entries:
   id: 436
   time: '2025-04-14T21:31:10.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/690
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Most melee weapons should no longer have their attack rates inverted.
+    - type: Fix
+      message: Loneop and unknown shuttle events should now work correctly.
+    - type: Fix
+      message: >-
+        Tail thumps and crew monitor alerts now have correct sound positioning
+        and lower volume.
+  id: 437
+  time: '2025-04-14T21:47:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/767
