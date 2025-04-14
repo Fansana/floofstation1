@@ -4006,3 +4006,14 @@ Entries:
   id: 435
   time: '2025-04-14T07:48:46.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/656
+- author: M3739
+  changes:
+    - type: Tweak
+      message: Loadout options have been revised, primarily in the security department.
+    - type: Tweak
+      message: Traits such as Red Shirt have been revised.
+    - type: Add
+      message: The prison guard now has it's own load out tab.
+  id: 436
+  time: '2025-04-14T21:31:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/690
