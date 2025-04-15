@@ -41,7 +41,7 @@
 - type: characterItemGroup
   id: LoadoutParamedicGloves
   maxItems: 1
-  items: LoadoutClothingHandsParaMedicWarmers
+  items:
     - type: loadout # Floof - Add loadout groups to paramedic lingerie
       id: LoadoutClothingHandsParaMedicWarmers
 

@@ -87,7 +87,7 @@
     - ClothingHandsParaMedicWarmers
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: characterItemGroup
+      group: LoadoutParamedicGloves
     - !type:CharacterJobRequirement
       jobs:
         - Paramedic
