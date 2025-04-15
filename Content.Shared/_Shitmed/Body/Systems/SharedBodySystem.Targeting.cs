@@ -153,6 +153,7 @@ public partial class SharedBodySystem
             if (targetPart == null)
                 return;
 
+            // Floofstation - changed to use the local damage instead of the original args.Damage
             if (!TryChangePartDamage(ent, damage, args.IgnoreResistances, args.CanSever, args.CanEvade, args.PartMultiplier, targetPart.Value, out var evaded)
                 && args.CanEvade && evaded)
             {
