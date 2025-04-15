@@ -7,6 +7,8 @@ job-name-brigmedic = Corpsman
 job-name-senior-officer = Senior Officer
 job-name-borg = Cyborg
 job-name-senior-researcher = Mystic
+job-name-senior-engineer = Senior Engineer
+job-name-senior-physician = Senior Physician
 job-name-scientist = Acolyte
 job-name-research-assistant = Noviciate
 job-name-rd = Mystagogue
@@ -17,11 +19,9 @@ job-name-doctor = Medical Doctor
 job-name-paramedic = Paramedic
 job-name-cmo = Chief Medical Officer
 job-name-chemist = Chemist
-job-name-senior-physician = Senior Physician
 job-name-technical-assistant = Technical Assistant
 job-name-engineer = Station Engineer
 job-name-atmostech = Atmospheric Technician
-job-name-senior-engineer = Senior Engineer
 job-name-hop = Head of Personnel
 job-name-captain = Captain
 job-name-serviceworker = Service Worker
@@ -52,6 +52,22 @@ job-name-ertjanitor = ERT Janitor
 job-name-boxer = Boxer
 job-name-zookeeper = Zookeeper
 job-name-visitor = Visitor
+
+# unused jobs
+# these are required for the agent ID job icon tooltips
+# I am keeping them for roleplaying opportunities
+job-name-geneticist = Geneticist
+job-name-no-id = No ID
+job-name-prisoner = Prisoner
+job-name-syndicate = Syndicate
+job-name-unknown = Unknown
+job-name-virologist = Virologist
+job-name-zombie = Zombie
+
+# Job titles
+job-title-visitor = Visitor
+job-title-cluwne = Cluwne
+job-title-universal = Universal
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Atmospheric Technician

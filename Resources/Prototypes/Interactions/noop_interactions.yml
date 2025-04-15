@@ -54,3 +54,23 @@
     sound: {collection: FenceRattle}
   action:
     !type:NoOpAction
+
+# Floofstation - TODO: move to floofstation namespace
+- type: Interaction
+  id: CheckOut
+  parent: BaseGlobal
+  priority: -100 # Very specific ERP meaning, should be at the bottom
+  requiresHands: false
+  requiresCanInteract: false
+  contactInteraction: false
+  icon: /Textures/Interface/Actions/eyeopen.png
+  range: {max: 20}
+  effectSuccess:
+    popup: Subtle
+    sound: {path: /Audio/Floof/Lewd/blush.ogg}
+  action:
+    !type:NoOpAction
+  hideByRequirement: true
+  requirement:
+    !type:MobStateRequirement # Don't check out a wall
+    inverted: true

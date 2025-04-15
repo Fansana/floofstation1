@@ -11,6 +11,8 @@ namespace Content.Shared.Humanoid
         Hair,
         FacialHair,
         Chest,
+        Underwear, // Floof, add underwear
+        Undershirt, // Floof, add underwear
         Head,
         Snout,
         HeadSide, // side parts (i.e., frills)

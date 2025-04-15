@@ -21,6 +21,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobVulpkaninTorso
+    Underwear: MobHumanoidAnyMarking
+    Undershirt: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -38,6 +40,12 @@
 - type: markingPoints
   id: MobVulpkaninMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1 # Floof, add underwear
+      required: false
     Hair:
       points: 1
       required: false
@@ -52,7 +60,7 @@
       points: 1
       required: false
     Head:
-      points: 1
+      points: 2
       required: false
     RightLeg:
       points: 2
@@ -70,13 +78,13 @@
       points: 2
       required: false
     RightHand:
-      points: 2
+      points: 3
       required: false
     LeftArm:
       points: 2
       required: false
     LeftHand:
-      points: 2
+      points: 3
       required: false
     Snout:
       points: 1
@@ -85,6 +93,9 @@
       points: 1
       required: true
       defaultMarkings: [ VulpEar ]
+    HeadSide:
+      points: 2
+      required: false
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHead

@@ -19,13 +19,13 @@
     components:
     - type: CPRTraining
     - type: SurgerySpeedModifier
-      SpeedModifier: 1.75
+      speedModifier: 1.75
 
 - type: startingGear
   id: ParamedicGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
-    back: ClothingBackpackParamedicFilledDV
+    back: ClothingBackpackMedical # Floof - M3739 - #690 - Now properly reflected in loadout options.
     shoes: ClothingShoesColorBlue
     id: ParamedicPDA
     ears: ClothingHeadsetMedical

@@ -8,63 +8,36 @@
     containers:
       entity_storage: !type:AllSelector
         children:
-        - !type:EntSelector
-          id: LewdWand
-        - !type:EntSelector
-          id: LewdVibeGreen
-        - !type:EntSelector
-          id: LewdVibeTeal
-        - !type:EntSelector
-          id: LewdVibePink
-        - !type:EntSelector
-          id: LewdVibeRed
-        - !type:EntSelector
-          id: LewdVibeYellow
-        - !type:EntSelector
-          id: LewdFleshlightGreen
-        - !type:EntSelector
-          id: LewdFleshlightTeal
-        - !type:EntSelector
-          id: LewdFleshlightPink
-        - !type:EntSelector
-          id: LewdFleshlightRed
-        - !type:EntSelector
-          id: LewdFleshlightYellow
-        - !type:EntSelector
-          id: AvianDildo
-        - !type:GroupSelector
-          children:
-          - !type:EntSelector
-            id: CanineDildo
-          - !type:EntSelector
-            id: CanineDildoRed
-        - !type:EntSelector
-          id: HorseDildo
-        - !type:EntSelector
-          id: DragonDildo
-        - !type:EntSelector
-          id: NormalDildo
-        - !type:EntSelector
-          id: TentacleDildo
-        - !type:EntSelector
-          id: DoubleDildo
-        - !type:EntSelector
-          id: WhipPink
-        - !type:EntSelector
-          id: WhipTeal
-        - !type:EntSelector
-          id: WhipPinkCrotch
-        - !type:EntSelector
-          id: WhipTealCrotch
-        - !type:EntSelector
-          id: SpankPinkPaddle
-        - !type:EntSelector
-          id: SpankTealPaddle
-        - !type:EntSelector
-          id: DrinkCumBottleFull
+        - !type:NestedSelector
+          tableId: LewdVibes
+          rolls: !type:ConstantNumberSelector { value: 4 }
+        - !type:NestedSelector
+          tableId: LewdFleshlights
+          rolls: !type:ConstantNumberSelector { value: 2 }
+        - !type:NestedSelector
+          tableId: LewdDildos
+          rolls: !type:ConstantNumberSelector { value: 4 }
+        - id: DrinkCumBottleFull
           amount: !type:ConstantNumberSelector { value: 2 }
-        - !type:EntSelector
-          id: LeashBasic
-          amount: !type:ConstantNumberSelector { value: 2 }
-        - !type:EntSelector
-          id: ClothingEyesHypnoVisor
+
+- type: entity
+  id: CrateLewdKink
+  parent: CrateKink
+  name: kink paraphernalia crate
+  description: A selection of outfits, tools, and gear for the crew to live out their fantasies! Don't forget aftercare!
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LewdImpactPlay
+          rolls: !type:ConstantNumberSelector { value: 4 }
+        - !type:NestedSelector
+          tableId: LewdKinkClothing
+          rolls: !type:ConstantNumberSelector { value: 4 }
+        - !type:NestedSelector
+          tableId: LewdKinkTools
+          rolls: !type:ConstantNumberSelector { value: 5 }
+        - id: Brutepack
+          prob: 0.5

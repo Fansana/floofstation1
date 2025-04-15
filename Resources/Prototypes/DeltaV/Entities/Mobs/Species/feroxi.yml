@@ -28,11 +28,6 @@
       Male: MaleFeroxi
       Female: FemaleFeroxi
       Unsexed: MaleFeroxi
-  #- type: LanguageKnowledge # Floof - M3739 - Commented out for convenience when we implement the unique language for Feroxi. For now, it inherits from BaseMobSpeciesOrganic.
-  #  speaks:
-  #    - TauCetiBasic
-  #  understands:
-  #    - TauCetiBasic
   - type: Sprite
     netsync: false
     noRot: true
@@ -51,8 +46,8 @@
         # its fine, but its still very stupid that it has to be done like this instead of allowing sprites to just directly insert a stencil clear.
         # sprite refactor when
         state: l_leg
-      # - map: [ "enum.HumanoidVisualLayers.Underwear" ] Floof - M3739 - Underwear Undershirt when? #575
-      # - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floofstation
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floofstation
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -103,6 +98,14 @@
     hydratedMetabolizer: Feroxi
     dehydratedMetabolizer: FeroxiDehydrated
     dehydrationThreshold: 150
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Nehina
+    understands:
+    - TauCetiBasic
+    - Nehina
+    naturalLanguage: Nehina  # Floof: explicitly stated natural languages
 
 - type: entity
   parent: MobHumanDummy

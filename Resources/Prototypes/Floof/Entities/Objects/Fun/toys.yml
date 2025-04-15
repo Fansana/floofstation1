@@ -66,6 +66,31 @@
 
 - type: entity
   parent: BasePlushie
+  id: PlushieSalvager
+  name: salvager plushie
+  description: A cheeky kitsune battle-hardened from countless expeditions.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: salvager
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/gekker.ogg
+
+- type: entity
+  parent: BasePlushie
   id: PlushieFPraetorian
   name: blue Praetorian plush
   description: An adorable stuffed toy that resembles a Praetorian with blue stripes.
@@ -196,37 +221,38 @@
       params:
         volume: 1
 
-- type: entity
-  parent: BaseHypnoTempPlush
-  id: Plushiegirlfailure
-  name: girl failure plushie
-  description: Smells like body odor and cheese! Design by SESWC!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: girlfailure
-  - type: SolutionContainerManager
-    solutions:
-      absorbed:
-        maxVol: 30
-        reagents:
-        - ReagentId: RootBeerFloat
-          Quantity: 30
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Voice/Human/cry_female_3.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Animals/mouse_squeak.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Animals/mouse_squeak.ogg
-      params:
-        variation: 0.05
-        volume: 1
-            
+# Banned individual
+# - type: entity
+#   parent: BaseHypnoTempPlush
+#   id: Plushiegirlfailure
+#   name: girl failure plushie
+#   description: Smells like body odor and cheese! Design by SESWC!
+#   components:
+#   - type: Sprite
+#     sprite: Floof/Objects/Fun/floof_plush.rsi
+#     state: girlfailure
+#   - type: SolutionContainerManager
+#     solutions:
+#       absorbed:
+#         maxVol: 30
+#         reagents:
+#         - ReagentId: RootBeerFloat
+#           Quantity: 30
+#   - type: EmitSoundOnLand
+#     sound:
+#       path: /Audio/Voice/Human/cry_female_3.ogg
+#   - type: EmitSoundOnActivate
+#     sound:
+#       path: /Audio/Animals/mouse_squeak.ogg
+#       params:
+#         volume: 1
+#   - type: EmitSoundOnUse
+#     sound:
+#       path: /Audio/Animals/mouse_squeak.ogg
+#       params:
+#         variation: 0.05
+#         volume: 1
+
 - type: entity
   parent: PlushieHuman
   id: PlushieKitsuneCaptain
@@ -288,96 +314,97 @@
       params:
         variation: 0.05
         volume: 4
-        
-- type: entity
-  parent: PlushieHuman
-  id: PlushieFeistyBartender
-  name: Feisty Bartender Plushie
-  description: The Station mom, Loveable!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: vulp1
-  - type: UseDelay
-    delay: 300.0
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Machines/Nuke/nuke_alarm.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-      params:
-        volume: 1
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Items/Toys/weh.ogg
-      params:
-        variation: 0.05
-        volume: 4
-         
-- type: entity
-  parent: PlushieHuman
-  id: PlushieCoolVulp
-  name: Cool vulp plushie
-  description: Just one cool guy!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: vulp2
-  - type: UseDelay
-    delay: 300.0
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Machines/Nuke/nuke_alarm.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-      params:
-        volume: 1
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Items/Toys/weh.ogg
-      params:
-        variation: 0.05
-        volume: 4
-        
-- type: entity
-  parent: PlushieHuman
-  id: PlushieNoticeableSecurityOfficer
-  name: Noticeable security officer plushie
-  description: A wolf security officer, watch out she bites!
-  components:
-  - type: Sprite
-    sprite: Floof/Objects/Fun/floof_plush.rsi
-    state: vulp3
-  - type: UseDelay
-    delay: 300.0
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Machines/Nuke/nuke_alarm.ogg
-      params:
-        volume: 1
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/DeltaV/Voice/Vulpkanin/dog_growl3.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Items/Toys/toysqueak2.ogg
-      params:
-        volume: 1
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Items/Toys/weh.ogg
-      params:
-        variation: 0.05
-        volume: 4
+
+# Banned individual
+# - type: entity
+#   parent: PlushieHuman
+#   id: PlushieFeistyBartender
+#   name: Feisty Bartender Plushie
+#   description: The Station mom, Loveable!
+#   components:
+#   - type: Sprite
+#     sprite: Floof/Objects/Fun/floof_plush.rsi
+#     state: vulp1
+#   - type: UseDelay
+#     delay: 300.0
+#   - type: EmitSoundOnUse
+#     sound:
+#       path: /Audio/Machines/Nuke/nuke_alarm.ogg
+#       params:
+#         volume: 1
+#   - type: EmitSoundOnLand
+#     sound:
+#       path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+#   - type: EmitSoundOnActivate
+#     sound:
+#       path: /Audio/Items/Toys/toysqueak2.ogg
+#       params:
+#         volume: 1
+#   - type: MeleeWeapon
+#     soundHit:
+#       path: /Audio/Items/Toys/weh.ogg
+#       params:
+#         variation: 0.05
+#         volume: 4
+
+# - type: entity
+#   parent: PlushieHuman
+#   id: PlushieCoolVulp
+#   name: Cool vulp plushie
+#   description: Just one cool guy!
+#   components:
+#   - type: Sprite
+#     sprite: Floof/Objects/Fun/floof_plush.rsi
+#     state: vulp2
+#   - type: UseDelay
+#     delay: 300.0
+#   - type: EmitSoundOnUse
+#     sound:
+#       path: /Audio/Machines/Nuke/nuke_alarm.ogg
+#       params:
+#         volume: 1
+#   - type: EmitSoundOnLand
+#     sound:
+#       path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+#   - type: EmitSoundOnActivate
+#     sound:
+#       path: /Audio/Items/Toys/toysqueak2.ogg
+#       params:
+#         volume: 1
+#   - type: MeleeWeapon
+#     soundHit:
+#       path: /Audio/Items/Toys/weh.ogg
+#       params:
+#         variation: 0.05
+#         volume: 4
+
+# - type: entity
+#   parent: PlushieHuman
+#   id: PlushieNoticeableSecurityOfficer
+#   name: Noticeable security officer plushie
+#   description: A wolf security officer, watch out she bites!
+#   components:
+#   - type: Sprite
+#     sprite: Floof/Objects/Fun/floof_plush.rsi
+#     state: vulp3
+#   - type: UseDelay
+#     delay: 300.0
+#   - type: EmitSoundOnUse
+#     sound:
+#       path: /Audio/Machines/Nuke/nuke_alarm.ogg
+#       params:
+#         volume: 1
+#   - type: EmitSoundOnLand
+#     sound:
+#       path: /Audio/DeltaV/Voice/Vulpkanin/dog_growl3.ogg
+#   - type: EmitSoundOnActivate
+#     sound:
+#       path: /Audio/Items/Toys/toysqueak2.ogg
+#       params:
+#         volume: 1
+#   - type: MeleeWeapon
+#     soundHit:
+#       path: /Audio/Items/Toys/weh.ogg
+#       params:
+#         variation: 0.05
+#         volume: 4

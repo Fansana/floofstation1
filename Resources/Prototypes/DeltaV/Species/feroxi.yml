@@ -8,9 +8,9 @@
   markingLimits: MobFeroxiMarkingLimits
   dollPrototype: MobFeroxiDummy
   skinColoration: Hues
-  maleFirstNames: names_first_male
-  femaleFirstNames: names_first_female
-  lastNames: names_last
+  maleFirstNames: NamesFeroxiFirstMale
+  femaleFirstNames: NamesFeroxiFirstFemale
+  lastNames: NamesFeroxiLast
   customName: true # Floof
 
 - type: speciesBaseSprites
@@ -21,6 +21,8 @@
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobFeroxiTorso
+    Underwear: MobHumanoidAnyMarking # Floofstation
+    Undershirt: MobHumanoidAnyMarking # Floofstation
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -37,6 +39,12 @@
 - type: markingPoints
   id: MobFeroxiMarkingLimits
   points:
+    Underwear: # Floofstation
+      points: 1
+      required: false
+    Undershirt: # Floofstation
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false

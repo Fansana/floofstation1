@@ -75,6 +75,9 @@ language-Chittin-description =
     A language consisting of clicks, buzzes, and some variety of harsh insect sounds.
     Most of what makes up their speech comes from their antennae, making it a near-impossible language for those without to learn.
 
+language-Nehina-name = Nēhina
+language-Nehina-description =  A language spoken by the Feroxi, well adapted to speaking under the waters of ocean planets.
+
 # Animal Languages
 
 language-Cat-name = Cat
@@ -122,8 +125,15 @@ language-Kobold-description = Hiss!
 language-Hissing-name = Hissing
 language-Hissing-description = Hiss!
 
+# Floof section begin
 language-ScugSign-name = ScugSign
 language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
 
 language-Arachnic-name = Arachnic
 language-Arachnic-description = The language of arachnids is composed of mostly clicks and hisses, it almost has a rhythmic character to it at times.
+# Floof section end
+
+language-Eldritch-name = Eldritch
+language-Eldritch-description =
+    A language that is considered to be long forgotten - now the only speakers of this profaned tongue of screeches and
+    mumbles are the followers of an ancient God of Blood.

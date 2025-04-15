@@ -68,6 +68,8 @@ loadout-category-JobsSecurityHeadOfSecurity = Head of Security
 loadout-category-JobsSecuritySecurityOfficer = Security Officer
 loadout-category-JobsSecuritySeniorOfficer = Senior Officer
 loadout-category-JobsSecurityWarden = Warden
+# Floof - Prison Guard loadout implementation
+loadout-category-JobsSecurityPrisonGuard = Prison Guard
 
 # Service
 loadout-category-JobsService = Service

@@ -25,6 +25,8 @@
     Head: MobReptilianHead
     Snout: MobHumanoidAnyMarking
     Chest: MobReptilianTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -43,6 +45,12 @@
   id: MobReptilianMarkingLimits
   onlyWhitelisted: true
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1 # Floof, add underwear
+      required: false
     Hair:
       points: 0
       required: false
@@ -64,7 +72,7 @@
       points: 2
       required: false
     HeadSide:
-      points: 1
+      points: 2
       required: false
     Chest:
       points: 1
@@ -85,13 +93,13 @@
       points: 2
       required: false
     RightHand:
-      points: 2
+      points: 3
       required: false
     LeftArm:
       points: 2
       required: false
     LeftHand:
-      points: 2
+      points: 3
       required: false
 
 - type: humanoidBaseSprite

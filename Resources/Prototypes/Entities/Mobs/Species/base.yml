@@ -17,6 +17,8 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+    - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
     - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
@@ -131,17 +133,18 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - RadiationProtection
+    - Drowsiness
     - PsionicsDisabled
     - PsionicallyInsulated
-  - type: Reflect
-    enabled: false
-    reflectProb: 0
   - type: Body
     prototype: Human
     requiredLegs: 2
   - type: Identity
   - type: IdExaminable
   - type: Hands
+  - type: ComplexInteraction
+  - type: Internals
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
@@ -193,6 +196,10 @@
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
         requireInputValidation: false
+      enum.RadialSelectorUiKey.Key:
+        type: RadialSelectorMenuBUI
+      enum.ListViewSelectorUiKey.Key:
+        type: ListViewSelectorBUI
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Puller
@@ -276,6 +283,8 @@
     - StaminaModifier
     - PsionicsDisabled
     - PsionicallyInsulated
+    - RadiationProtection
+    - Drowsiness
   - type: Blindable
   # Other
   - type: Temperature
@@ -329,6 +338,7 @@
   abstract: true
   components:
   - type: Hands
+  - type: ComplexInteraction
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
@@ -354,6 +364,8 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+    - map: ["enum.HumanoidVisualLayers.Undershirt"] # Floof, add underwear
+    - map: ["enum.HumanoidVisualLayers.Underwear"] # Floof, add underwear
     - shader: StencilClear
       sprite: Mobs/Species/Human/parts.rsi
       state: l_leg

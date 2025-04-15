@@ -160,6 +160,8 @@
         - map: ["enum.HumanoidVisualLayers.LFoot"]
         - map: ["enum.HumanoidVisualLayers.RFoot"]
         - map: ["socks"]
+        - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+        - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
         - map: ["underpants"]
         - map: ["undershirt"]
         - map: ["jumpsuit"]
@@ -224,7 +226,7 @@
       removable: false
     - type: InnatePsionicPowers
       powersToAdd:
-        - ShadowkinPowers
+        - DarkSwapPower
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
@@ -232,6 +234,7 @@
       understands:
         - TauCetiBasic
         - Marish
+      naturalLanguage: Marish # Floof: explicitly stated natural languages
     - type: Tag
       tags:
       - CanPilot

@@ -106,7 +106,7 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
         var isEnabled = !translatorComp.Enabled && hasPower;
 
         translatorComp.Enabled = isEnabled;
-        _powerCell.SetPowerCellDrawEnabled(translator, isEnabled);
+        _powerCell.SetDrawEnabled(translator, isEnabled);
 
         if (_containers.TryGetContainingContainer(translator, out var holderCont)
             && holderCont.Owner is var holder
@@ -134,7 +134,7 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
     private void OnPowerCellSlotEmpty(EntityUid translator, HandheldTranslatorComponent component, PowerCellSlotEmptyEvent args)
     {
         component.Enabled = false;
-        _powerCell.SetPowerCellDrawEnabled(translator, false);
+        _powerCell.SetDrawEnabled(translator, false);
         OnAppearanceChange(translator, component);
 
         if (_containers.TryGetContainingContainer(translator, out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
@@ -144,7 +144,7 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
     private void OnPowerCellChanged(EntityUid translator, HandheldTranslatorComponent component, PowerCellChangedEvent args)
     {
         component.Enabled = !args.Ejected && component.Enabled; // Floofstation - don't automatically turn it on.
-        _powerCell.SetPowerCellDrawEnabled(translator, !args.Ejected);
+        _powerCell.SetDrawEnabled(translator, !args.Ejected);
         OnAppearanceChange(translator, component);
 
         if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
@@ -154,7 +154,7 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
     private void OnItemToggled(EntityUid translator, HandheldTranslatorComponent component, ItemToggledEvent args)
     {
         component.Enabled = args.Activated;
-        _powerCell.SetPowerCellDrawEnabled(translator, args.Activated);
+        _powerCell.SetDrawEnabled(translator, args.Activated);
         OnAppearanceChange(translator, component);
 
         if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))

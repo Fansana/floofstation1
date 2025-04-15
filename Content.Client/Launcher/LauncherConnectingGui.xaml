@@ -23,6 +23,9 @@
                     </BoxContainer>
                     <BoxContainer Orientation="Vertical" Name="ConnectFail" Visible="False">
                         <RichTextLabel Name="ConnectFailReason" VerticalAlignment="Stretch"/>
+                        <Button Name="WhitelistApplyButton" Text="Apply for whitelist" Visible="False"
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                VerticalExpand="True" />
                         <Button Name="RetryButton" Text="{Loc 'connecting-retry'}"
                                 HorizontalAlignment="Center"
                                 VerticalExpand="True" VerticalAlignment="Bottom" />
@@ -30,6 +33,9 @@
                     <BoxContainer Orientation="Vertical" Name="Disconnected">
                         <Label Text="{Loc 'connecting-disconnected'}" Align="Center" />
                         <Label Name="DisconnectReason" Align="Center" />
+                        <Button Name="WhitelistApplyButtonDisconnect" Text="Apply for whitelist" Visible="False"
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                VerticalExpand="True" />
                         <Button Name="ReconnectButton" Text="{Loc 'connecting-reconnect'}"
                                 HorizontalAlignment="Center"
                                 VerticalExpand="True" VerticalAlignment="Bottom" />

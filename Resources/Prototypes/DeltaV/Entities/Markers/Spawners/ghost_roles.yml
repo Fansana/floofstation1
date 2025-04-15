@@ -26,7 +26,7 @@
   - type: GhostRole
     name: ghost-role-information-listeningop-name
     description: ghost-role-information-listeningop-description
-    rules: ghost-role-information-listeningop-rules
+    rules: floof-ghost-role-information-team-antag-rules # Floof station - Setting ghost role rules
     requirements: # Worth considering these numbers for the goal of making sure someone willing to MRP takes this.
     - !type:CharacterOverallTimeRequirement
       min: 54000 # 15 hours
@@ -47,6 +47,7 @@
       - state: green
       - sprite: Structures/Wallmounts/signs.rsi
         state: radiation
+  - type: GhostRoleAntagSpawner
 
 - type: entity
   parent: MarkerBase
@@ -56,8 +57,9 @@
   - type: GhostRole
     name: ghost-role-information-paradox-anomaly-name
     description: ghost-role-information-paradox-anomaly-description
-    rules: ghost-role-information-paradox-anomaly-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: ParadoxAnomalySpawner
+  - type: GhostRoleAntagSpawner
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
