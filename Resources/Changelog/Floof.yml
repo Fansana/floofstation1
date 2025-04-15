@@ -4030,3 +4030,10 @@ Entries:
   id: 437
   time: '2025-04-14T21:47:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/767
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Translators should now correctly use power when activated.
+  id: 438
+  time: '2025-04-15T13:46:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/772
