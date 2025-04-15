@@ -4060,3 +4060,12 @@ Entries:
   id: 440
   time: '2025-04-15T18:56:57.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/607
+- author: Carlen White
+  changes:
+    - type: Fix
+      message: >-
+        Refined Diamond can now be loaded into lathes, allowing you to finally
+        make diamond tipped drills
+  id: 441
+  time: '2025-04-15T23:12:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/768
