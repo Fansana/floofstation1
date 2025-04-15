@@ -8,6 +8,19 @@
 # Equipment
 
 # Eyes
+- type: loadout
+  id: LoadoutCorpsmanEyesHudMedical
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingEyesHudMedical
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanEyes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Gloves
 - type: loadout
@@ -45,6 +58,19 @@
       jobs:
         - Brigmedic
 
+- type: loadout
+  id: LoadoutMaskCorpsmanSterile
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskSterile
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Outer
 
