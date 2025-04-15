@@ -320,6 +320,11 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 }
             }
         }
+        // and, since we can't rely on the iterator knowing where the heck to put
+        // each sprite when we have one marking setting multiple layers,
+        // lets just kinda sorta do that ourselves
+        var layerDict = new Dictionary<string, int>();
+
         // FLOOF ADD END
 
         for (var j = 0; j < markingPrototype.Sprites.Count; j++)
@@ -341,6 +346,17 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                     layerSlot = Enum.Parse<HumanoidVisualLayers>(layerName);
                 }
             }
+            // update the layerDict
+            // if it doesnt have this, add it at 0, otherwise increment it
+            if (layerDict.TryGetValue(layerSlot.ToString(), out var layerIndex))
+            {
+                layerDict[layerSlot.ToString()] = layerIndex + 1;
+            }
+            else
+            {
+                layerDict.Add(layerSlot.ToString(), 0);
+            }
+
             if (!sprite.LayerMapTryGet(layerSlot, out var targetLayer))
             {
                 continue;
@@ -358,7 +374,8 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 // for layers that are supposed to be behind everything,
                 // adding 1 to the layer index makes it not be behind
                 // everything. fun! FLOOF ADD =3
-                var targLayerAdj = targetLayer == 0 ? 0 + j : targetLayer + j + 1;
+                // var targLayerAdj = targetLayer == 0 ? 0 + j : targetLayer + j + 1;
+                var targLayerAdj = targetLayer + layerDict[layerSlot.ToString()] + 1;
                 var layer = sprite.AddLayer(markingSprite, targLayerAdj);
                 sprite.LayerMapSet(layerId, layer);
                 sprite.LayerSetSprite(layerId, rsi);
