@@ -144,7 +144,7 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
     private void OnPowerCellChanged(EntityUid translator, HandheldTranslatorComponent component, PowerCellChangedEvent args)
     {
         component.Enabled = !args.Ejected && component.Enabled; // Floofstation - don't automatically turn it on.
-        _powerCell.SetDrawEnabled(translator, !args.Ejected);
+        _powerCell.SetDrawEnabled(translator, component.Enabled);
         OnAppearanceChange(translator, component);
 
         if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
