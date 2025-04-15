@@ -212,8 +212,8 @@
     - type: StorageFill
       contents:
       - id: BoxForensicPad
-      - id: Lighter
-      - id: CigPackBlack
+      #- id: Lighter | Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
+      #- id: CigPackBlack| Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
       - id: HandLabeler
 
 - type: entity

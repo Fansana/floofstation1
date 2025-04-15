@@ -1,15 +1,84 @@
 # Detective
 # Backpacks
+- type: loadout
+  id: LoadoutDetectiveBackpackBackpack # Floof - M3739 - #690 - Filled Detective bags
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveBackpacks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingBackpackDetectiveFilled
 
+- type: loadout
+  id: LoadoutDetectiveBackpackDuffel # Floof - M3739 - #690 - Filled Detective bags
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveBackpacks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingBackpackDuffelDetectiveFilled
+    
+- type: loadout
+  id: LoadoutDetectiveBackpackSatchel # Floof - M3739 - #690 - Filled Detective bags
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveBackpacks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingBackpackSatchelDetectiveFilled
 # Belt
 
 # Ears
 
 # Equipment
+- type: loadout
+  id: LoadoutDetectiveEquipmentScanner # Floof - M3739 - #690 - Spare equipment in case the station's equipment is missing.
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ForensicScanner
 
 # Eyes
 
 # Gloves
+- type: loadout
+  id: LoadoutDetectiveGlovesForensic # Floof - M3739 - #690 - If you are an IPC, the gloves in your locker being missing wouldn't be a problem, ergo...
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingHandsGlovesForensic
 
 # Head
 
@@ -51,3 +120,60 @@
 # Shoes
 
 # Uniforms
+# Floof - M3739 - #690 - begin
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitDetective
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpsuitDetective
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtDetective
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpskirtDetective
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitDetectiveGrey
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpsuitDetectiveGrey
+
+- type: loadout
+  id: LoadoutClothingUniformJumpskirtDetectiveGrey
+  category: JobsSecurityDetective
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutDetectiveUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Detective
+  items:
+    - ClothingUniformJumpskirtDetectiveGrey
+# Floof - M3739 - #690 - end

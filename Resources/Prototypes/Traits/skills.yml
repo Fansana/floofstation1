@@ -16,6 +16,7 @@
         - Paramedic
         - ChiefMedicalOfficer
         - Brigmedic
+        - SeniorPhysician # Floof - M3739 - #690 - no more dual-wielding
 
 - type: trait
   id: SelfAware
@@ -289,15 +290,6 @@
         - !type:CharacterTraitRequirement
           traits:
             - AnomalousPositronics
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          species:
-            - Shadowkin
-        - !type:CharacterTraitRequirement
-          inverted: true
-          traits:
-            - ShadowkinBlackeye
 
 - type: trait
   id: TrapAvoider

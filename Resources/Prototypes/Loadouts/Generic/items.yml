@@ -521,7 +521,6 @@
   - BoxSurvivalEngineeringWaterVapor
   requirements:
     - !type:CharacterSpeciesRequirement
-      inverted: true
       species:
         - Feroxi
     - !type:CharacterDepartmentRequirement
