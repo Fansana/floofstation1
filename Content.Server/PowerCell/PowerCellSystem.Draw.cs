@@ -24,7 +24,8 @@ public sealed partial class PowerCellSystem
             if (Timing.CurTime < comp.NextUpdateTime)
                 continue;
 
-            comp.NextUpdateTime += comp.Delay;
+            comp.NextUpdateTime = Timing.CurTime + comp.Delay; // Floofstation - made this set the time instead of increasing it,
+                                                               // so that updates can't queue up and accumulate while the item is off.
 
             if (!TryGetBatteryFromSlot(uid, out var batteryEnt, out var battery, slot))
                 continue;

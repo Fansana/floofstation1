@@ -29,6 +29,8 @@
     equipDelay: 0.3
     unequipDelay: 0.3
     quickEquip: false # Would conflict
+  - type: ItemToggle # Floofstation
+    onUse: false # The translator system handles it
 
 # Base translator that uses a power cell. Starts with an empty slot.
 - type: entity

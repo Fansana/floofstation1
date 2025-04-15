@@ -35,8 +35,9 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
         SubscribeLocalEvent<HandheldTranslatorComponent, EntParentChangedMessage>(OnTranslatorParentChanged);
         SubscribeLocalEvent<HandheldTranslatorComponent, ActivateInWorldEvent>(OnTranslatorToggle);
         SubscribeLocalEvent<HandheldTranslatorComponent, PowerCellSlotEmptyEvent>(OnPowerCellSlotEmpty);
-        SubscribeLocalEvent<HandheldTranslatorComponent, PowerCellChangedEvent>(OnPowerCellChanged);
-        SubscribeLocalEvent<HandheldTranslatorComponent, ItemToggledEvent>(OnItemToggled);
+        // Floofstation - commented out
+        // SubscribeLocalEvent<HandheldTranslatorComponent, PowerCellChangedEvent>(OnPowerCellChanged);
+        // SubscribeLocalEvent<HandheldTranslatorComponent, ItemToggledEvent>(OnItemToggled);
     }
 
     private void OnDetermineLanguages(EntityUid uid, IntrinsicTranslatorComponent component, DetermineEntityLanguagesEvent ev)
@@ -108,6 +109,9 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
         translatorComp.Enabled = isEnabled;
         _powerCell.SetDrawEnabled(translator, isEnabled);
 
+        if (TryComp<ItemToggleComponent>(translator, out var itemToggle)) // Floofstation - sync this useless ItemToggle that the PowerCellDraw system requires for some reason
+            itemToggle.Activated = isEnabled;
+
         if (_containers.TryGetContainingContainer(translator, out var holderCont)
             && holderCont.Owner is var holder
             && TryComp<LanguageSpeakerComponent>(holder, out var languageComp))
@@ -141,25 +145,26 @@ public sealed class TranslatorSystem : SharedTranslatorSystem
             _language.UpdateEntityLanguages(holderCont.Owner);
     }
 
-    private void OnPowerCellChanged(EntityUid translator, HandheldTranslatorComponent component, PowerCellChangedEvent args)
-    {
-        component.Enabled = !args.Ejected;
-        _powerCell.SetDrawEnabled(translator, !args.Ejected);
-        OnAppearanceChange(translator, component);
-
-        if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
-            _language.UpdateEntityLanguages(holderCont.Owner);
-    }
-
-    private void OnItemToggled(EntityUid translator, HandheldTranslatorComponent component, ItemToggledEvent args)
-    {
-        component.Enabled = args.Activated;
-        _powerCell.SetDrawEnabled(translator, args.Activated);
-        OnAppearanceChange(translator, component);
-
-        if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
-            _language.UpdateEntityLanguages(holderCont.Owner);
-    }
+    // Floofstation - commented all of this out, this is bullshit.
+    // private void OnPowerCellChanged(EntityUid translator, HandheldTranslatorComponent component, PowerCellChangedEvent args)
+    // {
+    //     component.Enabled = !args.Ejected && component.Enabled; // Floofstation - don't automatically turn it on.
+    //     _powerCell.SetDrawEnabled(translator, component.Enabled);
+    //     OnAppearanceChange(translator, component);
+    //
+    //     if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
+    //         _language.UpdateEntityLanguages(holderCont.Owner);
+    // }
+    //
+    // private void OnItemToggled(EntityUid translator, HandheldTranslatorComponent component, ItemToggledEvent args)
+    // {
+    //     component.Enabled = args.Activated;
+    //     _powerCell.SetDrawEnabled(translator, args.Activated);
+    //     OnAppearanceChange(translator, component);
+    //
+    //     if (_containers.TryGetContainingContainer((translator, null, null), out var holderCont) && HasComp<LanguageSpeakerComponent>(holderCont.Owner))
+    //         _language.UpdateEntityLanguages(holderCont.Owner);
+    // }
 
     private void CopyLanguages(BaseTranslatorComponent from, DetermineEntityLanguagesEvent to, LanguageKnowledgeComponent knowledge)
     {
