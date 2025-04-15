@@ -61,7 +61,7 @@
     - 0,0,1,0
     - 1,1,1,1
   - type: MeleeWeapon
-    attackRate: 1.3333
+    attackRate: 0.75 # Floofstation - this is hertz, not seconds
     range: 1.4
     damage:
       types:
@@ -115,7 +115,7 @@
   - type: MeleeWeapon
     wideAnimationRotation: 90
     swingLeft: true
-    attackRate: .8
+    attackRate: 1.25 # Floofstation - this is hertz, not seconds
     range: 1.4
     damage:
       types:
@@ -334,7 +334,7 @@
       - Sawing
     speedModifier: 1.0
   - type: MeleeWeapon
-    attackRate: 1.3333
+    attackRate: 0.75 # Floofstation - this is hertz, not seconds
     range: 1.35
     damage:
       types:
@@ -370,7 +370,7 @@
   - type: Item
     heldPrefix: improv
   - type: MeleeWeapon
-    attackRate: 1.17
+    attackRate: 0.85 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 3

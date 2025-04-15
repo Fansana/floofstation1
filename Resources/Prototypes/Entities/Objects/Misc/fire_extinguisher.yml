@@ -38,7 +38,7 @@
     hasSafety: true
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: 1.25
+    attackRate: 0.8 # Floofstation - this is hertz, not seconds
     bluntStaminaDamageFactor: 2.5
     range: 1.75
     damage:

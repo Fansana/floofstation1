@@ -29,7 +29,7 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: .8
+    attackRate: 1.25 # Floofstation - this is hertz, not seconds
     range: 1.75
     soundHit:
       path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
@@ -72,7 +72,7 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: .6666
+    attackRate: 1.5 # Floofstation - this is hertz, not seconds
     soundHit:
       path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
     damage:
@@ -145,7 +145,7 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 1.25
+    attackRate: 0.8 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Slash: 15
@@ -177,7 +177,7 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: 1.53
+    attackRate: 0.65 # Floofstation - this is hertz, not seconds
     range: 1.85
     damage:
       types:
@@ -219,7 +219,7 @@
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
-    attackRate: .8
+    attackRate: 1.25 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Slash: 12
@@ -252,7 +252,7 @@
       state: icon
     - type: MeleeWeapon
       wideAnimationRotation: -135
-      attackRate: .1
+      attackRate: 10 # Floofstation - this is hertz, not seconds
       damage:
         types:
           Structural: 150
