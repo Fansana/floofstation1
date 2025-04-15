@@ -21,11 +21,13 @@
 #  id: LoadoutCorpsmanEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutCorpsmanEquipment
-#  maxItems: 1
-#  items:
+
+- type: characterItemGroup
+  id: LoadoutCorpsmanEquipment
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add surgical duffel bag to corpsman loadouts
+      id: LoadoutCorpsmanEquipmentDuffelSurgeryFilled
 
 - type: characterItemGroup
   id: LoadoutCorpsmanEyes

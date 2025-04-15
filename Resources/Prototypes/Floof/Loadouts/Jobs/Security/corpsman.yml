@@ -6,6 +6,19 @@
 # Ears
 
 # Equipment
+- type: loadout
+  id: LoadoutCorpsmanEquipmentDuffelSurgeryFilled
+  category: JobsMedicalAUncategorized
+  cost: 3
+  exclusive: false
+  items:
+    - ClothingBackpackDuffelSurgeryFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Eyes
 - type: loadout
