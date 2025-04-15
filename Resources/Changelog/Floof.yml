@@ -4037,3 +4037,10 @@ Entries:
   id: 438
   time: '2025-04-15T13:46:57.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/772
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Mining drills no longer cost stamina
+  id: 439
+  time: '2025-04-15T13:47:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/771
