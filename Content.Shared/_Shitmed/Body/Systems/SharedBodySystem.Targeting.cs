@@ -153,7 +153,7 @@ public partial class SharedBodySystem
             if (targetPart == null)
                 return;
 
-            if (!TryChangePartDamage(ent, args.Damage, args.IgnoreResistances, args.CanSever, args.CanEvade, args.PartMultiplier, targetPart.Value, out var evaded)
+            if (!TryChangePartDamage(ent, damage, args.IgnoreResistances, args.CanSever, args.CanEvade, args.PartMultiplier, targetPart.Value, out var evaded)
                 && args.CanEvade && evaded)
             {
                 if (_net.IsServer)
