@@ -47,7 +47,23 @@ namespace Content.Shared.Humanoid.Markings
         /// </summary>
         [DataField("layering")]
         public Dictionary<string, string>? Layering { get; private set; }
-        ///  todo: a way to link the colorations between layers
+
+        /// <summary>
+        /// Allows you to link a specific sprite's coloring to another sprite's coloring.
+        /// This is useful for things like tails, which while they have two sets of sprites,
+        /// the two sets of sprites should be treated as one sprite for the purposes of
+        /// coloring. Just more intuitive that way~
+        /// Format: spritename getting colored -> spritename which colors it
+        /// so if we have a Tail Behind with 'cooltail' as the sprite name, and a Tail Oversuit
+        /// with 'cooltail-oversuit' as the sprite name, and we want to have the Tail Behind
+        /// inherit the color of the Tail Oversuit, we would do:
+        /// cooltail -> cooltail-oversuit
+        /// cooltail will be hidden from the color picker, and just use whatevers set for
+        /// cooltail-oversuit. Easy huh?
+        /// also, FLOOF ADD =3
+        /// </summary>
+        [DataField("colorLinks")]
+        public Dictionary<string, string>? ColorLinks { get; private set; }
 
         public Marking AsMarking()
         {

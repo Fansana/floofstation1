@@ -286,8 +286,45 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         SpriteComponent sprite
         )
     {
+        // FLOOF ADD START
+        // make a handy dict of filename -> colors
+        // cus we might need to access it by filename to link
+        // one sprite's colors to another
+        var colorDict = new Dictionary<string, Color>();
+        for (var i = 0; i < markingPrototype.Sprites.Count; i++)
+        {
+            var spriteName = markingPrototype.Sprites[i] switch
+            {
+                SpriteSpecifier.Rsi rsi => rsi.RsiState,
+                SpriteSpecifier.Texture texture => texture.TexturePath.Filename,
+                _ => null
+            };
+
+            if (spriteName != null)
+            {
+                if (colors != null && i < colors.Count)
+                    colorDict.Add(spriteName, colors[i]);
+                else
+                    colorDict.Add(spriteName, Color.White);
+            }
+        }
+        // now, rearrange them, copying any parented colors to children set to
+        // inherit them
+        if (markingPrototype.ColorLinks != null)
+        {
+            foreach (var (child, parent) in markingPrototype.ColorLinks)
+            {
+                if (colorDict.TryGetValue(parent, out var color))
+                {
+                    colorDict[child] = color;
+                }
+            }
+        }
+        // FLOOF ADD END
+
         for (var j = 0; j < markingPrototype.Sprites.Count; j++)
         {
+            // FLOOF CHANGE START
             var markingSprite = markingPrototype.Sprites[j];
             if (markingSprite is not SpriteSpecifier.Rsi rsi)
             {
@@ -314,10 +351,15 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                && setting.AllowsMarkings;
 
             var layerId = $"{markingPrototype.ID}-{rsi.RsiState}";
+            // FLOOF CHANGE END
 
             if (!sprite.LayerMapTryGet(layerId, out _))
             {
-                var layer = sprite.AddLayer(markingSprite, targetLayer + j + 1);
+                // for layers that are supposed to be behind everything,
+                // adding 1 to the layer index makes it not be behind
+                // everything. fun! FLOOF ADD =3
+                var targLayerAdj = targetLayer == 0 ? 0 + j : targetLayer + j + 1;
+                var layer = sprite.AddLayer(markingSprite, targLayerAdj);
                 sprite.LayerMapSet(layerId, layer);
                 sprite.LayerSetSprite(layerId, rsi);
             }
@@ -332,14 +374,18 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
             // Okay so if the marking prototype is modified but we load old marking data this may no longer be valid
             // and we need to check the index is correct.
             // So if that happens just default to white?
-            if (colors != null && j < colors.Count)
-            {
-                sprite.LayerSetColor(layerId, colors[j]);
-            }
-            else
-            {
-                sprite.LayerSetColor(layerId, Color.White);
-            }
+            // FLOOF ADD =3
+            sprite.LayerSetColor(layerId, colorDict.TryGetValue(rsi.RsiState, out var color) ? color : Color.White);
+
+            // FLOOF CHANGE
+            // if (colors != null && j < colors.Count)
+            // {
+            //     sprite.LayerSetColor(layerId, colors[j]);
+            // }
+            // else
+            // {
+            //     sprite.LayerSetColor(layerId, Color.White);
+            // }
         }
     }
 

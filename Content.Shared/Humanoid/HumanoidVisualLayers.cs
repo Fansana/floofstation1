@@ -10,8 +10,6 @@ namespace Content.Shared.Humanoid
     [Serializable, NetSerializable]
     public enum HumanoidVisualLayers : byte
     {
-        TailBehind, // FLOOF - add tails that dont have to go through a brutal cookiecutter to work
-        TailOversuit, // FLOOF - add tails that dont have to go through a brutal cookiecutter to work
         Tail,
         Wings,
         Hair,
@@ -23,6 +21,8 @@ namespace Content.Shared.Humanoid
         Snout,
         HeadSide, // side parts (i.e., frills)
         HeadTop,  // top parts (i.e., ears)
+        TailBehind, // FLOOF - add tails that dont have to go through a brutal cookiecutter to work
+        TailOversuit, // FLOOF - add tails that dont have to go through a brutal cookiecutter to work
         Eyes,
         RArm,
         LArm,
