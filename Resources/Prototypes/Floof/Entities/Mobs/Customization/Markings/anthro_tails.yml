@@ -165,7 +165,7 @@
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_datashark_FRONT_primary
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_datashark_FRONT_secondary
+    state: m_tail_datashark_FRONT_tertiary
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_datashark_BEHIND_primary
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
@@ -262,7 +262,7 @@
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_fox_FRONT_primary
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_fox_BEHIND_primary
+    state: m_tail_fox_FRONT_secondary
 
 - type: marking
   id: TailFox2

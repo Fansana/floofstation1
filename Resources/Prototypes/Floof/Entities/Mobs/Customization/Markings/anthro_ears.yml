@@ -652,9 +652,9 @@
   - sprite: Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_protogen_FRONT_secondary
   - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_protogen_ADJ_primary
+    state: m_ears_protogen_ADJs_primary
   - sprite: Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_protogen_ADJ_secondary
+    state: m_ears_protogen_ADJs_secondary
 
 - type: marking
   id: EarsRabbit

@@ -17,9 +17,9 @@
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
   sprites:
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_canid_alt
+    state: snout_canidalt_primary
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_canid_alt_secondary
+    state: snout_canidalt_secondary
 
 - type: marking
   id: SnoutFLCanid
