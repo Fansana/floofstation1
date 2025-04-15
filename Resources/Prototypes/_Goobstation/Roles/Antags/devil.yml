@@ -1,0 +1,18 @@
+- type: antag
+  id: Devil
+  name: roles-antag-devil-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-devil-description
+  guides: [ Devil ]
+  requirements:
+  - !type:CharacterOverallTimeRequirement
+    min: 14400 # 4hr floof
+
+- type: startingGear
+  id: DevilStartingGear
+  storage:
+    back:
+#    - GuidebookCodexUmbra TODO
+    - PenDevil
+    - ClothingUniformJumpsuitDevil
