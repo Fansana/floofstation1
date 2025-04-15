@@ -4044,3 +4044,19 @@ Entries:
   id: 439
   time: '2025-04-15T13:47:27.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/771
+- author: M3739
+  changes:
+    - type: Add
+      message: Space Law, and the Justice department now have a guidebook entry.
+    - type: Add
+      message: >-
+        Hyperlink books are added to allow for more seamless and less disruptive
+        way of referring back to our wiki resources. Using these hyperlink books
+        will open the corresponding wiki page in your default browser.
+    - type: Add
+      message: PDAs now have a slot for a single hyperlink book.
+    - type: Tweak
+      message: Loadouts and lockers have been adjusted with the aforementioned in mind.
+  id: 440
+  time: '2025-04-15T18:56:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/607
