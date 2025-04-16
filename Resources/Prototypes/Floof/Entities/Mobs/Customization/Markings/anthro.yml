@@ -10,16 +10,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_canid_alt2
 
-- type: marking
-  id: SnoutCanidAlt
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_canid_alt
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_canid_alt_secondary
+#- type: marking
+#  id: SnoutCanidAlt
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_canid_alt
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_canid_alt_secondary
 
 - type: marking
   id: SnoutFLCanid
