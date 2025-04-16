@@ -683,10 +683,6 @@ marking-TailTentacle = Tentacle Tail
 
 # More ears from the skyrats
 
-marking-EarsFox-ears_fox_primary = Fox Ears (Primary)
-marking-EarsFox-ears_fox_secondary = Fox Ears (Secondary)
-marking-EarsFox = Fox Ears
-
 marking-EarsAntennaFuzzball-m_ears_antenna_fuzzball_FRONT_secondary = Antenna, Fuzzball MkI (Primary)
 marking-EarsAntennaFuzzball-m_ears_antenna_fuzzball_FRONT_tertiary = Antenna, Fuzzball MkI (Secondary)
 marking-EarsAntennaFuzzball-m_ears_antenna_fuzzball_ADJ_secondary = Antenna, Fuzzball MkI (Primary)
