@@ -25,7 +25,7 @@
   id: ParamedicGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
-    back: ClothingBackpackMedical # Floof - M3739 - #690 - Now properly reflected in loadout options.
+    back: ClothingBackpackParamedicFilledDV
     shoes: ClothingShoesColorBlue
     id: ParamedicPDA
     ears: ClothingHeadsetMedical

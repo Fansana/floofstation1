@@ -21,23 +21,29 @@
 #  id: LoadoutCorpsmanEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutCorpsmanEquipment
-#  maxItems: 1
-#  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutCorpsmanEyes
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutCorpsmanEquipment
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add surgical duffel bag to corpsman loadouts
+      id: LoadoutCorpsmanEquipmentDuffelSurgeryFilled
+
+- type: characterItemGroup
+  id: LoadoutCorpsmanEyes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add missing corpsman loadouts
+      id: LoadoutCorpsmanEyesHudMedical
+
 - type: characterItemGroup
   id: LoadoutCorpsmanGloves
   maxItems: 1
   items:
     - type: loadout
       id: LoadoutClothingHandsGlovesNitrile
+    - type: loadout # Floof - Add loadout groups to corpsman lingerie
+      id: LoadoutClothingHandCorpsmanWarmers
 
 - type: characterItemGroup
   id: LoadoutCorpsmanHead
@@ -64,26 +70,36 @@
   id: LoadoutCorpsmanMask
   maxItems: 1
   items:
+# Floof section - Add missing corpsman loadouts
     - type: loadout
       id: LoadoutMaskCorpsmanBreathMedicalSecurity
+    - type: loadout
+      id: LoadoutMaskCorpsmanSterile
+# Floof section end
 
 - type: characterItemGroup
-  id: LoadoutCorpsmanOuter # Floof - M3739 - #690
+  id: LoadoutCorpsmanOuter
   maxItems: 1
   items:
-    - type: loadout
+    - type: loadout # Floof - M3739 - #690
       id: LoadoutClothingLongcoatBrigmedic
 
-#- type: characterItemGroup
-#  id: LoadoutCorpsmanShoes
-#  maxItems: 1
-#  items:
-#
 - type: characterItemGroup
-  id: LoadoutCorpsmanUniforms # Floof - M3739 - #690
+  id: LoadoutCorpsmanShoes
   maxItems: 1
   items:
+    - type: loadout # Floof - Add loadout groups to corpsman lingerie
+      id: LoadoutClothingUnderSocksCorpsman
+
+- type: characterItemGroup
+  id: LoadoutCorpsmanUniforms
+  maxItems: 1
+  items:
+# Floof section - M3739 - #690
     - type: loadout
       id: LoadoutClothingUniformJumpsuitBrigmedic
     - type: loadout
       id: LoadoutClothingUniformJumpskirtBrigmedic
+# Floof section end
+    - type: loadout # Floof - Add loadout groups to corpsman lingerie
+      id: LoadoutClothingUniformCorpsmanThong

@@ -690,6 +690,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -707,6 +708,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -724,6 +726,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -741,6 +744,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -758,6 +762,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -775,6 +780,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
