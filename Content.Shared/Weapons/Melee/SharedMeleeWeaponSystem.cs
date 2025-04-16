@@ -581,7 +581,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                 return false;
             }
 
-            _stamina.TakeStaminaDamage(user, component.HeavyStaminaCost, stamina, visual: false);
+            //_stamina.TakeStaminaDamage(user, component.HeavyStaminaCost, stamina, visual: false); // Floofstation - moved to end
         }
 
         var userPos = TransformSystem.GetWorldPosition(userXform);
@@ -730,6 +730,9 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         {
             DoDamageEffect(targets, user, Transform(targets[0]));
         }
+        
+        if (stamina != null) // Floofstation - moved stamina damage to the end. Previously stamina damage was applying before damage calculations, meaning heavy attacks never did full damage (due to stamina contests)
+            _stamina.TakeStaminaDamage(user, component.HeavyStaminaCost, stamina, visual: false);     
 
         return true;
     }
