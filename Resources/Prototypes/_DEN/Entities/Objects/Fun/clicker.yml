@@ -15,15 +15,15 @@
       - Payload
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Items/clicker.ogg
+      path: /Audio/_DEN/clicker.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/Items/clicker.ogg
+      path: /Audio/_DEN/clicker.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/clicker.ogg
+      path: /Audio/_DEN/clicker.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/Items/clicker.ogg
+      path: /Audio/_DEN/clicker.ogg
   - type: UseDelay
     delay: 1.5
