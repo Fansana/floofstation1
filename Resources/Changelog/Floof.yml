@@ -4069,3 +4069,12 @@ Entries:
   id: 441
   time: '2025-04-15T23:12:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/768
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Damage that targets all limbs (spacing, heat, immovable rods) should now
+        deal 10 times less damage to each limb, as intended.
+  id: 442
+  time: '2025-04-16T00:29:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/775
