@@ -4119,3 +4119,10 @@ Entries:
   id: 445
   time: '2025-04-16T00:34:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/701
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Removed the duplicate CJ job from the command department.
+  id: 446
+  time: '2025-04-16T00:36:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/773
