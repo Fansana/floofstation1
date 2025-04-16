@@ -4126,3 +4126,12 @@ Entries:
   id: 446
   time: '2025-04-16T00:36:52.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/773
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        LawDrobe now requires justice access, allowing both attorneys and
+        prosecutors to use it.
+  id: 447
+  time: '2025-04-16T00:37:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/774
