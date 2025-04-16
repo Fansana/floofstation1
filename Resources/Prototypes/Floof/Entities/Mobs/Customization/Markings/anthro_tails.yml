@@ -631,17 +631,17 @@
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_lunasune_BEHIND
 
-# ???
-- type: marking
-  id: TailMFox
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_fox_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_fox_BEHIND_primary
+# ERROR!!!!!!!
+#- type: marking
+#  id: TailMFox
+#  bodyPart: Tail
+#  markingCategory: Tail
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_fox_FRONT_primary
+#  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_fox_BEHIND_primary
 
 - type: marking
   id: TailMurid
@@ -916,8 +916,8 @@
   layering:
     m_tail_sabresune_BEHIND_primary: TailBehind
     m_tail_sabresune_BEHIND_secondary: TailBehind
-    m_tail_sabresune_FRONT_primary: TailOversuit
-    m_tail_sabresune_FRONT_secondary: TailOversuit
+    m_tail_sabresune_FRONT_primary: Tail
+    m_tail_sabresune_FRONT_secondary: Tail
   colorLinks:
     m_tail_sabresune_BEHIND_primary: m_tail_sabresune_FRONT_primary
     m_tail_sabresune_BEHIND_secondary: m_tail_sabresune_FRONT_secondary
@@ -1304,21 +1304,21 @@
     state: m_tail_stripe_BEHIND_secondary
 
 # TODO: overhaul wag so it work good
-- type: marking
-  id: TailMawWag
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  layering:
-    m_tail_tailmawwag_BEHIND_primary: TailBehind
-    m_tail_tailmawwag_FRONT_primary: Tail
-  colorLinks:
-    m_tail_tailmawwag_BEHIND_primary: m_tail_tailmawwag_FRONT_primary
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tailmawwag_FRONT
-  - sprite: Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_tailmawwag_BEHIND
+#- type: marking
+#  id: TailMawWag
+#  bodyPart: Tail
+#  markingCategory: Tail
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  layering:
+#    m_tail_tailmawwag_BEHIND_primary: TailBehind
+#    m_tail_tailmawwag_FRONT_primary: Tail
+#  colorLinks:
+#    m_tail_tailmawwag_BEHIND_primary: m_tail_tailmawwag_FRONT_primary
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_tailmawwag_FRONT
+#  - sprite: Floof/Mobs/Customization/skyrattails.rsi
+#    state: m_tail_tailmawwag_BEHIND
 
 - type: marking
   id: TailThreeCat
@@ -1341,6 +1341,17 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_tiger_BEHIND_primary: TailBehind
+    m_tail_tiger_BEHIND_secondary: TailBehind
+    m_tail_tiger_BEHIND_tertiary: TailBehind
+    m_tail_tiger_FRONT_primary: Tail
+    m_tail_tiger_FRONT_secondary: Tail
+    m_tail_tiger_FRONT_tertiary: Tail
+  colorLinks:
+    m_tail_tiger_BEHIND_primary: m_tail_tiger_FRONT_primary
+    m_tail_tiger_BEHIND_secondary: m_tail_tiger_FRONT_secondary
+    m_tail_tiger_BEHIND_tertiary: m_tail_tiger_FRONT_tertiary
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tiger_FRONT_primary
@@ -1360,6 +1371,17 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_tiger2_BEHIND_primary: TailBehind
+    m_tail_tiger2_BEHIND_secondary: TailBehind
+    m_tail_tiger2_BEHIND_tertiary: TailBehind
+    m_tail_tiger2_FRONT_primary: Tail
+    m_tail_tiger2_FRONT_secondary: Tail
+    m_tail_tiger2_FRONT_tertiary: Tail
+  colorLinks:
+    m_tail_tiger2_BEHIND_primary: m_tail_tiger2_FRONT_primary
+    m_tail_tiger2_BEHIND_secondary: m_tail_tiger2_FRONT_secondary
+    m_tail_tiger2_BEHIND_tertiary: m_tail_tiger2_FRONT_tertiary
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tiger2_FRONT_primary
@@ -1379,6 +1401,11 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_twocat_BEHIND_primary: TailBehind
+    m_tail_twocat_FRONT_primary: Tail
+  colorLinks:
+    m_tail_twocat_BEHIND_primary: m_tail_twocat_FRONT_primary
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_twocat_FRONT_primary
@@ -1390,6 +1417,14 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_wah_BEHIND_primary: TailBehind
+    m_tail_wah_BEHIND_secondary: TailBehind
+    m_tail_wah_FRONT_primary: Tail
+    m_tail_wah_FRONT_secondary: Tail
+  colorLinks:
+    m_tail_wah_BEHIND_primary: m_tail_wah_FRONT_primary
+    m_tail_wah_BEHIND_secondary: m_tail_wah_FRONT_secondary
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_wah_FRONT_primary
@@ -1405,6 +1440,11 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_wolf_BEHIND: TailBehind
+    m_tail_wolf_FRONT: Tail
+  colorLinks:
+    m_tail_wolf_BEHIND: m_tail_wolf_FRONT
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_wolf_FRONT
@@ -1416,6 +1456,17 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  layering:
+    m_tail_zorgoia_BEHIND_primary: TailBehind
+    m_tail_zorgoia_BEHIND_secondary: TailBehind
+    m_tail_zorgoia_BEHIND_tertiary: TailBehind
+    m_tail_zorgoia_FRONT_primary: Tail
+    m_tail_zorgoia_FRONT_secondary: Tail
+    m_tail_zorgoia_FRONT_tertiary: Tail
+  colorLinks:
+    m_tail_zorgoia_BEHIND_primary: m_tail_zorgoia_FRONT_primary
+    m_tail_zorgoia_BEHIND_secondary: m_tail_zorgoia_FRONT_secondary
+    m_tail_zorgoia_BEHIND_tertiary: m_tail_zorgoia_FRONT_tertiary
   sprites:
   - sprite: Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_zorgoia_FRONT_primary

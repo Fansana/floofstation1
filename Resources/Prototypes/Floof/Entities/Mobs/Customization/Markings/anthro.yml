@@ -96,16 +96,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_lcanidstripealt_secondary
 
-- type: marking
-  id: SnoutFHusky
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fhusky_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fhusky_secondary
+#- type: marking
+#  id: SnoutFHusky
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fhusky_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fhusky_secondary
 
 - type: marking
   id: SnoutHusky
@@ -118,16 +118,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_husky_secondary
 
-- type: marking
-  id: SnoutFWolf
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fwolf_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fwolf_secondary
+#- type: marking
+#  id: SnoutFWolf
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fwolf_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fwolf_secondary
 
 - type: marking
   id: SnoutWolf
@@ -140,14 +140,14 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_wolf_secondary
 
-- type: marking
-  id: SnoutFWolfAlt
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fwolfalt_primary
+#- type: marking
+#  id: SnoutFWolfAlt
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fwolfalt_primary
 
 - type: marking
   id: SnoutWolfAlt
@@ -180,36 +180,36 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_scanid_secondary
 
-- type: marking
-  id: SnoutFSCanidAlt
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fscanidalt_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fscanidalt_secondary
-
-- type: marking
-  id: SnoutFSCanidAlt2
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fscanidalt2_primary
-
-- type: marking
-  id: SnoutFSCanidAlt3
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fscanidalt3_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fscanidalt3_secondary
+#- type: marking
+#  id: SnoutFSCanidAlt
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fscanidalt_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fscanidalt_secondary
+#
+#- type: marking
+#  id: SnoutFSCanidAlt2
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fscanidalt2_primary
+#
+#- type: marking
+#  id: SnoutFSCanidAlt3
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fscanidalt3_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fscanidalt3_secondary
 
 - type: marking
   id: SnoutSCanidAlt3
@@ -262,18 +262,18 @@
 
 ## BIRD SNOUTS ##
 
-- type: marking
-  id: SnoutFBird
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fbird_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fbird_secondary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fbird_tertiary
+#- type: marking
+#  id: SnoutFBird
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fbird_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fbird_secondary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fbird_tertiary
 
 - type: marking
   id: SnoutBird
@@ -288,14 +288,14 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_bird_tertiary
 
-- type: marking
-  id: SnoutFBigBeak
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fbigbeak_primary
+#- type: marking
+#  id: SnoutFBigBeak
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fbigbeak_primary
 
 - type: marking
   id: SnoutBigBeak
@@ -306,25 +306,25 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_bigbeak_primary
 
-- type: marking
-  id: SnoutFCorvidBeak
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fcorvidbeak_primary
-
-- type: marking
-  id: SnoutFToucan
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_ftoucan_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_ftoucan_tertiary
+#- type: marking
+#  id: SnoutFCorvidBeak
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fcorvidbeak_primary
+#
+#- type: marking
+#  id: SnoutFToucan
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_ftoucan_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_ftoucan_tertiary
 
 - type: marking
   id: SnoutToucan
@@ -406,18 +406,18 @@
 
 ## MISC SNOUTS ##
 
-- type: marking
-  id: SnoutFWah
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fwah_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fwah_secondary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fwah_tertiary
+#- type: marking
+#  id: SnoutFWah
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fwah_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fwah_secondary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fwah_tertiary
 
 - type: marking
   id: SnoutWah
@@ -432,16 +432,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_wah_tertiary
 
-- type: marking
-  id: SnoutFWahAlt
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fwahalt_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fwahalt_secondary
+#- type: marking
+#  id: SnoutFWahAlt
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fwahalt_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fwahalt_secondary
 
 - type: marking
   id: SnoutWahAlt
@@ -454,16 +454,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_wahalt_secondary
 
-- type: marking
-  id: SnoutFOtie
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fotie_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fotie_secondary
+#- type: marking
+#  id: SnoutFOtie
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fotie_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fotie_secondary
 
 - type: marking
   id: SnoutOtie
@@ -476,16 +476,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_otie_secondary
 
-- type: marking
-  id: SnoutFOtieSmile
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fotiesmile_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fotiesmile_secondary
+#- type: marking
+#  id: SnoutFOtieSmile
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fotiesmile_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fotiesmile_secondary
 
 - type: marking
   id: SnoutOtieSmile
@@ -498,16 +498,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_otiesmile_secondary
 
-- type: marking
-  id: SnoutFPede
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fpede_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fpede_secondary
+#- type: marking
+#  id: SnoutFPede
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fpede_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fpede_secondary
 
 - type: marking
   id: SnoutPede
@@ -520,14 +520,14 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_pede_secondary
 
-- type: marking
-  id: SnoutFRodent
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_frodent_primary
+#- type: marking
+#  id: SnoutFRodent
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_frodent_primary
 
 - type: marking
   id: SnoutRodent
@@ -538,27 +538,27 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_rodent_primary
 
-- type: marking
-  id: SnoutFSergal
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fsergal_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fsergal_secondary
-
-- type: marking
-  id: SnoutFRhino
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_frhino_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_frhino_secondary
+#- type: marking
+#  id: SnoutFSergal
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fsergal_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fsergal_secondary
+#
+#- type: marking
+#  id: SnoutFRhino
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_frhino_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_frhino_secondary
 
 - type: marking
   id: SnoutRhino
@@ -573,18 +573,18 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_rhino_tertiary
 
-- type: marking
-  id: SnoutFBovine
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbovine_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbovine_secondary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbovine_tertiary
+#- type: marking
+#  id: SnoutFBovine
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbovine_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbovine_secondary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbovine_tertiary
 
 - type: marking
   id: SnoutBovine
@@ -599,16 +599,16 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_bovine_tertiary
 
-- type: marking
-  id: SnoutFElephant
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_felephant_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_felephant_secondary
+#- type: marking
+#  id: SnoutFElephant
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_felephant_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_felephant_secondary
 
 - type: marking
   id: SnoutElephant
@@ -621,41 +621,41 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_elephant_secondary
 
-- type: marking
-  id: SnoutFRound
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fround
-
-- type: marking
-  id: SnoutFSharpLight
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fsharplight
-
-- type: marking
-  id: SnoutFRoundLight
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_froundlight
-
-- type: marking
-  id: SnoutFShark
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fshark_primary
+#- type: marking
+#  id: SnoutFRound
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fround
+#
+#- type: marking
+#  id: SnoutFSharpLight
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fsharplight
+#
+#- type: marking
+#  id: SnoutFRoundLight
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_froundlight
+#
+#- type: marking
+#  id: SnoutFShark
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fshark_primary
 
 - type: marking
   id: SnoutShark
@@ -688,18 +688,20 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state:  snout_hshark_eyes_secondary
 
-- type: marking
-  id: SnoutFBug
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbug_FRONT_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbug_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state:  snout_fbug_secondary
+#- type: marking
+#  id: SnoutFBug
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  colorLinks:
+#    snout_fbug_FRONT_primary: snout_fbug_primary
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbug_FRONT_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbug_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state:  snout_fbug_secondary
 
 - type: marking
   id: SnoutBug
@@ -798,18 +800,18 @@
   - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
     state: snout_hspots_secondary
 
-- type: marking
-  id: SnoutFSkulldog
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  sprites:
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fskulldog_primary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fskulldog_secondary
-  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
-    state: snout_fskulldog_tertiary
+#- type: marking
+#  id: SnoutFSkulldog
+#  bodyPart: Snout
+#  markingCategory: Snout
+#  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+#  sprites:
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fskulldog_primary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fskulldog_secondary
+#  - sprite: Floof/Mobs/Customization/skyratsnouts.rsi
+#    state: snout_fskulldog_tertiary
 
 - type: marking
   id: SnoutSkulldog
