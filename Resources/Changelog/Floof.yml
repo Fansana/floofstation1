@@ -4085,3 +4085,24 @@ Entries:
   id: 443
   time: '2025-04-16T00:30:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/770
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Genetic and virology labcoats, winter coats, and winter boots are now
+        available for medical staff.
+    - type: Add
+      message: Chemists can now start with their winter coats and boots.
+    - type: Add
+      message: Senior physicians have a number of new loadout options.
+    - type: Add
+      message: Paramedics can now start with their winter coats and EMT belt.
+    - type: Add
+      message: Corpsmen can now start with a medical HUD and a surgical duffel bag.
+    - type: Tweak
+      message: >-
+        Doctors can now start with a surgical duffel in addition to their chosen
+        bag instead of replacing it. You will have to re-select the loadout.
+  id: 444
+  time: '2025-04-16T00:32:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/748
