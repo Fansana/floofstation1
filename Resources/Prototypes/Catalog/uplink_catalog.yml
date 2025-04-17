@@ -1363,22 +1363,6 @@
   categories:
   - UplinkWearables
 
-# Disruption
-
-# - type: listing
-#   id: UplinkChameleon
-#   name: uplink-chameleon-name
-#   description: uplink-chameleon-desc
-#   productEntity: ClothingBackpackChameleonFill
-#  icon: { sprite: /Textures/Clothing/Uniforms/Jumpsuit/rainbow.rsi, state: icon }
-#  discountCategory: usualDiscounts
-#  discountDownTo:
-#    Telecrystal: 2
-#   cost:
-#     Telecrystal: 4
-#   categories:
-#   - UplinkWearables
-
 - type: listing
   id: UplinkClothingNoSlipsShoes
   name: uplink-clothing-no-slips-shoes-name
@@ -1465,13 +1449,35 @@
   description: uplink-hardsuit-syndie-desc
   icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/syndicate.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateHardsuitBundle
-  discountCategory: veryRareDiscounts
-  discountDownTo:
-    Telecrystal: 4
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWearables
+  saleLimit: 1
+
+- type: listing
+  id: UplinkHardsuitSyndieElite
+  name: uplink-hardsuit-syndieelite-name
+  description: uplink-hardsuit-syndieelite-desc
+  icon: { sprite: /Textures/Clothing/OuterClothing/Hardsuits/syndieelite.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   cost:
     Telecrystal: 10
   categories:
   - UplinkWearables
+  saleLimit: 1
+
+- type: listing
+  id: UplinkClothingOuterHardsuitJuggernaut
+  name: uplink-clothing-outer-hardsuit-juggernaut-name
+  description: uplink-clothing-outer-hardsuit-juggernaut-desc
+  icon: { sprite: /Textures/Structures/Storage/Crates/syndicate.rsi, state: icon }
+  productEntity: CrateCybersunJuggernautBundle
+  cost:
+    Telecrystal: 12
+  categories:
+  - UplinkWearables
+  saleLimit: 1
 
 - type: listing
   id: UplinkClothingConductingGloves
@@ -1502,7 +1508,7 @@
   discountDownTo:
     Telecrystal: 7
   cost:
-    Telecrystal: 1
+    Telecrystal: 10
   categories:
   - UplinkWearables
 
