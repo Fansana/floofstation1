@@ -880,13 +880,6 @@
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
       state: pompadour
-- type: marking # Floofstation
-  id: HumanHairPolseSpecial
-  bodyPart: Hair
-  markingCategory: Hair
-  sprites:
-    - sprite: Mobs/Customization/human_hair.rsi
-      state: polsespecial
 - type: marking
   id: HumanHairBigpompadour
   bodyPart: Hair

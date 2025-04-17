@@ -124,8 +124,6 @@ marking-HumanHairKagami = Pigtails
 marking-HumanHairPigtails = Pigtails 2
 marking-HumanHairPigtails2 = Pigtails 3
 marking-HumanHairPixie = Pixie Cut
-# Floofstation - Polse
-marking-HumanHairPolseSpecial = Polse
 marking-HumanHairPompadour = Pompadour
 marking-HumanHairBigpompadour = Pompadour (Big)
 marking-HumanHairPonytail = Ponytail
