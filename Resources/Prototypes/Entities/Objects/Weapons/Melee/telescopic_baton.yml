@@ -20,8 +20,10 @@
       path: /Audio/Weapons/telescopicoff.ogg
       params:
         volume: -2
-  - type: ItemToggleDisarmMalus
-    activatedDisarmMalus: 0.6
+  - type: ComponentToggler
+    components:
+    - type: DisarmMalus
+      malus: 0.6
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
@@ -67,7 +69,7 @@
   - type: KnockdownOnHit
     duration: 60 #
   - type: MeleeWeapon
-    attackRate: .83
+    attackRate: 1.2 # Floofstation - this is hertz, not seconds
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:

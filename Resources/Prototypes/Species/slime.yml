@@ -62,7 +62,7 @@
       points: 1
       required: false
     Head:
-      points: 1
+      points: 2
       required: false
     HeadTop:
       points: 1
@@ -98,7 +98,7 @@
 - type: humanoidBaseSprite
   id: MobSlimeMarkingFollowSkin
   markingsMatchSkin: true
-  layerAlpha: 0.5
+  layerAlpha: 0.72
 
 - type: humanoidBaseSprite
   id: MobSlimeHead

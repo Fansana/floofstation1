@@ -11,6 +11,8 @@
   - Alert Procedure
   - Epistemics SOP
   - Engineering SOP
+  - Security SOP
+  - Brigging SOP
 
 - type: guideEntry
   id: Company Policy
@@ -83,3 +85,13 @@
   id: Engineering SOP
   name: guide-entry-engineeringSOP
   text: "/ServerInfo/Floof/Guidebook/SOP/EngineeringStandardOperatingProcedure.xml"
+  
+- type: guideEntry
+  id: Security SOP
+  name: guide-entry-securitySOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/SecurityStandardOperatingProcedure.xml"
+
+- type: guideEntry
+  id: Brigging SOP
+  name: guide-entry-briggingSOP
+  text: "/ServerInfo/Floof/Guidebook/SOP/BriggingStandardOperatingProcedure.xml"

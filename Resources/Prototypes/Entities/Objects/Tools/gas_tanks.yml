@@ -33,7 +33,7 @@
     maxIntensity: 20
   - type: MeleeWeapon
     wideAnimationRotation: 45
-    attackRate: 1.25
+    attackRate: 0.8 # Floofstation - this is hertz, not seconds
     range: 1.75
     damage:
       types:
@@ -62,7 +62,7 @@
   - type: Tool
     qualities:
     - Rolling
-    speed: 0.6 # fairly unwieldly but nice round surface
+    speedModifier: 0.6 # fairly unwieldly but nice round surface
 
 - type: entity
   parent: GasTankRoundBase

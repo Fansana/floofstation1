@@ -470,6 +470,7 @@
     allowMovement: true
     name: ghost-role-information-mothroach-name
     description: ghost-role-information-mothroach-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: Fixtures
     fixtures:
       fix1:
@@ -1168,6 +1169,7 @@
     prob: 0.25
     name: ghost-role-information-kangaroo-name
     description: ghost-role-information-kangaroo-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Vocal
     sounds:
@@ -1378,9 +1380,10 @@
     makeSentient: true
     name: ghost-role-information-monkey-name
     description: ghost-role-information-monkey-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Clumsy
-    clumsyDamage:
+    gunShootFailDamage:
       types:
         Blunt: 5
         Piercing: 4
@@ -1418,6 +1421,7 @@
     makeSentient: true
     name: ghost-role-information-monkey-name
     description: ghost-role-information-monkey-description
+    rules: floof-ghost-role-information-team-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -1431,8 +1435,7 @@
   components:
     # make the player a traitor once its taken
   - type: AutoTraitor
-    giveUplink: false
-    giveObjectives: false
+    profile: TraitorReinforcement
 
 - type: entity
   id: MobMonkeySyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
@@ -1515,6 +1518,7 @@
     makeSentient: true
     name: ghost-role-information-kobold-name
     description: ghost-role-information-kobold-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: RandomBark
     barkMultiplier: 0.65
     barkType: kobold
@@ -1533,7 +1537,7 @@
   description: Cousins to the sentient race of lizard people, kobolds blend in with their natural habitat and are as nasty as monkeys; ready to pull out your hair and stab you to death.
   components:
   - type: Clumsy
-    clumsyDamage:
+    gunShootFailDamage:
       types:
         Blunt: 2
         Piercing: 7
@@ -1552,6 +1556,14 @@
       0: Alive
       75: Critical
       200: Dead
+  - type: GhostRole # Floof station - This component needs to be set here in case it rolls randomly, thereby giving people a possibly-incorrect rule set for the ghost role
+    prob: 0.05
+    makeSentient: true
+    name: ghost-role-information-kobold-name
+    description: ghost-role-information-kobold-description
+    rules: floof-ghost-role-information-team-antag-rules # Floof station - Setting ghost role rules
+    raffle:
+      settings: default
   - type: NpcFactionMember
     factions:
     - Syndicate
@@ -1565,8 +1577,7 @@
   components:
     # make the player a traitor once its taken
   - type: AutoTraitor
-    giveUplink: false
-    giveObjectives: false
+    profile: TraitorReinforcement
 
 - type: entity
   id: MobKoboldSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
@@ -1599,6 +1610,7 @@
     allowMovement: true
     name: ghost-role-information-mouse-name
     description: ghost-role-information-mouse-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Speech
     speechSounds: Squeak
@@ -1710,6 +1722,7 @@
     tags:
     - Trash
     - VimPilot
+    - ChefPilot
     - Mouse
     - Meat
   - type: Respirator
@@ -1752,6 +1765,11 @@
     interfaces:
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
+  - type: FoodSequenceElement
+    entries:
+      Taco: RatTaco
+      Burger: RatBurger
+      Skewer: RatSkewer
   - type: NightVision
     isActive: true
     toggleAction: null
@@ -1826,6 +1844,9 @@
         Base: dead-1
       Dead:
         Base: splat-1
+  - type: Item
+    size: Tiny
+    heldPrefix: 1
 
 - type: entity
   parent: MobMouse
@@ -1852,6 +1873,44 @@
         Base: dead-2
       Dead:
         Base: splat-2
+  - type: Item
+    size: Tiny
+    heldPrefix: 2
+
+- type: entity
+  name: cancer mouse
+  description: Toxic. Squeak!
+  parent: MobMouse
+  id: MobMouseCancer
+  components:
+  - type: Sprite
+    color: LightGreen
+  - type: PointLight
+    color: LightGreen
+    radius: 5
+    energy: 5
+    netsync: false
+  - type: RadiationSource
+    intensity: 0.3
+  - type: Bloodstream
+    bloodReagent: UnstableMutagen
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Uranium
+          Quantity: 10
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatRat
+      amount: 1
+    - id: SheetUranium1
+      amount: 1
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Zombie
 
 - type: entity
   name: lizard #Weh
@@ -2378,7 +2437,7 @@
     - DoorBumpOpener
     - FootstepSound
   - type: Tool # Open door from xeno.yml.
-    speed: 1.5
+    speedModifier: 1.5
     qualities:
       - Prying
     useSound:
@@ -2430,7 +2489,7 @@
       makeSentient: true
       name: ghost-role-information-giant-spider-name
       description: ghost-role-information-giant-spider-description
-      rules: deltav-ghost-role-information-softantag-rules
+      rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
       raffle:
         settings: short
     - type: GhostTakeoverAvailable
@@ -2492,7 +2551,6 @@
     removes:
     - type: ReplacementAccent
       accent: xeno  #let this wizard speak
-
 - type: entity
   name: possum
   parent: SimpleMobBase
@@ -3012,7 +3070,7 @@
     name: ghost-role-information-SyndiCat-name
     allowMovement: true
     description: ghost-role-information-SyndiCat-description
-    rules: ghost-role-information-SyndiCat-rules
+    rules: floof-ghost-role-information-team-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -3296,6 +3354,7 @@
     allowMovement: true
     name: ghost-role-information-hamster-name
     description: ghost-role-information-hamster-description
+    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: SmallMob
@@ -3390,6 +3449,7 @@
   - type: Tag
     tags:
     - VimPilot
+    - ChefPilot
     - Trash
     - Hamster
     - Meat

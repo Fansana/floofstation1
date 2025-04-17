@@ -2,11 +2,11 @@
 
 - type: cargoBounty
   id: BountyDiamond
-  reward: 15000
+  reward: 80000
   description: bounty-description-diamond
   entries:
   - name: bounty-item-diamond
-    amount: 15
+    amount: 30
     whitelist:
       tags:
       - Diamond

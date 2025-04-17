@@ -16,9 +16,18 @@
 
 - type: Tag
   id: BorgModuleSecurity
+# Start of book tags
+- type: Tag
+  id: BookJusticeSop
 
+- type: Tag
+  id: BookSecuritySop
+# End of book tags
 - type: Tag
   id: CakeBase
 
 - type: Tag
   id: ShellSoulbreaker
+
+- type: Tag
+  id: EnergySabre

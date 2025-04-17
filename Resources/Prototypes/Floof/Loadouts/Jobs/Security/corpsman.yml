@@ -1,45 +1,4 @@
 # Corpsman
-- type: loadout
-  id: LoadoutClothingHandCorpsmanWarmers
-  category: JobsSecurityCorpsman
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingHandsCorpsmanWarmers
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Brigmedic
-
-- type: loadout
-  id: LoadoutClothingUnderSocksCorpsman
-  category: JobsSecurityCorpsman
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingUnderSocksCorpsman
-  requirements:
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-    - Diona
-    - Harpy
-  - !type:CharacterJobRequirement
-    jobs:
-    - Brigmedic
-
-- type: loadout
-  id: LoadoutClothingUniformCorpsmanThong
-  category: JobsSecurityCorpsman
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingUniformCorpsmanThong
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Brigmedic
-
 # Backpacks
 
 # Belt
@@ -47,10 +6,49 @@
 # Ears
 
 # Equipment
+- type: loadout
+  id: LoadoutCorpsmanEquipmentDuffelSurgeryFilled
+  category: JobsSecurityCorpsman
+  cost: 3
+  exclusive: false
+  items:
+    - ClothingBackpackDuffelSurgeryFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Eyes
+- type: loadout
+  id: LoadoutCorpsmanEyesHudMedical
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingEyesHudMedical
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanEyes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Gloves
+- type: loadout
+  id: LoadoutClothingHandCorpsmanWarmers
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsCorpsmanWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Head
 
@@ -73,9 +71,53 @@
       jobs:
         - Brigmedic
 
+- type: loadout
+  id: LoadoutMaskCorpsmanSterile
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskSterile
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
 
 # Outer
 
 # Shoes
+- type: loadout
+  id: LoadoutClothingUnderSocksCorpsman
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUnderSocksCorpsman
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
 
 # Uniforms
+- type: loadout
+  id: LoadoutClothingUniformCorpsmanThong
+  category: JobsSecurityCorpsman
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformCorpsmanThong
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCorpsmanUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic

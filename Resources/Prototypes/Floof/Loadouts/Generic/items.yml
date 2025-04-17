@@ -41,3 +41,62 @@
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutFun
+    
+# Writing
+- type: loadout
+  id: LoadoutItemEnvelopes
+  category: Items
+  cost: 0
+  exclusive: true
+  items:
+    - Envelope
+    - Envelope
+    - Envelope
+    - Envelope
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutWritables
+
+- type: loadout
+  id: LoadoutItemStickyNotes
+  category: Items
+  cost: 2 # M3739 - 10 stickies is quite a bit.
+  exclusive: true
+  items:
+    - LoadoutPaperStickyNoteStackFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutWritables
+
+- type: loadout
+  id: LoadoutItemStickyNotesPink
+  category: Items
+  cost: 2 # M3739 - 10 stickies is quite a bit.
+  exclusive: true
+  items:
+    - LoadoutPaperStickyNoteStackFilledPink
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutWritables
+      
+- type: loadout
+  id: LoadoutItemStickyNotesGreen
+  category: Items
+  cost: 2 # M3739 - 10 stickies is quite a bit.
+  exclusive: true
+  items:
+    - LoadoutPaperStickyNoteStackFilledGreen
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutWritables
+
+- type: loadout
+  id: LoadoutItemStickyNotesBlue
+  category: Items
+  cost: 2 # M3739 - 10 stickies is quite a bit.
+  exclusive: true
+  items:
+    - LoadoutPaperStickyNoteStackFilledBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutWritables
