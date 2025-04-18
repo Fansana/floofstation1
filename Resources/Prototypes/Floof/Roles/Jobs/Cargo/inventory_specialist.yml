@@ -1,19 +1,24 @@
 - type: job
-  id: CargoTechnician
-  name: job-name-cargotech
-  description: job-description-cargotech
-  playTimeTracker: JobCargoTechnician
+  id: InventorySpecialist
+  name: job-name-invspec
+  description: job-description-invspec
+  playTimeTracker: JobInventorySpecialist
+  setPreference: true
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Logistics
+      min: 57600 #16 hours
   antagAdvantage: 2 # DeltaV - Reduced TC: External Access
   startingGear: CargoTechGear
-  icon: "JobIconCargoTechnician"
+  icon: "JobIconInventorySpecialist"
   supervisors: job-supervisors-qm
   access:
   - Cargo
   - Maintenance
-  # - Orders # Floof - Removed for Inv Spec role
+  - Orders
   extendedAccess:
   - Salvage
-  - Orders # DeltaV - Orders, see Resources/Prototypes/DeltaV/Access/cargo.yml # Floof - Returned for low pop
+  - Mail
 
 - type: startingGear
   id: CargoTechGear
@@ -22,7 +27,7 @@
     jumpsuit: ClothingUniformJumpsuitCargo
     back: ClothingBackpackCargoFilled
     shoes: ClothingShoesColorBlack
-    id: CargoPDA
+    id: InvSpecPDA
     ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
   innerClothingSkirt: ClothingUniformJumpskirtCargo
