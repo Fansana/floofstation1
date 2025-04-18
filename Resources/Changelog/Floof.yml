@@ -4188,3 +4188,10 @@ Entries:
   id: 454
   time: '2025-04-18T12:23:12.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/777
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: Envelopes can now be crafted using paper.
+  id: 455
+  time: '2025-04-18T12:29:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/794
