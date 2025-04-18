@@ -34,7 +34,7 @@
 - type: entity
   parent: ClothingUniformBaseSwitch
   id: ClothingUniformLoinClothWhite
-  name: white loin-cloth
+  name: loin-cloth # Floof - M3739 - #741
   description: A piece of cloth wrapped around the waist.
   components:
   - type: Sprite

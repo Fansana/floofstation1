@@ -1,4 +1,4 @@
-# GhostTakeover
+# Ghosttakeover
 
 # Snakes
 - type: entity
@@ -12,7 +12,7 @@
     makeSentient: true
     name: salvage snake
     description: You are a salvage snake hunting for a meal.
-    rules: You are an antagonist, kill!
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: SalvageMobRestrictions
 
 - type: entity
@@ -26,7 +26,7 @@
     makeSentient: true
     name: salvage snake
     description: You are a salvage snake hunting for a meal.
-    rules: You are an antagonist, kill!
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: SalvageMobRestrictions
 
 # Delta V variants of Xenos to allow ghost takeover again
@@ -43,7 +43,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -58,7 +58,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -73,7 +73,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -88,7 +88,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -103,7 +103,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -118,7 +118,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -132,7 +132,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
 
 - type: entity
@@ -147,5 +147,5 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable

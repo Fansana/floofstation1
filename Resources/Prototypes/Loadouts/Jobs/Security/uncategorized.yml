@@ -941,6 +941,20 @@
         - Security
   items:
     - ClothingOuterArmorBasicSlim
+    
+- type: loadout
+  id: LoadoutClothingOuterCoatGreatcoat # Floof - M3739 - #690
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - ClothingOuterCoatGreatcoat
 
 # Shoes
 - type: loadout

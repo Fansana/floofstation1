@@ -8,12 +8,12 @@
     sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi
   - type: Clothing
     sprite: Floof/Clothing/Shoes/Boots/magboots-security.rsi
-  - type: Magboots
-    toggleAction: ActionToggleMagbootsSecurity
+  - type: ToggleClothing
+    action: ActionToggleMagbootsSecurity
 
 - type: entity
   id: ActionToggleMagbootsSecurity
-  parent: ActionBaseToggleMagboots
+  parent: ActionToggleMagboots
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction

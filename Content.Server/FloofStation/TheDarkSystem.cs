@@ -24,6 +24,13 @@ public sealed class TheDarkSystem : EntitySystem
         var mapId = _mapManager.CreateMap();
         _mapManager.AddUninitializedMap(mapId);
 
+        #if DEBUG
+        // I do not want to deal with this. The dark spawns in every single integration test case,
+        // slows down our test suite, causes random test failures, and more. If you want to test the dark,
+        // compile the server in the "Tools" configuration. - Mnemotechnician
+        return;
+        #endif
+
         if (!_loader.TryLoad(mapId, "/Maps/Floof/hideout.yml", out var uids))
             return;
 

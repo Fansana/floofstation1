@@ -7694,6 +7694,17 @@ Entries:
   id: 6498
   time: '2024-11-02T00:40:50.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1170
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Cargo can now order crates of Uranium, Gold, and Silver. This is still
+        far more expensive than getting the materials from Salvage, but serves
+        as an incredibly useful failsafe in the event Salvage is
+        Unwilling/Dead/Incompetent/Shitters.
+  id: 6499
+  time: '2024-11-02T01:03:14.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1171
 - author: Beck Thompson
   changes:
     - type: Fix
@@ -7757,6 +7768,15 @@ Entries:
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1176
 - author: VMSolidus
   changes:
+    - type: Tweak
+      message: >-
+        Cargo Technicians and Salvage Techs can now process cargo orders. You
+        don't need to smash the fucking LO Locker with a pickaxe anymore.
+  id: 6505
+  time: '2024-11-02T19:58:26.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1177
+- author: VMSolidus
+  changes:
     - type: Fix
       message: >-
         Communications Consoles that are marked as "Can't Recall The Shuttle"
@@ -7809,7 +7829,7 @@ Entries:
     - type: Remove
       message: >-
         Shadowkin have been temporarily disabled pending significant reworks and
-        balance updates. 
+        balance updates.
   id: 6512
   time: '2024-11-08T19:33:53.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1187
@@ -7829,7 +7849,7 @@ Entries:
     - type: Fix
       message: >-
         Fixed AddTrait and ReplaceTrait functions giving players an unmodified,
-        completely default component. 
+        completely default component.
   id: 6514
   time: '2024-11-10T15:22:47.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1195
@@ -7971,7 +7991,7 @@ Entries:
     - type: Add
       message: >-
         The stamina cost of an object's power attack can now be revealed by
-        examining its damage values. 
+        examining its damage values.
     - type: Tweak
       message: >-
         Power attacks can't be done if your stamina is too low, so you can't
@@ -8036,12 +8056,12 @@ Entries:
     - type: Tweak
       message: >-
         CyberEyes Basic System has been split, now Flash Protection is a
-        separate module. 
+        separate module.
     - type: Add
       message: >-
         Dermal Armor no longer replaces your original species damage
         resistances. It now stacks multiplicatively with your original
-        resistances. 
+        resistances.
     - type: Tweak
       message: Dermal Armor can now be taken by any species, not just Humans.
     - type: Add
@@ -8214,7 +8234,7 @@ Entries:
     - type: Fix
       message: >-
         Fixed biosynthetic and other printable parts not allowing you to attach
-        body parts to them. 
+        body parts to them.
     - type: Fix
       message: Fixed fire being able to destroy your chest.
     - type: Fix
@@ -8240,7 +8260,7 @@ Entries:
     - type: Tweak
       message: >-
         Unbound shitmed targeting doll keybinds by default (did you know we have
-        those). 
+        those).
   id: 6546
   time: '2024-11-30T16:06:56.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1271
@@ -8250,7 +8270,7 @@ Entries:
       message: >-
         All engineering roles have had their equipment loadouts significantly
         expanded upon. Engineers can now buy construction materials with their
-        loadout points. 
+        loadout points.
     - type: Fix
       message: All engineering jobs now have their Suit/Skirt selection via loadouts.
     - type: Add
@@ -8269,7 +8289,7 @@ Entries:
     - type: Add
       message: >-
         Added various articles of religious headgear to loadouts, such as Hijab,
-        Kippah, and Turban. All of these are set to allow custom colors. 
+        Kippah, and Turban. All of these are set to allow custom colors.
   id: 6548
   time: '2024-11-30T18:52:35.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1297
@@ -8352,7 +8372,7 @@ Entries:
     - type: Fix
       message: >-
         Enabled the "Mend brain tissue" surgical procedure on a lobotomized
-        target. 
+        target.
     - type: Fix
       message: >-
         The lobotomized effect is now stored in the brain instead of the body.
@@ -8485,7 +8505,7 @@ Entries:
       message: >-
         Examining the damage values of an item now shows its throwing damage,
         throwing stamina cost, whether or not it embeds on a throw, and if the
-        embed deals damage over time. 
+        embed deals damage over time.
     - type: Add
       message: Examining an embedded item now shows what body part it's embedded in.
     - type: Tweak
@@ -8641,7 +8661,7 @@ Entries:
     - type: Add
       message: >-
         Added a variety of Pointy Ears markings for Harpy and Arachne
-        characters. 
+        characters.
   id: 6578
   time: '2024-12-15T19:13:50.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1348
@@ -8709,7 +8729,7 @@ Entries:
     - type: Remove
       message: >-
         Removed all 'specific color' variants of colorable items from Loadouts,
-        such as "Blue Jumpsuit" when a colorable jumpsuit exists. 
+        such as "Blue Jumpsuit" when a colorable jumpsuit exists.
   id: 6585
   time: '2024-12-21T18:02:28.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1364
@@ -8817,7 +8837,7 @@ Entries:
       message: >-
         Tweaked arrivals to reduce the playable area, and some concessions have
         been made to prevent access to admeme items that were on display. These
-        changes are pending a later update where we port Arrivals Job Spawns. 
+        changes are pending a later update where we port Arrivals Job Spawns.
   id: 6597
   time: '2024-12-30T21:15:16.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1371
@@ -8914,3 +8934,114 @@ Entries:
   id: 6605
   time: '2025-01-01T22:51:04.0000000+00:00'
   url: https://github.com/Simple-Station/Einstein-Engines/pull/1391
+- author: sapphirescript
+  changes:
+    - type: Fix
+      message: Fixed radial menus overlapping where there's many icons.
+  id: 6606
+  time: '2025-01-02T00:16:49.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1393
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Added new admin commands AddRandomPsionicPower, RemovePsionicPower, and
+        RemoveAllPsionicPowers.
+  id: 6607
+  time: '2025-01-02T02:22:32.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1394
+- author: sapphirescript
+  changes:
+    - type: Add
+      message: Borgs can now use IPC emote
+    - type: Add
+      message: All species missing sounds for vocal emotes have generic sounds
+    - type: Tweak
+      message: Emote Icons resprited in the style of twemoji
+    - type: Fix
+      message: '*flips *spins *jumps emotes now work'
+    - type: Fix
+      message: Emote wheel now shows the right emotes for your species
+  id: 6608
+  time: '2025-01-02T03:27:48.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1395
+- author: sapphirescript
+  changes:
+    - type: Tweak
+      message: You can no longer cocoon yourself as a spider.
+  id: 6609
+  time: '2025-01-02T04:57:27.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1396
+- author: sapphirescript
+  changes:
+    - type: Fix
+      message: Supermatter's guide has a name now
+  id: 6610
+  time: '2025-01-02T14:48:11.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1398
+- author: sapphirescript
+  changes:
+    - type: Fix
+      message: The 'kα Deficiency' trait has a description now
+  id: 6611
+  time: '2025-01-02T14:49:06.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1402
+- author: Remuchi
+  changes:
+    - type: Add
+      message: CPR now automatically repeats itself.
+    - type: Add
+      message: >-
+        CPR no longer requires you to take the mask off. You can now simply
+        lower it instead.
+    - type: Fix
+      message: Fixed CPR repeating popups x100 times.
+  id: 6612
+  time: '2025-01-02T17:01:54.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1405
+- author: sapphirescript
+  changes:
+    - type: Add
+      message: Face markings are now in their own category
+    - type: Fix
+      message: IPC screens no longer show up above hair
+  id: 6613
+  time: '2025-01-02T17:35:34.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1400
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: 'Added the GR4YT1D3 Virus event. '
+  id: 6614
+  time: '2025-01-02T17:36:50.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1293
+- author: sapphirescript
+  changes:
+    - type: Tweak
+      message: The splash screen logo now fits inside the default window
+  id: 6615
+  time: '2025-01-02T21:08:43.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1403
+- author: Remuchi
+  changes:
+    - type: Fix
+      message: Loadouts should now properly be applied when spawning in cryopods.
+  id: 6616
+  time: '2025-01-02T21:11:12.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1406
+- author: sapphirescript
+  changes:
+    - type: Fix
+      message: Fix Shiva's name and description displaying improperly in ghost roles
+  id: 6617
+  time: '2025-01-02T21:12:42.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1404
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: >-
+        Lots of refactoring of the Mob State Systerm in preparation for
+        implementing a much more detailed Soft Critical state.
+  id: 6618
+  time: '2025-01-02T23:12:28.0000000+00:00'
+  url: https://github.com/Simple-Station/Einstein-Engines/pull/1382

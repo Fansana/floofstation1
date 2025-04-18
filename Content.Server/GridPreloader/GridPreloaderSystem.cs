@@ -52,8 +52,12 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
         if (GetPreloaderEntity() != null)
             return;
 
+        // Floofstation - this is dumb. Preloading grinds is NOT an option.
+        // Thus we only return here in debug builds (to avoid making too much of a performance burder)
+        #if DEBUG
         if (!_cfg.GetCVar(CCVars.PreloadGrids))
-            return;
+             return;
+        #endif
 
         var mapUid = _map.CreateMap(out var mapId, false);
         var preloader = EnsureComp<GridPreloaderComponent>(mapUid);
