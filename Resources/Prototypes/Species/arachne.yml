@@ -17,10 +17,10 @@
   id: MobArachneMarkingLimits
   points:
     Undershirt:
-      points: 1
+      points: 2
       required: false # Floof, add underwear
     Hair:
-      points: 1
+      points: 2
       required: false
     FacialHair:
       points: 1

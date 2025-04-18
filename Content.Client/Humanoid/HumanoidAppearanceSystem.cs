@@ -292,6 +292,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         visible &= !IsHidden(humanoid, markingPrototype.BodyPart);
         visible &= humanoid.BaseLayers.TryGetValue(markingPrototype.BodyPart, out var setting)
            && setting.AllowsMarkings;
+        visible &= !humanoid.HiddenMarkings.Contains(markingPrototype.ID);
 
         for (var j = 0; j < markingPrototype.Sprites.Count; j++)
         {

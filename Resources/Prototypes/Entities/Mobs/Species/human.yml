@@ -21,6 +21,7 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  - type: ModifyUndies
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic

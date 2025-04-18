@@ -51,10 +51,10 @@
   id: MobShadowkinMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2
       required: false # Floof, add underwear
     Undershirt:
-      points: 1
+      points: 2
       required: false # Floof, add underwear
     Tail:
       points: 1

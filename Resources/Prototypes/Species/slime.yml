@@ -38,13 +38,13 @@
   id: MobSlimeMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2
       required: false # Floof, add underwear
     Undershirt:
-      points: 1
+      points: 2
       required: false # Floof, add underwear
     Hair:
-      points: 1
+      points: 2
       required: false
     HeadSide:
       points: 2
