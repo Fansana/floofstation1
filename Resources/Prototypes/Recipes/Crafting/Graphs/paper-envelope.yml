@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: PaperEnvelope
+  start: start
+  graph:
+    - node: start
+      edges:
+      - to: envelope
+        steps:
+        - tag: Paper
+          name: paper
+          icon:
+            sprite: Objects/Misc/bureaucracy.rsi
+            state: paper
+          doAfter: 5
+    - node: envelope
+      entity: Envelope
