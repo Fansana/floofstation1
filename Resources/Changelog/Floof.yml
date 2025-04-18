@@ -4195,3 +4195,12 @@ Entries:
   id: 455
   time: '2025-04-18T12:29:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/794
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added new admin commands AddRandomPsionicPower, RemovePsionicPower, and
+        RemoveAllPsionicPowers.
+  id: 456
+  time: '2025-04-18T12:50:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/789
