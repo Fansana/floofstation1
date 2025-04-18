@@ -4219,3 +4219,16 @@ Entries:
   id: 457
   time: '2025-04-18T12:51:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/790
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: CPR now automatically repeats itself.
+    - type: Add
+      message: >-
+        CPR no longer requires you to take the mask off. You can now simply
+        lower it instead.
+    - type: Fix
+      message: Fixed CPR repeating popups x100 times.
+  id: 458
+  time: '2025-04-18T12:51:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/797
