@@ -4204,3 +4204,18 @@ Entries:
   id: 456
   time: '2025-04-18T12:50:45.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/789
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Borgs can now use IPC emote
+    - type: Add
+      message: All species missing sounds for vocal emotes have generic sounds
+    - type: Tweak
+      message: Emote Icons resprited in the style of twemoji
+    - type: Fix
+      message: '*flips *spins *jumps emotes now work'
+    - type: Fix
+      message: Emote wheel now shows the right emotes for your species
+  id: 457
+  time: '2025-04-18T12:51:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/790
