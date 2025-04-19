@@ -50,9 +50,9 @@
   id: MobIPCMarkingLimits
   points:
     Underwear:
-      points: 2
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
-    Undershirt:
+    Undershirt: # FLOOF CHANGE
       points: 2 # Floof, add underwear
       required: false
     Head:

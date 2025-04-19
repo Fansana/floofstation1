@@ -45,10 +45,10 @@
   onlyWhitelisted: true
   points:
     Underwear:
-      points: 2
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Undershirt:
-      points: 2 # Floof, add underwear
+      points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
       points: 0
