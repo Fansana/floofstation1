@@ -2,12 +2,9 @@
   name: excommunicant sawn off
   parent: BaseWeaponShotgun
   id: WeaponShotgunSawnExcommunicant
-  description: An over/under sawn off shotgun featuring an Ivory pearl handle and a silver barrel to clean the souls of the wicked, Only accepts soulbreaker shells. Produce by SESWC!
+  description: An over/under sawn off shotgun featuring an Ivory pearl handle and a silver barrel to clean the souls of the wicked. Produced by SESWC!
   components:
   - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - ShellSoulbreaker
     capacity: 2
     proto: ShellSoulbreaker
     soundInsert:
