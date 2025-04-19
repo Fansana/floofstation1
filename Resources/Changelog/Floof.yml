@@ -4273,3 +4273,12 @@ Entries:
   id: 463
   time: '2025-04-19T03:17:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/778
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Paramedic and courier doors and windoors should now have the proper
+        access instead of AA
+  id: 464
+  time: '2025-04-19T03:14:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/784
