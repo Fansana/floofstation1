@@ -1,8 +1,10 @@
 using Content.Shared._Shitmed.Autodoc.Systems;
+using Content.Shared.Construction.Prototypes;
 using Content.Shared.DeviceLinking;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared._Shitmed.Autodoc.Components;
 
@@ -62,6 +64,15 @@ public sealed partial class AutodocComponent : Component
     /// </summary>
     [DataField]
     public int MaxProgramSteps = 16;
+
+    [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<MachinePartPrototype>))]
+    public string MachinePartSurgerySpeed = "Manipulator";
+
+    [DataField]
+    public float BaseSurgerySpeed = 0.5f;
+
+    [DataField]
+    public float SurgerySpeed = 0.5f;
 }
 
 [Serializable, NetSerializable]
