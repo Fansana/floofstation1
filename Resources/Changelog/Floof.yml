@@ -4305,3 +4305,10 @@ Entries:
   id: 467
   time: '2025-04-19T13:29:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/807
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fix Shiva's name and description displaying improperly in ghost roles
+  id: 468
+  time: '2025-04-19T14:03:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/812
