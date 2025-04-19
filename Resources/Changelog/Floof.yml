@@ -4330,3 +4330,14 @@ Entries:
   id: 470
   time: '2025-04-19T16:29:32.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/814
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added religious neckwear to loadouts, such as Crucifix (with a colorable
+        option), Scapular and Tallit.
+    - type: Tweak
+      message: Added the gay male pride pin to loadouts and the Pride-O-Mat.
+  id: 471
+  time: '2025-04-19T16:30:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/816
