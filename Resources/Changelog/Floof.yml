@@ -4282,3 +4282,12 @@ Entries:
   id: 464
   time: '2025-04-19T03:14:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/784
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        French accents no longer reveal the secrets of
+        accent-french-words-replace-26.
+  id: 465
+  time: '2025-04-19T03:16:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/785
