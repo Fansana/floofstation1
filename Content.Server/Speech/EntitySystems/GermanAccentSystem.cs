@@ -1,5 +1,5 @@
 using System.Text;
-using Content.Server.FloofStation.Speech.Components;
+using Content.Server.Speech.Components;
 using Robust.Shared.Random;
 using System.Text.RegularExpressions;
 

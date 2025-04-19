@@ -29,12 +29,6 @@ trait-description-Heavyweight =
     You are naturally heavier than other representatives of your species. Your body density is increased to 140% of normal.
     Note: [color=red]this will not display in the character creation menu, and will only have effect in-game.[/color]
 
-trait-name-GermanAccent = German accent
-trait-description-GermanAccent = You seem to come from space Germany.
-
-trait-name-FrenchAccent = French accent
-trait-description-FrenchAccent = You seem to come from space France.
-
 trait-name-DrunkardAccent = Drunkard accent
 trait-description-DrunkardAccent = You always sound like you're drunk.
 
