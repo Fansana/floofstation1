@@ -4239,3 +4239,12 @@ Entries:
   id: 459
   time: '2025-04-18T12:51:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/796
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The Syndicate has avoided declaring Chapter 11. The Elite Syndicate
+        hardsuit's base price is now 11 telecrystals instead of 1.
+  id: 460
+  time: '2025-04-19T03:08:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/802
