@@ -4291,3 +4291,10 @@ Entries:
   id: 465
   time: '2025-04-19T03:16:01.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/785
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Security PDA has SecWatch back
+  id: 466
+  time: '2025-04-19T05:48:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/804
