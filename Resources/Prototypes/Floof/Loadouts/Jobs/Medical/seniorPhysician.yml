@@ -22,7 +22,7 @@
 # Outer
 - type: loadout
   id: LoadoutSeniorPhysicianOuterLabcoat
-  category: JobsMedicalAUncategorized
+  category: JobsMedicalSeniorPhysician
   cost: 0
   exclusive: true
   items:
@@ -37,7 +37,7 @@
 # Shoes
 - type: loadout
   id: LoadoutSeniorPhysicianShoesBlack
-  category: JobsMedicalAUncategorized
+  category: JobsMedicalSeniorPhysician
   cost: 0
   exclusive: true
   items:
