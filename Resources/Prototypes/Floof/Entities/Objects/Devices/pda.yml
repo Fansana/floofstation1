@@ -21,7 +21,7 @@
 - type: entity
   parent: BasePDA
   id: InvSpecPDA
-  name: inventory specialist PDA # DeltaV - Logistics Department replacing Cargo
+  name: inventory specialist PDA
   description: Covered in tally marks.
   components:
   - type: Pda
@@ -29,8 +29,8 @@
     state: pda-cargo
   - type: PdaBorderColor
     borderColor: "#e39751"
-  - type: Icon
-    state: pda-cargo
+  # - type: Icon
+  #   state: pda-cargo
   - type: CartridgeLoader # DeltaV
     preinstalled:
     - CrewManifestCartridge

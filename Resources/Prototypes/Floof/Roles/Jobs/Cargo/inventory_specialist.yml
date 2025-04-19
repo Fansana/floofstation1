@@ -9,7 +9,7 @@
       department: Logistics
       min: 57600 #16 hours
   antagAdvantage: 2 # DeltaV - Reduced TC: External Access
-  startingGear: CargoTechGear
+  startingGear: InvSpecGear
   icon: "JobIconInventorySpecialist"
   supervisors: job-supervisors-qm
   access:
@@ -21,7 +21,7 @@
   - Mail
 
 - type: startingGear
-  id: CargoTechGear
+  id: InvSpecGear
   equipment:
     head: ClothingHeadHatCargosoft
     jumpsuit: ClothingUniformJumpsuitCargo
