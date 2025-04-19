@@ -16,6 +16,8 @@
 - type: speciesBaseSprites
   id: MobMothSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobMothHead
     Snout: MobHumanoidAnyMarking
     Chest: MobMothTorso
