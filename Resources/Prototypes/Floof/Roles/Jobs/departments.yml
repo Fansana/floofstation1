@@ -1,0 +1,11 @@
+- type: department
+  id: Miscellaneous
+  description: department-Miscellaneous-description
+  color: "#6e6e6e"
+  weight: -10
+  roles:
+  - Borg
+  - Passenger
+  - Visitor
+  - Prisoner # Nyanotrasen - Prisoner, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
+  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml

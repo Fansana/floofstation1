@@ -32,6 +32,7 @@
         - Civilian
         - Medical
         - Epistemics
+        - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -53,6 +54,7 @@
         - Civilian
         - Medical
         - Epistemics
+        - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:

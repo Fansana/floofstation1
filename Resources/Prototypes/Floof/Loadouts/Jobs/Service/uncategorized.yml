@@ -9,12 +9,6 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Civilian
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Passenger
-      - Prisoner
-      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUnderSocksService
@@ -32,12 +26,6 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Civilian
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Passenger
-      - Prisoner
-      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUniformServiceThong
@@ -50,12 +38,6 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Civilian
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Passenger
-      - Prisoner
-      - Gladiator
 
 - type: loadout
   id: LoadoutClothingUniformServiceUni
@@ -68,9 +50,3 @@
   - !type:CharacterDepartmentRequirement
     departments:
     - Civilian
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-      - Passenger
-      - Prisoner
-      - Gladiator
