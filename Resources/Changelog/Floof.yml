@@ -4266,3 +4266,10 @@ Entries:
   id: 462
   time: '2025-04-19T03:13:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/795
+- author: ApolloVector
+  changes:
+    - type: Tweak
+      message: Added warning in space medipen description
+  id: 463
+  time: '2025-04-19T03:17:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/778
