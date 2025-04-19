@@ -16,6 +16,7 @@
         emergencyShuttlePath: /Maps/Shuttles/emergency_amber.yml
       - type: StationJobs
         availableJobs:
+          CentralCommandOfficial: [ 1, 1 ] # Admin
           # command
           Captain: [ 1, 1 ]
           #service

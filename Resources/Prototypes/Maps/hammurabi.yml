@@ -19,6 +19,7 @@
             - Passenger
             #- Anomaly # Floofstation
           availableJobs:
+            CentralCommandOfficial: [ 1, 1 ] # Admin
           #civilian
             Passenger: [ -1, -1 ]
             Anomaly: [ 4, 4 ] # Floofstation

@@ -41,7 +41,7 @@
   color: "#334E6D"
   roles:
   - Captain
-  - CentralCommandOfficial
+  # - CentralCommandOfficial | Floof - M3739 - #727 - Moved to it's own department
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel

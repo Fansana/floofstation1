@@ -20,6 +20,7 @@
             - Passenger
             #- Anomaly
           availableJobs:
+            CentralCommandOfficial: [ 1, 1 ] # Admin
             Anomaly: [ 4, 4 ] # Floofstation
             # Service
             Bartender: [ 2, 3 ]
