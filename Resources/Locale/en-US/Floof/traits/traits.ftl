@@ -135,6 +135,11 @@ trait-description-CulinaryAdaptationAllicin =
     Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize allicin.
     You can eat garlic and onions without being poisoned by it!
 
+trait-name-Succubus = Succubus
+trait-description-Succubus =
+    Your body has evolved to be able to drink cum and metabolize it into useful compounds.
+    Drinking cum satiates your hunger and thirst, and also improves your health.
+
 trait-name-Tiny = Tiny
 trait-description-Tiny = 
     Due to a mutation, transformation, or other metaphysical circumstance you are significantly smaller than even the tiniest of your species. 
