@@ -1500,9 +1500,9 @@
   productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 7
+    Telecrystal: 5 # Floof - M3739 - FinancialCrisis - Was originally 7.
   cost:
-    Telecrystal: 1
+    Telecrystal: 11 # Floof - M3739 - FinancialCrisis - Was originally 1. Even Cybersun Industries suffers from "minor inconveniences."
   categories:
   - UplinkWearables
 
