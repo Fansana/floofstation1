@@ -12,10 +12,10 @@
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
-  weight: -10
+  #weight: -10 # Floof - Create dedicated service department
   roles:
   - Bartender
-  - Borg
+  #- Borg # Floof - Create dedicated service department
   - Botanist
   - Boxer
   # - Chaplain # DeltaV - Move Chaplain into Epistemics
@@ -26,14 +26,14 @@
   # - Lawyer # DeltaV - Move Lawyer into Justice
   - Mime
   - Musician
-  - Passenger
+  #- Passenger # Floof - Create dedicated service department
   - Reporter
-  - Visitor
+  #- Visitor # Floof - Create dedicated service department
   - Zookeeper
   - ServiceWorker
   - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
-  - Prisoner # Nyanotrasen - Prisoner, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
-  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
+  #- Prisoner # Floof - Create dedicated service department
+  #- Gladiator # Floof - Create dedicated service department
 
 - type: department
   id: Command
