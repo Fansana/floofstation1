@@ -4321,3 +4321,12 @@ Entries:
   id: 469
   time: '2025-04-19T16:27:27.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/806
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Lots of refactoring of the Mob State Systerm in preparation for
+        implementing a much more detailed Soft Critical state.
+  id: 470
+  time: '2025-04-19T16:29:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/814
