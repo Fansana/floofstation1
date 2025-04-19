@@ -150,7 +150,11 @@ ghost-role-information-holoclown-name = Holoclown
 ghost-role-information-holoclown-description = Listen to your owner. Utilize your pockets and hand to help your owner.
 
 ghost-role-information-ifrit-name = Ifrit
-ghost-role-information-ifrit-description = Listen to your owner. Don't tank damage. Punch people hard.
+ghost-role-information-ifrit-description = The mystagogue's servant.
+ghost-role-information-ifrit-rules = A fire spirit originating from Gehenna, you have been summoned by the mystagogue. Follow them around and don't cause any trouble unless they tell you to.
+
+ghost-role-information-ifrit-wizard-name = Ifrit (Wizard Summon)
+ghost-role-information-ifrit-wizard-description = Listen to your owner. Don't tank damage. Punch people hard.
 
 ghost-role-information-space-dragon-name = Space dragon
 ghost-role-information-space-dragon-description = create 3 carp rifts and protect your nest!
