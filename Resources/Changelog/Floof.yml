@@ -4248,3 +4248,12 @@ Entries:
   id: 460
   time: '2025-04-19T03:08:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/802
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        The Space Villain arcade machines have had the gum removed from their
+        buttons.
+  id: 461
+  time: '2025-04-19T03:11:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/799
