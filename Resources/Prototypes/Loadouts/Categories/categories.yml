@@ -145,6 +145,7 @@
     - JobsLogisticsCourier
     - JobsLogisticsLogisticsOfficer
     - JobsLogisticsSalvageSpecialist
+    - JobsLogisticsInventorySpecialist #floof senior cargo
 
 - type: loadoutCategory
   id: JobsLogisticsAUncategorized
@@ -160,6 +161,9 @@
 
 - type: loadoutCategory
   id: JobsLogisticsSalvageSpecialist
+
+- type: loadoutCategory
+  id: JobsLogisticsInventorySpecialist #floof senior cargo
 
 # Medical
 - type: loadoutCategory

@@ -1,0 +1,15 @@
+- type: entity
+  parent: IDCardStandard
+  id: InvSpecIDCard
+  name: inventory specialist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: department
+      color: "#B18644"
+    - state: subdepartment
+      color: "#B18644"
+    - state: senior
+  - type: PresetIdCard
+    job: InventorySpecialist

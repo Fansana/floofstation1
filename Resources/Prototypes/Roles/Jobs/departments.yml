@@ -7,6 +7,7 @@
   - Quartermaster
   - SalvageSpecialist
   - MailCarrier # Nyanotrasen - MailCarrier, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Cargo/mail-carrier.yml
+  - InventorySpecialist #Floof, see Resources/Prototypes/Floof/Roles/Jobs/Cargo/inventory_specialist.yml
 
 - type: department
   id: Civilian

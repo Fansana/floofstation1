@@ -17,3 +17,24 @@
       whitelist:
         tags:
         - Write
+
+- type: entity
+  parent: BasePDA
+  id: InvSpecPDA
+  name: inventory specialist PDA
+  description: Covered in tally marks.
+  components:
+  - type: Pda
+    id: InvSpecIDCard
+    state: pda-cargo
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  # - type: Icon
+  #   state: pda-cargo
+  - type: CartridgeLoader # DeltaV
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge # DeltaV - StockTrading
+    - NanoChatCartridge # DeltaV
