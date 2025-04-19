@@ -362,7 +362,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         if (sync)
-            Dirty(uid, humanoid);    
+            Dirty(uid, humanoid);
     }
 
     /// <summary>
@@ -544,5 +544,23 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             return Loc.GetString("identity-age-middle-aged");
 
         return Loc.GetString("identity-age-old");
+    }
+    public void SetMarkingVisibility(
+        EntityUid uid,
+        HumanoidAppearanceComponent? humanoid,
+        string markingId,
+        bool visible)
+    {
+        if (!_markingManager.Markings.TryGetValue(markingId, out var prototype))
+            return;
+        if (!Resolve(uid, ref humanoid))
+            return;
+
+        if (visible)
+            humanoid.HiddenMarkings.Remove(markingId);
+        else
+            humanoid.HiddenMarkings.Add(markingId);
+
+        Dirty(uid, humanoid);
     }
 }
