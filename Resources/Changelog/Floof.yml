@@ -4257,3 +4257,12 @@ Entries:
   id: 461
   time: '2025-04-19T03:11:41.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/799
+- author: Eagle0600
+  changes:
+    - type: Fix
+      message: >-
+        Loadout equipment, such as trash bags and weapons, will no longer
+        replace items in slots they can fit in.
+  id: 462
+  time: '2025-04-19T03:13:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/795
