@@ -66,6 +66,31 @@
 
 - type: entity
   parent: BasePlushie
+  id: PlushieSalvager
+  name: salvager plushie
+  description: A cheeky kitsune battle-hardened from countless expeditions.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: salvager
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/gekker.ogg
+
+- type: entity
+  parent: BasePlushie
   id: PlushieFPraetorian
   name: blue Praetorian plush
   description: An adorable stuffed toy that resembles a Praetorian with blue stripes.

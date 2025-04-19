@@ -19,6 +19,7 @@
     TailBehind: MobHumanoidAnyMarking
     TailOversuit: MobHumanoidAnyMarking
     Head: MobVulpkaninHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -42,6 +43,9 @@
 - type: markingPoints
   id: MobVulpkaninMarkingLimits
   points:
+    Face:
+      points: 1
+      required: false
     Underwear:
       points: 1
       required: false # Floof, add underwear

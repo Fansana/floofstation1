@@ -21,6 +21,7 @@
     TailBehind: MobHumanoidAnyMarking
     TailOversuit: MobHumanoidAnyMarking
     Head: MobHumanHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -50,6 +51,9 @@
     Undershirt:
       points: 1
       required: false # Floof, add underwear
+    Face:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false

@@ -21,6 +21,7 @@
     TailBehind: MobHumanoidAnyMarking
     TailOversuit: MobHumanoidAnyMarking
     Head: MobHarpyHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -50,6 +51,9 @@
       required: false # Floof, add underwear
     Undershirt:
       points: 1 # Floof, add underwear
+      required: false
+    Face:
+      points: 1
       required: false
     Hair:
       points: 1
@@ -84,6 +88,10 @@
     LeftFoot:
       points: 2
       required: false
+    RightArm:
+      points: 1
+      required: false
+      defaultMarkings: [ HarpyWingDefaultHuescale ]
     RightHand:
       points: 2
       required: false

@@ -32,7 +32,7 @@
     - Trash
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: .6666
+    attackRate: 1.5 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 0
@@ -54,7 +54,7 @@
     - Fork
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: .6666
+    attackRate: 1.5 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Piercing: 5
@@ -103,7 +103,7 @@
     - Spoon
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: .6666
+    attackRate: 1.5 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 1
@@ -164,7 +164,7 @@
     - Spoon
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    attackRate: .5
+    attackRate: 2 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 2

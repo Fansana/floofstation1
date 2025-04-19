@@ -20,16 +20,34 @@
       id: LoadoutSalvageBeltSalvageWebbing
     - type: loadout
       id: LoadoutSalvageBeltMilitaryWebbing
+# Floof section - Add missing salvage loadouts
+    - type: loadout
+      id: LoadoutSalvageBeltUtility
+    - type: loadout
+      id: LoadoutSalvageBeltUtilityFilled
+# Floof section end
 
 #- type: characterItemGroup
 #  id: LoadoutSalvageSpecialistEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutSalvageSpecialistEquipment
-#  maxItems: 1
-#  items:
+
+- type: characterItemGroup
+  id: LoadoutSalvageSpecialistEquipment
+  maxItems: 3 # Floof - Add missing salvage loadouts - increased from 1
+  items:
+# Floof section - Add missing salvage loadouts
+    - type: loadout
+      id: LoadoutSalvageEquipmentHandheldGPSBasic
+    - type: loadout
+      id: LoadoutSalvageEquipmentRadioHandheld
+    - type: loadout
+      id: LoadoutSalvageEquipmentPickaxe
+    - type: loadout
+      id: LoadoutSalvageEquipmentOreBag
+    - type: loadout
+      id: LoadoutSalvageEquipmentFlare
+# Floof section end
 
 - type: characterItemGroup
   id: LoadoutSalvageSpecialistWeapons
@@ -86,12 +104,16 @@
       id: LoadoutCargoNeckGoliathCloak
     - type: loadout
       id: LoadoutSalvageNeckCloakMiner
+    - type: loadout # Floof - Add missing salvage loadouts
+      id: LoadoutSalvageNeckSalvager
 
-#- type: characterItemGroup
-#  id: LoadoutSalvageSpecialistMask
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutSalvageSpecialistMask
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add missing salvage loadouts
+      id: LoadoutSalvageMaskGas
+
 - type: characterItemGroup
   id: LoadoutSalvageSpecialistOuter
   maxItems: 1
@@ -99,11 +121,13 @@
     - type: loadout
       id: LoadoutCargoOuterWinterMiner
 
-#- type: characterItemGroup
-#  id: LoadoutSalvageSpecialistShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutSalvageSpecialistShoes
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add missing salvage loadouts
+      id: LoadoutSalvageShoesBoots
+
 - type: characterItemGroup
   id: LoadoutSalvageSpecialistUniforms
   maxItems: 1

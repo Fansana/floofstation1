@@ -90,8 +90,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
             new RemoveEmbeddedProjectileEvent(), eventTarget: uid, target: uid)
         {
             DistanceThreshold = SharedInteractionSystem.InteractionRange,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             NeedHand = true,
         });
     }
@@ -104,7 +103,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         RemoveEmbed(uid, component, args.User);
     }
 
-    private void RemoveEmbed(EntityUid uid, EmbeddableProjectileComponent component, EntityUid? remover = null)
+    public void RemoveEmbed(EntityUid uid, EmbeddableProjectileComponent component, EntityUid? remover = null)
     {
         component.AutoRemoveTime = null;
         component.Target = null;
@@ -270,3 +269,9 @@ public record struct ProjectileReflectAttemptEvent(EntityUid ProjUid, Projectile
 /// </summary>
 [ByRefEvent]
 public record struct ProjectileHitEvent(DamageSpecifier Damage, EntityUid Target, EntityUid? Shooter = null);
+
+/// <summary>
+/// Raised after a projectile has dealt it's damage.
+/// </summary>
+[ByRefEvent]
+public record struct AfterProjectileHitEvent(DamageSpecifier Damage, EntityUid Target);

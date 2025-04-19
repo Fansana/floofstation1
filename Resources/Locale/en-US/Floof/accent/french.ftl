@@ -77,7 +77,10 @@ accent-french-words-25 = ghost
 accent-french-words-replace-25 = fantôme
 
 accent-french-words-26 = weed
-accent-french-words-replace-27 = herbe
+accent-french-words-replace-26 = herbe
+
+accent-french-words-27 = hospital
+accent-french-words-replace-27 = hôpital
 
 accent-french-words-28 = accent
 accent-french-words-replace-28 = aczent
@@ -129,10 +132,10 @@ accent-french-words-44 = quick
 accent-french-words-44-2 = quickly
 accent-french-words-replace-44 = rapide
 
-accent-french-words-45 = hospital
-accent-french-words-replace-45 = hôpital
-
 #  The stuff above this is basically taken from the German accent. It's a pretty solid base, the stuff below will be specific to the French Accent.
+
+accent-french-words-45 = teddy bear
+accent-french-words-replace-45 = nounours
 
 accent-french-words-46 = my love
 accent-french-words-replace-46 = mon amour
@@ -197,10 +200,7 @@ accent-french-words-replace-63 = loup
 accent-french-words-64 = doe
 accent-french-words-replace-64 = biche
 
-accent-french-words-65 = teddy bear
-accent-french-words-replace-65 = nounours
-
-accent-french-words-66 = rabbit
-accent-french-words-66-2 = bunny
-accent-french-words-replace-66 = lapin
+accent-french-words-65 = rabbit
+accent-french-words-65-2 = bunny
+accent-french-words-replace-65 = lapin
 
