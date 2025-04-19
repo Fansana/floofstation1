@@ -41,8 +41,7 @@ trait-name-Muted = Muted
 trait-description-Muted =
     Either due to to an abnormality in your body development, or due to some body augmentation, you are unable to utilize spoken language.
     Consequently, you may encounter difficulties in communicating with others or using radio communication.
-    To compensate for this limitation, you have been taught the Galactic Sign Language.
-
+# Floof - M3739 - #701
 trait-name-BloodDeficiency = Blood Deficiency
 trait-description-BloodDeficiency =
     Your body loses more blood than it can replenish.

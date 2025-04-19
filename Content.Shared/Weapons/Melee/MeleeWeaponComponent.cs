@@ -68,7 +68,7 @@ public sealed partial class MeleeWeaponComponent : Component
      */
 
     /// <summary>
-    /// How many seconds between attacks must you wait in order to swing.
+    /// How many swings you can make per seconds. THIS IS EXPRESSED IN HERTZ, OR 1/SECOND!
     /// </summary>
     [DataField, AutoNetworkedField]
     public float AttackRate = 1f;

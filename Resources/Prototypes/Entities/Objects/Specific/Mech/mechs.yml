@@ -43,7 +43,7 @@
         type: MechBoundUserInterface
   - type: MeleeWeapon
     hidden: true
-    attackRate: 1.3333
+    attackRate: 0.75 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 25 #thwack

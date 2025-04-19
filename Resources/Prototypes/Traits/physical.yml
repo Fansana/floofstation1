@@ -14,8 +14,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToDie
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -38,8 +39,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToLive
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -62,8 +64,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - GlassJaw
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -86,8 +90,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - Tenacity
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -377,6 +383,7 @@
         - Human
         - Oni
         - SlimePerson
+        - IPC # Floof - M3739 - #690 - Ever seen Real Steel?
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -712,6 +719,15 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690 - As it stands, this trait COMPLETELY REMOVES the crit status altogether. Traits that alter crit thresholds will have no effect as a result.
+        - WillToLive
+        - WillToDie
+        - GlassJaw
+        - Tenacity
+        - BrittleBoneDisease
+        
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -732,6 +748,12 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690
+        - GlassJaw
+        - Tenacity
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:

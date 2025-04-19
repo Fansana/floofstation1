@@ -8,7 +8,7 @@
   - type: Execution
     doAfterDuration: 4.0
   - type: MeleeWeapon
-    attackRate: .71
+    attackRate: 1.4 # Floofstation - this is hertz, not seconds
     range: 1.4
     damage:
       types:

@@ -12,11 +12,17 @@
       id: LoadoutParamedicBagSatchel
 # Floof section end
 
-#- type: characterItemGroup
-#  id: LoadoutParamedicBelt
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutParamedicBelt
+  maxItems: 1
+  items:
+# Floof section - Add missing paramedic loadouts
+    - type: loadout
+      id: LoadoutParamedicBeltEMT
+    - type: loadout
+      id: LoadoutParamedicBeltEMTFilled
+# Floof section end
+
 #- type: characterItemGroup
 #  id: LoadoutParamedicEars
 #  maxItems: 1
@@ -31,17 +37,19 @@
 #  id: LoadoutParamedicEyes
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutParamedicGloves
-#  maxItems: 1
-#  items:
+
+- type: characterItemGroup
+  id: LoadoutParamedicGloves
+  maxItems: 1
+  items:
+    - type: loadout # Floof - Add loadout groups to paramedic lingerie
+      id: LoadoutClothingHandsParaMedicWarmers
 
 - type: characterItemGroup
   id: LoadoutParamedicHead
   maxItems: 1
   items:
-    - type: loadout
+    - type: loadout # Floof - Add missing paramedic loadouts
       id: LoadoutMedicalHeadParamedicSoft
 
 #- type: characterItemGroup
@@ -63,15 +71,25 @@
   id: LoadoutParamedicOuter
   maxItems: 1
   items:
+# Floof section - Add missing paramedic loadouts
     - type: loadout
       id: LoadoutMedicalOuterParamedicWB
+    - type: loadout
+      id: LoadoutMedicalOuterParamedicWinter
+# Floof section end
 
 - type: characterItemGroup
   id: LoadoutParamedicShoes
   maxItems: 1
   items:
+# Floof section - Add missing paramedic loadouts
+    - type: loadout
+      id: LoadoutMedicalShoesParamedicBlue
     - type: loadout
       id: LoadoutMedicalShoesParamedicWinter
+# Floof section end
+    - type: loadout # Floof - Add loadout groups to paramedic lingerie
+      id: LoadoutClothingUnderSocksParaMedic
 
 - type: characterItemGroup
   id: LoadoutParamedicUniforms
@@ -81,3 +99,5 @@
       id: LoadoutMedicalUniformParamedicJumpsuit
     - type: loadout
       id: LoadoutMedicalUniformParamedicJumpskirt
+    - type: loadout # Floof - Add loadout groups to paramedic lingerie
+      id: LoadoutClothingUniformParaMedicThong

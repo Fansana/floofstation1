@@ -21,7 +21,6 @@
   id: LoadoutJanitorEquipmentMopItem
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - MopItem
   requirements:
@@ -35,7 +34,6 @@
   id: LoadoutJanitorEquipmentBoxMousetrap
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - BoxMousetrap
   requirements:
@@ -49,7 +47,6 @@
   id: LoadoutJanitorEquipmentWetFloorSign
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - WetFloorSign
   requirements:
@@ -63,7 +60,6 @@
   id: LoadoutJanitorEquipmentTrashBag
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - TrashBag
   requirements:
@@ -77,7 +73,6 @@
   id: LoadoutJanitorEquipmentLightReplacer
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - LightReplacer
   requirements:
@@ -91,7 +86,6 @@
   id: LoadoutJanitorEquipmentBoxLightMixed
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - BoxLightMixed
   requirements:
@@ -105,7 +99,6 @@
   id: LoadoutJanitorEquipmentHoloprojector
   category: JobsServiceJanitor
   cost: 1
-  exclusive: true
   items:
     - Holoprojector
   requirements:
@@ -119,7 +112,6 @@
   id: LoadoutJanitorEquipmentPlunger
   category: JobsServiceJanitor
   cost: 0
-  exclusive: true
   items:
     - Plunger
   requirements:

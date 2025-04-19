@@ -222,8 +222,9 @@
   id: AirlockParamedicLocked
   suffix: Paramedic, Locked
   components:
-  - type: AccessReader
-    access: [["Paramedic"]]
+  - type: ContainerFill # Floofstation - hopefully this fix makes it upstream eventually
+    containers:
+      board: [ DoorElectronicsParamedic ]
 
 - type: entity
   parent: AirlockVirology
@@ -615,8 +616,9 @@
   id: AirlockParamedicGlassLocked
   suffix: Paramedic, Locked
   components:
-  - type: AccessReader
-    access: [["Paramedic"]]
+  - type: ContainerFill # Floofstation - hopefully this fix makes it upstream eventually
+    containers:
+      board: [ DoorElectronicsParamedic ]
 
 - type: entity
   parent: AirlockVirologyGlass

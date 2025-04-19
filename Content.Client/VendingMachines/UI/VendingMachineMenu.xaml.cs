@@ -8,6 +8,7 @@ using Content.Client.Stylesheets;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using FancyWindow = Content.Client.UserInterface.Controls.FancyWindow;
+using Content.Shared.Labels.Components;
 
 namespace Content.Client.VendingMachines.UI
 {
@@ -15,6 +16,7 @@ namespace Content.Client.VendingMachines.UI
     public sealed partial class VendingMachineMenu : FancyWindow
     {
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        [Dependency] private readonly IComponentFactory _factory = default!;
 
         public event Action<ItemList.ItemListSelectedEventArgs>? OnItemSelected;
         public event Action<string>? OnSearchChanged;
@@ -77,6 +79,9 @@ namespace Content.Client.VendingMachines.UI
                 if (_prototypeManager.TryIndex<EntityPrototype>(entry.ID, out var prototype))
                 {
                     itemName = prototype.Name;
+                    // Floof - Show labels on items in vending machines.
+                    if (prototype.TryGetComponent<LabelComponent>(out var label, _factory) && !String.IsNullOrEmpty(label.CurrentLabel))
+                        itemName = $"{itemName} ({Loc.GetString(label.CurrentLabel)})";
                     icon = spriteSystem.GetPrototypeIcon(prototype).Default;
                 }
 

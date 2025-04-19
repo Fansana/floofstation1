@@ -111,7 +111,6 @@
   id: LoadoutServiceBartenderArgentiNonlethal
   category: JobsServiceBartender
   cost: 0
-  exclusive: true
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutBartenderWeapon
@@ -125,7 +124,6 @@
   id: LoadoutServiceBartenderRepeaterNonlethal
   category: JobsServiceBartender
   cost: 0
-  exclusive: true
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutBartenderWeapon
@@ -141,7 +139,6 @@
   id: LoadoutServiceBartenderBrassKnuckles
   category: JobsServiceBartender
   cost: 0
-  exclusive: true
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutBartenderWeapon
