@@ -93,7 +93,7 @@ language-Xeno-name = Xeno
 language-Xeno-description = Sssss!
 
 language-Monkey-name = Monkey
-language-Monkey-description = oooook!
+language-Monkey-description = Oooook!
 
 language-Mouse-name = Mouse
 language-Mouse-description = Squeeek!
@@ -137,3 +137,6 @@ language-Eldritch-name = Eldritch
 language-Eldritch-description =
     A language that is considered to be long forgotten - now the only speakers of this profaned tongue of screeches and
     mumbles are the followers of an ancient God of Blood.
+
+language-Penguin-name = Penguin
+language-Penguin-description = Bwaap!
