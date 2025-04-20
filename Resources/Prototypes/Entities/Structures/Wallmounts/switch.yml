@@ -552,3 +552,13 @@
     drawdepth: SmallObjects
     sprite: Structures/Wallmounts/switch_frame.rsi
     state: janitor
+
+#Freelancer
+
+- type: entity
+  id: LockableButtonFreelancer
+  suffix: Freelancer
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["Freelancer"]]    

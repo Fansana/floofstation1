@@ -431,3 +431,59 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHeadOfPersonnel ]
+
+#Freelancer
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureFreelancerLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+
+- type: entity
+  parent: Windoor
+  id: WindoorFreelancerLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureFreelancerLocked
+  suffix: Freelancer, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+      
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorFreelancerLocked
+  suffix: Freelancer, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+      
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureFreelancerLocked
+  suffix: Freelancer, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+      
+- type: entity
+  parent: WindoorUranium
+  id: UraniumWindoorFreelancerLocked
+  suffix: Freelancer, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]

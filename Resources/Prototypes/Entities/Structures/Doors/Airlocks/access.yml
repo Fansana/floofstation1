@@ -1259,6 +1259,16 @@
   - type: Wires
     layoutId: AirlockFreelancer
     
+- type: entity
+  parent: HighSecDoor
+  id: HighSecFreelancerLocked
+  suffix: Freelancer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFreelancer ]
+
+    
    #Freelancer Glass
     
 - type: entity
