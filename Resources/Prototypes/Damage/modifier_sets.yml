@@ -379,7 +379,8 @@
     Slash: 0.9
     Piercing: 0.9
 
+# protects against radiation
 - type: damageModifierSet
   id: PotassiumIodide
   coefficients:
-    Radiation: 1.95
+    Radiation: 0.1

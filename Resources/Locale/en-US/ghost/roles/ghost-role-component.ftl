@@ -39,9 +39,9 @@ ghost-role-information-angry-slimes-description = Everyone around you irritates 
 ghost-role-information-smile-name = Smile the Slime
 ghost-role-information-smile-description = The sweetest creature in the world. Smile Slime!
 
-ghost-role-information-Shiva-name = Shiva
-ghost-role-information-Shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
-ghost-role-information-Shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
+ghost-role-information-shiva-name = Shiva
+ghost-role-information-shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
+ghost-role-information-shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
 
 ghost-role-information-punpun-name = Pun Pun
 ghost-role-information-punpun-description = An honorable member of the monkey society in charge of the bar and helping the bartenders in any way he can.
@@ -53,7 +53,7 @@ ghost-role-information-xeno-rules = You are an antagonist, smack, slash, and wac
 ghost-role-information-friendlyxeno-name = Xeno Subject
 ghost-role-information-friendlyxeno-description = You are a friendly xeno, co-operate with the crew and protect the station!
 ghost-role-information-friendlyxeno-rules = You are a friendly xeno.
-                                    Your objective is to cooperate with any sophonts and not bring harm to the crew. 
+                                    Your objective is to cooperate with any sophonts and not bring harm to the crew.
                                     Do your best to be helpful and don't give anyone a reason to fear you.
 
 ghost-role-information-revenant-name = Revenant
