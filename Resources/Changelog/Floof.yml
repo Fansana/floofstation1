@@ -4502,3 +4502,10 @@ Entries:
   id: 485
   time: '2025-04-20T18:55:42.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/747
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: Autodoc can now be upgraded
+  id: 486
+  time: '2025-04-20T19:08:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/776
