@@ -16,7 +16,7 @@
   id: MakeupBlush
   bodyPart: Face
   markingCategory: Face
-  speciesRestriction: [Dwarf, Human, Reptilian, SlimePerson, Felinid, Oni, Vulpkanin, Harpy, Arachne, Feroxi, Lamia] # Delta V - Felinid, Oni, Vulpkanin, Harpy
+  speciesRestriction: [Dwarf, Human, Reptilian, SlimePerson, Felinid, Oni, Vulpkanin, Harpy, Arachne, Lamia] # Delta V - Felinid, Oni, Vulpkanin, Harpy
   coloring:
     default:
       type:
