@@ -4434,3 +4434,10 @@ Entries:
   id: 479
   time: '2025-04-20T18:15:43.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/831
+- author: Eagle0600
+  changes:
+    - type: Fix
+      message: Senior physician loadouts moved to the senior physician loadout tab.
+  id: 480
+  time: '2025-04-20T18:16:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/830
