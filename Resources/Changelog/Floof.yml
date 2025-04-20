@@ -4423,3 +4423,14 @@ Entries:
   id: 478
   time: '2025-04-20T18:01:29.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/788
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Mailing Unit UI is now fixed
+    - type: Fix
+      message: Mailing Units' no longer use the wrong sprite when charging
+    - type: Tweak
+      message: Mailing Units clear target on send or selecting the same target
+  id: 479
+  time: '2025-04-20T18:15:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/831
