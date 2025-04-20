@@ -4464,3 +4464,28 @@ Entries:
   id: 483
   time: '2025-04-20T18:51:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/769
+- author: WhiteLightningTwister
+  changes:
+    - type: Tweak
+      message: shifts the salvage docking area to the side.
+    - type: Tweak
+      message: altered the maints area behind the HOP's office.
+    - type: Tweak
+      message: cyro is improved.
+    - type: Tweak
+      message: old dorms is now part of hydro.
+    - type: Tweak
+      message: moved the spare captain id to the bridge.
+    - type: Tweak
+      message: >-
+        did alot of decal work on the station to improve the visuals of the
+        station.
+    - type: Add
+      message: station is dirtier.
+    - type: Add
+      message: reworked EVAC area entirely. It also includes some of the court area.
+    - type: Add
+      message: new dorms.
+  id: 484
+  time: '2025-04-20T18:53:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/743
