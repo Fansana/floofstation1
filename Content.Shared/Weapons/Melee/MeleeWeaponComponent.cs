@@ -11,7 +11,7 @@ namespace Content.Shared.Weapons.Melee;
 /// <summary>
 /// When given to a mob lets them do unarmed attacks, or when given to an item lets someone wield it to do attacks.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true), AutoGenerateComponentPause]
 public sealed partial class MeleeWeaponComponent : Component
 {
     // TODO: This is becoming bloated as shit.
@@ -68,7 +68,7 @@ public sealed partial class MeleeWeaponComponent : Component
      */
 
     /// <summary>
-    /// How many seconds between attacks must you wait in order to swing.
+    /// How many swings you can make per seconds. THIS IS EXPRESSED IN HERTZ, OR 1/SECOND!
     /// </summary>
     [DataField, AutoNetworkedField]
     public float AttackRate = 1f;
@@ -90,6 +90,12 @@ public sealed partial class MeleeWeaponComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool AutoAttack;
+
+    /// <summary>
+    /// If true, attacks will bypass armor resistances.
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public bool ResistanceBypass = false;
 
     /// <summary>
     /// Base damage for this weapon. Can be modified via heavy damage or other means.

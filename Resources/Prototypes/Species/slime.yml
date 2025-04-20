@@ -13,6 +13,7 @@
 - type: speciesBaseSprites
   id: MobSlimeSprites
   sprites:
+    Face: MobHumanoidAnyMarking
     Head: MobSlimeHead
     HeadSide: MobHumanoidAnyMarking
     Hair: MobSlimeMarkingFollowSkin
@@ -37,6 +38,9 @@
 - type: markingPoints
   id: MobSlimeMarkingLimits
   points:
+    Face:
+      points: 1
+      required: false
     Underwear:
       points: 1
       required: false # Floof, add underwear

@@ -28,6 +28,7 @@
       - id: BoxEncryptionKeyPrisoner #Delta-V
       - id: LunchboxSecurityFilledRandom # Delta-v Lunchboxes!
         prob: 0.3
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerWardenFilled
@@ -57,6 +58,7 @@
       - id: BoxEncryptionKeyPrisoner #Delta-V
       - id: LunchboxSecurityFilledRandom # Delta-v Lunchboxes!
         prob: 0.3
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerSecurityFilled

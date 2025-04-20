@@ -24,7 +24,7 @@
       NavSmash: !type:Bool
         true
   - type: Tool
-    speed: 1.5
+    speedModifier: 1.5
     qualities:
       - Prying
   - type: Prying
@@ -113,7 +113,7 @@
     makeSentient: true
     name: ghost-role-information-xeno-name
     description: ghost-role-information-xeno-description
-    rules: ghost-role-information-xeno-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station, setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

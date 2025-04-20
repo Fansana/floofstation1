@@ -23,6 +23,9 @@
   id: MobReptilianSprites
   sprites:
     Head: MobReptilianHead
+    Face: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobReptilianTorso
     Underwear: MobHumanoidAnyMarking # Floof, add underwear
@@ -45,6 +48,9 @@
   id: MobReptilianMarkingLimits
   onlyWhitelisted: true
   points:
+    Face:
+      points: 1
+      required: false
     Underwear:
       points: 1
       required: false # Floof, add underwear

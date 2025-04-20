@@ -25,6 +25,20 @@
         - ChiefJustice
   items:
     - ClothingHeadHatCJToque
+    
+- type: loadout
+  id: LoadoutJusticeChiefJusticePwig
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingHeadHatPwig
 
 # Id
 
@@ -59,6 +73,20 @@
         - ChiefJustice
   items:
     - ClothingOuterChiefJustice
+    
+- type: loadout
+  id: LoadoutJusticeChiefJusticeJudge
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingOuterRobesJudge
 
 # Shoes
 

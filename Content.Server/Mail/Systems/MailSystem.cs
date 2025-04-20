@@ -194,7 +194,7 @@ public sealed class MailSystem : EntitySystem
 
         if (!HasComp<EmaggedComponent>(uid))
         {
-            if (idCard.FullName != component.Recipient || idCard.JobTitle != component.RecipientJob)
+            if (idCard.FullName != component.Recipient || idCard.LocalizedJobTitle != component.RecipientJob)
             {
                 _popupSystem.PopupEntity(Loc.GetString("mail-recipient-mismatch"), uid, args.User);
                 return;
@@ -567,14 +567,14 @@ public sealed class MailSystem : EntitySystem
         if (_idCardSystem.TryFindIdCard(receiver.Owner, out var idCard)
             && TryComp<AccessComponent>(idCard.Owner, out var access)
             && idCard.Comp.FullName != null
-            && idCard.Comp.JobTitle != null)
+            && idCard.Comp.LocalizedJobTitle != null)
         {
             var accessTags = access.Tags;
 
             var mayReceivePriorityMail = !(_mindSystem.GetMind(receiver.Owner) == null);
 
             recipient = new MailRecipient(idCard.Comp.FullName,
-                idCard.Comp.JobTitle,
+                idCard.Comp.LocalizedJobTitle,
                 idCard.Comp.JobIcon,
                 accessTags,
                 mayReceivePriorityMail);
@@ -623,7 +623,7 @@ public sealed class MailSystem : EntitySystem
 
         if (candidateList.Count <= 0)
         {
-            _sawmill.Error("List of mail candidates was empty!");
+            _sawmill.Warning("List of mail candidates was empty!"); // Floofstation - this should warn, not error out.
             return;
         }
 
