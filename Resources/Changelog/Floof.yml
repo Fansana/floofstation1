@@ -4382,3 +4382,14 @@ Entries:
   id: 474
   time: '2025-04-20T06:43:50.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/815
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Lamia have been added to the game as a new playable species! They are
+        currently extremely buggy, and so are by default disabled as a
+        roundstart species. To enable them for (Buggy) playtesting, go to
+        /Species/lamia.yml, and set roundstart to true.
+  id: 475
+  time: '2025-04-20T06:49:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/817
