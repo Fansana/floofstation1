@@ -4364,3 +4364,12 @@ Entries:
   id: 472
   time: '2025-04-19T16:31:21.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/818
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Check-out interaction should no longer alert everyone nearby that some
+        ogling is going on.
+  id: 473
+  time: '2025-04-20T06:23:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/832
