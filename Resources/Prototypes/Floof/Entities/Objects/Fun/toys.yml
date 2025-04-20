@@ -427,7 +427,7 @@
   - type: Crayon
     color: white
     selectableColor: true
-    capacity: 1000
+    capacity: 500
   - type: SolutionContainerManager
     solutions:
       food:
