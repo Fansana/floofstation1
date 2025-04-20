@@ -4400,3 +4400,17 @@ Entries:
   id: 476
   time: '2025-04-20T14:39:26.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/821
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: >-
+        Vacsuits now weigh 68kg instead of 5kg. This matters for Space Wind
+        being a lot less likely to throw them at people.
+    - type: Tweak
+      message: >-
+        Hardsuits and Tacsuits now weigh 100kg instead of 5kg. Also for space
+        wind. They deal 30 damage on throw collision, so it's pretty important
+        that space wind needs a lot of oomph to throw them across the room.
+  id: 477
+  time: '2025-04-20T14:43:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/822
