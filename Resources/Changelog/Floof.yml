@@ -4441,3 +4441,12 @@ Entries:
   id: 480
   time: '2025-04-20T18:16:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/830
+- author: EinsteinEngines Mike32oz
+  changes:
+    - type: Fix
+      message: Warden has a shotgun in the locker.
+    - type: Remove
+      message: AI, AI/cyborgs upload, and laws cards.
+  id: 481
+  time: '2025-04-20T18:18:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/823
