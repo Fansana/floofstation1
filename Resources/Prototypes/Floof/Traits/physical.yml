@@ -96,6 +96,10 @@
     - Felinid # They don't need to be lighter
     - IPC
     - Rodentia
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Heavyweight
   functions:
   - !type:TraitAddComponent
     components:
@@ -113,6 +117,15 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement # M3739 - #690 - Did I miss any? Let me know.
+      species:
+        - Felinid
+        - Feroxi
+        - Rodentia
+        - Moth
+        - Vulpkanin
+        - Reptilian
+        - Chitinid
   functions:
     - !type:TraitModifyMetabolism
       types: [ TheobromineIntolerant ]
@@ -132,6 +145,15 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement # M3739 - #690 - Did I miss any? Let me know.
+      species:
+        - Felinid
+        - Feroxi
+        - Rodentia
+        - Moth
+        - Vulpkanin
+        - Reptilian
+        - Chitinid
   functions:
     - !type:TraitModifyMetabolism
       types: [ AllicinIntolerant ]
@@ -204,3 +226,29 @@
   - !type:TraitPushDescription
     descriptionExtensions:
       - description: examine-tiny-trait-message
+
+- type: trait
+  id: Heavyweight
+  category: Physical
+  points: -2 # Has pros and cons, not sure
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement 
+    inverted: true
+    species:
+    - Harpy # Doesn't really make sense with their wings and flight ability
+    - Diona # Trees are heavy as it is.
+    - Chitinid # Ants got weight.
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - Lightweight
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: FixtureDensityModifier
+      factor: 1.4 # Lets try the opposite of lightweight, yeah?

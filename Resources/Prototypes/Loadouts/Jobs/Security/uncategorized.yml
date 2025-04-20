@@ -179,7 +179,7 @@
   id: LoadoutSpeedLoaderMagnum
   category: JobsSecurityAUncategorized
   cost: 2
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -196,7 +196,7 @@
   id: LoadoutSpeedLoaderMagnumSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -213,7 +213,7 @@
   id: LoadoutSpeedLoaderMagnumRubber
   category: JobsSecurityAUncategorized
   cost: 2
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityEquipment
@@ -227,7 +227,7 @@
   id: LoadoutSpeedLoaderMagnumRubberSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityEquipment
@@ -241,7 +241,7 @@
   id: LoadoutMagazineMagnum
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -258,7 +258,7 @@
   id: LoadoutMagazineMagnumRubber
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -275,7 +275,7 @@
   id: LoadoutMagazineMagnumSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -292,7 +292,7 @@
   id: LoadoutMagazineMagnumRubberSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -941,6 +941,20 @@
         - Security
   items:
     - ClothingOuterArmorBasicSlim
+    
+- type: loadout
+  id: LoadoutClothingOuterCoatGreatcoat # Floof - M3739 - #690
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - ClothingOuterCoatGreatcoat
 
 # Shoes
 - type: loadout

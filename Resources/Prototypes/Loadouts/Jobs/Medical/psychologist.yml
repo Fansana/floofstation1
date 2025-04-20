@@ -1,47 +1,47 @@
 # Psychologist
-# Backpacks
-- type: loadout
-  id: LoadoutPsychologistBackpackBackpack
-  category: JobsMedicalPsychologist
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingBackpackPsychologistFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutPsychologistBackpacks
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-
-- type: loadout
-  id: LoadoutPsychologistBackpackSatchel
-  category: JobsMedicalPsychologist
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingBackpackSatchelPsychologistFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutPsychologistBackpacks
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-
-- type: loadout
-  id: LoadoutPsychologistBackpackDuffel
-  category: JobsMedicalPsychologist
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingBackpackDuffelPsychologistFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutPsychologistBackpacks
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-
+# Backpacks | Floof - M3739 - #690 - Literally, all this does is give a stamp that is better off as a pocket2. Commented out for posterity.
+#- type: loadout
+#  id: LoadoutPsychologistBackpackBackpack
+#  category: JobsMedicalPsychologist
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackPsychologistFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutPsychologistBackpacks
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#        - Medical
+#
+#- type: loadout
+#  id: LoadoutPsychologistBackpackSatchel
+#  category: JobsMedicalPsychologist
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackSatchelPsychologistFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutPsychologistBackpacks
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#        - Medical
+#
+#- type: loadout
+#  id: LoadoutPsychologistBackpackDuffel
+#  category: JobsMedicalPsychologist
+#  cost: 0
+#  exclusive: true
+#  items:
+#    - ClothingBackpackDuffelPsychologistFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutPsychologistBackpacks
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#        - Medical
+# Floof - M3739 - #690 - End changes
 # Belt
 
 # Ears

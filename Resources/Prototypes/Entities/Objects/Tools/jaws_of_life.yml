@@ -21,7 +21,7 @@
   - type: Tool
     qualities:
       - Prying
-    speed: 1.5
+    speedModifier: 1.5
     useSound: /Audio/Items/jaws_pry.ogg
   - type: Prying
     pryPowered: true
@@ -44,7 +44,7 @@
         changeSound: /Audio/Items/change_jaws.ogg
   - type: MeleeWeapon
     wideAnimationRotation: 90
-    attackRate: 1.17
+    attackRate: 0.85 # Floofstation - this is hertz, not seconds
     range: 1.65
     damage:
       types:
@@ -86,7 +86,7 @@
   - type: Tool
     qualities:
       - Prying
-    speed: 3.0
+    speedModifier: 3.0
   - type: MultipleTool
     entries:
       - behavior: Prying
