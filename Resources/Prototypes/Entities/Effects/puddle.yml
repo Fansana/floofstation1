@@ -169,7 +169,7 @@
   - type: PuddleFootPrints
 
 - type: entity
-  name: Footstep
+  name: footstep
   id: Footstep
   save: false
   description: Trace of liquid
