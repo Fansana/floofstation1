@@ -4450,3 +4450,10 @@ Entries:
   id: 481
   time: '2025-04-20T18:18:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/823
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: Senior roles can be selected with ID computers and agent IDs.
+  id: 482
+  time: '2025-04-20T18:29:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/828
