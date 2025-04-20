@@ -93,7 +93,7 @@ language-Xeno-name = Xeno
 language-Xeno-description = Sssss!
 
 language-Monkey-name = Monkey
-language-Monkey-description = oooook!
+language-Monkey-description = Oooook!
 
 language-Mouse-name = Mouse
 language-Mouse-description = Squeeek!
@@ -131,6 +131,9 @@ language-ScugSign-description = Wawa! The secret ScugSign making you able to und
 
 language-Arachnic-name = Arachnic
 language-Arachnic-description = The language of arachnids is composed of mostly clicks and hisses, it almost has a rhythmic character to it at times.
+
+language-Penguin-name = Penguin
+language-Penguin-description = Wank!
 # Floof section end
 
 language-Eldritch-name = Eldritch

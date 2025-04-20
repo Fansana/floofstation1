@@ -109,6 +109,8 @@
       - map: [ "enum.HumanoidVisualLayers.Face" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]
+        state: bald
+        sprite: Mobs/Customization/human_hair.rsi
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
       - map: [ "mask" ]
@@ -283,6 +285,8 @@
       - map: [ "enum.HumanoidVisualLayers.Hair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+        state: bald
+        sprite: Mobs/Customization/human_hair.rsi
       - map: [ "mask" ]
       - map: [ "head" ]
       - map: [ "pocket1" ]

@@ -4298,3 +4298,119 @@ Entries:
   id: 466
   time: '2025-04-19T05:48:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/804
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: 'Added the GR4YT1D3 Virus event. '
+  id: 467
+  time: '2025-04-19T13:29:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/807
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fix Shiva's name and description displaying improperly in ghost roles
+  id: 468
+  time: '2025-04-19T14:03:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/812
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Face markings are now in their own category
+    - type: Fix
+      message: IPC screens no longer show up above hair
+  id: 469
+  time: '2025-04-19T16:27:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/806
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Lots of refactoring of the Mob State Systerm in preparation for
+        implementing a much more detailed Soft Critical state.
+  id: 470
+  time: '2025-04-19T16:29:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/814
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added religious neckwear to loadouts, such as Crucifix (with a colorable
+        option), Scapular and Tallit.
+    - type: Tweak
+      message: Added the gay male pride pin to loadouts and the Pride-O-Mat.
+  id: 471
+  time: '2025-04-19T16:30:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/816
+- author: EinsteinEngines Spatison
+  changes:
+    - type: Add
+      message: Constructs now turn into the ectoplasm on their death.
+    - type: Tweak
+      message: >-
+        Blood cult stun and shadow shackles are now auras similar to blood
+        rites.
+    - type: Fix
+      message: Cult constructs now understand eldritch language and can speak it.
+    - type: Fix
+      message: Cult constructs are now healed by pylon.
+    - type: Fix
+      message: Cult constructs now has cult cult icon.
+    - type: Fix
+      message: 'All cult auras can no longer be stored, transferred or dropped. '
+    - type: Fix
+      message: Blood spear now detaches itself on recall action.
+    - type: Fix
+      message: Shadow shackles should now properly work.
+  id: 472
+  time: '2025-04-19T16:31:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/818
+- author: Forzii
+  changes:
+    - type: Tweak
+      message: >-
+        Check-out interaction should no longer alert everyone nearby that some
+        ogling is going on.
+  id: 473
+  time: '2025-04-20T06:23:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/832
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed a ton of languages missing chat names.
+    - type: Fix
+      message: Fixed a ton of markings missing names.
+  id: 474
+  time: '2025-04-20T06:43:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/815
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Lamia have been added to the game as a new playable species! They are
+        currently extremely buggy, and so are by default disabled as a
+        roundstart species. To enable them for (Buggy) playtesting, go to
+        /Species/lamia.yml, and set roundstart to true.
+  id: 475
+  time: '2025-04-20T06:49:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/817
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Ifrit name and description now show up properly in ghost roles
+  id: 476
+  time: '2025-04-20T14:39:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/821
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: >-
+        Vacsuits now weigh 68kg instead of 5kg. This matters for Space Wind
+        being a lot less likely to throw them at people.
+    - type: Tweak
+      message: >-
+        Hardsuits and Tacsuits now weigh 100kg instead of 5kg. Also for space
+        wind. They deal 30 damage on throw collision, so it's pretty important
+        that space wind needs a lot of oomph to throw them across the room.
+  id: 477
+  time: '2025-04-20T14:43:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/822

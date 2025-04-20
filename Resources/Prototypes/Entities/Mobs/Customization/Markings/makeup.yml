@@ -59,7 +59,7 @@
 - type: marking
   id: MakeupMothLips
   bodyPart: Face
-  markingCategory: Overlay   # The marking category is in Overlay instead of Head
+  markingCategory: Face   # The marking category is in Overlay instead of Head
                              # because the Head category for moths only allows 1
                              # marking and lips should be usable alongside blush
   speciesRestriction: [Moth]
@@ -74,7 +74,7 @@
 
 - type: marking
   id: MakeupMothBlush
-  bodyPart: Face
+  bodyPart: Head
   markingCategory: Overlay
   speciesRestriction: [Moth]
   coloring:

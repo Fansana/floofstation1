@@ -10,6 +10,8 @@
   maleFirstNames: names_cyno_male
   femaleFirstNames: names_cyno_female
   lastNames: names_cyno_last
+  sexes:
+  - Female
 
 - type: markingPoints
   id: MobLamiaMarkingLimits

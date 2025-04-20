@@ -649,8 +649,8 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: ghost-role-information-Shiva-name
-    description: ghost-role-information-Shiva-description
+    name: ghost-role-information-shiva-name
+    description: ghost-role-information-shiva-description
     rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable # DeltaV
   - type: InteractionPopup
