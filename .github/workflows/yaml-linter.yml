@@ -29,6 +29,8 @@ jobs:
           dotnet-version: 8.0.100
       - name: Install dependencies
         run: dotnet restore
+      - name: The fuck is wrong with the pipeline
+        run:  grep -r language-Penguin-name .
       - name: Build
         run: dotnet build --configuration Release --no-restore /p:WarningsAsErrors= /m
       - name: Run Linter
