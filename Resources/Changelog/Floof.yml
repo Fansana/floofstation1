@@ -4509,3 +4509,19 @@ Entries:
   id: 486
   time: '2025-04-20T19:08:51.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/776
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Add
+      message: >-
+        Lamiae can now be male, no longer being a female-only species. They can
+        now wear facial hair as well.
+    - type: Add
+      message: >-
+        The Lamia species can now select markings above the leg, including
+        cybernetics, makeup, tattoos, noses, earrings, heterochromia, bracelets,
+        reptilian horns and frills, pointy ears, and more!
+    - type: Fix
+      message: Added text for the Lamia tail marking.
+  id: 487
+  time: '2025-04-20T19:33:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/826
