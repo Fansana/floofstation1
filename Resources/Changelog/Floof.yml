@@ -4393,3 +4393,10 @@ Entries:
   id: 475
   time: '2025-04-20T06:49:45.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/817
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Ifrit name and description now show up properly in ghost roles
+  id: 476
+  time: '2025-04-20T14:39:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/821
