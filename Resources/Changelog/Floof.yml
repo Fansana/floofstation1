@@ -4373,3 +4373,12 @@ Entries:
   id: 473
   time: '2025-04-20T06:23:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/832
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed a ton of languages missing chat names.
+    - type: Fix
+      message: Fixed a ton of markings missing names.
+  id: 474
+  time: '2025-04-20T06:43:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/815
