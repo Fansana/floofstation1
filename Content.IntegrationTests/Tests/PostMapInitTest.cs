@@ -65,6 +65,7 @@ namespace Content.IntegrationTests.Tests
             "Submarine", //DeltaV
             "Gax",
             "Rad",
+            "Meta",
             "Kettle", // Floof
             "Train", // Floof
             "Fland", // Floof,
