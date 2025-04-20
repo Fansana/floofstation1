@@ -4414,3 +4414,12 @@ Entries:
   id: 477
   time: '2025-04-20T14:43:09.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/822
+- author: Wizden
+  changes:
+    - type: Fix
+      message: >-
+        Your suit sensors and tracking implant no longer result in you being
+        duplicated on the crew monitors.
+  id: 478
+  time: '2025-04-20T18:01:29.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/788
