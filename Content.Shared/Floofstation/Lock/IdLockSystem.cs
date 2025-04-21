@@ -42,7 +42,7 @@ public sealed class IdLockSystem : EntitySystem
     {
         // Sanity check: as of now, ID locks require a normal lock underneath to work
         if (!HasComp<LockComponent>(ent) || !HasComp<AccessReaderComponent>(ent))
-            Log.Warning($"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported."););
+            Log.Warning($"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported.");
     }
 
     private void OnExamined(Entity<IdLockComponent> ent, ref ExaminedEvent args)
