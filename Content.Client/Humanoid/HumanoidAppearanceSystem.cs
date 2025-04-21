@@ -325,9 +325,6 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         // lets just kinda sorta do that ourselves
         var layerDict = new Dictionary<string, int>();
 
-        visible &= !IsHidden(humanoid, markingPrototype.BodyPart);
-        visible &= humanoid.BaseLayers.TryGetValue(markingPrototype.BodyPart, out var setting)
-           && setting.AllowsMarkings;
         visible &= !humanoid.HiddenMarkings.Contains(markingPrototype.ID); // FLOOF ADD
         // FLOOF ADD END
 
