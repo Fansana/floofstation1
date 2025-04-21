@@ -4552,3 +4552,28 @@ Entries:
   id: 489
   time: '2025-04-21T13:39:45.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/742
+- author: Outlier
+  changes:
+    - type: Add
+      message: >-
+        Holy Shells and Holy shell box available at the security techfab
+        following exotic ammunition research
+    - type: Tweak
+      message: >-
+        .38 holy now does 20 Holy, 10 Pierce, effectively a ranged bible-boop
+        with a little extra sting
+    - type: Tweak
+      message: >-
+        Removed Ammo whitelist from the Excommunicant, no other weapons have
+        this and other guns can chamber their rounds it doesn't seem fair.
+    - type: Tweak
+      message: >-
+        Made Soulbreaker shell box printable at the security techfab after
+        exotic ammuniton research so you don't have to make them individually
+    - type: Fix
+      message: Soulbreaker shells work now. They priorly didn't inject anything
+    - type: Fix
+      message: Soulbreaker Shell Box can now load from the box, no more floor bullets.
+  id: 490
+  time: '2025-04-21T13:41:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/675
