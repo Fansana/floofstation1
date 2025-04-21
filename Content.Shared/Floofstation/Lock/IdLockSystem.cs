@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -10,6 +9,7 @@ using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Utility;
+using static Content.Shared.FloofStation.Lock.IdLockComponent.LockState;
 
 
 namespace Content.Shared.FloofStation.Lock;
@@ -53,7 +53,7 @@ public sealed class IdLockSystem : EntitySystem
         using (args.PushGroup(nameof(IdLockComponent)))
         {
             var loc =
-                !ent.Comp.Active ? "id-lock-examined-unlocked" :
+                ent.Comp.State == Disengaged ? "id-lock-examined-unlocked" :
                 ent.Comp.RevealInfo ? "id-lock-examined-locked-revealing" :
                 "id-lock-examined-locked";
 
@@ -69,7 +69,11 @@ public sealed class IdLockSystem : EntitySystem
     {
         // We allow to toggle the normal lock on even if the ID lock is enabled, as a failsafe.
         // Ideally, if an ID lock is active, the underlying regular lock should always be active as well.
-        if (args.Cancelled || !ent.Comp.Enabled || !ent.Comp.Active || TryComp<LockComponent>(ent, out var normalLock) && !normalLock.Locked)
+        if (args.Cancelled || !ent.Comp.Enabled || TryComp<LockComponent>(ent, out var normalLock) && !normalLock.Locked)
+            return;
+
+        // Allow toggling if it's disengaged (temporarily or not)
+        if (ent.Comp.State != Engaged)
             return;
 
         args.Cancelled = true;
@@ -79,10 +83,10 @@ public sealed class IdLockSystem : EntitySystem
 
     private void OnGetVerbs(Entity<IdLockComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
     {
-        if (!_idCards.TryFindIdCard(args.User, out var id))
+        if (!ent.Comp.Enabled || !_idCards.TryFindIdCard(args.User, out var id))
             return;
 
-        var locked = ent.Comp.Active;
+        var locked = ent.Comp.State is Engaged;
         var user = args.User;
         AlternativeVerb verb = new()
         {
@@ -93,8 +97,21 @@ public sealed class IdLockSystem : EntitySystem
                 : "/Textures/Interface/VerbIcons/lock.svg.192dpi.png")),
             Priority = locked ? 1 : -1 // Higher priority than "toggle lock" if unlocking, but lower if locking, so alt-click works correctly.
         };
-
         args.Verbs.Add(verb);
+
+        // If temporarily disengaged, allow re-engaging the old lock
+        if (ent.Comp.State == TemporarilyDisengaged)
+        {
+            var verb2 = new AlternativeVerb
+            {
+                Act = () => TryReEngage(ent, id, user),
+                Text = Loc.GetString("id-lock-verb-reengage"),
+                Priority = -2,
+                Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/lock.svg.192dpi.png"))
+            };
+            args.Verbs.Add(verb2);
+        }
+
     }
 
     private void OnSetIdLock(Entity<LockComponent> ent, ref IdLockSetEvent args)
@@ -110,7 +127,7 @@ public sealed class IdLockSystem : EntitySystem
         lockComp.Enabled = args.Enable;
 
         if (!args.Enable)
-            lockComp.Active = false;
+            lockComp.State = Disengaged;
 
         Dirty(ent, lockComp);
     }
@@ -150,8 +167,7 @@ public sealed class IdLockSystem : EntitySystem
         var args = new DoAfterArgs(EntityManager, user, ent.Comp.LockTime, new IdLockActivateDoAfterEvent(), ent, ent, id)
         {
             BreakOnDamage = true,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             NeedHand = true
         };
         return _doAfter.TryStartDoAfter(args);
@@ -173,12 +189,33 @@ public sealed class IdLockSystem : EntitySystem
         var args = new DoAfterArgs(EntityManager, user, time, new IdLockDeactivateDoAfterEvent(), ent, ent, id)
         {
             BreakOnDamage = true,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             NeedHand = true
         };
 
         return _doAfter.TryStartDoAfter(args);
+    }
+
+    /// <summary>
+    ///     Try to re-activate the lock that was previously active. Requires a master ID. Does not require a do-after.
+    /// </summary>
+    public bool TryReEngage(Entity<IdLockComponent> ent, Entity<IdCardComponent> id, EntityUid user)
+    {
+        var level = CheckAccess(id, ent, out var reason);
+        if (!level.HasFlag(AccessLevel.CanUnlock) && !level.HasFlag(AccessLevel.CanTemporarilyUnlock))
+        {
+            _popups.PopupClient("id-lock-fail-requires-master", user, user);
+            return false;
+        }
+
+        if (ent.Comp.Info.OwnerName is null && ent.Comp.Info.OwnerJobTitle is null)
+            return false;
+
+        ent.Comp.State = Engaged;
+        _popups.PopupPredicted(Loc.GetString("id-lock-re-locked", ("ent", ent.Owner)), ent, user);
+        _audio.PlayPredicted(ent.Comp.LockSound, ent, user, ent.Comp.LockSound?.Params);
+
+        return true;
     }
 
     /// <summary>
@@ -189,7 +226,7 @@ public sealed class IdLockSystem : EntitySystem
         if (CheckAccess(id, ent, out var reason) == AccessLevel.None)
             return;
 
-        ent.Comp.Active = true;
+        ent.Comp.State = Engaged;
         ent.Comp.Info = new() { OwnerName = id.Comp.FullName, OwnerJobTitle = id.Comp.JobTitle };
         Dirty(ent);
 
@@ -202,10 +239,13 @@ public sealed class IdLockSystem : EntitySystem
     /// </summary>
     public void DoUnlock(Entity<IdLockComponent> ent, Entity<IdCardComponent> id, EntityUid user)
     {
-        if (CheckAccess(id, ent, out var reason) == AccessLevel.None)
+        var level = CheckAccess(id, ent, out _);
+        if (!level.HasFlag(AccessLevel.CanUnlock) && !level.HasFlag(AccessLevel.CanTemporarilyUnlock))
             return;
 
-        ent.Comp.Active = false;
+        // When unlocking via master id, set to "temporarily disengaged"
+        ent.Comp.State = level == AccessLevel.Master ? TemporarilyDisengaged : Disengaged;
+        ent.Comp.Info = new();
         Dirty(ent);
 
         _popups.PopupPredicted(Loc.GetString("id-lock-unlocked", ("ent", ent.Owner)), ent, user);
@@ -223,28 +263,28 @@ public sealed class IdLockSystem : EntitySystem
         {
             // Probably emagged or something, we only allow to remove it if it's active (which shouldn't happen hopefully)
             reason = "id-lock-fail-disabled";
-            return lockable.Comp.Active ? AccessLevel.Full : AccessLevel.None;
+            return AccessLevel.CanUnlock;
         }
 
         var level = MatchId(id, lockable);
-        if (lockable.Comp.Active && level == AccessLevel.None)
+        if (lockable.Comp.State is Engaged && level == AccessLevel.None)
         {
             reason = "id-lock-fail-access-no-match";
             return level;
         }
 
         // Note: we allow to *remove* the lock if it is active but the owner somehow lost access to it, as a failsafe.
-        if (!lockable.Comp.Active && !_access.IsAllowed(id, lockable, reader))
+        if (!_access.IsAllowed(id, lockable, reader))
         {
             reason = "lock-comp-has-user-access-fail";
-            return AccessLevel.None;
+            return level & ~AccessLevel.CanLock;
         }
 
         // We disallow engaging the ID lock while the normal lock is unlocked.
         if (!_locks.IsLocked(lockable.Owner))
         {
             reason = "id-lock-fail-must-be-locked";
-            return AccessLevel.None;
+            return level & ~AccessLevel.CanLock;
         }
 
         return level;
@@ -254,21 +294,28 @@ public sealed class IdLockSystem : EntitySystem
 
     private AccessLevel MatchId(Entity<IdCardComponent> id, Entity<IdLockComponent> lockable)
     {
-        // ID always matches if the lock is inactive.
-        if (!lockable.Comp.Active)
-            return AccessLevel.Full;
-
-        if (lockable.Comp.Info.OwnerName == id.Comp.FullName && lockable.Comp.Info.OwnerJobTitle == id.Comp.JobTitle)
-            return AccessLevel.Full;
-
         if (TryComp<AccessComponent>(id, out var access) && lockable.Comp.MasterAccesses.Any(it => access.Tags.Contains(it)))
             return AccessLevel.Master;
+
+        // ID always matches if the lock is inactive.
+        if (lockable.Comp.State is not Engaged)
+            return AccessLevel.CanLock;
+
+        if (lockable.Comp.Info.OwnerName == id.Comp.FullName && lockable.Comp.Info.OwnerJobTitle == id.Comp.JobTitle)
+            return AccessLevel.CanUnlock;
 
         return AccessLevel.None;
     }
 
+    [Flags]
     public enum AccessLevel : int
     {
-        Full = 2, Master = 1, None = 0
+        CanLock = 1,
+        CanUnlock = 2,
+        CanTemporarilyUnlock = 4,
+
+        None = 0,
+        Regular = CanLock | CanUnlock,
+        Master = Regular | CanTemporarilyUnlock,
     }
 }

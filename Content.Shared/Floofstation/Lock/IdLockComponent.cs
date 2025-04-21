@@ -26,7 +26,7 @@ public sealed partial class IdLockComponent : Component
     ///     While active, the ID lock prevents the regular lock from being opened.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public bool Active = false;
+    public LockState State = LockState.Disengaged;
 
     /// <summary>
     ///     The information about the last ID used to lock this entity.
@@ -66,5 +66,22 @@ public sealed partial class IdLockComponent : Component
 
         [DataField]
         public string? OwnerJobTitle;
+    }
+
+    [Serializable, NetSerializable]
+    public enum LockState
+    {
+        /// <summary>
+        ///     Locked.
+        /// </summary>
+        Engaged,
+        /// <summary>
+        ///     Unlocked.
+        /// </summary>
+        Disengaged,
+        /// <summary>
+        ///     Opened via a master ID, can be locked again without erasing the owner info.
+        /// </summary>
+        TemporarilyDisengaged
     }
 }
