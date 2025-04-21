@@ -14,7 +14,7 @@
   name: secure closet (id-lock)
   graph: ClosetSteelSecure
   startNode: start
-  targetNode: jdLockable
+  targetNode: idLockable
   category: construction-category-storage
   description: "A tall steel box that can be locked. Can be locked to a specific ID. Note: all closets can be upgraded to this version!"
   icon: { sprite: Structures/Storage/closet.rsi, state: secure_icon }
