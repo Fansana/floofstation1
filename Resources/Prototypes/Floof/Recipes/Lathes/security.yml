@@ -15,6 +15,24 @@
      Steel: 210
 
 - type: latheRecipe
+  id: ShellShotgunHoly
+  result: ShellShotgunHoly
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 15
+    Silver: 5
+
+- type: latheRecipe
+  id: BoxShellHoly
+  result: BoxShellHoly
+  category: Ammo
+  completetime: 5
+  materials:
+    Steel: 120
+    Silver: 200
+
+- type: latheRecipe
   id: ClothingShoesBootsSecurityMagboots
   result: ClothingShoesBootsSecurityMagboots
   completetime: 10

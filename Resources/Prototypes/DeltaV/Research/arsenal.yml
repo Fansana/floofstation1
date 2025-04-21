@@ -12,7 +12,10 @@
   recipeUnlocks:
   - CartridgeSpecialHoly
   - CartridgeSpecialMindbreaker
+  - ShellShotgunHoly # Floofstation - Best to leave this here as it is part of this specific research.
+  - BoxShellHoly # Floofstation
   - ShellSoulbreaker # Nyanotrasen - Soulbreaker shotgun ammo
+  - BoxShellSoulbreaker # Floofstation
 
 - type: technology
   id: EnergyGuns
