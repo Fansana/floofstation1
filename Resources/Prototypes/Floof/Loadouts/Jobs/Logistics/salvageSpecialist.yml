@@ -1,0 +1,166 @@
+# Salvage Specialist
+# Backpacks
+
+# Belt
+- type: loadout
+  id: LoadoutSalvageBeltUtility
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingBeltUtility
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+- type: loadout
+  id: LoadoutSalvageBeltUtilityFilled
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingBeltUtilityFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+# Ears
+
+# Equipment
+- type: loadout
+  id: LoadoutSalvageEquipmentHandheldGPSBasic
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: false
+  items:
+    - HandheldGPSBasic
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+- type: loadout
+  id: LoadoutSalvageEquipmentRadioHandheld
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: false
+  items:
+    - RadioHandheld
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+- type: loadout
+  id: LoadoutSalvageEquipmentPickaxe
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: false
+  items:
+    - Pickaxe
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+- type: loadout
+  id: LoadoutSalvageEquipmentOreBag
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: false
+  items:
+    - OreBag
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+- type: loadout
+  id: LoadoutSalvageEquipmentFlare
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: false
+  items:
+    - Flare
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutSalvageNeckSalvager
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckSalvager
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+# Mask
+- type: loadout
+  id: LoadoutSalvageMaskGas
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskGasExplorer
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+
+# Outer
+
+# Shoes
+- type: loadout
+  id: LoadoutSalvageShoesBoots
+  category: JobsLogisticsSalvageSpecialist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsSalvage
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSalvageSpecialistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - SalvageSpecialist
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+# Uniforms

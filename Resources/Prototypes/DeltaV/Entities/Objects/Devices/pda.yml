@@ -23,8 +23,17 @@
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
+      - NanoChatCartridge
   - type: Pda
     id: BrigmedicIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-corpsman
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -64,6 +73,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#470823"
   - type: Icon
@@ -75,6 +92,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge
 
 - type: entity
   parent: BasePDA
@@ -103,6 +121,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#611528"
   - type: Icon
@@ -114,6 +140,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -142,6 +169,14 @@
       whitelist:
         tags:
         - Write
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSpaceLaw # Floof - M3739 - #607
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
@@ -153,6 +188,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
+      - NanoChatCartridge
 
 - type: entity
   parent: SyndiPDA
@@ -166,3 +202,40 @@
       whitelist:
         tags:
         - Write
+
+- type: entity
+  parent: BasePDA
+  id: AdminAssistantPDA
+  name: administrative assistant PDA
+  description: Theres pen scribbles all over the edges, and a few sticky notes stuck on it.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Pda
+    id: AdminAssistantIDCard
+    state: pda-admin-assistant
+    penSlot:
+      startingItem: LuxuryPen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Icon
+    sprite: DeltaV/Objects/Devices/pda.rsi
+    state: pda-admin-assistant
+  - type: CartridgeLoader
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge

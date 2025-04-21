@@ -66,6 +66,31 @@
 
 - type: entity
   parent: BasePlushie
+  id: PlushieSalvager
+  name: salvager plushie
+  description: A cheeky kitsune battle-hardened from countless expeditions.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/floof_plush.rsi
+    state: salvager
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/yap.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Animals/fox_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Floof/Voice/Vulpkanin/gekker.ogg
+
+- type: entity
+  parent: BasePlushie
   id: PlushieFPraetorian
   name: blue Praetorian plush
   description: An adorable stuffed toy that resembles a Praetorian with blue stripes.
@@ -383,3 +408,37 @@
 #       params:
 #         variation: 0.05
 #         volume: 4
+
+# Artistic
+
+- type: entity
+  parent: Crayon
+  id: CrayonBrush
+  name: paintbrush
+  description: A paintbrush filled with paint, ready to cover a canvas!
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Fun/paintbrush.rsi
+    state: paintbrush
+  - type: Item
+    sprite: Floof/Objects/Fun/paintbrush.rsi
+    heldPrefix: brush
+    size: Normal
+  - type: Crayon
+    color: white
+    selectableColor: true
+    capacity: 500
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: MindbreakerToxin
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Write
+    - Crayon
+    - Recyclable
+    - Trash

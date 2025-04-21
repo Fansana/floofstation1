@@ -65,3 +65,5 @@ autodoc-body-symmetry-Left = Left
 autodoc-body-symmetry-Right = Right
 
 autodoc-submit = Submit
+
+autodoc-upgrade-surgery-speed = Surgery Speed

@@ -18,13 +18,14 @@
     components:
     - type: ProfessionalChef #Nyano - End Summary.
 
+
 - type: startingGear
   id: ChefGear
-  equipment:
+  equipment: # Floof - M3739 - #690 - Better hygiene is expected in this line of work.
     jumpsuit: ClothingUniformJumpsuitChef
     head: ClothingHeadHatChef
     back: ClothingBackpackFilled
-    mask: ClothingMaskItalianMoustache
+#    mask: ClothingMaskItalianMoustache
     shoes: ClothingShoesColorBlack
     id: ChefPDA
     ears: ClothingHeadsetService

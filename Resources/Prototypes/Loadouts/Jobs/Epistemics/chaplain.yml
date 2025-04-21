@@ -10,7 +10,7 @@
   id: LoadoutChaplainBible
   category: JobsEpistemicsChaplain
   cost: 0
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChaplainEquipment
@@ -24,7 +24,7 @@
   id: LoadoutChaplainStamp
   category: JobsEpistemicsChaplain
   cost: 0
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChaplainEquipment
