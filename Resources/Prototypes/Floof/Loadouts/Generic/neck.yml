@@ -84,7 +84,7 @@
   id: LoadoutHarnessColorable
   category: Neck
   cost: 1
-  exclusive: true
+  exclusive: false
   customColorTint: true
   canBeHeirloom: true
   items:
