@@ -1,0 +1,21 @@
+- type: construction
+  name: secure crate (id-lock)
+  id: CrateSecureIdLockable
+  graph: CrateSecure
+  startNode: start
+  targetNode: idLockable
+  category: construction-category-storage
+  description: "A secure metal crate for storing things. Can be locked to a specific ID. Note: all secure crates can be upgraded to this version!"
+  icon: { sprite: Structures/Storage/Crates/secure.rsi, state: icon }
+  objectType: Structure
+
+- type: construction
+  id: ClosetSteelSecureIdLockable
+  name: secure closet (id-lock)
+  graph: ClosetSteelSecureIdLockable
+  startNode: start
+  targetNode: jdLockable
+  category: construction-category-storage
+  description: "A tall steel box that can be locked. Can be locked to a specific ID. Note: all closets can be upgraded to this version!"
+  icon: { sprite: Structures/Storage/closet.rsi, state: secure_icon }
+  objectType: Structure
