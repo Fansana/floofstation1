@@ -24,7 +24,7 @@ public sealed class AACBoundUserInterface : BoundUserInterface
         _window.OnClose += Close; // Floof
     }
 
-    private void OnPhraseButtonPressed(ProtoId<QuickPhrasePrototype> phraseId)
+    private void OnPhraseButtonPressed(List<ProtoId<QuickPhrasePrototype>> phraseId)
     {
         SendMessage(new AACTabletSendPhraseMessage(phraseId));
     }
