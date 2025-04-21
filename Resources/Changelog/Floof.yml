@@ -4577,3 +4577,12 @@ Entries:
   id: 490
   time: '2025-04-21T13:41:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/675
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Added a new clothing type - harness, functioning as a leash anchor and
+        more.
+  id: 491
+  time: '2025-04-21T13:47:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/833
