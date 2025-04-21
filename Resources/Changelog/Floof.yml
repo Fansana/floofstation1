@@ -4532,3 +4532,23 @@ Entries:
   id: 488
   time: '2025-04-20T19:38:17.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/765
+- author: Superlagg and Casey
+  changes:
+    - type: Add
+      message: >-
+        Adds support for tails (and such) to have more control over their
+        layering, so they'll look good even if you're wearing a skirt.
+    - type: Add
+      message: >-
+        Adds support for markings to have sprites inherit color from other
+        sprites in the marking, so you can change multiple sprite colors with
+        one slider!
+    - type: Add
+      message: >-
+        Ports dozens of tails, snouts, and ears from Skyrat SS13. These use the
+        new layering system, and will layer under skirts properly. (Note,
+        pre-existing tails still use the old system, and will likely layer over
+        skirts)
+  id: 489
+  time: '2025-04-21T13:39:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/742
