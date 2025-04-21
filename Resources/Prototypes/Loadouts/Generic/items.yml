@@ -73,6 +73,7 @@
   id: LoadoutItemLighter
   category: Items
   cost: 1
+  customColorTint: true
   items:
     - Lighter
   requirements:
@@ -83,6 +84,7 @@
   id: LoadoutItemLighterCheap
   category: Items
   cost: 0
+  customColorTint: true
   items:
     - CheapLighter
   requirements:
@@ -93,6 +95,7 @@
   id: LoadoutItemLighterFlippo
   category: Items
   cost: 2
+  customColorTint: true
   items:
     - FlippoLighter
   requirements:
@@ -340,6 +343,7 @@
   id: LoadoutItemsEmergencyCrowbar
   category: Items
   cost: 3
+  canBeHeirloom: true
   items:
     - CrowbarRed
 
@@ -452,6 +456,10 @@
   items:
     - BoxSurvival
   requirements:
+    - !type:CharacterSpeciesRequirement
+       inverted: true
+       species:
+          - Feroxi
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
@@ -466,15 +474,58 @@
       group: LoadoutBoxKits
 
 - type: loadout
+  id: LoadoutItemBoxSurvivalWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+     species:
+       - Feroxi
+    - !type:CharacterDepartmentRequirement
+     inverted: true
+     departments:
+       - Security
+       - Medical
+       - Engineering
+    - !type:CharacterJobRequirement
+     inverted: true
+     jobs:
+        - Clown
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
   id: LoadoutItemBoxSurvivalEngineering
   category: Items
   cost: 0
   items:
     - BoxSurvivalEngineering
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
        departments:
          - Engineering
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalEngineeringWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalEngineeringWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Engineering
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -483,15 +534,39 @@
   category: Items
   cost: 0
   items:
-    - BoxSurvivalSecurity
+  - BoxSurvivalSecurity
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
-       departments:
-         - Security
+      departments:
+        - Security
     - !type:CharacterJobRequirement
-       inverted: true
-       jobs:
-         - Brigmedic
+      inverted: true
+      jobs:
+        - Brigmedic
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalSecurityWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalSecurityWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Brigmedic
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -500,11 +575,31 @@
   category: Items
   cost: 0
   items:
-    - BoxSurvivalBrigmedic
+  - BoxSurvivalBrigmedic
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
     - !type:CharacterJobRequirement
-       jobs:
-         - Brigmedic
+      jobs:
+        - Brigmedic
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalBrigmedicWaterVapor
+  category: Items
+  cost: 0
+  items:
+  - BoxSurvivalBrigmedicWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
+    - !type:CharacterJobRequirement
+      jobs:
+        - Brigmedic
     - !type:CharacterItemGroupRequirement
       group: LoadoutBoxKits
 
@@ -515,6 +610,26 @@
   items:
     - BoxSurvivalMedical
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+    - !type:CharacterDepartmentRequirement
+       departments:
+         - Medical
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxSurvivalMedicalWaterVapor
+  category: Items
+  cost: 0
+  items:
+    - BoxSurvivalMedicalWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
     - !type:CharacterDepartmentRequirement
        departments:
          - Medical
@@ -528,6 +643,26 @@
   items:
     - BoxHug
   requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+    - !type:CharacterJobRequirement
+       jobs:
+         - Clown
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutBoxKits
+
+- type: loadout
+  id: LoadoutItemBoxHugWaterVapor
+  category: Items
+  cost: 0
+  items:
+    - BoxHugWaterVapor
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Feroxi
     - !type:CharacterJobRequirement
        jobs:
          - Clown
@@ -555,6 +690,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -572,6 +708,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -589,6 +726,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -606,6 +744,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -623,6 +762,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -640,6 +780,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physican start with medkits
         - Paramedic
         - ChiefMedicalOfficer
         - MedicalIntern
@@ -680,6 +821,7 @@
   id: LoadoutItemPAI
   category: Items
   cost: 3
+  canBeHeirloom: true
   items:
     - PersonalAI
 
@@ -741,6 +883,8 @@
   id: LoadoutItemDrinkShinyFlask
   category: Items
   cost: 1
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - DrinkShinyFlask
 
@@ -748,6 +892,7 @@
   id: LoadoutItemDrinkLithiumFlask
   category: Items
   cost: 1
+  customColorTint: true
   items:
     - DrinkLithiumFlask
 
@@ -755,5 +900,80 @@
   id: LoadoutItemDrinkVacuumFlask
   category: Items
   cost: 1
+  customColorTint: true
   items:
     - DrinkVacuumFlask
+
+- type: loadout
+  id: LoadoutItemCaneBlind
+  category: Items
+  cost: 0 # It shouldnt cost points to be able to function.
+  items:
+    - WhiteCane
+
+- type: loadout
+  id: LoadoutItemAACTablet
+  category: Items
+  cost: 0 # Floof - M3739 - Assistive technologies shall be free for mute people.
+  items:
+    - AACTablet
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Mime # Floof - M3739 - See AACTabletSystem.cs, lines 38 to 39. We're just saving them the trouble.
+    - !type:CharacterTraitRequirement
+      traits:
+        - Muted # Floof - M3739 - But for it to be free, you must be officially vocally impaired.
+# Pets
+- type: loadout
+  id: LoadoutItemPetMouse
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobMousePet
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemPetHamster
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobHamsterPet
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemPetMothroach
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobMothroachPet
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemPetCockroach
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobCockroachPet
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower

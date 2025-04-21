@@ -212,8 +212,8 @@
     - type: StorageFill
       contents:
       - id: BoxForensicPad
-      - id: Lighter
-      - id: CigPackBlack
+      #- id: Lighter | Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
+      #- id: CigPackBlack| Floof - M3739 - #690 - Cigarettes? Standard issue? Wild.
       - id: HandLabeler
 
 - type: entity
@@ -244,4 +244,10 @@
     contents:
     - id: GasAnalyzer
     - id: trayScanner
+    - id: Multitool # Floof, but this is also in upstream
+    - id: AccessConfiguratorUniversal # Floof, but this is also in upstream
+    - id: HandLabeler # Floof
+    - id: PowerDrill # Floof
+    - id: JawsOfLife # Floof
+    - id: WelderExperimental # Floof
   - type: Unremoveable

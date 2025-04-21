@@ -10,6 +10,15 @@ ghost-role-information-mouse-description = A hungry and mischievous mouse.
 ghost-role-information-mothroach-name = Mothroach
 ghost-role-information-mothroach-description = A cute but mischievous mothroach.
 
+ghost-role-information-snail-name = Snail
+ghost-role-information-snail-description = A little snail who doesn't mind a bit of space. Just stay on grid!
+
+ghost-role-information-snailspeed-name = Snail
+ghost-role-information-snailspeed-description = A little snail with snailborn thrusters.
+
+ghost-role-information-snoth-name = Snoth
+ghost-role-information-snoth-description = A little snoth who doesn't mind a bit of space. Just stay on grid!
+
 ghost-role-information-giant-spider-name = Giant spider
 ghost-role-information-giant-spider-description = This station's inhabitants look mighty tasty, and your sticky web is perfect to catch them!
 
@@ -30,9 +39,9 @@ ghost-role-information-angry-slimes-description = Everyone around you irritates 
 ghost-role-information-smile-name = Smile the Slime
 ghost-role-information-smile-description = The sweetest creature in the world. Smile Slime!
 
-ghost-role-information-Shiva-name = Shiva
-ghost-role-information-Shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
-ghost-role-information-Shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
+ghost-role-information-shiva-name = Shiva
+ghost-role-information-shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
+ghost-role-information-shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
 
 ghost-role-information-punpun-name = Pun Pun
 ghost-role-information-punpun-description = An honorable member of the monkey society in charge of the bar and helping the bartenders in any way he can.
@@ -44,7 +53,7 @@ ghost-role-information-xeno-rules = You are an antagonist, smack, slash, and wac
 ghost-role-information-friendlyxeno-name = Xeno Subject
 ghost-role-information-friendlyxeno-description = You are a friendly xeno, co-operate with the crew and protect the station!
 ghost-role-information-friendlyxeno-rules = You are a friendly xeno.
-                                    Your objective is to cooperate with any sophonts and not bring harm to the crew. 
+                                    Your objective is to cooperate with any sophonts and not bring harm to the crew.
                                     Do your best to be helpful and don't give anyone a reason to fear you.
 
 ghost-role-information-revenant-name = Revenant
@@ -141,7 +150,11 @@ ghost-role-information-holoclown-name = Holoclown
 ghost-role-information-holoclown-description = Listen to your owner. Utilize your pockets and hand to help your owner.
 
 ghost-role-information-ifrit-name = Ifrit
-ghost-role-information-ifrit-description = Listen to your owner. Don't tank damage. Punch people hard.
+ghost-role-information-ifrit-description = The mystagogue's servant.
+ghost-role-information-ifrit-rules = A fire spirit originating from Gehenna, you have been summoned by the mystagogue. Follow them around and don't cause any trouble unless they tell you to.
+
+ghost-role-information-ifrit-wizard-name = Ifrit (Wizard Summon)
+ghost-role-information-ifrit-wizard-description = Listen to your owner. Don't tank damage. Punch people hard.
 
 ghost-role-information-space-dragon-name = Space dragon
 ghost-role-information-space-dragon-description = create 3 carp rifts and protect your nest!

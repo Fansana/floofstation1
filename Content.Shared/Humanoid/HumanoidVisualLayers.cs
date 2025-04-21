@@ -6,11 +6,14 @@ namespace Content.Shared.Humanoid
     [Serializable, NetSerializable]
     public enum HumanoidVisualLayers : byte
     {
+        Face,
         Tail,
         Wings,
         Hair,
         FacialHair,
         Chest,
+        Underwear, // Floof, add underwear
+        Undershirt, // Floof, add underwear
         Head,
         Snout,
         HeadSide, // side parts (i.e., frills)

@@ -43,7 +43,7 @@
     content: paperwork-hop-formal-complaint
 
 - type: entity
-  name: oder of dismissal
+  name: order of dismissal
   parent: PaperTemplate
   id: PaperTemplateHopOrderOfDismissal
   description: 'Formal dismissal of staff'
@@ -51,7 +51,7 @@
   - type: Paper
     contentSize: 10000
     escapeFormatting: false
-    content: paperwork-hop-oder-of-dismissal
+    content: paperwork-hop-order-of-dismissal
 
 - type: entity
   name: dismissal of department head

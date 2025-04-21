@@ -385,10 +385,31 @@
       - id: PlushieHypnoTempHoS
         prob: 0.50
         orGroup: Prize
-       #HypnoTemp Merch - End
-      - id: Plushiegirlfailure #Floof
+      # HypnoTemp Merch - End
+      # Floof - Start
+      # - id: Plushiegirlfailure
+      #   prob: 0.50
+      #   orGroup: Prize
+      - id: PlushieSlimeTider
         prob: 0.50
         orGroup: Prize
+      - id: PlushieKitsuneCaptain 
+        prob: 0.50
+        orGroup: Prize
+      - id: PlushieSapphicHarpyPlushie
+        prob: 0.50
+        orGroup: Prize
+      # - id: PlushieFeistyBartender
+      #   prob: 0.50
+      #   orGroup: Prize
+      # - id: PlushieCoolVulp
+      #   prob: 0.50
+      #   orGroup: Prize
+      # - id: PlushieNoticeableSecurityOfficer
+      #   prob: 0.50
+      #   orGroup: Prize
+
+      # Floof - End
       # Rare
       - id: PlushieAbductorAgent
         prob: 0.30

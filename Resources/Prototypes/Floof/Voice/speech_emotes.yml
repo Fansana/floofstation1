@@ -3,6 +3,14 @@
   name: chat-emote-name-gekker
   category: Vocal
   chatMessages: [ gekkers ]
+  whitelist:
+    tags:
+      - VulpEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
   chatTriggers:
   - gekkers
 
@@ -11,6 +19,14 @@
   name: chat-emote-name-yip
   category: Vocal
   chatMessages: [ yips ]
+  whitelist:
+    tags:
+      - UnathiEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
   chatTriggers:
   - yip
   - yips
@@ -18,7 +34,16 @@
 - type: emote
   id: Yap
   name: chat-emote-name-yap
+  category: Vocal
   chatMessages: [ yaps ]
+  whitelist:
+    tags:
+      - VulpEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
   chatTriggers:
   - yap
   - yaps

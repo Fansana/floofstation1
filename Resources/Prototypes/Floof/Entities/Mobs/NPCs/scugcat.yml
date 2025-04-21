@@ -5,7 +5,7 @@
   description: He's just a little guy, a jumpy, poor little scug.
   components:
   - type: Sprite
-    drawdepth: SmallMobs
+    drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       sprite: Floof/Mobs/Animals/scugcat.rsi
@@ -81,7 +81,7 @@
     makeSentient: true
     name: ghost-role-information-scugcat-name
     description: ghost-role-information-scugcat-description
-    rules: deltav-ghost-role-information-softantag-rules
+    rules: floof-ghost-role-information-free-agent-rules
   - type: GhostTakeoverAvailable
   - type: Food
   - type: Hunger
@@ -187,7 +187,7 @@
 - type: entity
   id: ScugCatSpawn
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: true

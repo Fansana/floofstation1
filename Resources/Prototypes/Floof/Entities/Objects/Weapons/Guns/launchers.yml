@@ -1,0 +1,49 @@
+- type: entity
+  name: cleanade launcher
+  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  id: WeaponLauncherCleanade
+  description: Only compatible with officially licensed Cleanades.
+  components:
+  - type: Sprite
+    sprite: Floof/Objects/Weapons/Guns/Launchers/cleanade.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 10
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Cleanade
+    capacity: 2
+    proto: CleanerGrenade
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  parent: WeaponLauncherCleanade
+  suffix: Borg
+  id: WeaponLauncherCleanadeBorg
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BallisticAmmoProvider
+    loadOnUse: true
+    whitelist:
+      tags:
+        - Cleanade
+    capacity: 2
+    proto: CleanerGrenade
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg

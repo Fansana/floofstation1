@@ -18,8 +18,11 @@ consent-examine-verb = Consent Info
 consent-examine-not-set = This player has no consent preferences set. Ask for consent first before engaging in any erotic roleplay.
 
 # Consent toggles
-consent-Vore-name = Vore
-consent-Vore-desc = Allow yourself to be predator or prey.
+consent-Vore-name = Vore Prey
+consent-Vore-desc = Allow yourself to be prey or insert yourself into a pred.
+
+consent-VorePred-name = Vore Pred
+consent-VorePred-desc = Allow yourself to be pred or have prey insert themselves into you.
 
 consent-Digestion-name = Digestion
 consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED WILL ROUND-REMOVE YOU.

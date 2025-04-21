@@ -3,13 +3,17 @@
   name: shell (.50 soulbreaker)
   parent: BaseShellShotgun
   components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - ShellSoulbreaker # floof for the soul breaker shells for the mantis shotgun only
   - type: Sprite
     layers:
       - state: practice
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunSoulbreaker
-    count: 1
   - type: ChemicalAmmo
   - type: SolutionContainerManager
     solutions:

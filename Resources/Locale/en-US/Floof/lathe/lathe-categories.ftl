@@ -1,0 +1,9 @@
+lathe-category-clothing-command = Command
+lathe-category-clothing-engineering = Engineering
+lathe-category-clothing-epistemics = Epistemics
+lathe-category-clothing-logistics = Logistics
+lathe-category-clothing-medical = Medical
+lathe-category-clothing-security = Security
+lathe-category-clothing-service = Service
+lathe-category-clothing-other = Other
+lathe-category-carpet = Carpet

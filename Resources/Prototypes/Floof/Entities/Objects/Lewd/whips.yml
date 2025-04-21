@@ -24,6 +24,9 @@
     price: 60
   - type: Item
     size: Normal
+  - type: Tag
+    tags:
+     - Whip
 
 - type: entity
   parent: BaseWhip

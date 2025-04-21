@@ -37,6 +37,7 @@
     - JobsLogistics
     - JobsMedical
     - JobsSecurity
+    - JobsJustice # Floof
     - JobsService
 
 - type: loadoutCategory
@@ -51,6 +52,7 @@
     - JobsCommandAUncategorized
     - JobsCommandCaptain
     - JobsCommandHeadOfPersonnel
+    - JobsCommandAdminAssistant
 
 - type: loadoutCategory
   id: JobsCommandAUncategorized
@@ -60,6 +62,9 @@
 
 - type: loadoutCategory
   id: JobsCommandHeadOfPersonnel
+
+- type: loadoutCategory
+  id: JobsCommandAdminAssistant
 
 # Engineering
 - type: loadoutCategory
@@ -205,6 +210,7 @@
     - JobsSecuritySecurityOfficer
     - JobsSecuritySeniorOfficer
     - JobsSecurityWarden
+    - JobsSecurityPrisonGuard # Floof - Prison Guard
 
 - type: loadoutCategory
   id: JobsSecurityAUncategorized
@@ -230,6 +236,9 @@
 - type: loadoutCategory
   id: JobsSecurityWarden
 
+- type: loadoutCategory
+  id: JobsSecurityPrisonGuard # Floof - Prison Guard
+  
 # Service
 - type: loadoutCategory
   id: JobsService
@@ -240,7 +249,7 @@
     - JobsServiceChef
     - JobsServiceClown
     - JobsServiceJanitor
-    - JobsServiceLawyer
+    # - JobsServiceLawyer - Floof
     - JobsServiceMime
     - JobsServiceMusician
     - JobsServiceReporter

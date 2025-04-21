@@ -9411,7 +9411,7 @@ entities:
       pos: -49.5,31.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -3128.9094
+      secondsUntilStateChange: -3497.6558
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10913,6 +10913,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -58.5,-18.5
+      parent: 2
+  - uid: 14194
+    components:
+    - type: MetaData
+      name: Salvage Dock
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -58.5,-20.5
       parent: 2
 - proto: AirlockHeadOfPersonnelGlassLocked
   entities:
@@ -13161,11 +13169,6 @@ entities:
     components:
     - type: Transform
       pos: 14.5,-43.5
-      parent: 2
-  - uid: 14787
-    components:
-    - type: Transform
-      pos: -42.5,-3.5
       parent: 2
 - proto: BalloonCorgi
   entities:
@@ -27311,6 +27314,11 @@ entities:
     - type: Transform
       pos: 25.5,-24.5
       parent: 2
+  - uid: 14787
+    components:
+    - type: Transform
+      pos: -57.5,-18.5
+      parent: 2
   - uid: 15089
     components:
     - type: Transform
@@ -27425,6 +27433,46 @@ entities:
     components:
     - type: Transform
       pos: -46.5,47.5
+      parent: 2
+  - uid: 19390
+    components:
+    - type: Transform
+      pos: -57.5,-19.5
+      parent: 2
+  - uid: 19391
+    components:
+    - type: Transform
+      pos: -57.5,-20.5
+      parent: 2
+  - uid: 19394
+    components:
+    - type: Transform
+      pos: -56.5,-17.5
+      parent: 2
+  - uid: 19395
+    components:
+    - type: Transform
+      pos: -56.5,-16.5
+      parent: 2
+  - uid: 19396
+    components:
+    - type: Transform
+      pos: -56.5,-15.5
+      parent: 2
+  - uid: 19397
+    components:
+    - type: Transform
+      pos: -56.5,-20.5
+      parent: 2
+  - uid: 19398
+    components:
+    - type: Transform
+      pos: -56.5,-21.5
+      parent: 2
+  - uid: 19399
+    components:
+    - type: Transform
+      pos: -56.5,-22.5
       parent: 2
 - proto: CableApcStack
   entities:
@@ -36414,6 +36462,13 @@ entities:
     - type: Transform
       pos: 7.382954,-49.475697
       parent: 2
+- proto: CargoTechFab
+  entities:
+  - uid: 14193
+    components:
+    - type: Transform
+      pos: -42.5,-3.5
+      parent: 2
 - proto: Carpet
   entities:
   - uid: 5301
@@ -42033,6 +42088,14 @@ entities:
     components:
     - type: Transform
       pos: -21.5,-9.5
+      parent: 2
+- proto: CleanerDispenser
+  entities:
+  - uid: 19389
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -27.5,11.5
       parent: 2
 - proto: ClosetBombFilled
   entities:
@@ -78331,6 +78394,8 @@ entities:
       targetPressure: 4500
   - uid: 11298
     components:
+    - type: MetaData
+      name: Distro Pump
     - type: Transform
       pos: -12.5,-9.5
       parent: 2
@@ -96151,6 +96216,18 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
+  - uid: 19392
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -56.5,-14.5
+      parent: 2
+  - uid: 19393
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -56.5,-23.5
+      parent: 2
 - proto: PoweredlightSodium
   entities:
   - uid: 14028
@@ -97367,17 +97444,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 14193
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -58.5,-17.5
-      parent: 2
-  - uid: 14194
-    components:
-    - type: Transform
-      pos: -58.5,-20.5
-      parent: 2
   - uid: 14195
     components:
     - type: Transform
@@ -111042,6 +111108,54 @@ entities:
     components:
     - type: Transform
       pos: 9.5,43.5
+      parent: 2
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 19406
+    components:
+    - type: Transform
+      pos: 12.5,-45.5
+      parent: 2
+  - uid: 19407
+    components:
+    - type: Transform
+      pos: 7.5,-44.5
+      parent: 2
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 19405
+    components:
+    - type: Transform
+      pos: 7.5,43.5
+      parent: 2
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 19402
+    components:
+    - type: Transform
+      pos: -12.5,41.5
+      parent: 2
+  - uid: 19403
+    components:
+    - type: Transform
+      pos: -5.5,34.5
+      parent: 2
+  - uid: 19404
+    components:
+    - type: Transform
+      pos: -12.5,36.5
+      parent: 2
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 19400
+    components:
+    - type: Transform
+      pos: -8.5,-5.5
+      parent: 2
+  - uid: 19401
+    components:
+    - type: Transform
+      pos: -10.5,-11.5
       parent: 2
 - proto: SpawnPointServiceWorker
   entities:

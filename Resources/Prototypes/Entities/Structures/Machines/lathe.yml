@@ -150,6 +150,8 @@
       - ExteriorLightTube
       - LightBulb
       - LedLightBulb
+      - DimLightBulb
+      - WarmLightBulb
       - Bucket
       - DrinkMug
       - DrinkMugMetal
@@ -167,6 +169,7 @@
       - SprayBottle
       - MopItem
       - Holoprojector
+      - HoloprojectorEngineering # Floof
       - Mousetrap
       - LightReplacer
       - TrashBag
@@ -200,7 +203,6 @@
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
       - ToolRadioHandheld # Floofstation
-      - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -272,10 +274,11 @@
     - LargeBeaker
     - Dropper
     - ClothingEyesGlassesChemical
-    - ShadowkinRestraints
+    - ClothingOuterShadowkinRestraints
     dynamicRecipes:
       - PowerDrill
       - MiningDrill
+      - MiningDrillDiamond
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
@@ -291,9 +294,6 @@
       - CryostasisBeaker
       - SyringeCryostasis
       - Syringe
-      - EnergyScalpel
-      - EnergyCautery
-      - AdvancedRetractor
       - Implanter
       - PillCanister
       - ChemistryEmptyBottle01
@@ -327,6 +327,7 @@
       - SynthesizerInstrument
       - RPED
       - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
       - ClothingShoesBootsSpeed
       - NodeScanner
       - HolofanProjector
@@ -370,8 +371,13 @@
       - MofficTranslator
       - ArachnicTranslatorImplanter # Floofstation
       - ArachnicTranslator # Floofstation
+      - ClothingHarvestBag # Floofstation
       - RCDAmmo #DeltaV
       - RCD #EE
+      # Shitmed Change
+      - EnergyScalpel
+      - EnergyCautery
+      - AdvancedRetractor
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -474,6 +480,7 @@
     - SodaDispenserMachineCircuitboard
     - DeepFryerMachineCircuitboard #Nyano - Summary: adds deep fryer circuit board
     - SpaceHeaterMachineCircuitBoard
+    - StationAnchorCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
@@ -498,7 +505,7 @@
       - SolarTrackerElectronics
       - TurboItemRechargerCircuitboard
       - PowerComputerCircuitboard
-      - AlertsComputerCircuitboard # Floof - port to EE if possible
+      - AlertsComputerCircuitboard
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
       - CircuitImprinterHyperConvectionMachineCircuitboard
@@ -557,6 +564,8 @@
       - MetempsychoticMachineCircuitboard
       - SalvageExpeditionsComputerCircuitboard
       - JukeboxCircuitBoard
+      - AutodocCircuitboard # Shitmed Change
+      - OperatingTableCircuitboard # Shitmed Change
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -818,6 +827,7 @@
       - SpeedLoaderMagnumEmpty
       - MagazineMagnumEmpty #floof
       - MagazineMagnum #floof
+      - SterileBag #floof
       - Stunbaton
       - TargetClown
       - ClothingOuterArmorPlateCarrier
@@ -825,13 +835,14 @@
       - TargetHuman
       - TargetSyndicate
       - WeaponDisablerPractice
+      - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
-      - BorgModuleStun
-      - BorgModuleKill
-      - BorgModuleInvestigation
-      - ShadowkinRestraints
+      - BorgModuleStun # Floof (why was this not commented?)
+      - BorgModuleKill # Floof (why was this not commented?)
+      - BorgModuleInvestigation # Floof (why was this not commented?)
+      - ClothingOuterShadowkinRestraints # Floof
       # DeltaV - .38 special ammo - Add various .38 special ammo to security techfab
       - MagazineBoxSpecial
       - MagazineBoxSpecialPractice
@@ -1061,16 +1072,19 @@
       - MedkitRadiation
       - MedkitCombat
       - Scalpel
-      - BoneGel
       - Retractor
       - Cautery
       - Drill
       - Saw
       - Hemostat
       - ClothingEyesGlassesChemical
-      - WhiteCane
+      - BoneGel # Shitmed Change
+      - WhiteCane # Floof
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - SterileBag # floof
+      - BaseChemistryEmptyVial #floof
+      - AACTablet # DeltaV
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -1097,6 +1111,7 @@
       - FatExtractorMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
       # Floof section end
+      # Shitmed Change
       - EnergyScalpel
       - EnergyCautery
       - AdvancedRetractor
@@ -1343,6 +1358,9 @@
     staticRecipes:
       - ClothingUniformJumpsuitColorGrey
       - ClothingUniformJumpskirtColorGrey
+      - ClothingUniformJumpsuitAtmos # Floof
+      - ClothingUniformJumpskirtAtmos # Floof
+      - ClothingUniformJumpsuitAtmosCasual # Floof
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingHeadHatCapcap
@@ -1369,6 +1387,8 @@
       - ClothingHeadHatBeretCmo
       - ClothingUniformJumpsuitCMO
       - ClothingUniformJumpskirtCMO
+      - ClothingUniformJumpsuitCMOTurtle
+      - ClothingUniformJumpskirtCMOTurtle
       - ClothingUniformJumpsuitDetective
       - ClothingUniformJumpskirtDetective
       - ClothingUniformJumpsuitEngineering
@@ -1429,6 +1449,9 @@
       - ClothingHeadHatBeretRND
       - ClothingUniformJumpsuitResearchDirector
       - ClothingUniformJumpskirtResearchDirector
+      - ClothingUniformJumpsuitRoboticist # Floof
+      - ClothingUniformJumpskirtRoboticist # Floof
+      - ClothingOuterRoboOveralls # Floof
       - ClothingUniformJumpsuitScientist
       - ClothingUniformJumpskirtScientist
       - ClothingUniformJumpsuitSeniorResearcher
@@ -1512,6 +1535,7 @@
       - CarpetPurple
       - CarpetCyan
       - CarpetWhite
+      # Floofstation section start
       # Floofstation - Collars
       - ClothingNeckCollarCmd
       # Floofstation - Socks, Armwarmers ect
@@ -1546,27 +1570,70 @@
       - ClothingHandsEngiWarmers
       - ClothingUnderSocksEngi
       - ClothingUniformEngiThong
+      - ClothingHandsChiefEngiWarmers
+      - ClothingUnderSocksChiefEngi
+      - ClothingUniformChiefEngiThong
       - ClothingHandsEpiWarmers
       - ClothingUnderSocksEpi
       - ClothingUniformEpiThong
       - ClothingHandsChaplainWarmers
       - ClothingUnderSocksChaplain
       - ClothingUniformChaplainThong
+      - ClothingHandsEpiHeadWarmers
+      - ClothingUnderSocksEpiHead
+      - ClothingUniformEpiHeadThong
+      - ClothingHandsMantisEpiWarmers
+      - ClothingUnderSocksMantisEpi
+      - ClothingUniformMantisEpiThong
       - ClothingHandsLogisWarmers
       - ClothingUnderSocksLogis
       - ClothingUniformLogisThong
+      - ClothingHandsLOLogisWarmers
+      - ClothingUnderSocksLOLogis
+      - ClothingUniformLOLogisThong
+      - ClothingHandsCourierWarmers
+      - ClothingUnderSocksCourier
+      - ClothingUniformCourierThong
       - ClothingHandsMedicWarmers
       - ClothingUnderSocksMedic
       - ClothingUniformMedicThong
+      - ClothingHandsChemistsWarmers
+      - ClothingUnderSocksChemists
+      - ClothingUniformChemistsThong
+      - ClothingHandsParaMedicWarmers
+      - ClothingUnderSocksParaMedic
+      - ClothingUniformParaMedicThong
+      - ClothingHandsCMOWarmers
+      - ClothingUnderSocksCMO
+      - ClothingUniformCMOThong
       - ClothingHandsSecurityWarmers
       - ClothingUnderSocksSecurity
       - ClothingUniformSecurityThong
+      - ClothingHandsHeadSecurityWarmers
+      - ClothingUnderSocksHeadSecurity
+      - ClothingUniformHeadSecurityThong
+      - ClothingHandsDetectiveWarmers
+      - ClothingUnderSocksDetective
+      - ClothingUniformDetectiveThong
+      - ClothingHandsCorpsmanWarmers
+      - ClothingUnderSocksCorpsman
+      - ClothingUniformCorpsmanThong
       - ClothingHandsServiceWarmers
       - ClothingUnderSocksService
       - ClothingUniformServiceThong
       - ClothingHandsJanitorWarmers
       - ClothingUnderSocksJanitor
       - ClothingUniformJanitorThong
+      - ClothingHandsBartenderWarmers
+      - ClothingUnderSocksBartender
+      - ClothingUniformBartenderThong
+      - ClothingHandsMusicianWarmers
+      - ClothingUnderSocksMusician
+      - ClothingUniformMusicianThong
+      - ClothingHandsChefWarmers
+      - ClothingUnderSocksChef
+      - ClothingUniformChefThong
+      # Floofstation section end
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - ClothingHeadHatCentcomcap
@@ -1591,6 +1658,8 @@
       - ClothingOuterWinterCentcom
       - ClothingOuterWinterSyndie
       - ClothingOuterWinterSyndieCap
+      # Floofstation - Department Socks, Armwarmers ect
+      - ClothingUniformSurgeonGerneralThong
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1626,22 +1695,27 @@
     - type: Lathe
       idleState: icon
       runningState: building
+      defaultProductionAmount: 10
       staticRecipes:
         - BluespaceCrystal
         - NormalityCrystal
-        - SheetSteel30
-        - SheetGlass30
-        - SheetRGlass30
-        - SheetPlasma30
-        - SheetPGlass30
-        - SheetRPGlass30
-        - SheetUranium30
-        - IngotGold30
-        - IngotSilver30
-        - MaterialBananium10
+        - SheetSteel
+        - SheetGlass1
+        - SheetRGlass
+        - SheetPlasma1
+        - SheetPGlass1
+        - SheetRPGlass1
+        - SheetUranium1
+        - IngotGold1
+        - IngotSilver1
+        - MaterialBananium1
     - type: MaterialStorageMagnetPickup # Delta V - Summary: Adds magnet pull from Frontier
       magnetEnabled: True
       range: 0.30 # Delta V - End Magnet Pull
+    - type: MiningPoints # DeltaV - Source of mining points for miners
+      transferSound:
+        path: /Audio/Effects/Cargo/ping.ogg
+    - type: MiningPointsLathe # DeltaV
 
 - type: entity
   parent: OreProcessor
@@ -1659,19 +1733,20 @@
     staticRecipes:
       - BluespaceCrystal
       - NormalityCrystal
-      - SheetSteel30
-      - SheetGlass30
-      - SheetRGlass30
-      - SheetPlasma30
-      - SheetPGlass30
-      - SheetRPGlass30
-      - SheetPlasteel30
-      - SheetUranium30
-      - SheetUGlass30
-      - SheetRUGlass30
-      - IngotGold30
-      - IngotSilver30
-      - MaterialBananium10
+      - SheetSteel
+      - SheetGlass1
+      - SheetRGlass
+      - SheetPlasma1
+      - SheetPGlass1
+      - SheetRPGlass1
+      - SheetPlasteel1
+      - SheetUranium1
+      - SheetUGlass1
+      - SheetRUGlass1
+      - IngotGold1
+      - IngotSilver1
+      - MaterialBananium1
+      - MaterialDiamond
 
 - type: entity
   parent: BaseLathe
@@ -1833,13 +1908,16 @@
       - PlushieCentCom
       - PlushieSlimeTider
       - PlushieChillHuman
-      #- PlushieDino DO NOT ADD THIS!!
-      - PlushieDragon
       - PlushieFRavager
       - PlushieFPraetorian
       - PlushieFDrone
       - PlushieFRouny
-      - Plushiegirlfailure
+      # - Plushiegirlfailure
+      - PlushieKitsuneCaptain
+      - PlushieSapphicHarpyPlushie
+      # - PlushieFeistyBartender
+      # - PlushieCoolVulp
+      # - PlushieNoticeableSecurityOfficer
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:
@@ -1871,7 +1949,7 @@
   description: Produces organs and other organic matter that can be surgically grafted onto patients with biomass.
   components:
   - type: Sprite
-    sprite: Structures/Machines/limbgrower.rsi
+    sprite: _Shitmed/Structures/Machines/limbgrower.rsi
     snapCardinals: true
     layers:
     - state: limbgrower_idleoff

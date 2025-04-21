@@ -42,3 +42,15 @@
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
       state: harpy
+
+- type: marking
+  id: WingsHarpyBionic
+  bodyPart: Wings
+  markingCategory: Wings
+  speciesRestriction: [Reptilian, SlimePerson, IPC, Rodentia, Vulpkanin, Felinid, Human, Oni]
+  sprites:
+    - sprite: Floof/Mobs/Customization/wings64-32.rsi
+      state: bionic_wings_tone_1
+    - sprite: Floof/Mobs/Customization/wings64-32.rsi
+      state: bionic_wings_tone_2
+      shader: unshaded

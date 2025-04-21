@@ -14,7 +14,8 @@ namespace Content.Shared.Kitchen
             Recipes = new List<FoodRecipePrototype>();
             foreach (var item in _prototypeManager.EnumeratePrototypes<FoodRecipePrototype>())
             {
-                Recipes.Add(item);
+                if (!item.SecretRecipe)
+                    Recipes.Add(item);
             }
 
             Recipes.Sort(new RecipeComparer());
@@ -38,7 +39,19 @@ namespace Content.Shared.Kitchen
 
                 var nx = x.IngredientCount();
                 var ny = y.IngredientCount();
-                return -nx.CompareTo(ny);
+                //Floofstation - Start
+                //Added a fallback for recipes with the same results from IngredientCount
+                //Original: return -nx.CompareTo(ny)
+                if (-nx.CompareTo(ny) != 0)
+                {
+                    return -nx.CompareTo(ny);//If total solid ingredients and unique reagents are different, return result.
+                }
+
+                var vx = x.ReagentQuantity();
+                var vy = y.ReagentQuantity();
+
+                return -vx.CompareTo(vy);//Fallback result based on total amount of reagents.
+                //Floofstation - End
             }
         }
     }

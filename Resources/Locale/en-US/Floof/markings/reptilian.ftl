@@ -8,3 +8,6 @@ marking-LizardFinTop-secondary = Aquatic Fin secondary
 marking-LizardCrestLargeTop = Crest (Large)
 marking-LizardCrestLargeTop-primary = Crest (Large) primary
 marking-LizardCrestLargeTop-secondary = Crest (Large) secondary
+
+marking-LizardChestUnderbellyFeminine-body_underbelly = Lizard Chest (Underbelly, Feminine)
+marking-LizardChestUnderbellyFeminine = Lizard Chest (Underbelly, Feminine)

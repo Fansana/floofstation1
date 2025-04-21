@@ -13,7 +13,6 @@ public abstract class SharedChatSystem : EntitySystem
 {
     public const char RadioCommonPrefix = ';';
     public const char RadioChannelPrefix = ':';
-    public const char RadioChannelAltPrefix = '.';
     public const char LocalPrefix = '>';
     public const char ConsolePrefix = '/';
     public const char DeadPrefix = '\\';
@@ -22,6 +21,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';
     public const char SubtlePrefix = '-';
+    public const char SubtleOOCPrefix = '{'; // Floof - changed to "{"
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
     public const char TelepathicPrefix = '='; //Nyano - Summary: Adds the telepathic channel's prefix.
@@ -72,25 +72,19 @@ public abstract class SharedChatSystem : EntitySystem
         if (!Resolve(source, ref speech, false))
             return _prototypeManager.Index<SpeechVerbPrototype>(DefaultSpeechVerb);
 
-        var evt = new TransformSpeakerSpeechEvent(source);
-        RaiseLocalEvent(source, evt);
-
-        SpeechVerbPrototype? speechProto = null;
-        if (evt.SpeechVerb != null && _prototypeManager.TryIndex(evt.SpeechVerb, out var evntProto))
-            speechProto = evntProto;
-
         // check for a suffix-applicable speech verb
+        SpeechVerbPrototype? current = null;
         foreach (var (str, id) in speech.SuffixSpeechVerbs)
         {
-            var proto = _prototypeManager.Index<SpeechVerbPrototype>(id);
-            if (message.EndsWith(Loc.GetString(str)) && proto.Priority >= (speechProto?.Priority ?? 0))
+            var proto = _prototypeManager.Index(id);
+            if (message.EndsWith(Loc.GetString(str)) && proto.Priority >= (current?.Priority ?? 0))
             {
-                speechProto = proto;
+                current = proto;
             }
         }
 
         // if no applicable suffix verb return the normal one used by the entity
-        return speechProto ?? _prototypeManager.Index<SpeechVerbPrototype>(speech.SpeechVerb);
+        return current ?? _prototypeManager.Index(speech.SpeechVerb);
     }
 
     /// <summary>
@@ -123,7 +117,7 @@ public abstract class SharedChatSystem : EntitySystem
             return true;
         }
 
-        if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
+        if (!(input.StartsWith(RadioChannelPrefix)))
             return false;
 
         if (input.Length < 2 || char.IsWhiteSpace(input[1]))
@@ -281,6 +275,7 @@ public enum InGameICChatType : byte
     Speak,
     Emote,
     Subtle, // Floofstation
+    SubtleOOC, // Den
     Whisper,
     Telepathic
 }
@@ -292,7 +287,7 @@ public enum InGameICChatType : byte
 public enum InGameOOCChatType : byte
 {
     Looc,
-    Dead
+    Dead,
 }
 
 /// <summary>

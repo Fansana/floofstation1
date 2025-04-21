@@ -34,6 +34,9 @@
     solution: fleshlight
   - type: ExaminableSolution
     solution: fleshlight
+  - type: Tag
+    tags:
+     - Fleshlight
 
 - type: entity
   parent: BaseFleshlight

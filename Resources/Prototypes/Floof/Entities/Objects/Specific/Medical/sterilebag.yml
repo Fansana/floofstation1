@@ -1,0 +1,14 @@
+- type: entity
+  name: sterile bag
+  description: A sterile bag, ready to be filled.
+  parent: BaseItem
+  id: SterileBag
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medical.rsi
+    state: bloodpack-empty
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - Sterilebag

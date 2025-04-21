@@ -32,10 +32,10 @@
       - Biological
     damage:
       types:
-        Heat: -10
-        Cold: -10
-        Shock: -10
-        Caustic: -3 #Was 5 per type & 1.5 caustic, Buffed due to limb damage changes # Floof - changed to 3. Who did the math on this one??
+        Heat: -5
+        Cold: -5
+        Shock: -5
+        Caustic: -1.5 #Was 5 per type & 1.5 caustic, Buffed due to limb damage changes # Floof - reverted
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
     healingEndSound:
@@ -83,10 +83,10 @@
       - Biological
     damage:
       types:
-        Heat: -15
-        Cold: -15
-        Shock: -15
-        Caustic: -15 #Was 10 per type, Buffed due to limb damage changes
+        Heat: -10
+        Cold: -10
+        Shock: -10
+        Caustic: -10 #Was 10 per type, Buffed due to limb damage changes # Floof - reverted
     healingBeginSound:
       path: "/Audio/Items/Medical/ointment_begin.ogg"
     healingEndSound:
@@ -123,7 +123,7 @@
       - Biological
     damage:
       groups:
-        Brute: -30 # was 5 (-15 Brute) for each, Buffed due to limb damage changes
+        Brute: -15 # was 5 (-15 Brute) for each, Buffed due to limb damage changes # Floof - reverted
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
@@ -172,7 +172,7 @@
       - Biological
     damage:
       groups:
-        Brute: -45 # was 10 for each, now 20 for each type in the group, Buffed due to Limb Damage Changes
+        Brute: -30 # was 10 for each, now 20 for each type in the group, Buffed due to Limb Damage Changes # Floof - reverted
     bloodlossModifier: -10 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -210,8 +210,8 @@
       - Biological
     damage:
       types:
-        Bloodloss: -2.5 #lowers bloodloss damage, was .5, buffed due to Limb Damage Changes
-    ModifyBloodLevel: 30 #used to restore 5% blood per use, now restores about 10% blood per use on standard Buffed due to Limb Damage Changes
+        Bloodloss: -0.5 #lowers bloodloss damage, was .5, buffed due to Limb Damage Changes # Floof - reverted
+    ModifyBloodLevel: 15 #used to restore 5% blood per use Buffed due to Limb Damage Changes # Floof - reverted. This is NOT 5% on average (often ends up being 15%) due to mass diff.
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
     healingEndSound:
@@ -272,12 +272,13 @@
     graph: Gauze
     node: gauze
   - type: Healing
+    selfHealPenaltyMultiplier: 1.5 # Floof - useful gauze
     damageContainers:
       - Biological
     damage:
       types:
-        Slash: -10 # Was 5
-        Piercing: -15 # Was 10, Buffed due to limb damage changes
+        Slash: -5 # Was 5 # Floof - reverted
+        Piercing: -10 # Was 10, Buffed due to limb damage changes # Floof - reverted
     bloodlossModifier: -10
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -304,7 +305,7 @@
   components:
   - type: Stack
     lingering: true
-    count: 1
+    count: 10  # Floof - why was this randomly changed to 1?
 
 - type: entity
   name: aloe cream
@@ -317,7 +318,7 @@
     state: cream
   - type: Stack
     stackType: AloeCream
-    count: 15 #Was 10, Buffed due to limb damage changes
+    count: 10 #Was 10, Buffed due to limb damage changes # Floof - reverted
 
 - type: entity
   parent: BaseHealingItem
@@ -444,7 +445,41 @@
       amount: 5
 
 - type: entity
-  name: pill (iron 10u)
+  name: pill
+  suffix: Potassium iodide 10u
+  parent: Pill
+  id: PillPotassiumIodide
+  components:
+  - type: Pill
+    pillType: 8
+  - type: Sprite
+    state: pill9
+  - type: Label
+    currentLabel: potassium iodide 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: PotassiumIodide
+          Quantity: 10
+
+- type: entity
+  name: pill canister
+  parent: PillCanister
+  id: PillCanisterPotassiumIodide
+  suffix: Potassium iodide 10u, 5
+  components:
+  - type: Label
+    currentLabel: potassium iodide 10u
+  - type: StorageFill
+    contents:
+    - id: PillPotassiumIodide
+      amount: 5
+
+- type: entity
+  name: pill
+  suffix: Iron 10u
   parent: Pill
   id: PillIron
   components:
@@ -779,6 +814,10 @@
       maxAmount: 7
       orGroup: RandomPill
     - id: PillHyronalin
+      prob: 0.10
+      maxAmount: 7
+      orGroup: RandomPill
+    - id: PillPotassiumIodide
       prob: 0.10
       maxAmount: 7
       orGroup: RandomPill

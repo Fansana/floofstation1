@@ -63,6 +63,20 @@
   items:
   - ClothingEyesGlassesCommand
 
+- type: loadout
+  id: LoadoutCommandEyesHudCommand
+  category: JobsCommandAUncategorized
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCommandEyes
+    - !type:CharacterDepartmentRequirement
+      departments:
+      - Command
+  items:
+  - ClothingEyesHudCommand
+
 # Gloves
 
 # Head

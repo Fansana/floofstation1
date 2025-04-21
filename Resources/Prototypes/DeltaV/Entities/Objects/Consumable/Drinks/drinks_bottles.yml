@@ -1,0 +1,17 @@
+- type: entity
+  parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
+  id: DrinkAngobittersBottleFull
+  name: angostura bitters bottle
+  description: Commonly used for mixed drinks, not drunk neat.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Angobitters
+          Quantity: 50
+  - type: Label
+    currentLabel: reagent-name-angobitters
+  - type: Sprite
+    sprite: DeltaV/Objects/Consumable/Drinks/angobitters.rsi
+  - type: Sealable

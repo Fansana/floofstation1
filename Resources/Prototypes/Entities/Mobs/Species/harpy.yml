@@ -5,10 +5,6 @@
   id: MobHarpyBase
   abstract: true
   components:
-  - type: Flight
-    isLayerAnimated: true
-    layer: "/Textures/Mobs/Customization/Harpy/harpy_wings.rsi"
-    animationKey: "Flap"
   - type: Singer
     proto: HarpySinger
   - type: Sprite
@@ -24,6 +20,8 @@
       - map: [ "underpants" ]
       - map: [ "undershirt" ]
       - map: [ "socks" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
       - map: [ "jumpsuit" ]
       - map: ["enum.HumanoidVisualLayers.LFoot"]
       - map: ["enum.HumanoidVisualLayers.RFoot"]
@@ -42,6 +40,7 @@
       - map: [ "belt" ]
       - map: [ "neck" ]
       - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.Face" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ]
@@ -89,6 +88,8 @@
   - type: Speech
     speechSounds: Harpy
     speechVerb: Harpy
+    # Floof - M3739 - Temporary. Seems redundant. Came from the Feroxi port. Kept for posterity until I get a better understanding of it.
+    # allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Awoo', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Gnash',]
   - type: Vocal
     sounds:
       Male: SoundsHarpy
@@ -114,6 +115,7 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+    - HarpyEmotes
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
@@ -121,6 +123,7 @@
     understands:
     - TauCetiBasic
     - ValyrianStandard
+    naturalLanguage: ValyrianStandard # Floof: explicitly stated natural languages
   - type: StepTriggerImmune
     whitelist:
       types:
@@ -169,6 +172,7 @@
       - map: [ "belt" ]
       - map: [ "neck" ]
       - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.Face" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]

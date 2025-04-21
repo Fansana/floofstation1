@@ -72,6 +72,7 @@
     understands:
     - TauCetiBasic
     - Nekomimetic
+    naturalLanguage: Nekomimetic # Floof: explicitly stated natural languages
   - type: Thieving
     ignoreStripHidden: true
     stealth: Subtle
@@ -84,6 +85,12 @@
         - Landmine
         - Mousetrap
         - SlipEntity
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - FelinidEmotes
 
 - type: entity
   save: false

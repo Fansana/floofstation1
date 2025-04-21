@@ -21,6 +21,16 @@ namespace Content.Client.Chat.Managers
             _sawmill.Level = LogLevel.Info;
         }
 
+    public void SendAdminAlert(string message)
+    {
+        // See server-side manager. This just exists for shared code.
+    }
+
+    public void SendAdminAlert(EntityUid player, string message)
+    {
+        // See server-side manager. This just exists for shared code.
+    }
+
         public void SendMessage(string text, ChatSelectChannel channel)
         {
             var str = text.ToString();
@@ -50,6 +60,11 @@ namespace Content.Client.Chat.Managers
                 case ChatSelectChannel.Subtle: // Floofstation
                     _consoleHost.ExecuteCommand($"subtle \"{CommandParsing.Escape(str)}\"");
                     break;
+
+                case ChatSelectChannel.SubtleOOC: // Den
+                    _consoleHost.ExecuteCommand($"subtleooc \"{CommandParsing.Escape(str)}\"");
+                    break;
+
 
                 case ChatSelectChannel.Dead:
                     if (_systems.GetEntitySystemOrNull<GhostSystem>() is {IsGhost: true})

@@ -35,6 +35,9 @@
         type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
+      enum.InstrumentUiKey.Key: # Floof - M3739 - It seems like using the UserInterface component with the Interfaces complex field will effectively overwrite any Interfaces inherited from the parent. Ergo, unfortunately, we have to respecify as shown here.
+        type: InstrumentBoundUserInterface
+        requireInputValidation: false
   # to prevent bag open/honk spam
   - type: UseDelay
     delay: 0.5
@@ -119,6 +122,7 @@
     understands:
     - TauCetiBasic
     - Bubblish
+    naturalLanguage: Bubblish # Floof: explicitly stated natural languages
   - type: FootPrints
     leftBarePrint: "footprint-left-bare-slime"
     rightBarePrint: "footprint-right-bare-slime"

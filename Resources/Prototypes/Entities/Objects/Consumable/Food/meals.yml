@@ -154,6 +154,9 @@
           Quantity: 8
         - ReagentId: Vitamin
           Quantity: 4
+  - type: Tag  # Floof
+    tags:
+     - NachosCuban
 # Tastes like nachos, hot pepper.
 
 - type: entity
@@ -331,7 +334,8 @@
   description: BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
   components:
   - type: Food
-    trash: FoodKebabSkewer
+    trash: 
+    - FoodKebabSkewer
   - type: FlavorProfile
     flavors:
       - meaty
@@ -593,7 +597,8 @@
   description: Buttery.
   components:
   - type: Food
-    trash: FoodPlate
+    trash: 
+    - FoodPlate
   - type: FlavorProfile
     flavors:
       - corn

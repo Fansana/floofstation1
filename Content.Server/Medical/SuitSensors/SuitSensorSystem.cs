@@ -16,6 +16,7 @@ using Content.Shared.Medical.SuitSensor;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Verbs;
+using Content.Shared.Silicon.Components; // Floofstation
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
@@ -326,10 +327,9 @@ public sealed class SuitSensorSystem : EntitySystem
         {
             if (card.Comp.FullName != null)
                 userName = card.Comp.FullName;
-            if (card.Comp.JobTitle != null)
-                userJob = card.Comp.JobTitle;
-            if (card.Comp.JobIcon != null)
-                userJobIcon = card.Comp.JobIcon;
+            if (card.Comp.LocalizedJobTitle != null)
+                userJob = card.Comp.LocalizedJobTitle;
+            userJobIcon = card.Comp.JobIcon;
 
             foreach (var department in card.Comp.JobDepartments)
                 userJobDepartments.Add(Loc.GetString(department));
@@ -339,6 +339,9 @@ public sealed class SuitSensorSystem : EntitySystem
         var isAlive = false;
         if (EntityManager.TryGetComponent(sensor.User.Value, out MobStateComponent? mobState))
             isAlive = !_mobStateSystem.IsDead(sensor.User.Value, mobState);
+        
+        // Floofstation - get IPC battery status
+        var isDischarged = TryComp(sensor.User.Value, out SiliconComponent? SiliconComp) && (SiliconComp.ChargeState == 0);
 
         // get mob total damage
         var totalDamage = 0;
@@ -351,7 +354,7 @@ public sealed class SuitSensorSystem : EntitySystem
             totalDamageThreshold = critThreshold.Value.Int();
 
         // finally, form suit sensor status
-        var status = new SuitSensorStatus(GetNetEntity(uid), userName, userJob, userJobIcon, userJobDepartments);
+        var status = new SuitSensorStatus(GetNetEntity(sensor.User.Value), GetNetEntity(uid), userName, userJob, userJobIcon, userJobDepartments);
         switch (sensor.Mode)
         {
             case SuitSensorMode.SensorBinary:
@@ -361,11 +364,13 @@ public sealed class SuitSensorSystem : EntitySystem
                 status.IsAlive = isAlive;
                 status.TotalDamage = totalDamage;
                 status.TotalDamageThreshold = totalDamageThreshold;
+                status.IsDischarged = isDischarged; // Floofstation
                 break;
             case SuitSensorMode.SensorCords:
                 status.IsAlive = isAlive;
                 status.TotalDamage = totalDamage;
                 status.TotalDamageThreshold = totalDamageThreshold;
+                status.IsDischarged = isDischarged; // Floofstation
                 EntityCoordinates coordinates;
                 var xformQuery = GetEntityQuery<TransformComponent>();
 
@@ -406,6 +411,8 @@ public sealed class SuitSensorSystem : EntitySystem
             [SuitSensorConstants.NET_JOB_DEPARTMENTS] = status.JobDepartments,
             [SuitSensorConstants.NET_IS_ALIVE] = status.IsAlive,
             [SuitSensorConstants.NET_SUIT_SENSOR_UID] = status.SuitSensorUid,
+            [SuitSensorConstants.NET_OWNER_UID] = status.OwnerUid,
+            [SuitSensorConstants.NET_IS_DISCHARGED] = status.IsDischarged,
         };
 
         if (status.TotalDamage != null)
@@ -436,18 +443,21 @@ public sealed class SuitSensorSystem : EntitySystem
         if (!payload.TryGetValue(SuitSensorConstants.NET_JOB_DEPARTMENTS, out List<string>? jobDepartments)) return null;
         if (!payload.TryGetValue(SuitSensorConstants.NET_IS_ALIVE, out bool? isAlive)) return null;
         if (!payload.TryGetValue(SuitSensorConstants.NET_SUIT_SENSOR_UID, out NetEntity suitSensorUid)) return null;
+        if (!payload.TryGetValue(SuitSensorConstants.NET_OWNER_UID, out NetEntity ownerUid)) return null;
+        if (!payload.TryGetValue(SuitSensorConstants.NET_IS_DISCHARGED, out bool? isDischarged)) return null; // Floofstation
 
         // try get total damage and cords (optionals)
         payload.TryGetValue(SuitSensorConstants.NET_TOTAL_DAMAGE, out int? totalDamage);
         payload.TryGetValue(SuitSensorConstants.NET_TOTAL_DAMAGE_THRESHOLD, out int? totalDamageThreshold);
         payload.TryGetValue(SuitSensorConstants.NET_COORDINATES, out NetCoordinates? coords);
 
-        var status = new SuitSensorStatus(suitSensorUid, name, job, jobIcon, jobDepartments)
+        var status = new SuitSensorStatus(ownerUid, suitSensorUid, name, job, jobIcon, jobDepartments)
         {
             IsAlive = isAlive.Value,
             TotalDamage = totalDamage,
             TotalDamageThreshold = totalDamageThreshold,
             Coordinates = coords,
+            IsDischarged = isDischarged.Value, // Floofstation
         };
         return status;
     }

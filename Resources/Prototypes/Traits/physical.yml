@@ -14,8 +14,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToDie
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -38,8 +39,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToLive
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -62,8 +64,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - GlassJaw
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -86,8 +90,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - Tenacity
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -240,6 +246,10 @@
   category: Physical
   points: -3
   requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+      - Feroxi # Floof - Throwing hands? Nah, they are biting you.
   - !type:CharacterJobRequirement
     inverted: true
     jobs:
@@ -266,10 +276,15 @@
       species:
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
+        - Resomi # Floof - have this by default after porting Goob changes
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
       max: 32
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Tiny # Floofstation
   functions:
     - !type:TraitAddComponent
       components:
@@ -308,6 +323,7 @@
       species:
         - Harpy # Harpies already have talons
         - Arachnid # Apparently they have a "piercing" bite
+        - Feroxi # Floof - They bite. Piercing damage. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -337,6 +353,8 @@
         - Shadowkin # Shadowkins also have claws.
         # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
         - Rodentia # Floof - Rodentia already has it
+        - Resomi # Floof - they have claws after port of Goob changes
+        - Feroxi # Floof - They bite. Nuff said.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -365,7 +383,7 @@
         - Human
         - Oni
         - SlimePerson
-        - Resomi # Floofstation
+        - IPC # Floof - M3739 - #690 - Ever seen Real Steel?
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -397,7 +415,6 @@
       species:
         - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
                 # When we get the Character Records system in, I also want to make this require certain Backgrounds.
-        - Resomi # Floofstation.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -514,7 +531,6 @@
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
-        - Resomi
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
@@ -688,3 +704,58 @@
           - Biological
           - Inorganic
           - Silicon
+
+- type: trait
+  id: Redshirt
+  category: Physical
+  points: 8
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690 - As it stands, this trait COMPLETELY REMOVES the crit status altogether. Traits that alter crit thresholds will have no effect as a result.
+        - WillToLive
+        - WillToDie
+        - GlassJaw
+        - Tenacity
+        - BrittleBoneDisease
+        
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: DeadModifier
+          deadThresholdModifier: -100
+
+- type: trait
+  id: BrittleBoneDisease
+  category: Physical
+  points: 10
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690
+        - GlassJaw
+        - Tenacity
+        - Redshirt
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: CritModifier
+          critThresholdModifier: -50

@@ -70,6 +70,16 @@ language-ValyrianStandard-description =
     It is rarely spoken outside of the worlds of its native speakers, and has in modern times been supplanted by the 'Conlangs of the Sol Alliance.
     Its speakers are those who wish to uphold the traditions and beliefs of ancient peoples from before the colonial era.
 
+language-Chittin-name = Chittin
+language-Chittin-description =
+    A language consisting of clicks, buzzes, and some variety of harsh insect sounds.
+    Most of what makes up their speech comes from their antennae, making it a near-impossible language for those without to learn.
+
+language-Nehina-name = Nēhina
+language-Nehina-description =  A language spoken by the Feroxi, well adapted to speaking under the waters of ocean planets.
+
+# Animal Languages
+
 language-Cat-name = Cat
 language-Cat-description = Meow
 
@@ -83,7 +93,7 @@ language-Xeno-name = Xeno
 language-Xeno-description = Sssss!
 
 language-Monkey-name = Monkey
-language-Monkey-description = oooook!
+language-Monkey-description = Oooook!
 
 language-Mouse-name = Mouse
 language-Mouse-description = Squeeek!
@@ -115,8 +125,18 @@ language-Kobold-description = Hiss!
 language-Hissing-name = Hissing
 language-Hissing-description = Hiss!
 
+# Floof section begin
 language-ScugSign-name = ScugSign
 language-ScugSign-description = Wawa! The secret ScugSign making you able to understand your fellows scug!
 
 language-Arachnic-name = Arachnic
 language-Arachnic-description = The language of arachnids is composed of mostly clicks and hisses, it almost has a rhythmic character to it at times.
+
+language-Penguin-name = Penguin
+language-Penguin-description = Wank!
+# Floof section end
+
+language-Eldritch-name = Eldritch
+language-Eldritch-description =
+    A language that is considered to be long forgotten - now the only speakers of this profaned tongue of screeches and
+    mumbles are the followers of an ancient God of Blood.

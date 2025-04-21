@@ -4,14 +4,20 @@ using Content.Shared.Body.Components;
 using Content.Shared.Body.Events;
 using Content.Shared.Body.Organ;
 using Content.Shared.Body.Part;
-using Content.Shared.BodyEffects;
-using Content.Shared.Damage;
 using Robust.Shared.Containers;
+
+// Shitmed Change
+
+using Content.Shared.Damage;
+using Content.Shared._Shitmed.BodyEffects;
+using Content.Shared._Shitmed.Body.Organ;
 
 namespace Content.Shared.Body.Systems;
 
 public partial class SharedBodySystem
 {
+    // Shitmed Change Start
+
     private void InitializeOrgans()
     {
         SubscribeLocalEvent<OrganComponent, MapInitEvent>(OnMapInit);
@@ -25,13 +31,16 @@ public partial class SharedBodySystem
             EnsureComp<OrganEffectComponent>(ent);
     }
 
-    // Floofstation
+    // Shitmed Change End
+
+    // Floofstation change start
     private void OnCheckRotting(Entity<OrganComponent> ent, ref IsRottingEvent args)
     {
         // Check if the body exists. If so, do not allow rotting to progress.
         // This won't reset rotting, so med has to be careful when transplanting organs.
         args.Handled |= Exists(ent.Comp.Body);
     }
+    // Floofstation change end
 
     private void AddOrgan(
         Entity<OrganComponent> organEnt,
@@ -44,12 +53,13 @@ public partial class SharedBodySystem
 
         if (organEnt.Comp.Body is not null)
         {
-            organEnt.Comp.OriginalBody = organEnt.Comp.Body;
+        // Shitmed Change Start
             var addedInBodyEv = new OrganAddedToBodyEvent(bodyUid, parentPartUid);
             RaiseLocalEvent(organEnt, ref addedInBodyEv);
             var organEnabledEv = new OrganEnableChangedEvent(true);
             RaiseLocalEvent(organEnt, ref organEnabledEv);
         }
+        // Shitmed Change End
 
         Dirty(organEnt, organEnt.Comp);
     }
@@ -61,14 +71,17 @@ public partial class SharedBodySystem
 
         if (organEnt.Comp.Body is { Valid: true } bodyUid)
         {
+            // Shitmed Change Start
             organEnt.Comp.OriginalBody = organEnt.Comp.Body;
             var organDisabledEv = new OrganEnableChangedEvent(false);
             RaiseLocalEvent(organEnt, ref organDisabledEv);
+            // Shitmed Change End
             var removedInBodyEv = new OrganRemovedFromBodyEvent(bodyUid, parentPartUid);
             RaiseLocalEvent(organEnt, ref removedInBodyEv);
         }
 
-        if (TryComp(parentPartUid, out DamageableComponent? damageable)
+        if (parentPartUid is { Valid: true }
+            && TryComp(parentPartUid, out DamageableComponent? damageable)
             && damageable.TotalDamage > 200)
             TrySetOrganUsed(organEnt, true, organEnt.Comp);
 
@@ -108,7 +121,14 @@ public partial class SharedBodySystem
 
         Containers.EnsureContainer<ContainerSlot>(parent.Value, GetOrganContainerId(slotId));
         slot = new OrganSlot(slotId);
-        return part.Organs.TryAdd(slotId, slot.Value);
+
+        // Shitmed Change Start
+        if (!part.Organs.ContainsKey(slotId)
+            && !part.Organs.TryAdd(slotId, slot.Value))
+            return false;
+
+        return true;
+        // Shitmed Change End
     }
 
     /// <summary>
@@ -159,7 +179,7 @@ public partial class SharedBodySystem
     /// </summary>
     public bool RemoveOrgan(EntityUid organId, OrganComponent? organ = null)
     {
-        if (!Containers.TryGetContainingContainer(organId, out var container))
+        if (!Containers.TryGetContainingContainer((organId, null, null), out var container))
             return false;
 
         var parent = container.Owner;
@@ -219,6 +239,30 @@ public partial class SharedBodySystem
     }
 
     /// <summary>
+    /// Returns a list of Entity<<see cref="T"/>, <see cref="OrganComponent"/>>
+    /// for each organ of the body
+    /// </summary>
+    /// <typeparam name="T">The component that we want to return</typeparam>
+    /// <param name="entity">The body to check the organs of</param>
+    public List<Entity<T, OrganComponent>> GetBodyOrganEntityComps<T>(
+        Entity<BodyComponent?> entity)
+        where T : IComponent
+    {
+        if (!Resolve(entity, ref entity.Comp))
+            return new List<Entity<T, OrganComponent>>();
+
+        var query = GetEntityQuery<T>();
+        var list = new List<Entity<T, OrganComponent>>(3);
+        foreach (var organ in GetBodyOrgans(entity.Owner, entity.Comp))
+        {
+            if (query.TryGetComponent(organ.Id, out var comp))
+                list.Add((organ.Id, comp, organ.Component));
+        }
+
+        return list;
+    }
+
+    /// <summary>
     ///     Tries to get a list of ValueTuples of <see cref="T"/> and OrganComponent on each organs
     ///     in the given body.
     /// </summary>
@@ -247,6 +291,8 @@ public partial class SharedBodySystem
         comps = null;
         return false;
     }
+
+    // Shitmed Change Start
 
     public bool TrySetOrganUsed(EntityUid organId, bool used, OrganComponent? organ = null)
     {
@@ -302,4 +348,6 @@ public partial class SharedBodySystem
             RaiseLocalEvent(organEnt, ref ev);
         }
     }
+
+    // Shitmed Change End
 }

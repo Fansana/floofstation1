@@ -6,6 +6,7 @@ vore-digest = Digest {CAPITALIZE($entity)}
 vore-stop-digest = Stop digesting {CAPITALIZE($entity)}
 
 vore-attempt-devour = {CAPITALIZE($entity)} is trying to devour {CAPITALIZE($prey)}!
+vore-attempt-insert = {CAPITALIZE($prey)} is trying to climb in {CAPITALIZE($entity)}!
 vore-devoured = {CAPITALIZE($entity)} devoured {CAPITALIZE($prey)}
 vore-digest-start = {CAPITALIZE($entity)} belly begins to get more active...
 vore-digest-start-chat = [color=red]{CAPITALIZE($entity)} belly begins to get more active...[/color]

@@ -14,8 +14,15 @@
     components:
     - Vocal
   blacklist:
+    tags:
+      - SiliconEmotes
+      - UnathiEmotes # Floof - M3739 - #631 - Lizards cannot cough. At all.
+      - DionaEmotes # Floof - M3739 - #631
+      - ArachnidEmotes # Floof - M3739 - #631
+      - MothEmotes # Floof - M3739 - #631
+      - ChitinidEmotes # Floof - M3739 - #726
     components:
-    - BorgChassischatMessages
+    - BorgChassis
   chatTriggers:
     - coughs
 
@@ -53,8 +60,15 @@
     components:
     - Vocal
   blacklist:
+    tags:
+      - SiliconEmotes
+      - ArachnidEmotes # Floof - M3739 - #631
+      - DionaEmotes # Floof - M3739 - #631
+      - MothEmotes # Floof - M3739 - #631
+      - ChitinidEmotes # Floof - M3739 - #726
+     # Floof - M3739 - I was going to blacklist the Unathi from yawning, but as it turns out IRL lizards can in fact yawn, albeit, silently.
     components:
-    - BorgChassischatMessages
+    - BorgChassis
   chatTriggers:
     - yawns
 

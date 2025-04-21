@@ -6,6 +6,10 @@
   - type: Tag
     tags:
     - BorgModuleSecurity
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
 
 - type: entity
   id: BorgModuleStun
@@ -24,6 +28,10 @@
     - BorgStunbaton
     - BorgFlash
     - BorgZipties
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
 
 - type: entity
   id: BorgModuleKill
@@ -40,6 +48,10 @@
     - WeaponAdvancedLaser
     - WeaponborgPistolMk58
     - CombatKnife
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
 
 - type: entity
   id: BorgModuleInvestigation
@@ -56,6 +68,10 @@
     - ForensicScanner
     - DetectivePDA
     - SecurityWhistle
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
 
 - type: entity
   id: BorgModuleadvancedmeasures
@@ -69,6 +85,9 @@
     - state: icon-Advmeasures
   - type: ItemBorgModule
     items:
-    - WeaponBorgEnergyShotgun
     - BorgWeaponXrayCannon
+  - type: GuideHelp
+    guides:
+    - Quadborgs
+    - Cyborgs
 

@@ -98,6 +98,10 @@
   - type: Sprite
     sprite: Objects/Misc/zipties.rsi
     state: cuff
+  - type: Tag # Flloof
+    tags: # Floof
+      - ForensicBeltEquip #Floof
+
 
 - type: entity
   id: BaseHandcuffsBroken

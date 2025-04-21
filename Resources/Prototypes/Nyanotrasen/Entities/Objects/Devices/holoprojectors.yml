@@ -9,9 +9,22 @@
   - type: Sprite
     sprite: Nyanotrasen/Objects/Devices/Holoprojectors/eng.rsi
     state: icon
+# Floof - Start
+# Cell slot is not locked.
+#  - type: ItemSlots
+#    slots:
+#      cell_slot:
+#        name: power-cell-slot-component-slot-name-default
+#        startingItem: PowerCellMedium
+#        locked: true
+
+- type: entity
+  parent: HoloprojectorEngineering
+  id: HoloprojectorEngineeringEmpty
+  suffix: Empty
+  components:
   - type: ItemSlots
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellMedium
-        locked: true
+# Floof - End

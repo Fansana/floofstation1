@@ -20,11 +20,17 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutMystagogueEquipment
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutMystagogueEquipment
+  maxItems: 3
+  items:
+    - type: loadout
+      id: LoadoutMystagogueEquipmentCandles
+    - type: loadout
+      id: LoadoutMystagogueEquipmentCandlesSmall
+    - type: loadout
+      id: LoadoutMystagoguePillCanisterSpaceDrugs
+
 #- type: characterItemGroup
 #  id: LoadoutMystagogueEyes
 #  maxItems: 1
@@ -77,6 +83,8 @@
       id: LoadoutCommandRDOuterWinter
     - type: loadout
       id: LoadoutCommandRDOuterMysta
+    - type: loadout
+      id: LoadoutCommandRDOuterLongcoat # Floof - M3739 - #690
 
 - type: characterItemGroup
   id: LoadoutMystagogueShoes

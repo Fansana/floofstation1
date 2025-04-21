@@ -43,6 +43,7 @@
       - Kitchen
       - Lawyer
       - Library #Delta V: Add Library Access
+      - Mail # Floofstation - hopefully this makes it upstream eventually
       - Maintenance
       - Medical
       - Mime #Delta V: Add Mime Access
@@ -86,3 +87,63 @@
     - type: ContainerContainer
       containers:
         AccessOverrider-privilegedId: !type:ContainerSlot
+
+
+- type: entity
+  parent: AccessConfigurator
+  id: AccessConfiguratorUniversal
+  name: universal access configurator
+  suffix: Admin
+  description: A modified access configurator used only by the mythical Administrator.
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/universal_access_configurator.rsi
+  - type: Clothing
+    sprite: Objects/Tools/universal_access_configurator.rsi
+  - type: AccessOverrider
+    accessLevels:
+    - Armory
+    - Atmospherics
+    - Bar
+    - Boxer #Delta V: Add Boxer Access
+    - Detective
+    - Captain
+    - Cargo
+    - Chapel
+    - Chemistry
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - Clown #Delta V: Add Clown Access
+    - Corpsman # DeltaV: Add Corpsman access
+    - Command
+    - Engineering
+    - External
+    - HeadOfPersonnel
+    - HeadOfSecurity
+    - Hydroponics
+    - Janitor
+    - Kitchen
+    - Lawyer
+    - Library #Delta V: Add Library Access
+    - Mail # Floofstation - hopefully this makes it upstream eventually
+    - Maintenance
+    - Medical
+    - Mime #Delta V: Add Mime Access
+    - Musician #Delta V: Add Musician Access
+    - Paramedic # Delta V - adds Paramedic access
+    - Psychologist #Delta V: Add Psychologist Access
+    - Quartermaster
+    - Reporter #Delta V: Add Reporter Access
+    - Research
+    - ResearchDirector
+    - Salvage
+    - Security
+    - Service
+    - Theatre
+    - Zookeeper #Delta V: Add Zookeeper Access
+    - ChiefJustice  #Delta V: Add Chief Justice Access
+    - Prosecutor  #Delta V: Add Prosecutor Access
+    - Justice  #Delta V: Add Justice Access
+    - CentralCommand
+    - NuclearOperative
+    - SyndicateAgent

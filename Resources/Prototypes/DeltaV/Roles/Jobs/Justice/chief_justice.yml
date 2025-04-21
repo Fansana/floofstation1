@@ -3,6 +3,7 @@
   name: job-name-chief-justice
   description: job-description-chief-justice
   playTimeTracker: JobChiefJustice
+  # whitelisted: true # whitelist requirement because I don't want any dingus judges | Floof - Chief Justice is not whitelisted.
   requirements:
     - !type:CharacterPlaytimeRequirement
       tracker: JobClerk
@@ -15,7 +16,6 @@
       min: 36000 # 10 hours
     - !type:CharacterOverallTimeRequirement
       min: 90000 # 25 hours
-    - !type:CharacterWhitelistRequirement # whitelist requirement because I don't want any dingus judges
   weight: 20
   startingGear: CJGear
   icon: "JobIconChiefJustice"
@@ -38,16 +38,17 @@
 
 - type: startingGear
   id: CJGear
-  equipment:
+  equipment:  # Floof - M3739 - Some of the equipment listed below has been commented out to keep consistency with other command roles.
     jumpsuit: ClothingUniformJumpsuitChiefJustice
     back: ClothingBackpackFilled # TODO- make Justice department bags
     shoes: ClothingShoesLeather
-    head: ClothingHeadHatCJToque
-    outerClothing: ClothingOuterChiefJustice
+    # head: ClothingHeadHatCJToque
+    # outerClothing: ClothingOuterChiefJustice
     id: ChiefJusticePDA
     ears: ClothingHeadsetAltJustice
-    gloves: ClothingHandsGlovesColorWhite
-    # Todo - pocket1: Gavel
+    # gloves: ClothingHandsGlovesColorWhite
+    pocket1: Gavel
+    pocket2: GavelBlock
   innerClothingSkirt: ClothingUniformJumpskirtChiefJustice
   satchel: ClothingBackpackSatchelFilled # TODO- make Justice departmebt bags
   duffelbag: ClothingBackpackDuffelFilled

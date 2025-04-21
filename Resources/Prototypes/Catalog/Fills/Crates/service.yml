@@ -139,7 +139,7 @@
     - id: PaperStickyNoteStackFilledBlue
     # End DeltaV: sticky notes
     - id: NewtonCradle
-    #- id: BoxEnvelope Floof - Removed until envelopes are added.
+    - id: BoxEnvelope
     - id: BrbSign
     # Start DeltaV - More folders & colored paper reams in the bureaucracy crate
     - id: BoxFolderBlack
@@ -150,7 +150,7 @@
       amount: 2
     - id: BoxReamClassic
     - id: BoxReamBright
-    # End DeltaV - More folders & colored paper reams in the bureaucracy crate
+    # End DeltaV - More folders & colored paper reams in the bureaucracy crat
 
 - type: entity
   id: CrateServicePersonnel
@@ -185,7 +185,7 @@
       - id: BookSpaceEncyclopedia
       - id: BookTheBookOfControl
       - id: BookBartendersManual
-      - id: BookChefGaming
+      - id: BookHowToCookForFortySpaceman
       - id: BookLeafLoversSecret
       - id: BookEngineersHandbook
       - id: BookScientistsGuidebook

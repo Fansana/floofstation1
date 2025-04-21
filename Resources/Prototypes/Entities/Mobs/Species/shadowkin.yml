@@ -160,6 +160,8 @@
         - map: ["enum.HumanoidVisualLayers.LFoot"]
         - map: ["enum.HumanoidVisualLayers.RFoot"]
         - map: ["socks"]
+        - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floof, add underwear
+        - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floof, add underwear
         - map: ["underpants"]
         - map: ["undershirt"]
         - map: ["jumpsuit"]
@@ -179,6 +181,7 @@
         - map: ["belt"]
         - map: ["neck"]
         - map: ["back"]
+        - map: [ "enum.HumanoidVisualLayers.Face" ]
         - map: ["enum.HumanoidVisualLayers.FacialHair"]
         - map: ["enum.HumanoidVisualLayers.Hair"]
         - map: ["enum.HumanoidVisualLayers.HeadSide"]
@@ -224,7 +227,7 @@
       removable: false
     - type: InnatePsionicPowers
       powersToAdd:
-        - ShadowkinPowers
+        - DarkSwapPower
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
@@ -232,6 +235,13 @@
       understands:
         - TauCetiBasic
         - Marish
+      naturalLanguage: Marish # Floof: explicitly stated natural languages
+    - type: Tag
+      tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ShadowkinEmotes
 
 - type: entity
   save: false
@@ -279,6 +289,7 @@
         - map: ["belt"]
         - map: ["neck"]
         - map: ["back"]
+        - map: [ "enum.HumanoidVisualLayers.Face" ]
         - map: ["enum.HumanoidVisualLayers.FacialHair"]
         - map: ["enum.HumanoidVisualLayers.Hair"]
         - map: ["enum.HumanoidVisualLayers.HeadSide"]

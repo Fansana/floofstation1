@@ -6,6 +6,8 @@
   sounds:
     Scream:
       collection: HarpyScreams
+    Yawn:
+      collection: MaleYawn
     Laugh:
       collection: HarpyLaugh
     Sneeze:
@@ -38,8 +40,20 @@
       collection: HarpyBangs
     Beep:
       collection: HarpyBeeps
+    Boop:
+      path: /Audio/Voice/IPC/beep_500.ogg
     HarpyRev:
       collection: HarpyRevs
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    Whirr:
+      collection: IPCWhirrs
     Click:
       collection: HarpyClicks
     Chitter:
@@ -64,6 +78,8 @@
       collection: Mars
     Wurble:
       collection: Wurble
+    Gnash:
+      collection: FeroxiGnashes
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -155,7 +171,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: RodentiaScreams # Floof
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -176,7 +192,7 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Squeak: 
+    Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
 
 - type: emoteSounds
@@ -185,7 +201,7 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/Animals/mouse_squeak.ogg
+      collection: RodentiaScreams # Floof
     Laugh:
       collection: FemaleLaugh
     Sneeze:
@@ -206,5 +222,89 @@
       collection: Whistles
     Weh:
       collection: Weh
-    Squeak: 
+    Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
+      
+- type: emoteSounds
+  id: UnisexChitinid
+  params:
+    variation: 0.125
+  sounds:
+    Buzz:
+      path: /Audio/DeltaV/Voice/Chitinid/moth_scream.ogg
+    Scream:
+      path: /Audio/Voice/Arachnid/arachnid_scream.ogg
+    Laugh:
+      path: /Audio/DeltaV/Voice/Chitinid/moth_laugh.ogg
+    Chitter:
+      path: /Audio/Voice/Arachnid/arachnid_chitter.ogg
+    Click:
+      path: /Audio/Voice/Arachnid/arachnid_click.ogg
+    Crying:
+      collection: FemaleCry
+    Hiss: # Delta-V - M3739 - Not too sure how this wasn't retained in the port. Did we begin the process before it merged?
+      path: /Audio/Animals/snake_hiss.ogg
+    Weh: # Floof - M3739 - the wehpocalypse claims the ants
+      collection: Weh
+
+- type: emoteSounds
+  id: MaleFeroxi
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Hiss:
+      path: /Audio/Animals/snake_hiss.ogg
+    Gnash:
+      collection: FeroxiGnashes
+
+- type: emoteSounds
+  id: FemaleFeroxi
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Gnash:
+      collection: FeroxiGnashes

@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend",
+    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend, Feroxi sprites made by BlitzTheSquishy",
     "states": [
         {
             "name": "felinid0",
@@ -25,7 +25,41 @@
             "name": "felinid2"
         },
         {
+            "name": "chitinid0",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "chitinid1"
+        },
+        {
+            "name": "chitinid2"
+        },
+		{
             "name": "rodentia0",
+			"delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+			]
+        },
+		{
+            "name": "rodentia1"
+        },
+		{
+            "name": "rodentia2"
+        },
+        {
+            "name": "feroxi0",
             "delays": [
                 [
                     0.2,
@@ -36,10 +70,10 @@
             ]
         },
         {
-            "name": "rodentia1"
+            "name": "feroxi1"
         },
         {
-            "name": "rodentia2"
+            "name": "feroxi2"
         }
     ]
 }

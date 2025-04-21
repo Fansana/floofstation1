@@ -1,47 +1,75 @@
 # Paramedic
-- type: loadout
-  id: LoadoutClothingHandsParaMedicWarmers
-  category: JobsMedicalParamedic
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingHandsParaMedicWarmers
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Paramedic
-
-- type: loadout
-  id: LoadoutClothingUnderSocksParaMedic
-  category: JobsMedicalParamedic
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingUnderSocksParaMedic
-  requirements:
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-    - Diona
-    - Harpy
-  - !type:CharacterJobRequirement
-    jobs:
-    - Paramedic
-
-- type: loadout
-  id: LoadoutClothingUniformParaMedicThong
-  category: JobsMedicalParamedic
-  cost: 0
-  exclusive: true
-  items:
-  - ClothingUniformParaMedicThong
-  requirements:
-  - !type:CharacterJobRequirement
-    jobs:
-    - Paramedic
 # Backpacks
+- type: loadout
+  id: LoadoutParamedicBagBackpack
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutParamedicBagDuffel
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackDuffelParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
+
+- type: loadout
+  id: LoadoutParamedicBagSatchel
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackSatchelParamedicFilledDV # Floof - M3739 - #690 - Give paramedics ALL their equipment please, and thank you.
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutParamedicBackpacks
+  - !type:CharacterJobRequirement
+    jobs:
+    - Paramedic
 
 # Belt
+- type: loadout
+  id: LoadoutParamedicBeltEMT
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingBeltMedicalEMT
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
+- type: loadout
+  id: LoadoutParamedicBeltEMTFilled
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingBeltMedicalEMTFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
 
 # Ears
 
@@ -50,6 +78,19 @@
 # Eyes
 
 # Gloves
+- type: loadout
+  id: LoadoutClothingHandsParaMedicWarmers
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsParaMedicWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
 
 # Head
 - type: loadout
@@ -87,7 +128,35 @@
       jobs:
         - Paramedic
 
+- type: loadout
+  id: LoadoutMedicalOuterParamedicWinter
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterPara
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
 # Shoes
+- type: loadout
+  id: LoadoutMedicalShoesParamedicBlue
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesColorBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+
 - type: loadout
   id: LoadoutMedicalShoesParamedicWinter
   category: JobsMedicalParamedic
@@ -102,4 +171,36 @@
       jobs:
         - Paramedic
 
+- type: loadout
+  id: LoadoutClothingUnderSocksParaMedic
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUnderSocksParaMedic
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Paramedic
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
 # Uniforms
+- type: loadout
+  id: LoadoutClothingUniformParaMedicThong
+  category: JobsMedicalParamedic
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformParaMedicThong
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutParamedicUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+      - Paramedic

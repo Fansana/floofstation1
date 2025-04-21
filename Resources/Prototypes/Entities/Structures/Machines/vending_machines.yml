@@ -111,8 +111,6 @@
     understands:
     - TauCetiBasic
     - RobotTalk
-  - type: VendingMachine
-    soundVend: /Audio/SimpleStation14/Machines/machine_vend.ogg
 
 - type: entity
   parent: VendingMachine
@@ -1531,12 +1529,12 @@
   name: Salvage Vendor
   description: A dwarf's best friend!
   components:
-  - type: VendingMachine
-    pack: SalvageEquipmentInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    denyState: deny-unshaded
+  #- type: VendingMachine # DeltaV: Use mining points instead of limited stock
+  #  pack: SalvageEquipmentInventory
+  #  offState: off
+  #  brokenState: broken
+  #  normalState: normal-unshaded
+  #  denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/mining.rsi
     layers:
@@ -1553,6 +1551,21 @@
     color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+  - type: ShopVendor # DeltaV
+    pack: SalvageVendorInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: PointsVendor # DeltaV
+  - type: UserInterface # DeltaV: Replace vending machine BUI with shop vendor
+    interfaces:
+      enum.VendingMachineUiKey.Key:
+        type: ShopVendorBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Wires # DeltaV: Use shop vendor wires layout
+    layoutId: ShopVendor
   - type: AccessReader
     access: [["Salvage"]]
   - type: GuideHelp
@@ -1715,7 +1728,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
-    access: [["Lawyer"]]
+    access: [["Justice"]]
 
 - type: entity
   parent: VendingMachine
@@ -2274,11 +2287,10 @@
     access: [["Kitchen"], ["Theatre"]]
 
 # Gas Tank Dispenser
-
 - type: entity
   parent: VendingMachine
   id: VendingMachineTankDispenserEVA
-  suffix: EVA [O2, N2]
+  suffix: EVA [O2, N2, H2O] # Floof - Feroxi Port
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks.
   components:

@@ -19,10 +19,13 @@
   id: MobHumanSprites
   sprites:
     Head: MobHumanHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobHumanTorso
+    Underwear: MobHumanoidAnyMarking # Floof, add underwear
+    Undershirt: MobHumanoidAnyMarking # Floof, add underwear
     Eyes: MobHumanoidEyes
     LArm: MobHumanLArm
     RArm: MobHumanRArm
@@ -40,6 +43,15 @@
 - type: markingPoints
   id: MobHumanMarkingLimits
   points:
+    Underwear:
+      points: 1
+      required: false # Floof, add underwear
+    Undershirt:
+      points: 1
+      required: false # Floof, add underwear
+    Face:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
@@ -57,6 +69,9 @@
       required: false
     HeadTop:
       points: 1
+      required: false
+    HeadSide:
+      points: 4
       required: false
     Chest:
       points: 1
@@ -77,16 +92,13 @@
       points: 2
       required: false
     RightHand:
-      points: 2
+      points: 3
       required: false
     LeftArm:
       points: 2
       required: false
     LeftHand:
-      points: 2
-      required: false
-    HeadSide:
-      points: 1
+      points: 3
       required: false
 
 - type: humanoidBaseSprite

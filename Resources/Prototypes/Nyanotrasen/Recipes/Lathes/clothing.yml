@@ -4,6 +4,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/prisonguard.rsi
     state: icon
   result: ClothingUniformJumpsuitPrisonGuard
+  category: ClothingSecurity # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -14,6 +15,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mantis_uniform.rsi
     state: icon
   result: ClothingUniformJumpsuitMantis
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -24,6 +26,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpskirt/mantis_jumpskirt.rsi
     state: icon
   result: ClothingUniformSkirtMantis
+  category: ClothingEpistemics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -34,6 +37,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mailman.rsi
     state: icon
   result: ClothingUniformCourier
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300
@@ -44,6 +48,7 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpskirt/mailman.rsi
     state: icon
   result: ClothingUniformSkirtCourier
+  category: ClothingLogistics # Floof - add uniform printer clothing categories
   completetime: 4
   materials:
     Cloth: 300

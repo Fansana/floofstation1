@@ -16,6 +16,7 @@
         - Paramedic
         - ChiefMedicalOfficer
         - Brigmedic
+        - SeniorPhysician # Floof - M3739 - #690 - no more dual-wielding
 
 - type: trait
   id: SelfAware
@@ -173,6 +174,7 @@
       inverted: true
       species:
         - Harpy
+        - IPC # Floof - M3739 - Audio Player trait is the IPC equivalent of this. Silicons are built different.
   functions:
     - !type:TraitAddComponent
       components:
@@ -288,12 +290,6 @@
         - !type:CharacterTraitRequirement
           traits:
             - AnomalousPositronics
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
 
 - type: trait
   id: TrapAvoider

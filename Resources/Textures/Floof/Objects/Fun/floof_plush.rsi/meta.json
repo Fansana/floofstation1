@@ -1,23 +1,32 @@
 {
     "version": 1,
     "license": "CC-BY-NC-SA-4.0",
-    "copyright": "Pire, Dzordz, JenreyDominos, Shy_ivy",
+    "copyright": "Dzordz, JenreyDominos, Shy_ivy, faefyr",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "dragon"
-        },
-        {
             "name": "chill"
         },
-        {
-            "name": "tricera"
+		{
+            "name": "kitsune"
         },
         {
-            "name": "dino"
+            "name": "salvager"
+        },
+		{
+            "name": "harpy"
+        },
+		{
+            "name": "vulp1"
+        },
+		{
+            "name": "vulp2"
+        },
+		{
+            "name": "vulp3"
         },
         {
             "name": "slime"

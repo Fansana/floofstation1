@@ -53,7 +53,7 @@ public sealed class MousetrapSystem : EntitySystem
         // Small - big damage,
         // Large - small damage
         // Yes, I punched numbers into a calculator until the graph looked right
-        var scaledDamage = -50 * MathF.Atan(physics.Mass - component.MassBalance) + 25 * MathF.PI;
+        var scaledDamage = -30 * MathF.Atan((physics.Mass - component.MassBalance) / 4) + 15 * MathF.PI; // Floof - rebalanced
         args.Damage *= scaledDamage;
     }
 

@@ -1,0 +1,13 @@
+- type: loadout
+  id: LoadoutJusticeAttorneyBadge
+  category: JobsServiceLawyer
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - Lawyer
+  items:
+    - ClothingNeckLawyerbadge

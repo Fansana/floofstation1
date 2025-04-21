@@ -5,6 +5,8 @@ using Content.Shared.Verbs;
 using Content.Shared.Sprite;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
+using Content.Shared.Administration;
+using Content.Shared.Administration.Managers;
 
 namespace Content.Shared.Paint;
 
@@ -14,6 +16,7 @@ public sealed class PaintRemoverSystem : SharedPaintSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
+    [Dependency] private readonly ISharedAdminManager _admin = default!;
 
 
     public override void Initialize()
@@ -36,8 +39,7 @@ public sealed class PaintRemoverSystem : SharedPaintSystem
 
         _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, component.CleanDelay, new PaintRemoverDoAfterEvent(), uid, args.Target, uid)
         {
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnDamage = true,
             MovementThreshold = 1.0f,
         });
@@ -65,7 +67,7 @@ public sealed class PaintRemoverSystem : SharedPaintSystem
 
     private void OnPaintRemoveVerb(EntityUid uid, PaintRemoverComponent component, GetVerbsEvent<UtilityVerb> args)
     {
-        if (!args.CanInteract || !args.CanAccess)
+        if ((!args.CanInteract || !args.CanAccess) && !_admin.HasAdminFlag(args.User, AdminFlags.Admin)) // Floof: Admins can remove paint on anything they can get verbs for
             return;
 
         var verb = new UtilityVerb()
@@ -83,8 +85,7 @@ public sealed class PaintRemoverSystem : SharedPaintSystem
                         args.Target,
                         uid)
                     {
-                        BreakOnUserMove = true,
-                        BreakOnTargetMove = true,
+                        BreakOnMove = true,
                         BreakOnDamage = true,
                         MovementThreshold = 1.0f,
                     });

@@ -126,7 +126,7 @@ public sealed class TemperatureSystem : EntitySystem
     public void ChangeHeat(EntityUid uid, float heatAmount, bool ignoreHeatResistance = false,
         TemperatureComponent? temperature = null)
     {
-        if (!Resolve(uid, ref temperature))
+        if (!Resolve(uid, ref temperature, false))
             return;
 
         if (!ignoreHeatResistance)
@@ -412,19 +412,5 @@ public sealed class TemperatureSystem : EntitySystem
         }
 
         return (newHeatThreshold, newColdThreshold);
-    }
-}
-
-public sealed class OnTemperatureChangeEvent : EntityEventArgs
-{
-    public float CurrentTemperature { get; }
-    public float LastTemperature { get; }
-    public float TemperatureDelta { get; }
-
-    public OnTemperatureChangeEvent(float current, float last, float delta)
-    {
-        CurrentTemperature = current;
-        LastTemperature = last;
-        TemperatureDelta = delta;
     }
 }

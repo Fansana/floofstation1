@@ -1,0 +1,12 @@
+- type: entity
+  id: MegaSprayBottleSpaceCleaner
+  parent: MegaSprayBottle
+  suffix: Space Cleaner
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      spray:
+        maxVol: 250
+        reagents:
+        - ReagentId: SpaceCleaner
+          Quantity: 250

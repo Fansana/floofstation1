@@ -68,6 +68,8 @@ loadout-category-JobsSecurityHeadOfSecurity = Head of Security
 loadout-category-JobsSecuritySecurityOfficer = Security Officer
 loadout-category-JobsSecuritySeniorOfficer = Senior Officer
 loadout-category-JobsSecurityWarden = Warden
+# Floof - Prison Guard loadout implementation
+loadout-category-JobsSecurityPrisonGuard = Prison Guard
 
 # Service
 loadout-category-JobsService = Service
@@ -77,7 +79,8 @@ loadout-category-JobsServiceBotanist = Botanist
 loadout-category-JobsServiceChef = Chef
 loadout-category-JobsServiceClown = Clown
 loadout-category-JobsServiceJanitor = Janitor
-loadout-category-JobsServiceLawyer = Lawyer
+# Floof - Lawyer has been changed to Attorney in this FTL as part of the Justice loadout implementation.
+loadout-category-JobsServiceLawyer = Attorney
 loadout-category-JobsServiceMime = Mime
 loadout-category-JobsServiceMusician = Musician
 loadout-category-JobsServiceReporter = Reporter

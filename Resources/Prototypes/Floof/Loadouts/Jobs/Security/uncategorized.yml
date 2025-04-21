@@ -1,4 +1,66 @@
 # Uncategorized
+
+- type: loadout
+  id: LoadoutMagazineSpecialRubber
+  category: JobsSecurityAUncategorized
+  cost: 2
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecialRubber
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecialRubberSpare
+  category: JobsSecurityAUncategorized
+  cost: 4
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecialRubber
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecial
+  category: JobsSecurityAUncategorized
+  cost: 2
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecial
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecialSpare
+  category: JobsSecurityAUncategorized
+  cost: 4
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecial
+
 # Backpack
 
 # Belt
