@@ -362,7 +362,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         if (sync)
-            Dirty(uid, humanoid);    
+            Dirty(uid, humanoid);
     }
 
     /// <summary>

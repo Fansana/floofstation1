@@ -30,5 +30,9 @@ consent-Digestion-desc = Allow yourself to be digested. WARNING: BEING DIGESTED 
 consent-Hypno-name = Hypnosis
 consent-Hypno-desc = Allow yourself to be hypnotized.
 
+consent-Horny-name = Seeking ERP
+consent-Horny-desc = Display a message when examined that you're actively looking for ERP (or some kind of scene).
+consent-Horny-examine = {$user} seems like they're looking for a good time! Go talk to them!
+
 consent-NoClone-name = Disallow Paradox Anomaly
 consent-NoClone-desc = Disallow yourself to be the target of a paradox anomaly clone.
