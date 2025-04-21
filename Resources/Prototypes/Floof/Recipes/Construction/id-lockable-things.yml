@@ -12,7 +12,7 @@
 - type: construction
   id: ClosetSteelSecureIdLockable
   name: secure closet (id-lock)
-  graph: ClosetSteelSecureIdLockable
+  graph: ClosetSteelSecure
   startNode: start
   targetNode: jdLockable
   category: construction-category-storage
