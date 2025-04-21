@@ -41,8 +41,8 @@ public sealed class IdLockSystem : EntitySystem
     private void OnMapInit(Entity<IdLockComponent> ent, ref MapInitEvent args)
     {
         // Sanity check: as of now, ID locks require a normal lock underneath to work
-        DebugTools.Assert(HasComp<LockComponent>(ent) && HasComp<AccessReaderComponent>(ent),
-            $"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported.");
+        if (!HasComp<LockComponent>(ent) || !HasComp<AccessReaderComponent>(ent))
+            Log.Warning($"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported."););
     }
 
     private void OnExamined(Entity<IdLockComponent> ent, ref ExaminedEvent args)
