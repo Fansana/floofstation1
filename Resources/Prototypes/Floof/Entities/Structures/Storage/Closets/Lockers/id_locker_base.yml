@@ -35,7 +35,10 @@
 - type: entity
   id: IdLockableBaseService
   parent: IdLockableBase
-  abstract: true # No difference from parent, HoP already has access by default
+  abstract: true
+  components:
+  - type: IdLock
+    revealInfo: true
 
 # The below only list the direct masters. Captain, HoP, and central command master accesses are inherited.
 - type: entity
