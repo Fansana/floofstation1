@@ -4595,3 +4595,10 @@ Entries:
   id: 492
   time: '2025-04-22T18:00:10.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/841
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Flipped disposal signal junctions point the correct direction now
+  id: 493
+  time: '2025-04-22T20:09:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/840
