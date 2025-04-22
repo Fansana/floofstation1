@@ -86386,7 +86386,7 @@ entities:
       parent: 2
 - proto: SpawnPointInventorySpecialist
   entities:
-  - uid: 16437
+  - uid: 16500
     components:
     - type: Transform
       pos: 15.5,9.5
