@@ -113540,6 +113540,13 @@ entities:
     - type: Transform
       pos: 36.5,43.5
       parent: 2
+- proto: SpawnPointInventorySpecialist
+  entities:
+  - uid: 20405
+    components:
+    - type: Transform
+      pos: 41.5,11.5
+      parent: 2
 - proto: SpawnPointJanitor
   entities:
   - uid: 14661
