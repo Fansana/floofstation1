@@ -4602,3 +4602,12 @@ Entries:
   id: 493
   time: '2025-04-22T20:09:01.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/840
+- author: DeltaV Oxdeception
+  changes:
+    - type: Add
+      message: >-
+        The AAC tablets can now 'combine' buttons to construct a sentence, and
+        send them as a single message.
+  id: 494
+  time: '2025-04-22T20:09:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/837
