@@ -1,0 +1,70 @@
+# Engineering
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitAtmos
+  icon:
+    sprite: Clothing/Uniforms/Jumpsuit/atmos.rsi
+    state: icon
+  result: ClothingUniformJumpsuitAtmos
+  category: ClothingEngineering
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtAtmos
+  icon:
+    sprite: Clothing/Uniforms/Jumpskirt/atmosf.rsi
+    state: icon
+  result: ClothingUniformJumpskirtAtmos
+  category: ClothingEngineering
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitAtmosCasual
+  icon:
+    sprite: Clothing/Uniforms/Jumpsuit/atmos_casual.rsi
+    state: icon
+  result: ClothingUniformJumpsuitAtmosCasual
+  category: ClothingEngineering
+  completetime: 4
+  materials:
+    Cloth: 300
+
+# Epistemics
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitRoboticist
+  icon:
+    sprite: Clothing/Uniforms/Jumpsuit/roboticist.rsi
+    state: icon
+  result: ClothingUniformJumpsuitRoboticist
+  category: ClothingEpistemics
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtRoboticist
+  icon:
+    sprite: Clothing/Uniforms/Jumpskirt/roboticist.rsi
+    state: icon
+  result: ClothingUniformJumpskirtRoboticist
+  category: ClothingEpistemics
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingOuterRoboOveralls
+  icon:
+    sprite: _Floof/Clothing/OuterClothing/Misc/robooveralls.rsi
+    state: icon
+  result: ClothingOuterRoboOveralls
+  category: ClothingEpistemics
+  completetime: 3.2
+  materials:
+    Cloth: 500
+    Durathread: 300
