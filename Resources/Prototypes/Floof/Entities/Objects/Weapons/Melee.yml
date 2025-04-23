@@ -123,7 +123,7 @@
     attackRate: 0.75
     angle: 80
     heavyStaminaCost: 10
-    heavyDamageBaseModifier: 1.10
+    heavyDamageBaseModifier: 1.50
     damage:
       types:
         Blunt: 6.5 #its still a metal stick
@@ -135,9 +135,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 4
-            Heat: 18
-            Structural: 50
+            Slash: 2
+            Heat: 14
+            Structural: 25
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -167,6 +167,8 @@
       right:
       - state: inhand-right-blade
         shader: unshaded
+  - type: IgniteOnMeleeHit
+    fireStacks: 1
 
 - type: entity
   name: antique energy halberd
@@ -183,3 +185,6 @@
         visible: false
         shader: unshaded
         map: [ "blade" ]
+  - type: IgniteOnMeleeHit
+    fireStacks: 0
+
