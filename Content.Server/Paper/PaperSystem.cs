@@ -49,7 +49,7 @@ namespace Content.Server.Paper
                 // Get some information to fill in for paperwork
                 var ownedStation = _stationSystem.GetOwningStation(uid);
                 var stationName = ownedStation != null ?
-                    MetaData(ownedStation.Value).EntityName : "";
+                    MetaData(ownedStation.Value).EntityName : Loc.GetString("paperwork-fallback-station-name");
 
                 paperComp.Content = Loc.GetString(
                     paperComp.Content,
