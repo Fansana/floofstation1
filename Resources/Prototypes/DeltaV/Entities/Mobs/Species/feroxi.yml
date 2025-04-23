@@ -33,6 +33,7 @@
     noRot: true
     drawdepth: Mobs
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -46,8 +47,8 @@
         # its fine, but its still very stupid that it has to be done like this instead of allowing sprites to just directly insert a stencil clear.
         # sprite refactor when
         state: l_leg
-      # - map: [ "enum.HumanoidVisualLayers.Underwear" ] Floof - M3739 - Underwear Undershirt when? #575
-      # - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floofstation
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floofstation
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -66,6 +67,7 @@
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
       - map: [ "back" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]

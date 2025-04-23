@@ -9,3 +9,5 @@ uplink-Cryptobiolininjector-desc = Made by SESWC. This item is prefilled with 20
 # Melee
 uplink-energy-halberd-name = Energy halberd
 uplink-energy-halberd-desc = A polarm handle with an energy-based axe head attached to it to strike down all that is in your way. Produced by SESWC!
+uplink-EnergySabre-name = Energy Sabre MK. 9
+uplink-EnergySabre-desc = Crafted by Fae, the CyberSun Weapons Designer, a brilliant display of plasma weaponry crafted into a beautiful sabre.

@@ -109,6 +109,7 @@
     noRot: true
     drawdepth: Mobs
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -117,6 +118,8 @@
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Floofstation, add underwear
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Floofstation, add underwear
       - map: [ "jumpsuit" ]
       - map: [ "enum.HumanoidVisualLayers.LHand" ]
       - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -134,7 +137,8 @@
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "id" ]
-      - map: [ "back" ] 
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
+      - map: [ "back" ]
       - map: [ "neck" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
@@ -160,6 +164,12 @@
     - TauCetiBasic
     - Chittin
     naturalLanguage: Chittin # Floof: explicitly stated natural languages
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ChitinidEmotes # Floof - M3739 - #726
 
 - type: entity
   parent: BaseSpeciesDummy

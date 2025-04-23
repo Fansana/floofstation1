@@ -41,8 +41,7 @@ trait-name-Muted = Muted
 trait-description-Muted =
     Either due to to an abnormality in your body development, or due to some body augmentation, you are unable to utilize spoken language.
     Consequently, you may encounter difficulties in communicating with others or using radio communication.
-    To compensate for this limitation, you have been taught the Galactic Sign Language.
-
+# Floof - M3739 - #701
 trait-name-BloodDeficiency = Blood Deficiency
 trait-description-BloodDeficiency =
     Your body loses more blood than it can replenish.
@@ -142,7 +141,7 @@ trait-description-Tenacity =
 trait-name-GlassJaw = Glass Jaw
 trait-description-GlassJaw =
     Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
-    Your damage threshold for becoming Critical is decreased by 7 points.
+    Your damage threshold for becoming Critical is decreased by 10 points.
 
 trait-name-HighAdrenaline = High Adrenaline
 trait-description-HighAdrenaline =
@@ -415,32 +414,29 @@ trait-description-CyberEyes =
     Their most basic functionality is to provide amelioration for weaknesses of the wearer's natural eyes.
     The functionality of these implants can be extended by a variety of commercially available modules.
 
-trait-name-FlareShielding = Cyber-Eyes Flare Shielding
+trait-name-FlareShielding = Cyber-Eyes: Eye Damage Resistance
 trait-description-FlareShielding =
     Your cybereyes have been fitted with a photochromic lense that automatically darkens in response to intense stimuli.
-    This provides substantial protection from bright flashes of light, such as those from welding arcs.
+    This provides immunity from most bright flashes of light, such as those from welding arcs.
 
-trait-name-CyberEyesSecurity = Cyber-Eyes SecHud
+trait-name-CyberEyesSecurity = Cyber-Eyes: SecHud Module
 trait-description-CyberEyesSecurity =
     Your Cyber-Eyes have been upgraded to include a built-in Security Hud. Note that this augmentation is considered Contraband
     for anyone not under the employ of station Security personel, and may be disabled by your employer before dispatch to the station.
 
-trait-name-CyberEyesMedical = Cyber-Eyes MedHud
+trait-name-CyberEyesMedical = Cyber-Eyes: MedHud Module
 trait-description-CyberEyesMedical =
     Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, allowing you to track the relative health condition of biological organisms.
 
-trait-name-CyberEyesDiagnostic = Cyber-Eyes DiagHud
+trait-name-CyberEyesDiagnostic = Cyber-Eyes: Diagnostics Module
 trait-description-CyberEyesDiagnostic =
     Your Cyber-Eyes have been upgraded to include a built-in Diagnostic Hud, allowing you to track the condition of synthetic entities.
 
-trait-name-CyberEyesOmni = Cyber-Eyes HudSuite
+trait-name-CyberEyesOmni = Cyber-Eyes: Premium Suite Module
 trait-description-CyberEyesOmni =
-    This expensive implant provides the combined benefits of a SecHud, MedHud, and a DiagHud.
+    This expensive implant provides the combined benefits of a SecHud, MedHud, and a Diagnostics Module.
     Note that this augmentation is considered Contraband for anyone not under the employ of station Security personel,
     and may be disabled by your employer before dispatch to the station.
-
-trait-name-ShadowkinBlackeye = Blackeye
-trait-description-ShadowkinBlackeye = You lose your special Shadowkin powers, in return for some points.
 
 trait-name-DispelPower = Normality Projection
 trait-description-DispelPower =
@@ -475,7 +471,7 @@ trait-description-Redshirt =
     Something is pulling me up the hill.
     I look down in my red shirt.
     I look down in my red shirt.
-    This trait halves your crit threshold from 100 to 50.
+    This trait reduces your death threshold by 100. This means you likely WILL NOT have a critical state.
 
 trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
 trait-description-BrittleBoneDisease =

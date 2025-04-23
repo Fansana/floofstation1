@@ -203,7 +203,6 @@
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
       - ToolRadioHandheld # Floofstation
-      - StationAnchorCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -279,6 +278,7 @@
     dynamicRecipes:
       - PowerDrill
       - MiningDrill
+      - MiningDrillDiamond
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
@@ -480,6 +480,7 @@
     - SodaDispenserMachineCircuitboard
     - DeepFryerMachineCircuitboard #Nyano - Summary: adds deep fryer circuit board
     - SpaceHeaterMachineCircuitBoard
+    - StationAnchorCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
@@ -834,6 +835,7 @@
       - TargetHuman
       - TargetSyndicate
       - WeaponDisablerPractice
+      - WeaponFlareGunSecurity
       - WeaponLaserCarbinePractice
       - Zipties
       - ShockCollar
@@ -928,7 +930,10 @@
       - CartridgeSpecialIncendiary
       - CartridgeSpecialUranium
       - CartridgeSpecialHoly
+      - ShellShotgunHoly #Floof Holy-Shells
+      - BoxShellHoly #Floof Holy-Shells
       - CartridgeSpecialMindbreaker
+      - BoxShellSoulbreaker #Floofstation DBAJ Making these printable
       - MagazineBoxSpecialRubber
       - MagazineBoxSpecialIncendiary
       - MagazineBoxSpecialUranium
@@ -1086,6 +1091,7 @@
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
       - BaseChemistryEmptyVial #floof
+      - AACTablet # DeltaV
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
@@ -1696,22 +1702,27 @@
     - type: Lathe
       idleState: icon
       runningState: building
+      defaultProductionAmount: 10
       staticRecipes:
         - BluespaceCrystal
         - NormalityCrystal
-        - SheetSteel30
-        - SheetGlass30
-        - SheetRGlass30
-        - SheetPlasma30
-        - SheetPGlass30
-        - SheetRPGlass30
-        - SheetUranium30
-        - IngotGold30
-        - IngotSilver30
-        - MaterialBananium10
+        - SheetSteel
+        - SheetGlass1
+        - SheetRGlass
+        - SheetPlasma1
+        - SheetPGlass1
+        - SheetRPGlass1
+        - SheetUranium1
+        - IngotGold1
+        - IngotSilver1
+        - MaterialBananium1
     - type: MaterialStorageMagnetPickup # Delta V - Summary: Adds magnet pull from Frontier
       magnetEnabled: True
       range: 0.30 # Delta V - End Magnet Pull
+    - type: MiningPoints # DeltaV - Source of mining points for miners
+      transferSound:
+        path: /Audio/Effects/Cargo/ping.ogg
+    - type: MiningPointsLathe # DeltaV
 
 - type: entity
   parent: OreProcessor
@@ -1729,19 +1740,20 @@
     staticRecipes:
       - BluespaceCrystal
       - NormalityCrystal
-      - SheetSteel30
-      - SheetGlass30
-      - SheetRGlass30
-      - SheetPlasma30
-      - SheetPGlass30
-      - SheetRPGlass30
-      - SheetPlasteel30
-      - SheetUranium30
-      - SheetUGlass30
-      - SheetRUGlass30
-      - IngotGold30
-      - IngotSilver30
-      - MaterialBananium10
+      - SheetSteel
+      - SheetGlass1
+      - SheetRGlass
+      - SheetPlasma1
+      - SheetPGlass1
+      - SheetRPGlass1
+      - SheetPlasteel1
+      - SheetUranium1
+      - SheetUGlass1
+      - SheetRUGlass1
+      - IngotGold1
+      - IngotSilver1
+      - MaterialBananium1
+      - MaterialDiamond
 
 - type: entity
   parent: BaseLathe

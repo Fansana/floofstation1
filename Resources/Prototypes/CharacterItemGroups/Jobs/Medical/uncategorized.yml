@@ -21,8 +21,8 @@
       id: LoadoutBackpackDuffelVirology
     - type: loadout
       id: LoadoutBackpackDuffelGenetics
-    - type: loadout
-      id: LoadoutBackpackMedicalDuffelSurgeryFilled
+#    - type: loadout # Floof -  Move surgical duffel bag to equipment
+#      id: LoadoutBackpackMedicalDuffelSurgeryFilled
 
 #- type: characterItemGroup
 #  id: LoadoutMedicalBelt
@@ -33,12 +33,14 @@
 #  id: LoadoutMedicalEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutMedicalEquipment
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutMedicalEquipment
+  maxItems: 1
+  items:
+    - type: loadout # Move surgical duffel bag to equipment
+      id: LoadoutMedicalEquipmentDuffelSurgeryFilled
+
 - type: characterItemGroup
   id: LoadoutMedicalEyes
   maxItems: 1
@@ -58,6 +60,8 @@
       id: LoadoutMedicalGlovesNitrile
     - type: loadout
       id: LoadoutMedicalGlovesLatex
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingHandsMedicWarmers
 
 - type: characterItemGroup
   id: LoadoutMedicalHead
@@ -79,8 +83,8 @@
       id: LoadoutMedicalHeadSurgcapWhite
     - type: loadout
       id: LoadoutMedicalHeadSurgcapCybersun
-    - type: loadout
-      id: LoadoutMedicalHeadBeretSeniorPhysician
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutMedicalHeadBeret
 
 #- type: characterItemGroup
 #  id: LoadoutMedicalId
@@ -113,12 +117,37 @@
       id: LoadoutMedicalOuterLabcoat
     - type: loadout
       id: LoadoutMedicalOuterCybersunWindbreaker
+# Floof section - Add missing medical loadout items
+    - type: loadout
+      id: LoadoutMedicalOuterLabcoatGene
+    - type: loadout
+      id: LoadoutMedicalOuterLabcoatViro
+    - type: loadout
+      id: LoadoutMedicalOuterWinter
+    - type: loadout
+      id: LoadoutMedicalOuterWinterGen
+    - type: loadout
+      id: LoadoutMedicalOuterWinterViro
+# Floof section end
 
-#- type: characterItemGroup
-#  id: LoadoutMedicalShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutMedicalShoes
+  maxItems: 1
+  items:
+# Floof section - Add missing medical loadout items
+    - type: loadout
+      id: LoadoutMedicalShoesWhite
+    - type: loadout
+      id: LoadoutMedicalShoesWinter
+    - type: loadout
+      id: LoadoutMedicalShoesWinterGenetics
+    - type: loadout
+      id: LoadoutMedicalShoesWinterViro
+# Floof section - Add loadout groups to medical lingerie
+    - type: loadout
+      id: LoadoutClothingUnderSocksMedic
+# Floof section end
+
 - type: characterItemGroup
   id: LoadoutMedicalUniforms
   maxItems: 1
@@ -138,8 +167,17 @@
     - type: loadout
       id: LoadoutMedicalUniformScrubsCybersun
     - type: loadout
-      id: LoadoutMedicalUniformJumpskirtSenior
-    - type: loadout
-      id: LoadoutMedicalUniformJumpsuitSenior
-    - type: loadout
       id: LoadoutMedicalUniformScrubsWhite
+# Floof section - Add missing medical loadout items
+    - type: loadout
+      id: LoadoutMedicalUniformJumpskirtGenetics
+    - type: loadout
+      id: LoadoutMedicalUniformJumpskirtVirology
+    - type: loadout
+      id: LoadoutMedicalUniformJumpsuitGenetics
+    - type: loadout
+      id: LoadoutMedicalUniformJumpsuitVirology
+# Floof section - Add loadout groups to medical lingerie
+    - type: loadout
+      id: LoadoutClothingUniformMedicThong
+# Floof section end

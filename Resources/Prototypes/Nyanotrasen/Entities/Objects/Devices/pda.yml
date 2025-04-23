@@ -26,6 +26,14 @@
   components:
   - type: Pda
     id: PrisonGuardIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
@@ -39,6 +47,7 @@
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
+      - NanoChatCartridge
 
 - type: entity
   parent: BasePDA
@@ -73,6 +82,7 @@
     - NotekeeperCartridge
     - NewsReaderCartridge
     - MailMetricsCartridge
+    - NanoChatCartridge
 
 - type: entity
   parent: BasePDA
@@ -119,3 +129,4 @@
      - NotekeeperCartridge
      - NewsReaderCartridge
      - GlimmerMonitorCartridge
+     - NanoChatCartridge

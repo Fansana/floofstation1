@@ -288,7 +288,7 @@
   name: space medipen
   parent: ChemicalMedipen
   id: SpaceMedipen
-  description: Contains a mix of chemicals that protect you from the deadly effects of space.
+  description: Contains a mix of chemicals that protect you from the deadly effects of space. WARNING! May cause excess harm and or death if used on small or underweight crew members!
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi

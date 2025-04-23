@@ -62,7 +62,7 @@
         ents: []
       gas_tank: !type:ContainerSlot
   - type: MeleeWeapon
-    attackRate: 1.33
+    attackRate: 0.75 # Floofstation - this is hertz, not seconds
     damage:
       types:
         Blunt: 9
@@ -116,6 +116,7 @@
     containers:
       storagebase: !type:Container
         ents: []
+  - type: Execution
 
 # shoots bullets instead of throwing them, no other changes
 - type: entity
