@@ -72,19 +72,6 @@
     Plastic: 500
 
 - type: latheRecipe
-  id: EnergySword
-  result: EnergySword
-  category: Weapons
-  completetime: 5
-  materials:
-    Steel: 1000
-    Glass: 500
-    Plastic: 500
-    Gold: 300
-    Silver: 300
-    Plasma: 150
-
-- type: latheRecipe
   id: ClothingOuterArmorReflective
   result: ClothingOuterArmorReflective
   completetime: 5
