@@ -41,3 +41,9 @@
       id: DrunkardAccent
     - type: trait # Floof
       id: FrenchAccent
+    - type: trait # Floof - why did upstream not do this?
+      id: RussianAccent
+    - type: trait # Floof
+      id: ItalianAccent
+    - type: trait # Floof
+      id: SpanishAccent
