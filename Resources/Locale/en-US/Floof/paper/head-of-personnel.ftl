@@ -7,7 +7,7 @@ paperwork-hop-access-permit =
         {"["}head=2]Access Permit [/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold]
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]PERSONS:[/bold]
         {"["}bold]ACCESS GRANTED:[/bold]
@@ -28,7 +28,7 @@ paperwork-hop-job-transfer-request =
         {"["}head=2]Job Transfer Request[/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]APPLICANT:[/bold]
         {"["}bold]JOB:[/bold]
@@ -77,7 +77,7 @@ paperwork-hop-formal-complaint =
         {"["}head=2]Formal Complaint [/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold]
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]HEAD OF PERSONNEL:[/bold]
     { paperwork-separator-hop }
@@ -126,7 +126,7 @@ paperwork-hop-order-of-dismissal =
         {"["}head=2]ORDER OF DISMISSAL [/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]ACCOUNTABLE PERSON:[/bold]
         {"["}bold]JOB:[/bold]
@@ -148,7 +148,7 @@ paperwork-hop-dismissal-of-department-head =
         {"["}bold]DISMISSAL OF DEPARTMENT HEAD [/bold]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]COMMANDING OFFICER:[/bold]
         {"["}bold]ACCOUNTABLE PERSON:[/bold]
@@ -176,7 +176,7 @@ paperwork-hop-employment-application =
         {"["}head=2]EMPLOYMENT APPLICATION[/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]ACCOUNTABLE PERSON:[/bold]
         {"["}bold]JOB:[/bold]
@@ -203,7 +203,7 @@ paperwork-hop-restricted-equipment-permit =
         {"["}head=2]Restricted Equipment Permit [/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]EQUIPMENT USER: [/bold]
         {"["}bold]EQUIPMENT TYPE: [/bold]
@@ -228,7 +228,7 @@ paperwork-hop-restricted-weapons-permit =
         {"["}head=2]Restricted Weapons Permit [/head]
     { paperwork-separator-hop }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]WEAPON USER: [/bold]
         {"["}bold]WEAPON TYPE: [/bold]

@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Popups;
+using Content.Server.Station.Systems;
 using Content.Shared.UserInterface;
 using Content.Shared.Database;
 using Content.Shared.Examine;
@@ -24,6 +25,7 @@ namespace Content.Server.Paper
         [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
         [Dependency] private readonly MetaDataSystem _metaSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
+        [Dependency] private readonly StationSystem _stationSystem = default!;
 
         public override void Initialize()
         {
@@ -44,7 +46,15 @@ namespace Content.Server.Paper
         {
             if (!string.IsNullOrEmpty(paperComp.Content))
             {
-                paperComp.Content = Loc.GetString(paperComp.Content);
+                // Get some information to fill in for paperwork
+                var ownedStation = _stationSystem.GetOwningStation(uid);
+                var stationName = ownedStation != null ?
+                    MetaData(ownedStation.Value).EntityName : "";
+
+                paperComp.Content = Loc.GetString(
+                    paperComp.Content,
+                    ("stationName", stationName)
+                );
             }
         }
 

@@ -7,7 +7,7 @@ paperwork-separator-engineering-building-permit =
         {"["}head=2]BUILDING PERMIT [/head]
     { paperwork-separator-engineering }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]HEAD OF PERSONNEL:[/bold]
         {"["}bold]CHIEF ENGINEER:[/bold]
