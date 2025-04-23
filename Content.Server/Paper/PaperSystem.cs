@@ -46,7 +46,9 @@ namespace Content.Server.Paper
         {
             if (!string.IsNullOrEmpty(paperComp.Content))
             {
-                // Get some information to fill in for paperwork
+                /* floofstation
+                    Get some information to fill in for paperwork
+                */
                 var ownedStation = _stationSystem.GetOwningStation(uid);
                 var stationName = ownedStation != null ?
                     MetaData(ownedStation.Value).EntityName : Loc.GetString("paperwork-fallback-station-name");
