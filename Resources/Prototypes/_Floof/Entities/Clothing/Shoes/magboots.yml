@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsSecurityMagboots
+  name: security magboots
+  description: Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle. These ones bear security markings.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi
+  - type: ToggleClothing
+    action: ActionToggleMagbootsSecurity
+
+- type: entity
+  id: ActionToggleMagbootsSecurity
+  parent: ActionToggleMagboots
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi, state: icon }
+    iconOn: { sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi, state: icon-on }

@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Server.FloofStation.Traits;
+using Content.Server._Floof.Traits;
 using Content.Server.Hands.Systems;
 using Content.Server.Language;
 using Content.Server.Storage.EntitySystems;

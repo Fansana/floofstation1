@@ -133,9 +133,9 @@ namespace Content.Shared.Humanoid.Markings
     tail_oversuit: TailOversuit <--------------\
     tail_behind: TailBehind   <----------------+--------\
   sprites:                                     |        |
-  - sprite: Floof/Mobs/Customization/debug.rsi |        |
+  - sprite: _Floof/Mobs/Customization/debug.rsi |        |
     state: tail_oversuit   >-------------------/        |
-  - sprite: Floof/Mobs/Customization/debug.rsi          |
+  - sprite: _Floof/Mobs/Customization/debug.rsi          |
     state: tail_behind   >------------------------------/
  *
  * (dont include the arrows lol)
