@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise edited by Floofers, edited (again) by M3739",
+  "size": {"x": 32, "y": 32},
+  "states": [
+    {
+      "name": "points_feetR",
+      "directions": 4
+    },
+    {
+      "name": "points_feetL",
+      "directions": 4
+    }
+  ]
+}

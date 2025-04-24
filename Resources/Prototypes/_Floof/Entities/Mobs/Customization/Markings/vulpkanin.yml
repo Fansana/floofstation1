@@ -1,3 +1,4 @@
+# Snout
 - type: marking
   id: VulpSnoutSwiftWhite
   bodyPart: Snout
@@ -17,3 +18,21 @@
       state: vulpine
     - sprite: _Floof/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine-lines-white
+#Right Foot
+- type: marking
+  id: VulpPointsFeetRight
+  markingCategory: RightFoot
+  bodyPart: RFoot
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_feetR
+#Left Foot
+- type: marking
+  id: VulpPointsFeetLeft
+  markingCategory: LeftFoot
+  bodyPart: LFoot
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_feetL
