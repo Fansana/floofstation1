@@ -1,0 +1,52 @@
+- type: constructionGraph
+  id: SleepingBag
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: sleepingbag
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 4
+  - node: sleepingbag
+    entity: SleepingBagFolded
+
+- type: construction
+  name: sleeping bag
+  id: sleeping_bag
+  graph: SleepingBag
+  startNode: start
+  targetNode: sleepingbag
+  category: construction-category-furniture
+  description: A sleeping bed, perfect for those calm nights under a stary sky.
+  icon:
+    sprite: _Floof/Structures/sleepingbag.rsi
+    state: open
+  objectType: Item
+
+- type: construction
+  name: improvised brass knuckles
+  id: BrassKnucklesImprovised
+  graph: GraphWeaponBrassKnucklesImprovised
+  startNode: start
+  targetNode: WeaponBrassKnucklesImprovised
+  category: construction-category-weapons
+  description: Ever wanted to punch just a little harder?
+  icon:
+    sprite: _Floof/Objects/Weapons/Melee/brassknuckles.rsi
+    state: icon
+  objectType: Item
+
+- type: construction
+  name: crass knuckles
+  id: CrassKnuckles
+  graph: GraphWeaponBrassKnucklesWhoopie
+  startNode: start
+  targetNode: WeaponBrassKnucklesWhoopie
+  category: construction-category-weapons
+  description: Questionably silent, unquestionably deadly.
+  icon:
+    sprite: _Floof/Objects/Weapons/Melee/crassknuckles.rsi
+    state: icon
+  objectType: Item

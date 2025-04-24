@@ -117,7 +117,7 @@
   description: Gross.
   components:
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawhuman
   - type: SolutionContainerManager
     solutions:
@@ -170,7 +170,7 @@
     - Raw
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawbacon
   - type: SolutionContainerManager
     solutions:
@@ -220,7 +220,7 @@
   description: A slab of raw penguin meat. Can be used as a substitute for fish in recipes.
   components:
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawpenguin
   - type: SolutionContainerManager
     solutions:
@@ -271,7 +271,7 @@
   description: A slab of raw duck. Remember to wash your hands!
   components:
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawduck
   - type: SolutionContainerManager
     solutions:
@@ -395,7 +395,7 @@
   description: Prime meat from maintenance!
   components:
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawrat
   - type: SolutionContainerManager
     solutions:
@@ -584,7 +584,7 @@
     - Raw
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawrouny
   - type: SolutionContainerManager
     solutions:
@@ -783,7 +783,7 @@
     - Cooked
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedbacon
   - type: SolutionContainerManager
     solutions:
@@ -845,7 +845,7 @@
     - Cooked
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedpenguin
   - type: SolutionContainerManager
     solutions:
@@ -941,7 +941,7 @@
     - Cooked
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedduck
   - type: SolutionContainerManager
     solutions:
@@ -1040,7 +1040,7 @@
     - Meat
     - Steak
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedrouny
   - type: SolutionContainerManager
     solutions:
@@ -1187,7 +1187,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawbasecutlet
   - type: SolutionContainerManager
     solutions:
@@ -1243,7 +1243,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawpenguincutlet
   - type: SolutionContainerManager
     solutions:
@@ -1270,7 +1270,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawchikencutlet
   - type: SolutionContainerManager
     solutions:
@@ -1297,7 +1297,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawduckcutlet
   - type: SolutionContainerManager
     solutions:
@@ -1324,7 +1324,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: rawlizardcutlet
   - type: SolutionContainerManager
     solutions:
@@ -1445,7 +1445,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedbasecutlet
   - type: SolutionContainerManager
     solutions:
@@ -1507,7 +1507,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedpenguincutlet
   - type: SolutionContainerManager
     solutions:
@@ -1537,7 +1537,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedchikencutlet
   - type: SolutionContainerManager
     solutions:
@@ -1567,7 +1567,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedduckcutlet
   - type: SolutionContainerManager
     solutions:
@@ -1597,7 +1597,7 @@
     - Cutlet
     - Meat
   - type: Sprite
-    sprite: Floof/Objects/Consumable/Food/meat.rsi
+    sprite: _Floof/Objects/Consumable/Food/meat.rsi
     state: cookedlizardcutlet
   - type: SolutionContainerManager
     solutions:
