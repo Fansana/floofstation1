@@ -200,7 +200,7 @@ public sealed partial class NPCCombatSystem
                 return;
             }
 
-            _gun.SetTarget(gun, comp.Target);
+            _gun.SetTarget(gun, comp.Target); // Floofstation - this used to be on upstream and should still be there
             _gun.AttemptShoot(uid, gunUid, gun, targetCordinates);
         }
     }
