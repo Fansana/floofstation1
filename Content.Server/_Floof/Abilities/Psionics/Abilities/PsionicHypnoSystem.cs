@@ -112,7 +112,7 @@ namespace Content.Server.Abilities.Psionics
             {
                 Act = () => StopHypno(args.Target),
                 Text = Loc.GetString("hypno-release"),
-                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Floof/Interface/Actions/hypno.png")),
+                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/_Floof/Interface/Actions/hypno.png")),
                 Priority = 1
             };
             args.Verbs.Add(verbReleaseHypno);
@@ -127,7 +127,7 @@ namespace Content.Server.Abilities.Psionics
             {
                 Act = () => StopHypno(args.User),
                 Text = Loc.GetString("hypno-break"),
-                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Floof/Interface/Actions/hypno.png")),
+                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/_Floof/Interface/Actions/hypno.png")),
                 Priority = 1
             };
             args.Verbs.Add(verbBreakHypno);

@@ -33,7 +33,7 @@ public sealed class HypnoClothingsystem : EntitySystem
         {
             Act = () => HypnoLink(uid, component, args.User),
             Text = Loc.GetString("hypno-link"),
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Floof/Interface/Actions/hypno.png")),
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/_Floof/Interface/Actions/hypno.png")),
             Priority = 1
         };
         args.Verbs.Add(verbHypnoLink);

@@ -548,7 +548,7 @@ public sealed partial class AdminVerbSystem
             {
                 Text = "Horny sign",
                 Category = VerbCategory.Smite,
-                Icon = new SpriteSpecifier.Rsi(new ("/Textures/Floof/Objects/Misc/hornysign.rsi"), "icon"),
+                Icon = new SpriteSpecifier.Rsi(new ("/Textures/_Floof/Objects/Misc/hornysign.rsi"), "icon"),
                 Act = () =>
                 {
                     EnsureComp<HornySignComponent>(args.Target);
