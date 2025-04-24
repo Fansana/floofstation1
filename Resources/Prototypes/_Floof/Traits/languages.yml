@@ -127,7 +127,7 @@
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
-        - Arachne
+        # Arachne they dont speak Arachind
         - Arachnid
   functions:
     - !type:TraitAddComponent
