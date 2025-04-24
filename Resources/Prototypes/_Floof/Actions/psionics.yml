@@ -5,7 +5,7 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: EntityTargetAction
-      icon: Floof/Interface/Actions/hypno.png
+      icon: _Floof/Interface/Actions/hypno.png
       useDelay: 45
       checkCanAccess: false
       range: 8
