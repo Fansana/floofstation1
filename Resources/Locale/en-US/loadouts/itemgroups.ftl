@@ -353,6 +353,22 @@ character-item-group-LoadoutCourierOuter = Courier Outerwear
 character-item-group-LoadoutCourierShoes = Courier Shoes
 character-item-group-LoadoutCourierUniforms = Courier Uniforms
 
+# Floof - senior cargo
+# Logistics - Inventory Specialist
+character-item-group-LoadoutInventorySpecialistBackpacks = Inventory Specialist Backpacks
+character-item-group-LoadoutInventorySpecialistBelt = Inventory Specialist Belt
+character-item-group-LoadoutInventorySpecialistEars = Inventory Specialist Ears
+character-item-group-LoadoutInventorySpecialistEquipment = Inventory Specialist Equipment
+character-item-group-LoadoutInventorySpecialistEyes = Inventory Specialist Eyewear
+character-item-group-LoadoutInventorySpecialistGloves = Inventory Specialist Gloves
+character-item-group-LoadoutInventorySpecialistHead = Inventory Specialist Headgear
+character-item-group-LoadoutInventorySpecialistId = Inventory Specialist Id
+character-item-group-LoadoutInventorySpecialistNeck = Inventory Specialist Neckwear
+character-item-group-LoadoutInventorySpecialistMask = Inventory Specialist Masks
+character-item-group-LoadoutInventorySpecialistOuter = Inventory Specialist Outerwear
+character-item-group-LoadoutInventorySpecialistShoes = Inventory Specialist Shoes
+character-item-group-LoadoutInventorySpecialistUniforms = Inventory Specialist Uniforms
+
 # Logistics - Logistics Officer
 character-item-group-LoadoutLogisticsOfficerBackpacks = Logistics Officer Backpacks
 character-item-group-LoadoutLogisticsOfficerBelt = Logistics Officer Belt
