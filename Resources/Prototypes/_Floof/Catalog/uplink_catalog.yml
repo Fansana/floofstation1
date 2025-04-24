@@ -28,7 +28,7 @@
   id: UplinkEnergyHalberd
   name: uplink-energy-halberd-name
   description: uplink-energy-halberd-desc
-  icon: { sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
+  icon: { sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
   productEntity: WeaponEnergyHalberd
   cost:
     Telecrystal: 10
