@@ -111,9 +111,9 @@
     contents:
       - id: WeaponLauncherChinaLake
       - id: GrenadeBlast
-        amount: 4
-      - id: GrenadeFrag
-        amount: 4
+        amount: 8 # Floof - Only blast to reduce overall damage.
+      # - id: GrenadeFrag
+      #   amount: 4
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
