@@ -4586,3 +4586,37 @@ Entries:
   id: 491
   time: '2025-04-21T13:47:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/833
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Chitinid are no longer protected from needles by
+        injector-component-deny-chitinid
+  id: 492
+  time: '2025-04-22T18:00:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/841
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Flipped disposal signal junctions point the correct direction now
+  id: 493
+  time: '2025-04-22T20:09:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/840
+- author: DeltaV Oxdeception
+  changes:
+    - type: Add
+      message: >-
+        The AAC tablets can now 'combine' buttons to construct a sentence, and
+        send them as a single message.
+  id: 494
+  time: '2025-04-22T20:09:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/837
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: >-
+        Removed Frag grenades from China Lake and replaced them with Blast
+        grenades.
+  id: 495
+  time: '2025-04-23T05:28:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/836

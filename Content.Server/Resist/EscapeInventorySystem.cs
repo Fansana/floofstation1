@@ -17,7 +17,7 @@ using Content.Shared.Resist;
 using Content.Shared.Storage;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
-using Content.Server.FloofStation;
+using Content.Server._Floof;
 using Content.Shared.FloofStation; // Floofstation
 
 namespace Content.Server.Resist;

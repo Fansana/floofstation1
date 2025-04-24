@@ -39,12 +39,12 @@
       enum.AACTabletKey.Key:
         type: AACBoundUserInterface
   - type: Speech
-    speechVerb: Robotic # Floof - M3739 - Consoles and PAIs apparently have this as well. Following suit.
-    speechSounds: Pai # Floof - M3739 - It's a tablet. Need I say more?
+    speechVerb: Robotic # Floof - M3739 - #701 - Consoles and PAIs apparently have this as well. Following suit.
+    speechSounds: Pai # Floof - M3739 - #701 - It's a tablet. Need I say more?
   - type: AACTablet
-  - type: VoiceOverride # Floof - M3739 - Previously used the VoiceMask component. This fits our needs better.
-  - type: Clothing # Floof - M3739 - able to be kept on your neck, like translators.
+  - type: VoiceOverride # Floof - M3739 - #701 - Previously used the VoiceMask component. This fits our needs better.
+  - type: Clothing # Floof - M3739 - #701 - able to be kept on your neck, like translators.
     slots: [ neck ]
     equipDelay: 0.3
     unequipDelay: 0.3
-    quickEquip: false # Floof - M3739 - Would conflict.
+    quickEquip: false # Floof - M3739 - #701 - Would conflict.
