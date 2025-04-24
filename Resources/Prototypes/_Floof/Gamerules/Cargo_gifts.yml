@@ -1,0 +1,17 @@
+- type: entity
+  id: giftsxenocompanions
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    weight: 10
+    startDelay: 10
+    reoccurrenceDelay: 120
+    duration: 120
+    earliestStart: 10
+  - type: CargoGiftsRule
+    description: cargo-gift-friendly-xenos
+    sender: cargo-gift-nt-lab
+    dest: cargo-gift-trade-dest
+    gifts:
+      xenocompanions: 1

@@ -126,19 +126,21 @@
       departments:
         - Medical
 
-- type: loadout
-  id: LoadoutBackpackMedicalDuffelSurgeryFilled
-  category: JobsMedicalAUncategorized
-  cost: 3
-  exclusive: true
-  items:
-    - ClothingBackpackDuffelSurgeryFilled
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalBackpacks
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
+# Floof section - Move surgical duffel bag to equipment
+#- type: loadout
+#  id: LoadoutBackpackMedicalDuffelSurgeryFilled
+#  category: JobsMedicalAUncategorized
+#  cost: 3
+#  exclusive: true
+#  items:
+#    - ClothingBackpackDuffelSurgeryFilled
+#  requirements:
+#    - !type:CharacterItemGroupRequirement
+#      group: LoadoutMedicalBackpacks
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#        - Medical
+# Floof section end
 
 # Belt
 
@@ -311,6 +313,7 @@
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalHead
@@ -331,50 +334,31 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:
     - ClothingHeadHatSurgcapCybersun
 
-- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
-  id: LoadoutMedicalHeadBeretSeniorPhysician
-  category: JobsMedicalAUncategorized
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalHead
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-    - !type:CharacterJobRequirement #all medical jobs but intern
-      inverted: true
-      jobs: [MedicalIntern]
-    - !type:CharacterDepartmentTimeRequirement
-      department: Medical
-      min: 144000 #40 hours
-  items:
-    - ClothingHeadHatBeretSeniorPhysician
-      
 - type: loadout #Floof - Another item denoting experience.
   id: LoadoutMedicalHeadMirror
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
   requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalHead
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-    - !type:CharacterJobRequirement #all medical jobs but intern
-      inverted: true
-      jobs: [MedicalIntern]
-    - !type:CharacterDepartmentTimeRequirement
-      department: Medical
-      min: 72000 #20 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutMedicalHead
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Medical
+  - !type:CharacterJobRequirement #all medical jobs but intern
+    inverted: true
+    jobs: [MedicalIntern]
+  - !type:CharacterDepartmentTimeRequirement
+    department: Medical
+    min: 72000 #20 hours
   items:
-    - ClothingHeadMirror
+  - ClothingHeadMirror
 
 # Id
 
@@ -415,12 +399,14 @@
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalOuter
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
   items:
     - ClothingOuterCoatLab
@@ -436,6 +422,7 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:
@@ -539,37 +526,18 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
+        - SeniorPhysician # Floof - Let senior physicians wear generic doctor items
         - Chemist
         - Paramedic
   items:
     - UniformScrubsColorCybersun
 
-
-- type: loadout #floof - temporarily moving senior clothing to aauncategorized to make it obtainable for players while senior roles are updated
-  id: LoadoutMedicalUniformJumpskirtSenior
-  category: JobsMedicalAUncategorized
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutMedicalUniforms
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-    - !type:CharacterJobRequirement #all medical jobs but intern
-      inverted: true
-      jobs: [MedicalIntern]
-    - !type:CharacterDepartmentTimeRequirement
-      department: Medical
-      min: 144000 #40 hours
-  items:
-    - ClothingUniformJumpskirtSeniorPhysician
-
 - type: loadout
-  id: LoadoutMedicalUniformJumpsuitSenior
+  id: LoadoutMedicalUniformScrubsWhite
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalUniforms
@@ -583,4 +551,4 @@
       department: Medical
       min: 144000 #40 hours
   items:
-    - ClothingUniformJumpsuitSeniorPhysician
+    - UniformScrubsColorWhite

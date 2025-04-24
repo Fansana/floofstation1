@@ -1,0 +1,30 @@
+- type: characterItemGroup
+  id: LoadoutLawyerNeck
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutJusticeProsecutorBadge
+    - type: loadout
+      id: LoadoutJusticeAttorneyBadge
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeCloak
+
+- type: characterItemGroup
+  id: LoadoutLawyerOuter
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeOuter
+    - type: loadout
+      id: LoadoutJusticeClerkVest
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeJudge
+
+- type: characterItemGroup
+  id: LoadoutLawyerHead
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutJusticeChiefJusticeToque
+    - type: loadout
+      id: LoadoutJusticeChiefJusticePwig

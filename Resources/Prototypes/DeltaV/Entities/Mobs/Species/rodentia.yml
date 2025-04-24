@@ -35,6 +35,7 @@
   - type: Sprite
     scale: 0.8, 0.8
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -63,6 +64,7 @@
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
       - map: [ "back" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]
@@ -139,7 +141,7 @@
   name: Rodentia Dummy
   parent: MobHumanDummy
   id: MobRodentiaDummy
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: A dummy rodentia meant to be used in character setup.
   components:
   - type: HumanoidAppearance

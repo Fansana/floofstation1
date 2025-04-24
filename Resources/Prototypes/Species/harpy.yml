@@ -18,7 +18,10 @@
 - type: speciesBaseSprites
   id: MobHarpySprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobHarpyHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -49,6 +52,9 @@
     Undershirt:
       points: 1 # Floof, add underwear
       required: false
+    Face:
+      points: 1
+      required: false
     Hair:
       points: 1
       required: false
@@ -63,6 +69,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    HeadSide:
+      points: 3
+      required: false
     Chest:
       points: 1
       required: true
@@ -79,6 +88,10 @@
     LeftFoot:
       points: 2
       required: false
+    RightArm:
+      points: 1
+      required: false
+      defaultMarkings: [ HarpyWingDefaultHuescale ]
     RightHand:
       points: 2
       required: false
@@ -87,9 +100,6 @@
       required: false
     LeftHand:
       points: 2
-      required: false
-    HeadSide:
-      points: 1
       required: false
     Wings:
       points: 1

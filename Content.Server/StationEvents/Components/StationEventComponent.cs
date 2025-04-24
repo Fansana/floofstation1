@@ -1,4 +1,4 @@
-using Content.Server.FloofStation.GameTicking;
+using Content.Server._Floof.GameTicking;
 using Robust.Shared.Audio;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 

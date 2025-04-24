@@ -1,0 +1,33 @@
+# NOTE: These tags are for crafting at the moment.
+# The "muffled gas mask" items do NOT have these tags, in order to prevent crafting redundancy.
+# Also, only the "original" gas mask has the MaskGasIngredient tag, not any of the inheriting gas masks.
+
+- type: Tag
+  id: MaskGasIngredient
+
+- type: Tag
+  id: MaskGasExplorerIngredient
+
+- type: Tag
+  id: MaskGasSecurityIngredient
+
+- type: Tag
+  id: MuzzleIngredient
+
+- type: Tag
+  id: BorgModuleSecurity
+# Start of book tags
+- type: Tag
+  id: BookJusticeSop
+
+- type: Tag
+  id: BookSecuritySop
+# End of book tags
+- type: Tag
+  id: CakeBase
+
+- type: Tag
+  id: ShellSoulbreaker
+
+- type: Tag
+  id: EnergySabre

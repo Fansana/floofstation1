@@ -77,6 +77,7 @@
         - id: ClothingOuterFlannelGreen
       - id: ClothingOuterVestHazard
       - id: ClothingShoesBootsJack
+      - id: ClothingShoesBootsJackFake
       - id: ClothingShoesHighheelBoots
       - id: ClothingShoesBootsLaceup
       - id: ClothingShoesLeather
@@ -140,6 +141,7 @@
         - id: ClothingNeckAromanticPin
         - id: ClothingNeckAsexualPin
         - id: ClothingNeckBisexualPin
+        - id: ClothingNeckGayPin
         - id: ClothingNeckIntersexPin
         - id: ClothingNeckLesbianPin
         - id: ClothingNeckNonBinaryPin

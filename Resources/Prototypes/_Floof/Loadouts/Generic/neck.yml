@@ -1,0 +1,94 @@
+- type: loadout
+  id: LoadoutNeckCloakMoth
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCloakMoth
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutItemsNeckRedHood
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCloakRedHood
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+# Generic collars
+- type: loadout
+  id: LoadoutItemsNeckBlueCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarBlue
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutItemsNeckBlackCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarBlack
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutItemsNeckPinkCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarPink
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutItemsNeckSyndieCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingNeckCollarSyndi
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutItemsNeckShockCollar
+  category: Neck
+  cost: 1
+  exclusive: true
+  items:
+    - ShockCollar
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+# Harness.
+# Placing it here because it should in THEORY always get equipped on the neck slot by default
+# Unless that slot is occupied (after we fix loadouts overriding one another)
+# In reality it should go in uncategorized and spawn in your inventory, but that is not possible right now
+- type: loadout
+  id: LoadoutHarnessColorable
+  category: Neck
+  cost: 1
+  exclusive: false
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingUncategorizedHarnessColorable
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck

@@ -1,0 +1,59 @@
+- type: entity
+  parent: BaseHyperlinkBook
+  id: HyperlinkBookSpaceLaw
+  name: code of space law
+  description: A big book containing the penal code that governs the Floof Sector. It is somewhat heavy.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Objects/Misc/books.rsi
+    layers:
+    - state: law_space
+  - type: HyperlinkBook
+    url: https://wiki.floofstation.com/index.php/Space_Law # Floof
+  - type: Tag
+    tags:
+    - Book
+    - BookSpaceLaw # Frontier
+
+- type: entity
+  parent: BaseHyperlinkBook
+  id: HyperlinkBookJusticeSop
+  name: justice operations manual
+  description: A book containing the standard operating procedures of the justice department. It is in mint condition.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Objects/Misc/books.rsi
+    layers:
+    - state: law_trial
+  - type: HyperlinkBook
+    url: https://wiki.floofstation.com/index.php/Judicial_Standard_Operating_Procedure # Floof
+  - type: Tag
+    tags:
+    - Book
+    - BookJusticeSop # Floof
+
+- type: entity
+  parent: BaseHyperlinkBook
+  id: HyperlinkBookSecuritySop
+  name: security operations manual
+  description: A book containing the standard operating procedures of the security department, reinforced with silver rivets. It is written in a cipher only security or justice personnel will understand.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#ab1515"
+    - state: decor_spine
+      color: "#363737"
+    - state: decor_wingette
+      color: "#e05334"
+    - state: detail_rivets
+      color: "#C0C0C0"
+    - state: icon_stunbaton
+  - type: HyperlinkBook
+    url: https://wiki.floofstation.com/index.php/Security_Standard_Operating_Procedure # Floof
+  - type: Tag
+    tags:
+    - Book
+    - BookSecuritySop # Floof

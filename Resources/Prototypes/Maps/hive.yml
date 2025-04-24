@@ -74,6 +74,7 @@
             SeniorResearcher: [ 1, 1 ]
           #supply
             Quartermaster: [ 1, 1 ]
+            InventorySpecialist: [ 1, 1 ] #FloofStation
             CargoTechnician: [ 2, 3 ]
             SalvageSpecialist: [ 2, 3 ]
             MailCarrier: [ 2, 2 ]

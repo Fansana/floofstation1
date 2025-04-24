@@ -1,0 +1,31 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodRedHood
+  name: Red Hood
+  description: A hood of a red cloak, made to keep the harsh light out of a traveler's eyes. Sometimes it sparkles in the light of the sun.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Head/Hoods/redhood.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Head/Hoods/redhood.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatShrimpFishermanHood
+  categories: [ HideSpawnMenu ]
+  name: shrimp fisherman hood
+  description: A hood in the shape of a shrimp head, whiskers included.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Head/Hoods/shrimpfishermansuit.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Head/Hoods/shrimpfishermansuit.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair

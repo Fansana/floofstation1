@@ -759,6 +759,7 @@
     - map: ["computerLayerKeys"]
       state: tech_key
   - type: CargoOrderConsole
+  - type: BankClient
   - type: ActiveRadio
     channels:
     - Supply
@@ -819,7 +820,7 @@
     energy: 1.6
     color: "#b89f25"
   - type: AccessReader
-    access: [["Quartermaster"]]
+    access: [["Orders"]] # Floof - Allow anyone trusted with order perms to skip bounties.
   - type: GuideHelp
     guides:
     - CargoBounties

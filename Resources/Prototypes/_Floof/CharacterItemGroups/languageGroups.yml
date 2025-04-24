@@ -1,0 +1,34 @@
+- type: characterItemGroup
+  id: TraitsLanguagesNatural
+  maxItems: 1
+  items:
+    - type: trait
+      id: NaturalRatvarian
+    - type: trait
+      id: NaturalChittin
+    - type: trait
+      id: NaturalNehina
+    - type: trait
+      id: NaturalMouse
+    - type: trait
+      id: NaturalCanilunzt
+    - type: trait
+      id: NaturalRobotTalk
+    - type: trait
+      id: NaturalArachnic
+    - type: trait
+      id: NaturalRootSpeak
+    - type: trait
+      id: NaturalSolCommon
+    - type: trait
+      id: NaturalValyrianStandard
+    - type: trait
+      id: NaturalMoffic
+    - type: trait
+      id: NaturalDraconic
+    - type: trait
+      id: NaturalBubblish
+    - type: trait
+      id: NaturalSchechi
+    - type: trait
+      id: NaturalNekomimetic

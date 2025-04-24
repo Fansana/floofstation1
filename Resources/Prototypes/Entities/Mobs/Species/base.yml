@@ -9,6 +9,7 @@
   components:
   - type: Sprite
     layers:
+    - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -28,11 +29,13 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
+    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "neck" ]
     - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.Face" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -133,17 +136,19 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - Flashed
+    - RadiationProtection
+    - Drowsiness
     - PsionicsDisabled
     - PsionicallyInsulated
-  - type: Reflect
-    enabled: false
-    reflectProb: 0
   - type: Body
     prototype: Human
     requiredLegs: 2
   - type: Identity
   - type: IdExaminable
   - type: Hands
+  - type: ComplexInteraction
+  - type: Internals
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
@@ -195,6 +200,10 @@
       enum.InstrumentUiKey.Key:
         type: InstrumentBoundUserInterface
         requireInputValidation: false
+      enum.RadialSelectorUiKey.Key:
+        type: RadialSelectorMenuBUI
+      enum.ListViewSelectorUiKey.Key:
+        type: ListViewSelectorBUI
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Puller
@@ -278,6 +287,8 @@
     - StaminaModifier
     - PsionicsDisabled
     - PsionicallyInsulated
+    - RadiationProtection
+    - Drowsiness
   - type: Blindable
   # Other
   - type: Temperature
@@ -331,6 +342,7 @@
   abstract: true
   components:
   - type: Hands
+  - type: ComplexInteraction
   - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
@@ -348,6 +360,7 @@
     noRot: true
     # TODO BODY Turn these into individual body parts?
     layers:
+    - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -384,7 +397,9 @@
     - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "neck" ]
+    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
     - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.Face" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]

@@ -1,0 +1,14 @@
+- type: entity
+  id: PelletShotgunHoly
+  name: holy (.50)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Holy: 10
+        Piercing: 2

@@ -1,4 +1,3 @@
-
 - type: gameMapPool
   id: DefaultMapPool
   maps:
@@ -17,7 +16,8 @@
   - TheHive
   #- Gax # Floof - Remvoe Gax due to mapping issues, power, access, etc.
   - Rad
-  - Kettle
-  - Fland
-  - Train
-  - Amber
+  - Meta
+  - Kettle # Floof
+  - Fland # Floof
+  - Train # Floof
+  - Amber # Floof

@@ -17,6 +17,7 @@ character-item-group-LoadoutInstrumentsAny = Musical Instruments (Non-Musician)
 character-item-group-LoadoutSmokes = Smokeables
 character-item-group-LoadoutBoxKits = Survival Kits
 character-item-group-LoadoutWritables = Writing Tools
+character-item-group-LoadoutPets = Pets
 
 # Job Specific Template
 character-item-group-LoadoutJOBBackpacks = JOB Backpacks
@@ -45,6 +46,8 @@ character-item-group-LoadoutCommandId = Command Id
 character-item-group-LoadoutCommandNeck = Command Neckwear
 character-item-group-LoadoutCommandMask = Command Masks
 character-item-group-LoadoutCommandOuter = Command Outerwear
+character-item-group-LoadoutCommandSelfDefense = Command Self-Defense
+# Floof - M3739 - #690 - Somehow, the FTL for LoadoutCommandSelfDefense vanished, again. Ergo...
 character-item-group-LoadoutCommandShoes = Command Shoes
 character-item-group-LoadoutCommandUniforms = Command Uniforms
 
@@ -350,6 +353,22 @@ character-item-group-LoadoutCourierOuter = Courier Outerwear
 character-item-group-LoadoutCourierShoes = Courier Shoes
 character-item-group-LoadoutCourierUniforms = Courier Uniforms
 
+# Floof - senior cargo
+# Logistics - Inventory Specialist
+character-item-group-LoadoutInventorySpecialistBackpacks = Inventory Specialist Backpacks
+character-item-group-LoadoutInventorySpecialistBelt = Inventory Specialist Belt
+character-item-group-LoadoutInventorySpecialistEars = Inventory Specialist Ears
+character-item-group-LoadoutInventorySpecialistEquipment = Inventory Specialist Equipment
+character-item-group-LoadoutInventorySpecialistEyes = Inventory Specialist Eyewear
+character-item-group-LoadoutInventorySpecialistGloves = Inventory Specialist Gloves
+character-item-group-LoadoutInventorySpecialistHead = Inventory Specialist Headgear
+character-item-group-LoadoutInventorySpecialistId = Inventory Specialist Id
+character-item-group-LoadoutInventorySpecialistNeck = Inventory Specialist Neckwear
+character-item-group-LoadoutInventorySpecialistMask = Inventory Specialist Masks
+character-item-group-LoadoutInventorySpecialistOuter = Inventory Specialist Outerwear
+character-item-group-LoadoutInventorySpecialistShoes = Inventory Specialist Shoes
+character-item-group-LoadoutInventorySpecialistUniforms = Inventory Specialist Uniforms
+
 # Logistics - Logistics Officer
 character-item-group-LoadoutLogisticsOfficerBackpacks = Logistics Officer Backpacks
 character-item-group-LoadoutLogisticsOfficerBelt = Logistics Officer Belt
@@ -379,6 +398,7 @@ character-item-group-LoadoutSalvageSpecialistMask = Salvage Specialist Masks
 character-item-group-LoadoutSalvageSpecialistOuter = Salvage Specialist Outerwear
 character-item-group-LoadoutSalvageSpecialistShoes = Salvage Specialist Shoes
 character-item-group-LoadoutSalvageSpecialistUniforms = Salvage Specialist Uniforms
+character-item-group-LoadoutSalvageSpecialistWeapons = Salvage Specialist Weapons
 
 # Medical
 character-item-group-LoadoutMedicalBackpacks = Medical Backpacks
@@ -561,12 +581,12 @@ character-item-group-LoadoutDetectiveOuter = Detective Outerwear
 character-item-group-LoadoutDetectiveShoes = Detective Shoes
 character-item-group-LoadoutDetectiveUniforms = Detective Uniforms
 
-# Security - Head Of Security
+# Security - Head Of Security | Floof - M3739 - #690 - HoS Weapons renamed to better suit it's selection.
 character-item-group-LoadoutHeadOfSecurityBackpacks = Head Of Security Backpacks
 character-item-group-LoadoutHeadOfSecurityBelt = Head Of Security Belt
 character-item-group-LoadoutHeadOfSecurityEars = Head Of Security Ears
 character-item-group-LoadoutHeadOfSecurityEquipment = Head Of Security Equipment
-character-item-group-LoadoutHeadOfSecurityWeapons = Head of Security's Antique Weapon Collection
+character-item-group-LoadoutHeadOfSecurityWeapons = Head of Security's Weapon Collection
 character-item-group-LoadoutHeadOfSecurityEyes = Head Of Security Eyewear
 character-item-group-LoadoutHeadOfSecurityGloves = Head Of Security Gloves
 character-item-group-LoadoutHeadOfSecurityHead = Head Of Security Headgear
@@ -621,6 +641,21 @@ character-item-group-LoadoutWardenMask = Warden Masks
 character-item-group-LoadoutWardenOuter = Warden Outerwear
 character-item-group-LoadoutWardenShoes = Warden Shoes
 character-item-group-LoadoutWardenUniforms = Warden Uniforms
+
+# Floof - Security - Prison Guard
+character-item-group-LoadoutPrisonGuardBackpacks = Prison Guard Backpacks
+character-item-group-LoadoutPrisonGuardBelt = Prison Guard Belt
+character-item-group-LoadoutPrisonGuardEars = Prison Guard Ears
+character-item-group-LoadoutPrisonGuardEquipment = Prison Guard Equipment
+character-item-group-LoadoutPrisonGuardEyes = Prison Guard Eyewear
+character-item-group-LoadoutPrisonGuardGloves = Prison Guard Gloves
+character-item-group-LoadoutPrisonGuardHead = Prison Guard Headgear
+character-item-group-LoadoutPrisonGuardId = Prison Guard Id
+character-item-group-LoadoutPrisonGuardNeck = Prison Guard Neckwear
+character-item-group-LoadoutPrisonGuardMask = Prison Guard Masks
+character-item-group-LoadoutPrisonGuardOuter = Prison Guard Outerwear
+character-item-group-LoadoutPrisonGuardShoes = Prison Guard Shoes
+character-item-group-LoadoutPrisonGuardUniforms = Prison Guard Uniforms
 
 # Service
 character-item-group-LoadoutServiceBackpacks = Service Backpacks

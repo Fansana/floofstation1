@@ -332,19 +332,14 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 25
+  # Shitmed Change
   - type: Tending
     speed: 0.55
   - type: SurgeryTool
     startSound:
-      path: /Audio/Medical/Surgery/retractor1.ogg
+      path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
     endSound:
-      path: /Audio/Medical/Surgery/hemostat1.ogg
-
-- type: entity
-  parent: Pen
-  id: PenEmbeddable
-  abstract: true
-  components:
+      path: /Audio/_Shitmed/Medical/Surgery/hemostat1.ogg
   - type: EmbeddableProjectile
     offset: 0.3,0.0
     removalTime: 0.0
@@ -354,6 +349,17 @@
     damage:
       types:
         Piercing: 3
+
+- type: entity
+  parent: Pen
+  id: PenEmbeddable
+  abstract: true
+  components:
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 5
 
 #TODO: I want the luxury pen to write a cool font like Merriweather in the future.
 
@@ -408,6 +414,10 @@
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     state: pen_cap
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 8
 
 - type: entity
   name: CentCom pen
@@ -726,6 +736,7 @@
           tags:
           - Write
   - type: CargoOrderConsole
+  - type: BankClient
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text
     key: enum.CargoConsoleUiKey.Orders
@@ -824,3 +835,6 @@
       - !type:EmptyAllContainersBehaviour
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: Construction
+    graph: PaperEnvelope
+    node: envelope

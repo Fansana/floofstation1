@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakRedHood
+  name: Red Cloak
+  description: A cloak made for travel and comfort. Slightly smells of cherry pie?
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/Cloaks/redhood.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodRedHood
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakSurgeonGeneral
+  name: surgeon general cloak
+  description: A sterile teal cloak with a green cross, radiating with a sense of duty and willingness to help others. Tailor by SESWC
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Neck/surgeongeneralcloak.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Neck/surgeongeneralcloak.rsi

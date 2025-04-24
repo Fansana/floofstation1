@@ -429,7 +429,8 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/unathirobe.rsi
 
-- type: entity
+# Floof - brought back
+- type: entity # TODO: There no use for it now... but pehaps we could turn it into a Anti-Psionic Clothing like headcage?
   parent: ClothingOuterBase
   id: ClothingOuterShadowkinRestraints
   name: shadowkin restraints

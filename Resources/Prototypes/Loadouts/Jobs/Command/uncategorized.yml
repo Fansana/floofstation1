@@ -10,7 +10,8 @@
   id: LoadoutCommandTelescopicBaton
   category: JobsCommandAUncategorized
   cost: 3
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCommandSelfDefense
@@ -24,7 +25,7 @@
   id: LoadoutCommandDisabler
   category: JobsCommandAUncategorized
   cost: 2
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCommandSelfDefense
@@ -38,7 +39,7 @@
   id: LoadoutCommandStunBaton
   category: JobsCommandAUncategorized
   cost: 1
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCommandSelfDefense
@@ -52,7 +53,7 @@
   id: LoadoutCommandFlash
   category: JobsCommandAUncategorized
   cost: 0
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCommandSelfDefense
