@@ -4620,3 +4620,10 @@ Entries:
   id: 495
   time: '2025-04-23T05:28:46.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/836
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: Paperwork templates will have the station name autofilled now
+  id: 496
+  time: '2025-04-24T17:28:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/845
