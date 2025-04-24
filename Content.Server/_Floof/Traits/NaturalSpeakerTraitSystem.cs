@@ -10,7 +10,7 @@ using Content.Shared.Language.Components.Translators;
 using Content.Shared.Storage;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.FloofStation.Traits;
+namespace Content.Server._Floof.Traits;
 
 
 public sealed partial class NaturalSpeakerTraitSystem : EntitySystem

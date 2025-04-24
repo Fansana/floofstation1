@@ -38,7 +38,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Hands.EntitySystems;
 using Content.Server.Carrying;
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 
 public sealed class VoreSystem : EntitySystem
 {

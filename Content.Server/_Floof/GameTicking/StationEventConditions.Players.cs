@@ -3,7 +3,7 @@ using Content.Shared.InteractionVerbs;
 using Content.Shared.Roles;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.FloofStation.GameTicking;
+namespace Content.Server._Floof.GameTicking;
 
 /// <summary>
 ///     A condition that requires a number of players to be present in a specific department.

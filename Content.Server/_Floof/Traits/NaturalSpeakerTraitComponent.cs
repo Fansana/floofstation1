@@ -2,7 +2,7 @@ using Content.Shared.Language;
 using Content.Shared.Language.Systems;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.FloofStation.Traits;
+namespace Content.Server._Floof.Traits;
 
 /// <summary>
 ///     When applied to a not-yet-spawned player entity, removes their natural language from the lists of their languages

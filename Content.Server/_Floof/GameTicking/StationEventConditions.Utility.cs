@@ -2,7 +2,7 @@ using System.Linq;
 using Content.Server.StationEvents.Components;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.FloofStation.GameTicking;
+namespace Content.Server._Floof.GameTicking;
 
 /// <summary>
 ///     Combines a number of other conditions in a boolean AND or a boolean OR.

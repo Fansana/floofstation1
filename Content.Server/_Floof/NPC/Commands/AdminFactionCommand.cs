@@ -9,7 +9,7 @@ using Content.Server.NPC.Components;
 using Content.Shared.NPC.Systems;
 
 
-namespace Content.Server.FloofStation.NPC.Commands;
+namespace Content.Server._Floof.NPC.Commands;
 
 [ToolshedCommand(Name = "faction"), AdminCommand(AdminFlags.Admin)]
 public sealed class AdminFactionCommand : ToolshedCommand

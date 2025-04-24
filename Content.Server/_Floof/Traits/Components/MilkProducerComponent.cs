@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.GameStates;
 
-namespace Content.Server.FloofStation.Traits;
+namespace Content.Server._Floof.Traits;
 
 [RegisterComponent, Access(typeof(LewdTraitSystem))]
 public sealed partial class MilkProducerComponent : Component

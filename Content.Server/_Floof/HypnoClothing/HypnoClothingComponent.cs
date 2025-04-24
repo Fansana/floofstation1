@@ -1,6 +1,6 @@
 using Robust.Shared.Audio;
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 
 [RegisterComponent]
 public sealed partial class HypnoClothingComponent : Component

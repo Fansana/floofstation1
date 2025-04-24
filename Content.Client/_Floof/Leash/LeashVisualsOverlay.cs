@@ -4,7 +4,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
 
-namespace Content.Client.Floofstation.Leash;
+namespace Content.Client._Floof.Leash;
 
 public sealed class LeashVisualsOverlay : Overlay
 {

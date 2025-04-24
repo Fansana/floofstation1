@@ -3,7 +3,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.InteractionVerbs;
 
-namespace Content.Server.FloofStation.InteractionVerbs.Actions;
+namespace Content.Server._Floof.InteractionVerbs.Actions;
 
 /// <summary>
 ///     Toggles a humanoid visual layer.

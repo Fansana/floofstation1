@@ -12,7 +12,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
-namespace Content.Server.FloofStation.GameTicking;
+namespace Content.Server._Floof.GameTicking;
 
 /// <summary>
 ///     Represents an abstract condition required for a station event to be chosen from the random event pool.

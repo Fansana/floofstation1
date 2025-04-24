@@ -1,7 +1,7 @@
 using Robust.Shared.Map;
 
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 
 
 [RegisterComponent]

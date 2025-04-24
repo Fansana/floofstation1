@@ -1,4 +1,4 @@
-namespace Content.Server.FloofStation.Paint;
+namespace Content.Server._Floof.Paint;
 
 
 /// <summary>

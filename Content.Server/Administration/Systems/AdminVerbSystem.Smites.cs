@@ -53,8 +53,8 @@ using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
 
 // Floof Station - For our own smites
-using Content.Server.Floofstation.Administration;
-using Content.Server.Floofstation.Administration.Components;
+using Content.Server._Floof.Administration;
+using Content.Server._Floof.Administration.Components;
 
 namespace Content.Server.Administration.Systems;
 

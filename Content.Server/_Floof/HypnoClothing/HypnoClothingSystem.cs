@@ -10,7 +10,7 @@ using Content.Server.Abilities.Psionics;
 using Content.Shared.Labels.Components;
 
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 public sealed class HypnoClothingsystem : EntitySystem
 {
     [Dependency] private readonly ConsentSystem _consent = default!;

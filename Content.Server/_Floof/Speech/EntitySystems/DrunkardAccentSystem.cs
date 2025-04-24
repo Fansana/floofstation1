@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using Content.Server.FloofStation.Speech.Components;
+using Content.Server._Floof.Speech.Components;
 using Content.Server.Speech;
 using Content.Shared.Drunk;
 using Content.Shared.StatusEffect;
@@ -7,7 +7,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 
-namespace Content.Server.FloofStation.Speech.EntitySystems;
+namespace Content.Server._Floof.Speech.EntitySystems;
 
 
 public sealed class DrunkardAccentSystem : EntitySystem

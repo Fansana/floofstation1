@@ -1,7 +1,7 @@
 using Content.Client.Physics;
 using Robust.Client.Graphics;
 
-namespace Content.Client.Floofstation.Leash;
+namespace Content.Client._Floof.Leash;
 
 public sealed class LeashVisualsSystem : EntitySystem
 {

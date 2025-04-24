@@ -1,8 +1,8 @@
-using Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Systems;
+using Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Systems;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Components;
+namespace Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Components;
 
 /// <summary>
 /// This effect causes the artifact to replace tiles around it.

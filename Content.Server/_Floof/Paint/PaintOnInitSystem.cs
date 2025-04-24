@@ -1,7 +1,7 @@
 using Content.Server.Paint;
 
 
-namespace Content.Server.FloofStation.Paint;
+namespace Content.Server._Floof.Paint;
 
 
 public sealed class PaintOnInitSystem : EntitySystem

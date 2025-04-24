@@ -1,6 +1,6 @@
 using Content.Shared.Teleportation.Systems;
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 
 public sealed class DarkPortalSystem : EntitySystem
 {

@@ -4,7 +4,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 
-namespace Content.Client.Floofstation;
+namespace Content.Client._Floof;
 
 public sealed partial class VoredSystem : EntitySystem
 {

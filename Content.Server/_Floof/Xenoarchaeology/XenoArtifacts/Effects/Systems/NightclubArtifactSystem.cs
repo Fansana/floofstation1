@@ -2,9 +2,9 @@ using Robust.Shared.Random;
 using Robust.Shared.Audio.Systems;
 using Content.Server.Light.Components;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Events;
-using Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Components;
+using Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Components;
 
-namespace Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Systems;
+namespace Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Systems;
 
 public sealed class NightclubArtifactSystem : EntitySystem
 {

@@ -1,7 +1,7 @@
 using Content.Shared.Shadowkin;
 using Content.Shared.Rejuvenate;
 
-namespace Content.Server.FloofStation;
+namespace Content.Server._Floof;
 
 public sealed class AnomalyJobSystem : EntitySystem
 {

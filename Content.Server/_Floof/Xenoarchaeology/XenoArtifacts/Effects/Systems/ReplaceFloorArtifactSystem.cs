@@ -2,13 +2,13 @@ using System.Numerics;
 using Content.Shared.Maps;
 using Content.Server.Light.Components;
 using Content.Server.Xenoarchaeology.XenoArtifacts.Events;
-using Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Components;
+using Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 
-namespace Content.Server.FloofStation.Xenoarchaeology.XenoArtifacts.Effects.Systems;
+namespace Content.Server._Floof.Xenoarchaeology.XenoArtifacts.Effects.Systems;
 
 public sealed class ReplaceFloorArtifactSystem : EntitySystem
 {
