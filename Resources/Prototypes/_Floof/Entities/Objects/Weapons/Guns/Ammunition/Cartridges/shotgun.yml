@@ -1,0 +1,14 @@
+- type: entity
+  id: ShellShotgunHoly
+  name: shell (.50 Holy)
+  parent: BaseShellShotgun
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Gun/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: holy
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunHoly
+  - type: SpentAmmoVisuals
+    state: "holy"

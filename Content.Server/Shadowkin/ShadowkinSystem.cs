@@ -13,7 +13,7 @@ using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 using Content.Server.Abilities.Psionics;
 using Content.Shared.Mobs; // Floofstation Edit
-using Content.Server.FloofStation; // Floofstation Edit
+using Content.Server._Floof; // Floofstation Edit
 using Content.Shared.Inventory; // Floofstation Edit
 using Robust.Shared.Physics.Systems; // Floofstation Edit
 using Robust.Shared.Random; // Floofstation Edit
