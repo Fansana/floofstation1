@@ -64384,23 +64384,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 13.5153,-32.39743
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 12031
-    components:
-    - type: Transform
-      pos: -30.5,-38.5
-      parent: 2
-  - uid: 12050
-    components:
-    - type: Transform
-      pos: -34.5,-37.5
-      parent: 2
-  - uid: 13598
-    components:
-    - type: Transform
-      pos: -16.5,-36.5
-      parent: 2
 - proto: ChemDispenser
   entities:
   - uid: 10460
@@ -64433,6 +64416,23 @@ entities:
     components:
     - type: Transform
       pos: -30.5,-36.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 12031
+    components:
+    - type: Transform
+      pos: -30.5,-38.5
+      parent: 2
+  - uid: 12050
+    components:
+    - type: Transform
+      pos: -34.5,-37.5
+      parent: 2
+  - uid: 13598
+    components:
+    - type: Transform
+      pos: -16.5,-36.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -133500,13 +133500,6 @@ entities:
     - type: Transform
       pos: -39.5,-44.5
       parent: 2
-- proto: SignCourt
-  entities:
-  - uid: 6214
-    components:
-    - type: Transform
-      pos: 34.5,18.5
-      parent: 2
 - proto: SignCryogenicsMed
   entities:
   - uid: 15241
@@ -133984,6 +133977,11 @@ entities:
       parent: 2
 - proto: SignLawyer
   entities:
+  - uid: 6214
+    components:
+    - type: Transform
+      pos: 34.5,18.5
+      parent: 2
   - uid: 17070
     components:
     - type: Transform
@@ -134428,7 +134426,7 @@ entities:
     - type: Transform
       pos: 20.100466,-48.530296
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 1651
     components:
@@ -136377,7 +136375,7 @@ entities:
       parent: 2
 - proto: SpawnPointInventorySpecialist
   entities:
-  - uid: 24388
+  - uid: 24390
     components:
     - type: Transform
       pos: 4.5,16.5
