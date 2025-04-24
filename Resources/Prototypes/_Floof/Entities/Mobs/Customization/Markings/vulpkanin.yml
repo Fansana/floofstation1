@@ -18,7 +18,116 @@
       state: vulpine
     - sprite: _Floof/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine-lines-white
-#Right Foot
+      
+#Left Leg
+- type: marking
+  id: VulpPointsFadeLegL
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_fade-legsL
+
+- type: marking
+  id: VulpPointsSharpLegL
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_sharp-legsL
+      
+- type: marking
+  id: VulpPointsCrestLegL
+  markingCategory: LeftLeg
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_crest-legsL
+#Right Leg
+- type: marking
+  id: VulpPointsFadeLegR
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_fade-legsR
+      
+- type: marking
+  id: VulpPointsSharpLegR
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_sharp-legsR
+      
+- type: marking
+  id: VulpPointsCrestLegR
+  markingCategory: RightLeg
+  bodyPart: RLeg
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_crest-legsR
+#Left Arm
+- type: marking
+  id: VulpPointsFadeArmL
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_fade-armsL
+
+- type: marking
+  id: VulpPointsSharpArmL
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_sharp-armsL
+
+- type: marking
+  id: VulpPointsCrestArmL
+  markingCategory: LeftArm
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_crest-armsL
+#Right Arm
+- type: marking
+  id: VulpPointsFadeArmR
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_fade-armsR
+      
+- type: marking
+  id: VulpPointsSharpArmR
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_sharp-armsR
+
+- type: marking
+  id: VulpPointsCrestArmR
+  markingCategory: RightArm
+  bodyPart: RArm
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
+      state: points_crest-armsR
+#Right Hand
 - type: marking
   id: VulpPointsHandsRight
   markingCategory: RightHand
@@ -27,7 +136,7 @@
   sprites:
     - sprite: _Floof/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_handR
-#Left Foot
+#Left Hand
 - type: marking
   id: VulpPointsHandsLeft
   markingCategory: LeftHand
