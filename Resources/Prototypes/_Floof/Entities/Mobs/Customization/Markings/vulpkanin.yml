@@ -1,0 +1,19 @@
+- type: marking
+  id: VulpSnoutSwiftWhite
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/head_markings.rsi
+      state: vulpine-lines-white
+
+- type: marking
+  id: VulpSnoutVulpineWhite
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin, SlimePerson]
+  sprites:
+    - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
+      state: vulpine
+    - sprite: _Floof/Mobs/Customization/Vulpkanin/head_markings.rsi
+      state: vulpine-lines-white
