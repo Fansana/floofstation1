@@ -10,6 +10,8 @@
   categories:
     - UplinkPointless
 
+# WEAPONS
+
 - type: listing
   id: UplinkEsabre
   name: uplink-EnergySabre-name
@@ -22,13 +24,27 @@
   - UplinkWeaponry
 #  saleLimit: 2 # Floofstation - used to exist, but now it doesn't. Oh, well.
 
-# type: listing
- # id: UplinkCryoinjector
-  #name: uplink-Cryptobiolininjector-name
-  #description: uplink-Cryptobiolininjector-desc
-  #icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
-  #productEntity: CryptobiolinInjector
-  #cost:
-  #  Telecrystal: 2
-  #categories:
-  #- UplinkUtility
+- type: listing #floof the other file just doesnt work
+  id: UplinkEnergyHalberd
+  name: uplink-energy-halberd-name
+  description: uplink-energy-halberd-desc
+  icon: { sprite: Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
+  productEntity: WeaponEnergyHalberd
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+#  saleLimit: 1 # Floofstation - used to exist, but now it doesn't. Oh, well.
+
+#Medical
+
+- type: listing
+  id: UplinkCryoinjector
+  name: uplink-Cryptobiolininjector-name
+  description: uplink-Cryptobiolininjector-desc
+  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
+  productEntity: CryptobiolinInjector
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkChemicals

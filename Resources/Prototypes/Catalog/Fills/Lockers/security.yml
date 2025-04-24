@@ -56,6 +56,7 @@
       - id: BoxPDAPrisoner # Delta-V
       - id: ClothingShoesBootsWinterWarden #Delta V: Add departmental winter boots
       - id: BoxEncryptionKeyPrisoner #Delta-V
+      - id: WeaponEnergyHalberdAntique # Floof to allow Onis to be a decent warden at first
       - id: LunchboxSecurityFilledRandom # Delta-v Lunchboxes!
         prob: 0.3
       - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
