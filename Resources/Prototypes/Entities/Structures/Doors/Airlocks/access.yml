@@ -361,6 +361,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
+  - type: AirlockVirusTarget
 
 - type: entity
   parent: AirlockSecurity
@@ -370,6 +371,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsDetective ]
+  - type: AirlockVirusTarget
 
 #Delta V: Removed Brig Access
 #- type: entity
@@ -389,6 +391,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurityLawyer ]
+  - type: AirlockVirusTarget
 
 - type: entity
   parent: AirlockSecurity
@@ -736,6 +739,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurity ]
+  - type: AirlockVirusTarget
 
 - type: entity
   parent: AirlockSecurityGlass
@@ -745,6 +749,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsDetective ]
+  - type: AirlockVirusTarget
 
 #- type: entity
 #  parent: AirlockSecurityGlass
@@ -763,6 +768,7 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSecurityLawyer ]
+  - type: AirlockVirusTarget
 
 - type: entity
   parent: AirlockSecurityGlass
@@ -1006,6 +1012,7 @@
       board: [ DoorElectronicsSecurity ]
   - type: Wires
     layoutId: AirlockSecurity
+  - type: AirlockVirusTarget
 
 - type: entity
   parent: AirlockMaintSecLocked

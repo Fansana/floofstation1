@@ -189,6 +189,7 @@
   - type: StorageFill
     contents:
       - id: CrayonBox
+      - id: CrayonBrush # Floof
 
 - type: entity
   id: CrateFunBoardGames
