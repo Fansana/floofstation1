@@ -7,7 +7,7 @@ paperwork-security-arrest-report =
         {"["}head=2]ARREST REPORT[/head]
     { paperwork-separator-security }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]HEAD OF SECURITY:[/bold]
         {"["}bold]ARRESTING OFFICER:[/bold]
@@ -89,7 +89,7 @@ paperwork-security-arrest-warrant =
         {"["}head=2]ARREST WARRANT [/head]
     { paperwork-separator-security }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]ARRESTING OFFICER: [/bold]
         {"["}bold]HEAD OF SECURITY: [/bold]
@@ -114,7 +114,7 @@ paperwork-security-department-search-warrant =
         {"["}head=2]DEPARTMENT SEARCH WARRANT [/head]
     { paperwork-separator-security }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]PROSECUTOR:[/bold]
         {"["}bold]HEAD OF SECURITY:[/bold]
@@ -201,7 +201,7 @@ paperwork-security-individual-search-warrant =
         {"["}head=2]INDIVIDUAL SEARCH WARRANT [/head]
     { paperwork-separator-security }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]PROSECUTOR:[/bold]
         {"["}bold]HEAD OF SECURITY:[/bold]
@@ -230,7 +230,7 @@ paperwork-security-inmate-request =
         {"["}head=2]Inmate Request form [/head]
     { paperwork-separator-security }
         {"["}bold]  SECTOR:[/bold] Floof Station
-        {"["}bold]  STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]  STATION:[/bold] {$stationName}
         {"["}bold]  SHIFT TIME:[/bold] XX:XX
         {"["}bold]  WARDEN:[/bold]
         {"["}bold]  INMATE:[/bold]

@@ -6,7 +6,7 @@ paperwork-command-emergency-personal-recovery =
     { paperwork-command-separator }
         {"["}bold]EMERGENCY PERSONAL RECOVERY[/bold]
     { paperwork-command-separator }
-        {"["}bold]STATION:[/bold]
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]CAPTAIN:[/bold]
         {"["}bold]HEAD OF PERSONNEL:[/bold]
@@ -33,7 +33,7 @@ paperwork-command-station-request-for-assistance =
         {"["}bold]STATION REQUEST FOR ASSISTANCE[/bold]
     { paperwork-command-separator }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]CAPTAIN:[/bold]
         {"["}bold]HEAD OF PERSONNEL:[/bold]

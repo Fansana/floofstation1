@@ -8,7 +8,7 @@ paperwork-separator-epistemics-borgification-notice =
         {"["}head=2]BORGIFCATION NOTICE[/head]
     { paperwork-separator-epistemics }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]BORG APPLICATE:[/bold]
         {"["}bold]FORMER JOB:[/bold]
@@ -36,7 +36,7 @@ paperwork-separator-epistemics-production-request =
         {"["}head=2]PRODUCTION REQUEST[/head]
     { paperwork-separator-epistemics }
         {"["}bold]SECTOR:[/bold] Floof Station
-        {"["}bold]STATION:[/bold] NT14-NAME-XXX
+        {"["}bold]STATION:[/bold] {$stationName}
         {"["}bold]SHIFT TIME:[/bold] XX:XX
         {"["}bold]MYSTAGOGUE:[/bold]
         {"["}bold]RECIEVER:[/bold]
