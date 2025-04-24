@@ -162,6 +162,9 @@
     - TauCetiBasic
     - Chittin
     naturalLanguage: Chittin # Floof: explicitly stated natural languages
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-chitinid-
+    forceSayStringCount: 3 # Default is 7. I think my brain stopped working, they could use some more.
 
 - type: entity
   parent: BaseSpeciesDummy
