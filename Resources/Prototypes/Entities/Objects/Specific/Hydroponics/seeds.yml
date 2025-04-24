@@ -435,7 +435,7 @@
     - type: Seed
       seedId: pomegranate
     - type: Sprite
-      sprite: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
+      sprite: _Floof/Objects/Specific/Hydroponics/pomegranate.rsi
 
 - type: entity
   parent: SeedBase

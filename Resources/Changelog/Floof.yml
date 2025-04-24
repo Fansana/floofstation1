@@ -4532,3 +4532,118 @@ Entries:
   id: 488
   time: '2025-04-20T19:38:17.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/765
+- author: Superlagg and Casey
+  changes:
+    - type: Add
+      message: >-
+        Adds support for tails (and such) to have more control over their
+        layering, so they'll look good even if you're wearing a skirt.
+    - type: Add
+      message: >-
+        Adds support for markings to have sprites inherit color from other
+        sprites in the marking, so you can change multiple sprite colors with
+        one slider!
+    - type: Add
+      message: >-
+        Ports dozens of tails, snouts, and ears from Skyrat SS13. These use the
+        new layering system, and will layer under skirts properly. (Note,
+        pre-existing tails still use the old system, and will likely layer over
+        skirts)
+  id: 489
+  time: '2025-04-21T13:39:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/742
+- author: Outlier
+  changes:
+    - type: Add
+      message: >-
+        Holy Shells and Holy shell box available at the security techfab
+        following exotic ammunition research
+    - type: Tweak
+      message: >-
+        .38 holy now does 20 Holy, 10 Pierce, effectively a ranged bible-boop
+        with a little extra sting
+    - type: Tweak
+      message: >-
+        Removed Ammo whitelist from the Excommunicant, no other weapons have
+        this and other guns can chamber their rounds it doesn't seem fair.
+    - type: Tweak
+      message: >-
+        Made Soulbreaker shell box printable at the security techfab after
+        exotic ammuniton research so you don't have to make them individually
+    - type: Fix
+      message: Soulbreaker shells work now. They priorly didn't inject anything
+    - type: Fix
+      message: Soulbreaker Shell Box can now load from the box, no more floor bullets.
+  id: 490
+  time: '2025-04-21T13:41:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/675
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Added a new clothing type - harness, functioning as a leash anchor and
+        more.
+  id: 491
+  time: '2025-04-21T13:47:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/833
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Chitinid are no longer protected from needles by
+        injector-component-deny-chitinid
+  id: 492
+  time: '2025-04-22T18:00:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/841
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Flipped disposal signal junctions point the correct direction now
+  id: 493
+  time: '2025-04-22T20:09:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/840
+- author: DeltaV Oxdeception
+  changes:
+    - type: Add
+      message: >-
+        The AAC tablets can now 'combine' buttons to construct a sentence, and
+        send them as a single message.
+  id: 494
+  time: '2025-04-22T20:09:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/837
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: >-
+        Removed Frag grenades from China Lake and replaced them with Blast
+        grenades.
+  id: 495
+  time: '2025-04-23T05:28:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/836
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: Paperwork templates will have the station name autofilled now
+  id: 496
+  time: '2025-04-24T17:28:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/845
+- author: sprkl
+  changes:
+    - type: Add
+      message: A new senior role for Logistics, the Inventory Specialist.
+    - type: Tweak
+      message: Bounty skips can now be done by anyone with order access.
+    - type: Tweak
+      message: >-
+        Cargo Technician now only starts with order access on low population
+        rounds.
+  id: 497
+  time: '2025-04-24T17:46:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/805
+- author: WhiteHusky
+  changes:
+    - type: Fix
+      message: Saving item locations are working again
+  id: 498
+  time: '2025-04-24T19:50:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/843

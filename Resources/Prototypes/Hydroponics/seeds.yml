@@ -1202,33 +1202,6 @@
       Max: 20
       PotencyDivisor: 5
 
-- type: seed # Floofstation
-  id: pomegranate
-  name: seeds-pomegranate-name
-  noun: seeds-noun-seeds
-  displayName: seeds-pomegranate-display-name
-  plantRsi: Floof/Objects/Specific/Hydroponics/pomegranate.rsi
-  packetPrototype: PomegranateSeeds
-  productPrototypes:
-    - FoodPomegranate
-  harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 6
-  waterConsumption: 0.60
-  chemicals:
-    Pomelustine:
-      Min: 5
-      Max: 30
-      PotencyDivisor: 10
-    Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 25
-
 - type: seed
   id: ambrosiaVulgaris
   name: seeds-ambrosiavulgaris-name
