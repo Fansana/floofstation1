@@ -1,18 +1,18 @@
 using System.Linq;
+using Content.Shared._Floof.Lock.Events;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
-using Content.Shared.FloofStation.Lock.Events;
 using Content.Shared.Lock;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Utility;
-using static Content.Shared.FloofStation.Lock.IdLockComponent.LockState;
+using static Content.Shared._Floof.Lock.IdLockComponent.LockState;
 
 
-namespace Content.Shared.FloofStation.Lock;
+namespace Content.Shared._Floof.Lock;
 
 
 public sealed class IdLockSystem : EntitySystem
@@ -42,7 +42,7 @@ public sealed class IdLockSystem : EntitySystem
     {
         // Sanity check: as of now, ID locks require a normal lock underneath to work
         if (!HasComp<LockComponent>(ent) || !HasComp<AccessReaderComponent>(ent))
-            Log.Warning($"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported."););
+            Log.Warning($"Entity {ToPrettyString(ent)} has an IdLock, but no Lock + AccessReader. As of right now, standalone ID locks are not supported.");
     }
 
     private void OnExamined(Entity<IdLockComponent> ent, ref ExaminedEvent args)

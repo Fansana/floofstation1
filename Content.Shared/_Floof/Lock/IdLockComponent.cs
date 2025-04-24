@@ -5,7 +5,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
 
-namespace Content.Shared.FloofStation.Lock;
+namespace Content.Shared._Floof.Lock;
 
 
 /// <summary>

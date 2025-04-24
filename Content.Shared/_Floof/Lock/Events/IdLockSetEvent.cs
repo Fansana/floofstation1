@@ -1,4 +1,4 @@
-namespace Content.Shared.FloofStation.Lock.Events;
+namespace Content.Shared._Floof.Lock.Events;
 
 /// <summary>
 ///     Raised on a lockable entity to add/remove an ID lock.
