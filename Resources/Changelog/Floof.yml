@@ -4647,3 +4647,12 @@ Entries:
   id: 498
   time: '2025-04-24T19:50:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/843
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Updated the arrivals outpost to allow access to the previously
+        blocked-off rooms.
+  id: 499
+  time: '2025-04-24T22:39:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/844
