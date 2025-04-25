@@ -74,7 +74,7 @@
   id: CrateArmorySniper
   parent: CrateWeaponSecure
   name: sniper crate
-  description: Contains one anti-material sniper rifle with 3 mags. Requires Armory access to open.
+  description: Contains one rare anti-material sniper rifle with 3 mags. Requires Armory access to open.
   components:
   - type: StorageFill
     contents:
