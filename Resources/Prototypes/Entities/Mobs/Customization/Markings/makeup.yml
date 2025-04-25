@@ -74,8 +74,8 @@
 
 - type: marking
   id: MakeupMothBlush
-  bodyPart: Head
-  markingCategory: Overlay
+  bodyPart: Face
+  markingCategory: Face
   speciesRestriction: [Moth]
   coloring:
     default:
