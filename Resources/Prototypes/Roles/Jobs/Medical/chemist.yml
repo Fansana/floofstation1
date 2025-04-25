@@ -7,7 +7,7 @@
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
+    - !type:CharacterPlaytimeRequirement #floof
       tracker: JobMedicalDoctor
       min: 9000 #2.5 hours Floof
   access:

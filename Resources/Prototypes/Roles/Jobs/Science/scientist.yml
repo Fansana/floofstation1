@@ -10,7 +10,7 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics #floof
       min: 43200 # Floofstation - 12 hour
-    - !type:CharacterDepartmentTimeRequirement
+    - !type:CharacterPlaytimeRequirement #floof
       tracker: JobResearchAssistant #floof
       min: 9000 #2.5 hours floof
   access:
