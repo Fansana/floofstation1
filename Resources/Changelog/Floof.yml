@@ -4656,3 +4656,10 @@ Entries:
   id: 499
   time: '2025-04-24T22:39:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/844
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Arachnes can take Arachnid language trait now
+  id: 500
+  time: '2025-04-25T02:42:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/855
