@@ -163,7 +163,7 @@
   id: UplinkTypewriterBundle
   name: uplink-typewriter-bundle-name
   description: uplink-typewriter-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/SMGs/typewriter.rsi, state: base }
+  icon: { sprite: /Textures/DeltaV/Objects/Weapons/Guns/SMGs/typewriter.rsi, state: base }
   productEntity: BriefcaseSyndieTypewriterBundleFilled
   discountCategory: usualDiscounts
   discountDownTo:
