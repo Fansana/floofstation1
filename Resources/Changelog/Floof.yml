@@ -4794,3 +4794,10 @@ Entries:
   id: 509
   time: '2025-04-25T14:30:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/864
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Fix
+      message: Arachne can now stand up after lying down.
+  id: 510
+  time: '2025-04-25T14:32:00.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/865
