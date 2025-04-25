@@ -27,3 +27,9 @@
     Blunt: 1.1
     Slash: 1.1
     Piercing: 1.1
+
+- type: damageModifierSet
+  id: Dragon
+  coefficients: # Floof - Dragon buffs
+    Slash: 0.85
+    Piercing: 0.85
