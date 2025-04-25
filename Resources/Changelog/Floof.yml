@@ -4875,3 +4875,12 @@ Entries:
   id: 515
   time: '2025-04-25T19:54:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/871
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Tweak
+      message: >-
+        The news article title character limit has been increased from 25 to 50
+        characters, and news content from 2048 to 2560 characters.
+  id: 516
+  time: '2025-04-25T20:01:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/872
