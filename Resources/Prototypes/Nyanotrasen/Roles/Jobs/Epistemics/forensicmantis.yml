@@ -7,8 +7,6 @@
     - !type:CharacterDepartmentTimeRequirement #floof
       tracker: JobScientist #floof
       min: 9000 #2.5 hours floof
-    - !type:CharacterOverallTimeRequirement
-      min: 3600 # 1hr floof
     - !type:DepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 3600 #floof

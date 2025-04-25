@@ -13,8 +13,6 @@
     - !type:CharacterPlaytimeRequirement # Floof
       tracker: JobStationEngineer
       min: 21600 # Floof 6 hours
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # DeltaV - 20 hours
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
