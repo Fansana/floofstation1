@@ -32,6 +32,10 @@
   access:
     - Command
     - Maintenance
+    - Janitor
+    - Service
+    - Bar
+    - Kitchen
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
