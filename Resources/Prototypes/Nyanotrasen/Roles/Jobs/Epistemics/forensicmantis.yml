@@ -4,7 +4,7 @@
   description: job-description-mantis
   playTimeTracker: JobForensicMantis
   requirements:
-  - !type:CharacterDepartmentTimeRequirement #floof
+    - !type:CharacterDepartmentTimeRequirement #floof
       tracker: JobScientist #floof
       min: 9000 #2.5 hours floof
     - !type:CharacterOverallTimeRequirement
