@@ -4647,3 +4647,64 @@ Entries:
   id: 498
   time: '2025-04-24T19:50:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/843
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Updated the arrivals outpost to allow access to the previously
+        blocked-off rooms.
+  id: 499
+  time: '2025-04-24T22:39:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/844
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Arachnes can take Arachnid language trait now
+  id: 500
+  time: '2025-04-25T02:42:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/855
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Fix
+      message: >-
+        Fixed embeddable damage over time not showing when examining an item's
+        damage values.
+    - type: Fix
+      message: 'Fixed the emag not dealing passive damage when embedded on a target. '
+    - type: Tweak
+      message: >-
+        Examining an item's damage values now shows values in a sorted order.
+        From top to bottom: gun damage, melee damage, throwing damage, embedded
+        damage.
+    - type: Tweak
+      message: >-
+        Spears now have a 6 stamina cost when thrown, and they no longer break
+        when thrown enough times.
+    - type: Tweak
+      message: Floor tiles now break when thrown 10 times instead of 4 times.
+    - type: Tweak
+      message: >-
+        Closets, lockers and crates now play the proper sound effect when thrown
+        (by Space Wind).
+  id: 501
+  time: '2025-04-25T13:17:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/853
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Add
+      message: >-
+        Added two new traits: Steadfast and Feeble that decrease or increase the
+        effect of slows from injuries.
+    - type: Tweak
+      message: >-
+        Injury slows for most species has been slightly increased, but this can
+        be mitigated with the Steadfast trait.
+    - type: Tweak
+      message: >-
+        The jackboots' injury slow resistance has been decreased from 50% to
+        20%.
+    - type: Tweak
+      message: Combat boots now add resistance to injury slows like jackboots.
+  id: 502
+  time: '2025-04-25T13:18:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/854
