@@ -4884,3 +4884,14 @@ Entries:
   id: 516
   time: '2025-04-25T20:01:09.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/872
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: >-
+        Pinktext. Instead of greentext, antags will describe how they—or tried
+        to—complete their objectives.
+    - type: Remove
+      message: Greentext.
+  id: 517
+  time: '2025-04-25T23:18:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/800
