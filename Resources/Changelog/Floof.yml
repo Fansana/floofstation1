@@ -4739,3 +4739,12 @@ Entries:
   id: 504
   time: '2025-04-25T13:57:08.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/857
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Humanoid markings (including tails) should no longer duplicate every
+        time they re-enter your field of view.
+  id: 505
+  time: '2025-04-25T13:57:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/849
