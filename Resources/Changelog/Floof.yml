@@ -4717,3 +4717,25 @@ Entries:
   id: 503
   time: '2025-04-25T13:36:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/856
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Tweak
+      message: >-
+        The Parkour Training trait has been reworked. It no longer makes you lie
+        down or get up faster, but grants you 30% shorter slip stuns and 50%
+        resistance against slows in difficult terrain.
+    - type: Tweak
+      message: >-
+        The Sluggish and Snail-Paced traits now only reduce your movement speed
+        with no other effects. The speed reductions have been slightly increased
+        from 15% to 16% for Sluggish, and 30% to 32% for Snail-Paced.
+    - type: Add
+      message: >-
+        Added a new 3-point negative trait called Bad Knees. It is the opposite
+        of Parkour Training and it makes you climb tables slower, stunned for
+        longer against slip stuns, and move more slowly in difficult terrain. 
+    - type: Tweak
+      message: Snail-Paced no longer prevents you from slipping when running.
+  id: 504
+  time: '2025-04-25T13:57:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/857
