@@ -4817,3 +4817,12 @@ Entries:
   id: 512
   time: '2025-04-25T19:51:55.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/868
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: >-
+        Languages that don't require speech (I.E. Sign Language) will no longer
+        play speech sounds.
+  id: 513
+  time: '2025-04-25T19:53:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/869
