@@ -4765,3 +4765,12 @@ Entries:
   id: 506
   time: '2025-04-25T14:00:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/860
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        Lamia now make drag marks when moving through puddles instead of regular
+        footprints.
+  id: 507
+  time: '2025-04-25T14:09:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/861
