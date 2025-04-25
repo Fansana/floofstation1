@@ -8,6 +8,12 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
       min: 144000 # Floofstation 40 hrs
+    - !type:CharacterPlaytimeRequirement # Floof
+      tracker: JobChiefEngineer  # a senior should know how to teach and command a department when CE flick licks the SM
+      min: 43200 # Floof 12 hours
+    - !type:CharacterPlaytimeRequirement # Floof
+      tracker: JobAtmosphericTechnician
+      min: 43200 # Floof 12 hours
   startingGear: SeniorEngineerGear
   icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce

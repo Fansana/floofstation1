@@ -6,6 +6,13 @@
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
+  requirements:  #Floof
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      min: 43200 # Floofstation - 12 hour
+    - !type:CharacterDepartmentTimeRequirement #floof
+      tracker: JobMedicalIntern
+      min: 9000 #2.5 hours floof
   access:
   - Medical
   - Maintenance
@@ -18,6 +25,7 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 1.75
+
 
 - type: startingGear
   id: DoctorGear

@@ -5,9 +5,15 @@
   playTimeTracker: JobQuartermaster
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
-  #  - !type:RoleTimeRequirement #DeltaV
-  #    role: JobCargoTechnician
-  #    time: 21600 #6 hrs
+    - !type:CharacterPlaytimeRequirement # Floof
+      tracker: JobCargoTechnician
+      min: 18000 #5 hours
+    - !type:CharacterPlaytimeRequirement # Floof
+      tracker: JobSalvageSpecialist
+      min: 9000 # 2.5 hours
+    - !type:CharacterPlaytimeRequirement # Floof
+      tracker: JobCourier
+      min: 9000 # 2.5 hours
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
       min: 57600 # Floofstation - 16 hour
