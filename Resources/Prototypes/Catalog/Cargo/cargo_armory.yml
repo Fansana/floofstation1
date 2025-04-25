@@ -61,7 +61,7 @@
 - type: cargoProduct
   id: ArmorySniper
   icon:
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    sprite: { sprite: /Textures/Objects/Weapons/Guns/Snipers/heavy_sniper.rsi, state: base }
     state: icon
   product: CrateArmorySniper
   cost: 40000
