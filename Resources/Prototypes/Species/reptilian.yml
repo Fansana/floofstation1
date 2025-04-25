@@ -51,7 +51,7 @@
   onlyWhitelisted: true
   points:
     Face:
-      points: 2 # Floof - M3739 - #851 - Additional point to accomodate for makeup.
+      points: 1
       required: false
     Underwear:
       points: 1
