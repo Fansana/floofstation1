@@ -4663,3 +4663,29 @@ Entries:
   id: 500
   time: '2025-04-25T02:42:17.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/855
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Fix
+      message: >-
+        Fixed embeddable damage over time not showing when examining an item's
+        damage values.
+    - type: Fix
+      message: 'Fixed the emag not dealing passive damage when embedded on a target. '
+    - type: Tweak
+      message: >-
+        Examining an item's damage values now shows values in a sorted order.
+        From top to bottom: gun damage, melee damage, throwing damage, embedded
+        damage.
+    - type: Tweak
+      message: >-
+        Spears now have a 6 stamina cost when thrown, and they no longer break
+        when thrown enough times.
+    - type: Tweak
+      message: Floor tiles now break when thrown 10 times instead of 4 times.
+    - type: Tweak
+      message: >-
+        Closets, lockers and crates now play the proper sound effect when thrown
+        (by Space Wind).
+  id: 501
+  time: '2025-04-25T13:17:17.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/853
