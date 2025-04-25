@@ -4781,3 +4781,16 @@ Entries:
   id: 508
   time: '2025-04-25T14:27:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/863
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: 'Mimes can no longer take the Muted or Foreigner traits. '
+    - type: Tweak
+      message: >-
+        "Rare" languages like Sinta'Azaziba, Valyrian Standard, now cost points
+        instead of giving points.
+    - type: Tweak
+      message: Sign Language now costs points.
+  id: 509
+  time: '2025-04-25T14:30:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/864
