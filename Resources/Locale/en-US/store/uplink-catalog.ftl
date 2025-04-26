@@ -225,9 +225,6 @@ uplink-ammo-bundle-desc = Reloading! Contains 4 magazines for the C-20r, 4 drums
 uplink-sniper-bundle-name = Sniper Bundle
 uplink-sniper-bundle-desc = An inconspicuous briefcase that contains a Hristov, 10 spare bullets and a convenient disguise.
 
-uplink-typewriter-bundle-name = Typewriter Bundle
-uplink-typewriter-bundle-desc = An inconspicuous briefcase that contains a Typewriter SMG and three magazines for any aspiring mafiosos.
-
 uplink-c20r-bundle-name = C-20r Bundle
 uplink-c20r-bundle-desc = Old faithful: The classic C-20r Submachine Gun, bundled with three magazines.
 
