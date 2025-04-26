@@ -4801,3 +4801,97 @@ Entries:
   id: 510
   time: '2025-04-25T14:32:00.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/865
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Tweak
+      message: The maximum trait limit has increased from 10 traits to 14 traits.
+  id: 511
+  time: '2025-04-25T19:51:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/867
+- author: EinsteinEngines Spatison
+  changes:
+    - type: Fix
+      message: Humanoid color in the spawn panel is now correct.
+    - type: Fix
+      message: IPCs can no longer spawn invisible.
+  id: 512
+  time: '2025-04-25T19:51:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/868
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: >-
+        Languages that don't require speech (I.E. Sign Language) will no longer
+        play speech sounds.
+  id: 513
+  time: '2025-04-25T19:53:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/869
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Add Time Transfer Panel
+  id: 514
+  time: '2025-04-25T19:53:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/870
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Add
+      message: >-
+        NanoChat message notifications will now show you the job title of the
+        sender alongside their name.
+    - type: Add
+      message: The NanoChat edit button now has a proper icon.
+    - type: Tweak
+      message: >-
+        The disk space (max amount of installable programs) on PDAs has been
+        increased from 5 to 8. This also fixes a bug where NanoChat was not
+        being installed on PDAs with more than 5 pre-installed cartridges.
+    - type: Tweak
+      message: >-
+        The character limit for names and job titles in NanoChat has been
+        increased to their actual limit on ID cards (30 characters).
+    - type: Tweak
+      message: >-
+        NanoChat chat list names/titles and notification titles that are too
+        long will be shortened, indicated with "..." at the end.
+    - type: Tweak
+      message: >-
+        The NanoChat edit popup now displays the correct text, instead of
+        appearing identical to the new chat popup.
+    - type: Fix
+      message: >-
+        NanoChat will now send a new message notification no matter what if you
+        don't have the chat open.
+    - type: Fix
+      message: Editing a chat in NanoChat no longer deselects that chat.
+    - type: Fix
+      message: >-
+        Fixed a issue where users could potentially send NanoChat messages
+        longer than the maximum allowed message length.
+    - type: Fix
+      message: >-
+        Fixed being able to create a new chat when you haven't typed in 4 digits
+        in the number field.
+  id: 515
+  time: '2025-04-25T19:54:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/871
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Tweak
+      message: >-
+        The news article title character limit has been increased from 25 to 50
+        characters, and news content from 2048 to 2560 characters.
+  id: 516
+  time: '2025-04-25T20:01:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/872
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: >-
+        Pinktext. Instead of greentext, antags will describe how they—or tried
+        to—complete their objectives.
+    - type: Remove
+      message: Greentext.
+  id: 517
+  time: '2025-04-25T23:18:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/800
