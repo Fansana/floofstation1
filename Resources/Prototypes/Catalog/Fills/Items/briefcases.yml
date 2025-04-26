@@ -45,7 +45,11 @@
       - id: MagazinePistolSubMachineGun
       - id: MagazinePistolSubMachineGun
       - id: MagazinePistolSubMachineGun
-
+      - id: CigarGoldCase
+      - id: ClothingUniformJumpsuitDetectiveGrey
+      - id: ClothingHeadHatFedoraChoc
+      - id: FlippoEngravedLighter
+      
 - type: entity
   id: BriefcaseSyndieLobbyingBundleFilled
   parent: BriefcaseSyndie
