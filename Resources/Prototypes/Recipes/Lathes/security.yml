@@ -784,14 +784,6 @@
   materials:
     Plastic: 240
 
-- type: latheRecipe #floof
-  id: MagazineMagnumRubber
-  result: MagazineMagnumRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Plastic: 240
-
 - type: latheRecipe
   id: MagazineBoxLightRifleIncendiary
   result: MagazineBoxLightRifleIncendiary
