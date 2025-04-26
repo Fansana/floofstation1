@@ -4902,3 +4902,16 @@ Entries:
   id: 518
   time: '2025-04-26T08:36:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/875
+- author: EinsteinEngines Spatison
+  changes:
+    - type: Tweak
+      message: Nymphs are now operable.
+    - type: Fix
+      message: Skeletons can now lie down.
+    - type: Fix
+      message: >-
+        It is no longer possible to insert an organ into a body if the required
+        space is unavailable.
+  id: 519
+  time: '2025-04-26T08:50:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/879
