@@ -32,10 +32,10 @@
   access:
     - Command
     - Maintenance
-    - Janitor
+    - Janitor # Floof section - expanded access list
     - Service
     - Bar
-    - Kitchen
+    - Kitchen # Floof section end
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
