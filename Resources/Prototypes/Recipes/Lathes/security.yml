@@ -317,15 +317,6 @@
     Steel: 25
     Plastic: 120
 
-- type: latheRecipe #floof
-  id: MagazinePistolRubber
-  result: MagazinePistolRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 25
-    Plastic: 120
-
 - type: latheRecipe
   id: MagazinePistolSubMachineGunEmpty
   result: MagazinePistolSubMachineGunEmpty
@@ -341,15 +332,6 @@
   completetime: 5
   materials:
     Steel: 300
-
-- type: latheRecipe # Floof
-  id: MagazinePistolSubMachineGunRubber
-  result: MagazinePistolSubMachineGunRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 350
-    Plastic: 300
 
 - type: latheRecipe
   id: MagazinePistolSubMachineGunRubber
@@ -490,15 +472,6 @@
     Steel: 25
     Plastic: 450
 
-- type: latheRecipe #floof
-  id: MagazineRifleRubber
-  result: MagazineRifleRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 325
-    Plastic: 340
-
 - type: latheRecipe
   id: MagazineLightRifleEmpty
   result: MagazineLightRifleEmpty
@@ -550,15 +523,6 @@
   materials:
     Steel: 25
     Plastic: 540
-
-- type: latheRecipe #floof
-  id: MagazineLightRifleRubber
-  result: MagazineLightRifleRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 325
-    Plastic: 340
 
 - type: latheRecipe
   id: MagazineMagnumEmpty
@@ -679,15 +643,6 @@
   completetime: 5
   materials:
     Steel: 190
-
-- type: latheRecipe
-  id: SpeedLoaderMagnumRubber
-  result: SpeedLoaderMagnumRubber
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 50
-    Plastic: 70
 
 - type: latheRecipe
   id: SpeedLoaderMagnumPractice
