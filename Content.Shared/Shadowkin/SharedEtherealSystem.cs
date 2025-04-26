@@ -17,6 +17,8 @@ using Content.Shared.Tag;
 using Content.Shared.Standing;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
+using Content.Shared.Standing;
+
 
 namespace Content.Shared.Shadowkin;
 
@@ -29,6 +31,7 @@ public abstract class SharedEtherealSystem : EntitySystem
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly StandingStateSystem _standingStateSystem = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
+    [Dependency] private readonly StandingStateSystem _standingState = default!;
 
     public override void Initialize()
     {

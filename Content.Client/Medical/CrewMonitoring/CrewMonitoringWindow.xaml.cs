@@ -23,22 +23,27 @@ namespace Content.Client.Medical.CrewMonitoring;
 [GenerateTypedNameReferences]
 public sealed partial class CrewMonitoringWindow : FancyWindow
 {
-    private readonly IEntityManager _entManager;
-    private readonly IPrototypeManager _prototypeManager;
+    [Dependency] private readonly IEntityManager _entManager = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     private readonly SpriteSystem _spriteSystem;
 
     private NetEntity? _trackedEntity;
     private bool _tryToScrollToListFocus;
     private Texture? _blipTexture;
 
-    public CrewMonitoringWindow(string stationName, EntityUid? mapUid)
+    public CrewMonitoringWindow()
     {
         RobustXamlLoader.Load(this);
+        IoCManager.InjectDependencies(this);
 
-        _entManager = IoCManager.Resolve<IEntityManager>();
-        _prototypeManager = IoCManager.Resolve<IPrototypeManager>();
         _spriteSystem = _entManager.System<SpriteSystem>();
 
+        NavMap.TrackedEntitySelectedAction += SetTrackedEntityFromNavMap;
+
+    }
+
+    public void Set(string stationName, EntityUid? mapUid)
+    {
         _blipTexture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/NavMap/beveled_circle.png")));
 
         if (_entManager.TryGetComponent<TransformComponent>(mapUid, out var xform))
@@ -49,8 +54,6 @@ public sealed partial class CrewMonitoringWindow : FancyWindow
 
         StationName.AddStyleClass("LabelBig");
         StationName.Text = stationName;
-
-        NavMap.TrackedEntitySelectedAction += SetTrackedEntityFromNavMap;
         NavMap.ForceNavMapUpdate();
     }
 
@@ -75,10 +78,28 @@ public sealed partial class CrewMonitoringWindow : FancyWindow
 
         NoServerLabel.Visible = false;
 
+        // Collect one status per user, using the sensor with the most data available.
+        Dictionary<NetEntity, SuitSensorStatus> uniqueSensorsMap = new();
+        foreach (var sensor in sensors)
+        {
+            if (uniqueSensorsMap.TryGetValue(sensor.OwnerUid, out var existingSensor))
+            {
+                // Skip if we already have a sensor with more data for this mob.
+                if (existingSensor.Coordinates != null && sensor.Coordinates == null)
+                    continue;
+
+                if (existingSensor.DamagePercentage != null && sensor.DamagePercentage == null)
+                    continue;
+            }
+
+            uniqueSensorsMap[sensor.OwnerUid] = sensor;
+        }
+        var uniqueSensors = uniqueSensorsMap.Values.ToList();
+
         // Order sensor data
-        var orderedSensors = sensors.OrderBy(n => n.Name).OrderBy(j => j.Job);
+        var orderedSensors = uniqueSensors.OrderBy(n => n.Name).OrderBy(j => j.Job);
         var assignedSensors = new HashSet<SuitSensorStatus>();
-        var departments = sensors.SelectMany(d => d.JobDepartments).Distinct().OrderBy(n => n);
+        var departments = uniqueSensors.SelectMany(d => d.JobDepartments).Distinct().OrderBy(n => n);
 
         // Create department labels and populate lists
         foreach (var department in departments)
@@ -255,7 +276,7 @@ public sealed partial class CrewMonitoringWindow : FancyWindow
             mainContainer.AddChild(jobContainer);
 
             // Job icon
-            if (_prototypeManager.TryIndex<StatusIconPrototype>(sensor.JobIcon, out var proto))
+            if (_prototypeManager.TryIndex<JobIconPrototype>(sensor.JobIcon, out var proto))
             {
                 var jobIcon = new TextureRect()
                 {

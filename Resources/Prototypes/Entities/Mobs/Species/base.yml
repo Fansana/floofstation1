@@ -9,6 +9,7 @@
   components:
   - type: Sprite
     layers:
+    - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -28,11 +29,13 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "outerClothing" ]
+    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
     - map: [ "eyes" ]
     - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "neck" ]
     - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.Face" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -81,8 +84,8 @@
     species: Human
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.8 # DV - Was 0.7
-      80: 0.6 # DV - Was 0.5
+      60: 0.75
+      80: 0.55
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
@@ -133,11 +136,11 @@
     - TemporaryBlindness
     - Pacified
     - StaminaModifier
+    - Flashed
+    - RadiationProtection
+    - Drowsiness
     - PsionicsDisabled
     - PsionicallyInsulated
-  - type: Reflect
-    enabled: false
-    reflectProb: 0
   - type: Body
     prototype: Human
     requiredLegs: 2
@@ -284,6 +287,8 @@
     - StaminaModifier
     - PsionicsDisabled
     - PsionicallyInsulated
+    - RadiationProtection
+    - Drowsiness
   - type: Blindable
   # Other
   - type: Temperature
@@ -355,6 +360,7 @@
     noRot: true
     # TODO BODY Turn these into individual body parts?
     layers:
+    - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -391,7 +397,9 @@
     - map: [ "belt" ]
     - map: [ "id" ]
     - map: [ "neck" ]
+    - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
     - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.Face" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]

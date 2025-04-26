@@ -6,6 +6,8 @@
   name: Autodoc Mk.XIV
   description: A programmable robotic surgeon capable of automatically operating on patients.
   components:
+  - type: Autodoc
+    baseSurgerySpeed: 0.5 # on par with a surgeon using normal tools
   - type: Sprite
     sprite: _Shitmed/Structures/Machines/autodoc.rsi
     layers:
@@ -66,7 +68,6 @@
   - type: ActivatableUI
     key: enum.AutodocUiKey.Key
   - type: ActivatableUIRequiresPower
-  - type: Autodoc
   - type: Sanitized
   - type: DoAfter # Required for it to do surgery
   - type: TypingIndicator
@@ -79,9 +80,9 @@
     grid:
     - 0,0,3,3
   - type: SurgerySpeedModifier
-    speedModifier: 0.5 # on par with a surgeon using normal tools
   - type: GuideHelp
     guides: [ Autodoc ]
+  - type: AntiRottingContainer
 
 - type: entity
   parent: Autodoc
@@ -89,10 +90,11 @@
   # TODO: make it valid
   suffix: Syndie
   components:
+  - type: Autodoc
+    baseSurgerySpeed: 1.0 # as good as a surgeon using a multitool, nukies need it or something
   - type: Machine
     board: AutodocSyndieCircuitboard
   - type: SurgerySpeedModifier
-    speedModifier: 1.0 # as good as a surgeon using a multitool, nukies need it or something
 
 # Autodoc tools
 

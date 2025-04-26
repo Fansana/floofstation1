@@ -56,18 +56,19 @@
   metabolisms:
     Poison:
       effects:
+      - !type:Emote
+        emote: Yawn
+        showInChat: true
+        probability: 0.1
       - !type:MovespeedModifier
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:GenericStatusEffect
-        conditions:
-        - !type:ReagentThreshold
-          reagent: ChloralHydrate
-          min: 10
-        key: ForcedSleep
-        component: ForcedSleeping
-        refresh: false
+        key: Drowsiness
+        component: Drowsiness
+        time: 4
         type: Add
+        refresh: false
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -409,7 +410,7 @@
         - !type:ReagentThreshold
           min: 1
         - !type:OrganType
-          type: Animal # Applying damage to the mobs with lower metabolism capabilities
+          type: TheobromineIntolerant # FLOOF - made it target a more specific type
         damage:
           types:
             Poison: 0.4
@@ -419,7 +420,7 @@
           - !type:ReagentThreshold
             min: 3
           - !type:OrganType
-            type: Animal
+            type: TheobromineIntolerant # FLOOF - made it target a more specific type
 
 - type: reagent
   id: Amatoxin
@@ -535,7 +536,7 @@
         - !type:ReagentThreshold
           min: 1
         - !type:OrganType
-          type: Animal
+          type: AllicinIntolerant # FLOOF - made it target a more specific type
         damage:
           types:
             Poison: 0.06
@@ -571,6 +572,7 @@
       - !type:Emote
         emote: Honk
         showInChat: true
+        force: true
         probability: 0.2
       - !type:HealthChange
         conditions:

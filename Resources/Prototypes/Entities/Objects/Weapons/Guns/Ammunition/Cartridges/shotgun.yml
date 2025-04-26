@@ -9,8 +9,6 @@
     - Cartridge
     - ShellShotgun
   - type: CartridgeAmmo
-    count: 6
-    spread: 15
     soundEject:
       collection: ShellEject
   - type: Sprite
@@ -22,40 +20,21 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CaselessShellShotgun
-  name: shell (.50)
-  parent: BaseCartridge
-  abstract: true
+  id: ShellShotgunBeanbag
+  name: shell (.50 beanbag)
+  parent: BaseShellShotgun
   components:
   - type: Tag
     tags:
     - Cartridge
     - ShellShotgun
-  - type: CartridgeAmmo
-    deleteOnSpawn: true
-    count: 6
-    spread: 15
-    soundEject:
-      collection: ShellEject
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-  - type: Appearance
-  
-- type: entity
-  id: ShellShotgunBeanbag
-  name: shell (.50 beanbag)
-  parent: BaseShellShotgun
-  components:
+    - ShellShotgunLight
   - type: Sprite
     layers:
       - state: beanbag
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunBeanbag
-    count: 1
   - type: SpentAmmoVisuals
     state: "beanbag"
 - type: entity
@@ -69,8 +48,6 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunSlug
-    count: 1
-    spread: 0
   - type: SpentAmmoVisuals
     state: "slug"
 
@@ -79,13 +56,17 @@
   name: shell (.50 flare)
   parent: BaseShellShotgun
   components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - ShellShotgunLight
   - type: Sprite
     layers:
       - state: flare
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunFlare
-    count: 1
   - type: SpentAmmoVisuals
     state: "flare"
 
@@ -99,19 +80,7 @@
       - state: base
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: PelletShotgun
-    
-- type: entity
-  id: eShellShotgun
-  name: eshell (.50)
-  parent: CaselessShellShotgun
-  components:
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-  - type: CartridgeAmmo
-    proto: BulletLaserSpread
+    proto: PelletShotgunSpread
 
 - type: entity
   id: ShellShotgunIncendiary
@@ -123,7 +92,7 @@
       - state: incendiary
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: PelletShotgunIncendiary
+    proto: PelletShotgunIncendiarySpread
   - type: SpentAmmoVisuals
     state: "incendiary"
 
@@ -137,7 +106,7 @@
       - state: practice
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: PelletShotgunPractice
+    proto: PelletShotgunPracticeSpread
   - type: SpentAmmoVisuals
     state: "practice"
 
@@ -146,13 +115,17 @@
   name: shell (.50 tranquilizer)
   parent: BaseShellShotgun
   components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - ShellShotgunLight
   - type: Sprite
     layers:
       - state: practice
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunTranquilizer
-    count: 1
   - type: ChemicalAmmo
   - type: SolutionContainerManager
     solutions:
@@ -164,13 +137,18 @@
     maxTransferAmount: 7
   - type: SpentAmmoVisuals
     state: "practice"
-    
+
 - type: entity
   id: ShellShotgunImprovised
   name: improvised shotgun shell
   description: A homemade shotgun shell that shoots painful glass shrapnel. The spread is so wide that it couldn't hit the broad side of a barn.
   parent: BaseShellShotgun
   components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun
+    - ShellShotgunLight
   - type: Sprite
     layers:
       - state: improvised
@@ -179,9 +157,7 @@
     graph: ImprovisedShotgunShellGraph
     node: shell
   - type: CartridgeAmmo
-    count: 10
-    spread: 45 
-    proto: PelletShotgunImprovised
+    proto: PelletShotgunImprovisedSpread
   - type: SpentAmmoVisuals
     state: "improvised"
 
@@ -195,8 +171,7 @@
         - state: depleted-uranium
           map: [ "enum.AmmoVisualLayers.Base" ]
     - type: CartridgeAmmo
-      count: 5
-      spread: 6
-      proto: PelletShotgunUranium
+      proto: PelletShotgunUraniumSpread
     - type: SpentAmmoVisuals
       state: "depleted-uranium"
+

@@ -16,7 +16,10 @@
 - type: speciesBaseSprites
   id: MobVulpkaninSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobVulpkaninHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -60,7 +63,7 @@
       points: 1
       required: false
     Head:
-      points: 1
+      points: 2
       required: false
     RightLeg:
       points: 2

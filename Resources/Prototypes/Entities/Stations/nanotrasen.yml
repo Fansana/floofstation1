@@ -28,6 +28,8 @@
     - BaseRandomStation
     - BaseStationMail # Nyano component, required for station mail to function
     - BaseStationTheDark # Floof
+    - BaseStationCaptainState # DeltaV
+    - BaseStationStockMarket # DeltaV
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform

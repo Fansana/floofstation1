@@ -116,6 +116,9 @@
     - TauCetiBasic
   - type: GhostTakeoverAvailable
   - type: GhostRole
+    name: ghost-role-information-ifrit-name
+    description: ghost-role-information-ifrit-description
+    rules: floof-ghost-role-information-familiar-rules # Floofstation - Modifying ghost role rules
     makeSentient: true
     allowMovement: true
     allowSpeech: true

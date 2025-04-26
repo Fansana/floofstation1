@@ -1,14 +1,14 @@
 # Psychologist
-- type: characterItemGroup
-  id: LoadoutPsychologistBackpacks
-  maxItems: 1
-  items:
-    - type: loadout
-      id: LoadoutPsychologistBackpackBackpack
-    - type: loadout
-      id: LoadoutPsychologistBackpackSatchel
-    - type: loadout
-      id: LoadoutPsychologistBackpackDuffel
+#- type: characterItemGroup
+#  id: LoadoutPsychologistBackpacks 
+#  maxItems: 1
+#  items: | Floof - M3739 - #690 - Literally, all this does is give a stamp that is better off as a pocket2. Commented out for posterity.
+#    - type: loadout
+#      id: LoadoutPsychologistBackpackBackpack
+#    - type: loadout
+#      id: LoadoutPsychologistBackpackSatchel
+#    - type: loadout
+#      id: LoadoutPsychologistBackpackDuffel
 
 #- type: characterItemGroup
 #  id: LoadoutPsychologistBelt

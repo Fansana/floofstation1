@@ -1,0 +1,40 @@
+- type: entity
+  parent: CentcomPDA
+  id: SurgeonGeneralPDA
+  name: surgeon general PDA
+  description: Extraordinarily shiny and sterile PDA made for the surgeon general. Has a built-in health analyzer. Produced by SESWC
+  components:
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Pda
+    id: SurgeonGeneralIDCard
+    state: pda-centcom
+    penSlot:
+      startingItem: PenCentcom
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+
+- type: entity
+  parent: BasePDA
+  id: InvSpecPDA
+  name: inventory specialist PDA
+  description: Covered in tally marks.
+  components:
+  - type: Pda
+    id: InvSpecIDCard
+    state: pda-cargo
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  # - type: Icon
+  #   state: pda-cargo
+  - type: CartridgeLoader # DeltaV
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - StockTradingCartridge # DeltaV - StockTrading
+    - NanoChatCartridge # DeltaV

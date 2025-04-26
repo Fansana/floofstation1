@@ -132,7 +132,11 @@
     slotId: heart # Shitmed
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [ Animal ]
+    metabolizerTypes: [
+      Animal,
+      TheobromineIntolerant,
+      AllicinIntolerant
+    ] # FLOOF - added the intolerant types
     groups:
     - id: Medicine
     - id: Poison

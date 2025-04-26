@@ -4,6 +4,7 @@
   roundStart: true
   prototype: MobHuman
   sprites: MobHumanSprites
+  defaultSkinTone: "#c0967f"
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
   skinColoration: Hues
@@ -18,7 +19,10 @@
 - type: speciesBaseSprites
   id: MobHumanSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobHumanHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking

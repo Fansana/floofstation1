@@ -179,6 +179,7 @@
     contents:
       - id: ClothingOuterCoatParamedicWB
       - id: ClothingHeadHatParamedicsoft
+      - id: ClothingOuterWinterPara # Floof - Rectify paramedic locker contents
       - id: ClothingUniformJumpsuitParamedic
       - id: ClothingUniformJumpskirtParamedic
       - id: ClothingEyesHudMedical
@@ -186,6 +187,7 @@
       - id: ClothingHeadsetMedical
       - id: ClothingMaskSterile
       - id: ClothingShoesBootsWinterParamedic #Delta V: Add departmental winter boots
+      - id: HandheldGPSBasic # Floof - Rectify paramedic locker contents
       - id: MedkitFilled
         prob: 0.3
       - id: LunchboxMedicalFilledRandom # Delta-V Lunchboxes!

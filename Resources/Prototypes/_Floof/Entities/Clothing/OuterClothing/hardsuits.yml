@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingOuterHardsuitSyndieMedic
+  id: ClothingOuterHardsuitSurgeonGeneral
+  name: Surgeon general hardsuit
+  description: A protective hardsuit worn by the Surgeon Generial, tailor by SESWC.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Hardsuits/surgengeneralhardsuit.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Hardsuits/surgengeneralhardsuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
+  - type: StaminaDamageResistance
+    coefficient: 0.5 # 50%

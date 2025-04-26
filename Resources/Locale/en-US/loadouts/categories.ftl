@@ -44,6 +44,8 @@ loadout-category-JobsLogistics = Logistics
 loadout-category-JobsLogisticsAUncategorized = All Logistics
 loadout-category-JobsLogisticsCargoTechnician = Cargo Technician
 loadout-category-JobsLogisticsCourier = Courier
+# Floof - senior cargo
+loadout-category-JobsLogisticsInventorySpecialist = Inventory Specialist
 loadout-category-JobsLogisticsLogisticsOfficer = Logistics Officer
 loadout-category-JobsLogisticsSalvageSpecialist = Salvage Specialist
 
@@ -68,6 +70,8 @@ loadout-category-JobsSecurityHeadOfSecurity = Head of Security
 loadout-category-JobsSecuritySecurityOfficer = Security Officer
 loadout-category-JobsSecuritySeniorOfficer = Senior Officer
 loadout-category-JobsSecurityWarden = Warden
+# Floof - Prison Guard loadout implementation
+loadout-category-JobsSecurityPrisonGuard = Prison Guard
 
 # Service
 loadout-category-JobsService = Service

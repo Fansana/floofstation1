@@ -16,7 +16,10 @@
 - type: speciesBaseSprites
   id: MobMothSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobMothHead
+    Face: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobMothTorso
     Underwear: MobHumanoidAnyMarking # Floof, add underwear

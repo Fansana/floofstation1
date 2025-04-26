@@ -1,0 +1,102 @@
+# Chemist
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+- type: loadout
+  id: LoadoutClothingHandsChemistsWarmers
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsChemistsWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutChemistOuterWinter
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterWinterChem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+
+# Shoes
+- type: loadout
+  id: LoadoutChemistShoesWinterChem
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWinterChem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+- type: loadout
+  id: LoadoutClothingUnderSocksChemists
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUnderSocksChemists
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Harpy
+
+# Uniforms
+- type: loadout
+  id: LoadoutClothingUniformChemistsThong
+  category: JobsMedicalChemist
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingUniformChemistsThong
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChemistUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - Chemist

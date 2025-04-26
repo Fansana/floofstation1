@@ -1,0 +1,37 @@
+- type: entity
+  name: energy sabre
+  parent: EnergySword
+  id: EnergySabre
+  description: An devestating sabre of pure plasma, written upon its hilt "Fae Tech. MK. 9".
+  components:
+  - type: ItemToggleSize
+    activatedSize: Ginormous
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Melee/e_sabre.rsi
+    layers:
+      - state: e_sabre
+      - state: e_sabre_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Normal
+    sprite: _Floof/Objects/Weapons/Melee/e_sabre_inhand.rsi
+  - type: Tag
+    tags:
+      - NoPaint
+      - EnergySabre
+
+- type: entity
+  name: antique energy sabre
+  parent: EnergySabre
+  id: EnergySabreHoS
+  description: Regal plasma sabre met with an engraving marking "Fae Tech. MK. 9".
+  components:
+    - type: EnergySword
+      activatedColor: "#00CCFF"
+      colorOptions:
+       - "#00CCFF"
+    - type: StealTarget
+      stealGroup: HoSAntiqueWeapon

@@ -65,6 +65,7 @@
             SeniorOfficer: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
+            InventorySpecialist: [ 1, 1 ] #FloofStation
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 4, 4 ]
             MailCarrier: [ 2, 3 ]
