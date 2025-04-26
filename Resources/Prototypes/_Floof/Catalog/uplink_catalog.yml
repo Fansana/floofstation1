@@ -32,3 +32,17 @@
   #  Telecrystal: 2
   #categories:
   #- UplinkUtility
+
+- type: listing
+  id: UplinkTypewriterBundle
+  name: uplink-typewriter-bundle-name
+  description: uplink-typewriter-bundle-desc
+  icon: { sprite: /Textures/DeltaV/Objects/Weapons/Guns/SMGs/typewriter.rsi, state: base }
+  productEntity: BriefcaseSyndieTypewriterBundleFilled
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponry
