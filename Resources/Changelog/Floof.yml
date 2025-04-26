@@ -4895,3 +4895,10 @@ Entries:
   id: 517
   time: '2025-04-25T23:18:43.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/800
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed Shadow Shackles spell not activating.
+  id: 518
+  time: '2025-04-26T08:36:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/875
