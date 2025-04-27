@@ -5010,3 +5010,10 @@ Entries:
   id: 528
   time: '2025-04-27T14:57:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/874
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Fix
+      message: Fixed face markings showing up above eye-wear.
+  id: 529
+  time: '2025-04-27T14:57:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/876
