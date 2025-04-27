@@ -378,6 +378,7 @@
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
+         - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
@@ -396,6 +397,7 @@
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
+         - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
@@ -415,6 +417,7 @@
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
+         - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
@@ -433,6 +436,7 @@
     - !type:CharacterDepartmentRequirement
        departments:
          - Civilian
+         - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
        inverted: true
        departments:
