@@ -6,7 +6,7 @@
     state: InventorySpecialist
   jobName: job-name-invspec
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconFreelancer
   icon:
