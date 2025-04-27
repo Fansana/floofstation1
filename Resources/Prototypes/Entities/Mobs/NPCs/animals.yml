@@ -3354,7 +3354,7 @@
     allowMovement: true
     name: ghost-role-information-hamster-name
     description: ghost-role-information-hamster-description
-    rules: floof-ghost-role-information-neutral-rules # Floof station - Setting ghost role rules
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: SmallMob

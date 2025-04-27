@@ -4,6 +4,7 @@
   roundStart: true
   prototype: MobHuman
   sprites: MobHumanSprites
+  defaultSkinTone: "#c0967f"
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobHumanDummy
   skinColoration: Hues
@@ -51,9 +52,6 @@
     Undershirt:
       points: 1
       required: false # Floof, add underwear
-    Face:
-      points: 1
-      required: false
     Hair:
       points: 1
       required: false
