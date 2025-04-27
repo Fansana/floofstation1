@@ -5084,3 +5084,10 @@ Entries:
   id: 535
   time: '2025-04-27T15:24:52.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/888
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Re-added time requirements for jobs.
+  id: 536
+  time: '2025-04-27T15:32:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/883
