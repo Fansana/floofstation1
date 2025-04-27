@@ -545,6 +545,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         return Loc.GetString("identity-age-old");
     }
+
+    // Floofstation section
     public void SetMarkingVisibility(
         EntityUid uid,
         HumanoidAppearanceComponent? humanoid,
@@ -563,4 +565,5 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         Dirty(uid, humanoid);
     }
+    // Floofstation section end
 }
