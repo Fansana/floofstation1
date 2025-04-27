@@ -19,7 +19,7 @@
   parent: LockerBaseSecure
   components:
   - type: Sprite
-    sprite: Floof/Structures/Storage/Closets/closet.rsi
+    sprite: _Floof/Structures/Storage/Closets/closet.rsi
   - type: Appearance
   - type: AccessReader
     access: [["Freelancer"]]

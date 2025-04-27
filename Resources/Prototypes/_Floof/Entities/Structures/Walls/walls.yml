@@ -4,9 +4,9 @@
   name: camo reinforced wall
   components:
   - type: Sprite
-    sprite: Floof/Structures/Walls/camo.rsi
+    sprite: _Floof/Structures/Walls/camo.rsi
   - type: Icon
-    sprite: Floof/Structures/Walls/camo.rsi
+    sprite: _Floof/Structures/Walls/camo.rsi
     state: rgeneric
   - type: Damageable
     damageContainer: StructuralInorganic

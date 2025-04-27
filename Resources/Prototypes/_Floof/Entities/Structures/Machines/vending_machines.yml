@@ -13,7 +13,7 @@
     denyState: deny-unshaded
   - type: Sprite
     noRot: true
-    sprite: Floof/Structures/Machines/VendingMachines/freelancervend.rsi
+    sprite: _Floof/Structures/Machines/VendingMachines/freelancervend.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

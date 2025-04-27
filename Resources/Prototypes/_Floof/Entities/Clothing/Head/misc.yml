@@ -50,9 +50,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Floof/Clothing/Head/pilothelmet.rsi
+    sprite: _Floof/Clothing/Head/pilothelmet.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Head/pilothelmet.rsi
+    sprite: _Floof/Clothing/Head/pilothelmet.rsi
   - type: Tag
     tags:
     - HelmetEVA
@@ -81,9 +81,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Floof/Clothing/Head/ocularhelmet.rsi
+    sprite: _Floof/Clothing/Head/ocularhelmet.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Head/ocularhelmet.rsi
+    sprite: _Floof/Clothing/Head/ocularhelmet.rsi
   - type: Tag
     tags:
     - HelmetEVA
@@ -112,9 +112,9 @@
   components:
   - type: BreathMask
   - type: Sprite
-    sprite: Floof/Clothing/Head/starhelmet.rsi
+    sprite: _Floof/Clothing/Head/starhelmet.rsi
   - type: Clothing
-    sprite: Floof/Clothing/Head/starhelmet.rsi
+    sprite: _Floof/Clothing/Head/starhelmet.rsi
   - type: Tag
     tags:
     - HelmetEVA

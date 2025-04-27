@@ -29,7 +29,7 @@
     scanningEndSound:
       path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: Sprite
-    sprite: Floof/Objects/Devices/pda.rsi
+    sprite: _Floof/Objects/Devices/pda.rsi
   - type: Pda
     id: FreelancerIDCard
     state: pda-free

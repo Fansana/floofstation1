@@ -25,9 +25,9 @@
   name: secure ammo crate
   components:
   - type: Icon
-    sprite: Floof/Structures/Storage/Crates/secure_ammo.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_ammo.rsi
   - type: Sprite
-    sprite: Floof/Structures/Storage/Crates/secure_ammo.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_ammo.rsi
   - type: AccessReader
     access: [["Freelancer"]]
     
@@ -37,9 +37,9 @@
   name: secure firearm crate
   components:
   - type: Icon
-    sprite: Floof/Structures/Storage/Crates/secure_firearms.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_firearms.rsi
   - type: Sprite
-    sprite: Floof/Structures/Storage/Crates/secure_firearms.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_firearms.rsi
   - type: AccessReader
     access: [["Freelancer"]]
     
@@ -49,9 +49,9 @@
   name: secure mercenary crate
   components:
   - type: Icon
-    sprite: Floof/Structures/Storage/Crates/secure_mercenary.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_mercenary.rsi
   - type: Sprite
-    sprite: Floof/Structures/Storage/Crates/secure_mercenary.rsi
+    sprite: _Floof/Structures/Storage/Crates/secure_mercenary.rsi
   - type: AccessReader
     access: [["Freelancer"]]
     
@@ -61,9 +61,9 @@
   name: dark secure trade goods crate
   components:
   - type: Icon
-    sprite: Floof/Structures/Storage/Crates/tradedark.rsi
+    sprite: _Floof/Structures/Storage/Crates/tradedark.rsi
   - type: Sprite
-    sprite: Floof/Structures/Storage/Crates/tradedark.rsi
+    sprite: _Floof/Structures/Storage/Crates/tradedark.rsi
   - type: AccessReader
     access: [["Freelancer"]]
     
@@ -73,9 +73,9 @@
   name: light secure trade goods crate
   components:
   - type: Icon
-    sprite: Floof/Structures/Storage/Crates/tradelight.rsi
+    sprite: _Floof/Structures/Storage/Crates/tradelight.rsi
   - type: Sprite
-    sprite: Floof/Structures/Storage/Crates/tradelight.rsi
+    sprite: _Floof/Structures/Storage/Crates/tradelight.rsi
   - type: AccessReader
     access: [["Freelancer"]]
     

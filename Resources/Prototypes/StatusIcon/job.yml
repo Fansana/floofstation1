@@ -437,9 +437,3 @@
     state: Visitor
   jobName: job-name-visitor
 
-- type: statusIcon
-  parent: JobIcon
-  id: JobIconFreelancer
-  icon:
-    sprite: /Textures/Floof/Interface/Misc/job_icons.rsi
-    state: freelancer

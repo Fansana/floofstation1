@@ -337,24 +337,3 @@
   - type: Sprite
     sprite: Structures/Doors/Airlocks/highsec/highsec.rsi
     state: "assembly"
-
-#Freelancer
-
-- type: entity
-  parent: AirlockAssembly
-  id: AirlockAssemblyFreelancer
-  suffix: Freelancer
-  components:
-  - type: Sprite
-    sprite: Floof/Structures/Doors/Airlocks/Standard/freelancer.rsi
-    state: "assembly"
-    
-- type: entity
-  parent: AirlockAssembly
-  id: AirlockAssemblyFreelancerCamo
-  suffix: Freelancer
-  components:
-  - type: Sprite
-    sprite: Floof/Structures/Doors/Airlocks/Standard/freelancer_camo.rsi
-    state: "assembly"
-    
