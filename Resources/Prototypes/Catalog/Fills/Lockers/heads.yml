@@ -37,6 +37,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
@@ -61,6 +62,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
@@ -84,6 +86,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
