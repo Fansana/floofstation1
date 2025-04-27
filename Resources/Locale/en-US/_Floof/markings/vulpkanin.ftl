@@ -1,4 +1,4 @@
-#Snout
+# Snout
 marking-VulpSnoutVulpineWhite-vulpine = Vulpine (base)
 marking-VulpSnoutVulpineWhite-vulpine-lines-white = Vulpine (lines)
 marking-VulpSnoutVulpineWhite = Vulpkanin Vulpine (White Lines)
