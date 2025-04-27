@@ -5057,3 +5057,16 @@ Entries:
   id: 532
   time: '2025-04-27T15:08:02.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/850
+- author: Superlagg
+  changes:
+    - type: Add
+      message: >-
+        You can now take off / put on individual undies. This'll be great,
+        because...
+    - type: Tweak
+      message: >-
+        You can wear two undershirts and two underpants! You can wear a bra
+        under a shirt, and panties under some other kind of panties!
+  id: 533
+  time: '2025-04-27T15:13:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/801
