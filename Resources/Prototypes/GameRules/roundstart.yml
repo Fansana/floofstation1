@@ -169,7 +169,7 @@
   - type: AntagSelection
     definitions:
     - prefRoles: [ Traitor ]
-      max: 1 # Floof - Balance around Security Pop
+      max: 5 # Floof - Balance around Security Pop
       playerRatio: 10
       blacklist:
         components:

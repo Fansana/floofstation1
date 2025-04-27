@@ -5,6 +5,21 @@
   playTimeTracker: JobHeadOfPersonnel
   antagAdvantage: 6 # DeltaV - Reduced TC: Head of Staff
   requirements:
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobJanitor # Floofstation
+      min: 18000 # Floofstation - 5 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobChef # Floofstation
+      min: 9000 # Floofstation - 2.5 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobBartender # Floofstation
+      min: 9000 # Floofstation - 2.5 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobBotanist # Floofstation
+      min: 9000 # Floofstation - 2.5 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobServiceWorker # Floofstation
+      min: 9000 # Floofstation - 2.5 hour
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Civilian dept time requirement
       department: Civilian
       min: 57600 # Floofstation - 16 hour

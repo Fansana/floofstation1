@@ -22,7 +22,10 @@
 - type: speciesBaseSprites
   id: MobReptilianSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobReptilianHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -45,19 +48,19 @@
 
 - type: markingPoints
   id: MobReptilianMarkingLimits
-  onlyWhitelisted: false
+  onlyWhitelisted: true
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Undershirt:
-      points: 1 # Floof, add underwear
+      points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
-      points: 1
+      points: 0
       required: false
     FacialHair:
-      points: 1
+      points: 0
       required: false
     Tail:
       points: 1
@@ -74,7 +77,7 @@
       points: 2
       required: false
     HeadSide:
-      points: 2
+      points: 3
       required: false
     Chest:
       points: 1

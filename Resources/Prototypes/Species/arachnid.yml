@@ -18,6 +18,8 @@
 - type: speciesBaseSprites
   id: MobArachnidSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobArachnidHead
     Snout: MobHumanoidAnyMarking
     Chest: MobArachnidTorso
@@ -48,10 +50,10 @@
   onlyWhitelisted: true
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Undershirt:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Hair:
       points: 0

@@ -29,6 +29,8 @@
 - type: speciesBaseSprites
   id: MobShadowkinSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobShadowkinHead
     Snout: MobShadowkinAnyMarkingFollowSkin
     HeadTop: MobShadowkinAnyMarkingFollowSkin
@@ -51,10 +53,10 @@
   id: MobShadowkinMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Undershirt:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Tail:
       points: 1

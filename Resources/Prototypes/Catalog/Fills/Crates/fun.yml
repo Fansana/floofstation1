@@ -189,6 +189,7 @@
   - type: StorageFill
     contents:
       - id: CrayonBox
+      - id: CrayonBrush # Floof
 
 - type: entity
   id: CrateFunBoardGames
@@ -211,6 +212,7 @@
         amount: 6
       - id: PaperCNCSheet
         amount: 6
+      - id: CardBoxBlack # Floof - from Frontier
 
 - type: entity
   id: CrateFunSadTromboneImplants

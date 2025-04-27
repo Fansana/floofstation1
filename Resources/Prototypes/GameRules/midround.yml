@@ -21,7 +21,7 @@
     - prefRoles: [ Thief ]
       maxRange:
         min: 1
-        max: 3
+        max: 5 # Floof - More thieves
       playerRatio: 1
       lateJoinAdditional: true
       allowNonHumans: true

@@ -1,0 +1,28 @@
+- type: entity # From Upstream
+  parent: ClothingOuterBase
+  id: ClothingOuterSuitWitchRobes
+  name: witch robes
+  description: Magic is all about the spell power, ZE!
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Suits/witchrobe.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Suits/witchrobe.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingShrimpFishermanSuit
+  name: shrimp fisherman suit
+  description: A special shrimp trawling suit, a madman must've made this.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Suits/shrimpfishermansuit.rsi
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Suits/shrimpfishermansuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatShrimpFishermanHood
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}

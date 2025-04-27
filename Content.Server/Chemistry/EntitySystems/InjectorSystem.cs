@@ -125,7 +125,7 @@ public sealed class InjectorSystem : SharedInjectorSystem
     {
         if (TryComp<BlockInjectionComponent>(target, out var blockComponent)) // DeltaV
         {
-            var msg = Loc.GetString($"injector-component-deny-{blockComponent.BlockReason}");
+            var msg = Loc.GetString($"injector-component-deny-{blockComponent.BlockReason}", ("target", target)); // Floofstation - added target so the chitinid deny message works properly
             Popup.PopupEntity(msg, target, user);
 
             if (!_playerManager.TryGetSessionByEntity(target, out var session))
