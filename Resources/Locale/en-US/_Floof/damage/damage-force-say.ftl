@@ -50,9 +50,9 @@ damage-force-say-feroxi-1 = BLUB!
 damage-force-say-feroxi-2 = BLURP!
 damage-force-say-feroxi-3 = *gurgle*
 damage-force-say-feroxi-4 = *growl*
-damage-force-say-feroxi-5 = 
-damage-force-say-feroxi-6 = 
-damage-force-say-feroxi-7 = 
+#damage-force-say-feroxi-5 = 
+#damage-force-say-feroxi-6 = 
+#damage-force-say-feroxi-7 = 
 
 damage-force-say-harpy-1 = *rapid fluttering*
 damage-force-say-harpy-2 = *discordant musical notes*
@@ -73,15 +73,17 @@ damage-force-say-rodentia-7 = PI PI PI!
 damage-force-say-chitinid-1 = *hiss*
 damage-force-say-chitinid-2 = *distressed buzzing*
 damage-force-say-chitinid-3 = *alarmed clicking*
-damage-force-say-chitinid-4 = 
-damage-force-say-chitinid-5 = 
-damage-force-say-chitinid-6 = 
-damage-force-say-chitinid-7 = 
+#damage-force-say-chitinid-4 = 
+#damage-force-say-chitinid-5 = 
+#damage-force-say-chitinid-6 = 
+#damage-force-say-chitinid-7 = 
 
 damage-force-say-resomi-1 = SCREE!
 damage-force-say-resomi-2 = *screech*
 damage-force-say-resomi-3 = *sharp trill*
 damage-force-say-resomi-4 = ReeeEEE!
-damage-force-say-resomi-5 = 
-damage-force-say-resomi-6 = 
-damage-force-say-resomi-7 = 
+#damage-force-say-resomi-5 = 
+#damage-force-say-resomi-6 = 
+#damage-force-say-resomi-7 = 
+
+#TODO: Add more messages and species!
