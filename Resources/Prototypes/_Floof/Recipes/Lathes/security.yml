@@ -1,20 +1,4 @@
 - type: latheRecipe
-  id: MagazineMagnumEmpty
-  result: MagazineMagnumEmpty
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 50
-
-- type: latheRecipe
-  id: MagazineMagnum
-  result: MagazineMagnum
-  category: Ammo
-  completetime: 5
-  materials:
-     Steel: 210
-
-- type: latheRecipe
   id: ShellShotgunHoly
   result: ShellShotgunHoly
   category: Ammo
