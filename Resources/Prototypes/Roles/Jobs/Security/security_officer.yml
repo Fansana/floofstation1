@@ -7,9 +7,6 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Security
       min: 3600 # Floofstation - 1 hour
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobSecurityCadet
-      min: 18000 # Floofstation - 5 hour  Officers need to learn there jobs and sops
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

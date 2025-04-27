@@ -4,6 +4,8 @@
   description: job-description-guard
   playTimeTracker: JobPrisonGuard
   requirements:
+    - !type:CharacterOverallTimeRequirement
+      min: 7200 # 2hr floof
     - !type:DepartmentTimeRequirement
       department: Security
       min: 7200 # 2hr floof

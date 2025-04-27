@@ -6,13 +6,9 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Engineering
-      min: 43200 # Floofstation - 12 hour
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobAtmosphericTechnician
-      min: 21600 # Floof 6 hours
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobStationEngineer
-      min: 21600 # Floof 6 hours
+      min: 57600 # Floofstation - 16 hour
+#    - !type:OverallPlaytimeRequirement
+#      time: 72000 # DeltaV - 20 hours
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
