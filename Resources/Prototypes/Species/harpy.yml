@@ -4,6 +4,7 @@
   roundStart: true
   prototype: MobHarpy
   sprites: MobHarpySprites
+  defaultSkinTone: "#c0967f"
   markingLimits: MobHarpyMarkingLimits
   dollPrototype: MobHarpyDummy
   skinColoration: HumanToned
@@ -47,13 +48,10 @@
   id: MobHarpyMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Undershirt:
-      points: 1 # Floof, add underwear
-      required: false
-    Face:
-      points: 1
+      points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
       points: 1

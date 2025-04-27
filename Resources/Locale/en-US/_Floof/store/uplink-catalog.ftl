@@ -13,3 +13,6 @@ uplink-EnergySabre-desc = Crafted by Fae, the CyberSun Weapons Designer, a brill
 
 uplink-energy-halberd-name = Energy halberd
 uplink-energy-halberd-desc = A polarm handle with an energy-based axe head attached to it to strike down all that is in your way. Produced by SESWC!
+
+uplink-typewriter-bundle-name = Typewriter Bundle
+uplink-typewriter-bundle-desc = An inconspicuous briefcase that contains a Typewriter SMG, three magazines and an outfit fit for any aspiring mafiosos.
