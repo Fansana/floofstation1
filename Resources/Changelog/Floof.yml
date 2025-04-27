@@ -5001,3 +5001,12 @@ Entries:
   id: 527
   time: '2025-04-27T13:55:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/847
+- author: EinsteinEngines Skubman
+  changes:
+    - type: Fix
+      message: >-
+        The Cybersun pen now properly deals 15 Piercing damage on throw and
+        deals passive damage when embedded.
+  id: 528
+  time: '2025-04-27T14:57:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/874
