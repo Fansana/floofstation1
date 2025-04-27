@@ -4,6 +4,7 @@
   roundStart: true
   prototype: MobIPC
   sprites: MobIPCSprites
+  defaultSkinTone: "#aaa9ad"
   markingLimits: MobIPCMarkingLimits
   dollPrototype: MobIPCDummy
   skinColoration: Hues
@@ -53,10 +54,10 @@
   id: MobIPCMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
-    Undershirt:
-      points: 1 # Floof, add underwear
+    Undershirt: # FLOOF CHANGE
+      points: 2 # Floof, add underwear
       required: false
     Head:
       points: 1

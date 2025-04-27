@@ -571,6 +571,9 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     protected abstract void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null);
 
+    // Floofstation - setter method because wizden wants to be cool and specify friends for types
+    public void SetTarget(GunComponent gun, EntityUid? target) => gun.Target = target;
+
     /// <summary>
     /// Used for animated effects on the client.
     /// </summary>

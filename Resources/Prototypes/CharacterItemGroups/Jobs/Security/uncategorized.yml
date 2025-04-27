@@ -77,10 +77,10 @@
       id: LoadoutSecurityRevolverDeckard
     - type: loadout
       id: LoadoutSecurityRevolverDeckardNonLethal
-    - type: loadout
-      id: LoadoutSecurityPistolN1984
-    - type: loadout
-      id: LoadoutSecurityPistolN1984NonLethal
+    # - type: loadout # Floof - N1984 is too much.
+    #   id: LoadoutSecurityPistolN1984
+    # - type: loadout
+    #   id: LoadoutSecurityPistolN1984NonLethal
     - type: loadout
       id: LoadoutSecurityPistolViper
     - type: loadout
