@@ -9,7 +9,7 @@
       department: Logistics
       min: 144000 #floof to match the other seniors
     - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobCourier
+      tracker: JobMailCarrier
       min: 9000 # 2.5 Hours
   antagAdvantage: 2 # DeltaV - Reduced TC: External Access
   startingGear: InvSpecGear

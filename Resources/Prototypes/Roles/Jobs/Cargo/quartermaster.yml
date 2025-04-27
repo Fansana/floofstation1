@@ -12,7 +12,7 @@
       tracker: JobSalvageSpecialist
       min: 9000 # 2.5 hours
     - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobCourier
+      tracker: JobMailCarrier
       min: 9000 # 2.5 hours
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
