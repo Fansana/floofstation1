@@ -14,8 +14,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToDie
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -38,8 +39,9 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - WillToLive
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -62,8 +64,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - GlassJaw
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -86,8 +90,10 @@
         - IPC
     - !type:CharacterTraitRequirement
       inverted: true
-      traits:
+      traits: # Floof - M3739 - #690
         - Tenacity
+        - BrittleBoneDisease
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -236,6 +242,52 @@
           rangeModifier: 0.6
 
 - type: trait
+  id: Steadfast
+  category: Physical
+  points: -4
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Feeble
+  functions:
+    - !type:TraitModifySlowOnDamage
+      damageThresholdsModifier: 10
+      speedModifierMultiplier: 0.68
+
+- type: trait
+  id: Feeble
+  category: Physical
+  points: 3
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Steadfast
+  functions:
+    - !type:TraitModifySlowOnDamage
+      damageThresholdsModifier: -15
+      speedModifierMultiplier: 1.2
+
+- type: trait
   id: MartialArtist
   category: Physical
   points: -3
@@ -377,6 +429,7 @@
         - Human
         - Oni
         - SlimePerson
+        - IPC # Floof - M3739 - #690 - Ever seen Real Steel?
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -712,6 +765,15 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690 - As it stands, this trait COMPLETELY REMOVES the crit status altogether. Traits that alter crit thresholds will have no effect as a result.
+        - WillToLive
+        - WillToDie
+        - GlassJaw
+        - Tenacity
+        - BrittleBoneDisease
+        
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -732,6 +794,12 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits: # Floof - M3739 - #690
+        - GlassJaw
+        - Tenacity
+        - Redshirt
   functions:
     - !type:TraitReplaceComponent
       components:

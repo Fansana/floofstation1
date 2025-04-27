@@ -1,0 +1,107 @@
+# Inventory Specialist
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+- type: loadout
+  id: LoadoutInventorySpecialistStampApproved
+  category: JobsLogisticsInventorySpecialist
+  cost: 0
+  exclusive: false
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - RubberStampApproved
+
+- type: loadout
+  id: LoadoutInventorySpecialistStampDenied
+  category: JobsLogisticsInventorySpecialist
+  cost: 0
+  exclusive: false
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - RubberStampDenied
+
+# Eyes
+
+# Gloves
+
+# Head
+
+# Id
+
+# Neck
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutInvSpecOuterWinterCargo
+  category: JobsLogisticsAUncategorized
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - ClothingOuterWinterCargo
+
+# Shoes
+- type: loadout
+  id: LoadoutInvSpecShoesBootsWinterCargo
+  category: JobsLogisticsAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - ClothingShoesBootsWinterCargo
+
+# Uniforms
+- type: loadout
+  id: LoadoutInventorySpecialistUniformSuit
+  category: JobsLogisticsInventorySpecialist
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - ClothingUniformJumpsuitCargo
+
+- type: loadout
+  id: LoadoutInventorySpecialistUniformSkirt
+  category: JobsLogisticsInventorySpecialist
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutInventorySpecialistUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - InventorySpecialist
+  items:
+    - ClothingUniformJumpskirtCargo

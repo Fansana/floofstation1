@@ -19,3 +19,15 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutUniformsCivilian
+
+- type: loadout
+  id: LoadoutClothingUniformJumpsuitCatsuitBlank
+  category: Uniform
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  items:
+    - ClothingUniformJumpsuitCatsuitBlank
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutUniformsCivilian # Floofstation - TheDen used LoadoutUniformsCivilian2.

@@ -1,0 +1,150 @@
+# ChiefJustice
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Eyes
+
+# Gloves
+
+# Head
+- type: loadout
+  id: LoadoutJusticeChiefJusticeToque
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingHeadHatCJToque
+    
+- type: loadout
+  id: LoadoutJusticeChiefJusticePwig
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerHead
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingHeadHatPwig
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutJusticeChiefJusticeCloak
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingNeckCloakCJ
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutJusticeChiefJusticeOuter
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingOuterChiefJustice
+    
+- type: loadout
+  id: LoadoutJusticeChiefJusticeJudge
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingOuterRobesJudge
+
+# Shoes
+
+# Uniforms
+- type: loadout
+  id: LoadoutJusticeChiefJusticeSuit
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingUniformJumpsuitChiefJustice
+
+- type: loadout
+  id: LoadoutJusticeChiefJusticeSkirt
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingUniformJumpskirtChiefJustice
+
+- type: loadout
+  id: LoadoutJusticeChiefJusticeSuitFormal
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingUniformJumpsuitChiefJusticeFormal
+
+- type: loadout
+  id: LoadoutJusticeChiefJusticeSuitWhite
+  category: JobsJusticeChiefJustice
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLawyerUniforms
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefJustice
+  items:
+    - ClothingUniformJumpsuitChiefJusticeWhite
+
+# Equipment

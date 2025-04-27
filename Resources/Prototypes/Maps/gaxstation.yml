@@ -63,6 +63,7 @@
             Lawyer: [ 1, 1 ]
             #Supply
             Quartermaster: [ 1, 1 ]
+            InventorySpecialist: [ 1, 1 ] #FloofStation
             SalvageSpecialist: [ 1, 3 ]
             CargoTechnician: [ 2, 2 ]
             MailCarrier: [ 1, 2 ]

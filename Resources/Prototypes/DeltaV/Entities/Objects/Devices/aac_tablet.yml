@@ -1,0 +1,50 @@
+- type: entity
+  parent: BaseItem
+  id: AACTablet
+  name: AAC tablet
+  description: An "augmentative and alternative communication" device that allows speech-impaired individuals to communicate.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/tablets.rsi
+    layers:
+      - state: aac_tablet
+      - state: aac_screen
+        shader: unshaded
+    state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: aac-inhand-left
+      - state: aac_screen-inhand-left
+        shader: unshaded
+      right:
+      - state: aac-inhand-right
+      - state: aac_screen-inhand-right
+        shader: unshaded
+  - type: ActivatableUI
+    singleUser: false
+    key: enum.AACTabletKey.Key
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: UserInterface
+    interfaces:
+      enum.AACTabletKey.Key:
+        type: AACBoundUserInterface
+  - type: Speech
+    speechVerb: Robotic # Floof - M3739 - #701 - Consoles and PAIs apparently have this as well. Following suit.
+    speechSounds: Pai # Floof - M3739 - #701 - It's a tablet. Need I say more?
+  - type: AACTablet
+  - type: VoiceOverride # Floof - M3739 - #701 - Previously used the VoiceMask component. This fits our needs better.
+  - type: Clothing # Floof - M3739 - #701 - able to be kept on your neck, like translators.
+    slots: [ neck ]
+    equipDelay: 0.3
+    unequipDelay: 0.3
+    quickEquip: false # Floof - M3739 - #701 - Would conflict.

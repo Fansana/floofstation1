@@ -97,6 +97,8 @@
       id: LoadoutHeadOfPersonnelOuterArmoredCoat
     - type: loadout
       id: LoadoutHeadOfPersonnelOuterDuraVest
+    - type: loadout
+      id: LoadoutHeadOfPersonnelOuterLongcoat # Floof - M3739 - #690
 
 - type: characterItemGroup
   id: LoadoutHeadOfPersonnelShoes
