@@ -5017,3 +5017,26 @@ Entries:
   id: 529
   time: '2025-04-27T14:57:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/876
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Dragon has some resistance against slash and pierce.
+    - type: Tweak
+      message: Dragon's fireball is now faster.
+    - type: Tweak
+      message: There can now be a max of 5 thieves instead of 3.
+    - type: Tweak
+      message: Traitor ratio is increased to 1:7.
+    - type: Tweak
+      message: Increased max round-start traitors to 5.
+    - type: Tweak
+      message: Increased weights of Revenant, Ninja, and Dragon
+    - type: Tweak
+      message: Meteors will do a bit more damage now.
+    - type: Tweak
+      message: Ninja can spawn earlier.
+    - type: Remove
+      message: N1984 no longer available in Security Loadout.
+  id: 530
+  time: '2025-04-27T15:05:14.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/890
