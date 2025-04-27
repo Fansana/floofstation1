@@ -7,10 +7,6 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  requirements:  #Floof
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobMedicalDoctor #Floof
-      min: 18000 # 5 houts floof
   access:
   - Medical
   - Maintenance

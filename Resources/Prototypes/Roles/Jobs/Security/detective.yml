@@ -7,8 +7,6 @@
   - !type:CharacterDepartmentTimeRequirement
     department: Security
     min: 14400 # Floofstation - 4 hour
-  - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobSecurityOfficer # Floofstation
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

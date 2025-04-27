@@ -4,12 +4,8 @@
   description: job-description-engineer
   playTimeTracker: JobStationEngineer
   requirements:
-    - !type:CharacterDepartmentTimeRequirement #Floof
-      department: Engineering #Floof
-      min: 43200 # Floofstation - 12 hour
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobTechnicalAssistant
-      min: 9000 #2.5 hours as a tech assistant
+  - !type:CharacterOverallTimeRequirement
+    min: 14400 # 4hr floof
   antagAdvantage: 3 # DeltaV - Reduced TC: External Access + Engineering
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
