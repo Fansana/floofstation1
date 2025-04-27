@@ -4985,3 +4985,12 @@ Entries:
   id: 525
   time: '2025-04-27T04:39:41.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/877
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Cybernetic Eyes and it's Variants should no longer rot
+    - type: Fix
+      message: Space Animal Lungs should actually work now
+  id: 526
+  time: '2025-04-27T04:40:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/889
