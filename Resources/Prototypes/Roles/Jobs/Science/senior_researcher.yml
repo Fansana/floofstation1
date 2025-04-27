@@ -5,6 +5,18 @@
   playTimeTracker: JobSeniorResearcher
   setPreference: true #floof - this toggle allows players to ready up / create loadouts as senior roles. false disables it from the job list.
   requirements:
+    - !type:CharacterPlaytimeRequirement #floof
+      tracker: JobScientist #floof
+      min: 21600 #12 hours floof
+    - !type:CharacterPlaytimeRequirement #floof
+      tracker: JobRoboticist #floof
+      min: 9000 #2.5 hours floof
+    - !type:CharacterPlaytimeRequirement #floof
+      tracker: JobForensicMantis #floof
+      min: 21600 #12 hours floof
+    - !type:CharacterPlaytimeRequirement #floof
+      tracker: JobResearchDirector #floof
+      min: 21600 #12 hours floof
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 144000 # Floofstation 40 hrs
