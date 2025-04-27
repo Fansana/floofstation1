@@ -7,9 +7,18 @@
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
       department: Command
       min: 14400 # Floofstation - 4 hour
-    - !type:CharacterDepartmentTimeRequirement # DeltaV - Command dept time requirement
-      department: Security
+    - !type:CharacterDepartmentTimeRequirement #floof
+      department: Security #floof
       min: 57600 # Floofstation - 16 hour
+    - !type:CharacterPlaytimeRequirement # floof
+      tracker: JobWarden #floof
+      min: 43200 # Floofstation - 12 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobBrigmedic # Floofstation
+      min: 9000 # Floofstation - 2.5 hour
+    - !type:CharacterPlaytimeRequirement # Floofstation
+      tracker: JobDetective # Floofstation
+      min: 43200 # Floofstation - 6 hour
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

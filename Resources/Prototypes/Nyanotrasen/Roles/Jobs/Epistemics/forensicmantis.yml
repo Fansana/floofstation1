@@ -4,11 +4,12 @@
   description: job-description-mantis
   playTimeTracker: JobForensicMantis
   requirements:
-    - !type:CharacterOverallTimeRequirement
-      min: 3600 # 1hr floof
+    - !type:CharacterPlaytimeRequirement #floof
+      tracker: JobScientist #floof
+      min: 9000 #2.5 hours floof
     - !type:DepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 3600
+      min: 3600 #floof
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -38,6 +39,7 @@
       powersToAdd:
         - MetapsionicPower
         - TelepathyPower
+        - AssayPower
 
 - type: startingGear
   id: ForensicMantisGear

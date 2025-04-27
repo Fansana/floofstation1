@@ -92,6 +92,8 @@
     nameSegments: [names_golem]
   - type: Psionic
     removable: false
+    assayFeedback:
+      - ifrit-feedback
     psychognomicDescriptors:
       - p-descriptor-bound
       - p-descriptor-cyclic
@@ -118,7 +120,7 @@
   - type: GhostRole
     name: ghost-role-information-ifrit-name
     description: ghost-role-information-ifrit-description
-    rules: ghost-role-information-ifrit-rules
+    rules: floof-ghost-role-information-familiar-rules # Floofstation - Modifying ghost role rules
     makeSentient: true
     allowMovement: true
     allowSpeech: true

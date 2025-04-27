@@ -39,7 +39,7 @@
         - !type:CharacterDepartmentRequirement
           departments:
             - Security
-            - Civilian
+            - Miscellaneous # Floof - Add loadouts for Miscellaneous department
         - !type:CharacterJobRequirement
           jobs:
             - SalvageSpecialist

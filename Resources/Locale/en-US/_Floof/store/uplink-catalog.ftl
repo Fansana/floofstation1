@@ -8,3 +8,6 @@ uplink-Cryptobiolininjector-desc = Made by SESWC. This item is prefilled with 20
 
 uplink-EnergySabre-name = Energy Sabre MK. 9
 uplink-EnergySabre-desc = Crafted by Fae, the CyberSun Weapons Designer, a brilliant display of plasma weaponry crafted into a beautiful sabre.
+
+uplink-typewriter-bundle-name = Typewriter Bundle
+uplink-typewriter-bundle-desc = An inconspicuous briefcase that contains a Typewriter SMG, three magazines and an outfit fit for any aspiring mafiosos.
