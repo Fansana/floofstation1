@@ -5077,3 +5077,10 @@ Entries:
   id: 534
   time: '2025-04-27T15:18:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/838
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added a Hristov box to cargo orders.
+  id: 535
+  time: '2025-04-27T15:24:52.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/888
