@@ -4929,3 +4929,14 @@ Entries:
   id: 521
   time: '2025-04-27T04:11:34.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/878
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added Assay as a new psi-power, which is available roundstart to the
+        Psionic Mantis. Assay allows the caster to obtain more direct
+        information about the statistics of a specific Psion, as well as vague
+        hints as to what their powers may be, if any.
+  id: 522
+  time: '2025-04-27T04:12:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/882
