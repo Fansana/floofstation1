@@ -146,9 +146,9 @@
   - type: Vore # Floofstation - Vore
     canVore: true
     canBeVored: false
-  - type: ThermalVision
+  - type: NightVision # Floof - M3739 - Originally came with ThermalVision. While acceptable at EE and Goob, Floof has stricter privacy standards. Same as Rat King.
     isActive: true
-    lightRadius: 15
+    toggleAction: null
     color: "#808080"
     activateSound: null
     deactivateSound: null
