@@ -7,16 +7,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
-      min: 144000 # Floofstation 40 hrs
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobScientist #floof
-      min: 21600 #6 hours floof
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobRoboticist #floof
-      min: 9000 #2.5 hours floof
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobForensicMantis #floof
-      min: 9000 #2.5 hours floof
+      min: 57600 # Floofstation - 16 hour
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement

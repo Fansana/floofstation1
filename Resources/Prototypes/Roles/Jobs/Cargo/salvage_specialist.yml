@@ -12,13 +12,7 @@
   - Salvage
   - Maintenance
   - External
-  requirements:
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobCargoTechnician
-      min: 9000 # 2.5 hours
-    - !type:CharacterDepartmentTimeRequirement
-      department: Logistics # DeltaV - Logistics Department replacing Cargo
-      min: 9000 # 2.5 hours # Floofstation - 16 hour
+
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:

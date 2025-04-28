@@ -3,13 +3,10 @@
   name: job-name-roboticist
   description: job-description-roboticist
   playTimeTracker: JobRoboticist
-  requirements: #floof
-  - !type:CharacterDepartmentTimeRequirement #floof
-    department: Epistemics #floof
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Epistemics
     min: 14400 # 4 hours - same as scientist
-  - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobScientist #floof
-      min: 9000 #2.5 hours floof
   startingGear: RoboticistGear
   icon: "JobIconRoboticist"
   supervisors: job-supervisors-rd
