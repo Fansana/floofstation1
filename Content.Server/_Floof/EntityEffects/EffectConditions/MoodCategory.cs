@@ -21,7 +21,7 @@ namespace Content.Server.EntityEffects.EffectConditions
         ///     A loc string describing the category to be tested for.
         /// </summary>
         [DataField]
-        public string CategoryDescription;
+        public string? CategoryDescription;
 
         /// <summary>
         ///     If true, succeeds if the entity does not have the specified category.

@@ -21,7 +21,7 @@ namespace Content.Server.EntityEffects.EffectConditions
         ///     A loc string describing the effect to be tested for.
         /// </summary>
         [DataField]
-        public string EffectDescription;
+        public string? EffectDescription;
 
         /// <summary>
         ///     If true, succeeds if the entity does not have the specified mood.
