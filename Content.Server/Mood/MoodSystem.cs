@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Managers;
+using Content.Server.Chat.Managers;
 using Content.Server.Popups;
 using Content.Shared.Alert;
 using Content.Shared.Chat;
@@ -392,6 +392,30 @@ public sealed class MoodSystem : EntitySystem
         var ev = new MoodEffectEvent(protoId);
         RaiseLocalEvent(uid, ev);
     }
+
+    // Floof changes - Add test methods for mood effects.
+    public bool HasMoodEffect(EntityUid uid, ProtoId<MoodEffectPrototype> effectId)
+    {
+        if (!EntityManager.TryGetComponent<MoodComponent>(uid, out var component))
+            return false;
+        return HasMoodEffect(component, effectId);
+    }
+
+    public bool HasMoodEffect(MoodComponent component, ProtoId<MoodEffectPrototype> effectId)
+    {
+        if (!_prototypeManager.TryIndex(effectId, out var prototype))
+            return false;
+        if (prototype.Category != null)
+            return component.CategorisedEffects.ContainsValue(prototype.ID);
+        else
+            return component.UncategorisedEffects.ContainsKey(prototype.ID);
+    }
+
+    public bool HasMoodCategory(MoodComponent component, ProtoId<MoodCategoryPrototype> categoryId)
+    {
+        return component.CategorisedEffects.ContainsKey(categoryId.Id);
+    }
+    // Floof changes end
 }
 
 [UsedImplicitly, DataDefinition]

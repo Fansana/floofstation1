@@ -196,6 +196,7 @@
 #        probability: 0.5 # Chance of Addiction rising per tick
       - !type:ChemAddMoodlet
         moodPrototype: AntidepressantBenefit
+        probability: 0.001 # 30% addictive at 5u, 57% at 10u
         conditions:
 #        - !type:ReagentThreshold
 #          reagent: Addictine
@@ -205,6 +206,13 @@
           min: 1.5
 #        reagent: Addictine
 #        amount: 0.1
+      - !type:ChemAddMoodlet
+        moodPrototype: AntidepressantNeutral
+        conditions:
+        - !type:MoodEffect
+          effectId: AntidepressantWithdrawal
+        - !type:ReagentThreshold
+          min: 1.5
 # Floof section end
       - !type:HealthChange
         conditions:
@@ -627,6 +635,13 @@
           min: 9
 #        reagent: Addictine # add
 #        amount: 0.1
+      - !type:ChemAddMoodlet
+        moodPrototype: PainkillerNeutral
+        conditions:
+        - !type:MoodEffect
+          effectId: PainkillerWithdrawal
+        - !type:ReagentThreshold
+          min: 5
 # Floof section end
       - !type:PopupMessage
         type: Local
