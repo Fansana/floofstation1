@@ -14,12 +14,21 @@
 - type: markingPoints
   id: MobKitsuneMarkingLimits
   points:
+    Underwear: # Floof - M3739 - Yokai
+      points: 2 # Floof - M3739 - Yokai
+      required: false
+    Undershirt: # Floof - M3739 - Yokai
+      points: 2 # Floof - M3739 - Yokai
+      required: false
     Hair:
       points: 1
       required: false
     FacialHair:
       points: 1
       required: false
+    Head: # Floof - M3739 - Yokai
+      points: 3 # Floof - M3739 - Yokai
+      required: false # Floof - M3739 - Yokai
     Snout:
       points: 1
       required: false
@@ -31,18 +40,39 @@
       points: 1
       required: true
       defaultMarkings: [ KitsuneEarsDefault ]
-    UndergarmentTop:
-      points: 1
-      required: false
-    UndergarmentBottom:
-      points: 1
-      required: false
+#    UndergarmentTop: # Floof - M3739 - Yokai - Commented out for posterity. Superseded by Underwear and Undershirt.
+#      points: 1
+#      required: false
+#    UndergarmentBottom:
+#      points: 1
+#      required: false
     Chest:
-      points: 1
+      points: 3 # Floof - M3739 - Yokai
       required: false
-    Legs:
+    RightLeg: # Floof - M3739 - Yokai
       points: 2
       required: false
-    Arms:
+    RightFoot: # Floof - M3739 - Yokai
       points: 2
       required: false
+    LeftLeg: # Floof - M3739 - Yokai
+      points: 2
+      required: false
+    LeftFoot: # Floof - M3739 - Yokai
+      points: 2
+      required: false
+    RightArm: # Floof - M3739 - Yokai
+      points: 2
+      required: false
+    RightHand: # Floof - M3739 - Yokai
+      points: 3
+      required: false
+    LeftArm: # Floof - M3739 - Yokai
+      points: 2
+      required: false
+    LeftHand: # Floof - M3739 - Yokai
+      points: 3
+      required: false
+    HeadSide: # Floof - M3739 - Yokai
+      points: 2 # Floof - M3739 - Yokai
+      required: false # Floof - M3739 - Yokai
