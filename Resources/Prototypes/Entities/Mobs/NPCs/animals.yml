@@ -256,6 +256,7 @@
   - type: RandomBark
     barkType: chicken
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   parent: MobChicken
@@ -587,6 +588,7 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation - moffroach my beloved
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -689,6 +691,7 @@
     barkType: chicken # Duh
     barkMultiplier: 0.7
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -876,6 +879,7 @@
     barkType: cow
     barkMultiplier: 3
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 
 - type: entity
@@ -1047,6 +1051,7 @@
     rootTask:
       task: RuminantHostileCompound
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -1101,6 +1106,7 @@
     factions:
     - Passive
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: kangaroo
@@ -1195,6 +1201,7 @@
     rootTask:
       task: SimpleHostileCompound
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: boxing kangaroo
@@ -1348,6 +1355,7 @@
     - VimPilot
     - DoorBumpOpener
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: monkey
@@ -1955,6 +1963,7 @@
     tags:
     - VimPilot
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 
 - type: entity
@@ -2005,6 +2014,7 @@
   - type: Bloodstream
     bloodMaxVolume: 50
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: frog
@@ -2601,6 +2611,7 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: possum
 
@@ -2686,6 +2697,7 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: raccoon
 
@@ -2777,6 +2789,7 @@
     understands:
     - Fox
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: fox
     barkMultiplier: 0.5 # Talkative <3
@@ -2851,6 +2864,7 @@
   - type: RandomBark
     barkType: dog
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: corrupted corgi
@@ -3019,6 +3033,7 @@
   - type: RandomBark
     barkType: cat
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: calico cat
@@ -3329,6 +3344,7 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: hamster
@@ -3482,6 +3498,7 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   parent: MobHamster

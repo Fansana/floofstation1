@@ -6,9 +6,7 @@ using Content.Shared.Floofstation.Leash.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Input;
 using Content.Shared.Inventory.Events;
-using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Movement.Pulling.Systems;
-using Content.Shared.Physics;
 using Content.Shared.Popups;
 using Content.Shared.Throwing;
 using Content.Shared.Verbs;
@@ -22,7 +20,7 @@ using Robust.Shared.Physics.Dynamics.Joints;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
-using Robust.Shared.Utility;
+
 
 namespace Content.Shared.Floofstation.Leash;
 
@@ -314,17 +312,22 @@ public sealed class LeashSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false))
             return false;
 
-        if (TryComp<ClothingComponent>(ent, out var clothing))
+        if (ent.Comp.Kind.HasFlag(LeashAnchorComponent.AnchorKind.Clothing)
+            && TryComp<ClothingComponent>(ent, out var clothing)
+            && clothing.InSlot != null
+            && _container.TryGetContainingContainer(ent, out var container))
         {
-            if (clothing.InSlot == null || !_container.TryGetContainingContainer(ent, out var container))
-                return false;
-
             leashTarget = container.Owner;
             return true;
         }
 
-        leashTarget = ent.Owner;
-        return true;
+        if (ent.Comp.Kind.HasFlag(LeashAnchorComponent.AnchorKind.Intrinsic))
+        {
+            leashTarget = ent.Owner;
+            return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -385,7 +388,8 @@ public sealed class LeashSystem : EntitySystem
         var doAfter = new DoAfterArgs(EntityManager, user, leash.Comp.AttachDelay, new LeashAttachDoAfterEvent(), anchor, leashTarget, leash)
         {
             BreakOnDamage = true,
-            BreakOnWeightlessMove = true,
+            BreakOnMove = true,
+            BreakOnWeightlessMove = false,
             NeedHand = true
         };
 
@@ -414,7 +418,8 @@ public sealed class LeashSystem : EntitySystem
         var doAfter = new DoAfterArgs(EntityManager, user, delay, new LeashDetachDoAfterEvent(), leashed.Owner, leashed)
         {
             BreakOnDamage = true,
-            BreakOnWeightlessMove = true,
+            BreakOnMove = true,
+            BreakOnWeightlessMove = false,
             NeedHand = true
         };
 
