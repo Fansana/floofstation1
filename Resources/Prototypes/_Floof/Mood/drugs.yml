@@ -4,14 +4,14 @@
 - type: moodEffect
   id: AmphetamineBenefit
   moodChange: 5
-  timeout: 10 # For testing, discard this change.
+  timeout: 420 #7 minutes
   moodletOnEnd: AmphetamineWithdrawal
   category: AmphetamineAddiction
 
 - type: moodEffect
   id: AmphetamineNeutral
   moodChange: 0
-  timeout: 10 # For testing, discard this change.
+  timeout: 420 #7 minutes
   moodletOnEnd: AmphetamineWithdrawal
   category: AmphetamineAddiction
 
@@ -88,14 +88,14 @@
 - type: moodEffect
   id: PainkillerBenefit
   moodChange: 3 # Not usually a recreational drug, but an accidental addiction.
-  timeout: 10 # For testing, discard this change.
+  timeout: 420 #7 minutes
   moodletOnEnd: PainkillerWithdrawal
   category: PainkillerAddiction
 
 - type: moodEffect
   id: PainkillerNeutral
   moodChange: 0
-  timeout: 10 # For testing, discard this change.
+  timeout: 420 #7 minutes
   moodletOnEnd: PainkillerWithdrawal
   category: PainkillerAddiction
 
