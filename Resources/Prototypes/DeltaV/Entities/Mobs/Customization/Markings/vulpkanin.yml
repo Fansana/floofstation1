@@ -71,7 +71,7 @@
   id: VulpEarFennec
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Human, SlimePerson, IPC, Oni, Harpy, Arachne, Rodentia]
+  speciesRestriction: [Vulpkanin, Human, SlimePerson, IPC, Oni, Harpy, Arachne, Rodentia, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: fennec
@@ -82,7 +82,7 @@
   id: VulpEarFox
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Human, SlimePerson, IPC, Oni, Harpy, Arachne, Rodentia]
+  speciesRestriction: [Vulpkanin, Human, SlimePerson, IPC, Oni, Harpy, Arachne, Rodentia, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/ear_markings.rsi
       state: fox
