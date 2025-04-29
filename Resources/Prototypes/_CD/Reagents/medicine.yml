@@ -196,6 +196,7 @@
 #        probability: 0.5 # Chance of Addiction rising per tick
       - !type:ChemAddMoodlet
         moodPrototype: AntidepressantBenefit
+        guidebookShowEffectName: true
         probability: 0.001 # 30% addictive at 5u, 57% at 10u
         conditions:
 #        - !type:ReagentThreshold
@@ -208,6 +209,7 @@
 #        amount: 0.1
       - !type:ChemAddMoodlet
         moodPrototype: AntidepressantNeutral
+        guidebookShowEffectName: true
         conditions:
         - !type:MoodEffect
           effectId: AntidepressantWithdrawal
@@ -627,6 +629,7 @@
       - !type:ChemAddMoodlet
         probability: 0.0005 # 5% chance of addiction in a 10u dose, 26% chance in a 15u dose.
         moodPrototype: PainkillerBenefit
+        guidebookShowEffectName: true
         conditions:
 #        - !type:ReagentThreshold
 #          reagent: Addictine
@@ -637,6 +640,7 @@
 #        amount: 0.1
       - !type:ChemAddMoodlet
         moodPrototype: PainkillerNeutral
+        guidebookShowEffectName: true
         conditions:
         - !type:MoodEffect
           effectId: PainkillerWithdrawal
@@ -708,15 +712,23 @@
 #        probability: 0.8 # Chance of Addiction rising per tick
       - !type:ChemAddMoodlet
         moodPrototype: PainkillerBenefit
+        guidebookShowEffectName: true
+        probability: 0.005 # 90% addictive at 5u, 32% at 1u
         conditions:
 #        - !type:ReagentThreshold
 #          reagent: Addictine
 #          max: 25 # maximum addiction severity for this reagent
         - !type:ReagentThreshold
-          min: 0.25
+          min: 0.25 # 476 ticks
 #        reagent: Addictine
 #        amount: 0.2
 # Floof section end
+      - !type:ChemAddMoodlet
+        moodPrototype: PainkillerNeutral
+        guidebookShowEffectName: true
+        conditions:
+        - !type:MoodEffect
+          effectId: PainkillerWithdrawal
       - !type:Drunk # OD causes drunkeness
         conditions:
           - !type:ReagentThreshold

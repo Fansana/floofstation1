@@ -32,6 +32,10 @@ public sealed class MoodSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
 
+    // Floof - Improve ChemAddMoodlet effect guidebook description
+    public const string LocMoodEffectNamePrefix = "mood-effect-name-";
+    public const string LocMoodCategoryNamePrefix = "mood-category-name-";
+    // Floof changes end
 
     public override void Initialize()
     {
@@ -392,30 +396,6 @@ public sealed class MoodSystem : EntitySystem
         var ev = new MoodEffectEvent(protoId);
         RaiseLocalEvent(uid, ev);
     }
-
-    // Floof changes - Add test methods for mood effects.
-    public bool HasMoodEffect(EntityUid uid, ProtoId<MoodEffectPrototype> effectId)
-    {
-        if (!EntityManager.TryGetComponent<MoodComponent>(uid, out var component))
-            return false;
-        return HasMoodEffect(component, effectId);
-    }
-
-    public bool HasMoodEffect(MoodComponent component, ProtoId<MoodEffectPrototype> effectId)
-    {
-        if (!_prototypeManager.TryIndex(effectId, out var prototype))
-            return false;
-        if (prototype.Category != null)
-            return component.CategorisedEffects.ContainsValue(prototype.ID);
-        else
-            return component.UncategorisedEffects.ContainsKey(prototype.ID);
-    }
-
-    public bool HasMoodCategory(MoodComponent component, ProtoId<MoodCategoryPrototype> categoryId)
-    {
-        return component.CategorisedEffects.ContainsKey(categoryId.Id);
-    }
-    // Floof changes end
 }
 
 [UsedImplicitly, DataDefinition]

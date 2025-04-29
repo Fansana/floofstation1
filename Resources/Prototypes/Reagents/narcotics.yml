@@ -50,12 +50,14 @@
         type: Remove
       - !type:ChemAddMoodlet # Floof - Add mood-system addiction
         moodPrototype: AmphetamineBenefit
+        guidebookShowEffectName: true
         probability: 0.12 # 90% addictive at 10u, 64% at 5u
         conditions:
         - !type:ReagentThreshold
           min: 1.5
       - !type:ChemAddMoodlet
         moodPrototype: AmphetamineNeutral
+        guidebookShowEffectName: true
         conditions:
         - !type:MoodEffect
           effectId: AmphetamineWithdrawal
@@ -267,12 +269,14 @@
         boozePower: 5
       - !type:ChemAddMoodlet # Floof - Add mood-system addiction
         moodPrototype: ImpedrezeneBenefit
+        guidebookShowEffectName: true
         probability: 0.03 # 28% addictive at 10u, 3% at 5u
         conditions:
         - !type:ReagentThreshold
           min: 5
       - !type:ChemAddMoodlet
         moodPrototype: ImpedrezeneNeutral
+        guidebookShowEffectName: true
         conditions:
         - !type:MoodEffect
           effectId: ImpedrezeneWithdrawal
@@ -506,12 +510,14 @@
         refresh: false
       - !type:ChemAddMoodlet # Floof - Add mood-system addiction
         moodPrototype: HappinessBenefit
+        guidebookShowEffectName: true
         probability: 0.1 # 77% addictive at 10u, 34% at 5u
         conditions:
         - !type:ReagentThreshold
           min: 3.5
       - !type:ChemAddMoodlet
         moodPrototype: HappinessNeutral
+        guidebookShowEffectName: true
         conditions:
         - !type:MoodEffect
           effectId: HappinessWithdrawal

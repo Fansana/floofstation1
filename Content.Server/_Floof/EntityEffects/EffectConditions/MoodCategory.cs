@@ -7,10 +7,6 @@ namespace Content.Server.EntityEffects.EffectConditions
 {
     public sealed partial class MoodCategory : EntityEffectCondition
     {
-        [Dependency]
-        private readonly EntityManager _entityManager = default!;
-        private readonly MoodSystem _mood = default!;
-
         /// <summary>
         ///     The mood category to be tested for.
         /// </summary>
@@ -37,9 +33,9 @@ namespace Content.Server.EntityEffects.EffectConditions
 
         public override bool Condition(EntityEffectBaseArgs args)
         {
-            if (!_entityManager.TryGetComponent<MoodComponent>(args.TargetEntity, out var component))
+            if (!args.EntityManager.TryGetComponent<MoodComponent>(args.TargetEntity, out var component))
                 return !RequiresMoods;
-            bool hasMoodCategory = _mood.HasMoodCategory(component, CategoryId);
+            bool hasMoodCategory = component.CategorisedEffects.ContainsKey(CategoryId.Id);
             return Inverted ? !hasMoodCategory : hasMoodCategory;
         }
 
@@ -47,7 +43,7 @@ namespace Content.Server.EntityEffects.EffectConditions
         {
             return Loc.GetString("reagent-effect-condition-guidebook-has-mood-effect",
                 ("inverted", Inverted),
-                ("effect", Loc.GetString(CategoryDescription ?? $"mood-category-description-{CategoryId.Id}"))
+                ("effect", Loc.GetString(CategoryDescription ?? $"{MoodSystem.LocMoodCategoryNamePrefix}{CategoryId.Id}"))
                 );
         }
     }

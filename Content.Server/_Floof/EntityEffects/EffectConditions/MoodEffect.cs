@@ -7,10 +7,6 @@ namespace Content.Server.EntityEffects.EffectConditions
 {
     public sealed partial class MoodEffect : EntityEffectCondition
     {
-        [Dependency]
-        private readonly EntityManager _entityManager = default!;
-        private readonly MoodSystem _mood = default!;
-
         /// <summary>
         ///     The mood effect to be tested for.
         /// </summary>
@@ -35,10 +31,12 @@ namespace Content.Server.EntityEffects.EffectConditions
         [DataField]
         public bool RequiresMoods = true;
 
-        public override bool Condition(EntityEffectBaseArgs args) {
-            if (!_entityManager.TryGetComponent<MoodComponent>(args.TargetEntity, out var component))
+        public override bool Condition(EntityEffectBaseArgs args)
+        {
+            if (!args.EntityManager.TryGetComponent<MoodComponent>(args.TargetEntity, out var component))
                 return !RequiresMoods;
-            bool hasMoodEffect = _mood.HasMoodEffect(component, EffectId);
+            bool hasMoodEffect = component.UncategorisedEffects.ContainsKey(EffectId.Id) ||
+                component.CategorisedEffects.ContainsValue(EffectId.Id);
             return Inverted ? !hasMoodEffect : hasMoodEffect;
         }
 
@@ -46,7 +44,7 @@ namespace Content.Server.EntityEffects.EffectConditions
         {
             return Loc.GetString("reagent-effect-condition-guidebook-has-mood-effect",
                 ("inverted", Inverted),
-                ("effect", Loc.GetString(EffectDescription ?? $"mood-effect-description-{EffectId.Id}"))
+                ("effect", Loc.GetString(EffectDescription ?? $"{MoodSystem.LocMoodEffectNamePrefix}{EffectId}"))
                 );
         }
     }
