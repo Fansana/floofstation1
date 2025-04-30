@@ -80,7 +80,7 @@ public sealed class LeashSystem : EntitySystem
 
             // Server - ensure the holder of the leash is always correct
             // I do not know why, perhaps because RobustToolbox tooling is shitty,
-            // but the leash is inside a container that is inside another container (e.g. person inside a locker),
+            // but if the leash is inside a container that is inside another container (e.g. person inside a locker),
             // and then the middle container leaves the outer (person leaves the locker),
             // RobustToolbox won't update the joint between the leashed person and the leash (which should be relayed to the outer container - locker).
             // This means the person will stay attached to the outer container (locker).
