@@ -77,6 +77,22 @@ public sealed class LeashSystem : EntitySystem
             var sourceXForm = Transform(leashEnt);
             foreach (var data in leash.Leashed.ToList())
                 UpdateLeash(data, sourceXForm, leash, leashEnt);
+
+            // Server - ensure the holder of the leash is always correct
+            // I do not know why, perhaps because RobustToolbox tooling is shitty,
+            // but the leash is inside a container that is inside another container (e.g. person inside a locker),
+            // and then the middle container leaves the outer (person leaves the locker),
+            // RobustToolbox won't update the joint between the leashed person and the leash (which should be relayed to the outer container - locker).
+            // This means the person will stay attached to the outer container (locker).
+            // To fix this, we do this expensive (but mandatory) computation and recreate the joint when this occurs.
+            // Luckily for us, this only happens with the leash, not with the leashed person, thanks to the way we handle anchors.
+            if (_net.IsServer
+                && TryComp<JointComponent>(leashEnt, out var leashJointComp)
+                && _container.TryGetOuterContainer(leashEnt, sourceXForm, out var jointRelayTarget)
+                && leashJointComp.Relay != null
+                && leashJointComp.Relay != jointRelayTarget.Owner
+            )
+                _joints.RefreshRelay(leashEnt);
         }
 
         leashQuery.Dispose();
@@ -113,8 +129,9 @@ public sealed class LeashSystem : EntitySystem
 
         // Server: update leash lengths if necessary/possible
         // The length can be increased freely, but can only be decreased if the pulled entity is close enough
-        if (joint is not null && (leash.Length >= joint.MaxLength || leash.Length >= joint.Length))
-            joint.MaxLength = leash.Length;
+        if (joint is not null && joint.MaxLength > leash.Length && joint.Length < joint.MaxLength)
+            joint.MaxLength = Math.Max(joint.Length, leash.Length);
+
     }
 
     #endregion
@@ -356,7 +373,6 @@ public sealed class LeashSystem : EntitySystem
             ? MathF.Max(dist, leash.Comp.Length)
             : leash.Comp.Length;
 
-        joint.CollideConnected = false;
         joint.MinLength = 0f;
         joint.MaxLength = length;
         joint.Stiffness = 1f;
@@ -440,9 +456,16 @@ public sealed class LeashSystem : EntitySystem
     /// <param name="anchor">The anchor entity, usually either target's clothing or the target itself.</param>
     /// <param name="leash">The leash entity.</param>
     /// <param name="leashTarget">The entity to which the leash is actually connected. Can be EntityUid.Invalid, then it will be deduced.</param>
-    public void DoLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid leashTarget)
+    /// <param name="force">Whether to force the leash to be created even if the target is too far away.</param>
+    public void DoLeash(Entity<LeashAnchorComponent> anchor, Entity<LeashComponent> leash, EntityUid leashTarget, bool force = false)
     {
         if (_net.IsClient || leashTarget is { Valid: false } && !TryGetLeashTarget(anchor!, out leashTarget))
+            return;
+
+        // Do not allow to create the joint if the target is too far away - this is mostly to prevent re-creating leashes after teleportation
+        if (!force &&
+            Transform(anchor).Coordinates.TryDistance(EntityManager, Transform(leash).Coordinates, out var dst) &&
+            dst > leash.Comp.MaxDistance)
             return;
 
         var leashedComp = EnsureComp<LeashedComponent>(leashTarget);
