@@ -1054,23 +1054,3 @@
   materials:
     Plastic: 15
     Uranium: 10
-
-#- type: latheRecipe   #Floof - this is in Floof folder
-#  id: ShadowkinRestraints
-#  result: ClothingOuterShadowkinRestraints
-#  completetime: 6
-#  materials:
-#    Steel: 300
-
-# type: latheRecipe   #Floof - this is in the shitmed Folder
-# id: SecurityCyberneticEyes
-# result: SecurityCyberneticEyes
-# category: Robotics
-# completetime: 5
-# materials:
-#   Steel: 1000
-#   Glass: 500
-#   Plastic: 500
-#   Gold: 300
-#   Silver: 300
-
