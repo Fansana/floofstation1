@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Shared._DV.Polymorph;
-using Content.Shared.Intellicard;
+//using Content.Shared.Intellicard; | Floof - M3739 - Yokai - DV 3539. Uncomment as soon as Station AI hits the field.
 using Content.Shared.Mind.Components;
 using Robust.Shared.Containers;
 
@@ -45,12 +45,12 @@ public sealed class ContentContainerSystem : EntitySystem
                         continue;
                     }
 
-                    if (HasComp<IntellicardComponent>(entity))
-                    {
-                        // Dump out the WHOLE intellicard rather than just the entities contained inside.
-                        _found.Add(entity);
-                        continue;
-                    }
+                    // if (HasComp<IntellicardComponent>(entity)) | Floof - M3739 - Yokai - DV 3539. Uncomment as soon as Station AI hits the field.
+                    // {
+                    //     // Dump out the WHOLE intellicard rather than just the entities contained inside.
+                    //     _found.Add(entity);
+                    //     continue;
+                    // }
 
                     if (stack.Count < 1000) // Unlikely to have over 1000 nested entities unless there is an infinite loop.
                         stack.Push(entity); // Process this entity's containers next
