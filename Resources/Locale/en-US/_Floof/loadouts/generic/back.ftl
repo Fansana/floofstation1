@@ -1,0 +1,1 @@
+loadout-description-LoadoutBackpackMerc = A backpack that has been in many dangerous places, a reliable combat backpack. Popular with security forces, salvage specialists, gladiators, and off-duty soldiers.

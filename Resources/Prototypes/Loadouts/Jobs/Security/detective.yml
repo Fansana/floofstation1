@@ -53,7 +53,7 @@
   id: LoadoutDetectiveEquipmentScanner # Floof - M3739 - #690 - Spare equipment in case the station's equipment is missing.
   category: JobsSecurityDetective
   cost: 0
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutDetectiveEquipment

@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Server.Chat.Managers;
-using Content.Server.FloofStation.GameTicking;
+using Content.Server._Floof.GameTicking;
 using Content.Server.GameTicking;
 using Content.Server.StationEvents.Components;
 using Content.Shared.CCVar;

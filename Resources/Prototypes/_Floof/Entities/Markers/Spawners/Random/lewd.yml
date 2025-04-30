@@ -1,0 +1,300 @@
+- type: entity
+  name: Lewd Loot Spawner
+  suffix: All
+  id: LewdLootSpawnerAll
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_human.rsi
+        state: icon
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LewdMaintLoot
+      offset: 0.2
+
+- type: entity
+  name: Lewd Loot Spawner
+  suffix: Toys
+  id: LewdLootSpawnerToys
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Floof/Objects/Fun/Lewd/Toys/Fleshlights/fleshlight_pink.rsi
+        state: icon
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LewdLootToys
+      offset: 0.2
+
+- type: entity
+  name: Lewd Loot Spawner
+  suffix: Kinky
+  id: LewdLootSpawnerKinky
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Floof/Objects/Fun/Lewd/Weapons/crotch_pink.rsi
+        state: icon
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LewdLootKinky
+      offset: 0.2
+
+- type: entityTable
+  id: LewdMaintLoot
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LewdVibes
+      weight: 10
+    - !type:NestedSelector
+      tableId: LewdFleshlights
+      weight: 10
+    - !type:NestedSelector
+      tableId: LewdDildos
+      weight: 10
+    - !type:NestedSelector
+      tableId: LewdImpactPlay
+      weight: 5
+    - !type:NestedSelector
+      tableId: LewdKinkClothing
+      weight: 10
+    - !type:NestedSelector
+      tableId: LewdKinkTools
+      weight: 5
+
+- type: entityTable
+  id: LewdLootToys
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LewdVibes
+    - !type:NestedSelector
+      tableId: LewdFleshlights
+    - !type:NestedSelector
+      tableId: LewdDildos
+
+- type: entityTable
+  id: LewdLootKinky
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: LewdImpactPlay
+    - !type:NestedSelector
+      tableId: LewdKinkClothing
+    - !type:NestedSelector
+      tableId: LewdKinkTools
+
+- type: entityTable
+  id: LewdVibes
+  table: !type:GroupSelector
+    children:
+    - id: LewdWand
+    - id: LewdVibeGreen
+    - id: LewdVibeTeal
+    - id: LewdVibePink
+    - id: LewdVibeRed
+    - id: LewdVibeYellow
+
+- type: entityTable
+  id: LewdFleshlights
+  table: !type:GroupSelector
+    children:
+    - id: LewdFleshlightGreen
+    - id: LewdFleshlightTeal
+    - id: LewdFleshlightPink
+    - id: LewdFleshlightRed
+    - id: LewdFleshlightYellow
+
+- type: entityTable
+  id: LewdDildos
+  table: !type:GroupSelector
+    children:
+    - id: AvianDildo
+    - id: CanineDildo
+    - id: CanineDildoRed
+    - id: HorseDildo
+    - id: DragonDildo
+    - id: NormalDildo
+    - id: TentacleDildo
+    - id: DoubleDildo
+
+- type: entityTable
+  id: LewdImpactPlay
+  table: !type:GroupSelector
+    children:
+    - id: WhipPink
+    - id: WhipTeal
+    - id: WhipPinkCrotch
+    - id: WhipTealCrotch
+    - id: SpankPinkPaddle
+    - id: SpankTealPaddle
+    - id: Shinai
+      weight: 0.5
+
+- type: entityTable
+  id: LewdKinkClothing
+  table: !type:GroupSelector
+    children:
+    - id: UniformMaid
+    - id: ClothingUniformClassicalMaidDress
+    - id: ClothingUniformLoinClothBlack
+    - id: ClothingUniformLoinClothWhite
+    - id: ClothingNeckCloakRedHood
+    - id: ClothingUniformDressRed
+    - id: ClothingUniformSwimsuitBlue
+    - id: ClothingHeadHatCatEarsCosmetic
+    - id: ClothingMaskSexyClown
+    - id: ClothingMaskSexyMime
+    - id: ClothingMaskGasDrone
+    - id: ClothingUniformJumpsuitCatsuit
+    - id: ClothingUniformJumpsuitCatsuitShiny
+    - id: ClothingOuterShackles
+    # Putting some things in a group selector so they don't hog the table and roll too often
+    # Collars
+    - !type:GroupSelector
+      children:
+      - id: ClothingNeckCollarBlue
+      - id: ClothingNeckCollarBlack
+      - id: ClothingNeckCollarPink
+      - id: ClothingNeckBellCollar
+    # Schoolgirl uniforms
+    - !type:GroupSelector
+      children:
+      - id: UniformSchoolgirlRed
+      - id: UniformSchoolgirlBlack
+      - id: UniformSchoolgirlBlue
+      - id: UniformSchoolgirlCyan
+      - id: UniformSchoolgirlGreen
+      - id: UniformSchoolgirlOrange
+      - id: UniformSchoolgirlPink
+      - id: UniformSchoolgirlPurple
+      - id: UniformSchoolgirlDusk
+      - id: UniformSchoolgirlBlazerTan
+      - id: ClothingUniformSchoolGakuranBlack
+    # Clothing sets
+    # Miku
+    - !type:AllSelector
+      children:
+      - id: ClothingShoesBootsPerformer
+      - id: ClothingUniformJumpskirtPerformer
+      - id: FoodMealMemoryleek
+        amount: !type:ConstantNumberSelector { value: 2 }
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHatHoodNunHood
+      - id: ClothingOuterNunRobe
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHatHoodCulthood
+      - id: ClothingOuterRobesCult
+    - !type:AllSelector
+      children:
+      - id: ClothingCostumeBunnySuit
+      - id: ClothingHeadHatBunny
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadHatWitch
+      - id: ClothingOuterSuitWitchRobes
+      - id: HealthPotionFake
+        prob: 0.5
+      - id: ManaPotionFake
+        prob: 0.5
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadNurseHat
+      - id: ClothingUniformJumpskirtNurse
+      - id: ClothingMaskSterile
+        prob: 0.5
+      - id: ClothingNeckStethoscope
+        prob: 0.5
+    - !type:AllSelector
+      children:
+      - id: ClothingMaskPlague
+      - id: ClothingOuterPlagueSuit
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformThongPlain
+      - id: ClothingHandsPlainWarmers
+      - id: ClothingUnderSocksPlain
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformThongBee
+      - id: ClothingHandsBeeWarmers
+      - id: ClothingUnderSocksBee
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformThongCoder
+      - id: ClothingHandsCoderWarmers
+      - id: ClothingUnderSocksCoder
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformThongCoderValid
+      - id: ClothingHandsCoderValidWarmers
+      - id: ClothingUnderSocksCoderValid
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformStripedThongWhite
+      - id: ClothingHandsStripeWhiteWarmers
+      - id: ClothingUnderSocksStripedWhite
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformStripedThongPurple
+      - id: ClothingHandsStripePurpleWarmers
+      - id: ClothingUnderSocksStripedPurple
+    - !type:AllSelector
+      children:
+      - id: ClothingUniformStripedThongRainbow
+      - id: ClothingHandsStripeRainbowWarmers
+      - id: ClothingUnderSocksStripedRainbow
+    # Sex competition, this gives a circlet, randomly picks either the red or blue outfit, and one of the belts
+    - !type:AllSelector
+      children:
+      - id: ClothingHeadSexCompCirclet
+      - !type:GroupSelector
+        children:
+        - !type:AllSelector
+          children:
+          - id: ClothingUniformSexCompRed
+          - id: ClothingHandsSexCompGlovesRed
+          - id: ClothingUnderSexCompBootsRed
+        - !type:AllSelector
+          children:
+          - id: ClothingUniformSexCompBlue
+          - id: ClothingHandsSexCompGlovesBlue
+          - id: ClothingUnderSexCompBootsBlue
+      - !type:GroupSelector
+        children:
+        - id: ClothingOuterSexCompBeltGold
+          weight: 1
+        - id: ClothingOuterSexCompBeltSilver
+          weight: 2
+        - id: ClothingOuterSexCompBeltBronze
+          weight: 4
+
+- type: entityTable
+  id: LewdKinkTools
+  table: !type:GroupSelector
+    children:
+    - id: LeashBasic
+    - id: ClothingEyesHypnoVisor
+    - id: ClothingMaskGasMuffled
+    - id: ClothingMaskMuzzle
+    - id: ClothingEyesBlindfold
+    - id: DrinkCumBottleFull
+    - id: Handcuffs
+      weight: 0.5 # Making these a little rarer since they're power items
+    - id: Zipties # These should never actually be used for kink
+    - id: BoxCandle
+    - id: BoxCandleSmall
+    - id: BoxDarts # we don't have needles so these are the next best thing
+    - !type:AllSelector
+      children:
+      - id: ShockCollar
+      - id: RemoteSignaller

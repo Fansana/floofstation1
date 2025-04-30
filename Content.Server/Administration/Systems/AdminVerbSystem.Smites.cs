@@ -53,8 +53,8 @@ using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
 
 // Floof Station - For our own smites
-using Content.Server.Floofstation.Administration;
-using Content.Server.Floofstation.Administration.Components;
+using Content.Server._Floof.Administration;
+using Content.Server._Floof.Administration.Components;
 
 namespace Content.Server.Administration.Systems;
 
@@ -548,7 +548,7 @@ public sealed partial class AdminVerbSystem
             {
                 Text = "Horny sign",
                 Category = VerbCategory.Smite,
-                Icon = new SpriteSpecifier.Rsi(new ("/Textures/Floof/Objects/Misc/hornysign.rsi"), "icon"),
+                Icon = new SpriteSpecifier.Rsi(new ("/Textures/_Floof/Objects/Misc/hornysign.rsi"), "icon"),
                 Act = () =>
                 {
                     EnsureComp<HornySignComponent>(args.Target);

@@ -1,0 +1,12 @@
+- type: construction
+  name: envelope
+  id: paperEnvelope
+  graph: PaperEnvelope
+  startNode: start
+  targetNode: envelope
+  category: construction-category-tools
+  objectType: Item
+  description: Paper folded into a envelope.
+  icon:
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: envelope_open

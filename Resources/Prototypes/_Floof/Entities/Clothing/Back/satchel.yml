@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelMedicalSurgeonGeneral
+  name: surgeon general satchel.
+  description: A sterile satchel used by the Surgeon General. Tailor by SESWC
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Back/surgeongeneralsatchel.rsi

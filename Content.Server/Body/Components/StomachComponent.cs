@@ -1,5 +1,5 @@
 using Content.Server.Body.Systems;
-using Content.Server.Floofstation.Traits;
+using Content.Server._Floof.Traits;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;

@@ -41,7 +41,7 @@
   parent: JobIcon
   id: JobIconBoxer
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Floof/Interface/Misc/job_icons.rsi # Floof - Add consistency to service department jobicons
     state: Boxer
   jobName: job-name-boxer
 
@@ -73,7 +73,7 @@
   parent: JobIcon
   id: JobIconJanitor
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Floof/Interface/Misc/job_icons.rsi # Floof - Add consistency to service department jobicons
     state: Janitor
   jobName: job-name-janitor
 
@@ -321,7 +321,7 @@
   parent: JobIcon
   id: JobIconMusician
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_Floof/Interface/Misc/job_icons.rsi # Floof - Add consistency to service department jobicons
     state: Musician
   jobName: job-name-musician
 
@@ -403,7 +403,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorPhysician
-  allowSelection: false
+#  allowSelection: false # Floof - Allow senior role in ID computer and agent ID.
 
 - type: jobIcon
   parent: JobIcon
@@ -411,7 +411,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorOfficer
-  allowSelection: false
+#  allowSelection: false # Floof - Allow senior role in ID computer and agent ID.
 
 - type: jobIcon
   parent: JobIcon
@@ -419,7 +419,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorEngineer
-  allowSelection: false
+#  allowSelection: false # Floof - Allow senior role in ID computer and agent ID.
 
 - type: jobIcon
   parent: JobIcon
@@ -427,7 +427,7 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: SeniorResearcher
-  allowSelection: false
+#  allowSelection: false # Floof - Allow senior role in ID computer and agent ID.
 
 - type: jobIcon
   parent: JobIcon

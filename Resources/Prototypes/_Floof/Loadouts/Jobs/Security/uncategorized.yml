@@ -1,0 +1,182 @@
+# Uncategorized
+
+- type: loadout
+  id: LoadoutMagazineSpecialRubber
+  category: JobsSecurityAUncategorized
+  cost: 2
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecialRubber
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecialRubberSpare
+  category: JobsSecurityAUncategorized
+  cost: 4
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecialRubber
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecial
+  category: JobsSecurityAUncategorized
+  cost: 2
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecial
+
+- type: loadout
+  id: LoadoutSpeedLoaderSpecialSpare
+  category: JobsSecurityAUncategorized
+  cost: 4
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderSpecial
+
+# Backpack
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Service Weapon
+
+# Eyes
+
+# Gloves
+- type: loadout
+  id: LoadoutClothingHandsSecurityWarmers
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsSecurityWarmers
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+
+# Head
+
+# Id
+
+# Neck
+- type: loadout
+  id: LoadoutSecurityNeckCollar
+  category: JobsSecurityAUncategorized
+  cost: 1
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+  items:
+  - ClothingNeckCollarSec
+
+# Mask
+- type: loadout
+  id: LoadoutSecurityMaskGasSecurity
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingMaskGasSecurity
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityMask
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Brigmedic
+
+# Outer
+- type: loadout
+  id: LoadoutClothingLongcoatSec
+  category: JobsSecurityAUncategorized
+  cost: 0 # same as the other armor
+  exclusive: true
+  items:
+  - ClothingLongcoatSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityOuter
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security
+
+# Shoes
+- type: loadout
+  id: LoadoutClothingUnderSocksSecurity
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksSecurity
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+
+# Uniforms
+- type: loadout
+  id: LoadoutClothingUniformSecurityThong
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformSecurityThong
+  requirements:
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+
+- type: loadout
+  id: ClothingUniformJumpskirtSec
+  category: JobsSecurityAUncategorized
+  cost: 0 # same as the other uniforms
+  exclusive: true
+  items:
+  - ClothingUniformJumpskirtSec
+  requirements:
+  - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityUniforms
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Security

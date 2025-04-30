@@ -4,6 +4,7 @@
   roundStart: true
   prototype: MobIPC
   sprites: MobIPCSprites
+  defaultSkinTone: "#aaa9ad"
   markingLimits: MobIPCMarkingLimits
   dollPrototype: MobIPCDummy
   skinColoration: Hues
@@ -28,7 +29,10 @@
 - type: speciesBaseSprites
   id: MobIPCSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobIPCHead
+    Face: MobHumanoidAnyMarking
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
@@ -50,15 +54,18 @@
   id: MobIPCMarkingLimits
   points:
     Underwear:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
-    Undershirt:
-      points: 1 # Floof, add underwear
+    Undershirt: # FLOOF CHANGE
+      points: 2 # Floof, add underwear
       required: false
     Head:
       points: 1
       required: true
       defaultMarkings: [ MobIPCHeadDefault ]
+    Face:
+      points: 1
+      required: false
     Chest:
       points: 1
       required: true
@@ -131,7 +138,7 @@
   id: MobIPCHeadDefault
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: head_m
@@ -151,7 +158,7 @@
   id: MobIPCTorsoDefault
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: torso_m
@@ -160,7 +167,7 @@
   id: MobIPCTorsoFemaleDefault
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: torso_f
@@ -174,7 +181,7 @@
   id: MobIPCLLegDefault
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: l_leg
@@ -188,7 +195,7 @@
   id: MobIPCLArmDefault
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: l_arm
@@ -202,7 +209,7 @@
   id: MobIPCLHandDefault
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: l_hand
@@ -216,7 +223,7 @@
   id: MobIPCLFootDefault
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: l_foot
@@ -230,7 +237,7 @@
   id: MobIPCRLegDefault
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: r_leg
@@ -244,7 +251,7 @@
   id: MobIPCRArmDefault
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: r_arm
@@ -258,7 +265,7 @@
   id: MobIPCRHandDefault
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: r_hand
@@ -272,7 +279,7 @@
   id: MobIPCRFootDefault
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [IPC]
+  speciesRestriction: [ IPC ]
   sprites:
   - sprite: Mobs/Species/IPC/parts.rsi
     state: r_foot

@@ -1,0 +1,29 @@
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateLewd
+  name: lewd crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/lewdcrate.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/lewdcrate.rsi
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90
+
+- type: entity
+  parent: CrateBaseWeldable
+  id: CrateKink
+  name: kink crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/kinkcrate.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/kinkcrate.rsi
+  - type: Reflect
+    reflects:
+    - Energy
+    reflectProb: 0.2
+    spread: 90

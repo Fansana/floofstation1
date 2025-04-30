@@ -16,6 +16,8 @@
 - type: speciesBaseSprites
   id: MobChitinidSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobChitinidHead
     Snout: MobHumanoidAnyMarking
     Chest: MobChitinidTorso
@@ -45,11 +47,11 @@
   id: MobChitinidMarkingLimits
   onlyWhitelisted: true
   points:
-    Underwear: # Floofstation
-      points: 1
+    Underwear: # Floofstation # FLOOF CHANGE
+      points: 2
       required: false
-    Undershirt: # Floofstation
-      points: 1
+    Undershirt: # Floofstation # FLOOF CHANGE
+      points: 2
       required: false
     Hair:
       points: 0
