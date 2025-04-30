@@ -1,0 +1,83 @@
+# Base lockable entity that specifies no masters and does not reveal any information. Use for syndicate and other generic lockers.
+- type: entity
+  id: IdLockableBaseNoAccess
+  abstract: true
+  components:
+  - type: IdLock
+    revealInfo: false
+    lockSound:
+      path: /Audio/Effects/double_beep.ogg
+    unlockSound:
+      path: /Audio/Effects/double_beep.ogg
+
+# A base lockable entity that can be privitized using an ID card.
+# Inheritors should provide additional masterAccesses based on the department.
+- type: entity
+  id: IdLockableBase
+  parent: IdLockableBaseNoAccess
+  abstract: true
+  components:
+  - type: IdLock
+    masterAccesses: [ CentralCommand, Captain, HeadOfPersonnel ]
+
+# A base lockable entity whose ID lock has to be enabled first (typically via construction)
+- type: entity
+  id: IdLockableBaseDisabled
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    enabled: false
+
+# Base lockable disabled versions for specific departments
+# NOTE: command lockers are NOT to inherit from those.
+# Why? Because if one CMO was to engage an ID lock on their locker, another CMO could easily open it using their own ID as a master key.
+- type: entity
+  id: IdLockableBaseService
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    revealInfo: true
+
+# The below only list the direct masters. Captain, HoP, and central command master accesses are inherited.
+- type: entity
+  id: IdLockableBaseLogistics
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    revealInfo: true
+    masterAccesses: [ Quartermaster ]
+
+- type: entity
+  id: IdLockableBaseMedical
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    masterAccesses: [ ChiefMedicalOfficer ]
+
+- type: entity
+  id: IdLockableBaseEngineering
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    masterAccesses: [ ChiefEngineer ]
+
+- type: entity
+  id: IdLockableBaseResearch
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    masterAccesses: [ ResearchDirector ]
+
+- type: entity
+  id: IdLockableBaseSecurity
+  parent: IdLockableBase
+  abstract: true
+  components:
+  - type: IdLock
+    masterAccesses: [ HeadOfSecurity, Armory ]
