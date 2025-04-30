@@ -135,5 +135,5 @@
   kind: source
   path: "/Textures/Shaders/nightvision.swsl"
   params:
-    NVDSnow: 1.0 # Floof - M3739 - A temporary solution while I figure out how to make this a component parameter
-    darkvision: 1.0 # Floof - M3739 - A temporary solution while I figure out how to make this a component parameter
+    nvdsnow: 0 # Floof - M3739 - A temporary solution while I figure out how to make this a component parameter
+    darkvision: 0 # Floof - M3739 - A temporary solution while I figure out how to make this a component parameter

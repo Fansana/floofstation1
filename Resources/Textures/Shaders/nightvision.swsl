@@ -8,7 +8,7 @@ light_mode unshaded;
 
 uniform sampler2D SCREEN_TEXTURE;
 uniform highp vec3 tint; // Colour of the tint
-uniform highp float NVDSnow; // Floof - Visual artifact intensity, a number between 0 and 1
+uniform highp float nvdsnow; // Floof - Visual artifact intensity, a number between 0 and 1
 uniform highp float luminance_threshold; // number between 0 and 1
 uniform highp float noise_amount; // number between 0 and 1
 uniform highp float darkvision; // Floof - 1.0 = grayscale, 0.0 = color
@@ -58,7 +58,7 @@ void fragment() {
 
     //Floof - Add snow-like static noise for realism
     highp vec2 snow_uv = FRAGCOORD.xy * 0.005; // Static scaled to screen space
-    lowp float snow = snow_noise(snow_uv) * NVDSnow;
+    lowp float snow = snow_noise(snow_uv) * NvdSnow;
     
     //Floof - Apply snow effect to the final color
     color.rgb += snow * 0.15;
