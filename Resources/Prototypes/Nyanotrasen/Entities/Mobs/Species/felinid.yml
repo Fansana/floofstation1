@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Sprite
-    scale: 0.8, 0.8
+    #scale: 0.8, 0.8 Floofstation - while this doesn't technically cause any issues, this creates potential instability if changes to the heightAdjust system are made. As someone who made changes to the heightAdjust system, this can be very confusing.
   - type: HumanoidAppearance
     species: Felinid
   - type: Fixtures
@@ -14,7 +14,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.28
+          radius: 0.35 # Floofstation - changed from 0.28. Default shape scaling is both not needed and causes issues due to EE's heightAdjust system. 0.35 is standard, DeltaV used 0.28 to shrink their size to 80%
         density: 140
         restitution: 0.0
         mask:

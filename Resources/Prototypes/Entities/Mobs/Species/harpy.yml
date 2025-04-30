@@ -69,7 +69,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.32
+          radius: 0.35 # Floofstation - changed from 0.32. Default shape scaling is both not needed and causes issues due to EE's heightAdjust system. 0.35 is standard, originator used 0.32 to shrink their size to 90%
         density: 90
         restitution: 0.0
         mask:
@@ -149,7 +149,7 @@
     speciesId: harpy
     templateId: digitigrade
   - type: Sprite
-    scale: 0.9, 0.9
+    #scale: 0.9, 0.9 Floofstation - while this doesn't technically cause any issues, this creates potential instability if changes to the heightAdjust system are made. As someone who made changes to the heightAdjust system, this can be very confusing.
     layers:
       - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
