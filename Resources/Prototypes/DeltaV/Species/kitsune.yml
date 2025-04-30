@@ -6,10 +6,11 @@
   sprites: MobHumanSprites
   markingLimits: MobKitsuneMarkingLimits
   dollPrototype: MobKitsuneDummy
-  skinColoration: HumanToned
-  baseScale: 1, 1
-  minHeight: .85
-  maxHeight: 1.05
+  skinColoration: Hues # Floof - M3739 - Yokai
+#  baseScale: 1, 1 | Floof - M3739 - Yokai
+#  minHeight: .85 | Floof - M3739 - Yokai
+#  maxHeight: 1.05 | Floof - M3739 - Yokai
+  customName: true # Floof - M3739 - Yokai
 
 - type: markingPoints
   id: MobKitsuneMarkingLimits
