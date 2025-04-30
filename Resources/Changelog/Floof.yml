@@ -5112,3 +5112,16 @@ Entries:
   id: 539
   time: '2025-04-30T20:32:30.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/897
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Added the ability to restrict specific lockable structures (lockers,
+        secure crates, etc) to a particular ID.
+    - type: Add
+      message: >-
+        All departmental closets and secure crates can now be upgraded to
+        ID-lockable variants. See the construction menu for more details.
+  id: 540
+  time: '2025-04-30T21:16:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/521
