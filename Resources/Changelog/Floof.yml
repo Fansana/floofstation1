@@ -5125,3 +5125,12 @@ Entries:
   id: 540
   time: '2025-04-30T21:16:47.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/521
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        The PDA always beeps when you get a message, even if the conversation is
+        already open. Dont worry, you can still mute it!
+  id: 541
+  time: '2025-04-30T21:36:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/891
