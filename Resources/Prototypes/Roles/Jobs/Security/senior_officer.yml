@@ -5,27 +5,9 @@
   playTimeTracker: JobSeniorOfficer
   setPreference: true # DeltaV - Disable Senior Roles round start selection #floof - toggle to true to reenable
   requirements:
-    - !type:CharacterDepartmentTimeRequirement # Floofstation
-      department: Security # Floofstation
-      min: 144000 # Floofstation 40 hrs# Floofstation
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobSecurityOfficer # Floofstation
-      min: 21600 # Floofstation - 6 hour
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobWarden # Floofstation
-      min: 21600 # Floofstation - 6 hour
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobDetective # Floofstation
-      min: 21600 # Floofstation - 6 hour
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobPrisonGuard # Floofstation
-      min: 9000 # Floofstation - 2.5 hour
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobBrigmedic # Floofstation
-      min: 9000 # Floofstation - 2.5 hour
-    - !type:CharacterPlaytimeRequirement # Floofstation
-      tracker: JobHeadOfSecurity # Floofstation
-      min: 21600 # Floofstation - 6 hour
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 144000 # Floofstation 40 hrs
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos

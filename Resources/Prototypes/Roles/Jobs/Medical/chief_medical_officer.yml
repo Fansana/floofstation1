@@ -9,16 +9,7 @@
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
-      min: 144000 # Floofstation 40 hrs
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobMedicalDoctor  # a senior should know how to teach and command a department when CE flick licks the SM
-      min: 21600 # Floof 12 hours
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobChemist
-      min: 21600 # Floof 12 hours
-    - !type:CharacterPlaytimeRequirement # Floof
-      tracker: JobParamedic
-      min: 21600 # Floof 12 hours
+      min: 57600 # Floofstation - 16 hour
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

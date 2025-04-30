@@ -6,10 +6,6 @@
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
-  requirements:
-    - !type:CharacterPlaytimeRequirement #floof
-      tracker: JobMedicalDoctor
-      min: 9000 #2.5 hours Floof
   access:
   - Medical
   - Chemistry
