@@ -2,7 +2,7 @@
   parent: JobIcon
   id: JobIconInventorySpecialist
   icon:
-    sprite: /Textures/Floof/Interface/Misc/floof_job_icons.rsi
+    sprite: /Textures/_Floof/Interface/Misc/floof_job_icons.rsi
     state: InventorySpecialist
   jobName: job-name-invspec
 
