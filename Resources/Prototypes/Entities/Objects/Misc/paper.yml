@@ -808,7 +808,7 @@
             - Paper
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
-    requireHands: false
+    requireComplex: false
   - type: UserInterface
     interfaces:
       enum.PaperUiKey.Key:
