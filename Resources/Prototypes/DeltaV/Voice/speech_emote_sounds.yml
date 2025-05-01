@@ -340,10 +340,10 @@
       collection: KitsuneSqueal
     Growl:
       collection: KitsuneGrowl
-    Gasp:
-      collection: MaleGasp
-    DefaultDeathgasp:
-      collection: MaleDeathGasp
+#    Gasp: | Floof - M3739 - Yokai - We do not have these... yet.
+#      collection: MaleGasp
+#    DefaultDeathgasp: 
+#      collection: MaleDeathGasp
 
 - type: emoteSounds
   id: FemaleKitsune
@@ -376,7 +376,7 @@
       collection: KitsuneSqueal
     Growl:
       collection: KitsuneGrowl
-    Gasp:
-      collection: FemaleGasp
-    DefaultDeathgasp:
-      collection: FemaleDeathGasp
+#    Gasp: | Floof - M3739 - Yokai - We do not have these... yet.
+#      collection: FemaleGasp
+#    DefaultDeathgasp: 
+#      collection: FemaleDeathGasp
