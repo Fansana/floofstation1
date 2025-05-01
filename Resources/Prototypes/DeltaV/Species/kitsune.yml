@@ -6,12 +6,16 @@
   sprites: MobHumanSprites
   markingLimits: MobKitsuneMarkingLimits
   dollPrototype: MobKitsuneDummy
-  skinColoration: Hues # Floof - M3739 - Yokai
-#  baseScale: 1, 1 | Floof - M3739 - Yokai
-#  minHeight: .85 | Floof - M3739 - Yokai
-#  maxHeight: 1.05 | Floof - M3739 - Yokai
-  customName: true # Floof - M3739 - Yokai
-
+# Floof - M3739 - Yokai | Begin Changes
+  skinColoration: Hues 
+  minHeight: 0.65 # Floof - M3739 - Yokai | Values copied over from Rodentia and Felinids, Kitsune are small.
+  defaultHeight: 0.8 
+  maxHeight: 1.1 
+  minWidth: 0.6 
+  defaultWidth: 0.8 
+  maxWidth: 1.15  
+  customName: true 
+# Floof - M3739 - Yokai | End Changes
 - type: markingPoints
   id: MobKitsuneMarkingLimits
   points:
