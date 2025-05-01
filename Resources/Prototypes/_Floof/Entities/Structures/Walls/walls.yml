@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseWall
+  parent: WallReinforced
   id: WallCamoReinforced
   name: camo reinforced wall
   components:
@@ -7,52 +7,3 @@
     sprite: _Floof/Structures/Walls/camo.rsi
   - type: Icon
     sprite: _Floof/Structures/Walls/camo.rsi
-    state: rgeneric
-  - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallicStrong
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 600
-      behaviors:
-      - !type:PlaySoundBehavior #Nyano
-        sound:
-          collection: MetalBreak
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-    - trigger:
-        !type:DamageTrigger
-        damage: 400
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalSlam
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-  - type: IconSmooth
-    key: walls
-    base: reinf_over
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ReinforcedWallVisuals.DeconstructionStage:
-        ReinforcedWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: reinf_construct-0, visible: true}
-          1: { state: reinf_construct-1, visible: true}
-          2: { state: reinf_construct-2, visible: true}
-          3: { state: reinf_construct-3, visible: true}
-          4: { state: reinf_construct-4, visible: true}
-          5: { state: reinf_construct-5, visible: true}
-  - type: ReinforcedWallReplacementMarker
-  - type: StaticPrice
-    price: 150
-  - type: RadiationBlocker
-    resistance: 8

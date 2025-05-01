@@ -53,10 +53,6 @@
     sprite: _Floof/Clothing/Head/pilothelmet.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Head/pilothelmet.rsi
-  - type: Tag
-    tags:
-    - HelmetEVA
-    - WhitelistChameleon
   - type: Armor
     modifiers:
       coefficients:
@@ -64,14 +60,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadSide
-    - HeadTop
-  - type: IngestionBlocker
-  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingHeadEVAHelmetBase
@@ -84,10 +72,6 @@
     sprite: _Floof/Clothing/Head/ocularhelmet.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Head/ocularhelmet.rsi
-  - type: Tag
-    tags:
-    - HelmetEVA
-    - WhitelistChameleon
   - type: Armor
     modifiers:
       coefficients:
@@ -95,14 +79,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadSide
-    - HeadTop
-  - type: IngestionBlocker
-  - type: IdentityBlocker
 
 - type: entity
   parent: ClothingHeadEVAHelmetBase
@@ -115,10 +91,6 @@
     sprite: _Floof/Clothing/Head/starhelmet.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Head/starhelmet.rsi
-  - type: Tag
-    tags:
-    - HelmetEVA
-    - WhitelistChameleon
   - type: Armor
     modifiers:
       coefficients:
@@ -126,11 +98,3 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
-  - type: HideLayerClothing
-    slots:
-    - Hair
-    - Snout
-    - HeadSide
-    - HeadTop
-  - type: IngestionBlocker
-  - type: IdentityBlocker

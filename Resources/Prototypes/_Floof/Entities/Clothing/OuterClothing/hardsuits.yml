@@ -14,7 +14,7 @@
     coefficient: 0.5 # 50%
     
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ClothingOuterEVASuitBase, ClothingOuterStorageBase]
   id: ClothingOuterHardsuitFreelancerPilot
   name: FL-02bt - "Pilot" Freelancer Softsuit
   description: A armored soft suit. "Maximum speed for minimal protection."
@@ -23,9 +23,6 @@
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitpilot.rsi
   - type: Clothing
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitpilot.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.5
-    lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: Armor
@@ -40,23 +37,11 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
-  - type: HeldSpeedModifier
   - type: StaminaDamageResistance
     coefficient: 0.60 
-  - type: Storage
-    grid:
-    - 0,0,2,1
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
     
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ClothingOuterEVASuitBase, ClothingOuterStorageBase]
   id: ClothingOuterHardsuitFreelancerLegion
   name: FL-03a - "Legion" Freelancer Softsuit
   description: A medium armored soft suit. "You ask if its reliable? We say a ton."
@@ -65,9 +50,6 @@
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitlegion.rsi
   - type: Clothing
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitlegion.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.5
-    lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.4
   - type: Armor
@@ -82,24 +64,12 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
-  - type: HeldSpeedModifier
   - type: StaminaDamageResistance
     coefficient: 0.60
-  - type: Storage
-    grid:
-    - 0,0,2,1
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
     
     
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ClothingOuterEVASuitBase, ClothingOuterStorageBase]
   id: ClothingOuterHardsuitFreelancerNorthstar
   name: FL-04x - "Northstar" Freelancer Softsuit
   description: A medium armored soft suit with build and advanced non functioning cloaking system. "When the clouds clear you will see the light of the Northstar"
@@ -108,9 +78,6 @@
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitnorthstar.rsi
   - type: Clothing
     sprite: _Floof/Clothing/OuterClothing/Hardsuits/softsuitnorthstar.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.5
-    lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: Armor
@@ -125,18 +92,5 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
-  - type: HeldSpeedModifier
   - type: StaminaDamageResistance
     coefficient: 0.40
-  - type: Storage
-    grid:
-    - 0,0,2,1
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-    
