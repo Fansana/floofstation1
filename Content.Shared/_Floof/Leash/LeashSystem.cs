@@ -144,6 +144,7 @@ public sealed class LeashSystem : EntitySystem
         if (TryGetLeashTarget(args.Equipment, out var leashTarget)
             && TryComp<LeashedComponent>(leashTarget, out var leashed)
             && leashed.Puller is not null
+            && leashed.Anchor == args.Equipment
            )
             args.Cancel();
     }
