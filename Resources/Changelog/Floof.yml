@@ -5134,3 +5134,12 @@ Entries:
   id: 541
   time: '2025-04-30T21:36:31.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/891
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer eat paintbrushes. At least not without using a
+        utensil.
+  id: 542
+  time: '2025-05-01T01:58:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/904
