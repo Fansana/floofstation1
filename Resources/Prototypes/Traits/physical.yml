@@ -808,7 +808,6 @@
         - type: CritModifier
           critThresholdModifier: -50
 
-
 - type: trait
   id: BionicLeg #was removed upstream due to goobstation powergaming but we get less powergaming here so it's probably fine
   category: Physical
