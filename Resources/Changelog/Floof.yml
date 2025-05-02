@@ -5143,3 +5143,14 @@ Entries:
   id: 542
   time: '2025-05-01T01:58:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/904
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added two versions of Halberds - a new type of melee energy weapons.
+    - type: Add
+      message: >-
+        Halberds can now be researched, purchased from the syndicate uplink, and
+        found in the Warden's locker.
+  id: 543
+  time: '2025-05-02T23:27:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/858
