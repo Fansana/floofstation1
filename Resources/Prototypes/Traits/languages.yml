@@ -1,7 +1,7 @@
 - type: trait
   id: SignLanguage
   category: TraitsSpeechLanguages
-  points: -1
+  points: 0
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesBasic
