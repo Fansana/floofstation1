@@ -485,17 +485,16 @@
           damage:
             types:
               Blunt: 6
-
+              
 - type: trait
   id: Spinarette
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -510,7 +509,10 @@
           action: ActionSericulture
           productionLength: 2
           entityProduced: MaterialWebSilk1
-          hungerCost: 4
+          hungerCost: 1
+    - !type:TraitAddTag
+      tags:
+        - SpiderCraft
 
 - type: trait
   id: BionicArm
