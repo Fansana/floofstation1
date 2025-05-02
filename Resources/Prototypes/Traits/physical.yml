@@ -818,8 +818,6 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-    - !type:CharacterItemGroupRequirement
-      group: TraitsMind
   functions:
     - !type:TraitPushDescription
       descriptionExtensions:
