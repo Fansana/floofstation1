@@ -477,11 +477,12 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
         if (recipient.Comp.NotificationsMuted ||
             recipient.Comp.PdaUid is not {} pdaUid ||
-            !TryComp<CartridgeLoaderComponent>(pdaUid, out var loader) ||
-            // Don't notify if the recipient has the NanoChat program open with this chat selected.
+            !TryComp<CartridgeLoaderComponent>(pdaUid, out var loader) /* || // FLOOF CHANGE - just make it always beep
+            Don't notify if the recipient has the NanoChat program open with this chat selected.
             (hasSelectedCurrentChat &&
                 _ui.IsUiOpen(pdaUid, PdaUiKey.Key) &&
-                HasComp<NanoChatCartridgeComponent>(loader.ActiveProgram)))
+                HasComp<NanoChatCartridgeComponent>(loader.ActiveProgram)) */
+            )
             return;
 
         var title = "";
