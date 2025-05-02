@@ -1,13 +1,8 @@
 using Content.Server.Announcements.Systems;
 using System.Linq;
-using Content.Shared.Dataset;
 using Content.Server.Ghost.Roles.Components;
-using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
 using Content.Shared.GameTicking.Components;
-using Content.Shared.Random.Helpers;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Random;
 
 
 namespace Content.Server.StationEvents.Events;
@@ -17,12 +12,7 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
 {
     [Dependency] private readonly AnnouncerSystem _announcer = default!;
 
-    protected override void Started(
-        EntityUid uid,
-        RandomSentienceRuleComponent component,
-        GameRuleComponent gameRule,
-        GameRuleStartedEvent args
-    )
+    protected override void Started(EntityUid uid, RandomSentienceRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
         HashSet<EntityUid> stationsToNotify = new();
 
@@ -70,7 +60,7 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
         foreach (var station in stationsToNotify)
         {
             ChatSystem.DispatchStationAnnouncement(
-                station.Value,
+                station,
                 Loc.GetString(
                     "station-event-random-sentience-announcement",
                     ("kind1", kind1),
@@ -78,10 +68,8 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
                     ("kind3", kind3),
                     ("amount", groupList.Count),
                     ("data", Loc.GetString($"random-sentience-event-data-{RobustRandom.Next(1, 6)}")),
-                    ("strength", Loc.GetString($"random-sentience-event-strength-{RobustRandom.Next(1, 8)}")));
+                    ("strength", Loc.GetString($"random-sentience-event-strength-{RobustRandom.Next(1, 8)}"))));
         }
     }
 }
 
-
-}
