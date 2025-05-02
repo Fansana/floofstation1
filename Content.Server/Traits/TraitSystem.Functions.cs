@@ -20,6 +20,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Damage.Components;
 using Content.Shared.NPC.Systems;
+using Content.Shared.Tag;
 
 namespace Content.Server.Traits;
 
@@ -583,5 +584,24 @@ public sealed partial class TraitModifySlowOnDamage : TraitFunction
             newSpeedModifierThresholds[damageThreshold + DamageThresholdsModifier] = 1 - (1 - speedModifier) * SpeedModifierMultiplier;
 
         slowOnDamage.SpeedModifierThresholds = newSpeedModifierThresholds;
+    }
+}
+
+// <summary>
+// Adds a Tag to something
+// </summary>
+[UsedImplicitly]
+public sealed partial class TraitAddTag : TraitFunction
+{
+    [DataField, AlwaysPushInheritance]
+    public List<ProtoId<TagPrototype>> Tags { get; private set; } = new();
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        var tagSystem = entityManager.System<TagSystem>();
+        tagSystem.AddTags(uid, Tags);
     }
 }
