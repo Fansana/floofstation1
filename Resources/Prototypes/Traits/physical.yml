@@ -323,6 +323,7 @@
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
         - Resomi # Floof - have this by default after porting Goob changes
+        - Kitsune # Floof - M3739 - Yokai - Kitsune have this by default.
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
