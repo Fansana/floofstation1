@@ -5105,3 +5105,87 @@ Entries:
   id: 538
   time: '2025-04-28T22:50:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/896
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Rodentia and Chitinid now get hungry at the intended rate.
+  id: 539
+  time: '2025-04-30T20:32:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/897
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Added the ability to restrict specific lockable structures (lockers,
+        secure crates, etc) to a particular ID.
+    - type: Add
+      message: >-
+        All departmental closets and secure crates can now be upgraded to
+        ID-lockable variants. See the construction menu for more details.
+  id: 540
+  time: '2025-04-30T21:16:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/521
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        The PDA always beeps when you get a message, even if the conversation is
+        already open. Dont worry, you can still mute it!
+  id: 541
+  time: '2025-04-30T21:36:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/891
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer eat paintbrushes. At least not without using a
+        utensil.
+  id: 542
+  time: '2025-05-01T01:58:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/904
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added two versions of Halberds - a new type of melee energy weapons.
+    - type: Add
+      message: >-
+        Halberds can now be researched, purchased from the syndicate uplink, and
+        found in the Warden's locker.
+  id: 543
+  time: '2025-05-02T23:27:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/858
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added night vision goggle
+    - type: Add
+      message: Added thermal vision goggle
+    - type: Add
+      message: Deathsquad helmet now grants night and thermal vision.
+    - type: Add
+      message: Ninja visor now grants night vision.
+    - type: Tweak
+      message: Some animals have gained night vision.
+    - type: Tweak
+      message: Xenos have gained night vision.
+  id: 544
+  time: '2025-05-03T01:15:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/880
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added 2 new traits related to CyberEyes. Light Amplification Module, and
+        Thermographic Scanner Module. 
+  id: 545
+  time: '2025-05-03T01:17:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/881
+- author: teeny
+  changes:
+    - type: Tweak
+      message: >-
+        Updated Oni to have all anthropomorphic Tail/Snout markings available to
+        humans.
+  id: 546
+  time: '2025-05-03T02:06:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/909
