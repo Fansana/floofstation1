@@ -428,6 +428,8 @@
     color: white
     selectableColor: true
     capacity: 500
+  - type: Food
+    utensilRequired: true # I ate my fucking paintbrush
   - type: SolutionContainerManager
     solutions:
       food:

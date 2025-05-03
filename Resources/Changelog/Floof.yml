@@ -5134,3 +5134,87 @@ Entries:
   id: 541
   time: '2025-04-30T21:36:31.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/891
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer eat paintbrushes. At least not without using a
+        utensil.
+  id: 542
+  time: '2025-05-01T01:58:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/904
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added two versions of Halberds - a new type of melee energy weapons.
+    - type: Add
+      message: >-
+        Halberds can now be researched, purchased from the syndicate uplink, and
+        found in the Warden's locker.
+  id: 543
+  time: '2025-05-02T23:27:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/858
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added night vision goggle
+    - type: Add
+      message: Added thermal vision goggle
+    - type: Add
+      message: Deathsquad helmet now grants night and thermal vision.
+    - type: Add
+      message: Ninja visor now grants night vision.
+    - type: Tweak
+      message: Some animals have gained night vision.
+    - type: Tweak
+      message: Xenos have gained night vision.
+  id: 544
+  time: '2025-05-03T01:15:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/880
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added 2 new traits related to CyberEyes. Light Amplification Module, and
+        Thermographic Scanner Module. 
+  id: 545
+  time: '2025-05-03T01:17:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/881
+- author: teeny
+  changes:
+    - type: Tweak
+      message: >-
+        Updated Oni to have all anthropomorphic Tail/Snout markings available to
+        humans.
+  id: 546
+  time: '2025-05-03T02:06:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/909
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Ported Station AI.
+    - type: Tweak
+      message: Disabled Station AI Job as it is still unplayable.
+  id: 547
+  time: '2025-05-03T03:01:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/903
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: tweaked friction remover system
+    - type: Fix
+      message: fixed inertia dampening system resetting or effecting the wrong grid
+    - type: Remove
+      message: Removed overcomplicated alterations
+  id: 548
+  time: '2025-05-03T03:56:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/907
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added vent variety back into the game '
+    - type: Tweak
+      message: Tweaked spawn values and event frequency
+  id: 549
+  time: '2025-05-03T15:07:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/898
