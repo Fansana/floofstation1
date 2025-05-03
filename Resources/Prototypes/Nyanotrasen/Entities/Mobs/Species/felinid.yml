@@ -90,12 +90,7 @@
     - FootstepSound
     - DoorBumpOpener
     - FelinidEmotes
-    # Floofstation - Start
-  - type: NightVision
-    color: "#808080"
-    activateSound: null
-    deactivateSound: null
-    # Floofstation - End
+
   - type: DamageForceSay # Floofstation - added unqiue pain messages
     forceSayStringPrefix: damage-force-say-felinid-
     forceSayStringCount: 7 # Default is 7, but defining it anyway in case it changes or someone wants to add/remove messages
