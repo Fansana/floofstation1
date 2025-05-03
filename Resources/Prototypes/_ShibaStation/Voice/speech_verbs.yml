@@ -1,0 +1,18 @@
+- type: speechVerb
+  id: Abductor
+  name: chat-speech-verb-name-abductor
+  speechVerbStrings:
+  - chat-speech-verb-abductor-1
+  - chat-speech-verb-abductor-2
+  - chat-speech-verb-abductor-3
+  - chat-speech-verb-abductor-4
+  - chat-speech-verb-abductor-5
+
+- type: speechVerb
+  id: Ariral
+  name: chat-speech-verb-name-ariral
+  speechVerbStrings:
+  - chat-speech-verb-ariral-1
+  - chat-speech-verb-ariral-2
+  - chat-speech-verb-ariral-3
+  - chat-speech-verb-ariral-4

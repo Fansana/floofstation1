@@ -1,0 +1,50 @@
+- type: body
+  name: "ariral"
+  id: Ariral
+  root: torso
+  slots:
+    head:
+      part: HeadAriral
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoAriral
+      connections: # Goobstation - fix some species having their hands the wrong way around
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed Change
+      organs:
+        heart: OrganAriralHeart
+        lungs: OrganAriralLungs
+        stomach: OrganAriralStomach
+        liver: OrganAriralLiver
+        kidneys: OrganAriralKidneys
+    right arm:
+      part: RightArmAriral
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmAriral
+      connections:
+      - left hand
+    right hand:
+      part: RightHandAriral
+    left hand:
+      part: LeftHandAriral
+    right leg:
+      part: RightLegAriral
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegAriral
+      connections:
+      - left foot
+    right foot:
+      part: RightFootAriral
+    left foot:
+      part: LeftFootAriral

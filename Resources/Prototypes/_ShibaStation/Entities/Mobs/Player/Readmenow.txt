@@ -1,0 +1,1 @@
+For this one you can just replace the BaseMobAriral with BaseMobHuman. I would still keep a backup of the code though
