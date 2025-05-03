@@ -5209,3 +5209,12 @@ Entries:
   id: 548
   time: '2025-05-03T03:56:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/907
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added vent variety back into the game '
+    - type: Tweak
+      message: Tweaked spawn values and event frequency
+  id: 549
+  time: '2025-05-03T15:07:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/898
