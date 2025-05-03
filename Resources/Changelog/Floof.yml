@@ -5198,3 +5198,14 @@ Entries:
   id: 547
   time: '2025-05-03T03:01:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/903
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: tweaked friction remover system
+    - type: Fix
+      message: fixed inertia dampening system resetting or effecting the wrong grid
+    - type: Remove
+      message: Removed overcomplicated alterations
+  id: 548
+  time: '2025-05-03T03:56:07.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/907
