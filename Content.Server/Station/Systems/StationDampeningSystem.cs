@@ -20,13 +20,14 @@ public sealed class StationDampeningSystem : EntitySystem
             if (!TryComp<PassiveDampeningComponent>(grid, out var dampening))
                 dampening = AddComp<PassiveDampeningComponent>(grid);
 
-            EntityManager.TryGetComponent(grid, out ShuttleComponent? shuttleComponent);
-
+            // Floofstation - changed this to NOT ignore station-defined dampening.
             // PassiveDampeningComponent conflicts with shuttles cruise control a frontier QOL and is resetting dampeners causing issues.
             // so if a station which shuttles have the station component too, then don't reset the physics to a near off state when it gets bumped
-            dampening.Enabled = true;
-            dampening.LinearDampening = shuttleComponent?.LinearDamping ?? 0.01f;
-            dampening.AngularDampening = shuttleComponent?.AngularDamping ?? 0.01f;
+            if (TryComp(grid, out ShuttleComponent? shuttleComponent)) {
+                dampening.Enabled = true;
+                dampening.LinearDampening = shuttleComponent?.LinearDamping ?? 0.01f;
+                dampening.AngularDampening = shuttleComponent?.AngularDamping ?? 0.01f;
+            }
 
         }
     }
