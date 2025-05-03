@@ -5209,3 +5209,59 @@ Entries:
   id: 548
   time: '2025-05-03T03:56:07.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/907
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added vent variety back into the game '
+    - type: Tweak
+      message: Tweaked spawn values and event frequency
+  id: 549
+  time: '2025-05-03T15:07:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/898
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed a few major bugs with leashes. Again.
+  id: 550
+  time: '2025-05-03T16:38:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/899
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed a crash caused by Weather System creating millions of sounds.
+  id: 551
+  time: '2025-05-03T16:42:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/917
+- author: Memeji
+  changes:
+    - type: Add
+      message: Clicking noise back to Newton's Cradle.
+    - type: Add
+      message: Lizard Plushie in the loadout.
+    - type: Tweak
+      message: Reduced cost for Sign Language back to -1.
+  id: 552
+  time: '2025-05-03T16:43:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/902
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Whitescale versions of the Vulpkanin swift and vulpine markings have
+        been added.
+    - type: Tweak
+      message: >-
+        Vulpkanin point markings now have variants split into their respective
+        limbs.
+  id: 553
+  time: '2025-05-03T16:45:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/851
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added pockets to Admin Ghosts.
+    - type: Add
+      message: Added tail-drag (no-hands) to Admin Ghosts.
+  id: 554
+  time: '2025-05-03T16:50:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/929
