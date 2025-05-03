@@ -90,6 +90,10 @@
     - FootstepSound
     - DoorBumpOpener
     - FelinidEmotes
+  - type: NightVision
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
 - type: entity
   save: false
