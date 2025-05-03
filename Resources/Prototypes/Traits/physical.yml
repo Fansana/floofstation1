@@ -818,7 +818,7 @@
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
-    - !type:CharacterTraitRequirement
+    - !type:CharacterTraitRequirement # Floof added Photophobia as drawback to nightvision
       inverted: true
       traits:
       - Photophobia
@@ -826,7 +826,7 @@
     - !type:TraitAddComponent
       components:
         - type: NightVision
-        - type: Flashable
+        - type: Flashable # Floof added Photophobia as drawback to nightvision
           eyeDamageChance: 0.3
           eyeDamage: 1
           durationMultiplier: 1.5
