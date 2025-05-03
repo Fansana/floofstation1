@@ -108,3 +108,13 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutWritables
+
+
+- type: loadout
+  id: LoadoutItemLizardPlushie
+  category: Items
+  cost: 3 # Special
+  canBeHeirloom: true
+  exclusive: false
+  items:
+    - PlushieLizard
