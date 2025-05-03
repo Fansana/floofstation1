@@ -2467,7 +2467,7 @@
   components:
     - type: NpcFactionMember
       factions:
-        - Xeno
+        - SimpleHostile #floof, makes tarantulas friendly to people with animal friend but not hostile to xenos which was their original faction
     - type: InputMover
     - type: MobMover
     - type: HTN
@@ -2527,6 +2527,9 @@
     - type: Bloodstream
       bloodMaxVolume: 150
       bloodReagent: Laughter
+    - type: NpcFactionMember
+      factions:
+        - ClownRage #floof, :o) Clownspiders aren't affected by animal friend and also share a faction with the behonker
 
 - type: entity
   name: wizard spider
@@ -2539,6 +2542,7 @@
     removes:
     - type: ReplacementAccent
       accent: xeno  #let this wizard speak
+
 - type: entity
   name: possum
   parent: SimpleMobBase
