@@ -758,7 +758,7 @@
     - !type:TraitReplaceComponent
       components:
         - type: CritModifier
-          critThresholdModifier: -50#
+          critThresholdModifier: -50
 
 #- type: trait Floof disabled because op
 #  id: LightAmplification
