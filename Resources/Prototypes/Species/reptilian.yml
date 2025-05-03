@@ -26,8 +26,8 @@
     TailOversuit: MobHumanoidAnyMarking
     Head: MobReptilianHead
     Face: MobHumanoidAnyMarking
-    Hair: MobHumanoidAnyMarking
-    FacialHair: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking # Floofstation
+    FacialHair: MobHumanoidAnyMarking # Floofstation
     Snout: MobHumanoidAnyMarking
     Chest: MobReptilianTorso
     Underwear: MobHumanoidAnyMarking # Floof, add underwear
@@ -48,7 +48,7 @@
 
 - type: markingPoints
   id: MobReptilianMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false # Floofstation, changed from true. Not sure I like that change, makes the whitelisting kinda wacky if there's a race that just ignores it. This was just to allow them to take hair and facial hair.
   points:
     Underwear:
       points: 2 # FLOOF CHANGE
@@ -57,10 +57,10 @@
       points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
-      points: 0
+      points: 1 # Floofstation, changed from 0
       required: false
     FacialHair:
-      points: 0
+      points: 1 # Floofstation, changed from 0
       required: false
     Tail:
       points: 1
