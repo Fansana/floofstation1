@@ -1,20 +1,4 @@
 - type: latheRecipe
-  id: MagazineMagnumEmpty
-  result: MagazineMagnumEmpty
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 50
-
-- type: latheRecipe
-  id: MagazineMagnum
-  result: MagazineMagnum
-  category: Ammo
-  completetime: 5
-  materials:
-     Steel: 210
-
-- type: latheRecipe
   id: ShellShotgunHoly
   result: ShellShotgunHoly
   category: Ammo
@@ -48,3 +32,36 @@
   materials:
     Steel: 800
     Plastic: 300
+
+- type: latheRecipe
+  id: WeaponEnergyHalberd
+  result: WeaponEnergyHalberd
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Gold: 300
+    Silver: 300
+    Plasma: 400
+
+- type: latheRecipe
+  id: WeaponHalberd
+  result: WeaponHalberd
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 500
+    Plastic: 500
+
+- type: latheRecipe
+  id: ClothingOuterArmorReflective
+  result: ClothingOuterArmorReflective
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Silver: 300
+    Plasma: 150

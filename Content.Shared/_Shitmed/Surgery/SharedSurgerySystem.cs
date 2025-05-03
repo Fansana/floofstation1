@@ -22,6 +22,7 @@ using Content.Shared.Popups;
 using Content.Shared.Prototypes;
 using Content.Shared.Standing;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
@@ -48,6 +49,7 @@ public abstract partial class SharedSurgerySystem : EntitySystem
     [Dependency] private readonly RotateToFaceSystem _rotateToFace = default!;
     [Dependency] private readonly StandingStateSystem _standing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
 
     /// <summary>
     /// Cache of all surgery prototypes' singleton entities.
@@ -271,7 +273,7 @@ public abstract partial class SharedSurgerySystem : EntitySystem
                     args.Cancelled = true;
                 // End of DeltaV Additions
             }
-            else if (!ent.Comp.Inverse)
+            else if (!ent.Comp.Inverse || !_container.TryGetContainer(args.Part, SharedBodySystem.GetOrganContainerId(ent.Comp.SlotId), out _))
                 args.Cancelled = true;
         }
     }

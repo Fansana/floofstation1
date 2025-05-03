@@ -10,6 +10,8 @@
   categories:
     - UplinkPointless
 
+# WEAPONS
+
 - type: listing
   id: UplinkEsabre
   name: uplink-EnergySabre-name
@@ -22,13 +24,41 @@
   - UplinkWeaponry
 #  saleLimit: 2 # Floofstation - used to exist, but now it doesn't. Oh, well.
 
-# type: listing
- # id: UplinkCryoinjector
-  #name: uplink-Cryptobiolininjector-name
-  #description: uplink-Cryptobiolininjector-desc
-  #icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
-  #productEntity: CryptobiolinInjector
-  #cost:
-  #  Telecrystal: 2
-  #categories:
-  #- UplinkUtility
+- type: listing
+  id: UplinkEnergyHalberd
+  name: uplink-energy-halberd-name
+  description: uplink-energy-halberd-desc
+  icon: { sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
+  productEntity: WeaponEnergyHalberd
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+#  saleLimit: 1 # Floofstation - used to exist, but now it doesn't. Oh, well.
+
+#Medical
+
+- type: listing
+  id: UplinkCryoinjector
+  name: uplink-Cryptobiolininjector-name
+  description: uplink-Cryptobiolininjector-desc
+  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
+  productEntity: CryptobiolinInjector
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkTypewriterBundle
+  name: uplink-typewriter-bundle-name
+  description: uplink-typewriter-bundle-desc
+  icon: { sprite: /Textures/DeltaV/Objects/Weapons/Guns/SMGs/typewriter.rsi, state: base }
+  productEntity: BriefcaseSyndieTypewriterBundleFilled
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponry
