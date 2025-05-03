@@ -818,11 +818,6 @@
 #    - !type:CharacterTraitRequirement
 #      traits:
 #        - CyberEyes
-#    - !type:CharacterSpeciesRequirement
-#      inverted: true
-#      species:
-#        - Felinid
-#        - Shadowkin
 #  functions:
 #    - !type:TraitAddComponent
 #      components:
