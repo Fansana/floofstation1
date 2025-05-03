@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Shared._DV.Polymorph;
-//using Content.Shared.Intellicard; | Floof - M3739 - Yokai - DV 3539. Uncomment as soon as Station AI hits the field.
+//using Content.Shared.Intellicard; | Floof - M3739 - #937 - DV 3539. Uncomment as soon as Station AI hits the field.
 using Content.Shared.Mind.Components;
 using Robust.Shared.Containers;
 
@@ -45,7 +45,7 @@ public sealed class ContentContainerSystem : EntitySystem
                         continue;
                     }
 
-                    // if (HasComp<IntellicardComponent>(entity)) | Floof - M3739 - Yokai - DV 3539. Uncomment as soon as Station AI hits the field.
+                    // if (HasComp<IntellicardComponent>(entity)) | Floof - M3739 - #937 - DV 3539. Uncomment as soon as Station AI hits the field.
                     // {
                     //     // Dump out the WHOLE intellicard rather than just the entities contained inside.
                     //     _found.Add(entity);

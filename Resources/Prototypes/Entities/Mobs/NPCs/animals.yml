@@ -2866,7 +2866,7 @@
   - type: Bloodstream
     bloodReagent: DemonsBlood
   - type: Damageable
-    damageContainer: BiologicalMetaphysical # Floof - M3739 - Yokai - Ian is now a devil dog. Smite them.
+    damageContainer: BiologicalMetaphysical # Floof - M3739 - #937 - Ian is now a devil dog. Smite them.
     damageModifierSet: Infernal
   - type: Temperature
     heatDamageThreshold: 4000 #They come from hell, so..

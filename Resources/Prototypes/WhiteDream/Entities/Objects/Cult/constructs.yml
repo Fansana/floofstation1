@@ -64,7 +64,7 @@
         layer:
         - FlyingMobLayer
   - type: Damageable
-    damageContainer: ManifestedSpirit # Floof - M3739 - Yokai - CorporealSpirit container superseded by ManifestedSpirit
+    damageContainer: ManifestedSpirit # Floof - M3739 - #937 - CorporealSpirit container superseded by ManifestedSpirit
     damageModifierSet: CorporealSpirit
   - type: MobThresholds
     thresholds:

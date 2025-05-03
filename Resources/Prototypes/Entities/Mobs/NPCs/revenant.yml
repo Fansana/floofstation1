@@ -39,7 +39,7 @@
         - GhostImpassable
   - type: MovementIgnoreGravity
   - type: Damageable
-    damageContainer: ManifestedSpirit # Floof - M3739 - Yokai - CorporealSpirit container superseded by ManifestedSpirit
+    damageContainer: ManifestedSpirit # Floof - M3739 - #937 - CorporealSpirit container superseded by ManifestedSpirit
     damageModifierSet: Spirit # DeltaV: Keep revenant extreme weakness to heat and bible
   - type: Examiner
   - type: NoSlip

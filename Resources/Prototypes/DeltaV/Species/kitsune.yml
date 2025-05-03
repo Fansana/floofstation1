@@ -6,24 +6,24 @@
   sprites: MobHumanSprites
   markingLimits: MobKitsuneMarkingLimits
   dollPrototype: MobKitsuneDummy
-# Floof - M3739 - Yokai | Begin Changes
+# Floof - M3739 - #937 | Begin Changes
   skinColoration: Hues 
-  minHeight: 0.65 # Floof - M3739 - Yokai | Values copied over from Rodentia and Felinids, Kitsune are small.
+  minHeight: 0.65 # Floof - M3739 - #937 | Values copied over from Rodentia and Felinids, Kitsune are small.
   defaultHeight: 0.8 
   maxHeight: 1.1 
   minWidth: 0.6 
   defaultWidth: 0.8 
   maxWidth: 1.15  
   customName: true 
-# Floof - M3739 - Yokai | End Changes
+# Floof - M3739 - #937 | End Changes
 - type: markingPoints
   id: MobKitsuneMarkingLimits
   points:
-    Underwear: # Floof - M3739 - Yokai
-      points: 2 # Floof - M3739 - Yokai
+    Underwear: # Floof - M3739 - #937
+      points: 2 # Floof - M3739 - #937
       required: false
-    Undershirt: # Floof - M3739 - Yokai
-      points: 2 # Floof - M3739 - Yokai
+    Undershirt: # Floof - M3739 - #937
+      points: 2 # Floof - M3739 - #937
       required: false
     Hair:
       points: 1
@@ -31,9 +31,9 @@
     FacialHair:
       points: 1
       required: false
-    Head: # Floof - M3739 - Yokai
-      points: 3 # Floof - M3739 - Yokai
-      required: false # Floof - M3739 - Yokai
+    Head: # Floof - M3739 - #937
+      points: 3 # Floof - M3739 - #937
+      required: false # Floof - M3739 - #937
     Snout:
       points: 1
       required: false
@@ -45,39 +45,39 @@
       points: 1
       required: true
       defaultMarkings: [ KitsuneEarsDefault ]
-#    UndergarmentTop: # Floof - M3739 - Yokai - Commented out for posterity. Superseded by Underwear and Undershirt.
+#    UndergarmentTop: # Floof - M3739 - #937 - Commented out for posterity. Superseded by Underwear and Undershirt.
 #      points: 1
 #      required: false
 #    UndergarmentBottom:
 #      points: 1
 #      required: false
     Chest:
-      points: 3 # Floof - M3739 - Yokai
+      points: 3 # Floof - M3739 - #937
       required: false
-    RightLeg: # Floof - M3739 - Yokai
+    RightLeg: # Floof - M3739 - #937
       points: 2
       required: false
-    RightFoot: # Floof - M3739 - Yokai
+    RightFoot: # Floof - M3739 - #937
       points: 2
       required: false
-    LeftLeg: # Floof - M3739 - Yokai
+    LeftLeg: # Floof - M3739 - #937
       points: 2
       required: false
-    LeftFoot: # Floof - M3739 - Yokai
+    LeftFoot: # Floof - M3739 - #937
       points: 2
       required: false
-    RightArm: # Floof - M3739 - Yokai
+    RightArm: # Floof - M3739 - #937
       points: 2
       required: false
-    RightHand: # Floof - M3739 - Yokai
+    RightHand: # Floof - M3739 - #937
       points: 3
       required: false
-    LeftArm: # Floof - M3739 - Yokai
+    LeftArm: # Floof - M3739 - #937
       points: 2
       required: false
-    LeftHand: # Floof - M3739 - Yokai
+    LeftHand: # Floof - M3739 - #937
       points: 3
       required: false
-    HeadSide: # Floof - M3739 - Yokai
-      points: 2 # Floof - M3739 - Yokai
-      required: false # Floof - M3739 - Yokai
+    HeadSide: # Floof - M3739 - #937
+      points: 2 # Floof - M3739 - #937
+      required: false # Floof - M3739 - #937

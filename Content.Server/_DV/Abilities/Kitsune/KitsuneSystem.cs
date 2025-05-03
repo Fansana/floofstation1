@@ -76,14 +76,14 @@ public sealed class KitsuneSystem : SharedKitsuneSystem
 
     private void OnMorphIntoKitsune(Entity<KitsuneComponent> ent, ref MorphIntoKitsune args)
     {
-        // Floof - M3739 - Yokai - Ensure the fox form isn't going to be instantly stunned and reverted, causing RR
+        // Floof - M3739 - #937 - Ensure the fox form isn't going to be instantly stunned and reverted, causing RR
         if (TryComp<StaminaComponent>(ent, out var stamina) && stamina.Critical)
         {
             _popup.PopupEntity(Loc.GetString("kitsune-popup-cant-morph-stamina"), ent, ent);
             args.Handled = false;
             return;
         }
-        // Floof - M3739 - Yokai - End changes
+        // Floof - M3739 - #937 - End changes
         if (_polymorph.PolymorphEntity(ent, ent.Comp.KitsunePolymorphId) == null)
             return;
         args.Handled = true;
