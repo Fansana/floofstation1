@@ -5265,3 +5265,12 @@ Entries:
   id: 554
   time: '2025-05-03T16:50:55.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/929
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added damage interrupts speech for IPCs and some additional
+        species-specific messages
+  id: 555
+  time: '2025-05-03T16:50:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/725
