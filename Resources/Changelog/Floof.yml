@@ -5189,3 +5189,12 @@ Entries:
   id: 546
   time: '2025-05-03T02:06:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/909
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Ported Station AI.
+    - type: Tweak
+      message: Disabled Station AI Job as it is still unplayable.
+  id: 547
+  time: '2025-05-03T03:01:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/903
