@@ -5225,3 +5225,10 @@ Entries:
   id: 550
   time: '2025-05-03T16:38:26.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/899
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed a crash caused by Weather System creating millions of sounds.
+  id: 551
+  time: '2025-05-03T16:42:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/917
