@@ -5218,3 +5218,10 @@ Entries:
   id: 549
   time: '2025-05-03T15:07:40.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/898
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed a few major bugs with leashes. Again.
+  id: 550
+  time: '2025-05-03T16:38:26.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/899
