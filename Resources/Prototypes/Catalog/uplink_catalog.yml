@@ -1611,21 +1611,6 @@
       tags:
       - NukeOpsUplink
 
-# Tools
-
-- type: listing
-  id: UplinkSyndicateStamp
-  name: uplink-syndicate-stamp-name
-  description: uplink-syndicate-stamp-desc
-  productEntity: RubberStampSyndicate
-  discountCategory: rareDiscounts
-  discountDownTo:
-    Telecrystal: 1
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkPointless
-
 # Job Specific
 
 - type: listing
