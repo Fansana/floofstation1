@@ -245,10 +245,12 @@
       - FootstepSound
       - DoorBumpOpener
       - ShadowkinEmotes
+      # Floofstation - Start
     - type: NightVision
       color: "#808080"
       activateSound: null
       deactivateSound: null
+      # Floofstation - End
 
 - type: entity
   save: false
