@@ -503,8 +503,6 @@ entities:
       pos: 5.5,6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4
   - uid: 24
@@ -1858,8 +1856,6 @@ entities:
       pos: 6.5,7.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4
   - uid: 258
@@ -1869,8 +1865,6 @@ entities:
       pos: 6.5,6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4
 - proto: FirelockGlass
@@ -2357,8 +2351,6 @@ entities:
       pos: 2.5,0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2
     - type: AtmosPipeColor
@@ -2381,8 +2373,6 @@ entities:
       pos: 0.5,6.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2
     - type: AtmosPipeColor
@@ -2425,8 +2415,6 @@ entities:
       pos: 2.5,2.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2
     - type: AtmosPipeColor
@@ -3289,8 +3277,6 @@ entities:
       pos: -8.5,2.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
 - proto: TableReinforced
   entities:
   - uid: 443

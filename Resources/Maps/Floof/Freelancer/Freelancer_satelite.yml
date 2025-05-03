@@ -1199,8 +1199,6 @@ entities:
       pos: 9.5,11.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 6
   - uid: 34
@@ -10985,8 +10983,6 @@ entities:
       pos: 13.5,10.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5
       - 6
@@ -10996,8 +10992,6 @@ entities:
       pos: 5.5,10.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4
       - 6
@@ -11007,8 +11001,6 @@ entities:
       pos: 9.5,8.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 6
 - proto: FloorDrain
@@ -12900,8 +12892,6 @@ entities:
       pos: 11.5,11.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 6
     - type: AtmosPipeColor
@@ -13018,8 +13008,6 @@ entities:
       pos: 9.5,1.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 6
     - type: AtmosPipeColor
@@ -13033,8 +13021,6 @@ entities:
       pos: 9.5,0.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 6
     - type: AtmosPipeColor
