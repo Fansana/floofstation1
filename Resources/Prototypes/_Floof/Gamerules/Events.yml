@@ -1,105 +1,172 @@
-# - type: entity
-#   id: ArgocyteVents
-#   parent: [VentCrittersBase, BaseGameRule]
-#   categories: [ HideSpawnMenu ]
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: true
-#     earliestStart: 20
-#     reoccurrenceDelay: 12
-#     minimumPlayers: 30
-#     weight: 6 # Really weak compared to other critters
-#     duration: 60
-#   - type: VentCrittersRule
-#     entries:
-#     - id: MobArgocyteSlurva
-#       prob: 0.003
-#     - id: MobArgocyteBarrier
-#       prob: 0.001
-#     - id: MobArgocyteSkitter
-#       prob: 0.001
-#     - id: MobArgocyteSwiper
-#       prob: 0.001
-#     - id: MobArgocyteMolder
-#       prob: 0.001
-#     - id: MobArgocytePouncer
-#       prob: 0.001
-#     - id: MobArgocyteGlider
-#       prob: 0.001
-#     - id: MobArgocyteHarvester
-#       prob: 0.001
-#     - id: MobArgocyteCrawler
-#       prob: 0.001
-#     - id: MobArgocyteEnforcer
-#       prob: 0.001
-#     - id: MobArgocyteFounder
-#       prob: 0.001
-#     - id: MobArgocyteLeviathing
-#       prob: 0.0001
+- type: entity
+  id: ArgocyteVents
+  parent: [VentCrittersBase, BaseGameRule]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 30
+    reoccurrenceDelay: 12
+    minimumPlayers: 30
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobArgocyteSlurva
+      prob: 0.005
+    - id: MobArgocyteBarrier
+      prob: 0.0001
+    - id: MobArgocyteSkitter
+      prob: 0.0001
+    - id: MobArgocyteSwiper
+      prob: 0.0001
+    - id: MobArgocyteMolder
+      prob: 0.0001
+    - id: MobArgocytePouncer
+      prob: 0.0001
+    - id: MobArgocyteGlider
+      prob: 0.0001
+    - id: MobArgocyteHarvester
+      prob: 0.0001
+    - id: MobArgocyteCrawler
+      prob: 0.0001
+    - id: MobArgocyteEnforcer
+      prob: 0.0001
+    - id: MobArgocyteFounder
+      prob: 0.0001
+    - id: MobArgocyteLeviathing
+      prob: 0.00001
 
-# - type: entity
-#   id: TickVents
-#   parent: [VentCrittersBase, BaseGameRule]
-#   categories: [ HideSpawnMenu ]
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: true
-#     earliestStart: 20
-#     reoccurrenceDelay: 12
-#     minimumPlayers: 1
-#     weight: 6 # Really weak compared to other critters
-#     duration: 60
-#   - type: VentCrittersRule
-#     entries:
-#     - id: MobTick
-#       prob: 0.01
+- type: entity
+  id: TickVents
+  parent: [VentCrittersBase, BaseGameRule]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 30
+    reoccurrenceDelay: 12
+    minimumPlayers: 20
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobTick
+      prob: 0.001
 
-# - type: entity
-#   id: CarpVents
-#   parent: [VentCrittersBase, BaseGameRule]
-#   categories: [ HideSpawnMenu ]
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: true
-#     earliestStart: 20
-#     reoccurrenceDelay: 12
-#     minimumPlayers: 20
-#     weight: 6 # Really weak compared to other critters
-#     duration: 60
-#   - type: VentCrittersRule
-#     entries:
-#     - id: MobCarp
-#       prob: 0.01
-#     - id: MobCarpMagic
-#       prob: 0.01
-#     - id: MobCarpHolo
-#       prob: 0.003
-#     - id: MobCarpRainbow
-#       prob: 0.01
-#     - id: MobShark
-#       prob: 0.003
-#     - id: MobCarpDragon
-#       prob: 0.01
+- type: entity
+  id: CarpVents
+  parent: [VentCrittersBase, BaseGameRule]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 30
+    reoccurrenceDelay: 12
+    minimumPlayers: 30
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobCarp
+      prob: 0.008
+    - id: MobCarpMagic
+      prob: 0.001
+    - id: MobCarpHolo
+      prob: 0.003
+    - id: MobCarpRainbow
+      prob: 0.001
+    - id: MobShark
+      prob: 0.003
+    - id: MobCarpDragon
+      prob: 0.001
 
-# - type: entity
-#   id: SpaceVents
-#   parent: [VentCrittersBase, BaseGameRule]
-#   categories: [ HideSpawnMenu ]
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: true
-#     earliestStart: 20
-#     reoccurrenceDelay: 12
-#     minimumPlayers: 20
-#     weight: 6 # Really weak compared to other critters
-#     duration: 60
-#   - type: VentCrittersRule
-#     entries:
-#     - id: MobBearSpace
-#       prob: 0.01
-#     - id: MobKangarooSpace
-#       prob: 0.01
-#     - id: MobSpiderSpace
-#       prob: 0.01
-#     - id: MobCobraSpace
-#       prob: 0.01
+- type: entity
+  id: SpaceVents
+  parent: [VentCrittersBase, BaseGameRule]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 30
+    reoccurrenceDelay: 12
+    minimumPlayers: 30
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobBearSpace
+      prob: 0.003
+    - id: MobKangarooSpace
+      prob: 0.005
+    - id: MobSpiderSpace
+      prob: 0.001
+    - id: MobCobraSpace
+      prob: 0.002
+      
+- type: entity
+  id: reagentslimeVents
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StationEvent
+    startAnnouncement: true
+    earliestStart: 60
+    reoccurrenceDelay: 12
+    minimumPlayers: 80
+    weight: 6 # Really weak compared to other critters
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: ReagentSlimeBeer
+      prob: 0.0003
+    - id: ReagentSlimePax
+      prob: 0.0001
+    - id: ReagentSlimeNocturine
+      prob: 0.0001
+    - id: ReagentSlimeTHC
+      prob: 0.0002
+    - id: ReagentSlimeBicaridine
+      prob: 0.0002
+    - id: ReagentSlimeToxin
+      prob: 0.0002
+    - id: ReagentSlimeNapalm
+      prob: 0.0002
+    - id: ReagentSlimeOmnizine
+      prob: 0.0003
+    - id: ReagentSlimeMuteToxin
+      prob: 0.0002
+    - id: ReagentSlimeNorepinephricAcid
+      prob: 0.0002
+    - id: ReagentSlimeEphedrine
+      prob: 0.0002
+    - id: ReagentSlimeRobustHarvest
+      prob: 0.0003
+    - id: ReagentSlimeIchor
+      prob: 0.0002
+    - id: ReagentSlimeBleach
+      prob: 0.00001
+    - id: ReagentSlimeSoap
+      prob: 0.0002
+    - id: ReagentSlimeSpacelube
+      prob: 0.0002
+    - id: ReagentSlimeBuzzachloricbees
+      prob: 0.0002
+    - id: ReagentSlimeWehjuice
+      prob: 0.0003
+    - id: ReagentCognizine
+      prob: 0.0003
+    - id: ReagentSlimeNecrosol
+      prob: 0.0002
+    - id: ReagentSlimeSpaceDrugs
+      prob: 0.0003
+    - id: ReagentSlimeUnstableMutagen
+      prob: 0.0001
+    - id: ReagentSlimeLead
+      prob: 0.00001
+    - id: ReagentSlimechlorinetriflouride
+      prob: 0.0002
+    - id: ReagentSlimePotassium
+      prob: 0.0002
+    - id: ReagentSlimeLotophagoiOil
+      prob: 0.0001
