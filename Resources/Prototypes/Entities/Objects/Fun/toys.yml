@@ -1926,12 +1926,12 @@
   - type: ItemToggle
   - type: UseDelay
     delay: 1
-#  - type: ItemToggleActiveSound # DeltaV - No more annoying clicking
-#    activeSound:
-#      path: /Audio/Items/newton_cradle.ogg
-#      params:
-#        volume: -9
-#        maxDistance: 3
+  - type: ItemToggleActiveSound # Floof - Yes have clicking
+    activeSound:
+      path: /Audio/Items/newton_cradle.ogg
+      params:
+        volume: -9
+        maxDistance: 3
 
 - type: entity
   name: The Throngler
