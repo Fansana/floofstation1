@@ -19,5 +19,5 @@ jobs:
         days-before-close: 7   # Number of days after being marked stale to close
         stale-issue-message: ''  # No action on issues
         close-issue-message: ''
-        days-before-stale-issue: -1
-        days-before-close-issue: -1
+        days-before-issue-stale: -1
+        days-before-issue-close: -1
