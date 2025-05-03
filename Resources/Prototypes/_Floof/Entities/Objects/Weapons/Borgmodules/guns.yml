@@ -20,6 +20,7 @@
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
   id: WeaponborgPistolMk58
+  categories: [ HideSpawnMenu ]
   description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
   components:
   - type: Sprite
@@ -48,6 +49,7 @@
   parent: WeaponXrayCannon
   suffix: Robot
   id: BorgWeaponXrayCannon
+  categories: [ HideSpawnMenu ]
   description: A weapon that is almost as infamous as its users.
   components:
   - type: BatterySelfRecharger
@@ -58,6 +60,7 @@
   parent: WeaponPulseRifle
   suffix: Robot
   id: BorgWeaponPulseRifle
+  categories: [ HideSpawnMenu ]
   description: A weapon that is almost as infamous as its users.
   components:
   - type: BatterySelfRecharger

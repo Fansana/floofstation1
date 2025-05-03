@@ -2,6 +2,7 @@
   parent: WeaponDisabler
   suffix: Robot
   id: WeaponBorgDisabler
+  categories: [ HideSpawnMenu ]
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
     - type: BatterySelfRecharger
@@ -12,6 +13,7 @@
   name: borg stun baton
   parent: Stunbaton
   id: BorgStunbaton
+  categories: [ HideSpawnMenu ]
   description: A stun baton for incapacitating people with. Actively harming with this is considered bad tone.
   components:
   - type: BatterySelfRecharger
@@ -22,6 +24,7 @@
   name: Borg flash
   parent: BaseItem
   id: BorgFlash
+  categories: [ HideSpawnMenu ]
   description: An ultrabright flashbulb with a trigger, which causes the victim to be dazed and lose their eyesight for a moment. Useless when burnt out.
   components:
     - type: Sprite
@@ -71,6 +74,7 @@
   # parent: BaseWeaponBatterySmall
   # id: WeaponborgTaser
   # description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
+  # categories: [ HideSpawnMenu ]
   # components:
   # - type: Tag
     # tags:
