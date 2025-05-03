@@ -5285,3 +5285,30 @@ Entries:
   id: 556
   time: '2025-05-03T16:44:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/887
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added Freelancer access type
+    - type: Add
+      message: Added Frelancer job type, allowing for quick set outfit
+    - type: Add
+      message: Added additinal textures for access accsories
+    - type: Add
+      message: Added Extra door types with freelancer access
+    - type: Add
+      message: Added additional crates
+    - type: Add
+      message: Added freelancer secure closet
+    - type: Add
+      message: Added freelancer vend
+    - type: Add
+      message: Added 3 hardsuit sets
+    - type: Add
+      message: Added freelancer access docking ports
+    - type: Fix
+      message: fixed broken pda texture
+    - type: Fix
+      message: fixed missing pixels on armor
+  id: 557
+  time: '2025-05-03T17:50:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/731
