@@ -295,6 +295,7 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
     public const string Inventory = "Inventory";
     public const string MedibotInjectRange = "MedibotInjectRange";
 
+    public const string PlantbotServiceRange = "PlantbotServiceRange";
     public const string MeleeMissChance = "MeleeMissChance";
 
     public const string Owner = "Owner";
