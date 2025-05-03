@@ -5243,3 +5243,16 @@ Entries:
   id: 552
   time: '2025-05-03T16:43:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/902
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Whitescale versions of the Vulpkanin swift and vulpine markings have
+        been added.
+    - type: Tweak
+      message: >-
+        Vulpkanin point markings now have variants split into their respective
+        limbs.
+  id: 553
+  time: '2025-05-03T16:45:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/851
