@@ -5312,3 +5312,12 @@ Entries:
   id: 557
   time: '2025-05-03T17:50:57.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/731
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added a command to easily allow for adding a jobs playtime requirements.
+        (playtime_unlock)
+  id: 558
+  time: '2025-05-04T18:35:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/918
