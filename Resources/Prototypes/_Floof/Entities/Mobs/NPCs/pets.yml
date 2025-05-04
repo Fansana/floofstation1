@@ -18,3 +18,26 @@
     tags:
     - CannotSuicide
     - VimPilot
+
+- type: entity
+  name: Pet spider
+  parent: MobSpiderShiva
+  id: MobSpiderPet
+  description: The first defender of the station.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    layers:
+      - state: green
+      - state: shiva
+        sprite: Mobs/Pets/shiva.rsi
+  - type: HTN
+    rootTask:
+      task: FollowCompound
+    blackboard:
+      IdleRange: !type:Single
+        1.5
+      FollowCloseRange: !type:Single
+        1.0
+      FollowRange: !type:Single
+        2.0
