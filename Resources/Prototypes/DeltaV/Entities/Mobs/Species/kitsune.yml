@@ -53,11 +53,11 @@
   - type: LanguageKnowledge
     speaks:
       - TauCetiBasic
-      - Nekomimetic
+      - Kagebun
     understands:
       - TauCetiBasic
-      - Nekomimetic
-    naturalLanguage: Nekomimetic # Floof - M3739 - #937 - Hails from the same place as Felinids and Oni, so why not?
+      - Kagebun
+    naturalLanguage: Kagebun # Floof - M3739 - #937 - Hails from the same place as Felinids and Oni, so why not?
 
 - type: entity
   save: false
