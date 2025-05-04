@@ -23,14 +23,22 @@
   name: Pet spider
   parent: MobSpiderShiva
   id: MobSpiderPet
-  description: The first defender of the station.
+  description: Rescue by the SESWC. SESWC vowed to Heal, raise, and rehome as much as possible.
   components:
   - type: Sprite
+    drawdepth: Mobs
     scale: 0.5, 0.5
     layers:
-      - state: green
-      - state: shiva
-        sprite: Mobs/Pets/shiva.rsi
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: midwife
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: midwife-moving
+    noMovementLayers:
+      movement:
+        state: midwife
   - type: HTN
     rootTask:
       task: FollowCompound
