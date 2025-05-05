@@ -1,8 +1,8 @@
 - type: gameMap
   id: Meta
   mapName: 'Meta Station'
-  mapPath: /Maps/meta.yml
-  minPlayers: 10 #
+  mapPath: /Maps/Floof/meta.yml
+  minPlayers: 40 #
   maxPlayers: 85 #
   stations:
     Meta:
@@ -31,12 +31,14 @@
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 5, 7 ]
             TechnicalAssistant: [ 3, 6 ]
+            SeniorEngineer: [ 1, 1 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 3, 3 ]
             MedicalDoctor: [ 5, 5 ]
             MedicalIntern: [ 3, 6 ]
             Paramedic: [ 1, 3 ]
+            SeniorPhysician: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 5, 7 ]
@@ -44,6 +46,7 @@
             Chaplain: [ 1, 1 ]
             Roboticist: [ 1, 2 ]
             ForensicMantis: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -52,17 +55,21 @@
             SecurityCadet: [ 3, 6 ]
             Lawyer: [ 2, 2 ]
             Brigmedic: [ 1, 1 ]
-            Prisoner: [ 1, 2 ]
+            Prisoner: [ 3, 3 ]
             PrisonGuard: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
             MailCarrier: [ 1, 2 ]
+            InventorySpecialist: [ 1, 1 ] #FloofStation
             #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Anomaly: [ 4, 4 ] # Floofstation
             #silicon
             Borg: [ 2, 2 ]
+            MedicalBorg: [ 2, 2 ]
