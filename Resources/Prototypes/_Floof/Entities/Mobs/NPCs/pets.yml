@@ -21,7 +21,7 @@
 
 - type: entity
   name: Pet spider
-  parent: MobSpiderShiva
+  parent: MobGiantSpider
   id: MobSpiderPet
   description: Rescue by the SESWC. SESWC vowed to Heal, raise, and rehome as much as possible.
   components:
