@@ -1,0 +1,187 @@
+- type: entity
+  name: clown rat
+  parent: MobMouse
+  id: MobClownRat
+  description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
+  components:
+  - type: Sprite
+    sprite: _Floof/Mobs/Animals/clown_rat.rsi
+  - type: Speech
+    speechVerb: Cluwne
+    allowedEmotes: ['Honk']
+  - type: Bloodstream
+    bloodMaxVolume: 180
+    bloodReagent: Laughter
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClownFast
+      params:
+        pitch: 0.9
+  - type: UseDelay
+    delay: 1
+  - type: EmitSoundOnUse
+    sound:
+      collection: BananiumHorn
+      params:
+        variation: 0.246
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: BananiumHorn
+      params:
+        variation: 0.246
+  - type: InteractionPopup
+    successChance: 0.7
+    interactDelay: 2 
+    interactSuccessString: petting-success-soft-floofy
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      collection: BikeHorn
+      params:
+        variation: 0.125
+  - type: Tag
+    tags:
+    - FootstepSound
+  - type: Butcherable
+    spawned:
+    - id: MobClownRatHatchling
+      amount: 3
+  - type: NoSlip
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Critical
+      100: Dead
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: Puller
+    needsHands: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 10
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobClownRatHatchling:
+            min: 3
+            max: 5
+      - !type:GibBehavior { }
+
+
+- type: entity
+  name: clown rat
+  parent: MobClownRat
+  id: MobClownRatHatchling
+  suffix: Hatchling
+  description: OH GOD THEY ARE MULTIPLYING!
+  components:
+  - type: Sprite
+    scale: 0.9, 0.9
+  - type: Butcherable
+    spawned:
+    - id: MobClownRatFinalHatchling
+      amount: 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      80: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 5
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobClownRatFinalHatchling:
+            min: 3
+            max: 5
+      - !type:GibBehavior { }
+
+- type: entity
+  name: clown rat
+  parent: MobClownRat
+  id: MobClownRatFinalHatchling
+  suffix: Final_Hatchling
+  description: GOD THERE IS EVEN MORE!
+  components:
+  - type: Sprite
+    scale: 0.8, 0.8
+  - type: Butcherable
+    spawned:
+    - id: FoodPieBananaCream
+      amount: 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Critical
+      50: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 20
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 70
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          BikeHornImplanter:
+            min: 1
+            max: 1
+      - !type:GibBehavior { }
