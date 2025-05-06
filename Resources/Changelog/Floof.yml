@@ -5243,3 +5243,123 @@ Entries:
   id: 552
   time: '2025-05-03T16:43:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/902
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Whitescale versions of the Vulpkanin swift and vulpine markings have
+        been added.
+    - type: Tweak
+      message: >-
+        Vulpkanin point markings now have variants split into their respective
+        limbs.
+  id: 553
+  time: '2025-05-03T16:45:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/851
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added pockets to Admin Ghosts.
+    - type: Add
+      message: Added tail-drag (no-hands) to Admin Ghosts.
+  id: 554
+  time: '2025-05-03T16:50:55.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/929
+- author: Forzii
+  changes:
+    - type: Add
+      message: >-
+        Added damage interrupts speech for IPCs and some additional
+        species-specific messages
+  id: 555
+  time: '2025-05-03T16:50:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/725
+- author: Eagle0600
+  changes:
+    - type: Add
+      message: >-
+        Added new anxiety meds, antidepressants and painkillers. Psychologists
+        rejoice!
+    - type: Add
+      message: Desoxyephedrine, Happiness, and Impedrezene are now addictive.
+  id: 556
+  time: '2025-05-03T16:44:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/887
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added Freelancer access type
+    - type: Add
+      message: Added Frelancer job type, allowing for quick set outfit
+    - type: Add
+      message: Added additinal textures for access accsories
+    - type: Add
+      message: Added Extra door types with freelancer access
+    - type: Add
+      message: Added additional crates
+    - type: Add
+      message: Added freelancer secure closet
+    - type: Add
+      message: Added freelancer vend
+    - type: Add
+      message: Added 3 hardsuit sets
+    - type: Add
+      message: Added freelancer access docking ports
+    - type: Fix
+      message: fixed broken pda texture
+    - type: Fix
+      message: fixed missing pixels on armor
+  id: 557
+  time: '2025-05-03T17:50:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/731
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added a command to easily allow for adding a jobs playtime requirements.
+        (playtime_unlock)
+  id: 558
+  time: '2025-05-04T18:35:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/918
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Diona now get thirsty at the intended rate. They are not cacti.
+  id: 559
+  time: '2025-05-05T14:23:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/952
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Those with a french accent will no longer declare how
+        accent-french-words-replace-33 things are.
+  id: 560
+  time: '2025-05-05T14:23:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/953
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Tricordrazine to heal MINOR amounts of radiation damage. This
+        includes Medibots. If it's more than a teeny tiny amount, go to medical!
+        This also alleviates the issue where the medibot keeps pestering you
+        about the 0.1 rad damage because it thinks it can heal it, while the
+        medicine it'll inject (before this change) didn't actually do anything.
+  id: 561
+  time: '2025-05-05T15:19:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/945
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Gr3yt1de virus should no longer infect security airlocks every shift.
+  id: 562
+  time: '2025-05-05T22:14:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/955
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Disabled the station AI Job until it is actually playable.
+  id: 563
+  time: '2025-05-06T01:15:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/957
