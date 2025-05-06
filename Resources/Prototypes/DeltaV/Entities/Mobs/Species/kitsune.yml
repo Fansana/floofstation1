@@ -57,7 +57,13 @@
     understands:
       - TauCetiBasic
       - Kagebun
-    naturalLanguage: Kagebun # Floof - M3739 - #937 - Hails from the same place as Felinids and Oni, so why not?
+    naturalLanguage: Kagebun # Floof - M3739 - #937 - Shadow Sentence
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - KitsuneEmotes
 
 - type: entity
   save: false
