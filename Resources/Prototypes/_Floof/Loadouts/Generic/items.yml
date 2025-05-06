@@ -126,7 +126,7 @@
   cost: 2
   canBeHeirloom: true
   items:
-    - MobSpiderPet
+    - MobPetSpider
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutPets
