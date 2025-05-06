@@ -5356,3 +5356,10 @@ Entries:
   id: 562
   time: '2025-05-05T22:14:31.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/955
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Disabled the station AI Job until it is actually playable.
+  id: 563
+  time: '2025-05-06T01:15:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/957
