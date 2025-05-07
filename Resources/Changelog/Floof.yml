@@ -5363,3 +5363,10 @@ Entries:
   id: 563
   time: '2025-05-06T01:15:37.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/957
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: Space dragons are made more aware they won't vanish without rifts.
+  id: 564
+  time: '2025-05-07T13:55:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/956
