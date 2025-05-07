@@ -5,7 +5,6 @@
     - MobAtmosStandard
     - MobFlammable
     - BaseMobSpecies
-    - MobRespirator
   id: MobShadowkinBase
   name: Urist McShadow
   abstract: true
@@ -38,9 +37,14 @@
                   min: 1
                   max: 1
             - !type:BurnBodyBehavior {}
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MeatLaserImpact
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShadowkinShadow:
+                  min: 1
+                  max: 1
+                EffectFlashShadowkinShadeskip:
+                  min: 1
+                  max: 1
     - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
       allowedStates:
         - Alive
@@ -52,21 +56,25 @@
           Brute: -0.07
     - type: StatusEffects
       allowed:
-        - Stun
-        - KnockedDown
-        - SlowedDown
-        - Stutter
-        - SeeingRainbows
-        - Electrocution
-        - ForcedSleep
-        - TemporaryBlindness
-        - Drunk
-        - SlurredSpeech
-        - RatvarianLanguage
-        - PressureImmunity
-        - Muted
-        - Pacified
-        - StaminaModifier
+      - Stun
+      - KnockedDown
+      - SlowedDown
+      - Stutter
+      - SeeingRainbows
+      - Electrocution
+      - ForcedSleep
+      - TemporaryBlindness
+      - Drunk
+      - SlurredSpeech
+      - RatvarianLanguage
+      - PressureImmunity
+      - Muted
+      - Pacified
+      - StaminaModifier
+      - PsionicsDisabled
+      - PsionicallyInsulated
+      - RadiationProtection
+      - Drowsiness
     - type: Blindable
     - type: ThermalRegulator
       metabolismHeat: 800
@@ -113,7 +121,7 @@
     - type: Barotrauma
       damage:
         types:
-          Blunt: 0.35 # per second, scales with pressure and other constants.
+          Blunt: 0.55 # per second, scales with pressure and other constants.
     - type: Bloodstream
       bloodlossDamage:
         types:
@@ -147,7 +155,6 @@
       netsync: false
       noRot: true
       drawdepth: Mobs
-      scale: 0.85, 0.85
       layers:
         - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
         - map: ["enum.HumanoidVisualLayers.Chest"]
@@ -218,19 +225,6 @@
       durationMultiplier: 1.5
     - type: Speech
       allowedEmotes: ['Mars', 'Wurble']
-    - type: Shadowkin
-      blackeyeSpawn: true
-    - type: Psionic
-      canReroll: false
-      mindbreakingFeedback: shadowkin-blackeye
-      manaGain: 0.25
-      mana: 150
-      maxMana: 250
-      noMana: shadowkin-tired
-      removable: false
-    - type: InnatePsionicPowers
-      powersToAdd:
-        - DarkSwapPower
     - type: LanguageKnowledge
       speaks:
         - TauCetiBasic
@@ -254,7 +248,7 @@
   parent: MobHumanDummy
   id: MobShadowkinDummy
   categories: [ HideSpawnMenu ]
-  description: A dummy shadowkin meant to be used in character setup.
+  description: A dummy shadekin meant to be used in character setup.
   components:
     - type: HumanoidAppearance
       species: Shadowkin
@@ -262,7 +256,6 @@
       netsync: false
       noRot: true
       drawdepth: Mobs
-      scale: 0.85, 0.85 # Small
       layers:
         - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
         - map: ["enum.HumanoidVisualLayers.Chest"]
