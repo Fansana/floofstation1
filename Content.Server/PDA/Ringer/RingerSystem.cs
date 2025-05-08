@@ -68,9 +68,14 @@ namespace Content.Server.PDA.Ringer
             if (container != null)
             {
                 // If the container is the player, then they know which PDA is vibrating
-                var targetLocalized = Loc.GetString("comp-ringer-vibration-popup-self", ("pda", ent));
+                // Though if it is contained in something, hint which container to the player
+                _container.TryGetContainingContainer((container.Owner, default, default), out var containerOuter);
+                var targetContainer = containerOuter ?? container;
+                var targetLocalized = containerOuter == null ?
+                    Loc.GetString("comp-ringer-vibration-popup-self", ("pda", ent)) :
+                    Loc.GetString("comp-ringer-vibration-popup-concealed-self", ("container", container.Owner));
                 var otherLocalized = Loc.GetString("comp-ringer-vibration-popup-concealed");
-                _popupSystem.PopupEntity(otherLocalized, targetLocalized, container.Owner, filter, popupType, popupType);
+                _popupSystem.PopupEntity(otherLocalized, targetLocalized, targetContainer.Owner, filter, popupType, popupType);
             }
             else
             {
