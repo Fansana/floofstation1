@@ -1,5 +1,6 @@
 using Content.Server.Power.Components;
 using Content.Shared.Silicon.Systems;
+using Content.Server.Bed.Sleep;
 using Content.Shared.Bed.Sleep;
 using Content.Server.Silicon.Charge;
 using Content.Server.Humanoid;
@@ -62,7 +63,7 @@ public sealed class SiliconDeathSystem : EntitySystem
     private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid)
     {
         RemComp<ForcedSleepingComponent>(uid);
-        _sleep.TryWaking(uid, true);
+        _sleep.TryWaking(uid, null, true);
 
         siliconDeadComp.Dead = false;
 

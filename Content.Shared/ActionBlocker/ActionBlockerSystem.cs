@@ -4,7 +4,6 @@ using Content.Shared.DragDrop;
 using Content.Shared.Emoting;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
-using Content.Shared.Interaction.Components;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
 using Content.Shared.Mobs;
@@ -27,14 +26,9 @@ namespace Content.Shared.ActionBlocker
     {
         [Dependency] private readonly SharedContainerSystem _container = default!;
 
-        private EntityQuery<ComplexInteractionComponent> _complexInteractionQuery;
-
         public override void Initialize()
         {
             base.Initialize();
-
-            _complexInteractionQuery = GetEntityQuery<ComplexInteractionComponent>();
-
             SubscribeLocalEvent<InputMoverComponent, ComponentStartup>(OnMoverStartup);
         }
 
@@ -64,15 +58,6 @@ namespace Content.Shared.ActionBlocker
         }
 
         /// <summary>
-        /// Checks if a given entity is able to do specific complex interactions.
-        /// This is used to gate manipulation to general humanoids. If a mouse shouldn't be able to do something, then it's complex.
-        /// </summary>
-        public bool CanComplexInteract(EntityUid user)
-        {
-            return _complexInteractionQuery.HasComp(user);
-        }
-
-        /// <summary>
         ///     Raises an event directed at both the user and the target entity to check whether a user is capable of
         ///     interacting with this entity.
         /// </summary>
@@ -89,7 +74,7 @@ namespace Content.Shared.ActionBlocker
                 return false;
 
             var ev = new InteractionAttemptEvent(user, target);
-            RaiseLocalEvent(user, ref ev);
+            RaiseLocalEvent(user, ev);
 
             if (ev.Cancelled)
                 return false;
@@ -98,7 +83,7 @@ namespace Content.Shared.ActionBlocker
                 return true;
 
             var targetEv = new GettingInteractedWithAttemptEvent(user, target);
-            RaiseLocalEvent(target.Value, ref targetEv);
+            RaiseLocalEvent(target.Value, targetEv);
 
             return !targetEv.Cancelled;
         }
@@ -129,7 +114,7 @@ namespace Content.Shared.ActionBlocker
         public bool CanConsciouslyPerformAction(EntityUid user)
         {
             var ev = new ConsciousAttemptEvent(user);
-            RaiseLocalEvent(user, ref ev);
+            RaiseLocalEvent(user, ev);
 
             return !ev.Cancelled;
         }
