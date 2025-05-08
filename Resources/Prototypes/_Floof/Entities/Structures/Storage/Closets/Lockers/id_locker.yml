@@ -1,0 +1,12 @@
+# TODO: unique appearence, maybe?
+# A generic secure closet that starts with an ID lock.
+- type: entity
+  id: LockerSteelIdLockable
+  suffix: ID lock
+  parent: [IdLockableBase, LockerSteel]
+  components:
+  - type: Construction
+    graph: ClosetSteelSecure
+    node: idLockable
+    containers:
+    - entity_storage
