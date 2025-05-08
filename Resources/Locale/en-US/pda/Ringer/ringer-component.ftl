@@ -3,7 +3,11 @@
 
 # For the PDA Ringer screen
 
-comp-ringer-vibration-popup = Your PDA vibrates
+comp-ringer-vibration-popup = {CAPITALIZE(THE($pda))} vibrates
+
+comp-ringer-vibration-popup-concealed = A PDA vibrates
+
+comp-ringer-vibration-popup-self = Your {$pda} vibrates
 
 comp-ringer-ui-menu-title = Ringtone
 
