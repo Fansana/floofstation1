@@ -195,6 +195,14 @@ namespace Content.Client.Popups
                 PopupMessage(message, type, transform.Coordinates, uid, true);
         }
 
+        public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
+        {
+            if (_playerManager.LocalEntity == uid)
+                PopupEntity(targetMessage, uid, targetType);
+            else
+                PopupEntity(otherMessage, uid, otherType);
+        }
+
         public override void PopupPredicted(string? message, EntityUid uid, EntityUid? recipient, PopupType type = PopupType.Small)
         {
             if (recipient != null && _timing.IsFirstTimePredicted)

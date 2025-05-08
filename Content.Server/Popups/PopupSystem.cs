@@ -88,6 +88,15 @@ namespace Content.Server.Popups
                 RaiseNetworkEvent(new PopupEntityEvent(message, type, GetNetEntity(uid)), actor.PlayerSession);
         }
 
+        public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
+        {
+            var filterEveryoneButTarget = Filter.Empty()
+                .AddPlayersByPvs(uid, entityManager: EntityManager, playerMan: _player, cfgMan: _cfg)
+                .RemovePlayerByAttachedEntity(uid);
+            PopupEntity(otherMessage, uid, filterEveryoneButTarget, true, otherType);
+            PopupEntity(targetMessage, uid, uid, targetType);
+        }
+
         public override void PopupClient(string? message, EntityUid? recipient, PopupType type = PopupType.Small)
         {
         }
