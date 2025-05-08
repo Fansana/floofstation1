@@ -5370,3 +5370,12 @@ Entries:
   id: 564
   time: '2025-05-07T13:55:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/956
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Removed default keybinds for switching between hotbar loadouts
+        (shift+num). You can still bind them yourself using the settings menu.
+  id: 565
+  time: '2025-05-08T13:47:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/960
