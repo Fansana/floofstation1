@@ -89,6 +89,11 @@ namespace Content.Shared.Popups
         public abstract void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small);
 
         /// <summary>
+        ///     Filtered variant of <see cref="PopupEntity(string, string, EntityUid, PopupType, PopupType)"/>.
+        /// </summary>
+        public abstract void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, Filter filter, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small);
+
+        /// <summary>
         /// Variant of <see cref="PopupCursor(string, EntityUid, PopupType)"/> that only runs on the client, outside of prediction.
         /// Useful for shared code that is always ran by both sides to avoid duplicate popups.
         /// </summary>

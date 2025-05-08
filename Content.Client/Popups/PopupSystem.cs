@@ -203,6 +203,14 @@ namespace Content.Client.Popups
                 PopupEntity(otherMessage, uid, otherType);
         }
 
+        public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, Filter filter, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
+        {
+            if (!filter.Recipients.Contains(_playerManager.LocalSession))
+                return;
+
+            PopupEntity(otherMessage, targetMessage, uid, targetType);
+        }
+
         public override void PopupPredicted(string? message, EntityUid uid, EntityUid? recipient, PopupType type = PopupType.Small)
         {
             if (recipient != null && _timing.IsFirstTimePredicted)

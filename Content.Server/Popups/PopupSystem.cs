@@ -90,9 +90,14 @@ namespace Content.Server.Popups
 
         public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
         {
-            var filterEveryoneButTarget = Filter.Empty()
-                .AddPlayersByPvs(uid, entityManager: EntityManager, playerMan: _player, cfgMan: _cfg)
-                .RemovePlayerByAttachedEntity(uid);
+            var filter = Filter.Empty()
+                .AddPlayersByPvs(uid, entityManager: EntityManager, playerMan: _player, cfgMan: _cfg);
+            PopupEntity(otherMessage, targetMessage, uid, filter, otherType, targetType);
+        }
+
+        public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, Filter filter, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
+        {
+            var filterEveryoneButTarget = filter.RemovePlayerByAttachedEntity(uid);
             PopupEntity(otherMessage, uid, filterEveryoneButTarget, true, otherType);
             PopupEntity(targetMessage, uid, uid, targetType);
         }
