@@ -5389,3 +5389,10 @@ Entries:
   id: 566
   time: '2025-05-08T14:48:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/963
+- author: Fansana
+  changes:
+    - type: Remove
+      message: Removed Station AI for now.
+  id: 567
+  time: '2025-05-08T19:12:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/966
