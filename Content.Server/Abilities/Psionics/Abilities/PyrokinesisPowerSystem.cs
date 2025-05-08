@@ -43,38 +43,7 @@ namespace Content.Server.Abilities.Psionics
                 smokableComponentOnSomeone.State == SmokableState.Unlit
             )
             {
-                var onSelf = args.Performer == args.Target;
-                var handTrick = onSelf &&  _hands.TryGetEmptyHand(args.Performer, out _);
-                var otherLocString = handTrick ?
-                    "pyrokinesis-power-used-smokable-performance" : "pyrokinesis-power-used-smokable-performance-no-hands";
-                var otherLocalizedString = Loc.GetString(otherLocString,
-                    ("performer", args.Performer),
-                    ("target", args.Target),
-                    ("targetEntity", targetEntity)
-                );
-                _smoking.SetSmokableState(targetEntity.Value, SmokableState.Lit, smokableComponentOnSomeone);
-                if (handTrick) _chat.TryEmoteWithChat(args.Performer, "Snap");
-                if (onSelf)
-                    _popupSystem.PopupEntity(
-                        otherLocalizedString,
-                        args.Target,
-                        PopupType.Small
-                    );
-                else // Get the target's attention!
-                {
-                    var targetLocalizedString = Loc.GetString("pyrokinesis-power-used-smokable-not-performed-self",
-                        ("performer", args.Performer),
-                        ("target", args.Target),
-                        ("targetEntity", targetEntity)
-                    );
-                    _popupSystem.PopupEntity(
-                        otherLocalizedString,
-                        targetLocalizedString,
-                        args.Target,
-                        PopupType.Small,
-                        PopupType.MediumCaution
-                    );
-                }
+                IgniteWornSmokable(args, (targetEntity.Value, smokableComponentOnSomeone));
                 args.Handled = true;
             }
             else if (
@@ -82,8 +51,7 @@ namespace Content.Server.Abilities.Psionics
                 smokableComponentWorld.State == SmokableState.Unlit
             )
             {
-                _smoking.SetSmokableState(args.Target, SmokableState.Lit, smokableComponentWorld);
-                _popupSystem.PopupEntity(Loc.GetString("pyrokinesis-power-used-smokable", ("target", args.Target)), args.Target, PopupType.LargeCaution);
+                IgniteSmokable(args, smokableComponentWorld);
                 args.Handled = true;
             }
             else if (TryComp<FlammableComponent>(args.Target, out var flammableComponent))
@@ -95,6 +63,48 @@ namespace Content.Server.Abilities.Psionics
             }
             if (args.Handled)
                 _psionics.LogPowerUsed(args.Performer, "pyrokinesis");
+        }
+
+        private void IgniteSmokable(PyrokinesisPowerActionEvent args, SmokableComponent smokableComponent)
+        {
+            _smoking.SetSmokableState(args.Target, SmokableState.Lit, smokableComponent);
+            _popupSystem.PopupEntity(Loc.GetString("pyrokinesis-power-used-smokable", ("target", args.Target)), args.Target, PopupType.LargeCaution);
+        }
+
+        private void IgniteWornSmokable(PyrokinesisPowerActionEvent args, Entity<SmokableComponent> smokable)
+        {
+            var onSelf = args.Performer == args.Target;
+            var handTrick = onSelf && _hands.TryGetEmptyHand(args.Performer, out _);
+            var otherLocString = handTrick ?
+                "pyrokinesis-power-used-smokable-performance" : "pyrokinesis-power-used-smokable-performance-no-hands";
+            var otherLocalizedString = Loc.GetString(otherLocString,
+                ("performer", args.Performer),
+                ("target", args.Target),
+                ("targetEntity", smokable)
+            );
+            _smoking.SetSmokableState(smokable, SmokableState.Lit, smokable);
+            if (handTrick) _chat.TryEmoteWithChat(args.Performer, "Snap");
+            if (onSelf)
+                _popupSystem.PopupEntity(
+                    otherLocalizedString,
+                    args.Target,
+                    PopupType.Small
+                );
+            else // Get the target's attention!
+            {
+                var targetLocalizedString = Loc.GetString("pyrokinesis-power-used-smokable-not-performed-self",
+                    ("performer", args.Performer),
+                    ("target", args.Target),
+                    ("targetEntity", smokable)
+                );
+                _popupSystem.PopupEntity(
+                    otherLocalizedString,
+                    targetLocalizedString,
+                    args.Target,
+                    PopupType.Small,
+                    PopupType.MediumCaution
+                );
+            }
         }
     }
 }
