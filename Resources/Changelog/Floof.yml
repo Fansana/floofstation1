@@ -5379,3 +5379,13 @@ Entries:
   id: 565
   time: '2025-05-08T13:47:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/960
+- author: Mnemotechnician
+  changes:
+    - type: Remove
+      message: >-
+        The action bar (hotbar) will no longer automatically switch to the next
+        page when it overflows (overflowing actions will still appear on the
+        next page, but you will need to switch manually)
+  id: 566
+  time: '2025-05-08T14:48:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/963
