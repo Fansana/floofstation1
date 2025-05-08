@@ -85,8 +85,8 @@ namespace Content.Server.PDA.Ringer
             UpdateRingerUserInterface(ent, ent, true);
         }
 
-        private void RingerPlayRingtone(EntityUid uid, RingerComponent ringer, RingerPlayRingtoneMessage args)
-        => RingerPlayRingtone((uid, ringer), PopupType.Small);
+        private void RingerPlayRingtone(Entity<RingerComponent> ent, ref RingerPlayRingtoneMessage args)
+        => RingerPlayRingtone(ent, PopupType.Small);
 
         public void RingerPlayRingtone(Entity<RingerComponent?> ent)
         {
