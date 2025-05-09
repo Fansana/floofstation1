@@ -203,7 +203,6 @@
       - LeashBasic # FloofStation
       - ClothingEyesHypnoVisor # FloofStation
       - ToolRadioHandheld # Floofstation
-      - HarnessSafety # FloofStation
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -1159,7 +1158,9 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    # Static recipes are inherited from the autolathe. This only adds some dynamic ones.
+    # Static recipes are inherited from the autolathe. See LatheComponent.
+    staticRecipes:
+      - HarnessSafety # FloofStation
     dynamicRecipes:
       # Machines and computers
       - TurboItemRechargerCircuitboard
@@ -1233,7 +1234,7 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    # Static recipes are inherited from the autolathe. This only adds some dynamic ones.
+    # Static recipes are inherited from the autolathe. See LatheComponent.
     dynamicRecipes:
     # Weapons and tools
     - WeaponGrapplingGun
