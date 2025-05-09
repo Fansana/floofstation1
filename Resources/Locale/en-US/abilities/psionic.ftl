@@ -62,10 +62,13 @@ action-description-noospheric-zap = Shocks the conciousness of the target and le
 action-name-pyrokinesis = Pyrokinesis
 action-description-pyrokinesis = Light a flammable target on fire.
 pyrokinesis-power-used = A wisp of flame engulfs {THE($target)}, igniting {OBJECT($target)}!
+
+# FloofStation Start
 pyrokinesis-power-used-smokable = A small wisp of flame lights {THE($target)}!
 pyrokinesis-power-used-smokable-performance = {CAPITALIZE(THE($performer))} raises {POSS-ADJ($performer)} hand and with a snap of {POSS-ADJ($performer)} fingers lights {THE($targetEntity)} with a small wisp of flame.
 pyrokinesis-power-used-smokable-performance-no-hands = A small wisp of flame appears in front of {THE($target)} and lights {POSS-ADJ($target)} {$targetEntity}.
 pyrokinesis-power-used-smokable-not-performed-self = A small wisp of flame appears in front of you and lights your {$targetEntity}!
+# FloofStation End
 
 action-name-psychokinesis = Psychokinesis
 action-description-psychokinesis = Bend the fabric of space to instantly move across it.
