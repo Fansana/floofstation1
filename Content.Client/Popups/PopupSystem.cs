@@ -195,6 +195,8 @@ namespace Content.Client.Popups
                 PopupMessage(message, type, transform.Coordinates, uid, true);
         }
 
+        // FLOOFSTATION START //
+
         public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
         {
             if (_playerManager.LocalEntity == uid)
@@ -210,6 +212,8 @@ namespace Content.Client.Popups
 
             PopupEntity(otherMessage, targetMessage, uid, targetType);
         }
+
+        // FLOOFSTATION END //
 
         public override void PopupPredicted(string? message, EntityUid uid, EntityUid? recipient, PopupType type = PopupType.Small)
         {

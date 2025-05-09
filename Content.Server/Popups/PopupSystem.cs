@@ -88,6 +88,8 @@ namespace Content.Server.Popups
                 RaiseNetworkEvent(new PopupEntityEvent(message, type, GetNetEntity(uid)), actor.PlayerSession);
         }
 
+        // FLOOFSTATION START //
+
         public override void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small)
         {
             var filter = Filter.Empty()
@@ -101,6 +103,8 @@ namespace Content.Server.Popups
             PopupEntity(otherMessage, uid, filterEveryoneButTarget, true, otherType);
             PopupEntity(targetMessage, uid, uid, targetType);
         }
+
+        // FLOOFSTATION END //
 
         public override void PopupClient(string? message, EntityUid? recipient, PopupType type = PopupType.Small)
         {
