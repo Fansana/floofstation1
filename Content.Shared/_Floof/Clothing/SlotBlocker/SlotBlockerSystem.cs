@@ -121,12 +121,12 @@ public sealed class SlotBlockerSystem : EntitySystem
 
             // Check whether this clothing is blocked by this slot
             if (equipment is {} equipment2
-                && BlockerObstructsSlot(other, other, ref equipment2.Comp.BlockedBy, check, (slot.SlotFlags, container), ref reason))
+                && BlockerObstructsSlot(other, other, ref equipment2.Comp.BlockedBy, check, slot.SlotFlags, targetSlot, ref reason))
                 return true;
 
             // Check whether the clothing in this slot blocks this clothing
             if (_blockerQuery.TryComp(other, out var otherBlocker)
-                && BlockerObstructsSlot(equipment, other, ref otherBlocker.Blocks, check, (slot.SlotFlags, container), ref reason))
+                && BlockerObstructsSlot(equipment, other, ref otherBlocker.Blocks, check, slot.SlotFlags, targetSlot, ref reason))
                 return true;
         }
 
@@ -139,15 +139,16 @@ public sealed class SlotBlockerSystem : EntitySystem
         EntityUid blocker,
         ref BlockerDefinition blocks,
         CheckType check,
-        (SlotFlags, ContainerSlot) blockerInSlot,
+        SlotFlags blockerInSlot,
+        SlotFlags equipmentInSlot,
         ref string? reason)
     {
-        if (!blocks.Slots.HasFlag(blockerInSlot.Item1)
+        if (!blocks.Slots.HasFlag(equipmentInSlot)
+            || (blocks.EnableInSlots & blockerInSlot) == 0
             // If there's an equipment whitelist, then equipment must be present to consider this blocker.
             || blocks.Whitelist != null && (whitelistTarget == null || _whitelist.IsWhitelistFail(blocks.Whitelist, whitelistTarget.Value))
             // Blacklist however always passes if there's no equipment.
             || blocks.Blacklist != null && whitelistTarget != null && _whitelist.IsBlacklistPass(blocks.Blacklist, whitelistTarget.Value)
-            || (blocks.EnableInSlots & blockerInSlot.Item1) == 0
         )
             return false;
 
