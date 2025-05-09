@@ -8,6 +8,12 @@
     - outerClothing
   - type: Sprite
     state: icon
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING
+      blacklist:
+      - ShirtlessClothing
 
 - type: entity
   abstract: true
@@ -181,6 +187,14 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING # Only blocks torso and below, eyes, mask, etc are blocked by the helmet
+      - GLOVES # Assuming gloves are placed *underneath*
+      - LEGS
+      - FEET
+      blacklist: [] # Clear the parent blacklist
 
 - type: entity
   abstract: true
@@ -219,6 +233,14 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING # Only blocks torso and below, eyes, mask, etc are blocked by the helmet
+      - GLOVES # Assuming gloves are placed *underneath*
+      - LEGS
+      - FEET
+      blacklist: [] # Clear the parent blacklist
 
 - type: entity
   parent: ClothingOuterBase

@@ -157,6 +157,7 @@
     #       32:
     #         sprite: Mobs/Species/Human/displacement.rsi
     #         state: jumpsuit-female
+  - type: InventorySlotBlocking # Floofstation
   - type: InventorySlots
   - type: FloatingVisuals
   - type: Climbing
