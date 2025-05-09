@@ -6,6 +6,17 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    angle: 90
+    heavyStaminaCost: 5
+    heavyDamageBaseModifier: 1.50
+    damage:
+      types:
+        Blunt: 1
+  - type: StaminaDamageOnHit
+    damage: 10 
   - type: StaticPrice
     price: 75
   - type: Tag
