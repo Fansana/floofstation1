@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBandanaTest
+  name: Neck Bandana
+  description: A M3739 thing
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/NeckBandanas/NeckBandana-TEST.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/NeckBandanas/NeckBandana-TEST.rsi
