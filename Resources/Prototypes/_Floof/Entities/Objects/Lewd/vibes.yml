@@ -16,6 +16,17 @@
   - type: UseDelay
     delay: 1.0
   - type: Appearance
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    angle: 90
+    heavyStaminaCost: 5
+    heavyDamageBaseModifier: 1.50
+    damage:
+      types:
+        Blunt: 1
+  - type: StaminaDamageOnHit
+    damage: 10 
   - type: GenericVisualizer
     visuals:
       enum.ToggleVisuals.Toggled:
