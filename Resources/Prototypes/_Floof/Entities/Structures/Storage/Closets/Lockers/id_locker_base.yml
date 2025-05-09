@@ -35,7 +35,7 @@
 # Why? Because if one CMO was to engage an ID lock on their locker, another CMO could easily open it using their own ID as a master key.
 - type: entity
   id: IdLockableBaseService
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -44,7 +44,7 @@
 # The below only list the direct masters. Captain, HoP, and central command master accesses are inherited.
 - type: entity
   id: IdLockableBaseLogistics
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -52,7 +52,7 @@
 
 - type: entity
   id: IdLockableBaseMedical
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -60,7 +60,7 @@
 
 - type: entity
   id: IdLockableBaseEngineering
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -68,7 +68,7 @@
 
 - type: entity
   id: IdLockableBaseResearch
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -76,7 +76,7 @@
 
 - type: entity
   id: IdLockableBaseSecurity
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
