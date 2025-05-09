@@ -13,7 +13,8 @@
       slots:
       - INNERCLOTHING
       blacklist:
-      - ShirtlessClothing
+        tags:
+        - ShirtlessClothing
 
 - type: entity
   abstract: true
@@ -194,7 +195,7 @@
       - GLOVES # Assuming gloves are placed *underneath*
       - LEGS
       - FEET
-      blacklist: [] # Clear the parent blacklist
+      blacklist: {} # Clear the parent blacklist
 
 - type: entity
   abstract: true
@@ -240,7 +241,7 @@
       - GLOVES # Assuming gloves are placed *underneath*
       - LEGS
       - FEET
-      blacklist: [] # Clear the parent blacklist
+      blacklist: {} # Clear the parent blacklist
 
 - type: entity
   parent: ClothingOuterBase
