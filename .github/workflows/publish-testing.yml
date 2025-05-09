@@ -6,7 +6,7 @@ concurrency:
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   build:
@@ -59,7 +59,7 @@ jobs:
         ARTIFACT_ID: ${{ steps.artifact-upload-step.outputs.artifact-id }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
         ROBUST_CDN_URL: ${{ vars.ROBUST_CDN_URL }}
-        FORK_ID: "floofstation-test"
+        FORK_ID: "floof-station-nebula"
 
     # - name: Publish changelog (Discord)
     #   run: Tools/actions_changelogs_since_last_run.py

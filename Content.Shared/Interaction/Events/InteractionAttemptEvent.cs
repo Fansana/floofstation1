@@ -3,33 +3,39 @@
     /// <summary>
     ///     Event raised directed at a user to see if they can perform a generic interaction.
     /// </summary>
-    [ByRefEvent]
-    public struct InteractionAttemptEvent(EntityUid uid, EntityUid? target)
+    public sealed class InteractionAttemptEvent : CancellableEntityEventArgs
     {
-        public bool Cancelled;
-        public readonly EntityUid Uid = uid;
-        public readonly EntityUid? Target = target;
+        public InteractionAttemptEvent(EntityUid uid, EntityUid? target)
+        {
+            Uid = uid;
+            Target = target;
+        }
+
+        public EntityUid Uid { get; }
+        public EntityUid? Target { get; }
     }
 
     /// <summary>
     /// Raised to determine whether an entity is conscious to perform an action.
     /// </summary>
-    [ByRefEvent]
-    public struct ConsciousAttemptEvent(EntityUid uid)
+    public sealed class ConsciousAttemptEvent(EntityUid Uid) : CancellableEntityEventArgs
     {
-        public bool Cancelled;
-        public readonly EntityUid Uid = uid;
+        public EntityUid Uid { get; } = Uid;
     }
 
     /// <summary>
     ///     Event raised directed at the target entity of an interaction to see if the user is allowed to perform some
     ///     generic interaction.
     /// </summary>
-    [ByRefEvent]
-    public struct GettingInteractedWithAttemptEvent(EntityUid uid, EntityUid? target)
+    public sealed class GettingInteractedWithAttemptEvent : CancellableEntityEventArgs
     {
-        public bool Cancelled;
-        public readonly EntityUid Uid = uid;
-        public readonly EntityUid? Target = target;
+        public GettingInteractedWithAttemptEvent(EntityUid uid, EntityUid? target)
+        {
+            Uid = uid;
+            Target = target;
+        }
+
+        public EntityUid Uid { get; }
+        public EntityUid? Target { get; }
     }
 }

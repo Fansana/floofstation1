@@ -3,7 +3,6 @@
   parent:
   - BaseMob
   - MobDamageable
-  - MobPolymorphable
   - MobCombat
   id: BaseMobSpecies
   abstract: true

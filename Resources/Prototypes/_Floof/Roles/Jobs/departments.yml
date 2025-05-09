@@ -4,7 +4,7 @@
   color: "#6e6e6e"
   weight: -10
   roles:
-  #- Borg Got moved to Silicon department by StationAi
+  - Borg
   - Passenger
   - Visitor
   - Prisoner # Nyanotrasen - Prisoner, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml

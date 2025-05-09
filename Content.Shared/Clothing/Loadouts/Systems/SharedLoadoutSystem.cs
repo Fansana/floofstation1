@@ -75,8 +75,6 @@ public sealed class SharedLoadoutSystem : EntitySystem
         var failedLoadouts = new List<EntityUid>();
         var allLoadouts = new List<(EntityUid, LoadoutPreference, int)>();
         heirlooms = new();
-        if (!job.SpawnLoadout)
-            return (failedLoadouts, allLoadouts);
 
         foreach (var loadout in profile.LoadoutPreferences)
         {
