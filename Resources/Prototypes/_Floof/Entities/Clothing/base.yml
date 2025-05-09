@@ -1,5 +1,7 @@
 # Base clothing that can be equipped without removing a coat or similar outer clothing
-- id: ClothingUniformShirtlessBase
+- type: entity
+  id: ClothingUniformShirtlessBase
+  abstract: true
   components:
   - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
     tags:
@@ -8,5 +10,7 @@
     - Skirt
     - ShirtlessClothing # to allow equipping/unequipping under coats and the like
 
-- id: ClothingUniformThongBase
+- type: entity
+  id: ClothingUniformThongBase
   parent: [ClothingUniformShirtlessBase, ClothingUniformBase]
+  abstract: true
