@@ -1,8 +1,12 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
 using Content.Shared.Clothing.Components;
+using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Whitelist;
+using Microsoft.Extensions.Primitives;
 using Robust.Shared.Containers;
 
 
@@ -22,6 +26,7 @@ public sealed class SlotBlockerSystem : EntitySystem
     public override void Initialize()
     {
         SubscribeLocalEvent<SlotBlockerComponent, MapInitEvent>(OnMapInitSanityCheck);
+        SubscribeLocalEvent<SlotBlockerComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<InventorySlotBlockingComponent, IsEquippingAttemptEvent>(OnCheckSlotBlockingEquip);
         SubscribeLocalEvent<InventorySlotBlockingComponent, IsUnequippingAttemptEvent>(OnCheckSlotBlockingUnequip);
         SubscribeLocalEvent<SlotBlockerComponent, BeingEquippedAttemptEvent>(OnCheckBlockedEquip);
@@ -40,6 +45,41 @@ public sealed class SlotBlockerSystem : EntitySystem
         }
 
         // Tempting to check if the blocker can block its own unequip, but there's just too much things to consider. Will just do a runtime check.
+    }
+
+    private void OnExamine(Entity<SlotBlockerComponent> ent, ref ExaminedEvent args)
+    {
+        if (!args.IsInDetailsRange)
+            return;
+
+        string SlotsToString(SlotFlags slots)
+        {
+            // as of right now, OuterClothing has the highest integer value. If more get added, update this.
+            var values = Enum.GetValues<SlotFlags>();
+            var sb = new StringBuilder();
+
+            foreach (var slot in values)
+            {
+                if (!Loc.TryGetString("slot-name-" + Enum.GetName(slot), out var locName))
+                    continue;
+
+                if (sb.Length > 0)
+                    sb.Append(", ");
+
+                sb.Append(locName);
+            }
+
+            return sb.ToString();
+        }
+
+        using (args.PushGroup(nameof(SlotBlockerComponent)))
+        {
+            if (ent.Comp.Blocks.Slots != SlotFlags.NONE)
+                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocks", ("slots", SlotsToString(ent.Comp.Blocks.Slots))));
+
+            if (ent.Comp.BlockedBy.Slots != SlotFlags.NONE)
+                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocked-by", ("slots", SlotsToString(ent.Comp.BlockedBy.Slots))));
+        }
     }
 
     private void OnCheckSlotBlockingEquip(Entity<InventorySlotBlockingComponent> ent, ref IsEquippingAttemptEvent args)
@@ -121,11 +161,13 @@ public sealed class SlotBlockerSystem : EntitySystem
 
             // Check whether this clothing is blocked by this slot
             if (equipment is {} equipment2
+                && equipment2.Comp.BlockedBy.Slots != SlotFlags.NONE
                 && BlockerObstructsSlot(other, other, ref equipment2.Comp.BlockedBy, check, slot.SlotFlags, targetSlot, ref reason))
                 return true;
 
             // Check whether the clothing in this slot blocks this clothing
             if (_blockerQuery.TryComp(other, out var otherBlocker)
+                && otherBlocker.Blocks.Slots != SlotFlags.NONE
                 && BlockerObstructsSlot(equipment, other, ref otherBlocker.Blocks, check, slot.SlotFlags, targetSlot, ref reason))
                 return true;
         }
