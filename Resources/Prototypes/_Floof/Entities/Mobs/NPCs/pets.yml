@@ -20,9 +20,9 @@
     - VimPilot
 
 - type: entity
-  name: Pet Based
+  name: pet spider
   parent: [MobGiantSpider, BaseItem]
-  id: MobPetBase
+  id: MobPetSpiderBase
   description: Rescue by the SESWC. SESWC vowed to Heal, raise, and rehome as much as possible.
   categories: [ HideSpawnMenu ]
   components:
