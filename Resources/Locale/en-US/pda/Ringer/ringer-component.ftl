@@ -2,6 +2,7 @@
 ### UI
 
 # For the PDA Ringer screen
+# FloofStation Modified!
 
 comp-ringer-vibration-popup = {CAPITALIZE(THE($pda))} vibrates
 

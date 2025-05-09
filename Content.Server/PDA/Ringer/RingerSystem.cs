@@ -57,6 +57,8 @@ namespace Content.Server.PDA.Ringer
                 args.Cancel();
         }
 
+        // FLOOFSTATION MODIFIED START //
+
         private void RingerPlayRingtone(Entity<RingerComponent> ent, PopupType popupType)
         {
             EnsureComp<ActiveRingerComponent>(ent);
@@ -94,6 +96,8 @@ namespace Content.Server.PDA.Ringer
                 return;
             RingerPlayRingtone((ent, ent.Comp), PopupType.Medium);
         }
+
+        // FLOOFSTATION MODIFIED END //
 
         private void UpdateRingerUserInterfaceDriver(EntityUid uid, RingerComponent ringer, RingerRequestUpdateInterfaceMessage args)
         {
