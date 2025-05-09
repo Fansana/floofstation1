@@ -62,4 +62,3 @@ marking-SpeciesAdaptorReptilianLLeg        = Base Sprite - Reptilian Left Leg
 marking-SpeciesAdaptorReptilianLFoot       = Base Sprite - Reptilian Left Foot
 marking-SpeciesAdaptorReptilianRLeg        = Base Sprite - Reptilian Right Leg
 marking-SpeciesAdaptorReptilianRFoot       = Base Sprite - Reptilian Right Foot
-
