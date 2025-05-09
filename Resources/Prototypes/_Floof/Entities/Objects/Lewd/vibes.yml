@@ -10,8 +10,8 @@
   - type: StaticPrice
     price: 100
   - type: ItemToggle
-    predictable: false
-    soundActivate:
+  - type: ItemToggleActiveSound
+    activeSound:
       path: /Audio/_Floof/Lewd/vibrate.ogg
   - type: UseDelay
     delay: 1.0
