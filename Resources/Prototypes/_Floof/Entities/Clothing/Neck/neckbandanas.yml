@@ -2,7 +2,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckTiedScarf
   name: tied scarf
-  description: A unique neckwear choice for the adventurous spirit. The origins of this style remains a mystery to this day.
+  description: A unique neckwear choice evoking an adventurous spirit. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf.rsi
