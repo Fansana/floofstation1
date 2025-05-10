@@ -1,0 +1,1 @@
+loadout-name-LoadoutNeckTiedScarfColorable = tied scarf (colorable)

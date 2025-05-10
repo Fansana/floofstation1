@@ -1,10 +1,10 @@
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfTest
-  name: Tied Scarf
-  description: A M3739 thing
+  id: ClothingNeckTiedScarf
+  name: tied scarf
+  description: A unique neckwear choice for the adventurous spirit. The origins of this style remains a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf-TEST.rsi
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf-TEST.rsi
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf.rsi
