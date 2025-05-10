@@ -87,7 +87,33 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutNeck
-    
+      
+- type: loadout
+  id: LoadoutNeckTiedScarfColorable
+  category: Neck
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  items:
+    - ClothingNeckTiedScarf
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutNeck
+
+- type: loadout
+  id: LoadoutSecurityNeckTiedScarf
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  items:
+    - ClothingNeckTiedScarfSecurity
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityNeck
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
 
 # Harness.
 # Placing it here because it should in THEORY always get equipped on the neck slot by default
