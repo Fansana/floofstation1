@@ -1,0 +1,30 @@
+- type: marking
+  id: AriralEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  followSkinColor: true
+  speciesRestriction: [Ariral]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Ariral/ear_markings.rsi
+    state: ears
+
+- type: marking
+  id: AriralTail
+  bodyPart: Tail
+  markingCategory: Tail
+  followSkinColor: true
+  speciesRestriction: [Ariral]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Ariral/tail_markings.rsi
+    state: tail
+
+- type: marking
+  id: AriralTailFluff
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Ariral]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Ariral/tail_markings.rsi
+    state: tail
+  - sprite: _ShibaStation/Mobs/Customization/Ariral/tail_markings.rsi
+    state: tail_overlay

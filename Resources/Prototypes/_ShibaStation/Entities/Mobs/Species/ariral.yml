@@ -1,0 +1,209 @@
+- type: entity
+  save: false
+  name: Urist McArir
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobAriral
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+    state: full
+  - type: Thirst
+  - type: Speech
+    speechVerb: Ariral
+    allowedEmotes: ["Meow", "Purr", "Hiss"]
+  - type: Vocal
+    sounds:
+      Male: MaleAriral
+      Female: FemaleAriral
+      Unsexed: FemaleAriral
+  - type: InteractionPopup
+    successChance: 0
+    interactFailureString: petting-failure-ariral
+    messagePerceivedByOthers: null
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Damageable
+    damageModifierSet: Ariral
+  - type: Stamina
+    critThreshold: 75 # Less stamina, easier to down.
+  - type: Bloodstream # Ariral blood is unique and toxic, but arirals bleed very easily and don't passively heal as fast.
+    bloodReagent: AriralBlood
+    bloodRefreshAmount: 0.85
+    bleedReductionAmount: 0.25
+    damageBleedModifiers: BloodlossAriral
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 3 # Less melee damage but they apply poison after two+ hits.
+  - type: SolutionContainerManager # Contact with arirals is toxic, so we need a way to transfer that in melee combat.
+    solutions:
+      skin:
+        maxVol: 30
+  - type: SolutionRegeneration
+    solution: skin
+    generated:
+      reagents:
+      - ReagentId: AriralSweat
+        Quantity: 0.5
+  - type: MeleeChemicalInjector # Effects should be applied after two hits, three+ applying poison.
+    solution: skin
+    transferAmount: 1
+  - type: HumanoidAppearance
+    speciesId: Ariral
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: hands
+      head:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: head
+      back:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: ears
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: feet
+      neck:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: neck
+      mask:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: mask
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: suitStorage
+      belt:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: belt
+  - type: Inventory
+    speciesId: reptilian # Reuse lizard displacements, especially for the feet.
+    displacements: # Reuse lizard displacements, especially for the feet.
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+
+- type: entity
+  save: false
+  name: Ariral Dummy
+  parent: MobHumanDummy
+  id: MobAriralDummy
+   categories: [ HideSpawnMenu ]
+   description: A dummy ariral meant to be used in character setup.
+    speciesId: Ariral
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: hands
+      head:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: head
+      back:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: ears
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: feet
+      neck:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: neck
+      mask:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: mask
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: suitStorage
+      belt:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: belt
+  - type: Inventory
+    speciesId: reptilian # Reuse lizard displacements, especially for the feet.
+    displacements: # Reuse lizard displacements, especially for the feet.
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
