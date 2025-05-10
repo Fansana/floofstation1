@@ -8,16 +8,20 @@ namespace Content.Shared.Lathe
     [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
     public sealed partial class EmagLatheRecipesComponent : Component
     {
+        // FloofStation Modified
+        // AlwaysPushInheritance done to remain consistent with LatheComponent
         /// <summary>
         /// All of the dynamic recipes that the lathe is capable to get using EMAG
         /// </summary>
-        [DataField, AutoNetworkedField]
+        [DataField, AlwaysPushInheritance, AutoNetworkedField]
         public List<ProtoId<LatheRecipePrototype>> EmagDynamicRecipes = new();
 
+        // FloofStation Modified
+        // Ditto from EmagDynamicRecipes
         /// <summary>
         /// All of the static recipes that the lathe is capable to get using EMAG
         /// </summary>
-        [DataField, AutoNetworkedField]
+        [DataField, AlwaysPushInheritance, AutoNetworkedField]
         public List<ProtoId<LatheRecipePrototype>> EmagStaticRecipes = new();
     }
 }
