@@ -5417,3 +5417,20 @@ Entries:
   id: 570
   time: '2025-05-10T18:30:11.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/959
+- author: XenoOutlier
+  changes:
+    - type: Add
+      message: >-
+        New separate faction for Hostile clown mobs called "ClownRage" do with
+        this as you will.
+    - type: Tweak
+      message: >-
+        Animal friend now works on: Tarantulas (But not Clown Spiders), Space
+        adders and Gorillas and does not work on the Behonker anymore.
+    - type: Fix
+      message: >-
+        The excommunicant like many other loadout weapons is no longer
+        exclusive. You may now have a backpack, mantis.
+  id: 571
+  time: '2025-05-10T18:34:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/951
