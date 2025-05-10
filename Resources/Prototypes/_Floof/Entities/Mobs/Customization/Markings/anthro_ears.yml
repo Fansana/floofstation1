@@ -4,7 +4,7 @@
   id: EarsFox
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: ears_fox_primary
@@ -334,7 +334,7 @@
   id: EarsEevee
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_eevee_ADJ_primary: m_ears_eevee_FRONT_primary
     m_ears_eevee_ADJ_secondary: m_ears_eevee_FRONT_secondary
@@ -352,7 +352,7 @@
   id: EarsEeveeAlt
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_eevee_alt_ADJ_primary: m_ears_eevee_alt_FRONT_primary
     m_ears_eevee_alt_ADJ_secondary: m_ears_eevee_alt_FRONT_secondary
@@ -435,7 +435,7 @@
   id: EarsSabresuneExtra
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_extra_sabresune_ADJ: m_ears_extra_sabresune_FRONT
   sprites:
@@ -448,7 +448,7 @@
   id: EarsFennec
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_fennec_ADJ_primary: m_ears_fennec_FRONT_primary
     m_ears_fennec_ADJ_tertiary: m_ears_fennec_FRONT_tertiary
@@ -479,7 +479,7 @@
   id: EarsFourEars2
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_four_ears_2_ADJ_primary: m_ears_four_ears_2_FRONT_primary
   sprites:
@@ -494,7 +494,7 @@
   id: MEarsFox
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_fox_ADJ_primary: m_ears_fox_FRONT_primary
     m_ears_fox_ADJ_secondary: m_ears_fox_FRONT_secondary
@@ -587,7 +587,7 @@
   id: EarsLunasune
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_lunasune_ADJ_primary: m_ears_lunasune_FRONT_primary
     m_ears_lunasune_ADJ_secondary: m_ears_lunasune_FRONT_secondary
@@ -717,7 +717,7 @@
   id: EarsPerky
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_perky_ADJ_primary: m_ears_perky_FRONT_primary
     m_ears_perky_ADJ_secondary: m_ears_perky_FRONT_secondary
@@ -843,7 +843,7 @@
   id: EarsSabresune
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
     m_ears_sabresune_ADJ_primary: m_ears_sabresune_FRONT_primary
     m_ears_sabresune_ADJ_secondary: m_ears_sabresune_FRONT_secondary

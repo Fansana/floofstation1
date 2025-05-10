@@ -122,7 +122,7 @@ public sealed class SharpSystem : EntitySystem
             popupEnt, args.Args.User, popupType);
 
         if (hasBody && butcher.GibBody) // Floof - added additional check
-            _bodySystem.GibBody(args.Args.Target.Value, body: body, gibOrgans: butcher.GibOrgans, contents: butcher.GibContents);
+            _bodySystem.GibBody(args.Args.Target.Value, body: body, acidify: butcher.GibOrgans, contents: butcher.GibContents);
 
         _destructibleSystem.DestroyEntity(args.Args.Target.Value);
 

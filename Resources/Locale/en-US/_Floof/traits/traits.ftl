@@ -125,6 +125,13 @@ trait-description-NaturalNekomimetic =
     To the casual observer, this language is an incomprehensible mess of broken Japanese. To the Felinids and Oni, it's somehow comprehensible.
     Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
 
+trait-name-NaturalKagebun = Natural Kagebun Speaker
+trait-description-NaturalKagebun =
+    An ancient language primarily used by the yōkai, originating from their supernatural roots. 
+    To the uninitiated, it is a chorus of sounds ranging from eerie whispers to ritualistic chanting.
+    To those who speak it, it is a living tongue that links them to the spirit world and their ancient pacts.
+    Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
+
 trait-name-CulinaryAdaptationTheobromine = Culinary Adaptation (Theobromine)
 trait-description-CulinaryAdaptationTheobromine =
     Whether through genetic modification, cybernetic implants, or just being a different kind of critter, you have adapted to be able to metabolize theobromine.

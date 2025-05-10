@@ -160,7 +160,7 @@ namespace Content.Server.Kitchen.EntitySystems
             _transform.SetCoordinates(victimUid, Transform(uid).Coordinates);
             // THE WHAT?
             // TODO: Need to be able to leave them on the spike to do DoT, see ss13.
-            var gibs = _bodySystem.GibBody(victimUid);
+            var gibs = _bodySystem.GibBody(victimUid, acidify: true); // DeltaV: spawn organs
             foreach (var gib in gibs) {
                 QueueDel(gib);
             }
