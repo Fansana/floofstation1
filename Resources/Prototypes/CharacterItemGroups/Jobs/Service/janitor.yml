@@ -73,10 +73,12 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutJanitorOuter
-#  maxItems: 1
-#  items:
+- type: characterItemGroup
+  id: LoadoutJanitorOuter
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutServiceWinterCoatJanitor
 
 - type: characterItemGroup
   id: LoadoutJanitorShoes

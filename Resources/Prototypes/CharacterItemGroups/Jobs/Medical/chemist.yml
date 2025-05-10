@@ -97,6 +97,8 @@
       id: LoadoutMedicalOuterApronChemist
     - type: loadout # Floof - Add missing medical loadout items
       id: LoadoutChemistOuterWinter
+    - type: loadout
+      id: LoadoutChemistWinterCoat
 
 - type: characterItemGroup
   id: LoadoutChemistShoes

@@ -58,6 +58,8 @@
   maxItems: 1
   items:
     - type: loadout
+      id: LoadoutClothingOuterWinterCoatWarden
+    - type: loadout
       id: LoadoutClothingOuterCoatWarden
 # Floof region - Add missing warden loadouts
     - type: loadout
