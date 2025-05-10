@@ -1,24 +1,8 @@
 - type: entity
-  id: WeaponProtoKineticAcceleratorborg
-  parent: WeaponProtoKineticAccelerator
-  name: proto-kinetic accelerator borg
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Gun
-    fireRate: 0.5
-    selectedMode: SemiAuto
-    minAngle: 1
-    maxAngle: 3
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
-    fireOnDropChance: 1
-
-- type: entity
   id: BorgZipties
   suffix: Robot
   parent: Zipties
+  categories: [ HideSpawnMenu ]
   components:
   - type: Handcuff
     removeOnUse: false
@@ -38,3 +22,19 @@
     startBreakoutSound:
       path: /Audio/Items/Handcuffs/rope_takeoff.ogg
     uncuffEasierWhenLarge: true
+
+- type: entity
+  parent: WeaponLauncherCleanade
+  suffix: Borg
+  id: WeaponLauncherCleanadeBorg
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BallisticAmmoProvider
+    loadOnUse: true
+    whitelist:
+      tags:
+        - Cleanade
+    capacity: 2
+    proto: CleanerGrenade
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg

@@ -32,18 +32,3 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
-- type: entity
-  parent: WeaponLauncherCleanade
-  suffix: Borg
-  id: WeaponLauncherCleanadeBorg
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: BallisticAmmoProvider
-    loadOnUse: true
-    whitelist:
-      tags:
-        - Cleanade
-    capacity: 2
-    proto: CleanerGrenade
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
