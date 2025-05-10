@@ -27,6 +27,8 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
         {"MaximumIdleTime", 7f},
         {MedibotInjectRange, 4f},
         {MeleeMissChance, 0.3f},
+
+        {PlantbotServiceRange, 4f},
         {"MeleeRange", 1f},
         {"MinimumIdleTime", 2f},
         {"MovementRangeClose", 0.2f},
@@ -293,6 +295,7 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
     public const string Inventory = "Inventory";
     public const string MedibotInjectRange = "MedibotInjectRange";
 
+    public const string PlantbotServiceRange = "PlantbotServiceRange";
     public const string MeleeMissChance = "MeleeMissChance";
 
     public const string Owner = "Owner";
