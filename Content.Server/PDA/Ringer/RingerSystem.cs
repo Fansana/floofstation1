@@ -15,6 +15,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Robust.Server.Audio;
+using Robust.Shared.Containers;
 
 namespace Content.Server.PDA.Ringer
 {
@@ -27,6 +28,7 @@ namespace Content.Server.PDA.Ringer
         [Dependency] private readonly AudioSystem _audio = default!;
         [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
         [Dependency] private readonly TransformSystem _transform = default!;
+        [Dependency] private readonly SharedContainerSystem _container = default!;
 
         private readonly Dictionary<NetUserId, TimeSpan> _lastSetRingtoneAt = new();
 
@@ -55,26 +57,47 @@ namespace Content.Server.PDA.Ringer
                 args.Cancel();
         }
 
-        private void RingerPlayRingtone(EntityUid uid, RingerComponent ringer, RingerPlayRingtoneMessage args)
+        // FLOOFSTATION MODIFIED START //
+
+        private void RingerPlayRingtone(Entity<RingerComponent> ent, PopupType popupType)
         {
-            EnsureComp<ActiveRingerComponent>(uid);
+            EnsureComp<ActiveRingerComponent>(ent);
 
-            _popupSystem.PopupEntity(Loc.GetString("comp-ringer-vibration-popup"), uid, Filter.Pvs(uid, 0.05f), false, PopupType.Small);
+            var filter = Filter.Pvs(ent, 0.05f);
 
-            UpdateRingerUserInterface(uid, ringer, true);
+            _container.TryGetContainingContainer((ent, default, default), out var container);
+
+            if (container != null)
+            {
+                // If the container is the player, then they know which PDA is vibrating
+                // Though if it is contained in something, hint which container to the player
+                _container.TryGetContainingContainer((container.Owner, default, default), out var containerOuter);
+                var targetContainer = containerOuter ?? container;
+                var targetLocalized = containerOuter == null ?
+                    Loc.GetString("comp-ringer-vibration-popup-self", ("pda", ent)) :
+                    Loc.GetString("comp-ringer-vibration-popup-concealed-self", ("container", container.Owner));
+                var otherLocalized = Loc.GetString("comp-ringer-vibration-popup-concealed");
+                _popupSystem.PopupEntity(otherLocalized, targetLocalized, targetContainer.Owner, filter, popupType, popupType);
+            }
+            else
+            {
+                _popupSystem.PopupEntity(Loc.GetString("comp-ringer-vibration-popup", ("pda", ent)), ent, filter, false, popupType);
+            }
+
+            UpdateRingerUserInterface(ent, ent, true);
         }
+
+        private void RingerPlayRingtone(Entity<RingerComponent> ent, ref RingerPlayRingtoneMessage args)
+        => RingerPlayRingtone(ent, PopupType.Small);
 
         public void RingerPlayRingtone(Entity<RingerComponent?> ent)
         {
             if (!Resolve(ent, ref ent.Comp))
                 return;
-
-            EnsureComp<ActiveRingerComponent>(ent);
-
-            _popupSystem.PopupEntity(Loc.GetString("comp-ringer-vibration-popup"), ent, Filter.Pvs(ent, 0.05f), false, PopupType.Medium);
-
-            UpdateRingerUserInterface(ent, ent.Comp, true);
+            RingerPlayRingtone((ent, ent.Comp), PopupType.Medium);
         }
+
+        // FLOOFSTATION MODIFIED END //
 
         private void UpdateRingerUserInterfaceDriver(EntityUid uid, RingerComponent ringer, RingerRequestUpdateInterfaceMessage args)
         {
