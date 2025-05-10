@@ -5410,3 +5410,10 @@ Entries:
   id: 569
   time: '2025-05-10T18:28:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/958
+- author: sprkl
+  changes:
+    - type: Remove
+      message: The Syndicate will no longer ask agents to hijack the evac shuttle.
+  id: 570
+  time: '2025-05-10T18:30:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/959
