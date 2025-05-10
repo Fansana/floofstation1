@@ -5396,3 +5396,10 @@ Entries:
   id: 567
   time: '2025-05-08T19:12:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/966
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Fixed the hitscan bounty
+  id: 568
+  time: '2025-05-10T18:25:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/962
