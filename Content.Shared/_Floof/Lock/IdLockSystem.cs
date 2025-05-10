@@ -227,7 +227,7 @@ public sealed class IdLockSystem : EntitySystem
             return;
 
         ent.Comp.State = Engaged;
-        ent.Comp.Info = new() { OwnerName = id.Comp.FullName, OwnerJobTitle = id.Comp.JobTitle };
+        ent.Comp.Info = new() { OwnerName = id.Comp.FullName, OwnerJobTitle = id.Comp.LocalizedJobTitle };
         Dirty(ent);
 
         _popups.PopupPredicted(Loc.GetString("id-lock-locked", ("ent", ent.Owner)), ent, user);
@@ -301,7 +301,7 @@ public sealed class IdLockSystem : EntitySystem
         if (lockable.Comp.State is not Engaged)
             return AccessLevel.CanLock;
 
-        if (lockable.Comp.Info.OwnerName == id.Comp.FullName && lockable.Comp.Info.OwnerJobTitle == id.Comp.JobTitle)
+        if (lockable.Comp.Info.OwnerName == id.Comp.FullName && lockable.Comp.Info.OwnerJobTitle == id.Comp.LocalizedJobTitle)
             return AccessLevel.CanUnlock;
 
         return AccessLevel.None;
