@@ -141,7 +141,7 @@
   id: VulpSnoutAlt
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: muzzle_alt
@@ -152,7 +152,7 @@
   id: VulpSnout
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: muzzle
@@ -163,7 +163,7 @@
   id: VulpSnoutSharp
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: muzzle_sharp
@@ -174,7 +174,7 @@
   id: VulpSnoutFade
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: muzzle_fade
@@ -185,7 +185,7 @@
   id: VulpSnoutNose
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: nose
@@ -194,7 +194,7 @@
   id: VulpSnoutMask
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: mask
@@ -205,7 +205,7 @@
   id: VulpSnoutVulpine
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine
@@ -216,7 +216,7 @@
   id: VulpSnoutSwift
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: vulpine-lines
@@ -225,7 +225,7 @@
   id: VulpSnoutBlaze
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: blaze
@@ -234,7 +234,7 @@
   id: VulpSnoutPatch
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: patch
@@ -244,7 +244,7 @@
   id: VulpHeadTiger
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: tiger_head
@@ -253,7 +253,7 @@
   id: VulpHeadTigerFace
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: tiger_face
@@ -262,7 +262,7 @@
   id: VulpHeadSlash
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/head_markings.rsi
       state: slash
@@ -533,7 +533,7 @@
   id: VulpBellyCrest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_crest
@@ -542,7 +542,7 @@
   id: VulpBellyFull
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_full
@@ -551,7 +551,7 @@
   id: VulpBellyFox
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_fox
@@ -562,7 +562,7 @@
 #   id: VulpBodyPointsCrest
 #   markingCategory: Overlay
 #   bodyPart: RFoot
-#   speciesRestriction: [Vulpkanin, SlimePerson]
+#   speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
 #   sprites:
 #     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
 #       state: points_crest
@@ -571,7 +571,7 @@
 #   id: VulpBodyPointsFade
 #   markingCategory: Overlay
 #   bodyPart: RFoot
-#   speciesRestriction: [Vulpkanin, SlimePerson]
+#   speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
 #   sprites:
 #     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
 #       state: points_fade
@@ -580,7 +580,7 @@
 #   id: VulpBodyPointsSharp
 #   markingCategory: Overlay
 #   bodyPart: RFoot
-#   speciesRestriction: [Vulpkanin, SlimePerson]
+#   speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
 #   sprites:
 #     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
 #       state: points_sharp
@@ -590,7 +590,7 @@
   id: VulpPointsFeet
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_feet
@@ -599,7 +599,7 @@
   id: VulpPointsCrestLegs
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_crest-legs
@@ -608,7 +608,7 @@
   id: VulpPointsFadeLegs
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_fade-legs
@@ -617,7 +617,7 @@
   id: VulpPointsSharpLegs
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_sharp-legs
@@ -627,7 +627,7 @@
   id: VulpPointsHands
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_hands
@@ -636,7 +636,7 @@
   id: VulpPointsCrestArms
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_crest-arms
@@ -645,7 +645,7 @@
   id: VulpPointsFadeArms
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_fade-arms
@@ -654,7 +654,7 @@
   id: VulpPointsSharpArms
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: points_sharp-arms
@@ -663,7 +663,7 @@
 - type: marking
   id: VulpHairAdhara
   bodyPart: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   markingCategory: Hair
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
@@ -672,7 +672,7 @@
 - type: marking
   id: VulpHairAnita
   bodyPart: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   markingCategory: Hair
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
@@ -681,7 +681,7 @@
 - type: marking
   id: VulpHairApollo
   bodyPart: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   markingCategory: Hair
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
@@ -690,7 +690,7 @@
 - type: marking
   id: VulpHairBelle
   bodyPart: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   markingCategory: Hair
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
@@ -700,7 +700,7 @@
   id: VulpHairBraided
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: braided
@@ -709,7 +709,7 @@
   id: VulpHairBun
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: bun
@@ -718,7 +718,7 @@
   id: VulpHairCleanCut
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: clean_cut
@@ -727,7 +727,7 @@
   id: VulpHairCurl
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: curl
@@ -736,7 +736,7 @@
   id: VulpHairHawk
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: hawk
@@ -745,7 +745,7 @@
   id: VulpHairJagged
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: jagged
@@ -754,7 +754,7 @@
   id: VulpHairJeremy
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: jeremy
@@ -763,7 +763,7 @@
   id: VulpHairKajam
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: kajam
@@ -772,7 +772,7 @@
   id: VulpHairKeid
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: keid
@@ -781,7 +781,7 @@
   id: VulpHairKleeia
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: kleeia
@@ -790,7 +790,7 @@
   id: VulpHairMizar
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: mizar
@@ -799,7 +799,7 @@
   id: VulpHairPunkBraided
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: punkbraided
@@ -808,7 +808,7 @@
   id: VulpHairRaine
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: raine
@@ -817,7 +817,7 @@
   id: VulpHairRough
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: rough
@@ -826,7 +826,7 @@
   id: VulpHairShort
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: short
@@ -835,7 +835,7 @@
   id: VulpHairShort2
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: short2
@@ -844,7 +844,7 @@
   id: VulpHairSpike
   bodyPart: Hair
   markingCategory: Hair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/hair.rsi
       state: spike
@@ -854,7 +854,7 @@
   id: VulpFacialHairRuff
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/facial_hair.rsi
       state: ruff
@@ -863,7 +863,7 @@
   id: VulpFacialHairElder
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/facial_hair.rsi
       state: elder
@@ -872,7 +872,7 @@
   id: VulpFacialHairElderChin
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/facial_hair.rsi
       state: elder_chin
@@ -881,7 +881,7 @@
   id: VulpFacialHairKita
   bodyPart: FacialHair
   markingCategory: FacialHair
-  speciesRestriction: [Vulpkanin, SlimePerson]
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/facial_hair.rsi
       state: kita
