@@ -16,7 +16,7 @@
       types:
         Blunt: 1
   - type: StaminaDamageOnHit
-    damage: 10 
+    damage: 10
   - type: DamageOtherOnHit
     staminaCost: 2.5
   - type: StaticPrice
