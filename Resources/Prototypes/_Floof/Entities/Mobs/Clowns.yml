@@ -1,0 +1,9 @@
+- type: npcFaction
+  id: ClownRage # Floof, :o) Animal friend won't save you from clown alligned creatures this also gives clown mobs a faction to their own
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - Dragon
