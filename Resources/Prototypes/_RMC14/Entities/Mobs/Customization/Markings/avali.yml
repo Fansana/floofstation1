@@ -160,7 +160,7 @@
 - type: marking
   id: AvaliLArmStripeOne
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -171,7 +171,7 @@
 - type: marking
   id: AvaliRArmStripeOne
   bodyPart: RArm
-  markingCategory: Arms
+  markingCategory: RightArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -182,7 +182,7 @@
 - type: marking
   id: AvaliLHandStripeOne
   bodyPart: LHand
-  markingCategory: Arms
+  markingCategory: LeftHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -193,7 +193,7 @@
 - type: marking
   id: AvaliRHandStripeOne
   bodyPart: RHand
-  markingCategory: Arms
+  markingCategory: RightHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -204,7 +204,7 @@
 - type: marking
   id: AvaliLLegStripeOne
   bodyPart: LLeg
-  markingCategory: Legs
+  markingCategory: LeftLeg # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -213,7 +213,7 @@
 - type: marking
   id: AvaliRLegStripeOne
   bodyPart: RLeg
-  markingCategory: Legs
+  markingCategory: RightLeg # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_stripes_one.rsi
@@ -278,7 +278,7 @@
 - type: marking
   id: AvaliLArmTrimOne
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -289,7 +289,7 @@
 - type: marking
   id: AvaliRArmTrimOne
   bodyPart: RArm
-  markingCategory: Arms
+  markingCategory: RightArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -300,7 +300,7 @@
 - type: marking
   id: AvaliRHandTrimOne
   bodyPart: RHand
-  markingCategory: Arms
+  markingCategory: RightHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -311,7 +311,7 @@
 - type: marking
   id: AvaliLHandTrimOne
   bodyPart: LHand
-  markingCategory: Arms
+  markingCategory: LeftHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -322,7 +322,7 @@
 - type: marking
   id: AvaliLLegTrimOne
   bodyPart: LLeg
-  markingCategory: Legs
+  markingCategory: LeftLeg # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -333,7 +333,7 @@
 - type: marking
   id: AvaliRLegTrimOne
   bodyPart: RLeg
-  markingCategory: Legs
+  markingCategory: RightLeg # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_one.rsi
@@ -400,7 +400,7 @@
 - type: marking
   id: AvaliLArmTrimTwo
   bodyPart: LArm
-  markingCategory: Arms
+  markingCategory: LeftArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_two.rsi
@@ -411,7 +411,7 @@
 - type: marking
   id: AvaliRArmTrimTwo
   bodyPart: RArm
-  markingCategory: Arms
+  markingCategory: RightArm # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_two.rsi
@@ -422,7 +422,7 @@
 - type: marking
   id: AvaliLHandTrimTwo
   bodyPart: LHand
-  markingCategory: Arms
+  markingCategory: LeftHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_two.rsi
@@ -433,7 +433,7 @@
 - type: marking
   id: AvaliRHandTrimTwo
   bodyPart: RHand
-  markingCategory: Arms
+  markingCategory: RightHand # Floofstation
   speciesRestriction: [Avali]
   sprites:
   - sprite: _RMC14/Mobs/Avali/avali_trim_two.rsi

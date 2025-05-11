@@ -68,18 +68,30 @@
       required: false
     Underwear:
       points: 1
-      required: true
-      defaultMarkings: [ RMCUnderwearBoxersBlue ]
+      required: false # Floofstation, removed required underwear
     Undershirt:
       points: 1
-      required: true
-      defaultMarkings: [ RMCUndershirtStandard ]
-    Legs:
-      points: 2
+      required: false # Floofstation, removed required undershirt
+    # Floofstation,  had to split legs and arms into left and right plus break arms into arms and hands
+    RightLeg:
+      points: 1
       required: false
-    Arms:
-      points: 4
+    LeftLeg:
+      points: 1
       required: false
+    RightArm:
+      points: 1
+      required: false
+    LeftArm:
+      points: 1
+      required: false
+    RightHand:
+      points: 1
+      required: false
+    LeftHand:
+      points: 1
+      required: false
+    # Floofstation end
 
 - type: humanoidBaseSprite
   id: MobAvaliHead
