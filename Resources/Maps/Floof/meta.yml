@@ -15111,8 +15111,11 @@ entities:
   - uid: 913
     components:
     - type: Transform
-      pos: -4.626528,57.33173
+      pos: -4.8837776,52.874653
       parent: 2
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: Beaker
   entities:
   - uid: 914
@@ -60733,12 +60736,6 @@ entities:
     - type: Transform
       pos: 45.5,10.5
       parent: 2
-  - uid: 9387
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -11.5,54.5
-      parent: 2
   - uid: 9388
     components:
     - type: Transform
@@ -61194,6 +61191,30 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 1.5,-52.5
+      parent: 2
+  - uid: 13772
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -9.5,54.5
+      parent: 2
+  - uid: 20398
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -11.5,54.5
+      parent: 2
+  - uid: 21687
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -8.5,52.5
+      parent: 2
+  - uid: 27099
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -10.5,52.5
       parent: 2
 - proto: ChanterelleSeeds
   entities:
@@ -64835,8 +64856,11 @@ entities:
   - uid: 9854
     components:
     - type: Transform
-      pos: -3.541605,57.19826
+      pos: -2.3525274,52.343033
       parent: 2
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: ClothingShoesSwat
   entities:
   - uid: 9855
@@ -67078,7 +67102,7 @@ entities:
       pos: 23.5,47.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9371.989
+      secondsUntilStateChange: -9696.354
       state: Opening
   - uid: 27810
     components:
@@ -67951,11 +67975,6 @@ entities:
     components:
     - type: Transform
       pos: -31.475151,-16.521818
-      parent: 2
-  - uid: 27098
-    components:
-    - type: Transform
-      pos: -7.48741,54.550156
       parent: 2
 - proto: DiseaseDiagnoser
   entities:
@@ -75648,6 +75667,16 @@ entities:
       parent: 11509
     - type: Physics
       canCollide: False
+- proto: EncryptionKeyJustice
+  entities:
+  - uid: 12069
+    components:
+    - type: Transform
+      parent: 11507
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
 - proto: EncryptionKeyMedical
   entities:
   - uid: 11512
@@ -78214,7 +78243,7 @@ entities:
       pos: -3.5,-52.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -36865.086
+      secondsUntilStateChange: -37189.45
       state: Closing
   - uid: 11888
     components:
@@ -92885,14 +92914,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
-  - uid: 13772
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,52.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#990000FF'
   - uid: 13773
     components:
     - type: Transform
@@ -106290,6 +106311,13 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#03FCD3FF'
+  - uid: 23901
+    components:
+    - type: Transform
+      pos: -6.5,52.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#990000FF'
   - uid: 25382
     components:
     - type: Transform
@@ -127442,40 +127470,10 @@ entities:
       parent: 2
 - proto: N14ChairStoolBarBlack
   entities:
-  - uid: 12069
-    components:
-    - type: Transform
-      pos: -8.5,55.5
-      parent: 2
-  - uid: 20398
-    components:
-    - type: Transform
-      pos: -9.5,53.5
-      parent: 2
   - uid: 21686
     components:
     - type: Transform
       pos: 37.5,-3.5
-      parent: 2
-  - uid: 23547
-    components:
-    - type: Transform
-      pos: -6.5,54.5
-      parent: 2
-  - uid: 23583
-    components:
-    - type: Transform
-      pos: -9.5,54.5
-      parent: 2
-  - uid: 23584
-    components:
-    - type: Transform
-      pos: -6.5,53.5
-      parent: 2
-  - uid: 23901
-    components:
-    - type: Transform
-      pos: -7.5,55.5
       parent: 2
   - uid: 23908
     components:
@@ -127682,28 +127680,6 @@ entities:
     components:
     - type: Transform
       pos: 32.5,-5.5
-      parent: 2
-- proto: N14TableMetalRound
-  entities:
-  - uid: 23514
-    components:
-    - type: Transform
-      pos: -8.5,53.5
-      parent: 2
-  - uid: 27282
-    components:
-    - type: Transform
-      pos: -7.5,53.5
-      parent: 2
-  - uid: 27283
-    components:
-    - type: Transform
-      pos: -7.5,54.5
-      parent: 2
-  - uid: 27284
-    components:
-    - type: Transform
-      pos: -8.5,54.5
       parent: 2
 - proto: N14TableWoodCabledrum
   entities:
@@ -128446,10 +128422,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 27.567125,0.6278074
       parent: 2
-  - uid: 26954
+  - uid: 27282
     components:
     - type: Transform
-      pos: -8.47741,54.550156
+      pos: -10.449472,54.5717
       parent: 2
 - proto: ParticleAcceleratorControlBox
   entities:
@@ -129028,10 +129004,10 @@ entities:
       parent: 2
 - proto: PlushieSharkGrey
   entities:
-  - uid: 27099
+  - uid: 23584
     components:
     - type: Transform
-      pos: -7.48741,53.57448
+      pos: -9.366139,52.497345
       parent: 2
 - proto: PlushieSnake
   entities:
@@ -130260,6 +130236,11 @@ entities:
       parent: 2
 - proto: PottedPlantRandomPlastic
   entities:
+  - uid: 9387
+    components:
+    - type: Transform
+      pos: -11.5,57.5
+      parent: 2
   - uid: 9451
     components:
     - type: Transform
@@ -130290,10 +130271,10 @@ entities:
     - type: Transform
       pos: -24.5,36.5
       parent: 2
-  - uid: 23550
+  - uid: 22769
     components:
     - type: Transform
-      pos: -11.5,53.5
+      pos: -14.5,53.5
       parent: 2
   - uid: 26920
     components:
@@ -134356,13 +134337,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-  - uid: 19477
-    components:
-    - type: Transform
-      pos: -24.5,-15.5
-      parent: 2
-    - type: ApcPowerReceiver
-      powerLoad: 0
   - uid: 19478
     components:
     - type: Transform
@@ -134950,6 +134924,12 @@ entities:
     components:
     - type: Transform
       pos: 35.5,15.5
+      parent: 2
+  - uid: 27098
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -26.5,-17.5
       parent: 2
   - uid: 27296
     components:
@@ -143348,6 +143328,15 @@ entities:
         - Pressed: Toggle
         20896:
         - Pressed: Toggle
+  - uid: 26954
+    components:
+    - type: Transform
+      pos: -24.5,-14.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        585:
+        - Pressed: DoorBolt
   - uid: 27796
     components:
     - type: Transform
@@ -147298,10 +147287,15 @@ entities:
     - type: Transform
       pos: -6.5,60.5
       parent: 2
-  - uid: 22769
+  - uid: 23514
     components:
     - type: Transform
-      pos: -6.5,53.5
+      pos: -8.5,52.5
+      parent: 2
+  - uid: 23547
+    components:
+    - type: Transform
+      pos: -11.5,54.5
       parent: 2
   - uid: 27089
     components:
@@ -147317,11 +147311,6 @@ entities:
     components:
     - type: Transform
       pos: -10.5,59.5
-      parent: 2
-  - uid: 27526
-    components:
-    - type: Transform
-      pos: -8.5,55.5
       parent: 2
 - proto: SpawnPointPrisonGuard
   entities:
@@ -147697,12 +147686,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -17.5,4.5
-      parent: 2
-  - uid: 21687
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -8.5,55.5
       parent: 2
   - uid: 21690
     components:
@@ -153737,6 +153720,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-54.5
       parent: 2
+  - uid: 23550
+    components:
+    - type: Transform
+      pos: -9.5,52.5
+      parent: 2
+  - uid: 23583
+    components:
+    - type: Transform
+      pos: -10.5,54.5
+      parent: 2
   - uid: 27677
     components:
     - type: Transform
@@ -153876,6 +153869,7 @@ entities:
           occludes: True
           ents:
           - 11508
+          - 12069
         machine_board: !type:Container
           showEnts: False
           occludes: True
@@ -154488,6 +154482,11 @@ entities:
       parent: 2
 - proto: ToyAmongPequeno
   entities:
+  - uid: 19477
+    components:
+    - type: Transform
+      pos: -9.668222,52.810062
+      parent: 2
   - uid: 22819
     components:
     - type: Transform
