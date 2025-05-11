@@ -96,7 +96,7 @@
         type: WiresBoundUserInterface
   - type: ActivatableUI
     key: enum.HealthAnalyzerUiKey.Key
-    requiresComplex: false
+    requireHands: false
   - type: ActivatableUIRequiresPower
   - type: PointLight
     color: "#3a807f"

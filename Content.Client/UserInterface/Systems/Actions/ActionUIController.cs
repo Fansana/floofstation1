@@ -648,7 +648,8 @@ public sealed class ActionUIController : UIController, IOnStateChanged<GameplayS
                         nextPage[i] = actionId;
                         break;
                     }
-                ChangePage(_currentPageIndex + 1); //TODO: Make this a client config?
+                // Floof - wtf
+                // ChangePage(_currentPageIndex + 1); //TODO: Make this a client config?
             }
     }
 
