@@ -5434,3 +5434,20 @@ Entries:
   id: 571
   time: '2025-05-10T18:34:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/951
+- author: DeltaV
+  changes:
+    - type: Add
+      message: The mysterious Kitsune have shifted into the Floof sector.
+    - type: Fix
+      message: Polymorphs that revert on death will now revert before gibbing.
+    - type: Tweak
+      message: >-
+        Holy damage received a refresh, now shows as type of Metaphysical damage
+        rather than immaterial.
+    - type: Add
+      message: >-
+        Umbroxol, a special purpose medicine to heal holy damage, has been
+        added.
+  id: 572
+  time: '2025-05-12T01:13:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/937
