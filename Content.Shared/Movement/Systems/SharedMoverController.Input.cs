@@ -97,8 +97,8 @@ namespace Content.Shared.Movement.Systems
             RaiseLocalEvent(component.Owner, ref moveEvent);
             Dirty(component.Owner, component);
 
-            var ev = new SpriteMoveEvent(entity.Comp.HeldMoveButtons != MoveButtons.None);
-            RaiseLocalEvent(entity, ref ev);
+            var ev = new SpriteMoveEvent(component.HeldMoveButtons != MoveButtons.None);
+            RaiseLocalEvent(component.Owner, ref ev);
         }
 
         private void OnMoverHandleState(EntityUid uid, InputMoverComponent component, ComponentHandleState args)
@@ -124,8 +124,8 @@ namespace Content.Shared.Movement.Systems
                 component.HeldMoveButtons = state.HeldMoveButtons;
                 RaiseLocalEvent(uid, ref moveEvent);
 
-                var ev = new SpriteMoveEvent(entity.Comp.HeldMoveButtons != MoveButtons.None);
-                RaiseLocalEvent(entity, ref ev);
+                var ev = new SpriteMoveEvent(component.HeldMoveButtons != MoveButtons.None);
+                RaiseLocalEvent(component.Owner, ref ev);
             }
         }
 
