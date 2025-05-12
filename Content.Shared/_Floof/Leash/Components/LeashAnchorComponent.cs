@@ -13,4 +13,18 @@ public sealed partial class LeashAnchorComponent : Component
     /// </summary>
     [DataField]
     public Vector2 Offset = Vector2.Zero;
+
+    [DataField]
+    public AnchorKind Kind = AnchorKind.Any;
+
+    [Flags]
+    public enum AnchorKind : int
+    {
+        /// <summary>The entity is a clothing that, when equipped, can have a leash attached to.</summary>
+        Clothing,
+        /// <summary>The entity can have a leash attached to normally.</summary>
+        Intrinsic,
+
+        Any = Clothing | Intrinsic
+    }
 }
