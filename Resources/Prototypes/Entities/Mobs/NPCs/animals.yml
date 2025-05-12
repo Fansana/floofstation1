@@ -2353,13 +2353,13 @@
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: tarantula
       sprite: Mobs/Animals/spider.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: tarantula-moving
-    noMovementLayers:
-      movement:
-        state: tarantula
+  # - type: SpriteMovement
+    # movementLayers:
+      # movement:
+        # state: tarantula-moving
+    # noMovementLayers:
+      # movement:
+        # state: tarantula
   - type: Carriable
   - type: Physics
   - type: Fixtures
