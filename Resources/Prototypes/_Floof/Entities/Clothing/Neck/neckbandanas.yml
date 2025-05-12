@@ -63,3 +63,15 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
+      
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfService
+  name: service tied scarf
+  description: A graphite sheet of silk, folded and tied around the neck. A emerald symbol and accents completes the service department's colors. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
