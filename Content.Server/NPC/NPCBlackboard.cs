@@ -28,7 +28,6 @@ public sealed partial class NPCBlackboard : IEnumerable<KeyValuePair<string, obj
         {MedibotInjectRange, 4f},
         {WeldbotWeldRange, 4f},
         {MeleeMissChance, 0.3f},
-
         {PlantbotServiceRange, 4f},
         {"MeleeRange", 1f},
         {"MinimumIdleTime", 2f},
