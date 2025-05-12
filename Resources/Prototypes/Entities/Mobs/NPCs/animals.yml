@@ -2545,7 +2545,7 @@
     - type: Sprite
       drawdepth: Mobs
       layers:
-      - map: ["enum.DamageStateVisualLayers.Base"]
+      - map: ["enum.DamageStateVisualLayers.Base", "movement"]
         state: clown
         sprite: Mobs/Animals/clownspider.rsi
     - type: SpriteMovement
