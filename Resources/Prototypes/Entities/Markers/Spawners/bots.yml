@@ -51,6 +51,8 @@
       - sprite: Mobs/Silicon/Bots/batonbot.rsi
         state: batonbot
   - type: ConditionalSpawner
+      prototypes:
+        - MobBatonBot
   
 - type: entity
   name: plantbot spawner
@@ -65,6 +67,5 @@
   - type: ConditionalSpawner
     prototypes:
       - MobPlantbot
-    prototypes:
-      - MobBatonBot
+
 
