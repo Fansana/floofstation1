@@ -173,6 +173,20 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
+        
+- type: loadout
+  id: LoadoutCommandNeckTiedScarf
+  category: JobsCommandAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckTiedScarfCommand
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCommandNeck
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Command
 
 # Harness.
 # Placing it here because it should in THEORY always get equipped on the neck slot by default

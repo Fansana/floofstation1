@@ -75,3 +75,14 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfCommand
+  name: command tied scarf
+  description: A cerulean sheet of durathread, folded and tied around the neck. A red line and gold accents completes the command department's colors. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCommand.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCommand.rsi
