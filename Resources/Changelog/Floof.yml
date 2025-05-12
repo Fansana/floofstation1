@@ -5516,3 +5516,13 @@ Entries:
   id: 578
   time: '2025-05-12T05:17:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/911
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Mitigated two underlying issues that caused many races to have incorrect
+        mass, unintended hitbox sizes, etc. This impacts rodentia, harpy,
+        shadowkin, felinid, oni, harpy, unathi (reptilian), and resomi.
+  id: 579
+  time: '2025-05-12T12:49:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/901
