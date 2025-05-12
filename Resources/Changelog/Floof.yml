@@ -5451,3 +5451,16 @@ Entries:
   id: 572
   time: '2025-05-12T01:13:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/937
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The ID card console will now correctly update your station records even
+        if your job and accesses stay the same.
+    - type: Fix
+      message: >-
+        ID-lockable closets and other things should now correctly display the
+        owner's info (unless the locker is anonymous)
+  id: 573
+  time: '2025-05-12T01:31:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/968
