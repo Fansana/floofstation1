@@ -109,9 +109,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
   - type: Lathe
     idleState: icon
     runningState: building
@@ -205,29 +205,29 @@
       - ToolRadioHandheld # Floofstation
   - type: EmagLatheRecipes
     emagStaticRecipes:
-      - BoxLethalshot
-      - BoxShotgunFlare
-      - BoxShotgunSlug
-      - MagazineBoxLightRifle
-      - MagazineBoxMagnum
-      - MagazineBoxPistol
-      - MagazineBoxRifle
-      - MagazineLightRifle
-      - MagazineLightRifleEmpty
-      - MagazinePistol
-      - MagazinePistolEmpty
-      - MagazinePistolSubMachineGun
-      - MagazinePistolSubMachineGunEmpty
-      - MagazinePistolSubMachineGunTopMounted
-      - MagazinePistolSubMachineGunTopMountedEmpty
-      - MagazineRifle
-      - MagazineRifleEmpty
-      - MagazineShotgun
-      - MagazineShotgunEmpty
-      - MagazineShotgunSlug
-      - RiotShield
-      - SpeedLoaderMagnum
-      - SpeedLoaderMagnumEmpty
+    - BoxLethalshot
+    - BoxShotgunFlare
+    - BoxShotgunSlug
+    - MagazineBoxLightRifle
+    - MagazineBoxMagnum
+    - MagazineBoxPistol
+    - MagazineBoxRifle
+    - MagazineLightRifle
+    - MagazineLightRifleEmpty
+    - MagazinePistol
+    - MagazinePistolEmpty
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGunEmpty
+    - MagazinePistolSubMachineGunTopMounted
+    - MagazinePistolSubMachineGunTopMountedEmpty
+    - MagazineRifle
+    - MagazineRifleEmpty
+    - MagazineShotgun
+    - MagazineShotgunEmpty
+    - MagazineShotgunSlug
+    - RiotShield
+    - SpeedLoaderMagnum
+    - SpeedLoaderMagnumEmpty
 
 - type: entity
   id: AutolatheHyperConvection
@@ -264,9 +264,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
   - type: Lathe
     idleState: icon
     runningState: building
@@ -369,6 +369,9 @@
       - AnimalTranslator
       - MofficTranslatorImplanter
       - MofficTranslator
+      - ClothingEyesNightVisionGoggles
+      - ClothingEyesNightVisionDiagnosticGoggles
+      - ClothingEyesThermalVisionGoggles
       - ArachnicTranslatorImplanter # Floofstation
       - ArachnicTranslator # Floofstation
       - ClothingHarvestBag # Floofstation
@@ -380,49 +383,49 @@
       - AdvancedRetractor
   - type: EmagLatheRecipes
     emagDynamicRecipes:
-      - BoxBeanbag
-      - BoxShotgunIncendiary
-      - BoxShotgunUranium
-      - ExplosivePayload
-      - GrenadeBlast
-      - GrenadeEMP
-      - GrenadeFlash
-      - HoloprojectorSecurity
-      - MagazineBoxLightRifleIncendiary
-      - MagazineBoxLightRifleUranium
-      - MagazineBoxMagnumIncendiary
-      - MagazineBoxMagnumUranium
-      - MagazineBoxPistolIncendiary
-      - MagazineBoxPistolUranium
-      - MagazineBoxRifleIncendiary
-      - MagazineBoxRifleUranium
-      - MagazineGrenadeEmpty
-      - MagazineLightRifleIncendiary
-      - MagazineLightRifleUranium
-      - MagazinePistolIncendiary
-      - MagazinePistolUranium
-      - MagazineRifleIncendiary
-      - MagazineRifleUranium
-      - MagazineShotgunBeanbag
-      - MagazineShotgunIncendiary
-      - MagazineShotgunIncendiary
-      - PortableRecharger
-      - PowerCageHigh
-      - PowerCageMedium
-      - PowerCageSmall
-      - ShellTranquilizer
-      - SpeedLoaderMagnumIncendiary
-      - SpeedLoaderMagnumUranium
-      - TelescopicShield
-      - Truncheon
-      - WeaponAdvancedLaser
-      - WeaponLaserCannon
-      - WeaponLaserCarbine
-      - WeaponXrayCannon
-      - WeaponEnergyGun       # DeltaV - Energy Gun
-      - WeaponEnergyGunMini   # DeltaV - Miniature Energy Gun
-      - WeaponEnergyGunPistol # DeltaV - PDW-9 Energy Pistol
-      - WeaponGunLaserCarbineAutomatic # DeltaV - IK-60 Laser Carbine
+    - BoxBeanbag
+    - BoxShotgunIncendiary
+    - BoxShotgunUranium
+    - ExplosivePayload
+    - GrenadeBlast
+    - GrenadeEMP
+    - GrenadeFlash
+    - HoloprojectorSecurity
+    - MagazineBoxLightRifleIncendiary
+    - MagazineBoxLightRifleUranium
+    - MagazineBoxMagnumIncendiary
+    - MagazineBoxMagnumUranium
+    - MagazineBoxPistolIncendiary
+    - MagazineBoxPistolUranium
+    - MagazineBoxRifleIncendiary
+    - MagazineBoxRifleUranium
+    - MagazineGrenadeEmpty
+    - MagazineLightRifleIncendiary
+    - MagazineLightRifleUranium
+    - MagazinePistolIncendiary
+    - MagazinePistolUranium
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MagazineShotgunBeanbag
+    - MagazineShotgunIncendiary
+    - MagazineShotgunIncendiary
+    - PortableRecharger
+    - PowerCageHigh
+    - PowerCageMedium
+    - PowerCageSmall
+    - ShellTranquilizer
+    - SpeedLoaderMagnumIncendiary
+    - SpeedLoaderMagnumUranium
+    - TelescopicShield
+    - Truncheon
+    - WeaponAdvancedLaser
+    - WeaponLaserCannon
+    - WeaponLaserCarbine
+    - WeaponXrayCannon
+    - WeaponEnergyGun       # DeltaV - Energy Gun
+    - WeaponEnergyGunMini   # DeltaV - Miniature Energy Gun
+    - WeaponEnergyGunPistol # DeltaV - PDW-9 Energy Pistol
+    - WeaponGunLaserCarbineAutomatic # DeltaV - IK-60 Laser Carbine
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -569,16 +572,16 @@
       - MaterialSiloCircuitboard
   - type: EmagLatheRecipes
     emagDynamicRecipes:
-      - ShuttleGunDusterCircuitboard
-      - ShuttleGunFriendshipCircuitboard
-      - ShuttleGunPerforatorCircuitboard
-      - ShuttleGunSvalinnMachineGunCircuitboard
+    - ShuttleGunDusterCircuitboard
+    - ShuttleGunFriendshipCircuitboard
+    - ShuttleGunPerforatorCircuitboard
+    - ShuttleGunSvalinnMachineGunCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
   - type: RequireProjectileTarget
 
 - type: entity
@@ -707,7 +710,7 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
-  # Begin Nyano additions
+    # Begin Nyano additions
     - JetpackBlue
     - JetpackMini
   # End Nyano additions
@@ -745,8 +748,8 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
+      - Sheet
+      - RawMaterial
   - type: Lathe
     idleState: icon
     runningState: building
@@ -810,6 +813,7 @@
       - MagazineBoxPistolPractice
       - MagazineBoxRifle
       - MagazineBoxRiflePractice
+      - MagazineBoxLightRifle
       - MagazineLightRifle
       - MagazineLightRifleEmpty
       - MagazinePistol
@@ -853,6 +857,14 @@
       - MagazinePistolSpecial
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
+      - MagazineNovaliteC1Empty
+      - MagazineNovaliteC1
+      - MagazineLightRifleLowCapacityEmpty
+      - MagazineLightRifleLowCapacity
+      - SpeedLoaderRifleHeavy
+      - SpeedLoaderRifleHeavyEmpty
+      - WeaponRifleNovaliteC1
+      - WeaponRifleGestio
     dynamicRecipes:
       - BolaEnergy
       - BoxBeanbag
@@ -932,6 +944,7 @@
       - WeaponDisablerSMG
       - WeaponLaserCannon
       - WeaponLaserCarbine
+      - ClothingEyesNightVisionSecurityGoggles
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear
       - ClothingHeadCage # Nyanotrasen - Insulative headgear
       - WeaponXrayCannon
@@ -954,6 +967,8 @@
       - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
       #- WeaponEnergyShotgun
+      - SpeedLoaderRifleHeavyIncendiary # Floof - fixes a bug from upstream merge
+      - SpeedLoaderRifleHeavyUranium  # Floof - fixes a bug from upstream merge
       - WeaponGrapplingGun # Floof
       - JawsOfLife
       - HandHeldMassScanner
@@ -965,15 +980,18 @@
       - SurveillanceCameraWirelessRouterCircuitboard
       - MagazineUniversalMagnumRubber
       - ShellShotgunBeanbag
+      - WeaponHalberd
+      - WeaponEnergyHalberd
+      - ClothingOuterArmorReflective
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
 
 - type: entity
   id: AmmoTechFab
@@ -1013,12 +1031,16 @@
         - MagazinePistolEmpty
         - MagazineRifle
         - MagazineRifleEmpty
+        - MagazineNovaliteC1
+        - MagazineNovaliteC1Empty
         - MagazineShotgun
         - MagazineShotgunEmpty
         - MagazineShotgunSlug
         - ShellTranquilizer
         - SpeedLoaderMagnum
         - SpeedLoaderMagnumEmpty
+        - SpeedLoaderRifleHeavy
+        - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
     - type: MaterialStorage
@@ -1103,6 +1125,7 @@
       - ClothingEyesHudMedical # Nyano
       - ChemicalPayload # Nyano
       - SyringeCryostasis
+      - ClothingEyesNightVisionMedicalGoggles
       - HypoMini # Floof
       # Floof section - port to EE later
       - HandHeldMassScanner
@@ -1159,7 +1182,9 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    # Static recipes are inherited from the autolathe. This only adds some dynamic ones.
+    # Static recipes are inherited from the autolathe. See LatheComponent.
+    staticRecipes:
+      - HarnessSafety # FloofStation
     dynamicRecipes:
       # Machines and computers
       - TurboItemRechargerCircuitboard
@@ -1233,7 +1258,7 @@
   - type: Lathe
     idleState: icon
     runningState: icon
-    # Static recipes are inherited from the autolathe. This only adds some dynamic ones.
+    # Static recipes are inherited from the autolathe. See LatheComponent.
     dynamicRecipes:
     # Weapons and tools
     - WeaponGrapplingGun
@@ -1673,9 +1698,9 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
 
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
@@ -1683,49 +1708,49 @@
   name: ore processor
   description: It produces sheets and ingots using ores.
   components:
-    - type: Sprite
-      sprite: Structures/Machines/ore_processor.rsi
-      layers:
-        - state: icon
-          map: ["enum.LatheVisualLayers.IsRunning"]
-        - state: unlit
-          shader: unshaded
-          map: ["enum.PowerDeviceVisualLayers.Powered"]
-        - state: inserting
-          map: ["enum.MaterialStorageVisualLayers.Inserting"]
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: Machine
-      board: OreProcessorMachineCircuitboard
-    - type: MaterialStorage
-      ignoreColor: true
-      whitelist:
-        tags:
-          - Ore
-    - type: Lathe
-      idleState: icon
-      runningState: building
-      defaultProductionAmount: 10
-      staticRecipes:
-        - BluespaceCrystal
-        - NormalityCrystal
-        - SheetSteel
-        - SheetGlass1
-        - SheetRGlass
-        - SheetPlasma1
-        - SheetPGlass1
-        - SheetRPGlass1
-        - SheetUranium1
-        - IngotGold1
-        - IngotSilver1
-        - MaterialBananium1
-    - type: MaterialStorageMagnetPickup # Delta V - Summary: Adds magnet pull from Frontier
-      magnetEnabled: True
-      range: 0.30 # Delta V - End Magnet Pull
-    - type: MiningPoints # DeltaV - Source of mining points for miners
-      transferSound:
-        path: /Audio/Effects/Cargo/ping.ogg
-    - type: MiningPointsLathe # DeltaV
+  - type: Sprite
+    sprite: Structures/Machines/ore_processor.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: OreProcessorMachineCircuitboard
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+      - Ore
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    defaultProductionAmount: 10
+    staticRecipes:
+    - BluespaceCrystal
+    - NormalityCrystal
+    - SheetSteel
+    - SheetGlass1
+    - SheetRGlass
+    - SheetPlasma1
+    - SheetPGlass1
+    - SheetRPGlass1
+    - SheetUranium1
+    - IngotGold1
+    - IngotSilver1
+    - MaterialBananium1
+  - type: MaterialStorageMagnetPickup # Delta V - Summary: Adds magnet pull from Frontier
+    magnetEnabled: True
+    range: 0.30 # Delta V - End Magnet Pull
+  - type: MiningPoints # DeltaV - Source of mining points for miners
+    transferSound:
+      path: /Audio/Effects/Cargo/ping.ogg
+  - type: MiningPointsLathe # DeltaV
 
 - type: entity
   parent: OreProcessor
@@ -1741,22 +1766,22 @@
     materialUseMultiplier: 0.75
     timeMultiplier: 0.5
     staticRecipes:
-      - BluespaceCrystal
-      - NormalityCrystal
-      - SheetSteel
-      - SheetGlass1
-      - SheetRGlass
-      - SheetPlasma1
-      - SheetPGlass1
-      - SheetRPGlass1
-      - SheetPlasteel1
-      - SheetUranium1
-      - SheetUGlass1
-      - SheetRUGlass1
-      - IngotGold1
-      - IngotSilver1
-      - MaterialBananium1
-      - MaterialDiamond
+    - BluespaceCrystal
+    - NormalityCrystal
+    - SheetSteel
+    - SheetGlass1
+    - SheetRGlass
+    - SheetPlasma1
+    - SheetPGlass1
+    - SheetRPGlass1
+    - SheetPlasteel1
+    - SheetUranium1
+    - SheetUGlass1
+    - SheetRUGlass1
+    - IngotGold1
+    - IngotSilver1
+    - MaterialBananium1
+    - MaterialDiamond
 
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
@@ -1936,6 +1961,7 @@
       - PlushieRainbowCarp
       - PlushieJester
       - PlushieSlips
+      - PlushieTrystan
       - PlushieAbductor
       - PlushieAbductorAgent
       - PlushieNuke
@@ -1950,7 +1976,7 @@
   - type: MaterialStorage
     whitelist:
       tags:
-        - PrizeTicket
+      - PrizeTicket
 
 - type: entity
   id: MedicalBiofabricator
@@ -1964,20 +1990,20 @@
     layers:
     - state: limbgrower_idleoff
       map: ["enum.LatheVisualLayers.IsRunning"]
-#    - state: limbgrower_idleoff
-#      shader: unshaded
-#      map: ["enum.PowerDeviceVisualLayers.Powered"]
-#    - state: inserting
-#      map: ["enum.MaterialStorageVisualLayers.Inserting"]
-#    - state: panel
-#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  #    - state: limbgrower_idleoff
+  #      shader: unshaded
+  #      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  #    - state: inserting
+  #      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  #    - state: panel
+  #      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
     board: MedicalBiofabMachineBoard
   - type: MaterialStorage
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
+      - Sheet
+      - RawMaterial
   - type: Lathe
     idleState: limbgrower_idleoff
     runningState: limbgrower_idleon
@@ -1996,5 +2022,5 @@
     - SynthRightHand
   - type: EmagLatheRecipes
     emagStaticRecipes:
-      - PizzaLeftArm
-      - PizzaRightArm
+    - PizzaLeftArm
+    - PizzaRightArm
