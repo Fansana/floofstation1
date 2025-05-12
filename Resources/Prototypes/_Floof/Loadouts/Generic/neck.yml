@@ -131,6 +131,20 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Logistics
+        
+- type: loadout
+  id: LoadoutScienceNeckTiedScarf
+  category: JobsEpistemicsAAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckTiedScarfScience
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutEpistemicsNeck
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Epistemics
 
 # Harness.
 # Placing it here because it should in THEORY always get equipped on the neck slot by default

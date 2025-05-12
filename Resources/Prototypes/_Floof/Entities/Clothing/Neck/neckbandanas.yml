@@ -41,3 +41,14 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfScience
+  name: epistemics tied scarf
+  description: A stain-resistant sheet of a cotton-polyester blend, folded and tied around the neck. A chevron of purple completes the epistemics department's color scheme. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
