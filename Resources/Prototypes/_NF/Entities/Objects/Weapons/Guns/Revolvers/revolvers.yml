@@ -41,6 +41,6 @@
   components:
   - type: RevolverAmmoProvider
     capacity: 8
-    proto: null # Floof - fixes EE bug
-    chambers: [ False, False, False, False, False, False, False, False ]
+    proto: null
+    chambers: [ null, null, null, null, null, null, null, null ]
     ammoSlots: [ null, null, null, null, null, null, null, null ]

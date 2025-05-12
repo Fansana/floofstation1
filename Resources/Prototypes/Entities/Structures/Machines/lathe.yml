@@ -856,8 +856,6 @@
       - MagazinePistolSpecial
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
-      - SpeedLoaderRifleHeavyIncendiary # Floof - fixes a bug from upstream merge
-      - SpeedLoaderRifleHeavyUranium  # Floof - fixes a bug from upstream merge
       - MagazineNovaliteC1Empty
       - MagazineNovaliteC1
       - MagazineLightRifleLowCapacityEmpty
@@ -968,6 +966,8 @@
       - ClothingShoesBootsSecurityMagboots # Floofstation
       # Floof section - port to EE later
       #- WeaponEnergyShotgun
+      - SpeedLoaderRifleHeavyIncendiary # Floof - fixes a bug from upstream merge
+      - SpeedLoaderRifleHeavyUranium  # Floof - fixes a bug from upstream merge
       - WeaponGrapplingGun # Floof
       - JawsOfLife
       - HandHeldMassScanner
