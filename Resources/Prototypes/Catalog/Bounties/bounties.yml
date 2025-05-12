@@ -524,6 +524,11 @@
     whitelist:
       components:
       - HitscanBatteryAmmoProvider
+    blacklist:  # Floof to prevent powercells from being able to complete the bounty
+      tags:
+      - PowerCell
+      - PowerCellSmall
+      - PotatoBattery
 
 - type: cargoBounty
   id: BountyFood
