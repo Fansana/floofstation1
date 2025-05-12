@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise edited by Floofers, edited (again) by M3739",
+  "size": {"x": 32, "y": 32},
+  "states": [
+    {
+      "name": "points_feetR",
+      "directions": 4
+    },
+    {
+      "name": "points_feetL",
+      "directions": 4
+    },
+    {
+      "name": "points_handR",
+      "directions": 4
+    },
+    {
+      "name": "points_handL",
+      "directions": 4
+    },
+    {
+      "name": "points_crest-armsR",
+      "directions": 4
+    },
+    {
+      "name": "points_crest-armsL",
+      "directions": 4
+    },
+    {
+      "name": "points_crest-legsR",
+      "directions": 4
+    },
+    {
+      "name": "points_crest-legsL",
+      "directions": 4
+    },
+    {
+      "name": "points_fade-armsR",
+      "directions": 4
+    },
+    {
+      "name": "points_fade-armsL",
+      "directions": 4
+    },
+    {
+      "name": "points_fade-legsR",
+      "directions": 4
+    },
+    {
+      "name": "points_fade-legsL",
+      "directions": 4
+    },
+    {
+      "name": "points_sharp-armsR",
+      "directions": 4
+    },
+    {
+      "name": "points_sharp-armsL",
+      "directions": 4
+    },
+    {
+      "name": "points_sharp-legsR",
+      "directions": 4
+    },
+    {
+      "name": "points_sharp-legsL",
+      "directions": 4
+    }
+  ]
+}

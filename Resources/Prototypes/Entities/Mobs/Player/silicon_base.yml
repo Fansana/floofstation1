@@ -27,6 +27,9 @@
     - type: Damageable
       damageContainer: Silicon
       damageModifierSet: IPC
+    - type: DamageForceSay # Floofstation
+      forceSayStringPrefix: damage-force-say-IPC-
+      forceSayStringCount: 7
     - type: InteractionOutline
     - type: MovementSpeedModifier
       baseWalkSpeed: 4

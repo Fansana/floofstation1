@@ -262,6 +262,7 @@
   - type: RandomBark
     barkType: chicken
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   parent: MobChicken
@@ -425,8 +426,6 @@
         1.0
       FollowRange: !type:Single
         2.0
-  - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-organic
 
 - type: entity
   name: glockroach
@@ -595,6 +594,7 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation - moffroach my beloved
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -697,6 +697,7 @@
     barkType: chicken # Duh
     barkMultiplier: 0.7
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -884,6 +885,7 @@
     barkType: cow
     barkMultiplier: 3
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 
 - type: entity
@@ -1055,6 +1057,7 @@
     rootTask:
       task: RuminantHostileCompound
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -1109,10 +1112,11 @@
     factions:
     - Passive
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: kangaroo
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, StripableInventoryBase ]
   id: MobKangaroo
   description: A large marsupial herbivore. It has powerful hind legs, with nails that resemble long claws.
   components:
@@ -1150,10 +1154,6 @@
   - type: Butcherable
     spawned:
     - id: FoodMeat
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -1203,6 +1203,7 @@
     rootTask:
       task: SimpleHostileCompound
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: boxing kangaroo
@@ -1218,7 +1219,7 @@
 - type: entity
   name: genetic ancestor
   id: MobBaseAncestor
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   description: The genetic bipedal ancestor of... Uh... Something. Yeah, there's definitely something on the station that descended from whatever this is.
   abstract: true
   components:
@@ -1232,7 +1233,6 @@
   - type: Inventory
     templateId: monkey
     speciesId: monkey
-  - type: InventorySlots
   - type: Deathgasp
     prototype: MonkeyDeathgasp
   - type: Cuffable
@@ -1251,11 +1251,8 @@
         layer:
         - MobLayer
   - type: Stripping
-  - type: Strippable
   - type: UserInterface
     interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Sprite
@@ -1356,6 +1353,7 @@
     - VimPilot
     - DoorBumpOpener
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: monkey
@@ -1969,6 +1967,7 @@
     tags:
     - VimPilot
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 
 - type: entity
@@ -2019,6 +2018,7 @@
   - type: Bloodstream
     bloodMaxVolume: 50
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: frog
@@ -2481,7 +2481,7 @@
   components:
     - type: NpcFactionMember
       factions:
-        - Xeno
+        - SimpleHostile #floof, makes tarantulas friendly to people with animal friend but not hostile to xenos which was their original faction
     - type: InputMover
     - type: MobMover
     - type: HTN
@@ -2541,6 +2541,9 @@
     - type: Bloodstream
       bloodMaxVolume: 150
       bloodReagent: Laughter
+    - type: NpcFactionMember
+      factions:
+        - ClownRage #floof, :o) Clownspiders aren't affected by animal friend and also share a faction with the behonker
 
 - type: entity
   name: wizard spider
@@ -2553,9 +2556,10 @@
     removes:
     - type: ReplacementAccent
       accent: xeno  #let this wizard speak
+
 - type: entity
   name: possum
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobPossum
   description: '"O Possum! My Possum!" -- Walt Whitman, 1865'
   components:
@@ -2581,12 +2585,6 @@
   - type: Inventory
     speciesId: possum
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -2615,6 +2613,7 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: possum
 
@@ -2639,7 +2638,7 @@
 
 - type: entity
   name: raccoon
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobRaccoon
   description: Trash panda!
   components:
@@ -2665,12 +2664,6 @@
   - type: Inventory
     speciesId: possum #close enough
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -2700,12 +2693,13 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: raccoon
 
 - type: entity
   name: fox
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobFox
   description: They're a fox.
   components:
@@ -2738,12 +2732,6 @@
   - type: Inventory
     speciesId: fox
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -2791,13 +2779,14 @@
     understands:
     - Fox
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
   - type: RandomBark
     barkType: fox
     barkMultiplier: 0.5 # Talkative <3
 
 - type: entity
   name: corgi
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobCorgi
   description: Finally, a space corgi!
   components:
@@ -2825,12 +2814,6 @@
   - type: Inventory
     speciesId: dog
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -2865,6 +2848,7 @@
   - type: RandomBark
     barkType: dog
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: corrupted corgi
@@ -2912,7 +2896,7 @@
   - type: Bloodstream
     bloodReagent: DemonsBlood
   - type: Damageable
-    damageContainer: CorporealSpirit # Nyanotrasen - Corporeal Spirit allows Holy water to do damage
+    damageContainer: BiologicalMetaphysical # Floof - M3739 - #937 - Ian is now a devil dog. Smite them.
     damageModifierSet: Infernal
   - type: Temperature
     heatDamageThreshold: 4000 #They come from hell, so..
@@ -2941,7 +2925,6 @@
   - type: Inventory
     speciesId: puppy
     templateId: pet
-  - type: InventorySlots
   - type: DamageStateVisuals
     states:
       Alive:
@@ -2956,7 +2939,7 @@
 
 - type: entity
   name: cat
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobCat
   description: Feline pet, very funny.
   components:
@@ -2982,12 +2965,6 @@
   - type: Inventory
     speciesId: cat
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -3033,6 +3010,7 @@
   - type: RandomBark
     barkType: cat
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: calico cat
@@ -3215,7 +3193,7 @@
 
 - type: entity
   name: sloth
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobSloth
   description: Very slow animal. For people with low energy.
   components:
@@ -3244,12 +3222,6 @@
   - type: Inventory
     speciesId: sloth
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -3281,7 +3253,7 @@
 
 - type: entity
   name: ferret
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobFerret
   description: Just a silly little guy!
   components:
@@ -3307,12 +3279,6 @@
   - type: Inventory
     speciesId: fox #close enough
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -3343,10 +3309,11 @@
     understands:
     - Hissing
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   name: hamster
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, StripableInventoryBase]
   id: MobHamster
   description: A cute, fluffy, robust hamster.
   components:
@@ -3410,12 +3377,6 @@
   - type: Inventory
     speciesId: hamster
     templateId: hamster
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -3496,6 +3457,7 @@
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
   - type: LeashAnchor # Floofstation
+    kind: Intrinsic
 
 - type: entity
   parent: MobHamster
@@ -3514,7 +3476,7 @@
 
 - type: entity
   name: pig
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobPig
   description: Oink.
   components:
@@ -3551,12 +3513,6 @@
     offspring:
     - id: MobPig
   - type: ReproductivePartner
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -3590,7 +3546,7 @@
 
 - type: entity
   name: diona nymph
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobDionaNymph
   description: It's like a cat, only.... branch-ier.
   components:
@@ -3616,15 +3572,9 @@
   - type: Inventory
     speciesId: cat
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
   - type: Bloodstream
     bloodReagent: Sap
     bloodMaxVolume: 60
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:

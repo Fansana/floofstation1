@@ -1,0 +1,9 @@
+# freelancer
+    
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsFreelancer
+  suffix: Freelancer, Locked
+  components:
+  - type: AccessReader
+    access: [["Freelancer"]]

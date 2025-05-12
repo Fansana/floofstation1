@@ -98,7 +98,10 @@ accent-french-words-32 = stupid
 accent-french-words-replace-32 = stupide
 
 accent-french-words-33 = wonderful
-accent-french-words-replace-34 = merveilleux
+accent-french-words-replace-33 = merveilleux
+
+accent-french-words-34 = fantastic
+accent-french-words-replace-34 = fantastique
 
 accent-french-words-35 = and
 accent-french-words-replace-35 = et
@@ -125,14 +128,14 @@ accent-french-words-replace-41 = au revoir
 accent-french-words-42 = bye
 accent-french-words-replace-42 = adieu
 
-accent-french-words-43 = fantastic
-accent-french-words-replace-43 = fantastique
-
-accent-french-words-44 = quick
-accent-french-words-44-2 = quickly
-accent-french-words-replace-44 = rapide
+accent-french-words-43 = quick
+accent-french-words-43-2 = quickly
+accent-french-words-replace-43 = rapide
 
 #  The stuff above this is basically taken from the German accent. It's a pretty solid base, the stuff below will be specific to the French Accent.
+
+accent-french-words-44 = doe
+accent-french-words-replace-44 = biche
 
 accent-french-words-45 = teddy bear
 accent-french-words-replace-45 = nounours
@@ -197,10 +200,7 @@ accent-french-words-replace-62 = chaton
 accent-french-words-63 = wolf
 accent-french-words-replace-63 = loup
 
-accent-french-words-64 = doe
-accent-french-words-replace-64 = biche
-
-accent-french-words-65 = rabbit
-accent-french-words-65-2 = bunny
-accent-french-words-replace-65 = lapin
+accent-french-words-64 = rabbit
+accent-french-words-64-2 = bunny
+accent-french-words-replace-64 = lapin
 

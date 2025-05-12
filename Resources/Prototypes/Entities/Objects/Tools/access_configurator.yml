@@ -80,7 +80,7 @@
           type: AccessOverriderBoundUserInterface
     - type: ActivatableUI
       key: enum.AccessOverriderUiKey.Key
-      requiresComplex: true
+      requireHands: true
       requireActiveHand: false
       singleUser: true
     - type: ItemSlots
@@ -147,3 +147,4 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+    - Freelancer # Floofstation
