@@ -52,3 +52,14 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfEngineering
+  name: engineering tied scarf
+  description: A fire-resistant safety yellow sheet of cloth, folded and tied around the neck. A orange cog on top of a vertical line completes the engineering department's colors. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
