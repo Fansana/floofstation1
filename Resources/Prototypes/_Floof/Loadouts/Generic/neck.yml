@@ -117,6 +117,20 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Medical
+        
+- type: loadout
+  id: LoadoutCargoNeckTiedScarf
+  category: JobsLogisticsAUncategorized
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckTiedScarfCargo
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsNeck
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Logistics
 
 # Harness.
 # Placing it here because it should in THEORY always get equipped on the neck slot by default

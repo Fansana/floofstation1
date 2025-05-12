@@ -30,3 +30,14 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfCargo
+  name: logistics tied scarf
+  description: A brown sheet of burlap, folded and tied around the neck. A stripe of yellow completes the logistics department's color scheme. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi

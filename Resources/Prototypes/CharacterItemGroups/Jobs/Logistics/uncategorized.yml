@@ -45,11 +45,13 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutLogisticsNeck
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutLogisticsNeck
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutBackpackCargo
+
 #- type: characterItemGroup
 #  id: LoadoutLogisticsMask
 #  maxItems: 1
