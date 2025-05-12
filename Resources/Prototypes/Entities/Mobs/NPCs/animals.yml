@@ -2761,13 +2761,13 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: fox
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: fox-moving
-    noMovementLayers:
-      movement:
-        state: fox
+  # - type: SpriteMovement
+    # movementLayers:
+      # movement:
+        # state: fox-moving
+    # noMovementLayers:
+      # movement:
+        # state: fox
   - type: Carriable
   - type: Physics
   - type: Fixtures
