@@ -446,7 +446,7 @@
       task: SimpleHostileCompound
   - type: NpcFactionMember
     factions:
-    - Xeno
+    - SimpleHostile #floof, similar to tarantulas these are not xenos and simple hostile are not attacked by xenos anyway. This also means that space adders wont attack people with animal friend.
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcBite

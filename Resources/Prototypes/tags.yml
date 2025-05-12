@@ -1454,6 +1454,9 @@
 
 - type: Tag
   id: ChitinidEmotes
+
+- type: Tag
+  id: KitsuneEmotes
 # Floof - M3739 - End Floof species tags
 # EE Emote Fix End
 
@@ -1493,3 +1496,13 @@
 - type: Tag
   id: Sterilebag
 #floof tag ends
+
+- type: Tag
+  id: SiliconMob
+
+- type: Tag
+  id: WeldingTool
+
+- type: Tag
+  id: WeldbotFixableStructure
+

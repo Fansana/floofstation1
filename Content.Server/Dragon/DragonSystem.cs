@@ -97,6 +97,13 @@ public sealed partial class DragonSystem : EntitySystem
 
             comp.RiftAccumulator += frameTime;
 
+            // Floofstation - Removed to disable dragon disappearing without rifts
+            // // Delete it, naughty dragon!
+            // if (comp.RiftAccumulator >= comp.RiftMaxAccumulator)
+            // {
+            //     Roar(uid, comp);
+            //     QueueDel(uid);
+            // }
 
         }
     }
