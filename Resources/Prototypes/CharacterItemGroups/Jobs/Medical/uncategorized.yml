@@ -99,6 +99,8 @@
       id: LoadoutMedicalNeckStethoscope
     - type: loadout
       id: LoadoutMedicalBedsheetMedical
+    - type: loadout
+      id: LoadoutMedicalNeckTiedScarf # Floof - M3739 - Project-Guild
 
 - type: characterItemGroup
   id: LoadoutMedicalMask

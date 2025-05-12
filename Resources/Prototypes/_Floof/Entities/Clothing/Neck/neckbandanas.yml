@@ -19,3 +19,14 @@
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfSecurity.rsi
     - type: Clothing
       sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfSecurity.rsi
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckTiedScarfMedical
+  name: medical tied scarf
+  description: A sterile white sheet of cloth, folded and tied around the neck. It is adorned with the symbol of the medical department. The origins of this style remain a mystery to this day.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
