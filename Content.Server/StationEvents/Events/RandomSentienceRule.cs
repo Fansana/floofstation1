@@ -1,6 +1,8 @@
+﻿using System.Linq;
 using Content.Server.Announcements.Systems;
 using System.Linq;
 using Content.Server.Ghost.Roles.Components;
+using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
 using Content.Shared.GameTicking.Components;
 
@@ -50,6 +52,7 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
         var kind1 = groupList.Count > 0 ? groupList[0] : "???";
         var kind2 = groupList.Count > 1 ? groupList[1] : "???";
         var kind3 = groupList.Count > 2 ? groupList[2] : "???";
+
         foreach (var target in targetList)
         {
             var station = StationSystem.GetOwningStation(target);
@@ -72,4 +75,3 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
         }
     }
 }
-
