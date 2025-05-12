@@ -150,7 +150,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-    - HidesHarpyWings #DeltaV: Used by harpies to help render their hardsuit sprites
+    # HidesHarpyWings  FLOOF CHANGE       #DeltaV: Used by harpies to help render their hardsuit sprites
     - AllowLamiaHardsuit
     - FullBodyOuter
   - type: Clothing
@@ -202,7 +202,7 @@
   - type: Tag
     tags:
     - AllowLamiaHardsuit #DeltaV: Used by Lamia to render snek hardsuits
-    - HidesHarpyWings #DeltaV: Used by harpies to help render their hardsuit sprites
+    # HidesHarpyWings floof #DeltaV: Used by Lamia to render snek hardsuits
   - type: Clothing
     equipDelay: 1.25 # Softsuits are easier to put on and off
     unequipDelay: 1

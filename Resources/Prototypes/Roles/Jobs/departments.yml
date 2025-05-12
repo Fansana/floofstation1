@@ -123,7 +123,7 @@
   color: "#D381C9"
   roles:
   - Borg
-  - StationAi
+#  - StationAi disabled until it is actually playable.
 
 # Floof section - Remove station-specific job pseudo-department
 #- type: department

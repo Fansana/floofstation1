@@ -68,3 +68,12 @@
   materials:
     Cloth: 500
     Durathread: 300
+
+- type: latheRecipe
+  id: HarnessSafety
+  result: ClothingUncategorizedHarnessSafety
+  category: Tools
+  completetime: 4
+  materials:
+    Cloth: 250 # Two utility belts plus some connecting straps
+    Steel: 50 # Because buckles
