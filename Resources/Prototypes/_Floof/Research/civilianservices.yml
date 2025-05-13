@@ -14,6 +14,19 @@
   technologyPrerequisites:
   - Hydroponics
 
+- type: technology
+  id: AdvancedTracking
+  name: research-technology-mini-hypo
+  icon:
+   sprite: Objects/Specific/Medical/implanter.rsi
+   state: implanter0
+  discipline: CivilianServices
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  # HandheldCrewMonitor
+  - TrackingImplant
+
 # Tier 3
 
 - type: technology
