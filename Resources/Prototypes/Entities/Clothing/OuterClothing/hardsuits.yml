@@ -578,7 +578,7 @@
     - MonkeyWearable
     - Hardsuit
     - WhitelistChameleon
-    - HidesHarpyWings
+    # HidesHarpyWings  Floof Change
   - type: StaminaDamageResistance
     coefficient: 0.5 # 50%
 
@@ -599,7 +599,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-    - HidesHarpyWings
+    # HidesHarpyWings  Floof Change
   - type: StaminaDamageResistance
     coefficient: 0.5 # 50%
 

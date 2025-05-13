@@ -5,6 +5,8 @@
   suffix: ID lock
   parent: [IdLockableBase, LockerSteel]
   components:
+  - type: IdLock
+    enabled: true
   - type: Construction
     graph: ClosetSteelSecure
     node: idLockable
