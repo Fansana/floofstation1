@@ -86,9 +86,9 @@ public sealed class LeashVisualsOverlay : Overlay
             var box = new Box2(-width / 2f, -length / 2f, width / 2f, length / 2f);
             var rotate = new Box2Rotated(box.Translated(midPoint), angle, midPoint);
 
-            // Target is always the leash as of now.
+            // Source is always the leash as of now.
             // If it ever changes, make sure to change the visuals comp to include a reference to the leash.
-            var color = _paintQuery.CompOrNull(target)?.Color;
+            var color = _paintQuery.CompOrNull(source)?.Color;
 
             worldHandle.DrawTextureRect(texture, rotate, color);
         }
