@@ -32,8 +32,8 @@
     Glass: 50
 
 - type: latheRecipe
-  id: TrackingImplant
-  result: TrackingImplant
+  id: TrackingImplanter
+  result: TrackingImplanter
   completetime: 5
   materials:
     Glass: 500

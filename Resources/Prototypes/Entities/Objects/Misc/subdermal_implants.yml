@@ -84,7 +84,7 @@
   components:
     - type: Sprite  #Floof change
       sprite: Objects/Specific/Medical/implanter.rsi
-      state: implanter0
+      state: implanter1
     - type: SubdermalImplant
       whitelist:
         components:

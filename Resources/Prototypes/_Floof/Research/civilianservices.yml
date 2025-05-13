@@ -25,7 +25,8 @@
   cost: 15000
   recipeUnlocks:
   # HandheldCrewMonitor
-  - TrackingImplant
+  # I want to get Tracker to go off with medical also it makes more sense to have them BOTH go off
+  - TrackingImplanter
 
 # Tier 3
 
