@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Shared.Floofstation.Leash.Components;
+using Content.Shared.Paint;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
@@ -15,6 +16,7 @@ public sealed class LeashVisualsOverlay : Overlay
     private readonly SharedTransformSystem _xform;
     private readonly EntityQuery<TransformComponent> _xformQuery;
     private readonly EntityQuery<SpriteComponent> _spriteQuery;
+    private readonly EntityQuery<PaintedComponent> _paintQuery;
 
     public LeashVisualsOverlay(IEntityManager entMan)
     {
@@ -23,6 +25,7 @@ public sealed class LeashVisualsOverlay : Overlay
         _xform = _entMan.System<SharedTransformSystem>();
         _xformQuery = _entMan.GetEntityQuery<TransformComponent>();
         _spriteQuery = _entMan.GetEntityQuery<SpriteComponent>();
+        _paintQuery = _entMan.GetEntityQuery<PaintedComponent>();
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -83,7 +86,11 @@ public sealed class LeashVisualsOverlay : Overlay
             var box = new Box2(-width / 2f, -length / 2f, width / 2f, length / 2f);
             var rotate = new Box2Rotated(box.Translated(midPoint), angle, midPoint);
 
-            worldHandle.DrawTextureRect(texture, rotate);
+            // Target is always the leash as of now.
+            // If it ever changes, make sure to change the visuals comp to include a reference to the leash.
+            var color = _paintQuery.CompOrNull(target)?.Color;
+
+            worldHandle.DrawTextureRect(texture, rotate, color);
         }
     }
 }
