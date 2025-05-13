@@ -834,6 +834,7 @@
   id: LightAmplification
   category: Physical
   points: -4
+  requirements:
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
