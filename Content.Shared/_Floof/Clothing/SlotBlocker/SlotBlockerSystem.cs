@@ -54,7 +54,6 @@ public sealed class SlotBlockerSystem : EntitySystem
 
         string SlotsToString(SlotFlags slots)
         {
-            // as of right now, OuterClothing has the highest integer value. If more get added, update this.
             var values = Enum.GetValues<SlotFlags>();
             var sb = new StringBuilder();
 
