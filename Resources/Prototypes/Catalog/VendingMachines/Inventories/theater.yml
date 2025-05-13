@@ -141,6 +141,14 @@
     ClothingUniformJumpskirtMime: 2
     ClothingBeltSuspenders: 2
     RubberStampMime: 1
+    #Floof start
+    ClothingHandsGoldRing: 2
+    ClothingHandsWebRing: 2
+    ClothingHandsDiamondBand: 2
+    ClothingHandsGoldRingSpiderGem: 2
+    ClothingHandsWebDiamondRing: 2
+    ClothingHandsWebRingSpiderGem: 2
+    #Floof End
   contrabandInventory: # Frontier - Hidden inventory
     ClothingHeadHatMimesoftFlipped: 1
     BarberScissors: 1
@@ -156,15 +164,7 @@
     ClothingUniformStripedThongWhite: 1
     ClothingUniformMusicKingBlack: 2
     ClothingUniformMusicKing: 2
-    # Floof start
     ClothingUniformWeddingDress: 2
-    ClothingHandsGoldRing: 2
-    ClothingHandsWebRing: 2
-    ClothingHandsDiamondBand: 2
-    ClothingHandsGoldRingSpiderGem: 2
-    ClothingHandsWebDiamondRing: 2
-    ClothingHandsWebRingSpiderGem: 2
-    # Floof end
   emaggedInventory:
     ClothingShoesBling: 1
     ClothingShoesBootsCowboyFancy: 1
