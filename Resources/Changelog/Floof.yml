@@ -5607,3 +5607,12 @@ Entries:
   id: 589
   time: '2025-05-14T16:18:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/961
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Meta Station to fix some of the issues, see discord for a full
+        list of changes/fixes.
+  id: 590
+  time: '2025-05-14T16:44:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/954
