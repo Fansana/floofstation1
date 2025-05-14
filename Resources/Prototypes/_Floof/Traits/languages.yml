@@ -279,3 +279,21 @@
       components:
         - type: NaturalSpeakerTrait
           language: Nekomimetic
+
+- type: trait
+  id: NaturalKagebun
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Kitsune
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Kagebun
