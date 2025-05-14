@@ -37,7 +37,7 @@
         collection: BikeHorn
     - type: NpcFactionMember
       factions:
-        - SimpleHostile
+        - ClownRage #Floof, animal friend wont save you from the Honkmother :o)
     - type: Speech
       speechVerb: Cluwne
     - type: CombatMode

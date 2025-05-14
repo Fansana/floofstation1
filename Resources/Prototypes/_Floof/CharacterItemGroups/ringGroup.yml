@@ -1,0 +1,15 @@
+- type: characterItemGroup
+  id: LoadoutRing
+  items:
+    - type: loadout
+      id: LoadoutWebRing
+    - type: loadout
+      id: LoadoutDiamondBand
+    - type: loadout
+      id: LoadoutGoldRingSpiderGem
+    - type: loadout
+      id: LoadoutWebDiamondRing
+    - type: loadout
+      id: LoadoutWebRingSpiderGem
+    - type: loadout
+      id: LoadoutGoldRing

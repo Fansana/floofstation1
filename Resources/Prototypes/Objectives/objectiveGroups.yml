@@ -32,15 +32,16 @@
   id: TraitorObjectiveGroupKill
   weights:
     # KillRandomPersonObjective: 1 # DeltaV Replaced for Teach Lesson
-    TeachLessonRandomPersonObjective: 1
-    KillRandomHeadObjective: 0.25
+    # TeachLessonRandomPersonObjective: 1 # Floof - Disabled until constent system is made for targets
+    # KillRandomHeadObjective: 0.25 # Floof - Replaced with TeachLessonRandomHeadObjective
+    TeachLessonRandomHeadObjective: 1 # Floof - Replaces KillRandomHeadObjective
 
 - type: weightedRandom
   id: TraitorObjectiveGroupState
   weights:
     EscapeShuttleObjective: 1
     # DieObjective: 0.05 # Floof - No DAGD
-    HijackShuttleObjective: 0.02
+    # HijackShuttleObjective: 0.02 # Floof - No Hijack EVAC Shuttle
 
 - type: weightedRandom
   id: TraitorObjectiveGroupSocial

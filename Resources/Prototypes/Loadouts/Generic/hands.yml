@@ -81,4 +81,4 @@
     - ClothingHandsGoldRing
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutGloves
+      group: LoadoutRing  # Floof change
