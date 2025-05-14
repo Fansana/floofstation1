@@ -12642,7 +12642,7 @@ entities:
       pos: -0.5,-58.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -1615.3168
+      secondsUntilStateChange: -1753.475
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -67225,7 +67225,7 @@ entities:
       pos: 23.5,47.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -11786.803
+      secondsUntilStateChange: -11924.961
       state: Opening
   - uid: 27810
     components:
@@ -78440,7 +78440,7 @@ entities:
       pos: -3.5,-52.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -39279.9
+      secondsUntilStateChange: -39418.055
       state: Closing
   - uid: 11888
     components:
@@ -129904,6 +129904,13 @@ entities:
     - type: Transform
       pos: 53.5,27.5
       parent: 2
+- proto: PosterLegitSafetyReport
+  entities:
+  - uid: 28530
+    components:
+    - type: Transform
+      pos: -0.5,-57.5
+      parent: 2
 - proto: PosterLegitStateLaws
   entities:
   - uid: 18855
@@ -142104,6 +142111,11 @@ entities:
     components:
     - type: Transform
       pos: -54.463097,-49.41785
+      parent: 2
+  - uid: 28531
+    components:
+    - type: Transform
+      pos: -18.96557,-24.371477
       parent: 2
 - proto: SheetPlasteel
   entities:
