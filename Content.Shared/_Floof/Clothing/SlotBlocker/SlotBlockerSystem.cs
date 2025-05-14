@@ -1,13 +1,8 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Whitelist;
-using Microsoft.Extensions.Primitives;
-using Robust.Shared.Containers;
 
 
 namespace Content.Shared._Floof.Clothing.SlotBlocker;
@@ -52,32 +47,13 @@ public sealed class SlotBlockerSystem : EntitySystem
         if (!args.IsInDetailsRange)
             return;
 
-        string SlotsToString(SlotFlags slots)
-        {
-            var values = Enum.GetValues<SlotFlags>();
-            var sb = new StringBuilder();
-
-            foreach (var slot in values)
-            {
-                if (!Loc.TryGetString("slot-name-" + Enum.GetName(slot), out var locName))
-                    continue;
-
-                if (sb.Length > 0)
-                    sb.Append(", ");
-
-                sb.Append(locName);
-            }
-
-            return sb.ToString();
-        }
-
         using (args.PushGroup(nameof(SlotBlockerComponent)))
         {
             if (ent.Comp.Blocks.Slots != SlotFlags.NONE)
-                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocks", ("slots", SlotsToString(ent.Comp.Blocks.Slots))));
+                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocks", ("slots", ent.Comp.Blocks.SlotsToString())));
 
             if (ent.Comp.BlockedBy.Slots != SlotFlags.NONE)
-                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocked-by", ("slots", SlotsToString(ent.Comp.BlockedBy.Slots))));
+                args.PushMarkup(Loc.GetString("slot-blocker-examine-blocked-by", ("slots", ent.Comp.BlockedBy.SlotsToString())));
         }
     }
 
@@ -86,7 +62,7 @@ public sealed class SlotBlockerSystem : EntitySystem
         if (args.Cancelled
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedEquip
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), null, CheckType.Equip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((ent, inventory), args.Equipment, CheckType.Equip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -98,7 +74,7 @@ public sealed class SlotBlockerSystem : EntitySystem
         if (args.Cancelled
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedUnequip
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), null, CheckType.Unequip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((ent, inventory), args.Equipment, CheckType.Unequip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -109,7 +85,7 @@ public sealed class SlotBlockerSystem : EntitySystem
     {
         if (args.Cancelled
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), ent, CheckType.Equip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((ent, inventory), ent!, CheckType.Equip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -120,7 +96,7 @@ public sealed class SlotBlockerSystem : EntitySystem
     {
         if (args.Cancelled
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), ent, CheckType.Unequip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((ent, inventory), ent!, CheckType.Unequip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -131,20 +107,23 @@ public sealed class SlotBlockerSystem : EntitySystem
     ///     Checks whether a slot (or any of the slots) is blocked.
     /// </summary>
     /// <param name="ent">Entity to check for blocking clothing.</param>
-    /// <param name="equipment">Optional. If present, will check the "blocked by" clothing as well.</param>
+    /// <param name="equipment">Entity getting equipped/unequipped. Optional. If present, will check "blocked by" and apply blocker whitelists.</param>
     /// <param name="check">Check type to perform (equip, unequip)</param>
     /// <param name="targetSlot">Slot into which the equipment will/is equipped.</param>
     /// <param name="reason"></param>
     /// <returns></returns>
     public bool IsSlotObstructed(
         Entity<InventoryComponent> ent,
-        Entity<SlotBlockerComponent>? equipment,
+        Entity<SlotBlockerComponent?>? equipment,
         CheckType check,
         SlotFlags targetSlot,
         out string? reason)
     {
+        if (equipment is { Comp: null }) // If entity is specified but comp is not, try to resolve it
+            equipment = (equipment.Value, _blockerQuery.CompOrNull(equipment.Value));
+
         reason = null;
-        if (equipment?.Comp.IgnoreOtherBlockers == true)
+        if (equipment?.Comp?.IgnoreOtherBlockers == true)
             return false;
 
         var slots = ent.Comp.Slots;
@@ -159,7 +138,7 @@ public sealed class SlotBlockerSystem : EntitySystem
                 continue;
 
             // Check whether this clothing is blocked by this slot
-            if (equipment is {} equipment2
+            if (equipment is { Comp: not null } equipment2
                 && equipment2.Comp.BlockedBy.Slots != SlotFlags.NONE
                 && BlockerObstructsSlot(other, other, ref equipment2.Comp.BlockedBy, check, slot.SlotFlags, targetSlot, ref reason))
                 return true;

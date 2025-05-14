@@ -1,3 +1,4 @@
+using System.Text;
 using Content.Shared.Inventory;
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
@@ -41,4 +42,27 @@ public partial struct BlockerDefinition
     /// </summary>
     [DataField]
     public SlotFlags EnableInSlots = SlotFlags.WITHOUT_POCKET;
+
+    #region utility
+    public override string ToString() => $"Blocker(Slots: {SlotsToString()}, E/U: {PreventsEquip}/{PreventsUnequip}, Whitelist: {Whitelist}, Blacklist: {Blacklist})";
+
+    public string SlotsToString()
+    {
+        var values = Enum.GetValues<SlotFlags>();
+        var sb = new StringBuilder();
+
+        foreach (var slot in values)
+        {
+            if (!Slots.HasFlag(slot) || !Loc.TryGetString("slot-name-" + Enum.GetName(slot), out var locName))
+                continue;
+
+            if (sb.Length > 0)
+                sb.Append(", ");
+
+            sb.Append(locName);
+        }
+
+        return sb.ToString();
+    }
+    #endregion
 }

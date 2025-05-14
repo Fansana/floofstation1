@@ -2,8 +2,8 @@ slot-blocker-blocked-generic = You must take off {THE($blocker)} to do this!
 slot-blocker-blocked-equipped = You must take off {THE($blocker)} to equip this!
 slot-blocker-blocked-unequipped = You must take off {THE($blocker)} to unequip this!
 
-slot-blocker-examine-blocks = It may block the following slots when equipped: {$slots}
-slot-blocker-examine-blocked-by = It may be blocked by the following slots: {$slots}
+slot-blocker-examine-blocks = It may block the following slots when equipped: [bold]{$slots}[/bold]
+slot-blocker-examine-blocked-by = It may be blocked by the following slots: [bold]{$slots}[/bold]
 
 # Named generic slot flags. Add more if more get added, but do not add slot flags that are not supposed to be named (e.g. WITHOUT_POCKET)
 # We do not use the names from InventoryTemplate because those character-specific and they suck.
