@@ -2,7 +2,7 @@
   name: Argenti
   parent: BaseWeaponRevolver
   id: WeaponRevolverArgenti
-  suffix: Lethal
+  suffix: Lethal  # Floof
   description: The civilian grade Argenti Type 20 revolver. Manufactured by Silver Industries. While the design with expanded cylinder is quite ancient, the right gunslinger will know how to utilise it well. Uses .20 rifle ammo.
   components:
   - type: Sprite
@@ -39,7 +39,7 @@
 - type: entity
   parent: WeaponRevolverArgenti
   id: WeaponRevolverArgentiEmpty
-  suffix: Empty
+  suffix: Empty  #Floof
   components:
   - type: RevolverAmmoProvider
     capacity: 8
