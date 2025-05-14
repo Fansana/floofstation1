@@ -5573,3 +5573,10 @@ Entries:
   id: 585
   time: '2025-05-14T13:35:09.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/930
+- author: WhiteHusky
+  changes:
+    - type: Tweak
+      message: PDA ringer popups are a bit better.
+  id: 586
+  time: '2025-05-14T13:59:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/964
