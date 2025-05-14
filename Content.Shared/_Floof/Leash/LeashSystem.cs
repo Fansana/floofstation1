@@ -5,6 +5,7 @@ using Content.Shared.Examine;
 using Content.Shared.Floofstation.Leash.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Input;
+using Content.Shared.Interaction;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Popups;
@@ -34,6 +35,7 @@ public sealed class LeashSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popups = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly SharedTransformSystem _xform = default!;
+    [Dependency] private readonly SharedInteractionSystem _interaction = default!;
 
     public static VerbCategory LeashLengthConfigurationCategory =
         new("verb-categories-leash-config", "/Textures/_Floof/Interface/VerbIcons/resize.svg.192dpi.png");
@@ -132,6 +134,8 @@ public sealed class LeashSystem : EntitySystem
         if (joint is not null && joint.MaxLength > leash.Length && joint.Length < joint.MaxLength)
             joint.MaxLength = Math.Max(joint.Length, leash.Length);
 
+        if (joint is not null && joint.MaxLength < leash.Length)
+            joint.MaxLength = leash.Length;
     }
 
     #endregion
@@ -151,8 +155,9 @@ public sealed class LeashSystem : EntitySystem
 
     private void OnGetEquipmentVerbs(Entity<LeashAnchorComponent> ent, ref GetVerbsEvent<EquipmentVerb> args)
     {
-        if (!args.CanAccess
-            || !args.CanInteract
+        if (!args.CanInteract
+            || !TryGetLeashTarget(ent!, out var leashTarget)
+            || !_interaction.InRangeUnobstructed(args.User, leashTarget) // Can't use CanAccess here since clothing
             || args.Using is not { } leash
             || !TryComp<LeashComponent>(leash, out var leashComp))
             return;
@@ -171,8 +176,7 @@ public sealed class LeashSystem : EntitySystem
         args.Verbs.Add(leashVerb);
 
 
-        if (!TryGetLeashTarget(ent!, out var leashTarget)
-            || !TryComp<LeashedComponent>(leashTarget, out var leashedComp)
+        if (!TryComp<LeashedComponent>(leashTarget, out var leashedComp)
             || leashedComp.Puller != leash
             || HasComp<LeashedComponent>(ent)) // This one means that OnGetLeashedVerbs will add a verb to remove it
             return;
