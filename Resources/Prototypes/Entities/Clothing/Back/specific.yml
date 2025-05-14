@@ -62,11 +62,11 @@
   - type: ExaminableSolution
     solution: tank
 
-- type: entity
+- type: entity # TODO: Add a comp to add darkswap ability to an object?
   parent: Clothing
   id: ClothingBackpackEtherealTeleporter
   name: ethereal teleporter
-  description: Originally created while several research facilities were experimenting on Shadowkin, this backpack allows the wearer to jump the gap between the "normal" dimension and The Dark.
+  description: Originally created while several research facilities were experimenting on Shadekin, this backpack allows the wearer to jump the gap between the "normal" dimension and The Dark.
   components:
     - type: Tag
       tags:
@@ -79,7 +79,3 @@
     - type: Clothing
       slots: BACK
       sprite: Clothing/Back/etherealteleporter.rsi
-    # TODO: Uncomment this when ClothingGrantPsionicPower is fixed and back working.
-    # - type: ClothingGrantPsionicPower
-    #   power: DarkSwapPower
-    # - type: Psionic

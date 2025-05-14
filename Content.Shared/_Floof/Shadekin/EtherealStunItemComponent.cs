@@ -1,4 +1,4 @@
-namespace Content.Shared.Shadowkin;
+namespace Content.Shared._Floof.Shadekin;
 
 [RegisterComponent]
 public sealed partial class EtherealStunItemComponent : Component

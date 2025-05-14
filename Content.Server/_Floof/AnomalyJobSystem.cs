@@ -1,5 +1,5 @@
-using Content.Shared.Shadowkin;
 using Content.Shared.Rejuvenate;
+using Content.Shared._Floof.Shadekin;
 
 namespace Content.Server._Floof;
 
@@ -13,10 +13,10 @@ public sealed class AnomalyJobSystem : EntitySystem
 
     private void OnInit(EntityUid uid, AnomalyJobComponent component, ComponentStartup args)
     {
-        if (!TryComp<ShadowkinComponent>(uid, out var shadowkin))
+        if (!TryComp<ShadekinComponent>(uid, out var shadowkin))
             return;
 
-        shadowkin.BlackeyeSpawn = false;
+        shadowkin.Blackeye = false;
         RaiseLocalEvent(uid, new RejuvenateEvent());
     }
 }

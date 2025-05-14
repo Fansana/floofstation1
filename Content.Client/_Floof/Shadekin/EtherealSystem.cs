@@ -1,9 +1,9 @@
-using Content.Shared.Shadowkin;
+using Content.Shared._Floof.Shadekin;
 using Robust.Client.Graphics;
 using Robust.Shared.Player;
 using Content.Client.Overlays;
 
-namespace Content.Client.Shadowkin;
+namespace Content.Client._Floof.Shadekin;
 
 public sealed partial class EtherealSystem : EntitySystem
 {

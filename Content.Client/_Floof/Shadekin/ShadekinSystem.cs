@@ -1,4 +1,4 @@
-using Content.Shared.Shadowkin;
+using Content.Shared._Floof.Shadekin;
 using Content.Shared.CCVar;
 using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
@@ -21,17 +21,17 @@ public sealed partial class ShadowkinSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<ShadowkinComponent, ComponentInit>(OnInit);
-        SubscribeLocalEvent<ShadowkinComponent, ComponentShutdown>(Onhutdown);
-        SubscribeLocalEvent<ShadowkinComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
-        SubscribeLocalEvent<ShadowkinComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
+        SubscribeLocalEvent<ShadekinComponent, ComponentInit>(OnInit);
+        SubscribeLocalEvent<ShadekinComponent, ComponentShutdown>(Onhutdown);
+        SubscribeLocalEvent<ShadekinComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
+        SubscribeLocalEvent<ShadekinComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
 
         Subs.CVar(_cfg, CCVars.NoVisionFilters, OnNoVisionFiltersChanged);
 
         _overlay = new();
     }
 
-    private void OnInit(EntityUid uid, ShadowkinComponent component, ComponentInit args)
+    private void OnInit(EntityUid uid, ShadekinComponent component, ComponentInit args)
     {
         if (uid != _playerMan.LocalEntity
             || _cfg.GetCVar(CCVars.NoVisionFilters))
@@ -40,7 +40,7 @@ public sealed partial class ShadowkinSystem : EntitySystem
         _overlayMan.AddOverlay(_overlay);
     }
 
-    private void Onhutdown(EntityUid uid, ShadowkinComponent component, ComponentShutdown args)
+    private void Onhutdown(EntityUid uid, ShadekinComponent component, ComponentShutdown args)
     {
         if (uid != _playerMan.LocalEntity)
             return;
@@ -48,15 +48,15 @@ public sealed partial class ShadowkinSystem : EntitySystem
         _overlayMan.RemoveOverlay(_overlay);
     }
 
-    private void OnPlayerAttached(EntityUid uid, ShadowkinComponent component, LocalPlayerAttachedEvent args)
+    private void OnPlayerAttached(EntityUid uid, ShadekinComponent component, LocalPlayerAttachedEvent args)
     {
         if (_cfg.GetCVar(CCVars.NoVisionFilters))
             return;
-            
+
         _overlayMan.AddOverlay(_overlay);
     }
 
-    private void OnPlayerDetached(EntityUid uid, ShadowkinComponent component, LocalPlayerDetachedEvent args)
+    private void OnPlayerDetached(EntityUid uid, ShadekinComponent component, LocalPlayerDetachedEvent args)
     {
         _overlayMan.RemoveOverlay(_overlay);
     }
@@ -78,7 +78,7 @@ public sealed partial class ShadowkinSystem : EntitySystem
 
         var uid = _playerMan.LocalEntity;
         if (uid == null
-            || !TryComp<ShadowkinComponent>(uid, out var comp)
+            || !TryComp<ShadekinComponent>(uid, out var comp)
             || !TryComp<HumanoidAppearanceComponent>(uid, out var humanoid))
             return;
 
@@ -88,11 +88,11 @@ public sealed partial class ShadowkinSystem : EntitySystem
         // intensity = clamp intensity min, max
 
         var tintIntensity = 0.65f;
-        if (TryComp<PsionicComponent>(uid, out var magic))
+        if (!comp.Blackeye)
         {
             var min = 0.45f;
             var max = 0.75f;
-            tintIntensity = Math.Clamp(min + (magic.Mana / magic.MaxMana) * 0.333f, min, max);
+            tintIntensity = Math.Clamp(min + (comp.Energy / comp.MaxEnergy) * 0.333f, min, max);
         }
 
         UpdateShader(new Vector3(humanoid.EyeColor.R, humanoid.EyeColor.G, humanoid.EyeColor.B), tintIntensity);

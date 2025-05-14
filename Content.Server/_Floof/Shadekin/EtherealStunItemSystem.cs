@@ -1,11 +1,11 @@
 using Content.Shared.Interaction.Events;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
-using Content.Shared.Shadowkin;
+using Content.Shared._Floof.Shadekin;
 using Content.Shared.Abilities.Psionics;
 using Content.Shared.Stacks;
 
-namespace Content.Server.Shadowkin;
+namespace Content.Server._Floof.Shadekin;
 
 public sealed class EtherealStunItemSystem : EntitySystem
 {
@@ -30,8 +30,8 @@ public sealed class EtherealStunItemSystem : EntitySystem
             if (TryComp<StaminaComponent>(ent, out var stamina))
                 _stamina.TakeStaminaDamage(ent, stamina.CritThreshold, stamina, ent);
 
-            if (TryComp<PsionicComponent>(ent, out var magic))
-                magic.Mana = 0;
+            if (TryComp<ShadekinComponent>(ent, out var shadekin))
+                shadekin.Energy = 0;
         }
 
         if (!component.DeleteOnUse)
