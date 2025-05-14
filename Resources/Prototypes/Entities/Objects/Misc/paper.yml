@@ -803,9 +803,7 @@
         name: envelope-letter-slot
         insertSound: /Audio/Effects/packetrip.ogg
         ejectSound: /Audio/Effects/packetrip.ogg
-        whitelist:
-          tags:
-            - Paper
+        maxItemSize: Small
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
     requiresComplex: false
