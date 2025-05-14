@@ -24,7 +24,8 @@
   id: LoadoutItemLeashBasic
   category: Items
   cost: 2
-  exclusive: true
+  exclusive: false
+  customColorTint: true
   items:
   - LeashBasic
   requirements:
@@ -48,8 +49,8 @@
   cost: 2
   exclusive: false
   items:
-  - CrayonBrush  
-    
+  - CrayonBrush
+
 # Writing
 - type: loadout
   id: LoadoutItemEnvelopes
@@ -86,7 +87,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutWritables
-      
+
 - type: loadout
   id: LoadoutItemStickyNotesGreen
   category: Items

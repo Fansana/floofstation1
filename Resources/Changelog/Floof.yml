@@ -5434,7 +5434,7 @@ Entries:
   id: 571
   time: '2025-05-10T18:34:22.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/951
-- author: DeltaV
+- author: DeltaV AeraAuling, DeltaV Solstar, M3739
   changes:
     - type: Add
       message: The mysterious Kitsune have shifted into the Floof sector.
@@ -5516,3 +5516,115 @@ Entries:
   id: 578
   time: '2025-05-12T05:17:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/911
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Mitigated two underlying issues that caused many races to have incorrect
+        mass, unintended hitbox sizes, etc. This impacts rodentia, harpy,
+        shadowkin, felinid, oni, harpy, unathi (reptilian), and resomi.
+  id: 579
+  time: '2025-05-12T12:49:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/901
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Plantbot
+  id: 580
+  time: '2025-05-12T14:22:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/946
+- author: VividPups
+  changes:
+    - type: Add
+      message: 5 new wedding rings in the autoDrobe and Loadouts
+  id: 581
+  time: '2025-05-13T19:08:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/976
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Dildos and Vibrators are now melee weapons
+    - type: Fix
+      message: Vibrator noise now continues till turned off
+  id: 582
+  time: '2025-05-14T01:34:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/969
+- author: Fansana
+  changes:
+    - type: Add
+      message: Re-added the Light Amplification (night vision) trait.
+  id: 583
+  time: '2025-05-14T12:52:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/941
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Leashes now support custom color tints and being painted.
+  id: 584
+  time: '2025-05-14T13:30:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/975
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        the pew RSI's are now correct, so the sprites shouldn't be inverted.
+        That said, some maps still appear to be a little odd, so I'll have to
+        review them further at some point.
+  id: 585
+  time: '2025-05-14T13:35:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/930
+- author: WhiteHusky
+  changes:
+    - type: Tweak
+      message: PDA ringer popups are a bit better.
+  id: 586
+  time: '2025-05-14T13:59:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/964
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: Tweaked DeltaV armors
+  id: 587
+  time: '2025-05-14T14:01:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/931
+- author: VividPups
+  changes:
+    - type: Add
+      message: Drozd now has a angle increase after shooting.
+    - type: Remove
+      message: Single and Full-auto from Drozd
+    - type: Tweak
+      message: 'Halved the Drozd''s fire rate. '
+  id: 588
+  time: '2025-05-14T14:55:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/979
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: >-
+        You can now ignite smokables with Pyrokinesis, including your own and
+        friends!
+  id: 589
+  time: '2025-05-14T16:18:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/961
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Meta Station to fix some of the issues, see discord for a full
+        list of changes/fixes.
+  id: 590
+  time: '2025-05-14T16:44:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/954
+- author: Superlagg
+  changes:
+    - type: Add
+      message: IPCs can have snouts now!
+    - type: Add
+      message: >-
+        Base body sprites of certain species as selectable markings. Mix and
+        match Vulpkanin, Rodentia, Feroxi, Human, and Reptilian limb/chest/head
+        sprites to make your own fancy lizardfox!
+  id: 591
+  time: '2025-05-14T20:47:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/967
