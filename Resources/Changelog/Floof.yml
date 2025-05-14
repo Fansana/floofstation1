@@ -5563,3 +5563,13 @@ Entries:
   id: 584
   time: '2025-05-14T13:30:27.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/975
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        the pew RSI's are now correct, so the sprites shouldn't be inverted.
+        That said, some maps still appear to be a little odd, so I'll have to
+        review them further at some point.
+  id: 585
+  time: '2025-05-14T13:35:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/930
