@@ -4,7 +4,7 @@
   id: Avali
   name: species-name-avali
   roundStart: true
-  prototype: CMMobAvali
+  prototype: MobAvali # Floofstation, changed from CMMobAvali
   sprites: MobAvaliSprites
   markingLimits: MobAvaliMarkingLimits
   dollPrototype: MobAvaliDummy
