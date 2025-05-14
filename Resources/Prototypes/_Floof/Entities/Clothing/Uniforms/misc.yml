@@ -37,7 +37,7 @@
     unequipDelay: 0
 
 - type: entity
-  parent: ClothingUniformLoinClothBlack
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongPlain
   name: plain thong
   description: Is this even considered a piece of clothing?
@@ -48,7 +48,7 @@
     sprite: _Floof/Clothing/Uniforms/plainthong.rsi
 
 - type: entity
-  parent: ClothingUniformLoinClothBlack
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongBee
   name: bee thong
   description: Is this even considered a piece of clothing?

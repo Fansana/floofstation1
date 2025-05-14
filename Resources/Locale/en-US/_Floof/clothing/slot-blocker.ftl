@@ -1,6 +1,6 @@
-slot-blocker-blocked-generic = {THE($blocker)} prevents you from doing this!
-slot-blocker-blocked-equipped = {THE($blocker)} prevents you from equipping this!
-slot-blocker-blocked-unequipped = {THE($blocker)} prevents you from unequipping this!
+slot-blocker-blocked-generic = You must take off {THE($blocker)} to do this!
+slot-blocker-blocked-equipped = You must take off {THE($blocker)} to equip this!
+slot-blocker-blocked-unequipped = You must take off {THE($blocker)} to unequip this!
 
 slot-blocker-examine-blocks = It may block the following slots when equipped: {$slots}
 slot-blocker-examine-blocked-by = It may be blocked by the following slots: {$slots}
