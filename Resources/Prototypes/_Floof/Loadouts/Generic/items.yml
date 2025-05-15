@@ -24,7 +24,8 @@
   id: LoadoutItemLeashBasic
   category: Items
   cost: 2
-  exclusive: true
+  exclusive: false
+  customColorTint: true
   items:
   - LeashBasic
   requirements:

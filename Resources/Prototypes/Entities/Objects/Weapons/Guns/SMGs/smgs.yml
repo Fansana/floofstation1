@@ -168,17 +168,19 @@
       minAngle: -19
       maxAngle: -16
     - type: Gun
+      angleIncrease: .5  #Floof
+      angleDecay: 6  #floof
       minAngle: 21
       maxAngle: 32
-      fireRate: 12
-      burstFireRate: 12
-      selectedMode: FullAuto
+      fireRate: 6  #Floof
+      burstFireRate: 6  #floof
+      selectedMode: Burst #Floof
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
-      availableModes:
-        - SemiAuto
+      availableModes:  #Floof
+        # SemiAuto Floof
         - Burst
-        - FullAuto
+        # FullAuto  Floof
       shotsPerBurst: 3
       fireOnDropChance: 0.2
     - type: ItemSlots

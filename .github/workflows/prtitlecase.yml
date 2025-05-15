@@ -9,6 +9,7 @@ env:
 
 jobs:
   prtitlecase:
+    if: github.actor != 'PJBot' && github.actor != 'DeltaV-Bot' && github.actor != 'SimpleStation14' && github.actor != 'Floof-Station-Bot'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Master

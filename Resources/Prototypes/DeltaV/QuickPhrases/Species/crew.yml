@@ -68,7 +68,7 @@
   id: SpeciesRodentiaPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-rodentia  
-# Floof - Changes begin
+
 - type: quickPhrase
   id: SpeciesChitinidPhrase
   parent: BaseCrewSpeciesPhrase
@@ -79,6 +79,11 @@
   parent: BaseCrewSpeciesPhrase
   text: species-name-feroxi
 
+- type: quickPhrase
+  id: SpeciesKitsunePhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-kitsune
+# Floof - Changes begin
 - type: quickPhrase
   id: SpeciesIPCPhrase
   parent: BaseCrewSpeciesPhrase

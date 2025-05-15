@@ -5312,3 +5312,319 @@ Entries:
   id: 557
   time: '2025-05-03T17:50:57.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/731
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added a command to easily allow for adding a jobs playtime requirements.
+        (playtime_unlock)
+  id: 558
+  time: '2025-05-04T18:35:32.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/918
+- author: Forzii
+  changes:
+    - type: Fix
+      message: Diona now get thirsty at the intended rate. They are not cacti.
+  id: 559
+  time: '2025-05-05T14:23:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/952
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Those with a french accent will no longer declare how
+        accent-french-words-replace-33 things are.
+  id: 560
+  time: '2025-05-05T14:23:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/953
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Tricordrazine to heal MINOR amounts of radiation damage. This
+        includes Medibots. If it's more than a teeny tiny amount, go to medical!
+        This also alleviates the issue where the medibot keeps pestering you
+        about the 0.1 rad damage because it thinks it can heal it, while the
+        medicine it'll inject (before this change) didn't actually do anything.
+  id: 561
+  time: '2025-05-05T15:19:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/945
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Gr3yt1de virus should no longer infect security airlocks every shift.
+  id: 562
+  time: '2025-05-05T22:14:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/955
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Disabled the station AI Job until it is actually playable.
+  id: 563
+  time: '2025-05-06T01:15:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/957
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: Space dragons are made more aware they won't vanish without rifts.
+  id: 564
+  time: '2025-05-07T13:55:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/956
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Removed default keybinds for switching between hotbar loadouts
+        (shift+num). You can still bind them yourself using the settings menu.
+  id: 565
+  time: '2025-05-08T13:47:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/960
+- author: Mnemotechnician
+  changes:
+    - type: Remove
+      message: >-
+        The action bar (hotbar) will no longer automatically switch to the next
+        page when it overflows (overflowing actions will still appear on the
+        next page, but you will need to switch manually)
+  id: 566
+  time: '2025-05-08T14:48:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/963
+- author: Fansana
+  changes:
+    - type: Remove
+      message: Removed Station AI for now.
+  id: 567
+  time: '2025-05-08T19:12:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/966
+- author: VividPups
+  changes:
+    - type: Fix
+      message: Fixed the hitscan bounty
+  id: 568
+  time: '2025-05-10T18:25:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/962
+- author: VividPups
+  changes:
+    - type: Fix
+      message: 'liquid butter can be made now '
+  id: 569
+  time: '2025-05-10T18:28:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/958
+- author: sprkl
+  changes:
+    - type: Remove
+      message: The Syndicate will no longer ask agents to hijack the evac shuttle.
+  id: 570
+  time: '2025-05-10T18:30:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/959
+- author: XenoOutlier
+  changes:
+    - type: Add
+      message: >-
+        New separate faction for Hostile clown mobs called "ClownRage" do with
+        this as you will.
+    - type: Tweak
+      message: >-
+        Animal friend now works on: Tarantulas (But not Clown Spiders), Space
+        adders and Gorillas and does not work on the Behonker anymore.
+    - type: Fix
+      message: >-
+        The excommunicant like many other loadout weapons is no longer
+        exclusive. You may now have a backpack, mantis.
+  id: 571
+  time: '2025-05-10T18:34:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/951
+- author: DeltaV AeraAuling, DeltaV Solstar, M3739
+  changes:
+    - type: Add
+      message: The mysterious Kitsune have shifted into the Floof sector.
+    - type: Fix
+      message: Polymorphs that revert on death will now revert before gibbing.
+    - type: Tweak
+      message: >-
+        Holy damage received a refresh, now shows as type of Metaphysical damage
+        rather than immaterial.
+    - type: Add
+      message: >-
+        Umbroxol, a special purpose medicine to heal holy damage, has been
+        added.
+  id: 572
+  time: '2025-05-12T01:13:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/937
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The ID card console will now correctly update your station records even
+        if your job and accesses stay the same.
+    - type: Fix
+      message: >-
+        ID-lockable closets and other things should now correctly display the
+        owner's info (unless the locker is anonymous)
+  id: 573
+  time: '2025-05-12T01:31:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/968
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added the Weldbot!
+  id: 574
+  time: '2025-05-12T01:34:46.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/943
+- author: VividPups
+  changes:
+    - type: Fix
+      message: 'Vulp and Harpys tails now show in outerwear '
+  id: 575
+  time: '2025-05-12T02:04:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/971
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: >-
+        Safety harnesses can now be researched and crafted in the Engineering
+        TechFab.
+    - type: Tweak
+      message: 'A few more safety harnesses were added to the EngiDrobe '
+  id: 576
+  time: '2025-05-12T02:07:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/935
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: >-
+        Added the Argenti, Gestio, Novalite C1, and SVT firearms. Added an
+        "Empty" Mosin variant for Salvage.
+    - type: Add
+      message: >-
+        Salvage technicians can now spend their mining points on new "Civilian
+        Grade" firearms from the Mining Vendor. These don't come with ammo, so
+        you'll have to request ammo be printed by Security.
+    - type: Add
+      message: Added the Argenti Revolver to Security Loadouts.
+    - type: Tweak
+      message: >-
+        Salvage Specialist lockers are now guaranteed to come with one pickaxe
+        and one ore bag.
+  id: 577
+  time: '2025-05-12T04:13:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/908
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added material silo
+  id: 578
+  time: '2025-05-12T05:17:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/911
+- author: Forzii
+  changes:
+    - type: Fix
+      message: >-
+        Mitigated two underlying issues that caused many races to have incorrect
+        mass, unintended hitbox sizes, etc. This impacts rodentia, harpy,
+        shadowkin, felinid, oni, harpy, unathi (reptilian), and resomi.
+  id: 579
+  time: '2025-05-12T12:49:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/901
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Plantbot
+  id: 580
+  time: '2025-05-12T14:22:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/946
+- author: VividPups
+  changes:
+    - type: Add
+      message: 5 new wedding rings in the autoDrobe and Loadouts
+  id: 581
+  time: '2025-05-13T19:08:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/976
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Dildos and Vibrators are now melee weapons
+    - type: Fix
+      message: Vibrator noise now continues till turned off
+  id: 582
+  time: '2025-05-14T01:34:41.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/969
+- author: Fansana
+  changes:
+    - type: Add
+      message: Re-added the Light Amplification (night vision) trait.
+  id: 583
+  time: '2025-05-14T12:52:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/941
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Leashes now support custom color tints and being painted.
+  id: 584
+  time: '2025-05-14T13:30:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/975
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        the pew RSI's are now correct, so the sprites shouldn't be inverted.
+        That said, some maps still appear to be a little odd, so I'll have to
+        review them further at some point.
+  id: 585
+  time: '2025-05-14T13:35:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/930
+- author: WhiteHusky
+  changes:
+    - type: Tweak
+      message: PDA ringer popups are a bit better.
+  id: 586
+  time: '2025-05-14T13:59:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/964
+- author: EinsteinEngines
+  changes:
+    - type: Tweak
+      message: Tweaked DeltaV armors
+  id: 587
+  time: '2025-05-14T14:01:53.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/931
+- author: VividPups
+  changes:
+    - type: Add
+      message: Drozd now has a angle increase after shooting.
+    - type: Remove
+      message: Single and Full-auto from Drozd
+    - type: Tweak
+      message: 'Halved the Drozd''s fire rate. '
+  id: 588
+  time: '2025-05-14T14:55:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/979
+- author: WhiteHusky
+  changes:
+    - type: Add
+      message: >-
+        You can now ignite smokables with Pyrokinesis, including your own and
+        friends!
+  id: 589
+  time: '2025-05-14T16:18:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/961
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Meta Station to fix some of the issues, see discord for a full
+        list of changes/fixes.
+  id: 590
+  time: '2025-05-14T16:44:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/954
+- author: Superlagg
+  changes:
+    - type: Add
+      message: IPCs can have snouts now!
+    - type: Add
+      message: >-
+        Base body sprites of certain species as selectable markings. Mix and
+        match Vulpkanin, Rodentia, Feroxi, Human, and Reptilian limb/chest/head
+        sprites to make your own fancy lizardfox!
+  id: 591
+  time: '2025-05-14T20:47:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/967
