@@ -7,7 +7,7 @@ using Content.Server.Power.EntitySystems;
 using Content.Shared._Shitmed.Autodoc.Components;
 using Content.Shared._Shitmed.Autodoc.Systems;
 using Content.Shared._Shitmed.Medical.Surgery;
-using Content.Server.Bed.Sleep;
+using Content.Shared.Bed.Sleep;
 using Content.Server.Construction;
 
 namespace Content.Server._Shitmed.Autodoc.Systems;
@@ -17,7 +17,7 @@ public sealed class AutodocSystem : SharedAutodocSystem
     [Dependency] private readonly InternalsSystem _internals = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly PowerReceiverSystem _power = default!;
-    [Dependency] private readonly SleepingSystem _sleepingSystem = default!; // Sleeping isnt shared yet.
+    [Dependency] private readonly SleepingSystem _sleepingSystem = default!;
     private const float UpgradeAddsPercent = 0.50f;
 
     public override void Initialize()

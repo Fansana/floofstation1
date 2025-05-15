@@ -1,0 +1,10 @@
+
+#Freelancer
+
+- type: entity
+  id: LockableButtonFreelancer
+  suffix: Freelancer
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["Freelancer"]]    

@@ -118,12 +118,25 @@ namespace Content.Shared.Examine
                     && distance <= GetExaminerRange(examiner))
                     return true;
 
-            return InRangeUnOccluded(
-                _transform.GetMapCoordinates(examiner),
-                target,
-                GetExaminerRange(examiner),
-                predicate: predicate,
-                ignoreInsideBlocker: true);
+            // Do target InRangeUnoccluded which has different checks.
+            if (examined != null)
+            {
+                return InRangeUnOccluded(
+                    examiner,
+                    examined.Value,
+                    GetExaminerRange(examiner),
+                    predicate: predicate,
+                    ignoreInsideBlocker: true);
+            }
+            else
+            {
+                return InRangeUnOccluded(
+                    examiner,
+                    target,
+                    GetExaminerRange(examiner),
+                    predicate: predicate,
+                    ignoreInsideBlocker: true);
+            }
         }
 
         /// <summary>
@@ -218,7 +231,14 @@ namespace Content.Shared.Examine
 
         public bool InRangeUnOccluded(EntityUid origin, EntityUid other, float range = ExamineRange, Ignored? predicate = null, bool ignoreInsideBlocker = true)
         {
-            var entMan = IoCManager.Resolve<IEntityManager>();
+            var ev = new InRangeOverrideEvent(origin, other);
+            RaiseLocalEvent(origin, ref ev);
+
+            if (ev.Handled)
+            {
+                return ev.InRange;
+            }
+
             var originPos = _transform.GetMapCoordinates(origin);
             var otherPos = _transform.GetMapCoordinates(other);
 

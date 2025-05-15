@@ -1,11 +1,14 @@
 ﻿using System.Linq;
 using Content.Server.Announcements.Systems;
+using System.Linq;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Station.Components;
 using Content.Server.StationEvents.Components;
 using Content.Shared.GameTicking.Components;
 
+
 namespace Content.Server.StationEvents.Events;
+
 
 public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRuleComponent>
 {
@@ -36,7 +39,9 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
             var ghostRole = EnsureComp<GhostRoleComponent>(target);
             EnsureComp<GhostTakeoverAvailableComponent>(target);
             ghostRole.RoleName = MetaData(target).EntityName;
-            ghostRole.RoleDescription = Loc.GetString("station-event-random-sentience-role-description", ("name", ghostRole.RoleName));
+            ghostRole.RoleDescription = Loc.GetString(
+                "station-event-random-sentience-role-description",
+                ("name", ghostRole.RoleName));
             groups.Add(Loc.GetString(target.Comp.FlavorKind));
         }
 
@@ -51,23 +56,22 @@ public sealed class RandomSentienceRule : StationEventSystem<RandomSentienceRule
         foreach (var target in targetList)
         {
             var station = StationSystem.GetOwningStation(target);
-            if(station == null)
+            if (station == null)
                 continue;
             stationsToNotify.Add((EntityUid) station);
         }
         foreach (var station in stationsToNotify)
         {
-            _announcer.SendAnnouncement(
-                _announcer.GetAnnouncementId(args.RuleId),
-                StationSystem.GetInStation(EntityManager.GetComponent<StationDataComponent>(station)),
-                "station-event-random-sentience-announcement",
-                null,
-                Color.Gold,
-                null, null,
-                ("kind1", kind1), ("kind2", kind2), ("kind3", kind3), ("amount", groupList.Count),
+            ChatSystem.DispatchStationAnnouncement(
+                station,
+                Loc.GetString(
+                    "station-event-random-sentience-announcement",
+                    ("kind1", kind1),
+                    ("kind2", kind2),
+                    ("kind3", kind3),
+                    ("amount", groupList.Count),
                     ("data", Loc.GetString($"random-sentience-event-data-{RobustRandom.Next(1, 6)}")),
-                    ("strength", Loc.GetString($"random-sentience-event-strength-{RobustRandom.Next(1, 8)}"))
-            );
+                    ("strength", Loc.GetString($"random-sentience-event-strength-{RobustRandom.Next(1, 8)}"))));
         }
     }
 }

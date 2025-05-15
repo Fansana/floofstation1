@@ -179,8 +179,8 @@
     factions:
       - SimpleNeutral
   - type: RadiationSource
-    intensity: 2
-    slope: 0.3
+    intensity: 1
+    slope: 0.5
   - type: Destructible
     thresholds:
     - trigger:
@@ -343,16 +343,16 @@
         - ReagentSlimePomelustine # Floofstation
         - ReagentSlimePhilterex # Floofstation
         - ReagentSlimeLibidozenithizine # Floofstation
-        #- ReagentSlimeIchor
+        - ReagentSlimeIchor
         #- ReagentSlimeBleach
         #- ReagentSlimeSoap
         #- ReagentSlimeSpacelube
-        #- ReagentSlimeBuzzachloricbees
-        #- ReagentSlimeWehjuice
-        #- ReagentCognizine
+        - ReagentSlimeBuzzachloricbees
+        - ReagentSlimeWehjuice
+        - ReagentCognizine
         - ReagentSlimeOpporozidone # Floofstation
         #- ReagentSlimeNecrosol
-        #- ReagentSlimeSpaceDrugs
+        - ReagentSlimeSpaceDrugs
         #- ReagentSlimeUnstableMutagen
         #- ReagentSlimeLead
         #- ReagentSlimechlorinetriflouride
@@ -585,7 +585,7 @@
     layers:
       - map: [ "enum.DamageStateVisualLayers.Base" ]
         state: alive
-        color: "#3e901c"
+        color: "#FFBF00"
   - type: GhostRole
     prob: 1 #it's significantly more psionic than the others
     description: ghost-role-information-angry-slimes-description

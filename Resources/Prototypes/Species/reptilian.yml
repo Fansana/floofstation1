@@ -12,10 +12,10 @@
   femaleFirstNames: names_reptilian_female
   naming: FirstDashFirst
   minHeight: 0.7
-  defaultHeight: 0.95
+  #defaultHeight: 0.95 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxHeight: 1.25
   minWidth: 0.65
-  defaultWidth: 0.95
+  #defaultWidth: 0.95 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxWidth: 1.3
   customName: true
 

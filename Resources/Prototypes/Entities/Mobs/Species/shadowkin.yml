@@ -5,6 +5,7 @@
     - MobAtmosStandard
     - MobFlammable
     - BaseMobSpecies
+    - MobRespirator
   id: MobShadowkinBase
   name: Urist McShadow
   abstract: true
@@ -244,6 +245,9 @@
       - FootstepSound
       - DoorBumpOpener
       - ShadowkinEmotes
+    - type: DamageForceSay # Floofstation - added unqiue pain messages
+      forceSayStringPrefix: damage-force-say-shadowkin-
+      forceSayStringCount: 7 # Default is 7, but defining it anyway in case it changes or someone wants to add/remove messages
 
 - type: entity
   save: false
@@ -258,7 +262,7 @@
       netsync: false
       noRot: true
       drawdepth: Mobs
-      scale: 0.85, 0.85 # Small
+      #scale: 0.85, 0.85 # Small | Floofstation - while this doesn't technically cause any issues, this creates potential instability if changes to the heightAdjust system are made. As someone who made changes to the heightAdjust system, this can be very confusing.
       layers:
         - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
         - map: ["enum.HumanoidVisualLayers.Chest"]
