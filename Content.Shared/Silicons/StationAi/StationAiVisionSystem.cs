@@ -306,8 +306,6 @@ public sealed class StationAiVisionSystem : EntitySystem
         // If we're doing range-checks might be able to early out
         public Vector2i? TargetTile;
 
-        public HashSet<Vector2i> VisibleTiles;
-
         public readonly List<Dictionary<Vector2i, int>> Vis1 = new();
         public readonly List<Dictionary<Vector2i, int>> Vis2 = new();
 
