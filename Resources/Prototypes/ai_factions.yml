@@ -118,6 +118,8 @@
 
 - type: npcFaction
   id: Gorilla
+  friendly:
+  - AnimalFriend #floof
   hostile:
   - NanoTrasen
   - Syndicate
@@ -168,4 +170,3 @@
     - GladiabotRed
     - GladiabotGreen
     - GladiabotBlue
-

@@ -10,7 +10,7 @@
     unlockSound:
       path: /Audio/Effects/double_beep.ogg
 
-# A base lockable entity that can be privitized using an ID card.
+# A base nanotrasen-aligned lockable entity that can be privitized using an ID card.
 # Inheritors should provide additional masterAccesses based on the department.
 - type: entity
   id: IdLockableBase
@@ -18,6 +18,7 @@
   abstract: true
   components:
   - type: IdLock
+    revealInfo: true
     masterAccesses: [ CentralCommand, Captain, HeadOfPersonnel ]
 
 # A base lockable entity whose ID lock has to be enabled first (typically via construction)
@@ -34,7 +35,7 @@
 # Why? Because if one CMO was to engage an ID lock on their locker, another CMO could easily open it using their own ID as a master key.
 - type: entity
   id: IdLockableBaseService
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -43,16 +44,15 @@
 # The below only list the direct masters. Captain, HoP, and central command master accesses are inherited.
 - type: entity
   id: IdLockableBaseLogistics
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
-    revealInfo: true
     masterAccesses: [ Quartermaster ]
 
 - type: entity
   id: IdLockableBaseMedical
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -60,7 +60,7 @@
 
 - type: entity
   id: IdLockableBaseEngineering
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -68,7 +68,7 @@
 
 - type: entity
   id: IdLockableBaseResearch
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
@@ -76,7 +76,7 @@
 
 - type: entity
   id: IdLockableBaseSecurity
-  parent: IdLockableBase
+  parent: IdLockableBaseDisabled
   abstract: true
   components:
   - type: IdLock
