@@ -5637,3 +5637,17 @@ Entries:
   id: 592
   time: '2025-05-15T15:47:02.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/914
+- author: VividPups
+  changes:
+    - type: Add
+      message: Added Pet Spider
+  id: 593
+  time: '2025-05-15T16:40:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/948
+- author: EinsteinEngines Aviu00
+  changes:
+    - type: Fix
+      message: Fix silo being out of range.
+  id: 594
+  time: '2025-05-16T19:37:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/921

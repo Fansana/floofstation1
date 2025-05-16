@@ -119,3 +119,17 @@
   exclusive: false
   items:
     - PlushieLizard
+
+#Pets
+- type: loadout
+  id: LoadoutItemPetSpider
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobPetSpider
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower

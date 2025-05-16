@@ -51,8 +51,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3.2.0
         with:
-          dotnet-version: 8.0.100
-
+          dotnet-version: 9.0.x
       - name: Install dependencies
         run: dotnet restore
 
@@ -64,6 +63,9 @@ jobs:
 
       - name: Package client
         run: dotnet run --project Content.Packaging client --no-wipe-release
+
+      - name: Update Build Info
+        run: Tools/gen_build_info.py
 
       - name: Shuffle files around
         run: |
