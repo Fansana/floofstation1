@@ -237,7 +237,7 @@
       - !type:GibBehavior { }
     - trigger:
         !type:DamageTypeTrigger
-        damageType: Explosion
+        damageType: Explosive
         damage: 60
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -301,7 +301,7 @@
       - !type:GibBehavior { }
     - trigger:
         !type:DamageTypeTrigger
-        damageType: Explosion
+        damageType: Explosive
         damage: 40
       behaviors:
       - !type:SpawnEntitiesBehavior
