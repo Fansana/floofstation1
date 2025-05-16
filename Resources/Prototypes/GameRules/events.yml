@@ -264,14 +264,14 @@
       prob: 0.02
     - id: MobMouse2
       prob: 0.02
+    - id: MobClownRat
+      prob: 0.005
 #    - id: MobMouseCancer # Floof - Removed Cancer mouse spawns
 #      prob: 0.001
     specialEntries:
     - id: SpawnPointGhostRatKing
       prob: 0.001
-    specialEntries:
-    - id: MobClownRat
-      prob: 0.005
+
 
 - type: entity
   id: CockroachMigration
