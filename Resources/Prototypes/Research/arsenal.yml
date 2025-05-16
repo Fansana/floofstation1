@@ -31,6 +31,7 @@
   - MagazineMagnumIncendiary
   - MagazineLightRifleIncendiary
   - SpeedLoaderMagnumIncendiary
+  - SpeedLoaderRifleHeavyIncendiary # Frontier
   - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
   - MagazineBoxMagnumIncendiary
@@ -91,6 +92,10 @@
   - MagazinePistolRubber #floof
   - SpeedLoaderMagnumRubber #floof
   - WeaponDisabler
+  - MagazineBoxLightRifleRubber # Frontier
+  - MagazineBoxMagnumRubber # Frontier
+  - MagazineBoxPistolRubber # Frontier
+  - MagazineBoxRifleRubber # Frontier
 
 - type: technology
   id: UraniumMunitions
@@ -108,6 +113,7 @@
   - MagazineMagnumUranium
   - MagazineLightRifleUranium
   - SpeedLoaderMagnumUranium
+  - SpeedLoaderRifleHeavyUranium # Frontier
   - MagazineBoxPistolUranium
   - MagazineBoxMagnumUranium
   - MagazineBoxLightRifleUranium
@@ -132,6 +138,7 @@
   - HoloprojectorSecurity
   - WeaponDisablerSMG
   - BolaEnergy
+  - WeaponHalberd # Floofstation
 
 # Tier 2
 
