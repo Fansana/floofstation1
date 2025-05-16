@@ -136,11 +136,66 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGoldRing
-  name: gold ring
-  description: a band for a special bond
+  name: gold band
+  description: A band for a special bond.
   components:
   - type: Sprite
-    sprite: _Floof/Clothing/Under/Gloves/goldring.rsi
+    sprite: _Floof/Clothing/Under/Gloves/Rings/goldband.rsi
   - type: Clothing
-    sprite: _Floof/Clothing/Under/Gloves/goldring.rsi
+    sprite: _Floof/Clothing/Under/Gloves/Rings/goldband.rsi
 
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsWebRing
+  name: web band
+  description: A band for a special bond made out of Arachnid silk. Crafted by SESWC
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingband.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingband.rsi
+
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsDiamondBand
+  name: gold diamond ring
+  description: A band for a special bond encrested with a well cut diamond. Crafted by SESWC.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Gloves/Rings/golddiamondring.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Gloves/Rings/golddiamondring.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGoldRingSpiderGem
+  name: gold spider gem ring
+  description: A band for a special bond made out of golden ring band and encrested with a well cut spider gem. Crafted by SESWC.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Gloves/Rings/goldspidergemring.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Gloves/Rings/goldspidergemring.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsWebDiamondRing
+  name: web diamond ring
+  description: A band for a special bond made out of Arachnid Silk and encrested with a well cut diamond. Crafted by SESWC.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingdiamondring.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingdiamondring.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsWebRingSpiderGem
+  name: web spider gem ring
+  description: A band for a special bond made out of Arachnid Silk and encrested with a well cut diamond. Crafted by SESWC.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingspidergemring.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Under/Gloves/Rings/webbingspidergemring.rsi

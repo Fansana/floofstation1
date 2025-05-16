@@ -2,8 +2,15 @@
 ### UI
 
 # For the PDA Ringer screen
+# FloofStation Modified!
 
-comp-ringer-vibration-popup = Your PDA vibrates
+comp-ringer-vibration-popup = {CAPITALIZE(THE($pda))} vibrates
+
+comp-ringer-vibration-popup-concealed = A PDA vibrates
+
+comp-ringer-vibration-popup-self = Your {$pda} vibrates
+
+comp-ringer-vibration-popup-concealed-self = A PDA vibrates in your {$container}
 
 comp-ringer-ui-menu-title = Ringtone
 
