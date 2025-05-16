@@ -1,0 +1,16 @@
+- type: technology
+  id: AdvancedEngeryArmaments
+  name: research-technology-advanced-energy-armaments
+  icon:
+    sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 8000
+  recipeUnlocks:
+  - WeaponEnergyHalberd
+  - ClothingOuterArmorReflective
+  technologyPrerequisites:
+  - AdvancedRiotControl
+  - WeaponizedLaserManipulation
+  - AdvancedToolsTechnology

@@ -28303,6 +28303,18 @@ entities:
     - type: Transform
       pos: 15.5,1.5
       parent: 31
+- proto: ChemMaster
+  entities:
+  - uid: 606
+    components:
+    - type: Transform
+      pos: 19.5,-0.5
+      parent: 31
+  - uid: 5075
+    components:
+    - type: Transform
+      pos: 15.5,1.5
+      parent: 31
 - proto: ChessBoard
   entities:
   - uid: 841
@@ -58003,6 +58015,13 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-16.5
+      parent: 31
+- proto: PlayerStationAi
+  entities:
+  - uid: 7046
+    components:
+    - type: Transform
+      pos: 49.5,-24.5
       parent: 31
 - proto: PlayerStationAi
   entities:

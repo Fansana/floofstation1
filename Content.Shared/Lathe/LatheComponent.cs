@@ -9,16 +9,21 @@ namespace Content.Shared.Lathe
     [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
     public sealed partial class LatheComponent : Component
     {
+        // FloofStation Modified
+        // AlwaysPushInheritance added so lathes that use the AutoLathe as their
+        // parent could add on some extra recipes.
         /// <summary>
         /// All of the recipes that the lathe has by default
         /// </summary>
-        [DataField]
+        [DataField, AlwaysPushInheritance]
         public List<ProtoId<LatheRecipePrototype>> StaticRecipes = new();
 
+        // FloofStation Modified
+        // Ditto from StaticRecipes.
         /// <summary>
         /// All of the recipes that the lathe is capable of researching
         /// </summary>
-        [DataField]
+        [DataField, AlwaysPushInheritance]
         public List<ProtoId<LatheRecipePrototype>> DynamicRecipes = new();
 
         /// <summary>

@@ -274,108 +274,111 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
-    - PowerDrill
-    - MiningDrill
-    - MiningDrillDiamond
-    - AnomalyScanner
-    - AnomalyLocator
-    - AnomalyLocatorWide
-    - HandheldCrewMonitor
-    - Scalpel
-    - Retractor
-    - Cautery
-    - Drill
-    - WeaponParticleDecelerator
-    - HoloprojectorField
-    - Saw
-    - Hemostat
-    - CryostasisBeaker
-    - SyringeCryostasis
-    - Syringe
-    - Implanter
-    - PillCanister
-    - ChemistryEmptyBottle01
-    - AdvancedCapacitorStockPart
-    - AdvancedMatterBinStockPart
-    - NanoManipulatorStockPart
-    - SuperCapacitorStockPart
-    - SuperMatterBinStockPart
-    - PicoManipulatorStockPart
-    - BluespaceCapacitorStockPart
-    - BluespaceManipulatorStockPart
-    - BluespaceMatterBinStockPart
-    - AdvMopItem
-    - WeaponSprayNozzle
-    - ClothingBackpackWaterTank
-    - MegaSprayBottle
-    - TimerTrigger
-    - ChemicalPayload
-    - FlashPayload
-    - Signaller
-    - SignallerAdvanced
-    - SignalTrigger
-    - VoiceTrigger
-    - Igniter
-    - HandHeldMassScanner
-    - PowerCellMicroreactor
-    - PowerCellHigh
-    - WeaponPistolCHIMP
-    - ClothingMaskWeldingGas
-    - WeaponGauntletGorilla
-    - SynthesizerInstrument
-    - RPED
-    - ClothingShoesBootsMagSci
-    - ClothingShoesBootsMoon
-    - ClothingShoesBootsSpeed
-    - NodeScanner
-    - HolofanProjector
-    - BluespaceBeaker
-    - SyringeBluespace
-    - WeaponForceGun
-    - WeaponLaserSvalinn
-    - WeaponProtoKineticAccelerator
-    - WeaponTetherGun
-    - WeaponGrapplingGun
-    - ClothingBackpackHolding
-    - ClothingBackpackSatchelHolding
-    - ClothingBackpackDuffelHolding
-    - WelderExperimental
-    - JawsOfLife
-    - CoreSilver # Nyanotrasen - Silver Golem core
-    - FauxTileAstroGrass
-    - FauxTileMowedAstroGrass
-    - FauxTileJungleAstroGrass
-    - FauxTileAstroIce
-    - FauxTileAstroSnow
-    - OreBagOfHolding
-    - DeviceQuantumSpinInverter
-    - CanilunztTranslator
-    - BubblishTranslator
-    - NekomimeticTranslator
-    - DraconicTranslator
-    - SolCommonTranslator
-    - RootSpeakTranslator
-    - XenoTranslator
-    - BasicGalaticCommonTranslatorImplanter
-    - AdvancedGalaticCommonTranslatorImplanter
-    - BubblishTranslatorImplanter
-    - NekomimeticTranslatorImplanter
-    - DraconicTranslatorImplanter
-    - CanilunztTranslatorImplanter
-    - SolCommonTranslatorImplanter
-    - RootSpeakTranslatorImplanter
-    - AnimalTranslator
-    - MofficTranslatorImplanter
-    - MofficTranslator
-    - ClothingEyesNightVisionGoggles
-    - ClothingEyesNightVisionDiagnosticGoggles
-    - ClothingEyesThermalVisionGoggles
-    - RCDAmmo #DeltaV
-    - RCD #EE
-    # Shitmed Change
-    - EnergyScalpel
-    - EnergyCautery
-    - AdvancedRetractor
+      - PowerDrill
+      - MiningDrill
+      - MiningDrillDiamond
+      - AnomalyScanner
+      - AnomalyLocator
+      - AnomalyLocatorWide
+      - HandheldCrewMonitor
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - WeaponParticleDecelerator
+      - HoloprojectorField
+      - Saw
+      - Hemostat
+      - CryostasisBeaker
+      - SyringeCryostasis
+      - Syringe
+      - Implanter
+      - PillCanister
+      - ChemistryEmptyBottle01
+      - AdvancedCapacitorStockPart
+      - AdvancedMatterBinStockPart
+      - NanoManipulatorStockPart
+      - SuperCapacitorStockPart
+      - SuperMatterBinStockPart
+      - PicoManipulatorStockPart
+      - BluespaceCapacitorStockPart
+      - BluespaceManipulatorStockPart
+      - BluespaceMatterBinStockPart
+      - AdvMopItem
+      - WeaponSprayNozzle
+      - ClothingBackpackWaterTank
+      - MegaSprayBottle
+      - TimerTrigger
+      - ChemicalPayload
+      - FlashPayload
+      - Signaller
+      - SignallerAdvanced
+      - SignalTrigger
+      - VoiceTrigger
+      - Igniter
+      - HandHeldMassScanner
+      - PowerCellMicroreactor
+      - PowerCellHigh
+      - WeaponPistolCHIMP
+      - ClothingMaskWeldingGas
+      - WeaponGauntletGorilla
+      - SynthesizerInstrument
+      - RPED
+      - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
+      - ClothingShoesBootsSpeed
+      - NodeScanner
+      - HolofanProjector
+      - BluespaceBeaker
+      - SyringeBluespace
+      - WeaponForceGun
+      - WeaponLaserSvalinn
+      - WeaponProtoKineticAccelerator
+      - WeaponTetherGun
+      - WeaponGrapplingGun
+      - ClothingBackpackHolding
+      - ClothingBackpackSatchelHolding
+      - ClothingBackpackDuffelHolding
+      - WelderExperimental
+      - JawsOfLife
+      - CoreSilver # Nyanotrasen - Silver Golem core
+      - FauxTileAstroGrass
+      - FauxTileMowedAstroGrass
+      - FauxTileJungleAstroGrass
+      - FauxTileAstroIce
+      - FauxTileAstroSnow
+      - OreBagOfHolding
+      - DeviceQuantumSpinInverter
+      - CanilunztTranslator
+      - BubblishTranslator
+      - NekomimeticTranslator
+      - DraconicTranslator
+      - SolCommonTranslator
+      - RootSpeakTranslator
+      - XenoTranslator
+      - BasicGalaticCommonTranslatorImplanter
+      - AdvancedGalaticCommonTranslatorImplanter
+      - BubblishTranslatorImplanter
+      - NekomimeticTranslatorImplanter
+      - DraconicTranslatorImplanter
+      - CanilunztTranslatorImplanter
+      - SolCommonTranslatorImplanter
+      - RootSpeakTranslatorImplanter
+      - AnimalTranslator
+      - MofficTranslatorImplanter
+      - MofficTranslator
+      - ClothingEyesNightVisionGoggles
+      - ClothingEyesNightVisionDiagnosticGoggles
+      - ClothingEyesThermalVisionGoggles
+      - ArachnicTranslatorImplanter # Floofstation
+      - ArachnicTranslator # Floofstation
+      - ClothingHarvestBag # Floofstation
+      - RCDAmmo #DeltaV
+      - RCD #EE
+      # Shitmed Change
+      - EnergyScalpel
+      - EnergyCautery
+      - AdvancedRetractor
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - BoxBeanbag
@@ -480,91 +483,91 @@
     - SpaceHeaterMachineCircuitBoard
     - StationAnchorCircuitboard
     dynamicRecipes:
-    - ThermomachineFreezerMachineCircuitBoard
-    - HellfireFreezerMachineCircuitBoard
-    - PortableScrubberMachineCircuitBoard
-    - CloningPodMachineCircuitboard
-    - MedicalScannerMachineCircuitboard
-    - CryoPodMachineCircuitboard
-    - VaccinatorMachineCircuitboard
-    - DiagnoserMachineCircuitboard
-    - BiomassReclaimerMachineCircuitboard
-    - BiofabricatorMachineCircuitboard
-    - SurveillanceCameraRouterCircuitboard
-    - SurveillanceCameraMonitorCircuitboard
-    - SurveillanceWirelessCameraMonitorCircuitboard
-    - SurveillanceCameraWirelessRouterCircuitboard
-    - ComputerTelevisionCircuitboard
-    - JukeboxCircuitBoard
-    - SurveillanceWirelessCameraMovableCircuitboard
-    - SurveillanceWirelessCameraAnchoredCircuitboard
-    - HydroponicsTrayMachineCircuitboard
-    - SolarControlComputerCircuitboard
-    - SolarTrackerElectronics
-    - TurboItemRechargerCircuitboard
-    - PowerComputerCircuitboard
-    - AlertsComputerCircuitboard
-    - AutolatheHyperConvectionMachineCircuitboard
-    - ProtolatheHyperConvectionMachineCircuitboard
-    - CircuitImprinterHyperConvectionMachineCircuitboard
-    - FatExtractorMachineCircuitboard
-    - FlatpackerMachineCircuitboard
-    - SheetifierMachineCircuitboard
-    - ShuttleConsoleCircuitboard
-    - RadarConsoleCircuitboard
-    - TechDiskComputerCircuitboard
-    - DawInstrumentMachineCircuitboard
-    - CloningConsoleComputerCircuitboard
-    - StasisBedMachineCircuitboard
-    - OreProcessorIndustrialMachineCircuitboard
-    - CargoTelepadMachineCircuitboard
-    - RipleyCentralElectronics
-    - RipleyPeripheralsElectronics
-    - HonkerCentralElectronics
-    - HonkerPeripheralsElectronics
-    - HonkerTargetingElectronics
-    - HamtrCentralElectronics
-    - HamtrPeripheralsElectronics
-    - PortableGeneratorPacmanMachineCircuitboard
-    - PortableGeneratorSuperPacmanMachineCircuitboard
-    - PortableGeneratorJrPacmanMachineCircuitboard
-    - WallmountGeneratorElectronics
-    - WallmountGeneratorAPUElectronics
-    - WallmountSubstationElectronics
-    - PowerCageRechargerCircuitboard
-    - EmitterCircuitboard
-    - ThrusterMachineCircuitboard
-    - GyroscopeMachineCircuitboard
-    - MiniGravityGeneratorCircuitboard
-    - ShuttleGunKineticCircuitboard
-    - GasRecyclerMachineCircuitboard
-    - SeedExtractorMachineCircuitboard
-    - AnalysisComputerCircuitboard
-    - ExosuitFabricatorMachineCircuitboard
-    - AnomalyVesselCircuitboard
-    - AnomalyVesselExperimentalCircuitboard
-    - AnomalySynchronizerCircuitboard
-    - APECircuitboard
-    - ArtifactAnalyzerMachineCircuitboard
-    - ArtifactCrusherMachineCircuitboard
-    - TelecomServerCircuitboard
-    - MassMediaCircuitboard
-    - ReagentGrinderIndustrialMachineCircuitboard
-    - ReverseEngineeringMachineCircuitboard
-    - CrewMonitoringComputerCircuitboard
-    - DoorElectronics
-    - FireAlarmElectronics
-    - FirelockElectronics
-    - IntercomElectronics
-    - MailingUnitElectronics
-    - SalvageMagnetMachineCircuitboard
-    - StationMapElectronics
-    - MetempsychoticMachineCircuitboard
-    - SalvageExpeditionsComputerCircuitboard
-    - JukeboxCircuitBoard
-    - AutodocCircuitboard # Shitmed Change
-    - OperatingTableCircuitboard # Shitmed Change
-    - MaterialSiloCircuitboard
+      - ThermomachineFreezerMachineCircuitBoard
+      - HellfireFreezerMachineCircuitBoard
+      - PortableScrubberMachineCircuitBoard
+      - CloningPodMachineCircuitboard
+      - MedicalScannerMachineCircuitboard
+      - CryoPodMachineCircuitboard
+      - VaccinatorMachineCircuitboard
+      - DiagnoserMachineCircuitboard
+      - BiomassReclaimerMachineCircuitboard
+      - BiofabricatorMachineCircuitboard
+      - SurveillanceCameraRouterCircuitboard
+      - SurveillanceCameraMonitorCircuitboard
+      - SurveillanceWirelessCameraMonitorCircuitboard
+      - SurveillanceCameraWirelessRouterCircuitboard
+      - ComputerTelevisionCircuitboard
+      - JukeboxCircuitBoard
+      - SurveillanceWirelessCameraMovableCircuitboard
+      - SurveillanceWirelessCameraAnchoredCircuitboard
+      - HydroponicsTrayMachineCircuitboard
+      - SolarControlComputerCircuitboard
+      - SolarTrackerElectronics
+      - TurboItemRechargerCircuitboard
+      - PowerComputerCircuitboard
+      - AlertsComputerCircuitboard
+      - AutolatheHyperConvectionMachineCircuitboard
+      - ProtolatheHyperConvectionMachineCircuitboard
+      - CircuitImprinterHyperConvectionMachineCircuitboard
+      - FatExtractorMachineCircuitboard
+      - FlatpackerMachineCircuitboard
+      - SheetifierMachineCircuitboard
+      - ShuttleConsoleCircuitboard
+      - RadarConsoleCircuitboard
+      - TechDiskComputerCircuitboard
+      - DawInstrumentMachineCircuitboard
+      - CloningConsoleComputerCircuitboard
+      - StasisBedMachineCircuitboard
+      - OreProcessorIndustrialMachineCircuitboard
+      - CargoTelepadMachineCircuitboard
+      - RipleyCentralElectronics
+      - RipleyPeripheralsElectronics
+      - HonkerCentralElectronics
+      - HonkerPeripheralsElectronics
+      - HonkerTargetingElectronics
+      - HamtrCentralElectronics
+      - HamtrPeripheralsElectronics
+      - PortableGeneratorPacmanMachineCircuitboard
+      - PortableGeneratorSuperPacmanMachineCircuitboard
+      - PortableGeneratorJrPacmanMachineCircuitboard
+      - WallmountGeneratorElectronics
+      - WallmountGeneratorAPUElectronics
+      - WallmountSubstationElectronics
+      - PowerCageRechargerCircuitboard
+      - EmitterCircuitboard
+      - ThrusterMachineCircuitboard
+      - GyroscopeMachineCircuitboard
+      - MiniGravityGeneratorCircuitboard
+      - ShuttleGunKineticCircuitboard
+      - GasRecyclerMachineCircuitboard
+      - SeedExtractorMachineCircuitboard
+      - AnalysisComputerCircuitboard
+      - ExosuitFabricatorMachineCircuitboard
+      - AnomalyVesselCircuitboard
+      - AnomalyVesselExperimentalCircuitboard
+      - AnomalySynchronizerCircuitboard
+      - APECircuitboard
+      - ArtifactAnalyzerMachineCircuitboard
+      - ArtifactCrusherMachineCircuitboard
+      - TelecomServerCircuitboard
+      - MassMediaCircuitboard
+      - ReagentGrinderIndustrialMachineCircuitboard
+      - ReverseEngineeringMachineCircuitboard
+      - CrewMonitoringComputerCircuitboard
+      - DoorElectronics
+      - FireAlarmElectronics
+      - FirelockElectronics
+      - IntercomElectronics
+      - MailingUnitElectronics
+      - SalvageMagnetMachineCircuitboard
+      - StationMapElectronics
+      - MetempsychoticMachineCircuitboard
+      - SalvageExpeditionsComputerCircuitboard
+      - JukeboxCircuitBoard
+      - AutodocCircuitboard # Shitmed Change
+      - OperatingTableCircuitboard # Shitmed Change
+      - MaterialSiloCircuitboard
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - ShuttleGunDusterCircuitboard
@@ -951,6 +954,26 @@
       - MagazineBoxSpecialIncendiary
       - MagazineBoxSpecialUranium
       - MagazineBoxSpecialMindbreaker
+      - ClothingShoesBootsSecurityMagboots # Floofstation
+      # Floof section - port to EE later
+      #- WeaponEnergyShotgun
+      - SpeedLoaderRifleHeavyIncendiary # Floof - fixes a bug from upstream merge
+      - SpeedLoaderRifleHeavyUranium  # Floof - fixes a bug from upstream merge
+      - WeaponGrapplingGun # Floof
+      - JawsOfLife
+      - HandHeldMassScanner
+      - HoloprojectorField
+      - RadarConsoleCircuitboard
+      - SurveillanceCameraRouterCircuitboard
+      - SurveillanceCameraMonitorCircuitboard
+      - SurveillanceWirelessCameraMonitorCircuitboard
+      - SurveillanceCameraWirelessRouterCircuitboard
+      - MagazineUniversalMagnumRubber
+      - ShellShotgunBeanbag
+      - WeaponHalberd
+      - WeaponEnergyHalberd
+      - ClothingOuterArmorReflective
+      # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
   - type: MaterialStorage
@@ -1079,24 +1102,257 @@
     - ClothingEyesGlassesChemical
     - BoneGel # Shitmed Change
     dynamicRecipes:
-    - ChemicalPayload
-    - CryostasisBeaker
-    - BluespaceBeaker
-    - SyringeBluespace
-    - ClothingEyesHudMedical # Nyano
-    - ChemicalPayload # Nyano
-    - SyringeCryostasis
-    - ClothingEyesNightVisionMedicalGoggles
-    # Shitmed Change
-    - EnergyScalpel
-    - EnergyCautery
-    - AdvancedRetractor
-    - OmnimedTool
-    - MedicalCyberneticEyes
+      - ChemicalPayload
+      - CryostasisBeaker
+      - BluespaceBeaker
+      - SyringeBluespace
+      - ClothingEyesHudMedical # Nyano
+      - ChemicalPayload # Nyano
+      - SyringeCryostasis
+      - ClothingEyesNightVisionMedicalGoggles
+      - HypoMini # Floof
+      # Floof section - port to EE later
+      - HandHeldMassScanner
+      - ClothingHeadHelmetInsulated
+      - CloningConsoleComputerCircuitboard
+      - CloningPodMachineCircuitboard
+      - MetempsychoticMachineCircuitboard
+      - MedicalScannerMachineCircuitboard
+      - VaccinatorMachineCircuitboard
+      - DiagnoserMachineCircuitboard
+      - StasisBedMachineCircuitboard
+      - CryoPodMachineCircuitboard
+      - BiomassReclaimerMachineCircuitboard
+      - BiofabricatorMachineCircuitboard
+      - ReagentGrinderIndustrialMachineCircuitboard
+      - FatExtractorMachineCircuitboard
+      - CrewMonitoringComputerCircuitboard
+      # Floof section end
+      # Shitmed Change
+      - EnergyScalpel
+      - EnergyCautery
+      - AdvancedRetractor
+      - OmnimedTool
+      - MedicalCyberneticEyes
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
     stealGroup: MedicalTechFabCircuitboard
+
+# THIS ENTIRE SECTION BELONGS TO FLOOF - port to EE if possible
+# ===
+
+- type: entity
+  id: EngineeringTechFab
+  parent: Autolathe
+  name: engineering techfab
+  description: An improved version of the autolathe, capable of printing various tools used by engineers.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: engi
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: EngineeringTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    # Static recipes are inherited from the autolathe. See LatheComponent.
+    staticRecipes:
+      - HarnessSafety # FloofStation
+    dynamicRecipes:
+      # Machines and computers
+      - TurboItemRechargerCircuitboard
+      - SheetifierMachineCircuitboard
+      - PortableGeneratorPacmanMachineCircuitboard
+      - PortableGeneratorSuperPacmanMachineCircuitboard
+      - PortableGeneratorJrPacmanMachineCircuitboard
+      - AutolatheHyperConvectionMachineCircuitboard
+      - SolarControlComputerCircuitboard
+      - SolarTrackerElectronics # Actual solar panels are not manufacturable
+      - EmitterCircuitboard
+      # Atmos machines
+      - ThermomachineFreezerMachineCircuitBoard
+      - HellfireFreezerMachineCircuitBoard
+      - PortableScrubberMachineCircuitBoard
+      # Tools
+      - PowerCellHigh
+      - PowerCellMicroreactor
+      - SignallerAdvanced
+      - HolofanProjector
+      - HoloprojectorField
+      - WelderExperimental
+      - PowerDrill # Can make two of the three advanced tools - jaws of life are too OP to give them away
+      - WeaponParticleDecelerator
+      - ClothingMaskWeldingGas
+      - ClothingShoesBootsMagSci
+      # Routers and monitors
+      - PowerComputerCircuitboard
+      - AlertsComputerCircuitboard
+      - SurveillanceCameraRouterCircuitboard
+      - SurveillanceCameraMonitorCircuitboard
+      - SurveillanceWirelessCameraMonitorCircuitboard
+      - SurveillanceCameraWirelessRouterCircuitboard
+      - TelecomServerCircuitboard
+      # Shuttle building
+      - ShuttleConsoleCircuitboard
+      - RadarConsoleCircuitboard
+      - ThrusterMachineCircuitboard
+      - GyroscopeMachineCircuitboard
+      - MiniGravityGeneratorCircuitboard
+      - ShuttleGunKineticCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+
+
+- type: entity
+  id: CargoTechFab
+  parent: Autolathe
+  name: logistics techfab
+  description: An improved version of the autolathe, capable of printing various tools used by salvage and cargo technicians.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: cargo
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: CargoTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    # Static recipes are inherited from the autolathe. See LatheComponent.
+    dynamicRecipes:
+    # Weapons and tools
+    - WeaponGrapplingGun
+    - WeaponTetherGun
+    - WeaponForceGun
+    - WeaponProtoKineticAccelerator
+    - MiningDrill
+    - HandHeldMassScanner
+    # Shuttle building
+    - ShuttleConsoleCircuitboard
+    - RadarConsoleCircuitboard
+    - ThrusterMachineCircuitboard
+    - GyroscopeMachineCircuitboard
+    - MiniGravityGeneratorCircuitboard
+    - ShuttleGunKineticCircuitboard
+    # Machines and computers
+    - CargoTelepadMachineCircuitboard
+    - OreProcessorMachineCircuitboard
+    # NOTE: advanced tools, industrial ore processor, expeds board are not added here as those are the very few things epi provides for cargo
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+
+
+- type: entity
+  id: ServiceTechFab
+  parent: BaseLatheLube
+  name: service techfab
+  description: A specialized techfab used for printing various quality-of-life tools.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: service
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ServiceTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticRecipes:
+    - HandheldStationMap
+    - ShockCollar
+    - CustomDrinkJug
+    - LeashBasic
+    - CellRechargerCircuitboard
+    - WeaponCapacitorRechargerCircuitboard
+    - Beaker
+    - LargeBeaker
+    - Syringe
+    - HandLabeler
+    - Signaller
+    - SprayBottle
+    - MopItem
+    - Bucket
+    - Holoprojector
+    dynamicRecipes:
+    # Tools
+    - ClothingShoesBootsSpeed
+    - BluespaceBeaker
+    - AdvMopItem
+    - WeaponSprayNozzle
+    - ClothingBackpackWaterTank
+    - MegaSprayBottle
+    # Machines and computers
+    - SeedExtractorMachineCircuitboard
+    - HydroponicsTrayMachineCircuitboard
+    - ReagentGrinderIndustrialMachineCircuitboard
+    - ComputerTelevisionCircuitboard
+    - SynthesizerInstrument
+    - DawInstrumentMachineCircuitboard
+    - MassMediaCircuitboard
+    - JukeboxCircuitBoard
+    - FatExtractorMachineCircuitboard
+    # Translators
+    - CanilunztTranslator
+    - BubblishTranslator
+    - NekomimeticTranslator
+    - DraconicTranslator
+    - SolCommonTranslator
+    - RootSpeakTranslator
+    - BasicGalaticCommonTranslatorImplanter
+    - MofficTranslator
+    - ArachnicTranslator
+    # Tiles
+    - FauxTileAstroGrass
+    - FauxTileMowedAstroGrass
+    - FauxTileJungleAstroGrass
+    - FauxTileAstroIce
+    - FauxTileAstroSnow
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+
+# ===
+# Floof section end
 
 - type: entity
   parent: [BaseLathe, BaseMaterialSiloUtilizer]
@@ -1552,23 +1808,23 @@
     - PlushieNar
   - type: EmagLatheRecipes
     emagStaticRecipes:
-    - PlushieGhost
-    - PlushieRGBee
-    - PlushieRainbowCarp
-    - PlushieJester
-    - PlushieSlips
-    - PlushieTrystan
-    - PlushieAbductor
-    - PlushieAbductorAgent
-    - PlushieNuke
-    - ToyNuke
-    - FoamBlade
-    - BalloonSyn
-    - SingularityToy
-    - TeslaToy
-    - ToySword
-    - BwoinkHammer
-    - ThronglerToy
+      - PlushieGhost
+      - PlushieRGBee
+      - PlushieRainbowCarp
+      - PlushieJester
+      - PlushieSlips
+      - PlushieTrystan
+      - PlushieAbductor
+      - PlushieAbductorAgent
+      - PlushieNuke
+      - ToyNuke
+      - FoamBlade
+      - BalloonSyn
+      - SingularityToy
+      - TeslaToy
+      - ToySword
+      - BwoinkHammer
+      - ThronglerToy
   - type: MaterialStorage
     whitelist:
       tags:

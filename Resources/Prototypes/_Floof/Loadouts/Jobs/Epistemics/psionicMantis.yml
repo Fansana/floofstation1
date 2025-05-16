@@ -43,7 +43,7 @@
   id: LoadoutWeaponExcommunicantMantis
   category: JobsEpistemicsPsionicMantis
   cost: 7
-  exclusive: true
+  exclusive: false
   items:
   - WeaponShotgunSawnExcommunicant
   - BoxShellSoulbreaker

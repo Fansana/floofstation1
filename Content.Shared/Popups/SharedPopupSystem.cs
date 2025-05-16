@@ -82,6 +82,21 @@ namespace Content.Shared.Popups
         /// </summary>
         public abstract void PopupEntity(string? message, EntityUid uid, Filter filter, bool recordReplay, PopupType type = PopupType.Small);
 
+        // FLOOFSTATION START //
+
+        /// <summary>
+        ///     Like <see cref="PopupEntity(string, EntityUid, PopupType)"/>, but a separate message is shown to the target.
+        ///     Useful if something is benign to everyone else *but* the target.
+        /// </summary>
+        public abstract void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small);
+
+        /// <summary>
+        ///     Filtered variant of <see cref="PopupEntity(string, string, EntityUid, PopupType, PopupType)"/>.
+        /// </summary>
+        public abstract void PopupEntity(string? otherMessage, string? targetMessage, EntityUid uid, Filter filter, PopupType otherType = PopupType.Small, PopupType targetType = PopupType.Small);
+
+        // FLOOFSTATION END //
+
         /// <summary>
         /// Variant of <see cref="PopupCursor(string, EntityUid, PopupType)"/> that only runs on the client, outside of prediction.
         /// Useful for shared code that is always ran by both sides to avoid duplicate popups.

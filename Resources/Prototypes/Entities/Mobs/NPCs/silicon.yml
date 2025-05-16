@@ -66,6 +66,7 @@
   - type: Tag
     tags:
     - DoorBumpOpener
+    - SiliconMob
   - type: MobState
     allowedStates:
       - Alive
@@ -260,7 +261,7 @@
       path: /Audio/Ambience/Objects/periodic_beep.ogg
 
 - type: entity
-  parent: MobSiliconBase
+  parent: [MobSiliconBase, StripableInventoryBase ]
   id: MobMedibot
   name: medibot
   description: No substitute for a doctor, but better than nothing.
@@ -295,6 +296,8 @@
     graph: MediBot
     node: bot
   - type: NoSlip
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-mechanical
   - type: Anchorable
   - type: InteractionPopup
     interactSuccessString: petting-success-medibot
@@ -307,19 +310,15 @@
   - type: ShowHealthIcons
     damageContainers:
     - Biological
+  - type: Inventory
+    templateId: medibot
 
 - type: entity
-  parent: MobSiliconBase
+  parent: [MobSiliconBase, StripableInventoryBase ]
   id: MobMimeBot
   name: mimebot
   description: Why not give mimebot a friendly wave.
   components:
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
