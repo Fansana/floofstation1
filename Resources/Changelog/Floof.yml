@@ -5481,9 +5481,7 @@ Entries:
 - author: WhiteHusky
   changes:
     - type: Add
-      message: >-
-        Safety harnesses can now be researched and crafted in the Engineering
-        TechFab.
+      message: 'Safety harnesses can now be crafted in the Engineering TechFab '
     - type: Tweak
       message: 'A few more safety harnesses were added to the EngiDrobe '
   id: 576
