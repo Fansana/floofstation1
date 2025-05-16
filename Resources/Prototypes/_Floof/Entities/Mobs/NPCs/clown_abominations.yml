@@ -2,21 +2,19 @@
   name: clown rat
   parent: MobMouse
   id: MobClownRat
-  description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
+  description: Despite all their rage, they are still just a clown in a cage. Wait... YOU SET IT FREE?
   components:
   - type: Sprite
     sprite: _Floof/Mobs/Animals/clown_rat.rsi
-  - type: Speech
-    speechVerb: Cluwne
-    allowedEmotes: ['Honk']
   - type: Bloodstream
-    bloodMaxVolume: 180
+    bloodMaxVolume: 100
     bloodReagent: Laughter
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepClownFast
       params:
         pitch: 0.9
+        volume: -8
   - type: UseDelay
     delay: 1
   - type: EmitSoundOnUse
@@ -88,7 +86,6 @@
             min: 3
             max: 5
       - !type:GibBehavior { }
-
 
 - type: entity
   name: clown rat
@@ -185,3 +182,167 @@
             min: 1
             max: 1
       - !type:GibBehavior { }
+      
+      
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRat, MobCombat ]
+  id: MobCrazedClownRat
+  description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
+  suffix: Syndicate
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Explosion
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+  
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRatHatchling , MobCombat ]
+  id: MobCrazedClownRatHatchling
+  description: OH GOD THEY ARE MULTIPLYING!
+  suffix: Syndicate, Hatchling
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Explosion
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+  
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRatFinalHatchling, MobCombat ]
+  id: MobCrazedClownRatFinalHatchling
+  description: GOD THERE IS EVEN MORE!
+  suffix: Syndicate, Final_Hatchling
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+      
+- type: entity
+  name: dehydrated crazed clown rat box
+  parent: DehydratedSpaceCarp
+  id: DehydratedClownRatBox
+  description: The malice of the honk mother weponised by the syndicate in a compact package. Just pet its noggin and add water!
+  suffix: Syndicate, Clown_rat_Spawner
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobCrazedClownRat
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      collection: BikeHorn
+  - type: EmitSoundOnLand
+    sound:
+      collection: BikeHorn
+  - type: Sprite
+    sprite: _Floof/Mobs/Animals/clown_rat.rsi
+    state: icon-0

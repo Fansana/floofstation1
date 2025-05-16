@@ -11,3 +11,6 @@ uplink-EnergySabre-desc = Crafted by Fae, the CyberSun Weapons Designer, a brill
 
 uplink-typewriter-bundle-name = Typewriter Bundle
 uplink-typewriter-bundle-desc = An inconspicuous briefcase that contains a Typewriter SMG, three magazines and an outfit fit for any aspiring mafiosos.
+
+uplink-dehydrated-clown-rat-name = Dehydrated Crazed Clown Rat Box
+uplink-dehydrated-clown-rat-desc = A box containing a modified clown rat, that after hydration seeks chaos and enemies of the syndicate. Upon exparation due to physical trauma it will split into 3-4 more and those will split into even more reaching the final generation of rats. DISCLAMER remeber to pet the rats head for the first generation to be friendly the further generation are too rampid to discern between you and foe
