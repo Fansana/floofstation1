@@ -235,18 +235,6 @@
             min: 3
             max: 4
       - !type:GibBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Explosive
-        damage: 60
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawnInContainer: true
-        spawn:
-          MobCrazedClownRatHatchling:
-            min: 3
-            max: 4
-      - !type:GibBehavior { }
   
 - type: entity
   name: crazed clown rat
@@ -290,18 +278,6 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Piercing
-        damage: 40
-      behaviors:
-      - !type:SpawnEntitiesBehavior
-        spawnInContainer: true
-        spawn:
-          MobCrazedClownRatFinalHatchling:
-            min: 3
-            max: 4
-      - !type:GibBehavior { }
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Explosive
         damage: 40
       behaviors:
       - !type:SpawnEntitiesBehavior
