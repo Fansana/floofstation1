@@ -1,11 +1,8 @@
 using Content.Shared.FixedPoint;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
-using Content.Shared.FloofStation.Traits;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Robust.Shared.GameStates;
 
 namespace Content.Server._Floof.Traits;
 
@@ -21,7 +18,7 @@ public sealed partial class MilkProducerComponent : Component
     [DataField]
     public FixedPoint2 MaxVolume = FixedPoint2.New(50);
 
-    [DataField]
+    [ViewVariables]
     public Entity<SolutionComponent>? Solution = null;
 
     [DataField]
