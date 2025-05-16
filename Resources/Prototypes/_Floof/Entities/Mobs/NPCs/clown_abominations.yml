@@ -69,7 +69,7 @@
         spawn:
           Ash:
             min: 1
-            max: 10
+            max: 3
       - !type:BurnBodyBehavior { }
       - !type:PlaySoundBehavior
         sound:
@@ -117,7 +117,7 @@
         spawn:
           Ash:
             min: 1
-            max: 5
+            max: 2
       - !type:BurnBodyBehavior { }
       - !type:PlaySoundBehavior
         sound:
