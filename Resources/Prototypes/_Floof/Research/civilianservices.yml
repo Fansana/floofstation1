@@ -16,16 +16,15 @@
 
 - type: technology
   id: AdvancedTracking
-  name: research-technology-mini-hypo
+  name: research-technology-tracking-implant
   icon:
    sprite: Objects/Specific/Medical/implanter.rsi
    state: implanter0
   discipline: CivilianServices
   tier: 2
-  cost: 15000
+  cost: 7500
   recipeUnlocks:
-  # HandheldCrewMonitor
-  # I want to get Tracker to go off with medical also it makes more sense to have them BOTH go off
+  - HandheldCrewMonitor
   - TrackingImplanter
 
 # Tier 3
