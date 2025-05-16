@@ -461,7 +461,7 @@ public sealed class VoreSystem : EntitySystem
         if (component.Pred != args.Target)
             return;
 
-        args.Cancel();
+        args.Cancelled = true;
     }
 
     public override void Update(float frameTime)

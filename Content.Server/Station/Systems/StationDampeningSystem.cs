@@ -1,3 +1,4 @@
+using Content.Server.Shuttles.Components;
 using Content.Server.Station.Events;
 using Content.Shared.Physics;
 
@@ -17,12 +18,17 @@ public sealed class StationDampeningSystem : EntitySystem
             // If the station grid doesn't have defined dampening, give it a small dampening by default
             // This will ensure cargo tech pros won't fling the station 1000 megaparsec away from the galaxy
             if (!TryComp<PassiveDampeningComponent>(grid, out var dampening))
-            {
                 dampening = AddComp<PassiveDampeningComponent>(grid);
+
+            // Floofstation - changed this to NOT ignore station-defined dampening.
+            // PassiveDampeningComponent conflicts with shuttles cruise control a frontier QOL and is resetting dampeners causing issues.
+            // so if a station which shuttles have the station component too, then don't reset the physics to a near off state when it gets bumped
+            if (TryComp(grid, out ShuttleComponent? shuttleComponent)) {
                 dampening.Enabled = true;
-                dampening.LinearDampening = 0.01f;
-                dampening.AngularDampening = 0.01f;
+                dampening.LinearDampening = shuttleComponent?.LinearDamping ?? 0.01f;
+                dampening.AngularDampening = shuttleComponent?.AngularDamping ?? 0.01f;
             }
+
         }
     }
 }

@@ -25,7 +25,7 @@
   id: CatTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, SlimePerson]
+  speciesRestriction: [Human, SlimePerson, Oni]
   coloring:
     default:
       type:
