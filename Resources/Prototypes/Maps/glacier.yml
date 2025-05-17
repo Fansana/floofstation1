@@ -27,6 +27,9 @@
           Passenger: [ -1, -1 ]
           Anomaly: [ 4, 4 ] # Floofstation
           Captain: [ 1, 1 ]
+          #BlueshieldOfficer: [ 1, 1] Floof - uncomment once implemented on Floof maps
+          #NanotrasenRepresentative: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
+          #AdministrativeAssistant: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
         #service
           HeadOfPersonnel: [ 1, 1 ]
           Bartender: [ 2, 2 ]

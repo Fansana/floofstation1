@@ -84,7 +84,7 @@
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1
     - type: BasicEntityAmmoProvider
-      proto: BulletAcid2
+      proto: BulletAcid
       capacity: 3
       count: 3
     - type: MovementSpeedModifier
