@@ -123,14 +123,14 @@
 - type: entity
   id: CrateSecurityTrackingMindshieldImplants
   name: implanter crate
-  description: Contains 4 MindShield implants and 4 tracking implant. Requires Security access to open.
+  description: Contains 8 MindShield implants. Requires Security access to open.  #Floof Change
   parent: CrateSecgear
   components:
   - type: StorageFill
     contents:
-      - id: MindShieldImplanter
-        amount: 4
-      - id: TrackingImplanter
-        amount: 4
+      - id: MindShieldImplanter   #Floof Change
+        amount: 8    #Floof Change
+#      - id: TrackingImplanter   Floof Change
+#        amount: 4
 
 # Cosmetic Crates
