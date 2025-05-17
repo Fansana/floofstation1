@@ -22,7 +22,7 @@ public sealed class UplinkSystem : EntitySystem
 
     [ValidatePrototypeId<CurrencyPrototype>]
     public const string TelecrystalCurrencyPrototype = "Telecrystal";
-    private const string FallbackUplinkImplant = "UplinkImplanter"; //Floof - Was "UplinkImplant" but this was pointing at the category, NOT the ACTUAL implanter.
+    private const string FallbackUplinkImplant = "UplinkImplant";
     private const string FallbackUplinkCatalog = "UplinkUplinkImplanter";
 
     /// <summary>
