@@ -22,9 +22,9 @@
             Anomaly: [ 4, 4 ] # Floofstation
             #service
             Captain: [ 1, 1 ]
-            BlueshieldOfficer: [ 1, 1]
-            NanotrasenRepresentative: [ 1, 1 ]
-            AdministrativeAssistant: [ 1, 1 ]
+            #BlueshieldOfficer: [ 1, 1] Floof - uncomment once implemented
+            #NanotrasenRepresentative: [ 1, 1 ] Floof - uncomment once implemented
+            #AdministrativeAssistant: [ 1, 1 ] Floof - uncomment once implemented
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 1 ]
             Botanist: [ 3, 3 ]
