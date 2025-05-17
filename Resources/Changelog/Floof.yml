@@ -5692,3 +5692,18 @@ Entries:
   id: 598
   time: '2025-05-17T19:50:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/988
+- author: DeltaV
+  changes:
+    - type: Fix
+      message: Cloning should now properly replicate the original body's appearance.
+    - type: Fix
+      message: Female kitsune should now no longer laugh like a man when in fox form.
+    - type: Fix
+      message: >-
+        Kitsune foxfire will now emit light, regardless of how dark the color
+        is.
+    - type: Fix
+      message: Kitsune should now no longer weigh as much as a feather.
+  id: 599
+  time: '2025-05-17T22:11:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/981
