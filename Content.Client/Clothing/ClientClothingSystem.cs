@@ -253,8 +253,6 @@ public sealed class ClientClothingSystem : ClothingSystem
             return;
         }
 
-        var displacementData = inventory.Displacements.GetValueOrDefault(slot);
-
         if (clothingComponent.RenderLayer != null)
             slot = clothingComponent.RenderLayer;
 
