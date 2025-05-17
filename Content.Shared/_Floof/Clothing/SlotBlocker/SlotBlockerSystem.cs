@@ -62,7 +62,7 @@ public sealed class SlotBlockerSystem : EntitySystem
         if (args.Cancelled
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedEquip
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), args.Equipment, CheckType.Equip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((args.EquipTarget, inventory), args.Equipment, CheckType.Equip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -74,7 +74,7 @@ public sealed class SlotBlockerSystem : EntitySystem
         if (args.Cancelled
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedUnequip
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), args.Equipment, CheckType.Unequip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((args.EquipTarget, inventory), args.Equipment, CheckType.Unequip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -85,7 +85,7 @@ public sealed class SlotBlockerSystem : EntitySystem
     {
         if (args.Cancelled
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), ent!, CheckType.Equip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((args.EquipTarget, inventory), ent!, CheckType.Equip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
@@ -96,7 +96,7 @@ public sealed class SlotBlockerSystem : EntitySystem
     {
         if (args.Cancelled
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
-            || !IsSlotObstructed((ent, inventory), ent!, CheckType.Unequip, args.SlotFlags, out var reason))
+            || !IsSlotObstructed((args.EquipTarget, inventory), ent!, CheckType.Unequip, args.SlotFlags, out var reason))
             return;
 
         args.Cancel();
