@@ -62,3 +62,17 @@
     Telecrystal: 8
   categories:
   - UplinkWeaponry
+
+- type: listing
+  id: UplinkDehydratedClownRatBox
+  name: uplink-dehydrated-clown-rat-name
+  description: uplink-dehydrated-clown-rat-desc
+  icon: { sprite: _Floof/Mobs/Animals/clown_rat.rsi, state: icon-0 }
+  productEntity: DehydratedClownRatBox
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 6
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkAllies
