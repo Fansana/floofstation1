@@ -8,15 +8,6 @@ namespace Content.Shared._Floof.Shadekin;
 public sealed partial class ShadekinComponent : Component
 {
     /// <summary>
-    ///     Apply the SleepEnergyRegenMultiplier on SleepComponent if true.
-    /// </summary>
-    [DataField]
-    public bool SleepEnergyRegen = true;
-
-    [DataField]
-    public float SleepEnergyRegenMultiplier = 4;
-
-    /// <summary>
     ///     Set the Black-Eye Color.
     /// </summary>
     [DataField]

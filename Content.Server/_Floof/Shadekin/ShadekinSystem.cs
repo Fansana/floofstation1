@@ -79,11 +79,18 @@ public sealed class ShadowkinSystem : EntitySystem
 
     private void OnRejuvenate(EntityUid uid, ShadekinComponent component, RejuvenateEvent args)
     {
+        component.Energy = component.MaxEnergy;
+
         if (TryComp<HumanoidAppearanceComponent>(uid, out var humanoid))
         {
             humanoid.EyeColor = component.OldEyeColor;
             Dirty(uid, humanoid);
         }
+    }
+
+    private void DarkSwap(EntityUid uid)
+    {
+
     }
 
     private void OnMobStateChanged(EntityUid uid, ShadekinComponent component, MobStateChangedEvent args)
@@ -97,8 +104,7 @@ public sealed class ShadowkinSystem : EntitySystem
                 foreach (var slot in slots)
                     _inventorySystem.TryUnequip(uid, slot.Name, true, true, false, inventoryComponent);
 
-            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
-            SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(uid).Coordinates);
+            SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
 
             var query = EntityQueryEnumerator<DarkHubComponent>();
             while (query.MoveNext(out var target, out var portal))
@@ -119,15 +125,11 @@ public sealed class ShadowkinSystem : EntitySystem
                 continue;
             }
 
-            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
-            SpawnAtPosition("EffectFlashShadowkinDarkSwapOn", Transform(uid).Coordinates);
+            SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
 
             RaiseLocalEvent(uid, new RejuvenateEvent());
-            if (TryComp<PsionicComponent>(uid, out var magic))
-            {
-                magic.Mana = 0;
-                EnsureComp<ForcedSleepingComponent>(uid);
-            }
+            component.Energy = 0;
+            EnsureComp<ForcedSleepingComponent>(uid);
         }
     }
 }

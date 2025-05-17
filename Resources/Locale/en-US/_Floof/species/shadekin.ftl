@@ -1,5 +1,5 @@
-action-name-darkswap = DarkSwap
-action-description-darkswap = Mmra Mamm!
+action-name-phase = Phase Shift (100)
+action-description-phase = Shift yourself out of alignment with realspace to travel quickly to different areas.
 
 action-name-shadekin-rest = Rest
 action-description-shadekin-rest = Rama
