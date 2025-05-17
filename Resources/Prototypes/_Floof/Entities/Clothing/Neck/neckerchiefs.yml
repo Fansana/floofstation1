@@ -13,7 +13,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefSecurity
   name: security neckerchief
-  description: A gunmetal grey sheet of durathread, folded and tied around the neck. It is decorated with a security badge. The origins of this style remain a mystery to this day.
+  description: A gunmetal grey sheet of ballistic fabric, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefSecurity.rsi
@@ -24,7 +24,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefMedical
   name: medical neckerchief
-  description: A sterile white sheet of cloth, folded and tied around the neck. It is adorned with the symbol of the medical department. The origins of this style remain a mystery to this day.
+  description: A sterile white sheet of cloth, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefMedical.rsi
@@ -35,7 +35,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefCargo
   name: logistics neckerchief
-  description: A brown sheet of burlap, folded and tied around the neck. A stripe of yellow completes the logistics department's color scheme. The origins of this style remain a mystery to this day.
+  description: A brown sheet of burlap, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCargo.rsi
@@ -46,7 +46,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefScience
   name: epistemics neckerchief
-  description: A stain-resistant sheet of a cotton-polyester blend, folded and tied around the neck. A chevron of purple completes the epistemics department's color scheme. The origins of this style remain a mystery to this day.
+  description: A stain-resistant sheet of a cotton-polyester blend, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefScience.rsi
@@ -57,7 +57,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefEngineering
   name: engineering neckerchief
-  description: A fire-resistant safety yellow sheet of cloth, folded and tied around the neck. A orange cog on top of a vertical line completes the engineering department's colors. The origins of this style remain a mystery to this day.
+  description: A fire-resistant safety yellow sheet of cloth, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefEngineering.rsi
@@ -69,7 +69,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefService
   name: service neckerchief
-  description: A graphite sheet of silk, folded and tied around the neck. A emerald symbol and accents completes the service department's colors. The origins of this style remain a mystery to this day.
+  description: A graphite sheet of silk, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefService.rsi
@@ -80,7 +80,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckNeckerchiefCommand
   name: command neckerchief
-  description: A cerulean sheet of durathread, folded and tied around the neck. A red line and gold accents completes the command department's colors. The origins of this style remain a mystery to this day.
+  description: A cerulean sheet of durathread, folded and tied around the neck. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCommand.rsi
