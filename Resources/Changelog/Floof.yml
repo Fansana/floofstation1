@@ -5651,3 +5651,10 @@ Entries:
   id: 594
   time: '2025-05-16T19:37:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/921
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed Energy Swords not displaying their blade when ignited.
+  id: 595
+  time: '2025-05-17T05:01:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/925
