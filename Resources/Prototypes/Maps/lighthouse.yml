@@ -1,7 +1,7 @@
 - type: gameMap
   id: Lighthouse
   mapName: Lighthouse
-  mapPath: /Maps/lighthouse.yml
+  mapPath: /Maps/Floof/lighthouse.yml # Floofstation
   minPlayers: 15
   maxPlayers: 55
   stations:
@@ -23,9 +23,9 @@
           Anomaly: [ 4, 4 ] # Floofstation
         #service
           Captain: [ 1, 1 ]
-          BlueshieldOfficer: [ 1, 1]
-          NanotrasenRepresentative: [ 1, 1 ]
-          AdministrativeAssistant: [ 1, 1 ]
+          #BlueshieldOfficer: [ 1, 1]
+          #NanotrasenRepresentative: [ 1, 1 ]
+          #AdministrativeAssistant: [ 1, 1 ]
           HeadOfPersonnel: [ 1, 1 ]
           Bartender: [ 1, 2 ]
           Botanist: [ 2, 2 ]
