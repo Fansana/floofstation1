@@ -77,26 +77,27 @@
       group: LoadoutNeck
 
 # Tied Scarves
+# TODO: Rename all "tied scarves" to "neckerchiefs" or equivalent
 
 - type: loadout
-  id: LoadoutNeckTiedScarfColorable
+  id: LoadoutNeckNeckerchiefColorable
   category: Neck
   cost: 0
   exclusive: true
   customColorTint: true
   items: 
-    - ClothingNeckTiedScarf
+    - ClothingNeckNeckerchief
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutNeck
 
 - type: loadout
-  id: LoadoutSecurityNeckTiedScarf
+  id: LoadoutSecurityNeckNeckerchief
   category: JobsSecurityAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfSecurity
+    - ClothingNeckNeckerchiefSecurity
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityNeck
@@ -105,12 +106,12 @@
         - Security
         
 - type: loadout
-  id: LoadoutMedicalNeckTiedScarf
+  id: LoadoutMedicalNeckNeckerchief
   category: JobsMedicalAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfMedical
+    - ClothingNeckNeckerchiefMedical
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutMedicalNeck
@@ -119,12 +120,12 @@
         - Medical
         
 - type: loadout
-  id: LoadoutCargoNeckTiedScarf
+  id: LoadoutCargoNeckNeckerchief
   category: JobsLogisticsAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfCargo
+    - ClothingNeckNeckerchiefCargo
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutLogisticsNeck
@@ -133,12 +134,12 @@
         - Logistics
         
 - type: loadout
-  id: LoadoutScienceNeckTiedScarf
+  id: LoadoutScienceNeckNeckerchief
   category: JobsEpistemicsAAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfScience
+    - ClothingNeckNeckerchiefScience
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEpistemicsNeck
@@ -147,12 +148,12 @@
         - Epistemics
         
 - type: loadout
-  id: LoadoutEngineeringNeckTiedScarf
+  id: LoadoutEngineeringNeckNeckerchief
   category: JobsEngineeringAAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfEngineering
+    - ClothingNeckNeckerchiefEngineering
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEngineeringNeck
@@ -161,12 +162,12 @@
         - Engineering
         
 - type: loadout
-  id: LoadoutServiceNeckTiedScarf
+  id: LoadoutServiceNeckNeckerchief
   category: JobsServiceAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfService
+    - ClothingNeckNeckerchiefService
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutServiceNeck
@@ -175,12 +176,12 @@
         - Civilian
         
 - type: loadout
-  id: LoadoutCommandNeckTiedScarf
+  id: LoadoutCommandNeckNeckerchief
   category: JobsCommandAUncategorized
   cost: 0
   exclusive: true
   items:
-    - ClothingNeckTiedScarfCommand
+    - ClothingNeckNeckerchiefCommand
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutCommandNeck

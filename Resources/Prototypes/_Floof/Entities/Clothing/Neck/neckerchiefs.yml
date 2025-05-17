@@ -1,88 +1,88 @@
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarf
-  name: tied scarf
+  id: ClothingNeckNeckerchief
+  name: neckerchief
   description: A unique neckwear choice evoking an adventurous spirit. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/Neckerchief.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarf.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/Neckerchief.rsi
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfSecurity
-  name: security tied scarf
+  id: ClothingNeckNeckerchiefSecurity
+  name: security neckerchief
   description: A gunmetal grey sheet of durathread, folded and tied around the neck. It is decorated with a security badge. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfSecurity.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefSecurity.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfSecurity.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefSecurity.rsi
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfMedical
-  name: medical tied scarf
+  id: ClothingNeckNeckerchiefMedical
+  name: medical neckerchief
   description: A sterile white sheet of cloth, folded and tied around the neck. It is adorned with the symbol of the medical department. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefMedical.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfMedical.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefMedical.rsi
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfCargo
-  name: logistics tied scarf
+  id: ClothingNeckNeckerchiefCargo
+  name: logistics neckerchief
   description: A brown sheet of burlap, folded and tied around the neck. A stripe of yellow completes the logistics department's color scheme. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCargo.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCargo.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCargo.rsi
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfScience
-  name: epistemics tied scarf
+  id: ClothingNeckNeckerchiefScience
+  name: epistemics neckerchief
   description: A stain-resistant sheet of a cotton-polyester blend, folded and tied around the neck. A chevron of purple completes the epistemics department's color scheme. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefScience.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfScience.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefScience.rsi
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfEngineering
-  name: engineering tied scarf
+  id: ClothingNeckNeckerchiefEngineering
+  name: engineering neckerchief
   description: A fire-resistant safety yellow sheet of cloth, folded and tied around the neck. A orange cog on top of a vertical line completes the engineering department's colors. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefEngineering.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfEngineering.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefEngineering.rsi
       
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfService
-  name: service tied scarf
+  id: ClothingNeckNeckerchiefService
+  name: service neckerchief
   description: A graphite sheet of silk, folded and tied around the neck. A emerald symbol and accents completes the service department's colors. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefService.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfService.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefService.rsi
       
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckTiedScarfCommand
-  name: command tied scarf
+  id: ClothingNeckNeckerchiefCommand
+  name: command neckerchief
   description: A cerulean sheet of durathread, folded and tied around the neck. A red line and gold accents completes the command department's colors. The origins of this style remain a mystery to this day.
   components:
     - type: Sprite
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCommand.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCommand.rsi
     - type: Clothing
-      sprite: _Floof/Clothing/Neck/TiedScarves/TiedScarfCommand.rsi
+      sprite: _Floof/Clothing/Neck/Neckerchiefs/NeckerchiefCommand.rsi
