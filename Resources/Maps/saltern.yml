@@ -28272,18 +28272,6 @@ entities:
     - type: Transform
       pos: 24.491184,-6.41413
       parent: 31
-- proto: chem_master
-  entities:
-  - uid: 606
-    components:
-    - type: Transform
-      pos: 19.5,-0.5
-      parent: 31
-  - uid: 5075
-    components:
-    - type: Transform
-      pos: 15.5,1.5
-      parent: 31
 - proto: ChemDispenser
   entities:
   - uid: 5076
