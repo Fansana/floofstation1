@@ -23,6 +23,7 @@ namespace Content.Shared.Humanoid.Markings
         RightFoot,
         LeftLeg,
         LeftFoot,
+        Wings,
         Tail,
         Wings,
         Overlay
@@ -52,6 +53,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.RLeg => MarkingCategories.RightLeg,
                 HumanoidVisualLayers.LFoot => MarkingCategories.LeftFoot,
                 HumanoidVisualLayers.RFoot => MarkingCategories.RightFoot,
+                HumanoidVisualLayers.Wings => MarkingCategories.Wings,
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
                 HumanoidVisualLayers.Wings => MarkingCategories.Wings,
                 _ => MarkingCategories.Overlay
