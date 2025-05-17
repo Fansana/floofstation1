@@ -4,7 +4,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 
 
-namespace Content.Shared.FloofStation.Clothing.ClothingLimit;
+namespace Content.Shared._Floof.Clothing.ClothingLimit;
 
 
 public sealed class ClothingLimitSystem : EntitySystem

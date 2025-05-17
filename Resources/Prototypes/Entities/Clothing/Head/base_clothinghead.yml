@@ -183,6 +183,13 @@
     slots:
     - Hair
     - Snout
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - HEAD
+      - EYES
+      - EARS
+      - MASK # you can still pull it down however.
 
 - type: entity
   abstract: true

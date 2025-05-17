@@ -4,6 +4,7 @@
   components:
     - type: Inventory
     - type: InventorySlots
+    - type: InventorySlotBlocking # Floofstation
 
 - type: entity
   abstract: true
