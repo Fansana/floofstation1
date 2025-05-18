@@ -20,6 +20,8 @@ using Robust.Server.GameObjects;
 using Content.Shared.Examine;
 using Content.Server.Ghost;
 using Content.Server.Light.Components;
+using Content.Shared.FloofStation;
+using Robust.Server.Containers;
 
 
 namespace Content.Server._Floof.Shadekin;
@@ -38,6 +40,7 @@ public sealed class ShadowkinSystem : EntitySystem
     [Dependency] private readonly PhysicsSystem _physics = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
+    [Dependency] private ContainerSystem _container = default!;
 
     public const string ShadowkinPhaseActionId = "ShadekinActionPhase";
     public const string ShadowkinSleepActionId = "ShadekinActionSleep";
@@ -86,7 +89,7 @@ public sealed class ShadowkinSystem : EntitySystem
     private void OnEyeColorChange(EntityUid uid, ShadekinComponent component, EyeColorInitEvent args)
     {
         if (!TryComp<HumanoidAppearanceComponent>(uid, out var humanoid)
-            || !component.Blackeye // Floofstation
+            || !component.Blackeye
             || humanoid.EyeColor == component.OldEyeColor)
             return;
 
@@ -187,9 +190,6 @@ public sealed class ShadowkinSystem : EntitySystem
                 return;
             }
 
-            // TODO: Phase blocker map zone.
-            // TODO: Cannot phase while in container...
-
             if (HasComp<ShadekinComponent>(uid))
             {
                 var lightQuery = _lookup.GetEntitiesInRange(uid, 5, flags: LookupFlags.StaticSundries)
@@ -208,6 +208,14 @@ public sealed class ShadowkinSystem : EntitySystem
         else
         {
             EnsureComp<EtherealComponent>(uid);
+
+            if (_container.IsEntityInContainer(uid))
+            {
+                _popup.PopupEntity(Loc.GetString("phase-fail-generic"), uid, uid);
+                return;
+            }
+
+            // TODO: Handle Phase nom here. (For Vore Improvement later tho!)
 
             if (HasComp<ShadekinComponent>(uid))
             {
