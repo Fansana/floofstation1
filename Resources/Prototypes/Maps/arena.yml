@@ -25,6 +25,9 @@
             Passenger: [ -1, -1 ]
           #command
             Captain: [ 1, 1 ]
+            #BlueshieldOfficer: [ 1, 1] Floof - uncomment once implemented on Floof maps
+            #NanotrasenRepresentative: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
+            #AdministrativeAssistant: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
           #engineering
             AtmosphericTechnician: [ 1, 2 ]
             ChiefEngineer: [ 1, 1 ]

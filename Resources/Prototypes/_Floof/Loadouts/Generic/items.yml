@@ -24,7 +24,8 @@
   id: LoadoutItemLeashBasic
   category: Items
   cost: 2
-  exclusive: true
+  exclusive: false
+  customColorTint: true
   items:
   - LeashBasic
   requirements:
@@ -48,8 +49,8 @@
   cost: 2
   exclusive: false
   items:
-  - CrayonBrush  
-    
+  - CrayonBrush
+
 # Writing
 - type: loadout
   id: LoadoutItemEnvelopes
@@ -86,7 +87,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutWritables
-      
+
 - type: loadout
   id: LoadoutItemStickyNotesGreen
   category: Items
@@ -118,3 +119,17 @@
   exclusive: false
   items:
     - PlushieLizard
+
+#Pets
+- type: loadout
+  id: LoadoutItemPetSpider
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobPetSpider
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower
