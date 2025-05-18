@@ -37,3 +37,16 @@
       priority: 6
       icon: { sprite: Interface/Actions/shadowkin_icons.rsi, state: rest }
       event: !type:SleepActionEvent
+
+- type: entity
+  id: ShadekinActionRejuvenate
+  name: action-name-shadekin-rejuvenate
+  description: action-description-shadekin-rejuvenate
+  categories: [HideSpawnMenu]
+  components:
+    - type: InstantAction
+      itemIconStyle: NoItem
+      checkCanInteract: false
+      checkConsciousness: false
+      icon: { sprite: Interface/Actions/psionics.rsi, state: revivify }
+      event: !type:CritShadekinEvent

@@ -1,10 +1,8 @@
-using Content.Server.GameTicking.Events;
-using Content.Server.Shuttles.Components;
 using Content.Shared.Shuttles.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 
-namespace Content.Server._Floof;
+namespace Content.Server._Floof.Shadekin;
 
 public sealed class TheDarkSystem : EntitySystem
 {

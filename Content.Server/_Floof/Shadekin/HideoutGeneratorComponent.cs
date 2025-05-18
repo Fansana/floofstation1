@@ -1,7 +1,7 @@
 using Robust.Shared.Map;
 
 
-namespace Content.Server._Floof;
+namespace Content.Server._Floof.Shadekin;
 
 
 [RegisterComponent]

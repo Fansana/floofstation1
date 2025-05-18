@@ -74,24 +74,17 @@
     canTeleportToOtherMaps: true
     randomTeleport: false
   - type: DarkPortal
-  - type: Ethereal
-    canBeStunned: false
 
 - type: entity
-  id: PortalShadowkinSpawner
+  id: ShadekinSpawner
   parent: MarkerBase
   components:
-  - type: SpawnPoint
-    spawn_type: Job
-    job_id: Anomaly
-  - type: ConditionalSpawner
-    prototypes:
-      - PortalShadowkin
+  - type: AnomalyJobSpawn
   - type: Sprite
     layers:
       - state: green
-      - sprite: _Floof/Shadekin/shadekin_portal.rsi
-        state: portal
+      - sprite: Mobs/Species/Shadowkin/parts.rsi
+        state: full
 
 - type: entity
   name: Shadekin Haze

@@ -7,8 +7,10 @@ action-description-shadekin-rest = Rama
 action-name-shadekin-darkvision = Darkvision
 action-description-shadekin-darkvision = Switches dark vision.
 
-phase-fail-generic = You can't use that here!
-phase-fail-area = This area is preventing you from phasing!
+action-name-shadekin-rejuvenate = Rejuvenate
+action-description-shadekin-rejuvenate = rejuvenate yourself... hopefully.
+
+phase-fail-generic = I can't phase!
 
 ethereal-pickup-fail = My hand sizzles as it passes through...
 

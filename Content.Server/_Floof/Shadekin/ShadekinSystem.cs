@@ -20,8 +20,10 @@ using Robust.Server.GameObjects;
 using Content.Shared.Examine;
 using Content.Server.Ghost;
 using Content.Server.Light.Components;
-using Content.Shared.FloofStation;
 using Robust.Server.Containers;
+using Content.Shared.Mind;
+using Robust.Server.Player;
+using Content.Shared.Mobs.Components;
 
 
 namespace Content.Server._Floof.Shadekin;
@@ -41,10 +43,10 @@ public sealed class ShadowkinSystem : EntitySystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
     [Dependency] private ContainerSystem _container = default!;
+    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
 
     public const string ShadowkinPhaseActionId = "ShadekinActionPhase";
     public const string ShadowkinSleepActionId = "ShadekinActionSleep";
-    private const int MaxRandomTeleportAttempts = 20;
 
     private sealed class LightCone
     {
@@ -73,6 +75,7 @@ public sealed class ShadowkinSystem : EntitySystem
         SubscribeLocalEvent<ShadekinComponent, EyeColorInitEvent>(OnEyeColorChange);
         SubscribeLocalEvent<ShadekinComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<ShadekinComponent, ShadekinPhaseActionEvent>(OnPhaseAction);
+        SubscribeLocalEvent<ShadekinComponent, CritShadekinEvent>(OnCritShadekinAction);
     }
 
     private void OnInit(EntityUid uid, ShadekinComponent component, ComponentStartup args)
@@ -80,7 +83,14 @@ public sealed class ShadowkinSystem : EntitySystem
         if (component.Blackeye)
             ApplyBlackEye(uid, component);
         else
+        {
             _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+            if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
+            {
+                mobstate.Actions[MobState.Critical].Clear();
+                mobstate.Actions[MobState.Critical].Add("ShadekinActionRejuvenate");
+            }
+        }
 
         _actionsSystem.AddAction(uid, ref component.ShadekinSleepAction, ShadowkinSleepActionId, uid);
         UpdateAlert(uid, component);
@@ -105,6 +115,14 @@ public sealed class ShadowkinSystem : EntitySystem
             component.OldEyeColor = humanoid.EyeColor;
             humanoid.EyeColor = component.BlackEyeColor;
             Dirty(uid, humanoid);
+        }
+
+        if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
+        {
+            mobstate.Actions[MobState.Critical].Clear();
+            mobstate.Actions[MobState.Critical].Add("ActionCritSuccumb");
+            mobstate.Actions[MobState.Critical].Add("ActionCritFakeDeath");
+            mobstate.Actions[MobState.Critical].Add("ActionCritLastWords");
         }
 
         component.Energy = 0;
@@ -137,11 +155,26 @@ public sealed class ShadowkinSystem : EntitySystem
         }
 
         _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+
+        _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+        if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
+        {
+            mobstate.Actions[MobState.Critical].Clear();
+            mobstate.Actions[MobState.Critical].Add("ShadekinActionRejuvenate");
+        }
+
         UpdateAlert(uid, component);
     }
 
     private void OnPhaseAction(EntityUid uid, ShadekinComponent component, ShadekinPhaseActionEvent args)
     {
+        if (HasComp<ShadekinCuffComponent>(uid))
+        {
+            _popup.PopupEntity(Loc.GetString("phase-fail-generic"), uid, uid, PopupType.LargeCaution);
+            args.Handled = true;
+            return;
+        }
+
         if (component.LightExposure == 4)
         {
             _popup.PopupEntity(Loc.GetString("shadekin-lightextreme-energy"), uid, uid, PopupType.LargeCaution);
@@ -207,13 +240,13 @@ public sealed class ShadowkinSystem : EntitySystem
         }
         else
         {
-            EnsureComp<EtherealComponent>(uid);
-
             if (_container.IsEntityInContainer(uid))
             {
                 _popup.PopupEntity(Loc.GetString("phase-fail-generic"), uid, uid);
                 return;
             }
+
+            EnsureComp<EtherealComponent>(uid);
 
             // TODO: Handle Phase nom here. (For Vore Improvement later tho!)
 
@@ -232,46 +265,45 @@ public sealed class ShadowkinSystem : EntitySystem
         }
     }
 
+    private void OnCritShadekinAction(EntityUid uid, ShadekinComponent component, CritShadekinEvent args)
+    {
+        _mobState.ChangeMobState(uid, MobState.Dead);
+    }
+
     private void OnMobStateChanged(EntityUid uid, ShadekinComponent component, MobStateChangedEvent args)
     {
         if (component.Blackeye
-            || HasComp<ShadekinCuffComponent>(uid))
+            || HasComp<ShadekinCuffComponent>(uid)
+            || args.NewMobState != MobState.Dead)
             return;
 
-        if (args.NewMobState == MobState.Dead)
+        if (TryComp<InventoryComponent>(uid, out var inventoryComponent) && _inventorySystem.TryGetSlots(uid, out var slots))
+            foreach (var slot in slots)
+                _inventorySystem.TryUnequip(uid, slot.Name, true, true, false, inventoryComponent);
+
+        SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
+
+        var spawns = new List<Entity<AnomalyJobSpawnComponent>>();
+        var query = EntityQueryEnumerator<AnomalyJobSpawnComponent>();
+        while (query.MoveNext(out var spawnUid, out var spawn))
         {
-            if (TryComp<InventoryComponent>(uid, out var inventoryComponent) && _inventorySystem.TryGetSlots(uid, out var slots))
-                foreach (var slot in slots)
-                    _inventorySystem.TryUnequip(uid, slot.Name, true, true, false, inventoryComponent);
-
-            SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
-
-            var query = EntityQueryEnumerator<DarkHubComponent>();
-            while (query.MoveNext(out var target, out var portal))
-            {
-                var coords = Transform(target).Coordinates;
-                var newCoords = coords.Offset(_random.NextVector2(5));
-                for (var i = 0; i < MaxRandomTeleportAttempts; i++)
-                {
-                    var randVector = _random.NextVector2(5);
-                    newCoords = coords.Offset(randVector);
-                    if (!_lookup.GetEntitiesIntersecting(newCoords.ToMap(EntityManager, _transform), LookupFlags.Static).Any())
-                        break;
-                }
-
-                _joints.RecursiveClearJoints(uid);
-
-                _transform.SetCoordinates(uid, newCoords);
-                continue;
-            }
-
-            var effect = SpawnAtPosition("ShadekinPhaseIn2Effect", Transform(uid).Coordinates);
-            Transform(effect).LocalRotation = Transform(uid).LocalRotation;
-
-            RaiseLocalEvent(uid, new RejuvenateEvent());
-            component.Energy = 0;
-            EnsureComp<ForcedSleepingComponent>(uid);
+            spawns.Add((spawnUid, spawn));
         }
+
+        _random.Shuffle(spawns);
+
+        foreach (var (spawnUid, spawn) in spawns)
+        {
+            _joints.RecursiveClearJoints(uid);
+            _transform.SetCoordinates(uid, Transform(spawnUid).Coordinates);
+            break;
+        }
+
+        var effect = SpawnAtPosition("ShadekinPhaseIn2Effect", Transform(uid).Coordinates);
+        Transform(effect).LocalRotation = Transform(uid).LocalRotation;
+
+        RaiseLocalEvent(uid, new RejuvenateEvent());
+        component.Energy = 0;
     }
 
     private Angle GetAngle(EntityUid lightUid, SharedPointLightComponent lightComp, EntityUid targetUid)

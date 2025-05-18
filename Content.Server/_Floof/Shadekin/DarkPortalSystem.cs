@@ -1,6 +1,6 @@
 using Content.Shared.Teleportation.Systems;
 
-namespace Content.Server._Floof;
+namespace Content.Server._Floof.Shadekin;
 
 public sealed class DarkPortalSystem : EntitySystem
 {
