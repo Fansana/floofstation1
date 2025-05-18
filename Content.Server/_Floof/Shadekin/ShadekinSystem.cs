@@ -41,8 +41,27 @@ public sealed class ShadowkinSystem : EntitySystem
 
     public const string ShadowkinPhaseActionId = "ShadekinActionPhase";
     public const string ShadowkinSleepActionId = "ShadekinActionSleep";
-
     private const int MaxRandomTeleportAttempts = 20;
+
+    private sealed class LightCone
+    {
+        public float Direction { get; set; }
+        public float InnerWidth { get; set; }
+        public float OuterWidth { get; set; }
+    }
+    private readonly Dictionary<string, List<LightCone>> lightMasks = new()
+    {
+        ["/Textures/Effects/LightMasks/cone.png"] = new List<LightCone>
+    {
+        new LightCone { Direction = 0, InnerWidth = 30, OuterWidth = 60 }
+    },
+        ["/Textures/Effects/LightMasks/double_cone.png"] = new List<LightCone>
+    {
+        new LightCone { Direction = 0, InnerWidth = 30, OuterWidth = 60 },
+        new LightCone { Direction = 180, InnerWidth = 30, OuterWidth = 60 }
+    }
+    };
+
     public override void Initialize()
     {
         base.Initialize();
@@ -169,6 +188,7 @@ public sealed class ShadowkinSystem : EntitySystem
             }
 
             // TODO: Phase blocker map zone.
+            // TODO: Cannot phase while in container...
 
             if (HasComp<ShadekinComponent>(uid))
             {
@@ -246,12 +266,31 @@ public sealed class ShadowkinSystem : EntitySystem
         }
     }
 
-    // TODO: Get MaskCone and make detect light that are held.
+    private Angle GetAngle(EntityUid lightUid, SharedPointLightComponent lightComp, EntityUid targetUid)
+    {
+        var (lightPos, lightRot) = _transform.GetWorldPositionRotation(lightUid);
+        lightPos += lightRot.RotateVec(lightComp.Offset);
+
+        var (targetPos, targetRot) = _transform.GetWorldPositionRotation(targetUid);
+
+        var mapDiff = targetPos - lightPos;
+
+        var oppositeMapDiff = (-lightRot).RotateVec(mapDiff);
+        var angle = oppositeMapDiff.ToWorldAngle();
+
+        if (angle == double.NaN && _transform.ContainsEntity(targetUid, lightUid) || _transform.ContainsEntity(lightUid, targetUid))
+        {
+            angle = 0f;
+        }
+
+        return angle;
+    }
+
     public float GetLightExposure(EntityUid uid)
     {
         var illumination = 0f;
 
-        var lightQuery = _lookup.GetEntitiesInRange(uid, 20, flags: LookupFlags.StaticSundries)
+        var lightQuery = _lookup.GetEntitiesInRange(uid, 20)
                 .Where(x => HasComp<PointLightComponent>(x));
 
         foreach (var light in lightQuery)
@@ -259,13 +298,15 @@ public sealed class ShadowkinSystem : EntitySystem
             if (!TryComp<PointLightComponent>(light, out var pointLight))
                 continue;
 
-            if (!pointLight.Enabled)
+            if (!pointLight.Enabled
+                || pointLight.Radius < 1
+                || pointLight.Energy <= 0)
                 continue;
 
             var (lightPos, lightRot) = _transform.GetWorldPositionRotation(light);
             lightPos += lightRot.RotateVec(pointLight.Offset);
 
-            if (!_examine.InRangeUnOccluded(light, uid, pointLight.Radius, null))
+            if (!_examine.InRangeUnOccluded(light, uid, pointLight.Radius, null, false))
                 continue;
 
             Transform(uid).Coordinates.TryDistance(EntityManager, Transform(light).Coordinates, out var dist);
@@ -274,7 +315,27 @@ public sealed class ShadowkinSystem : EntitySystem
             var attenuation = 1 - (denom * denom);
             var calculatedLight = 0f;
 
-            calculatedLight = pointLight.Energy * attenuation * attenuation;
+            if (pointLight.MaskPath is not null)
+            {
+                var angleToTarget = GetAngle(light, pointLight, uid);
+                foreach (var cone in lightMasks[pointLight.MaskPath])
+                {
+                    var coneLight = 0f;
+                    var angleAttenuation = (float) Math.Min((float) Math.Max(cone.OuterWidth - angleToTarget, 0f), cone.InnerWidth) / cone.OuterWidth;
+
+                    if (angleToTarget.Degrees - cone.Direction > cone.OuterWidth)
+                        continue;
+                    else if (angleToTarget.Degrees - cone.Direction > cone.InnerWidth
+                        && angleToTarget.Degrees - cone.Direction < cone.OuterWidth)
+                        coneLight = pointLight.Energy * attenuation * attenuation * angleAttenuation;
+                    else
+                        coneLight = pointLight.Energy * attenuation * attenuation;
+
+                    calculatedLight = Math.Max(calculatedLight, coneLight);
+                }
+            }
+            else
+                calculatedLight = pointLight.Energy * attenuation * attenuation;
 
             illumination += calculatedLight; //Math.Max(illumination, calculatedLight);
         }
@@ -344,14 +405,17 @@ public sealed class ShadowkinSystem : EntitySystem
             {
                 var energyGain = 1f;
 
-                if (component.LightExposure == 4)
-                    energyGain = 0f;
-                else if (component.LightExposure == 3)
-                    energyGain = 0.1f;
-                else if (component.LightExposure == 2)
-                    energyGain = 0.4f;
-                else if (component.LightExposure == 1)
-                    energyGain = 0.5f;
+                if (!ethereal)
+                {
+                    if (component.LightExposure == 4)
+                        energyGain = 0f;
+                    else if (component.LightExposure == 3)
+                        energyGain = 0.1f;
+                    else if (component.LightExposure == 2)
+                        energyGain = 0.4f;
+                    else if (component.LightExposure == 1)
+                        energyGain = 0.5f;
+                }
 
                 if (HasComp<SleepingComponent>(uid))
                     energyGain *= 2;
