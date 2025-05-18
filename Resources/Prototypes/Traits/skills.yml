@@ -211,12 +211,6 @@
         - !type:CharacterTraitRequirement
           traits:
             - AnomalousPositronics
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -254,12 +248,6 @@
       inverted: true
       traits:
         - LatentPsychic
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterSpeciesRequirement
-          inverted: true
-          species:
-            - Shadowkin
 
 - type: trait
   id: NaturalTelepath
@@ -328,6 +316,10 @@
     - !type:CharacterSpeciesRequirement
       species:
         - IPC
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Anomaly
 
 - type: trait
   id: AnimalFriend
