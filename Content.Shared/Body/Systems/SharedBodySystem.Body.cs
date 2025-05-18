@@ -254,9 +254,9 @@ public partial class SharedBodySystem
     {
         if (id is null
             || !Resolve(id.Value, ref body, logMissing: false)
-            || body.RootContainer.ContainedEntity is null
             || body is null // Shitmed Change
             || body.RootContainer == default // Shitmed Change
+            || body.RootContainer.ContainedEntity is null // Floof - moved down because it's clearly nullable
             || !Resolve(body.RootContainer.ContainedEntity.Value, ref rootPart))
         {
             yield break;

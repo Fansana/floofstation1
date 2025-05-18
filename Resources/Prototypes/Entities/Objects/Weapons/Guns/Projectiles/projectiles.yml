@@ -827,24 +827,6 @@
       muzzleFlash: null
 
 - type: entity
-  id: BulletAcid2
-  name: boileracid spit
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: Projectile
-      damage:
-        types:
-          Caustic: 8
-    - type: Sprite
-      sprite: Objects/Weapons/Guns/Projectiles/xeno_toxic.rsi
-      scale: 1.2, 1.2
-      layers:
-        - state: xeno_toxic
-    - type: Ammo
-      muzzleFlash: null
-
-- type: entity
   id: BulletWaterShot
   name: water
   categories: [ HideSpawnMenu ]
@@ -1064,7 +1046,7 @@
       collection: MeatLaserImpact
 
 - type: entity
-  name: laser bolt
+  name: laser bolt 
   id: BulletLaser
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -1113,7 +1095,7 @@
   - type: ProjectileSpread
     proto: BulletLaser
     count: 5 #50 heat damage if you hit all your shots, but wide spread
-    spread: 30
+    spread: 30 
 
 - type: entity
   name: narrow laser barrage
@@ -1157,4 +1139,43 @@
   - type: ProjectileSpread
     proto: BulletDisablerSmg
     count: 3 #bit stronger than a disabler if you hit your shots you goober, still not a 2 hit stun though
-    spread: 9
+    spread: 9 
+
+- type: entity #Goobstation, put here so the X-01 stuff isnt spread everywhere.
+  name: magnum bolt
+  id: BulletEnergyGunMagnum
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: heavylaser
+      shader: unshaded
+  - type: Ammo
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        mask:
+        - Opaque
+  - type: Projectile
+    impactEffect: BulletImpactEffectRedDisabler
+    damage:
+      types:
+        Blunt: 3
+        Heat: 15
+    soundHit:
+      collection: MeatLaserImpact
