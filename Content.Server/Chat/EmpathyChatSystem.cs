@@ -23,17 +23,6 @@ public sealed partial class EmpathyChatSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<LanguageSpeakerComponent, EntitySpokeEvent>(OnSpeak);
-    }
-
-    private void OnSpeak(EntityUid uid, LanguageSpeakerComponent component, EntitySpokeEvent args)
-    {
-        if (args.Source != uid
-            || !args.Language.SpeechOverride.EmpathySpeech
-            || args.IsWhisper)
-            return;
-
-        SendEmpathyChat(args.Source, args.Message, false);
     }
 
     /// <summary>

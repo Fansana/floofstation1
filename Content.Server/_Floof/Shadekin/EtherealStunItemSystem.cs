@@ -2,8 +2,10 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
 using Content.Shared._Floof.Shadekin;
-using Content.Shared.Abilities.Psionics;
+using System.Linq;
 using Content.Shared.Stacks;
+using Content.Server.Ghost;
+using Content.Server.Light.Components;
 
 namespace Content.Server._Floof.Shadekin;
 
@@ -13,6 +15,7 @@ public sealed class EtherealStunItemSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedStackSystem _sharedStackSystem = default!;
     [Dependency] private readonly ShadowkinSystem _shadowkinSystem = default!;
+    [Dependency] private readonly GhostSystem _ghost = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<EtherealStunItemComponent, UseInHandEvent>(OnUseInHand);
