@@ -10,12 +10,25 @@
   - type: StaticPrice
     price: 100
   - type: ItemToggle
-    predictable: false
-    soundActivate:
-      path: /Audio/_Floof/Lewd/vibrate.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_Floof/Lewd/vibrate_loop.ogg
   - type: UseDelay
     delay: 1.0
   - type: Appearance
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    attackRate: 1
+    angle: 90
+    heavyStaminaCost: 2.5
+    heavyDamageBaseModifier: 1.50
+    damage:
+      types:
+        Blunt: 1
+  - type: StaminaDamageOnHit
+    damage: 10
+  - type: DamageOtherOnHit
+    staminaCost: 2.5
   - type: GenericVisualizer
     visuals:
       enum.ToggleVisuals.Toggled:

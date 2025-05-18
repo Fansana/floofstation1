@@ -96,6 +96,7 @@
     - Felinid # They don't need to be lighter
     - IPC
     - Rodentia
+    - Kitsune # Floof - M3739 - #937 - They are light enough as it is.
   - !type:CharacterTraitRequirement
     inverted: true
     traits:
@@ -126,6 +127,7 @@
         - Vulpkanin
         - Reptilian
         - Chitinid
+        - Kitsune # Floof - M3739 - #937
   functions:
     - !type:TraitModifyMetabolism
       types: [ TheobromineIntolerant ]
@@ -154,6 +156,7 @@
         - Vulpkanin
         - Reptilian
         - Chitinid
+        - Kitsune # Floof - M3739 - #937
   functions:
     - !type:TraitModifyMetabolism
       types: [ AllicinIntolerant ]

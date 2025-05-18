@@ -1,7 +1,7 @@
 using Robust.Shared.GameStates;
 
 
-namespace Content.Shared.FloofStation.Clothing.ClothingLimit;
+namespace Content.Shared._Floof.Clothing.ClothingLimit;
 
 
 /// <summary>

@@ -3,7 +3,9 @@
   parent:
   - BaseMob
   - MobDamageable
+  - MobPolymorphable
   - MobCombat
+  - StripableInventoryBase
   id: BaseMobSpecies
   abstract: true
   components:
@@ -41,6 +43,7 @@
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    - map: [ "enum.HumanoidVisualLayers.Wings" ]
     - map: [ "mask" ]
     - map: [ "head" ]
     - map: [ "pocket1" ]
@@ -149,14 +152,12 @@
   - type: Hands
   - type: ComplexInteraction
   - type: Internals
-  - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:
     #       32:
     #         sprite: Mobs/Species/Human/displacement.rsi
     #         state: jumpsuit-female
-  - type: InventorySlots
   - type: FloatingVisuals
   - type: Climbing
   - type: Cuffable
@@ -190,7 +191,6 @@
     - NanoTrasen
   - type: CreamPied
   - type: Stripping
-  - type: Strippable
   - type: UserInterface
     interfaces:
       enum.HumanoidMarkingModifierKey.Key:
@@ -340,18 +340,17 @@
 - type: entity
   save: false
   id: BaseSpeciesDummy
+  parent: InventoryBase
   abstract: true
   components:
   - type: Hands
   - type: ComplexInteraction
-  - type: Inventory
     # femaleDisplacements: # Floof - displacements
     #   jumpsuit:
     #     sizeMaps:
     #       32:
     #         sprite: Mobs/Species/Human/displacement.rsi
     #         state: jumpsuit-female
-  - type: InventorySlots
   - type: ContainerContainer
   - type: Icon
     sprite: Mobs/Species/Human/parts.rsi
