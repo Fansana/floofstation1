@@ -51,6 +51,7 @@
     canTeleportToOtherMaps: true
     randomTeleport: false
   - type: DarkHub
+  - type: DarkLight
 
 - type: entity
   id: PortalShadowkin
@@ -74,6 +75,7 @@
     canTeleportToOtherMaps: true
     randomTeleport: false
   - type: DarkPortal
+  - type: DarkLight
 
 - type: entity
   id: ShadekinSpawner

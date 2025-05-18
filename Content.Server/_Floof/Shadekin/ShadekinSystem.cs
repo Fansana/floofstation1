@@ -22,8 +22,8 @@ using Content.Server.Ghost;
 using Content.Server.Light.Components;
 using Robust.Server.Containers;
 using Content.Shared.Mind;
-using Robust.Server.Player;
 using Content.Shared.Mobs.Components;
+using System.Drawing;
 
 
 namespace Content.Server._Floof.Shadekin;
@@ -336,6 +336,9 @@ public sealed class ShadowkinSystem : EntitySystem
         foreach (var light in lightQuery)
         {
             if (!TryComp<PointLightComponent>(light, out var pointLight))
+                continue;
+
+            if (HasComp<DarkLightComponent>(light))
                 continue;
 
             if (!pointLight.Enabled
