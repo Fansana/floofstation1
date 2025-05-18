@@ -79,3 +79,38 @@
   items:
   - DoubleEmergencyWaterVaporTankFilled
 # Floof - M3739 - Feroxi port end
+
+- type: loadout
+  id: LoadoutSpeciesPowerCellHigh
+  category: Species
+  cost: 6
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - IPC
+  items:
+    - PowerCellHigh
+
+- type: loadout
+  id: LoadoutSpeciesMantleMag
+  category: Species
+  cost: 6
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Harpy
+        - Diona
+        - Arachne
+    - !type:CharacterLogicOrRequirement
+      requirements:
+      - !type:CharacterDepartmentRequirement
+        departments:
+          - Engineering
+          - Command
+          - Security
+      - !type:CharacterJobRequirement
+        jobs:
+          - Paramedic
+          - SalvageSpecialist
+  items:
+    - ClothingNeckMantleMag
