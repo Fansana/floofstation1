@@ -5732,3 +5732,18 @@ Entries:
   id: 601
   time: '2025-05-18T13:18:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/927
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: LoneOp spawns with their 60 TC Uplink instead of the 40 TC Uplink.
+    - type: Tweak
+      message: Atmospheric Technicians get 15 TC instead of 10 TC.
+    - type: Fix
+      message: Senior Technicians now have the same TC as Engineers.
+    - type: Fix
+      message: Sleeper Agents now have the same requirements as normal Traitor.
+    - type: Remove
+      message: The real Throngler can no longer be found in the Gambling Crates.
+  id: 602
+  time: '2025-05-18T13:52:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/992
