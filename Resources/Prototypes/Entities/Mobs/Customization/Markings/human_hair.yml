@@ -769,6 +769,13 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: modern
 - type: marking
+  id: HumanHairModernFlipped
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: Mobs/Customization/human_hair.rsi
+      state: modern_flipped
+- type: marking
   id: HumanHairMohawk
   bodyPart: Hair
   markingCategory: Hair

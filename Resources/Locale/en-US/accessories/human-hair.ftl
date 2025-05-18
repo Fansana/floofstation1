@@ -111,6 +111,7 @@ marking-HumanHairLongsidepart = Long Side Part
 marking-HumanHairMegaeyebrows = Mega Eyebrows
 marking-HumanHairMessy = Messy
 marking-HumanHairModern = Modern
+marking-HumanHairModernFlipped = Modern (Flipped)
 marking-HumanHairMohawk = Mohawk
 marking-HumanHairNitori = Nitori
 marking-HumanHairReversemohawk = Mohawk (Reverse)
