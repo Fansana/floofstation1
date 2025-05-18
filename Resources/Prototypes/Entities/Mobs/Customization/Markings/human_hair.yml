@@ -1357,12 +1357,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: tailed
 - type: marking
-  id: HumanHairClassicLong
+  id: HumanHairClassicLong1
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: classiclong
+      state: classiclong1
 - type: marking
   id: HumanHairClassicLong2
   bodyPart: Hair

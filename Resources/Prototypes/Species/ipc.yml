@@ -52,7 +52,6 @@
     RLeg: MobIPCRLeg
     LFoot: MobIPCLFoot
     RFoot: MobIPCRFoot
-    Wings: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobIPCMarkingLimits
