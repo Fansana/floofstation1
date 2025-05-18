@@ -5707,3 +5707,19 @@ Entries:
   id: 599
   time: '2025-05-17T22:11:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/981
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Nanotrasen Representative and Blueshield Officer
+    - type: Add
+      message: >-
+        Added Admin Assistant, Nanorep, and Blueshield Officer spawns to all
+        maps. BSO and Nanorep don't get an office, they get a unique teleporter.
+        (as of now) Ask your resident mapper to fix this.
+    - type: Add
+      message: >-
+        Added the loadout options for Nanotrasen Representative and Blueshield
+        Officer.
+  id: 600
+  time: '2025-05-18T07:38:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/991
