@@ -1,22 +1,22 @@
 - type: entity
-  id: ActionDarkSwap
-  name: action-name-darkswap
-  description: action-description-darkswap
-  categories: [ HideSpawnMenu ]
+  id: ShadekinActionPhase
+  name: action-name-phase
+  description: action-description-phase
+  categories: [HideSpawnMenu]
   components:
     - type: InstantAction
       itemIconStyle: BigAction
+      checkCanInteract: false
       useDelay: 1
       priority: 4
       icon: { sprite: Interface/Actions/shadowkin_icons.rsi, state: darkswap }
-      checkCanInteract: false
-      event: !type:ToggleNightVisionEvent
+      event: !type:ShadekinPhaseActionEvent
 
 - type: entity
   id: ShadekinDarkVision
   name: action-name-shadekin-darkvision
   description: action-description-shadekin-darkvision
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
     - type: InstantAction
       itemIconStyle: BigAction
@@ -29,11 +29,11 @@
   id: ShadekinActionSleep
   name: action-name-shadekin-rest
   description: action-description-shadekin-rest
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-  - type: InstantAction
-    checkCanInteract: false
-    checkConsciousness: false
-    priority: 6
-    icon: { sprite: Interface/Actions/shadowkin_icons.rsi, state: rest }
-    event: !type:SleepActionEvent
+    - type: InstantAction
+      checkCanInteract: false
+      checkConsciousness: false
+      priority: 6
+      icon: { sprite: Interface/Actions/shadowkin_icons.rsi, state: rest }
+      event: !type:SleepActionEvent

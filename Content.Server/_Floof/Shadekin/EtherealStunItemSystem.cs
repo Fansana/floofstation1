@@ -12,6 +12,7 @@ public sealed class EtherealStunItemSystem : EntitySystem
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedStackSystem _sharedStackSystem = default!;
+    [Dependency] private readonly ShadowkinSystem _shadowkinSystem = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<EtherealStunItemComponent, UseInHandEvent>(OnUseInHand);
@@ -31,7 +32,14 @@ public sealed class EtherealStunItemSystem : EntitySystem
                 _stamina.TakeStaminaDamage(ent, stamina.CritThreshold, stamina, ent);
 
             if (TryComp<ShadekinComponent>(ent, out var shadekin))
+            {
                 shadekin.Energy = 0;
+                _shadowkinSystem.UpdateAlert(ent, shadekin);
+                var effect = SpawnAtPosition("ShadekinPhaseIn2Effect", Transform(uid).Coordinates);
+                Transform(effect).LocalRotation = Transform(uid).LocalRotation;
+            }
+            else
+                SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
         }
 
         if (!component.DeleteOnUse)

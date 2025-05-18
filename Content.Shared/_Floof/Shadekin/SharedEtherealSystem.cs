@@ -8,16 +8,11 @@ using Content.Shared.Popups;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.CombatMode.Pacification;
-using Content.Shared.Psionics;
 using Content.Shared.Mobs;
-using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
-using Content.Shared.Abilities.Psionics;
 using Content.Shared.Tag;
 using Content.Shared.Standing;
-using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
-using Content.Shared.Standing;
 
 
 namespace Content.Shared._Floof.Shadekin;
@@ -88,8 +83,7 @@ public abstract class SharedEtherealSystem : EntitySystem
         if (args.NewMobState == MobState.Critical
             || args.NewMobState == MobState.Dead)
         {
-            SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
-            SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(uid).Coordinates);
+            SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
             RemComp(uid, component);
         }
     }
@@ -121,17 +115,14 @@ public abstract class SharedEtherealSystem : EntitySystem
         args.Cancelled = true;
     }
 
-    private void OnInteractionAttempt(EntityUid uid, EtherealComponent component, InteractionAttemptEvent args)
+    private void OnInteractionAttempt(EntityUid uid, EtherealComponent component, ref InteractionAttemptEvent args)
     {
-        if (!HasComp<TransformComponent>(args.Target)
-            || HasComp<EtherealComponent>(args.Target))
+        if (HasComp<EtherealComponent>(args.Target))
             return;
 
         args.Cancelled = true;
         if (_gameTiming.InPrediction)
             return;
-
-        _popup.PopupEntity(Loc.GetString("ethereal-pickup-fail"), args.Target.Value, uid);
     }
 
     private void DownAttemptEvent(EntityUid uid, EtherealComponent component, DownAttemptEvent args)

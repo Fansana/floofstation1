@@ -1,6 +1,4 @@
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
-using Content.Shared.Alert;
 
 namespace Content.Shared._Floof.Shadekin;
 
@@ -17,6 +15,9 @@ public sealed partial class ShadekinComponent : Component
     public Color OldEyeColor = Color.White;
 
     [DataField]
+    public EntityUid? ShadekinPhaseAction;
+
+    [DataField]
     public EntityUid? ShadekinSleepAction;
 
     [DataField, AutoNetworkedField]
@@ -25,15 +26,17 @@ public sealed partial class ShadekinComponent : Component
     [DataField, AutoNetworkedField]
     public float MaxEnergy = 200;
 
+    public float Accumulator;
+
+    [DataField]
+    public float Energymultiplier = 1;
+
+    [DataField]
+    public float LightExposure = 0;
+
     /// <summary>
     ///     If true, the shadekin is a Blackeye (This also affect spawning).
     /// </summary>
     [DataField]
     public bool Blackeye = true;
-
-    [DataField]
-    public ProtoId<AlertPrototype> ShadekinEnergyAlert = "ShadekinEnergyAlert";
-
-    [DataField]
-    public ProtoId<AlertPrototype> ShadekinLightAlert = "ShadekinLightAlert";
 }

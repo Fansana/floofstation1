@@ -134,9 +134,6 @@
       path: /Audio/_Floof/Shadekin/phase.ogg
   - type: TimedDespawn
     lifetime: 0.5
-  - type: Transform
-    noRot: true
-    anchored: true
   - type: Sprite
     layers:
     - sprite: _Floof/Shadekin/phase.rsi

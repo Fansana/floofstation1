@@ -247,6 +247,7 @@
       toggleAction: ShadekinDarkVision
       activateSound: null
       deactivateSound: null
+    - type: Shadekin
 
 - type: entity
   save: false

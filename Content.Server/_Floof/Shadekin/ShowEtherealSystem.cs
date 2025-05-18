@@ -66,15 +66,12 @@ public sealed class ShowEtherealSystem : EntitySystem
 
     private void OnInteractionAttempt(EntityUid uid, ShowEtherealComponent component, InteractionAttemptEvent args)
     {
-        if (HasComp<EtherealComponent>(uid)
-            || !HasComp<EtherealComponent>(args.Target))
+        if (HasComp<EtherealComponent>(args.Target))
             return;
 
         args.Cancelled = true;
         if (_gameTiming.InPrediction)
             return;
-
-        _popup.PopupEntity(Loc.GetString("ethereal-pickup-fail"), args.Target.Value, uid);
     }
 
     private void OnAttackAttempt(EntityUid uid, ShowEtherealComponent component, AttackAttemptEvent args)
