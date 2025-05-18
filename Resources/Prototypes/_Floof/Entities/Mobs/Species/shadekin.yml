@@ -22,9 +22,6 @@
                 ShadowkinShadow:
                   min: 1
                   max: 1
-                EffectFlashShadowkinShadeskip:
-                  min: 1
-                  max: 1
         - trigger:
             !type:DamageTypeTrigger
             damageType: Heat

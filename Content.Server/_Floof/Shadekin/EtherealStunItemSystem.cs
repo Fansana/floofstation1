@@ -35,6 +35,12 @@ public sealed class EtherealStunItemSystem : EntitySystem
             {
                 shadekin.Energy = 0;
                 _shadowkinSystem.UpdateAlert(ent, shadekin);
+
+                var lightQuery = _lookup.GetEntitiesInRange(uid, 5, flags: LookupFlags.StaticSundries)
+                    .Where(x => HasComp<PoweredLightComponent>(x));
+                foreach (var light in lightQuery)
+                    _ghost.DoGhostBooEvent(light);
+
                 var effect = SpawnAtPosition("ShadekinPhaseIn2Effect", Transform(uid).Coordinates);
                 Transform(effect).LocalRotation = Transform(uid).LocalRotation;
             }
