@@ -5644,3 +5644,82 @@ Entries:
   id: 593
   time: '2025-05-15T16:40:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/948
+- author: EinsteinEngines Aviu00
+  changes:
+    - type: Fix
+      message: Fix silo being out of range.
+  id: 594
+  time: '2025-05-16T19:37:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/921
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed Energy Swords not displaying their blade when ignited.
+  id: 595
+  time: '2025-05-17T05:01:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/925
+- author: faefyr
+  changes:
+    - type: Add
+      message: Vulpkanin/Feroxi Hardsuit Helmets for Syndicate Hardsuits
+  id: 596
+  time: '2025-05-17T05:20:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/984
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Created the framework that allows certain clothing to block certain
+        inventory slots.
+    - type: Add
+      message: >-
+        Having a hardsuit equipped now prevents you from removing your inner
+        clothes, gloves, and shoes (and having them taken by someone else).
+    - type: Add
+      message: >-
+        Most coats now block the inner clothing slot (although you can still
+        equip/unequip shirt-less clothing like thongs), and harnesses can block
+        either inner or outer clothing depending on where you equip them.
+  id: 597
+  time: '2025-05-17T09:56:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/970
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Neckerchiefs have been added. Find them in the neck and departmental
+        sections!
+  id: 598
+  time: '2025-05-17T19:50:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/988
+- author: DeltaV
+  changes:
+    - type: Fix
+      message: Cloning should now properly replicate the original body's appearance.
+    - type: Fix
+      message: Female kitsune should now no longer laugh like a man when in fox form.
+    - type: Fix
+      message: >-
+        Kitsune foxfire will now emit light, regardless of how dark the color
+        is.
+    - type: Fix
+      message: Kitsune should now no longer weigh as much as a feather.
+  id: 599
+  time: '2025-05-17T22:11:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/981
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Nanotrasen Representative and Blueshield Officer
+    - type: Add
+      message: >-
+        Added Admin Assistant, Nanorep, and Blueshield Officer spawns to all
+        maps. BSO and Nanorep don't get an office, they get a unique teleporter.
+        (as of now) Ask your resident mapper to fix this.
+    - type: Add
+      message: >-
+        Added the loadout options for Nanotrasen Representative and Blueshield
+        Officer.
+  id: 600
+  time: '2025-05-18T07:38:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/991
