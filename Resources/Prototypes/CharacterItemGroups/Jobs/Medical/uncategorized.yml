@@ -116,6 +116,8 @@
   maxItems: 1
   items:
     - type: loadout
+      id: LoadoutMedicalOuterWinterCoat
+    - type: loadout
       id: LoadoutMedicalOuterLabcoat
     - type: loadout
       id: LoadoutMedicalOuterCybersunWindbreaker

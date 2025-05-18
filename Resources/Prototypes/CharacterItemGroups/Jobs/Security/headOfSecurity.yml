@@ -88,6 +88,8 @@
       id: LoadoutCommandHOSOuterTrench
     - type: loadout
       id: LoadoutCommandHOSLongcoat # Floof
+    - type: loadout
+      id: LoadoutCommandHOSOuterWinterUnarmored
 
 - type: characterItemGroup
   id: LoadoutHeadOfSecurityShoes
