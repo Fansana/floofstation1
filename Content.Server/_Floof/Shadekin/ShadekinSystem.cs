@@ -24,6 +24,8 @@ using Robust.Server.Containers;
 using Content.Shared.Mind;
 using Content.Shared.Mobs.Components;
 using System.Drawing;
+using Content.Shared.FloofStation;
+using Robust.Shared.Containers;
 
 
 namespace Content.Server._Floof.Shadekin;
@@ -44,6 +46,7 @@ public sealed class ShadekinSystem : EntitySystem
     [Dependency] private readonly GhostSystem _ghost = default!;
     [Dependency] private ContainerSystem _container = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
+    [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
 
     public const string ShadekinPhaseActionId = "ShadekinActionPhase";
     public const string ShadekinSleepActionId = "ShadekinActionSleep";
@@ -117,6 +120,8 @@ public sealed class ShadekinSystem : EntitySystem
             Dirty(uid, humanoid);
         }
 
+        _actionsSystem.RemoveAction(uid, component.ShadekinPhaseAction);
+
         if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
         {
             mobstate.Actions[MobState.Critical].Clear();
@@ -168,6 +173,12 @@ public sealed class ShadekinSystem : EntitySystem
 
     private void OnPhaseAction(EntityUid uid, ShadekinComponent component, ShadekinPhaseActionEvent args)
     {
+        if (component.Blackeye)
+        {
+            args.Handled = true;
+            return;
+        }
+
         if (HasComp<ShadekinCuffComponent>(uid))
         {
             _popup.PopupEntity(Loc.GetString("phase-fail-generic"), uid, uid, PopupType.LargeCaution);
@@ -280,6 +291,9 @@ public sealed class ShadekinSystem : EntitySystem
         if (TryComp<InventoryComponent>(uid, out var inventoryComponent) && _inventorySystem.TryGetSlots(uid, out var slots))
             foreach (var slot in slots)
                 _inventorySystem.TryUnequip(uid, slot.Name, true, true, false, inventoryComponent);
+
+        if (TryComp<VoreComponent>(uid, out var vore))
+            _containerSystem.EmptyContainer(vore.Stomach);
 
         SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
 

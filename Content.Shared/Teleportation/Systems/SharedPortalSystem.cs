@@ -118,6 +118,9 @@ public abstract class SharedPortalSystem : EntitySystem
                 && !shadekin.Blackeye)
                 passed = true;
 
+            if (HasComp<EtherealPhaseComponent>(subject))
+                passed = true;
+
             if (!passed)
                 return;
         }

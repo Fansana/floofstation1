@@ -62,7 +62,7 @@
   - type: ExaminableSolution
     solution: tank
 
-- type: entity # TODO: Add a comp to add darkswap ability to an object?
+- type: entity
   parent: Clothing
   id: ClothingBackpackEtherealTeleporter
   name: ethereal teleporter
@@ -79,3 +79,4 @@
     - type: Clothing
       slots: BACK
       sprite: Clothing/Back/etherealteleporter.rsi
+    - type: EtherealPhase
