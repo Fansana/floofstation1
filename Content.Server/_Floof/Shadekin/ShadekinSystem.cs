@@ -212,9 +212,11 @@ public sealed class ShadekinSystem : EntitySystem
 
         if (component.Energy >= price)
         {
-            component.Energy -= price;
-            Phase(uid);
-            UpdateAlert(uid, component);
+            if (Phase(uid))
+            {
+                component.Energy -= price;
+                UpdateAlert(uid, component);
+            }
         }
         else
             _popup.PopupEntity(Loc.GetString("shadekin-no-energy"), uid, uid, PopupType.LargeCaution);
@@ -222,7 +224,7 @@ public sealed class ShadekinSystem : EntitySystem
         args.Handled = true;
     }
 
-    public void Phase(EntityUid uid)
+    public bool Phase(EntityUid uid)
     {
         if (TryComp<EtherealComponent>(uid, out var ethereal))
         {
@@ -231,7 +233,7 @@ public sealed class ShadekinSystem : EntitySystem
             && _physics.GetEntitiesIntersectingBody(uid, (int) CollisionGroup.Impassable).Count > 0)
             {
                 _popup.PopupEntity(Loc.GetString("revenant-in-solid"), uid, uid);
-                return;
+                return false;
             }
 
             if (HasComp<ShadekinComponent>(uid))
@@ -254,7 +256,7 @@ public sealed class ShadekinSystem : EntitySystem
             if (_container.IsEntityInContainer(uid))
             {
                 _popup.PopupEntity(Loc.GetString("phase-fail-generic"), uid, uid);
-                return;
+                return false;
             }
 
             EnsureComp<EtherealComponent>(uid);
@@ -274,6 +276,7 @@ public sealed class ShadekinSystem : EntitySystem
             else
                 SpawnAtPosition("ShadekinShadow", Transform(uid).Coordinates);
         }
+        return true;
     }
 
     private void OnCritShadekinAction(EntityUid uid, ShadekinComponent component, CritShadekinEvent args)
@@ -364,7 +367,7 @@ public sealed class ShadekinSystem : EntitySystem
             var (lightPos, lightRot) = _transform.GetWorldPositionRotation(light);
             lightPos += lightRot.RotateVec(pointLight.Offset);
 
-            if (!_examine.InRangeUnOccluded(light, uid, pointLight.Radius, null, false))
+            if (!_examine.InRangeUnOccluded(light, uid, pointLight.Radius, null))
                 continue;
 
             Transform(uid).Coordinates.TryDistance(EntityManager, Transform(light).Coordinates, out var dist);
@@ -401,6 +404,45 @@ public sealed class ShadekinSystem : EntitySystem
         return illumination;
     }
 
+    private void SetMood(EntityUid uid, float mood)
+    {
+        if (mood == 0)
+        {
+            RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinDarkness"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightAnnoyed"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightHigh"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightExtreme"));
+        }
+        else if (mood == 2)
+        {
+            RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightAnnoyed"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinDarkness"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightHigh"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightExtreme"));
+        }
+        else if (mood == 3)
+        {
+            RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightHigh"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinDarkness"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightAnnoyed"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightExtreme"));
+        }
+        else if (mood == 4)
+        {
+            RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightExtreme"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinDarkness"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightAnnoyed"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightHigh"));
+        }
+        else
+        {
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinDarkness"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightAnnoyed"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightHigh"));
+            RaiseLocalEvent(uid, new MoodRemoveEffectEvent("ShadekinLightExtreme"));
+        }
+    }
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -419,33 +461,26 @@ public sealed class ShadekinSystem : EntitySystem
             component.Accumulator -= 1;
             var ethereal = HasComp<EtherealComponent>(uid);
 
-            var lightExposure = GetLightExposure(uid);
+            var lightExposure = 0f;
+
+            if (!_container.IsEntityInContainer(uid))
+                lightExposure = GetLightExposure(uid);
+
             if (lightExposure >= 20f)
-            {
                 component.LightExposure = 4;
-                if (!ethereal)
-                    RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightExtreme"));
-            }
             else if (lightExposure >= 10f)
-            {
                 component.LightExposure = 3;
-                if (!ethereal)
-                    RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightHigh"));
-            }
             else if (lightExposure >= 5f)
-            {
                 component.LightExposure = 2;
-                if (!ethereal)
-                    RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinLightAnnoyed"));
-            }
             else if (lightExposure >= 0.8f)
                 component.LightExposure = 1;
             else
-            {
                 component.LightExposure = 0;
-                if (!ethereal)
-                    RaiseLocalEvent(uid, new MoodEffectEvent("ShadekinDarkness"));
-            }
+
+            if (ethereal)
+                SetMood(uid, 1);
+            else
+                SetMood(uid, component.LightExposure);
 
             UpdateAlert(uid, component);
 

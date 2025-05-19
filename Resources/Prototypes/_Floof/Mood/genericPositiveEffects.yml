@@ -34,19 +34,15 @@
 - type: moodEffect
   id: ShadekinDarkness
   moodChange: 3
-  timeout: 30
 
 - type: moodEffect
   id: ShadekinLightAnnoyed
   moodChange: -3
-  timeout: 30
 
 - type: moodEffect
   id: ShadekinLightHigh
   moodChange: -6
-  timeout: 60
 
 - type: moodEffect
   id: ShadekinLightExtreme
   moodChange: -15
-  timeout: 120
