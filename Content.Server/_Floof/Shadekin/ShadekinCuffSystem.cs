@@ -3,7 +3,7 @@ using Content.Shared.Clothing.Components;
 
 namespace Content.Server._Floof.Shadekin;
 
-public sealed class ShadowkinCuffSystem : EntitySystem
+public sealed class ShadekinCuffSystem : EntitySystem
 {
     public override void Initialize()
     {

@@ -110,7 +110,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         {
             var color = component.EyeColor.Name();
             if (color != null)
-                age = Loc.GetString("identity-eye-shadowkin", ("color", color));
+                age = Loc.GetString("identity-eye-shadekin", ("color", color));
         }
 
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));

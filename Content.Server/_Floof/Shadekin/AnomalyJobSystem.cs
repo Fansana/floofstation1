@@ -38,10 +38,10 @@ public sealed class AnomalyJobSystem : EntitySystem
         var effect = SpawnAtPosition("ShadekinPhaseIn2Effect", Transform(uid).Coordinates);
         Transform(effect).LocalRotation = Transform(uid).LocalRotation;
 
-        if (!TryComp<ShadekinComponent>(uid, out var shadowkin))
+        if (!TryComp<ShadekinComponent>(uid, out var shadekin))
             return;
 
-        shadowkin.Blackeye = false;
+        shadekin.Blackeye = false;
         RaiseLocalEvent(uid, new RejuvenateEvent());
     }
 }

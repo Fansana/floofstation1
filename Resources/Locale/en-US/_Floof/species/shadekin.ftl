@@ -17,7 +17,7 @@ ethereal-pickup-fail = My hand sizzles as it passes through...
 shadekin-no-energy = Not enough energy for that ability!
 shadekin-lightextreme-energy = Theres too much light to use that ability!
 
-identity-eye-shadowkin = {$color}-eye
+identity-eye-shadekin = {$color}-eye
 
 alerts-shadekin-name = Energy / Light Exposure
 alerts-shadekin-desc = How much energy you have left and how much light is around you.

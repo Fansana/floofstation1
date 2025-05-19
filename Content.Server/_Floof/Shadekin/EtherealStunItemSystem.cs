@@ -14,7 +14,7 @@ public sealed class EtherealStunItemSystem : EntitySystem
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedStackSystem _sharedStackSystem = default!;
-    [Dependency] private readonly ShadowkinSystem _shadowkinSystem = default!;
+    [Dependency] private readonly ShadekinSystem _shadekinSystem = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
     public override void Initialize()
     {
@@ -37,7 +37,7 @@ public sealed class EtherealStunItemSystem : EntitySystem
             if (TryComp<ShadekinComponent>(ent, out var shadekin))
             {
                 shadekin.Energy = 0;
-                _shadowkinSystem.UpdateAlert(ent, shadekin);
+                _shadekinSystem.UpdateAlert(ent, shadekin);
 
                 var lightQuery = _lookup.GetEntitiesInRange(uid, 5, flags: LookupFlags.StaticSundries)
                     .Where(x => HasComp<PoweredLightComponent>(x));

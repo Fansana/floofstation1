@@ -28,7 +28,7 @@ using System.Drawing;
 
 namespace Content.Server._Floof.Shadekin;
 
-public sealed class ShadowkinSystem : EntitySystem
+public sealed class ShadekinSystem : EntitySystem
 {
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
@@ -45,8 +45,8 @@ public sealed class ShadowkinSystem : EntitySystem
     [Dependency] private ContainerSystem _container = default!;
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
 
-    public const string ShadowkinPhaseActionId = "ShadekinActionPhase";
-    public const string ShadowkinSleepActionId = "ShadekinActionSleep";
+    public const string ShadekinPhaseActionId = "ShadekinActionPhase";
+    public const string ShadekinSleepActionId = "ShadekinActionSleep";
 
     private sealed class LightCone
     {
@@ -84,7 +84,7 @@ public sealed class ShadowkinSystem : EntitySystem
             ApplyBlackEye(uid, component);
         else
         {
-            _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+            _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadekinPhaseActionId, uid);
             if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
             {
                 mobstate.Actions[MobState.Critical].Clear();
@@ -92,7 +92,7 @@ public sealed class ShadowkinSystem : EntitySystem
             }
         }
 
-        _actionsSystem.AddAction(uid, ref component.ShadekinSleepAction, ShadowkinSleepActionId, uid);
+        _actionsSystem.AddAction(uid, ref component.ShadekinSleepAction, ShadekinSleepActionId, uid);
         UpdateAlert(uid, component);
     }
 
@@ -154,9 +154,9 @@ public sealed class ShadowkinSystem : EntitySystem
             Dirty(uid, humanoid);
         }
 
-        _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+        _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadekinPhaseActionId, uid);
 
-        _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadowkinPhaseActionId, uid);
+        _actionsSystem.AddAction(uid, ref component.ShadekinPhaseAction, ShadekinPhaseActionId, uid);
         if (TryComp<MobStateActionsComponent>(uid, out var mobstate))
         {
             mobstate.Actions[MobState.Critical].Clear();

@@ -4,12 +4,11 @@ using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Content.Shared.Humanoid;
-using Content.Shared.Abilities.Psionics;
 using Content.Client.Overlays;
 
-namespace Content.Client.Shadowkin;
+namespace Content.Client._Floof.Shadekin;
 
-public sealed partial class ShadowkinSystem : EntitySystem
+public sealed partial class ShadekinSystem : EntitySystem
 {
     [Dependency] private readonly IOverlayManager _overlayMan = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;

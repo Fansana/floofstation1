@@ -49,11 +49,9 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnGetVerbs(EntityUid uid, PortalComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-
-        if (!args.CanAccess || !HasComp<EtherealComponent>(args.User)) // FloofStation Edit
-            // Traversal altverb for ghosts to use that bypasses normal functionality
-            if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
-                return;
+        // Traversal altverb for ghosts to use that bypasses normal functionality
+        if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
+            return;
 
         // Don't use the verb with unlinked or with multi-output portals
         // (this is only intended to be useful for ghosts to see where a linked portal leads)
@@ -104,6 +102,26 @@ public abstract class SharedPortalSystem : EntitySystem
         // best not.
         if (Transform(subject).Anchored)
             return;
+
+        // FloofStation - If DarkPortal, Only Teleport if Shadekin or pulled by one.
+        if (HasComp<DarkPortalComponent>(uid))
+        {
+            var passed = false;
+
+            if (TryComp<PullableComponent>(subject, out var pullablea)
+                && pullablea.BeingPulled
+                && TryComp<ShadekinComponent>(pullablea.Puller, out var pullerkin)
+                && !pullerkin.Blackeye)
+                passed = true;
+
+            if (TryComp<ShadekinComponent>(subject, out var shadekin)
+                && !shadekin.Blackeye)
+                passed = true;
+
+            if (!passed)
+                return;
+        }
+        // FloofStation - End
 
         // break pulls before portal enter so we dont break shit
         if (TryComp<PullableComponent>(subject, out var pullable) && pullable.BeingPulled)

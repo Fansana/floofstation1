@@ -26,7 +26,7 @@ public sealed partial class EmpathyChatSystem : EntitySystem
     }
 
     /// <summary>
-    /// Send a Message in the Shadowkin Empathy Chat.
+    /// Send a Message in the Shadekin Empathy Chat.
     /// </summary>
     /// <param name="source">The entity making the message</param>
     /// <param name="message">The contents of the message</param>
