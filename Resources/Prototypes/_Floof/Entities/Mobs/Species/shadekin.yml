@@ -19,7 +19,7 @@
             - !type:GibBehavior {}
             - !type:SpawnEntitiesBehavior
               spawn:
-                ShadowkinShadow:
+                ShadekinShadow:
                   min: 1
                   max: 1
         - trigger:
@@ -36,10 +36,7 @@
             - !type:BurnBodyBehavior {}
             - !type:SpawnEntitiesBehavior
               spawn:
-                ShadowkinShadow:
-                  min: 1
-                  max: 1
-                EffectFlashShadowkinShadeskip:
+                ShadekinShadow:
                   min: 1
                   max: 1
     - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
