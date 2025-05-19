@@ -92,7 +92,14 @@
   name: Shadekin Haze
   id: ShadekinShadow
   parent: BaseShadow
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
   components:
+    - type: Appearance
+    - type: Transform
+      anchored: true
     - type: EmitSoundOnSpawn
       sound:
         path: /Audio/Effects/Shadowkin/shadeskip.ogg
