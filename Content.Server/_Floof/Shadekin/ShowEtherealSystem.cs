@@ -3,16 +3,13 @@ using Content.Shared.Eye;
 using Robust.Server.GameObjects;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Interaction.Events;
-using Robust.Shared.Timing;
-using Content.Shared.Popups;
 using Content.Shared.Clothing.Components;
 
 namespace Content.Server._Floof.Shadekin;
+
 public sealed class ShowEtherealSystem : EntitySystem
 {
     [Dependency] private readonly EyeSystem _eye = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -70,8 +67,6 @@ public sealed class ShowEtherealSystem : EntitySystem
             return;
 
         args.Cancelled = true;
-        if (_gameTiming.InPrediction)
-            return;
     }
 
     private void OnAttackAttempt(EntityUid uid, ShowEtherealComponent component, AttackAttemptEvent args)

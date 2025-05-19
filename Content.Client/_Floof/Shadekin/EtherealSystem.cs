@@ -2,6 +2,7 @@ using Content.Shared._Floof.Shadekin;
 using Robust.Client.Graphics;
 using Robust.Shared.Player;
 using Content.Client.Overlays;
+using Robust.Shared.Physics.Events;
 
 namespace Content.Client._Floof.Shadekin;
 
@@ -20,6 +21,7 @@ public sealed partial class EtherealSystem : EntitySystem
         SubscribeLocalEvent<EtherealComponent, ComponentShutdown>(Onhutdown);
         SubscribeLocalEvent<EtherealComponent, LocalPlayerAttachedEvent>(OnPlayerAttached);
         SubscribeLocalEvent<EtherealComponent, LocalPlayerDetachedEvent>(OnPlayerDetached);
+        SubscribeLocalEvent<EtherealComponent, PreventCollideEvent>(PreventCollision);
 
         _overlay = new();
     }
@@ -48,5 +50,10 @@ public sealed partial class EtherealSystem : EntitySystem
     private void OnPlayerDetached(EntityUid uid, EtherealComponent component, LocalPlayerDetachedEvent args)
     {
         _overlayMan.RemoveOverlay(_overlay);
+    }
+
+    private void PreventCollision(EntityUid uid, EtherealComponent component, ref PreventCollideEvent args)
+    {
+        args.Cancelled = true;
     }
 }
