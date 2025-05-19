@@ -12,6 +12,9 @@ action-description-shadekin-rejuvenate = rejuvenate yourself... hopefully.
 
 phase-fail-generic = I can't phase!
 
+hubportal-rejuvenate = You can't use this so soon after an emergency warp!
+shadekin-rejuvenate-compleated = You feel like you can leave the Dark again
+
 ethereal-pickup-fail = My hand sizzles as it passes through...
 
 shadekin-no-energy = Not enough energy for that ability!

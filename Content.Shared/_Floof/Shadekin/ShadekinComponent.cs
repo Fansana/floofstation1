@@ -39,4 +39,7 @@ public sealed partial class ShadekinComponent : Component
     /// </summary>
     [DataField]
     public bool Blackeye = true;
+
+    [DataField]
+    public bool Rejuvenating = false;
 }

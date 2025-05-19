@@ -317,6 +317,7 @@ public sealed class ShadekinSystem : EntitySystem
         Transform(effect).LocalRotation = Transform(uid).LocalRotation;
 
         RaiseLocalEvent(uid, new RejuvenateEvent());
+        component.Rejuvenating = true;
         component.Energy = 0;
     }
 
@@ -483,6 +484,12 @@ public sealed class ShadekinSystem : EntitySystem
             }
 
             UpdateAlert(uid, component);
+
+            if (component.Rejuvenating && component.Energy >= component.MaxEnergy)
+            {
+                component.Rejuvenating = false;
+                _popup.PopupEntity(Loc.GetString("shadekin-rejuvenate-compleated"), uid, uid, PopupType.Large);
+            }
         }
     }
 }

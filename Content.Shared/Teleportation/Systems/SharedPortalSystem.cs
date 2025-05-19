@@ -103,7 +103,18 @@ public abstract class SharedPortalSystem : EntitySystem
         if (Transform(subject).Anchored)
             return;
 
-        // FloofStation - If DarkPortal, Only Teleport if Shadekin or pulled by one.
+        // FloofStation - HubPortalBlockRespawn Timer
+        if (HasComp<DarkHubComponent>(uid))
+        {
+            if (TryComp<ShadekinComponent>(subject, out var shadekin)
+                && !shadekin.Blackeye && shadekin.Rejuvenating)
+            {
+                _popup.PopupEntity(Loc.GetString("hubportal-rejuvenate"), subject, subject, PopupType.LargeCaution);
+                return;
+            }
+        }
+
+        // DarkPortal, Only Teleport if Shadekin or pulled by one.
         if (HasComp<DarkPortalComponent>(uid))
         {
             var passed = false;
