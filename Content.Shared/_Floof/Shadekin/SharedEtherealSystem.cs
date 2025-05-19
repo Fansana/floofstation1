@@ -17,6 +17,8 @@ public abstract class SharedEtherealSystem : EntitySystem
     {
         base.Initialize();
 
+        SubscribeLocalEvent<EtherealComponent, MapInitEvent>(OnStartup);
+        SubscribeLocalEvent<EtherealComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<EtherealComponent, InteractionAttemptEvent>(OnInteractionAttempt);
         SubscribeLocalEvent<EtherealComponent, BeforeThrowEvent>(OnBeforeThrow);
         SubscribeLocalEvent<EtherealComponent, AttackAttemptEvent>(OnAttackAttempt);
@@ -24,6 +26,15 @@ public abstract class SharedEtherealSystem : EntitySystem
         SubscribeLocalEvent<EtherealComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<EtherealComponent, PreventCollideEvent>(PreventCollision);
     }
+
+    public virtual void OnStartup(EntityUid uid, EtherealComponent component, MapInitEvent args)
+    {
+    }
+
+    public virtual void OnShutdown(EntityUid uid, EtherealComponent component, ComponentShutdown args)
+    {
+    }
+
     private void OnMobStateChanged(EntityUid uid, EtherealComponent component, MobStateChangedEvent args)
     {
         if (args.NewMobState == MobState.Critical
