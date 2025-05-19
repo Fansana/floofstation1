@@ -76,9 +76,22 @@
     randomTeleport: false
   - type: DarkPortal
   - type: DarkLight
+
+- type: entity
+  id: PortalShadowkinSpawner
+  parent: MarkerBase
+  components:
   - type: SpawnPoint
     spawn_type: Job
     job_id: Anomaly
+  - type: ConditionalSpawner
+    prototypes:
+      - PortalShadowkin
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Floof/Shadekin/shadekin_portal.rsi
+        state: portal
 
 - type: entity
   id: ShadekinSpawner
