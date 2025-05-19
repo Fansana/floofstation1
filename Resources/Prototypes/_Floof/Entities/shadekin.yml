@@ -76,6 +76,9 @@
     randomTeleport: false
   - type: DarkPortal
   - type: DarkLight
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Anomaly
 
 - type: entity
   id: ShadekinSpawner

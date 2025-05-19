@@ -11,8 +11,6 @@
     - state: department
       color: "#C96DBF"
     - state: passenger
-  - type: PresetIdCard
-    job: Anomaly
   - type: Clothing
     slots:
     - idcard
@@ -22,13 +20,12 @@
     heldPrefix: default
     storedRotation: -90
   - type: Access
-  - type: StationRecordKeyStorage
+    tags:
+    - Maintenance
   - type: Tag
     tags:
     - DoorBumpOpener
     - WhitelistChameleon
-  - type: StealTarget
-    stealGroup: IDCard
 
 - type: entity
   parent: IDCardStandard
