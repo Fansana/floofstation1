@@ -21,9 +21,7 @@ using Content.Shared.Examine;
 using Content.Server.Ghost;
 using Content.Server.Light.Components;
 using Robust.Server.Containers;
-using Content.Shared.Mind;
 using Content.Shared.Mobs.Components;
-using System.Drawing;
 using Content.Shared.FloofStation;
 using Robust.Shared.Containers;
 
@@ -45,7 +43,6 @@ public sealed class ShadekinSystem : EntitySystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly GhostSystem _ghost = default!;
     [Dependency] private ContainerSystem _container = default!;
-    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
 
     public const string ShadekinPhaseActionId = "ShadekinActionPhase";
@@ -458,7 +455,7 @@ public sealed class ShadekinSystem : EntitySystem
             if (component.Accumulator <= 1)
                 continue;
 
-            component.Accumulator -= 1;
+            component.Accumulator = 0;
             var ethereal = HasComp<EtherealComponent>(uid);
 
             var lightExposure = 0f;
