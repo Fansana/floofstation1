@@ -251,13 +251,13 @@
 - type: emote
   id: DefaultDeathgasp
   name: chat-emote-name-deathgasp
-  icon: Interface/Emotes/deathgasp.png
-  whitelist:
-    components:
-    - MobState
-  blacklist:
-    tags:
-    - SiliconEmotes
+  icon: Interface/Emotes/deathgasp.png # Floof, remove deathgasp whitelist
+  # whitelist:
+    # components:
+    # - MobState
+  # blacklist:
+    # tags:
+    # - SiliconEmotes
   chatMessages: ["chat-emote-msg-deathgasp"]
   chatTriggers:
   - deathgasp
@@ -271,10 +271,10 @@
 - type: emote
   id: SiliconDeathgasp
   name: chat-emote-name-deathgasp
-  icon: Interface/Emotes/deathgasp.png
-  whitelist:
-    tags:
-    - SiliconEmotes
+  icon: Interface/Emotes/deathgasp.png # Floof, remove deathgasp whitelist
+  # whitelist:
+    # tags:
+    # - SiliconEmotes
   chatMessages: ["chat-emote-msg-deathgasp-silicon"]
   chatTriggers:
   - sdeathgasp
