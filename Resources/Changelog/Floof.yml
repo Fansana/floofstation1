@@ -5747,3 +5747,10 @@ Entries:
   id: 602
   time: '2025-05-18T13:52:24.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/992
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Slot blocking is not longer checked when applying loadouts.
+  id: 603
+  time: '2025-05-20T03:51:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1000
