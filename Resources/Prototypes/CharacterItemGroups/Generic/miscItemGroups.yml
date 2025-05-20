@@ -121,3 +121,31 @@
       id: LoadoutBookRandom
     - type: loadout
       id: LoadoutPen
+# Floof - M3739 - #690 - Begin changes
+    - type: loadout
+      id: LoadoutItemEnvelopes
+    - type: loadout
+      id: LoadoutPaperStickyNoteStackFilled
+    - type: loadout
+      id: LoadoutPaperStickyNoteStackFilledPink
+    - type: loadout
+      id: LoadoutPaperStickyNoteStackFilledGreen
+    - type: loadout
+      id: LoadoutPaperStickyNoteStackFilledBlue
+# Floof - M3739 - #690 - End changes
+
+
+- type: characterItemGroup
+  id: LoadoutPets
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutItemPetMouse
+    - type: loadout
+      id: LoadoutItemPetHamster
+    - type: loadout
+      id: LoadoutItemPetMothroach
+    - type: loadout
+      id: LoadoutItemPetCockroach
+    - type: loadout  #Floof
+      id: LoadoutItemPetSpider

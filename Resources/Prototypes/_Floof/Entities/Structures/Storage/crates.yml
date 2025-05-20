@@ -1,0 +1,81 @@
+- type: entity
+  id: Cratexeno
+  parent: CratePlastic
+  name: Xeno Companion Crate
+  components:
+  - type: EntityStorage
+    airtight: false
+  - type: Sprite
+    sprite: Structures/Storage/Crates/xeno.rsi
+    layers:
+    - state: base
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: paper
+      sprite: Structures/Storage/Crates/labels.rsi
+      offset: "-0.25,0.625"
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: Icon
+    sprite: Structures/Storage/Crates/xeno.rsi
+    state: base
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateAmmoSecure
+  name: secure ammo crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/Storage/Crates/secure_ammo.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Crates/secure_ammo.rsi
+  - type: AccessReader
+    access: [["Freelancer"]]
+    
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateFirearmsSecure
+  name: secure firearm crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/Storage/Crates/secure_firearms.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Crates/secure_firearms.rsi
+  - type: AccessReader
+    access: [["Freelancer"]]
+    
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateMercenarySecure
+  name: secure mercenary crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/Storage/Crates/secure_mercenary.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Crates/secure_mercenary.rsi
+  - type: AccessReader
+    access: [["Freelancer"]]
+    
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateTradeDarkSecure
+  name: dark secure trade goods crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/Storage/Crates/tradedark.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Crates/tradedark.rsi
+  - type: AccessReader
+    access: [["Freelancer"]]
+    
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateTradeLightSecure
+  name: light secure trade goods crate
+  components:
+  - type: Icon
+    sprite: _Floof/Structures/Storage/Crates/tradelight.rsi
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Crates/tradelight.rsi
+  - type: AccessReader
+    access: [["Freelancer"]]
+    

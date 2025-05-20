@@ -25,6 +25,9 @@
             Librarian: [ 1, 1 ]
           #command
             Captain: [ 1, 1 ]
+            #BlueshieldOfficer: [ 1, 1] Floof - uncomment once implemented on Floof maps
+            #NanotrasenRepresentative: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
+            #AdministrativeAssistant: [ 1, 1 ] Floof - uncomment once implemented on Floof maps
           #engineering
             AtmosphericTechnician: [ 2, 3 ]
             ChiefEngineer: [ 1, 1 ]
@@ -73,6 +76,7 @@
             SeniorResearcher: [ 1, 1 ]
           #supply
             Quartermaster: [ 1, 1 ]
+            InventorySpecialist: [ 1, 1 ] #FloofStation
             CargoTechnician: [ 2, 4 ]
             SalvageSpecialist: [ 3, 5 ]
             MailCarrier: [ 2, 3 ]

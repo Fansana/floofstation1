@@ -11,6 +11,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Physics;
 using Robust.Shared.Utility;
+using Robust.Shared.Player;
 using static Content.Shared.Interaction.SharedInteractionSystem;
 
 namespace Content.Shared.Examine
@@ -109,12 +110,33 @@ namespace Content.Shared.Examine
             if (EntityManager.GetComponent<TransformComponent>(examiner).MapID != target.MapId)
                 return false;
 
-            return InRangeUnOccluded(
-                _transform.GetMapCoordinates(examiner),
-                target,
-                GetExaminerRange(examiner),
-                predicate: predicate,
-                ignoreInsideBlocker: true);
+            // Floofstation edit - if the examined thing is a player, just return true
+            if (examined != null)
+                if (TryComp<ActorComponent>(examined, out var _)
+                    && examined.HasValue
+                    && Transform(examiner).Coordinates.TryDistance(EntityManager, _transform, Transform(examined.Value).Coordinates, out var distance)
+                    && distance <= GetExaminerRange(examiner))
+                    return true;
+
+            // Do target InRangeUnoccluded which has different checks.
+            if (examined != null)
+            {
+                return InRangeUnOccluded(
+                    examiner,
+                    examined.Value,
+                    GetExaminerRange(examiner),
+                    predicate: predicate,
+                    ignoreInsideBlocker: true);
+            }
+            else
+            {
+                return InRangeUnOccluded(
+                    examiner,
+                    target,
+                    GetExaminerRange(examiner),
+                    predicate: predicate,
+                    ignoreInsideBlocker: true);
+            }
         }
 
         /// <summary>
@@ -209,7 +231,14 @@ namespace Content.Shared.Examine
 
         public bool InRangeUnOccluded(EntityUid origin, EntityUid other, float range = ExamineRange, Ignored? predicate = null, bool ignoreInsideBlocker = true)
         {
-            var entMan = IoCManager.Resolve<IEntityManager>();
+            var ev = new InRangeOverrideEvent(origin, other);
+            RaiseLocalEvent(origin, ref ev);
+
+            if (ev.Handled)
+            {
+                return ev.InRange;
+            }
+
             var originPos = _transform.GetMapCoordinates(origin);
             var otherPos = _transform.GetMapCoordinates(other);
 

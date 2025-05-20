@@ -1,0 +1,28 @@
+# Central Command Official spawner
+
+- type: entity
+  id: SpawnPointCentralCommand
+  parent: SpawnPointJobBase
+  name: central command
+  components:
+  - type: SpawnPoint
+    job_id: CentralCommandOfficial
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Floof/Markers/jobs.rsi
+        state: centcomm
+
+# Inventory Specialist Spawner
+
+- type: entity
+  id: SpawnPointInventorySpecialist
+  parent: SpawnPointJobBase
+  name: inventory specialist
+  components:
+  - type: SpawnPoint
+    job_id: InventorySpecialist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: cargo_tech

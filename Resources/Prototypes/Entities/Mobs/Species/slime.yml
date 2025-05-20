@@ -122,9 +122,13 @@
     understands:
     - TauCetiBasic
     - Bubblish
+    naturalLanguage: Bubblish # Floof: explicitly stated natural languages
   - type: FootPrints
     leftBarePrint: "footprint-left-bare-slime"
     rightBarePrint: "footprint-right-bare-slime"
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-slime-
+    forceSayStringCount: 7 # Default is 7, but defining it anyway in case it changes or someone wants to add/remove messages
 
 - type: entity
   parent: MobHumanDummy

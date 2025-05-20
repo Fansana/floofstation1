@@ -31,6 +31,7 @@
     understands:
     - TauCetiBasic
     - Moffic
+    naturalLanguage: Moffic # Floof: explicitly stated natural languages
   - type: TypingIndicator
     proto: moth
   - type: Butcherable
@@ -77,10 +78,12 @@
     noRot: true
     drawdepth: Mobs
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
       - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.Face" ]
       - map: [ "enum.HumanoidVisualLayers.RArm" ]
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
@@ -106,6 +109,7 @@
       - map: [ "id" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
       - map: [ "back" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]
@@ -125,7 +129,10 @@
       - CanPilot
       - FootstepSound
       - DoorBumpOpener
-      - MothEmotes
+      - MothEmotes # Floof - M3739 - #631
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-moth-
+    forceSayStringCount: 7 # Default is 7, but defining it anyway in case it changes or someone wants to add/remove messages
 
 - type: entity
   parent: BaseSpeciesDummy

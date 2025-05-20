@@ -7,15 +7,16 @@
   - Quartermaster
   - SalvageSpecialist
   - MailCarrier # Nyanotrasen - MailCarrier, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Cargo/mail-carrier.yml
+  - InventorySpecialist #Floof, see Resources/Prototypes/Floof/Roles/Jobs/Cargo/inventory_specialist.yml
 
 - type: department
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
-  weight: -10
+  #weight: -10 # Floof - Create dedicated service department
   roles:
   - Bartender
-  - Borg
+  #- Borg # Floof - Create dedicated service department
   - Botanist
   - Boxer
   # - Chaplain # DeltaV - Move Chaplain into Epistemics
@@ -26,14 +27,14 @@
   # - Lawyer # DeltaV - Move Lawyer into Justice
   - Mime
   - Musician
-  - Passenger
+  #- Passenger # Floof - Create dedicated service department
   - Reporter
-  - Visitor
+  #- Visitor # Floof - Create dedicated service department
   - Zookeeper
   - ServiceWorker
   - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
-  - Prisoner # Nyanotrasen - Prisoner, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
-  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
+  #- Prisoner # Floof - Create dedicated service department
+  #- Gladiator # Floof - Create dedicated service department
 
 - type: department
   id: Command
@@ -46,9 +47,21 @@
   - ChiefMedicalOfficer
   - HeadOfPersonnel
   - HeadOfSecurity
-  - ChiefJustice # Floof - M3739 - This should make it clear now.
   - ResearchDirector
   - Quartermaster
+  - ChiefJustice # DeltaV - chief justice is in command staff
+  - CentralCommandOfficial
+  - CBURN
+  - ERTLeader
+  - ERTChaplain
+  - ERTJanitor
+  - ERTMedical
+  - ERTSecurity
+  - ERTEngineer
+  - DeathSquad
+  - AdministrativeAssistant # Delta V - Administrative Assistant, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Command/admin_assistant.yml
+  - BlueshieldOfficer # Goobstation
+  - NanotrasenRepresentative # Goobstation
   primary: false
   weight: 100
 
@@ -107,18 +120,28 @@
   - Roboticist
 
 - type: department
-  id: Specific
-  description: department-Specific-description
-  color: "#9FED58"
-  weight: 10
+  id: Silicon
+  description: department-Silicon-description
+  color: "#D381C9"
   roles:
-  - Boxer
-  - Reporter
-  - Zookeeper
-  - Psychologist
-  - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
-  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
-  - Prisoner # Nyanotrasen - Prisoner, see Resrouces/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
-  - Brigmedic # DeltaV - Corpsman, see Resources/Prototypes/DeltaV/Roles/Jobs/Security/brigmedic.yml
-  - Anomaly # FloofStation
-  primary: false
+  - Borg
+#  - StationAi disabled until it is actually playable.
+
+# Floof section - Remove station-specific job pseudo-department
+#- type: department
+#  id: Specific
+#  description: department-Specific-description
+#  color: "#9FED58"
+#  weight: 10
+#  roles:
+#  - Boxer
+#  - Reporter
+#  - Zookeeper
+#  - Psychologist
+#  - MartialArtist # Nyanotrasen - MartialArtist, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/martialartist.yml
+#  - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
+#  - Prisoner # Nyanotrasen - Prisoner, see Resrouces/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
+#  - Brigmedic # DeltaV - Corpsman, see Resources/Prototypes/DeltaV/Roles/Jobs/Security/brigmedic.yml
+#  - Anomaly # FloofStation
+#  primary: false
+# Floof section end

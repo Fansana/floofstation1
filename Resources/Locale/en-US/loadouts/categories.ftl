@@ -17,6 +17,9 @@ loadout-category-JobsCommand = Command
 loadout-category-JobsCommandAUncategorized = All Command
 loadout-category-JobsCommandCaptain = Captain
 loadout-category-JobsCommandHeadOfPersonnel = Head of Personnel
+loadout-category-JobsCommandAdminAssistant = Administrative Assistant
+loadout-category-JobsCommandBlueshieldOfficer = Blueshield Officer
+loadout-category-JobsCommandNanorep = Nanotrasen Representative
 
 # Engineering
 loadout-category-JobsEngineering = Engineering
@@ -44,6 +47,8 @@ loadout-category-JobsLogistics = Logistics
 loadout-category-JobsLogisticsAUncategorized = All Logistics
 loadout-category-JobsLogisticsCargoTechnician = Cargo Technician
 loadout-category-JobsLogisticsCourier = Courier
+# Floof - senior cargo
+loadout-category-JobsLogisticsInventorySpecialist = Inventory Specialist
 loadout-category-JobsLogisticsLogisticsOfficer = Logistics Officer
 loadout-category-JobsLogisticsSalvageSpecialist = Salvage Specialist
 
@@ -68,6 +73,8 @@ loadout-category-JobsSecurityHeadOfSecurity = Head of Security
 loadout-category-JobsSecuritySecurityOfficer = Security Officer
 loadout-category-JobsSecuritySeniorOfficer = Senior Officer
 loadout-category-JobsSecurityWarden = Warden
+# Floof - Prison Guard loadout implementation
+loadout-category-JobsSecurityPrisonGuard = Prison Guard
 
 # Service
 loadout-category-JobsService = Service

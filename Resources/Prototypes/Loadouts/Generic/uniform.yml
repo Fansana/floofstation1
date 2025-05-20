@@ -3,9 +3,11 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterJobRequirement
       jobs:
         - Passenger
@@ -14,244 +16,23 @@
 
 # Colored jumpsuits
 # Someone please alphabetically order these...
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorBlack
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorBlack
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorBlack
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorBlack
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorBlue
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorBlue
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Medical
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorGreen
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorGreen
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorOrange
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorOrange
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorOrange
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorOrange
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorPink
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorPink
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorPink
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorPink
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorRed
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorRed
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorRed
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorRed
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Security
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
 - type: loadout
   id: LoadoutUniformJumpsuitColorWhite
   category: Uniform
   cost: 0
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformJumpsuitColorWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
         - Medical
         - Epistemics
+        - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -262,308 +43,18 @@
   category: Uniform
   cost: 0
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformJumpskirtColorWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       departments:
         - Civilian
         - Medical
         - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorYellow
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorYellow
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Engineering
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorYellow
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorYellow
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Engineering
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorDarkBlue
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorDarkBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorDarkBlue
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorDarkBlue
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorTeal
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorTeal
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorTeal
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorTeal
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorPurple
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorPurple
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorPurple
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorPurple
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-        - Epistemics
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorDarkGreen
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorDarkGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorDarkGreen
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorDarkGreen
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorLightBrown
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorLightBrown
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorLightBrown
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorLightBrown
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorBrown
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorBrown
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorBrown
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorBrown
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpsuitColorMaroon
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpsuitColorMaroon
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
-    - !type:CharacterDepartmentRequirement
-      inverted: true
-      departments:
-        - Command
-
-- type: loadout
-  id: LoadoutUniformJumpskirtColorMaroon
-  category: Uniform
-  cost: 0
-  exclusive: true
-  items:
-    - ClothingUniformJumpskirtColorMaroon
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Civilian
+        - Miscellaneous # Floof - Add loadouts for Miscellaneous department
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -578,7 +69,7 @@
     - ClothingUniformJumpsuitFlannel
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -593,7 +84,7 @@
     - ClothingUniformJumpskirtCasualBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -609,7 +100,7 @@
     - ClothingUniformJumpsuitCasualPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -625,7 +116,7 @@
     - ClothingUniformJumpskirtCasualPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -641,7 +132,7 @@
     - ClothingUniformJumpsuitCasualRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -656,7 +147,7 @@
     - ClothingUniformJumpskirtCasualRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -671,7 +162,7 @@
     - ClothingUniformJumpsuitTshirtJeans
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -687,7 +178,7 @@
     - ClothingUniformJumpsuitTshirtJeansGray
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -702,7 +193,7 @@
     - ClothingUniformJumpsuitTshirtJeansPeach
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -717,7 +208,7 @@
     - ClothingUniformJumpsuitJeansGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -733,7 +224,7 @@
     - ClothingUniformJumpsuitJeansRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -748,7 +239,7 @@
     - ClothingUniformJumpsuitJeansBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -764,7 +255,7 @@
     - ClothingUniformJumpsuitLostTourist
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -781,7 +272,7 @@
     - ClothingUniformJumpsuitHawaiBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -797,7 +288,7 @@
     - ClothingUniformJumpsuitHawaiBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -813,7 +304,7 @@
     - ClothingUniformJumpsuitHawaiRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -828,7 +319,7 @@
     - ClothingUniformJumpsuitHawaiYellow
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -845,7 +336,7 @@
     - ClothingUniformDressRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -860,7 +351,7 @@
     - ClothingUniformJumpsuitSober
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -875,7 +366,7 @@
     - ClothingUniformSkirtTurtle
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -890,7 +381,7 @@
     - UniformGeisha
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -905,7 +396,7 @@
     - ClothingCostumeArcDress
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -921,7 +412,7 @@
     - ClothingCostumeMioSkirt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -937,7 +428,7 @@
     - ClothingCostumeNaota
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -953,7 +444,7 @@
     - ClothingUniformJumpsuitLoungewear
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -969,7 +460,7 @@
     - ClothingUniformJumpsuitBartender
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -985,7 +476,7 @@
     - ClothingUniformJumpskirtBartender
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -998,11 +489,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingUniformKendoHakama
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1013,11 +505,13 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - ClothingUniformMartialGi
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1030,11 +524,13 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
   items:
     - ClothingUniformJumpsuitKimono
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1046,11 +542,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingKimonoBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1062,11 +559,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingKimonoPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1078,11 +576,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingKimonoPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1094,11 +593,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingKimonoSky
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1110,11 +610,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingKimonoGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1127,11 +628,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  canBeHeirloom: true
   items:
     - ClothingUniformSchoolGakuranBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1147,7 +649,7 @@
     - UniformSchoolgirlBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1162,7 +664,7 @@
     - UniformSchoolgirlBlue
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1178,7 +680,7 @@
     - UniformSchoolgirlCyan
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1194,7 +696,7 @@
     - UniformSchoolgirlGreen
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1210,7 +712,7 @@
     - UniformSchoolgirlOrange
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1226,7 +728,7 @@
     - UniformSchoolgirlPink
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1242,7 +744,7 @@
     - UniformSchoolgirlPurple
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1258,7 +760,7 @@
     - UniformSchoolgirlRed
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1273,7 +775,7 @@
     - UniformSchoolgirlDusk
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1289,7 +791,7 @@
     - UniformSchoolgirlBlazerTan
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1302,11 +804,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformMNKOfficeSkirt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1317,11 +820,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformMNKUnderGarment
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1332,11 +836,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformMNKGymBra
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1351,7 +856,7 @@
     - ClothingUniformMNKDressBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1366,7 +871,7 @@
     - ClothingUniformMNKBlackOveralls
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1381,7 +886,7 @@
     - ClothingUniformMNKBlackShoulder
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1396,7 +901,7 @@
     - ClothingUniformMNKTracksuitBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1412,7 +917,7 @@
     - ClothingUniformJumpsuitSuitBlack
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1427,7 +932,7 @@
     - ClothingUniformJumpsuitSuitBlackAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1442,7 +947,7 @@
     - ClothingUniformJumpsuitSuitBlackMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1457,7 +962,7 @@
     - ClothingUniformJumpsuitSuitBrown
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1473,7 +978,7 @@
     - ClothingUniformJumpsuitSuitBrownAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1488,7 +993,7 @@
     - ClothingUniformJumpsuitSuitBrownMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1499,11 +1004,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformJumpsuitSuitWhite
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1515,11 +1021,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformJumpsuitSuitWhiteAlt
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:
@@ -1530,11 +1037,12 @@
   category: Uniform
   cost: 1
   exclusive: true
+  customColorTint: true
   items:
     - ClothingUniformJumpsuitSuitWhiteMob
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutUniformsCivilian2
+      group: LoadoutUniformsCivilian
     - !type:CharacterDepartmentRequirement
       inverted: true
       departments:

@@ -4,21 +4,25 @@
   roundStart: true
   prototype: MobHarpy
   sprites: MobHarpySprites
+  defaultSkinTone: "#c0967f"
   markingLimits: MobHarpyMarkingLimits
   dollPrototype: MobHarpyDummy
   skinColoration: HumanToned
   minHeight: 0.6
-  defaultHeight: 0.8
+  #defaultHeight: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxHeight: 1.1
   minWidth: 0.55
-  defaultWidth: 0.8
+  #defaultWidth: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxWidth: 1.15
   customName: true
 
 - type: speciesBaseSprites
   id: MobHarpySprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobHarpyHead
+    Face: MobHumanoidAnyMarking
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
@@ -44,11 +48,10 @@
   id: MobHarpyMarkingLimits
   points:
     Underwear:
-      points: 1
-      required: true
-      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
+      points: 2 # FLOOF CHANGE
+      required: false # Floof, add underwear
     Undershirt:
-      points: 1 # Floof, add underwear
+      points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
       points: 1
@@ -64,6 +67,9 @@
       points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
+    HeadSide:
+      points: 3
+      required: false
     Chest:
       points: 1
       required: true
@@ -80,6 +86,10 @@
     LeftFoot:
       points: 2
       required: false
+    RightArm:
+      points: 1
+      required: false
+      defaultMarkings: [ HarpyWingDefaultHuescale ]
     RightHand:
       points: 2
       required: false
@@ -88,9 +98,6 @@
       required: false
     LeftHand:
       points: 2
-      required: false
-    HeadSide:
-      points: 1
       required: false
     Wings:
       points: 1

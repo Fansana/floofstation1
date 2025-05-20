@@ -5,6 +5,7 @@ namespace Content.Shared.Humanoid.Markings
     [Serializable, NetSerializable]
     public enum MarkingCategories : byte
     {
+        Face,
         Hair,
         FacialHair,
         Head,
@@ -22,8 +23,8 @@ namespace Content.Shared.Humanoid.Markings
         RightFoot,
         LeftLeg,
         LeftFoot,
-        Tail,
         Wings,
+        Tail,
         Overlay
     }
 
@@ -33,6 +34,7 @@ namespace Content.Shared.Humanoid.Markings
         {
             return layer switch
             {
+                HumanoidVisualLayers.Face => MarkingCategories.Face,
                 HumanoidVisualLayers.Hair => MarkingCategories.Hair,
                 HumanoidVisualLayers.FacialHair => MarkingCategories.FacialHair,
                 HumanoidVisualLayers.Head => MarkingCategories.Head,
@@ -50,8 +52,8 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.RLeg => MarkingCategories.RightLeg,
                 HumanoidVisualLayers.LFoot => MarkingCategories.LeftFoot,
                 HumanoidVisualLayers.RFoot => MarkingCategories.RightFoot,
-                HumanoidVisualLayers.Tail => MarkingCategories.Tail,
                 HumanoidVisualLayers.Wings => MarkingCategories.Wings,
+                HumanoidVisualLayers.Tail => MarkingCategories.Tail,
                 _ => MarkingCategories.Overlay
             };
         }

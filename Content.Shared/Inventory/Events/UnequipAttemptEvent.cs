@@ -18,6 +18,11 @@ public abstract class UnequipAttemptEventBase : CancellableEntityEventArgs
     public readonly EntityUid Equipment;
 
     /// <summary>
+    /// The slotFlags of the slot this item is being removed from.
+    /// </summary>
+    public readonly SlotFlags SlotFlags;
+
+    /// <summary>
     /// The slot the entity is being unequipped from.
     /// </summary>
     public readonly string Slot;
@@ -27,12 +32,18 @@ public abstract class UnequipAttemptEventBase : CancellableEntityEventArgs
     /// </summary>
     public string? Reason;
 
+    /// <summary>
+    ///     Floofstation - whether this is done in a way that bypasses accessibility checks, e.g. by an aghost or via loadouts.
+    /// </summary>
+    public bool BypassAccessCheck = false;
+
     public UnequipAttemptEventBase(EntityUid unequipee, EntityUid unEquipTarget, EntityUid equipment,
         SlotDefinition slotDefinition)
     {
         UnEquipTarget = unEquipTarget;
         Equipment = equipment;
         Unequipee = unequipee;
+        SlotFlags = slotDefinition.SlotFlags;
         Slot = slotDefinition.Name;
     }
 }

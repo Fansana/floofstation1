@@ -15,12 +15,16 @@
   - Medical
   - Maintenance
   - Chemistry
+# Floof section - Senior physicians get paramedic and external access  
+  - Paramedic
+  - External
+# Floof section end
   special:
   - !type:AddComponentSpecial
     components:
     - type: CPRTraining
     - type: SurgerySpeedModifier
-      SpeedModifier: 2.0
+      speedModifier: 2.0
 
 - type: startingGear
   id: SeniorPhysicianGear

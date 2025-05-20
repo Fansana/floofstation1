@@ -20,15 +20,17 @@
     - Female
     - Unsexed
   minHeight: 0.65
-  defaultHeight: 0.85
+  #defaultHeight: 0.85 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxHeight: 1.15
   minWidth: 0.6
-  defaultWidth: 0.85
+  #defaultWidth: 0.85 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxWidth: 1.2
 
 - type: speciesBaseSprites
   id: MobShadowkinSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobShadowkinHead
     Snout: MobShadowkinAnyMarkingFollowSkin
     HeadTop: MobShadowkinAnyMarkingFollowSkin
@@ -51,11 +53,10 @@
   id: MobShadowkinMarkingLimits
   points:
     Underwear:
-      points: 1
-      required: true
-      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
+      points: 2 # FLOOF CHANGE
+      required: false # Floof, add underwear
     Undershirt:
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false # Floof, add underwear
     Tail:
       points: 1

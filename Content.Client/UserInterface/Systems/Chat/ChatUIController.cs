@@ -210,6 +210,12 @@ public sealed class ChatUIController : UIController
         _input.SetInputCommand(ContentKeyFunctions.FocusEmote,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Emotes)));
 
+        _input.SetInputCommand(ContentKeyFunctions.FocusSubtle, // floof
+            InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Subtle)));
+
+        _input.SetInputCommand(ContentKeyFunctions.FocusSubtleOOC, // floof
+            InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.SubtleOOC)));
+
         _input.SetInputCommand(ContentKeyFunctions.FocusWhisperChat,
             InputCmdHandler.FromDelegate(_ => FocusChannel(ChatSelectChannel.Whisper)));
 
@@ -659,7 +665,7 @@ public sealed class ChatUIController : UIController
         var predicate = static (EntityUid uid, (EntityUid compOwner, EntityUid? attachedEntity) data)
             => uid == data.compOwner || uid == data.attachedEntity;
         var playerPos = player != null
-            ? EntityManager.GetComponent<TransformComponent>(player.Value).MapPosition
+            ? _transform?.GetMapCoordinates(player.Value) ?? MapCoordinates.Nullspace
             : MapCoordinates.Nullspace;
 
         var occluded = player != null && _examine.IsOccluded(player.Value);
@@ -678,7 +684,7 @@ public sealed class ChatUIController : UIController
                 continue;
             }
 
-            var otherPos = EntityManager.GetComponent<TransformComponent>(ent).MapPosition;
+            var otherPos = _transform?.GetMapCoordinates(ent) ?? MapCoordinates.Nullspace;
 
             if (occluded && !_examine.InRangeUnOccluded(
                     playerPos,
@@ -843,15 +849,28 @@ public sealed class ChatUIController : UIController
         }
     }
 
+    /// <summary>
+    ///  Applies post-processing to chat messages before they appear in chat.
+    ///  Also handles when to show speech bubbles.
+    /// </summary>
     public void ProcessChatMessage(ChatMessage msg, bool speechBubble = true)
     {
-        // color the name unless it's something like "the old man"
-        if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
+        // FLOOFSTATION CHANGE: this used to be here --v
+        // // color the name unless it's something like "the old man"
+        // if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
+        // {
+        //     var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
+        //     if (grammar != null && grammar.ProperNoun == true)
+        //         msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
+        // }
+        // FLOOFSTATION: Now its this --v
+        // color the name if it's got [Name] in it
+        if (_chatNameColorsEnabled)
         {
-            var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
-            if (grammar != null && grammar.ProperNoun == true)
-                msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
+            // Floofstation - unconditional name coloring
+            msg.WrappedMessage = SharedChatSystem.InjectTagInsideTag(msg, "Name", "color", GetNameColor(SharedChatSystem.GetStringInsideTag(msg, "Name")));
         }
+        // FLOOFSTATION end
 
         // Color any codewords for minds that have roles that use them
         if (_player.LocalUser != null && _mindSystem != null && _roleCodewordSystem != null)

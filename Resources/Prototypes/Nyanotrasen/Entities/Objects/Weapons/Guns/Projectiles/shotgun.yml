@@ -21,6 +21,7 @@
     solution: ammo
   - type: SolutionInjectOnProjectileHit
     transferAmount: 15
-    blockSlots: NONE #tranquillizer darts shouldn't be blocked by a mask
+    solution: ammo # Floofstation - Leave this here, it needs to be told to inject
+    blockSlots: NONE # Floofstation - tranquillizer darts shouldn't be blocked by a mask
   - type: InjectableSolution
     solution: ammo

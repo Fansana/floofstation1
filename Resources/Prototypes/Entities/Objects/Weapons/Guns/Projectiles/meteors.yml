@@ -19,7 +19,7 @@
     deleteOnCollide: false
   - type: Explosive
     explosionType: Default
-    totalIntensity: 600.0
+    totalIntensity: 900.0 # Floof - increase damage caused.
     intensitySlope: 30
     maxIntensity: 45
   - type: Physics

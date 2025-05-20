@@ -96,7 +96,7 @@ public sealed class IdCardConsoleSystem : SharedIdCardConsoleSystem
                 PrivilegedIdIsAuthorized(uid, component),
                 true,
                 targetIdComponent.FullName,
-                targetIdComponent.JobTitle,
+                targetIdComponent.LocalizedJobTitle,
                 targetAccessComponent.Tags.ToList(),
                 possibleAccess,
                 jobProto,
@@ -129,11 +129,14 @@ public sealed class IdCardConsoleSystem : SharedIdCardConsoleSystem
         _idCard.TryChangeJobTitle(targetId, newJobTitle, player: player);
 
         if (_prototype.TryIndex<JobPrototype>(newJobProto, out var job)
-            && _prototype.TryIndex<StatusIconPrototype>(job.Icon, out var jobIcon))
+            && _prototype.TryIndex(job.Icon, out var jobIcon))
         {
             _idCard.TryChangeJobIcon(targetId, jobIcon, player: player);
             _idCard.TryChangeJobDepartment(targetId, job);
         }
+
+        // Floof - moved the station records update up so it doesn't get omitted if the underlying job isn't changed
+        UpdateStationRecord(uid, targetId, newFullName, newJobTitle, job);
 
         if (!newAccessList.TrueForAll(x => component.AccessLevels.Contains(x)))
         {
@@ -169,7 +172,8 @@ public sealed class IdCardConsoleSystem : SharedIdCardConsoleSystem
         _adminLogger.Add(LogType.Action, LogImpact.Medium,
             $"{ToPrettyString(player):player} has modified {ToPrettyString(targetId):entity} with the following accesses: [{string.Join(", ", addedTags.Union(removedTags))}] [{string.Join(", ", newAccessList)}]");
 
-        UpdateStationRecord(uid, targetId, newFullName, newJobTitle, job);
+        // Floof - see above
+        // UpdateStationRecord(uid, targetId, newFullName, newJobTitle, job);
     }
 
     /// <summary>

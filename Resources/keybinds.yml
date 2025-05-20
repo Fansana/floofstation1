@@ -110,6 +110,13 @@ binds:
   type: State
   mod1: Shift
   key: Apostrophe
+- function: FocusSubtle # floof
+  type: State
+  key: Minus
+- function: FocusSubtleOOC # floof
+  type: State
+  mod1: Shift
+  key: LBracket
 - function: FocusWhisperChatWindow
   type: State
   key: Comma
@@ -468,9 +475,6 @@ binds:
 - function: OpenDecalSpawnWindow
   type: State
   key: F8
-- function: OpenScoreboardWindow
-  type: State
-  key: F9
 - function: OpenSandboxWindow
   type: State
   key: B
@@ -553,6 +557,47 @@ binds:
 - function: Hotbar9
   type: State
   key: Num9
+# Floof - removed default bindings for those because people won't stop complaining about them.
+# - function: Loadout0
+#   type: State
+#   key: Num0
+#   mod1: Shift
+# - function: Loadout1
+#   type: State
+#   key: Num1
+#   mod1: Shift
+# - function: Loadout2
+#   type: State
+#   key: Num2
+#   mod1: Shift
+# - function: Loadout3
+#   type: State
+#   key: Num3
+#   mod1: Shift
+# - function: Loadout4
+#   type: State
+#   key: Num4
+#   mod1: Shift
+# - function: Loadout5
+#   type: State
+#   key: Num5
+#   mod1: Shift
+# - function: Loadout6
+#   type: State
+#   key: Num6
+#   mod1: Shift
+# - function: Loadout7
+#   type: State
+#   key: Num7
+#   mod1: Shift
+# - function: Loadout8
+#   type: State
+#   key: Num8
+#   mod1: Shift
+# - function: Loadout9
+#   type: State
+#   key: Num9
+#   mod1: Shift
 - function: LookUp
   type: State
   key: Space

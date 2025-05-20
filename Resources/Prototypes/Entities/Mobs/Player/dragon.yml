@@ -6,6 +6,8 @@
   description: A flying leviathan, loosely related to space carps.
   abstract: true
   components:
+  - type: Body # Shitmed
+    prototype: SpaceDragon
   - type: Bloodstream
     bloodMaxVolume: 650
   - type: GhostRole
@@ -14,6 +16,7 @@
     makeSentient: true
     name: ghost-role-information-space-dragon-name
     description: ghost-role-information-space-dragon-description
+    rules: floof-ghost-role-information-hostile-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -91,6 +94,8 @@
     speedModifierThresholds:
       250: 0.7
       400: 0.5
+  - type: Damageable # Floof - Dragon buffs
+    damageModifierSet: Dragon
   # disable taking damage from fire, since its a fire breathing dragon
   - type: Flammable
     damage:
@@ -138,6 +143,11 @@
     tags:
     - CannotSuicide
     - DoorBumpOpener
+  - type: NightVision
+    isActive: true
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
 - type: entity
   parent: BaseMobDragon
@@ -145,11 +155,6 @@
   components:
   - type: Dragon
     spawnRiftAction: ActionSpawnRift
-  - type: GenericAntag
-    rule: Dragon
-  - type: ActionGun
-    action: ActionDragonsBreath
-    gunProto: DragonsBreathGun
   - type: GuideHelp
     guides:
     - MinorAntagonists
@@ -172,7 +177,7 @@
     soundGunshot:
       path: /Audio/Animals/space_dragon_roar.ogg
     soundEmpty: null
-    projectileSpeed: 5
+    projectileSpeed: 9 # Floof - Dragon buffs. Changed from 5.
 
 - type: entity
   parent: BaseMobDragon

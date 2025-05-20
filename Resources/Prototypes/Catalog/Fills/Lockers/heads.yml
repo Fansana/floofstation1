@@ -23,6 +23,7 @@
       - id: BoxPDACargo # Delta-V
       - id: QuartermasterIDCard # Delta-V
       - id: ClothingLongcoatLO # Floofstation
+      - id: AstroNavCartridge
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
       - id: CargoTechFabCircuitboard # Floof - port to EE if possible
@@ -36,6 +37,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
@@ -60,6 +62,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
@@ -83,6 +86,7 @@
   - type: StorageFill
     contents:
       - id: ClothingLongcoatCap # Floofstation
+      - id: ClothingOuterCoatCapTrench
       - id: NukeDisk
       - id: PinpointerNuclear
       - id: CaptainIDCard
@@ -133,6 +137,7 @@
     contents:
       - id: ClothingOuterHardsuitEngineeringWhite
       - id: ClothingLongcoatCE # Floofstation
+      - id: ClothingBeltChiefEngineerFilled # Floofstation
       - id: ClothingMaskBreath
       - id: ClothingEyesGlassesMeson
       - id: ClothingShoesBootsMagAdv
@@ -201,13 +206,13 @@
       - id: RubberStampCMO
       - id: RubberStampPsychologist # DeltaV
       - id: MedicalTechFabCircuitboard
-      - id: MedicalBiofabMachineBoard
       - id: BoxEncryptionKeyMedical
       - id: BoxPDAMedical # Delta-V
       - id: ClothingBeltMilitaryWebbingCMO # DeltaV - add webbing for CMO. ON THIS STATION, IT'S DRIP OR [die], CAPTAIN!
       - id: CMOIDCard # Delta-V
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: MedicalBiofabMachineBoard # Shitmed Change
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -228,12 +233,13 @@
       - id: RubberStampCMO
       - id: MedicalTechFabCircuitboard
       - id: BoxEncryptionKeyMedical
-      - id: MedicalBiofabMachineBoard
       - id: BoxPDAMedical # Delta-V
       - id: ClothingBeltMilitaryWebbingCMO # DeltaV - add webbing for CMO. ON THIS STATION, IT'S DRIP OR [die], CAPTAIN!
       - id: CMOIDCard # Delta-V
+      - id: MedTekCartridge # Delta-v
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: MedicalBiofabMachineBoard # Shitmed Change
 
 - type: entity
   id: LockerResearchDirectorFilledHardsuit
@@ -309,11 +315,11 @@
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
-      - id: BookSecretDocuments
       - id: BoxPDASecurity # Delta-V
       - id: HoSIDCard # Delta-V
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -339,11 +345,11 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
-      - id: BookSecretDocuments
       - id: BoxPDASecurity # Delta-V
       - id: HoSIDCard # Delta-V
       - id: LunchboxCommandFilledRandom # Delta-V Lunchboxes!
         prob: 0.3
+      - id: HyperlinkBookSpaceLaw # Floof - M3739 - #607
 
 - type: entity
   id: LockerFreezerVaultFilled

@@ -67,6 +67,11 @@ public abstract partial class BaseActionComponent : Component
     public (TimeSpan Start, TimeSpan End)? Cooldown;
 
     /// <summary>
+    ///     If true, the action will have an initial cooldown applied upon addition.
+    /// </summary>
+    [DataField] public bool StartDelay = false;
+
+    /// <summary>
     ///     Time interval between action uses.
     /// </summary>
     [DataField("useDelay")] public TimeSpan? UseDelay;
@@ -78,6 +83,11 @@ public abstract partial class BaseActionComponent : Component
     ///     when charges reach zero.
     /// </summary>
     [DataField("charges")] public int? Charges;
+
+    /// <summary>
+    /// DeltaV: If disabled the action will not disable when no charges remain. Use if you want to handle no charges differently.
+    /// </summary>
+    [DataField] public bool DisableWhenEmpty = true;
 
     /// <summary>
     ///     The max charges this action has. If null, this is set automatically from <see cref="Charges"/> on mapinit.

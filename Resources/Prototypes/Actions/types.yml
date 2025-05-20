@@ -327,6 +327,8 @@
     checkCanInteract: false
     checkConsciousness: false
     event: !type:WakeActionEvent
+    startDelay: true
+    useDelay: 2
 
 - type: entity
   id: ActionActivateHonkImplant
@@ -409,7 +411,7 @@
   id: ActionActivateMagillitisSerumImplant
   name: Magillitis Serum
   description: An experimental biochip which causes irreversable rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     checkCanInteract: false
@@ -420,3 +422,43 @@
       sprite: Actions/Implants/implants.rsi
       state: gorilla_rampage
     event: !type:UseMagillitisSerumImplantEvent
+
+
+- type: entity
+  id: ToggleNightVision
+  name: Switch night vision
+  description: Switches night vision.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Clothing/Eyes/Goggles/nightvision.rsi
+      state: icon
+    event: !type:ToggleNightVisionEvent
+
+- type: entity
+  id: ToggleThermalVision
+  name: Switch Thermal vision
+  description: Switches Thermal vision.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Clothing/Eyes/Goggles/thermal.rsi
+      state: icon
+    event: !type:ToggleThermalVisionEvent
+
+- type: entity
+  id: PulseThermalVision
+  parent: ToggleThermalVision
+  name: Pulse Thermal Vision
+  description: Activate thermal vision temporarily.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    useDelay: 4
+

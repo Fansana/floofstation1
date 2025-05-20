@@ -1,11 +1,11 @@
 - type: entity
   id: MobRevenant
+  parent:
+  - BaseMob
+  - Incorporeal
   name: revenant
   description: A spooky ghostie.
   components:
-  - type: MindContainer
-  - type: InputMover
-  - type: MobMover
   - type: Input
     context: "ghost"
   - type: MovementSpeedModifier
@@ -38,12 +38,11 @@
         mask:
         - GhostImpassable
   - type: MovementIgnoreGravity
-  - type: Damageable # Nyanotrasen - Corporeal Spirit allows Holy water to do damage
-    damageContainer: CorporealSpirit
-    damageModifierSet: CorporealSpirit
+  - type: Damageable
+    damageContainer: ManifestedSpirit # Floof - M3739 - #937 - CorporealSpirit container superseded by ManifestedSpirit
+    damageModifierSet: Spirit # DeltaV: Keep revenant extreme weakness to heat and bible
   - type: Examiner
   - type: NoSlip
-  - type: Actions
   - type: Eye
     drawFov: false
     visMask:
@@ -51,15 +50,13 @@
       - Ghost
   - type: ContentEye
     maxZoom: 1.2, 1.2
-  - type: DoAfter
-  - type: Alerts
   - type: NameIdentifier
     group: GenericNumber
   - type: GhostRole
     makeSentient: true
     name: ghost-role-information-revenant-name
     description: ghost-role-information-revenant-description
-    rules: ghost-role-information-revenant-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

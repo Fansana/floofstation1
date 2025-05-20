@@ -3,7 +3,7 @@ trait-description-Blindness = You are legally blind, and can't see clearly past 
 trait-examined-Blindness = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} eyes are glassy and unfocused. It doesn't seem like {SUBJECT($target)} can see you well, if at all.[/color]
 
 trait-name-Narcolepsy = Narcolepsy
-trait-description-Narcolepsy = 
+trait-description-Narcolepsy =
     Due to a neurological disorder, controlling your sleep-wake cycles is difficult for you.
     As a result, you may repeatedly fall asleep for short periods of time throughout the day.
 
@@ -41,8 +41,7 @@ trait-name-Muted = Muted
 trait-description-Muted =
     Either due to to an abnormality in your body development, or due to some body augmentation, you are unable to utilize spoken language.
     Consequently, you may encounter difficulties in communicating with others or using radio communication.
-    To compensate for this limitation, you have been taught the Galactic Sign Language.
-
+# Floof - M3739 - #701
 trait-name-BloodDeficiency = Blood Deficiency
 trait-description-BloodDeficiency =
     Your body loses more blood than it can replenish.
@@ -94,7 +93,7 @@ trait-name-Nearsighted = Nearsighted
 trait-description-Nearsighted = Your eyes are not what they once were, you have difficulty seeing things far away without corrective glasses.
 
 trait-name-NormalVisionHarpy = Trichromat Modification
-trait-description-NormalVisionHarpy = 
+trait-description-NormalVisionHarpy =
     Your eyes have been modified by means of advanced medicine to see in the standard colors of Red, Green, and Blue.
     You do not have the usual vision anomaly that your species may possess.
 
@@ -142,29 +141,43 @@ trait-description-Tenacity =
 trait-name-GlassJaw = Glass Jaw
 trait-description-GlassJaw =
     Your body is more fragile than others, resulting in a greater susceptibility to critical injuries
-    Your damage threshold for becoming Critical is decreased by 7 points.
+    Your damage threshold for becoming Critical is decreased by 10 points.
 
 trait-name-HighAdrenaline = High Adrenaline
 trait-description-HighAdrenaline =
     Whether by natural causes, genetic or bionic augmentation, you have a more potent adrenal gland.
-    When injured, your melee attacks deal up to 10% more damage, in addition to the natural bonuses from adrenaline.
-    The standard adrenaline bonuses to melee damage are up to a 20% increase.
+    When injured, your melee/throwing attacks deal up to 10% more damage, in addition to the natural bonuses from adrenaline.
+    The standard adrenaline bonuses to melee/throwing damage are up to a 20% increase.
 
 trait-name-AdrenalDysfunction = Adrenal Dysfunction
 trait-description-AdrenalDysfunction =
     Your adrenal gland is completely nonfunctional, or potentially missing outright.
-    Your melee attacks do not benefit from Adrenaline when injured.
-    The standard adrenaline bonuses to melee damage are up to a 20% increase.
+    Your melee/throwing attacks do not benefit from Adrenaline when injured.
+    The standard adrenaline bonuses to melee/throwing damage are up to a 20% increase.
 
 trait-name-Masochism = Masochism
 trait-description-Masochism =
     Deriving enjoyment from your own pain, you are not as inhibited by it as others.
-    You ignore the first 10% of stamina damage penalties to your melee attacks.
+    You ignore the first 10% of stamina damage penalties to your melee/throwing attacks.
 
 trait-name-LowPainTolerance = Low Pain Tolerance
 trait-description-LowPainTolerance =
     Your tolerance for pain is far below average, and its effects are more inhibiting.
-    Your melee damage is penalized by up to an additional 15% when taking stamina damage.
+    Your melee/throwing damage is penalized by up to an additional 15% when taking stamina damage.
+
+trait-name-Steadfast = Steadfast
+trait-description-Steadfast =
+    When others would buckle from the weight of your injuries, you still march forward unrelentingly.
+    For most species [color=gray](excluding IPC/Shadowkin)[/color], this trait modifies:
+    - [color=yellow]25%[/color] movement slow at [color=red]60[/color] damage ➔ [color=yellow]17%[/color] movement slow at [color=red]70[/color] damage
+    - [color=yellow]45%[/color] movement slow at [color=red]80[/color] damage ➔ [color=yellow]30%[/color] movement slow at [color=red]90[/color] damage
+
+trait-name-Feeble = Feeble
+trait-description-Feeble =
+    Your body responds poorly to injuries, making damage affect your movement more severely.
+    For most species [color=gray](excluding IPC/Shadowkin)[/color], this trait modifies:
+    - [color=yellow]25%[/color] movement slow at [color=red]60[/color] damage ➔ [color=yellow]30%[/color] movement slow at [color=red]45[/color] damage
+    - [color=yellow]45%[/color] movement slow at [color=red]80[/color] damage ➔ [color=yellow]54%[/color] movement slow at [color=red]65[/color] damage
 
 trait-name-MartialArtist = Martial Artist
 trait-description-MartialArtist =
@@ -213,20 +226,32 @@ trait-description-Voracious =
     Nothing gets between you and your food.
     Your endless consumption of food and drinks is twice as fast.
 
+-terrain-example = [color=gray](e.g. spider web, slime puddle, kudzu, space glue)[/color]
+-slippery-example = [color=gray](e.g. banana peel, water puddle, soap, space lube)[/color]
+
 trait-name-ParkourTraining = Parkour Training
 trait-description-ParkourTraining =
     Whether as a hobby, lifestyle, or professional training, you are trained in the discipline of parkour.
-    You're faster with climbing, crawling, lying down, and getting up.
+    You climb structures like tables [color=yellow]50%[/color] faster.
+    Slipping leaves you stunned for [color=yellow]30%[/color] shorter. { -slippery-example }
+    You gain a [color=yellow]50%[/color] resistance to slows from difficult terrain. { -terrain-example }
+
+trait-name-BadKnees = Bad Knees
+trait-description-BadKnees =
+    Whether due to injury, age, or wear and tear, your knees aren't particularly strong or flexible.
+    You climb structures like tables [color=yellow]50%[/color] slower.
+    Slipping leaves you stunned for [color=yellow]40%[/color] longer. { -slippery-example }
+    Difficult terrain slows you down [color=yellow]35%[/color] more. { -terrain-example }
 
 trait-name-Sluggish = Sluggish
 trait-description-Sluggish =
     You navigate the world slower than others, perhaps due to a medical condition, inactivity, or age.
-    You move slower, and it takes longer for you to climb, lie down and get up.
+    Your movement speed is decreased by [color=yellow]16%[/color].
 
 trait-name-SnailPaced = Snail-Paced
 trait-description-SnailPaced =
     You walk at a snail's pace, perhaps due to a medical condition, mobility impairment, or age.
-    You move substantially slower, and it takes far longer for you to climb, lie down and get up.
+    Your movement speed is decreased by [color=yellow]32%[/color].
 
 trait-name-LightStep = Light Step
 trait-description-LightStep =
@@ -415,29 +440,80 @@ trait-description-CyberEyes =
     Their most basic functionality is to provide amelioration for weaknesses of the wearer's natural eyes.
     The functionality of these implants can be extended by a variety of commercially available modules.
 
-trait-name-FlareShielding = Cyber-Eyes Flare Shielding
+trait-name-FlareShielding = Cyber-Eyes: Eye Damage Resistance
 trait-description-FlareShielding =
     Your cybereyes have been fitted with a photochromic lense that automatically darkens in response to intense stimuli.
-    This provides substantial protection from bright flashes of light, such as those from welding arcs.
+    This provides immunity from most bright flashes of light, such as those from welding arcs.
 
-trait-name-CyberEyesSecurity = Cyber-Eyes SecHud
+trait-name-CyberEyesSecurity = Cyber-Eyes: SecHud Module
 trait-description-CyberEyesSecurity =
     Your Cyber-Eyes have been upgraded to include a built-in Security Hud. Note that this augmentation is considered Contraband
     for anyone not under the employ of station Security personel, and may be disabled by your employer before dispatch to the station.
 
-trait-name-CyberEyesMedical = Cyber-Eyes MedHud
+trait-name-CyberEyesMedical = Cyber-Eyes: MedHud Module
 trait-description-CyberEyesMedical =
     Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, allowing you to track the relative health condition of biological organisms.
 
-trait-name-CyberEyesDiagnostic = Cyber-Eyes DiagHud
+trait-name-CyberEyesDiagnostic = Cyber-Eyes: Diagnostics Module
 trait-description-CyberEyesDiagnostic =
     Your Cyber-Eyes have been upgraded to include a built-in Diagnostic Hud, allowing you to track the condition of synthetic entities.
 
-trait-name-CyberEyesOmni = Cyber-Eyes HudSuite
+trait-name-CyberEyesOmni = Cyber-Eyes: Premium Suite Module
 trait-description-CyberEyesOmni =
-    This expensive implant provides the combined benefits of a SecHud, MedHud, and a DiagHud.
+    This expensive implant provides the combined benefits of a SecHud, MedHud, and a Diagnostics Module.
     Note that this augmentation is considered Contraband for anyone not under the employ of station Security personel,
     and may be disabled by your employer before dispatch to the station.
 
-trait-name-ShadowkinBlackeye = Blackeye
-trait-description-ShadowkinBlackeye = You lose your special Shadowkin powers, in return for some points.
+trait-name-DispelPower = Normality Projection
+trait-description-DispelPower =
+    Your Mentalic abilities include the power to enforce normality upon Noospheric phenomena.
+    This power, commonly known as "Dispel", allows the user to destroy otherworldly entities with their mind,
+    or to immediately end psychic effects.
+
+trait-name-MetapsionicPower = Metapsion
+trait-description-MetapsionicPower =
+    You are able to intuitively sense the activation of psionic abilities, as well as send out a 'scanning' pulse
+    to detect whether or not psions are nearby. This ability has a wide area of effect, and cannot precisely
+    scan individual entities. Still, it is better than being blind.
+
+trait-name-XenoglossyPower = Xenoglossy
+trait-description-XenoglossyPower =
+    An advanced form of Telepathy, Xenoglossy is the ability to speak using emotional and metaphysical concepts,
+    rather than words, to impart meaning directly into the minds of a listener. When speaking using Xenoglossy, a psion can be
+    universally understood by any entity, who will hear the words as if spoken in one's own native tongue. Additionally,
+    Xenoglossy grants the ability to divine the underlying emotional meaning from the minds of other speakers,
+    allowing its user to understand any spoken language as if it was the user's own native tongue.
+
+trait-name-PsychognomyPower = Psychognomist
+trait-description-PsychognomyPower =
+    A special talent derived from Telepathy, Psychognomy is the ability to read the underlying imprint of telepathic messages.
+    A Psychognomist can glean additional information from their telepathy, seeing vague outlines of what the source of a message
+    might be. This information is not precise, and is largely only useful for narrowing down who the source of a message might be.
+
+trait-name-Redshirt = Redshirt
+trait-description-Redshirt =
+    They said this air would be breathable.
+    Get in, get out again, and no one gets hurt.
+    Something is pulling me up the hill.
+    I look down in my red shirt.
+    I look down in my red shirt.
+    This trait reduces your death threshold by 100. This means you likely WILL NOT have a critical state.
+
+trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
+trait-description-BrittleBoneDisease =
+    Also known as "brittle bone disease", people with this genetic disorder have bones that are easily broken,
+    often simply by moving. This trait reduces your threshold for critical injury by 50 points.
+
+trait-name-LightAmplification = CyberEyes Module: Light Amplification
+trait-description-LightAmplification =
+    Your CyberEyes have been enhanced with a light amplifier module, enabling the user to toggle between standard sight and "Night Vision" mode.
+
+trait-name-ThermographicVision = CyberEyes Module: Thermographic Scanner
+trait-description-ThermographicVision =
+    Your CyberEyes have been enhanced with a Thermographic Scanner. When enabled, it captures a snapshot of the user's surroundings, while highlighting all
+    biological life forms. It can even detect individuals through the walls of a station.
+
+trait-name-BionicLeg = Bionic Legs
+trait-description-BionicLeg =
+    One or more of your limbs have been replaced with an expensive, state of the art bionic. It could be either one made of highly realistic synthflesh,
+    or a more obvious metal limb. This limb provides enhanced speed to it's user, allowing you to run away from situations faster or get to a place faster.

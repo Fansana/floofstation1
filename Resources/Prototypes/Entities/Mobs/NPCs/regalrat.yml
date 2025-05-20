@@ -89,7 +89,7 @@
     makeSentient: true
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
-    rules: ghost-role-information-rat-king-rules
+    rules: floof-ghost-role-information-solo-antag-rules # Floof station - Setting ghost role rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -133,6 +133,12 @@
     interfaces:
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
+  - type: NightVision
+    isActive: true
+    toggleAction: null
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
 - type: entity
   id: MobRatKingBuff
@@ -318,6 +324,12 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
+  - type: NightVision
+    isActive: true
+    toggleAction: null
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
 
 - type: weightedRandomEntity
   id: RatKingLoot

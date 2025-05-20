@@ -13,22 +13,46 @@
 #  id: LoadoutJanitorEars
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutJanitorEquipment
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutJanitorEquipment
+  maxItems: 4 # Floof - Add janitor loadouts
+  items:
+# Floof section - Add janitor loadouts
+    - type: loadout
+      id: LoadoutJanitorEquipmentMopItem
+    - type: loadout
+      id: LoadoutJanitorEquipmentBoxMousetrap
+    - type: loadout
+      id: LoadoutJanitorEquipmentWetFloorSign
+    - type: loadout
+      id: LoadoutJanitorEquipmentTrashBag
+    - type: loadout
+      id: LoadoutJanitorEquipmentLightReplacer
+    - type: loadout
+      id: LoadoutJanitorEquipmentBoxLightMixed
+    - type: loadout
+      id: LoadoutJanitorEquipmentHoloprojector
+    - type: loadout
+      id: LoadoutJanitorEquipmentPlunger
+# Floof section end
+
 #- type: characterItemGroup
 #  id: LoadoutJanitorEyes
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutJanitorGloves
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutJanitorGloves
+  maxItems: 1
+  items:
+# Floof section - Add janitor loadouts
+    - type: loadout
+      id: LoadoutClothingHandsJanitorWarmers
+    - type: loadout
+      id: LoadoutJanitorGloves
+# Floof section end
+
 #- type: characterItemGroup
 #  id: LoadoutJanitorHead
 #  maxItems: 1
@@ -49,16 +73,26 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutJanitorOuter
-#  maxItems: 1
-#  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutJanitorShoes
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutJanitorOuter
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutServiceWinterCoatJanitor
+
+- type: characterItemGroup
+  id: LoadoutJanitorShoes
+  maxItems: 1
+  items:
+# Floof section - Add janitor loadouts
+    - type: loadout
+      id: LoadoutClothingUnderSocksJanitor
+    - type: loadout
+      id: LoadoutJanitorShoesGaloshes
+    - type: loadout
+      id: LoadoutJanitorShoesWinter
+# Floof section end
+
 - type: characterItemGroup
   id: LoadoutJanitorUniforms
   maxItems: 1
@@ -69,3 +103,15 @@
       id: LoadoutServiceJumpsuitJanitorIdris
     - type: loadout
       id: LoadoutServiceJumpsuitJanitorOrion
+# Floof section - Add janitor loadouts
+    - type: loadout
+      id: LoadoutServiceJumpsuitJanitor
+    - type: loadout
+      id: LoadoutServiceJumpsuitJanitorSkirt
+    - type: loadout
+      id: LoadoutServiceJumpsuitJanitorJanimaidSkirt
+    - type: loadout
+      id: LoadoutServiceJumpsuitJanitorJanimaidMini
+    - type: loadout
+      id: LoadoutServiceJumpsuitJanitorClassicalMaidDress
+# Floof section end

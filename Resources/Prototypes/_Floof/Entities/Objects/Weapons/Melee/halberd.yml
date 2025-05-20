@@ -1,0 +1,96 @@
+
+- type: entity
+  name: halberd
+  parent: UnholyHalberd
+  id: WeaponHalberd
+  description: A polarm with an axe blade, topped with a spike, mounted on a long shaft. Produced by SESWC!
+  components:
+  - type: MeleeRequiresWield
+  - type: MeleeWeapon
+    heavyStaminaCost: 10
+  - type: Clothing
+    sprite: _Floof/Objects/Weapons/Melee/halberd.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Melee/halberd.rsi
+    state: icon
+
+- type: entity
+  name: energy halberd
+  parent: EnergySwordDouble
+  id: WeaponEnergyHalberd
+  description: A polarm handle with an energy-based axe head to it. Produced by SESWC!
+  components:
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.75
+    angle: 80
+    heavyStaminaCost: 10
+    heavyDamageBaseModifier: 1.50
+    damage:
+      types:
+        Blunt: 6.5 #its still a metal stick
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 3
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 2
+            Heat: 14
+            Structural: 25
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: 3
+  - type: Reflect # so it doenst inherit the reflect from the Dsword
+    reflectProb: .00
+    minReflectProb: .00
+  - type: Item
+    size: Huge
+    sprite: _Floof/Objects/Weapons/Melee/e_halberd-inhands.rsi
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi
+    layers:
+      - state: e_halberd
+      - state: e_halberd_blade
+        color: "#9b0909"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: ToggleableLightVisuals
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: IgniteOnMeleeHit
+    fireStacks: 1
+
+- type: entity
+  name: antique energy halberd
+  parent: WeaponEnergyHalberd
+  id: WeaponEnergyHalberdAntique
+  description: A two-handed polarm, also know as a halberd. Servers as a perfect weapon for an warden to protect his armory! Designed and produced by SESWC!
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi
+    layers:
+      - state: e_halberd
+      - state: e_halberd_blade
+        color: "#ffffff"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: IgniteOnMeleeHit
+    fireStacks: 0

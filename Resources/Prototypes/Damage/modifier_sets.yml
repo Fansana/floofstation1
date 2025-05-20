@@ -22,7 +22,7 @@
     Slash: 10
     Piercing: 10
     Heat: 10
-    Structural: 10
+    Structural: 80
 
 - type: damageModifierSet
   id: StructuralMetallic
@@ -167,7 +167,7 @@
     Piercing: 0.8
     Cold: 0.8
     Heat: 0.2
-#   Holy: 3 If we ever get some holy or magic sort of damage type they should be vulnerable
+    Holy: 1.5
   flatReductions:
     Heat: 3
 
@@ -269,6 +269,7 @@
     Radiation: 0.0
     Shock: 0.8
     Bloodloss: 0.4
+    Holy: 1
 
 - type: damageModifierSet
   id: Cockroach
@@ -379,28 +380,13 @@
     Slash: 0.9
     Piercing: 0.9
 
-# Shitmed modification: Change this if you want to alter how damage types affect part severing/integrity.
+# protects against radiation
 - type: damageModifierSet
-  id: PartDamage
+  id: PotassiumIodide
   coefficients:
-    Blunt: 0.8
-    Slash: 1.2
-    Piercing: 0.5
-    Cold: 0.5
-    Heat: 0.8
-    Shock: 0.5
+    Radiation: 0.1
 
 - type: damageModifierSet
-  id: Gorilla
+  id: ManifestedSpirit
   coefficients:
-    Asphyxiation: 1.5
-    Heat: 1.5
-    Cellular: 0
-    Poison: 1.5
-
-- type: damageModifierSet
-  id: GorillaRampaging
-  coefficients:
-    Blunt: 1.25
-    Cellular: 0
-    Poison: 1.5
+    Holy: 2

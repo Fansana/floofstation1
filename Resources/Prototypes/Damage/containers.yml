@@ -59,14 +59,27 @@
     - Burn
     - Brute
     - Airloss
-    - Immaterial
+    - Metaphysical 
   supportedTypes:
     - Poison
 
-# Shitmed
-- type: damageContainer
-  id: OrganicPart
-  supportedGroups:
-    - Brute
-    - Burn
 
+- type: damageContainer
+  id: ManifestedSpirit
+  supportedGroups:
+    - Metaphysical
+    - Brute
+  supportedTypes:
+    - Heat
+    - Shock
+    - Caustic
+
+- type: damageContainer
+  id: BiologicalMetaphysical
+  supportedGroups:
+  - Brute
+  - Burn
+  - Toxin
+  - Airloss
+  - Genetic
+  - Metaphysical

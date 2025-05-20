@@ -1,9 +1,9 @@
 using Content.Server.NPC.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.Interaction;
-using Content.Shared.Physics;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
+using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 
@@ -13,6 +13,7 @@ public sealed partial class NPCCombatSystem
 {
     [Dependency] private readonly SharedCombatModeSystem _combat = default!;
     [Dependency] private readonly RotateToFaceSystem _rotate = default!;
+    [Dependency] private readonly MapSystem _map = default!;
 
     private EntityQuery<CombatModeComponent> _combatQuery;
     private EntityQuery<NPCSteeringComponent> _steeringQuery;
@@ -134,7 +135,7 @@ public sealed partial class NPCCombatSystem
             {
                 comp.LOSAccumulator += UnoccludedCooldown;
                 // For consistency with NPC steering.
-                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, Transform(comp.Target).Coordinates, distance + 0.1f);
+                comp.TargetInLOS = _interaction.InRangeUnobstructed(uid, comp.Target, distance + 0.1f);
             }
 
             if (!comp.TargetInLOS)
@@ -188,13 +189,9 @@ public sealed partial class NPCCombatSystem
             EntityCoordinates targetCordinates;
 
             if (_mapManager.TryFindGridAt(xform.MapID, targetPos, out var gridUid, out var mapGrid))
-            {
-                targetCordinates = new EntityCoordinates(gridUid, mapGrid.WorldToLocal(targetSpot));
-            }
+                targetCordinates = new(gridUid, _map.WorldToLocal(gridUid, mapGrid, targetSpot)); // Floof - fixed to use gridUid instead of targetUid (local to which it's always 0,0)
             else
-            {
-                targetCordinates = new EntityCoordinates(xform.MapUid!.Value, targetSpot);
-            }
+                targetCordinates = new(xform.MapUid!.Value, targetSpot);
 
             comp.Status = CombatStatus.Normal;
 
@@ -203,7 +200,7 @@ public sealed partial class NPCCombatSystem
                 return;
             }
 
-            _gun.SetTarget(gun, comp.Target);
+            _gun.SetTarget(gun, comp.Target); // Floofstation - this used to be on upstream and should still be there
             _gun.AttemptShoot(uid, gunUid, gun, targetCordinates);
         }
     }

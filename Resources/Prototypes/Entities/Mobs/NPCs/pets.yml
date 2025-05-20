@@ -200,7 +200,7 @@
 
 - type: entity
   name: Bingus
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobBingus
   description: Bingus my beloved...
   components:
@@ -225,12 +225,6 @@
   - type: Inventory
     speciesId: cat
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -263,7 +257,7 @@
 
 - type: entity
   name: McGriff
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobMcGriff
   description: This dog can tell something smells around here, and that something is CRIME!
   components:
@@ -288,12 +282,6 @@
   - type: Inventory
     speciesId: puppy
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -369,7 +357,7 @@
 
 - type: entity
   name: Walter
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, StripableInventoryBase]
   id: MobWalter
   description: He likes chems and treats. Walter.
   components:
@@ -394,12 +382,6 @@
   - type: Inventory
     speciesId: dog
     templateId: pet
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: DamageStateVisuals
     states:
       Alive:
@@ -610,6 +592,7 @@
     allowMovement: true
     name: ghost-role-information-hamlet-name
     description: ghost-role-information-hamlet-description
+    rules: floof-ghost-role-information-free-agent-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: InteractionPopup
     successChance: 1
@@ -648,9 +631,9 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: ghost-role-information-Shiva-name
-    description: ghost-role-information-Shiva-description
-    rules: ghost-role-information-Shiva-rules
+    name: ghost-role-information-shiva-name
+    description: ghost-role-information-shiva-description
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable # DeltaV
   - type: InteractionPopup
     successChance: 0.5 # spider is mean
@@ -737,6 +720,7 @@
     prob: 0.25
     name: ghost-role-information-willow-name
     description: ghost-role-information-willow-description
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [ BoxingKangarooGear ]
@@ -807,7 +791,7 @@
   - type: GhostRole
     name: ghost-role-information-smile-name
     description: ghost-role-information-smile-description
-    rules: ghost-role-information-smile-rules
+    rules: floof-ghost-role-information-crew-aligned-rules # Floof station - Setting ghost role rules
   - type: Grammar
     attributes:
       proper: true

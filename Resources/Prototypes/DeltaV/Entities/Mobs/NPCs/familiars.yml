@@ -61,7 +61,7 @@
   - type: Familiar
   - type: Dispellable
   - type: Damageable
-    damageContainer: CorporealSpirit
+    damageContainer: ManifestedSpirit # Floof - M3739 - #937 - CorporealSpirit container superseded by ManifestedSpirit
     damageModifierSet: CorporealSpirit
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
     allowedStates:
@@ -92,6 +92,8 @@
     nameSegments: [names_golem]
   - type: Psionic
     removable: false
+    assayFeedback:
+      - ifrit-feedback
     psychognomicDescriptors:
       - p-descriptor-bound
       - p-descriptor-cyclic
@@ -116,6 +118,9 @@
     - TauCetiBasic
   - type: GhostTakeoverAvailable
   - type: GhostRole
+    name: ghost-role-information-ifrit-name
+    description: ghost-role-information-ifrit-description
+    rules: floof-ghost-role-information-familiar-rules # Floofstation - Modifying ghost role rules
     makeSentient: true
     allowMovement: true
     allowSpeech: true

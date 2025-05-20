@@ -11,3 +11,51 @@
     inverted: true
     traits:
       - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
+
+- type: antag
+  id: TraitorSleeper
+  name: roles-antag-syndicate-agent-sleeper-name
+  antagonist: true
+  setPreference: true
+  objective: roles-antag-syndicate-agent-sleeper-objective
+  requirements:
+  - !type:CharacterOverallTimeRequirement # Floof - Playtime requirement just like Traitor
+    min: 14400 # Floofstation - 4 hours
+  - !type:CharacterTraitRequirement # Floofstation
+    inverted: true
+    traits:
+      - Tiny # Floofstation - Too much of an advantage in a gunfight or stealth
+
+# Syndicate Operative Outfit - Monkey
+- type: startingGear
+  id: SyndicateOperativeGearMonkey
+  equipment:
+    head: ClothingHeadHatOutlawHat
+    jumpsuit: ClothingUniformJumpsuitOperative
+    mask: CigaretteSyndicate
+
+# Syndicate Operative Outfit - Barratry
+- type: startingGear
+  id: SyndicateOperativeGearExtremelyBasic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    gloves: ClothingHandsGlovesColorBlack
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+    - WeaponPistolViper
+    - PinpointerSyndicateNuclear
+    - DeathAcidifierImplanter
+
+#Syndicate Operative Outfit - Basic
+- type: startingGear
+  id: SyndicateOperativeGearBasic
+  parent: SyndicateOperativeGearExtremelyBasic
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+    gloves: ClothingHandsGlovesCombat
+    pocket1: BaseUplinkRadio40TC
+    id: SyndiPDA
+

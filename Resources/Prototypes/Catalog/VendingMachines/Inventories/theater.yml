@@ -34,6 +34,7 @@
     ClothingOuterSuitChicken: 2
     ClothingHeadHatChickenhead: 2
     ClothingOuterSuitMonkey: 2
+    ClothingShrimpFishermanSuit: 2 # Floof - ShrimpFishermanSuit - a tider was here and gave us a shrimp
     ClothingHeadHatPumpkin: 2
     ClothingHeadHatShrineMaidenWig: 2
     ClothingOuterSuitShrineMaiden: 2
@@ -140,6 +141,14 @@
     ClothingUniformJumpskirtMime: 2
     ClothingBeltSuspenders: 2
     RubberStampMime: 1
+    #Floof start
+    ClothingHandsGoldRing: 2
+    ClothingHandsWebRing: 2
+    ClothingHandsDiamondBand: 2
+    ClothingHandsGoldRingSpiderGem: 2
+    ClothingHandsWebDiamondRing: 2
+    ClothingHandsWebRingSpiderGem: 2
+    #Floof End
   contrabandInventory: # Frontier - Hidden inventory
     ClothingHeadHatMimesoftFlipped: 1
     BarberScissors: 1
@@ -156,7 +165,6 @@
     ClothingUniformMusicKingBlack: 2
     ClothingUniformMusicKing: 2
     ClothingUniformWeddingDress: 2
-    ClothingHandsGoldRing: 2
   emaggedInventory:
     ClothingShoesBling: 1
     ClothingShoesBootsCowboyFancy: 1

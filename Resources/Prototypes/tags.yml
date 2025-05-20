@@ -32,10 +32,10 @@
   id: ATVKeys
 
 - type: Tag
-  id: Baguette
+  id: Balloon
 
 - type: Tag
-  id: Balloon
+  id: HydroponicsToolClippers
 
 - type: Tag
   id: Banana
@@ -227,7 +227,7 @@
   id: BoxHug
 
 - type: Tag
-  id: Burnt
+  id: Brain
 
 - type: Tag
   id: BrassInstrument
@@ -251,7 +251,19 @@
   id: Bucket
 
 - type: Tag
+  id: Burger
+
+- type: Tag
   id: BulletFoam
+
+- type: Tag
+  id: BulletRubber
+
+- type: Tag
+  id: Burnt
+
+- type: Tag
+  id: Bun
 
 - type: Tag
   id: BypassDropChecks
@@ -261,6 +273,9 @@
 
 - type: Tag
   id: CableCoil
+
+- type: Tag
+  id: Cake
 
 - type: Tag
   id: Candle
@@ -375,6 +390,13 @@
   id: Chicken
 
 - type: Tag
+  id: Cheese
+
+# Allowed to control someone wearing a Chef's hat if inside their hat.
+- type: Tag
+  id: ChefPilot
+
+- type: Tag
   id: ChemDispensable # container that can go into the chem dispenser
 
 - type: Tag
@@ -433,6 +455,9 @@
 
 - type: Tag
   id: Cow
+
+- type: Tag
+  id: Crab
 
 - type: Tag
   id: Crayon
@@ -549,6 +574,9 @@
   id: DrinkCan
 
 - type: Tag
+  id: DrinkGlass
+
+- type: Tag
   id: DrinkSpaceGlue
 
 - type: Tag
@@ -655,6 +683,9 @@
 
 - type: Tag
   id: Goat
+
+- type: Tag
+  id: Goliath
 
 - type: Tag
   id: GPS
@@ -778,6 +809,9 @@
 
 - type: Tag
   id: Igniter
+
+- type: Tag
+  id: Ingredient
 
 - type: Tag #Drop this innate tool instead of deleting it.
   id: InnateDontDelete
@@ -963,6 +997,9 @@
 
 - type: Tag
   id: NozzleBackTank
+
+- type: Tag
+  id: Nugget # for chicken nuggets
 
 - type: Tag
   id: NukeOpsUplink
@@ -1152,6 +1189,9 @@
   id: ShellShotgun
 
 - type: Tag
+  id: ShellShotgunLight # shotgun shells that are compatible with the flare gun.
+
+- type: Tag
   id: Shiv
 
 - type: Tag
@@ -1168,6 +1208,9 @@
 
 - type: Tag
   id: Skewer
+
+- type: Tag
+  id: Slice # sliced fruit, vegetables, pizza etc.
 
 - type: Tag
   id: SmallAIChip
@@ -1221,6 +1264,9 @@
   id: StringInstrument
 
 - type: Tag
+  id: StationAi
+
+- type: Tag
   id: StationMapElectronics
 
 - type: Tag
@@ -1255,6 +1301,9 @@
 
 - type: Tag
   id: TabletopBoard
+
+- type: Tag
+  id: Taco
 
 - type: Tag
   id: TabletopPiece
@@ -1393,7 +1442,7 @@
 
 - type: Tag
   id: UnathiEmotes
-  
+# Floof - M3739 - Begin Floof species tags
 - type: Tag
   id: MothEmotes
 
@@ -1402,6 +1451,13 @@
 
 - type: Tag
   id: DionaEmotes
+
+- type: Tag
+  id: ChitinidEmotes
+
+- type: Tag
+  id: KitsuneEmotes
+# Floof - M3739 - End Floof species tags
 # EE Emote Fix End
 
 # Floof tags
@@ -1440,3 +1496,13 @@
 - type: Tag
   id: Sterilebag
 #floof tag ends
+
+- type: Tag
+  id: SiliconMob
+
+- type: Tag
+  id: WeldingTool
+
+- type: Tag
+  id: WeldbotFixableStructure
+

@@ -179,7 +179,7 @@
   id: LoadoutSpeedLoaderMagnum
   category: JobsSecurityAUncategorized
   cost: 2
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -196,7 +196,7 @@
   id: LoadoutSpeedLoaderMagnumSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -213,7 +213,7 @@
   id: LoadoutSpeedLoaderMagnumRubber
   category: JobsSecurityAUncategorized
   cost: 2
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityEquipment
@@ -227,7 +227,7 @@
   id: LoadoutSpeedLoaderMagnumRubberSpare
   category: JobsSecurityAUncategorized
   cost: 4
-  exclusive: true
+#  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityEquipment
@@ -237,27 +237,78 @@
   items:
     - SpeedLoaderMagnumRubber
 
-- type: loadout
-  id: LoadoutMagazineMagnum
-  category: JobsSecurityAUncategorized
-  cost: 4
-  exclusive: true
-  requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: Security
-      min: 3600 # 1 hours
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSecurityEquipment
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Security
-  items:
-    - MagazineMagnum
+# - type: loadout # Floof - N1984 is too much.
+#   id: LoadoutMagazineMagnum
+#   category: JobsSecurityAUncategorized
+#   cost: 4
+# #  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
+#   requirements:
+#     - !type:CharacterDepartmentTimeRequirement
+#       department: Security
+#       min: 3600 # 1 hours
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityEquipment
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - MagazineMagnum
+
+# - type: loadout
+#   id: LoadoutMagazineMagnumRubber
+#   category: JobsSecurityAUncategorized
+#   cost: 4
+# #  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
+#   requirements:
+#     - !type:CharacterDepartmentTimeRequirement
+#       department: Security
+#       min: 3600 # 1 hours
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityEquipment
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - MagazineMagnumRubber
+
+# - type: loadout
+#   id: LoadoutMagazineMagnumSpare
+#   category: JobsSecurityAUncategorized
+#   cost: 4
+# #  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
+#   requirements:
+#     - !type:CharacterDepartmentTimeRequirement
+#       department: Security
+#       min: 3600 # 1 hours
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityEquipment
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - MagazineMagnum
+
+# - type: loadout
+#   id: LoadoutMagazineMagnumRubberSpare
+#   category: JobsSecurityAUncategorized
+#   cost: 4
+# #  exclusive: true # Floof - Nonclothing loadouts are nonexclusive
+#   requirements:
+#     - !type:CharacterDepartmentTimeRequirement
+#       department: Security
+#       min: 3600 # 1 hours
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityEquipment
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - MagazineMagnumRubber
 
 - type: loadout
-  id: LoadoutMagazineMagnumRubber
+  id: LoadoutSpeedLoaderRifleHeavy
   category: JobsSecurityAUncategorized
-  cost: 4
+  cost: 2
   exclusive: true
   requirements:
     - !type:CharacterDepartmentTimeRequirement
@@ -269,10 +320,10 @@
       departments:
         - Security
   items:
-    - MagazineMagnumRubber
+    - SpeedLoaderRifleHeavy
 
 - type: loadout
-  id: LoadoutMagazineMagnumSpare
+  id: LoadoutSpeedLoaderRifleHeavySpare
   category: JobsSecurityAUncategorized
   cost: 4
   exclusive: true
@@ -286,24 +337,35 @@
       departments:
         - Security
   items:
-    - MagazineMagnum
+    - SpeedLoaderRifleHeavy
 
 - type: loadout
-  id: LoadoutMagazineMagnumRubberSpare
+  id: LoadoutSpeedLoaderRifleHeavyRubber
   category: JobsSecurityAUncategorized
-  cost: 4
+  cost: 2
   exclusive: true
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: Security
-      min: 3600 # 1 hours
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityEquipment
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
   items:
-    - MagazineMagnumRubber
+    - SpeedLoaderRifleHeavyRubber
+
+- type: loadout
+  id: LoadoutSpeedLoaderRifleHeavyRubberSpare
+  category: JobsSecurityAUncategorized
+  cost: 4
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityEquipment
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - SpeedLoaderRifleHeavyRubber
 
 # Service Weapon, limit 1 selection.
 # Security no longer spawns with a weapon automatically, instead they have a free choice of security appropriate Duty Pistol in their loadouts.
@@ -313,6 +375,8 @@
   id: LoadoutSecurityDisabler
   category: JobsSecurityAUncategorized
   cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -326,6 +390,8 @@
   id: LoadoutSecurityMk58
   category: JobsSecurityAUncategorized
   cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -342,6 +408,8 @@
   id: LoadoutSecurityMk58NonLethal
   category: JobsSecurityAUncategorized
   cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -355,6 +423,8 @@
   id: LoadoutSecurityRevolver
   category: JobsSecurityAUncategorized
   cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -371,6 +441,8 @@
   id: LoadoutSecurityRevolverNonLethal
   category: JobsSecurityAUncategorized
   cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -384,6 +456,8 @@
   id: LoadoutSecurityRevolverDeckard
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -400,6 +474,8 @@
   id: LoadoutSecurityRevolverDeckardNonLethal
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -409,39 +485,45 @@
   items:
     - WeaponRevolverDeckardNonLethalSecurity
 
-- type: loadout
-  id: LoadoutSecurityPistolN1984
-  category: JobsSecurityAUncategorized
-  cost: 5
-  requirements:
-    - !type:CharacterDepartmentTimeRequirement
-      department: Security
-      min: 3600 # 1 hours
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSecurityWeapons
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Security
-  items:
-    - WeaponPistolN1984Security
+# - type: loadout # Floof - N1984 is too much.
+#   id: LoadoutSecurityPistolN1984
+#   category: JobsSecurityAUncategorized
+#   cost: 5
+#   canBeHeirloom: true
+#   guideEntry: SecurityWeapons
+#   requirements:
+#     - !type:CharacterDepartmentTimeRequirement
+#       department: Security
+#       min: 3600 # 1 hours
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityWeapons
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - WeaponPistolN1984Security
 
-- type: loadout
-  id: LoadoutSecurityPistolN1984NonLethal
-  category: JobsSecurityAUncategorized
-  cost: 5
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutSecurityWeapons
-    - !type:CharacterDepartmentRequirement
-      departments:
-        - Security
-  items:
-    - WeaponPistolN1984SecurityNonLethal
+# - type: loadout # Floof - N1984 is too much.
+#   id: LoadoutSecurityPistolN1984NonLethal
+#   category: JobsSecurityAUncategorized
+#   cost: 5
+#   canBeHeirloom: true
+#   guideEntry: SecurityWeapons
+#   requirements:
+#     - !type:CharacterItemGroupRequirement
+#       group: LoadoutSecurityWeapons
+#     - !type:CharacterDepartmentRequirement
+#       departments:
+#         - Security
+#   items:
+#     - WeaponPistolN1984SecurityNonLethal
 
 - type: loadout
   id: LoadoutSecurityPistolViper
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -458,6 +540,8 @@
   id: LoadoutSecurityPistolViperNonLethal
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -471,6 +555,8 @@
   id: LoadoutSecurityPistolViperWood
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -487,6 +573,8 @@
   id: LoadoutSecurityEquipmentTruncheon
   category: JobsSecurityAUncategorized
   cost: 3
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -506,6 +594,8 @@
   id: LoadoutSecurityPistolSvalin
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -522,6 +612,8 @@
   id: LoadoutSecurityEnergyGunMini
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -538,6 +630,8 @@
   id: LoadoutSecurityEnergyGunPistol
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -554,6 +648,8 @@
   id: LoadoutSecurityPistolPollock
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -570,6 +666,8 @@
   id: LoadoutSecurityPistolPollockNonlethal
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -583,6 +681,8 @@
   id: LoadoutSecurityRevolverSnub
   category: JobsSecurityAUncategorized
   cost: 3
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -599,6 +699,8 @@
   id: LoadoutSecurityRevolverSnubNonlethal
   category: JobsSecurityAUncategorized
   cost: 3
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -612,6 +714,8 @@
   id: LoadoutSecurityRevolverK38Master
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -628,6 +732,8 @@
   id: LoadoutSecurityRevolverK38MasterNonlethal
   category: JobsSecurityAUncategorized
   cost: 1
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -641,6 +747,8 @@
   id: LoadoutSecurityRevolverFitz
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -657,6 +765,8 @@
   id: LoadoutSecurityRevolverFitzNonlethal
   category: JobsSecurityAUncategorized
   cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -670,6 +780,8 @@
   id: LoadoutSecurityRevolverPython
   category: JobsSecurityAUncategorized
   cost: 5
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Security
@@ -686,6 +798,8 @@
   id: LoadoutSecurityRevolverPythonNonlethal
   category: JobsSecurityAUncategorized
   cost: 5
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutSecurityWeapons
@@ -694,6 +808,40 @@
         - Security
   items:
     - WeaponRevolverPythonNonlethalSecurity
+
+- type: loadout
+  id: LoadoutSecurityArgenti
+  category: JobsSecurityAUncategorized
+  cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      min: 3600 # 1 hours
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityWeapons
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - WeaponRevolverArgentiSecurity
+
+- type: loadout
+  id: LoadoutSecurityArgentiNonLethal
+  category: JobsSecurityAUncategorized
+  cost: 0
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityWeapons
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - WeaponRevolverArgentiNonLethalSecurity
+
 
 # Eyes
 - type: loadout
@@ -835,6 +983,20 @@
 
 # Outer
 - type: loadout
+  id: LoadoutClothingOuterWinterCoatSec
+  category: JobsSecurityAUncategorized
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityOuter
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+  items:
+  - ClothingOuterWinterSec
+
+
+- type: loadout
   id: LoadoutClothingOuterArmorPlateCarrier
   category: JobsSecurityAUncategorized
   cost: 0
@@ -889,6 +1051,20 @@
         - Security
   items:
     - ClothingOuterArmorBasicSlim
+    
+- type: loadout
+  id: LoadoutClothingOuterCoatGreatcoat # Floof - M3739 - #690
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSecurityOuter
+    - !type:CharacterDepartmentRequirement
+      departments:
+        - Security
+  items:
+    - ClothingOuterCoatGreatcoat
 
 # Shoes
 - type: loadout

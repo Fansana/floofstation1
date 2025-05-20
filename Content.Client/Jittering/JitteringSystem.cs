@@ -45,8 +45,7 @@ namespace Content.Client.Jittering
 
         private void OnAnimationCompleted(EntityUid uid, JitteringComponent jittering, AnimationCompletedEvent args)
         {
-            // FLoofstation - avoid restarting the jittering animation on entites that already stopped jittering
-            if(args.Key != _jitterAnimationKey || jittering.LifeStage >= ComponentLifeStage.Stopping)
+            if (args.Key != _jitterAnimationKey || jittering.LifeStage >= ComponentLifeStage.Stopping)
                 return;
 
             if (TryComp(uid, out AnimationPlayerComponent? animationPlayer)

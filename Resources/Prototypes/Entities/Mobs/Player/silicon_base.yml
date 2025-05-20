@@ -27,6 +27,9 @@
     - type: Damageable
       damageContainer: Silicon
       damageModifierSet: IPC
+    - type: DamageForceSay # Floofstation
+      forceSayStringPrefix: damage-force-say-IPC-
+      forceSayStringCount: 7
     - type: InteractionOutline
     - type: MovementSpeedModifier
       baseWalkSpeed: 4
@@ -93,6 +96,7 @@
         - map: ["enum.HumanoidVisualLayers.Head"]
         - map: ["enum.HumanoidVisualLayers.Snout"]
         - map: ["enum.HumanoidVisualLayers.Eyes"]
+        - map: ["enum.HumanoidVisualLayers.Face"]
         - map: ["enum.HumanoidVisualLayers.RArm"]
         - map: ["enum.HumanoidVisualLayers.LArm"]
         - map: ["enum.HumanoidVisualLayers.RLeg"]
@@ -201,6 +205,7 @@
     - type: CreamPied
     - type: Stripping
     - type: Strippable
+    - type: ComplexInteraction
     - type: SurgeryTarget
     - type: Targeting
     - type: UserInterface
@@ -209,11 +214,15 @@
           type: HumanoidMarkingModifierBoundUserInterface
         enum.StrippingUiKey.Key:
           type: StrippableBoundUserInterface
-        enum.SurgeryUIKey.Key:
-          type: SurgeryBui
-        enum.InstrumentUiKey.Key: # Floof - M3739 - Funnily enough, this was never given to this prototype at first, resulting in it being unable to utilize the singing trait at all.
+        enum.InstrumentUiKey.Key:
           type: InstrumentBoundUserInterface
           requireInputValidation: false
+        enum.RadialSelectorUiKey.Key:
+          type: RadialSelectorMenuBUI
+        enum.ListViewSelectorUiKey.Key:
+          type: ListViewSelectorBUI
+        enum.SurgeryUIKey.Key:
+          type: SurgeryBui
     - type: Emoting
     - type: Grammar
       attributes:
@@ -229,6 +238,7 @@
     - type: Body
       prototype: IPC
       requiredLegs: 2
+      thermalVisibility: false
     - type: Ensnareable
       sprite: Objects/Misc/ensnare.rsi
     - type: Speech

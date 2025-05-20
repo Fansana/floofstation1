@@ -27,8 +27,11 @@
   - BoxShotgunIncendiary
   - MagazineRifleIncendiary
   - MagazinePistolIncendiary
+  - MagazinePistolSubMachineGunIncendiary
+  - MagazineMagnumIncendiary
   - MagazineLightRifleIncendiary
   - SpeedLoaderMagnumIncendiary
+  - SpeedLoaderRifleHeavyIncendiary # Frontier
   - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
   - MagazineBoxMagnumIncendiary
@@ -69,6 +72,12 @@
   - CartridgeMagnumRubber
   - CartridgeLightRifleRubber
   - CartridgeRifleRubber
+  - MagazineRifleRubber
+  - MagazinePistolRubber
+  - MagazinePistolSubMachineGunRubber
+  - MagazineMagnumRubber
+  - MagazineLightRifleRubber
+  - SpeedLoaderMagnumRubber
   - MagazineBoxPistolRubber
   - MagazineBoxMagnumRubber
   - MagazineBoxLightRifleRubber
@@ -83,6 +92,10 @@
   - MagazinePistolRubber #floof
   - SpeedLoaderMagnumRubber #floof
   - WeaponDisabler
+  - MagazineBoxLightRifleRubber # Frontier
+  - MagazineBoxMagnumRubber # Frontier
+  - MagazineBoxPistolRubber # Frontier
+  - MagazineBoxRifleRubber # Frontier
 
 - type: technology
   id: UraniumMunitions
@@ -96,8 +109,11 @@
   recipeUnlocks:
   - MagazineRifleUranium
   - MagazinePistolUranium
+  - MagazinePistolSubMachineGunUranium
+  - MagazineMagnumUranium
   - MagazineLightRifleUranium
   - SpeedLoaderMagnumUranium
+  - SpeedLoaderRifleHeavyUranium # Frontier
   - MagazineBoxPistolUranium
   - MagazineBoxMagnumUranium
   - MagazineBoxLightRifleUranium
@@ -122,6 +138,7 @@
   - HoloprojectorSecurity
   - WeaponDisablerSMG
   - BolaEnergy
+  - WeaponHalberd # Floofstation
 
 # Tier 2
 

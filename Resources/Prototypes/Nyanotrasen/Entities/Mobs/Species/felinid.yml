@@ -6,16 +6,15 @@
   abstract: true
   components:
   - type: Sprite
-    scale: 0.8, 0.8
+    #scale: 0.8, 0.8 Floofstation - while this doesn't technically cause any issues, this creates potential instability if changes to the heightAdjust system are made. As someone who made changes to the heightAdjust system, this can be very confusing.
   - type: HumanoidAppearance
     species: Felinid
-    initial: Felinid
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.28
+          radius: 0.35 # Floofstation - changed from 0.28. Default shape scaling is both not needed and causes issues due to EE's heightAdjust system. 0.35 is standard, DeltaV used 0.28 to shrink their size to 80%
         density: 140
         restitution: 0.0
         mask:
@@ -72,6 +71,7 @@
     understands:
     - TauCetiBasic
     - Nekomimetic
+    naturalLanguage: Nekomimetic # Floof: explicitly stated natural languages
   - type: Thieving
     ignoreStripHidden: true
     stealth: Subtle
@@ -90,6 +90,9 @@
     - FootstepSound
     - DoorBumpOpener
     - FelinidEmotes
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-felinid-
+    forceSayStringCount: 7 # Default is 7, but defining it anyway in case it changes or someone wants to add/remove messages
 
 - type: entity
   save: false

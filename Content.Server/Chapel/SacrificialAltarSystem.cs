@@ -59,7 +59,7 @@ public sealed class SacrificialAltarSystem : SharedSacrificialAltarSystem
 
         // finally gib the targets old body
         if (TryComp<BodyComponent>(target, out var body))
-            _body.GibBody(target, gibOrgans: false, body, launchGibs: true);
+            _body.GibBody(target, acidify: true, body, launchGibs: true);
         else
             QueueDel(target);
     }
@@ -119,8 +119,7 @@ public sealed class SacrificialAltarSystem : SharedSacrificialAltarSystem
         var args = new DoAfterArgs(EntityManager, user, ent.Comp.SacrificeTime, ev, target: target, eventTarget: ent)
         {
             BreakOnDamage = true,
-            BreakOnUserMove = true,
-            BreakOnTargetMove = true,
+            BreakOnMove = true,
             BreakOnWeightlessMove = true,
             NeedHand = true
         };

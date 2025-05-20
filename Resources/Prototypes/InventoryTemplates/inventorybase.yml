@@ -1,0 +1,18 @@
+- type: entity
+  abstract: true
+  id: InventoryBase
+  components:
+    - type: Inventory
+    - type: InventorySlots
+    - type: InventorySlotBlocking # Floofstation
+
+- type: entity
+  abstract: true
+  parent: InventoryBase
+  id: StripableInventoryBase
+  components:
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface

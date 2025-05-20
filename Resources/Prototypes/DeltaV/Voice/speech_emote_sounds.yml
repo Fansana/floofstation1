@@ -242,6 +242,10 @@
       path: /Audio/Voice/Arachnid/arachnid_click.ogg
     Crying:
       collection: FemaleCry
+    Hiss: # Delta-V - M3739 - Not too sure how this wasn't retained in the port. Did we begin the process before it merged?
+      path: /Audio/Animals/snake_hiss.ogg
+    Weh: # Floof - M3739 - the wehpocalypse claims the ants
+      collection: Weh
 
 - type: emoteSounds
   id: MaleFeroxi
@@ -304,3 +308,87 @@
       collection: Weh
     Gnash:
       collection: FeroxiGnashes
+
+- type: emoteSounds
+  id: MaleKitsune
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: KitsuneScream
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Squeak:
+      collection: KitsuneSqueal
+    Growl:
+      collection: KitsuneGrowl
+    Whine: #Floof - M3739 - #937 - TODO: Give them a unique whine.
+      collection: VulpkaninWhines
+    Gekker: #Floof - M3739 - #937 - Foxes do be laughin' a lot.
+      collection: VulpkaninGekker
+    Yap: #Floof - M3739 - #937 - Foxes do be yappin a lot.
+      collection: VulpkaninYap
+#    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
+#      collection: MaleGasp
+#    DefaultDeathgasp: 
+#      collection: MaleDeathGasp
+
+- type: emoteSounds
+  id: FemaleKitsune
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: KitsuneScream
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Squeak:
+      collection: KitsuneSqueal
+    Growl:
+      collection: KitsuneGrowl
+    Whine: #Floof - M3739 - #937 - TODO: Give them a unique whine.
+      collection: VulpkaninWhines
+    Gekker: #Floof - M3739 - #937 - Foxes do be laughin' a lot.
+      collection: VulpkaninGekker
+    Yap: #Floof - M3739 - #937 - Foxes do be yappin a lot.
+      collection: VulpkaninYap
+#    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
+#      collection: FemaleGasp
+#    DefaultDeathgasp: 
+#      collection: FemaleDeathGasp

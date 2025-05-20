@@ -11,6 +11,7 @@
     allowMovement: true
     name: ghost-role-information-nukie-mouse-name
     description: ghost-role-information-nukie-mouse-description
+    rules: floof-ghost-role-information-team-antag-rules # Floofstation - Modifying ghost role rules
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments: [names_mouse_death_commando]
@@ -159,8 +160,7 @@
     - Syndicate
   # make the player a traitor once its taken
   - type: AutoTraitor
-    giveUplink: false
-    giveObjectives: false
+    profile: TraitorReinforcement
   - type: InteractionPopup
     successChance: 0.6
     interactSuccessString: petting-success-nukie-mouse

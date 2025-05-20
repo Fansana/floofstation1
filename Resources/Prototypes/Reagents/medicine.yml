@@ -181,7 +181,7 @@
   physicalDesc: reagent-physical-desc-fizzy
   flavor: medicine
   color: "#0091ff"
-  worksOnTheDead: true # Floof
+  worksOnTheDead: true
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: -5
@@ -199,12 +199,9 @@
           damage:
           # todo scale with temp like SS13
             groups:
-              Airloss: -10 # Floof: -6<-10
-              # Brute: -4 # Floof
-              # Burn: -6 # Floof
-              # Toxin: -4 # Floof
-        - !type:ModifyBloodLevel # Floof
-          amount: 5 # Floof
+              Airloss: -10
+        - !type:ModifyBloodLevel
+          amount: 5
 
 - type: reagent
   id: Doxarubixadone
@@ -214,7 +211,7 @@
   physicalDesc: reagent-physical-desc-bubbling
   flavor: medicine
   color: "#32cd32"
-  worksOnTheDead: true # Floof
+  worksOnTheDead: true
   metabolisms:
     Medicine:
       effects:
@@ -224,9 +221,9 @@
             max: 213.0
           damage:
             types:
-             Cellular: -4 # Floof: -2<-4
-            groups: # Floof
-                Brute: 1 # Floof
+             Cellular: -4
+            groups:
+                Brute: 1
 
 - type: reagent
   id: Dermaline
@@ -498,12 +495,12 @@
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          max: 288.15 # Floof
+          max: 288.15
         amount: 100000 # thermal energy, not temperature!
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          min: 298.15 # Floof
+          min: 298.15
         amount: -10000
       - !type:PopupMessage
         type: Local
@@ -793,6 +790,7 @@
             Brute: -1
           types:
             Poison: -0.5 ##Should be about what it was when it healed the toxin group
+            Radiation: -0.15 ##Should really only heal minor accidental exposures
             Heat: -0.5
             Shock: -0.5
             Cold: -0.5 # Was .33, Buffed due to limb damage changes
@@ -919,6 +917,10 @@
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 10
+        type: Remove
       - !type:ResetNarcolepsy
         conditions:
         - !type:ReagentThreshold
@@ -940,6 +942,10 @@
   metabolisms:
     Medicine:
       effects:
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 10
+        type: Remove
       - !type:ResetNarcolepsy
         conditions:
         - !type:ReagentThreshold
@@ -1210,7 +1216,7 @@
           types:
             Heat: -3.0
             Shock: -3.0
-            Cold: -3.0 # Floof
+            Cold: -3.0
             Caustic: -1.0
 
 - type: reagent
@@ -1276,3 +1282,133 @@
         - "psicodine-effect-anxieties-wash-away"
         - "psicodine-effect-at-peace"
         probability: 0.2
+
+- type: reagent
+  id: PotassiumIodide
+  name: reagent-name-potassium-iodide
+  group: Medicine
+  desc: reagent-desc-potassium-iodide
+  physicalDesc: reagent-physical-desc-grainy
+  flavor: medicine
+  color: "#baa15d"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:GenericStatusEffect
+        key: RadiationProtection
+        component: RadiationProtection
+        time: 2
+        type: Add
+        refresh: false
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 20
+        damage:
+          types:
+            Poison: 1
+
+- type: reagent
+  id: Haloperidol
+  name: reagent-name-haloperidol
+  group: Medicine
+  desc: reagent-desc-haloperidol
+  physicalDesc: reagent-physical-desc-crystalline
+  flavor: medicine
+  color: "#27870a"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:Emote
+        emote: Yawn
+        showInChat: true
+        probability: 0.1
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        component: Drowsiness
+        time: 4
+        type: Add
+        refresh: false
+      - !type:GenericStatusEffect
+        key: Jitter
+        time: 4.0
+        type: Remove
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        time: 10.0
+        type: Remove
+      - !type:AdjustReagent
+        reagent: Desoxyephedrine
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Ephedrine
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Stimulants
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: THC
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: SpaceDrugs
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Bananadine
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: SpaceGlue
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: MindbreakerToxin
+        amount: -3.0
+
+- type: reagent
+  id: HolyWater
+  name: reagent-name-holywater
+  group: Medicine
+  desc: reagent-desc-holywater
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: holy
+  color: "#75b1f0"
+  boilingPoint: 100.0
+  meltingPoint: 0.0
+  reactiveEffects:
+    Extinguish:
+      methods: [ Touch ]
+      effects:
+        - !type:ExtinguishReaction
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Holy: 0.5
+  metabolisms: #Could nullify debuffs of feeding.
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+    Medicine:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 0.1
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -0.5
+            Burn: -0.5
+          types:
+            Holy: 1
+      - !type:PurifyEvil
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+  plantMetabolism: #Heals plants a little with the holy power within it.
+  - !type:PlantAdjustHealth
+    amount: 0.1
+  tileReactions:
+  - !type:ExtinguishTileReaction { }
+

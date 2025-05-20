@@ -1,0 +1,54 @@
+- type: loadout
+  id: LoadoutClothingHandsHeadSecurityWarmers
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsHeadSecurityWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUnderSocksHeadSecurity
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksHeadSecurity
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutClothingUniformHeadSecurityThong
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformHeadSecurityThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+
+- type: loadout
+  id: LoadoutCommandHoSEnergySheath
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutHeadOfSecurityWeapons # M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+  items:
+  - ClothingBeltEnergySheathFilledHoS

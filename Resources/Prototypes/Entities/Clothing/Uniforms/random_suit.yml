@@ -145,6 +145,11 @@
           base_leg_short: Sixteen
           base_leg_skirt: Sixteen
           base_leg_skirt_long: Sixteen
+  - type: Tag # Floof
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+    - ShirtlessClothing
 
 - type: entity
   parent: ClothingUniformRandom

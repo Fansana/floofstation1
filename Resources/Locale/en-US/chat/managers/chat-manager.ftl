@@ -34,13 +34,13 @@ chat-manager-entity-whisper-unknown-wrap-message = [BubbleHeader][font size=10][
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
-    *[false] the {$entityName} {$message}[/italic]
-     [true] {$entityName} {$message}[/italic]
+    *[false] the [Name]{$entityName}[/Name] {$message}[/italic]
+     [true] [Name]{$entityName}[/Name] {$message}[/italic]
     }
 
 chat-manager-entity-subtle-wrap-message = [italic][color={$color}]{ PROPER($entity) ->
-    *[false] the {$entityName} subtly {$message}[/color][/italic]
-     [true] {$entityName} subtly {$message}[/color][/italic]
+    *[false] the [Name]{$entityName}[/Name] subtly {$message}[/color][/italic]
+     [true] [Name]{$entityName}[/Name] subtly {$message}[/color][/italic]
     }
 
 chat-manager-entity-looc-wrap-message = LOOC: {$entityName}: {$message}
@@ -61,6 +61,9 @@ chat-manager-rate-limited = You are sending messages too quickly!
 chat-manager-rate-limit-admin-announcement = Player { $player } breached chat rate limits. Watch them if this is a regular occurence.
 
 chat-manager-send-empathy-chat-wrap-message = {$source}: {$message}
+
+chat-manager-send-cult-chat-wrap-message = [bold]\[{ $channelName }\] [BubbleHeader]{ $player }[/BubbleHeader]:[/bold] [BubbleContent]{ $message }[/BubbleContent]
+chat-manager-cult-channel-name = Blood Cult
 
 ## Speech verbs for chat
 

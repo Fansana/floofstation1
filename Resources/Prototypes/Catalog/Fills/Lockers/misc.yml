@@ -29,9 +29,11 @@
       prob: 0.5
     - id: MedkitOxygenFilled
       prob: 0.2
-    - id: WeaponFlareGun
+    - !type:EntSelector
+      id: WeaponFlareGun
       prob: 0.05
-    - id: BoxMRE
+    - !type:EntSelector
+      id: BoxMRE
       prob: 0.1
 
 - type: entity
@@ -127,6 +129,10 @@
     - id: BalloonSyn
     - id: WeaponSniperMosin
       weight: 2
+    - !type:EntSelector
+      id: ClothingEyesNightVisionGogglesSyndie
+    - !type:EntSelector
+      id: ClothingEyesThermalVisionGogglesSyndie
 
 - type: entityTable
   id: MaintenanceLockerLoot

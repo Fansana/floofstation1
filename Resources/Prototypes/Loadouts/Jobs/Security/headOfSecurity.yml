@@ -13,9 +13,10 @@
   id: LoadoutCommandHoSPulsePistol
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -26,9 +27,10 @@
   id: LoadoutCommandHoSWt550
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -39,9 +41,10 @@
   id: LoadoutCommandHoSKatanaSheath
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -52,9 +55,10 @@
   id: LoadoutCommandHoSC20r
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -65,9 +69,10 @@
   id: LoadoutCommandHoSBulldog
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -78,9 +83,10 @@
   id: LoadoutCommandHoSEnergySword
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -91,9 +97,10 @@
   id: LoadoutCommandHoSEnergyGun
   category: JobsSecurityHeadOfSecurity
   cost: 0
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutHeadOfSecurityWeapon
+      group: LoadoutHeadOfSecurityWeapons # Floof - M3739 - #690 - Why add an 's' at the end? Nobody knows, but they did, and now so do we.
     - !type:CharacterJobRequirement
       jobs:
         - HeadOfSecurity
@@ -182,6 +189,19 @@
 
 # Outer
 - type: loadout
+  id: LoadoutCommandHOSOuterWinterUnarmored
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutHeadOfSecurityOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+  items:
+  - ClothingOuterWinterHoSUnarmored
+
+- type: loadout
   id: LoadoutCommandHOSOuterWinter
   category: JobsSecurityHeadOfSecurity
   cost: 0
@@ -194,6 +214,19 @@
   items:
     - ClothingOuterWinterHoS
 
+- type: loadout
+  id: LoadoutCommandHOSLongcoat # Floof
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutHeadOfSecurityOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - HeadOfSecurity
+  items:
+    - ClothingLongcoatHoS
+    
 - type: loadout
   id: LoadoutCommandHOSOuterTrench
   category: JobsSecurityHeadOfSecurity

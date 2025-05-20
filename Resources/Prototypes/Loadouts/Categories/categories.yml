@@ -52,6 +52,9 @@
     - JobsCommandAUncategorized
     - JobsCommandCaptain
     - JobsCommandHeadOfPersonnel
+    - JobsCommandAdminAssistant
+    - JobsCommandBlueshieldOfficer
+    - JobsCommandNanorep
 
 - type: loadoutCategory
   id: JobsCommandAUncategorized
@@ -61,6 +64,15 @@
 
 - type: loadoutCategory
   id: JobsCommandHeadOfPersonnel
+
+- type: loadoutCategory
+  id: JobsCommandAdminAssistant
+
+- type: loadoutCategory
+  id: JobsCommandBlueshieldOfficer
+
+- type: loadoutCategory
+  id: JobsCommandNanorep
 
 # Engineering
 - type: loadoutCategory
@@ -141,6 +153,7 @@
     - JobsLogisticsCourier
     - JobsLogisticsLogisticsOfficer
     - JobsLogisticsSalvageSpecialist
+    - JobsLogisticsInventorySpecialist #floof senior cargo
 
 - type: loadoutCategory
   id: JobsLogisticsAUncategorized
@@ -156,6 +169,9 @@
 
 - type: loadoutCategory
   id: JobsLogisticsSalvageSpecialist
+
+- type: loadoutCategory
+  id: JobsLogisticsInventorySpecialist #floof senior cargo
 
 # Medical
 - type: loadoutCategory
@@ -206,6 +222,7 @@
     - JobsSecuritySecurityOfficer
     - JobsSecuritySeniorOfficer
     - JobsSecurityWarden
+    - JobsSecurityPrisonGuard # Floof - Prison Guard
 
 - type: loadoutCategory
   id: JobsSecurityAUncategorized
@@ -231,6 +248,9 @@
 - type: loadoutCategory
   id: JobsSecurityWarden
 
+- type: loadoutCategory
+  id: JobsSecurityPrisonGuard # Floof - Prison Guard
+  
 # Service
 - type: loadoutCategory
   id: JobsService

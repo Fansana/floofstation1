@@ -1,5 +1,5 @@
 - type: entity
-  parent: MobObserver
+  parent: [MobObserver, InventoryBase]
   id: AdminObserver
   name: admin observer
   categories: [ HideSpawnMenu ]
@@ -25,7 +25,9 @@
     canInteract: true
   - type: GhostHearing
   - type: Hands
+  - type: ComplexInteraction
   - type: Puller
+    needsHands: false # Tail Drag
     pushAcceleration: 1000000 # Will still be capped in max speed
     maxPushRange: 20
   - type: CombatMode
@@ -34,6 +36,7 @@
     bodyType: Kinematic
   - type: Body
     prototype: Aghost
+    thermalVisibility: false
   - type: Access
     groups:
     - AllAccess
@@ -77,8 +80,10 @@
   - type: RadarConsole
     followEntity: true
   - type: CargoOrderConsole
+  - type: BankClient
   - type: CrewMonitoringConsole
   - type: GeneralStationRecordConsole
+    canDeleteEntries: true
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: CrewMonitor
@@ -91,14 +96,13 @@
   - type: Stripping
   - type: SolutionScanner
   - type: IgnoreUIRange
-  - type: ShowRevIcons
-  - type: ShowZombieIcons
+  - type: ShowAntagIcons
   - type: Inventory
     templateId: aghost
-  - type: InventorySlots
   - type: Loadout
     prototypes: [ MobAghostGear ]
   - type: SupermatterImmune
+  - type: BypassInteractionChecks
 
 - type: entity
   id: ActionAGhostShowSolar

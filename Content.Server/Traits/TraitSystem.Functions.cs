@@ -1,3 +1,4 @@
+using Content.Shared.FixedPoint;
 using Content.Shared.Traits;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
@@ -9,15 +10,20 @@ using Content.Server.Abilities.Psionics;
 using Content.Shared.Psionics;
 using Content.Server.Language;
 using Content.Shared.Mood;
-using Content.Server.NPC.Systems;
 using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Damage.Components;
+using Content.Shared.NPC.Systems;
+using Content.Shared.Tag;
+using Content.Shared.Body.Part;
+using Content.Server.Body.Systems;
+using Content.Shared.Body.Components;
 
 namespace Content.Server.Traits;
 
@@ -137,6 +143,9 @@ public sealed partial class TraitAddPsionics : TraitFunction
     [DataField, AlwaysPushInheritance]
     public List<ProtoId<PsionicPowerPrototype>> PsionicPowers { get; private set; } = new();
 
+    [DataField, AlwaysPushInheritance]
+    public bool PlayFeedback;
+
     public override void OnPlayerSpawn(EntityUid uid,
         IComponentFactory factory,
         IEntityManager entityManager,
@@ -147,7 +156,34 @@ public sealed partial class TraitAddPsionics : TraitFunction
 
         foreach (var powerProto in PsionicPowers)
             if (prototype.TryIndex(powerProto, out var psionicPower))
-                psionic.InitializePsionicPower(uid, psionicPower, false);
+                psionic.InitializePsionicPower(uid, psionicPower, PlayFeedback);
+    }
+}
+
+/// <summary>
+///     This isn't actually used for any traits, surprise, other systems can use these functions!
+///     This is used by Items of Power to remove a psionic power when unequipped.
+/// </summary>
+[UsedImplicitly]
+public sealed partial class TraitRemovePsionics : TraitFunction
+{
+    [DataField, AlwaysPushInheritance]
+    public List<ProtoId<PsionicPowerPrototype>> PsionicPowers { get; private set; } = new();
+
+    [DataField, AlwaysPushInheritance]
+    public bool Forced = true;
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        var prototype = IoCManager.Resolve<IPrototypeManager>();
+        var psionic = entityManager.System<PsionicAbilitiesSystem>();
+
+        foreach (var powerProto in PsionicPowers)
+            if (prototype.TryIndex(powerProto, out var psionicPower))
+                psionic.RemovePsionicPower(uid, psionicPower, Forced);
     }
 }
 
@@ -317,6 +353,25 @@ public sealed partial class TraitAddArmor : TraitFunction
 }
 
 [UsedImplicitly]
+public sealed partial class TraitRemoveArmor : TraitFunction
+{
+    [DataField, AlwaysPushInheritance]
+    public List<string> DamageModifierSets { get; private set; } = new();
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        if (!entityManager.TryGetComponent<DamageableComponent>(uid, out var damageableComponent))
+            return;
+
+        foreach (var modifierSet in DamageModifierSets)
+            damageableComponent.DamageModifierSets.Remove(modifierSet);
+    }
+}
+
+[UsedImplicitly]
 public sealed partial class TraitAddSolutionContainer : TraitFunction
 {
     [DataField, AlwaysPushInheritance]
@@ -348,6 +403,9 @@ public sealed partial class TraitModifyMobThresholds : TraitFunction
     public int CritThresholdModifier;
 
     [DataField, AlwaysPushInheritance]
+    public int SoftCritThresholdModifier;
+
+    [DataField, AlwaysPushInheritance]
     public int DeadThresholdModifier;
 
     public override void OnPlayerSpawn(EntityUid uid,
@@ -366,12 +424,107 @@ public sealed partial class TraitModifyMobThresholds : TraitFunction
                 thresholdSystem.SetMobStateThreshold(uid, critThreshold + CritThresholdModifier, MobState.Critical);
         }
 
+        if (SoftCritThresholdModifier != 0)
+        {
+            var softCritThreshold = thresholdSystem.GetThresholdForState(uid, MobState.SoftCritical, threshold);
+            if (softCritThreshold != 0)
+                thresholdSystem.SetMobStateThreshold(uid, softCritThreshold + SoftCritThresholdModifier, MobState.SoftCritical);
+        }
+
         if (DeadThresholdModifier != 0)
         {
             var deadThreshold = thresholdSystem.GetThresholdForState(uid, MobState.Dead, threshold);
             if (deadThreshold != 0)
                 thresholdSystem.SetMobStateThreshold(uid, deadThreshold + DeadThresholdModifier, MobState.Dead);
         }
+    }
+}
+
+[UsedImplicitly]
+public sealed partial class TraitModifyMobState : TraitFunction
+{
+    // Three-State Booleans my beloved.
+    // :faridabirb.png:
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowMovementWhileCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowMovementWhileSoftCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowMovementWhileDead;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowTalkingWhileCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowTalkingWhileSoftCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowTalkingWhileDead;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? DownWhenCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? DownWhenSoftCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? DownWhenDead;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowHandInteractWhileCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowHandInteractWhileSoftCrit;
+
+    [DataField, AlwaysPushInheritance]
+    public bool? AllowHandInteractWhileDead;
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        if (!entityManager.TryGetComponent<MobStateComponent>(uid, out var mobStateComponent))
+            return;
+
+        if (AllowMovementWhileCrit is not null)
+            mobStateComponent.AllowMovementWhileCrit = AllowMovementWhileCrit.Value;
+
+        if (AllowMovementWhileSoftCrit is not null)
+            mobStateComponent.AllowHandInteractWhileSoftCrit = AllowMovementWhileSoftCrit.Value;
+
+        if (AllowMovementWhileDead is not null)
+            mobStateComponent.AllowMovementWhileDead = AllowMovementWhileDead.Value;
+
+        if (AllowTalkingWhileCrit is not null)
+            mobStateComponent.AllowTalkingWhileCrit = AllowTalkingWhileCrit.Value;
+
+        if (AllowTalkingWhileSoftCrit is not null)
+            mobStateComponent.AllowTalkingWhileSoftCrit = AllowTalkingWhileSoftCrit.Value;
+
+        if (AllowTalkingWhileDead is not null)
+            mobStateComponent.AllowTalkingWhileDead = AllowTalkingWhileDead.Value;
+
+        if (DownWhenCrit is not null)
+            mobStateComponent.DownWhenCrit = DownWhenCrit.Value;
+
+        if (DownWhenSoftCrit is not null)
+            mobStateComponent.DownWhenSoftCrit = DownWhenSoftCrit.Value;
+
+        if (DownWhenDead is not null)
+            mobStateComponent.DownWhenDead = DownWhenDead.Value;
+
+        if (AllowHandInteractWhileCrit is not null)
+            mobStateComponent.AllowHandInteractWhileCrit = AllowHandInteractWhileCrit.Value;
+
+        if (AllowHandInteractWhileSoftCrit is not null)
+            mobStateComponent.AllowHandInteractWhileSoftCrit = AllowHandInteractWhileSoftCrit.Value;
+
+        if (AllowHandInteractWhileDead is not null)
+            mobStateComponent.AllowHandInteractWhileDead = AllowHandInteractWhileDead.Value;
     }
 }
 
@@ -398,5 +551,115 @@ public sealed partial class TraitModifyStamina : TraitFunction
         staminaComponent.CritThreshold += StaminaModifier;
         staminaComponent.Decay += DecayModifier;
         staminaComponent.Cooldown += CooldownModifier;
+    }
+}
+
+/// <summary>
+///     Used for traits that modify SlowOnDamageComponent.
+/// </summary>
+[UsedImplicitly]
+public sealed partial class TraitModifySlowOnDamage : TraitFunction
+{
+    // <summary>
+    //     A flat modifier to add to all damage threshold keys.
+    // </summary>
+    [DataField, AlwaysPushInheritance]
+    public float DamageThresholdsModifier;
+
+    // <summary>
+    //     A multiplier applied to all speed modifier values.
+    //     The higher the multiplier, the stronger the slowdown.
+    // </summary>
+    [DataField, AlwaysPushInheritance]
+    public float SpeedModifierMultiplier = 1f;
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        if (!entityManager.TryGetComponent<SlowOnDamageComponent>(uid, out var slowOnDamage))
+            return;
+
+        var newSpeedModifierThresholds = new Dictionary<FixedPoint2, float>();
+
+        foreach (var (damageThreshold, speedModifier) in slowOnDamage.SpeedModifierThresholds)
+            newSpeedModifierThresholds[damageThreshold + DamageThresholdsModifier] = 1 - (1 - speedModifier) * SpeedModifierMultiplier;
+
+        slowOnDamage.SpeedModifierThresholds = newSpeedModifierThresholds;
+    }
+}
+
+// <summary>
+// Adds a Tag to something
+// </summary>
+[UsedImplicitly]
+public sealed partial class TraitAddTag : TraitFunction
+{
+    [DataField, AlwaysPushInheritance]
+    public List<ProtoId<TagPrototype>> Tags { get; private set; } = new();
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        var tagSystem = entityManager.System<TagSystem>();
+        tagSystem.AddTags(uid, Tags);
+    }
+}
+
+// <summary>
+// Replaces a body part with a cybernetic. This is only for limbs such as arms and legs, don't use this for organs(old or new).
+// </summary>
+[UsedImplicitly]
+public sealed partial class TraitCyberneticLimbReplacement : TraitFunction
+{
+    [DataField, AlwaysPushInheritance]
+    public BodyPartType RemoveBodyPart { get; private set; } = BodyPartType.Arm;
+
+    [DataField, AlwaysPushInheritance]
+    public BodyPartSymmetry PartSymmetry { get; private set; } = BodyPartSymmetry.Left;
+
+    [DataField, AlwaysPushInheritance]
+    public EntProtoId? ProtoId { get; private set; }
+
+    [DataField, AlwaysPushInheritance]
+    public string SlotId { get; private set; } = "right arm";
+
+    public override void OnPlayerSpawn(EntityUid uid,
+        IComponentFactory factory,
+        IEntityManager entityManager,
+        ISerializationManager serializationManager)
+    {
+        var bodySystem = entityManager.System<BodySystem>();
+        var transformSystem = entityManager.System<SharedTransformSystem>();
+
+        if (!entityManager.TryGetComponent(uid, out BodyComponent? body)
+            || !entityManager.TryGetComponent(uid, out TransformComponent? xform)
+            || ProtoId is null)
+            return;
+
+        var root = bodySystem.GetRootPartOrNull(uid, body);
+        if (root is null)
+            return;
+
+        var parts = bodySystem.GetBodyChildrenOfType(uid, RemoveBodyPart, body);
+        foreach (var part in parts)
+        {
+            var partComp = part.Component;
+            if (partComp.Symmetry != PartSymmetry)
+                continue;
+
+            foreach (var child in bodySystem.GetBodyPartChildren(part.Id, part.Component))
+                entityManager.QueueDeleteEntity(child.Id);
+
+            transformSystem.AttachToGridOrMap(part.Id);
+            entityManager.QueueDeleteEntity(part.Id);
+
+            var newLimb = entityManager.SpawnAtPosition(ProtoId, xform.Coordinates);
+            if (entityManager.TryGetComponent(newLimb, out BodyPartComponent? limbComp))
+                bodySystem.AttachPart(root.Value.Entity, SlotId, newLimb, root.Value.BodyPart, limbComp);
+        }
     }
 }

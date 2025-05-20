@@ -5,7 +5,7 @@ using Content.Shared.Decals;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Shared.Humanoid.Events;
+using Content.Shared._Shitmed.Humanoid.Events; // Shitmed Change
 using Content.Shared.IdentityManagement;
 using Content.Shared.Preferences;
 using Content.Shared.HeightAdjust;
@@ -135,6 +135,36 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         SetLayerVisibility(uid, humanoid, layer, visible, permanent, ref dirty);
         if (dirty)
             Dirty(uid, humanoid);
+    }
+
+    /// <summary>
+    ///     Clones a humanoid's appearance to a target mob, provided they both have humanoid components.
+    /// </summary>
+    /// <param name="source">Source entity to fetch the original appearance from.</param>
+    /// <param name="target">Target entity to apply the source entity's appearance to.</param>
+    /// <param name="sourceHumanoid">Source entity's humanoid component.</param>
+    /// <param name="targetHumanoid">Target entity's humanoid component.</param>
+    public void CloneAppearance(EntityUid source, EntityUid target, HumanoidAppearanceComponent? sourceHumanoid = null,
+        HumanoidAppearanceComponent? targetHumanoid = null)
+    {
+        if (!Resolve(source, ref sourceHumanoid) || !Resolve(target, ref targetHumanoid))
+            return;
+
+        targetHumanoid.Species = sourceHumanoid.Species;
+        targetHumanoid.SkinColor = sourceHumanoid.SkinColor;
+        targetHumanoid.EyeColor = sourceHumanoid.EyeColor;
+        targetHumanoid.Age = sourceHumanoid.Age;
+        SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
+        targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
+
+        targetHumanoid.Gender = sourceHumanoid.Gender;
+        if (TryComp<GrammarComponent>(target, out var grammar))
+            grammar.Gender = sourceHumanoid.Gender;
+
+        targetHumanoid.LastProfileLoaded = sourceHumanoid.LastProfileLoaded; // DeltaV - let paradox anomaly be cloned
+
+        Dirty(target, targetHumanoid);
     }
 
     /// <summary>
@@ -343,14 +373,23 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     /// <param name="scale">The scale to set the mob to</param>
     /// <param name="sync">Whether to immediately synchronize this to the humanoid mob, or not</param>
     /// <param name="humanoid">Humanoid component of the entity</param>
-    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null)
+    public void SetScale(EntityUid uid, Vector2 scale, bool sync = true, HumanoidAppearanceComponent? humanoid = null, bool restricted = true) // Floofstation - added restricted
     {
         if (!Resolve(uid, ref humanoid))
             return;
 
         var species = _proto.Index(humanoid.Species);
-        humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
-        humanoid.Width = Math.Clamp(scale.X, species.MinWidth, species.MaxWidth);
+        // Floofstation - added restricted check and an unrestricted scaling
+        if (restricted)
+        {
+            humanoid.Height = Math.Clamp(scale.Y, species.MinHeight, species.MaxHeight);
+            humanoid.Width = Math.Clamp(scale.X, species.MinWidth, species.MaxWidth);
+        }
+        else
+        {
+            humanoid.Height = scale.Y;
+            humanoid.Width = scale.X;
+        }
 
         if (sync)
             Dirty(uid, humanoid);
@@ -536,4 +575,25 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         return Loc.GetString("identity-age-old");
     }
+
+    // Floofstation section
+    public void SetMarkingVisibility(
+        EntityUid uid,
+        HumanoidAppearanceComponent? humanoid,
+        string markingId,
+        bool visible)
+    {
+        if (!_markingManager.Markings.TryGetValue(markingId, out var prototype))
+            return;
+        if (!Resolve(uid, ref humanoid))
+            return;
+
+        if (visible)
+            humanoid.HiddenMarkings.Remove(markingId);
+        else
+            humanoid.HiddenMarkings.Add(markingId);
+
+        Dirty(uid, humanoid);
+    }
+    // Floofstation section end
 }

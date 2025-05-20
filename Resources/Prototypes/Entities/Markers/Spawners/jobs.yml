@@ -50,7 +50,6 @@
       - state: green
       - state: qm
 
-
 - type: entity
   id: SpawnPointCargoTechnician
   parent: SpawnPointJobBase

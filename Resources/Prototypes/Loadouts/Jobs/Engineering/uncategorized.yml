@@ -167,6 +167,7 @@
   category: JobsEngineeringAAUncategorized
   cost: 0
   exclusive: true
+  customColorTint: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutEngineeringHead
@@ -197,6 +198,20 @@
 # Mask
 
 # Outer
+
+- type: loadout
+  id: LoadoutEngineeringWinterCoat
+  category: JobsEngineeringAAUncategorized
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutEngineeringOuter
+  - !type:CharacterDepartmentRequirement
+    departments:
+      - Engineering
+  items:
+  - ClothingOuterWinterEngi
+
 - type: loadout
   id: LoadoutEngineeringOuterHazard
   category: JobsEngineeringAAUncategorized

@@ -1,0 +1,57 @@
+- type: loadout
+  id: LoadoutClothingHandsMantisEpiWarmers
+  category: JobsEpistemicsPsionicMantis
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsMantisEpiWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ForensicMantis
+
+- type: loadout
+  id: LoadoutClothingUnderSocksMantisEpi
+  category: JobsEpistemicsPsionicMantis
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksMantisEpi
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - ForensicMantis
+
+- type: loadout
+  id: LoadoutClothingUniformMantisEpiThong
+  category: JobsEpistemicsPsionicMantis
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformMantisEpiThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ForensicMantis
+
+- type: loadout
+  id: LoadoutWeaponExcommunicantMantis
+  category: JobsEpistemicsPsionicMantis
+  cost: 7
+  exclusive: false
+  items:
+  - WeaponShotgunSawnExcommunicant
+  - BoxShellSoulbreaker
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - ForensicMantis
+  - !type:CharacterPlaytimeRequirement
+     tracker: JobForensicMantis
+     min: 36000 # 10 hours
+#

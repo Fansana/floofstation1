@@ -38,7 +38,7 @@
   id: LoadoutServiceBartenderShotgunDoubleBarreledRubber
   category: JobsServiceBartender
   cost: 0
-  exclusive: true
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutBartenderWeapon
@@ -52,7 +52,7 @@
   id: LoadoutServiceBartenderMosinRubber
   category: JobsServiceBartender
   cost: 0
-  exclusive: true
+  canBeHeirloom: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutBartenderWeapon
@@ -116,6 +116,19 @@
 # Mask
 
 # Outer
+- type: loadout
+  id: LoadoutServiceBartenderWinterCoat
+  category: JobsServiceBartender
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - ClothingOuterWinterBar
+
 - type: loadout
   id: LoadoutServiceBartenderArmorDuraVest
   category: JobsServiceBartender

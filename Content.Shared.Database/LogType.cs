@@ -91,6 +91,7 @@ public enum LogType
     Tile = 86,
     BagOfHolding = 420, //Nyano - Summary: adds bag of holding.
     Psionics = 421, //Nyano - Summary: ads psionic as a log type.
+    ObjectiveSummary = 422, // DeltaV
 
     /// <summary>
     /// A client has sent too many chat messages recently and is temporarily blocked from sending more.
@@ -98,6 +99,19 @@ public enum LogType
     ChatRateLimited = 87,
     AtmosTemperatureChanged = 88,
     DeviceNetwork = 89,
+    Consent = 12489, // Floof - random high number to avoid conflict when upstream adds new log types
     StoreRefund = 90,
-    Consent = 12489, // random high number to avoid conflict when upstream adds new log types
+    /// <summary>
+    /// User was rate-limited for some spam action.
+    /// </summary>
+    /// <remarks>
+    /// This is a default value used by <c>PlayerRateLimitManager</c>, though users can use different log types.
+    /// </remarks>
+    RateLimited = 91,
+    InteractUsing = 92,
+
+    /// <summary>
+    /// Storage & entity-storage related interactions
+    /// </summary>
+    Storage = 93,
 }

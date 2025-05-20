@@ -62,6 +62,8 @@
   items:
     - type: loadout
       id: LoadoutMedicalHandsGlovesChemist
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingHandsChemistsWarmers
 
 #- type: characterItemGroup
 #  id: LoadoutChemistHead
@@ -93,6 +95,10 @@
       id: LoadoutMedicalOuterLabcoatChem
     - type: loadout
       id: LoadoutMedicalOuterApronChemist
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutChemistOuterWinter
+    - type: loadout
+      id: LoadoutChemistWinterCoat
 
 - type: characterItemGroup
   id: LoadoutChemistShoes
@@ -100,6 +106,10 @@
   items:
     - type: loadout
       id: LoadoutMedicalShoesEnclosedChem
+    - type: loadout # Floof - Add missing medical loadout items
+      id: LoadoutChemistShoesWinterChem
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingUnderSocksChemists
 
 - type: characterItemGroup
   id: LoadoutChemistUniforms
@@ -111,3 +121,5 @@
       id: LoadoutMedicalUniformJumpsuitChemistry
     - type: loadout
       id: LoadoutMedicalUniformJumpskirtChemistry
+    - type: loadout # Floof - Add loadout groups to medical lingerie
+      id: LoadoutClothingUniformChemistsThong

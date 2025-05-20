@@ -16,7 +16,10 @@
 - type: speciesBaseSprites
   id: MobMothSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobMothHead
+    Face: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     Chest: MobMothTorso
     Underwear: MobHumanoidAnyMarking # Floof, add underwear
@@ -45,11 +48,10 @@
   onlyWhitelisted: true
   points:
     Underwear:
-      points: 1
-      required: true
-      defaultMarkings: [ UnderwearBoxers ] # Floof, add underwear
+      points: 2 # FLOOF CHANGE
+      required: false # Floof, add underwear
     Undershirt:
-      points: 1 # Floof, add underwear
+      points: 2 # Floof, add underwear # FLOOF CHANGE
       required: false
     Hair:
       points: 0

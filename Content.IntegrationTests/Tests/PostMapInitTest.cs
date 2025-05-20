@@ -16,7 +16,6 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
-using FastAccessors;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 
@@ -65,10 +64,12 @@ namespace Content.IntegrationTests.Tests
             "Submarine", //DeltaV
             "Gax",
             "Rad",
-            "Kettle",
-            "Train",
-            "Fland",
-            "Amber"
+            "Meta",
+            "Kettle", // Floof
+            "Train", // Floof
+            "Fland", // Floof,
+            "Amber", // Apparently, floof?
+            "Europa"
         };
 
         /// <summary>
