@@ -687,9 +687,11 @@
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
 
 - type: trait
   id: CyberEyesDiagnostic
@@ -748,9 +750,11 @@
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
           - Inorganic
           - Silicon
 
