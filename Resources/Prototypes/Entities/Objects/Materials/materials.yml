@@ -84,6 +84,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - KitsuneFixes2
     damage:
       types:
         Slash: -0.5
