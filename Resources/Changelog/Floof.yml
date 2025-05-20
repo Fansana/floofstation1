@@ -5763,3 +5763,10 @@ Entries:
   id: 604
   time: '2025-05-20T11:12:12.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1002
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed AI-controlled mobs having no walking animations.
+  id: 605
+  time: '2025-05-20T17:02:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/972
