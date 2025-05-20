@@ -252,6 +252,7 @@
   id: DefaultDeathgasp
   name: chat-emote-name-deathgasp
   icon: Interface/Emotes/deathgasp.png # Floof, remove deathgasp whitelist
+  available: false # floof
   # whitelist:
     # components:
     # - MobState
@@ -272,6 +273,7 @@
   id: SiliconDeathgasp
   name: chat-emote-name-deathgasp
   icon: Interface/Emotes/deathgasp.png # Floof, remove deathgasp whitelist
+  available: false # floof
   # whitelist:
     # tags:
     # - SiliconEmotes
