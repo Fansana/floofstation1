@@ -202,6 +202,7 @@
         - ForensicMantis
         - Chaplain
         - Librarian
+        - Anomaly
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -316,10 +317,6 @@
     - !type:CharacterSpeciesRequirement
       species:
         - IPC
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Anomaly
 
 - type: trait
   id: AnimalFriend
