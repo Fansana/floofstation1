@@ -5690,7 +5690,7 @@ Entries:
   id: 598
   time: '2025-05-17T19:50:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/988
-- author: DeltaV
+- author: DeltaV SolStar, Einstein Engines VMSolidus, M3739
   changes:
     - type: Fix
       message: Cloning should now properly replicate the original body's appearance.
@@ -5747,3 +5747,56 @@ Entries:
   id: 602
   time: '2025-05-18T13:52:24.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/992
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Slot blocking is not longer checked when applying loadouts.
+  id: 603
+  time: '2025-05-20T03:51:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1000
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        Attempted to fix a crash related to antag preferences saving multiple
+        times.
+  id: 604
+  time: '2025-05-20T11:12:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1002
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed AI-controlled mobs having no walking animations.
+  id: 605
+  time: '2025-05-20T17:02:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/972
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Hypnotic Gaze now costs 0 and can be used on mind broken individuals
+        (X-waveform and Black-eyes)
+  id: 606
+  time: '2025-05-21T22:11:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1009
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added an alternate female chest marking for unathi.
+  id: 607
+  time: '2025-05-21T22:15:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1008
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Tracker implant are now a T2 researchable under civil
+  id: 608
+  time: '2025-05-21T22:19:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/705
+- author: M3739
+  changes:
+    - type: Fix
+      message: Kitsune can now be healed by topicals.
+  id: 609
+  time: '2025-05-21T23:11:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1006
