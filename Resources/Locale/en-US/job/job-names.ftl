@@ -9,7 +9,6 @@ job-name-borg = Cyborg
 job-name-senior-researcher = Mystic
 job-name-senior-engineer = Senior Engineer
 job-name-senior-physician = Senior Physician
-job-name-senior-officer = Senior Officer
 job-name-scientist = Acolyte
 job-name-research-assistant = Noviciate
 job-name-rd = Mystagogue
