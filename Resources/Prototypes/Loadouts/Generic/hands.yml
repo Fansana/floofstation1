@@ -73,12 +73,13 @@
       group: LoadoutGloves
 
 - type: loadout
-  id: LoadoutGoldRing
+  id: LoadoutHandsGlovesEvening
   category: Hands
   cost: 0
   exclusive: true
+  customColorTint: true
   items:
-    - ClothingHandsGoldRing
+    - ClothingHandsGlovesEvening
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutRing  # Floof change
+      group: LoadoutGloves
