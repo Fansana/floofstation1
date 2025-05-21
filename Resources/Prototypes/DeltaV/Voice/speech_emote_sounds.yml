@@ -80,6 +80,8 @@
       collection: Wurble
     Gnash:
       collection: FeroxiGnashes
+    Coo:
+      collection: HarpyCoos
 
 - type: emoteSounds
   id: MaleVulpkanin
@@ -224,7 +226,7 @@
       collection: Weh
     Squeak:
       path: /Audio/Animals/mouse_squeak.ogg
-      
+
 - type: emoteSounds
   id: UnisexChitinid
   params:
@@ -348,7 +350,7 @@
       collection: VulpkaninYap
 #    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
 #      collection: MaleGasp
-#    DefaultDeathgasp: 
+#    DefaultDeathgasp:
 #      collection: MaleDeathGasp
 
 - type: emoteSounds
@@ -390,5 +392,5 @@
       collection: VulpkaninYap
 #    Gasp: | Floof - M3739 - #937 - We do not have these... yet.
 #      collection: FemaleGasp
-#    DefaultDeathgasp: 
+#    DefaultDeathgasp:
 #      collection: FemaleDeathGasp
