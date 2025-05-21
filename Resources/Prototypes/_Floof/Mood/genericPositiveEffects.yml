@@ -29,3 +29,20 @@
   id: IceCreamBrainFreeze
   moodChange: -15
   timeout: 30 #30 second
+
+# Shadekins
+- type: moodEffect
+  id: ShadekinDarkness
+  moodChange: 3
+
+- type: moodEffect
+  id: ShadekinLightAnnoyed
+  moodChange: -3
+
+- type: moodEffect
+  id: ShadekinLightHigh
+  moodChange: -6
+
+- type: moodEffect
+  id: ShadekinLightExtreme
+  moodChange: -15
