@@ -8,6 +8,7 @@
     - category: Mood
     - category: Stamina
     - alertType: Mana
+    - category: Shadekin # FloofStation
     - alertType: SuitPower
     - category: Internals
     - alertType: Fire
@@ -644,3 +645,255 @@
   description: alerts-mana-desc
   minSeverity: 0
   maxSeverity: 7
+
+# FloofStation - Start
+- type: alert
+  id: Shadekin-0-0
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-0-0
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-0-1
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-0-1
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-0-2
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-0-2
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-0-3
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-0-3
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-0-4
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-0-4
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-1-0
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-1-0
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-1-1
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-1-1
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-1-2
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-1-2
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-1-3
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-1-3
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-1-4
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-1-4
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-2-0
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-2-0
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-2-1
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-2-1
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-2-2
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-2-2
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-2-3
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-2-3
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-2-4
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-2-4
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-3-0
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-3-0
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-3-1
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-3-1
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-3-2
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-3-2
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-3-3
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-3-3
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-3-4
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-3-4
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-4-0
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-4-0
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-4-1
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-4-1
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-4-2
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-4-2
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-4-3
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-4-3
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+
+- type: alert
+  id: Shadekin-4-4
+  category: Shadekin
+  onClick: !type:CheckShadekinAlert { }
+  icons:
+    - sprite: /Textures/_Floof/Shadekin/alert.rsi
+      state: shadekin-4-4
+  name: alerts-shadekin-name
+  description: alerts-shadekin-desc
+# FloofStation - End

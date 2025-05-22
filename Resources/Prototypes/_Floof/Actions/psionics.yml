@@ -14,5 +14,4 @@
       blacklist:
         components:
           - PsionicInsulation
-          - Mindbroken
       event: !type:HypnoPowerActionEvent

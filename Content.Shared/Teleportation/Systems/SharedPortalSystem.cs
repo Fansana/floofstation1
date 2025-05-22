@@ -4,7 +4,7 @@ using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
-using Content.Shared.Shadowkin;
+using Content.Shared._Floof.Shadekin;
 using Content.Shared.Teleportation.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio;
@@ -49,11 +49,9 @@ public abstract class SharedPortalSystem : EntitySystem
 
     private void OnGetVerbs(EntityUid uid, PortalComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-
-        if (!args.CanAccess || !HasComp<EtherealComponent>(args.User)) // FloofStation Edit
-            // Traversal altverb for ghosts to use that bypasses normal functionality
-            if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
-                return;
+        // Traversal altverb for ghosts to use that bypasses normal functionality
+        if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
+            return;
 
         // Don't use the verb with unlinked or with multi-output portals
         // (this is only intended to be useful for ghosts to see where a linked portal leads)
@@ -104,6 +102,40 @@ public abstract class SharedPortalSystem : EntitySystem
         // best not.
         if (Transform(subject).Anchored)
             return;
+
+        // FloofStation - HubPortalBlockRespawn Timer
+        if (HasComp<DarkHubComponent>(uid))
+        {
+            if (TryComp<ShadekinComponent>(subject, out var shadekin)
+                && !shadekin.Blackeye && shadekin.Rejuvenating)
+            {
+                _popup.PopupEntity(Loc.GetString("hubportal-rejuvenate"), subject, subject, PopupType.LargeCaution);
+                return;
+            }
+        }
+
+        // DarkPortal, Only Teleport if Shadekin or pulled by one.
+        if (HasComp<DarkPortalComponent>(uid))
+        {
+            var passed = false;
+
+            if (TryComp<PullableComponent>(subject, out var pullablea)
+                && pullablea.BeingPulled
+                && TryComp<ShadekinComponent>(pullablea.Puller, out var pullerkin)
+                && !pullerkin.Blackeye)
+                passed = true;
+
+            if (TryComp<ShadekinComponent>(subject, out var shadekin)
+                && !shadekin.Blackeye)
+                passed = true;
+
+            if (HasComp<EtherealPhaseComponent>(subject))
+                passed = true;
+
+            if (!passed)
+                return;
+        }
+        // FloofStation - End
 
         // break pulls before portal enter so we dont break shit
         if (TryComp<PullableComponent>(subject, out var pullable) && pullable.BeingPulled)
