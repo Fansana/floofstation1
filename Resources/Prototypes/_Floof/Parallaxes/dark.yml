@@ -1,0 +1,9 @@
+- type: parallax
+  id: Dark
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/_Floof/Shadekin/dark.rsi/dark.png"
+      slowness: 0
+      scale: "1, 1"
+      shader: ""

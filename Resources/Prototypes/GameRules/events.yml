@@ -120,7 +120,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 5 # Floof - changed from 6.5
+    weight: 6 # Floof - changed from 6.5
     duration: 1
     earliestStart: 120 # Floof
     reoccurrenceDelay: 60
@@ -134,9 +134,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 6
+    weight: 7
     duration: 1
-    earliestStart: 90 #Floof
+    earliestStart: 60 #Floof
     reoccurrenceDelay: 60 # Floof
     minimumPlayers: 30
   - type: SpaceSpawnRule
@@ -183,7 +183,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
-    weight: 6 # Floof - Changed from 7.5
+    weight: 7 # Floof - Changed from 7.5
     duration: 1
     earliestStart: 45
     minimumPlayers: 20
@@ -350,7 +350,10 @@
     weight: 6
     duration: 1
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
+    startAnnouncement: true
   - type: RandomSentienceRule
+    minSentiences: 2
+    maxSentiences: 5
 
 - type: entity
   parent: BaseGameRule
@@ -600,3 +603,15 @@
       maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
       weight: 5
     - type: MobReplacementRule
+
+- type: entity
+  id: AirlockVirusRule
+  parent: BaseGameRule
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: StationEvent
+      earliestStart: 15
+      minimumPlayers: 5
+      maxOccurrences: 1
+      weight: 1 # Annoying.
+    - type: AirlockVirusRule

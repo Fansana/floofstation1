@@ -11,6 +11,7 @@
     allowMovement: true
     name: ghost-role-information-nukie-mouse-name
     description: ghost-role-information-nukie-mouse-description
+    rules: floof-ghost-role-information-team-antag-rules # Floofstation - Modifying ghost role rules
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments: [names_mouse_death_commando]

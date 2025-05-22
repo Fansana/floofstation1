@@ -1,0 +1,318 @@
+- type: trait
+  id: Ratvarian
+  category: TraitsSpeechLanguages
+  points: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesBasic
+  functions:
+    - !type:TraitModifyLanguages
+      languagesSpoken:
+        - Ratvarian
+      languagesUnderstood:
+        - Ratvarian
+
+- type: trait
+  id: NaturalRatvarian
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Ratvarian
+
+- type: trait
+  id: NaturalChittin
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Chitinid
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Chittin
+
+- type: trait
+  id: NaturalNehina
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Feroxi
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Nehina
+
+- type: trait
+  id: NaturalMouse
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Rodentia
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Mouse
+
+- type: trait
+  id: NaturalCanilunzt
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Vulpkanin
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Canilunzt
+
+- type: trait
+  id: NaturalRobotTalk
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: RobotTalk
+
+- type: trait
+  id: NaturalArachnic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        # Arachne they dont speak Arachind
+        - Arachnid
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Arachnic
+
+- type: trait
+  id: NaturalRootSpeak
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Diona
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: RootSpeak
+
+- type: trait
+  id: NaturalSolCommon
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Human
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: SolCommon
+
+- type: trait
+  id: NaturalValyrianStandard
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Harpy
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: ValyrianStandard
+
+- type: trait
+  id: NaturalMoffic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Moth
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Moffic
+
+- type: trait
+  id: NaturalDraconic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Reptilian
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Draconic
+
+- type: trait
+  id: NaturalBubblish
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - SlimePerson
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Bubblish
+
+- type: trait
+  id: NaturalSchechi
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Resomi
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Schechi
+
+- type: trait
+  id: NaturalNekomimetic
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+        - Oni
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Nekomimetic
+
+- type: trait
+  id: NaturalKagebun
+  category: TraitsSpeechLanguages
+  points: -1
+  priority: -1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: TraitsLanguagesNatural
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Kitsune
+        - Shadowkin
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NaturalSpeakerTrait
+          language: Kagebun

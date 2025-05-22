@@ -16,6 +16,8 @@
 - type: speciesBaseSprites
   id: MobFeroxiSprites
   sprites:
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
     Head: MobFeroxiHead
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
@@ -40,10 +42,10 @@
   id: MobFeroxiMarkingLimits
   points:
     Underwear: # Floofstation
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false
     Undershirt: # Floofstation
-      points: 1
+      points: 2 # FLOOF CHANGE
       required: false
     Hair:
       points: 1

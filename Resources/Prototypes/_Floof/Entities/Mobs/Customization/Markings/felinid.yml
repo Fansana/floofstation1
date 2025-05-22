@@ -1,0 +1,13 @@
+
+- type: marking
+  id: FelinidTiger
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Felinid, Human, Oni, IPC]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_primary
+  - sprite: _Floof/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_secondary
+  - sprite: _Floof/Mobs/Customization/Felinid/tiger_tail.rsi
+    state: m_tail_tiger_tertiary

@@ -1,0 +1,10 @@
+﻿- type: marking
+  id: SingleAntenna
+  bodyPart: HeadTop
+  markingCategory: Head
+  speciesRestriction: [Reptilian, SlimePerson, Rodentia, Vulpkanin, Felinid, Human, Oni]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/unique.rsi
+    state: singleantennaprimary
+  - sprite: _Floof/Mobs/Customization/unique.rsi
+    state: singleantennasecondary

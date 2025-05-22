@@ -7,8 +7,6 @@
   - type: Sprite
     sprite: Mobs/Species/IPC/organs.rsi
     state: "eyes"
-  - type: Perishable # Floof
-    rotAfter: 7200 # 2 hours, should be plenty enough time
 
 - type: entity
   parent: BaseCyberneticEyes
@@ -48,6 +46,8 @@
     - type: ShowHealthBars
       damageContainers:
       - Biological
+      - BiologicalMetaphysical # DeltaV - Kitsune
     - type: ShowHealthIcons
       damageContainers:
       - Biological
+      - BiologicalMetaphysical # DeltaV - Kitsune

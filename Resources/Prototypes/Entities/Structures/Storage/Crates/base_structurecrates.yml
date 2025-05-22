@@ -100,7 +100,7 @@
   - type: ResistLocker
 
 - type: entity
-  parent: CrateBaseWeldable
+  parent: [IdLockableBaseDisabled, CrateBaseWeldable] # Floof - added a default-disabled ID lock to all closets
   id: CrateBaseSecure
   suffix: Secure
   components:

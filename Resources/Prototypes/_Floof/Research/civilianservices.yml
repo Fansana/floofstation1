@@ -1,0 +1,42 @@
+# Tier 2
+
+- type: technology
+  id: AdvancedHydroponics
+  name: research-technology-harvestbag
+  icon:
+    sprite: _Floof/Objects/Specific/Hydroponics/a_equipment/Harvestbag.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - ClothingHarvestBag
+  technologyPrerequisites:
+  - Hydroponics
+
+- type: technology
+  id: AdvancedTracking
+  name: research-technology-tracking-implant
+  icon:
+   sprite: Objects/Specific/Medical/implanter.rsi
+   state: implanter0
+  discipline: CivilianServices
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - HandheldCrewMonitor
+  - TrackingImplanter
+
+# Tier 3
+
+- type: technology
+  id: MiniHypo
+  name: research-technology-mini-hypo
+  icon:
+    sprite: _Floof/Objects/Specific/Medical/hypomini.rsi
+    state: hypo
+  discipline: CivilianServices
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - HypoMini

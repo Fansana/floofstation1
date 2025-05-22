@@ -1,0 +1,41 @@
+- type: latheRecipe
+  id: HypoMini
+  result: HypoMini
+  completetime: 40
+  materials:
+    PlasmaGlass: 500
+    Plasteel: 500
+    Silver: 500
+
+# No clue what this is, but it was in the upstream file and had to be moved because it caused conflicts on every upstream merge...
+- type: latheRecipe
+  id: WhiteCane
+  result: WhiteCane
+  completetime: 2
+  materials:
+    Steel: 100
+    Plastic: 100
+
+- type: latheRecipe
+  id: SterileBag
+  result: SterileBag
+  completetime: 2
+  materials:
+    Plastic: 50
+
+
+- type: latheRecipe
+  id: BaseChemistryEmptyVial
+  result: BaseChemistryEmptyVial
+  completetime: 2
+  materials:
+    Glass: 50
+
+- type: latheRecipe
+  id: TrackingImplanter
+  result: TrackingImplanter
+  completetime: 5
+  materials:
+    Glass: 500
+    Steel: 500
+    Plasma: 500

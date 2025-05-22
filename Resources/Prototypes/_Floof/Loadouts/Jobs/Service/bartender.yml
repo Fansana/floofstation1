@@ -1,0 +1,152 @@
+- type: loadout
+  id: LoadoutClothingHandsBartenderWarmers
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsBartenderWarmers
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+- type: loadout
+  id: LoadoutClothingUnderSocksBartender
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUnderSocksBartender
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Diona
+    - Harpy
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+- type: loadout
+  id: LoadoutClothingUniformBartenderThong
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingUniformBartenderThong
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+
+- type: loadout
+  id: LoadoutServiceBartenderBunnyEars
+  category: JobsServiceBartender
+  cost: 2
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - ClothingHeadHatBunny
+
+- type: loadout
+  id: LoadoutServiceBartenderBunnySuit
+  category: JobsServiceBartender
+  cost: 2
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - ClothingCostumeBunnySuit
+
+
+# Bartender ammo
+- type: loadout
+  id: LoadoutServiceBartenderRifleBigRubber
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderAmmo
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - MagazineBoxRifleBigRubber
+
+- type: loadout
+  id: LoadoutServiceBartenderRifleBigRubberSpeedloader
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - SpeedLoaderRifleHeavyRubber
+
+- type: loadout
+  id: LoadoutServiceBartenderBoxMagnumRubber
+  category: JobsServiceBartender
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderAmmo
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - MagazineBoxMagnumRubber
+
+
+# Bartender guns
+- type: loadout
+  id: LoadoutServiceBartenderArgentiNonlethal
+  category: JobsServiceBartender
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderWeapon
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - WeaponRevolverArgentiNonlethal
+
+- type: loadout
+  id: LoadoutServiceBartenderRepeaterNonlethal
+  category: JobsServiceBartender
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderWeapon
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  items:
+  - WeaponSniperRepeaterNonlethal
+
+
+# Bartender melee
+- type: loadout
+  id: LoadoutServiceBartenderBrassKnuckles
+  category: JobsServiceBartender
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBartenderWeapon
+  - !type:CharacterJobRequirement
+    jobs:
+    - Bartender
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Oni
+  items:
+  - WeaponBrassKnuckles

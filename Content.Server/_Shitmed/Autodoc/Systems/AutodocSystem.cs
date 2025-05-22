@@ -6,7 +6,9 @@ using Content.Shared.DoAfter;
 using Content.Server.Power.EntitySystems;
 using Content.Shared._Shitmed.Autodoc.Components;
 using Content.Shared._Shitmed.Autodoc.Systems;
-using Content.Server.Bed.Sleep;
+using Content.Shared._Shitmed.Medical.Surgery;
+using Content.Shared.Bed.Sleep;
+using Content.Server.Construction;
 
 namespace Content.Server._Shitmed.Autodoc.Systems;
 
@@ -15,7 +17,15 @@ public sealed class AutodocSystem : SharedAutodocSystem
     [Dependency] private readonly InternalsSystem _internals = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
     [Dependency] private readonly PowerReceiverSystem _power = default!;
-    [Dependency] private readonly SleepingSystem _sleepingSystem = default!; // Sleeping isnt shared yet.
+    [Dependency] private readonly SleepingSystem _sleepingSystem = default!;
+    private const float UpgradeAddsPercent = 0.50f;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<AutodocComponent, RefreshPartsEvent>(OnRefreshParts);
+        SubscribeLocalEvent<AutodocComponent, UpgradeExamineEvent>(OnUpgradeExamine);
+    }
 
     public override void Update(float frameTime)
     {
@@ -49,5 +59,20 @@ public sealed class AutodocSystem : SharedAutodocSystem
     public override void Say(EntityUid uid, string msg)
     {
         _chat.TrySendInGameICMessage(uid, msg, InGameICChatType.Speak, hideChat: false, hideLog: true, checkRadioPrefix: false);
+    }
+
+    private void OnRefreshParts(EntityUid uid, AutodocComponent component, RefreshPartsEvent args)
+    {
+        var ratingSurgerySpeed = args.PartRatings[component.MachinePartSurgerySpeed];
+
+        component.SurgerySpeed = component.BaseSurgerySpeed * (1 + (ratingSurgerySpeed - 1) * UpgradeAddsPercent);
+
+        if (TryComp<SurgerySpeedModifierComponent>(uid, out var surgerySpeedModifier))
+            surgerySpeedModifier.SpeedModifier = component.SurgerySpeed;
+    }
+
+    private void OnUpgradeExamine(EntityUid uid, AutodocComponent component, UpgradeExamineEvent args)
+    {
+        args.AddPercentageUpgrade("autodoc-upgrade-surgery-speed", component.SurgerySpeed / component.BaseSurgerySpeed);
     }
 }

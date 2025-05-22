@@ -99,6 +99,8 @@
       id: LoadoutMedicalNeckStethoscope
     - type: loadout
       id: LoadoutMedicalBedsheetMedical
+    - type: loadout
+      id: LoadoutMedicalNeckNeckerchief # Floof - M3739 - #988
 
 - type: characterItemGroup
   id: LoadoutMedicalMask
@@ -113,6 +115,8 @@
   id: LoadoutMedicalOuter
   maxItems: 1
   items:
+    - type: loadout
+      id: LoadoutMedicalOuterWinterCoat
     - type: loadout
       id: LoadoutMedicalOuterLabcoat
     - type: loadout

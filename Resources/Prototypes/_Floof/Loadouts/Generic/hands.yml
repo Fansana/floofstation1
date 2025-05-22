@@ -1,0 +1,131 @@
+- type: loadout
+  id: LoadoutHandsGlovesTacticalMaid
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsTacticalMaidGloves
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsPlainWarmers
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsPlainWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsStripePurpleWarmers
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsStripePurpleWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsStripeRainbowWarmers
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsStripeRainbowWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsCoderWarmers
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsCoderWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsCoderValidWarmers
+  category: Hands
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingHandsCoderValidWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutClothingHandsBeeWarmers
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsBeeWarmers
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutGloves
+
+- type: loadout
+  id: LoadoutWebRing
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsWebRing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutRing
+
+- type: loadout
+  id: LoadoutDiamondBand
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsDiamondBand
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutRing
+
+- type: loadout
+  id: LoadoutGoldRingSpiderGem
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsGoldRingSpiderGem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutRing
+
+- type: loadout
+  id: LoadoutWebDiamondRing
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsWebDiamondRing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutRing
+
+- type: loadout
+  id: LoadoutWebRingSpiderGem
+  category: Hands
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHandsWebRingSpiderGem
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutRing

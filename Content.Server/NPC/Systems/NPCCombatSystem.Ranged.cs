@@ -189,7 +189,7 @@ public sealed partial class NPCCombatSystem
             EntityCoordinates targetCordinates;
 
             if (_mapManager.TryFindGridAt(xform.MapID, targetPos, out var gridUid, out var mapGrid))
-                targetCordinates = new(gridUid, _map.WorldToLocal(comp.Target, mapGrid, targetSpot));
+                targetCordinates = new(gridUid, _map.WorldToLocal(gridUid, mapGrid, targetSpot)); // Floof - fixed to use gridUid instead of targetUid (local to which it's always 0,0)
             else
                 targetCordinates = new(xform.MapUid!.Value, targetSpot);
 
@@ -200,6 +200,7 @@ public sealed partial class NPCCombatSystem
                 return;
             }
 
+            _gun.SetTarget(gun, comp.Target); // Floofstation - this used to be on upstream and should still be there
             _gun.AttemptShoot(uid, gunUid, gun, targetCordinates);
         }
     }

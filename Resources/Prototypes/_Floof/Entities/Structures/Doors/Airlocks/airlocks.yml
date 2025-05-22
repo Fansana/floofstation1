@@ -1,0 +1,40 @@
+# Freelancer 
+
+- type: entity
+  parent: Airlock
+  id: AirlockFreelancerCamo
+  name: Freelancer Camo Airlock
+  suffix: Freelancer
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Doors/Airlocks/Standard/freelancer_camo.rsi
+    
+- type: entity
+  parent: Airlock
+  id: AirlockFreelancer
+  name: Freelancer Airlock
+  suffix: Freelancer
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Doors/Airlocks/Standard/freelancer.rsi
+
+# freelancer glass
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockFreelancerCamoGlass
+  name: Freelancer Camo Glass Airlock
+  suffix: Freelancer
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Doors/Airlocks/Glass/freelancer_camo.rsi
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockFreelancerGlass
+  name: Freelancer Glass Airlock
+  suffix: Freelancer
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Doors/Airlocks/Glass/freelancer.rsi
+    

@@ -260,6 +260,14 @@
   components:
   - type: AccessReader
     access: [["Medical"]]
+    
+- type: entity # Floofstation - this should be an upstream fix so I'm not putting this in Floof namespace, but EE scares me.
+  parent: DoorElectronics
+  id: DoorElectronicsParamedic
+  suffix: Paramedic, Locked
+  components:
+  - type: AccessReader
+    access: [["Paramedic"]]
 
 # Syndicate
 - type: entity

@@ -4,14 +4,15 @@
   roundStart: true
   prototype: MobFelinid
   sprites: MobHumanSprites
+  defaultSkinTone: "#c0967f"
   markingLimits: MobFelinidMarkingLimits
   dollPrototype: MobFelinidDummy
   skinColoration: Hues #FloofStation copied from DeltaV
   minHeight: 0.65
-  defaultHeight: 0.8
+  #defaultHeight: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxHeight: 1.1
   minWidth: 0.6
-  defaultWidth: 0.8
+  #defaultWidth: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
   maxWidth: 1.15
   customName: true
 
@@ -36,26 +37,26 @@
       points: 1
       required: false
     RightLeg:
-      points: 2
+      points: 6
       required: false
     RightFoot:
-      points: 2
+      points: 6
       required: false
     LeftLeg:
-      points: 2
+      points: 6
       required: false
     LeftFoot:
-      points: 2
+      points: 6
       required: false
     RightArm:
-      points: 2
+      points: 6
       required: false
     RightHand:
-      points: 3
+      points: 6
       required: false
     LeftArm:
-      points: 2
+      points: 6
       required: false
     LeftHand:
-      points: 3
+      points: 6
       required: false

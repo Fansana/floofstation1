@@ -1,0 +1,67 @@
+- type: latheRecipe
+  id: ShellShotgunHoly
+  result: ShellShotgunHoly
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 15
+    Silver: 5
+
+- type: latheRecipe
+  id: BoxShellHoly
+  result: BoxShellHoly
+  category: Ammo
+  completetime: 5
+  materials:
+    Steel: 120
+    Silver: 200
+
+- type: latheRecipe
+  id: ClothingShoesBootsSecurityMagboots
+  result: ClothingShoesBootsSecurityMagboots
+  completetime: 10
+  materials:
+     Steel: 1000
+     Plastic: 500
+
+# Brought back after EE removed those, now with a slightly more complex recipe (old was just 3 steel sheets)
+- type: latheRecipe
+  id: ClothingOuterShadowkinRestraints
+  result: ClothingOuterShadowkinRestraints
+  completetime: 6
+  materials:
+    Steel: 800
+    Plastic: 300
+
+- type: latheRecipe
+  id: WeaponEnergyHalberd
+  result: WeaponEnergyHalberd
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Gold: 300
+    Silver: 300
+    Plasma: 400
+
+- type: latheRecipe
+  id: WeaponHalberd
+  result: WeaponHalberd
+  category: Weapons
+  completetime: 5
+  materials:
+    Steel: 500
+    Plastic: 500
+
+- type: latheRecipe
+  id: ClothingOuterArmorReflective
+  result: ClothingOuterArmorReflective
+  completetime: 5
+  materials:
+    Steel: 1000
+    Glass: 500
+    Plastic: 500
+    Silver: 300
+    Plasma: 150

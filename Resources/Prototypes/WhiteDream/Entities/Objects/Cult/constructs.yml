@@ -64,7 +64,7 @@
         layer:
         - FlyingMobLayer
   - type: Damageable
-    damageContainer: CorporealSpirit
+    damageContainer: ManifestedSpirit # Floof - M3739 - #937 - CorporealSpirit container superseded by ManifestedSpirit
     damageModifierSet: CorporealSpirit
   - type: MobThresholds
     thresholds:
@@ -107,6 +107,8 @@
     understands:
     - TauCetiBasic
     - Eldritch
+  - type: LanguageSpeaker
+  - type: StatusIcon
 
 - type: entity
   id: ConstructJuggernaut

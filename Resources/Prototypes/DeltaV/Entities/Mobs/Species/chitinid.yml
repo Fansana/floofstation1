@@ -11,7 +11,7 @@
     - HeadTop
 
   - type: Hunger
-    baseDecayRate: 0.0467 #needs to eat more to survive
+    baseDecayRate: 0.0221666666 # Floofstation, changed from 0.0467 so it's actually 33% faster. Original number came from DeltaV, which has a much higher base hunger rate. Original comment: needs to eat more to survive
   - type: Thirst
 
   - type: UnpoweredFlashlight
@@ -109,6 +109,7 @@
     noRot: true
     drawdepth: Mobs
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -136,7 +137,8 @@
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "id" ]
-      - map: [ "back" ] 
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
+      - map: [ "back" ]
       - map: [ "neck" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
@@ -168,6 +170,9 @@
       - FootstepSound
       - DoorBumpOpener
       - ChitinidEmotes # Floof - M3739 - #726
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-chitinid-
+    forceSayStringCount: 3 # Default is 7. I think my brain stopped working, they could use some more.
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -242,6 +242,52 @@
           rangeModifier: 0.6
 
 - type: trait
+  id: Steadfast
+  category: Physical
+  points: -4
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Feeble
+  functions:
+    - !type:TraitModifySlowOnDamage
+      damageThresholdsModifier: 10
+      speedModifierMultiplier: 0.68
+
+- type: trait
+  id: Feeble
+  category: Physical
+  points: 3
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Felinid
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Steadfast
+  functions:
+    - !type:TraitModifySlowOnDamage
+      damageThresholdsModifier: -15
+      speedModifierMultiplier: 1.2
+
+- type: trait
   id: MartialArtist
   category: Physical
   points: -3
@@ -277,6 +323,7 @@
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
         - Resomi # Floof - have this by default after porting Goob changes
+        - Kitsune # Floof - M3739 - #937 - Kitsune have this by default.
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
@@ -443,19 +490,18 @@
 - type: trait
   id: Spinarette
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
         - Arachnid
         - Arachne
-        - Shadowkin
         - IPC
   functions:
     - !type:TraitAddComponent
@@ -464,7 +510,10 @@
           action: ActionSericulture
           productionLength: 2
           entityProduced: MaterialWebSilk1
-          hungerCost: 4
+          hungerCost: 1
+    - !type:TraitAddTag
+      tags:
+        - SpiderCraft
 
 - type: trait
   id: BionicArm
@@ -476,6 +525,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator
+        - Anomaly
   functions:
     - !type:TraitAddComponent
       components:
@@ -498,6 +548,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -528,6 +579,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
@@ -551,6 +603,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -573,10 +626,6 @@
   category: Physical
   points: -4
   requirements:
-#    - !type:CharacterJobRequirement # Floof - this is redundant due to the below trait requirement
-#      inverted: true
-#      jobs:
-#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -592,11 +641,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
@@ -619,11 +663,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -638,20 +677,17 @@
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
 
 - type: trait
   id: CyberEyesDiagnostic
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -673,11 +709,6 @@
   category: Physical
   points: -3
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
@@ -699,9 +730,11 @@
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
           - Inorganic
           - Silicon
 
@@ -727,7 +760,7 @@
         - GlassJaw
         - Tenacity
         - BrittleBoneDisease
-        
+
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -759,3 +792,79 @@
       components:
         - type: CritModifier
           critThresholdModifier: -50
+
+- type: trait
+  id: BionicLeg #was removed upstream due to goobstation powergaming but we get less powergaming here so it's probably fine
+  category: Physical
+  points: -8
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Anomaly
+  functions:
+    - !type:TraitPushDescription
+      descriptionExtensions:
+        - description: examine-bionic-leg-message
+          fontSize: 12
+          requireDetailRange: true
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Leg
+      partSymmetry: Left
+      protoId: SpeedLeftLeg
+      slotId: "left leg"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Leg
+      partSymmetry: Right 
+      protoId: SpeedRightLeg
+      slotId: "right leg"
+
+- type: trait
+  id: LightAmplification
+  category: Physical
+  points: -4
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Shadowkin
+    - !type:CharacterTraitRequirement
+      traits:
+        - CyberEyes
+    - !type:CharacterTraitRequirement # Floof added Photophobia as drawback to nightvision
+      inverted: true
+      traits:
+      - Photophobia
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NightVision
+        - type: Flashable # Floof added Photophobia as drawback to nightvision
+          eyeDamageChance: 0.3
+          eyeDamage: 1
+          durationMultiplier: 1.5
+
+#  id: ThermographicVision disabled because op
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      inverted: true
+#      jobs:
+#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+#        - Anomaly
+#    - !type:CharacterTraitRequirement
+#      traits:
+#        - CyberEyes
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: ThermalVision
+#          pulseTime: 2
+#          toggleAction: PulseThermalVision
+#    - !type:TraitPushDescription
+#      descriptionExtensions:
+#        - description: examine-thermal-vision-message
+#          fontSize: 12
+#          requireDetailRange: true

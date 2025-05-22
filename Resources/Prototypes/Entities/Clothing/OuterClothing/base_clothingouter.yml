@@ -8,6 +8,13 @@
     - outerClothing
   - type: Sprite
     state: icon
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING
+      blacklist:
+        tags:
+        - ShirtlessClothing
 
 - type: entity
   abstract: true
@@ -26,6 +33,17 @@
   - type: Tag
     tags:
       - WhitelistChameleon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 22
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
 
 - type: entity
   abstract: true
@@ -139,7 +157,8 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-    - HidesHarpyWings #DeltaV: Used by harpies to help render their hardsuit sprites
+    # HidesHarpyWings  FLOOF CHANGE       #DeltaV: Used by harpies to help render their hardsuit sprites
+    - AllowLamiaHardsuit
     - FullBodyOuter
   - type: Clothing
     equipDelay: 2.5 # Hardsuits are heavy and take a while to put on/off.
@@ -158,6 +177,25 @@
     staminaCost: 44
     soundHit:
       collection: MetalThud
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 400 # According to Google, a NASA Eva Suit weighs 68kg. Since Hardsuits are "Armored", I'm setting it to 100kg
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING # Only blocks torso and below, eyes, mask, etc are blocked by the helmet
+      - GLOVES # Assuming gloves are placed *underneath*
+      - LEGS
+      - FEET
+      blacklist: {} # Clear the parent blacklist
 
 - type: entity
   abstract: true
@@ -178,12 +216,32 @@
     size: Huge
   - type: Tag
     tags:
-    - HidesHarpyWings #DeltaV: Used by harpies to help render their hardsuit sprites
+    - AllowLamiaHardsuit #DeltaV: Used by Lamia to render snek hardsuits
+    # HidesHarpyWings floof #DeltaV: Used by Lamia to render snek hardsuits
   - type: Clothing
     equipDelay: 1.25 # Softsuits are easier to put on and off
     unequipDelay: 1
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 272 # According to Google, a NASA Eva Suit weighs 68kg. Thus, my reference.
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: SlotBlocker # Floofstation
+    blocks:
+      slots:
+      - INNERCLOTHING # Only blocks torso and below, eyes, mask, etc are blocked by the helmet
+      - GLOVES # Assuming gloves are placed *underneath*
+      - LEGS
+      - FEET
+      blacklist: {} # Clear the parent blacklist
 
 - type: entity
   parent: ClothingOuterBase

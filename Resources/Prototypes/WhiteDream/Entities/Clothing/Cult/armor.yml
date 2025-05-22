@@ -112,6 +112,13 @@
   - type: Clothing
     sprite: Clothing/Eyes/Misc/blindfold.rsi
   - type: FlashImmunity
+  - type: EyeProtection
+  - type: NightVision
+    isActive: true
+    toggleAction: null
+    activateSound: null
+    deactivateSound: null
+    color: White
   - type: ShowHealthBars
     damageContainers:
     - Biological
@@ -119,5 +126,3 @@
   - type: ShowHealthIcons
     damageContainers:
     - Biological
-  # TODO: ADD NIGHT VISION
-

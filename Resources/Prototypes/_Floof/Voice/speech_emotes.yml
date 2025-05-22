@@ -1,0 +1,68 @@
+- type: emote
+  id: Gekker
+  name: chat-emote-name-gekker
+  category: Vocal
+  chatMessages: [ gekkers ]
+  whitelist:
+    tags:
+      - VulpEmotes
+      - KitsuneEmotes # Floof - M3739 - #937
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
+  chatTriggers:
+  - gekkers
+
+- type: emote
+  id: Yip
+  name: chat-emote-name-yip
+  category: Vocal
+  chatMessages: [ yips ]
+  whitelist:
+    tags:
+      - UnathiEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
+  chatTriggers:
+  - yip
+  - yips
+
+- type: emote
+  id: Yap
+  name: chat-emote-name-yap
+  category: Vocal
+  chatMessages: [ yaps ]
+  whitelist:
+    tags:
+      - VulpEmotes
+      - KitsuneEmotes # Floof - M3739 - #937
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
+  chatTriggers:
+  - yap
+  - yaps
+
+- type: emote
+  id: Coo
+  name: chat-emote-name-coo
+  category: Vocal
+  chatMessages: [ coos ]
+  whitelist:
+    tags:
+      - HarpyEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
+  chatTriggers:
+  - coo
+  - coos

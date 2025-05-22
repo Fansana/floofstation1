@@ -43,6 +43,7 @@
       - Kitchen
       - Lawyer
       - Library #Delta V: Add Library Access
+      - Mail # Floofstation - hopefully this makes it upstream eventually
       - Maintenance
       - Medical
       - Mime #Delta V: Add Mime Access
@@ -79,7 +80,7 @@
           type: AccessOverriderBoundUserInterface
     - type: ActivatableUI
       key: enum.AccessOverriderUiKey.Key
-      requireHands: true
+      requiresComplex: true
       requireActiveHand: false
       singleUser: true
     - type: ItemSlots
@@ -124,6 +125,7 @@
     - Kitchen
     - Lawyer
     - Library #Delta V: Add Library Access
+    - Mail # Floofstation - hopefully this makes it upstream eventually
     - Maintenance
     - Medical
     - Mime #Delta V: Add Mime Access
@@ -145,3 +147,4 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+    - Freelancer # Floofstation
