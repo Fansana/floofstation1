@@ -293,19 +293,6 @@
           spaceRange: 3
 
 - type: entity
-  id: ActionDarkSwap
-  name: action-name-darkswap
-  description: action-description-darkswap
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: InstantAction
-      icon: { sprite: Interface/Actions/shadowkin_icons.rsi, state: darkswap }
-      useDelay: 10
-      checkCanInteract: false
-      event: !type:DarkSwapActionEvent
-        manaCost: 100
-
-- type: entity
   id: ActionPyrokineticFlare
   name: action-name-pyrokinetic-flare
   description: action-description-pyrokinetic-flare

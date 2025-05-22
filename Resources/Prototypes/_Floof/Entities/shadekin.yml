@@ -1,0 +1,235 @@
+- type: entity
+  id: Phoronic
+  parent: BaseStructure
+  name: phoronic cascade
+  description: "A huge structure made of pure plasma. Dark energy roils and bursts within it."
+  components:
+    - type: Transform
+      anchored: true
+    - type: Sprite
+      noRot: true
+      drawdepth: Mobs
+      offset: "0.0,0.5"
+      sprite: _Floof/Shadekin/phoronic.rsi
+      state: phoronic
+    - type: SpriteFade
+
+- type: entity
+  id: PortalShadowkinHub
+  parent: BasePortal
+  name: dark hub
+  description: This portal is used by shadekins to go nearly anywhere in the universe!
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: _Floof/Shadekin/shadekin_portal.rsi
+      layers:
+        - state: hub_portal
+    - type: PointLight
+      color: "#793a80dd"
+      radius: 3
+      energy: 1
+      netsync: false
+    - type: Portal
+      arrivalSound: /Audio/Items/hiss.ogg
+      departureSound: /Audio/Items/hiss.ogg
+      canTeleportToOtherMaps: true
+      randomTeleport: false
+    - type: DarkHub
+    - type: DarkLight
+
+- type: entity
+  id: PortalShadowkin
+  parent: BasePortal
+  name: dark portal
+  description: The portal to the dark...
+  components:
+    - type: Sprite
+      noRot: true
+      sprite: _Floof/Shadekin/shadekin_portal.rsi
+      layers:
+        - state: portal
+    - type: PointLight
+      color: "#793a80dd"
+      radius: 3
+      energy: 1
+      netsync: false
+    - type: Portal
+      arrivalSound: /Audio/Items/hiss.ogg
+      departureSound: /Audio/Items/hiss.ogg
+      canTeleportToOtherMaps: true
+      randomTeleport: false
+    - type: DarkPortal
+    - type: DarkLight
+
+- type: entity
+  id: PortalShadowkinSpawner
+  parent: MarkerBase
+  components:
+    - type: SpawnPoint
+      spawn_type: Job
+      job_id: Anomaly
+    - type: ConditionalSpawner
+      prototypes:
+        - PortalShadowkin
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: _Floof/Shadekin/shadekin_portal.rsi
+          state: portal
+
+- type: entity
+  id: ShadekinSpawner
+  parent: MarkerBase
+  components:
+    - type: AnomalyJobSpawn
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: Mobs/Species/Shadowkin/parts.rsi
+          state: full
+
+- type: entity
+  name: Shadekin Haze
+  id: ShadekinShadow
+  parent: BaseShadow
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Appearance
+    - type: Transform
+      anchored: true
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/Effects/Shadowkin/shadeskip.ogg
+    - type: TimedDespawn
+      lifetime: 30
+    - type: Physics
+      canCollide: false
+    - type: Occluder
+    - type: Sprite
+      drawdepth: Effects
+      sprite: Effects/spookysmoke.rsi
+      layers:
+        - state: spookysmoke
+          color: "#793a80dd"
+          map: [base]
+    - type: Tag
+      tags:
+        - HideContextMenu
+        - SpookyFog
+    - type: OptionsVisualizer
+      visuals:
+        base:
+          - options: Default
+            data: { state: spookysmoke }
+          - options: ReducedMotion
+            data: { state: spookysmoke_static }
+
+- type: entity
+  id: ShadekinPhaseInEffect
+  name: Shadekin Phase in
+  components:
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_Floof/Shadekin/phase.ogg
+    - type: TimedDespawn
+      lifetime: 0.5
+    - type: Sprite
+      layers:
+        - sprite: _Floof/Shadekin/phase.rsi
+          state: tp_in
+          shader: unshaded
+      netsync: false
+      drawdepth: Effects
+
+- type: entity
+  id: ShadekinPhaseIn2Effect
+  name: Shadekin Phase in2
+  components:
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_Floof/Shadekin/phase.ogg
+    - type: TimedDespawn
+      lifetime: 0.5
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      layers:
+        - sprite: _Floof/Shadekin/phase.rsi
+          state: tp_in2
+          shader: unshaded
+      netsync: false
+      drawdepth: Effects
+
+- type: entity
+  id: ShadekinPhaseOutEffect
+  name: Shadekin Phase out
+  components:
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_Floof/Shadekin/phase.ogg
+    - type: TimedDespawn
+      lifetime: 0.5
+    - type: Sprite
+      layers:
+        - sprite: _Floof/Shadekin/phase.rsi
+          state: tp_out
+          shader: unshaded
+      netsync: false
+      drawdepth: Effects
+
+- type: entity
+  id: DarkTile
+  name: Dark
+  description: "It's a strange, impenetrable darkness."
+  placement:
+    mode: SnapgridCenter
+    snap:
+      - Wall
+  components:
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          layer:
+            - SlipLayer
+          mask:
+            - ItemMask
+          density: 1000
+          hard: false
+    - type: FloorOccluder
+    - type: Clickable
+    - type: Appearance
+    - type: Transform
+      anchored: true
+    - type: Sprite
+      drawdepth: BelowFloor
+      sprite: _Floof/Shadekin/dark.rsi
+      state: dark
+      shader: unshaded
+    - type: SpeedModifierContacts
+      walkSpeedModifier: 0.3
+      sprintSpeedModifier: 0.3
+      ignoreWhitelist:
+        components:
+          - Shadekin
+
+- type: entity
+  id: DarkTileDangerous
+  parent: [DarkTile, BaseShadow]
+  suffix: Dangerous
+  components:
+    - type: Kudzu
+      spreadChance: 0.99
+      growthTickChance: 0.2
+    - type: ActiveEdgeSpreader
+    - type: GrowingKudzu
+    - type: EdgeSpreader
+      id: Kudzu
