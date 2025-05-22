@@ -87,7 +87,7 @@
             max: 5
       - !type:GibBehavior { }
   - type: StaticPrice
-    price: 10
+    price: 0
 
 - type: entity
   name: clown rat
