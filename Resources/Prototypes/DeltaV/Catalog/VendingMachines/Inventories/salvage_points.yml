@@ -47,8 +47,8 @@
     cost: 5200
   - id: ClothingBackpackDuffelSalvageConscription
     cost: 1500
-  - id: WeaponRifleGestioEmpty
-    cost: 6400
+  # - id: WeaponRifleGestioEmpty # Floof - remove Gestio as option.
+  # cost: 6400
   - id: WeaponRifleSVTEmpty
     cost: 6400
   - id: SpaceCash1000
