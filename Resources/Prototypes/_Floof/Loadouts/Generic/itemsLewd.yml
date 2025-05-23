@@ -196,3 +196,92 @@
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutLewd
+
+# Dildos
+- type: loadout
+  id: LoadoutItemAvianDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - AvianDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemCanineDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - CanineDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemCanineDildoRed
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - CanineDildoRed
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemHorseDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - HorseDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemDragonDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - DragonDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemNormalDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - NormalDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemTentacleDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - TentacleDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemDoubleDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - DoubleDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
