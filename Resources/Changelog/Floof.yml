@@ -5814,3 +5814,26 @@ Entries:
   id: 611
   time: '2025-05-22T01:24:24.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1012
+- author: WhiteLightningTwister
+  changes:
+    - type: Add
+      message: reintroduced existing jobs.
+    - type: Add
+      message: Added administration office.
+    - type: Add
+      message: Salvage break room.
+    - type: Add
+      message: Added a rack storage area in the tech vault to have boards now.
+    - type: Add
+      message: added beacons for areas that lacked them before.
+    - type: Tweak
+      message: Adjusted engineering with more decorative decals.
+    - type: Tweak
+      message: Adjusted engineering airlock to singo area.
+    - type: Fix
+      message: Fixed the salvage airlock due to issues were they can get locked out.
+    - type: Remove
+      message: Salvage expedition console from their area.
+  id: 612
+  time: '2025-05-23T03:27:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1016
