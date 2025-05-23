@@ -5837,3 +5837,16 @@ Entries:
   id: 612
   time: '2025-05-23T03:27:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1016
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: 'Added a legality notice to the description of salvage''s firearms. '
+    - type: Tweak
+      message: The mining points cost of all salvage firearms have been increased by 4x
+    - type: Remove
+      message: >-
+        Salvage no longer starts with bombs in their lockers. Buy them with your
+        mining points.
+  id: 613
+  time: '2025-05-23T03:58:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1001
