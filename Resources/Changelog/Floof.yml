@@ -5690,7 +5690,7 @@ Entries:
   id: 598
   time: '2025-05-17T19:50:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/988
-- author: DeltaV
+- author: DeltaV SolStar, Einstein Engines VMSolidus, M3739
   changes:
     - type: Fix
       message: Cloning should now properly replicate the original body's appearance.
@@ -5770,3 +5770,83 @@ Entries:
   id: 605
   time: '2025-05-20T17:02:25.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/972
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Hypnotic Gaze now costs 0 and can be used on mind broken individuals
+        (X-waveform and Black-eyes)
+  id: 606
+  time: '2025-05-21T22:11:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1009
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added an alternate female chest marking for unathi.
+  id: 607
+  time: '2025-05-21T22:15:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1008
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Tracker implant are now a T2 researchable under civil
+  id: 608
+  time: '2025-05-21T22:19:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/705
+- author: M3739
+  changes:
+    - type: Fix
+      message: Kitsune can now be healed by topicals.
+  id: 609
+  time: '2025-05-21T23:11:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1006
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Full Shadekin rework!
+  id: 610
+  time: '2025-05-21T23:35:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/995
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: fixed symmetry to bionic leg trait
+  id: 611
+  time: '2025-05-22T01:24:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1012
+- author: WhiteLightningTwister
+  changes:
+    - type: Add
+      message: reintroduced existing jobs.
+    - type: Add
+      message: Added administration office.
+    - type: Add
+      message: Salvage break room.
+    - type: Add
+      message: Added a rack storage area in the tech vault to have boards now.
+    - type: Add
+      message: added beacons for areas that lacked them before.
+    - type: Tweak
+      message: Adjusted engineering with more decorative decals.
+    - type: Tweak
+      message: Adjusted engineering airlock to singo area.
+    - type: Fix
+      message: Fixed the salvage airlock due to issues were they can get locked out.
+    - type: Remove
+      message: Salvage expedition console from their area.
+  id: 612
+  time: '2025-05-23T03:27:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1016
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: 'Added a legality notice to the description of salvage''s firearms. '
+    - type: Tweak
+      message: The mining points cost of all salvage firearms have been increased by 4x
+    - type: Remove
+      message: >-
+        Salvage no longer starts with bombs in their lockers. Buy them with your
+        mining points.
+  id: 613
+  time: '2025-05-23T03:58:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1001
