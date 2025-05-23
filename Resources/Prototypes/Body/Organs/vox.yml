@@ -8,3 +8,12 @@
     metabolizerTypes: [ Vox ]
   - type: Lung
     alert: LowNitrogen
+
+- type: entity
+  id: OrganVoxHeart
+  parent: BaseHumanOrgan
+  suffix: "vox"
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Vox ]
+  

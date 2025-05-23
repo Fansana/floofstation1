@@ -10,6 +10,7 @@ species-name-arachne = Arachne
 species-name-moth = Moth Person
 species-name-skeleton = Skeleton
 species-name-vox = Vox
+species-name-old-kin-vox = Old-Kin Vox
 species-name-ipc = IPC
 species-name-shadowkin = Shadekin
 species-name-shadekin = Shadekin

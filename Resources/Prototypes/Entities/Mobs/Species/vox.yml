@@ -107,3 +107,161 @@
   - type: Body
     prototype: Vox
 
+
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobOldKinVox
+  abstract: true
+  components:
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: OldKinVox
+  - type: Bloodstream
+    bloodReagent: VoxIchor
+  - type: Barotrauma
+    damage:
+      types:
+        Heat: 0.2 # Space and cold-proof, but capable of overheating
+  - type: Temperature
+    heatDamageThreshold: 320
+    coldDamageThreshold: 0
+    currentTemperature: 179.15
+    specificHeat: 20
+    coldDamage:
+      types:
+        Cold: 0
+    heatDamage:
+      types:
+        Heat: 0.2
+  - type: ThermalRegulator
+    metabolismHeat: 100
+    radiatedHeat: 800
+    implicitHeatRegulation: 250
+    sweatHeatRegulation: 1000
+    shiveringHeatRegulation: 0
+    normalBodyTemperature: 179.15
+    thermalRegulationTemperatureThreshold: 50
+  - type: PassiveDamage # self-cooling, Anti-Tox system
+    allowedStates:
+    - Alive
+    damageCap: 20
+    damage:
+      types:
+        Poison: -0.02
+      groups:
+        Burn: -0.07
+
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Vox2/parts.rsi
+    state: vox_m
+  - type: Sprite
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: torso_m
+      - map: [ "enum.HumanoidVisualLayers.Head" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: head_m
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+        color: "#008800"
+        sprite: _Floof/Mobs/Customization/eyes.rsi
+        state: vox2_eyes_s
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: r_arm
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: l_arm
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: r_leg
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: l_leg
+      # Vox don't have female clothing masks.
+      #- shader: StencilClear
+      #  sprite: Mobs/Species/Vox/parts.rsi
+      #  state: l_leg
+      #- shader: StencilMask
+      #  map: [ "enum.HumanoidVisualLayers.FemaleStencilMask" ]
+      #  sprite: Mobs/Customization/masking_helpers.rsi
+      #  state: female_full
+      #  visible: false
+      #- map: [ "jumpsuit" ]
+      #  shader: StencilDraw
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: l_hand
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: r_hand
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: l_foot
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+        state: r_foot
+      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "ears" ]
+      - map: [ "outerClothing" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "id" ]
+      - map: [ "neck" ]
+      - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+        state: shaved
+        sprite: Mobs/Customization/human_facial_hair.rsi
+      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+        state: bald
+        sprite: Mobs/Customization/human_hair.rsi
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+  - type: Body
+    prototype: Vox
+    requiredLegs: 2
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+  - type:  HumanoidAppearance
+    species: Vox
+    canColorHair: false
+    # canColorFacialHair: false
+  - type: Inventory
+    speciesId: vox
+  - type: InventorySlots
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken
+      amount: 5
+  - type: Vocal
+    sounds:
+      Male: UnisexVox
+      Female: UnisexVox
+      Unsexed: UnisexVox
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobOldKinVoxDummy
+  noSpawn: true
+  components:
+  - type: HumanoidAppearance
+    species: OldKinVox
+  - type: Body
+    prototype: OldKinVox
