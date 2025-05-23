@@ -119,6 +119,7 @@
     energy: 1.1
     softness: 1
     color: "#5D0CED"
+  - type: DarkLight
 
 - type: entity
   id: PoweredLightPostSmallRed

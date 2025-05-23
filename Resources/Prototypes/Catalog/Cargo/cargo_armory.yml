@@ -18,15 +18,15 @@
   category: cargoproduct-category-name-armory
   group: market
 
-- type: cargoProduct
-  id: TrackingImplant
-  icon:
-    sprite: Objects/Specific/Medical/implanter.rsi
-    state: implanter0
-  product: CrateTrackingImplants
-  cost: 1000
-  category: cargoproduct-category-name-armory
-  group: market
+# type: cargoProduct     #Floof change Change to Research instead
+# id: TrackingImplant
+# icon:
+#   sprite: Objects/Specific/Medical/implanter.rsi
+#   state: implanter0
+# product: CrateTrackingImplants
+# cost: 20000 #Floof to help with the meta
+# category: cargoproduct-category-name-armory
+#  group: market
 
 - type: cargoProduct
   id: TrainingBombs

@@ -30,6 +30,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       types:
         Heat: -5
@@ -81,6 +82,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       types:
         Heat: -10
@@ -121,6 +123,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       groups:
         Brute: -15 # was 5 (-15 Brute) for each, Buffed due to limb damage changes # Floof - reverted
@@ -170,6 +173,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       groups:
         Brute: -30 # was 10 for each, now 20 for each type in the group, Buffed due to Limb Damage Changes # Floof - reverted
@@ -208,6 +212,7 @@
   - type: Healing
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       types:
         Bloodloss: -0.5 #lowers bloodloss damage, was .5, buffed due to Limb Damage Changes # Floof - reverted
@@ -244,6 +249,7 @@
     - type: Healing
       damageContainers:
         - Biological
+        - BiologicalMetaphysical # Floof - M3739 - #1006
       damage:
         groups:
           Brute: 5 # Tourniquets HURT!
@@ -275,6 +281,7 @@
     selfHealPenaltyMultiplier: 1.5 # Floof - useful gauze
     damageContainers:
       - Biological
+      - BiologicalMetaphysical # Floof - M3739 - #1006
     damage:
       types:
         Slash: -5 # Was 5 # Floof - reverted
