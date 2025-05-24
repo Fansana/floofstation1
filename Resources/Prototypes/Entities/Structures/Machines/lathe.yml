@@ -228,6 +228,8 @@
     - RiotShield
     - SpeedLoaderMagnum
     - SpeedLoaderMagnumEmpty
+    - MagazineLightRifleMarkOneEmpty
+    - MagazineLightRifleMarkOne
     - MagazinePistolCaselessRifle # Goobstation
     - MagazineBoxCaselessRifle # Goobstation
     - MagazineMagnumEmpty # Goobstation
@@ -994,6 +996,8 @@
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
+      - MagazineLightRifleMarkOneEmpty
+      - MagazineLightRifleMarkOne
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1051,6 +1055,8 @@
         - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
+        - MagazineLightRifleMarkOneEmpty
+        - MagazineLightRifleMarkOne
     - type: MaterialStorage
       whitelist:
         tags:
@@ -1123,7 +1129,7 @@
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
-      - BaseChemistryEmptyVial #floof
+      - BahemistryEmptyVial #floof
       - AACTablet # DeltaV
     dynamicRecipes:
       - ChemicalPayload
@@ -1135,7 +1141,7 @@
       - SyringeCryostasis
       - ClothingEyesNightVisionMedicalGoggles
       - HypoMini # Floof
-      # Floof section - port to EE later
+      # Floof tion - port to EE later
       - HandHeldMassScanner
       - ClothingHeadHelmetInsulated
       - CloningConsoleComputerCircuitboard
