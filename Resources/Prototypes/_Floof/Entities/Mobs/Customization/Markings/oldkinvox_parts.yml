@@ -1,0 +1,191 @@
+- type: marking
+  id: OldKinVoxClawsChest
+  bodyPart: HeadSide
+  markingCategory: Chest
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ClawsChest
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#a0a654"
+
+- type: marking
+  id: OldKinVoxClawsLHand
+  bodyPart: LHand
+  markingCategory: LeftHand
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ClawsLArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#a0a654"
+
+- type: marking
+  id: OldKinVoxClawsLFoot
+  bodyPart: LFoot
+  markingCategory: LeftFoot
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ClawsLLeg
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#a0a654"
+
+- type: marking
+  id: OldKinVoxClawsRHand
+  bodyPart: RHand
+  markingCategory: RightHand
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ClawsRArm
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#a0a654"
+
+- type: marking
+  id: OldKinVoxClawsRFoot
+  bodyPart: RFoot
+  markingCategory: RightFoot
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ClawsRLeg
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#a0a654"
+
+- type: marking
+  id: OldKinVoxLArmMarkings
+  bodyPart: LArm
+  markingCategory: LeftArm
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ArmMarkingsL
+
+- type: marking
+  id: OldKinVoxRArmMarkings
+  bodyPart: RArm
+  markingCategory: RightArm
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ArmMarkingsR
+
+- type: marking
+  id: OldKinVoxCrest
+  bodyPart: HeadSide
+  markingCategory: HeadTop
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: Crest
+
+- type: marking
+  id: OldKinVoxNeckMarkings
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: Neck_Markings
+
+- type: marking
+  id: OldKinVoxBeak
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: Beak
+
+- type: marking
+  id: OldKinVoxTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [OldKinVox]
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: Tail
+
+- type: marking
+  id: OldKinVoxScutesLArm
+  bodyPart: LHand
+  markingCategory: LeftArm
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesLArm
+
+- type: marking
+  id: OldKinVoxScutesLLeg
+  bodyPart: LFoot
+  markingCategory: LeftLeg
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesLLeg
+
+- type: marking
+  id: OldKinVoxScutesRArm
+  bodyPart: RHand
+  markingCategory: RightArm
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesRArm
+
+- type: marking
+  id: OldKinVoxScutesRLeg
+  bodyPart: RFoot
+  markingCategory: RightLeg
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  layering:
+
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesRLeg
