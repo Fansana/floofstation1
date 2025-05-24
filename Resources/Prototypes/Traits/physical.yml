@@ -888,7 +888,7 @@
          - Paramedic
          - SeniorPhysician # Floofstation - Physicians have Paramedic access here
       - !type:CharacterDepartmentRequirement
-          departments:
+        departments:
           - Security
           - Command
           - Dignitary
