@@ -5850,3 +5850,10 @@ Entries:
   id: 613
   time: '2025-05-23T03:58:23.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1001
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Shuttle windows should no longer shock people.
+  id: 614
+  time: '2025-05-24T01:24:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1020
