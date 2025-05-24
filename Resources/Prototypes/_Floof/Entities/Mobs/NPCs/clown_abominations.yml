@@ -2,7 +2,7 @@
   name: clown rat
   parent: MobMouse
   id: MobClownRat
-  description: Despite all their rage, they are still just a clown in a cage. Wait... YOU SET IT FREE?
+  description: Despite all their rage, they are still just a clown in a cage. Wait... YOU SET IT FREE?!
   components:
   - type: Sprite
     sprite: _Floof/Mobs/Animals/clown_rat.rsi
