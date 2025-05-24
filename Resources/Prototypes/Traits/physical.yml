@@ -891,7 +891,6 @@
         departments:
           - Security
           - Command
-          - Dignitary
           - Engineering # Floofstation - Weird this wasn't upstream
     - !type:CharacterTraitRequirement
       inverted: true
