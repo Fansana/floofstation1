@@ -516,7 +516,7 @@
         - SpiderCraft
 
 - type: trait
-  id: BionicArm
+  id: BionicPryArm
   category: Physical
   points: -3 # Floof - since you can't get free JoL anymore
   requirements:
@@ -868,3 +868,40 @@
 #        - description: examine-thermal-vision-message
 #          fontSize: 12
 #          requireDetailRange: true
+
+- type: trait
+  id: BionicArm
+  category: Physical
+  points: -8
+  requirements:
+    - !type:CharacterLogicOrRequirement
+      requirements:
+      - !type:CharacterJobRequirement
+        jobs:
+         - Paramedic
+         - SeniorPhysician # Floofstation - Physicians have Paramedic access here
+      - !type:CharacterDepartmentRequirement
+          departments:
+          - Security
+          - Command
+          - Dignitary
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicPryArm
+  functions:
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: JawsOfLifeLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: JawsOfLifeRightArm
+      slotId: "right arm"
+    - !type:TraitPushDescription
+      descriptionExtensions:
+        - description: examine-bionic-arm-message
+          fontSize: 12
+          requireDetailRange: true
