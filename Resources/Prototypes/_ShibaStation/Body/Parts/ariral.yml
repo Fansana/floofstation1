@@ -1,0 +1,61 @@
+- type: entity
+  abstract: true
+  parent: BasePart
+  id: PartAriralBase
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+  - type: Icon
+    sprite: _ShibaStation/Mobs/Species/Ariral/parts.rsi
+  - type: BodyPart
+    species: Ariral
+
+- type: entity
+  parent: [ PartAriralBase, BaseTorso ]
+  id: TorsoAriral
+  name: "ariral torso"
+
+- type: entity
+  parent: [ PartAriralBase, BaseHead ]
+  id: HeadAriral
+  name: "ariral head"
+
+- type: entity
+  parent: [ PartAriralBase, BaseLeftArm ]
+  id: LeftArmAriral
+  name: "left ariral arm"
+
+- type: entity
+  parent: [ PartAriralBase, BaseRightArm ]
+  id: RightArmAriral
+  name: "right ariral arm"
+
+- type: entity
+  parent: [ PartAriralBase, BaseLeftHand ]
+  id: LeftHandAriral
+  name: "left ariral hand"
+
+- type: entity
+  parent: [ PartAriralBase, BaseRightHand ]
+  id: RightHandAriral
+  name: "right ariral hand"
+
+- type: entity
+  parent: [ PartAriralBase, BaseLeftLeg ]
+  id: LeftLegAriral
+  name: "left ariral leg"
+
+- type: entity
+  parent: [ PartAriralBase, BaseRightLeg ]
+  id: RightLegAriral
+  name: "right ariral leg"
+
+- type: entity
+  parent: [ PartAriralBase, BaseLeftFoot ]
+  id: LeftFootAriral
+  name: "left ariral foot"
+
+- type: entity
+  parent: [ PartAriralBase, BaseRightFoot ]
+  id: RightFootAriral
+  name: "right ariral foot"

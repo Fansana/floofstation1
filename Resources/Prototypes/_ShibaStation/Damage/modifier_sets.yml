@@ -1,0 +1,26 @@
+- type: damageModifierSet
+  id: Ariral
+  coefficients:
+    Blunt: 0.8 # 20% less blunt damage
+    Slash: 1.15 # 15% more slash and piercing damage
+    Piercing: 1.15
+    Cold: 1.2 # 20% more cold damage
+    Poison: 0.1 # 90% less poison damage
+    Radiation: 1.2 # 20% more radiation damage
+    Bloodloss: 1.1 # 10% more bloodloss damage
+
+- type: damageModifierSet
+  id: BloodlossAriral
+  coefficients:
+    Blunt: 0.16
+    Slash: 0.5
+    Piercing: 0.4
+    Shock: 0.0
+    Cold: 0.0
+    Heat: -0.5 # heat damage cauterizes wounds, but will still hurt obviously.
+    Poison: 0.0
+    Radiation: 0.0
+    Asphyxiation: 0.0
+    Bloodloss: 0.0 # no double dipping
+    Cellular: 0.0
+    Caustic: 0.0
