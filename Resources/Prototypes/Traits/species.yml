@@ -5,8 +5,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage
+        damageModifierSet:
           coefficients:
             Blunt: 1.25
             Slash: 1.35
@@ -30,8 +30,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage
+        damageModifierSet:
           coefficients:
             Blunt: 1.25
             Slash: 1.25
@@ -55,8 +55,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage
+        damageModifierSet:
           coefficients:
             Blunt: 1.30
             Slash: 1.30
@@ -80,8 +80,8 @@
   functions:
     - !type:TraitReplaceComponent
       components:
-      - type: OniDamageModifier
-        modifiers:
+      - type: BonusMeleeDamage
+        damageModifierSet:
           coefficients:
             Blunt: 1.05
             Slash: 1.05
