@@ -316,10 +316,11 @@
   category: Vocal
   icon: Interface/Emotes/chirp.png
   whitelist:
+    tags:
+    - HarpyEmotes
+    - ResomiEmotes
     components:
     - Nymph
-    tags:
-    - ResomiEmotes
   chatMessages: ["chat-emote-msg-chirp"]
   chatTriggers:
     - chirps
