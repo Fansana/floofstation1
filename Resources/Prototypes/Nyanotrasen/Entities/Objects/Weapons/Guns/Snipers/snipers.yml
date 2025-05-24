@@ -79,6 +79,3 @@
     autoEject: true
     soundAutoEject:
       path: /Audio/Weapons/Guns/EmptyAlarm/M1_empty_alarm.ogg
-    whitelist:
-      tags:
-      - CartridgeLightRifle
