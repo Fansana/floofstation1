@@ -1079,3 +1079,18 @@
     Silver: 100
     Gold: 100
 
+- type: latheRecipe
+  id: MagazineLightRifleMarkOneEmpty
+  result: MagazineLightRifleMarkOneEmpty
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: MagazineLightRifleMarkOne
+  result: MagazineLightRifleMarkOne
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 200
