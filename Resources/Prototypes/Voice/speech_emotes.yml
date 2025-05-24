@@ -316,7 +316,9 @@
   category: Vocal
   icon: Interface/Emotes/chirp.png
   whitelist:
-    requireAll: true
+    tags:
+    - HarpyEmotes
+    - ResomiEmotes
     components:
     - Nymph
   chatMessages: ["chat-emote-msg-chirp"]
