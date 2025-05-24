@@ -518,23 +518,30 @@
 - type: trait
   id: BionicPryArm
   category: Physical
-  points: -3 # Floof - since you can't get free JoL anymore
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator
-        - Anomaly
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicArm
   functions:
-    - !type:TraitAddComponent
-      components:
-        - type: Prying
-          speedModifier: 1
-          pryPowered: false # Floof
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: CrowbarLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: CrowbarRightArm
+      slotId: "right arm"
     - !type:TraitPushDescription
       descriptionExtensions:
-        - description: examine-bionic-arm-message
+        - description: examine-bionic-pryarm-message
           fontSize: 12
           requireDetailRange: true
 
