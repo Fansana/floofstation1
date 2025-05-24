@@ -287,25 +287,44 @@
   physicalDesc: reagent-physical-desc-failed-ichor
   slippery: false
   metabolisms:
-    conditions:
-    - !type:OrganType
-      type: Vox
     Drink:
       effects:
       - !type:SatiateThirst
         factor: -1.5
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: true
     Medicine:
       effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Burn: 1
-            Brute: 1
-            Toxin: 0.5
-          types:
-            Bloodloss: -5
+        - !type:HealthChange
+          damage:
+            groups:
+              Burn: -2.5
+              Brute: -2.5
+            types:
+              Bloodloss: -2.5
+              Radiation: 1
+          conditions:
+          - !type:OrganType
+            type: Vox
+            shouldHave: false # Mud in your eye, kid.
+        - !type:HealthChange
+          damage:
+            groups:
+              Toxin: -1
+            types:
+              Bloodloss: -2.5
+          conditions:
+          - !type:OrganType
+            type: Vox
+            shouldHave: true
   plantMetabolism:
   - !type:PlantAdjustNutrition
     amount: 1
   - !type:PlantAdjustHealth
     amount: 0.5
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 6

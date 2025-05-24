@@ -3,18 +3,24 @@
   id: BaseMobOldKinVox
   abstract: true
   components:
+
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: OldKinVox
+
   - type: Bloodstream
     bloodReagent: VoxIchor
+
+  - type: PressureImmunity
+  - type: Insulated
   - type: Barotrauma
     damage:
       types:
         Heat: 0.2 # Space and cold-proof, but capable of overheating
+
   - type: Temperature
-    heatDamageThreshold: 320
-    coldDamageThreshold: 0
+    heatDamageThreshold: 320.15
+    coldDamageThreshold: -150
     currentTemperature: 179.15
     specificHeat: 20
     coldDamage:
@@ -22,15 +28,23 @@
         Cold: 0
     heatDamage:
       types:
-        Heat: 0.2
+        Heat: 3
+
   - type: ThermalRegulator
     metabolismHeat: 100
-    radiatedHeat: 800
-    implicitHeatRegulation: 250
+    radiatedHeat: 100
+    implicitHeatRegulation: 0
     sweatHeatRegulation: 1000
-    shiveringHeatRegulation: 0
+    shiveringHeatRegulation: 5000
     normalBodyTemperature: 179.15
-    thermalRegulationTemperatureThreshold: 50
+    thermalRegulationTemperatureThreshold: 25
+
+  - type: TemperatureSpeed
+    thresholds:
+      250: 0.8
+      150: 0.6
+      50: 0.4
+
   - type: PassiveDamage # self-cooling, Anti-Tox system
     allowedStates:
     - Alive
@@ -41,12 +55,31 @@
       groups:
         Burn: -0.07
 
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 3
+        Bloodloss: 2
+
   - type: Hunger
   - type: Thirst
   - type: Icon
     sprite: Mobs/Species/Vox2/parts.rsi
     state: vox_m
   - type: Sprite
+    scale: 1.2, 1.2
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
         sprite: _Floof/Mobs/Species/Vox2/parts.rsi
@@ -120,13 +153,7 @@
   - type: Body
     prototype: Vox
     requiredLegs: 2
-  - type: Respirator
-    damage:
-      types:
-        Asphyxiation: 1
-    damageRecovery:
-      types:
-        Asphyxiation: -1.0
+
   - type:  HumanoidAppearance
     species: Vox
     canColorHair: false
@@ -139,6 +166,10 @@
     spawned:
     - id: FoodMeatChicken
       amount: 5
+
+  - type: TypingIndicator
+    proto: Vox
+
   - type: Vocal
     sounds:
       Male: UnisexVox

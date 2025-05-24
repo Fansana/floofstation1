@@ -22,7 +22,7 @@ marking-OldKinVoxRArmMarkings = Right Arm Markings
 marking-OldKinVoxCrest-Crest = Vox Crest
 marking-OldKinVoxCrest = Vox Crest
 
-marking-OldKinVoxNeckMarkings-Neck_Markings = Neck Markings
+marking-OldKinVoxNeckMarkings-Neck_markings = Neck Markings
 marking-OldKinVoxNeckMarkings = Neck Markings
 
 marking-OldKinVoxBeak-Beak = Vox Beak
