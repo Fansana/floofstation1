@@ -1129,7 +1129,7 @@
       - HandheldGPSBasic # Floof - port to EE
       - HandheldStationMap # Floof - port to EE
       - SterileBag # floof
-      - BahemistryEmptyVial #floof
+      - BaseChemistryEmptyVial #floof
       - AACTablet # DeltaV
     dynamicRecipes:
       - ChemicalPayload
@@ -1141,7 +1141,7 @@
       - SyringeCryostasis
       - ClothingEyesNightVisionMedicalGoggles
       - HypoMini # Floof
-      # Floof tion - port to EE later
+      # Floof section - port to EE later
       - HandHeldMassScanner
       - ClothingHeadHelmetInsulated
       - CloningConsoleComputerCircuitboard
