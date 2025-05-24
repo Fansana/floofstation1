@@ -15,3 +15,4 @@ marking-LizardChestUnderbellyFeminine = Lizard Chest (Underbelly, Feminine)
 marking-LizardChestFemaleAlternate = Female Lizard Chest (Alternate)
 marking-LizardChestFemaleAlternate-chest = Chest
 marking-LizardChestFemaleAlternate-chest_secondary = Underbelly
+marking-LizardChestFemaleAlternate-nipples = Nipples
