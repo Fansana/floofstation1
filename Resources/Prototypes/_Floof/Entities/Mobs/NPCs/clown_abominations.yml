@@ -200,6 +200,7 @@
   - type: NpcFactionMember
     factions:
       - Syndicate
+      - Mouse
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
@@ -269,6 +270,7 @@
   - type: NpcFactionMember
     factions:
       - Syndicate
+      - Mouse
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
@@ -338,6 +340,7 @@
   - type: NpcFactionMember
     factions:
       - Syndicate
+      - Mouse
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
