@@ -524,6 +524,8 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Anomaly
+        - Gladiator
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -890,6 +892,7 @@
           - Security
           - Command
           - Dignitary
+          - Engineering # Floofstation - Weird this wasn't upstream
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
