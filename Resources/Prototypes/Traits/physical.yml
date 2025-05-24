@@ -627,7 +627,6 @@
       components:
         - type: Flashable # Effectively, removes any flash-vulnerability species traits.
 
-
 - type: trait
   id: FlareShielding
   category: Physical
@@ -641,7 +640,6 @@
       components:
         - type: FlashImmunity
         - type: EyeProtection
-
 
 - type: trait
   id: CyberEyesSecurity
