@@ -65,16 +65,16 @@
       points: 1
       required: false
     Head:
-      points: 2
+      points: 6
       required: false
     HeadTop:
-      points: 1
+      points: 6
       required: false
     Chest:
       points: 6
       required: false
     RightLeg:
-      points: 2
+      points: 6
       required: false
     RightFoot:
       points: 6

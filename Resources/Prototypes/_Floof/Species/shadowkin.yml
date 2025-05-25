@@ -93,6 +93,9 @@
   markingsMatchSkin: true
 
 - type: humanoidBaseSprite
+  id: MobShadowkinAnyMarking
+
+- type: humanoidBaseSprite
   id: MobShadowkinHead
   baseSprite:
     sprite: Mobs/Species/Shadowkin/parts.rsi
