@@ -37,8 +37,10 @@ marking-OldKinVoxScutesLArm = Vox Left Scutes
 marking-OldKinVoxScutesRArm-ScutesRArm = Vox Right Scutes
 marking-OldKinVoxScutesRArm = Vox Right Scutes
 
-marking-OldKinVoxScutesLLeg-ScutesLLeg = Vox Left Scutes
+marking-OldKinVoxScutesLLeg-ScutesLLeg-LLeg = Vox Left(leg) Scutes
+marking-OldKinVoxScutesLLeg-ScutesLFoot-LFoot = Vox Left(foot) Scutes
 marking-OldKinVoxScutesLLeg = Vox Left Scutes
 
-marking-OldKinVoxScutesRLeg-ScutesRLeg = Vox Right Scutes
+marking-OldKinVoxScutesRLeg-ScutesRLeg-RLeg = Vox Right(leg) Scutes
+marking-OldKinVoxScutesRLeg-ScutesRFoot-RFoot = Vox Right(foot) Scutes
 marking-OldKinVoxScutesRLeg = Vox Right Scutes

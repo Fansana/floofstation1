@@ -119,20 +119,6 @@
       state: ScutesLArm
 
 - type: marking
-  id: OldKinVoxScutesLLeg
-  bodyPart: LLeg, LFoot
-  markingCategory: LeftLeg
-  speciesRestriction: [OldKinVox]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#bc7d3e"
-  sprites:
-    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
-      state: ScutesLLeg
-
-- type: marking
   id: OldKinVoxClawsLFoot
   bodyPart: LFoot
   markingCategory: LeftLeg
@@ -161,8 +147,27 @@
       state: ScutesRArm
 
 - type: marking
+  id: OldKinVoxScutesLLeg
+  bodyPart: LLeg, LFoot
+  markingCategory: LeftLeg
+  speciesRestriction: [OldKinVox]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#bc7d3e"
+  layering:
+    ScutesLLeg-LLeg: LLeg
+    ScutesLLeg-LFoot: LFoot
+  sprites:
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesLLeg-LLeg
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesLLeg-LFoot
+
+- type: marking
   id: OldKinVoxScutesRLeg
-  bodyPart: RLeg, RFoot
+  bodyPart: LLeg, LFoot #Because SS14 code is trash.
   markingCategory: RightLeg
   speciesRestriction: [OldKinVox]
   coloring:
@@ -170,9 +175,14 @@
       type:
         !type:SimpleColoring
         color: "#bc7d3e"
+  layering:
+    ScutesRLeg-RLeg: RLeg
+    ScutesRLeg-RFoot: RFoot
   sprites:
     - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
-      state: ScutesRLeg
+      state: ScutesRLeg-RLeg
+    - sprite: _Floof/Mobs/Customization/vox2_parts.rsi
+      state: ScutesRLeg-RFoot
 
 - type: marking
   id: OldKinVoxClawsRFoot

@@ -44,15 +44,23 @@
         "directions": 4
       },
       {
-        "name": "ScutesLLeg",
+        "name": "ScutesLLeg-LLeg",
+        "directions": 4
+      },
+      {
+        "name": "ScutesLLeg-LFoot",
+        "directions": 4
+      },
+      {
+        "name": "ScutesRLeg-RLeg",
+        "directions": 4
+      },
+      {
+        "name": "ScutesRLeg-RFoot",
         "directions": 4
       },
       {
         "name": "ScutesRArm",
-        "directions": 4
-      },
-      {
-        "name": "ScutesRLeg",
         "directions": 4
       },
       {
