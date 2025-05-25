@@ -4,6 +4,14 @@
   abstract: true
   components:
 
+  - type: LanguageKnowledge
+    speaks:
+      - OldVox
+    understands:
+      - TauCetiBasic,
+      - OldVox
+      - NewVox
+
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: OldKinVox
@@ -166,9 +174,6 @@
     spawned:
     - id: FoodMeatChicken
       amount: 5
-
-  - type: TypingIndicator
-    proto: Vox
 
   - type: Vocal
     sounds:
