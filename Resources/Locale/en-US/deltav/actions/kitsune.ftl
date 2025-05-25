@@ -3,3 +3,4 @@ kitsune-popup-morph-message-other = {$target} shifts their form
 kitsune-popup-morph-message-user = You shift your form
 kitsune-popup-cant-morph-stamina = You are too exhausted!
 fox-no-hands = You can't make a wisp without a hand
+fox-no-charge = You can't make another wisp!
