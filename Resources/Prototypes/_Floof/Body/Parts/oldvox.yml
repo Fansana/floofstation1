@@ -1,0 +1,279 @@
+﻿# TODO: Add descriptions (many)
+# TODO BODY: Part damage
+- type: entity
+  id: PartOldKinVox
+  parent: BaseItem
+  name: "Old-kin vox body part"
+  abstract: true
+  components:
+  - type: Damageable
+    damageContainer: OrganicPart # Shitmed Change
+  - type: BodyPart
+  - type: ContainerContainer
+    containers:
+      bodypart: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+      - Trash
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: VoxIchor
+        Quantity: 10
+  # Shitmed Change Start
+  - type: Gibbable
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/organ1.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/organ2.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 110
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 150
+      behaviors:
+      - !type:GibPartBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+  # Shitmed Change End
+
+- type: entity
+  id: TorsoOldKinVox
+  name: "Old-kin vox torso"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "torso_m"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "torso_m"
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Fat
+          Quantity: 3
+        - ReagentId: VoxIchor
+          Quantity: 10
+    # Shitmed Change Start
+    - type: BodyPart
+      partType: Torso
+      toolName: "a torso"
+      containerName: "torso_slot"
+    - type: ContainerContainer
+      containers:
+        torso_slot: !type:ContainerSlot {}
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Blunt
+          damage: 400
+        behaviors:
+        - !type:GibPartBehavior { }
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Slash
+          damage: 400
+        behaviors:
+        - !type:GibPartBehavior { }
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Heat
+          damage: 400
+        behaviors:
+        - !type:SpawnEntitiesBehavior
+          spawnInContainer: true
+          spawn:
+            Ash:
+              min: 1
+              max: 1
+        - !type:BurnBodyBehavior { }
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MeatLaserImpact
+    # Shitmed Change End
+
+- type: entity
+  id: HeadOldKinVox
+  name: "Old-kin vox head"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "head_m"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "head_m"
+    - type: BodyPart
+      partType: Head
+      vital: true
+      toolName: "a head" # Shitmed Change
+    - type: Input
+      context: "ghost"
+    - type: Tag
+      tags:
+        - Head
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Fat
+          Quantity: 5
+        - ReagentId: VoxIchor
+          Quantity: 10
+
+- type: entity
+  id: LeftArmOldKinVox
+  name: "left Old-kin vox arm"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_arm"
+    - type: Icon
+      sprite: M_Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Left
+      toolName: "a left arm" # Shitmed Change
+
+- type: entity
+  id: RightArmOldKinVox
+  name: "right Old-kin vox arm"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_arm"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_arm"
+    - type: BodyPart
+      partType: Arm
+      symmetry: Right
+      toolName: "a right arm" # Shitmed Change
+
+- type: entity
+  id: LeftHandOldKinVox
+  name: "left Old-kin vox hand"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_hand"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Left
+      toolName: "a left hand" # Shitmed Change
+
+- type: entity
+  id: RightHandOldKinVox
+  name: "right vox Old-kin hand"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_hand"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_hand"
+    - type: BodyPart
+      partType: Hand
+      symmetry: Right
+      toolName: "a right hand" # Shitmed Change
+
+- type: entity
+  id: LeftLegOldKinVox
+  name: "left Old-kin vox leg"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_leg"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Left
+      toolName: "a left leg" # Shitmed Change
+    - type: MovementBodyPart
+
+- type: entity
+  id: RightLegOldKinVox
+  name: "right Old-kin vox leg"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_leg"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_leg"
+    - type: BodyPart
+      partType: Leg
+      symmetry: Right
+      toolName: "a right leg" # Shitmed Change
+    - type: MovementBodyPart
+
+- type: entity
+  id: LeftFootOldKinVox
+  name: "left Old-kin vox foot"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_foot"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "l_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Left
+      toolName: "a left foot" # Shitmed Change
+
+- type: entity
+  id: RightFootOldKinVox
+  name: "right Old-kin vox foot"
+  parent: PartOldKinVox
+  components:
+    - type: Sprite
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_foot"
+    - type: Icon
+      sprite: _Floof/Mobs/Species/Vox2/parts.rsi
+      state: "r_foot"
+    - type: BodyPart
+      partType: Foot
+      symmetry: Right
+      toolName: "a right foot" # Shitmed Change
