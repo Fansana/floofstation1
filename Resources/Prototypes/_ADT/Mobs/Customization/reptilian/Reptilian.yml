@@ -208,25 +208,6 @@
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
     state: horns_twoago
 
-
-#Our datashark marking is all commented out, leaving this here for if/when we change that
-# - type: marking
-#   id: TailDatashark
-#   bodyPart: Tail
-#   markingCategory: Tail
-#   speciesRestriction: [Reptilian]
-#   sprites:
-#     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_tails.rsi
-#       state: datashark_ears_inner
-#     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_tails.rsi
-#       state: datashark_ears
-#     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_tails.rsi
-#       state: datashark_fin
-#     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_tails.rsi
-#       state: datashark_tail
-#     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_tails.rsi
-#       state: datashark_taildata
-
 - type: marking
   id: ReptilianTattoSkeletArmL
   bodyPart: LArm
