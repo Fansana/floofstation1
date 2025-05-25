@@ -4,6 +4,10 @@
   speech:
     color: "#a489a0"
     fontId: StrawSerif
+    SpeechVerbOverrides:
+    - chat-speech-verb-oldvox-4
+    - chat-speech-verb-oldvox-5
+    - chat-speech-verb-oldvox-6
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 1

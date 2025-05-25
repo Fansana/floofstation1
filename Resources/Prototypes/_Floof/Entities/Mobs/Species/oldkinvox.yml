@@ -6,11 +6,18 @@
 
   - type: LanguageKnowledge
     speaks:
+      - TauCetiBasic,
       - OldVox
     understands:
       - TauCetiBasic,
       - OldVox
       - NewVox
+    NaturalLanguage:
+      - OldVox
+
+  - type: Speech
+    speechSounds: Vox
+    speechVerb: OldVox
 
   - type: Damageable
     damageContainer: Biological
@@ -83,9 +90,11 @@
 
   - type: Hunger
   - type: Thirst
+
   - type: Icon
     sprite: Mobs/Species/Vox2/parts.rsi
     state: vox_m
+
   - type: Sprite
     scale: 1.2, 1.2
     layers:
@@ -158,6 +167,7 @@
       - map: [ "head" ]
       - map: [ "pocket1" ]
       - map: [ "pocket2" ]
+
   - type: Body
     prototype: Vox
     requiredLegs: 2
@@ -166,8 +176,10 @@
     species: Vox
     canColorHair: false
     # canColorFacialHair: false
+
   - type: Inventory
     speciesId: vox
+
   - type: InventorySlots
   - type: Butcherable
     butcheringType: Spike

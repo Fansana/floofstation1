@@ -173,3 +173,11 @@
   - chat-speech-verb-electricity-1
   - chat-speech-verb-electricity-2
   - chat-speech-verb-electricity-3
+
+- type: speechVerb
+  id: OldVox
+  name: chat-speech-verb-name-oldvox
+  speechVerbStrings:
+  - chat-speech-verb-vox-1
+  - chat-speech-verb-vox-2
+  - chat-speech-verb-vox-3
