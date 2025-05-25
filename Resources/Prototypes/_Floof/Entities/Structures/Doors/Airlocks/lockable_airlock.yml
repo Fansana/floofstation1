@@ -11,7 +11,7 @@
 # Reveals info and has Captain and HoP as masters
 - type: entity
   id: AirlockLockableBase
-  parent: [IdLockableBase, Airlock]
+  parent: [IdLockableBase, AirlockLockableBaseNoAccess]
   name: Lockable Airlock
   abstract: true
 
