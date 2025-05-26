@@ -268,7 +268,7 @@
 - type: entity
   id: KitchenMicrowavePOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - KitchenMicrowave
   suffix: POI
   components:
@@ -278,7 +278,7 @@
 - type: entity
   id: KitchenElectricRangePOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - KitchenElectricRange
   suffix: POI
   components:
@@ -288,7 +288,7 @@
 - type: entity
   id: KitchenAssemblerPOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - KitchenAssembler
   suffix: POI
   components:
@@ -298,7 +298,7 @@
 - type: entity
   id: MedicalAssemblerPOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - MedicalAssembler
   suffix: POI
   components:
@@ -309,7 +309,7 @@
 - type: entity
   id: KitchenReagentGrinderPOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - KitchenReagentGrinder
   suffix: POI
   components:
@@ -319,7 +319,7 @@
 - type: entity
   id: KitchenDeepFryerPOI
   parent:
-  - BaseStructureDisableToolUse
+#  - BaseStructureDisableToolUse
   - KitchenDeepFryer
   suffix: POI
   components:
