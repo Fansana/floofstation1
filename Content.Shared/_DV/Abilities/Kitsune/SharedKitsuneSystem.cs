@@ -63,13 +63,13 @@ public abstract class SharedKitsuneSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("fox-no-hands"), ent, ent);
             return;
         }
-        // Floof - M3739 - KitsuneFixes - Do not allow additional fox fires if they have no charges. They will have to wait.
+        // Floof - M3739 - #1030 - Do not allow additional fox fires if they have no charges. They will have to wait.
         if (_actions.GetCharges(ent.Comp.FoxfireAction) <= 0)
         {
             _popup.PopupEntity(Loc.GetString("fox-no-charges"), ent, ent);
             return;
         }
-        // Floof - M3739 - KitsuneFixes3 - This... is probably the least intrusive solution to the infinite foxfire problem.
+        // Floof - M3739 - #1030 - This... is probably the least intrusive solution to the infinite foxfire problem.
         // Ensure that the number of active fox fires does not exceed max charges.
         if (!TryComp<InstantActionComponent>(ent.Comp.FoxfireAction, out var instantActionComp))
             return;
@@ -83,7 +83,7 @@ public abstract class SharedKitsuneSystem : EntitySystem
         var fireComp = EnsureComp<FoxfireComponent>(fireEnt);
         fireComp.Kitsune = ent;
         ent.Comp.ActiveFoxFires.Add(fireEnt);
-        _actions.RemoveCharges(ent.Comp.FoxfireAction, 1); // Floof - M3739 - KitsuneFixes3
+        _actions.RemoveCharges(ent.Comp.FoxfireAction, 1); // Floof - M3739 - #1030
         Dirty(fireEnt, fireComp);
         Dirty(ent);
 
