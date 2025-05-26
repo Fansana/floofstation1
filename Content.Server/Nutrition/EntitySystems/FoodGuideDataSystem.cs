@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Client.Chemistry.EntitySystems;
-using Content.Server.Chemistry.ReactionEffects;
 using Content.Server.EntityEffects.Effects;
 using Content.Server.Nutrition.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -25,18 +24,18 @@ public sealed class FoodGuideDataSystem : SharedFoodGuideDataSystem
         "Protein",
         "UncookedAnimalProteins",
         "Fat",
-        "Water"
+        "Water",
+        "Flavorol" // Frontier
     ];
 
-    public static readonly string[] ComponentNamesBlacklist = ["HumanoidAppearance",];
+    public static readonly string[] ComponentNamesBlacklist = ["HumanoidAppearance"];
 
-    public static readonly string[] SuffixBlacklist = ["debug", "do not map", "admeme",];
+    public static readonly string[] SuffixBlacklist = ["debug", "do not map", "admeme"];
 
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
 
-    private readonly Dictionary<string, List<FoodSourceData>> _sources = new();
+    private Dictionary<string, List<FoodSourceData>> _sources = new();
 
     public override void Initialize()
     {
@@ -71,28 +70,28 @@ public sealed class FoodGuideDataSystem : SharedFoodGuideDataSystem
             )
                 continue;
 
-            if (ent.TryGetComponent<ButcherableComponent>(out var butcherable, _componentFactory))
+            if (ent.TryGetComponent<ButcherableComponent>(out var butcherable))
             {
-                var butcheringSource = new FoodButcheringData(ent, butcherable);
                 foreach (var butchlet in butcherable.SpawnedEntities)
                 {
                     if (butchlet.PrototypeId is null)
                         continue;
+                    var butcheringSource = new FoodButcheringData(ent, butcherable, butchlet);
 
                     _sources.GetOrNew(butchlet.PrototypeId).Add(butcheringSource);
                 }
             }
 
-            if (ent.TryGetComponent<SliceableFoodComponent>(out var sliceable, _componentFactory) && sliceable.Slice is not null)
+            if (ent.TryGetComponent<SliceableFoodComponent>(out var slicable) && slicable.Slice is not null)
             {
-                _sources.GetOrNew(sliceable.Slice).Add(new FoodSlicingData(ent, sliceable.Slice.Value, sliceable.TotalCount));
+                _sources.GetOrNew(slicable.Slice).Add(new FoodSlicingData(ent, slicable.Slice.Value, slicable.TotalCount));
             }
         }
 
         // Recipes
         foreach (var recipe in _protoMan.EnumeratePrototypes<FoodRecipePrototype>())
         {
-            _sources.GetOrNew(recipe.Result).Add(new FoodRecipeData(recipe));
+            _sources.GetOrNew(recipe.Result).Add(new FoodRecipeData(recipe)); // Frontier: _sources<_recipes
         }
 
         // Entity-spawning reactions
@@ -103,7 +102,7 @@ public sealed class FoodGuideDataSystem : SharedFoodGuideDataSystem
                 if (effect is not CreateEntityReactionEffect entEffect)
                     continue;
 
-                _sources.GetOrNew(entEffect.Entity).Add(new FoodReactionData(reaction, entEffect.Entity, (int) entEffect.Number));
+                _sources.GetOrNew(entEffect.Entity).Add(new FoodReactionData(reaction, entEffect.Entity, (int) entEffect.Number)); // Frontier: _sources<_recipes
             }
         }
 
@@ -112,18 +111,19 @@ public sealed class FoodGuideDataSystem : SharedFoodGuideDataSystem
         foreach (var (result, sources) in _sources)
         {
             var proto = _protoMan.Index<EntityPrototype>(result);
-            var composition = proto.TryGetComponent<FoodComponent>(out var food, _componentFactory) && proto.TryGetComponent<SolutionContainerManagerComponent>(out var manager)
+            var composition = proto.TryGetComponent<FoodComponent>(out var food) && proto.TryGetComponent<SolutionContainerManagerComponent>(out var manager)
                 ? manager?.Solutions?[food.Solution]?.Contents?.ToArray() ?? []
                 : [];
 
             // We filter out food without whitelisted reagents because well when people look for food they usually expect FOOD and not insulated gloves.
             // And we get insulated and other gloves because they have ButcherableComponent and they are also moth food
-            if (!composition.Any(it => ReagentWhitelist.Contains<ProtoId<ReagentPrototype>>(it.Reagent.Prototype)))
+            if (!composition.Any(it => ReagentWhitelist.Contains(it.Reagent.Prototype)))
                 continue;
 
             // We also limit the number of sources to 10 because it's a huge performance strain to render 500 raw meat recipes.
             var distinctSources = sources.DistinctBy(it => it.Identitier).Take(10);
-            var entry = new FoodGuideEntry(result, proto.Name, distinctSources.ToArray(), composition);
+
+            var entry = new FoodGuideEntry(result, proto.Name, distinctSources.Where(it => it.SourceType == FoodSourceType.Recipe).ToArray(), distinctSources.Where(it => it.SourceType == FoodSourceType.Source).ToArray(), composition); // Frontier: add Where clauses, recipe arg
             Registry.Add(entry);
         }
 

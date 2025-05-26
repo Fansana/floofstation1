@@ -3,6 +3,8 @@ using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.Serialization; // Frontier
 
 namespace Content.Shared.Kitchen
 {
@@ -28,8 +30,18 @@ namespace Content.Shared.Kitchen
         [DataField("result", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
         public string Result { get; private set; } = string.Empty;
 
+        // Frontier
+        [DataField("resultCount")]
+        public int ResultCount { get; private set; } = 1;
+        // End Frontier
+
         [DataField("time")]
         public uint CookTime { get; private set; } = 5;
+
+        // Frontier: separate microwave recipe types.
+
+        [DataField("recipeType", customTypeSerializer: typeof(FlagSerializer<MicrowaveRecipeTypeFlags>))]
+        public int RecipeType = (int)MicrowaveRecipeType.Microwave;
 
         public string Name => Loc.GetString(_name);
 
@@ -58,23 +70,18 @@ namespace Content.Shared.Kitchen
             }
             return n;
         }
-
-        //Floofstation specific method - Start
-        /// <summary>
-        ///     Sums the quantity of reagents in a recipe for sorting the recipe list.
-        ///     A fallback check if the IngredientCount is equal when sorting the
-        ///     recipe list.
-        /// </summary>
-        /// <returns></returns>
-        public FixedPoint2 ReagentQuantity()
-        {
-            FixedPoint2 n = 0;
-            foreach (FixedPoint2 i in _ingsReagents.Values)
-            {
-                n += i;
-            }
-            return n;
-        }
-        //Floofstation specific method - End
     }
+
+    // Frontier: microwave recipe types, to limit certain recipes to certain machines
+    [Flags, FlagsFor(typeof(MicrowaveRecipeTypeFlags))]
+    [Serializable, NetSerializable]
+    public enum MicrowaveRecipeType : int
+    {
+        Microwave = 1,
+        Oven = 2,
+        Assembler = 4,
+        MedicalAssembler = 8,
+    }
+
+    public sealed class MicrowaveRecipeTypeFlags { }
 }
