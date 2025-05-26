@@ -5857,3 +5857,21 @@ Entries:
   id: 614
   time: '2025-05-24T01:24:59.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1020
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: PING
+  id: 615
+  time: '2025-05-24T16:50:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1023
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added dildos to Loadout
+    - type: Tweak
+      message: Lewd objects cost 0 in the loadout
+    - type: Tweak
+      message: Lewd objects can now be heirlooms
+  id: 616
+  time: '2025-05-25T21:47:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1017
