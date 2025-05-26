@@ -19,6 +19,42 @@
     speechSounds: Vox
     speechVerb: OldVox
 
+  - type: Fixtures
+    fixtures: # TODO: This needs a second fixture just for mob collisions.
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 220
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StepTriggerImmune
+    whitelist:
+      types:
+      - Shard
+
+  - type: MobThresholds #Durable, but lethargic
+    thresholds:
+      0: Alive
+      125: SoftCritical
+      150: Critical
+      175: Dead
+
+  - type: Stamina
+    critThreshold: 85
+
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.75
+      80: 0.55
+      100: 0.35
+
+  - type: PlayerToolModifier
+    pryTimeMultiplier: 0.6
+
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: OldKinVox
@@ -26,12 +62,13 @@
   - type: Bloodstream
     bloodReagent: VoxIchor
 
-  - type: PressureImmunity
   - type: Insulated
-  - type: Barotrauma
+  - type: PsionicInsulation
+  - type: PressureImmunity
+  - type: Barotrauma # TODO:Pressure and cold-immune, but overheats under pressure
     damage:
       types:
-        Heat: 0.2 # Space and cold-proof, but capable of overheating
+        Heat: 0.2 
 
   - type: Temperature
     heatDamageThreshold: 320.15
@@ -85,8 +122,8 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 3
-        Bloodloss: 2
+        Slash: 2
+        Bloodloss: 4
 
   - type: Hunger
   - type: Thirst
