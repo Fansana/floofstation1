@@ -70,8 +70,10 @@ public abstract class SharedKitsuneSystem : EntitySystem
             return;
         }
         // Floof - M3739 - KitsuneFixes3 - This... is probably the least intrusive solution to the infinite foxfire problem.
-        // Ensure that the number of active fox fires does not exceed 3. If there is 3 or more, remove the oldest one.
-        if (ent.Comp.ActiveFoxFires.Count >= 3)
+        // Ensure that the number of active fox fires does not exceed max charges.
+        if (!TryComp<InstantActionComponent>(ent.Comp.FoxfireAction, out var instantActionComp))
+            return;
+        if (ent.Comp.ActiveFoxFires.Count >= instantActionComp.MaxCharges)
         {
             QueueDel(ent.Comp.ActiveFoxFires[0]);
             ent.Comp.ActiveFoxFires.RemoveAt(0);
