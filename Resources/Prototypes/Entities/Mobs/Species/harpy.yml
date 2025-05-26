@@ -108,7 +108,7 @@
     baseWalkSpeed: 3
     baseSprintSpeed: 5.5
     weightlessAcceleration: 2.5
-#  - type: Inventory
+#  - type: Inventory #floof disabled, this component adds inventory slot restrictions to harpies
 #    speciesId: harpy
 #    templateId: digitigrade
   - type: HarpyVisuals
