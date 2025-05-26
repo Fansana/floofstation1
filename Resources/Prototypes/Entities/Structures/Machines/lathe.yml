@@ -490,6 +490,9 @@
     - BoozeDispenserMachineCircuitboard
     - SodaDispenserMachineCircuitboard
     - DeepFryerMachineCircuitboard #Nyano - Summary: adds deep fryer circuit board
+    - MedicalAssemblerMachineCircuitboard # Frontier
+    - KitchenAssemblerMachineCircuitboard # Frontier
+    - ElectricRangeMachineCircuitboard # Frontier
     - SpaceHeaterMachineCircuitBoard
     - StationAnchorCircuitboard
     dynamicRecipes:

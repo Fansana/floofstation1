@@ -56,6 +56,7 @@ research-technology-deterrence = Deterrence Technologies
 research-technology-night-vision = Night vision
 research-technology-thermal-vision = Thermal vision
 
+research-technology-advanced-food-service = Advanced Food Service
 research-technology-janitorial-equipment = Janitorial Equipment
 research-technology-laundry-tech = Laundry Tech
 research-technology-basic-hydroponics = Basic Hydroponics

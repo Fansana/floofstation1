@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿﻿using System.Linq;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Kitchen
@@ -39,19 +39,7 @@ namespace Content.Shared.Kitchen
 
                 var nx = x.IngredientCount();
                 var ny = y.IngredientCount();
-                //Floofstation - Start
-                //Added a fallback for recipes with the same results from IngredientCount
-                //Original: return -nx.CompareTo(ny)
-                if (-nx.CompareTo(ny) != 0)
-                {
-                    return -nx.CompareTo(ny);//If total solid ingredients and unique reagents are different, return result.
-                }
-
-                var vx = x.ReagentQuantity();
-                var vy = y.ReagentQuantity();
-
-                return -vx.CompareTo(vy);//Fallback result based on total amount of reagents.
-                //Floofstation - End
+                return -nx.CompareTo(ny);
             }
         }
     }

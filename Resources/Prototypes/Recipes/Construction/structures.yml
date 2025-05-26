@@ -1674,16 +1674,20 @@
   conditions:
     - !type:TileNotBlocked
 
+# Decorations (bonfire, fireplace)
 - type: construction
-  name: bonfire
   id: Bonfire
-  graph: Bonfire
+  name: bonfire
+  description: What can be better then late evening under the sky with guitar and friends.
+  graph: FiresGraph
   startNode: start
-  targetNode: BonfireLit
-  category: construction-category-structures
-  description: What can be better than late evening under the sky with guitar and friends
-  icon: { sprite: Structures/Decoration/bonfire.rsi, state: bonfire }
+  targetNode: BonfireNode
+  category: construction-category-furniture
+  icon:
+    sprite: Structures/Decoration/bonfire.rsi
+    state: bonfire
   objectType: Structure
   placementMode: SnapgridCenter
+  canBuildInImpassable: false
   conditions:
-  - !type:TileNotBlocked
+    - !type:TileNotBlocked
