@@ -33,16 +33,3 @@
   coefficients: # Floof - Dragon buffs
     Slash: 0.85
     Piercing: 0.85
-
-- type: damageModifierSet
-  id: OldKinVox
-  coefficients: # Can't wear hardsuits/thermally protected gear without burning up, literally.
-    Blunt: 0.5
-    Slash: 0.8
-    Piercing: 1.2 #Plated scales offer incredible resistance to impacts, but are devestating to slip between
-    Heat: 1.5
-    Shock: 1.25
-    Caustic: 0.2 # Acid-resistant
-    Asphyxiation: 2.5
-    Bloodloss: 1.8
-    Poison: 1.1

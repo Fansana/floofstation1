@@ -106,4 +106,3 @@ reagent-physical-desc-cold-crunchy-sticky = cold, crunchy, and sticky
 reagent-physical-desc-fizzy-smooth-citrussy = fizzy, smooth, and citrussy
 reagent-physical-desc-fizzy-sharp-citrussy = fizzy, sharp, and citrussy
 reagent-physical-desc-dirty = dirty
-reagent-physical-desc-failed-ichor = bitter irony
