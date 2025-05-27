@@ -16,3 +16,14 @@ uplink-energy-halberd-desc = A polarm handle with an energy-based axe head attac
 
 uplink-typewriter-bundle-name = Typewriter Bundle
 uplink-typewriter-bundle-desc = An inconspicuous briefcase that contains a Typewriter SMG, three magazines and an outfit fit for any aspiring mafiosos.
+
+# Toys
+
+uplink-toysabre-name = Toy Sabre MK. 9
+uplink-toysabre-desc = Imitation of the Energy Sabre created by Fae, created for promotion purposes, not for combat!
+
+uplink-toysword-name = Toy Sword
+uplink-toysword-desc = Imitation of an Energy Sword, a brilliant deception to put the enemy on edge.
+
+uplink-dbtoysword-name = Toy Double-Bladed Sword
+uplink-dbtoysword-desc = Imitation of the infamous Double-Bladed Energy Sword, stress the enemy with this excellent deception!
