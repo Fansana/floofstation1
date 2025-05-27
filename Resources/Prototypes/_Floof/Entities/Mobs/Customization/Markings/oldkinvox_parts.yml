@@ -148,7 +148,7 @@
 
 - type: marking
   id: OldKinVoxScutesLLeg
-  bodyPart: LLeg, LFoot
+  bodyPart: [LLeg, LFoot]
   markingCategory: LeftLeg
   speciesRestriction: [OldKinVox]
   coloring:
@@ -167,7 +167,7 @@
 
 - type: marking
   id: OldKinVoxScutesRLeg
-  bodyPart: LLeg, LFoot #Because SS14 code is trash.
+  bodyPart: [LLeg, LFoot] #Because SS14 code is trash.
   markingCategory: RightLeg
   speciesRestriction: [OldKinVox]
   coloring:

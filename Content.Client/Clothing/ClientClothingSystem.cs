@@ -273,6 +273,10 @@ public sealed class ClientClothingSystem : ClothingSystem
                     if (inventory.FemaleDisplacements.Count > 0)
                         displacementData = inventory.FemaleDisplacements.GetValueOrDefault(slot);
                     break;
+                case Sex.Unsexed:
+                    if (inventory.MaleDisplacements.Count > 0)
+                        displacementData = inventory.MaleDisplacements.GetValueOrDefault(slot);
+                    break;
             }
         }
 
