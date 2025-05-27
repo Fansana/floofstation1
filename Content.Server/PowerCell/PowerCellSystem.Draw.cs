@@ -30,8 +30,7 @@ public sealed partial class PowerCellSystem
             if (!TryGetBatteryFromSlot(uid, out var batteryEnt, out var battery, slot))
                 continue;
 
-            // TCJ: "Multiplying by frameTime to make this tick-invariant. Otherwise it'll draw 30x to 60x faster than you expect."
-            if (_battery.TryUseCharge(batteryEnt.Value, comp.DrawRate * frameTime, battery))
+            if (_battery.TryUseCharge(batteryEnt.Value, comp.DrawRate, battery))
                 continue;
 
             Toggle.TryDeactivate((uid, toggle));
