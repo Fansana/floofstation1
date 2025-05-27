@@ -885,8 +885,8 @@
       requirements:
       - !type:CharacterJobRequirement
         jobs:
-         - Paramedic
-         - SeniorPhysician # Floofstation - Physicians have Paramedic access here
+          - Paramedic
+          - SeniorPhysician # Floofstation - Physicians have Paramedic access here
       - !type:CharacterDepartmentRequirement
         departments:
           - Security
