@@ -5898,3 +5898,12 @@ Entries:
   id: 619
   time: '2025-05-27T15:22:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1030
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Reverted the power cell fix you may find mentioned below (above?) in the
+        changelog.
+  id: 620
+  time: '2025-05-27T15:57:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1036
