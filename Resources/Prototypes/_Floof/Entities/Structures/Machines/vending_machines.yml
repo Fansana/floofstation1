@@ -34,3 +34,15 @@
     noRot: false
   - type: Rotatable
     rotateWhileAnchored: false
+
+- type: entity
+  parent: VendingMachineAmmo
+  id: VendingMachineFreelancerGun
+  name: Freelancer Arm's Vend
+  suffix: Freelancer
+  description: Pinickle of firearms fallen to the public domain, now right at your fingertips.
+  components:
+  - type: VendingMachine
+    pack: VMFreelancerGunInventory
+  - type: AccessReader
+    access: [["Freelancer"]]

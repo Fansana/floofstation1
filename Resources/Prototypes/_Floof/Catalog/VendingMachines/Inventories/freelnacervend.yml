@@ -11,33 +11,57 @@
     FreelancerPDA: 2
     ClothingHeadsetAltFreelancer: 2
     EncryptionKeyFreelance: 2
+  # Suits
+    ClothingHeadHelmetOcular: 2
+    ClothingHeadHelmetPilot: 2
+    ClothingHeadHelmetStar: 2
+    ClothingOuterHardsuitFreelancerPilot: 3
+    ClothingOuterHardsuitFreelancerLegion: 3
+    ClothingOuterHardsuitFreelancerNorthstar: 1
   # Clothes
-    ClothingBackpackMerc: 5
-    ClothingHeadBandMerc: 5
-    ClothingHeadHatBeretMerc: 5
-    ClothingShoesBootsMerc: 5
-    ClothingHandsMercGlovesCombat: 5
-    ClothingMaskGasMerc: 5
-    ClothingUniformJumpsuitMercenary: 5
-    ClothingBeltMercWebbing: 5
     ClothingNeckOldMantle: 5
     ClothingNeckUnathiMantle: 5
-  # Suits
-    ClothingOuterHardsuitFreelancerPilot: 4
-    ClothingOuterHardsuitFreelancerLegion: 4
-    ClothingOuterHardsuitFreelancerNorthstar: 1
-    ClothingHeadHelmetOcular: 3
-    ClothingHeadHelmetPilot: 3
-    ClothingHeadHelmetStar: 3
+    ClothingBackpackMerc: 5
+    ClothingBackpackSatchelSalvage: 5
+    ClothingHeadBandMerc: 5
+    ClothingHeadHatTacticalMaidHeadband: 5
+    ClothingHeadHatBeretMerc: 5
+    ClothingShoesBootsMerc: 5
+    ClothingShoesBootsWork: 5
+    ClothingShoesBootsSalvage: 5
+    ClothingHandsMercGlovesCombat: 5
+    ClothingHandsGlovesCombat: 5
+    ClothingMaskGasMerc: 5
+    ClothingBeltMilitaryWebbing: 5
+    ClothingBeltMercWebbing: 5
+    ClothingBeltSalvageWebbing : 5
+    ClothingUniformJumpsuitMercenary: 5
+    ClothingUniformRandomStandard: 6
+    ClothingUniformJumpsuitExplorer: 3
+    ClothingUniformJumpsuitDetective: 3
+    ClothingUniformJumpsuitSuitBrownAlt: 3
+    ClothingUniformJumpsuitJeansBrown: 3
+    ClothingUniformJumpsuitJeansGreen: 3
+    ClothingUniformJumpsuitJeansRed: 3
+    ClothingUniformJumpsuitTshirtJeansGray: 3
+    ClothingUniformJumpsuitTshirtJeans: 3
+    ClothingCostumeNaota: 3
+
+- type: vendingMachineInventory
+  id: VMFreelancerGunInventory
+  startingInventory:
   # Guns
-    WeaponPistolPollock: 3
-    WeaponSubMachineGunAtreides: 3
-    WeaponShotgunDoubleBarreled: 3
+    WeaponPistolPollock: 6
+    WeaponRifleGestio: 2
+    WeaponLeverChester: 2
+    WeaponShotgunDoubleBarreled: 2
   # Ammo
     BoxMagazinePistol: 2
     BoxMagazinePistolRubber: 2
-    BoxMagazineShotgun: 2
-    BoxMagazineShotgunBeanbag: 2
-    BoxMagazinePistolSubMachineGun: 2
-    BoxMagazinePistolSubMachineGunRubber: 2
-    MagazineBoxCaselessRifleBig: 1
+    BoxMagazineLightRifle: 1
+    BoxMagazineShotgun: 1
+    BoxMagazineShotgunBeanbag: 1
+    MagazineMagnumLeverRifle: 2
+    MagazineBoxMagnum: 1
+    MagazineBoxLightRifleBig: 1
+    
