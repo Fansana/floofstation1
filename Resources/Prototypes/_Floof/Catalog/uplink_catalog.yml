@@ -62,3 +62,38 @@
     Telecrystal: 8
   categories:
   - UplinkWeaponry
+
+# Toys
+
+- type: listing
+  id: UplinkToySabre
+  name: uplink-toysabre-name
+  description: uplink-toysabre-desc
+  productEntity: ClothingBeltEnergySheathFilledToy
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: UplinkToySword
+  name: uplink-toysword-name
+  description: uplink-toysword-desc
+  productEntity: ToySword
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: UplinkDBToySword
+  name: uplink-dbtoysword-name
+  description: uplink-dbtoysword-desc
+  productEntity: DBToySword
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
