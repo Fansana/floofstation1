@@ -27,3 +27,8 @@ uplink-toysword-desc = Imitation of an Energy Sword, a brilliant deception to pu
 
 uplink-dbtoysword-name = Toy Double-Bladed Sword
 uplink-dbtoysword-desc = Imitation of the infamous Double-Bladed Energy Sword, stress the enemy with this excellent deception!
+
+uplink-dehydrated-clown-rat-name = Dehydrated Crazed Clown Rat Box
+uplink-dehydrated-clown-rat-desc = A box containing a modified clown rat, that after hydration, seeks chaos and enemies of the syndicate. Upon expiration due to physical trauma, it will split into 3-4 more and those will split further, eventually reaching the final generation of rats. 
+    DISCLAIMER: remember to pet the rats head for the first generation to be friendly, as further generations are too rabid to discern between you and foe.
+

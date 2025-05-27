@@ -5875,3 +5875,10 @@ Entries:
   id: 616
   time: '2025-05-25T21:47:27.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1017
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Voice Mask's Chameleon function
+  id: 617
+  time: '2025-05-27T13:50:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1033
