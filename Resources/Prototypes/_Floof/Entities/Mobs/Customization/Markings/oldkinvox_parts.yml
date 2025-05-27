@@ -167,7 +167,7 @@
 
 - type: marking
   id: OldKinVoxScutesRLeg
-  bodyPart: [LLeg, LFoot] #Because SS14 code is trash.
+  bodyPart: [RLeg, RFoot] #Because SS14 code is trash.
   markingCategory: RightLeg
   speciesRestriction: [OldKinVox]
   coloring:

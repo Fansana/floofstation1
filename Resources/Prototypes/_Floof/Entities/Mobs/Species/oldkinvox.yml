@@ -153,75 +153,40 @@
   - type: Sprite
     scale: 1.2, 1.2
     layers:
-      - map: [ "enum.HumanoidVisualLayers.Chest" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: torso_m
-      - map: [ "enum.HumanoidVisualLayers.Head" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: head_m
-      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
-        color: "#008800"
-        sprite: _Floof/Mobs/Customization/eyes.rsi
-        state: vox2_eyes_s
-      - map: [ "enum.HumanoidVisualLayers.RArm" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: r_arm
-      - map: [ "enum.HumanoidVisualLayers.LArm" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: l_arm
-      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: r_leg
-      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: l_leg
-      # Vox don't have female clothing masks.
-      #- shader: StencilClear
-      #  sprite: Mobs/Species/Vox/parts.rsi
-      #  state: l_leg
-      #- shader: StencilMask
-      #  map: [ "enum.HumanoidVisualLayers.FemaleStencilMask" ]
-      #  sprite: Mobs/Customization/masking_helpers.rsi
-      #  state: female_full
-      #  visible: false
-      - map: [ "jumpsuit" ]
-      #  shader: StencilDraw
-      - map: [ "enum.HumanoidVisualLayers.LHand" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: l_hand
-      - map: [ "enum.HumanoidVisualLayers.RHand" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: r_hand
-      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: l_foot
-      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
-        sprite: _Floof/Mobs/Species/Vox2/parts.rsi
-        state: r_foot
-      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
-        color: "#ffffff"
-        sprite: Objects/Misc/handcuffs.rsi
-        state: body-overlay-2
-        visible: false
-      - map: [ "gloves" ]
-      - map: [ "shoes" ]
-      - map: [ "ears" ]
-      - map: [ "eyes" ]
-      - map: [ "belt" ]
-      - map: [ "id" ]
-      - map: [ "neck" ]
-      - map: [ "back" ]
-      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
-        state: shaved
-        sprite: Mobs/Customization/human_facial_hair.rsi
-      - map: [ "enum.HumanoidVisualLayers.Hair" ]
-        state: bald
-        sprite: Mobs/Customization/human_hair.rsi
-      - map: [ "mask" ]
-      - map: [ "head" ]
-      - map: [ "pocket1" ]
-      - map: [ "pocket2" ]
-      - map: ["enum.HumanoidVisualLayers.Tail"]
+    - map: [ "enum.HumanoidVisualLayers.Chest" ]
+    - map: [ "enum.HumanoidVisualLayers.Head" ]
+    - map: [ "enum.HumanoidVisualLayers.Snout" ]
+    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+    - map: [ "enum.HumanoidVisualLayers.Face" ]
+    - map: [ "enum.HumanoidVisualLayers.RArm" ]
+    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+    - map: [ "jumpsuit" ]
+    - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.LHand" ]
+    - map: [ "enum.HumanoidVisualLayers.RHand" ]
+    - map: [ "gloves" ]
+    - map: [ "shoes" ]
+    - map: [ "ears" ]
+    - map: [ "outerClothing" ]
+    - map: [ "eyes" ]
+    - map: [ "belt" ]
+    - map: [ "id" ]
+    - map: [ "neck" ]
+    - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+    - map: [ "suitstorage" ] # This is not in the default order
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    - map: [ "mask" ]
+    - map: [ "head" ]
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
 
   - type: Body
     prototype: Vox
