@@ -5928,3 +5928,10 @@ Entries:
   id: 623
   time: '2025-05-29T13:47:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1038
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Harpy coos should now have the correct volume & sound positioning.
+  id: 624
+  time: '2025-05-29T13:48:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1041
