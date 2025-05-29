@@ -5935,3 +5935,10 @@ Entries:
   id: 624
   time: '2025-05-29T13:48:15.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1041
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Departmental techfabs should no longer contain duplicate recipes
+  id: 625
+  time: '2025-05-29T13:58:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1042
