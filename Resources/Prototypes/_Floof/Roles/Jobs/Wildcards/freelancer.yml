@@ -6,8 +6,9 @@
   startingGear: FreelancerGear
   alwaysUseSpawner: false
   overrideConsoleVisibility: true
-  canBeAntag: false
-  canBeAntagTarget: false
+  antagAdvantage: 4
+  canBeAntag: true
+  canBeAntagTarget: true
   icon: "JobIconFreelancer"
   joinNotifyCrew: false
   whitelisted: true
