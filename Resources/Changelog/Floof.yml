@@ -5914,3 +5914,10 @@ Entries:
   id: 621
   time: '2025-05-27T16:45:12.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1026
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: CPR sound will no longer loop indefinitely. Hopefully.
+  id: 622
+  time: '2025-05-29T13:45:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1034
