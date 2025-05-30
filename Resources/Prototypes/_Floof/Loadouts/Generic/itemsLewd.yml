@@ -5,7 +5,8 @@
 - type: loadout
   id: LoadoutItemLewdWand
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdWand
@@ -16,7 +17,8 @@
 - type: loadout
   id: LoadoutItemLewdVibeGreen
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdVibeGreen
@@ -27,7 +29,8 @@
 - type: loadout
   id: LoadoutItemLewdVibeTeal
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdVibeTeal
@@ -38,7 +41,8 @@
 - type: loadout
   id: LoadoutItemLewdVibePink
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdVibePink
@@ -49,7 +53,8 @@
 - type: loadout
   id: LoadoutItemLewdVibeRed
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdVibeRed
@@ -60,7 +65,8 @@
 - type: loadout
   id: LoadoutItemLewdVibeYellow
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   exclusive: true
   items:
   - LewdVibeYellow
@@ -72,7 +78,8 @@
 - type: loadout
   id: LoadoutItemLewdFleshlightGreen
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - LewdFleshlightGreen
   requirements:
@@ -82,7 +89,8 @@
 - type: loadout
   id: LoadoutItemLewdFleshlightTeal
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - LewdFleshlightTeal
   requirements:
@@ -92,7 +100,8 @@
 - type: loadout
   id: LoadoutItemLewdFleshlightPink
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - LewdFleshlightPink
   requirements:
@@ -102,7 +111,8 @@
 - type: loadout
   id: LoadoutItemLewdFleshlightRed
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - LewdFleshlightRed
   requirements:
@@ -112,7 +122,8 @@
 - type: loadout
   id: LoadoutItemLewdFleshlightYellow
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - LewdFleshlightYellow
   requirements:
@@ -123,7 +134,8 @@
 - type: loadout
   id: LoadoutItemWhipPink
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - WhipPink
   requirements:
@@ -133,7 +145,8 @@
 - type: loadout
   id: LoadoutItemWhipTeal
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - WhipTeal
   requirements:
@@ -143,7 +156,8 @@
 - type: loadout
   id: LoadoutItemWhipPinkCrotch
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - WhipPinkCrotch
   requirements:
@@ -153,7 +167,8 @@
 - type: loadout
   id: LoadoutItemWhipTealCrotch
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - WhipTealCrotch
   requirements:
@@ -163,7 +178,8 @@
 - type: loadout
   id: LoadoutItemSpankPinkPaddle
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - SpankPinkPaddle
   requirements:
@@ -173,9 +189,99 @@
 - type: loadout
   id: LoadoutItemSpankTealPaddle
   category: ItemsLewd
-  cost: 2
+  cost: 0
+  canBeHeirloom: true
   items:
   - SpankTealPaddle
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+# Dildos
+- type: loadout
+  id: LoadoutItemAvianDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - AvianDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemCanineDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - CanineDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemCanineDildoRed
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - CanineDildoRed
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemHorseDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - HorseDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemDragonDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - DragonDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemNormalDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - NormalDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemTentacleDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - TentacleDildo
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutLewd
+
+- type: loadout
+  id: LoadoutItemDoubleDildo
+  category: ItemsLewd
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - DoubleDildo
   requirements:
   - !type:CharacterItemGroupRequirement
     group: LoadoutLewd

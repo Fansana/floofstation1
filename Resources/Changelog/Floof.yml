@@ -5807,3 +5807,163 @@ Entries:
   id: 610
   time: '2025-05-21T23:35:21.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/995
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: fixed symmetry to bionic leg trait
+  id: 611
+  time: '2025-05-22T01:24:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1012
+- author: WhiteLightningTwister
+  changes:
+    - type: Add
+      message: reintroduced existing jobs.
+    - type: Add
+      message: Added administration office.
+    - type: Add
+      message: Salvage break room.
+    - type: Add
+      message: Added a rack storage area in the tech vault to have boards now.
+    - type: Add
+      message: added beacons for areas that lacked them before.
+    - type: Tweak
+      message: Adjusted engineering with more decorative decals.
+    - type: Tweak
+      message: Adjusted engineering airlock to singo area.
+    - type: Fix
+      message: Fixed the salvage airlock due to issues were they can get locked out.
+    - type: Remove
+      message: Salvage expedition console from their area.
+  id: 612
+  time: '2025-05-23T03:27:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1016
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: 'Added a legality notice to the description of salvage''s firearms. '
+    - type: Tweak
+      message: The mining points cost of all salvage firearms have been increased by 4x
+    - type: Remove
+      message: >-
+        Salvage no longer starts with bombs in their lockers. Buy them with your
+        mining points.
+  id: 613
+  time: '2025-05-23T03:58:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1001
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Shuttle windows should no longer shock people.
+  id: 614
+  time: '2025-05-24T01:24:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1020
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: PING
+  id: 615
+  time: '2025-05-24T16:50:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1023
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added dildos to Loadout
+    - type: Tweak
+      message: Lewd objects cost 0 in the loadout
+    - type: Tweak
+      message: Lewd objects can now be heirlooms
+  id: 616
+  time: '2025-05-25T21:47:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1017
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Voice Mask's Chameleon function
+  id: 617
+  time: '2025-05-27T13:50:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1033
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Clown Rat and its Crazed variant
+  id: 618
+  time: '2025-05-27T13:54:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/985
+- author: M3739
+  changes:
+    - type: Fix
+      message: Kitsune can no longer place infinite foxfires.
+    - type: Fix
+      message: You will now see the proper message when a kitsune shifts into fox form.
+  id: 619
+  time: '2025-05-27T15:22:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1030
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Reverted the power cell fix you may find mentioned below (above?) in the
+        changelog.
+  id: 620
+  time: '2025-05-27T15:57:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1036
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Toy Energy Sword blade shows now.
+  id: 621
+  time: '2025-05-27T16:45:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1026
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: CPR sound will no longer loop indefinitely. Hopefully.
+  id: 622
+  time: '2025-05-29T13:45:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1034
+- author: Lawdog4817
+  changes:
+    - type: Tweak
+      message: Removed cost of the Accentless trait
+  id: 623
+  time: '2025-05-29T13:47:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1038
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Harpy coos should now have the correct volume & sound positioning.
+  id: 624
+  time: '2025-05-29T13:48:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1041
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Departmental techfabs should no longer contain duplicate recipes
+  id: 625
+  time: '2025-05-29T13:58:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1042
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: added Toy Sabre and Dual-Bladed Toy Sword.
+    - type: Add
+      message: added Toy Sabre, Toy Sword and Dual-Bladed Toy Sword to Uplink.
+  id: 626
+  time: '2025-05-30T13:15:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1035
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added colorable nipples for the alternate female lizard chest.
+  id: 627
+  time: '2025-05-30T13:17:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1025
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed the NTR Stamp Texture on Paper
+    - type: Fix
+      message: Fixed name of Senior Officer, CBURN, and Deathsquad.
+  id: 628
+  time: '2025-05-30T13:19:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1004

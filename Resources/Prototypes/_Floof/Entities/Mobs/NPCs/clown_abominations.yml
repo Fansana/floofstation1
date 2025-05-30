@@ -1,0 +1,369 @@
+- type: entity
+  name: clown rat
+  parent: MobMouse
+  id: MobClownRat
+  description: Despite all their rage, they are still just a clown in a cage. Wait... YOU SET IT FREE?!
+  components:
+  - type: Sprite
+    sprite: _Floof/Mobs/Animals/clown_rat.rsi
+  - type: Bloodstream
+    bloodMaxVolume: 100
+    bloodReagent: Laughter
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClownFast
+      params:
+        pitch: 0.9
+        volume: -8
+  - type: UseDelay
+    delay: 1
+  - type: EmitSoundOnUse
+    sound:
+      collection: BananiumHorn
+      params:
+        variation: 0.246
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: BananiumHorn
+      params:
+        variation: 0.246
+  - type: InteractionPopup
+    successChance: 0.7
+    interactDelay: 2 
+    interactSuccessString: petting-success-soft-floofy
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      collection: BikeHorn
+      params:
+        variation: 0.125
+  - type: Tag
+    tags:
+    - FootstepSound
+  - type: Butcherable
+    spawned:
+    - id: MobClownRatHatchling
+      amount: 3
+  - type: NoSlip
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Critical
+      100: Dead
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: Puller
+    needsHands: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobClownRatHatchling:
+            min: 3
+            max: 5
+      - !type:GibBehavior { }
+  - type: MobPrice
+    price: 0
+
+- type: entity
+  name: clown rat
+  parent: MobClownRat
+  id: MobClownRatHatchling
+  suffix: Hatchling
+  description: OH GOD THEY ARE MULTIPLYING!
+  components:
+  - type: Sprite
+    scale: 0.9, 0.9
+  - type: Butcherable
+    spawned:
+    - id: MobClownRatFinalHatchling
+      amount: 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      80: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobClownRatFinalHatchling:
+            min: 3
+            max: 5
+      - !type:GibBehavior { }
+  - type: MobPrice
+    price: 0
+
+- type: entity
+  name: clown rat
+  parent: MobClownRat
+  id: MobClownRatFinalHatchling
+  suffix: Final_Hatchling
+  description: GOD THERE IS EVEN MORE!
+  components:
+  - type: Sprite
+    scale: 0.8, 0.8
+  - type: Butcherable
+    spawned:
+    - id: FoodPieBananaCream
+      amount: 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Critical
+      50: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 20
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 70
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          BikeHornImplanter:
+            min: 1
+            max: 1
+      - !type:GibBehavior { }
+  - type: MobPrice
+    price: 0
+      
+      
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRat, MobCombat ]
+  id: MobCrazedClownRat
+  description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
+  suffix: Syndicate
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+      - Mouse
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 60
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+  - type: MobPrice
+    price: 0
+  
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRatHatchling , MobCombat ]
+  id: MobCrazedClownRatHatchling
+  description: OH GOD THEY ARE MULTIPLYING!
+  suffix: Syndicate, Hatchling
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+      - Mouse
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Piercing
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          MobCrazedClownRatFinalHatchling:
+            min: 3
+            max: 4
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+  - type: MobPrice
+    price: 0
+  
+- type: entity
+  name: crazed clown rat
+  parent: [ MobClownRatFinalHatchling, MobCombat ]
+  id: MobCrazedClownRatFinalHatchling
+  description: GOD THERE IS EVEN MORE!
+  suffix: Syndicate, Final_Hatchling
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+      - Mouse
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MobPrice
+    price: 10
+      
+- type: entity
+  name: dehydrated crazed clown rat box
+  parent: DehydratedSpaceCarp
+  id: DehydratedClownRatBox
+  description: The malice of the honkmother, weaponized by the syndicate in a compact package. Just pet its noggin and add water!
+  suffix: Syndicate, Clown_rat_Spawner
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobCrazedClownRat
+  - type: EmitSoundOnUse
+    handle: false
+    sound:
+      collection: BikeHorn
+  - type: EmitSoundOnLand
+    sound:
+      collection: BikeHorn
+  - type: Sprite
+    sprite: _Floof/Mobs/Animals/clown_rat.rsi
+    state: icon-0
