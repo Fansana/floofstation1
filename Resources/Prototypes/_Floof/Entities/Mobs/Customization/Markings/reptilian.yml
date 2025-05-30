@@ -74,7 +74,9 @@
   markingCategory: Chest
   speciesRestriction: [Reptilian]
   sprites:
-  - sprite: Floof/Mobs/Customization/Reptilian/chest_female_alternate.rsi
+  - sprite: _Floof/Mobs/Customization/Reptilian/chest_female_alternate.rsi
     state: chest
-  - sprite: Floof/Mobs/Customization/Reptilian/chest_female_alternate.rsi
+  - sprite: _Floof/Mobs/Customization/Reptilian/chest_female_alternate.rsi
     state: chest_secondary
+  - sprite: _Floof/Mobs/Customization/Reptilian/chest_female_alternate.rsi
+    state: nipples
