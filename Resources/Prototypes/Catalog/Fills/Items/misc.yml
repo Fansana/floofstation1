@@ -7,6 +7,8 @@
     containers:
       item:
       - CombatKnife
+  - type: Tag
+    id: CombatBoots
 
 - type: entity
   id: ClothingShoesBootsMercFilled
@@ -17,4 +19,5 @@
     containers:
       item:
       - KukriKnife
-
+  - type: Tag
+    id: CombatBoots
