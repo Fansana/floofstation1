@@ -22,6 +22,8 @@
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: ClothingSlowOnDamageModifier
     modifier: 0.8
+  - type: Tag
+    id: CombatBoots
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -69,6 +71,8 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: ClothingSlowOnDamageModifier # Floof - M3739 - Strange this isn't on this, when the jackboots have them...
     modifier: 0.5
+  - type: Tag
+    id: CombatBoots
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -87,6 +91,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
+  - type: Tag
+    id: HighHeelBoots
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -100,6 +106,8 @@
     sprite: Clothing/Shoes/Boots/mercboots.rsi
   - type: ClothingSlowOnDamageModifier
     modifier: 0.6
+  - type: Tag
+    id: CombatBoots
 
 - type: entity
   parent: ClothingShoesBaseButcherable
