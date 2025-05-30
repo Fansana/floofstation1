@@ -23,8 +23,9 @@
   - type: ClothingSlowOnDamageModifier
     modifier: 0.8
   - type: Tag
-    id: CombatBoots
-
+    tags:
+    - CombatBoots
+    
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: ClothingShoesBootsJackFake
@@ -72,7 +73,8 @@
   - type: ClothingSlowOnDamageModifier # Floof - M3739 - Strange this isn't on this, when the jackboots have them...
     modifier: 0.5
   - type: Tag
-    id: CombatBoots
+    tags:
+    - CombatBoots
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -92,7 +94,8 @@
     footstepSoundCollection:
       collection: FootstepHighHeels
   - type: Tag
-    id: HighHeelBoots
+    tags:
+    - HighHeelBoots
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -107,7 +110,8 @@
   - type: ClothingSlowOnDamageModifier
     modifier: 0.6
   - type: Tag
-    id: CombatBoots
+    tags:
+    - CombatBoots
 
 - type: entity
   parent: ClothingShoesBaseButcherable
