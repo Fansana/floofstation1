@@ -5958,3 +5958,12 @@ Entries:
   id: 627
   time: '2025-05-30T13:17:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1025
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed the NTR Stamp Texture on Paper
+    - type: Fix
+      message: Fixed name of Senior Officer, CBURN, and Deathsquad.
+  id: 628
+  time: '2025-05-30T13:19:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1004
