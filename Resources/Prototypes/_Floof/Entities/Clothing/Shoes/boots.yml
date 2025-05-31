@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesCombatHighheelBoots
+  name: combat high-heeled boots
+  description: Snazy boots for when you want to be stylish, yet very prepared.
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 6
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/highheelboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/highheelboots.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHighHeels
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
+  - type: Construction
+    graph: ClothingShoesCombatHighheelBoots
+    node: shoes

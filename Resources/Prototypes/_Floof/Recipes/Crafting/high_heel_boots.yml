@@ -1,0 +1,33 @@
+- type: construction
+  name: combat high-heeled boots
+  id: ClothingShoesCombatHighheelBoots
+  graph: ClothingShoesCombatHighheelBoots
+  startNode: start
+  targetNode: shoes
+  category: construction-category-clothing
+  description: Snazy boots for when you want to be stylish, yet very prepared.
+  icon: { sprite: Clothing/Shoes/Boots/highheelboots.rsi, state: icon }
+  objectType: Item
+
+- type: constructionGraph
+  id: ClothingShoesCombatHighheelBoots
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: shoes
+          steps:
+            - tag: HighHeelBoots
+              name: a pair of high-heeled boots
+              icon:
+                sprite: Clothing/Shoes/Boots/highheelboots.rsi
+                state: icon
+              doAfter: 1
+            - tag: CombatBoots
+              name: a pair of combat boots
+              icon:
+                sprite: Clothing/Shoes/Boots/jackboots.rsi
+                state: icon
+              doAfter: 1
+    - node: shoes
+      entity: ClothingShoesCombatHighheelBoots
