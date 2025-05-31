@@ -2,7 +2,7 @@
   id: GoblinTusksSmall
   bodyPart: Face
   markingCategory: Face
-  speciesRestriction: [Oni, SlimePerson, Arachne]
+  speciesRestriction: [Oni, SlimePerson, Arachne, Human]
   coloring:
     default:
       type:
@@ -16,7 +16,7 @@
   id: GoblinTusksBig
   bodyPart: Face
   markingCategory: Face
-  speciesRestriction: [Oni, SlimePerson, Arachne]
+  speciesRestriction: [Oni, SlimePerson, Arachne, Human]
   coloring:
     default:
       type:

@@ -535,7 +535,7 @@
   id: VulpBellyCrest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_crest
@@ -544,7 +544,7 @@
   id: VulpBellyFull
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_full
@@ -553,7 +553,7 @@
   id: VulpBellyFox
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
+  speciesRestriction: [Vulpkanin, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Vulpkanin/body_markings.rsi
       state: belly_fox
