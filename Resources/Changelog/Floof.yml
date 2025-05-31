@@ -5983,3 +5983,12 @@ Entries:
   id: 630
   time: '2025-05-31T01:30:13.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1044
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Anomaly scanners can now copy scans even if they were previously used to
+        scan an anomaly.
+  id: 631
+  time: '2025-05-31T01:31:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1040
