@@ -22,7 +22,7 @@
     sprite: Clothing/Shoes/Boots/jackboots.rsi
   - type: ClothingSlowOnDamageModifier
     modifier: 0.8
-  - type: Tag
+  - type: Tag #Floofstation
     tags:
     - CombatBoots
     
@@ -72,7 +72,7 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: ClothingSlowOnDamageModifier # Floof - M3739 - Strange this isn't on this, when the jackboots have them...
     modifier: 0.5
-  - type: Tag
+  - type: Tag #Floofstation
     tags:
     - CombatBoots
 
@@ -93,7 +93,7 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
-  - type: Tag
+  - type: Tag #Floofstation
     tags:
     - HighHeelBoots
 
@@ -109,7 +109,7 @@
     sprite: Clothing/Shoes/Boots/mercboots.rsi
   - type: ClothingSlowOnDamageModifier
     modifier: 0.6
-  - type: Tag
+  - type: Tag #Floofstation
     tags:
     - CombatBoots
 
