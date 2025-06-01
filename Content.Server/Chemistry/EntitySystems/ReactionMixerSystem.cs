@@ -7,7 +7,6 @@ using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Server.Popups;
 
-
 namespace Content.Server.Chemistry.EntitySystems;
 
 public sealed partial class ReactionMixerSystem : EntitySystem
