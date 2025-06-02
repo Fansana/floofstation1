@@ -1,0 +1,128 @@
+﻿- type: entity
+  name: Fae
+  id: MobWolfFae
+  parent: MobFox
+  description: Squishy, chubby, fluffy pink wolf, pets are required.
+  suffix: Feral
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      sprite: _Floof/Mobs/Animals/feralfae.rsi
+      state: feralfae
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: feralfae
+      Critical:
+        Base: feralfae_crit
+      Dead:
+        Base: feralfae_dead
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: female
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 3
+  - type: Tag
+    tags:
+    - FootstepSound
+    - DoorBumpOpener
+    - VulpEmotes
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Canilunzt
+    - SolCommon
+    understands:
+    - TauCetiBasic
+    - Canilunzt
+    - SolCommon
+  - type: DogVision
+  - type: ScentTracker
+  - type: Vocal
+    sounds:
+      Male: MaleVulpkanin
+      Female: FemaleVulpkanin
+      Unsexed: MaleVulpkanin
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+  - type: Bloodstream
+    bloodReagent: Libidozenithizine
+    bloodMaxVolume: 300
+  - type: EyeProtection
+  - type: FlashImmunity
+  - type: PseudoItem
+  - type: CanEscapeInventory
+  - type: IdExaminable
+  - type: LeashAnchor
+    offset: 0, 0.2
+  - type: Vore
+    canVore: true
+  - type: Inventory
+    templateId: scugcat
+  - type: InventorySlots
+  - type: Strippable
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 30
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 5
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 6
+  - type: Puller
+    needsHands: false
+  - type: Hands
+  - type: LayingDown
+  - type: Carriable
+  - type: InteractionPopup
+    successChance: 0.8
+    interactSuccessString: petting-success-soft-floofy
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/DeltaV/Voice/Vulpkanin/dog_bark2.ogg
+  - type: NpcFactionMember
+    factions:
+    - PetsNT
+  - type: RandomBark
+    barkType: dog
+    barkMultiplier: 0.5
+  - type: Speech
+    speechSounds: Vulpkanin
+    speechVerb: Vulpkanin
+
+- type: polymorph
+  id: WolfMorphFae
+  configuration:
+    entity: MobWolfFae
+    forced: false
+    duration: null
+    inventory: None
+    transferName: true
+    transferDamage: true
+    revertOnCrit: false
+    revertOnDeath: false
+
