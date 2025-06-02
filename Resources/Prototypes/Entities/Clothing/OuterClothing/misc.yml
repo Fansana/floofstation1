@@ -429,20 +429,17 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/unathirobe.rsi
 
-# Floof - brought back
-- type: entity # TODO: There no use for it now... but pehaps we could turn it into a Anti-Psionic Clothing like headcage?
+- type: entity # TODO: Make it so its need an id check to to be removed/added?
   parent: ClothingOuterBase
   id: ClothingOuterShadowkinRestraints
-  name: shadowkin restraints
-  description: One of the first creations after finding Shadowkin, these were used to contain the Shadowkin during research so they didn't teleport away.
+  name: shadekin restraints
+  description: One of the first creations after finding Shadekin, these were used to contain the Shadekin during research so they didn't teleport away.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Misc/shadowkinrestraints.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/shadowkinrestraints.rsi
-    equipDelay: 0.5
-    unequipDelay: 10
-  - type: ShadowkinCuff
+  - type: ShadekinCuff
   - type: GuideHelp
     guides:
     - Shadowkin
