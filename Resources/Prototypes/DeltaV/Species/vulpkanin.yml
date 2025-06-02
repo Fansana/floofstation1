@@ -63,7 +63,7 @@
       points: 1
       required: false
     Head:
-      points: 2
+      points: 6
       required: false
     RightLeg:
       points: 6
@@ -93,7 +93,7 @@
       points: 1
       required: false
     HeadTop:
-      points: 1
+      points: 6
       required: true
       defaultMarkings: [ VulpEar ]
     HeadSide:
