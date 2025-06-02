@@ -14,9 +14,9 @@
     drawdepth: Mobs
   - type: Vocal
     sounds:
-      Male: RMCMaleAvali
-      Unsexed: RMCMaleAvali
-      Female: RMCFemaleAvali
+      Male: MaleAvali
+      Unsexed: FemaleAvali
+      Female: FemaleAvali
   - type: Speech
     speechVerb: Parrot # Didn't come with one
     speechSounds: MaleAvali

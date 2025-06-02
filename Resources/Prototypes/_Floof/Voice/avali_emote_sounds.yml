@@ -3,6 +3,11 @@
   files:
     - /Audio/_Floof/Voice/Avali/avali_scream.ogg
 
+- type: soundCollection
+  id: AvaliLaughs
+  files:
+    - /Audio/_Floof/Voice/Avali/avali_laugh.ogg
+
 - type: emoteSounds
   id: MaleAvali
   params:
@@ -11,7 +16,7 @@
     Scream:
       collection: AvaliScreams
     Laugh:
-      collection: MaleLaugh
+      collection: AvaliLaughs
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -47,7 +52,7 @@
     Scream:
       collection: AvaliScreams
     Laugh:
-      collection: FemaleLaugh
+      collection: AvaliLaughs
     Sneeze:
       collection: FemaleSneezes
     Cough:
