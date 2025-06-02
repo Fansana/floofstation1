@@ -150,14 +150,3 @@
     - state: icon_flipped
       map: ["foldedLayer"]
       visible: true
-
-- type: entity
-  abstract: true
-  id: ClothingUniformFoldableBase
-  components:
-  - type: Foldable
-    canFoldInsideContainer: true
-    unfoldVerbText: unfold-verb-clothing-jacket
-    foldVerbText: fold-verb-clothing-jacket
-  - type: FoldableClothing
-    foldedEquippedPrefix: folded

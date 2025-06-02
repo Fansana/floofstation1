@@ -18,13 +18,3 @@
     containers:
       item:
       - EnergySabreHoS
-
-- type: entity
-  id: ClothingBeltEnergySheathFilledToy
-  parent: ClothingBeltEnergySheath
-  suffix: Filled
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - ToySabre

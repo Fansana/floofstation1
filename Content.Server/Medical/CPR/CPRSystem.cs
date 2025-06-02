@@ -87,7 +87,6 @@ public sealed class CPRSystem : EntitySystem
 
         _doAfterSystem.TryStartDoAfter(doAfterArgs);
 
-        performer.Comp.CPRPlayingStream = _audio.Stop(performer.Comp.CPRPlayingStream); // Floofstation - fix any previous CPR sounds
         var playingStream = _audio.PlayPvs(performer.Comp.CPRSound, performer, AudioParams.Default.WithLoop(true));
         if (!playingStream.HasValue)
             return;

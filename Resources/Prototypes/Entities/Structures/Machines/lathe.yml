@@ -228,8 +228,6 @@
     - RiotShield
     - SpeedLoaderMagnum
     - SpeedLoaderMagnumEmpty
-    - MagazineLightRifleMarkOneEmpty
-    - MagazineLightRifleMarkOne
     - MagazinePistolCaselessRifle # Goobstation
     - MagazineBoxCaselessRifle # Goobstation
     - MagazineMagnumEmpty # Goobstation
@@ -996,8 +994,6 @@
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
-      - MagazineLightRifleMarkOneEmpty
-      - MagazineLightRifleMarkOne
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1055,8 +1051,6 @@
         - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
-        - MagazineLightRifleMarkOneEmpty
-        - MagazineLightRifleMarkOne
     - type: MaterialStorage
       whitelist:
         tags:

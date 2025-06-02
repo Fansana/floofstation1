@@ -11,12 +11,12 @@ namespace Content.Shared.Lathe
     {
         // FloofStation Modified
         // AlwaysPushInheritance added so lathes that use the AutoLathe as their
-        // parent could add on some extra recipes, and changed the type to HashSet.
+        // parent could add on some extra recipes.
         /// <summary>
         /// All of the recipes that the lathe has by default
         /// </summary>
         [DataField, AlwaysPushInheritance]
-        public HashSet<ProtoId<LatheRecipePrototype>> StaticRecipes = new();
+        public List<ProtoId<LatheRecipePrototype>> StaticRecipes = new();
 
         // FloofStation Modified
         // Ditto from StaticRecipes.
@@ -24,7 +24,7 @@ namespace Content.Shared.Lathe
         /// All of the recipes that the lathe is capable of researching
         /// </summary>
         [DataField, AlwaysPushInheritance]
-        public HashSet<ProtoId<LatheRecipePrototype>> DynamicRecipes = new();
+        public List<ProtoId<LatheRecipePrototype>> DynamicRecipes = new();
 
         /// <summary>
         /// The lathe's construction queue

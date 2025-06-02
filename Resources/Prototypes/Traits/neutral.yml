@@ -12,7 +12,7 @@
 - type: trait
   id: Accentless
   category: TraitsSpeechAccents
-  points: 0
+  points: -1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true

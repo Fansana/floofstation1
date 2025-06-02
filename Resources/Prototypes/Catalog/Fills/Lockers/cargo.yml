@@ -13,7 +13,6 @@
       - id: SurvivalKnife
       - id: HandheldGPSBasic
       - id: RadioHandheld
-      # - id: FlashlightSeclite # Floof - No need for them.
       - id: Pickaxe # Floof - Add pickaxe to salvage lockers
       - id: SeismicCharge
         amount: 2

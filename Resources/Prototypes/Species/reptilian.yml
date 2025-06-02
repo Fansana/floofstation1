@@ -140,7 +140,7 @@
 - type: humanoidBaseSprite
   id: MobReptilianTorsoFemale
   baseSprite:
-    sprite: _Floof/Mobs/Species/Reptilian/parts.rsi # Floof station
+    sprite: Mobs/Species/Reptilian/parts.rsi
     state: torso_f
 
 - type: humanoidBaseSprite
