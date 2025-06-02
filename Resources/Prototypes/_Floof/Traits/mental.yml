@@ -1,7 +1,7 @@
 - type: trait
   id: HypnoticGaze
   category: Mental
-  points: 0
+  points: -2
   functions:
   - !type:TraitAddPsionics
     psionicPowers:
@@ -27,3 +27,12 @@
         - !type:CharacterTraitRequirement
           traits:
             - AnomalousPositronics
+    - !type:CharacterLogicOrRequirement
+      requirements:
+        - !type:CharacterSpeciesRequirement
+          inverted: true
+          species:
+            - Shadowkin
+        - !type:CharacterJobRequirement
+          jobs:
+            - Anomaly

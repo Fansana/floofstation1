@@ -33,19 +33,19 @@
       points: 1
       required: false
     Chest:
-      points: 6
+      points: 1
       required: false
     RightArm:
-      points: 6
+      points: 2
       required: false
     RightHand:
-      points: 6
+      points: 3
       required: false
     LeftArm:
-      points: 6
+      points: 2
       required: false
     LeftHand:
-      points: 6
+      points: 3
       required: false
     Head:
       points: 2

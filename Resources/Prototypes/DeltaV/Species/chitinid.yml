@@ -70,29 +70,29 @@
       points: 1
       required: false
     HeadTop:
-      points: 6
+      points: 1
       required: true
       defaultMarkings: [ ChitinidAntennasDefault ]
     HeadSide:
-      points: 6
+      points: 1
       required: false
     Head:
-      points: 6
+      points: 2
       required: false
     Chest:
-      points: 6
+      points: 1
       required: false
     LeftLeg:
-      points: 6
+      points: 2
       required: false
     RightLeg:
-      points: 6
+      points: 2
       required: false
     LeftArm:
-      points: 6
+      points: 2
       required: false
     RightArm:
-      points: 6
+      points: 2
       required: false
 
 - type: humanoidBaseSprite

@@ -496,12 +496,12 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
         - Arachnid
         - Arachne
+        - Shadowkin
         - IPC
   functions:
     - !type:TraitAddComponent
@@ -525,7 +525,6 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator
-        - Anomaly
   functions:
     - !type:TraitAddComponent
       components:
@@ -548,7 +547,6 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
-        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
@@ -579,7 +577,6 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
-        - Anomaly
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
@@ -603,7 +600,6 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
-        - Anomaly
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -626,6 +622,10 @@
   category: Physical
   points: -4
   requirements:
+#    - !type:CharacterJobRequirement # Floof - this is redundant due to the below trait requirement
+#      inverted: true
+#      jobs:
+#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -641,6 +641,11 @@
   category: Physical
   points: -1
   requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
@@ -663,6 +668,11 @@
   category: Physical
   points: -1
   requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -677,17 +687,20 @@
         - type: ShowHealthBars
           damageContainers:
           - Biological
-          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthIcons
           damageContainers:
           - Biological
-          - BiologicalMetaphysical # Floof - M3739 - #1006
 
 - type: trait
   id: CyberEyesDiagnostic
   category: Physical
   points: -1
   requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -709,6 +722,11 @@
   category: Physical
   points: -3
   requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
@@ -730,11 +748,9 @@
         - type: ShowHealthIcons
           damageContainers:
           - Biological
-          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthBars
           damageContainers:
           - Biological
-          - BiologicalMetaphysical # Floof - M3739 - #1006
           - Inorganic
           - Silicon
 
@@ -802,7 +818,6 @@
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Anomaly
   functions:
     - !type:TraitPushDescription
       descriptionExtensions:
@@ -814,21 +829,12 @@
       partSymmetry: Left
       protoId: SpeedLeftLeg
       slotId: "left leg"
-    - !type:TraitCyberneticLimbReplacement
-      removeBodyPart: Leg
-      partSymmetry: Right 
-      protoId: SpeedRightLeg
-      slotId: "right leg"
 
 - type: trait
   id: LightAmplification
   category: Physical
   points: -4
   requirements:
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Shadowkin
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -853,7 +859,6 @@
 #      inverted: true
 #      jobs:
 #        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-#        - Anomaly
 #    - !type:CharacterTraitRequirement
 #      traits:
 #        - CyberEyes

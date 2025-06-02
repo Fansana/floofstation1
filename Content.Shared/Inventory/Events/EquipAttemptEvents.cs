@@ -32,11 +32,6 @@ public abstract class EquipAttemptBase : CancellableEntityEventArgs
     /// </summary>
     public string? Reason;
 
-    /// <summary>
-    ///     Floofstation - whether this is done in a way that bypasses accessibility checks, e.g. by an aghost or via loadouts.
-    /// </summary>
-    public bool BypassAccessCheck = false;
-
     public EquipAttemptBase(EntityUid equipee, EntityUid equipTarget, EntityUid equipment,
         SlotDefinition slotDefinition)
     {

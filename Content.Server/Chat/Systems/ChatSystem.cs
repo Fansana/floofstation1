@@ -79,7 +79,6 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
-    [Dependency] private readonly EmpathyChatSystem _empathy = default!;
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -282,12 +281,6 @@ public sealed partial class ChatSystem : SharedChatSystem
                 SendEntityWhisper(source, modMessage, range, channel, nameOverride, language, hideLog, ignoreActionBlocker);
                 return;
             }
-        }
-
-        if (desiredType == InGameICChatType.Telepathic && language.SpeechOverride.EmpathySpeech)
-        {
-            _empathy.SendEmpathyChat(source, message, range == ChatTransmitRange.HideChat);
-            return;
         }
 
         // Otherwise, send whatever type.
@@ -891,7 +884,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         var language = languageOverride ?? _language.GetLanguage(source);
         foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
-            if (language.SpeechOverride.RequireSpeech && channel != ChatChannel.LOOC && channel != ChatChannel.Emotes)
+            if (language.SpeechOverride.RequireSpeech && channel != ChatChannel.LOOC && channel != ChatChannel.Emotes )
             {
                 var sourceGrid = Transform(source).GridUid;
                 float transmitRange = VoiceRange;

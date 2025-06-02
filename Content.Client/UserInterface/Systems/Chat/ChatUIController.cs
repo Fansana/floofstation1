@@ -68,6 +68,7 @@ public sealed class ChatUIController : UIController
     [UISystemDependency] private readonly PsionicChatUpdateSystem? _psionic = default!;
     [UISystemDependency] private readonly MindSystem? _mindSystem = default!;
     [UISystemDependency] private readonly RoleCodewordSystem? _roleCodewordSystem = default!;
+
     [ValidatePrototypeId<ColorPalettePrototype>]
     private const string ChatNamePalette = "ChatNames";
     private string[] _chatNameColors = default!;
@@ -584,11 +585,6 @@ public sealed class ChatUIController : UIController
             CanSendChannels |= ChatSelectChannel.Admin;
             FilterableChannels |= ChatChannel.Telepathic; //Nyano - Summary: makes admins able to see psionic chat.
         }
-
-        // FloofStation - Yeah its causes issue when i try to isolate it, and i need it, tho this does no cause any issues.
-        FilterableChannels |= ChatChannel.Telepathic;
-        CanSendChannels |= ChatSelectChannel.Telepathic;
-        // FloofStation
 
         // Nyano - Summary: - Begin modified code block to add telepathic as a channel for a psionic user.
         if (_psionic != null && _psionic.IsPsionic)

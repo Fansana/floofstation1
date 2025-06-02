@@ -36,7 +36,6 @@
     speedModifierThresholds:
       60: 0.7
       80: 0.5
-  - type: DarkLight # FloofStation
 
 - type: entity
   name: shadow cat

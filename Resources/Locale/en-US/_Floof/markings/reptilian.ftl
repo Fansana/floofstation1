@@ -11,7 +11,3 @@ marking-LizardCrestLargeTop-secondary = Crest (Large) secondary
 
 marking-LizardChestUnderbellyFeminine-body_underbelly = Lizard Chest (Underbelly, Feminine)
 marking-LizardChestUnderbellyFeminine = Lizard Chest (Underbelly, Feminine)
-
-marking-LizardChestFemaleAlternate = Female Lizard Chest (Alternate)
-marking-LizardChestFemaleAlternate-chest = Chest
-marking-LizardChestFemaleAlternate-chest_secondary = Underbelly

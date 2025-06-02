@@ -1,10 +1,10 @@
-marking-EyesShadowkin = Shadekin
+marking-EyesShadowkin = Shadowkin
 
-marking-TailShadowkin = Shadekin
-marking-TailShadowkinBig = Shadekin (Big)
-marking-TailShadowkinShorter = Shadekin (Short)
-marking-TailShadowkinMedium = Shadekin (Medium)
-marking-TailShadowkinBigFluff = Shadekin (Big and Fluffy)
+marking-TailShadowkin = Shadowkin
+marking-TailShadowkinBig = Shadowkin (Big)
+marking-TailShadowkinShorter = Shadowkin (Short)
+marking-TailShadowkinMedium = Shadowkin (Medium)
+marking-TailShadowkinBigFluff = Shadowkin (Big and Fluffy)
 
-marking-EarsShadowkin = Shadekin
-marking-EarsShadowkinStriped = Shadekin (Striped)
+marking-EarsShadowkin = Shadowkin
+marking-EarsShadowkinStriped = Shadowkin (Striped)

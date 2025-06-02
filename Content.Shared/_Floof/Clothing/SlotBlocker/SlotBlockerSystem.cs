@@ -1,12 +1,8 @@
 using Content.Shared.Clothing.Components;
 using Content.Shared.Examine;
-using Content.Shared.GameTicking;
-using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Whitelist;
-using Robust.Shared.Network;
-using Robust.Shared.Player;
 
 
 namespace Content.Shared._Floof.Clothing.SlotBlocker;
@@ -18,10 +14,9 @@ public sealed class SlotBlockerSystem : EntitySystem
 
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
 
-    private EntityQuery<SlotBlockerComponent> _blockerQuery;
+    private EntityQuery<SlotBlockerComponent> _blockerQuery = default!;
+    private EntityQuery<ClothingComponent> _clothingQuery = default!;
 
     public override void Initialize()
     {
@@ -33,6 +28,7 @@ public sealed class SlotBlockerSystem : EntitySystem
         SubscribeLocalEvent<SlotBlockerComponent, BeingUnequippedAttemptEvent>(OnCheckBlockedUnequip);
 
         _blockerQuery = GetEntityQuery<SlotBlockerComponent>();
+        _clothingQuery = GetEntityQuery<ClothingComponent>();
     }
 
     private void OnMapInitSanityCheck(Entity<SlotBlockerComponent> ent, ref MapInitEvent args)
@@ -64,8 +60,6 @@ public sealed class SlotBlockerSystem : EntitySystem
     private void OnCheckSlotBlockingEquip(Entity<InventorySlotBlockingComponent> ent, ref IsEquippingAttemptEvent args)
     {
         if (args.Cancelled
-            || args.BypassAccessCheck
-            || HasComp<BypassInteractionChecksComponent>(args.Equipee)
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedEquip
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
             || !IsSlotObstructed((args.EquipTarget, inventory), args.Equipment, CheckType.Equip, args.SlotFlags, out var reason))
@@ -78,8 +72,6 @@ public sealed class SlotBlockerSystem : EntitySystem
     private void OnCheckSlotBlockingUnequip(Entity<InventorySlotBlockingComponent> ent, ref IsUnequippingAttemptEvent args)
     {
         if (args.Cancelled
-            || args.BypassAccessCheck
-            || HasComp<BypassInteractionChecksComponent>(args.Unequipee)
             || _blockerQuery.HasComp(ent) // This will be handled in OnCheckBlockedUnequip
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
             || !IsSlotObstructed((args.UnEquipTarget, inventory), args.Equipment, CheckType.Unequip, args.SlotFlags, out var reason))
@@ -92,8 +84,6 @@ public sealed class SlotBlockerSystem : EntitySystem
     private void OnCheckBlockedEquip(Entity<SlotBlockerComponent> ent, ref BeingEquippedAttemptEvent args)
     {
         if (args.Cancelled
-            || args.BypassAccessCheck
-            || HasComp<BypassInteractionChecksComponent>(args.Equipee)
             || !TryComp<InventoryComponent>(args.EquipTarget, out var inventory)
             || !IsSlotObstructed((args.EquipTarget, inventory), ent!, CheckType.Equip, args.SlotFlags, out var reason))
             return;
@@ -105,8 +95,6 @@ public sealed class SlotBlockerSystem : EntitySystem
     private void OnCheckBlockedUnequip(Entity<SlotBlockerComponent> ent, ref BeingUnequippedAttemptEvent args)
     {
         if (args.Cancelled
-            || args.BypassAccessCheck
-            || HasComp<BypassInteractionChecksComponent>(args.Unequipee)
             || !TryComp<InventoryComponent>(args.UnEquipTarget, out var inventory)
             || !IsSlotObstructed((args.UnEquipTarget, inventory), ent!, CheckType.Unequip, args.SlotFlags, out var reason))
             return;
@@ -131,14 +119,10 @@ public sealed class SlotBlockerSystem : EntitySystem
         SlotFlags targetSlot,
         out string? reason)
     {
-        // If client-side and not currently attached to the entity being checked, skip the check.
-        reason = null;
-        if (_net.IsClient && _player.LocalEntity != ent.Owner)
-            return false;
-
         if (equipment is { Comp: null }) // If entity is specified but comp is not, try to resolve it
             equipment = (equipment.Value, _blockerQuery.CompOrNull(equipment.Value));
 
+        reason = null;
         if (equipment?.Comp?.IgnoreOtherBlockers == true)
             return false;
 

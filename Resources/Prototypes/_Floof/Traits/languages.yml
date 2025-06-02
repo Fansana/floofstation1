@@ -20,10 +20,6 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: TraitsLanguagesNatural
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -42,7 +38,6 @@
       inverted: true
       species:
         - Chitinid
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -61,7 +56,6 @@
       inverted: true
       species:
         - Feroxi
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -80,7 +74,6 @@
       inverted: true
       species:
         - Rodentia
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -99,7 +92,6 @@
       inverted: true
       species:
         - Vulpkanin
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -118,7 +110,6 @@
       inverted: true
       species:
         - IPC
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -138,7 +129,6 @@
       species:
         # Arachne they dont speak Arachind
         - Arachnid
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -157,7 +147,6 @@
       inverted: true
       species:
         - Diona
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -176,7 +165,6 @@
       inverted: true
       species:
         - Human
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -195,7 +183,6 @@
       inverted: true
       species:
         - Harpy
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -214,7 +201,6 @@
       inverted: true
       species:
         - Moth
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -233,7 +219,6 @@
       inverted: true
       species:
         - Reptilian
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -252,7 +237,6 @@
       inverted: true
       species:
         - SlimePerson
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -271,7 +255,6 @@
       inverted: true
       species:
         - Resomi
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -291,7 +274,6 @@
       species:
         - Felinid
         - Oni
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:
@@ -310,7 +292,6 @@
       inverted: true
       species:
         - Kitsune
-        - Shadowkin
   functions:
     - !type:TraitAddComponent
       components:

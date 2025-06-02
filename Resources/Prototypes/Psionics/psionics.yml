@@ -537,6 +537,29 @@
     - !type:RemovePsionicPsychognomicDescriptors
       psychognomicDescriptor: kinetic
 
+# - type: psionicPower
+#   id: EtherealVisionPower
+#   name: Ethereal Vision
+#   description: ethereal-vision-powers-description
+#   components:
+#     - type: ShowEthereal
+#   powerSlotCost: 0
+
+- type: psionicPower
+  id: DarkSwapPower
+  name: DarkSwap
+  powerCategories:
+    - Anomalist
+    - Shadow
+    - Dangerous
+  initializeFunctions:
+    - !type:AddPsionicActions
+      actions:
+        - ActionDarkSwap
+  removalFunctions:
+    - !type:RemovePsionicActions
+  powerSlotCost: 0
+
 - type: psionicPower
   id: PyrokineticFlare
   name: Pyrokinetic Flare

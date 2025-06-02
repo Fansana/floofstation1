@@ -30,7 +30,7 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - oni refector
-        damageModifierSet:
+        damageModifierSet: 
           coefficients:
             Blunt: 1.2
             Slash: 1.2
@@ -54,7 +54,7 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - Oni refactor
-        damageModifierSet:
+        damageModifierSet: 
           coefficients:
             Blunt: 1.25
             Slash: 1.25
@@ -70,3 +70,16 @@
         - Swashbuckler
         - Spearmaster
 
+# - type: trait
+#   id: ShadowkinBlackeye
+#   category: Mental
+#   points: 4
+#   functions:
+#     - !type:TraitReplaceComponent
+#       components:
+#         - type: Shadowkin
+#           blackeyeSpawn: true
+#   requirements:
+#     - !type:CharacterSpeciesRequirement
+#       species:
+#         - Shadowkin

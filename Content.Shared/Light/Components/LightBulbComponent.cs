@@ -11,9 +11,6 @@ namespace Content.Shared.Light.Components;
 [RegisterComponent, NetworkedComponent]
 public sealed partial class LightBulbComponent : Component
 {
-    [DataField]
-    public bool Darklight = false;
-
     /// <summary>
     /// The color of the lightbulb and the light it produces.
     /// </summary>

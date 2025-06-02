@@ -11,8 +11,7 @@ species-name-moth = Moth Person
 species-name-skeleton = Skeleton
 species-name-vox = Vox
 species-name-ipc = IPC
-species-name-shadowkin = Shadekin
-species-name-shadekin = Shadekin
+species-name-shadowkin = Shadowkin
 
 ## Misc species things
 

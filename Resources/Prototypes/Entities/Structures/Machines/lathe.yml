@@ -288,7 +288,7 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
-      # HandheldCrewMonitor  Floof change it was move to the Medical fab
+      - HandheldCrewMonitor
       - Scalpel
       - Retractor
       - Cautery
@@ -1151,8 +1151,6 @@
       - ReagentGrinderIndustrialMachineCircuitboard
       - FatExtractorMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
-      - TrackingImplanter
-      - HandheldCrewMonitor
       # Floof section end
       # Shitmed Change
       - EnergyScalpel

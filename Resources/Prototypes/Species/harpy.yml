@@ -64,27 +64,27 @@
       required: true
       defaultMarkings: [ HarpyTailPhoenix ]
     HeadTop:
-      points: 2
+      points: 1
       required: true
       defaultMarkings: [ HarpyEarsDefault ]
     HeadSide:
-      points: 6
+      points: 3
       required: false
     Chest:
-      points: 6
+      points: 1
       required: true
       defaultMarkings: [ HarpyChestDefault ]
     RightLeg:
-      points: 6
+      points: 2
       required: false
     RightFoot:
-      points: 6
+      points: 2
       required: false
     LeftLeg:
-      points: 6
+      points: 2
       required: false
     LeftFoot:
-      points: 6
+      points: 2
       required: false
     RightArm:
       points: 1

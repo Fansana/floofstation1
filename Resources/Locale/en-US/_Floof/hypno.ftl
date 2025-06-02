@@ -32,7 +32,7 @@ hypnotist = [bold][color=red]You have enthralled {CAPITALIZE($entity)}!
 stophypno = [bold][color=red]You are no longer hypnotized!
     You are no longer under the mental control of {CAPITALIZE($entity)}.[/color][/bold]
 
-has-no-consent = I cannot enter their mind.
+has-no-consent = I cannot enter his mind.
 
 trait-name-HypnoticGaze = Hypnotic Gaze
 trait-description-HypnoticGaze =

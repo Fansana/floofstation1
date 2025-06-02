@@ -3,7 +3,7 @@ using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
-using Content.Shared._Floof.Shadekin;
+using Content.Shared.Shadowkin;
 
 namespace Content.Client.Overlays;
 
