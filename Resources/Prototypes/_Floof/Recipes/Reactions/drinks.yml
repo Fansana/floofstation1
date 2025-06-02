@@ -100,8 +100,6 @@
 
 - type: reaction
   id: CafeDeCacao
-  requiredMixerCategories:
-  - Stir
   reactants:
     Coffee:
       amount: 1
@@ -214,8 +212,6 @@
 
 - type: reaction
   id: DirtyWastelander
-  requiredMixerCategories:
-  - Stir
   reactants:
     JuiceBerry:
       amount: 1
