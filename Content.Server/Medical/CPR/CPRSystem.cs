@@ -6,6 +6,7 @@ using Content.Shared.Atmos.Rotting;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.Inventory;
+using Content.Shared.Traits.Assorted.Components;
 using Content.Shared.Medical;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -110,6 +111,7 @@ public sealed class CPRSystem : EntitySystem
                 (EntityUid)args.Target, performer.Comp.DoAfterDuration * performer.Comp.RotReductionMultiplier);
 
         if (_robustRandom.Prob(performer.Comp.ResuscitationChance)
+            && !HasComp<UnrevivableComponent>(args.Target.Value) // Floofstation - unrevivable
             && _mobThreshold.TryGetThresholdForState((EntityUid)args.Target, MobState.Dead, out var threshold)
             && TryComp<DamageableComponent>(args.Target, out var damageableComponent)
             && TryComp<MobStateComponent>(args.Target, out var state)
