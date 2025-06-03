@@ -91,7 +91,7 @@
         Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.50
-  - type: ClothingSpeedModifier 
+  - type: ClothingSpeedModifier # Less heavy then most hardsuits but similar resistances to a standard vest
     walkModifier: 0.85
     sprintModifier: 0.85
   - type: GroupExamine
