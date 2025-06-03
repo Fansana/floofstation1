@@ -4,7 +4,16 @@ language-Ratvarian-description = The language of the cult of Ratvar. Some have w
 language-Schechi-name = Schechi
 language-Schechi-description = The language of Resomi, primarily featuring frontal sounds made without rounding. Fluent speakers sound quite close to birdsong.
 
-language-NewKinPidgin-name = Vox-Pidgin
+language-NewKinPidgin-name = Ka'rakk
 language-NewKinPidgin-description =
-    The common tongue of the various Vox ships making up the Shoal.
+    A debased dialect cobbled together by lower-caste Vox, mangled beyond recognition.
+    While a primitive and clumsy attempt resulting in a dull, simplified mockery of their true language,
+    higher-caste Vox can still discern meaning within the crude approximations.
     It sounds like chaotic shrieking to everyone else.
+
+language-OldKinPidgin-name = Zhra'kht
+language-OldKinPidgin-description =
+    An ancient matrix of sound and thought that predates linguistic simplification.
+    Its patterns reflect the deeper consciousness of the elder caste, creating a symphony of meaning,
+    carrying meanings that exist beyond the limited phonological range of younger kin.
+    It "still" sounds like chaotic shrieking to everyone else.
