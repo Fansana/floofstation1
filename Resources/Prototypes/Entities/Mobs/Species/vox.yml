@@ -102,6 +102,7 @@
     understands:
       - TauCetiBasic
       - NewKinPidgin
+      - OldKinPidgin
     naturalLanguage: NewKinPidgin # Floof: explicitly stated natural languages
 
   - type: Respirator
