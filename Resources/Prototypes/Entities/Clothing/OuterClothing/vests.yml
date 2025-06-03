@@ -129,3 +129,43 @@
     sprite: Clothing/OuterClothing/Vests/vest_orion.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_orion.rsi
+
+#Tank Harness
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothingGasTanks]
+  id: ClothingOuterVestTank
+  name: tank harness
+  description: A simple harness that can hold a gas tank.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/OuterClothing/Vests/tankharness.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/OuterClothing/Vests/tankharness.rsi
+
+    equipDelay: 1
+    unequipDelay: 1
+    quickEquip: false # Would conflict due to having multiple allowed slots
+    slots:
+    - outerClothing
+    equippedState: equipped
+    clothingVisuals: {} # I am 90% sure this is a redundancy coming from ClothingBeltBase, so we're removing it here
+  - type: LeashAnchor
+    kind: Clothing
+  - type: ClothingLimit
+    limitGroups:
+    - harness
+    maxCount: 1
+  - type: SlotBlocker
+    blocks:
+      slots:
+      - innerClothing
+      blacklist:
+        tags:
+        - ShirtlessClothing
+  - type: Item
+    size: Normal # Make smaller than typical outer clothing
+    shape:
+    - 0, 0, 0, 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon
