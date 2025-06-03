@@ -83,6 +83,15 @@
         layer:
         - MobLayer
 
+  - type: LanguageKnowledge
+    speaks:
+      - TauCetiBasic
+      - NewKinPidgin
+    understands:
+      - TauCetiBasic
+      - NewKinPidgin
+    naturalLanguage: NewKinPidgin # Floof: explicitly stated natural languages
+
   - type: Sprite # Need to redefine the whole order to draw the tail over their gas tank
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
