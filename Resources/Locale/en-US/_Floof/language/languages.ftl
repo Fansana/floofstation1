@@ -14,6 +14,6 @@ language-NewKinPidgin-description =
 language-OldKinPidgin-name = Zhra'kht
 language-OldKinPidgin-description =
     An ancient matrix of sound and thought that predates linguistic simplification.
-    Its patterns reflect the deeper consciousness of the elder caste, creating a symphony of meaning,
-    carrying meanings that exist beyond the limited phonological range of younger kin.
+    Its patterns reflect the deeper consciousness of the elder caste, creating a symphony of meaning
+    and carrying wisdom that exists beyond the limited phonological range of younger kin.
     It "still" sounds like chaotic shrieking to everyone else.
