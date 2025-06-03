@@ -147,21 +147,12 @@
     quickEquip: false # Would conflict due to having multiple allowed slots
     slots:
     - outerClothing
-    equippedState: equipped
-    clothingVisuals: {} # I am 90% sure this is a redundancy coming from ClothingBeltBase, so we're removing it here
   - type: LeashAnchor
     kind: Clothing
   - type: ClothingLimit
     limitGroups:
     - harness
     maxCount: 1
-  - type: SlotBlocker
-    blocks:
-      slots:
-      - innerClothing
-      blacklist:
-        tags:
-        - ShirtlessClothing
   - type: Item
     size: Normal # Make smaller than typical outer clothing
     shape:
