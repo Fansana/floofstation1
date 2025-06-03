@@ -104,6 +104,14 @@
       - NewKinPidgin
     naturalLanguage: NewKinPidgin # Floof: explicitly stated natural languages
 
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+
   - type: Sprite # Need to redefine the whole order to draw the tail over their gas tank
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
