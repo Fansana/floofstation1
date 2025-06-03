@@ -70,6 +70,19 @@
       185.15: 0.85 # fluorosulfonyl-(trifluoromethanesulfonyl)imide
       77.15: 0.7 # N,N-diethylmethylamine
 
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 185
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
   - type: Sprite # Need to redefine the whole order to draw the tail over their gas tank
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
