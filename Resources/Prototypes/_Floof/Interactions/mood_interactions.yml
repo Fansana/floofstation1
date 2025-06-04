@@ -1,15 +1,18 @@
 - type: Interaction
   id: Kiss
-  parent: [BaseGlobal, BaseHands]
+  parent: [BaseGlobal, BaseMouth]
   priority: -1
   delay: 0.4
   range: {max: 1}
   hideByRequirement: true
-  requiresHands: false # why are we inheriting from BaseHands again???
-  requiresCanInteract: false
   requirement:
-    !type:MobStateRequirement
-    inverted: true
+    !type:ComplexRequirement
+    requirements:
+    - !type:EntityWhitelistRequirement
+      whitelist:
+        components: [MobState] # Don't go around kissing inanimate objects.
+    - !type:SlotObstructionRequirement
+      slot: MASK
   action:
     !type:MoodAction
     effect: BeingKissed
@@ -19,16 +22,20 @@
 
 - type: Interaction
   id: Lick
-  parent: [BaseGlobal, BaseHands]
+  parent: [BaseGlobal, BaseMouth]
   priority: -2
   delay: 0.7
   range: {max: 1}
   hideByRequirement: true
-  requiresHands: false
-  requiresCanInteract: false
   requirement:
-    !type:MobStateRequirement
-    inverted: true
+    !type:ComplexRequirement
+    requirements:
+    - !type:EntityWhitelistRequirement
+      whitelist:
+        components: [MobState, Anomaly, Food]
+        tags: [Window] # yes.
+    - !type:SlotObstructionRequirement
+      slot: MASK
   action:
     !type:MoodAction
     effect: BeingLicked
