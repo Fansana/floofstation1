@@ -155,6 +155,12 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
     // Floofstation section
     [DataField]
     public bool RequiresConsciousness = true;
+
+    /// <summary>
+    ///     The true "requires can interact", checks if the user is not cuffed and is not otherwise incapacitated.
+    /// </summary>
+    [DataField("checkInteractionBlocker")]
+    public bool RequiresCanInteract = true;
     // Floofstation section end
 
     /// <summary>

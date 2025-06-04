@@ -4,6 +4,7 @@
   priority: 4
   requiresHands: false
   requiresCanInteract: false
+  checkInteractionBlocker: false # Floof
   contactInteraction: false
   allowSelfInteract: true
   icon: /Textures/Interface/Actions/eyeopen.png

@@ -2,6 +2,7 @@
   id: BaseMouth
   abstract: true
   priority: -15
-  requiresCanInteract: false
+  requiresCanInteract: true # Do check CanAccess
+  checkInteractionBlocker: false # Don't check CanInteract
   requiresHands: false
   requiresConsciousness: true

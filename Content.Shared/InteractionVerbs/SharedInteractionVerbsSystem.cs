@@ -282,7 +282,8 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             return false;
         }
 
-        if (!args.CanInteract || proto.RequiresCanAccess && !args.CanAccess || !proto.Range.IsInRange(distance))
+        // Floof - added RequiresCanInteract
+        if (proto.RequiresCanInteract && !args.CanInteract || proto.RequiresCanAccess && !args.CanAccess || !proto.Range.IsInRange(distance))
         {
             errorLocale = "interaction-verb-cannot-reach";
             return false;
