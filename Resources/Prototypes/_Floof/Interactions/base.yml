@@ -1,0 +1,7 @@
+- type: Interaction
+  id: BaseMouth
+  abstract: true
+  priority: -15
+  requiresCanInteract: false
+  requiresHands: false
+  requiresConsciousness: true
