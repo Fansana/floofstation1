@@ -2,6 +2,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.InteractionVerbs.Events;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Utility;
 
@@ -194,6 +195,13 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
         {
             DebugTools.Assert(!Inverse, "Inverse ranges do not support clamping.");
             return Math.Clamp(value, Min, Max);
+        }
+
+        // Floofstation
+        public float Random(IRobustRandom random)
+        {
+            DebugTools.Assert(!Inverse, "Inverse ranges do not support randomization.");
+            return Min > Max ? random.NextFloat(Max, Min) : random.NextFloat(Min, Max);
         }
     }
 
