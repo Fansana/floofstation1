@@ -275,6 +275,13 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             return false;
         }
 
+        // Floofstation - added this block
+        if (proto.RequiresConsciousness && !_actionBlocker.CanConsciouslyPerformAction(args.User))
+        {
+            errorLocale = "interaction-verb-unconscious";
+            return false;
+        }
+
         if (!args.CanInteract || proto.RequiresCanAccess && !args.CanAccess || !proto.Range.IsInRange(distance))
         {
             errorLocale = "interaction-verb-cannot-reach";

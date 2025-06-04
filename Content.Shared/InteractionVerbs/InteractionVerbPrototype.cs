@@ -151,6 +151,11 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
     [DataField]
     public bool RequiresHands = false;
 
+    // Floofstation section
+    [DataField]
+    public bool RequiresConsciousness = true;
+    // Floofstation section end
+
     /// <summary>
     ///     Whether this verb requires the user to be able to access the target normally (with their hands or otherwise).
     /// </summary>
