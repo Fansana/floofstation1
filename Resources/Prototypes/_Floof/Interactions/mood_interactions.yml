@@ -19,6 +19,7 @@
   effectSuccess:
     popup: Obvious
     sound: {path: /Audio/_Floof/Lewd/kiss.ogg}
+  effectFailure: null
 
 - type: Interaction
   id: Lick
@@ -42,3 +43,4 @@
   effectSuccess:
     popup: Obvious
     sound: {path: /Audio/_Floof/Lewd/lick.ogg}
+  effectFailure: null
