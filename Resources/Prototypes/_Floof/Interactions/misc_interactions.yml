@@ -14,7 +14,7 @@
     - !type:SlotObstructionRequirement
       slot: MASK
   action:
-  - !type:ModifyHealthAction
+    !type:ModifyHealthAction
     randomFactor: {min: 0.5, max: 1.5}
     damage:
       types: {Pierce: 5}
