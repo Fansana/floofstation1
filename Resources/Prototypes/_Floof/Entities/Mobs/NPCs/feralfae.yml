@@ -91,7 +91,7 @@
         Piercing: 5
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
-    baseSprintSpeed: 6
+    baseSprintSpeed: 5
   - type: Puller
     needsHands: false
   - type: Hands
@@ -115,7 +115,7 @@
     speechVerb: Vulpkanin
 
 - type: polymorph
-  id: WolfMorphFae
+  id: MorphFae
   configuration:
     entity: MobWolfFae
     forced: false
