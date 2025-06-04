@@ -113,6 +113,11 @@
   - type: Speech
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
+  - type: StutteringAccent
+    matchRandomProb: 0.1
+    fourRandomProb: 0
+    threeRandomProb: 0
+    cutRandomProb: 0
 
 - type: polymorph
   id: MorphFae
