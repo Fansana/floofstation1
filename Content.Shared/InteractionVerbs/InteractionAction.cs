@@ -58,9 +58,5 @@ public abstract partial class InteractionAction
         [Dependency] public readonly IGameTiming Timing = default!;
         [Dependency] public readonly ISerializationManager Serialization = default!;
         [Dependency] public readonly EntityWhitelistSystem WhitelistSystem = default!;
-
-        // Floof section
-        [Dependency] public readonly SlotBlockerSystem SlotBlocker = default!;
-        // Floof section end
     }
 }

@@ -13,7 +13,7 @@ namespace Content.Shared._Floof.InteractionVerbs.Requirements;
 ///     and (optionally) not have it blocked.
 /// </summary>
 [Serializable, NetSerializable]
-public sealed partial class SlotObstructionRequirement : InvertableInteractionRequirement
+public sealed partial class SlotObstructionRequirement : InteractionRequirement
 {
     /// <summary>
     ///     If true, the user is checked. Otherwise, the target.
@@ -81,7 +81,8 @@ public sealed partial class SlotObstructionRequirement : InvertableInteractionRe
 
         if (checkBlockers)
         {
-            var blocked = deps.SlotBlocker.IsSlotObstructed(
+            var blockerSys = deps.EntMan.System<SlotBlockerSystem>();
+            var blocked = blockerSys.IsSlotObstructed(
                 (target, inventory),
                 null,
                 SlotBlockerSystem.CheckType.IgnoreBlockerPreference,
