@@ -84,17 +84,17 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
+        Blunt: 0.7 # Floof Change
+        Slash: 0.7 # Floof Change
+        Piercing: 0.7 # Floof Change
+        Heat: 0.7 # Floof Change
         Radiation: 0.75
         Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.50
-  - type: ClothingSpeedModifier # Less heavy then most hardsuits but similar resistances to a standard vest
-    walkModifier: 0.85
-    sprintModifier: 0.85
+  - type: ClothingSpeedModifier # Less heavy then most hardsuits but similar resistances to a standard vest, Floof Change
+    walkModifier: 0.85 # Floof Change
+    sprintModifier: 0.85 # Floof Change
   - type: GroupExamine
 
 - type: entity
