@@ -6088,3 +6088,12 @@ Entries:
   id: 640
   time: '2025-06-05T13:44:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1047
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: >-
+        Fixed fun! But actually. Toy Sword rotation fixed and Toy DESword having
+        a working wield sprite.
+  id: 641
+  time: '2025-06-05T20:12:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1051
