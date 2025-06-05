@@ -363,7 +363,8 @@
 - type: trait
   id: Talons
   category: Physical
-  points: -1
+  points: 0
+  slots: 0 
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
@@ -390,7 +391,8 @@
 - type: trait
   id: Claws
   category: Physical
-  points: -1
+  points: 0
+  slots: 0
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
@@ -423,6 +425,7 @@
   id: NaturalWeaponRemoval
   category: Physical
   points: 0
+  slots: 0
   requirements:
     - !type:CharacterSpeciesRequirement
       inverted: true
@@ -589,7 +592,8 @@
 - type: trait
   id: CyberEyes
   category: Physical
-  points: -4
+  points: -2 # Exists to enable other traits and does nothing on it's own
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -735,7 +739,7 @@
 - type: trait
   id: Redshirt
   category: Physical
-  points: 8
+  points: 10
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -754,7 +758,6 @@
         - GlassJaw
         - Tenacity
         - BrittleBoneDisease
-
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -823,6 +826,7 @@
       inverted: true
       species:
         - Shadowkin
+        - Felinid
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
