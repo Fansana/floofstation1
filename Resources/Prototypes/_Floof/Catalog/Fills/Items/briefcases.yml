@@ -13,8 +13,7 @@
     contents:
       - id: WeaponSubMachineGunTypewriter
       - id: MagazinePistolSubMachineGun
-      - id: MagazinePistolSubMachineGun
-      - id: MagazinePistolSubMachineGun
+        amount: 2 #Removed one, also fixed the Fill to be like the others.
       - id: CigarGoldCase
       - id: ClothingUniformJumpsuitDetectiveGrey
       - id: ClothingHeadHatFedoraChoc
