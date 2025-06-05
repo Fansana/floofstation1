@@ -51,7 +51,7 @@
   parent: BaseHands
   priority: 20
   effectSuccess:
-    popup: VisibleNoChat
+    popup: Visible
     sound: {collection: FenceRattle}
   action:
     !type:NoOpAction
