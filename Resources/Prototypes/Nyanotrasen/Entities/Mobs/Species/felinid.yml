@@ -77,6 +77,10 @@
     stealth: Subtle
     stripTimeReduction: 0
     stripTimeMultiplier: 0.667
+  - type: NightVision # Floofstation - Upstream has Felinids replaced with Tajarans and Tajarans have Cat Night Vision
+    color: "#808080"
+    activateSound: null
+    deactivateSound: null
   - type: StepTriggerImmune
     whitelist:
       types:
