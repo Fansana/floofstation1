@@ -6044,3 +6044,40 @@ Entries:
   id: 637
   time: '2025-06-03T04:02:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1052
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Platelet Factories buffed from 0.07 to 0.35 (0.25 airloss) and improves
+        natural blood regeneration.
+    - type: Tweak
+      message: >-
+        Power Overwhelming no longer uses 2 spell slots. (For those who don't
+        understand the esoteric psionics system, makes it so you don't have to
+        drink 3 times as many drugs for your first spell)
+    - type: Tweak
+      message: >-
+        Striking Calluses doesn't have 3 different requirements anymore, does a
+        little more damage and costs less.
+    - type: Tweak
+      message: Spinarette spins slightly faster.
+    - type: Tweak
+      message: >-
+        Roundstart psionic powers are slightly cheaper (because they're
+        niche/useless)
+    - type: Tweak
+      message: Low/High Potential are now lower and higher.
+    - type: Tweak
+      message: Oni traits aren't a debuff anymore.
+  id: 638
+  time: '2025-06-03T05:05:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1022
+- author: ApolloVector
+  changes:
+    - type: Tweak
+      message: >-
+        SWAT armor has been adjusted to have less armor but also less slowdown,
+        allowing it to be used easily in spaced environments. 
+  id: 639
+  time: '2025-06-04T21:08:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1053
