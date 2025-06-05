@@ -6081,3 +6081,10 @@ Entries:
   id: 639
   time: '2025-06-04T21:08:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1053
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Mech UI (ripley, hamptr, others) should work correctly noow.
+  id: 640
+  time: '2025-06-05T13:44:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1047
