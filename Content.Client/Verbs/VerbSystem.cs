@@ -78,7 +78,7 @@ namespace Content.Client.Verbs
 
             // Get entities
             List<EntityUid> entities;
-            var examineFlags = LookupFlags.All & ~LookupFlags.Sensors;
+            var examineFlags = LookupFlags.All// & ~LookupFlags.Sensors; // Floof - DO NOT EXCLUDE SENSORS! It excludes all entities that have a non-hard fixtur, like puddles! See Floofstation#1064 for more info.
 
             // Do we have to do FoV checks?
             if ((visibility & MenuVisibility.NoFov) == 0)
