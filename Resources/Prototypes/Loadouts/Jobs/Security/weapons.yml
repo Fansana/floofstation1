@@ -1,14 +1,10 @@
 # Duty Weapon
-# Backpacks
-
-# Belt
-
-# Ears
 
 # Equipment
 # Equipment, limit 3 selections
 # Duplicate "Spare" equipment exists and shares the ItemGroup, for those officers who like to pack a spare magazine in their pocket, outside of what was issued to them.
 # I knew a lot of people in my time working IRL Armed security that did this.
+
 - type: loadout
   id: LoadoutSecurityCombatKnife
   category: JobsSecurityWeapons
@@ -28,6 +24,55 @@
   - CombatKnife
 
 - type: loadout
+  id: LoadoutSecurityEquipmentTruncheon
+  category: JobsSecurityWeapons
+  cost: 3
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 3600 # 1 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityWeapons
+  - !type:CharacterLogicOrRequirement
+    requirements:
+    - !type:CharacterDepartmentRequirement
+      departments:
+      - Security
+    - !type:CharacterJobRequirement
+      jobs:
+      - BlueshieldOfficer
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Oni
+  items:
+  - Truncheon
+
+- type: loadout
+  id: LoadoutSecurityEquipmentEnergySword
+  category: JobsSecurityWeapons
+  cost: 4
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 18000 # 5 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityWeapons
+  - !type:CharacterLogicOrRequirement
+    requirements:
+    - !type:CharacterDepartmentRequirement
+      departments:
+      - Security
+    - !type:CharacterJobRequirement
+      jobs:
+      - BlueshieldOfficer
+  items:
+  - EnergyCutlassSecurity
+
+- type: loadout
   id: LoadoutSecurityFlash
   category: JobsSecurityWeapons
   cost: 0
@@ -44,6 +89,8 @@
       - BlueshieldOfficer
   items:
   - Flash
+
+# AMMO
 
 - type: loadout
   id: LoadoutMagazinePistol
@@ -277,7 +324,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 3600 # 1 hours
+    min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityEquipment
   - !type:CharacterLogicOrRequirement
@@ -301,7 +348,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 3600 # 1 hours
+    min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityEquipment
   - !type:CharacterLogicOrRequirement
@@ -575,13 +622,13 @@
 - type: loadout
   id: LoadoutSecurityPistolN1984
   category: JobsSecurityWeapons
-  cost: 5
+  cost: 10
   canBeHeirloom: true
   guideEntry: SecurityWeapons
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 3600 # 1 hours
+    min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
   - !type:CharacterLogicOrRequirement
@@ -600,10 +647,13 @@
 - type: loadout
   id: LoadoutSecurityPistolN1984NonLethal
   category: JobsSecurityWeapons
-  cost: 5
+  cost: 10
   canBeHeirloom: true
   guideEntry: SecurityWeapons
   requirements:
+    - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
   - !type:CharacterLogicOrRequirement
@@ -690,55 +740,6 @@
     min: 21
   items:
   - WeaponPistolViperWoodSecurity
-
-- type: loadout
-  id: LoadoutSecurityEquipmentTruncheon
-  category: JobsSecurityWeapons
-  cost: 3
-  canBeHeirloom: true
-  guideEntry: SecurityWeapons
-  requirements:
-  - !type:CharacterDepartmentTimeRequirement
-    department: Security
-    min: 3600 # 1 hours
-  - !type:CharacterItemGroupRequirement
-    group: LoadoutSecurityWeapons
-  - !type:CharacterLogicOrRequirement
-    requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-    - !type:CharacterJobRequirement
-      jobs:
-      - BlueshieldOfficer
-  - !type:CharacterSpeciesRequirement
-    species:
-    - Oni
-  items:
-  - Truncheon
-
-- type: loadout
-  id: LoadoutSecurityEquipmentEnergySword
-  category: JobsSecurityWeapons
-  cost: 4
-  canBeHeirloom: true
-  guideEntry: SecurityWeapons
-  requirements:
-  - !type:CharacterDepartmentTimeRequirement
-    department: Security
-    min: 18000 # 5 hours
-  - !type:CharacterItemGroupRequirement
-    group: LoadoutSecurityWeapons
-  - !type:CharacterLogicOrRequirement
-    requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-    - !type:CharacterJobRequirement
-      jobs:
-      - BlueshieldOfficer
-  items:
-  - EnergyCutlassSecurity
 
 - type: loadout
   id: LoadoutSecurityPistolSvalin
@@ -1108,7 +1109,7 @@
     group: LoadoutSecurityWeapons
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 18000 # 5 hours
+    min: 86400 # 24 hours
   - !type:CharacterLogicOrRequirement
     requirements:
     - !type:CharacterDepartmentRequirement
@@ -1122,44 +1123,27 @@
   items:
   - WeaponEnergyRevolverSecurity
 
-- type: loadout
-  id: LoadoutSecurityShotgunSawnLumen
-  category: JobsSecurityWeapons
-  cost: 0
-  canBeHeirloom: true
-  guideEntry: SecurityWeapons
-  requirements:
-  - !type:CharacterItemGroupRequirement
-    group: LoadoutSecurityWeapons
-  - !type:CharacterLogicOrRequirement
-    requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-    - !type:CharacterJobRequirement
-      jobs:
-      - BlueshieldOfficer
-  - !type:CharacterAgeRequirement
-    min: 21
-  items:
-  - WeaponShotgunSawnLumen
-  - ShellShotgunLumen
-  - ShellShotgunLumen
+#- type: loadout # Not in Floof Yet
+#  id: LoadoutSecurityShotgunSawnLumen
+#  category: JobsSecurityWeapons
+#  cost: 0
+#  canBeHeirloom: true
+#  guideEntry: SecurityWeapons
+#  requirements:
+#  - !type:CharacterItemGroupRequirement
+#    group: LoadoutSecurityWeapons
+#  - !type:CharacterLogicOrRequirement
+#    requirements:
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#      - Security
+#    - !type:CharacterJobRequirement
+#      jobs:
+#      - BlueshieldOfficer
+#  - !type:CharacterAgeRequirement
+#    min: 21
+#  items:
+#  - WeaponShotgunSawnLumen
+#  - ShellShotgunLumen
+#  - ShellShotgunLumen
 
-# Eyes
-
-# Gloves
-
-# Head
-
-# Id
-
-# Neck
-
-# Mask
-
-# Outer
-
-# Shoes
-
-# Uniforms
