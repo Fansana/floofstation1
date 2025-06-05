@@ -4,6 +4,7 @@
   priority: -15 # Non-erp but generally not something you'd want to do to strangers
   delay: 0.4
   cooldown: 5
+  globalCooldown: true
   range: {max: 0.666} # Very close-range
   hideByRequirement: true
   requirement:

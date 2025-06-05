@@ -159,9 +159,9 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             Broadcast = true,
             BreakOnHandChange = proto.RequiresHands,
             NeedHand = proto.RequiresHands,
-            RequireCanInteract = proto.RequiresCanAccess,
+            RequireCanInteract = proto.RequiresCanInteract, // Floof - actual CanInteract
             Delay = delay,
-            Event = new InteractionVerbDoAfterEvent(proto.ID, args)
+            Event = new InteractionVerbDoAfterEvent(proto.ID, args),
         };
 
         var isSuccess = _doAfters.TryStartDoAfter(doAfter);
