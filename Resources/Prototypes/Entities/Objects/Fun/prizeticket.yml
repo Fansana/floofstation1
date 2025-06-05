@@ -408,7 +408,12 @@
       # - id: PlushieNoticeableSecurityOfficer
       #   prob: 0.50
       #   orGroup: Prize
-
+      - id: PlushieKoboldCefJustice
+        prob: 0.50
+        orGroup: Prize
+      - id: PlushieAvaliHOP 
+        prob: 0.50
+        orGroup: Prize
       # Floof - End
       # Rare
       - id: PlushieAbductorAgent
