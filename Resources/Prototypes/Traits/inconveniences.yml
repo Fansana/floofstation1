@@ -1,7 +1,7 @@
 - type: trait
   id: LightweightDrunk
   category: Physical
-  cost: 1
+  costs: 1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
