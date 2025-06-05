@@ -66,11 +66,7 @@
   - type: PressureProtection
     highPressureMultiplier: 1.7
     lowPressureMultiplier: 1000
-
-  - type: Barotrauma
-    damage:
-      types:
-        Blunt: 5
+    
   - type: Temperature
     coldDamageThreshold: -100 # Floof: Space-fairing chickens
     heatDamageThreshold: 320.15 # Suffers from the same fate as Resomi
