@@ -200,8 +200,8 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutHead
-
- - type: loadout
+      
+- type: loadout
   id: LoadoutHeadHatHolyWatermelon
   category: Head
   cost: 1
