@@ -173,3 +173,11 @@ chat-speech-verb-electricity-2 = buzzes
 chat-speech-verb-electricity-3 = screeches
 
 chat-speech-verb-marish = Mars
+
+chat-speech-verb-name-oldvox = Old-Kin
+chat-speech-verb-oldvox-1 = croaks
+chat-speech-verb-oldvox-2 = rasps
+chat-speech-verb-oldvox-3 = wheezes
+chat-speech-verb-oldvox-4 = clicks
+chat-speech-verb-oldvox-5 = chirps
+chat-speech-verb-oldvox-6 = sings

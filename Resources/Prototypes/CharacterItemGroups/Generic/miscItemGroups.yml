@@ -78,6 +78,12 @@
       id: LoadoutSpeciesDoubleEmergencyNitrogenTank
 
 - type: characterItemGroup
+  id: LoadoutAirTankVest
+  items:
+    - type: loadout
+      id: LoadoutSpeciesClothingOuterVestTank
+
+- type: characterItemGroup
   id: LoadoutBoxKits
   items:
     - type: loadout

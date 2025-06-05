@@ -62,7 +62,7 @@
 
 - type: marking
   id: VoxStreamers
-  bodyPart: HeadSide
+  bodyPart: Hair
   markingCategory: HeadSide
   speciesRestriction: [ Vox ]
   followSkinColor: false
@@ -252,7 +252,7 @@
 
 - type: marking
   id: SideQuills
-  bodyPart: HeadSide
+  bodyPart: Hair
   markingCategory: HeadSide
   speciesRestriction: [ Vox ]
   followSkinColor: false
