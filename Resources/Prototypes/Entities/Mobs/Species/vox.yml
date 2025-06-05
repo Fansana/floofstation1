@@ -106,14 +106,15 @@
     species: Vox
   - type: Body
     prototype: Vox
-  - type: Inventory
-    speciesId: vox
-    displacements:
-      jumpsuit:
-        layer:
-          sprite: Mobs/Species/Vox/displacement.rsi
-          state: jumpsuit
-          copyToShaderParameters:
-            layerKey: dummy
-            parameterTexture: displacementMap
-            parameterUV: displacementUV
+# Floof - M3739 - #1063 - The commented out component below was part of this cherry-pick PR to fix previews @ The Den. Kept for posterity.
+#  - type: Inventory
+#    speciesId: vox
+#    displacements:
+#      jumpsuit:
+#        layer:
+#          sprite: Mobs/Species/Vox/displacement.rsi
+#          state: jumpsuit
+#          copyToShaderParameters:
+#            layerKey: dummy
+#            parameterTexture: displacementMap
+#            parameterUV: displacementUV
