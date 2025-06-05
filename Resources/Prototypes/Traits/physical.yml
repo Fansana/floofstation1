@@ -543,7 +543,7 @@
       slotId: "right arm"
     - !type:TraitPushDescription
       descriptionExtensions:
-        - description: examine-bionic-arm-message
+        - description: examine-pry-arm-message
           fontSize: 12
           requireDetailRange: true
 
