@@ -8,7 +8,7 @@
   id: OverlayPlushSeamsHuman
   bodyPart: LLeg
   markingCategory: Overlay
-  speciesRestriction: # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: # Floof - M3739 - #1063 - Add Kitsune
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin, Kitsune, ]
   coloring:
     default:
@@ -23,7 +23,7 @@
   id: OverlayPlushSeamsHeadHuman
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [ Human, Canid, Felinid, Oni, Harpy, Arachne, SlimePerson, Kitsune, ] # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: [ Human, Canid, Felinid, Oni, Harpy, Arachne, SlimePerson, Kitsune, ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -37,7 +37,7 @@
   id: OverlayPlushSeamsHeadSmallSnout
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [ Rodentia, Tajaran, Ovinia, Kitsune,  ] # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: [ Rodentia, Tajaran, Ovinia, Kitsune,  ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -51,7 +51,7 @@
   id: OverlayPlushSeamsHeadLongSnout
   bodyPart: HeadTop
   markingCategory: Head
-  speciesRestriction: [ Vulpkanin, Feroxi, Reptilian, Kitsune,  ] # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: [ Vulpkanin, Feroxi, Reptilian, Kitsune,  ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -65,7 +65,7 @@
   id: OverlayPlushSeamsHandsFeet
   bodyPart: RHand
   markingCategory: Overlay
-  speciesRestriction: # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: # Floof - M3739 - #1063 - Add Kitsune
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin, Kitsune, ]
   coloring:
     default:
@@ -80,7 +80,7 @@
   id: OverlayPlushSeamsFeet
   bodyPart: RFoot
   markingCategory: Overlay
-  speciesRestriction: # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: # Floof - M3739 - #1063 - Add Kitsune
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin, Kitsune, ]
   coloring:
     default:
@@ -97,7 +97,7 @@
   markingCategory: Overlay
   speciesRestriction:
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin,
-      Ovinia, Shadowkin, Arachne, Kitsune, ] # Floof - M3739 - TaskStitch - Add Kitsune
+      Ovinia, Shadowkin, Arachne, Kitsune, ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -269,9 +269,9 @@
   id: ChestZipper
   bodyPart: LLeg
   markingCategory: Overlay
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -285,9 +285,9 @@
   id: ChestWindupKeyGold
   bodyPart: LLeg
   markingCategory: Overlay
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -301,9 +301,9 @@
   id: ChestWindupKeySilver
   bodyPart: LLeg
   markingCategory: Overlay
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -319,9 +319,9 @@
   id: ChestWindupKeyGoldAnimated
   bodyPart: LLeg
   markingCategory: Overlay
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -335,9 +335,9 @@
   id: ChestWindupKeySilverAnimated
   bodyPart: LLeg
   markingCategory: Overlay
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -353,7 +353,7 @@
   id: OverlayPlushTorsoHumanM
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [ Human, Felinid, Canid, Oni, Arachne, Kitsune, ] # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: [ Human, Felinid, Canid, Oni, Arachne, Kitsune, ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -366,7 +366,7 @@
   id: OverlayPlushTorsoHumanF
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [ Human, Felinid, Canid, Oni, Arachne, Kitsune, ] # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: [ Human, Felinid, Canid, Oni, Arachne, Kitsune, ] # Floof - M3739 - #1063 - Add Kitsune
   coloring:
     default:
       type:
@@ -379,7 +379,7 @@
   id: OverlayPlushFootLeft
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: # Floof - M3739 - #1063 - Add Kitsune
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin, Kitsune, ]
   coloring:
     default:
@@ -394,7 +394,7 @@
   id: OverlayPlushFootRight
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: # Floof - M3739 - TaskStitch - Add Kitsune
+  speciesRestriction: # Floof - M3739 - #1063 - Add Kitsune
     [ Arachnid, Canid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Tajaran, Vulpkanin, Kitsune, ]
   coloring:
     default:
@@ -409,9 +409,9 @@
   id: OverlayPlushBellyF
   bodyPart: Chest
   markingCategory: Chest
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
@@ -425,9 +425,9 @@
   id: OverlayPlushBellyM
   bodyPart: Chest
   markingCategory: Chest
-  # Floof - M3739 - TaskStitch - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
+  # Floof - M3739 - #1063 - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
   speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, ]
-  #invertSpeciesRestriction: true | Floof - M3739 - TaskStitch - We have yet to bear this feature.
+  #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
       type:
