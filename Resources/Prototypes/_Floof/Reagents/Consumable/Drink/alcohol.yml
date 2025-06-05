@@ -1591,3 +1591,23 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.15
+
+- type: reagent
+  id: PussyTonic
+  name: reagent-name-pussytonic
+  parent: BaseAlcohol
+  desc: reagent-desc-pussytonic
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: pussytonic
+  color: "#dec0f6"
+  metamorphicSprite:
+    sprite: _Floof/Objects/Consumable/Drinks/pussytonicglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
