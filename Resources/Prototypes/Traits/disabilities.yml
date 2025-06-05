@@ -178,7 +178,7 @@
 - type: trait
   id: BadKnees
   category: Physical
-  points: 3
+  points: 5 # Opposite of Parkour Training and a horrific debuff for its cost
   requirements:
     - !type:CharacterTraitRequirement
       inverted: true
