@@ -1,3 +1,4 @@
+using Content.Shared._Floof.Clothing.SlotBlocker;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;

@@ -5,3 +5,6 @@ interaction-verb-too-weak = You are too weak to use this verb.
 interaction-verb-invalid-target = You cannot use this verb on that target.
 interaction-verb-no-hands = You have no usable hands.
 interaction-verb-cannot-reach = You cannot reach there.
+
+# Floofstation
+interaction-verb-unconscious = You cannot use this verb while unconscious.
