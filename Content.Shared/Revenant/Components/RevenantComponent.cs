@@ -19,7 +19,7 @@ public sealed partial class RevenantComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public FixedPoint2 Essence = 75;
+    public FixedPoint2 Essence = 100;
 
     [DataField("stolenEssenceCurrencyPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<CurrencyPrototype>))]
     public string StolenEssenceCurrencyPrototype = "StolenEssence";
@@ -35,7 +35,7 @@ public sealed partial class RevenantComponent : Component
     /// through harvesting player souls.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("maxEssence")]
-    public FixedPoint2 EssenceRegenCap = 75;
+    public FixedPoint2 EssenceRegenCap = 100;
 
     /// <summary>
     /// The coefficient of damage taken to actual health lost.
@@ -47,7 +47,7 @@ public sealed partial class RevenantComponent : Component
     /// The amount of essence passively generated per second.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("essencePerSecond")]
-    public FixedPoint2 EssencePerSecond = 0.5f;
+    public FixedPoint2 EssencePerSecond = 1f;
 
     [ViewVariables]
     public float Accumulator = 0;
