@@ -32,7 +32,7 @@
       points: 1
       required: false
     Head: # Floof - M3739 - #937
-      points: 3 # Floof - M3739 - #937
+      points: 6 # Floof - M3739 - #937
       required: false # Floof - M3739 - #937
     Snout:
       points: 1
@@ -41,8 +41,11 @@
       points: 1
       required: true
       defaultMarkings: [ KitsuneTailDefault ]
+    Wings:
+      points: 1 # Floof - M3739 - TaskKitsunebi2
+      required: false
     HeadTop:
-      points: 1
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: true
       defaultMarkings: [ KitsuneEarsDefault ]
 #    UndergarmentTop: # Floof - M3739 - #937 - Commented out for posterity. Superseded by Underwear and Undershirt.
@@ -52,32 +55,32 @@
 #      points: 1
 #      required: false
     Chest:
-      points: 3 # Floof - M3739 - #937
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     RightLeg: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     RightFoot: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     LeftLeg: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     LeftFoot: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     RightArm: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     RightHand: # Floof - M3739 - #937
-      points: 3
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     LeftArm: # Floof - M3739 - #937
-      points: 2
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     LeftHand: # Floof - M3739 - #937
-      points: 3
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false
     HeadSide: # Floof - M3739 - #937
-      points: 2 # Floof - M3739 - #937
+      points: 6 # Floof - M3739 - TaskKitsunebi2
       required: false # Floof - M3739 - #937
