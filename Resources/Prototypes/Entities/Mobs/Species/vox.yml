@@ -63,11 +63,14 @@
       groups:
         Brute: -0.07
 
+  - type: PressureProtection
+    highPressureMultiplier: 1.7
+    lowPressureMultiplier: 1000
+
   - type: Barotrauma
-    lowMultiplier: 1000
     damage:
       types:
-        Burn: 0.15 #plating protects from pressure, but causes internal overheating in high-pressure.
+        Blunt: 5
   - type: Temperature
     coldDamageThreshold: -100 # Floof: Space-fairing chickens
     heatDamageThreshold: 320.15 # Suffers from the same fate as Resomi
