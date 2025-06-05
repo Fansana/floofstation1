@@ -81,6 +81,10 @@
     color: "#808080"
     activateSound: null
     deactivateSound: null
+# - type: Flashable # Floofstation - Here incase Mnemo wants a counter balance to it
+#   eyeDamageChance: 0.3
+#   eyeDamage: 1
+#   durationMultiplier: 1.5
   - type: StepTriggerImmune
     whitelist:
       types:
