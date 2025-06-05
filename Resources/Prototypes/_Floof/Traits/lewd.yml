@@ -1,6 +1,7 @@
 - type: trait
   id: CumProducer
   category: Physical
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -15,14 +16,15 @@
     - type: SolutionContainerManager
       solutions:
         penis:
-          maxVol: 25
+          maxVol: 30 #increased to fit perfectly into a glass
           reagents:
           - ReagentId: Cum
-            Quantity: 25
+            Quantity: 30
 
 - type: trait
   id: MilkProducer
   category: Physical
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -45,6 +47,7 @@
 - type: trait
   id: SquirtProducer
   category: Physical
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -59,7 +62,7 @@
     - type: SolutionContainerManager
       solutions:
         vagina:
-          maxVol: 25
+          maxVol: 30
           reagents:
           - ReagentId: NaturalLubricant
-            Quantity: 25
+            Quantity: 30
