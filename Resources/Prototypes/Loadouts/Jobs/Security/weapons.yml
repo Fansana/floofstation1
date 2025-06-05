@@ -5,6 +5,8 @@
 # Duplicate "Spare" equipment exists and shares the ItemGroup, for those officers who like to pack a spare magazine in their pocket, outside of what was issued to them.
 # I knew a lot of people in my time working IRL Armed security that did this.
 
+#MELEES
+
 - type: loadout
   id: LoadoutSecurityCombatKnife
   category: JobsSecurityWeapons
@@ -71,6 +73,8 @@
       - BlueshieldOfficer
   items:
   - EnergyCutlassSecurity
+
+#Whatever the Flash falls under
 
 - type: loadout
   id: LoadoutSecurityFlash
