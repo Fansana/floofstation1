@@ -60,7 +60,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 18000 # 5 hours
+    min: 86400 # 24 hours
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
   - !type:CharacterLogicOrRequirement
@@ -73,6 +73,28 @@
       - BlueshieldOfficer
   items:
   - EnergyCutlassSecurity
+
+- type: loadout # Floofstation - A little special something for the weebs
+  id: LoadoutCommandHoSKatanaSheath
+  category: JobsSecurityWeapons
+  cost: 0
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 86400 # 24 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityWeapons
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+    - SeniorOfficer
+    - Warden
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Oni
+  items:
+    - ClothingBeltKatanaSheathFilledHoS
 
 #Whatever the Flash falls under
 
@@ -635,14 +657,12 @@
     min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
-  - !type:CharacterLogicOrRequirement
-    requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-    - !type:CharacterJobRequirement
-      jobs:
-      - BlueshieldOfficer
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+    - SeniorOfficer
+    - HeadOfSecurity
+    - Warden
   - !type:CharacterAgeRequirement
     min: 21
   items:
@@ -660,14 +680,12 @@
     min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
-  - !type:CharacterLogicOrRequirement
-    requirements:
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-    - !type:CharacterJobRequirement
-      jobs:
-      - BlueshieldOfficer
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+    - SeniorOfficer
+    - HeadOfSecurity
+    - Warden
   - !type:CharacterAgeRequirement
     min: 21
   items:
@@ -1151,3 +1169,39 @@
 #  - ShellShotgunLumen
 #  - ShellShotgunLumen
 
+- type: loadout
+  id: LoadoutSecurityDisablerSMG
+  category: JobsSecurityWeapons
+  cost: 2
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityWeapons
+  - !type:CharacterJobRequirement
+    jobs:
+      - SeniorOfficer
+      - HeadOfSecurity
+      - BlueshieldOfficer
+      - Warden
+  items:
+  - WeaponDisablerSMG
+
+- type: loadout # Floofstation - Wardens need a little love
+  id: LoadoutSecurityWeaponEnergyShotgun
+  category: JobsSecurityWeapons
+  cost: 5
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Security
+    min: 86400 # 24 hours
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityWeapons
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+    - HeadOfSecurity
+    - Warden
+  items:
+    - WeaponEnergyShotgun
