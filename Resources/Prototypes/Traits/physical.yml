@@ -823,6 +823,7 @@
       inverted: true
       species:
         - Shadowkin
+        - Felinid
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
