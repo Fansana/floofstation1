@@ -43,7 +43,7 @@
   description: Makes nearby electronics stop working properly. Using it leaves you vulnerable to attacks for a long period of time.
   productAction: ActionRevenantMalfunction
   cost:
-    StolenEssence: 125
+    StolenEssence: 100 # Floofstation - Eating 12ish people? In this Economy? You must be insane
   categories:
   - RevenantAbilities
   conditions:
