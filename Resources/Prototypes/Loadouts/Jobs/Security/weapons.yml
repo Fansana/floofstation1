@@ -60,7 +60,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 86400 # 24 hours
+    min: 259200 # 3 days
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
   - !type:CharacterLogicOrRequirement
@@ -82,7 +82,7 @@
   requirements:
   - !type:CharacterDepartmentTimeRequirement
     department: Security
-    min: 86400 # 24 hours
+    min: 259200 # 3 days
   - !type:CharacterItemGroupRequirement
     group: LoadoutSecurityWeapons
   - !type:CharacterJobRequirement
