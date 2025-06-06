@@ -645,7 +645,7 @@
   items:
   - WeaponRevolverDeckardNonLethalSecurity
 
-- type: loadout
+- type: loadout # Re-enabled with an cost increase and a very large minimum playtime required, a reward for dedicated security players if you would
   id: LoadoutSecurityPistolN1984
   category: JobsSecurityWeapons
   cost: 10
