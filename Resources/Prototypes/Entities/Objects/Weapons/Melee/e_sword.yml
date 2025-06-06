@@ -283,8 +283,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
         types:
-            Slash: 5
-            Heat: 12
+            Heat: 15
             Structural: 20 # "expertly contained to cut through nearly any material" yet it had no structural damage
   - type: GuideHelp
     guides: [ SecurityWeapons ]
