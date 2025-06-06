@@ -675,7 +675,7 @@
   canBeHeirloom: true
   guideEntry: SecurityWeapons
   requirements:
-    - !type:CharacterDepartmentTimeRequirement
+  - !type:CharacterDepartmentTimeRequirement
     department: Security
     min: 604800 # 1 Week
   - !type:CharacterItemGroupRequirement
