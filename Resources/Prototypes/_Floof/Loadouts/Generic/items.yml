@@ -133,3 +133,26 @@
       group: LoadoutPets
   functions:
     - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemCigarBluespaceAddict
+  category: Items
+  cost: 2
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes
+    - !type:CharacterTraitRequirement
+      traits:
+        - AddictionNicotine
+
+- type: loadout
+  id: LoadoutItemCigarBluespace
+  category: Items
+  cost: 5
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes
