@@ -916,7 +916,7 @@
     autoRechargePause: true
     autoRechargePauseTime: 10
 
-- type: entity
+- type: entity # Floofstation
   name: energy shotgun
   parent: [BaseWeaponBattery, BaseGunWieldable]
   id: WeaponSecurityEnergyShotgun
