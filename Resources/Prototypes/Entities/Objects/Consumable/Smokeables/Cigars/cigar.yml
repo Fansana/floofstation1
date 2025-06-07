@@ -77,7 +77,7 @@
   description: A cigar designed using bluespace technology for nicotine addicts and the most hedonistic of smokers.
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi # Placeholder
+    sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi # Placeholder - Will glow blue
     state: unlit-icon
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
