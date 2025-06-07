@@ -138,6 +138,7 @@
   id: LoadoutItemCigarBluespaceAddict
   category: Items
   cost: 2
+  canBeHeirloom: true
   items:
     - CigarBluespace
   requirements:
@@ -151,6 +152,7 @@
   id: LoadoutItemCigarBluespace
   category: Items
   cost: 5
+  canBeHeirloom: true
   items:
     - CigarBluespace
   requirements:
