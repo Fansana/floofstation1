@@ -21,6 +21,10 @@
       id: LoadoutItemBlunt
     - type: loadout
       id: LoadoutItemJoint
+    - type: loadout
+      id: LoadoutItemCigarBluespaceAddict # Floofstation
+    - type: loadout
+      id: LoadoutItemCigarBluespace      
 
 - type: characterItemGroup
   id: LoadoutLighters
