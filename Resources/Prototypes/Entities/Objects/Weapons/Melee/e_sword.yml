@@ -283,7 +283,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
         types:
-            Heat: 15
+            Heat: 15 # Floofstation
             Structural: 20 # "expertly contained to cut through nearly any material" yet it had no structural damage
   - type: GuideHelp
     guides: [ SecurityWeapons ]
