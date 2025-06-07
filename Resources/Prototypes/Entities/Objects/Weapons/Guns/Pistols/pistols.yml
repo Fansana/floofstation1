@@ -383,7 +383,7 @@
           tags:
             - CartridgeMagnum
 
-- type: entity
+- type: entity # Floofstation
   name: N1984-S
   parent: WeaponPistolN1984NonLethal
   id: WeaponPistolN1984SecurityNonLethal
