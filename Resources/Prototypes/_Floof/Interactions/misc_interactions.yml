@@ -38,4 +38,5 @@
       params:
         volume: 0.6
         maxDistance: 4
-  effectFailure: null
+  effectFailure:
+    popup: Subtle
