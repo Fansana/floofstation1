@@ -199,18 +199,11 @@
       
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRat, MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRat, MobCombat ]
   id: MobCrazedClownRat
   description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
   suffix: Syndicate
   components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: Destructible
     thresholds:
     - trigger:
@@ -268,39 +261,15 @@
     spawned:
     - id: MobCrazedClownRatHatchling
       amount: 4
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    damage:
-      types:
-        Slash: 2
-        Blunt: 2
-        Piercing: 3
-        Bloodloss: 4
-  - type: MobPrice
-    price: 0
-  - type: GhostRole
-    makeSentient: true
-    allowSpeech: true
-    allowMovement: true
-    name: Crazed Clown Rat
-    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
-    rules: floof-ghost-role-information-team-antag-rules 
+
  
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRatHatchling , MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRatHatchling , MobCombat ]
   id: MobCrazedClownRatHatchling
   description: OH GOD THEY ARE MULTIPLYING!
   suffix: Syndicate, Hatchling
   components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: Destructible
     thresholds:
     - trigger:
@@ -358,57 +327,14 @@
     spawned:
     - id: MobCrazedClownRatFinalHatchling
       amount: 4
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    damage:
-      types:
-        Slash: 2
-        Blunt: 2
-        Piercing: 3
-        Bloodloss: 4
-  - type: MobPrice
-    price: 0
-  - type: GhostRole
-    makeSentient: true
-    allowSpeech: true
-    allowMovement: true
-    name: Crazed Clown Rat
-    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
-    rules: floof-ghost-role-information-team-antag-rules 
   
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRatFinalHatchling, MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRatFinalHatchling, MobCombat ]
   id: MobCrazedClownRatFinalHatchling
   description: GOD THERE IS EVEN MORE!
   suffix: Syndicate, Final_Hatchling
-  components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-  - type: MobPrice
-    price: 10
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    damage:
-      types:
-        Slash: 2
-        Blunt: 2
-        Piercing: 3
-        Bloodloss: 4
-  - type: GhostRole
-    makeSentient: true
-    allowSpeech: true
-    allowMovement: true
-    name: Crazed Clown Rat
-    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
-    rules: floof-ghost-role-information-team-antag-rules 
+
       
 - type: entity
   name: dehydrated crazed clown rat box
@@ -430,3 +356,34 @@
   - type: Sprite
     sprite: _Floof/Mobs/Animals/clown_rat.rsi
     state: icon-0
+    
+    
+- type: entity
+  abstract: true
+  id: ModuleCrazedClownRat
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+      - Mouse
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MobPrice
+    price: 0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Piercing: 2
+        Bloodloss: 4
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Crazed Clown Rat
+    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
+    rules: floof-ghost-role-information-team-antag-rules 
