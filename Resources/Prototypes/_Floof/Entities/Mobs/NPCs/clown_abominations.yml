@@ -14,7 +14,7 @@
       collection: FootstepClownFast
       params:
         pitch: 0.9
-        volume: -8
+        volume: -10
   - type: UseDelay
     delay: 1
   - type: EmitSoundOnUse
@@ -88,6 +88,13 @@
       - !type:GibBehavior { }
   - type: MobPrice
     price: 0
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Clown Rat
+    description: Incarnation of the Honkmothers mischief, go out there and be a menace to society, or get some pets from strangers.
+    rules: floof-ghost-role-information-free-agent-rules 
 
 - type: entity
   name: clown rat
@@ -209,7 +216,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Slash
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -221,7 +228,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -233,7 +240,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Piercing
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -245,7 +252,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 60
+        damage: 65
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -257,9 +264,29 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
+  - type: Butcherable
+    spawned:
+    - id: MobCrazedClownRatHatchling
+      amount: 4
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Piercing: 3
+        Bloodloss: 4
   - type: MobPrice
     price: 0
-  
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Crazed Clown Rat
+    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
+    rules: floof-ghost-role-information-team-antag-rules 
+ 
 - type: entity
   name: crazed clown rat
   parent: [ MobClownRatHatchling , MobCombat ]
@@ -327,8 +354,28 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
+  - type: Butcherable
+    spawned:
+    - id: MobCrazedClownRatFinalHatchling
+      amount: 4
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Piercing: 3
+        Bloodloss: 4
   - type: MobPrice
     price: 0
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Crazed Clown Rat
+    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
+    rules: floof-ghost-role-information-team-antag-rules 
   
 - type: entity
   name: crazed clown rat
@@ -346,6 +393,22 @@
       task: SimpleHostileCompound
   - type: MobPrice
     price: 10
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Piercing: 3
+        Bloodloss: 4
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Crazed Clown Rat
+    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
+    rules: floof-ghost-role-information-team-antag-rules 
       
 - type: entity
   name: dehydrated crazed clown rat box
