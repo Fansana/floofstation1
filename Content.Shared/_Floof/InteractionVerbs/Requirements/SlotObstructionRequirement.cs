@@ -60,7 +60,7 @@ public sealed partial class SlotObstructionRequirement : InteractionRequirement
 
             for (var i = 0; i < slots.Length; i++)
             {
-                if (!slots[i].SlotFlags.HasFlag(Slot))
+                if ((slots[i].SlotFlags & Slot) == 0)
                     continue;
 
                 var obstructed = false;
@@ -70,7 +70,7 @@ public sealed partial class SlotObstructionRequirement : InteractionRequirement
                         deps.EntMan.TryGetComponent<MaskComponent>(clothing, out var mask) && mask.IsToggled)
                         continue;
 
-                    obstructed = deps.WhitelistSystem.IsWhitelistPass(ObstructorWhitelist, clothing);
+                    obstructed = ObstructorWhitelist == null || deps.WhitelistSystem.IsWhitelistPass(ObstructorWhitelist, clothing);
                 }
 
                 // A matching slot is found. We assume there can only be one.
