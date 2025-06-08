@@ -315,6 +315,71 @@
         variation: 0.05
         volume: 4
 
+- type: entity
+  parent: PlushieHuman
+  id: PlushieKoboldCefJustice
+  name: Chef Justice kobold plushie
+  description: This plushie of a Kobold appears to be shockingly fluffy.. aswell as loud?
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/floof_plush.rsi
+    state: kobolt
+  - type: UseDelay
+    delay: 1.5
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Floof/Voice/Reptilian/yip.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      params:
+        volume: 2
+        variation: 0.1
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Floof/Voice/Reptilian/yip.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      params:
+        variation: 0.1
+        volume: 4
+        
+- type: entity
+  parent: PlushieHuman
+  id: PlushieAvaliHOP
+  name: Avali Head of Personel plushie
+  description: This plushie smells of lavender ink and freshly printed paper.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/floof_plush.rsi
+    state: hoppy
+  - type: UseDelay
+    delay: 3.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_1.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_scream.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_1.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_Floof/Voice/Avali/avali_scream.ogg
+      params:
+        variation: 0.05
+        volume: 4
+
 # Banned individual
 # - type: entity
 #   parent: PlushieHuman

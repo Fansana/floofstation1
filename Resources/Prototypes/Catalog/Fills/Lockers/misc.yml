@@ -168,9 +168,9 @@
     - !type:NestedSelector
       tableId: LewdMaintLoot # Floof - lewd loot
       prob: 0.3
-    - !type:NestedSelector
-      tableId: HypnoTempMaintLoot # HypnoTemp plushies. Should really be a part of the AllPlushiesTable, but meh.
-      prob: 0.3
+#    - !type:NestedSelector
+#      tableId: HypnoTempMaintLoot # HypnoTemp plushies. Should really be a part of the AllPlushiesTable, but meh.
+#      prob: 0.3
     # Recursive
     - id: ClosetMaintenanceFilledRandom
       prob: 0.01
