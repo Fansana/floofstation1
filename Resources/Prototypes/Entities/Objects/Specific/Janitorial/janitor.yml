@@ -8,6 +8,7 @@
     sprite: Objects/Specific/Janitorial/mop.rsi
     state: mop
   - type: MeleeWeapon
+    wideAnimationRotation: -135
     range: 1.85
     damage:
       types:
@@ -37,7 +38,7 @@
     size: Large
     sprite: Objects/Specific/Janitorial/mop.rsi
   - type: Absorbent
-    footprintCleaningRange: 0.45 # Floof - to make janitors lives easier, but not too easy.
+    footprintCleaningRange: 0.75 # Floof - to make janitors lives easier
     maxCleanedFootprints: 25 # Floof
   - type: SolutionContainerManager
     solutions:
@@ -66,6 +67,7 @@
       sprite: Objects/Specific/Janitorial/advmop.rsi
       state: advmop
     - type: MeleeWeapon
+      wideAnimationRotation: -135
       range: 1.85
       damage:
         types:
@@ -96,7 +98,7 @@
       sprite: Objects/Specific/Janitorial/advmop.rsi
     - type: Absorbent
       pickupAmount: 100
-      footprintCleaningRange: 0.75 # Floof - why do advanced mops not inherit from standard ones?
+      footprintCleaningRange: 1.5 # Floof - why do advanced mops not inherit from standard ones?
       maxCleanedFootprints: 25 # Floof
     - type: UseDelay
       delay: 1.0
