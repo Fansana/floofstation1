@@ -686,6 +686,26 @@
           state: omnitool-pulsing
         changeSound:
           path: /Audio/Items/change_drill.ogg
+    # Floof Shitmed - Improv Tools, this is more so for consistency and unlikely to be used     
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
+  - type: Hemostat
+    speed: 0.9
+  - type: Scalpel
+    speed: 0.9
+  - type: Drill
+    speed: 0.9
+  - type: BoneSetter
+    speed: 0.9
+  - type: Retractor
+    speed: 0.9
+  - type: BoneSaw
+    speed: 0.9
+  - type: Tweezers
+    speed: 0.9
+  - type: Tending
+    speed: 0.9
 
 #Other
 - type: entity
