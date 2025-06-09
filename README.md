@@ -14,7 +14,7 @@ Floof Station is a fork of [Einstein-Engines](https://github.com/Simple-Station/
 
 [Steam (WizDen Launcher)](https://store.steampowered.com/app/1255460/Space_Station_14/) (NOTE: in order to see us on the Hub, you will have to opt-in seeing 18+ servers in the filters!)
 
-[Discord](https://discord.com/invite/PT3kbcYzxe) (NOTE: in order to access to the rest of the Discord, you will have to be whitelisted first!)
+[Discord](https://discord.com/invite/floofstation) (NOTE: in order to access to the rest of the Discord, you will have to be whitelisted first!)
 
 [Wiki](https://wiki.floofstation.com/index.php/Main_Page) (NOTE: you will need a SS14 account in order to access the Wiki!)
 
