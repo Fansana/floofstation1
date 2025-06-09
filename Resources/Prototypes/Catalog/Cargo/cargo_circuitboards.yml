@@ -8,7 +8,7 @@
   category: cargoproduct-category-name-circuitboards
   group: market
 
-﻿- type: cargoProduct
+﻿- type: cargoProduct # Floof
   id: RDServerBoard
   icon:
     sprite: Objects/Misc/module.rsi
@@ -18,7 +18,7 @@
   category: cargoproduct-category-name-circuitboards
   group: market
 
-﻿- type: cargoProduct
+﻿- type: cargoProduct # Floof
   id: AmmoTechFabBoard
   icon:
     sprite: Objects/Misc/module.rsi
