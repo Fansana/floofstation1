@@ -104,3 +104,25 @@
   - type: Sprite
     sprite: _Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_double.rsi
     state: icon
+
+- type: entity # Admin Tool
+  parent: BaseDildo
+  id: AdminDildo
+  name: The Penetrator
+  description: A weapon to surpass metal gear...
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/Lewd/Toys/Dildos/dildo_human.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    attackRate: 10
+    range: 2.5
+    angle: 90
+    heavyStaminaCost: 1
+    heavyDamageBaseModifier: 1
+    damage:
+      types:
+        Blunt: 0
+  - type: StaminaDamageOnHit
+    damage: 100
