@@ -228,6 +228,8 @@
     flavorKind: station-event-random-sentience-flavor-mechanical
   - type: Absorbent
     pickupAmount: 10
+    footprintCleaningRange: 0.5 # Floof - to make janitors lives easier
+    maxCleanedFootprints: 5 # Floof
   - type: UseDelay
     delay: 2
   - type: SolutionRegeneration
