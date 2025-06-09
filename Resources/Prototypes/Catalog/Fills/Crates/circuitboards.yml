@@ -22,7 +22,7 @@
         - id: ResearchAndDevelopmentServerMachineCircuitboard
           amount: 1
 
-﻿- type: entity # Floof
+- type: entity # Floof
   id: CrateAmmoTechFabBoard
   parent: CrateWeaponSecure
   name: ammo tech fabricator board
