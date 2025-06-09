@@ -7,3 +7,23 @@
   cost: 2000
   category: cargoproduct-category-name-circuitboards
   group: market
+
+﻿- type: cargoProduct
+  id: RDServerBoard
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: cpuboard
+  product: CrateRDServerBoard
+  cost: 100000
+  category: cargoproduct-category-name-circuitboards
+  group: market
+
+﻿- type: cargoProduct
+  id: AmmoTechFabBoard
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: cpuboard
+  product: CrateAmmoTechFabBoard
+  cost: 50000
+  category: cargoproduct-category-name-circuitboards
+  group: market
