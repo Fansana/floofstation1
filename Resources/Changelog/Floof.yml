@@ -6132,3 +6132,18 @@ Entries:
   id: 645
   time: '2025-06-09T13:52:30.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1072
+- author: Memeji
+  changes:
+    - type: Add
+      message: Typewriter can be wielded, or shot one-handed with an angle penalty.
+    - type: Tweak
+      message: Updated Typewriter sprites
+    - type: Tweak
+      message: The Typewriter bundle now costs 12 TC (8 TC on sale).
+    - type: Tweak
+      message: Bundle includes 2 magazines instead of 3.
+    - type: Tweak
+      message: Firing speed has been reduced.
+  id: 646
+  time: '2025-06-09T13:57:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1037
