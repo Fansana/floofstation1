@@ -10,3 +10,25 @@
           amount: 2
         - id: CrewMonitoringServerMachineCircuitboard
           amount: 2
+
+﻿- type: entity # Floof
+  id: CrateRDServerBoard
+  parent: CrateScienceSecure
+  name: research and development server board
+  description: Has one R&D server board. Requires Epistemics access to open.
+  components:
+    - type: StorageFill
+      contents:
+        - id: ResearchAndDevelopmentServerMachineCircuitboard
+          amount: 1
+
+﻿- type: entity # Floof
+  id: CrateAmmoTechFabBoard
+  parent: CrateWeaponSecure
+  name: ammo tech fabricator board
+  description: Has one ammo tech fabricator board. Requires armory access to open.
+  components:
+    - type: StorageFill
+      contents:
+        - id: AmmoTechFabCircuitboard
+          amount: 1
