@@ -38,7 +38,7 @@
     size: Large
     sprite: Objects/Specific/Janitorial/mop.rsi
   - type: Absorbent
-    footprintCleaningRange: 0.75 # Floof - to make janitors lives easier
+    footprintCleaningRange: 0.6 # Floof - to make janitors lives easier
     maxCleanedFootprints: 25 # Floof
   - type: SolutionContainerManager
     solutions:
@@ -98,7 +98,7 @@
       sprite: Objects/Specific/Janitorial/advmop.rsi
     - type: Absorbent
       pickupAmount: 100
-      footprintCleaningRange: 1.5 # Floof - why do advanced mops not inherit from standard ones?
+      footprintCleaningRange: 1.2 # Floof - why do advanced mops not inherit from standard ones?
       maxCleanedFootprints: 25 # Floof
     - type: UseDelay
       delay: 1.0
