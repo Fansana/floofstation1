@@ -6115,3 +6115,13 @@ Entries:
   id: 643
   time: '2025-06-08T01:54:42.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1067
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Resomi are now licensed as nanotrasen citizen and as such can open doors
+        by bumping into them, can pilot spaceships, and will make footstep
+        sounds when walking.
+  id: 644
+  time: '2025-06-09T13:50:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1070
