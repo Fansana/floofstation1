@@ -11,7 +11,7 @@
         - id: CrewMonitoringServerMachineCircuitboard
           amount: 2
 
-﻿- type: entity # Floof
+- type: entity # Floof
   id: CrateRDServerBoard
   parent: CrateScienceSecure
   name: research and development server board
