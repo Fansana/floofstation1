@@ -492,7 +492,6 @@
     endSound:
       path: /Audio/Medical/Surgery/retractor2.ogg
 
-
 - type: entity
   id: RCD
   parent: BaseItem
