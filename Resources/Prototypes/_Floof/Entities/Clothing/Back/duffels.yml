@@ -1,0 +1,25 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDuffelCourierDevy
+  name: Express Courier Trunk
+  description: A Massive storage trunk for express space couriers. It has a large inside at the cost of being heavy.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Back/devytrunk.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,8,8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+  - type: MeleeWeapon
+    wideAnimationRotation: -120
+    damage:
+      types:
+        Blunt: 7.8 #Optional, remove if you wish
+      bluntStaminaDamageFactor: 2
+    heavyStaminaCost: 15
+    soundHit:
+      collection: MetalThud

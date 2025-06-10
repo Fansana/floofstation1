@@ -459,6 +459,50 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/mailcarrierthong.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCourierDevy
+  name: Express Courier Lining
+  description: a white lining for express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+    
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesCourierDevy
+  name: Express Courier Boots
+  description: A pair of sturdy boots for express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+    
+- type: entity
+  parent: [ClothingOuterBase, ClothingOuterStorageBase]
+  id: ClothingOuterDevy
+  name: Express Courier Coat
+  description: A cyan coat given to express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+    
 #Medical Outfits
 #
 #General Medical
