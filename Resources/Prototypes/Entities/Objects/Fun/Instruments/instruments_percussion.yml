@@ -59,6 +59,8 @@
     sprite: Objects/Fun/Instruments/microphone.rsi
   - type: Item
     size: Small
+  - type: ActivatableUI
+    inHandsOnly: false
 
 - type: entity
   parent: BasePercussionInstrument
