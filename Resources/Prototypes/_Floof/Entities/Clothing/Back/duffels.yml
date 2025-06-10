@@ -23,3 +23,5 @@
     heavyStaminaCost: 15
     soundHit:
       collection: MetalThud
+  - type: DamageOtherOnHit
+    staminaCost: 6

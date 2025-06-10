@@ -482,7 +482,7 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
     
 - type: entity
-  parent: [ClothingOuterBase, ClothingOuterStorageBase]
+  parent: ClothingOuterWinterCoat
   id: ClothingOuterDevy
   name: Express Courier Coat
   description: A cyan coat given to express space couriers.
@@ -491,17 +491,6 @@
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
-  - type: Storage
-    grid:
-    - 0,0,2,1
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-        ents: []
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
     
 #Medical Outfits
 #
