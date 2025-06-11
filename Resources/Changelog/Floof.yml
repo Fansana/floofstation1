@@ -6179,3 +6179,16 @@ Entries:
   id: 650
   time: '2025-06-11T19:07:36.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1045
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now drink almost twice as much alcohol before starting to puke,
+        but also 33% less before starting to get poisoned.
+    - type: Tweak
+      message: >-
+        Liquor lifeline now also requires drinking twice as much to match the
+        new thresholds.
+  id: 651
+  time: '2025-06-11T19:11:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1076
