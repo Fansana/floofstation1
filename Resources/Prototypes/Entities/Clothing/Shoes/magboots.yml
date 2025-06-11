@@ -204,10 +204,10 @@
   description: Heavy-duty magboots with added protection and a convenient sidearm strap.
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/magboots-combat.rsi
+    sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi
     state: icon
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/magboots-combat.rsi
+    sprite: _Floof/Clothing/Shoes/Boots/magboots-security.rsi
   - type: Magboots
     activeWalkModifier: 0.82
     activeSprintModifier: 0.77
