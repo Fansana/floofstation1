@@ -85,7 +85,7 @@
     price: 3000
 
 - type: entity
-  parent: ClothingShoesBase
+  parent: [ClothingShoesBootsMagBase, BaseJetpack]
   id: ClothingShoesBootsMagSyndie
   name: blood-red magboots
   description: Reverse-engineered magnetic boots that have a heavy magnetic pull and integrated thrusters.
@@ -95,9 +95,9 @@
     state: icon
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-syndicate.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.9
+  - type: Magboots
+    activeWalkModifier: 0.95
+    activeSprintModifier: 0.9
   - type: GasTank
     outputPressure: 42.6
     air:
@@ -105,12 +105,33 @@
       volume: 0.75
       temperature: 293.15
       moles:
-      - 0.153853429 # oxygen
-      - 0.153853429 # nitrogen
+        - 0.153853429 # oxygen
+        - 0.153853429 # nitrogen
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 20
+  - type: Jetpack
+    moleUsage: 0.00085
+  - type: CanMoveInAir
+  - type: InputMover
+    toParent: true
+  - type: MovementSpeedModifier
+    weightlessAcceleration: 1
+    weightlessFriction: 0.3
+    weightlessModifier: 1.2
+  - type: Tag
+    tags:
+      - WhitelistChameleon
   - type: Item
     sprite: null
     size: Normal
-
+    
 - type: entity
   id: ActionToggleMagboots
   name: Toggle Magboots
