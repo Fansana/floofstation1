@@ -102,5 +102,3 @@ public sealed class SharedMagbootsSystem : EntitySystem
         args.Handled = true;
     }
 }
-    }
-}
