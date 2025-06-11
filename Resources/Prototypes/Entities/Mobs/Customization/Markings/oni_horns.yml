@@ -159,7 +159,7 @@
     state: sagittarius_3tone_2
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
     state: sagittarius_3tone_3
-
+# Begin Floof - M3739 - TaskAcumen-I
 - type: marking
   id: OniHornVanira
   bodyPart: HeadTop
@@ -183,7 +183,7 @@
     state: vanira_3tone_2
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
     state: vanira_3tone_3
-
+# End Floof - M3739 - TaskAcumen-I
 - type: marking
   id: OniHornMakara
   bodyPart: HeadTop

@@ -330,7 +330,7 @@
     state: m_tail_dtiger_FRONT
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_dtiger_BEHIND
-
+# Begin Floof - M3739 - TaskAcumen-I
 - type: marking
   id: TailEvolox
   bodyPart: Tail
@@ -353,7 +353,7 @@
     state: m_tail_evolox_BEHIND_primary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_evolox_BEHIND_secondary
-
+# End Floof - M3739 - TaskAcumen-I
 - type: marking
   id: TailFennec
   bodyPart: Tail

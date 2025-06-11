@@ -51,7 +51,7 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
     state: lineeyes
-
+# Begin Floof - M3739 - TaskAcumen-I
 - type: marking
   id: EarsLovelox
   bodyPart: HeadTop
@@ -64,7 +64,7 @@
       state: lovelox_secondary
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
       state: lovelox_tertiary
-
+# End Floof - M3739 - TaskAcumen-I
 - type: marking
   id: EarsResomi
   bodyPart: HeadTop
