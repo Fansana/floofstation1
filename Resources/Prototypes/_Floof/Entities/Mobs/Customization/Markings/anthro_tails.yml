@@ -332,27 +332,27 @@
     state: m_tail_dtiger_BEHIND
 
 - type: marking
-  id: TailEevee
+  id: TailEvolox
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
   layering:
-    m_tail_eevee_BEHIND_primary: TailBehind
-    m_tail_eevee_BEHIND_secondary: TailBehind
-    m_tail_eevee_FRONT_primary: TailOversuit
-    m_tail_eevee_FRONT_secondary: TailOversuit
+    m_tail_evolox_BEHIND_primary: TailBehind
+    m_tail_evolox_BEHIND_secondary: TailBehind
+    m_tail_evolox_FRONT_primary: TailOversuit
+    m_tail_evolox_FRONT_secondary: TailOversuit
   colorLinks:
-    m_tail_eevee_BEHIND_primary: m_tail_eevee_FRONT_primary
-    m_tail_eevee_BEHIND_secondary: m_tail_eevee_FRONT_secondary
+    m_tail_evolox_BEHIND_primary: m_tail_evolox_FRONT_primary
+    m_tail_evolox_BEHIND_secondary: m_tail_evolox_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_eevee_FRONT_primary
+    state: m_tail_evolox_FRONT_primary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_eevee_FRONT_secondary
+    state: m_tail_evolox_FRONT_secondary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_eevee_BEHIND_primary
+    state: m_tail_evolox_BEHIND_primary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_eevee_BEHIND_secondary
+    state: m_tail_evolox_BEHIND_secondary
 
 - type: marking
   id: TailFennec

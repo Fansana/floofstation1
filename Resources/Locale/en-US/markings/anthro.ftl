@@ -355,11 +355,11 @@ marking-TailDTiger-m_tail_dtiger_BEHIND = Lizard, Tiger
 marking-TailDTiger-m_tail_dtiger_FRONT = Lizard, Tiger
 marking-TailDTiger = Lizard Tail, Tiger
 
-marking-TailEevee-m_tail_eevee_BEHIND_primary = Eevee Tail (Primary)
-marking-TailEevee-m_tail_eevee_BEHIND_secondary = Eevee Tail (Secondary)
-marking-TailEevee-m_tail_eevee_FRONT_primary = Eevee Tail (Primary)
-marking-TailEevee-m_tail_eevee_FRONT_secondary = Eevee Tail (Secondary)
-marking-TailEevee = Eevee Tail
+marking-TailEvolox-m_tail_evolox_BEHIND_primary = Evolox Tail (Primary)
+marking-TailEvolox-m_tail_evolox_BEHIND_secondary = Evolox Tail (Secondary)
+marking-TailEvolox-m_tail_evolox_FRONT_primary = Evolox Tail (Primary)
+marking-TailEvolox-m_tail_evolox_FRONT_secondary = Evolox Tail (Secondary)
+marking-TailEvolox = Evolox Tail
 
 marking-TailFennec-m_tail_fennec_BEHIND_primary = Fox Tail, Fennec (Primary)
 marking-TailFennec-m_tail_fennec_BEHIND_secondary = Fox Tail, Fennec (Secondary)
@@ -789,17 +789,17 @@ marking-EarsDeerEar-m_ears_deerear_ADJ_secondary = Deer Ears MkIII (Secondary)
 marking-EarsDeerEar-m_ears_deerear_FRONT_secondary = Deer Ears MkIII (Secondary)
 marking-EarsDeerEar = Deer Ears MkIII
 
-marking-EarsEevee-m_ears_eevee_FRONT_primary = Eevee Ears MkI (Primary)
-marking-EarsEevee-m_ears_eevee_FRONT_secondary = Eevee Ears MkI (Secondary)
-marking-EarsEevee-m_ears_eevee_ADJ_primary = Eevee Ears MkI (Primary)
-marking-EarsEevee-m_ears_eevee_ADJ_secondary = Eevee Ears MkI (Secondary)
-marking-EarsEevee = Eevee Ears MkI
+marking-EarsEvolox-m_ears_evolox_FRONT_primary = Evolox Ears MkI (Primary)
+marking-EarsEvolox-m_ears_evolox_FRONT_secondary = Evolox Ears MkI (Secondary)
+marking-EarsEvolox-m_ears_evolox_ADJ_primary = Evolox Ears MkI (Primary)
+marking-EarsEvolox-m_ears_evolox_ADJ_secondary = Evolox Ears MkI (Secondary)
+marking-EarsEvolox = Evolox Ears MkI
 
-marking-EarsEeveeAlt-m_ears_eevee_alt_FRONT_primary = Eevee Ears MkII (Primary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_FRONT_secondary = Eevee Ears MkII (Secondary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_ADJ_primary = Eevee Ears MkII (Primary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_ADJ_secondary = Eevee Ears MkII (Secondary)
-marking-EarsEeveeAlt = Eevee Ears MkII
+marking-EarsEvoloxAlt-m_ears_evolox_alt_FRONT_primary = Evolox Ears MkII (Primary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_FRONT_secondary = Evolox Ears MkII (Secondary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_ADJ_primary = Evolox Ears MkII (Primary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_ADJ_secondary = Evolox Ears MkII (Secondary)
+marking-EarsEvoloxAlt = Evolox Ears MkII
 
 marking-EarsElephant-m_ears_elephant_FRONT = Elephant Ears
 marking-EarsElephant-m_ears_elephant_ADJ = Elephant Ears
