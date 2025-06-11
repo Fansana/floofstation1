@@ -64,6 +64,10 @@ marking-SnoutFSCanidAlt3 = Canid Snout FS Alt 3
 marking-SnoutFSCanidAlt3-snout_fscanidalt3_primary = Canid Snout FS Alt 3 (Primary)
 marking-SnoutFSCanidAlt3-snout_fscanidalt3_secondary = Canid Snout FS Alt 3 (Secondary)
 
+marking-SnoutSCanid = Canid Snout S
+marking-SnoutSCanid-snout_scanidalt3_primary = Canid Snout S (Primary)
+marking-SnoutSCanid-snout_scanidalt3_secondary = Canid Snout S (Secondary)
+
 marking-SnoutSCanidAlt3 = Canid Snout Alt 3 S
 marking-SnoutSCanidAlt3-snout_scanidalt3_primary = Canid Snout Alt 3 S (Primary)
 marking-SnoutSCanidAlt3-snout_scanidalt3_secondary = Canid Snout Alt 3 S (Secondary)
