@@ -169,9 +169,9 @@ marking-SnoutOtieSmile = Otie Smile Snout
 marking-SnoutOtieSmile-snout_otiesmile_primary = Otie Smile Snout (Primary)
 marking-SnoutOtieSmile-snout_otiesmile_secondary = Otie Smile Snout (Secondary)
 
-marking-SnoutPede = Scolipede Snout
-marking-SnoutPede-snout_pede_primary = Scolipede Snout (Primary)
-marking-SnoutPede-snout_pede_secondary = Scolipede Snout (Secondary)
+marking-SnoutPede = Bug Horse Snout
+marking-SnoutPede-snout_pede_primary = Bug Horse Snout (Primary)
+marking-SnoutPede-snout_pede_secondary = Bug Horse Snout (Secondary)
 
 marking-SnoutRodent = Rodent Snout
 marking-SnoutRodent-snout_rodent_primary = Rodent Snout (Primary)
