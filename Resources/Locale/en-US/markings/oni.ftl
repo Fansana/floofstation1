@@ -53,13 +53,13 @@ marking-OniHornSagittarius3Tone-sagittarius_3tone_1 = Bottom Third
 marking-OniHornSagittarius3Tone-sagittarius_3tone_2 = Middle Third
 marking-OniHornSagittarius3Tone-sagittarius_3tone_3 = Top Third
 
-marking-OniHornVantas = Vantas
-marking-OniHornVantas-vantas = Vantas
+marking-OniHornVanira = Vanira
+marking-OniHornVanira-vanira = Vanira
 
-marking-OniHornVantas3Tone = Vantas (Three Tone)
-marking-OniHornVantas3Tone-vantas_3tone_1 = Bottom Third
-marking-OniHornVantas3Tone-vantas_3tone_2 = Middle Third
-marking-OniHornVantas3Tone-vantas_3tone_3 = Top Third
+marking-OniHornVanira3Tone = Vanira (Three Tone)
+marking-OniHornVanira3Tone-vanira_3tone_1 = Bottom Third
+marking-OniHornVanira3Tone-vanira_3tone_2 = Middle Third
+marking-OniHornVanira3Tone-vanira_3tone_3 = Top Third
 
 marking-OniHornMakara = Makara
 marking-OniHornMakara-makara = Makara
