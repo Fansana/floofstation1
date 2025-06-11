@@ -216,7 +216,7 @@
       - ReagentId: WeldingFuel
         Quantity: 1
   - type: Tool
-    speedModifier: 1.5 # For whatever reason this item didn't have this when an advanced industrial welding tool did
+    speedModifier: 1.3 # it being faster is fine
     # Floof Shitmed - Improvised Tools
   - type: Cautery
     speed: 1.0
