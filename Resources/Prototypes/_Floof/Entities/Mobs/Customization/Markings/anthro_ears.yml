@@ -930,10 +930,10 @@
     state: m_ears_wolf_ADJ_tertiary
 
 - type: marking
-  id: EarsGuilmonHorns
+  id: EarsVirtuasaurHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Reptilian] # Floof - M3739 - TaskAcumen-I
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_horns_guilmon
+    state: m_horns_virtuasaur

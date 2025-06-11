@@ -375,9 +375,9 @@ marking-TailFox3-m_tail_fox3_BEHIND_primary = Fox Tail, Monocolor Burnt
 marking-TailFox3-m_tail_fox3_FRONT_primary = Fox Tail, Monocolor Burnt
 marking-TailFox3 = Fox Tail, Monocolor Burnt
 
-marking-TailGuilmon-m_tail_guilmon_BEHIND_primary = Guilmon Tail
-marking-TailGuilmon-m_tail_guilmon_FRONT_primary = Guilmon Tail
-marking-TailGuilmon = Guilmon Tail
+marking-TailVirtuasaur-m_tail_virtuasaur_BEHIND_primary = Virtuasaur Tail
+marking-TailVirtuasaur-m_tail_virtuasaur_FRONT_primary = Virtuasaur Tail
+marking-TailVirtuasaur = Virtuasaur Tail
 
 marking-TailHawk-m_tail_hawk_BEHIND_primary = Avian Tailfeathers, Hawk (Primary)
 marking-TailHawk-m_tail_hawk_BEHIND_secondary = Avian Tailfeathers, Hawk (Secondary)
@@ -982,8 +982,8 @@ marking-EarsWolf-m_ears_wolf_ADJ_primary = Wolf Ears (Primary)
 marking-EarsWolf-m_ears_wolf_ADJ_tertiary = Wolf Ears (Secondary)
 marking-EarsWolf = Wolf Ears
 
-marking-EarsGuilmonHorns-m_horns_guilmon = Guilmon Ears
-marking-EarsGuilmonHorns = Guilmon Ears
+marking-EarsVirtuasaurHorns-m_horns_virtuasaur = Virtuasaur Ears
+marking-EarsVirtuasaurHorns = Virtuasaur Ears
 
 # and the rest of the damn snotches
 

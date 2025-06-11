@@ -1,12 +1,12 @@
 # HEAD
 - type: marking
-  id: LizardHeadGuilmon
+  id: LizardHeadVirtuasaur
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni] # Floof - M3739 - TaskAcumen-I
   sprites:
   - sprite: _White/Mobs/Customization/snouts.rsi
-    state: guilmon
+    state: virtuasaur
 
 - type: marking
   id: LizardHeadCobraHood

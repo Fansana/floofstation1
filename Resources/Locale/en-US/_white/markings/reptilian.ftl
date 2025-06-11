@@ -1,6 +1,6 @@
 # HEAD
-marking-LizardHeadGuilmon= Lizard, guilmon
-marking-LizardHeadGuilmon-guilmon = Main
+marking-LizardHeadVirtuasaur= Virtuasaur Head
+marking-LizardHeadVirtuasaur-virtuasaur = Main
 
 marking-LizardShoutEasternDragon= Lizard, eastern dragon
 marking-LizardShoutEasternDragon-eastern_dragon = Outer

@@ -412,20 +412,20 @@
     state: m_tail_fox3_BEHIND_primary
 
 - type: marking
-  id: TailGuilmon
+  id: TailVirtuasaur
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Reptilian] # Floof - M3739 - TaskAcumen-I
   layering:
-    m_tail_guilmon_BEHIND_primary: TailBehind
-    m_tail_guilmon_FRONT_primary: TailOversuit
+    m_tail_virtuasaur_BEHIND_primary: TailBehind
+    m_tail_virtuasaur_FRONT_primary: TailOversuit
   colorLinks:
-    m_tail_guilmon_BEHIND_primary: m_tail_guilmon_FRONT_primary
+    m_tail_virtuasaur_BEHIND_primary: m_tail_virtuasaur_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_guilmon_FRONT_primary
+    state: m_tail_virtuasaur_FRONT_primary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
-    state: m_tail_guilmon_BEHIND_primary
+    state: m_tail_virtuasaur_BEHIND_primary
 
 - type: marking
   id: TailHawk
