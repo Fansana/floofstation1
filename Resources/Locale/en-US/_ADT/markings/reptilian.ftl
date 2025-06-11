@@ -23,7 +23,7 @@ marking-ReptilianLineEyes = Stripe Eyes
 
 # marking-TailDatashark = Data Shark Tail
 
-marking-EarsSylveon = Sylveon Ears
+marking-EarsLovelox = Lovelox Ears
 marking-EarsResomi = Resomi Ears
 marking-EarsChemlight = ChemLight Ears
 marking-EarsDragonLong = Dragon Long Ears
