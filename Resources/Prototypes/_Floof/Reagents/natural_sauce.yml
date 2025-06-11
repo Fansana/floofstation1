@@ -12,6 +12,18 @@
     Drink:
       effects:
       - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Succubus
+          shouldHave: false
+        factor: 0.2
+      - !type:SatiateHunger
+        conditions:
+        - !type:OrganType
+          type: Succubus
+          shouldHave: false
+        factor: 1
+      - !type:SatiateThirst
         factor: 3
         conditions:
         - !type:OrganType
