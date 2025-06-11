@@ -83,6 +83,12 @@
 - type: entity
   parent: [ClothingShoesBootsMagBase]
   id: ClothingShoesBootsMag
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/magboots.rsi
 
 - type: entity
   parent: ClothingShoesBootsMag
