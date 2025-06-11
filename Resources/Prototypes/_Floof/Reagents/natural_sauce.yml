@@ -12,9 +12,30 @@
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 0.2
+        factor: 0.5
       - !type:SatiateHunger
         factor: 1
+        conditions:
+        - !type:OrganType
+          type: Succubus
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Saline
+        amount: 0.3
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Vitamin
+        amount: 0.25
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        reagent: Omnizine
+        amount: 0.2
   footstepSound:
     collection: FootstepSticky
     params:
