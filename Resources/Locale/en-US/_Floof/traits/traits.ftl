@@ -151,3 +151,8 @@ trait-description-Tiny =
     Note: [color=red]this will not display in the character creation menu, and will only apply the effects in-game.[/color]
 
 examine-tiny-trait-message = {CAPITALIZE(SUBJECT($entity))} is tiny. Handle with care!
+
+trait-name-Succubus = Succubus
+trait-description-Succubus =
+    Your body has evolved to be able to metabolize cum into useful compounds.
+    You can eat normal food, but drinking cum satiates your hunger and thirst better, and also improves your health.
