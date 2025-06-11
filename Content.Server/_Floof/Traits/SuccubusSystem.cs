@@ -30,7 +30,7 @@ public sealed class SuccubusSystem : EntitySystem
 
             foreach (var metabolismGroup in metabolizer.MetabolismGroups)
             {
-                // Add the LiquorLifeline metabolizer type to the liver and equivalent organs.
+                // Add the Succubus metabolizer type to the liver and equivalent organs.
                 if (metabolismGroup.Id == "Drinks")
                     metabolizer.MetabolizerTypes.Add("Succubus");
             }
