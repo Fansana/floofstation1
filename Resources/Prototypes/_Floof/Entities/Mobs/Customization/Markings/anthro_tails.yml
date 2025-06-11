@@ -330,7 +330,7 @@
     state: m_tail_dtiger_FRONT
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_dtiger_BEHIND
-# Begin Floof - M3739 - TaskAcumen-I
+# Begin Floof - M3739 - #1084
 - type: marking
   id: TailEvolox
   bodyPart: Tail
@@ -353,7 +353,7 @@
     state: m_tail_evolox_BEHIND_primary
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_evolox_BEHIND_secondary
-# End Floof - M3739 - TaskAcumen-I
+# End Floof - M3739 - #1084
 - type: marking
   id: TailFennec
   bodyPart: Tail
@@ -415,7 +415,7 @@
   id: TailVirtuasaur
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Reptilian, Kitsune] # Floof - M3739 - TaskAcumen-I
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Reptilian, Kitsune] # Floof - M3739 - #1084
   layering:
     m_tail_virtuasaur_BEHIND_primary: TailBehind
     m_tail_virtuasaur_FRONT_primary: TailOversuit

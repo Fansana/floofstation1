@@ -52,7 +52,7 @@ marking-OniHornSagittarius3Tone = Sagittarius (Three Tone)
 marking-OniHornSagittarius3Tone-sagittarius_3tone_1 = Bottom Third
 marking-OniHornSagittarius3Tone-sagittarius_3tone_2 = Middle Third
 marking-OniHornSagittarius3Tone-sagittarius_3tone_3 = Top Third
-# Begin Floof - M3739 - TaskAcumen-I
+# Begin Floof - M3739 - #1084
 marking-OniHornVanira = Vanira
 marking-OniHornVanira-vanira = Vanira
 
@@ -60,7 +60,7 @@ marking-OniHornVanira3Tone = Vanira (Three Tone)
 marking-OniHornVanira3Tone-vanira_3tone_1 = Bottom Third
 marking-OniHornVanira3Tone-vanira_3tone_2 = Middle Third
 marking-OniHornVanira3Tone-vanira_3tone_3 = Top Third
-# End Floof - M3739 - TaskAcumen-I
+# End Floof - M3739 - #1084
 marking-OniHornMakara = Makara
 marking-OniHornMakara-makara = Makara
 

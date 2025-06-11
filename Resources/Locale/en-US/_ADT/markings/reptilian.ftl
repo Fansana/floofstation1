@@ -22,7 +22,7 @@ marking-ReptilianDrawingWarpaint = Warpaint Drawing
 marking-ReptilianLineEyes = Stripe Eyes
 
 # marking-TailDatashark = Data Shark Tail
-# Floof - M3739 - TaskAcumen-I - Lovelox
+# Floof - M3739 - #1084 - Lovelox
 marking-EarsLovelox = Lovelox Ears
 marking-EarsResomi = Resomi Ears
 marking-EarsChemlight = ChemLight Ears

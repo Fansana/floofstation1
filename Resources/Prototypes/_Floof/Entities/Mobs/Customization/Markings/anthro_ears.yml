@@ -329,7 +329,7 @@
     state: m_ears_deerear_ADJ_secondary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_deerear_FRONT_secondary
-# Begin Floof - M3739 - TaskAcumen-I
+# Begin Floof - M3739 - #1084
 - type: marking
   id: EarsEvolox
   bodyPart: HeadTop
@@ -365,7 +365,7 @@
     state: m_ears_evolox_alt_ADJ_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_evolox_alt_ADJ_secondary
-# End Floof - M3739 - TaskAcumen-I
+# End Floof - M3739 - #1084
 - type: marking
   id: EarsElephant
   bodyPart: HeadTop
@@ -928,7 +928,7 @@
     state: m_ears_wolf_ADJ_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_wolf_ADJ_tertiary
-# Begin Floof - M3739 - TaskAcumen-I
+# Begin Floof - M3739 - #1084
 - type: marking
   id: EarsVirtuasaurHorns
   bodyPart: HeadTop
@@ -937,4 +937,4 @@
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_horns_virtuasaur
-# End Floof - M3739 - TaskAcumen-I
+# End Floof - M3739 - #1084
