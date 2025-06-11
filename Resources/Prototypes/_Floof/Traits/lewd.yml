@@ -63,3 +63,18 @@
           reagents:
           - ReagentId: NaturalLubricant
             Quantity: 25
+
+- type: trait
+  id: Succubus
+  category: Physical
+  points: -3
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: Succubus
