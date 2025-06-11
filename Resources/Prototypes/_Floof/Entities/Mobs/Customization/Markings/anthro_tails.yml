@@ -415,7 +415,7 @@
   id: TailVirtuasaur
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Reptilian] # Floof - M3739 - TaskAcumen-I
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Reptilian, Kitsune] # Floof - M3739 - TaskAcumen-I
   layering:
     m_tail_virtuasaur_BEHIND_primary: TailBehind
     m_tail_virtuasaur_FRONT_primary: TailOversuit

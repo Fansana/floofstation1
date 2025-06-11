@@ -933,7 +933,7 @@
   id: EarsVirtuasaurHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Reptilian] # Floof - M3739 - TaskAcumen-I
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Reptilian, Kitsune] # Floof - M3739 - TaskAcumen-I
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_horns_virtuasaur
