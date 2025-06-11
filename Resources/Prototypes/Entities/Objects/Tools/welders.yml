@@ -219,7 +219,7 @@
     speedModifier: 1.5 # For whatever reason this item didn't have this when an advanced industrial welding tool did
     # Floof Shitmed - Improvised Tools
   - type: Cautery
-    speed: 1.3
+    speed: 1.0
   - type: SurgeryTool
     startSound:
       collection: Welder
