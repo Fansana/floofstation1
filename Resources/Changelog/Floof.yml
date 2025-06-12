@@ -6081,3 +6081,114 @@ Entries:
   id: 639
   time: '2025-06-04T21:08:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1053
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Mech UI (ripley, hamptr, others) should work correctly noow.
+  id: 640
+  time: '2025-06-05T13:44:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1047
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: >-
+        Fixed fun! But actually. Toy Sword rotation fixed and Toy DESword having
+        a working wield sprite.
+  id: 641
+  time: '2025-06-05T20:12:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1051
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Puddles and other entities with only a non-hard fixture should now
+        correctly display in the entity menu (right click).
+  id: 642
+  time: '2025-06-05T20:14:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1064
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added new Avali Head of Personel and Chef Justice kobold plushies.
+    - type: Tweak
+      message: Adjusted the HypnoTemp plushie spawn rate.
+  id: 643
+  time: '2025-06-08T01:54:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1067
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Resomi are now licensed as nanotrasen citizen and as such can open doors
+        by bumping into them, can pilot spaceships, and will make footstep
+        sounds when walking.
+  id: 644
+  time: '2025-06-09T13:50:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1070
+- author: ItsDzordz
+  changes:
+    - type: Tweak
+      message: Tweaked crazed clown rats
+  id: 645
+  time: '2025-06-09T13:52:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1072
+- author: Memeji
+  changes:
+    - type: Add
+      message: Typewriter can be wielded, or shot one-handed with an angle penalty.
+    - type: Tweak
+      message: Updated Typewriter sprites
+    - type: Tweak
+      message: The Typewriter bundle now costs 12 TC (8 TC on sale).
+    - type: Tweak
+      message: Bundle includes 2 magazines instead of 3.
+    - type: Tweak
+      message: Firing speed has been reduced.
+  id: 646
+  time: '2025-06-09T13:57:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1037
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Combat High-Heeled Boots
+  id: 647
+  time: '2025-06-09T14:01:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1043
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Holymelon Halo to Loadout
+  id: 648
+  time: '2025-06-09T14:23:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1059
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        Added Voice Mask, Night Vision, Singing, Mech Piloting, Emoting to
+        Revenant.
+    - type: Tweak
+      message: Buffed Revenant HP and Regen, and things they can emag.
+  id: 649
+  time: '2025-06-09T16:56:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1066
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Voxes (New-Kin)
+  id: 650
+  time: '2025-06-11T19:07:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1045
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now drink almost twice as much alcohol before starting to puke,
+        but also 33% less before starting to get poisoned.
+    - type: Tweak
+      message: >-
+        Liquor lifeline now also requires drinking twice as much to match the
+        new thresholds.
+  id: 651
+  time: '2025-06-11T19:11:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1076
