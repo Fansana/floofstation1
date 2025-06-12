@@ -270,7 +270,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -286,7 +286,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -302,7 +302,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -320,7 +320,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -336,7 +336,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   # Floof - M3739 - #1063 - speciesRestriction was originally Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Diona, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -410,7 +410,7 @@
   bodyPart: Chest
   markingCategory: Chest
   # Floof - M3739 - #1063 - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, Vox,  ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
@@ -426,7 +426,7 @@
   bodyPart: Chest
   markingCategory: Chest
   # Floof - M3739 - #1063 - speciesRestriction was originally Diona and Resomi, intended as blacklist rather than a whitelist.
-  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, ]
+  speciesRestriction: [ Arachnid, Felinid, Feroxi, Human, IPC, Oni, Reptilian, Rodentia, SlimePerson, Vulpkanin, Shadowkin, Arachne, Kitsune, Vox, ]
   #invertSpeciesRestriction: true | Floof - M3739 - #1063 - We have yet to bear this feature.
   coloring:
     default:
