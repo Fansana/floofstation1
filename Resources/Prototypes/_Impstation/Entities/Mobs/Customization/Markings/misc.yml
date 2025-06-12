@@ -354,9 +354,14 @@
   speciesRestriction: [ Vox ]
   forcedColoring: true
   followSkinColor: true
+  layering:
+    tail_stenciled: Tail
+    voxtailballed: Tail
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailballed
+  - sprite: Mobs/Customization/vox_parts.rsi
+    state: tail_stenciled
 
 - type: marking
   id: VoxTailSplit
@@ -365,9 +370,14 @@
   speciesRestriction: [ Vox ]
   forcedColoring: true
   followSkinColor: true
+  layering:
+    tail_stenciled: Tail
+    voxtailsplit: Tail
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsplit
+  - sprite: Mobs/Customization/vox_parts.rsi
+    state: tail_stenciled
 
 - type: marking
   id: VoxTailStripes
@@ -376,9 +386,14 @@
   speciesRestriction: [ Vox ]
   forcedColoring: false
   followSkinColor: false
+  layering:
+    tail_stenciled: Tail
+    voxtailstripes: Tail
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailstripes
+  - sprite: Mobs/Customization/vox_parts.rsi
+    state: tail_stenciled
 
 - type: marking
   id: VoxLArmProsthetic
