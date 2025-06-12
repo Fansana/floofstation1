@@ -74,7 +74,15 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
   functions:
-  - !type:TraitAddComponent
-    components:
-    - type: Succubus
+    - !type:TraitModifyMetabolism
+      types: [ Succubus ]
+      groups: [
+        Poison,
+        Food,
+        Drink,
+      ]
