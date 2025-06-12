@@ -462,8 +462,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformCourierDevy
-  name: Express Courier Lining
-  description: a white lining for express space couriers.
+  name: Express Space Courier Uniform
+  description: A white lining for designated express space couriers.
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
@@ -473,8 +473,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: ClothingShoesCourierDevy
-  name: Express Courier Boots
-  description: A pair of sturdy boots for express space couriers.
+  name: Express Space Courier Boots
+  description: A pair of sturdy boots for designated express space couriers.
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
@@ -484,8 +484,8 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterDevy
-  name: Express Courier Coat
-  description: A cyan coat given to express space couriers.
+  name: Express Space Courier Coat
+  description: A insulated cyan coat for designated express space couriers.
   components:
   - type: Sprite
     sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
