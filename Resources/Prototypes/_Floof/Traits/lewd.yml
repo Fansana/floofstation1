@@ -79,10 +79,6 @@
       species:
         - IPC
   functions:
-    - !type:TraitModifyMetabolism
-      types: [ Succubus ]
-      groups: [
-        Poison,
-        Food,
-        Drink,
-      ]
+  - !type:TraitAddComponent
+    components:
+    - type: Succubus
