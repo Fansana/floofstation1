@@ -172,9 +172,16 @@
     sprite: Clothing/Belt/assault.rsi
   - type: Storage
     whitelist:
-      tags:
+      tags: # Floof - M3739 - TaskAdjust-I
         - CigPack
         - Taser
+        - SecBeltEquip
+        - Radio
+        - Sidearm
+        - MagazinePistol
+        - MagazineMagnum
+        - CombatKnife
+        - Truncheon
       components:
         - Stunbaton
         - FlashOnTrigger
@@ -183,6 +190,11 @@
         - Handcuff
         - BallisticAmmoProvider
         - Ammo
+        - CartridgeAmmo
+        - DoorRemote
+        - Whistle
+        - HolosignProjector
+        - BalloonPopper
   - type: ItemMapper
     mapLayers:
       flashbang:
