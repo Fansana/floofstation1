@@ -13,6 +13,11 @@
   access:
   - Research
   - Maintenance
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: SurgerySpeedModifier
+      speedModifier: 1.5 # So they can do brain surgery and cybernetic implants
 
 - type: startingGear
   id: RoboticistGear
