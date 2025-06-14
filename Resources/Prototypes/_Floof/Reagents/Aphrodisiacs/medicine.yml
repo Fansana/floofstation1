@@ -127,6 +127,7 @@
         probability: 0.32
         conditions:
           - !type:ReagentThreshold
+            max: 0.1
 
 - type: reagent
   id: Succubium
