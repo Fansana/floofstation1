@@ -806,6 +806,7 @@
         whitelist:
           tags:
             - Paper
+            - EnvelopeFiller
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
     requiresComplex: false

@@ -143,6 +143,9 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
+  - type: Tag
+    tags:
+    - EnvelopeFiller
 
 - type: entity
   parent: GrenadeBase
@@ -172,6 +175,9 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
+  - type: Tag
+    tags:
+    - EnvelopeFiller
 
 - type: entity
   parent: GrenadeBase
@@ -201,6 +207,9 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
+  - type: Tag
+    tags:
+    - EnvelopeFiller
 
 - type: entity
   parent: SoapSyndie
