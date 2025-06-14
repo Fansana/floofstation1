@@ -107,6 +107,19 @@
   - type: LanguageKnowledge
     speaks: [TauCetiBasic] # So that them foreigners can't understand what the broken mail is saying
     understands: []
+  # FLOOF ADD START: Slide papers and such under doors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemSlideUnderDoorMask
+        restitution: 0.3
+        friction: 0.2
+  # FLOOF ADD END
 
 # This empty parcel is allowed to exist and evade the tests for the admin
 # mailto command.
