@@ -289,6 +289,12 @@
       solution: bloodstream
       transferAmount: 2
     - type: Bloodstream
+      bloodlossDamage:
+        types:
+          Bloodloss: 0.5
+      bloodlossHealDamage:
+        types:
+          Bloodloss: -1
       bloodReagent: JuiceOrange
       bloodRegenerationHunger: 2
       bloodRegenerationThirst: 2 
