@@ -72,7 +72,6 @@ petting-success-service-cyborg = You pet {THE($target)} on {POSS-ADJ($target)} d
 petting-success-syndicate-cyborg = You pet {THE($target)} on {POSS-ADJ($target)} menacing metal head.
 petting-success-derelict-cyborg = You pet {THE($target)} on {POSS-ADJ($target)} rusty metal head.
 petting-success-recycler = You pet {THE($target)} on {POSS-ADJ($target)} mildly threatening steel exterior.
-petting-success-station-ai = You pet {THE($target)} on {POSS-ADJ($target)} cold, square screen.
 petting-success-gladiabot = You pet {THE($target)} on {POSS-ADJ($target)} vicious cardboard head.
 petting-success-batonbot = You pet {THE($target)} on {POSS-ADJ($target)} protective metal head.
 petting-success-disablerbot = You pet {THE($target)} on {POSS-ADJ($target)} protective metal head.
