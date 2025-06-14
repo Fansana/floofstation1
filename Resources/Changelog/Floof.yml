@@ -6192,3 +6192,10 @@ Entries:
   id: 651
   time: '2025-06-11T19:11:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1076
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Arachne not having Spidercraft
+  id: 652
+  time: '2025-06-14T03:27:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1093
