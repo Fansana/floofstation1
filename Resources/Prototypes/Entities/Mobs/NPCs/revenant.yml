@@ -70,18 +70,31 @@
       # troll medical to help get kills
       - StasisBed
       - EmaggableMedibot
+      - CryoPod # Floofstation
       # borg become killer
       - EmagSiliconLaw
+      # cause chaos by emagging lathes
+      - Lathe # Floofstation
+      # cause chaos by emagging PCs and vending machines
+      - VendingMachine # Floofstation
+      - Computer # Floofstation
   - type: PointLight
     color: MediumPurple
     radius: 2
     softness: 1
+  - type: VoiceMask # Floofstation
   - type: UserInterface
     interfaces:
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
+      enum.VoiceMaskUIKey.Key:
+        type: VoiceMaskBoundUserInterface # Floofstation
   - type: Visibility
     layer: 2 #ghost vis layer
+  - type: NightVision # Floofstation
+    drawOverlay: false
+    activateSound: null
+    deactivateSound: null
   - type: Store
     categories:
     - RevenantAbilities
@@ -96,6 +109,8 @@
     - RevenantTheme
   - type: Speech
     speechVerb: Ghost
+  - type: Singer # Floofstation - incase you wanted to play spooky music while haunting
+    proto: HarpySinger
   - type: Psionic
     removable: false
     psychognomicDescriptors:
@@ -109,3 +124,5 @@
   - type: Tag
     tags:
       - NoPaint
+      - CanPilot # Floofstation - they can hijack mechs but they will probably eat shit when shot
+      - HarpyEmotes # Floofstation - so they can emote

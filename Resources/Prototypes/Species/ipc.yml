@@ -75,39 +75,39 @@
       required: false
     #FLOOF CHANGE end
     Chest:
-      points: 3 # FLOOF CHANGE: IPCs get furry parts
+      points: 6 # FLOOF CHANGE: IPCs get furry parts
       required: true
       defaultMarkings: [ MobIPCTorsoDefault ]
     RightLeg:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCRLegDefault ]
     RightFoot:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCRFootDefault ]
     LeftLeg:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCLLegDefault ]
     LeftFoot:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCLFootDefault ]
     RightArm:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCRArmDefault ]
     RightHand:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCRHandDefault ]
     LeftArm:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCLArmDefault ]
     LeftHand:
-      points: 2 # FLOOF CHANGE IPCs get furry parts
+      points: 6 # FLOOF CHANGE IPCs get furry parts
       required: false
       defaultMarkings: [ MobIPCLHandDefault ]
     Snout: # FLOOF CHANGE IPCs get furry parts

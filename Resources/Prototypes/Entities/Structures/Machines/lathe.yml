@@ -228,6 +228,8 @@
     - RiotShield
     - SpeedLoaderMagnum
     - SpeedLoaderMagnumEmpty
+    - MagazineLightRifleMarkOneEmpty
+    - MagazineLightRifleMarkOne
     - MagazinePistolCaselessRifle # Goobstation
     - MagazineBoxCaselessRifle # Goobstation
     - MagazineMagnumEmpty # Goobstation
@@ -288,7 +290,7 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
-      - HandheldCrewMonitor
+      # HandheldCrewMonitor  Floof change it was move to the Medical fab
       - Scalpel
       - Retractor
       - Cautery
@@ -994,6 +996,8 @@
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
+      - MagazineLightRifleMarkOneEmpty
+      - MagazineLightRifleMarkOne
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1051,6 +1055,8 @@
         - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
+        - MagazineLightRifleMarkOneEmpty
+        - MagazineLightRifleMarkOne
     - type: MaterialStorage
       whitelist:
         tags:
@@ -1151,6 +1157,8 @@
       - ReagentGrinderIndustrialMachineCircuitboard
       - FatExtractorMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
+      - TrackingImplanter
+      - HandheldCrewMonitor
       # Floof section end
       # Shitmed Change
       - EnergyScalpel
@@ -1961,6 +1969,8 @@
       # - PlushieFeistyBartender
       # - PlushieCoolVulp
       # - PlushieNoticeableSecurityOfficer
+      - PlushieAvaliHOP 
+      - PlushieKoboldCefJustice
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:

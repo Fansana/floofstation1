@@ -45,6 +45,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Dynamics.Joints;
 using Content.Server.Effects;
+using Content.Shared.Popups;
+
 
 namespace Content.Server.Chat.Systems;
 
@@ -79,6 +81,8 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
+    [Dependency] private readonly EmpathyChatSystem _empathy = default!;
+    [Dependency] private readonly SharedPopupSystem _popups = default!; // Floof
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -281,6 +285,12 @@ public sealed partial class ChatSystem : SharedChatSystem
                 SendEntityWhisper(source, modMessage, range, channel, nameOverride, language, hideLog, ignoreActionBlocker);
                 return;
             }
+        }
+
+        if (desiredType == InGameICChatType.Telepathic && language.SpeechOverride.EmpathySpeech)
+        {
+            _empathy.SendEmpathyChat(source, message, range == ChatTransmitRange.HideChat);
+            return;
         }
 
         // Otherwise, send whatever type.
@@ -520,7 +530,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             source,
             range,
             languageOverride: language,
-            checkLOS: SpeakRespectsLOS
+            checkLOS: SpeakRespectsLOS || language.SpeechOverride.RequireLOS // Floof - added the LOS thing
             );
 
         var ev = new EntitySpokeEvent(source, message, null, false, language);
@@ -881,10 +891,18 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool checkLOS = false
         )
     {
+        var ignoreLanguage = channel.IsExcemptFromLanguages(); // Floof
         var language = languageOverride ?? _language.GetLanguage(source);
+        // Floof
+        if (!ignoreLanguage && language.SpeechOverride.RequireHands && !_actionBlocker.CanInteract(source, null))
+        {
+            _popups.PopupEntity(Loc.GetString("chat-manager-language-requires-hands"), source, PopupType.Medium);
+            return;
+        }
+
         foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
-            if (language.SpeechOverride.RequireSpeech && channel != ChatChannel.LOOC && channel != ChatChannel.Emotes )
+            if (language.SpeechOverride.RequireSpeech && channel != ChatChannel.LOOC && channel != ChatChannel.Emotes)
             {
                 var sourceGrid = Transform(source).GridUid;
                 float transmitRange = VoiceRange;
@@ -916,7 +934,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             EntityUid listener = session.AttachedEntity.Value;
 
             // If the channel does not support languages, or the entity can understand the message, send the original message, otherwise send the obfuscated version
-            if (channel == ChatChannel.LOOC || channel == ChatChannel.Emotes || _language.CanUnderstand(listener, language.ID))
+            if (ignoreLanguage || _language.CanUnderstand(listener, language.ID)) // Floof - ignoreLanguage
             {
                 _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
             }
