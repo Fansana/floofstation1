@@ -127,4 +127,35 @@
         probability: 0.32
         conditions:
           - !type:ReagentThreshold
-            max: 0.1
+
+- type: reagent
+  id: Succubium
+  name: reagent-name-succubium
+  group: Medicine
+  desc: reagent-desc-succubium
+  physicalDesc: reagent-physical-desc-exhilarating
+  flavor: sweet
+  color: "#c90084"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:SatiateThirst
+        factor: 1.5
+      - !type:SatiateHunger
+      - !type:ModifyBleedAmount
+        amount: -1
+      - !type:ModifyBloodLevel
+        amount: 1.5
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -0.3
+            Toxin: -0.2
+            Airloss: -0.2
+            Brute: -0.3
+      - !type:ChemAddMoodlet
+        moodPrototype: SuccubiumBenefit
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Succubium
+          min: 10
