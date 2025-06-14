@@ -254,4 +254,39 @@
   - !type:TraitAddComponent
     components:
     - type: FixtureDensityModifier
-      factor: 1.4 # Lets try the opposite of lightweight, yeah?
+
+- type: trait # Commission for Karin
+  id: RealOrangeJuice
+  category: Physical
+  points: 0
+  requirements:
+  - !type:CharacterJobRequirement
+    inverted: true
+    jobs:
+    - Borg
+    - MedicalBorg
+  - !type:CharacterSpeciesRequirement
+    species:
+    - SlimePerson
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    - MilkProducer
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: MilkProducer
+      solutionname: "breasts"
+    - type: SolutionContainerManager
+      solutions:
+        breasts:
+          maxVol: 50
+          reagents:
+          - ReagentId: JuiceOrange 
+            Quantity: 50
+    - type: MeleeChemicalInjector
+      solution: bloodstream
+      transferAmount: 2
+  - !type:TraitReplaceComponent
+    - type: Bloodstream
+      bloodReagent: JuiceOrange
