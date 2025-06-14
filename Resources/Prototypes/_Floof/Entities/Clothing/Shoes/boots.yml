@@ -16,7 +16,7 @@
     footstepSoundCollection:
       collection: FootstepHighHeels
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 0.8
   - type: Construction
     graph: ClothingShoesCombatHighheelBoots
     node: shoes
