@@ -172,7 +172,7 @@
     sprite: Clothing/Belt/assault.rsi
   - type: Storage
     whitelist:
-      tags: # Floof - M3739 - TaskAdjust-I
+      tags: # Floof - M3739 - #1097
         - CigPack
         - Taser
         - SecBeltEquip
