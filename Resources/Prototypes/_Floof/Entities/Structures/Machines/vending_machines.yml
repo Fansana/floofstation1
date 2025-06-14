@@ -34,3 +34,34 @@
     noRot: false
   - type: Rotatable
     rotateWhileAnchored: false
+
+- type: entity
+  parent: VendingMachineFreelancer
+  id: VendingMachineFreelancerGun
+  name: Freelancer Arm's Vend
+  suffix: Freelancer
+  description: Pinickle of firearms fallen to the public domain, now right at your fingertips.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Floof/Structures/Machines/VendingMachines/freelancergunvend.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: VendingMachine
+    pack: VMFreelancerGunInventory
+  - type: AccessReader
+    access: [["Freelancer"]]
+# to be re-added when i figure out how to make the item list work with points or how to use money instead of points
+#  - type: PointsVendor
+#  - type: UserInterface # DeltaV: Replace vending machine BUI with shop vendor
+#    interfaces:
+#      enum.VendingMachineUiKey.Key:
+#        type: ShopVendorBoundUserInterface
+#      enum.WiresUiKey.Key:
+#        type: WiresBoundUserInterface
