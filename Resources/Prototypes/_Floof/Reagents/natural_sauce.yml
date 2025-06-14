@@ -37,20 +37,8 @@
         conditions:
         - !type:OrganType
           type: Succubus
-        reagent: Saline
-        amount: 0.25
-      - !type:AdjustReagent
-        conditions:
-        - !type:OrganType
-          type: Succubus
-        reagent: Vitamin
-        amount: 0.25
-      - !type:AdjustReagent
-        conditions:
-        - !type:OrganType
-          type: Succubus
-        reagent: Omnizine
-        amount: 0.1
+        reagent: Succubium
+        amount: 1
   footstepSound:
     collection: FootstepSticky
     params:
