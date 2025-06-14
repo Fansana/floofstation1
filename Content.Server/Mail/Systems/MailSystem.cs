@@ -584,24 +584,31 @@ namespace Content.Server.Mail.Systems
             return false;
         }
 
-        /// <summary>
-        /// Try to construct a recipient struct for a mail parcel based on a receiver.
-        /// </summary>
-        public bool TryGetMailRecipientForReceiver(EntityUid receiverUid, [NotNullWhen(true)] out MailRecipient? recipient)
-        {
-            if (_idCardSystem.TryFindIdCard(receiverUid, out var idCard)
-                && TryComp<AccessComponent>(idCard.Owner, out var access)
-                && idCard.Comp.FullName != null)
-            {
-                var accessTags = access.Tags;
-                var mayReceivePriorityMail = !(_mindSystem.GetMind(receiverUid) == null);
+    /// <summary>
+    /// Try to construct a recipient struct for a mail parcel based on a receiver.
+    /// </summary>
+    public bool TryGetMailRecipientForReceiver(EntityUid receiver, [NotNullWhen(true)] out MailRecipient? recipient)
+    {
+        // Because of the way this works, people are not considered
+        // candidates for mail if there is no valid PDA or ID in their slot
+        // or active hand. A better future solution might be checking the
+        // station records, possibly cross-referenced with the medical crew
+        // scanner to look for living recipients. TODO
 
-                recipient = new MailRecipient(
-                    idCard.Comp.FullName,
-                    idCard.Comp.LocalizedJobTitle ?? idCard.Comp.JobTitle ?? "Unknown",
-                    idCard.Comp.JobIcon,
-                    accessTags,
-                    mayReceivePriorityMail);
+        if (_idCardSystem.TryFindIdCard(receiver, out var idCard)
+            && TryComp<AccessComponent>(idCard.Owner, out var access)
+            && idCard.Comp.FullName != null
+            && idCard.Comp.LocalizedJobTitle != null)
+        {
+            var accessTags = access.Tags;
+
+            var mayReceivePriorityMail = !(_mindSystem.GetMind(receiver) == null);
+
+            recipient = new MailRecipient(idCard.Comp.FullName,
+                idCard.Comp.LocalizedJobTitle ?? idCard.Comp.JobTitle ?? "Unknown",
+                idCard.Comp.JobIcon,
+                accessTags,
+                mayReceivePriorityMail);
 
                 return true;
             }
@@ -650,7 +657,7 @@ namespace Content.Server.Mail.Systems
 
             if (candidateList.Count <= 0)
             {
-                _sawmill.Error("List of mail candidates was empty!");
+                _sawmill.Warning("List of mail candidates was empty!"); // Floofstation - this should warn, not error out.
                 return;
             }
 
