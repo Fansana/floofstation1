@@ -122,3 +122,5 @@
   components:
   - type: HumanoidAppearance
     species: Feroxi
+  - type: Inventory
+    speciesId: feroxi
