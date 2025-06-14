@@ -98,7 +98,7 @@ public sealed partial class AnomalySystem
             });
 
         // If interacting with another scanner, copy the anomaly data
-        if (component.ScannedAnomaly is not { Valid: true }
+        if ((component.ScannedAnomaly is not { Valid: true } || Deleted(component.ScannedAnomaly)) // Floof edit - added the deleted? clause
             && TryComp<AnomalyScannerComponent>(args.Target, out var otherScanner)
             && otherScanner.ScannedAnomaly is {} otherAnomaly)
         {

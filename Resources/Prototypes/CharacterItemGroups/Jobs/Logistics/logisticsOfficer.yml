@@ -69,6 +69,8 @@
       id: LoadoutCommandQMOuterLongcoat
     - type: loadout
       id: LoadoutCommandQMOuterWinter
+    - type: loadout
+      id: LoadoutLogisticsOfficeOuter
 
 - type: characterItemGroup
   id: LoadoutLogisticsOfficerShoes

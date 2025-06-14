@@ -36,12 +36,12 @@
     - !type:TraitReplaceComponent
       components:
         - type: PotentiaModifier
-          potentiaMultiplier: 1.25
+          potentiaMultiplier: 1.5
 
 - type: trait
   id: LowPotential
   category: Mental
-  points: 4
+  points: 5
   requirements:
     - !type:CharacterLogicOrRequirement
       requirements:
@@ -75,7 +75,7 @@
     - !type:TraitReplaceComponent
       components:
         - type: PotentiaModifier
-          potentiaMultiplier: 0.75
+          potentiaMultiplier: 0.5
 
 - type: trait
   id: LowAmplification
@@ -102,10 +102,6 @@
         - !type:CharacterTraitRequirement
           traits:
             - AnomalousPositronics
-    - !type:CharacterSpeciesRequirement
-      inverted: true
-      species:
-        - Shadowkin
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -257,7 +253,7 @@
 - type: trait
   id: DispelPower
   category: Mental
-  points: -6
+  points: -4
   requirements:
     - !type:CharacterLogicOrRequirement
       requirements:
@@ -290,7 +286,7 @@
 - type: trait
   id: MetapsionicPower
   category: Mental
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterLogicOrRequirement
       requirements:
@@ -359,7 +355,7 @@
 - type: trait
   id: PsychognomyPower
   category: Mental
-  points: -3
+  points: -1
   requirements:
     - !type:CharacterLogicOrRequirement
       requirements:

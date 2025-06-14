@@ -14,7 +14,7 @@ namespace Content.Shared.Lathe
         /// All of the dynamic recipes that the lathe is capable to get using EMAG
         /// </summary>
         [DataField, AlwaysPushInheritance, AutoNetworkedField]
-        public List<ProtoId<LatheRecipePrototype>> EmagDynamicRecipes = new();
+        public HashSet<ProtoId<LatheRecipePrototype>> EmagDynamicRecipes = new();
 
         // FloofStation Modified
         // Ditto from EmagDynamicRecipes
@@ -22,6 +22,6 @@ namespace Content.Shared.Lathe
         /// All of the static recipes that the lathe is capable to get using EMAG
         /// </summary>
         [DataField, AlwaysPushInheritance, AutoNetworkedField]
-        public List<ProtoId<LatheRecipePrototype>> EmagStaticRecipes = new();
+        public HashSet<ProtoId<LatheRecipePrototype>> EmagStaticRecipes = new();
     }
 }

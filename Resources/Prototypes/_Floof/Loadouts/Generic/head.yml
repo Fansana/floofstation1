@@ -200,3 +200,15 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutHead
+      
+- type: loadout
+  id: LoadoutHeadHatHolyWatermelon
+  category: Head
+  cost: 1
+  canBeHeirloom: true
+  exclusive: true
+  items:
+    - ClothingHeadHatHolyWatermelon
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutHead

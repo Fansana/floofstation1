@@ -3,6 +3,8 @@
   speech:
     allowRadio: false
     requireSpeech: false
+    requireHands: true
+    requireLOS: true
     color: "#dddddd"
     messageWrapOverrides:
       Speak: chat-sign-language-message-wrap

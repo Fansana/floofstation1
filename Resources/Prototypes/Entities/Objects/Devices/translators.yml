@@ -274,3 +274,16 @@
     requires:
     - TauCetiBasic
     - Chittin
+
+- type: entity
+  id: VoxTranslator
+  parent: [ TranslatorPoweredBase ] # TODO: Cobbled together POS sprite
+  name: Ka'rakk translator
+  description: Interprets speech for, colloquially, Vox Pidgin. It almost sounds... Alive, inside. Atleast it takes batteries!
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - NewKinPidgin
+    understood:
+    - NewKinPidgin
+    - OldKinPidgin

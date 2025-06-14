@@ -1,4 +1,17 @@
 - type: loadout
+  id: LoadoutSpeciesClothingOuterVestTank
+  category: Species
+  cost: 0
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - SlimePerson
+        - Vox
+        - Feroxi
+  items:
+    - ClothingOuterVestTank #Specialized outer-wear for holding large tanks.
+
+- type: loadout
   id: LoadoutSpeciesEmergencyNitrogenTank
   category: Species
   cost: 0
@@ -39,6 +52,7 @@
       group: LoadoutAirTank
   items:
     - DoubleEmergencyNitrogenTankFilled
+
 # Floof - Feroxi port to current loadout systems
 - type: loadout
   id: LoadoutSpeciesEmergencyWaterVaporTank

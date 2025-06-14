@@ -147,7 +147,7 @@
   id: RodentiaSnoutBatCounter
   markingCategory: Snout
   bodyPart: Snout
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: bat
@@ -160,7 +160,7 @@
   id: RodentiaSnoutFlat
   markingCategory: Snout
   bodyPart: Snout
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: flat
@@ -171,7 +171,7 @@
   id: RodentiaSnoutFlatCounter
   markingCategory: Snout
   bodyPart: Snout
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: flat
@@ -184,7 +184,7 @@
   id: RodentiaSnoutRound
   markingCategory: Snout
   bodyPart: Snout
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: round
@@ -195,7 +195,7 @@
   id: RodentiaSnoutRoundCounter
   markingCategory: Snout
   bodyPart: Snout
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: round
@@ -210,7 +210,7 @@
   id: RodentiaCheeksRound
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: cheeks
@@ -219,7 +219,7 @@
   id: RodentiaCheeksRoundCounter
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: cheeks
@@ -230,7 +230,7 @@
   id: RodentiaCheeksFluff
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff
@@ -239,7 +239,7 @@
   id: RodentiaCheeksFluffCounter
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff
@@ -250,7 +250,7 @@
   id: RodentiaCheeksFluffAlt
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff_alt
@@ -259,7 +259,7 @@
   id: RodentiaCheeksFluffAltCounter
   markingCategory: HeadSide
   bodyPart: HeadSide
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff_alt
@@ -394,7 +394,7 @@
   id: RodentiaChestCountershade
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sexRestriction: Male
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/body_markings.rsi
@@ -404,7 +404,7 @@
   id: RodentiaChestCountershadeF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sexRestriction: Female
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/body_markings.rsi
@@ -414,7 +414,7 @@
   id: RodentiaLegLeftCountershade
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_leg
@@ -425,7 +425,7 @@
   id: RodentiaLegRightCountershade
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_leg
@@ -436,7 +436,7 @@
   id: RodentiaChestFawn
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/body_markings.rsi
       state: fawn
@@ -445,7 +445,7 @@
   id: RodentiaChestHooded
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sexRestriction: Male
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/body_markings.rsi
@@ -455,7 +455,7 @@
   id: RodentiaChestHoodedF
   markingCategory: Chest
   bodyPart: Chest
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sexRestriction: Female
   sprites:
     - sprite: DeltaV/Mobs/Customization/Rodentia/body_markings.rsi
@@ -467,7 +467,7 @@
   id: RodentiaHeadBlaze
   markingCategory: Head
   bodyPart: Head
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: head_m
@@ -478,7 +478,7 @@
   id: RodentiaHeadRound
   markingCategory: Head
   bodyPart: Head
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC, Human] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: head_m
@@ -504,7 +504,7 @@
   id: RodentiaArmLeftBasic
   markingCategory: LeftArm
   bodyPart: LArm
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_arm
@@ -513,7 +513,7 @@
   id: RodentiaArmRightBasic
   markingCategory: RightArm
   bodyPart: RArm
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_arm
@@ -524,7 +524,7 @@
   id: RodentiaLegLeftBasic
   markingCategory: LeftLeg
   bodyPart: LLeg
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_leg
@@ -533,7 +533,7 @@
   id: RodentiaLegRightBasic
   markingCategory: RightLeg
   bodyPart: RLeg
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_leg
@@ -544,7 +544,7 @@
   id: RodentiaHandLeftBasic
   markingCategory: LeftHand
   bodyPart: LHand
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_hand
@@ -553,7 +553,7 @@
   id: RodentiaHandRightBasic
   markingCategory: RightHand
   bodyPart: RHand
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_hand
@@ -564,7 +564,7 @@
   id: RodentiaFootLeftBasic
   markingCategory: LeftFoot
   bodyPart: LFoot
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_foot
@@ -573,7 +573,7 @@
   id: RodentiaFootRightBasic
   markingCategory: RightFoot
   bodyPart: RFoot
-  speciesRestriction: [Rodentia, SlimePerson]
+  speciesRestriction: [Rodentia, SlimePerson, IPC] # FLOOF CHANGE IPCs get furry parts
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_foot
