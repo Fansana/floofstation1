@@ -9,7 +9,7 @@
   id: SpeciesAdaptorVulpkaninHeadMale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: head_m
@@ -18,7 +18,7 @@
   id: SpeciesAdaptorVulpkaninHeadFemale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: head_f
@@ -27,7 +27,7 @@
   id: SpeciesAdaptorVulpkaninTorsoMale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: torso_m
@@ -36,7 +36,7 @@
   id: SpeciesAdaptorVulpkaninTorsoFemale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: torso_f
@@ -45,7 +45,7 @@
   id: SpeciesAdaptorVulpkaninLArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: l_arm
@@ -54,7 +54,7 @@
   id: SpeciesAdaptorVulpkaninLHand
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
     state: l_hand
@@ -63,7 +63,7 @@
   id: SpeciesAdaptorVulpkaninRArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: r_arm
@@ -72,7 +72,7 @@
   id: SpeciesAdaptorVulpkaninRHand
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: r_hand
@@ -81,7 +81,7 @@
   id: SpeciesAdaptorVulpkaninLLeg
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: l_leg
@@ -90,7 +90,7 @@
   id: SpeciesAdaptorVulpkaninLFoot
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: l_foot
@@ -99,7 +99,7 @@
   id: SpeciesAdaptorVulpkaninRLeg
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: r_leg
@@ -108,7 +108,7 @@
   id: SpeciesAdaptorVulpkaninRFoot
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Vulpkanin/parts.rsi
       state: r_foot
@@ -118,7 +118,7 @@
   id: SpeciesAdaptorRodentiaHeadMale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: head_m
@@ -127,7 +127,7 @@
   id: SpeciesAdaptorRodentiaHeadFemale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: head_f
@@ -136,7 +136,7 @@
   id: SpeciesAdaptorRodentiaTorsoMale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: torso_m
@@ -145,7 +145,7 @@
   id: SpeciesAdaptorRodentiaTorsoFemale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: torso_f
@@ -154,7 +154,7 @@
   id: SpeciesAdaptorRodentiaLArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: l_arm
@@ -163,7 +163,7 @@
   id: SpeciesAdaptorRodentiaLHand
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
     state: l_hand
@@ -172,7 +172,7 @@
   id: SpeciesAdaptorRodentiaRArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_arm
@@ -181,7 +181,7 @@
   id: SpeciesAdaptorRodentiaRHand
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_hand
@@ -190,7 +190,7 @@
   id: SpeciesAdaptorRodentiaLLeg
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_leg
@@ -199,7 +199,7 @@
   id: SpeciesAdaptorRodentiaLFoot
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: l_foot
@@ -208,7 +208,7 @@
   id: SpeciesAdaptorRodentiaRLeg
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_leg
@@ -217,7 +217,7 @@
   id: SpeciesAdaptorRodentiaRFoot
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: DeltaV/Mobs/Species/Rodentia/parts.rsi
       state: r_foot
@@ -227,7 +227,7 @@
   id: SpeciesAdaptorHumanHeadMale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: head_m
@@ -236,7 +236,7 @@
   id: SpeciesAdaptorHumanHeadFemale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: head_f
@@ -245,7 +245,7 @@
   id: SpeciesAdaptorHumanTorsoMale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: torso_m
@@ -254,7 +254,7 @@
   id: SpeciesAdaptorHumanTorsoFemale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: torso_f
@@ -263,7 +263,7 @@
   id: SpeciesAdaptorHumanLArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: l_arm
@@ -272,7 +272,7 @@
   id: SpeciesAdaptorHumanLHand
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Human/parts.rsi
     state: l_hand
@@ -281,7 +281,7 @@
   id: SpeciesAdaptorHumanRArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: r_arm
@@ -290,7 +290,7 @@
   id: SpeciesAdaptorHumanRHand
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: r_hand
@@ -299,7 +299,7 @@
   id: SpeciesAdaptorHumanLLeg
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: l_leg
@@ -308,7 +308,7 @@
   id: SpeciesAdaptorHumanLFoot
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: l_foot
@@ -317,7 +317,7 @@
   id: SpeciesAdaptorHumanRLeg
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: r_leg
@@ -326,7 +326,7 @@
   id: SpeciesAdaptorHumanRFoot
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
     - sprite: Mobs/Species/Human/parts.rsi
       state: r_foot
@@ -336,7 +336,7 @@
   id: SpeciesAdaptorFeroxiHeadMale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: head_m
@@ -345,7 +345,7 @@
   id: SpeciesAdaptorFeroxiHeadFemale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: head_f
@@ -354,7 +354,7 @@
   id: SpeciesAdaptorFeroxiTorsoMale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: torso_m
@@ -363,7 +363,7 @@
   id: SpeciesAdaptorFeroxiTorsoFemale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: torso_f
@@ -372,7 +372,7 @@
   id: SpeciesAdaptorFeroxiLArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: l_arm
@@ -381,7 +381,7 @@
   id: SpeciesAdaptorFeroxiLHand
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: l_hand
@@ -390,7 +390,7 @@
   id: SpeciesAdaptorFeroxiRArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: r_arm
@@ -399,7 +399,7 @@
   id: SpeciesAdaptorFeroxiRHand
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: r_hand
@@ -408,7 +408,7 @@
   id: SpeciesAdaptorFeroxiLLeg
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: l_leg
@@ -417,7 +417,7 @@
   id: SpeciesAdaptorFeroxiLFoot
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: l_foot
@@ -426,7 +426,7 @@
   id: SpeciesAdaptorFeroxiRLeg
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: r_leg
@@ -435,7 +435,7 @@
   id: SpeciesAdaptorFeroxiRFoot
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: DeltaV/Mobs/Species/Feroxi/parts.rsi
     state: r_foot
@@ -445,7 +445,7 @@
   id: SpeciesAdaptorReptilianHeadMale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: head_m
@@ -454,7 +454,7 @@
   id: SpeciesAdaptorReptilianHeadFemale
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: head_f
@@ -463,7 +463,7 @@
   id: SpeciesAdaptorReptilianTorsoMale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: torso_m
@@ -472,7 +472,7 @@
   id: SpeciesAdaptorReptilianTorsoFemale
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: torso_f
@@ -481,7 +481,7 @@
   id: SpeciesAdaptorReptilianLArm
   bodyPart: LArm
   markingCategory: LeftArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: l_arm
@@ -490,7 +490,7 @@
   id: SpeciesAdaptorReptilianLHand
   bodyPart: LHand
   markingCategory: LeftHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: l_hand
@@ -499,7 +499,7 @@
   id: SpeciesAdaptorReptilianRArm
   bodyPart: RArm
   markingCategory: RightArm
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: r_arm
@@ -508,7 +508,7 @@
   id: SpeciesAdaptorReptilianRHand
   bodyPart: RHand
   markingCategory: RightHand
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: r_hand
@@ -517,7 +517,7 @@
   id: SpeciesAdaptorReptilianLLeg
   bodyPart: LLeg
   markingCategory: LeftLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: l_leg
@@ -526,7 +526,7 @@
   id: SpeciesAdaptorReptilianLFoot
   bodyPart: LFoot
   markingCategory: LeftFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: l_foot
@@ -535,7 +535,7 @@
   id: SpeciesAdaptorReptilianRLeg
   bodyPart: RLeg
   markingCategory: RightLeg
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: r_leg
@@ -544,7 +544,7 @@
   id: SpeciesAdaptorReptilianRFoot
   bodyPart: RFoot
   markingCategory: RightFoot
-  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian]
+  speciesRestriction: [Vulpkanin, SlimePerson, Human, Rodentia, Feroxi, Oni, IPC, Reptilian, Kitsune]
   sprites:
   - sprite: Mobs/Species/Reptilian/parts.rsi
     state: r_foot
