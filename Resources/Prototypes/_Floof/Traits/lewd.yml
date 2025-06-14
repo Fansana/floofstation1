@@ -63,3 +63,22 @@
           reagents:
           - ReagentId: NaturalLubricant
             Quantity: 25
+
+- type: trait
+  id: EggLayer
+  category: Physical
+  points: 0
+  requirements:
+    - !type:CharacterJobRequirement # Weird if a borg could lay an egg
+      inverted: true
+      jobs:
+        - Borg
+        - MedicalBorg
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: Sericulture
+          action: ActionLayEgg
+          productionLength: 1
+          entityProduced: FoodEgg
+          hungerCost: 2
