@@ -254,6 +254,7 @@
   - !type:TraitAddComponent
     components:
     - type: FixtureDensityModifier
+      factor: 1.4 # Lets try the opposite of lightweight, yeah?
 
 - type: trait # Commission for Karin
   id: RealOrangeJuice
@@ -287,6 +288,5 @@
     - type: MeleeChemicalInjector
       solution: bloodstream
       transferAmount: 2
-  - !type:TraitReplaceComponent
     - type: Bloodstream
       bloodReagent: JuiceOrange
