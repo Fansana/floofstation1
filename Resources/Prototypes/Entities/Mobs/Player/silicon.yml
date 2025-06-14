@@ -64,8 +64,8 @@
     color: "#5ed7aa"
   - type: HolographicAvatar
     layerData:
-    - sprite: Mobs/Silicon/station_ai.rsi
-      state: default
+      - sprite: Mobs/Silicon/station_ai.rsi
+        state: default
   - type: ShowJobIcons
 
 - type: entity
@@ -73,21 +73,21 @@
   description: Components added / removed from an entity that gets inserted into an Intellicard.
   categories: [ HideSpawnMenu ]
   components:
-  - type: IntrinsicRadioReceiver
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - Binary
-  - type: ActiveRadio
-    channels:
-    - Binary
-    - Common
-  - type: ActionGrant
-    actions:
-    - ActionAIViewLaws
-  - type: UserInterface
-    interfaces:
-      enum.SiliconLawsUiKey.Key:
-        type: SiliconLawBoundUserInterface
+    - type: IntrinsicRadioReceiver
+    - type: IntrinsicRadioTransmitter
+      channels:
+        - Binary
+    - type: ActiveRadio
+      channels:
+        - Binary
+        - Common
+    - type: ActionGrant
+      actions:
+        - ActionAIViewLaws
+    - type: UserInterface
+      interfaces:
+        enum.SiliconLawsUiKey.Key:
+          type: SiliconLawBoundUserInterface
 
 # Ai
 - type: entity
@@ -429,6 +429,9 @@
     drawFov: false
   - type: Examiner
   - type: InputMover
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
   - type: Tag
     tags:
     - HideContextMenu
