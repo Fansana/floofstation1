@@ -6220,3 +6220,12 @@ Entries:
   id: 654
   time: '2025-06-14T03:37:54.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1087
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Welders and the energy shield no longer hide their respective energies
+        from sight.
+  id: 655
+  time: '2025-06-14T03:51:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1086
