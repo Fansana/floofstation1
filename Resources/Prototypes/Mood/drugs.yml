@@ -37,3 +37,8 @@
   id: SpaceDrugsBenefit
   moodChange: 7
   timeout: 300 #5 minutes
+
+- type: moodEffect
+  id: SuccubiumBenefit
+  moodChange: 10
+  timeout: 600 #10 minutes
