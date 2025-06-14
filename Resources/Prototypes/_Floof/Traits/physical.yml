@@ -290,3 +290,5 @@
       transferAmount: 2
     - type: Bloodstream
       bloodReagent: JuiceOrange
+      bloodRegenerationHunger: 2
+      bloodRegenerationThirst: 2 
