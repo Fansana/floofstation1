@@ -152,6 +152,14 @@
         - ReagentId: WeldingFuel
           Quantity: 250
         maxVol: 250
+    # Floof Shitmed - Improvised Tools
+  - type: Cautery
+    speed: 1
+  - type: SurgeryTool
+    startSound:
+      collection: Welder
+    endSound:
+      collection: WelderOff
 
 - type: entity
   name: advanced industrial welding tool
@@ -172,6 +180,14 @@
         maxVol: 250
   - type: Tool
     speedModifier: 1.3
+    # Floof Shitmed - Improvised Tools
+  - type: Cautery
+    speed: 1
+  - type: SurgeryTool
+    startSound:
+      collection: Welder
+    endSound:
+      collection: WelderOff
 
 - type: entity
   name: experimental welding tool
@@ -200,6 +216,16 @@
       reagents:
       - ReagentId: WeldingFuel
         Quantity: 1
+  - type: Tool
+    speedModifier: 1.0 # it being faster is fine
+    # Floof Shitmed - Improvised Tools
+  - type: Cautery
+    speed: 1.0
+  - type: SurgeryTool
+    startSound:
+      collection: Welder
+    endSound:
+      collection: WelderOff
 
 - type: entity
   name: emergency welding tool
@@ -227,3 +253,11 @@
     enabled: false
     radius: 1.0
     color: orange
+    # Floof Shitmed - Improvised Tools
+  - type: Cautery
+    speed: 0.5 #slower
+  - type: SurgeryTool
+    startSound:
+      collection: Welder
+    endSound:
+      collection: WelderOff

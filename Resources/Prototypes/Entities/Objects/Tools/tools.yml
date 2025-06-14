@@ -481,6 +481,16 @@
     difficulty: 2
     recipes:
       - PowerDrill
+    # Floof Shitmed - Still not the intended tool but faster
+  - type: Retractor
+    speed: 1
+  - type: Tending
+    speed: 1
+  - type: SurgeryTool # Not using the power drill noise or it'll be really annoying on repeat
+    startSound:
+      collection: Screwdriver
+    endSound:
+      path: /Audio/Medical/Surgery/retractor2.ogg
 
 - type: entity
   id: RCD
@@ -675,6 +685,26 @@
           state: omnitool-pulsing
         changeSound:
           path: /Audio/Items/change_drill.ogg
+    # Floof Shitmed - Improv Tools, this is more so for consistency and unlikely to be used     
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/saw.ogg
+  - type: Hemostat
+    speed: 0.9
+  - type: Scalpel
+    speed: 0.9
+  - type: Drill
+    speed: 0.9
+  - type: BoneSetter
+    speed: 0.9
+  - type: Retractor
+    speed: 0.9
+  - type: BoneSaw
+    speed: 0.9
+  - type: Tweezers
+    speed: 0.9
+  - type: Tending
+    speed: 0.9
 
 #Other
 - type: entity
