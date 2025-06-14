@@ -6229,3 +6229,13 @@ Entries:
   id: 655
   time: '2025-06-14T03:51:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1086
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Sign languages now require your listener to be able to see you in order
+        to understand what you are saying, and you can no longer speak them
+        while cuffed.
+  id: 656
+  time: '2025-06-14T04:33:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1095
