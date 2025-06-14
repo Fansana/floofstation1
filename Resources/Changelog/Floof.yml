@@ -6199,3 +6199,17 @@ Entries:
   id: 652
   time: '2025-06-14T03:27:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1093
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        added Bionic Pry Arms Trait, which works like how Bionic Arms works
+        currently on Floof but it can be EMP'd and replaces your actual arms.
+        One point cheaper as a result.
+    - type: Tweak
+      message: >-
+        Bionic Arms Trait with powered pry returns, as an actual emp-able arm
+        replacement but with heavy job restrictions.
+  id: 653
+  time: '2025-06-14T03:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1021
