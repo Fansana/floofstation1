@@ -6,24 +6,23 @@
   sprites: MobHumanSprites
   markingLimits: MobKitsuneMarkingLimits
   dollPrototype: MobKitsuneDummy
-# Floof - M3739 - #937 | Begin Changes
+# Floof - M3739 - #1062 | Begin Changes
   skinColoration: Hues 
-  minHeight: 0.65 # Floof - M3739 - #937 | Values copied over from Rodentia and Felinids, Kitsune are small.
+  minHeight: 0.65 | Values copied over from Rodentia and Felinids, Kitsune are small.
 #  defaultHeight: 0.8 
   maxHeight: 1.1 
   minWidth: 0.6 
 #  defaultWidth: 0.8 
   maxWidth: 1.15  
   customName: true 
-# Floof - M3739 - #937 | End Changes
 - type: markingPoints
   id: MobKitsuneMarkingLimits
   points:
-    Underwear: # Floof - M3739 - #937
-      points: 2 # Floof - M3739 - #937
+    Underwear:
+      points: 2
       required: false
-    Undershirt: # Floof - M3739 - #937
-      points: 2 # Floof - M3739 - #937
+    Undershirt:
+      points: 2
       required: false
     Hair:
       points: 1
@@ -31,9 +30,9 @@
     FacialHair:
       points: 1
       required: false
-    Head: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #937
-      required: false # Floof - M3739 - #937
+    Head:
+      points: 6
+      required: false
     Snout:
       points: 1
       required: false
@@ -42,10 +41,10 @@
       required: true
       defaultMarkings: [ KitsuneTailDefault ]
     Wings:
-      points: 1 # Floof - M3739 - #1062
+      points: 1
       required: false
     HeadTop:
-      points: 6 # Floof - M3739 - #1062
+      points: 6
       required: true
       defaultMarkings: [ KitsuneEarsDefault ]
 #    UndergarmentTop: # Floof - M3739 - #937 - Commented out for posterity. Superseded by Underwear and Undershirt.
@@ -55,32 +54,33 @@
 #      points: 1
 #      required: false
     Chest:
-      points: 6 # Floof - M3739 - #1062
+      points: 6
       required: false
-    RightLeg: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    RightLeg:
+      points: 6
       required: false
-    RightFoot: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    RightFoot:
+      points: 6
       required: false
-    LeftLeg: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    LeftLeg:
+      points: 6
       required: false
-    LeftFoot: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    LeftFoot:
+      points: 6
       required: false
-    RightArm: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    RightArm:
+      points: 6
       required: false
-    RightHand: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    RightHand:
+      points: 6
       required: false
-    LeftArm: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    LeftArm:
+      points: 6
       required: false
-    LeftHand: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
+    LeftHand:
+      points: 6
       required: false
-    HeadSide: # Floof - M3739 - #937
-      points: 6 # Floof - M3739 - #1062
-      required: false # Floof - M3739 - #937
+    HeadSide:
+      points: 6
+      required: false
+# Floof - M3739 - #1062 | End Changes
