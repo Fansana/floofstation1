@@ -38,7 +38,7 @@
     - type: Psionic # Nyano - They start with telepathic chat
       powerSlots: 3
     - type: SurgerySpeedModifier
-      speedModifier: 2 # Floof - So they can do brain surgery and cybernetic implants and fix IPCs
+      speedModifier: 1.7 # Floof - So they can do brain surgery and cybernetic implants and fix IPCs - Same as a doctor
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
   - !type:AddComponentSpecial
