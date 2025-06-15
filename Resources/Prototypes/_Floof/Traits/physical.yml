@@ -255,3 +255,39 @@
     components:
     - type: FixtureDensityModifier
       factor: 1.4 # Lets try the opposite of lightweight, yeah?
+
+- type: trait
+  id: FastBatteryDrain
+  category: Physical
+  points: 5 # MD - Change from "3" tp "-3" for balancing.
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - SlowBatteryDrain
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: Silicon
+      drainPerSecond: 2
+
+- type: trait
+  id: SlowBatteryDrain
+  category: Physical
+  points: -5
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+      - FastBatteryDrain
+  functions:
+  - !type:TraitAddComponent
+    components:
+    - type: Silicon
+      drainPerSecond: 1
