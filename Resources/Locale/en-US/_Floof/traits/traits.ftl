@@ -151,3 +151,9 @@ trait-description-Tiny =
     Note: [color=red]this will not display in the character creation menu, and will only apply the effects in-game.[/color]
 
 examine-tiny-trait-message = {CAPITALIZE(SUBJECT($entity))} is tiny. Handle with care!
+
+trait-name-FastBatteryDrain = Fast Battery Drain
+trait-description-FastBatteryDrain = Due to poor maintenance, fault battery or other hardware error your battery drains 33% faster then standard.
+
+trait-name-SlowBatteryDrain = Slow Battery Drain
+trait-description-SlowBatteryDrain = A hardware or software modification causes your battery drains 33% slower then standard.
