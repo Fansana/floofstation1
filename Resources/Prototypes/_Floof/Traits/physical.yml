@@ -269,22 +269,11 @@
       traits:
       - SlowBatteryDrain
   functions:
-  - !type:TraitAddComponent
+  - !type:TraitVVEdit
     components:
     - type: Silicon
-      entityType: enum.SiliconType.Player
-      batteryPowered: true
       drainPerSecond: 2
-      chargeThresholdMid: 0.80
-      chargeThresholdLow: 0.35
-      chargeThresholdCritical: 0.10
-      speedModifierThresholds:
-        4: 1
-        3: 1
-        2: 0.80
-        1: 0.45
-        0: 0.00
-
+      
 - type: trait
   id: SlowBatteryDrain
   category: Physical
@@ -298,18 +287,7 @@
       traits:
       - FastBatteryDrain
   functions:
-  - !type:TraitAddComponent
+  - !type:TraitVVEdit 
     components:
     - type: Silicon
-      entityType: enum.SiliconType.Player
-      batteryPowered: true
       drainPerSecond: 1
-      chargeThresholdMid: 0.80
-      chargeThresholdLow: 0.35
-      chargeThresholdCritical: 0.10
-      speedModifierThresholds:
-        4: 1
-        3: 1
-        2: 0.80
-        1: 0.45
-        0: 0.00
