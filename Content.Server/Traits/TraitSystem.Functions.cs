@@ -44,10 +44,6 @@ public sealed partial class TraitReplaceComponent : TraitFunction
             var comp = (Component) serializationManager.CreateCopy(data.Component, notNullableOverride: true);
             comp.Owner = uid;
             entityManager.AddComponent(uid, comp, true);
-            if (!comp.GetType().HasCustomAttribute<NetworkedComponentAttribute>())
-                continue;
-
-            entityManager.Dirty(uid, comp);
         }
     }
 }
