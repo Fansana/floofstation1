@@ -269,7 +269,9 @@
       traits:
       - SlowBatteryDrain
   functions:
-  - !type:TraitVVEdit
+  - !type:TraitReplaceComponent
+    components:
+    - type: Silicon
       drainPerSecond: 2
       
 - type: trait
@@ -285,5 +287,7 @@
       traits:
       - FastBatteryDrain
   functions:
-  - !type:TraitVVEdit 
+  - !type:TraitReplaceComponent
+    components:
+    - type: Silicon
       drainPerSecond: 1
