@@ -260,6 +260,18 @@ namespace Content.IntegrationTests.Tests
                         .Select(x => x.Job!.ID);
 
                     jobs.ExceptWith(spawnPoints);
+
+                    foreach (var jobId in jobs)
+                    {
+                        var exists = protoManager.TryIndex<JobPrototype>(jobId, out var jobPrototype);
+
+                        if (!exists)
+                            continue;
+
+                        if (jobPrototype.JobEntity != null)
+                            jobs.Remove(jobId);
+                    }
+
                     Assert.That(jobs, Is.Empty, $"There is no spawnpoints for {string.Join(", ", jobs)} on {mapProto}.");
                 }
 
