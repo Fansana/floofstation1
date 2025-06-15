@@ -121,7 +121,7 @@ public sealed class LoadoutSystem : EntitySystem
         #if EXCEPTION_TOLERANCE
         catch (Exception e) // Also floofstation
         {
-            Log.Error("Caught exception while spawning loadouts.", e)
+            Log.Error("Caught exception while spawning loadouts.", e);
         }
         #endif
 
