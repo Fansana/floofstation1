@@ -6239,3 +6239,10 @@ Entries:
   id: 656
   time: '2025-06-14T04:33:16.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1095
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Pebble so logi shuttle can dock and so medical has a cryopod
+  id: 657
+  time: '2025-06-16T13:46:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1088
