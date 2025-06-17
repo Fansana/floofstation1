@@ -25,14 +25,28 @@
     cost: 500
   - id: ClothingBeltSalvageWebbing
     cost: 500
-  - id: ClothingBeltMercWebbing
+  - id: ClothingBeltMercWebbing # Floofstation
     cost: 500
-  - id: ClothingBeltMilitaryWebbing
+  - id: ClothingBeltMilitaryWebbing # Floofstation
     cost: 600
   - id: MedkitBruteFilled
     cost: 600
   - id: MedkitBurnFilled
     cost: 600
+  - id: MedkitToxinFilled # Floofstation
+    cost: 600
+  - id: MedkitRadiationFilled # Floofstation
+    cost: 600
+  - id: MedkitOxygenFilled # Floofstation
+    cost: 600
+  - id: MedkitAdvancedFilled # Floofstation
+    cost: 1500
+  - id: ClothingHandsGlovesCombat # Floofstation
+    cost: 1500
+  - id: ClothingHandsMercGlovesCombat # Floofstation
+    cost: 1500
+  - id: ClothingHandsGlovesColorYellow # Floofstation
+    cost: 1400
   # TODO: salvage 5g, 3 implants and a locator for 600
   # TODO: wormhole jaunter for 750
   - id: WeaponCrusher
@@ -56,7 +70,7 @@
   - id: WeaponRifleSVTEmpty
     cost: 6400
   - id: SpaceCash1000
-    cost: 2000
+    cost: 1000
   # TODO: super resonator for 2500
   # TODO: jump boots for 2500
   - id: ClothingOuterHardsuitSalvage
