@@ -11,7 +11,7 @@
         lungs: OrganDragonLungs
         stomach: OrganAnimalStomach
         liver: OrganAnimalLiver
-        heart: OrganDragonHeart
+        heart: OrganDragonHeart # Floof
         kidneys: OrganAnimalKidneys
     legs:
       part: LegsAnimal
