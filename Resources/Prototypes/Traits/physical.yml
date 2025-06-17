@@ -355,7 +355,7 @@
     - !type:TraitReplaceComponent
       components:
         - type: TemperatureProtection
-          coefficient: 0.1 # Enough resistance to walk into the chef's freezer, or tolerate daytime temperatures on Glacier without a jacket.
+          coefficient: 0.05 # Floofstation - Previous comment was a lie, it for whatever reason didn't provide enough cold resist and you still froze in freezers and glacier
 
 # These traits largely exist to demonstrate more of the "Component Removals" functionality. This way contributors
 # can get used to seeing that they can "Remove and Replace" a pre-existing component.
