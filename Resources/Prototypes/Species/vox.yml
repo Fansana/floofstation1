@@ -1,7 +1,7 @@
 - type: species
   id: Vox
   name: species-name-vox
-  roundStart: false # sad...
+  roundStart: true
   prototype: MobVox
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits
@@ -11,6 +11,19 @@
   maleFirstNames: names_vox
   femaleFirstNames: names_vox
   naming: First
+
+  minHeight: 0.45
+  #defaultHeight: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
+  maxHeight: 1.04
+  minWidth: 0.4
+  #defaultWidth: 0.8 Floofstation - disabled due to upstream bug, this is broken for any value other than 1.
+  maxWidth: 1.1
+
+  minAge: 18    # Canonically, the vox-body only lives to 60 before replacements and transplants are required.
+  youngAge: 60  # Meaning most vox are going to be young by other vox-standards.
+  oldAge: 150   # Getting here is an achievement, but not impossible.
+  maxAge: 500
+
   sexes:
   - Unsexed
 
