@@ -69,6 +69,14 @@
   # cost: 6400
   - id: WeaponRifleSVTEmpty
     cost: 6400
+  - id: MagazineBoxLightRifle
+    cost: 1500
+  - id: MagazineLightRifleEmpty
+    cost: 500
+  - id: MagazineBoxRifle
+    cost: 1500
+  - id: MagazineRifleEmpty
+    cost: 500
   - id: SpaceCash1000
     cost: 1000
   # TODO: super resonator for 2500
