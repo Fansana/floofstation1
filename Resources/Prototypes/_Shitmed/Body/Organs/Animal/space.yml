@@ -33,6 +33,7 @@
   - type: Organ
     onAdd:
     - type: GoliathTentacle
+    - type: PressureImmunity # Floof - Goliaths? Where?
   - type: Sprite
     sprite: _Shitmed/Mobs/Species/Space/Goliath/organs.rsi
     state: heart-on
