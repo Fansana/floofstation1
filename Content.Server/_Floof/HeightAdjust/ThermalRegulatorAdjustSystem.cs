@@ -25,7 +25,7 @@ public sealed class ThermalRegulatorAdjustSystem : EntitySystem
         // We raise to the power of 2/3 due to the square-cube law:
         // a mob 2x the size loses/gains 4x more heat through their surface area, but generates 8x the heat throughout their volume
         // this is merely an approximation to keep things more fair and prevent us from punishing smaller people too much
-        var factor = MathF.Pow(_contests.MassContest(ent, bypassClamp: true, rangeFactor: 10), 1.5f) / ent.Comp.OldFactor;
+        var factor = MathF.Pow(_contests.MassContest(ent, bypassClamp: true, rangeFactor: 10), 0.6f) / ent.Comp.OldFactor;
         thermals.MetabolismHeat *= (float) factor;
         thermals.RadiatedHeat *= (float) factor;
         thermals.ImplicitHeatRegulation *= (float) factor;
