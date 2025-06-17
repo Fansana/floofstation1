@@ -1,10 +1,11 @@
+using Content.Server._Floof.HeightAdjust;
 using Content.Server.Body.Systems;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.Body.Components;
 
 [RegisterComponent]
-[Access(typeof(ThermalRegulatorSystem))]
+[Access(typeof(ThermalRegulatorSystem), typeof(ThermalRegulatorAdjustSystem))] // Floof - friends
 public sealed partial class ThermalRegulatorComponent : Component
 {
     /// <summary>
