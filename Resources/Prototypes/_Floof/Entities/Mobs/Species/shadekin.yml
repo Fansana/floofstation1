@@ -86,6 +86,7 @@
     - type: Shoving
     - type: BloodstreamAffectedByMass
       power: 0.6
+    - type: ThermalRegulatorAffectedByMass # Floofstation
     - type: Hunger
     - type: Thirst
     - type: Carriable
