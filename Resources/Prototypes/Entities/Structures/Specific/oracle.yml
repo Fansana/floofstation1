@@ -80,8 +80,11 @@
   id: OracleRewardCrystals
   weights:
     MaterialBluespace1: 3
+    MaterialNormality1: 3
     MaterialBluespace3: 10
+    MaterialNormality3: 10
     MaterialBluespace5: 2
+    MaterialNormality5: 2
 
 - type: weightedRandom
   id: OracleRewardReagents
