@@ -69,13 +69,13 @@
   # cost: 6400
   - id: WeaponRifleSVTEmpty
     cost: 6400
-  - id: MagazineBoxLightRifle
+  - id: MagazineBoxLightRifle # Floofstation
     cost: 1500
-  - id: MagazineLightRifleEmpty
+  - id: MagazineNovaliteC1Empty # Floofstation
     cost: 500
-  - id: MagazineBoxRifle
+  - id: MagazineBoxRifle # Floofstation
     cost: 1500
-  - id: MagazineRifleEmpty
+  - id: MagazineRifleEmpty # Floofstation
     cost: 500
   - id: SpaceCash1000
     cost: 1000
