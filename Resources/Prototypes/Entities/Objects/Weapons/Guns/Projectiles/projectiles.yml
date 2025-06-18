@@ -418,10 +418,10 @@
     damage:
       types:
         Blunt: 25
-        Structural: 30
+        Structural: 50
   # Short lifespan
   - type: TimedDespawn
-    lifetime: 0.4
+    lifetime: 0.5
 
 - type: entity
   id: BulletKineticShuttle
@@ -439,7 +439,7 @@
     damage:
       types:
         Blunt: 30
-        Structural: 35
+        Structural: 60
   - type: Ammo
     muzzleFlash: HitscanEffect
   - type: TimedDespawn
