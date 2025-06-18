@@ -522,3 +522,9 @@ trait-name-BionicLeg = Bionic Legs
 trait-description-BionicLeg =
     One or more of your limbs have been replaced with an expensive, state of the art bionic. It could be either one made of highly realistic synthflesh,
     or a more obvious metal limb. This limb provides enhanced speed to it's user, allowing you to run away from situations faster or get to a place faster.
+
+trait-name-BionicPryArm = Prybar Prosthetics
+trait-description-BionicPryArm =
+    Your arms have been reinforced with steel and hydraulics. You can force your way out of some unpleasant situations.
+    This trait gives you cybernetic DX-1 Pryarms, which let you pry open unpowered doors easily.
+    (They essentially function like a crowbar)
