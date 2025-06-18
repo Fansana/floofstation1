@@ -458,7 +458,7 @@
 
 - type: entity
   id: N14TableWoodSettler
-  parent: TableWood # Floof - M3739  - NoMoreFreeSteel4U - No more growing steel.
+  parent: TableWood # Floof - M3739  - #1113 - No more growing steel.
   name: wooden table
   description: A wooden table used by settlers.
   components:
