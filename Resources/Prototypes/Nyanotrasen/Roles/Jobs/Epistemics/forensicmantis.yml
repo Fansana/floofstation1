@@ -9,6 +9,8 @@
     - !type:DepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 3600
+      department: Security # Floof
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
