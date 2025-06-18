@@ -36,7 +36,7 @@
     sound:
       path: /Audio/Effects/bite.ogg
       params:
-        volume: 0.6
+        volume: -3
         maxDistance: 4
   effectFailure:
     popup: Subtle

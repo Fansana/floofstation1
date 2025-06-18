@@ -421,10 +421,10 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
         if (specifier.Sound is { } sound)
         {
             // TODO we have a choice between having an accurate sound source or saving on an entity spawn...
-            _audio.PlayEntity(sound, Filter.Entities(user, target), target, false, specifier.SoundParams);
+            _audio.PlayEntity(sound, Filter.Entities(user, target), target, false, specifier.SoundParams ?? sound.Params); // Floof - use sound params if no custom ones are provided
 
             if (specifier.SoundPerceivedByOthers)
-                _audio.PlayEntity(sound, othersFilter, othersTarget, false, specifier.SoundParams);
+                _audio.PlayEntity(sound, othersFilter, othersTarget, false, specifier.SoundParams ?? sound.Params); // Floof - use sound params if no custom ones are provided
         }
     }
 

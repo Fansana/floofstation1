@@ -237,10 +237,7 @@ public sealed partial class InteractionVerbPrototype : IPrototype, IInheritingPr
         public bool SoundPerceivedByOthers = true;
 
         [DataField]
-        public AudioParams SoundParams = new AudioParams()
-        {
-            Variation = 0.1f
-        };
+        public AudioParams? SoundParams = null; // Floof - null by default
     }
 
     [Serializable, Flags]
