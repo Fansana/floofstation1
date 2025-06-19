@@ -21,6 +21,7 @@ public sealed partial class NsfwDisclaimerWindow : FancyWindow
         DeclineButton.OnPressed += _ =>
         {
             _netManager.ClientDisconnect("User rejected NSFW policy.");
+            Close();
         };
     }
 }

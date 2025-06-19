@@ -1,5 +1,4 @@
 nsfw-disclaimer-title = ⚠️ ERP Server Disclaimer – Explicit Adult Content ⚠️
-
 nsfw-disclaimer-text =
     This server contains [bold]explicit sexual roleplay (ERP)[/bold] and mature themes that are not suitable for minors or individuals sensitive to adult material.
 
@@ -15,3 +14,6 @@ nsfw-disclaimer-text =
     All players are expected to follow strict consent boundaries. Non-consensual behavior outside of pre-negotiated roleplay is strictly prohibited and will result in removal.
 
     If any of this content makes you uncomfortable, or you are not legally permitted to view such content, please disconnect immediately.
+
+nsfw-disclaimer-decline = Decline & exit
+nsfw-disclaimer-accept = Accept & continue
