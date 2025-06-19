@@ -6267,3 +6267,10 @@ Entries:
   id: 660
   time: '2025-06-19T11:49:57.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1122
+- author: M3739
+  changes:
+    - type: Fix
+      message: Lighters and matches should now properly emit light.
+  id: 661
+  time: '2025-06-19T12:01:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1108
