@@ -37,9 +37,3 @@
             Toxin: -0.5
             Airloss: -0.5
             Brute: -0.5
-      - !type:ChemRerollPsionic # Won't do anything if you're not a psychic
-        bonusMultiplier: 4
-        conditions:
-        - !type:ReagentThreshold
-          reagent: Sanguinium
-          min: 10
