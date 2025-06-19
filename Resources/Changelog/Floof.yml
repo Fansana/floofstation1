@@ -6281,3 +6281,10 @@ Entries:
   id: 662
   time: '2025-06-19T12:01:56.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1114
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Chief Justice's jumpskirt is no longer invisible.
+  id: 663
+  time: '2025-06-19T12:03:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1112
