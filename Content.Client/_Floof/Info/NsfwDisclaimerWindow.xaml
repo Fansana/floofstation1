@@ -5,10 +5,10 @@
     MinSize="200 200"
     MaxWidth="500">
 
-    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="4 4 4 4">
         <RichTextLabel Name="DisclaimerText" Text="{Loc 'nsfw-disclaimer-text'}"/>
 
-        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" HorizontalAlignment="Right">
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" HorizontalAlignment="Right" Margin="0 4 0 0">
             <Button Name="DeclineButton" Text="{Loc 'nsfw-disclaimer-decline'}" StyleClasses="OpenRight"/>
             <Button Name="AcceptButton" Text="{Loc 'nsfw-disclaimer-accept'}" StyleClasses="OpenLeft"/>
         </BoxContainer>
