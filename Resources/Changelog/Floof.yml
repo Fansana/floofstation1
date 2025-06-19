@@ -6274,3 +6274,10 @@ Entries:
   id: 661
   time: '2025-06-19T12:01:12.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1108
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Administrative Assistant can now stamp papers without issue.
+  id: 662
+  time: '2025-06-19T12:01:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1114
