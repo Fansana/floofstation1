@@ -27,3 +27,12 @@
       path: /Audio/_DEN/clicker.ogg
   - type: UseDelay
     delay: 1.5
+  - type: TriggerOnSignal # Floofstation 
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
