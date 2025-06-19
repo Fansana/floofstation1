@@ -17,7 +17,7 @@ trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
 
 trait-name-EggLayer = Egg Layer
-trait-description-EggLayer = You body through either mutation, oviposition, cybernetic or noospheric influence has the ability to lay eggs.
+trait-description-EggLayer = Your body through either mutation, oviposition, cybernetic or noospheric influence has the ability to lay eggs.
 
 trait-name-Weakness = Weakness
 trait-description-Weakness = You are naturally more vulnerable to fatigue. Your stamina pool is halved, making you greately vulnerable to shoving and stunning attacks.
