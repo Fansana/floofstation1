@@ -74,6 +74,10 @@
       jobs:
         - Borg
         - MedicalBorg
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
   functions:
     - !type:TraitAddComponent
       components:
