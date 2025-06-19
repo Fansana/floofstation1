@@ -158,7 +158,7 @@
 
 #Paramedic Void Helmet
 - type: entity
-  parent: ClothingHeadHardsuitBase
+  parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitVoidParamed
   name: paramedic void helmet
   description: A void helmet made for paramedics.
@@ -168,8 +168,6 @@
     sprite: Clothing/Head/Hardsuits/paramedhelm.rsi
   - type: Clothing
     sprite: Clothing/Head/Hardsuits/paramedhelm.rsi
-  - type: PointLight
-    color: "#adf1ff"
   - type: Armor
     modifiers:
       coefficients:
