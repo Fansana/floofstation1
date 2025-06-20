@@ -83,6 +83,6 @@
       components:
         - type: Sericulture
           action: ActionLayEgg
-          productionLength: 1
+          productionLength: 3
           entityProduced: FoodEgg
           hungerCost: 4
