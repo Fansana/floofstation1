@@ -7,4 +7,4 @@
   - type: InstantAction
     icon: _Floof/Interface/Actions/egg.png
     event: !type:SericultureActionEvent
-    useDelay: 1
+    useDelay: 5
