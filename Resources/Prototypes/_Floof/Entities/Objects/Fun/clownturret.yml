@@ -1,0 +1,118 @@
+- type: entity
+  name: artistic toolbox
+  suffix: Syndicate, Turret
+  parent: ToolboxArtistic
+  id: ToolboxArtisticTurret
+  description: A toolbox typically stocked with artistic supplies.
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 1
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              WeaponTurretClownDisposable:
+                min: 1
+                max: 1
+  - type: StaticPrice
+    price: 1350
+
+- type: entity
+  id: ToolboxArtisticTurretFilled
+  name: artistic toolbox
+  suffix: Syndicate, Turret, Filled
+  parent: ToolboxArtisticTurret
+  components:
+  - type: StorageFill
+    contents:
+    - id: CrayonBox
+    - id: Paper
+      amount: 3
+    - id: Pen
+    - id: MysteryFigureBox
+      prob: 0.5
+    - id: MysteryFigureBox
+      prob: 0.5
+    - id: BookRandom
+      amount: 2 
+    - id: CrayonMime
+    - id: CrayonRainbow
+    - id: CrayonBrush # Floof
+
+- type: constructionGraph
+  id: WeaponTurretClownDisposable
+  start: disposableClownTurret
+  graph:
+  - node: disposableClownTurret
+    entity: WeaponTurretClownDisposable
+    edges:
+    - to: disposableClownTurret
+      completed:
+      - !type:SpawnPrototype
+            prototype: ToolboxArtisticTurret
+            amount: 1
+      - !type:DeleteEntity {}
+      steps:
+        - tool: Screwing
+          doAfter: 10
+
+- type: entity
+  parent: BaseWeaponTurret
+  name: disposable ballistic turret
+  id: WeaponTurretClownDisposable
+  suffix: Syndicate, Disposable
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:TriggerBehavior
+    - type: Gun
+      fireRate: 2
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+    - type: BallisticAmmoProvider
+      proto: FoodPieBananaCream
+      capacity: 100
+    - type: Construction
+      deconstructionTarget: null
+      graph: WeaponTurretClownDisposable
+      node: disposableClownTurret
+    - type: Repairable
+      qualityNeeded: "Anchoring"
+      doAfterDelay: 3
+    - type: TriggerWhenEmpty
+    - type: ExplodeOnTrigger
+    - type: Explosive
+      explosionType: Default
+      maxIntensity: 10
+      intensitySlope: 1.5
+      totalIntensity: 30
+      canCreateVacuum: false
