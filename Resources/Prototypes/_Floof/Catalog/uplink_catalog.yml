@@ -112,3 +112,21 @@
     Telecrystal: 10
   categories:
   - UplinkAllies
+  
+- type: listing
+  id: UplinkDisposableClownTurret
+  name: uplink-disposable-clown-turret-name
+  description: uplink-disposable-clown-turret-desc
+  productEntity: ToolboxArtisticTurretFilled
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:BuyerJobCondition
+    whitelist:
+    - Mime
+    - Clown
