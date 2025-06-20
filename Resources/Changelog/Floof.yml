@@ -6288,3 +6288,12 @@ Entries:
   id: 663
   time: '2025-06-19T12:03:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1112
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The game will now show a disclaimer about NSFW topics upon joining the
+        server.
+  id: 664
+  time: '2025-06-20T18:46:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1123
