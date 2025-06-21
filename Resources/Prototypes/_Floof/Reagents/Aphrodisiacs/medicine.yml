@@ -140,13 +140,10 @@
   metabolisms:
     Medicine:
       effects:
-      - !type:SatiateThirst
-        factor: 1.5
-      - !type:SatiateHunger
       - !type:ModifyBleedAmount
         amount: -1
       - !type:ModifyBloodLevel
-        amount: 1.5
+        amount: 2
       - !type:HealthChange
         damage:
           groups:
