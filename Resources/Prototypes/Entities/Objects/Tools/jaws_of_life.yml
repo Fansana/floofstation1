@@ -66,6 +66,22 @@
     difficulty: 3
     recipes:
       - JawsOfLife
+    # Floof Shitmed - Improvised Tools
+  - type: Retractor
+    speed: 1
+  - type: Hemostat
+    speed: 1
+  - type: Tweezers
+    speed: 1
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/Items/jaws_pry.ogg
+      params:
+        variation: 0.125
+    endSound:
+      path: /Audio/Items/jaws_pry.ogg
+      params:
+        variation: 0.125   
 
 - type: entity
   name: syndicate jaws of life
