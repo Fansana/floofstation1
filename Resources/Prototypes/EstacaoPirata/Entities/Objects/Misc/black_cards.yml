@@ -111,6 +111,19 @@
       state: singlecard_down_black
     flipped: true
   # - type: StripMenuHidden # Floof
+  # FLOOF ADD START: Slide papers and such under doors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemSlideUnderDoorMask
+        restitution: 0.3
+        friction: 0.2
+  # FLOOF ADD END
 
 # region Black Cards
 

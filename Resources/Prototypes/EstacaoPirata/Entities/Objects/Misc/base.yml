@@ -64,6 +64,19 @@
         type: CardHandMenuBoundUserInterface
   # - type: ActivatableUI # Frontier
   #   key: enum.CardUiKey.Key # Frontier
+  # FLOOF ADD START: Slide papers and such under doors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemSlideUnderDoorMask
+        restitution: 0.3
+        friction: 0.2
+  # FLOOF ADD END
 
 - type: entity
   parent: CardStackBase
