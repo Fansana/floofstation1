@@ -18,4 +18,8 @@ public static class ChatChannelExtensions
             _ => Color.LightGray
         };
     }
+
+    // Floofstation
+    public static bool IsExcemptFromLanguages(this ChatChannel channel) =>
+        channel is ChatChannel.LOOC or ChatChannel.Emotes or ChatChannel.Notifications or ChatChannel.Visual;
 }
