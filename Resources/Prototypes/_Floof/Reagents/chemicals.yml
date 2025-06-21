@@ -11,29 +11,3 @@
   desc: reagent-desc-formaldehyde
   physicalDesc: reagent-physical-desc-sickly
   color: "#F26724"
-
-- type: reagent
-  id: Sanguinium
-  name: reagent-name-sanguinium
-  group: Medicine
-  desc: reagent-desc-sanguinium
-  physicalDesc: reagent-physical-desc-exhilarating # Should never realistically see or taste it
-  flavor: sweet
-  color: "#c90084"
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:SatiateHunger
-      - !type:ModifyBleedAmount
-        amount: -1
-      - !type:ModifyBloodLevel
-        amount: 1
-      - !type:HealthChange
-        damage:
-          groups:
-            Burn: -0.5
-            Toxin: -0.5
-            Airloss: -0.5
-            Brute: -0.5
