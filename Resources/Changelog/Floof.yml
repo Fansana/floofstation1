@@ -6297,3 +6297,12 @@ Entries:
   id: 664
   time: '2025-06-20T18:46:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1123
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer convert wood to steel by building and destroying a
+        specific wood table variant.
+  id: 665
+  time: '2025-06-21T01:50:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1113
