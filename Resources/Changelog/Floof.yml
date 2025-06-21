@@ -6306,3 +6306,10 @@ Entries:
   id: 665
   time: '2025-06-21T01:50:49.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1113
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Oracle can now grant normality crystals when given offerings.
+  id: 666
+  time: '2025-06-21T11:53:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1105
