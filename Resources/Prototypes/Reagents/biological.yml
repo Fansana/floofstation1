@@ -17,22 +17,26 @@
   metabolisms:
     Drink:
       effects:
+      - !type:SatiateThirst # People can drink blood in a bad moment for thrist shouldn't tho you'll get sick
+        conditions:
+        - !type:OrganType
+          type: Vampiric
+          shouldHave: false
+        factor: 0.2
       - !type:SatiateThirst
-        factor: 1
+        factor: 2
         conditions:
-          - !type:OrganType
-            type: Human
-            shouldHave: false
+        - !type:OrganType
+          type: Vampiric
       - !type:SatiateHunger
-        factor: 1
+        factor: 3
         conditions:
         - !type:OrganType
           type: Vampiric
-      - !type:AdjustReagent
+      - !type:ModifyBloodLevel
         conditions:
         - !type:OrganType
           type: Vampiric
-        reagent: Sanguinium # Floof
         amount: 1
     Food:
       effects:
@@ -53,6 +57,21 @@
           groups:
             Brute: -3
             Burn: -1.25
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vampiric
+        damage:
+          groups:
+            Burn: -0.5
+            Toxin: -0.5
+            Airloss: -0.5
+            Brute: -0.5
+      - !type:ModifyBleedAmount
+        conditions:
+        - !type:OrganType
+          type: Vampiric
+        amount: -1
   plantMetabolism:
     - !type:PlantAdjustWater
       amount: 0.5
