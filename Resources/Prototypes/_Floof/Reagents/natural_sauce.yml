@@ -33,12 +33,34 @@
         conditions:
         - !type:OrganType
           type: Succubus
-      - !type:AdjustReagent
+      - !type:ModifyBleedAmount
         conditions:
         - !type:OrganType
           type: Succubus
-        reagent: Succubium
-        amount: 0.5
+        amount: -1
+      - !type:ModifyBloodLevel
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        amount: 2
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Succubus
+        damage:
+          groups:
+            Burn: -0.3
+            Toxin: -0.2
+            Airloss: -0.2
+            Brute: -0.3
+      - !type:ChemAddMoodlet
+        moodPrototype: SuccubiumBenefit
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Cum
+          min: 10
+        - !type:OrganType
+          type: Succubus
   footstepSound:
     collection: FootstepSticky
     params:
