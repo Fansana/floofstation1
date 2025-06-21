@@ -38,7 +38,7 @@
         - !type:OrganType
           type: Succubus
         reagent: Succubium
-        amount: 1
+        amount: 0.5
   footstepSound:
     collection: FootstepSticky
     params:
