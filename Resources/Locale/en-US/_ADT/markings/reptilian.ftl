@@ -22,8 +22,8 @@ marking-ReptilianDrawingWarpaint = Warpaint Drawing
 marking-ReptilianLineEyes = Stripe Eyes
 
 # marking-TailDatashark = Data Shark Tail
-
-marking-EarsSylveon = Sylveon Ears
+# Floof - M3739 - #1084 - Lovelox
+marking-EarsLovelox = Lovelox Ears
 marking-EarsResomi = Resomi Ears
 marking-EarsChemlight = ChemLight Ears
 marking-EarsDragonLong = Dragon Long Ears

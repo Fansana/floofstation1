@@ -159,31 +159,31 @@
     state: sagittarius_3tone_2
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
     state: sagittarius_3tone_3
-
+# Begin Floof - M3739 - #1084
 - type: marking
-  id: OniHornVantas
+  id: OniHornVanira
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni, Reptilian, SlimePerson, Human, Arachne]
   sprites:
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas
+    state: vanira
 
 - type: marking
-  id: OniHornVantas3Tone
+  id: OniHornVanira3Tone
   bodyPart: HeadTop
   markingCategory: HeadTop
   forcedColoring: false
   speciesRestriction: [Oni, Reptilian, SlimePerson, Human, Arachne]
   sprites:
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_1
+    state: vanira_3tone_1
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_2
+    state: vanira_3tone_2
   - sprite: Mobs/Customization/Oni/oni_horns.rsi
-    state: vantas_3tone_3
-
+    state: vanira_3tone_3
+# End Floof - M3739 - #1084
 - type: marking
   id: OniHornMakara
   bodyPart: HeadTop
