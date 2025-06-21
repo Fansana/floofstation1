@@ -180,6 +180,23 @@
   - type: Clothing
     sprite: Clothing/Ears/Headsets/science.rsi
 
+- type: entity # Floof
+  parent: ClothingHeadset
+  id: ClothingHeadsetMantis
+  name: mantis headset # DeltaV - Epistemics Department replacing Science
+  description: A sciency headset used by the Mantis. # DeltaV - Epistemics Department replacing Science
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyScience
+      - EncryptionKeyCommon
+      - EncryptionKeySecurity
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/science.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/science.rsi
+
 - type: entity
   parent: ClothingHeadsetScience
   id: ClothingHeadsetMedicalScience

@@ -120,6 +120,14 @@
   components:
   - type: Pda
     id: ForensicMantisIDCard
+    bookSlot: # Frontier
+      startingItem: HyperlinkBookSecuritySop # Floof - M3739 - #607
+      priority: -2
+      whitelist:
+        tags:
+        - BookSpaceLaw
+        - BookJusticeSop # Floof - M3739 - #607
+        - BookSecuritySop # Floof - M3739 - #607
     state: pda-science
   - type: Icon
     state: pda-science
@@ -130,3 +138,6 @@
      - NewsReaderCartridge
      - GlimmerMonitorCartridge
      - NanoChatCartridge
+     - CrimeAssistCartridge # Floof
+     - LogProbeCartridge
+     - SecWatchCartridge # DeltaV: SecWatch replaces WantedList
