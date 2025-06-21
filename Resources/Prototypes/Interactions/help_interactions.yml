@@ -75,7 +75,7 @@
   parent: [BaseHelp, BaseGlobal]
   priority: -5
   delay: 0.8
-  cooldown: 10 # Slightly abusable
+  cooldown: 3 # Slightly abusable # Floof - further reduced
   effectDelayed: null
   hideByRequirement: true
   requirement:
