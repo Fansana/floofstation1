@@ -62,3 +62,19 @@
   - !type:CharacterJobRequirement
     jobs:
     - Musician
+
+# Instrument Flatpacks
+
+- type: loadout
+  id: LoadoutItemDrumKitInstrumentMusician
+  category: JobsServiceMusician
+  cost: 2 # Is essentially multiple percussion instruments in one.
+  canBeHeirloom: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMusicianEquipment
+    - !type:CharacterJobRequirement
+      jobs:
+        - Musician
+  items:
+    - DrumKitFlatpack

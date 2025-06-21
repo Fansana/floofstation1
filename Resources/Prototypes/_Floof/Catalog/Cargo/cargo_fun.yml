@@ -37,3 +37,15 @@
   cost: 2500
   category: cargoproduct-category-name-fun
   group: market
+
+# instruments
+
+- type: cargoProduct
+  id: FunInstrumentsDrumKit
+  icon:
+    sprite: GreyStation/Objects/Fun/Instruments/structureinstruments.rsi
+    state: drumkit
+  product: CrateFunInstrumentsDrumKit
+  cost: 2500
+  category: cargoproduct-category-name-fun
+  group: market
