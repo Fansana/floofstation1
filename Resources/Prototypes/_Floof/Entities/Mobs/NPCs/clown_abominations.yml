@@ -48,8 +48,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      70: Critical
-      100: Dead
+      60: Critical
+      80: Dead
   - type: SurgeryTarget
   - type: UserInterface
     interfaces:
@@ -376,9 +376,9 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Slash: 2
-        Blunt: 2
-        Piercing: 2
+        Slash: 1
+        Blunt: 1
+        Piercing: 1
         Bloodloss: 4
   - type: GhostRole
     makeSentient: true
@@ -387,3 +387,113 @@
     name: Crazed Clown Rat
     description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
     rules: floof-ghost-role-information-team-antag-rules 
+
+
+
+- type: entity
+  name: Mimeguin
+  parent: SimpleMobBase
+  id: MobMimePenguin
+  description: A penguin that is a mime, it stands there menacingly.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: penguin
+      sprite: _Floof/Mobs/Animals/mimeguin.rsi
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 100
+        mask:
+        - MachineMask
+        layer:
+        - MobLayer
+        - MidImpassable
+        - LowImpassable
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: penguin
+      Critical:
+        Base: penguin_dead
+      Dead:
+        Base: penguin_dead_blood
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatPenguin
+      amount: 3
+  - type: InteractionPopup
+    successChance: 0.5
+    interactSuccessString: You pet the penguin, it looks happy... yet its eyes seem soulless.
+    interactFailureString: It stands there menacingly, staring at you unblinking.
+    interactSuccessSpawn: EffectHearts
+  - type: Tag
+    tags:
+    - VimPilot
+    - DoorBumpOpener
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: Temperature
+    atmosTemperatureTransferEfficiency: 0.04
+    heatDamageThreshold: 535
+    coldDamageThreshold: 35
+    currentTemperature: 310.15
+    specificHeat: 46
+    coldDamage:
+      types:
+        Cold : 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat : 0.2 #per second, scales with temperature & other constants
+  - type: SurgeryTarget
+  - type: LanguageKnowledge
+    speaks: [Sign]
+    understands: [Sign]
+  - type: PressureImmunity
+  - type: Bloodstream
+    bloodReagent: Nothing
+  - type: Respirator
+    minSaturation: 5.0
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.60
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      220: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2
+  - type: Puller
+    needsHands: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Mimeguin
+    description: A penguin that is a mime, go have fun.
+    rules: floof-ghost-role-information-free-agent-rules 
+  - type: MimePowers
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/chopstickbreak.ogg
+    damage:
+      types:
+        Blunt: 0
+    animation: WeaponArcFist
+  - type: StaminaDamageOnHit
+    damage: 15
+  - type: Reflect
+    reflectProb: 0.9
+    spread: 350
+    
