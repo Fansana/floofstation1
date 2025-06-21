@@ -8,6 +8,7 @@ using Content.Server.Fluids.Components;
 using Content.Server.Popups;
 using Content.Server.WhiteDream.BloodCult.Empower;
 using Content.Server.WhiteDream.BloodCult.Gamerule;
+using Content.Shared._Goobstation.Bible;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
@@ -118,7 +119,7 @@ public sealed partial class CultRuneBaseSystem : EntitySystem
 
         _audio.PlayPvs(args.EndDrawingSound, args.User, AudioParams.Default.WithMaxDistance(2f));
         var runeEnt = SpawnRune(args.User, runeSelector.Prototype);
-        if (TryComp(runeEnt, out CultRuneBaseComponent? rune) 
+        if (TryComp(runeEnt, out CultRuneBaseComponent? rune)
             && rune.TriggerRendingMarkers
             && !_cultRule.TryConsumeNearestMarker(ent))
             return;

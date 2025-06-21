@@ -6,6 +6,7 @@ using Content.Server.Mind;
 using Content.Server.Stunnable;
 using Content.Server.WhiteDream.BloodCult.Gamerule;
 using Content.Server.WhiteDream.BloodCult.Runes.Revive;
+using Content.Shared._Goobstation.Bible;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Damage;
 using Content.Shared.Mindshield.Components;
