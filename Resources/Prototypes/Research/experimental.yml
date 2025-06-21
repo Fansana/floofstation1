@@ -210,6 +210,7 @@
   - SuperCapacitorStockPart
   - SuperMatterBinStockPart
   - PicoManipulatorStockPart
+  softCapContribution: 1.2
 
 - type: technology
   id: GravityManipulation
@@ -223,6 +224,7 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
+  softCapContribution: 1.5
 
 - type: technology
   id: QuantumLeaping
@@ -235,3 +237,4 @@
   cost: 10000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
+  softCapContribution: 1.25 # Floofstation - reduced due to low utility
