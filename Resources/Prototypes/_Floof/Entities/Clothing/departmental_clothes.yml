@@ -461,6 +461,39 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/mailcarrierthong.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCourierDevy
+  name: Express Space Courier Uniform
+  description: A white lining for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+    
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesCourierDevy
+  name: Express Space Courier Boots
+  description: A pair of sturdy boots for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+    
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterDevy
+  name: Express Space Courier Coat
+  description: A insulated cyan coat for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+    
 #Medical Outfits
 #
 #General Medical
