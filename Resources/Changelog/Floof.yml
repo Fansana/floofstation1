@@ -6313,3 +6313,22 @@ Entries:
   id: 666
   time: '2025-06-21T11:53:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1105
+- author: GreyStation
+  changes:
+    - type: Add
+      message: >-
+        The drum kit is now available as a musician loadout option and can be
+        ordered from cargo. Rock on! 🤘
+    - type: Add
+      message: A new instrument style, "Kweh" has been added to the microphone.
+    - type: Tweak
+      message: The microphone can now be played without holding it.
+    - type: Tweak
+      message: >-
+        Guitars (except the Rickenbacker) can now be worn in your suit storage
+        slot.
+    - type: Tweak
+      message: The super synthesizer has a new sprite to communicate that it is super.
+  id: 667
+  time: '2025-06-22T10:26:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1124
