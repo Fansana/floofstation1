@@ -157,7 +157,7 @@ ghost-role-information-ifrit-wizard-name = Ifrit (Wizard Summon)
 ghost-role-information-ifrit-wizard-description = Listen to your owner. Don't tank damage. Punch people hard.
 
 ghost-role-information-space-dragon-name = Space dragon
-ghost-role-information-space-dragon-description = create 3 carp rifts and protect your nest!
+ghost-role-information-space-dragon-description = Summon 3 carp rifts and take over this quadrant; or don't, and spend some time seeing the sights, meeting the locals, or building an interesting horde. It's not like you'll disappear without those rifts.
 ghost-role-information-space-dragon-dungeon-description = Defend the expedition dungeon with your fishy comrades!
 
 ghost-role-information-cluwne-name = Cluwne

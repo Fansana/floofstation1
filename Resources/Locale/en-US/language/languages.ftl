@@ -62,7 +62,7 @@ language-Sign-name = Tau-Ceti Basic Sign Language
 language-Sign-description = TCB-SL for short, this sign language is prevalent among mute and deaf people.
 
 language-Marish-name = Marish
-language-Marish-description =  An inherently empathetic language, conveying emotions with a single word; spoken effortlessly by Shadowkins, though nearly impossible to learn or replicate.
+language-Marish-description =  An inherently empathetic language, conveying emotions with a single word; spoken effortlessly by Shadekins, though nearly impossible to learn or replicate.
 
 language-ValyrianStandard-name = Valyrian Standard
 language-ValyrianStandard-description =
@@ -77,6 +77,12 @@ language-Chittin-description =
 
 language-Nehina-name = Nēhina
 language-Nehina-description =  A language spoken by the Feroxi, well adapted to speaking under the waters of ocean planets.
+
+language-Kagebun-name = Kagebun
+language-Kagebun-description = 
+    An ancient language primarily used by the yōkai, originating from their supernatural roots. 
+    To the uninitiated, it is a chorus of sounds ranging from eerie whispers to ritualistic chanting.
+    To those who speak it, it is a living tongue that links them to the spirit world and their ancient pacts.
 
 # Animal Languages
 

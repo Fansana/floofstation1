@@ -323,6 +323,7 @@
         - Felinid # Felinids already have this feature by default.
         - Rodentia # Floof - Rodentia
         - Resomi # Floof - have this by default after porting Goob changes
+        - Kitsune # Floof - M3739 - #937 - Kitsune have this by default.
     - !type:CharacterHeightRequirement
       max: 150
     - !type:CharacterWidthRequirement
@@ -450,30 +451,17 @@
 - type: trait
   id: StrikingCalluses
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
-                # When we get the Character Records system in, I also want to make this require certain Backgrounds.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
         - Claws
         - Talons
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterTraitRequirement
-          traits:
-            - MartialArtist
-        - !type:CharacterJobRequirement
-          jobs:
-            - Boxer
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -484,53 +472,65 @@
           animation: WeaponArcFist
           damage:
             types:
-              Blunt: 6
+              Blunt: 7
 
 - type: trait
   id: Spinarette
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
         - Arachnid
         - Arachne
-        - Shadowkin
         - IPC
   functions:
     - !type:TraitAddComponent
       components:
         - type: Sericulture
           action: ActionSericulture
-          productionLength: 2
+          productionLength: 1
           entityProduced: MaterialWebSilk1
-          hungerCost: 4
+          hungerCost: 1
+    - !type:TraitAddTag
+      tags:
+        - SpiderCraft
 
 - type: trait
-  id: BionicArm
+  id: BionicPryArm
   category: Physical
-  points: -3 # Floof - since you can't get free JoL anymore
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Anomaly
         - Gladiator
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicArm
   functions:
-    - !type:TraitAddComponent
-      components:
-        - type: Prying
-          speedModifier: 1
-          pryPowered: false # Floof
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: CrowbarLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: CrowbarRightArm
+      slotId: "right arm"
     - !type:TraitPushDescription
       descriptionExtensions:
-        - description: examine-bionic-arm-message
+        - description: examine-pry-arm-message
           fontSize: 12
           requireDetailRange: true
 
@@ -544,10 +544,15 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BloodDeficiency
   functions: # TODO: Code Platelet factories as an actual obtainable implant, and replace this with TraitAddImplant
     - !type:TraitReplaceComponent
       components:
@@ -555,14 +560,16 @@
           allowedStates:
           - Alive
           - Critical
-          damageCap: 200
+          damageCap: 400
           damage:
             groups:
-              Brute: -0.07
-              Burn: -0.07
-              Airloss: -0.07
-              Toxin: -0.07
-              Genetic: -0.07
+              Brute: -0.30
+              Burn: -0.30
+              Airloss: -0.25
+              Toxin: -0.30
+              Genetic: -0.2
+        - type: BloodDeficiency # Incredibly actually works
+          bloodLossPercentage: -0.025
 
 - type: trait
   id: DermalArmor
@@ -574,6 +581,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterSpeciesRequirement # Floof
       species:
         - Human
@@ -597,6 +605,7 @@
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
+        - Anomaly
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
@@ -613,16 +622,11 @@
       components:
         - type: Flashable # Effectively, removes any flash-vulnerability species traits.
 
-
 - type: trait
   id: FlareShielding
   category: Physical
   points: -4
   requirements:
-#    - !type:CharacterJobRequirement # Floof - this is redundant due to the below trait requirement
-#      inverted: true
-#      jobs:
-#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -632,17 +636,11 @@
         - type: FlashImmunity
         - type: EyeProtection
 
-
 - type: trait
   id: CyberEyesSecurity
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
@@ -665,11 +663,6 @@
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -684,20 +677,17 @@
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
 
 - type: trait
   id: CyberEyesDiagnostic
   category: Physical
   points: -1
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -719,14 +709,10 @@
   category: Physical
   points: -3
   requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
+        - Command
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -745,9 +731,11 @@
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
         - type: ShowHealthBars
           damageContainers:
           - Biological
+          - BiologicalMetaphysical # Floof - M3739 - #1006
           - Inorganic
           - Silicon
 
@@ -773,7 +761,7 @@
         - GlassJaw
         - Tenacity
         - BrittleBoneDisease
-        
+
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -805,3 +793,116 @@
       components:
         - type: CritModifier
           critThresholdModifier: -50
+
+- type: trait
+  id: BionicLeg #was removed upstream due to goobstation powergaming but we get less powergaming here so it's probably fine
+  category: Physical
+  points: -8
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+        - Anomaly
+  functions:
+    - !type:TraitPushDescription
+      descriptionExtensions:
+        - description: examine-bionic-leg-message
+          fontSize: 12
+          requireDetailRange: true
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Leg
+      partSymmetry: Left
+      protoId: SpeedLeftLeg
+      slotId: "left leg"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Leg
+      partSymmetry: Right 
+      protoId: SpeedRightLeg
+      slotId: "right leg"
+
+- type: trait
+  id: LightAmplification
+  category: Physical
+  points: -4
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Shadowkin
+    - !type:CharacterTraitRequirement
+      traits:
+        - CyberEyes
+    - !type:CharacterTraitRequirement # Floof added Photophobia as drawback to nightvision
+      inverted: true
+      traits:
+      - Photophobia
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NightVision
+        - type: Flashable # Floof added Photophobia as drawback to nightvision
+          eyeDamageChance: 0.3
+          eyeDamage: 1
+          durationMultiplier: 1.5
+
+#  id: ThermographicVision disabled because op
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      inverted: true
+#      jobs:
+#        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+#        - Anomaly
+#    - !type:CharacterTraitRequirement
+#      traits:
+#        - CyberEyes
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: ThermalVision
+#          pulseTime: 2
+#          toggleAction: PulseThermalVision
+#    - !type:TraitPushDescription
+#      descriptionExtensions:
+#        - description: examine-thermal-vision-message
+#          fontSize: 12
+#          requireDetailRange: true
+
+- type: trait
+  id: BionicArm
+  category: Physical
+  points: -8
+  requirements:
+    - !type:CharacterLogicOrRequirement
+      requirements:
+      - !type:CharacterJobRequirement
+        jobs:
+          - Paramedic
+          - SeniorPhysician # Floofstation - Physicians have Paramedic access here
+      - !type:CharacterDepartmentRequirement
+        departments:
+          - Security
+          - Command
+          - Engineering # Floofstation - Weird this wasn't upstream
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicPryArm
+  functions:
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: JawsOfLifeLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: JawsOfLifeRightArm
+      slotId: "right arm"
+    - !type:TraitPushDescription
+      descriptionExtensions:
+        - description: examine-bionic-arm-message
+          fontSize: 12
+          requireDetailRange: true

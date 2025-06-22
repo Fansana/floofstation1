@@ -315,6 +315,71 @@
         variation: 0.05
         volume: 4
 
+- type: entity
+  parent: PlushieHuman
+  id: PlushieKoboldCefJustice
+  name: Chef Justice kobold plushie
+  description: This plushie of a Kobold appears to be shockingly fluffy.. aswell as loud?
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/floof_plush.rsi
+    state: kobolt
+  - type: UseDelay
+    delay: 1.5
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Floof/Voice/Reptilian/yip.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      params:
+        volume: 2
+        variation: 0.1
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Floof/Voice/Reptilian/yip.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Reptilian/reptilian_scream.ogg
+      params:
+        variation: 0.1
+        volume: 4
+        
+- type: entity
+  parent: PlushieHuman
+  id: PlushieAvaliHOP
+  name: Avali Head of Personel plushie
+  description: This plushie smells of lavender ink and freshly printed paper.
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Fun/floof_plush.rsi
+    state: hoppy
+  - type: UseDelay
+    delay: 3.0
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_1.ogg
+      params:
+        volume: 1
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_scream.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Floof/Voice/Avali/avali_1.ogg
+      params:
+        volume: 1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/_Floof/Voice/Avali/avali_scream.ogg
+      params:
+        variation: 0.05
+        volume: 4
+
 # Banned individual
 # - type: entity
 #   parent: PlushieHuman
@@ -428,6 +493,8 @@
     color: white
     selectableColor: true
     capacity: 500
+  - type: Food
+    utensilRequired: true # I ate my fucking paintbrush
   - type: SolutionContainerManager
     solutions:
       food:
@@ -442,3 +509,67 @@
     - Crayon
     - Recyclable
     - Trash
+
+- type: entity
+  parent: ToySword
+  id: ToySabre
+  name: toy sabre
+  description: New Fae-Wolf plastic sabre! Comes with realistic sound and full color! Looks almost like the real thing!
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Weapons/Melee/e_sabre.rsi
+    layers:
+      - state: e_sabre
+      - state: e_sabre_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Normal
+    sprite: _Floof/Objects/Weapons/Melee/e_sabre_inhand.rsi
+  - type: Tag
+    tags:
+      - NoPaint
+      - EnergySabre
+
+- type: entity
+  parent: ToySword
+  id: DBToySword
+  name: double-bladed toy sword
+  description: New Sandy-Cat plastic double-bladed sword! Comes with realistic sound and full color! Looks almost like the real thing!
+  components:
+  - type: ItemToggle
+    onUse: false # wielding events control it instead
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+      params:
+        volume: 3
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+      params:
+        volume: 3
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/e_sword_double.rsi
+    layers:
+      - state: e_sword_double
+      - state: e_sword_double_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Small
+    sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
+  - type: Wieldable
+    wieldSound: null # esword light sound instead
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: .6666
+    angle: 100
+    damage:
+      types:
+        Blunt: 0
+  - type: Reflect
+    reflectProb: .01 # joke chance of 1% to reflect
+    spread: 75

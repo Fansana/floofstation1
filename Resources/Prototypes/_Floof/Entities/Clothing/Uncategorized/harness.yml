@@ -21,10 +21,24 @@
     equippedState: equipped
     clothingVisuals: {} # I am 90% sure this is a redundancy coming from ClothingBeltBase, so we're removing it here
   - type: LeashAnchor
+    kind: Clothing
   - type: ClothingLimit
     limitGroups:
     - harness
     maxCount: 1
+  - type: SlotBlocker
+    blocks:
+      slots:
+      - innerClothing
+      - outerClothing # equipped above it
+      blacklist:
+        tags:
+        - ShirtlessClothing
+      enableInSlots: # do not block outerClothing when equipped in innerClothing
+      - neck
+      - outerClothing
+      - back
+      - belt
 
 # Simple harness, colorable - for use in loadouts
 - type: entity

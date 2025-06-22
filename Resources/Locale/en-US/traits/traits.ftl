@@ -168,14 +168,14 @@ trait-description-LowPainTolerance =
 trait-name-Steadfast = Steadfast
 trait-description-Steadfast =
     When others would buckle from the weight of your injuries, you still march forward unrelentingly.
-    For most species [color=gray](excluding IPC/Shadowkin)[/color], this trait modifies:
+    For most species [color=gray](excluding IPC/Shadekin)[/color], this trait modifies:
     - [color=yellow]25%[/color] movement slow at [color=red]60[/color] damage ➔ [color=yellow]17%[/color] movement slow at [color=red]70[/color] damage
     - [color=yellow]45%[/color] movement slow at [color=red]80[/color] damage ➔ [color=yellow]30%[/color] movement slow at [color=red]90[/color] damage
 
 trait-name-Feeble = Feeble
 trait-description-Feeble =
     Your body responds poorly to injuries, making damage affect your movement more severely.
-    For most species [color=gray](excluding IPC/Shadowkin)[/color], this trait modifies:
+    For most species [color=gray](excluding IPC/Shadekin)[/color], this trait modifies:
     - [color=yellow]25%[/color] movement slow at [color=red]60[/color] damage ➔ [color=yellow]30%[/color] movement slow at [color=red]45[/color] damage
     - [color=yellow]45%[/color] movement slow at [color=red]80[/color] damage ➔ [color=yellow]54%[/color] movement slow at [color=red]65[/color] damage
 
@@ -260,17 +260,22 @@ trait-description-LightStep =
 trait-name-Swashbuckler = Swashbuckler
 trait-description-Swashbuckler =
     You are an expert in swordsmanship, wielding swords, knives, and other blades with unrivaled finesse.
-    Your melee Slash bonus is increased to 35%, but your melee Blunt bonus is reduced to 20%.
+    Your melee Slash bonus is increased to 35%, but your melee Blunt bonus is reduced to 25%.
 
 trait-name-Spearmaster = Spearmaster
 trait-description-Spearmaster =
     You have an outstanding proficiency with spears, wielding them as an extension of your body.
-    Your melee Piercing bonus is increased to 35%, but your melee Blunt bonus is reduced to 20%.
+    Your melee Piercing bonus is increased to 35%, but your melee Blunt bonus is reduced to 25%.
 
 trait-name-WeaponsGeneralist = Weapons Generalist
 trait-description-WeaponsGeneralist =
     You are a jack of all trades with melee weapons, enabling you to be versatile with your weapon arsenal.
-    Your melee damage bonus for all Brute damage types (Blunt, Slash, Piercing) becomes 25%.
+    Your melee damage bonus for all Brute damage types (Blunt, Slash, Piercing) becomes 30%.
+
+trait-name-Mystic = Mystic
+trait-description-Mystic =
+    You are trained in Mysticism instead of melee combat, reducing your melee capabilities but drastically increasing your psionic potential.
+    Your melee damage bonus for all Brute damage types (Blunt, Slash, Piercing) becomes 5%, but your Potentia gain is drastically increased.
 
 trait-name-Singer = Singer
 trait-description-Singer = You are naturally capable of singing simple melodies with your voice.
@@ -503,3 +508,23 @@ trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
 trait-description-BrittleBoneDisease =
     Also known as "brittle bone disease", people with this genetic disorder have bones that are easily broken,
     often simply by moving. This trait reduces your threshold for critical injury by 50 points.
+
+trait-name-LightAmplification = CyberEyes Module: Light Amplification
+trait-description-LightAmplification =
+    Your CyberEyes have been enhanced with a light amplifier module, enabling the user to toggle between standard sight and "Night Vision" mode.
+
+trait-name-ThermographicVision = CyberEyes Module: Thermographic Scanner
+trait-description-ThermographicVision =
+    Your CyberEyes have been enhanced with a Thermographic Scanner. When enabled, it captures a snapshot of the user's surroundings, while highlighting all
+    biological life forms. It can even detect individuals through the walls of a station.
+
+trait-name-BionicLeg = Bionic Legs
+trait-description-BionicLeg =
+    One or more of your limbs have been replaced with an expensive, state of the art bionic. It could be either one made of highly realistic synthflesh,
+    or a more obvious metal limb. This limb provides enhanced speed to it's user, allowing you to run away from situations faster or get to a place faster.
+
+trait-name-BionicPryArm = Prybar Prosthetics
+trait-description-BionicPryArm =
+    Your arms have been reinforced with steel and hydraulics. You can force your way out of some unpleasant situations.
+    This trait gives you cybernetic DX-1 Pryarms, which let you pry open unpowered doors easily.
+    (They essentially function like a crowbar)

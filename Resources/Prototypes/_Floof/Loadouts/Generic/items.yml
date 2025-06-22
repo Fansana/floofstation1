@@ -23,8 +23,9 @@
 - type: loadout
   id: LoadoutItemLeashBasic
   category: Items
-  cost: 2
-  exclusive: true
+  cost: 0
+  exclusive: false
+  customColorTint: true
   items:
   - LeashBasic
   requirements:
@@ -34,7 +35,7 @@
 - type: loadout
   id: LoadoutItemHypnoVisor
   category: Items
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingEyesHypnoVisor
@@ -48,8 +49,8 @@
   cost: 2
   exclusive: false
   items:
-  - CrayonBrush  
-    
+  - CrayonBrush
+
 # Writing
 - type: loadout
   id: LoadoutItemEnvelopes
@@ -86,7 +87,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutWritables
-      
+
 - type: loadout
   id: LoadoutItemStickyNotesGreen
   category: Items
@@ -108,3 +109,52 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutWritables
+
+
+- type: loadout
+  id: LoadoutItemLizardPlushie
+  category: Items
+  cost: 3 # Special
+  canBeHeirloom: true
+  exclusive: false
+  items:
+    - PlushieLizard
+
+#Pets
+- type: loadout
+  id: LoadoutItemPetSpider
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - MobPetSpider
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutPets
+  functions:
+    - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemCigarBluespaceAddict
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes
+    - !type:CharacterTraitRequirement
+      traits:
+        - AddictionNicotine
+
+- type: loadout
+  id: LoadoutItemCigarBluespace
+  category: Items
+  cost: 5
+  canBeHeirloom: true
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes

@@ -78,6 +78,8 @@
   id: LoadoutBartenderOuter
   items:
     - type: loadout
+      id: LoadoutServiceBartenderWinterCoat
+    - type: loadout
       id: LoadoutServiceBartenderArmorDuraVest
     - type: loadout
       id: LoadoutServiceOuterBartenderNt

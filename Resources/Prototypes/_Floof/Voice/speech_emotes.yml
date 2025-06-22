@@ -6,6 +6,7 @@
   whitelist:
     tags:
       - VulpEmotes
+      - KitsuneEmotes # Floof - M3739 - #937
   blacklist:
     tags:
       - SiliconEmotes
@@ -39,6 +40,7 @@
   whitelist:
     tags:
       - VulpEmotes
+      - KitsuneEmotes # Floof - M3739 - #937
   blacklist:
     tags:
       - SiliconEmotes
@@ -47,3 +49,20 @@
   chatTriggers:
   - yap
   - yaps
+
+- type: emote
+  id: Coo
+  name: chat-emote-name-coo
+  category: Vocal
+  chatMessages: [ coos ]
+  whitelist:
+    tags:
+      - HarpyEmotes
+  blacklist:
+    tags:
+      - SiliconEmotes
+    components:
+      - BorgChassis
+  chatTriggers:
+  - coo
+  - coos

@@ -157,6 +157,9 @@
   components:
     - type: Implanter
       implant: TrackingImplant
+    - type: Sprite  #Floof change
+      sprite: Objects/Specific/Medical/implanter.rsi
+      state: implanter1
 
 #Traitor implanters
 

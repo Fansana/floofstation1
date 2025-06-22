@@ -1,0 +1,9 @@
+- type: entity
+  parent: WallReinforced
+  id: WallCamoReinforced
+  name: camo reinforced wall
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Walls/camo.rsi
+  - type: Icon
+    sprite: _Floof/Structures/Walls/camo.rsi

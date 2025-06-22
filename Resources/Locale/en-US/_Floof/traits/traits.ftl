@@ -16,6 +16,9 @@ trait-description-MilkProducer = You have a pair of large mammaries.
 trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
 
+trait-name-EggLayer = Egg Layer
+trait-description-EggLayer = Your body through either mutation, oviposition, cybernetic or noospheric influence has the ability to lay eggs.
+
 trait-name-Weakness = Weakness
 trait-description-Weakness = You are naturally more vulnerable to fatigue. Your stamina pool is halved, making you greately vulnerable to shoving and stunning attacks.
 
@@ -123,6 +126,13 @@ trait-description-NaturalSchechi =
 trait-name-NaturalNekomimetic = Natural Nekomimetic Speaker
 trait-description-NaturalNekomimetic =
     To the casual observer, this language is an incomprehensible mess of broken Japanese. To the Felinids and Oni, it's somehow comprehensible.
+    Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
+
+trait-name-NaturalKagebun = Natural Kagebun Speaker
+trait-description-NaturalKagebun =
+    An ancient language primarily used by the yōkai, originating from their supernatural roots. 
+    To the uninitiated, it is a chorus of sounds ranging from eerie whispers to ritualistic chanting.
+    To those who speak it, it is a living tongue that links them to the spirit world and their ancient pacts.
     Through some adaptation, augmentation or clever workaround, you speak this instead of your species's usual natural language.
 
 trait-name-CulinaryAdaptationTheobromine = Culinary Adaptation (Theobromine)

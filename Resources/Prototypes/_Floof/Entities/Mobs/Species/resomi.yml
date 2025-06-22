@@ -204,6 +204,15 @@
     shape:
       - 0, 0, 3, 2
       - 0, 2, 5, 4
+  - type: DamageForceSay # Floofstation - added unqiue pain messages
+    forceSayStringPrefix: damage-force-say-resomi-
+    forceSayStringCount: 4 # Default is 7. I was not creative enough to come up with 7 right now. Send help.
+  - type: Tag
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - ResomiEmotes
 
 - type: entity
   parent: BaseSpeciesDummy

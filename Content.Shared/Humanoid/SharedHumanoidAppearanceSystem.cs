@@ -16,7 +16,7 @@ using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-using Content.Shared.Shadowkin;
+using Content.Shared._Floof.Shadekin;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Utility;
@@ -106,11 +106,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         var identity = Identity.Entity(uid, EntityManager);
         var species = GetSpeciesRepresentation(component.Species, component.CustomSpecieName).ToLower();
         var age = GetAgeRepresentation(component.Species, component.Age);
-        if (HasComp<ShadowkinComponent>(uid))
+        if (HasComp<ShadekinComponent>(uid))
         {
             var color = component.EyeColor.Name();
             if (color != null)
-                age = Loc.GetString("identity-eye-shadowkin", ("color", color));
+                age = Loc.GetString("identity-eye-shadekin", ("color", color));
         }
 
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
@@ -135,6 +135,36 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         SetLayerVisibility(uid, humanoid, layer, visible, permanent, ref dirty);
         if (dirty)
             Dirty(uid, humanoid);
+    }
+
+    /// <summary>
+    ///     Clones a humanoid's appearance to a target mob, provided they both have humanoid components.
+    /// </summary>
+    /// <param name="source">Source entity to fetch the original appearance from.</param>
+    /// <param name="target">Target entity to apply the source entity's appearance to.</param>
+    /// <param name="sourceHumanoid">Source entity's humanoid component.</param>
+    /// <param name="targetHumanoid">Target entity's humanoid component.</param>
+    public void CloneAppearance(EntityUid source, EntityUid target, HumanoidAppearanceComponent? sourceHumanoid = null,
+        HumanoidAppearanceComponent? targetHumanoid = null)
+    {
+        if (!Resolve(source, ref sourceHumanoid) || !Resolve(target, ref targetHumanoid))
+            return;
+
+        targetHumanoid.Species = sourceHumanoid.Species;
+        targetHumanoid.SkinColor = sourceHumanoid.SkinColor;
+        targetHumanoid.EyeColor = sourceHumanoid.EyeColor;
+        targetHumanoid.Age = sourceHumanoid.Age;
+        SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
+        targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
+
+        targetHumanoid.Gender = sourceHumanoid.Gender;
+        if (TryComp<GrammarComponent>(target, out var grammar))
+            grammar.Gender = sourceHumanoid.Gender;
+
+        targetHumanoid.LastProfileLoaded = sourceHumanoid.LastProfileLoaded; // DeltaV - let paradox anomaly be cloned
+
+        Dirty(target, targetHumanoid);
     }
 
     /// <summary>

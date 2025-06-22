@@ -10,6 +10,8 @@
   categories:
     - UplinkPointless
 
+# WEAPONS
+
 - type: listing
   id: UplinkEsabre
   name: uplink-EnergySabre-name
@@ -22,16 +24,30 @@
   - UplinkWeaponry
 #  saleLimit: 2 # Floofstation - used to exist, but now it doesn't. Oh, well.
 
-# type: listing
- # id: UplinkCryoinjector
-  #name: uplink-Cryptobiolininjector-name
-  #description: uplink-Cryptobiolininjector-desc
-  #icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
-  #productEntity: CryptobiolinInjector
-  #cost:
-  #  Telecrystal: 2
-  #categories:
-  #- UplinkUtility
+- type: listing
+  id: UplinkEnergyHalberd
+  name: uplink-energy-halberd-name
+  description: uplink-energy-halberd-desc
+  icon: { sprite: _Floof/Objects/Weapons/Melee/e_halberd.rsi, state: icon }
+  productEntity: WeaponEnergyHalberd
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+#  saleLimit: 1 # Floofstation - used to exist, but now it doesn't. Oh, well.
+
+#Medical
+
+- type: listing
+  id: UplinkCryoinjector
+  name: uplink-Cryptobiolininjector-name
+  description: uplink-Cryptobiolininjector-desc
+  icon: { sprite: Objects/Specific/Medical/medipen.rsi, state: arithpen }
+  productEntity: CryptobiolinInjector
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkChemicals
 
 - type: listing
   id: UplinkTypewriterBundle
@@ -41,8 +57,58 @@
   productEntity: BriefcaseSyndieTypewriterBundleFilled
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
-  cost:
     Telecrystal: 8
+  cost:
+    Telecrystal: 12
   categories:
   - UplinkWeaponry
+
+
+# Toys
+
+- type: listing
+  id: UplinkToySabre
+  name: uplink-toysabre-name
+  description: uplink-toysabre-desc
+  productEntity: ClothingBeltEnergySheathFilledToy
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: UplinkToySword
+  name: uplink-toysword-name
+  description: uplink-toysword-desc
+  productEntity: ToySword
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: UplinkDBToySword
+  name: uplink-dbtoysword-name
+  description: uplink-dbtoysword-desc
+  productEntity: DBToySword
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: UplinkDehydratedClownRatBox
+  name: uplink-dehydrated-clown-rat-name
+  description: uplink-dehydrated-clown-rat-desc
+  icon: { sprite: _Floof/Mobs/Animals/clown_rat.rsi, state: icon-0 }
+  productEntity: DehydratedClownRatBox
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 6
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkAllies

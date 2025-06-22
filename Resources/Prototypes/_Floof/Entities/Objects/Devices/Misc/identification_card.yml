@@ -1,16 +1,31 @@
 - type: entity
-  parent: IDCardStandard
+  parent: Clothing
   id: AnomalyIDCard
   name: anomaly ID card
+  description: A card necessary to access various areas aboard the station.
   components:
   - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
     layers:
     - state: rpg
     - state: department
       color: "#C96DBF"
     - state: passenger
-  - type: PresetIdCard
-    job: Anomaly
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: Objects/Misc/id_cards.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+    tags:
+    - Maintenance
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
 
 - type: entity
   parent: IDCardStandard
@@ -35,3 +50,16 @@
     - AllAccess
     tags:
     - CentralCommand
+
+#Freelancer
+
+- type: entity
+  parent: IDCardStandard
+  id: FreelancerIDCard
+  name: Freelancer ID card
+  components:
+  - type: PresetIdCard
+    job: Freelancer
+  - type: Sprite
+    sprite: _Floof/Objects/Misc/id_cards.rsi
+    state: "freelancer"

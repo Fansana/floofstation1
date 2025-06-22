@@ -11,8 +11,8 @@
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
-        - Nearsighted
         - Photophobia
+        - Nearsighted
         - CyberEyes
   functions:
     - !type:TraitAddComponent
@@ -255,6 +255,10 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - PlateletFactories
   functions:
     - !type:TraitAddComponent
       components:

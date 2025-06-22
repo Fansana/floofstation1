@@ -1,0 +1,10 @@
+- type: entity
+  id: ActionLayEgg
+  name: Lay egg
+  description: Lays an unfertilized egg for use in cooking.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: _Floof/Interface/Actions/egg.png
+    event: !type:SericultureActionEvent
+    useDelay: 5

@@ -21,6 +21,10 @@
       id: LoadoutItemBlunt
     - type: loadout
       id: LoadoutItemJoint
+    - type: loadout
+      id: LoadoutItemCigarBluespaceAddict # Floofstation
+    - type: loadout
+      id: LoadoutItemCigarBluespace      
 
 - type: characterItemGroup
   id: LoadoutLighters
@@ -76,6 +80,12 @@
       id: LoadoutSpeciesExtendedEmergencyNitrogenTank
     - type: loadout
       id: LoadoutSpeciesDoubleEmergencyNitrogenTank
+
+- type: characterItemGroup
+  id: LoadoutAirTankVest
+  items:
+    - type: loadout
+      id: LoadoutSpeciesClothingOuterVestTank
 
 - type: characterItemGroup
   id: LoadoutBoxKits
@@ -147,3 +157,5 @@
       id: LoadoutItemPetMothroach
     - type: loadout
       id: LoadoutItemPetCockroach
+    - type: loadout  #Floof
+      id: LoadoutItemPetSpider

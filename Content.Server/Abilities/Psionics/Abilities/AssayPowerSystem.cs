@@ -40,13 +40,15 @@ public sealed class AssayPowerSystem : EntitySystem
             return;
 
         var ev = new AssayDoAfterEvent(_gameTiming.CurTime, args.FontSize, args.FontColor);
-        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, args.Performer, args.UseDelay - TimeSpan.FromSeconds(psionic.CurrentAmplification), ev, args.Performer, args.Target, args.Performer)
+        var doAfterArgs = new DoAfterArgs(EntityManager, args.Performer, args.UseDelay - TimeSpan.FromSeconds(psionic.CurrentAmplification), ev, args.Performer, args.Target, args.Performer)
         {
             BlockDuplicate = true,
             BreakOnMove = true,
             BreakOnDamage = true,
-        }, out var doAfterId);
-        psionic.DoAfter = doAfterId;
+        };
+
+        if (!_doAfterSystem.TryStartDoAfter(doAfterArgs, out var doAfterId))
+            return;
 
         _popups.PopupEntity(Loc.GetString(args.PopupTarget, ("entity", args.Target)), args.Performer, PopupType.Medium);
 

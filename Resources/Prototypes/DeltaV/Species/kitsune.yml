@@ -1,0 +1,86 @@
+- type: species
+  id: Kitsune
+  name: Kitsune
+  roundStart: true
+  prototype: MobKitsune
+  sprites: MobHumanSprites
+  markingLimits: MobKitsuneMarkingLimits
+  dollPrototype: MobKitsuneDummy
+# Floof - M3739 - #1062 | Begin Changes
+  skinColoration: Hues 
+  minHeight: 0.65
+#  defaultHeight: 0.8 
+  maxHeight: 1.1 
+  minWidth: 0.6 
+#  defaultWidth: 0.8 
+  maxWidth: 1.15  
+  customName: true 
+- type: markingPoints
+  id: MobKitsuneMarkingLimits
+  points:
+    Underwear:
+      points: 2
+      required: false
+    Undershirt:
+      points: 2
+      required: false
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Head:
+      points: 6
+      required: false
+    Snout:
+      points: 1
+      required: false
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ KitsuneTailDefault ]
+    Wings:
+      points: 1
+      required: false
+    HeadTop:
+      points: 6
+      required: true
+      defaultMarkings: [ KitsuneEarsDefault ]
+#    UndergarmentTop: # Floof - M3739 - #937 - Commented out for posterity. Superseded by Underwear and Undershirt.
+#      points: 1
+#      required: false
+#    UndergarmentBottom:
+#      points: 1
+#      required: false
+    Chest:
+      points: 6
+      required: false
+    RightLeg:
+      points: 6
+      required: false
+    RightFoot:
+      points: 6
+      required: false
+    LeftLeg:
+      points: 6
+      required: false
+    LeftFoot:
+      points: 6
+      required: false
+    RightArm:
+      points: 6
+      required: false
+    RightHand:
+      points: 6
+      required: false
+    LeftArm:
+      points: 6
+      required: false
+    LeftHand:
+      points: 6
+      required: false
+    HeadSide:
+      points: 6
+      required: false
+# Floof - M3739 - #1062 | End Changes
