@@ -28,13 +28,15 @@
   parent: ClothingHeadHelmetHardsuitCybersun
   id: ClothingHeadHelmetHardsuitJuggernautReverseEngineered
   categories: [ HideSpawnMenu ]
-  name: SA-126 combat hardsuit helmet
-  description: An assault hardsuit helmet featuring a top-secret translucent polymer.
+  name: SA-127 combat hardsuit helmet
+  description: An assault hardsuit helmet featuring nigh-impenetrable armor plating.
   components:
   - type: Sprite
-    sprite: Nyanotrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
+    sprite: _DV/Clothing/Head/ReverseEngineering/juggernaut.rsi
   - type: Clothing
-    sprite: Nyanotrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
+    sprite: _DV/Clothing/Head/ReverseEngineering/juggernaut.rsi
+  - type: PointLight # DeltaV
+    color: aquamarine
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitERTLeader

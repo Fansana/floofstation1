@@ -1,5 +1,6 @@
 # Numbers for armor here largely taken from /tg/.
 # NOTE: Half of the kind of armor you're probably thinking of is in vests.yml. These should probably be merged some day.
+# Floof Change
 
 - type: entity
   parent: ClothingOuterBaseMedium
@@ -83,17 +84,17 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Heat: 0.85
+        Blunt: 0.7 # Floof Change
+        Slash: 0.7 # Floof Change
+        Piercing: 0.7 # Floof Change
+        Heat: 0.7 # Floof Change
         Radiation: 0.75
         Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.50
-  - type: ClothingSpeedModifier # Burdensome for running, but perfect for speedy gliding, even though running is still probably better
-    walkModifier: 0.9
-    sprintModifier: 0.7
+  - type: ClothingSpeedModifier # Less heavy then most hardsuits but similar resistances to a standard vest, Floof Change
+    walkModifier: 0.85 # Floof Change
+    sprintModifier: 0.85 # Floof Change
   - type: GroupExamine
 
 - type: entity

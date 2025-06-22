@@ -451,30 +451,17 @@
 - type: trait
   id: StrikingCalluses
   category: Physical
-  points: -4
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator # Floof
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human # Entirely arbitrary, I've decided I want a trait unique to humans. Since they don't normally get anything exciting.
-                # When we get the Character Records system in, I also want to make this require certain Backgrounds.
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
         - Claws
         - Talons
-    - !type:CharacterLogicOrRequirement
-      requirements:
-        - !type:CharacterTraitRequirement
-          traits:
-            - MartialArtist
-        - !type:CharacterJobRequirement
-          jobs:
-            - Boxer
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -485,7 +472,7 @@
           animation: WeaponArcFist
           damage:
             types:
-              Blunt: 6
+              Blunt: 7
 
 - type: trait
   id: Spinarette
@@ -508,7 +495,7 @@
       components:
         - type: Sericulture
           action: ActionSericulture
-          productionLength: 2
+          productionLength: 1
           entityProduced: MaterialWebSilk1
           hungerCost: 1
     - !type:TraitAddTag
@@ -516,25 +503,34 @@
         - SpiderCraft
 
 - type: trait
-  id: BionicArm
+  id: BionicPryArm
   category: Physical
-  points: -3 # Floof - since you can't get free JoL anymore
+  points: -2
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
       jobs:
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
-        - Gladiator
         - Anomaly
+        - Gladiator
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicArm
   functions:
-    - !type:TraitAddComponent
-      components:
-        - type: Prying
-          speedModifier: 1
-          pryPowered: false # Floof
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: CrowbarLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: CrowbarRightArm
+      slotId: "right arm"
     - !type:TraitPushDescription
       descriptionExtensions:
-        - description: examine-bionic-arm-message
+        - description: examine-pry-arm-message
           fontSize: 12
           requireDetailRange: true
 
@@ -553,6 +549,10 @@
       inverted: true
       species:
         - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BloodDeficiency
   functions: # TODO: Code Platelet factories as an actual obtainable implant, and replace this with TraitAddImplant
     - !type:TraitReplaceComponent
       components:
@@ -560,14 +560,16 @@
           allowedStates:
           - Alive
           - Critical
-          damageCap: 200
+          damageCap: 400
           damage:
             groups:
-              Brute: -0.07
-              Burn: -0.07
-              Airloss: -0.07
-              Toxin: -0.07
-              Genetic: -0.07
+              Brute: -0.30
+              Burn: -0.30
+              Airloss: -0.25
+              Toxin: -0.30
+              Genetic: -0.2
+        - type: BloodDeficiency # Incredibly actually works
+          bloodLossPercentage: -0.025
 
 - type: trait
   id: DermalArmor
@@ -620,7 +622,6 @@
       components:
         - type: Flashable # Effectively, removes any flash-vulnerability species traits.
 
-
 - type: trait
   id: FlareShielding
   category: Physical
@@ -634,7 +635,6 @@
       components:
         - type: FlashImmunity
         - type: EyeProtection
-
 
 - type: trait
   id: CyberEyesSecurity
@@ -712,6 +712,7 @@
     - !type:CharacterDepartmentRequirement
       departments:
         - Security
+        - Command
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes
@@ -868,3 +869,40 @@
 #        - description: examine-thermal-vision-message
 #          fontSize: 12
 #          requireDetailRange: true
+
+- type: trait
+  id: BionicArm
+  category: Physical
+  points: -8
+  requirements:
+    - !type:CharacterLogicOrRequirement
+      requirements:
+      - !type:CharacterJobRequirement
+        jobs:
+          - Paramedic
+          - SeniorPhysician # Floofstation - Physicians have Paramedic access here
+      - !type:CharacterDepartmentRequirement
+        departments:
+          - Security
+          - Command
+          - Engineering # Floofstation - Weird this wasn't upstream
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - BionicPryArm
+  functions:
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Left
+      protoId: JawsOfLifeLeftArm
+      slotId: "left arm"
+    - !type:TraitCyberneticLimbReplacement
+      removeBodyPart: Arm
+      partSymmetry: Right
+      protoId: JawsOfLifeRightArm
+      slotId: "right arm"
+    - !type:TraitPushDescription
+      descriptionExtensions:
+        - description: examine-bionic-arm-message
+          fontSize: 12
+          requireDetailRange: true

@@ -1,0 +1,9 @@
+- type: entity
+  id: CrateFunInstrumentsDrumKit
+  parent: CrateGenericSteel
+  name: drum kit crate
+  description: Lay down a beat, and rock on with this crate containing a full drum kit!
+  components:
+    - type: StorageFill
+      contents:
+        - id: DrumkitInstrument
