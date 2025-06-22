@@ -14,7 +14,7 @@
       collection: FootstepClownFast
       params:
         pitch: 0.9
-        volume: -8
+        volume: -10
   - type: UseDelay
     delay: 1
   - type: EmitSoundOnUse
@@ -88,6 +88,13 @@
       - !type:GibBehavior { }
   - type: MobPrice
     price: 0
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Clown Rat
+    description: Incarnation of the Honkmothers mischief, go out there and be a menace to society, or get some pets from strangers.
+    rules: floof-ghost-role-information-free-agent-rules 
 
 - type: entity
   name: clown rat
@@ -192,24 +199,17 @@
       
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRat, MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRat, MobCombat ]
   id: MobCrazedClownRat
   description: Despite all their rage, they are still just a clown in a cage. Wait YOU LET IT FREE?
   suffix: Syndicate
   components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Slash
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -221,7 +221,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -233,7 +233,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Piercing
-        damage: 60
+        damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -245,7 +245,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 60
+        damage: 65
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
@@ -257,23 +257,19 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
-  - type: MobPrice
-    price: 0
-  
+  - type: Butcherable
+    spawned:
+    - id: MobCrazedClownRatHatchling
+      amount: 4
+
+ 
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRatHatchling , MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRatHatchling , MobCombat ]
   id: MobCrazedClownRatHatchling
   description: OH GOD THEY ARE MULTIPLYING!
   suffix: Syndicate, Hatchling
   components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
   - type: Destructible
     thresholds:
     - trigger:
@@ -327,25 +323,18 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
-  - type: MobPrice
-    price: 0
+  - type: Butcherable
+    spawned:
+    - id: MobCrazedClownRatFinalHatchling
+      amount: 4
   
 - type: entity
   name: crazed clown rat
-  parent: [ MobClownRatFinalHatchling, MobCombat ]
+  parent: [ ModuleCrazedClownRat, MobClownRatFinalHatchling, MobCombat ]
   id: MobCrazedClownRatFinalHatchling
   description: GOD THERE IS EVEN MORE!
   suffix: Syndicate, Final_Hatchling
-  components:
-  - type: NpcFactionMember
-    factions:
-      - Syndicate
-      - Mouse
-  - type: HTN
-    rootTask:
-      task: SimpleHostileCompound
-  - type: MobPrice
-    price: 10
+
       
 - type: entity
   name: dehydrated crazed clown rat box
@@ -367,3 +356,34 @@
   - type: Sprite
     sprite: _Floof/Mobs/Animals/clown_rat.rsi
     state: icon-0
+    
+    
+- type: entity
+  abstract: true
+  id: ModuleCrazedClownRat
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Syndicate
+      - Mouse
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MobPrice
+    price: 0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Slash: 2
+        Blunt: 2
+        Piercing: 2
+        Bloodloss: 4
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: Crazed Clown Rat
+    description: A plague released upon the world by the Syndicate, go be a menace or bite someones ankle.
+    rules: floof-ghost-role-information-team-antag-rules 

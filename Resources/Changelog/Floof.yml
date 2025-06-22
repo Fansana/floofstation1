@@ -6088,3 +6088,294 @@ Entries:
   id: 640
   time: '2025-06-05T13:44:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1047
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: >-
+        Fixed fun! But actually. Toy Sword rotation fixed and Toy DESword having
+        a working wield sprite.
+  id: 641
+  time: '2025-06-05T20:12:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1051
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Puddles and other entities with only a non-hard fixture should now
+        correctly display in the entity menu (right click).
+  id: 642
+  time: '2025-06-05T20:14:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1064
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added new Avali Head of Personel and Chef Justice kobold plushies.
+    - type: Tweak
+      message: Adjusted the HypnoTemp plushie spawn rate.
+  id: 643
+  time: '2025-06-08T01:54:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1067
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Resomi are now licensed as nanotrasen citizen and as such can open doors
+        by bumping into them, can pilot spaceships, and will make footstep
+        sounds when walking.
+  id: 644
+  time: '2025-06-09T13:50:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1070
+- author: ItsDzordz
+  changes:
+    - type: Tweak
+      message: Tweaked crazed clown rats
+  id: 645
+  time: '2025-06-09T13:52:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1072
+- author: Memeji
+  changes:
+    - type: Add
+      message: Typewriter can be wielded, or shot one-handed with an angle penalty.
+    - type: Tweak
+      message: Updated Typewriter sprites
+    - type: Tweak
+      message: The Typewriter bundle now costs 12 TC (8 TC on sale).
+    - type: Tweak
+      message: Bundle includes 2 magazines instead of 3.
+    - type: Tweak
+      message: Firing speed has been reduced.
+  id: 646
+  time: '2025-06-09T13:57:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1037
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Combat High-Heeled Boots
+  id: 647
+  time: '2025-06-09T14:01:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1043
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Holymelon Halo to Loadout
+  id: 648
+  time: '2025-06-09T14:23:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1059
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        Added Voice Mask, Night Vision, Singing, Mech Piloting, Emoting to
+        Revenant.
+    - type: Tweak
+      message: Buffed Revenant HP and Regen, and things they can emag.
+  id: 649
+  time: '2025-06-09T16:56:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1066
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Voxes (New-Kin)
+  id: 650
+  time: '2025-06-11T19:07:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1045
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now drink almost twice as much alcohol before starting to puke,
+        but also 33% less before starting to get poisoned.
+    - type: Tweak
+      message: >-
+        Liquor lifeline now also requires drinking twice as much to match the
+        new thresholds.
+  id: 651
+  time: '2025-06-11T19:11:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1076
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Arachne not having Spidercraft
+  id: 652
+  time: '2025-06-14T03:27:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1093
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        added Bionic Pry Arms Trait, which works like how Bionic Arms works
+        currently on Floof but it can be EMP'd and replaces your actual arms.
+        One point cheaper as a result.
+    - type: Tweak
+      message: >-
+        Bionic Arms Trait with powered pry returns, as an actual emp-able arm
+        replacement but with heavy job restrictions.
+  id: 653
+  time: '2025-06-14T03:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1021
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Fentanyl
+  id: 654
+  time: '2025-06-14T03:37:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1087
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Welders and the energy shield no longer hide their respective energies
+        from sight.
+  id: 655
+  time: '2025-06-14T03:51:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1086
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Sign languages now require your listener to be able to see you in order
+        to understand what you are saying, and you can no longer speak them
+        while cuffed.
+  id: 656
+  time: '2025-06-14T04:33:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1095
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Pebble so logi shuttle can dock and so medical has a cryopod
+  id: 657
+  time: '2025-06-16T13:46:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1088
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The roundstart loop bug should now be fixed.
+  id: 658
+  time: '2025-06-18T08:01:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1102
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: '🙉 '
+  id: 659
+  time: '2025-06-18T17:08:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1054
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Fentanyl renamed to Ventanyl
+  id: 660
+  time: '2025-06-19T11:49:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1122
+- author: M3739
+  changes:
+    - type: Fix
+      message: Lighters and matches should now properly emit light.
+  id: 661
+  time: '2025-06-19T12:01:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1108
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Administrative Assistant can now stamp papers without issue.
+  id: 662
+  time: '2025-06-19T12:01:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1114
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Chief Justice's jumpskirt is no longer invisible.
+  id: 663
+  time: '2025-06-19T12:03:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1112
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The game will now show a disclaimer about NSFW topics upon joining the
+        server.
+  id: 664
+  time: '2025-06-20T18:46:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1123
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer convert wood to steel by building and destroying a
+        specific wood table variant.
+  id: 665
+  time: '2025-06-21T01:50:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1113
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Oracle can now grant normality crystals when given offerings.
+  id: 666
+  time: '2025-06-21T11:53:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1105
+- author: GreyStation
+  changes:
+    - type: Add
+      message: >-
+        The drum kit is now available as a musician loadout option and can be
+        ordered from cargo. Rock on! 🤘
+    - type: Add
+      message: A new instrument style, "Kweh" has been added to the microphone.
+    - type: Tweak
+      message: The microphone can now be played without holding it.
+    - type: Tweak
+      message: >-
+        Guitars (except the Rickenbacker) can now be worn in your suit storage
+        slot.
+    - type: Tweak
+      message: The super synthesizer has a new sprite to communicate that it is super.
+  id: 667
+  time: '2025-06-22T10:26:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1124
+- author: Memeji
+  changes:
+    - type: Add
+      message: Jamrock Blazer and Aerostatic Bomber to the Detective's loadout.
+  id: 668
+  time: '2025-06-22T10:26:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1111
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Egg Laying trait
+  id: 669
+  time: '2025-06-22T10:27:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1099
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Blueshield Officer's med sec glasses can now properly read a kitsune's
+        vitals.
+    - type: Fix
+      message: Footwear with damage slow reduction has been revised and corrected.
+    - type: Fix
+      message: >-
+        It is no longer possible for the detective to start with a free revolver
+        and two speed loaders.
+  id: 670
+  time: '2025-06-22T10:28:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1097
+- author: RetroBit23
+  changes:
+    - type: Add
+      message: >-
+        The 'Express Courier' outfit and trunk has been added to the
+        CourierDrobe.
+    - type: Add
+      message: The 'Warm wornout coat' has been added to the WinterDrobe.
+  id: 671
+  time: '2025-06-22T10:30:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1081
+- author: faefyr
+  changes:
+    - type: Add
+      message: Wolf-form Fae, the squishy pink wolf!
+  id: 672
+  time: '2025-06-22T10:34:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1056
