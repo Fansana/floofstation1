@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDuffelCourierDevy
+  name: Express Space Courier Trunk
+  description: A massive storage trunk issued to express space couriers. It boasts a spacious interior but is considerably heavy.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Back/devytrunk.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,12,5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier

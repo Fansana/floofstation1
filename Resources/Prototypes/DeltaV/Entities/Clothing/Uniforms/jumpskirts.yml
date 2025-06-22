@@ -103,8 +103,8 @@
   - type: Sprite
     sprite: DeltaV/Clothing/Uniforms/Jumpskirt/cj.rsi
   - type: Clothing
-    sprite: DeltaV/Clothing/Uniform/Jumpskirt/cj.rsi
-    
+    sprite: DeltaV/Clothing/Uniforms/Jumpskirt/cj.rsi
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtClerk

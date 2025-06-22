@@ -18,7 +18,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: ClothingShoesBase
+  parent: ClothingShoesMilitaryBase
   id: ClothingUnderSocksCaptain
   name: captain's thigh-high socks
   description: A pair of thigh-high socks, styled for a captain.
@@ -27,6 +27,8 @@
     sprite: _Floof/Clothing/Departmental/Command/captsocks.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Command/captsocks.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.8
 
 - type: entity
   parent: ClothingUniformThongBase
@@ -459,6 +461,39 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Logistics/mailcarrierthong.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCourierDevy
+  name: Express Space Courier Uniform
+  description: A white lining for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devysuit.rsi
+    
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesCourierDevy
+  name: Express Space Courier Boots
+  description: A pair of sturdy boots for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devyboots.rsi
+    
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterDevy
+  name: Express Space Courier Coat
+  description: A insulated cyan coat for designated express space couriers.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/Departmental/Logistics/devycoat.rsi
+    
 #Medical Outfits
 #
 #General Medical
@@ -656,7 +691,7 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Security/secsocks.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 0.8
 
 - type: entity
   parent: ClothingUniformThongBase
@@ -696,7 +731,7 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Security/hossocks.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 0.8
 
 - type: entity
   parent: ClothingUniformThongBase
@@ -736,7 +771,7 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Security/detectsocks.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 0.8
 
 - type: entity
   parent: ClothingUniformThongBase
@@ -776,7 +811,7 @@
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Security/corpsmansocks.rsi
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.5
+    modifier: 0.8
 
 - type: entity
   parent: ClothingUniformThongBase
