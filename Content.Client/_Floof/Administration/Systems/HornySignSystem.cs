@@ -35,7 +35,7 @@ public sealed class HornySignSystem : EntitySystem
 
         var adj = sprite.Bounds.Height / 2 + ((1.0f/32) * 6.0f);
 
-        var layer = sprite.AddLayer(new SpriteSpecifier.Rsi(new ResPath("Floof/Objects/Misc/hornysign.rsi"), "sign"));
+        var layer = sprite.AddLayer(new SpriteSpecifier.Rsi(new ResPath("_Floof/Objects/Misc/hornysign.rsi"), "sign"));
         sprite.LayerMapSet(HornySignKey.Key, layer);
 
         sprite.LayerSetOffset(layer, new Vector2(0.0f, adj));

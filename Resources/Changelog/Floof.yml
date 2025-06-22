@@ -6192,3 +6192,190 @@ Entries:
   id: 651
   time: '2025-06-11T19:11:35.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1076
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Arachne not having Spidercraft
+  id: 652
+  time: '2025-06-14T03:27:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1093
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        added Bionic Pry Arms Trait, which works like how Bionic Arms works
+        currently on Floof but it can be EMP'd and replaces your actual arms.
+        One point cheaper as a result.
+    - type: Tweak
+      message: >-
+        Bionic Arms Trait with powered pry returns, as an actual emp-able arm
+        replacement but with heavy job restrictions.
+  id: 653
+  time: '2025-06-14T03:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1021
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Fentanyl
+  id: 654
+  time: '2025-06-14T03:37:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1087
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Welders and the energy shield no longer hide their respective energies
+        from sight.
+  id: 655
+  time: '2025-06-14T03:51:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1086
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Sign languages now require your listener to be able to see you in order
+        to understand what you are saying, and you can no longer speak them
+        while cuffed.
+  id: 656
+  time: '2025-06-14T04:33:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1095
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Pebble so logi shuttle can dock and so medical has a cryopod
+  id: 657
+  time: '2025-06-16T13:46:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1088
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The roundstart loop bug should now be fixed.
+  id: 658
+  time: '2025-06-18T08:01:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1102
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: '🙉 '
+  id: 659
+  time: '2025-06-18T17:08:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1054
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Fentanyl renamed to Ventanyl
+  id: 660
+  time: '2025-06-19T11:49:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1122
+- author: M3739
+  changes:
+    - type: Fix
+      message: Lighters and matches should now properly emit light.
+  id: 661
+  time: '2025-06-19T12:01:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1108
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Administrative Assistant can now stamp papers without issue.
+  id: 662
+  time: '2025-06-19T12:01:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1114
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Chief Justice's jumpskirt is no longer invisible.
+  id: 663
+  time: '2025-06-19T12:03:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1112
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The game will now show a disclaimer about NSFW topics upon joining the
+        server.
+  id: 664
+  time: '2025-06-20T18:46:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1123
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer convert wood to steel by building and destroying a
+        specific wood table variant.
+  id: 665
+  time: '2025-06-21T01:50:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1113
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Oracle can now grant normality crystals when given offerings.
+  id: 666
+  time: '2025-06-21T11:53:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1105
+- author: GreyStation
+  changes:
+    - type: Add
+      message: >-
+        The drum kit is now available as a musician loadout option and can be
+        ordered from cargo. Rock on! 🤘
+    - type: Add
+      message: A new instrument style, "Kweh" has been added to the microphone.
+    - type: Tweak
+      message: The microphone can now be played without holding it.
+    - type: Tweak
+      message: >-
+        Guitars (except the Rickenbacker) can now be worn in your suit storage
+        slot.
+    - type: Tweak
+      message: The super synthesizer has a new sprite to communicate that it is super.
+  id: 667
+  time: '2025-06-22T10:26:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1124
+- author: Memeji
+  changes:
+    - type: Add
+      message: Jamrock Blazer and Aerostatic Bomber to the Detective's loadout.
+  id: 668
+  time: '2025-06-22T10:26:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1111
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Egg Laying trait
+  id: 669
+  time: '2025-06-22T10:27:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1099
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Blueshield Officer's med sec glasses can now properly read a kitsune's
+        vitals.
+    - type: Fix
+      message: Footwear with damage slow reduction has been revised and corrected.
+    - type: Fix
+      message: >-
+        It is no longer possible for the detective to start with a free revolver
+        and two speed loaders.
+  id: 670
+  time: '2025-06-22T10:28:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1097
+- author: RetroBit23
+  changes:
+    - type: Add
+      message: >-
+        The 'Express Courier' outfit and trunk has been added to the
+        CourierDrobe.
+    - type: Add
+      message: The 'Warm wornout coat' has been added to the WinterDrobe.
+  id: 671
+  time: '2025-06-22T10:30:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1081
+- author: faefyr
+  changes:
+    - type: Add
+      message: Wolf-form Fae, the squishy pink wolf!
+  id: 672
+  time: '2025-06-22T10:34:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1056
