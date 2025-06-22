@@ -6297,3 +6297,85 @@ Entries:
   id: 664
   time: '2025-06-20T18:46:48.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1123
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer convert wood to steel by building and destroying a
+        specific wood table variant.
+  id: 665
+  time: '2025-06-21T01:50:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1113
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Oracle can now grant normality crystals when given offerings.
+  id: 666
+  time: '2025-06-21T11:53:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1105
+- author: GreyStation
+  changes:
+    - type: Add
+      message: >-
+        The drum kit is now available as a musician loadout option and can be
+        ordered from cargo. Rock on! 🤘
+    - type: Add
+      message: A new instrument style, "Kweh" has been added to the microphone.
+    - type: Tweak
+      message: The microphone can now be played without holding it.
+    - type: Tweak
+      message: >-
+        Guitars (except the Rickenbacker) can now be worn in your suit storage
+        slot.
+    - type: Tweak
+      message: The super synthesizer has a new sprite to communicate that it is super.
+  id: 667
+  time: '2025-06-22T10:26:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1124
+- author: Memeji
+  changes:
+    - type: Add
+      message: Jamrock Blazer and Aerostatic Bomber to the Detective's loadout.
+  id: 668
+  time: '2025-06-22T10:26:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1111
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Egg Laying trait
+  id: 669
+  time: '2025-06-22T10:27:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1099
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Blueshield Officer's med sec glasses can now properly read a kitsune's
+        vitals.
+    - type: Fix
+      message: Footwear with damage slow reduction has been revised and corrected.
+    - type: Fix
+      message: >-
+        It is no longer possible for the detective to start with a free revolver
+        and two speed loaders.
+  id: 670
+  time: '2025-06-22T10:28:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1097
+- author: RetroBit23
+  changes:
+    - type: Add
+      message: >-
+        The 'Express Courier' outfit and trunk has been added to the
+        CourierDrobe.
+    - type: Add
+      message: The 'Warm wornout coat' has been added to the WinterDrobe.
+  id: 671
+  time: '2025-06-22T10:30:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1081
+- author: faefyr
+  changes:
+    - type: Add
+      message: Wolf-form Fae, the squishy pink wolf!
+  id: 672
+  time: '2025-06-22T10:34:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1056

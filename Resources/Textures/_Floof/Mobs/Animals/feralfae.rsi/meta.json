@@ -1,0 +1,24 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "faefyr",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "feralfae",
+            "directions": 4
+        },
+        {
+            "name": "feralfae_sleep"
+        },
+        {
+            "name": "feralfae_dead"
+        },
+        {
+            "name": "feralfae_crit"
+        }
+    ]
+}
