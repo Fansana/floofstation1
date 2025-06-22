@@ -6346,3 +6346,18 @@ Entries:
   id: 669
   time: '2025-06-22T10:27:18.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1099
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Blueshield Officer's med sec glasses can now properly read a kitsune's
+        vitals.
+    - type: Fix
+      message: Footwear with damage slow reduction has been revised and corrected.
+    - type: Fix
+      message: >-
+        It is no longer possible for the detective to start with a free revolver
+        and two speed loaders.
+  id: 670
+  time: '2025-06-22T10:28:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1097
