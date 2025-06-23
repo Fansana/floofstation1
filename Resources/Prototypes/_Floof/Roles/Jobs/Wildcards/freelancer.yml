@@ -7,11 +7,11 @@
   alwaysUseSpawner: false
   overrideConsoleVisibility: true
   antagAdvantage: 4
-  canBeAntag: true
+  canBeAntag: false
   canBeAntagTarget: true
   icon: "JobIconFreelancer"
   joinNotifyCrew: false
-  whitelisted: true
+  whitelisted: false
   access:
   - Maintenance
   - Freelancer
@@ -21,15 +21,12 @@
   id: FreelancerGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitMercenary
-    shoes: ClothingShoesBootsMercFilled
+    shoes: ClothingShoesBootsMerc
     mask: ClothingMaskGasMerc
-    neck: ClothingNeckOldMantle
     gloves: ClothingHandsMercGlovesCombat
-    outerClothing: ClothingOuterVestWebMercenary
     back: ClothingBackpackMerc
     id: FreelancerPDA
     ears: ClothingHeadsetAltFreelancer
-    belt: ClothingBeltUtilityFilled
-    pocket1: WeaponPistolPollock
-    pocket2: HarmonicaInstrument
+
+
     
