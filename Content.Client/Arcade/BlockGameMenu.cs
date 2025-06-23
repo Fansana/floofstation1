@@ -64,6 +64,11 @@ namespace Content.Client.Arcade
 
             MinSize = SetSize = new Vector2(410, 490);
 
+            // there's no point in resizing this since the game itself won't resize.
+            // if at some point in the future we have the ability to resize with a locked aspect ratio,
+            // this should be reworked to allow making the game bigger
+            Resizable = false;
+
             var resourceCache = IoCManager.Resolve<IResourceCache>();
             var backgroundTexture = resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
 
@@ -95,12 +100,14 @@ namespace Content.Client.Arcade
             _gameRootContainer.AddChild(_pointsLabel);
             _gameRootContainer.AddChild(new Control
             {
-                MinSize = new Vector2(1, 10)
+                MinSize = new Vector2(1, 10),
+                VerticalExpand = true
             });
 
             var gameBox = new BoxContainer
             {
-                Orientation = LayoutOrientation.Horizontal
+                Orientation = LayoutOrientation.Horizontal,
+                HorizontalAlignment = HAlignment.Center,
             };
             gameBox.AddChild(SetupHoldBox(backgroundTexture));
             gameBox.AddChild(new Control
@@ -118,7 +125,8 @@ namespace Content.Client.Arcade
 
             _gameRootContainer.AddChild(new Control
             {
-                MinSize = new Vector2(1, 10)
+                MinSize = new Vector2(1, 10),
+                VerticalExpand = true
             });
 
             _pauseButton = new Button
@@ -379,7 +387,6 @@ namespace Content.Client.Arcade
             var gamePanel = new PanelContainer
             {
                 PanelOverride = back,
-                HorizontalExpand = true,
                 SizeFlagsStretchRatio = 60
             };
             var backgroundPanel = new PanelContainer
@@ -441,7 +448,6 @@ namespace Content.Client.Arcade
             var grid = new GridContainer
             {
                 Columns = 1,
-                HorizontalExpand = true,
                 SizeFlagsStretchRatio = 20
             };
 
