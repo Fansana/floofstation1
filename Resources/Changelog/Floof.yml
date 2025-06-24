@@ -6379,3 +6379,19 @@ Entries:
   id: 672
   time: '2025-06-22T10:34:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1056
+- author: Upstream
+  changes:
+    - type: Remove
+      message: >-
+        Removed the "Tier 3 Tech Lockout" mechanic. You are no longer limited to
+        1 discipline worth of t3 research.
+    - type: Add
+      message: >-
+        Research is now "Softcapped" by Tier 3 unlocks. Each unlocked Tier 3
+        technology multiplicatively increases the cost of all other research.
+        Rushing a capstone can be quite expensive, as will be getting multiple
+        capstones. I hope you're glad that you can build more than one prober
+        now without guaranteeing the station will explode.
+  id: 673
+  time: '2025-06-24T07:39:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1092
