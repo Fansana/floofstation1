@@ -56,6 +56,10 @@
         Base: midwife
       Dead:
         Base: midwife_dead
+  - type: Tool
+    qualities: []
+  - type: Prying
+    enabled: false
 
 - type: entity
   parent: MobPetSpiderBase
