@@ -6395,3 +6395,12 @@ Entries:
   id: 673
   time: '2025-06-24T07:39:33.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1092
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        Light bulbs and light tubes had their material cost revised and
+        corrected.
+  id: 674
+  time: '2025-06-24T11:08:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1132
