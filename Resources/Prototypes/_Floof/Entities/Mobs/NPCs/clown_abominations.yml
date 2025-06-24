@@ -483,6 +483,7 @@
     name: Mimeguin
     description: A penguin that is a mime, go have fun.
     rules: floof-ghost-role-information-free-agent-rules 
+  - type: GhostTakeoverAvailable
   - type: MimePowers
   - type: MeleeWeapon
     soundHit:
