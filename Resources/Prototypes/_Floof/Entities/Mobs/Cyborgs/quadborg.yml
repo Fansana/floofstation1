@@ -59,11 +59,14 @@
   - type: LayingDown
   - type: SiliconLawProvider
     laws: Qborg
-  - type: LeashAnchor # Floofstation
+  - type: LeashAnchor
   - type: GuideHelp
     guides:
     - Quadborgs
     - Cyborgs
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepQuadBorg
 
 
 - type: entity
