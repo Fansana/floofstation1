@@ -257,6 +257,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             if (args.Pressed == _preference.CustomHeirloom) // Floofstation
                 return;
 
+            _special?.Save();
             _preference.CustomHeirloom = args.Pressed ? true : null;
             PreferenceChanged?.Invoke(Preference);
         };
