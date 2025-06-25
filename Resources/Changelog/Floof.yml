@@ -6313,7 +6313,7 @@ Entries:
   id: 666
   time: '2025-06-21T11:53:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1105
-- author: GreyStation
+- author: GreyStation 14, WizDen, M3739
   changes:
     - type: Add
       message: >-
@@ -6405,17 +6405,19 @@ Entries:
   time: '2025-06-24T11:08:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1132
 - author: ashkitten
-  changes: []
+  changes: 
+    - type: Fix
+      message: Restored the NT Block Game to it's former glory.
   id: 675
   time: '2025-06-24T11:09:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1134
-- author: EinsteinEngines
-  changes:
-    - type: Add
-      message: Grapple & Tether Guns have been re-added.
-  id: 676
-  time: '2025-06-24T11:10:50.0000000+00:00'
-  url: https://github.com/Fansana/floofstation1/pull/1131
+#- author: EinsteinEngines
+#  changes:
+#    - type: Add
+#      message: Grapple & Tether Guns have been re-added.
+#  id: 676
+#  time: '2025-06-24T11:10:50.0000000+00:00'
+#  url: https://github.com/Fansana/floofstation1/pull/1131 | M3739 - Erroneous changelog entry.
 - author: Memeji
   changes:
     - type: Tweak
@@ -6423,7 +6425,7 @@ Entries:
   id: 677
   time: '2025-06-24T19:28:38.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1137
-- author: portfiend
+- author: portfiend @ The Den, M3739
   changes:
     - type: Add
       message: >-
