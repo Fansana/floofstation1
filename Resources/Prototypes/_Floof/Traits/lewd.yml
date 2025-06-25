@@ -103,6 +103,7 @@
         - IPC
   functions:
     - !type:TraitModifyMetabolism
+      add: true
       types: [ Succubus ]
       groups: [
         Poison,
