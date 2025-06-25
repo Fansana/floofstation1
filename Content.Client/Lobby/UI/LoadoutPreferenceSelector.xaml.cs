@@ -53,6 +53,10 @@ public sealed partial class LoadoutPreferenceSelector : Control
                 UpdatePaint(); // Floof - simpler method call
             HeirloomButton.Pressed = value.CustomHeirloom ?? false;
             PreferenceButton.Pressed = value.Selected;
+
+            // Floof - close the special menu if the loadout is de-selected, since that means editing the loadout will do nothing
+            if (!value.Selected)
+                HeadingButton.Pressed = false;
         }
     }
 
@@ -245,7 +249,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
         };
         HeirloomButton.OnToggled += args =>
         {
-            if (args.Pressed == _preference.Selected) // Floofstation
+            if (args.Pressed == _preference.CustomHeirloom) // Floofstation
                 return;
 
             _preference.CustomHeirloom = args.Pressed ? true : null;
@@ -258,6 +262,7 @@ public sealed partial class LoadoutPreferenceSelector : Control
             if (!args.Pressed)
             {
                 // Destroy, annihilate
+                _special?.Save(); // Because it's counterintuitive that the save button always has to be pressed to save the changes
                 _special?.Dispose();
                 _special = null;
             }
