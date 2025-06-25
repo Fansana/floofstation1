@@ -55,8 +55,13 @@ public sealed partial class LoadoutPreferenceSelector : Control
             PreferenceButton.Pressed = value.Selected;
 
             // Floof - close the special menu if the loadout is de-selected, since that means editing the loadout will do nothing
+            HeadingButton.Disabled = !value.Selected;
             if (!value.Selected)
+            {
                 HeadingButton.Pressed = false;
+                _special?.Dispose(); // TODO code duplication, RT won't fire the toggle event when changing Pressed; don't wanna deal with it
+                _special = null;
+            }
         }
     }
 
