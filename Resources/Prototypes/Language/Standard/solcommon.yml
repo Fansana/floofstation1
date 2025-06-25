@@ -3,6 +3,7 @@
   isVisibleLanguage: true
   speech:
     color: "#8282fbaa"
+    fontId: Chinese
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 1
