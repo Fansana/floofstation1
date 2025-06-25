@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: PrinterDocMachineCircuitboard
+  result: PrinterDocMachineCircuitboard
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 50
+    Plastic: 50
