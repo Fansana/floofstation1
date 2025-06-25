@@ -63,7 +63,7 @@ opt_description=$( echo -n "$opt_description" ) # Process escape sequences
 body=$(echo "$pr_info" | jq -r .body)
 body1=$(echo "$body" | sed 's/:cl:/:cl: EinsteinEngines/g')
 body2=$(
-    printf "Upstream PR: https://github.com/simple-station/einstein-engines/pull/%s\n\n" "$PRNUM"
+    printf "Upstream PR: https://github.com/%s/pull/%s\n\n" "$PULL_REPO" "$PRNUM"
     echo "$opt_description"
     echo
     echo "-----"
