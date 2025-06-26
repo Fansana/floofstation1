@@ -51,20 +51,20 @@
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
     state: lineeyes
-
+# Begin Floof - M3739 - #1084
 - type: marking
-  id: EarsSylveon
+  id: EarsLovelox
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune] # Floof - M3739 - #1084 - The fact this was originally restricted to unathi is a crime.
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
-      state: sylveon_primary
+      state: lovelox_primary
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
-      state: sylveon_secondary
+      state: lovelox_secondary
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
-      state: sylveon_tertiary
-
+      state: lovelox_tertiary
+# End Floof - M3739 - #1084
 - type: marking
   id: EarsResomi
   bodyPart: HeadTop

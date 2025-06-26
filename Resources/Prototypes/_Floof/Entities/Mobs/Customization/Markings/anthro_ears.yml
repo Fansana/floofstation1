@@ -329,43 +329,43 @@
     state: m_ears_deerear_ADJ_secondary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_deerear_FRONT_secondary
-
+# Begin Floof - M3739 - #1084
 - type: marking
-  id: EarsEevee
+  id: EarsEvolox
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
-    m_ears_eevee_ADJ_primary: m_ears_eevee_FRONT_primary
-    m_ears_eevee_ADJ_secondary: m_ears_eevee_FRONT_secondary
+    m_ears_evolox_ADJ_primary: m_ears_evolox_FRONT_primary
+    m_ears_evolox_ADJ_secondary: m_ears_evolox_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_FRONT_primary
+    state: m_ears_evolox_FRONT_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_FRONT_secondary
+    state: m_ears_evolox_FRONT_secondary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_ADJ_primary
+    state: m_ears_evolox_ADJ_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_ADJ_secondary
+    state: m_ears_evolox_ADJ_secondary
 
 - type: marking
-  id: EarsEeveeAlt
+  id: EarsEvoloxAlt
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
   colorLinks:
-    m_ears_eevee_alt_ADJ_primary: m_ears_eevee_alt_FRONT_primary
-    m_ears_eevee_alt_ADJ_secondary: m_ears_eevee_alt_FRONT_secondary
+    m_ears_evolox_alt_ADJ_primary: m_ears_evolox_alt_FRONT_primary
+    m_ears_evolox_alt_ADJ_secondary: m_ears_evolox_alt_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_alt_FRONT_primary
+    state: m_ears_evolox_alt_FRONT_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_alt_FRONT_secondary
+    state: m_ears_evolox_alt_FRONT_secondary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_alt_ADJ_primary
+    state: m_ears_evolox_alt_ADJ_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_ears_eevee_alt_ADJ_secondary
-
+    state: m_ears_evolox_alt_ADJ_secondary
+# End Floof - M3739 - #1084
 - type: marking
   id: EarsElephant
   bodyPart: HeadTop
@@ -928,12 +928,13 @@
     state: m_ears_wolf_ADJ_primary
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_wolf_ADJ_tertiary
-
+# Begin Floof - M3739 - #1084
 - type: marking
-  id: EarsGuilmonHorns
+  id: EarsVirtuasaurHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Kitsune]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Reptilian, Kitsune]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
-    state: m_horns_guilmon
+    state: m_horns_virtuasaur
+# End Floof - M3739 - #1084
