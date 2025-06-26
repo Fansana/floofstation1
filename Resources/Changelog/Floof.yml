@@ -6437,3 +6437,13 @@ Entries:
   id: 678
   time: '2025-06-25T11:46:45.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1063
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Papers, Envelopes, Playing Cards, and Small Mail can now be slid under
+        doors! You can do this by just tossing it through the door, kinda like
+        mice!
+  id: 679
+  time: '2025-06-26T17:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1079
