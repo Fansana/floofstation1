@@ -7,10 +7,12 @@
   startingGear: LawyerGear
   icon: "JobIconLawyer"
   supervisors: job-supervisors-cj  # Delta V - Change supervisor to chief justice
+  canBeAntag: false
   access:
   - Service
   - Lawyer
   - Maintenance
+  - Justice
 
 - type: startingGear
   id: LawyerGear
