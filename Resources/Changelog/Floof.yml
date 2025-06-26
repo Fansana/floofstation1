@@ -6467,3 +6467,12 @@ Entries:
   id: 681
   time: '2025-06-26T17:17:20.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1039
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        A couple of markings has been renamed. Check and verify your character's
+        markings, as you will have to reselect the renamed marking as a result.
+  id: 682
+  time: '2025-06-26T17:19:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1084
