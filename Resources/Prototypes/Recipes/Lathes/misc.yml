@@ -1,3 +1,4 @@
+# Begin Changes - Floof - M3739 - #1132
 - type: latheRecipe
   id: LightTube
   result: LightTube
@@ -5,7 +6,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: LedLightTube
@@ -14,7 +15,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: SodiumLightTube
@@ -23,7 +24,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: ExteriorLightTube
@@ -32,7 +33,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: LightBulb
@@ -41,7 +42,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: LedLightBulb
@@ -50,7 +51,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: DimLightBulb
@@ -59,7 +60,7 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
 
 - type: latheRecipe
   id: WarmLightBulb
@@ -68,7 +69,8 @@
   completetime: 2
   materials:
     Steel: 50
-    Glass: 50
+    Glass: 100
+# End Changes - Floof - M3739 - #1132
 
 - type: latheRecipe
   id: GlowstickRed

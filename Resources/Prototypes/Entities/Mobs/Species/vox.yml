@@ -49,6 +49,69 @@
     damage:
       types:
         Slash: 5 # Reduce?
+
+  - type: PassiveDamage
+    # Augment normal health regen to be able to tank some Poison damage
+    # This allows Vox to take their mask off temporarily to eat something without needing a trip to medbay afterwards.
+    allowedStates:
+    - Alive
+    damageCap: 20
+    damage:
+      types:
+        Heat: -0.07
+        Poison: -0.2 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
+      groups:
+        Brute: -0.07
+
+  - type: PressureProtection
+    highPressureMultiplier: 1.7
+    lowPressureMultiplier: 1000
+    
+  - type: Temperature
+    coldDamageThreshold: -100 # Floof: Space-fairing chickens
+    heatDamageThreshold: 320.15 # Suffers from the same fate as Resomi
+    coldDamage:
+      types:
+        Cold : 0
+    heatDamage:
+      types:
+        Heat : 3 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      185.15: 0.85 # fluorosulfonyl-(trifluoromethanesulfonyl)imide
+      77.15: 0.7 # N,N-diethylmethylamine
+
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 185
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+  - type: LanguageKnowledge
+    speaks:
+      - TauCetiBasic
+      - NewKinPidgin
+    understands:
+      - TauCetiBasic
+      - NewKinPidgin
+      - OldKinPidgin
+    naturalLanguage: NewKinPidgin # Floof: explicitly stated natural languages
+
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+
   - type: Sprite # Need to redefine the whole order to draw the tail over their gas tank
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
@@ -102,10 +165,58 @@
 - type: entity
   parent: BaseSpeciesDummy
   id: MobVoxDummy
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-  - type: HumanoidAppearance
-    species: Vox
-  - type: Body
-    prototype: Vox
-
+    - type: HumanoidAppearance
+      species: Vox
+    - type: Body
+      prototype: Vox
+    - type: Inventory
+      speciesId: vox
+      displacements:
+        jumpsuit:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: jumpsuit
+        eyes:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: eyes
+        gloves:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: hand
+        head:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: head
+        back:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: back
+        ears:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: ears
+        shoes:
+          sizeMaps:
+            32:
+              sprite: Mobs/Species/Vox/displacement.rsi
+              state: shoes
+#    - type: Hands         # TODO: left-right hand displacement
+#      leftHandDisplacement:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vox/displacement.rsi
+#            state: hand_l
+#      rightHandDisplacement:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vox/displacement.rsi
+#            state: hand_r

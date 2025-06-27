@@ -228,6 +228,14 @@
     - RiotShield
     - SpeedLoaderMagnum
     - SpeedLoaderMagnumEmpty
+    - MagazineLightRifleMarkOneEmpty
+    - MagazineLightRifleMarkOne
+    - MagazinePistolCaselessRifle # Goobstation
+    - MagazineBoxCaselessRifle # Goobstation
+    - MagazineMagnumEmpty # Goobstation
+    - MagazineMagnum # Goobstation
+    - MagazineMagnumLeverRifleEmpty # Goobstation
+    - MagazineMagnumLeverRifle # Goobstation
 
 - type: entity
   id: AutolatheHyperConvection
@@ -282,7 +290,7 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
-      - HandheldCrewMonitor
+      # HandheldCrewMonitor  Floof change it was move to the Medical fab
       - Scalpel
       - Retractor
       - Cautery
@@ -865,6 +873,8 @@
       - SpeedLoaderRifleHeavyEmpty
       - WeaponRifleNovaliteC1
       - WeaponRifleGestio
+      - MagazineMagnumLeverRifle # Goobstation
+      - MagazineMagnumLeverRifleEmpty # Goobstation
     dynamicRecipes:
       - BolaEnergy
       - BoxBeanbag
@@ -986,6 +996,8 @@
       # Floof section end
       - SecurityCyberneticEyes
       - MedicalCyberneticEyes
+      - MagazineLightRifleMarkOneEmpty
+      - MagazineLightRifleMarkOne
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1043,6 +1055,8 @@
         - SpeedLoaderRifleHeavyEmpty
         - CartridgeSpecial
         - MagazineBoxSpecial
+        - MagazineLightRifleMarkOneEmpty
+        - MagazineLightRifleMarkOne
     - type: MaterialStorage
       whitelist:
         tags:
@@ -1143,6 +1157,8 @@
       - ReagentGrinderIndustrialMachineCircuitboard
       - FatExtractorMachineCircuitboard
       - CrewMonitoringComputerCircuitboard
+      - TrackingImplanter
+      - HandheldCrewMonitor
       # Floof section end
       # Shitmed Change
       - EnergyScalpel
@@ -1953,6 +1969,8 @@
       # - PlushieFeistyBartender
       # - PlushieCoolVulp
       # - PlushieNoticeableSecurityOfficer
+      - PlushieAvaliHOP 
+      - PlushieKoboldCefJustice
       #Floof Plushies - End
   - type: EmagLatheRecipes
     emagStaticRecipes:

@@ -70,6 +70,8 @@ public enum CollisionGroup
     // Soap, spills
     SlipLayer = MidImpassable | LowImpassable,
     ItemMask = Impassable | HighImpassable,
+
+    ItemSlideUnderDoorMask = Impassable | LowImpassable, // FLOOF ADD: Allows some items to slide under doors
     ThrownItem = Impassable | HighImpassable | BulletImpassable,
     WallLayer = Opaque | Impassable | HighImpassable | MidImpassable | LowImpassable | BulletImpassable | InteractImpassable,
     GlassLayer = Impassable | HighImpassable | MidImpassable | LowImpassable | BulletImpassable | InteractImpassable,

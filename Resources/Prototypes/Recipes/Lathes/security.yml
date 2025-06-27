@@ -266,6 +266,20 @@
     Steel: 500
 
 - type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazinePistolCaselessRifle
+  result: MagazinePistolCaselessRifle
+  materials:
+    Steel: 145
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: MagazineBoxCaselessRifle
+  result: MagazineBoxCaselessRifle
+  materials:
+    Steel: 720
+
+- type: latheRecipe
   id: MagazinePistolEmpty
   result: MagazinePistolEmpty
   category: Ammo
@@ -1065,3 +1079,18 @@
     Silver: 100
     Gold: 100
 
+- type: latheRecipe
+  id: MagazineLightRifleMarkOneEmpty
+  result: MagazineLightRifleMarkOneEmpty
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: MagazineLightRifleMarkOne
+  result: MagazineLightRifleMarkOne
+  category: Ammo
+  completetime: 2
+  materials:
+    Steel: 200

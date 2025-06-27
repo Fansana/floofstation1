@@ -28,6 +28,22 @@ public abstract class SharedKitsuneSystem : EntitySystem
         if (TryComp<HumanoidAppearanceComponent>(ent, out var humanComp))
         {
             ent.Comp.Color = humanComp.EyeColor;
+
+            var lightColor = ent.Comp.Color.Value;
+            var max = MathF.Max(lightColor.R, MathF.Max(lightColor.G, lightColor.B));
+            // Don't let it divide by 0
+            if (max == 0)
+            {
+                lightColor = new Color(1, 1, 1, lightColor.A);
+            }
+            else
+            {
+                var factor = 1 / max;
+                lightColor.R *= factor;
+                lightColor.G *= factor;
+                lightColor.B *= factor;
+            }
+            ent.Comp.ColorLight = lightColor;
         }
     }
 
@@ -47,9 +63,17 @@ public abstract class SharedKitsuneSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("fox-no-hands"), ent, ent);
             return;
         }
-
-        // This caps the amount of fox fire summons at a time to the charge count, deleting the oldest fire when exceeded.
-        if (_actions.GetCharges(ent.Comp.FoxfireAction) < 1)
+        // Floof - M3739 - #1030 - Do not allow additional fox fires if they have no charges. They will have to wait.
+        if (_actions.GetCharges(ent.Comp.FoxfireAction) <= 0)
+        {
+            _popup.PopupEntity(Loc.GetString("fox-no-charges"), ent, ent);
+            return;
+        }
+        // Floof - M3739 - #1030 - This... is probably the least intrusive solution to the infinite foxfire problem.
+        // Ensure that the number of active fox fires does not exceed max charges.
+        if (!TryComp<InstantActionComponent>(ent.Comp.FoxfireAction, out var instantActionComp))
+            return;
+        if (ent.Comp.ActiveFoxFires.Count >= instantActionComp.MaxCharges)
         {
             QueueDel(ent.Comp.ActiveFoxFires[0]);
             ent.Comp.ActiveFoxFires.RemoveAt(0);
@@ -59,12 +83,11 @@ public abstract class SharedKitsuneSystem : EntitySystem
         var fireComp = EnsureComp<FoxfireComponent>(fireEnt);
         fireComp.Kitsune = ent;
         ent.Comp.ActiveFoxFires.Add(fireEnt);
+        _actions.RemoveCharges(ent.Comp.FoxfireAction, 1); // Floof - M3739 - #1030
         Dirty(fireEnt, fireComp);
         Dirty(ent);
 
-        _light.SetColor(fireEnt, ent.Comp.Color ?? Color.Purple);
-
-        args.Handled = true;
+        _light.SetColor(fireEnt, ent.Comp.ColorLight ?? Color.Purple);
     }
 
     private void OnFoxfireShutdown(Entity<FoxfireComponent> ent, ref ComponentShutdown args)

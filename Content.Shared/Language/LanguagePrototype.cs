@@ -66,7 +66,7 @@ public sealed partial class SpeechOverrideInfo
 
     /// <summary>
     ///     If true, the message will be relayed to the Empathy Chat and
-    ///     anyone with that language will also hear Empathy Chat. (Unless user has ShadowkinBlackeyeComponent)
+    ///     anyone with that language will also hear Empathy Chat.
     ///     This is mostly only use for "Marish" but... fuckit modularity :p
     /// </summary>
     [DataField]
@@ -78,6 +78,20 @@ public sealed partial class SpeechOverrideInfo
     /// </summary>
     [DataField]
     public bool RequireSpeech = true;
+
+    // Floof section start
+    /// <summary>
+    ///     If true, requires the entity to have usable hands and be able to interact (not be cuffed, etc).
+    /// </summary>
+    [DataField]
+    public bool RequireHands = false;
+
+    /// <summary>
+    ///     If true, the listener must have a line of sight on the speaker to hear the message.
+    /// </summary>
+    [DataField]
+    public bool RequireLOS = false;
+    // Floof section end
 
     /// <summary>
     ///     If not null, all messages in this language will be forced to be spoken in this chat type.

@@ -302,4 +302,4 @@
       - map: [ "pocket2" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ]
   - type: Inventory
-    templateId: lamia
+    speciesId: lamia

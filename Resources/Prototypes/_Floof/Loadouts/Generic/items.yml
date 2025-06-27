@@ -23,7 +23,7 @@
 - type: loadout
   id: LoadoutItemLeashBasic
   category: Items
-  cost: 2
+  cost: 0
   exclusive: false
   customColorTint: true
   items:
@@ -35,7 +35,7 @@
 - type: loadout
   id: LoadoutItemHypnoVisor
   category: Items
-  cost: 2
+  cost: 0
   exclusive: true
   items:
   - ClothingEyesHypnoVisor
@@ -133,3 +133,28 @@
       group: LoadoutPets
   functions:
     - !type:LoadoutMakeFollower
+
+- type: loadout
+  id: LoadoutItemCigarBluespaceAddict
+  category: Items
+  cost: 2
+  canBeHeirloom: true
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes
+    - !type:CharacterTraitRequirement
+      traits:
+        - AddictionNicotine
+
+- type: loadout
+  id: LoadoutItemCigarBluespace
+  category: Items
+  cost: 5
+  canBeHeirloom: true
+  items:
+    - CigarBluespace
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutSmokes

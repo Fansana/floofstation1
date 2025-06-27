@@ -4733,7 +4733,7 @@ Entries:
       message: >-
         Added a new 3-point negative trait called Bad Knees. It is the opposite
         of Parkour Training and it makes you climb tables slower, stunned for
-        longer against slip stuns, and move more slowly in difficult terrain. 
+        longer against slip stuns, and move more slowly in difficult terrain.
     - type: Tweak
       message: Snail-Paced no longer prevents you from slipping when running.
   id: 504
@@ -4761,7 +4761,7 @@ Entries:
     - type: Tweak
       message: >-
         Unathi now have 3 'Head (Side)' marking points available, so they can
-        use frills and both left and right-side earrings.  
+        use frills and both left and right-side earrings.
   id: 506
   time: '2025-04-25T14:00:14.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/860
@@ -5176,7 +5176,7 @@ Entries:
     - type: Add
       message: >-
         Added 2 new traits related to CyberEyes. Light Amplification Module, and
-        Thermographic Scanner Module. 
+        Thermographic Scanner Module.
   id: 545
   time: '2025-05-03T01:17:02.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/881
@@ -5481,9 +5481,7 @@ Entries:
 - author: WhiteHusky
   changes:
     - type: Add
-      message: >-
-        Safety harnesses can now be researched and crafted in the Engineering
-        TechFab.
+      message: 'Safety harnesses can now be crafted in the Engineering TechFab '
     - type: Tweak
       message: 'A few more safety harnesses were added to the EngiDrobe '
   id: 576
@@ -5651,3 +5649,830 @@ Entries:
   id: 594
   time: '2025-05-16T19:37:04.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/921
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed Energy Swords not displaying their blade when ignited.
+  id: 595
+  time: '2025-05-17T05:01:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/925
+- author: faefyr
+  changes:
+    - type: Add
+      message: Vulpkanin/Feroxi Hardsuit Helmets for Syndicate Hardsuits
+  id: 596
+  time: '2025-05-17T05:20:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/984
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Created the framework that allows certain clothing to block certain
+        inventory slots.
+    - type: Add
+      message: >-
+        Having a hardsuit equipped now prevents you from removing your inner
+        clothes, gloves, and shoes (and having them taken by someone else).
+    - type: Add
+      message: >-
+        Most coats now block the inner clothing slot (although you can still
+        equip/unequip shirt-less clothing like thongs), and harnesses can block
+        either inner or outer clothing depending on where you equip them.
+  id: 597
+  time: '2025-05-17T09:56:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/970
+- author: M3739
+  changes:
+    - type: Add
+      message: >-
+        Neckerchiefs have been added. Find them in the neck and departmental
+        sections!
+  id: 598
+  time: '2025-05-17T19:50:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/988
+- author: DeltaV SolStar, Einstein Engines VMSolidus, M3739
+  changes:
+    - type: Fix
+      message: Cloning should now properly replicate the original body's appearance.
+    - type: Fix
+      message: Female kitsune should now no longer laugh like a man when in fox form.
+    - type: Fix
+      message: >-
+        Kitsune foxfire will now emit light, regardless of how dark the color
+        is.
+    - type: Fix
+      message: Kitsune should now no longer weigh as much as a feather.
+  id: 599
+  time: '2025-05-17T22:11:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/981
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Nanotrasen Representative and Blueshield Officer
+    - type: Add
+      message: >-
+        Added Admin Assistant, Nanorep, and Blueshield Officer spawns to all
+        maps. BSO and Nanorep don't get an office, they get a unique teleporter.
+        (as of now) Ask your resident mapper to fix this.
+    - type: Add
+      message: >-
+        Added the loadout options for Nanotrasen Representative and Blueshield
+        Officer.
+  id: 600
+  time: '2025-05-18T07:38:06.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/991
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Nanotrasen Representative lacking in the starter clothes
+        department
+    - type: Fix
+      message: Fixed Nanotrasen Representative lacking in the headset department
+  id: 601
+  time: '2025-05-18T13:18:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/927
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: LoneOp spawns with their 60 TC Uplink instead of the 40 TC Uplink.
+    - type: Tweak
+      message: Atmospheric Technicians get 15 TC instead of 10 TC.
+    - type: Fix
+      message: Senior Technicians now have the same TC as Engineers.
+    - type: Fix
+      message: Sleeper Agents now have the same requirements as normal Traitor.
+    - type: Remove
+      message: The real Throngler can no longer be found in the Gambling Crates.
+  id: 602
+  time: '2025-05-18T13:52:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/992
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Slot blocking is not longer checked when applying loadouts.
+  id: 603
+  time: '2025-05-20T03:51:11.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1000
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        Attempted to fix a crash related to antag preferences saving multiple
+        times.
+  id: 604
+  time: '2025-05-20T11:12:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1002
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: Fixed AI-controlled mobs having no walking animations.
+  id: 605
+  time: '2025-05-20T17:02:25.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/972
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Hypnotic Gaze now costs 0 and can be used on mind broken individuals
+        (X-waveform and Black-eyes)
+  id: 606
+  time: '2025-05-21T22:11:31.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1009
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added an alternate female chest marking for unathi.
+  id: 607
+  time: '2025-05-21T22:15:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1008
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: Tracker implant are now a T2 researchable under civil
+  id: 608
+  time: '2025-05-21T22:19:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/705
+- author: M3739
+  changes:
+    - type: Fix
+      message: Kitsune can now be healed by topicals.
+  id: 609
+  time: '2025-05-21T23:11:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1006
+- author: FoxxoTrystan
+  changes:
+    - type: Tweak
+      message: Full Shadekin rework!
+  id: 610
+  time: '2025-05-21T23:35:21.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/995
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: fixed symmetry to bionic leg trait
+  id: 611
+  time: '2025-05-22T01:24:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1012
+- author: WhiteLightningTwister
+  changes:
+    - type: Add
+      message: reintroduced existing jobs.
+    - type: Add
+      message: Added administration office.
+    - type: Add
+      message: Salvage break room.
+    - type: Add
+      message: Added a rack storage area in the tech vault to have boards now.
+    - type: Add
+      message: added beacons for areas that lacked them before.
+    - type: Tweak
+      message: Adjusted engineering with more decorative decals.
+    - type: Tweak
+      message: Adjusted engineering airlock to singo area.
+    - type: Fix
+      message: Fixed the salvage airlock due to issues were they can get locked out.
+    - type: Remove
+      message: Salvage expedition console from their area.
+  id: 612
+  time: '2025-05-23T03:27:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1016
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: 'Added a legality notice to the description of salvage''s firearms. '
+    - type: Tweak
+      message: The mining points cost of all salvage firearms have been increased by 4x
+    - type: Remove
+      message: >-
+        Salvage no longer starts with bombs in their lockers. Buy them with your
+        mining points.
+  id: 613
+  time: '2025-05-23T03:58:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1001
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Shuttle windows should no longer shock people.
+  id: 614
+  time: '2025-05-24T01:24:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1020
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: PING
+  id: 615
+  time: '2025-05-24T16:50:10.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1023
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added dildos to Loadout
+    - type: Tweak
+      message: Lewd objects cost 0 in the loadout
+    - type: Tweak
+      message: Lewd objects can now be heirlooms
+  id: 616
+  time: '2025-05-25T21:47:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1017
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Voice Mask's Chameleon function
+  id: 617
+  time: '2025-05-27T13:50:51.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1033
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Clown Rat and its Crazed variant
+  id: 618
+  time: '2025-05-27T13:54:27.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/985
+- author: M3739
+  changes:
+    - type: Fix
+      message: Kitsune can no longer place infinite foxfires.
+    - type: Fix
+      message: You will now see the proper message when a kitsune shifts into fox form.
+  id: 619
+  time: '2025-05-27T15:22:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1030
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Reverted the power cell fix you may find mentioned below (above?) in the
+        changelog.
+  id: 620
+  time: '2025-05-27T15:57:43.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1036
+- author: Memeji
+  changes:
+    - type: Fix
+      message: Toy Energy Sword blade shows now.
+  id: 621
+  time: '2025-05-27T16:45:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1026
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: CPR sound will no longer loop indefinitely. Hopefully.
+  id: 622
+  time: '2025-05-29T13:45:37.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1034
+- author: Lawdog4817
+  changes:
+    - type: Tweak
+      message: Removed cost of the Accentless trait
+  id: 623
+  time: '2025-05-29T13:47:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1038
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Harpy coos should now have the correct volume & sound positioning.
+  id: 624
+  time: '2025-05-29T13:48:15.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1041
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Departmental techfabs should no longer contain duplicate recipes
+  id: 625
+  time: '2025-05-29T13:58:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1042
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: added Toy Sabre and Dual-Bladed Toy Sword.
+    - type: Add
+      message: added Toy Sabre, Toy Sword and Dual-Bladed Toy Sword to Uplink.
+  id: 626
+  time: '2025-05-30T13:15:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1035
+- author: TheRealMasterChief117
+  changes:
+    - type: Add
+      message: Added colorable nipples for the alternate female lizard chest.
+  id: 627
+  time: '2025-05-30T13:17:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1025
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: Fixed the NTR Stamp Texture on Paper
+    - type: Fix
+      message: Fixed name of Senior Officer, CBURN, and Deathsquad.
+  id: 628
+  time: '2025-05-30T13:19:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1004
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Airlocks can now have ID locks installed on them. Currently only
+        available to mappers.
+  id: 629
+  time: '2025-05-30T13:23:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1029
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: CPR can no longer revive unrevivable people. Again.
+  id: 630
+  time: '2025-05-31T01:30:13.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1044
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Anomaly scanners can now copy scans even if they were previously used to
+        scan an anomaly.
+  id: 631
+  time: '2025-05-31T01:31:08.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1040
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Updated to RobustToolbox 239.0.1, hopefully fixing audio issues for
+        certain people.
+  id: 632
+  time: '2025-06-02T11:14:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1046
+- author: ApolloVector
+  changes:
+    - type: Add
+      message: >-
+        Gave all shotgun slugs plasteel tips, allowing them to compete with
+        standard shotgun shells.
+  id: 633
+  time: '2025-06-02T14:05:22.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1049
+- author: maninbucket
+  changes:
+    - type: Tweak
+      message: Gave Resomi sounds for the chirp emote.
+  id: 634
+  time: '2025-06-02T16:38:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1014
+- author: Aikakakah
+  changes:
+    - type: Add
+      message: 'Add New Facial Hair, Port My N14 Hairstyles #2076'
+    - type: Add
+      message: 'ADT Markings Port #1951'
+  id: 635
+  time: '2025-06-02T17:03:24.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1028
+- author: Emily9031
+  changes:
+    - type: Add
+      message: >-
+        Added 10 craftable pride flags for you to decorate your department with!
+        Happy Pride Month!
+  id: 636
+  time: '2025-06-02T18:02:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1048
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The Assay psionic power should no longer cause the user to get stuck in
+        the "channeling power" mode.
+  id: 637
+  time: '2025-06-03T04:02:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1052
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: >-
+        Platelet Factories buffed from 0.07 to 0.35 (0.25 airloss) and improves
+        natural blood regeneration.
+    - type: Tweak
+      message: >-
+        Power Overwhelming no longer uses 2 spell slots. (For those who don't
+        understand the esoteric psionics system, makes it so you don't have to
+        drink 3 times as many drugs for your first spell)
+    - type: Tweak
+      message: >-
+        Striking Calluses doesn't have 3 different requirements anymore, does a
+        little more damage and costs less.
+    - type: Tweak
+      message: Spinarette spins slightly faster.
+    - type: Tweak
+      message: >-
+        Roundstart psionic powers are slightly cheaper (because they're
+        niche/useless)
+    - type: Tweak
+      message: Low/High Potential are now lower and higher.
+    - type: Tweak
+      message: Oni traits aren't a debuff anymore.
+  id: 638
+  time: '2025-06-03T05:05:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1022
+- author: ApolloVector
+  changes:
+    - type: Tweak
+      message: >-
+        SWAT armor has been adjusted to have less armor but also less slowdown,
+        allowing it to be used easily in spaced environments. 
+  id: 639
+  time: '2025-06-04T21:08:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1053
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Mech UI (ripley, hamptr, others) should work correctly noow.
+  id: 640
+  time: '2025-06-05T13:44:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1047
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: >-
+        Fixed fun! But actually. Toy Sword rotation fixed and Toy DESword having
+        a working wield sprite.
+  id: 641
+  time: '2025-06-05T20:12:04.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1051
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Puddles and other entities with only a non-hard fixture should now
+        correctly display in the entity menu (right click).
+  id: 642
+  time: '2025-06-05T20:14:09.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1064
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added new Avali Head of Personel and Chef Justice kobold plushies.
+    - type: Tweak
+      message: Adjusted the HypnoTemp plushie spawn rate.
+  id: 643
+  time: '2025-06-08T01:54:42.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1067
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        Resomi are now licensed as nanotrasen citizen and as such can open doors
+        by bumping into them, can pilot spaceships, and will make footstep
+        sounds when walking.
+  id: 644
+  time: '2025-06-09T13:50:44.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1070
+- author: ItsDzordz
+  changes:
+    - type: Tweak
+      message: Tweaked crazed clown rats
+  id: 645
+  time: '2025-06-09T13:52:30.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1072
+- author: Memeji
+  changes:
+    - type: Add
+      message: Typewriter can be wielded, or shot one-handed with an angle penalty.
+    - type: Tweak
+      message: Updated Typewriter sprites
+    - type: Tweak
+      message: The Typewriter bundle now costs 12 TC (8 TC on sale).
+    - type: Tweak
+      message: Bundle includes 2 magazines instead of 3.
+    - type: Tweak
+      message: Firing speed has been reduced.
+  id: 646
+  time: '2025-06-09T13:57:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1037
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Combat High-Heeled Boots
+  id: 647
+  time: '2025-06-09T14:01:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1043
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Holymelon Halo to Loadout
+  id: 648
+  time: '2025-06-09T14:23:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1059
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        Added Voice Mask, Night Vision, Singing, Mech Piloting, Emoting to
+        Revenant.
+    - type: Tweak
+      message: Buffed Revenant HP and Regen, and things they can emag.
+  id: 649
+  time: '2025-06-09T16:56:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1066
+- author: FoxxoTrystan
+  changes:
+    - type: Add
+      message: Voxes (New-Kin)
+  id: 650
+  time: '2025-06-11T19:07:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1045
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        You can now drink almost twice as much alcohol before starting to puke,
+        but also 33% less before starting to get poisoned.
+    - type: Tweak
+      message: >-
+        Liquor lifeline now also requires drinking twice as much to match the
+        new thresholds.
+  id: 651
+  time: '2025-06-11T19:11:35.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1076
+- author: Raikyr0
+  changes:
+    - type: Fix
+      message: Fixed Arachne not having Spidercraft
+  id: 652
+  time: '2025-06-14T03:27:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1093
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: >-
+        added Bionic Pry Arms Trait, which works like how Bionic Arms works
+        currently on Floof but it can be EMP'd and replaces your actual arms.
+        One point cheaper as a result.
+    - type: Tweak
+      message: >-
+        Bionic Arms Trait with powered pry returns, as an actual emp-able arm
+        replacement but with heavy job restrictions.
+  id: 653
+  time: '2025-06-14T03:36:23.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1021
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Fentanyl
+  id: 654
+  time: '2025-06-14T03:37:54.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1087
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Welders and the energy shield no longer hide their respective energies
+        from sight.
+  id: 655
+  time: '2025-06-14T03:51:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1086
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        Sign languages now require your listener to be able to see you in order
+        to understand what you are saying, and you can no longer speak them
+        while cuffed.
+  id: 656
+  time: '2025-06-14T04:33:16.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1095
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Tweaked Pebble so logi shuttle can dock and so medical has a cryopod
+  id: 657
+  time: '2025-06-16T13:46:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1088
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The roundstart loop bug should now be fixed.
+  id: 658
+  time: '2025-06-18T08:01:59.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1102
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: '🙉 '
+  id: 659
+  time: '2025-06-18T17:08:01.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1054
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Fentanyl renamed to Ventanyl
+  id: 660
+  time: '2025-06-19T11:49:57.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1122
+- author: M3739
+  changes:
+    - type: Fix
+      message: Lighters and matches should now properly emit light.
+  id: 661
+  time: '2025-06-19T12:01:12.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1108
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Administrative Assistant can now stamp papers without issue.
+  id: 662
+  time: '2025-06-19T12:01:56.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1114
+- author: sprkl
+  changes:
+    - type: Fix
+      message: Chief Justice's jumpskirt is no longer invisible.
+  id: 663
+  time: '2025-06-19T12:03:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1112
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        The game will now show a disclaimer about NSFW topics upon joining the
+        server.
+  id: 664
+  time: '2025-06-20T18:46:48.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1123
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        You can no longer convert wood to steel by building and destroying a
+        specific wood table variant.
+  id: 665
+  time: '2025-06-21T01:50:49.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1113
+- author: sprkl
+  changes:
+    - type: Tweak
+      message: The Oracle can now grant normality crystals when given offerings.
+  id: 666
+  time: '2025-06-21T11:53:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1105
+- author: GreyStation
+  changes:
+    - type: Add
+      message: >-
+        The drum kit is now available as a musician loadout option and can be
+        ordered from cargo. Rock on! 🤘
+    - type: Add
+      message: A new instrument style, "Kweh" has been added to the microphone.
+    - type: Tweak
+      message: The microphone can now be played without holding it.
+    - type: Tweak
+      message: >-
+        Guitars (except the Rickenbacker) can now be worn in your suit storage
+        slot.
+    - type: Tweak
+      message: The super synthesizer has a new sprite to communicate that it is super.
+  id: 667
+  time: '2025-06-22T10:26:02.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1124
+- author: Memeji
+  changes:
+    - type: Add
+      message: Jamrock Blazer and Aerostatic Bomber to the Detective's loadout.
+  id: 668
+  time: '2025-06-22T10:26:40.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1111
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Egg Laying trait
+  id: 669
+  time: '2025-06-22T10:27:18.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1099
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        Blueshield Officer's med sec glasses can now properly read a kitsune's
+        vitals.
+    - type: Fix
+      message: Footwear with damage slow reduction has been revised and corrected.
+    - type: Fix
+      message: >-
+        It is no longer possible for the detective to start with a free revolver
+        and two speed loaders.
+  id: 670
+  time: '2025-06-22T10:28:03.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1097
+- author: RetroBit23
+  changes:
+    - type: Add
+      message: >-
+        The 'Express Courier' outfit and trunk has been added to the
+        CourierDrobe.
+    - type: Add
+      message: The 'Warm wornout coat' has been added to the WinterDrobe.
+  id: 671
+  time: '2025-06-22T10:30:36.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1081
+- author: faefyr
+  changes:
+    - type: Add
+      message: Wolf-form Fae, the squishy pink wolf!
+  id: 672
+  time: '2025-06-22T10:34:19.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1056
+- author: Upstream
+  changes:
+    - type: Remove
+      message: >-
+        Removed the "Tier 3 Tech Lockout" mechanic. You are no longer limited to
+        1 discipline worth of t3 research.
+    - type: Add
+      message: >-
+        Research is now "Softcapped" by Tier 3 unlocks. Each unlocked Tier 3
+        technology multiplicatively increases the cost of all other research.
+        Rushing a capstone can be quite expensive, as will be getting multiple
+        capstones. I hope you're glad that you can build more than one prober
+        now without guaranteeing the station will explode.
+  id: 673
+  time: '2025-06-24T07:39:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1092
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        Light bulbs and light tubes had their material cost revised and
+        corrected.
+  id: 674
+  time: '2025-06-24T11:08:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1132
+- author: ashkitten
+  changes: []
+  id: 675
+  time: '2025-06-24T11:09:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1134
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Grapple & Tether Guns have been re-added.
+  id: 676
+  time: '2025-06-24T11:10:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1131
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Increased the Clothes Vending Restock price.
+  id: 677
+  time: '2025-06-24T19:28:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1137
+- author: portfiend
+  changes:
+    - type: Add
+      message: >-
+        Various toy-themed markings, such as plush seams, a zipper, wind-up
+        keys, and a few overlay markings. Compatible with most species. You can
+        find them in head, chest, feet, and overlay markings.
+    - type: Fix
+      message: >-
+        Vox, Unathi, and Feroxi will preview in the character creator with
+        correct loadout sprites.
+  id: 678
+  time: '2025-06-25T11:46:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1063
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Papers, Envelopes, Playing Cards, and Small Mail can now be slid under
+        doors! You can do this by just tossing it through the door, kinda like
+        mice!
+  id: 679
+  time: '2025-06-26T17:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1079
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Adds Night Vision to Felinids
+  id: 680
+  time: '2025-06-26T17:13:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1061
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: >-
+        Added Bartending+ PR by Vermidia, shaking and stirring to most of
+        drinks.
+    - type: Add
+      message: Addes shaking and stirring to most of Floof drinks.
+    - type: Add
+      message: Added Pussy Tonic drink
+  id: 681
+  time: '2025-06-26T17:17:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1039
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        A couple of markings has been renamed. Check and verify your character's
+        markings, as you will have to reselect the renamed marking as a result.
+  id: 682
+  time: '2025-06-26T17:19:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1084

@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformNudityPermit
   name: public nudity permit
   description: This permit entitles the bearer to conduct their duties without a uniform. Normally issued to furred crewmembers or those with nothing to hide.
@@ -12,12 +12,9 @@
     sprite: _Floof/Clothing/Uniforms/nuditypermit.rsi
     equipDelay: 0
     unequipDelay: 0
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBaseSwitch
+  parent: [ClothingUniformShirtlessBase, ClothingUniformBaseSwitch]
   id: ClothingUniformLoinClothBlack
   name: black loin-cloth
   description: A piece of cloth wrapped around the waist.
@@ -26,13 +23,9 @@
     sprite: _Floof/Clothing/Uniforms/loinclothblack.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/loinclothblack.rsi
-    unequipDelay: 0
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBaseSwitch
+  parent: ClothingUniformLoinClothBlack
   id: ClothingUniformLoinClothWhite
   name: loin-cloth # Floof - M3739 - #741
   description: A piece of cloth wrapped around the waist.
@@ -42,12 +35,9 @@
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/loinclothwhite.rsi
     unequipDelay: 0
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongPlain
   name: plain thong
   description: Is this even considered a piece of clothing?
@@ -56,12 +46,9 @@
     sprite: _Floof/Clothing/Uniforms/plainthong.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/plainthong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongBee
   name: bee thong
   description: Is this even considered a piece of clothing?
@@ -70,12 +57,9 @@
     sprite: _Floof/Clothing/Uniforms/beethong.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/beethong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongCoder
   name: coder thong
   description: Is this even considered a piece of clothing?
@@ -84,12 +68,9 @@
     sprite: _Floof/Clothing/Uniforms/coderthong.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/coderthong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformThongCoderValid
   name: coder valid thong
   description: Is this even considered a piece of clothing?
@@ -98,12 +79,9 @@
     sprite: _Floof/Clothing/Uniforms/codervalidthong.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/codervalidthong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformStripedThongWhite
   name: striped white thong
   description: Is this even considered a piece of clothing?
@@ -112,12 +90,9 @@
     sprite: _Floof/Clothing/Uniforms/stripethongwhite.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/stripethongwhite.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformStripedThongPurple
   name: striped purple thong
   description: Is this even considered a piece of clothing?
@@ -126,12 +101,9 @@
     sprite: _Floof/Clothing/Uniforms/stripethongpurple.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/stripethongpurple.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformThongBase
   id: ClothingUniformStripedThongRainbow
   name: striped rainbow thong
   description: Is this even considered a piece of clothing?
@@ -140,9 +112,6 @@
     sprite: _Floof/Clothing/Uniforms/stripethongrainbow.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Uniforms/stripethongrainbow.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
 
 
 #Other Outfits

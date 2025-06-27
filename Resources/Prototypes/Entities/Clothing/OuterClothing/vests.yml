@@ -70,8 +70,17 @@
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Vests/hazard.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/hazard.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: equipped-OUTERCLOTHING-unshaded
+        shader: unshaded
   - type: Tag
     tags:
     - HiViz
@@ -142,3 +151,34 @@
     sprite: Clothing/OuterClothing/Vests/vest_thick.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_thick.rsi
+
+#Tank Harness
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothingGasTanks]
+  id: ClothingOuterVestTank
+  name: tank harness
+  description: A simple harness that can hold a gas tank.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/OuterClothing/Vests/tankharness.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/OuterClothing/Vests/tankharness.rsi
+
+    equipDelay: 1
+    unequipDelay: 1
+    quickEquip: false # Would conflict due to having multiple allowed slots
+    slots:
+    - outerClothing
+  - type: LeashAnchor
+    kind: Clothing
+  - type: ClothingLimit
+    limitGroups:
+    - harness
+    maxCount: 1
+  - type: Item
+    size: Normal # Make smaller than typical outer clothing
+    shape:
+    - 0, 0, 0, 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon

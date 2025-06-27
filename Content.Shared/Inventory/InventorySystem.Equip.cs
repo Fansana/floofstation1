@@ -279,6 +279,7 @@ public abstract partial class InventorySystem
         }
 
         var attemptEvent = new IsEquippingAttemptEvent(actor, target, itemUid, slotDefinition);
+        attemptEvent.BypassAccessCheck = bypassAccessCheck; // Floof - done in a less destructive way
         RaiseLocalEvent(target, attemptEvent, true);
         if (attemptEvent.Cancelled)
         {
@@ -299,6 +300,7 @@ public abstract partial class InventorySystem
         }
 
         var itemAttemptEvent = new BeingEquippedAttemptEvent(actor, target, itemUid, slotDefinition);
+        itemAttemptEvent.BypassAccessCheck = bypassAccessCheck; // Floof - done in a less destructive way
         RaiseLocalEvent(itemUid, itemAttemptEvent, true);
         if (itemAttemptEvent.Cancelled)
         {
