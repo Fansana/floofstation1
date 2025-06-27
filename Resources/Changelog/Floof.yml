@@ -6476,3 +6476,12 @@ Entries:
   id: 682
   time: '2025-06-26T17:19:05.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1084
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Hands no longer become blocked when the person you're carrying
+        polymorphs.
+  id: 683
+  time: '2025-06-27T21:37:36.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1145
