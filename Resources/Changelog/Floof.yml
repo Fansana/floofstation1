@@ -6485,3 +6485,12 @@ Entries:
   id: 683
   time: '2025-06-27T21:37:36.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1145
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Resolved a longstanding issue where buckled characters would get all
+        floppy after sleeping or being knocked down.
+  id: 684
+  time: '2025-06-27T21:54:29.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1143
