@@ -6510,3 +6510,12 @@ Entries:
   id: 686
   time: '2025-06-28T06:42:30.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1060
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Chinese Support
+    - type: Tweak
+      message: Tweaked Sol Common Syllable Obfuscation to be Chinese
+  id: 687
+  time: '2025-06-28T17:04:34.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1133
