@@ -61,10 +61,6 @@ public sealed class PseudoItemSystem : SharedPseudoItemSystem
 
     protected override void OnGettingPickedUpAttempt(EntityUid uid, PseudoItemComponent component, GettingPickedUpAttemptEvent args)
     {
-        // Floof - prevent pseudo-items from kicking each other out
-        if (TryComp<PseudoItemComponent>(args.User, out var pseudoItemUser) && pseudoItemUser.Active)
-            return;
-
         // Floof - changed this a bit to actually start a do-after
         // Try to pick the entity up instead first
         if (args.User != args.Item
