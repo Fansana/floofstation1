@@ -241,6 +241,13 @@
     access: [["Medical"], ["Salvage"], ["Command"], ["Research"]]
   - type: SiliconLawProvider
     laws: Medical
+  - type: FabricateActions
+    actions:
+    - ActionFabricateLollipop
+    - ActionFabricateGumball
+  - type: SurgeryTarget # Shitmed
+  - type: Sanitized # Shitmed
+  - type: SolutionScanner
 
 - type: entity
   id: BorgChassisApex
