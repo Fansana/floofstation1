@@ -6379,3 +6379,143 @@ Entries:
   id: 672
   time: '2025-06-22T10:34:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1056
+- author: Upstream
+  changes:
+    - type: Remove
+      message: >-
+        Removed the "Tier 3 Tech Lockout" mechanic. You are no longer limited to
+        1 discipline worth of t3 research.
+    - type: Add
+      message: >-
+        Research is now "Softcapped" by Tier 3 unlocks. Each unlocked Tier 3
+        technology multiplicatively increases the cost of all other research.
+        Rushing a capstone can be quite expensive, as will be getting multiple
+        capstones. I hope you're glad that you can build more than one prober
+        now without guaranteeing the station will explode.
+  id: 673
+  time: '2025-06-24T07:39:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1092
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        Light bulbs and light tubes had their material cost revised and
+        corrected.
+  id: 674
+  time: '2025-06-24T11:08:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1132
+- author: ashkitten
+  changes: []
+  id: 675
+  time: '2025-06-24T11:09:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1134
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Grapple & Tether Guns have been re-added.
+  id: 676
+  time: '2025-06-24T11:10:50.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1131
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Increased the Clothes Vending Restock price.
+  id: 677
+  time: '2025-06-24T19:28:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1137
+- author: portfiend
+  changes:
+    - type: Add
+      message: >-
+        Various toy-themed markings, such as plush seams, a zipper, wind-up
+        keys, and a few overlay markings. Compatible with most species. You can
+        find them in head, chest, feet, and overlay markings.
+    - type: Fix
+      message: >-
+        Vox, Unathi, and Feroxi will preview in the character creator with
+        correct loadout sprites.
+  id: 678
+  time: '2025-06-25T11:46:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1063
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Papers, Envelopes, Playing Cards, and Small Mail can now be slid under
+        doors! You can do this by just tossing it through the door, kinda like
+        mice!
+  id: 679
+  time: '2025-06-26T17:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1079
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Adds Night Vision to Felinids
+  id: 680
+  time: '2025-06-26T17:13:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1061
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: >-
+        Added Bartending+ PR by Vermidia, shaking and stirring to most of
+        drinks.
+    - type: Add
+      message: Addes shaking and stirring to most of Floof drinks.
+    - type: Add
+      message: Added Pussy Tonic drink
+  id: 681
+  time: '2025-06-26T17:17:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1039
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        A couple of markings has been renamed. Check and verify your character's
+        markings, as you will have to reselect the renamed marking as a result.
+  id: 682
+  time: '2025-06-26T17:19:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1084
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Hands no longer become blocked when the person you're carrying
+        polymorphs.
+  id: 683
+  time: '2025-06-27T21:37:36.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1145
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Resolved a longstanding issue where buckled characters would get all
+        floppy after sleeping or being knocked down.
+  id: 684
+  time: '2025-06-27T21:54:29.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1143
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The heirloom toggle in loadouts show now work as expected.
+    - type: Tweak
+      message: >-
+        Loadout special menu can no longer be opened while the loadout is not
+        selected, and will auto-save when it's closed.
+  id: 685
+  time: '2025-06-28T06:07:28.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1142
+- author: Raikyr0
+  changes: []
+  id: 686
+  time: '2025-06-28T06:42:30.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1060
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Chinese Support
+    - type: Tweak
+      message: Tweaked Sol Common Syllable Obfuscation to be Chinese
+  id: 687
+  time: '2025-06-28T17:04:34.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1133

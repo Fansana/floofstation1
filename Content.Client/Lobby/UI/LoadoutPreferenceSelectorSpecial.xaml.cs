@@ -25,13 +25,7 @@ public sealed partial class LoadoutPreferenceSelectorSpecial : PanelContainer
         RobustXamlLoader.Load(this);
         Parent = parent;
 
-        SaveButton.OnPressed += _ =>
-        {
-            Preference.CustomColorTint = GetColorTint()?.ToHex();
-            Preference.Selected = Parent.PreferenceButton.Pressed;
-            Parent.InvokePreferenceChanged();
-            UpdateState();
-        };
+        SaveButton.OnPressed += _ => Save();
         NameEdit.OnTextChanged += _ =>
             Preference.CustomName = string.IsNullOrEmpty(NameEdit.Text) ? null : NameEdit.Text;
         DescriptionEdit.OnTextChanged += _ =>
@@ -44,6 +38,14 @@ public sealed partial class LoadoutPreferenceSelectorSpecial : PanelContainer
             Parent.UpdatePaint();
         };
 
+        UpdateState();
+    }
+
+    public void Save()
+    {
+        Preference.CustomColorTint = GetColorTint()?.ToHex();
+        Preference.Selected = Parent.PreferenceButton.Pressed;
+        Parent.InvokePreferenceChanged();
         UpdateState();
     }
 
