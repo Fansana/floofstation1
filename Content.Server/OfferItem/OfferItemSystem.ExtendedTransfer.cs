@@ -40,7 +40,7 @@ public sealed partial class OfferItemSystem
             return;
 
         _pulling.TryStopPull(oldPuller, ent);
-        args.Handled = _pulling.TryStartPull(args.Target, pulled, null, ent.Comp);
+        args.Handled = _pulling.TryStartPull(args.Target, ent, null, ent.Comp);
     }
 
     private bool TryHandleExtendedTransfer(EntityUid user, EntityUid target, EntityUid offeredItem, EntityUid realItem)
