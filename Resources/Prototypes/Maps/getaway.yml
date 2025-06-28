@@ -1,0 +1,29 @@
+- type: gameMap
+  id: Getaway
+  mapName: Getaway
+  mapPath: /Maps/Floof/Getaway.yml # Floofstation
+  minPlayers: 70
+  maxPlayers: 120
+  stations:
+    Getaway:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationEmergencyShuttle #floofstation
+        emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml #floofstation
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Getaway Station {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: 'FL'
+      # uncomment when planets arent fucked sideways
+      #- type: StationSurface
+      #  mapPath: /Maps/Nonstations/Getaway_surface.yml
+      #  biome: Snow
+      - type: StationJobs
+        overflowJobs:
+          - Passenger
+          #- Anomaly # Floofstation
+        availableJobs:
+          Passenger: [ -1, -1 ]
+          Captain: [ 1, 1 ]
+
