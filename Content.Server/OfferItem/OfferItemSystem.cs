@@ -80,11 +80,11 @@ public sealed partial class OfferItemSystem : SharedOfferItemSystem
             }
 
             _popup.PopupEntity(Loc.GetString("offer-item-give",
-                ("item", Identity.Entity(realItem, EntityManager)), // Floof - resolve PseudoItems
+                ("item", Identity.Entity(realItem, EntityManager)), // FLoof - resolve virtual items
                 ("target", Identity.Entity(uid, EntityManager))), component.Target.Value, component.Target.Value);
             _popup.PopupEntity(Loc.GetString("offer-item-give-other",
                     ("user", Identity.Entity(component.Target.Value, EntityManager)),
-                    ("item", Identity.Entity(realItem, EntityManager)), // Floof - resolve PseudoItems
+                    ("item", Identity.Entity(realItem, EntityManager)), // FLoof - resolve virtual items
                     ("target", Identity.Entity(uid, EntityManager)))
                 , component.Target.Value, Filter.PvsExcept(component.Target.Value, entityManager: EntityManager), true);
         }

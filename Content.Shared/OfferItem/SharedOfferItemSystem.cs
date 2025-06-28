@@ -42,11 +42,11 @@ public abstract partial class SharedOfferItemSystem : EntitySystem
 
         // Floof - if the held item is a pseudo-item, show the underlying item in the popup
         _popup.PopupEntity(Loc.GetString("offer-item-try-give",
-            ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // Floof - resolve PseudoItems
+            ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // FLoof - resolve virtual items
             ("target", Identity.Entity(uid, EntityManager))), component.Target.Value, component.Target.Value);
         _popup.PopupEntity(Loc.GetString("offer-item-try-give-target",
             ("user", Identity.Entity(component.Target.Value, EntityManager)),
-            ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager))), component.Target.Value, uid); // Floof - resolve PseudoItems
+            ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager))), component.Target.Value, uid); // FLoof - resolve virtual items
 
         args.Handled = true;
     }
@@ -76,21 +76,21 @@ public abstract partial class SharedOfferItemSystem : EntitySystem
             if (component.Item != null)
             {
                 _popup.PopupEntity(Loc.GetString("offer-item-no-give",
-                    ("item", Identity.Entity(component.GetRealEntity(EntityManager), EntityManager)), // Floof - resolve PseudoItems
+                    ("item", Identity.Entity(component.GetRealEntity(EntityManager), EntityManager)), // FLoof - resolve virtual items
                     ("target", Identity.Entity(component.Target.Value, EntityManager))), uid, uid);
                 _popup.PopupEntity(Loc.GetString("offer-item-no-give-target",
                     ("user", Identity.Entity(uid, EntityManager)),
-                    ("item", Identity.Entity(component.GetRealEntity(EntityManager), EntityManager))), uid, component.Target.Value); // Floof - resolve PseudoItems
+                    ("item", Identity.Entity(component.GetRealEntity(EntityManager), EntityManager))), uid, component.Target.Value); // FLoof - resolve virtual items
             }
 
             else if (offerItem.Item != null)
             {
                 _popup.PopupEntity(Loc.GetString("offer-item-no-give",
-                    ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // Floof - resolve PseudoItems
+                    ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // FLoof - resolve virtual items
                     ("target", Identity.Entity(uid, EntityManager))), component.Target.Value, component.Target.Value);
                 _popup.PopupEntity(Loc.GetString("offer-item-no-give-target",
                     ("user", Identity.Entity(component.Target.Value, EntityManager)),
-                    ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager))), component.Target.Value, uid); // Floof - resolve PseudoItems
+                    ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager))), component.Target.Value, uid); // FLoof - resolve virtual items
             }
 
             offerItem.IsInOfferMode = false;
@@ -130,10 +130,10 @@ public abstract partial class SharedOfferItemSystem : EntitySystem
         if (offerItem.Item != null)
         {
             _popup.PopupEntity(Loc.GetString("offer-item-no-give",
-                ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // Floof - resolve PseudoItems
+                ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager)), // FLoof - resolve virtual items
                 ("target", Identity.Entity(uid, EntityManager))), component.Target.Value, component.Target.Value);
             _popup.PopupEntity(Loc.GetString("offer-item-no-give-target",
-                ("user", Identity.Entity(component.Target.Value, EntityManager)), // Floof - resolve PseudoItems
+                ("user", Identity.Entity(component.Target.Value, EntityManager)), // FLoof - resolve virtual items
                 ("item", Identity.Entity(offerItem.GetRealEntity(EntityManager), EntityManager))), component.Target.Value, uid);
         }
 
