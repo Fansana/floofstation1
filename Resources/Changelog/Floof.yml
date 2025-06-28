@@ -6494,3 +6494,14 @@ Entries:
   id: 684
   time: '2025-06-27T21:54:29.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1143
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The heirloom toggle in loadouts show now work as expected.
+    - type: Tweak
+      message: >-
+        Loadout special menu can no longer be opened while the loadout is not
+        selected, and will auto-save when it's closed.
+  id: 685
+  time: '2025-06-28T06:07:28.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1142
