@@ -1,7 +1,7 @@
 - type: gameMap
   id: Getaway
   mapName: Getaway
-  mapPath: /Maps/Floof/Getaway.yml # Floofstation
+  mapPath: /Maps/Floof/getaway.yml # Floofstation
   minPlayers: 70
   maxPlayers: 120
   stations:
