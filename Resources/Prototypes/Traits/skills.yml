@@ -155,7 +155,7 @@
 - type: trait
   id: LightStep
   category: Auditory
-  points: -1 # Only Works when you have no shoes on
+  points: -2 # No shoes might be an upstream thing
   functions:
     - !type:TraitReplaceComponent
       components:
