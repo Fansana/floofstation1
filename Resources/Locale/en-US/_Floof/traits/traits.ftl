@@ -154,3 +154,6 @@ trait-description-Tiny =
     Note: [color=red]this will not display in the character creation menu, and will only apply the effects in-game.[/color]
 
 examine-tiny-trait-message = {CAPITALIZE(SUBJECT($entity))} is tiny. Handle with care!
+
+trait-name-RealOrangeJuice = 100% Orange Juice
+trait-description-RealOrangeJuice = You are a 100% organic pulp-free Orange Juice Reagent Slime.
