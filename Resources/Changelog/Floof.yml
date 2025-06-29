@@ -6519,3 +6519,16 @@ Entries:
   id: 687
   time: '2025-06-28T17:04:34.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1133
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Foxes can no longer use sign language, as their teeny tiny little paws
+        are incapable of complex interaction.
+    - type: Fix
+      message: >-
+        Sign language now requires two empty hands. You're going to have to put
+        that woman down.
+  id: 688
+  time: '2025-06-29T14:44:25.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1147
