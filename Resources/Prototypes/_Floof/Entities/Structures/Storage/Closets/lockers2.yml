@@ -14,8 +14,8 @@
     stateDoorClosed: surgeon_secure_door
     
 - type: entity
-  id: LockerFreelancerCamo
-  name: Generic Freelancer secure locker
+  id: LockerFreelancerCamoSecure
+  name: generic Freelancer secure locker
   parent: LockerBaseSecure
   components:
   - type: Sprite
@@ -27,3 +27,46 @@
     stateBaseClosed: camo
     stateDoorOpen: camo_open
     stateDoorClosed: camo_door
+
+- type: entity
+  id: LockerFreelancerCamo
+  name: generic Freelancer locker
+  parent: ClosetMaintenance
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Closets/closet.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: camo
+    stateDoorOpen: camo_open
+    stateDoorClosed: camo_door_alt
+
+- type: entity
+  id: FreelancerClosetWall
+  parent: BaseWallCloset
+  name: camo wall closet
+  description: It's a storage unit.
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Closets/wall_locker.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: freelancer
+    stateDoorOpen: freelancer_open
+    stateDoorClosed: freelancer_door
+
+- type: entity
+  id: FreelancerClosetWallSecure
+  parent: LockerWallMedical
+  name: secure camo wall closet
+  description: It's a storage unit.
+  components:
+  - type: Sprite
+    sprite: _Floof/Structures/Storage/Closets/wall_locker.rsi
+  - type: Appearance
+  - type: AccessReader
+    access: [["Freelancer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: freelancer
+    stateDoorOpen: freelancer_open
+    stateDoorClosed: freelancer_door

@@ -1,0 +1,1257 @@
+#Freelancer (Part of jobs main category Prototypes\Loadouts\Categories\categories.yml)
+
+#Sub-category Link Tree
+
+- type: loadoutCategory
+  id: JobsFreelancer
+  subCategories:
+    - JobsFreelancerGear
+    - JobsFreelancerSoftsuits
+    - JobsFreelancerHelmets
+    - JobsFreelancerLongarm
+    - JobsFreelancerSidearm
+    - JobsFreelancerClothes
+
+# Sub-category prototype (this needs to exist for the category to exist and the tree above to link it into a tree)
+
+- type: loadoutCategory
+  id: JobsFreelancerGear
+  
+- type: loadoutCategory
+  id: JobsFreelancerSoftsuits
+  
+- type: loadoutCategory
+  id: JobsFreelancerHelmets
+  
+- type: loadoutCategory
+  id: JobsFreelancerLongarm
+  
+- type: loadoutCategory
+  id: JobsFreelancerSidearm
+  
+- type: loadoutCategory
+  id: JobsFreelancerClothes
+ 
+#Groups of items within a category, aka we uncategorized and you want to link 3 air tanks
+#so ya can pick only 1 out of 3. this is the group that links it and sets rules for it
+
+- type: characterItemGroup
+  id: LoadoutFreelancerHelmets
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutAHelmetFreelancerPilot # id of the loundout item way below NOT the id of the item in game
+   - type: loadout
+     id: LoadoutAHelmetFreelancerOcular
+   - type: loadout
+     id: LoadoutAHelmetFreelancerStar  
+   - type: loadout
+     id: LoadoutHelmetEva 
+   - type: loadout
+     id: LoadoutHelmetEvaLarge
+   - type: loadout
+     id: LoadoutHelmetAncient
+     
+- type: characterItemGroup
+  id: LoadoutFreelancerSoftsuits
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutCFreelancerSoftsuitPilot
+   - type: loadout
+     id: LoadoutBFreelancerSoftsuitLegion
+   - type: loadout
+     id: LoadoutAFreelancerSoftsuitNorthstar
+   - type: loadout
+     id: LoadoutHardsuitEVA
+   - type: loadout
+     id: LoadoutHardsuitAncientEVA
+
+- type: characterItemGroup
+  id: LoadoutFreelancerAirtanks
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutAADoubleEmergencyOxygenTankFilled
+   - type: loadout
+     id: LoadoutAADoubleEmergencyNitrogenTankFilled
+   - type: loadout
+     id: LoadoutAADoubleEmergencyWaterVaporTankFilled
+     
+- type: characterItemGroup
+  id: LoadoutFreelancerMask
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutEMaskGasMerc
+   - type: loadout
+     id: LoadoutEMaskGasExplorer
+   - type: loadout
+     id: LoadoutEBreathMedicalSecurity
+   - type: loadout
+     id: LoadoutEPunkHalf
+
+- type: characterItemGroup
+  id: LoadoutFreelanceCloak
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutACloakGoliathCloak
+   - type: loadout
+     id: LoadoutASalvager
+   - type: loadout
+     id: LoadoutACloakVoid
+   - type: loadout
+     id: LoadoutACloakMiner
+   - type: loadout
+     id: LoadoutAUnathiMantle
+   - type: loadout
+     id: LoadoutAOldMantle
+
+- type: characterItemGroup
+  id: LoadoutFreelancerBackpack
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutBBackpackMerc2
+   - type: loadout
+     id: LoadoutBBackpackSatchelLeather
+   - type: loadout
+     id: LoadoutBBackpackSatchelSalvage
+   - type: loadout
+     id: LoadoutBBackpackSalvage
+
+- type: characterItemGroup
+  id: LoadoutFreelancerGloves
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutDMercGlovesCombat
+   - type: loadout
+     id: LoadoutDGlovesCombat
+
+- type: characterItemGroup
+  id: LoadoutFreelancerHeadset
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutFHeadsetFreelance
+   - type: loadout
+     id: LoadoutFHeadsetAltFreelancer
+     
+- type: characterItemGroup
+  id: LoadoutFreelancerBelt
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutCBeltUtilityFilled
+   - type: loadout
+     id: LoadoutCBeltMilitaryWebbing
+   - type: loadout
+     id: LoadoutCBeltMercWebbing
+   - type: loadout
+     id: LoadoutCBeltSalvageWebbing
+   - type: loadout
+     id: LoadoutCBeltHolster
+   - type: loadout
+     id: LoadoutCOreBag
+   - type: loadout
+     id: LoadoutCBeltBandolier
+
+- type: characterItemGroup
+  id: LoadoutFreelancerHat
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutCHeadHelmetBone
+   - type: loadout
+     id: LoadoutCHeadHelmetMerc
+   - type: loadout
+     id: LoadoutCHeadHatUshanka1
+   - type: loadout
+     id: LoadoutCHeadHatHetmanHat
+   - type: loadout
+     id: LoadoutCHeadHatBeretMerc
+   - type: loadout
+     id: LoadoutCHeadBandMerc
+   - type: loadout
+     id: LoadoutCHeadHatTacticalMaidHeadband
+   - type: loadout
+     id: LoadoutCHeadHatSyndieMAA
+
+- type: characterItemGroup
+  id: LoadoutFreelancerShoes
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutBBShoesBootsMerc
+   - type: loadout
+     id: LoadoutBBShoesBootsCombat
+   - type: loadout
+     id: LoadoutBShoesLeather
+   - type: loadout
+     id: LoadoutBShoesBootsWork1
+   - type: loadout
+     id: LoadoutBShoesBootsSalvage
+
+- type: characterItemGroup
+  id: LoadoutFreelancerLongarm
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutBShotgunDoubleBarreled
+   - type: loadout
+     id: LoadoutBRifleNovaliteC1
+   - type: loadout
+     id: LoadoutARifleGestio
+   - type: loadout
+     id: LoadoutBLeverChester
+   - type: loadout
+     id: LoadoutSniperMosin
+   - type: loadout
+     id: LoadoutRifleSVT
+   - type: loadout
+     id: LoadoutSniperCeremonial
+   - type: loadout
+     id: LoadoutSniperGrand
+
+- type: characterItemGroup
+  id: LoadoutFreelancerMelee
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutACrusherDagger
+   - type: loadout
+     id: LoadoutACombatKnife
+   - type: loadout
+     id: LoadoutABKukriKnife
+   - type: loadout
+     id: LoadoutASurvivalKnife
+   - type: loadout
+     id: LoadoutAACaneSheathFilled
+   - type: loadout
+     id: LoadoutACBrassKnuckles
+
+- type: characterItemGroup
+  id: LoadoutFreelancerHandgun
+  maxItems: 1
+  items:
+   - type: loadout
+     id: LoadoutShotgunSawn
+   - type: loadout
+     id: LoadoutRevolverK38Master
+   - type: loadout
+     id: LoadoutRevolverFitz
+   - type: loadout
+     id: LoadoutPistolPollock
+   - type: loadout
+     id: LoadoutRevolverLucky
+
+# Freelancer items
+
+#Gear
+
+- type: loadout
+  id: LoadoutAADoubleEmergencyOxygenTankFilled
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+    - DoubleEmergencyOxygenTankFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerAirtanks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAADoubleEmergencyNitrogenTankFilled
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - DoubleEmergencyNitrogenTankFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerAirtanks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAADoubleEmergencyWaterVaporTankFilled
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - DoubleEmergencyWaterVaporTankFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerAirtanks
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutEMaskGasMerc
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingMaskGasMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutEMaskGasExplorer
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingMaskGasExplorer
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutEBreathMedicalSecurity
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingMaskBreathMedicalSecurity
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutEPunkHalf
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingMaskPunkHalf
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBBackpackMerc2
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBackpack
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutBBackpackSatchelLeather
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackSatchelLeather
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBackpack
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutBBackpackSatchelSalvage
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackSatchelSalvage
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBackpack
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutBBackpackSalvage
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBackpackSalvage
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBackpack
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutDMercGlovesCombat
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsMercGlovesCombat
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutDGlovesCombat
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHandsGlovesCombat
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutFHeadsetFreelance
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHeadsetFreelance
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHeadset
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutFHeadsetAltFreelancer
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingHeadsetAltFreelancer
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHeadset
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutCBeltUtilityFilled
+  category: JobsFreelancerGear
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingBeltUtilityFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCBeltMilitaryWebbing
+  category: JobsFreelancerGear
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingBeltMilitaryWebbing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCBeltMercWebbing
+  category: JobsFreelancerGear
+  cost: 1
+  exclusive: true
+  items:
+  - ClothingBeltMercWebbing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCBeltSalvageWebbing
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBeltSalvageWebbing
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCBeltHolster
+  category: JobsFreelancerGear
+  cost: 0
+  exclusive: true
+  items:
+  - ClothingBeltHolster
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCOreBag
+  category: JobsFreelancerGear
+  cost: 2
+  exclusive: true
+  items:
+  - OreBag
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCBeltBandolier
+  category: JobsFreelancerGear
+  cost: 2
+  exclusive: true
+  items:
+  - ClothingBeltBandolier
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerBelt
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+
+# Softsuits
+
+- type: loadout
+  id: LoadoutHardsuitEVA
+  category: JobsFreelancerSoftsuits
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterHardsuitEVA
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerSoftsuits
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutHardsuitAncientEVA
+  category: JobsFreelancerSoftsuits
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingOuterHardsuitAncientEVA
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerSoftsuits
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCFreelancerSoftsuitPilot
+  category: JobsFreelancerSoftsuits
+  cost: 1
+  exclusive: true
+  items:
+    - ClothingOuterHardsuitFreelancerPilot
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerSoftsuits
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutBFreelancerSoftsuitLegion
+  category: JobsFreelancerSoftsuits
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingOuterHardsuitFreelancerLegion
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerSoftsuits
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutAFreelancerSoftsuitNorthstar
+  category: JobsFreelancerSoftsuits
+  cost: 6
+  exclusive: true
+  items:
+    - ClothingOuterHardsuitFreelancerNorthstar
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerSoftsuits
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+
+# Helmets
+
+- type: loadout
+  id: LoadoutAHelmetFreelancerPilot
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetPilot
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAHelmetFreelancerOcular
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetOcular
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+        
+- type: loadout
+  id: LoadoutAHelmetFreelancerStar
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetStar
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutHelmetEva
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetEVA
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutHelmetEVALarge
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetEVALarge
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutHelmetAncient
+  category: JobsFreelancerHelmets
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  items:
+    - ClothingHeadHelmetAncient
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHelmets
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+# Longarm
+
+- type: loadout
+  id: LoadoutBShotgunDoubleBarreled
+  category: JobsFreelancerLongarm
+  cost: 6
+  exclusive: true
+  items:
+    - WeaponShotgunDoubleBarreled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBRifleNovaliteC1
+  category: JobsFreelancerLongarm
+  cost: 6
+  exclusive: true
+  items:
+    - WeaponRifleNovaliteC1
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutARifleGestio
+  category: JobsFreelancerLongarm
+  cost: 10
+  exclusive: true
+  items:
+    - WeaponRifleGestio
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBLeverChester
+  category: JobsFreelancerLongarm
+  cost: 6
+  exclusive: true
+  items:
+    - WeaponLeverChester
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutSniperMosin
+  category: JobsFreelancerLongarm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponSniperMosin
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutRifleSVT
+  category: JobsFreelancerLongarm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponRifleSVT
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutSniperCeremonial
+  category: JobsFreelancerLongarm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponSniperCeremonial
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutSniperGrand
+  category: JobsFreelancerLongarm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponSniperGrand
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerLongarm
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+# Sidearm
+
+- type: loadout
+  id: LoadoutShotgunSawn
+  category: JobsFreelancerSidearm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponShotgunSawn
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHandgun
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutRevolverK38Master
+  category: JobsFreelancerSidearm
+  cost: 2
+  exclusive: true
+  items:
+    - WeaponRevolverK38Master
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHandgun
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutRevolverFitz
+  category: JobsFreelancerSidearm
+  cost: 2
+  exclusive: true
+  items:
+    - WeaponRevolverFitz
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHandgun
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutPistolPollock
+  category: JobsFreelancerSidearm
+  cost: 2
+  exclusive: true
+  items:
+    - WeaponPistolPollock
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHandgun
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutRevolverLucky
+  category: JobsFreelancerSidearm
+  cost: 4
+  exclusive: true
+  items:
+    - WeaponRevolverLucky
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHandgun
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutABCrusherDagger
+  category: JobsFreelancerSidearm
+  cost: 2
+  exclusive: true
+  items:
+    - WeaponCrusherDagger
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutACombatKnife
+  category: JobsFreelancerSidearm
+  cost: 0
+  exclusive: true
+  items:
+    - CombatKnife
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAKukriKnife
+  category: JobsFreelancerSidearm
+  cost: 0
+  exclusive: true
+  items:
+    - KukriKnife
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutASurvivalKnife
+  category: JobsFreelancerSidearm
+  cost: 0
+  exclusive: true
+  items:
+    - SurvivalKnife
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAACaneSheathFilled
+  category: JobsFreelancerSidearm
+  cost: 8
+  exclusive: true
+  items:
+    - CaneSheathFilled
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutACBrassKnuckles
+  category: JobsFreelancerSidearm
+  cost: 0
+  exclusive: true
+  items:
+    - WeaponBrassKnuckles
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerMelee
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+# Clothes
+
+- type: loadout
+  id: LoadoutACloakGoliathCloak
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckCloakGoliathCloak
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutASalvager
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckSalvager
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutACloakVoid
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckCloakVoid
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutACloakMiner
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckCloakMiner
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutAUnathiMantle
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckUnathiMantle
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutAOldMantle
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingNeckOldMantle
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelanceCloak
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHelmetBone
+  category: JobsFreelancerClothes
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHelmetBone
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutCHeadHelmetMerc
+  category: JobsFreelancerClothes
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingHeadHelmetMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHatUshanka1
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatUshanka
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHatHetmanHat
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatHetmanHat
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHatBeretMerc
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatBeretMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadBandMerc
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadBandMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHatTacticalMaidHeadband
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatTacticalMaidHeadband
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutCHeadHatSyndieMAA
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingHeadHatSyndieMAA
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerHat
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBBShoesBootsMerc
+  category: JobsFreelancerClothes
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingShoesBootsMerc
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+        
+- type: loadout
+  id: LoadoutBBShoesBootsCombat
+  category: JobsFreelancerClothes
+  cost: 2
+  exclusive: true
+  items:
+    - ClothingShoesBootsCombat
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBShoesBootsWork1
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsWork
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
+
+- type: loadout
+  id: LoadoutBShoesBootsSalvage
+  category: JobsFreelancerClothes
+  cost: 0
+  exclusive: true
+  items:
+    - ClothingShoesBootsSalvage
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutFreelancerShoes
+    - !type:CharacterJobRequirement
+      jobs:
+        - Freelancer
