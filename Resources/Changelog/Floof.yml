@@ -6562,3 +6562,12 @@ Entries:
   id: 690
   time: '2025-06-29T19:13:51.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1139
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: Added Justice access to Attorney.
+    - type: Remove
+      message: Removed possibility for antag from Attorney.
+  id: 691
+  time: '2025-06-29T19:15:25.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1144
