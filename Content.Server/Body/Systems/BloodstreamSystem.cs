@@ -244,7 +244,9 @@ public sealed class BloodstreamSystem : EntitySystem
         // Shows profusely bleeding at half the max bleed rate.
         if (ent.Comp.BleedAmount > ent.Comp.MaxBleedAmount / 2)
         {
-            args.Message.PushNewline();
+            // Floof: allow empty messages for basic examine
+            if (!args.Message.IsEmpty)
+                args.Message.PushNewline();
             if (!args.IsSelfAware)
                 args.Message.AddMarkup(Loc.GetString("bloodstream-component-profusely-bleeding", ("target", ent.Owner)));
             else
@@ -253,7 +255,9 @@ public sealed class BloodstreamSystem : EntitySystem
         // Shows bleeding message when bleeding, but less than profusely.
         else if (ent.Comp.BleedAmount > 0)
         {
-            args.Message.PushNewline();
+            // Floof: allow empty messages for basic examine
+            if (!args.Message.IsEmpty)
+                args.Message.PushNewline();
             if (!args.IsSelfAware)
                 args.Message.AddMarkup(Loc.GetString("bloodstream-component-bleeding", ("target", ent.Owner)));
             else
@@ -263,7 +267,9 @@ public sealed class BloodstreamSystem : EntitySystem
         // If the mob's blood level is below the damage threshhold, the pale message is added.
         if (GetBloodLevelPercentage(ent, ent) < ent.Comp.BloodlossThreshold)
         {
-            args.Message.PushNewline();
+            // Floof: allow empty messages for basic examine
+            if (!args.Message.IsEmpty)
+                args.Message.PushNewline();
             if (!args.IsSelfAware)
                 args.Message.AddMarkup(Loc.GetString("bloodstream-component-looks-pale", ("target", ent.Owner)));
             else
