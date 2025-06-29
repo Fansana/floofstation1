@@ -7,6 +7,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Forensics;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
+using Content.Shared.Paper;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Server.GameObjects;
