@@ -6571,3 +6571,17 @@ Entries:
   id: 691
   time: '2025-06-29T19:15:25.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1144
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now transfer carried and pulled entities via item offering
+        (default keybind is F, as always).
+    - type: Fix
+      message: >-
+        When several pseudo-items (small people) are inside one container (e.g.
+        a bluespace duffel), they can no longer accidentally kick each other out
+        using the right click menu.
+  id: 692
+  time: '2025-06-29T19:57:58.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1149
