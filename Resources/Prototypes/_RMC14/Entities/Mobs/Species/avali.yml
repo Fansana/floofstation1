@@ -1,0 +1,39 @@
+- type: entity
+  save: false
+  parent: BaseMobResomi # BaseMobSpeciesOrganic # Floofstation, changed from CMBaseMobSpeciesOrganic
+  id: MobAvali # Floofstation, changed from CMMobAvali
+  name: Urist C.M McRaptor
+  suffix: RMC14
+  components:
+  - type: HumanoidAppearance
+    species: Avali
+    hideLayersOnEquip:
+    - HeadTop
+    - HeadSide
+  - type: Sprite
+    drawdepth: Mobs
+  - type: Vocal
+    sounds:
+      Male: MaleAvali
+      Unsexed: FemaleAvali
+      Female: FemaleAvali
+  # - type: Speech
+    # speechVerb: Parrot # Didn't come with one
+    # speechSounds: MaleAvali
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#7a8bf2"
+  # - type: MeleeWeapon
+    # soundHit:
+      # path: /Audio/Weapons/pierce.ogg
+    # animation: WeaponArcClaw
+  - type: Inventory
+    speciesId: avali
+    
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobAvaliDummy
+  categories: [ HideSpawnMenu ] # Floofstation, changed from noSpawn: true
