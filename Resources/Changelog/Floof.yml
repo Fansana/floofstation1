@@ -6405,19 +6405,12 @@ Entries:
   time: '2025-06-24T11:08:58.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1132
 - author: ashkitten
-  changes: 
+  changes:
     - type: Fix
       message: Restored the NT Block Game to it's former glory.
   id: 675
   time: '2025-06-24T11:09:39.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1134
-#- author: EinsteinEngines
-#  changes:
-#    - type: Add
-#      message: Grapple & Tether Guns have been re-added.
-#  id: 676
-#  time: '2025-06-24T11:10:50.0000000+00:00'
-#  url: https://github.com/Fansana/floofstation1/pull/1131 | M3739 - Erroneous changelog entry.
 - author: Memeji
   changes:
     - type: Tweak
@@ -6543,3 +6536,29 @@ Entries:
   id: 689
   time: '2025-06-29T18:17:44.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1130
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The construction category for 'Flags' now actually appears proper, along
+        with uranium glass and it's reinforced variant.
+    - type: Fix
+      message: Monkies and Kobolds can now be stripped of their belongings again.
+    - type: Fix
+      message: Pet spiders will now properly follow the rules of nature.
+    - type: Fix
+      message: >-
+        Medical quadborgs have had their programming updated to fix a bug
+        preventing them from properly using surgical modules, and their access
+        clearances have been revised.
+    - type: Add
+      message: Quadborgs now have audible steppies.
+    - type: Fix
+      message: >-
+        Merged a part of a upstream EE fix to hopefully address issues with the
+        cuffing system.
+    - type: Tweak
+      message: Vox can now have more vibrant plumage.
+  id: 690
+  time: '2025-06-29T19:13:51.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1139
