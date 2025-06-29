@@ -6532,3 +6532,12 @@ Entries:
   id: 688
   time: '2025-06-29T14:44:25.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1147
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        The entity menu should no longer contain entities that should not be
+        there, e.g. cameras that are 5m away.
+  id: 689
+  time: '2025-06-29T18:17:44.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1130
