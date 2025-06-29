@@ -69,7 +69,7 @@ public sealed class ItemTransferredEvent : HandledEntityEventArgs
     public EntityUid Target;
 
     /// <summary>
-    ///     The actual item being passed around. Can be a virtaul item.
+    ///     The actual item being passed around. Can be a virtual item.
     /// </summary>
     public EntityUid PassedItem;
     /// <summary>
