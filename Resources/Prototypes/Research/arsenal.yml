@@ -220,6 +220,7 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
+  softCapContribution: 1.5
 
 - type: technology
   id: ExperimentalBatteryAmmo
@@ -232,6 +233,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponLaserSvalinn
+  softCapContribution: 1.25 # Floofstation - reduced due to low utility
 
 - type: technology
   id: AdvancedShuttleWeapon
@@ -248,3 +250,4 @@
   - ShuttleGunDusterCircuitboard
   technologyPrerequisites:
   - BasicShuttleArmament
+  softCapContribution: 1.25 # Floofstation - reduced due to low utility

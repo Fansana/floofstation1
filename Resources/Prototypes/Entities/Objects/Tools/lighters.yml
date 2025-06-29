@@ -94,6 +94,7 @@
     fuelConsumption: 0.01
     fuelLitCost: 0.1
     tankSafe: true
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     netsync: false
@@ -232,6 +233,7 @@
       types:
         Blunt: 1 # does a little bit of damage on hit when off
   - type: DamageOtherOnHit
+  - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     netsync: false

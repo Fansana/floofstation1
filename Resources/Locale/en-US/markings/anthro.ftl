@@ -64,6 +64,10 @@ marking-SnoutFSCanidAlt3 = Canid Snout FS Alt 3
 marking-SnoutFSCanidAlt3-snout_fscanidalt3_primary = Canid Snout FS Alt 3 (Primary)
 marking-SnoutFSCanidAlt3-snout_fscanidalt3_secondary = Canid Snout FS Alt 3 (Secondary)
 
+marking-SnoutSCanid = Canid Snout S
+marking-SnoutSCanid-snout_scanidalt3_primary = Canid Snout S (Primary)
+marking-SnoutSCanid-snout_scanidalt3_secondary = Canid Snout S (Secondary)
+
 marking-SnoutSCanidAlt3 = Canid Snout Alt 3 S
 marking-SnoutSCanidAlt3-snout_scanidalt3_primary = Canid Snout Alt 3 S (Primary)
 marking-SnoutSCanidAlt3-snout_scanidalt3_secondary = Canid Snout Alt 3 S (Secondary)
@@ -168,11 +172,11 @@ marking-SnoutOtie-snout_otie_secondary = Otie Snout (Secondary)
 marking-SnoutOtieSmile = Otie Smile Snout
 marking-SnoutOtieSmile-snout_otiesmile_primary = Otie Smile Snout (Primary)
 marking-SnoutOtieSmile-snout_otiesmile_secondary = Otie Smile Snout (Secondary)
-
-marking-SnoutPede = Scolipede Snout
-marking-SnoutPede-snout_pede_primary = Scolipede Snout (Primary)
-marking-SnoutPede-snout_pede_secondary = Scolipede Snout (Secondary)
-
+# Begin Floof - M3739 - #1084
+marking-SnoutPede = Bug Horse Snout
+marking-SnoutPede-snout_pede_primary = Bug Horse Snout (Primary)
+marking-SnoutPede-snout_pede_secondary = Bug Horse Snout (Secondary)
+# End Floof - M3739 - #1084
 marking-SnoutRodent = Rodent Snout
 marking-SnoutRodent-snout_rodent_primary = Rodent Snout (Primary)
 
@@ -354,13 +358,13 @@ marking-TailDoubleKitsune = Kitsune, 2 Tails, Splayed
 marking-TailDTiger-m_tail_dtiger_BEHIND = Lizard, Tiger
 marking-TailDTiger-m_tail_dtiger_FRONT = Lizard, Tiger
 marking-TailDTiger = Lizard Tail, Tiger
-
-marking-TailEevee-m_tail_eevee_BEHIND_primary = Eevee Tail (Primary)
-marking-TailEevee-m_tail_eevee_BEHIND_secondary = Eevee Tail (Secondary)
-marking-TailEevee-m_tail_eevee_FRONT_primary = Eevee Tail (Primary)
-marking-TailEevee-m_tail_eevee_FRONT_secondary = Eevee Tail (Secondary)
-marking-TailEevee = Eevee Tail
-
+# Begin Floof - M3739 - #1084
+marking-TailEvolox-m_tail_evolox_BEHIND_primary = Evolox Tail (Primary)
+marking-TailEvolox-m_tail_evolox_BEHIND_secondary = Evolox Tail (Secondary)
+marking-TailEvolox-m_tail_evolox_FRONT_primary = Evolox Tail (Primary)
+marking-TailEvolox-m_tail_evolox_FRONT_secondary = Evolox Tail (Secondary)
+marking-TailEvolox = Evolox Tail
+# End Floof - M3739 - #1084
 marking-TailFennec-m_tail_fennec_BEHIND_primary = Fox Tail, Fennec (Primary)
 marking-TailFennec-m_tail_fennec_BEHIND_secondary = Fox Tail, Fennec (Secondary)
 marking-TailFennec-m_tail_fennec_FRONT_primary = Fox Tail, Fennec (Primary)
@@ -374,11 +378,11 @@ marking-TailFox2 = Fox Tail, Monocolor Down
 marking-TailFox3-m_tail_fox3_BEHIND_primary = Fox Tail, Monocolor Burnt
 marking-TailFox3-m_tail_fox3_FRONT_primary = Fox Tail, Monocolor Burnt
 marking-TailFox3 = Fox Tail, Monocolor Burnt
-
-marking-TailGuilmon-m_tail_guilmon_BEHIND_primary = Guilmon Tail
-marking-TailGuilmon-m_tail_guilmon_FRONT_primary = Guilmon Tail
-marking-TailGuilmon = Guilmon Tail
-
+# Begin Floof - M3739 - #1084
+marking-TailVirtuasaur-m_tail_virtuasaur_BEHIND_primary = Virtuasaur Tail
+marking-TailVirtuasaur-m_tail_virtuasaur_FRONT_primary = Virtuasaur Tail
+marking-TailVirtuasaur = Virtuasaur Tail
+# End Floof - M3739 - #1084
 marking-TailHawk-m_tail_hawk_BEHIND_primary = Avian Tailfeathers, Hawk (Primary)
 marking-TailHawk-m_tail_hawk_BEHIND_secondary = Avian Tailfeathers, Hawk (Secondary)
 marking-TailHawk-m_tail_hawk_FRONT_primary = Avian Tailfeathers, Hawk (Primary)
@@ -788,19 +792,19 @@ marking-EarsDeerEar-m_ears_deerear_FRONT_primary = Deer Ears MkIII (Primary)
 marking-EarsDeerEar-m_ears_deerear_ADJ_secondary = Deer Ears MkIII (Secondary)
 marking-EarsDeerEar-m_ears_deerear_FRONT_secondary = Deer Ears MkIII (Secondary)
 marking-EarsDeerEar = Deer Ears MkIII
+# Begin Floof - M3739 - #1084
+marking-EarsEvolox-m_ears_evolox_FRONT_primary = Evolox Ears MkI (Primary)
+marking-EarsEvolox-m_ears_evolox_FRONT_secondary = Evolox Ears MkI (Secondary)
+marking-EarsEvolox-m_ears_evolox_ADJ_primary = Evolox Ears MkI (Primary)
+marking-EarsEvolox-m_ears_evolox_ADJ_secondary = Evolox Ears MkI (Secondary)
+marking-EarsEvolox = Evolox Ears MkI
 
-marking-EarsEevee-m_ears_eevee_FRONT_primary = Eevee Ears MkI (Primary)
-marking-EarsEevee-m_ears_eevee_FRONT_secondary = Eevee Ears MkI (Secondary)
-marking-EarsEevee-m_ears_eevee_ADJ_primary = Eevee Ears MkI (Primary)
-marking-EarsEevee-m_ears_eevee_ADJ_secondary = Eevee Ears MkI (Secondary)
-marking-EarsEevee = Eevee Ears MkI
-
-marking-EarsEeveeAlt-m_ears_eevee_alt_FRONT_primary = Eevee Ears MkII (Primary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_FRONT_secondary = Eevee Ears MkII (Secondary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_ADJ_primary = Eevee Ears MkII (Primary)
-marking-EarsEeveeAlt-m_ears_eevee_alt_ADJ_secondary = Eevee Ears MkII (Secondary)
-marking-EarsEeveeAlt = Eevee Ears MkII
-
+marking-EarsEvoloxAlt-m_ears_evolox_alt_FRONT_primary = Evolox Ears MkII (Primary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_FRONT_secondary = Evolox Ears MkII (Secondary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_ADJ_primary = Evolox Ears MkII (Primary)
+marking-EarsEvoloxAlt-m_ears_evolox_alt_ADJ_secondary = Evolox Ears MkII (Secondary)
+marking-EarsEvoloxAlt = Evolox Ears MkII
+# End Floof - M3739 - #1084
 marking-EarsElephant-m_ears_elephant_FRONT = Elephant Ears
 marking-EarsElephant-m_ears_elephant_ADJ = Elephant Ears
 marking-EarsElephant = Elephant Ears
@@ -981,9 +985,10 @@ marking-EarsWolf-m_ears_wolf_FRONT_tertiary = Wolf Ears (Secondary)
 marking-EarsWolf-m_ears_wolf_ADJ_primary = Wolf Ears (Primary)
 marking-EarsWolf-m_ears_wolf_ADJ_tertiary = Wolf Ears (Secondary)
 marking-EarsWolf = Wolf Ears
-
-marking-EarsGuilmonHorns-m_horns_guilmon = Guilmon Ears
-marking-EarsGuilmonHorns = Guilmon Ears
+# Begin Floof - M3739 - #1084
+marking-EarsVirtuasaurHorns-m_horns_virtuasaur = Virtuasaur Ears
+marking-EarsVirtuasaurHorns = Virtuasaur Ears
+# End Floof - M3739 - #1084
 
 # and the rest of the damn snotches
 
