@@ -139,8 +139,8 @@
     Steel: 300
 
 - type: latheRecipe
-  id: ClothingShoesBootsMagSci
-  result: ClothingShoesBootsMagSci
+  id: ClothingShoesBootsMagBase
+  result: ClothingShoesBootsMagBase
   completetime: 10
   materials:
     Steel: 1000
