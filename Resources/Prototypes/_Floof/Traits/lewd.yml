@@ -16,10 +16,10 @@
     - type: SolutionContainerManager
       solutions:
         penis:
-          maxVol: 30 #increased to fit perfectly into a glass
+          maxVol: 25
           reagents:
           - ReagentId: Cum
-            Quantity: 30
+            Quantity: 25
 
 - type: trait
   id: MilkProducer
@@ -62,10 +62,10 @@
     - type: SolutionContainerManager
       solutions:
         vagina:
-          maxVol: 30
+          maxVol: 25
           reagents:
           - ReagentId: NaturalLubricant
-            Quantity: 30
+            Quantity: 25
 
 
 - type: trait
