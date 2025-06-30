@@ -1,4 +1,4 @@
-
+# M3739 - TODO: Clean up this YAML and attempt to future-proof it.
 - type: entity
   id: BorgChassisQuad
   parent: BaseBorgChassisNT
@@ -59,11 +59,14 @@
   - type: LayingDown
   - type: SiliconLawProvider
     laws: Qborg
-  - type: LeashAnchor # Floofstation
+  - type: LeashAnchor
   - type: GuideHelp
     guides:
     - Quadborgs
     - Cyborgs
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepQuadBorg
 
 
 - type: entity
@@ -238,9 +241,16 @@
     hasMindState: quadspritemedl
     noMindState: quadspritemedr
   - type: AccessReader
-    access: [["Medical"], ["Salvage"], ["Command"], ["Research"]]
+    access: [["Medical"], ["Command"], ["Research"]]
   - type: SiliconLawProvider
     laws: Medical
+  - type: FabricateActions
+    actions:
+      - ActionFabricateLollipop
+      - ActionFabricateGumball
+  - type: SurgeryTarget # Shitmed
+  - type: Sanitized # Shitmed
+  - type: SolutionScanner
 
 - type: entity
   id: BorgChassisApex
