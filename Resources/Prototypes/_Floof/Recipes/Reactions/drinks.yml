@@ -18,6 +18,8 @@
 
 - type: reaction
   id: A.B.Lustine
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceApple:
       amount: 1
@@ -30,6 +32,8 @@
 
 - type: reaction
   id: AppleberryFizz
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceApple:
       amount: 1
@@ -42,6 +46,8 @@
 
 - type: reaction
   id: BandE
+  requiredMixerCategories:
+  - Stir
   reactants:
     BlackRussian:
       amount: 1
@@ -54,6 +60,8 @@
 
 - type: reaction
   id: BethanysCumLust
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 4
@@ -66,6 +74,8 @@
 
 - type: reaction
   id: BethanysSluttyCumLust
+  requiredMixerCategories:
+  - Shake
   reactants:
     BethanysCumLust:
       amount: 11
@@ -76,6 +86,8 @@
 
 - type: reaction
   id: BlueBaller
+  requiredMixerCategories:
+  - Stir
   reactants:
     BlueCuracao:
       amount: 1
@@ -100,6 +112,8 @@
 
 - type: reaction
   id: CalicoSunrise
+  requiredMixerCategories:
+  - Stir
   reactants:
     SpaceUp:
       amount: 1
@@ -112,6 +126,8 @@
 
 - type: reaction
   id: Cream
+  requiredMixerCategories:
+  - Shake
   reactants:
     Sugar:
       amount: 5
@@ -122,6 +138,8 @@
 
 - type: reaction
   id: CreamOfCoconut
+  requiredMixerCategories:
+  - Shake
   reactants:
     CoconutWater:
       amount: 2
@@ -134,6 +152,8 @@
 
 - type: reaction
   id: CremeDeCacao
+  requiredMixerCategories:
+  - Stir
   reactants:
     HotCocoa:
       amount: 1
@@ -146,6 +166,8 @@
 
 - type: reaction
   id: DarkOasis
+  requiredMixerCategories:
+  - Shake
   reactants:
     CocoaPowder:
       amount: 1
@@ -158,6 +180,8 @@
 
 - type: reaction
   id: DeadMansDraught
+  requiredMixerCategories:
+  - Shake
   reactants:
     Ale:
       amount: 1
@@ -172,6 +196,8 @@
 
 - type: reaction
   id: DemonSeed
+  requiredMixerCategories:
+  - Shake
   reactants:
     Blood:
       amount: 2
@@ -198,6 +224,8 @@
 
 - type: reaction
   id: DoubleCreamBlaster
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cream:
       amount: 1
@@ -210,6 +238,8 @@
 
 - type: reaction
   id: DragonsBlood
+  requiredMixerCategories:
+  - Stir
   reactants:
     Ale:
       amount: 1
@@ -222,6 +252,8 @@
 
 - type: reaction
   id: DragonsBreath
+  requiredMixerCategories:
+  - Shake
   reactants:
     CapsaicinOil:
       amount: 1
@@ -234,6 +266,8 @@
 
 - type: reaction
   id: DragonsSeed
+  requiredMixerCategories:
+  - Shake
   reactants:
     CapsaicinOil:
       amount: 1
@@ -248,6 +282,8 @@
 
 - type: reaction
   id: EmeraldSwinger
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceGrape:
       amount: 2
@@ -260,6 +296,8 @@
 
 - type: reaction
   id: Eminence
+  requiredMixerCategories:
+  - Stir
   reactants:
     Absinthe:
       amount: 1
@@ -274,6 +312,8 @@
 
 - type: reaction
   id: GoldbloomSpecial
+  requiredMixerCategories:
+  - Stir
   reactants:
     Anisette:
       amount: 1
@@ -286,6 +326,8 @@
 
 - type: reaction
   id: GrandNavy
+  requiredMixerCategories:
+  - Stir
   reactants:
     Amasec:
       amount: 1
@@ -298,6 +340,8 @@
 
 - type: reaction
   id: HeartbreakMountain
+  requiredMixerCategories:
+  - Stir
   reactants:
     EnergyDrink:
       amount: 1
@@ -322,6 +366,8 @@
 
 - type: reaction
   id: HornyStallion
+  requiredMixerCategories:
+  - Stir
   reactants:
     Coffee:
       amount: 1
@@ -334,6 +380,8 @@
 
 - type: reaction
   id: KoboldKooler
+  requiredMixerCategories:
+  - Stir
   reactants:
     Egg:
       amount: 3
@@ -346,6 +394,8 @@
 
 - type: reaction
   id: KoboldKorkscrew
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -358,6 +408,8 @@
 
 - type: reaction
   id: Lamplight
+  requiredMixerCategories:
+  - Stir
   reactants:
     EnergyDrink:
       amount: 1
@@ -370,6 +422,8 @@
 
 - type: reaction
   id: LemonPopsicle
+  requiredMixerCategories:
+  - Shake
   reactants:
     Ice:
       amount: 3
@@ -384,6 +438,8 @@
 
 - type: reaction
   id: LoversKiss
+  requiredMixerCategories:
+  - Stir
   reactants:
     Pomelustine:
       amount: 1
@@ -394,6 +450,8 @@
 
 - type: reaction
   id: MarieJulep
+  requiredMixerCategories:
+  - Shake
   reactants:
     Anisette:
       amount: 1
@@ -408,6 +466,8 @@
 
 - type: reaction
   id: MarsBar
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -420,6 +480,8 @@
 
 - type: reaction
   id: MossBloodShot
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceBerry:
       amount: 1
@@ -434,6 +496,8 @@
 
 - type: reaction
   id: NumberOne
+  requiredMixerCategories:
+  - Stir
   reactants:
     Ephedrine:
       amount: 1
@@ -458,6 +522,8 @@
 
 - type: reaction
   id: OrgasmOnTheBeach
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -472,6 +538,8 @@
 
 - type: reaction
   id: Pomonade
+  requiredMixerCategories:
+  - Stir
   reactants:
     JuicePomegranate:
       amount: 1
@@ -482,6 +550,8 @@
 
 - type: reaction
   id: PomPassion
+  requiredMixerCategories:
+  - Shake
   reactants:
     BlueCuracao:
       amount: 1
@@ -494,6 +564,8 @@
 
 - type: reaction
   id: PomTwist
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceLemon:
       amount: 1
@@ -506,6 +578,8 @@
 
 - type: reaction
   id: PrairieOyster
+  requiredMixerCategories:
+  - Shake
   reactants:
     Blackpepper:
       amount: 1
@@ -524,6 +598,8 @@
 
 - type: reaction
   id: PrisonWine
+  requiredMixerCategories:
+  - Stir
   reactants:
     JuiceGrape:
       amount: 2
@@ -536,6 +612,8 @@
 
 - type: reaction
   id: QuadrupleCreamChalice
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cream:
       amount: 1
@@ -562,6 +640,8 @@
 
 - type: reaction
   id: RedRocket
+  requiredMixerCategories:
+  - Shake
   reactants:
     Grenadine:
       amount: 2
@@ -576,6 +656,8 @@
 
 - type: reaction
   id: SalvagersDelight
+  requiredMixerCategories:
+  - Shake
   reactants:
     CarpoToxin:
       amount: 2
@@ -590,6 +672,8 @@
 
 - type: reaction
   id: SemenBomb
+  requiredMixerCategories:
+  - Shake
   reactants:
     Ale:
       amount: 2
@@ -600,6 +684,8 @@
 
 - type: reaction
   id: SemenHemorrhage
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -612,6 +698,8 @@
 
 - type: reaction
   id: SilverStallion
+  requiredMixerCategories:
+  - Shake
   reactants:
     Coffee:
       amount: 1
@@ -624,6 +712,8 @@
 
 - type: reaction
   id: SlimesDelight
+  requiredMixerCategories:
+  - Shake
   reactants:
     Grenadine:
       amount: 1
@@ -637,6 +727,8 @@
 
 - type: reaction
   id: Snowball
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -649,6 +741,8 @@
 
 - type: reaction
   id: SpecialSundae
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -661,6 +755,8 @@
 
 - type: reaction
   id: SyndicatesOverseer
+  requiredMixerCategories:
+  - Shake
   reactants:
     Blood:
       amount: 2
@@ -673,6 +769,8 @@
 
 - type: reaction
   id: TripleCitrus
+  requiredMixerCategories:
+  - Shake
   reactants:
     JuiceLemon:
       amount: 1
@@ -685,6 +783,8 @@
 
 - type: reaction
   id: Voltage
+  requiredMixerCategories:
+  - Stir
   reactants:
     Rum:
       amount: 2
@@ -697,6 +797,8 @@
 
 - type: reaction
   id: WakeUpJuice
+  requiredMixerCategories:
+  - Shake
   reactants:
     CapsaicinOil:
       amount: 1
@@ -711,6 +813,8 @@
 
 - type: reaction
   id: WatermelonGinJizz
+  requiredMixerCategories:
+  - Shake
   reactants:
     Cum:
       amount: 1
@@ -725,6 +829,8 @@
 
 - type: reaction
   id: TheWaterslide
+  requiredMixerCategories:
+  - Shake
   reactants:
     Beer:
       amount: 1
@@ -737,6 +843,8 @@
 
 - type: reaction
   id: WhiskeySour
+  requiredMixerCategories:
+  - Shake
   reactants:
     Egg:
       amount: 3
@@ -749,6 +857,8 @@
 
 - type: reaction
   id: YeOlHandy
+  requiredMixerCategories:
+  - Shake
   reactants:
     Ice:
       amount: 1
@@ -763,6 +873,8 @@
 
 - type: reaction
   id: Sake
+  requiredMixerCategories:
+  - Shake
   reactants:
     Rice:
       amount: 1
@@ -774,6 +886,8 @@
 
 - type: reaction
   id: TheCuteCaptain
+  requiredMixerCategories:
+  - Stir
   reactants:
     Tea:
       amount: 2
@@ -784,6 +898,8 @@
 
 - type: reaction
   id: AxelsAle
+  requiredMixerCategories:
+  - Stir
   reactants:
     Ale:
       amount: 1
@@ -796,6 +912,8 @@
 
 - type: reaction
   id: JennTonic
+  requiredMixerCategories:
+  - Shake
   reactants:
     Ice:
       amount: 1
@@ -808,6 +926,8 @@
 
 - type: reaction
   id: Hallelujah
+  requiredMixerCategories:
+  - Stir
   reactants:
     Wine:
       amount: 2
@@ -820,6 +940,8 @@
 
 - type: reaction
   id: GinandPussy
+  requiredMixerCategories:
+  - Shake
   reactants:
     Gin:
       amount: 1
@@ -827,3 +949,15 @@
       amount: 2
   products:
     GinandPussy: 3
+
+- type: reaction
+  id: PussyTonic
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    TonicWater:
+      amount: 1
+    NaturalLubricant:
+      amount: 1
+  products:
+    PussyTonic: 2

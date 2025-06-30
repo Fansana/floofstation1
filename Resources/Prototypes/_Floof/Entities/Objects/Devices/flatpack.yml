@@ -15,3 +15,14 @@
   components:
   - type: Flatpack
     entity: OperatingTable
+    
+# Instruments
+
+- type: entity
+  parent: InstrumentFlatpack
+  id: DrumKitFlatpack
+  name: drum kit flatpack
+  description: A flatpack used for constructing a drum kit.
+  components:
+    - type: Flatpack
+      entity: DrumkitInstrument

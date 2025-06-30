@@ -1255,6 +1255,8 @@
   - type: Stripping
   - type: UserInterface
     interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Sprite

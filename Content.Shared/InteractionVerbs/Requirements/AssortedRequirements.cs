@@ -17,7 +17,7 @@ public sealed partial class EntityWhitelistRequirement : InteractionRequirement
 
     public override bool IsMet(InteractionArgs args, InteractionVerbPrototype proto, InteractionAction.VerbDependencies deps) =>
         !deps.WhitelistSystem.IsWhitelistFail(Whitelist, args.Target)
-            && !deps.WhitelistSystem.IsBlacklistPass(Blacklist, args.Target);
+         && !deps.WhitelistSystem.IsBlacklistPass(Blacklist, args.Target);
 }
 
 /// <summary>
