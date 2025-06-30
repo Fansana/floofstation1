@@ -1,3 +1,5 @@
+using Content.Server._Floof.Traits.Components;
+using Content.Server.Administration.Toolshed;
 using Content.Server.Objectives.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Shared.CCVar;
@@ -43,6 +45,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
     private void OnPersonAssigned(EntityUid uid, PickRandomPersonComponent comp, ref ObjectiveAssignedEvent args)
     {
+        Log.Warning("ONPERSON HAPPENED");
         // invalid objective prototype
         if (!TryComp<TargetObjectiveComponent>(uid, out var target))
         {
@@ -63,14 +66,51 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
 
         // Floofstation Edit Start
-        foreach (var mind in allHumans)
-            if (_job.MindTryGetJob(mind, out _, out var prototype) && !prototype.CanBeAntagTarget)
-                allHumans.Remove(mind);
+        if (comp.ObjectiveType != string.Empty)
+        {
+            allHumans = MarkedList(allHumans, comp.ObjectiveType);
+        }
+        else
+        {
+            foreach (var mind in allHumans)
+                if (_job.MindTryGetJob(mind, out _, out var prototype) && !prototype.CanBeAntagTarget)
+                    allHumans.Remove(mind);
+        }
+        //If the culled list is now empty
+        if (allHumans.Count == 0)
+        {
+            args.Cancelled = true;
+            return;
+        }
         // Floofstation Edit End
 
         _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
 
+    public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, string objType)
+    {
+        if (objType == "TraitorKill")//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
+        {
+            foreach (var mind in markedList)
+            {
+                if (!HasComp<MarkedTraitorKillComponent>(mind.Comp.CurrentEntity))
+                {
+                    markedList.Remove(mind);
+                }
+            }
+        }
+        if (objType == "TraitorTeach")//Culls from the list of all alive minds anyone that hasn't opted into teach targetting.
+        {
+            foreach (var mind in markedList)
+            {
+                if (!HasComp<MarkedTraitorTeachComponent>(mind.Comp.CurrentEntity))
+                {
+                    markedList.Remove(mind);
+                }
+            }
+        }
+        return markedList;
+    }
     private void OnHeadAssigned(EntityUid uid, PickRandomHeadComponent comp, ref ObjectiveAssignedEvent args)
     {
         // invalid prototype

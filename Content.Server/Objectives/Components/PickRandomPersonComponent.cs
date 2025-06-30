@@ -8,4 +8,8 @@ namespace Content.Server.Objectives.Components;
 [RegisterComponent, Access(typeof(KillPersonConditionSystem))]
 public sealed partial class PickRandomPersonComponent : Component
 {
+    //Floofstation Target Consent Traits: Start
+    [DataField]
+    public string ObjectiveType = string.Empty;
+    //Floofstation Target Consent Traits: End
 }

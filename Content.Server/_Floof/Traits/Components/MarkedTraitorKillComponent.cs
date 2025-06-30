@@ -5,7 +5,4 @@ namespace Content.Server._Floof.Traits.Components;
 ///     round removing kill objectives for traitors.
 /// </summary>
 [RegisterComponent]
-public sealed partial class MarkedTraitorKillComponent : Component
-{
-
-}
+public sealed partial class MarkedTraitorKillComponent : Component;

@@ -5,7 +5,4 @@ namespace Content.Server._Floof.Traits.Components;
 ///     teach a lesson objectives for traitors.
 /// </summary>
 [RegisterComponent]
-public sealed partial class MarkedTratiorTeachComponent : Component
-{
-
-}
+public sealed partial class MarkedTraitorTeachComponent : Component;
