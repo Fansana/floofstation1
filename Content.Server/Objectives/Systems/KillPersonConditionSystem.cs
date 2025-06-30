@@ -45,7 +45,6 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
     private void OnPersonAssigned(EntityUid uid, PickRandomPersonComponent comp, ref ObjectiveAssignedEvent args)
     {
-        Log.Warning("ONPERSON HAPPENED");
         // invalid objective prototype
         if (!TryComp<TargetObjectiveComponent>(uid, out var target))
         {
