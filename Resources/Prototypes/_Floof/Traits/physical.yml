@@ -297,7 +297,7 @@
     components:
     - type: Silicon
       drainPerSecond: 1
-      speedModifierThresholds: # We hate Linter
+      speedModifierThresholds: # We hate Linter, this weirdly what it gets stuck on linterwise
         4: 1
         3: 1
         2: 0.80
