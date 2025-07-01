@@ -45,7 +45,6 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
     private void OnPersonAssigned(EntityUid uid, PickRandomPersonComponent comp, ref ObjectiveAssignedEvent args)
     {
-        Log.Warning("ONPERSON HAPPENED");
         // invalid objective prototype
         if (!TryComp<TargetObjectiveComponent>(uid, out var target))
         {
@@ -66,15 +65,20 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
 
         // Floofstation Edit Start
-        if (comp.ObjectiveType != string.Empty)
+        if (comp.ObjectiveType != PickRandomPersonComponent.ObjectiveTypes.Unspecified)
         {
             allHumans = MarkedList(allHumans, comp.ObjectiveType);
         }
         else
         {
-            foreach (var mind in allHumans)
-                if (_job.MindTryGetJob(mind, out _, out var prototype) && !prototype.CanBeAntagTarget)
-                    allHumans.Remove(mind);
+            //Cancel the objective if no target type was declared.
+            //Prevent potential edge cases of people that didn't opt in getting assigned.
+            args.Cancelled = true;
+            return;
+            //Legacy code below
+            /*          foreach (var mind in allHumans)
+                                        if (_job.MindTryGetJob(mind, out _, out var prototype) && !prototype.CanBeAntagTarget)
+                                           allHumans.Remove(mind); */
         }
         //If the culled list is now empty
         if (allHumans.Count == 0)
@@ -87,9 +91,9 @@ public sealed class KillPersonConditionSystem : EntitySystem
         _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
 
-    public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, string objType)
+    public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, PickRandomPersonComponent.ObjectiveTypes objType)
     {
-        if (objType == "TraitorKill")//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
+        if (objType == PickRandomPersonComponent.ObjectiveTypes.TraitorKill)//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
         {
             foreach (var mind in markedList)
             {
@@ -99,7 +103,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
                 }
             }
         }
-        if (objType == "TraitorTeach")//Culls from the list of all alive minds anyone that hasn't opted into teach targetting.
+        if (objType == PickRandomPersonComponent.ObjectiveTypes.TraitorTeach)//Culls from the list of all alive minds anyone that hasn't opted into teach targetting.
         {
             foreach (var mind in markedList)
             {

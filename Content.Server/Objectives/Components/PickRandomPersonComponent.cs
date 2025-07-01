@@ -10,6 +10,13 @@ public sealed partial class PickRandomPersonComponent : Component
 {
     //Floofstation Target Consent Traits: Start
     [DataField]
-    public string ObjectiveType = string.Empty;
+    public ObjectiveTypes ObjectiveType = ObjectiveTypes.Unspecified;
+
+    public enum ObjectiveTypes
+    {
+        Unspecified,
+        TraitorKill,
+        TraitorTeach
+    }
     //Floofstation Target Consent Traits: End
 }

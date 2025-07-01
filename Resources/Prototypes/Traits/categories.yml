@@ -7,11 +7,7 @@
 - type: traitCategory
   id: Auditory
   root: true
-#Floofstation Target Consent Traits: Start
-- type: traitCategory
-  id: Marked
-  root: true
-#Floofstation Target Consent Traits: End
+
 - type: traitCategory
   id: Mental
   root: true

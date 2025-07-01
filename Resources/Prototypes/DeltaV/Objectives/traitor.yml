@@ -63,5 +63,5 @@
   - type: TargetObjective
     title: objective-condition-teach-person-title
   - type: PickRandomPerson
-    objectiveType: "TraitorTeach"
+    objectiveType: 2
   - type: TeachLessonCondition
