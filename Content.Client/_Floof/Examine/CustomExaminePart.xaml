@@ -1,0 +1,47 @@
+<controls:CustomExaminePart
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._Floof.Examine"
+    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client">
+
+    <PanelContainer>
+        <PanelContainer.PanelOverride>
+            <graphics:StyleBoxFlat BackgroundColor="#18181B" />
+        </PanelContainer.PanelOverride>
+
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+            <Label Name="TitleLabel" HorizontalAlignment="Center"/>
+
+            <Control HorizontalExpand="True" Margin="5">
+                <TextEdit
+                    Name="Content"
+                    HorizontalExpand="True"
+                    SetHeight="150"
+                    ToolTip="{Loc 'custom-exam-part-content-placeholder'}"/>
+
+                <Label
+                    Name="ContentLength"
+                    Margin="2"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    HorizontalExpand="True"/>
+            </Control>
+
+            <CheckBox Name="NsfwCheckbox" Text="{Loc 'custom-exam-part-title-nsfw'}" />
+
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <Label Text="{Loc 'custom-exam-title-distance'}"/>
+
+                <SpinBox Name="DistanceSpin" Value="20" HorizontalExpand="True"/>
+            </BoxContainer>
+
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <Label Text="{Loc 'custom-exam-title-expiration'}" />
+
+                <SpinBox Name="ExpirationSpin" Value="60" HorizontalExpand="True"/>
+            </BoxContainer>
+
+            <Label Name="TextCounter" />
+        </BoxContainer>
+    </PanelContainer>
+
+</controls:CustomExaminePart>
