@@ -1,3 +1,4 @@
+using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Consent;
 using Content.Shared.Examine;
@@ -22,6 +23,7 @@ public abstract class SharedCustomExamineSystem : EntitySystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly ISharedAdminManager _admin = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
 
     public override void Initialize()
     {
@@ -64,7 +66,8 @@ public abstract class SharedCustomExamineSystem : EntitySystem
 
     protected bool CanChangeExamine(ICommonSession actor, EntityUid examinee)
     {
-        return actor.AttachedEntity == examinee || _admin.IsAdmin(actor);
+        return actor.AttachedEntity == examinee && _actionBlocker.CanConsciouslyPerformAction(examinee)
+            || _admin.IsAdmin(actor);
     }
 
     private void CheckExpirations(Entity<CustomExamineComponent> ent)
