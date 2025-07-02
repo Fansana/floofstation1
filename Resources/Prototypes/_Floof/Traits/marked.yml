@@ -6,7 +6,8 @@
   functions:
   - !type:TraitAddComponent
     components:
-    - type: MarkedTraitorKill
+    - type: Marked
+      targetType: 1
 
 - type: trait
   id: TraitorTeachTarget
@@ -16,4 +17,5 @@
   functions:
   - !type:TraitAddComponent
     components:
-    - type: MarkedTraitorTeach
+    - type: Marked
+      targetType: 2

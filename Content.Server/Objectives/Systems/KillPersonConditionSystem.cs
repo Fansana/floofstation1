@@ -65,7 +65,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
         }
 
         // Floofstation Edit Start
-        if (comp.ObjectiveType != PickRandomPersonComponent.ObjectiveTypes.Unspecified)
+        if (comp.ObjectiveType > 0)
         {
             allHumans = MarkedList(allHumans, comp.ObjectiveType);
         }
@@ -91,23 +91,23 @@ public sealed class KillPersonConditionSystem : EntitySystem
         _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
 
-    public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, PickRandomPersonComponent.ObjectiveTypes objType)
+    public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, ObjectiveTypes objType)
     {
-        if (objType == PickRandomPersonComponent.ObjectiveTypes.TraitorKill)//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
+        if (objType.HasFlag(ObjectiveTypes.TraitorKill))//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
         {
             foreach (var mind in markedList)
             {
-                if (!HasComp<MarkedTraitorKillComponent>(mind.Comp.CurrentEntity))
+                if (!TryComp<MarkedComponent>(mind.Comp.CurrentEntity, out var mComp) || !mComp.TargetType.HasFlag(ObjectiveTypes.TraitorKill))
                 {
                     markedList.Remove(mind);
                 }
             }
         }
-        if (objType == PickRandomPersonComponent.ObjectiveTypes.TraitorTeach)//Culls from the list of all alive minds anyone that hasn't opted into teach targetting.
+        if (objType.HasFlag(ObjectiveTypes.TraitorTeach))//Culls from the list of all alive minds anyone that hasn't opted into teach targetting.
         {
             foreach (var mind in markedList)
             {
-                if (!HasComp<MarkedTraitorTeachComponent>(mind.Comp.CurrentEntity))
+                if (!TryComp<MarkedComponent>(mind.Comp.CurrentEntity, out var mComp) || !mComp.TargetType.HasFlag(ObjectiveTypes.TraitorTeach))
                 {
                     markedList.Remove(mind);
                 }
@@ -144,8 +144,14 @@ public sealed class KillPersonConditionSystem : EntitySystem
                 allHeads.Add(mind);
         }
 
+        var pickCatch = new PickRandomPersonComponent();//Floofstation: Prepares for an edge case where there are no command members.
         if (allHeads.Count == 0)
-            allHeads = allHumans.Select(x => x.Owner).ToList(); // fallback to non-head target
+        {
+            pickCatch.ObjectiveType = ObjectiveTypes.TraitorTeach;//Floofstation: Sets the objective type
+            OnPersonAssigned(uid, pickCatch, ref args);//Floofstation: Assigns a target from the Marked if possible
+            return;//Floofstation: Escapes
+            // allHeads = allHumans.Select(x => x.Owner).ToList(); // fallback to non-head target //Floofstation: Disabled to prevent non-consenting targets.
+        }
 
         _target.SetTarget(uid, _random.Pick(allHeads), target);
     }
