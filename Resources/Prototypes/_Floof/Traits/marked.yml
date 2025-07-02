@@ -7,7 +7,7 @@
   - !type:TraitAddComponent
     components:
     - type: Marked
-      targetType: 1
+      targetType: TraitorKill
 
 - type: trait
   id: TraitorTeachTarget
@@ -18,4 +18,4 @@
   - !type:TraitAddComponent
     components:
     - type: Marked
-      targetType: 2
+      targetType: TraitorTeach
