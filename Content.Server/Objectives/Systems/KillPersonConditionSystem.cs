@@ -90,7 +90,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
         _target.SetTarget(uid, _random.Pick(allHumans), target);
     }
-
+    // Floofstation - added this entire function
     public HashSet<Entity<MindComponent>> MarkedList(HashSet<Entity<MindComponent>> markedList, ObjectiveTypes objType)
     {
         if (objType.HasFlag(ObjectiveTypes.TraitorKill))//Culls from the list of all alive minds anyone that hasn't opted into kill targetting.
