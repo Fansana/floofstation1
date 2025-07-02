@@ -110,7 +110,7 @@
   - type: TargetObjective
     title: objective-condition-kill-person-title
   - type: PickRandomPerson
-    objectiveType: 1
+    objectiveType: TraitorKill
 
 - type: entity
   categories: [HideSpawnMenu]
