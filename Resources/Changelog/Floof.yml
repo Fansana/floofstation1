@@ -6583,3 +6583,13 @@ Entries:
   id: 692
   time: '2025-06-29T19:57:58.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1149
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Voting for random map will no longer result in the last map being chosen
+        for the second time (unless the vote was called manually, or the current
+        map got changed)
+  id: 693
+  time: '2025-07-02T01:24:07.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1166
