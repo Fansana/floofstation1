@@ -6593,3 +6593,36 @@ Entries:
   id: 693
   time: '2025-07-02T01:24:07.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1166
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Holopads (unmapped)
+    - type: Add
+      message: Intellicards are now useful for removing/adding a Station AI's brain.
+    - type: Add
+      message: Added the Communications Console to Station AI actions.
+    - type: Add
+      message: AI now has a warp point.
+    - type: Add
+      message: Added more things for the AI to press.
+    - type: Add
+      message: More AI laws have been added.
+    - type: Fix
+      message: Fixed the mail system
+    - type: Fix
+      message: Fixed AI actions
+    - type: Fix
+      message: >-
+        Fixed invalid spawns for station AI breaking and ruining your ability to
+        play it.
+    - type: Fix
+      message: >-
+        The Station AI's name will now properly send in "arrived to the station"
+        announcements.
+    - type: Fix
+      message: Changed the CPR sound to simply not loop until fixed.
+    - type: Fix
+      message: Fixed unlocalized messages being sent for the random sentience event.
+  id: 694
+  time: '2025-07-02T01:25:19.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1005
