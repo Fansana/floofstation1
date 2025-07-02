@@ -4,6 +4,7 @@ using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
 
@@ -20,6 +21,7 @@ public abstract class SharedCustomExamineSystem : EntitySystem
     [Dependency] private readonly SharedConsentSystem _consent = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly ISharedAdminManager _admin = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -28,31 +30,34 @@ public abstract class SharedCustomExamineSystem : EntitySystem
 
     private void OnExamined(Entity<CustomExamineComponent> ent, ref ExaminedEvent args)
     {
+        CheckExpirations(ent);
         if (ent.Comp.PublicData.Content is null && ent.Comp.SubtleData.Content is null)
             return;
 
         var publicData = ent.Comp.PublicData;
         var subtleData = ent.Comp.SubtleData;
+
         using (args.PushGroup(nameof(CustomExamineComponent), -1))
         {
+            // Lots of code duplication, blegh.
             var allowNsfw = _consent.HasConsent(args.Examiner, NsfwDescConsent);
-            var showSubtle = subtleData.Content is not null
-                && (!subtleData.RequiresConsent || allowNsfw)
-                && _examine.InRangeUnOccluded(args.Examiner, args.Examined);
-            // If subtle is shown, then is is guaranteed that InRangeUnOccluded is true for both cases - TrimData will ensure it
-            var showPublic = publicData.Content is not null
-                && (!publicData.RequiresConsent || allowNsfw)
-                && (showSubtle || _examine.InRangeUnOccluded(args.Examiner, args.Examined));
+            bool hasPublic = publicData.Content is not null, hasSubtle = subtleData.Content is not null;
 
-            // Theoretically these should be trimmed by the server while assigning the message
-            if (showPublic)
+            bool publicConsentHidden = hasPublic && publicData.RequiresConsent && !allowNsfw,
+                 subtleConsentHidden = hasSubtle && subtleData.RequiresConsent && !allowNsfw;
+
+            // If subtle is shown, then public is guaranteed to also be shown
+            bool subtleRangeHidden = hasSubtle && !_examine.InRangeUnOccluded(args.Examiner, args.Examined),
+                 publicRangeHidden = hasPublic && subtleRangeHidden && !_examine.InRangeUnOccluded(args.Examiner, args.Examined);
+
+            if (hasPublic && !publicConsentHidden && !publicRangeHidden)
                 args.PushMarkup(publicData.Content!);
 
-            if (showSubtle)
+            if (hasSubtle && !subtleConsentHidden && !subtleRangeHidden)
                 args.PushMarkup(subtleData.Content!);
 
-            // If something is hidden due to consent preferences, add a note
-            if (!allowNsfw && (!showPublic || !showSubtle))
+            // If something is hidden due to consent preferences, add a note (but only if in range)
+            if (hasPublic && !publicRangeHidden && publicConsentHidden || hasSubtle && !subtleRangeHidden && subtleConsentHidden)
                 args.PushMarkup(Loc.GetString("custom-examine-nsfw-hidden"));
         }
     }
@@ -60,6 +65,24 @@ public abstract class SharedCustomExamineSystem : EntitySystem
     protected bool CanChangeExamine(ICommonSession actor, EntityUid examinee)
     {
         return actor.AttachedEntity == examinee || _admin.IsAdmin(actor);
+    }
+
+    private void CheckExpirations(Entity<CustomExamineComponent> ent)
+    {
+        bool Check(CustomExamineData data)
+        {
+            if (data.Content is null
+                || data.ExpireTime.Ticks <= 0
+                || data.ExpireTime > _timing.CurTime)
+                return false;
+
+            data.Content = null;
+            return true;
+        }
+
+        // Note: using | (bitwise or) instead of || (logical or) because the former is not short-circuiting
+        if (Check(ent.Comp.PublicData) | Check(ent.Comp.SubtleData))
+            Dirty(ent);
     }
 
     protected void TrimData(ref CustomExamineData publicData, ref CustomExamineData subtleData)
@@ -73,19 +96,21 @@ public abstract class SharedCustomExamineSystem : EntitySystem
 
     protected void TrimData(ref CustomExamineData data)
     {
-        // Shitty way to preserve and ignore markup while trimming
-        if (data.Content is not null)
-        {
-            var markupLength = MarkupLength(data.Content);
-            if (data.Content.Length > AbsolutelyMaxLength)
-                data.Content = data.Content[..AbsolutelyMaxLength];
-            if (data.Content.Length - markupLength > PublicMaxLength)
-                data.Content = data.Content[..(PublicMaxLength - markupLength)];
+        if (data.Content is null)
+            return;
 
-            data.Content = data.Content.Trim();
-            if (data.Content.Length == 0)
-                data.Content = null;
-        }
+        // Exclude forbidden markup. Unlike ss14's
+
+        // Shitty way to preserve and ignore markup while trimming
+        var markupLength = MarkupLength(data.Content);
+        if (data.Content.Length > AbsolutelyMaxLength)
+            data.Content = data.Content[..AbsolutelyMaxLength];
+        if (data.Content.Length - markupLength > PublicMaxLength)
+            data.Content = data.Content[..(PublicMaxLength - markupLength)];
+
+        data.Content = data.Content.Trim();
+        if (data.Content.Length == 0)
+            data.Content = null;
     }
 
     protected int LengthWithoutMarkup(string text) => FormattedMessage.RemoveMarkupPermissive(text).Length;

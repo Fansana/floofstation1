@@ -1,14 +1,21 @@
 <controls:CustomExamineSettingsWindow
     xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client._Floof.Examine"
-    MinSize="450 200">
+    MinSize="450 200"
+    Title="{Loc 'custom-exam-title'}">
 
     <BoxContainer Orientation="Vertical" Margin="5" HorizontalExpand="True">
         <!-- Guidelines -->
-        <Collapsible HorizontalExpand="True">
-            <CollapsibleHeading Title="{Loc 'custom-exam-guidelines-heading'}" HorizontalExpand="True"/>
-            <CollapsibleBody HorizontalExpand="True">
-                <RichTextLabel Text="{Loc 'custom-exam-guidelines'}" HorizontalAlignment="Stretch"/>
+        <Collapsible>
+            <CollapsibleHeading Title="{Loc 'custom-exam-guidelines-heading'}"/>
+            <CollapsibleBody>
+                <ScrollContainer SetHeight="140" HScrollEnabled="False">
+                    <!-- I hate how I have to limit the size of this label here, but it doesn't seem I can stop it from expanding otherwise. -->
+                    <RichTextLabel
+                        Text="{Loc 'custom-exam-guidelines'}"
+                        Margin="5"
+                        MaxWidth="500"/>
+                </ScrollContainer>
             </CollapsibleBody>
         </Collapsible>
 
