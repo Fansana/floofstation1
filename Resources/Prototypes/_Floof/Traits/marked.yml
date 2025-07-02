@@ -1,7 +1,7 @@
 - type: trait
   id: TraitorKillTarget
   category: Marked
-  points: 0
+  points: 2
   slots: 0
   functions:
   - !type:TraitAddComponent
@@ -12,7 +12,7 @@
 - type: trait
   id: TraitorTeachTarget
   category: Marked
-  points: 0
+  points: 1
   slots: 0
   functions:
   - !type:TraitAddComponent
