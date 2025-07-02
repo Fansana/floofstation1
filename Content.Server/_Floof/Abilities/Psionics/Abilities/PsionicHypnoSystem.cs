@@ -1,6 +1,6 @@
 using Content.Shared.Abilities.Psionics;
 using Content.Shared.Actions.Events;
-using Content.Shared.Floofstation.Hypno;
+using Content.Shared._Floof.Hypno;
 using Content.Shared.Popups;
 using Content.Server.DoAfter;
 using Content.Shared.DoAfter;
