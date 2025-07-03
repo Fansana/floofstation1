@@ -900,7 +900,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             // Sign language requires at least two complexly-interacting hands
             && !(_actionBlocker.CanComplexInteract(source) && _hands.EnumerateHands(source).Count(hand => hand.IsEmpty) >= 2))
         {
-            _popups.PopupEntity(Loc.GetString("chat-manager-language-requires-hands"), source, PopupType.Medium);
+            _popups.PopupEntity(Loc.GetString("chat-manager-language-requires-hands"), source, source, PopupType.Medium);
             return;
         }
 
