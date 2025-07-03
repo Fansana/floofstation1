@@ -593,7 +593,7 @@
           requireDetailRange: true
 
 - type: trait
-  id: HeavyDermalArmor
+  id: HeavyDermalArmor # Floof
   category: Physical
   points: -10
   requirements:
