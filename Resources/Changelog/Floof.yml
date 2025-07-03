@@ -6626,3 +6626,10 @@ Entries:
   id: 694
   time: '2025-07-02T01:25:19.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1005
+- author: Sprkl
+  changes:
+    - type: Add
+      message: Crew can opt in to being the Kill or Teach target of Traitors.
+  id: 695
+  time: '2025-07-03T17:37:37.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1165
