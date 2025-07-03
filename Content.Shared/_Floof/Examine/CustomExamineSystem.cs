@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Consent;
@@ -18,6 +19,8 @@ public abstract class SharedCustomExamineSystem : EntitySystem
     public static int PublicMaxLength = 256, SubtleMaxLength = 256;
     /// <summary>Max length of any content field, INCLUDING markup.</summary>
     public static int AbsolutelyMaxLength = 1024;
+
+    private static readonly Regex BadMarkupRegex = new("\\[.*?head.*?\\]", RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(5));
 
     [Dependency] private readonly SharedConsentSystem _consent = default!;
     [Dependency] private readonly ExamineSystemShared _examine = default!;
@@ -102,7 +105,8 @@ public abstract class SharedCustomExamineSystem : EntitySystem
         if (data.Content is null)
             return;
 
-        // Exclude forbidden markup. Unlike ss14's
+        // Exclude forbidden markup. Unlike ss14's chat cleanup code, this should also remove nested markup.
+        data.Content = BadMarkupRegex.Replace(data.Content, "<bad markup>").Trim();
 
         // Shitty way to preserve and ignore markup while trimming
         var markupLength = MarkupLength(data.Content);
@@ -111,7 +115,6 @@ public abstract class SharedCustomExamineSystem : EntitySystem
         if (data.Content.Length - markupLength > PublicMaxLength)
             data.Content = data.Content[..(PublicMaxLength - markupLength)];
 
-        data.Content = data.Content.Trim();
         if (data.Content.Length == 0)
             data.Content = null;
     }
