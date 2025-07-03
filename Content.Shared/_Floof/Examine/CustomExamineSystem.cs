@@ -48,9 +48,9 @@ public abstract class SharedCustomExamineSystem : EntitySystem
             bool publicConsentHidden = hasPublic && publicData.RequiresConsent && !allowNsfw,
                  subtleConsentHidden = hasSubtle && subtleData.RequiresConsent && !allowNsfw;
 
-            // If subtle is shown, then public is guaranteed to also be shown
-            bool subtleRangeHidden = hasSubtle && !_examine.InRangeUnOccluded(args.Examiner, args.Examined),
-                 publicRangeHidden = hasPublic && subtleRangeHidden && !_examine.InRangeUnOccluded(args.Examiner, args.Examined);
+            // If subtle is shown, then public is guaranteed to also be shown - this is to avoid extra raycasts
+            bool subtleRangeHidden = hasSubtle && !_examine.InRangeUnOccluded(args.Examiner, args.Examined, subtleData.VisibilityRange),
+                 publicRangeHidden = hasPublic && (!hasSubtle || subtleRangeHidden) && !_examine.InRangeUnOccluded(args.Examiner, args.Examined, publicData.VisibilityRange);
 
             if (hasPublic && !publicConsentHidden && !publicRangeHidden)
                 args.PushMarkup(publicData.Content!);
