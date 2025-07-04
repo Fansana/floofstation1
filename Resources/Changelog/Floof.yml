@@ -6313,7 +6313,7 @@ Entries:
   id: 666
   time: '2025-06-21T11:53:03.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1105
-- author: GreyStation
+- author: GreyStation 14, WizDen, M3739
   changes:
     - type: Add
       message: >-
@@ -6379,3 +6379,257 @@ Entries:
   id: 672
   time: '2025-06-22T10:34:19.0000000+00:00'
   url: https://github.com/Fansana/floofstation1/pull/1056
+- author: Upstream
+  changes:
+    - type: Remove
+      message: >-
+        Removed the "Tier 3 Tech Lockout" mechanic. You are no longer limited to
+        1 discipline worth of t3 research.
+    - type: Add
+      message: >-
+        Research is now "Softcapped" by Tier 3 unlocks. Each unlocked Tier 3
+        technology multiplicatively increases the cost of all other research.
+        Rushing a capstone can be quite expensive, as will be getting multiple
+        capstones. I hope you're glad that you can build more than one prober
+        now without guaranteeing the station will explode.
+  id: 673
+  time: '2025-06-24T07:39:33.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1092
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        Light bulbs and light tubes had their material cost revised and
+        corrected.
+  id: 674
+  time: '2025-06-24T11:08:58.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1132
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: Restored the NT Block Game to it's former glory.
+  id: 675
+  time: '2025-06-24T11:09:39.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1134
+- author: Memeji
+  changes:
+    - type: Tweak
+      message: Increased the Clothes Vending Restock price.
+  id: 677
+  time: '2025-06-24T19:28:38.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1137
+- author: portfiend @ The Den, M3739
+  changes:
+    - type: Add
+      message: >-
+        Various toy-themed markings, such as plush seams, a zipper, wind-up
+        keys, and a few overlay markings. Compatible with most species. You can
+        find them in head, chest, feet, and overlay markings.
+    - type: Fix
+      message: >-
+        Vox, Unathi, and Feroxi will preview in the character creator with
+        correct loadout sprites.
+  id: 678
+  time: '2025-06-25T11:46:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1063
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: >-
+        Papers, Envelopes, Playing Cards, and Small Mail can now be slid under
+        doors! You can do this by just tossing it through the door, kinda like
+        mice!
+  id: 679
+  time: '2025-06-26T17:10:45.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1079
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Adds Night Vision to Felinids
+  id: 680
+  time: '2025-06-26T17:13:47.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1061
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: >-
+        Added Bartending+ PR by Vermidia, shaking and stirring to most of
+        drinks.
+    - type: Add
+      message: Addes shaking and stirring to most of Floof drinks.
+    - type: Add
+      message: Added Pussy Tonic drink
+  id: 681
+  time: '2025-06-26T17:17:20.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1039
+- author: M3739
+  changes:
+    - type: Tweak
+      message: >-
+        A couple of markings has been renamed. Check and verify your character's
+        markings, as you will have to reselect the renamed marking as a result.
+  id: 682
+  time: '2025-06-26T17:19:05.0000000+00:00'
+  url: https://github.com/Fansana/floofstation1/pull/1084
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Hands no longer become blocked when the person you're carrying
+        polymorphs.
+  id: 683
+  time: '2025-06-27T21:37:36.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1145
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Resolved a longstanding issue where buckled characters would get all
+        floppy after sleeping or being knocked down.
+  id: 684
+  time: '2025-06-27T21:54:29.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1143
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: The heirloom toggle in loadouts show now work as expected.
+    - type: Tweak
+      message: >-
+        Loadout special menu can no longer be opened while the loadout is not
+        selected, and will auto-save when it's closed.
+  id: 685
+  time: '2025-06-28T06:07:28.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1142
+- author: Raikyr0
+  changes: []
+  id: 686
+  time: '2025-06-28T06:42:30.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1060
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Chinese Support
+    - type: Tweak
+      message: Tweaked Sol Common Syllable Obfuscation to be Chinese
+  id: 687
+  time: '2025-06-28T17:04:34.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1133
+- author: ashkitten
+  changes:
+    - type: Fix
+      message: >-
+        Foxes can no longer use sign language, as their teeny tiny little paws
+        are incapable of complex interaction.
+    - type: Fix
+      message: >-
+        Sign language now requires two empty hands. You're going to have to put
+        that woman down.
+  id: 688
+  time: '2025-06-29T14:44:25.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1147
+- author: EinsteinEngines
+  changes:
+    - type: Fix
+      message: >-
+        The entity menu should no longer contain entities that should not be
+        there, e.g. cameras that are 5m away.
+  id: 689
+  time: '2025-06-29T18:17:44.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1130
+- author: M3739
+  changes:
+    - type: Fix
+      message: >-
+        The construction category for 'Flags' now actually appears proper, along
+        with uranium glass and it's reinforced variant.
+    - type: Fix
+      message: Monkies and Kobolds can now be stripped of their belongings again.
+    - type: Fix
+      message: Pet spiders will now properly follow the rules of nature.
+    - type: Fix
+      message: >-
+        Medical quadborgs have had their programming updated to fix a bug
+        preventing them from properly using surgical modules, and their access
+        clearances have been revised.
+    - type: Add
+      message: Quadborgs now have audible steppies.
+    - type: Fix
+      message: >-
+        Merged a part of a upstream EE fix to hopefully address issues with the
+        cuffing system.
+    - type: Tweak
+      message: Vox can now have more vibrant plumage.
+  id: 690
+  time: '2025-06-29T19:13:51.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1139
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: Added Justice access to Attorney.
+  id: 691
+  time: '2025-06-29T19:15:25.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1144
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now transfer carried and pulled entities via item offering
+        (default keybind is F, as always).
+    - type: Fix
+      message: >-
+        When several pseudo-items (small people) are inside one container (e.g.
+        a bluespace duffel), they can no longer accidentally kick each other out
+        using the right click menu.
+  id: 692
+  time: '2025-06-29T19:57:58.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1149
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Voting for random map will no longer result in the last map being chosen
+        for the second time (unless the vote was called manually, or the current
+        map got changed)
+  id: 693
+  time: '2025-07-02T01:24:07.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1166
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Holopads (unmapped)
+    - type: Add
+      message: Intellicards are now useful for removing/adding a Station AI's brain.
+    - type: Add
+      message: Added the Communications Console to Station AI actions.
+    - type: Add
+      message: AI now has a warp point.
+    - type: Add
+      message: Added more things for the AI to press.
+    - type: Add
+      message: More AI laws have been added.
+    - type: Fix
+      message: Fixed the mail system
+    - type: Fix
+      message: Fixed AI actions
+    - type: Fix
+      message: >-
+        Fixed invalid spawns for station AI breaking and ruining your ability to
+        play it.
+    - type: Fix
+      message: >-
+        The Station AI's name will now properly send in "arrived to the station"
+        announcements.
+    - type: Fix
+      message: Changed the CPR sound to simply not loop until fixed.
+    - type: Fix
+      message: Fixed unlocalized messages being sent for the random sentience event.
+  id: 694
+  time: '2025-07-02T01:25:19.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1005
+- author: Sprkl
+  changes:
+    - type: Add
+      message: Crew can opt in to being the Kill or Teach target of Traitors.
+  id: 695
+  time: '2025-07-03T17:37:37.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1165

@@ -14,6 +14,7 @@
     # TODO: this should pull the target closer or sumth, but I need to code that action first
     !type:MoodAction
     effect: BeingHugged
+  effectFailure: null # Floof
 
 # Petting someone (people) - improves the mood of the target
 - type: Interaction
@@ -35,6 +36,7 @@
   action:
     !type:MoodAction
     effect: BeingPet
+  effectFailure: null # Floof
 
 # Petting someone (animals) - improves the mood of the user and the target
 - type: Interaction
@@ -57,4 +59,5 @@
       action:
         !type:MoodAction
         effect: PetAnimal
+  effectFailure: null # Floof
 

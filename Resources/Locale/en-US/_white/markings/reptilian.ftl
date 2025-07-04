@@ -1,7 +1,8 @@
 # HEAD
-marking-LizardHeadGuilmon= Lizard, guilmon
-marking-LizardHeadGuilmon-guilmon = Main
-
+# Begin Floof - M3739 - #1084
+marking-LizardHeadVirtuasaur= Virtuasaur Head
+marking-LizardHeadVirtuasaur-virtuasaur = Main
+# End Floof - M3739 - #1084
 marking-LizardShoutEasternDragon= Lizard, eastern dragon
 marking-LizardShoutEasternDragon-eastern_dragon = Outer
 marking-LizardShoutEasternDragon-eastern_dragon_overlay = Inner

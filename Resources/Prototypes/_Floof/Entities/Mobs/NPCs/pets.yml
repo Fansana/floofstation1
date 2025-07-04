@@ -23,7 +23,7 @@
   name: pet spider
   parent: [MobGiantSpider, BaseItem]
   id: MobPetSpiderBase
-  description: Rescue by the SESWC. SESWC vowed to Heal, raise, and rehome as much as possible.
+  description: Rescue by the SESWC. SESWC vowed to heal, raise, and rehome as many as possible.
   categories: [ HideSpawnMenu ]
   components:
   - type: Bloodstream
@@ -56,6 +56,21 @@
         Base: midwife
       Dead:
         Base: midwife_dead
+  - type: Tool
+    qualities: []
+  - type: Prying
+    enabled: false
+  - type: Tending
+    speed: 0.2
+  - type: Tweezers
+    speed: 0.2
+  - type: Hemostat
+    speed: 0.2
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/Effects/bite.ogg
+    endSound:
+      path: /Audio/Effects/bite.ogg
 
 - type: entity
   parent: MobPetSpiderBase

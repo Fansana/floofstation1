@@ -159,3 +159,12 @@ trait-name-Succubus = Succubus
 trait-description-Succubus =
     Your body has evolved to be able to metabolize cum into useful compounds.
     You can eat normal food, but drinking cum satiates your hunger and thirst better, and also improves your health.
+
+# Target Consent Traits: Start
+trait-name-TraitorKillTarget = Marked for Removal
+trait-description-TraitorKillTarget = Someone or something wants you REMOVED. Traitors can recieve orders to kill you and keep you dead.
+
+trait-name-TraitorTeachTarget = Marked for Death
+trait-description-TraitorTeachTarget = Someone or something wants you taught a lesson. Traitors can recieve orders to kill you.
+# Target Consent Traits: End
+
