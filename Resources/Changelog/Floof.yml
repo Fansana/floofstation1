@@ -6672,3 +6672,13 @@ Entries:
   id: 700
   time: '2025-07-04T15:05:22.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1110
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The speed at which your characters body regulates its heat now depends
+        on its mass. This means that 4 kg rodentia will no longer regulate its
+        temperature 17 times faster than a 70 kg human.
+  id: 701
+  time: '2025-07-04T15:13:31.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1107
