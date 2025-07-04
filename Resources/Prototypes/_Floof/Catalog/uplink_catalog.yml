@@ -112,6 +112,9 @@
     Telecrystal: 10
   categories:
   - UplinkAllies
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
   
 - type: listing
   id: UplinkDisposableClownTurret
@@ -130,6 +133,4 @@
     whitelist:
     - Mime
     - Clown
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 2
+
