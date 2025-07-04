@@ -17,7 +17,7 @@
   - !type:AddComponentSpecial
     components:
     - type: SurgerySpeedModifier
-      speedModifier: 1.5 # Floof - So they can do brain surgery and cybernetic implants
+      speedModifier: 1.2 # Floof - So they can do brain surgery and cybernetic implants
 
 - type: startingGear
   id: RoboticistGear
