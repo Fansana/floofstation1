@@ -1,6 +1,4 @@
-using Content.Server.Body.Components;
-
-namespace Content.Server.HeightAdjust;
+namespace Content.Server._Floof.HeightAdjust;
 
 /// <summary>
 ///     When applied to a humanoid or any mob, adjusts their blood level based on the mass contest between them
@@ -10,7 +8,7 @@ namespace Content.Server.HeightAdjust;
 ///     clamped between the specified Min and Max values.
 /// </summary>
 [RegisterComponent]
-public sealed partial class BloodstreamAffectedByMassComponent : Component
+public sealed partial class ThermalRegulatorAffectedByMassComponent : Component
 {
     /// <summary>
     ///     Minimum and maximum resulting volume factors. A minimum value of 0.5 means that the resulting volume will be at least 50% of the original.
@@ -22,9 +20,8 @@ public sealed partial class BloodstreamAffectedByMassComponent : Component
     ///     The power to which the outcome of the mass contest will be risen.
     /// </summary>
     [DataField]
-    public float Power = 1f;
+    public float Power { get; set; } = 1f;
 
-    // Floofstation
     /// <summary>
     ///     by how much has the mob's bloodstream volume been adjusted already?
     /// </summary>

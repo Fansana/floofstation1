@@ -34,7 +34,7 @@ public sealed class BloodstreamAdjustSystem : EntitySystem
 
         var bloodSolution = bloodSolutionEnt.Value.Comp.Solution;
 
-        var factor = Math.Pow(_contests.MassContest(ent, bypassClamp: true, rangeFactor: 4f), ent.Comp.Power);
+        var factor = Math.Pow(_contests.MassContest(ent, bypassClamp: true, rangeFactor: 4f), ent.Comp.Power) / ent.Comp.OldFactor; // Floof - oldFactor
         factor = Math.Clamp(factor, ent.Comp.Min, ent.Comp.Max);
 
         var newVolume = bloodstream.BloodMaxVolume * factor;
@@ -43,6 +43,7 @@ public sealed class BloodstreamAdjustSystem : EntitySystem
         bloodSolution.SetContents([new ReagentQuantity(bloodstream.BloodReagent, newBloodLevel, null)], false);
 
         _bloodstream.SetBloodMaxVolume(ent.Owner, newVolume, bloodstream);
+        ent.Comp.OldFactor = factor; // Floof
 
         return true;
     }
