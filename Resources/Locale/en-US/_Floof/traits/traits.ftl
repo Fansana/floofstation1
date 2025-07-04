@@ -16,6 +16,9 @@ trait-description-MilkProducer = You have a pair of large mammaries.
 trait-name-SquirtProducer = Pussy
 trait-description-SquirtProducer = You have a slit between your legs.
 
+trait-name-EggLayer = Egg Layer
+trait-description-EggLayer = Your body through either mutation, oviposition, cybernetic or noospheric influence has the ability to lay eggs.
+
 trait-name-Weakness = Weakness
 trait-description-Weakness = You are naturally more vulnerable to fatigue. Your stamina pool is halved, making you greately vulnerable to shoving and stunning attacks.
 
@@ -157,3 +160,12 @@ trait-description-FastBatteryDrain = Due to poor maintenance, fault battery or o
 
 trait-name-SlowBatteryDrain = Slow Battery Drain
 trait-description-SlowBatteryDrain = A hardware or software modification causes your battery drains 33% slower then standard.
+
+# Target Consent Traits: Start
+trait-name-TraitorKillTarget = Marked for Removal
+trait-description-TraitorKillTarget = Someone or something wants you REMOVED. Traitors can recieve orders to kill you and keep you dead.
+
+trait-name-TraitorTeachTarget = Marked for Death
+trait-description-TraitorTeachTarget = Someone or something wants you taught a lesson. Traitors can recieve orders to kill you.
+# Target Consent Traits: End
+

@@ -8,7 +8,7 @@
       connections:
       - legs
       organs:
-        lungs: OrganAnimalLungs
+        lungs: OrganSpaceAnimalLungs # Floof
         stomach: OrganAnimalStomach
         liver: OrganAnimalLiver
         heart: OrganGoliathHeart # Allows you to use a slower version of their tentacles.

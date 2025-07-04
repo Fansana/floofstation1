@@ -45,6 +45,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Dynamics.Joints;
 using Content.Server.Effects;
+using Content.Server.Hands.Systems;
 using Content.Shared.Popups;
 
 
@@ -83,6 +84,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly EmpathyChatSystem _empathy = default!;
     [Dependency] private readonly SharedPopupSystem _popups = default!; // Floof
+    [Dependency] private readonly HandsSystem _hands = default!; // Floof
 
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
@@ -894,7 +896,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         var ignoreLanguage = channel.IsExcemptFromLanguages(); // Floof
         var language = languageOverride ?? _language.GetLanguage(source);
         // Floof
-        if (!ignoreLanguage && language.SpeechOverride.RequireHands && !_actionBlocker.CanInteract(source, null))
+        if (!ignoreLanguage && language.SpeechOverride.RequireHands
+            // Sign language requires at least two complexly-interacting hands
+            && !(_actionBlocker.CanComplexInteract(source) && _hands.EnumerateHands(source).Count(hand => hand.IsEmpty) >= 2))
         {
             _popups.PopupEntity(Loc.GetString("chat-manager-language-requires-hands"), source, PopupType.Medium);
             return;
@@ -1147,7 +1151,7 @@ public sealed partial class ChatSystem : SharedChatSystem
                 recipients.Add(player, new ICChatRecipientData(-1, true, InLOS: isVisible));
         }
 
-        RaiseLocalEvent(new ExpandICChatRecipientstEvent(source, voiceGetRange, recipients));
+        RaiseLocalEvent(new ExpandICChatRecipientsEvent(source, voiceGetRange, recipients));
         return recipients;
     }
 
@@ -1210,7 +1214,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 ///     This event is raised before chat messages are sent out to clients. This enables some systems to send the chat
 ///     messages to otherwise out-of view entities (e.g. for multiple viewports from cameras).
 /// </summary>
-public record ExpandICChatRecipientstEvent(EntityUid Source, float VoiceRange, Dictionary<ICommonSession, ChatSystem.ICChatRecipientData> Recipients)
+public record ExpandICChatRecipientsEvent(EntityUid Source, float VoiceRange, Dictionary<ICommonSession, ChatSystem.ICChatRecipientData> Recipients)
 {
 }
 

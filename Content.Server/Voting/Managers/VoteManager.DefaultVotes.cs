@@ -212,6 +212,7 @@ namespace Content.Server.Voting.Managers
 
         private void CreateMapVote(ICommonSession? initiator)
         {
+            var lastMap = _gameMapManager.GetSelectedMap(); // Floof
             var maps = _gameMapManager.CurrentlyEligibleMaps().ToDictionary(map => map, map => map.MapName);
 
             var alone = _playerManager.PlayerCount == 1 && initiator != null;
@@ -244,6 +245,10 @@ namespace Content.Server.Voting.Managers
                 GameMapPrototype picked;
                 if (args.Winners.Contains(randomMapData)) // Floof section - random map
                 {
+                    // Don't select the same map for the second time in a row
+                    if (lastMap is not null && maps.ContainsKey(lastMap))
+                        maps.Remove(lastMap);
+
                     picked = _random.Pick(maps.Keys);
                     _chatManager.DispatchServerAnnouncement(
                         Loc.GetString("ui-vote-map-random-win", ("picked", maps[picked])));

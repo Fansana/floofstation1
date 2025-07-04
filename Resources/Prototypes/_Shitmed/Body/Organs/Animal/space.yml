@@ -16,6 +16,15 @@
     onAdd:
     - type: PressureImmunity
 
+- type: entity # Floof - Does nothing new for now, mostly just to show it came from a dragon
+  parent: OrganAnimalHeart
+  id: OrganDragonHeart
+  name: dragon heart
+  components:
+  - type: Organ
+    onAdd:
+    - type: PressureImmunity
+
 - type: entity
   parent: OrganAnimalHeart
   id: OrganGoliathHeart
@@ -24,6 +33,7 @@
   - type: Organ
     onAdd:
     - type: GoliathTentacle
+    - type: PressureImmunity # Floof - Goliaths? Where?
   - type: Sprite
     sprite: _Shitmed/Mobs/Species/Space/Goliath/organs.rsi
     state: heart-on
@@ -38,6 +48,7 @@
     - type: ActionGun
       action: ActionDragonsBreath
       gunProto: DragonsBreathGun
+    - type: BreathingImmunity # Floof - Dragons are just evolved carps
 
 - type: entity
   parent: OrganHumanEyes
@@ -76,6 +87,7 @@
     - type: StealthOnMove
       passiveVisibilityRate: -0.25
       movementVisibilityRate: 0.25
+    - type: PressureImmunity # Floof - Rarer but completely useless outside of actual antag stuff
   - type: Sprite
     sprite: _Shitmed/Mobs/Species/Space/Cobra/organs.rsi
     state: heart-on
