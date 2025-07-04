@@ -9,6 +9,9 @@
     - !type:DepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 3600
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security # Floof
+      min: 14400 # Floofstation - 4 hour
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
@@ -21,12 +24,15 @@
   startingGear: ForensicMantisGear
   icon: "JobIconForensicMantis"
   supervisors: job-supervisors-rd
-  antagAdvantage: 5
-  canBeAntag: true
+  canBeAntag: false # Floof
   access:
   - Research
   - Maintenance
   - Mantis # DeltaV - Mantis, see Resources/Prototypes/DeltaV/Access/epistemics.yml
+  - Security # Floof
+  - Service
+  - External
+  - Cryogenics
   special:
   - !type:AddComponentSpecial
     components:
@@ -39,6 +45,8 @@
         - MetapsionicPower
         - TelepathyPower
         - AssayPower
+  - !type:AddImplantSpecial # Floof
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: ForensicMantisGear
@@ -49,7 +57,7 @@
     head: ClothingHeadHatFezMantis
     id: ForensicMantisPDA
     eyes: ClothingEyesGlassesSunglasses
-    ears: ClothingHeadsetScience
+    ears: ClothingHeadsetMantis # Floof
     gloves: ClothingHandsGlovesColorWhite
     outerClothing: ClothingOuterCoatMantis
     belt: ClothingBeltMantis
