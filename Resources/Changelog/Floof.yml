@@ -6633,3 +6633,12 @@ Entries:
   id: 695
   time: '2025-07-03T17:37:37.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1165
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Adjusted the rules stating that suicide RP is forbidden.
+    - type: Fix
+      message: reformatted the Rules a little.
+  id: 696
+  time: '2025-07-04T14:19:52.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1172
