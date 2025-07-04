@@ -817,7 +817,7 @@
       slotId: "left leg"
     - !type:TraitCyberneticLimbReplacement
       removeBodyPart: Leg
-      partSymmetry: Right 
+      partSymmetry: Right
       protoId: SpeedRightLeg
       slotId: "right leg"
 
