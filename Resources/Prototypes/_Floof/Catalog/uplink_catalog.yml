@@ -112,3 +112,6 @@
     Telecrystal: 10
   categories:
   - UplinkAllies
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2

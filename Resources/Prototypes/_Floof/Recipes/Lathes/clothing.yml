@@ -77,3 +77,14 @@
   materials:
     Cloth: 250 # Two utility belts plus some connecting straps
     Steel: 50 # Because buckles
+
+- type: latheRecipe
+  id: ClothingUniformNudityPermit
+  icon:
+    sprite: _Floof/Clothing/Uniforms/nuditypermit.rsi
+    state: icon
+  result: ClothingUniformNudityPermit
+  category: ClothingOther # Floof - add uniform printer clothing categories
+  completetime: 2
+  materials:
+    Durathread: 100

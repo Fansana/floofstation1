@@ -23,4 +23,11 @@ public sealed partial class BloodstreamAffectedByMassComponent : Component
     /// </summary>
     [DataField]
     public float Power = 1f;
+
+    // Floofstation
+    /// <summary>
+    ///     by how much has the mob's bloodstream volume been adjusted already?
+    /// </summary>
+    [DataField]
+    public double OldFactor = 1f;
 }
