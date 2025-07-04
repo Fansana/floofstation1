@@ -6700,3 +6700,12 @@ Entries:
   id: 703
   time: '2025-07-04T15:28:20.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1094
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Train based on community feedback and requests. This includes
+        adding the full Justice department.
+  id: 704
+  time: '2025-07-04T15:17:51.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1074
