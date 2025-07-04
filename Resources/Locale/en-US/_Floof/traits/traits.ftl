@@ -155,6 +155,12 @@ trait-description-Tiny =
 
 examine-tiny-trait-message = {CAPITALIZE(SUBJECT($entity))} is tiny. Handle with care!
 
+trait-name-FastBatteryDrain = Fast Battery Drain
+trait-description-FastBatteryDrain = Due to poor maintenance, fault battery or other hardware error your battery drains 33% faster then standard.
+
+trait-name-SlowBatteryDrain = Slow Battery Drain
+trait-description-SlowBatteryDrain = A hardware or software modification causes your battery drains 33% slower then standard.
+
 # Target Consent Traits: Start
 trait-name-TraitorKillTarget = Marked for Removal
 trait-description-TraitorKillTarget = Someone or something wants you REMOVED. Traitors can recieve orders to kill you and keep you dead.
@@ -162,3 +168,4 @@ trait-description-TraitorKillTarget = Someone or something wants you REMOVED. Tr
 trait-name-TraitorTeachTarget = Marked for Death
 trait-description-TraitorTeachTarget = Someone or something wants you taught a lesson. Traitors can recieve orders to kill you.
 # Target Consent Traits: End
+
