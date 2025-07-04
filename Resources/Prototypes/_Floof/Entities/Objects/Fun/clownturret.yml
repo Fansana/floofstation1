@@ -70,7 +70,7 @@
 
 - type: entity
   parent: BaseWeaponTurret
-  name: disposable ballistic turret
+  name: disposable pie turret
   id: WeaponTurretClownDisposable
   suffix: Syndicate, Disposable
   components:
@@ -100,7 +100,7 @@
       soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
     - type: BallisticAmmoProvider
       proto: FoodPieBananaCream
-      capacity: 100
+      capacity: 200
     - type: Construction
       deconstructionTarget: null
       graph: WeaponTurretClownDisposable
