@@ -6682,3 +6682,14 @@ Entries:
   id: 701
   time: '2025-07-04T15:13:31.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1107
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now add visual descriptions to your character in-game by
+        clicking on your character or by using the right click menu and
+        selecting "custom examine". This works on all entities that can
+        consciously perform actions.
+  id: 702
+  time: '2025-07-04T15:01:29.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1168
