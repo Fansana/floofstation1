@@ -26,7 +26,7 @@ public sealed class ConsentSystem : SharedConsentSystem
         return message;
     }
 
-    public bool HasConsent(Entity<MindContainerComponent?> ent, ProtoId<ConsentTogglePrototype> consentId)
+    public override bool HasConsent(Entity<MindContainerComponent?> ent, ProtoId<ConsentTogglePrototype> consentId)
     {
         if (!Resolve(ent, ref ent.Comp)
             || _serverMindSystem.GetMind(ent, ent) is not { } mind)
