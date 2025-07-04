@@ -77,6 +77,19 @@
     sound: /Audio/SimpleStation14/Items/Handling/paper_drop.ogg
   - type: EmitSoundOnLand
     sound: /Audio/SimpleStation14/Items/Handling/paper_drop.ogg
+  # FLOOF ADD START: Slide papers and such under doors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemSlideUnderDoorMask
+        restitution: 0.3
+        friction: 0.2
+  # FLOOF ADD END
 
 - type: entity
   name: paper scrap
@@ -845,3 +858,16 @@
   - type: Construction
     graph: PaperEnvelope
     node: envelope
+  # FLOOF ADD START: Slide papers and such under doors
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 20
+        mask:
+        - ItemSlideUnderDoorMask
+        restitution: 0.3
+        friction: 0.2
+  # FLOOF ADD END

@@ -130,3 +130,6 @@
     whitelist:
     - Mime
     - Clown
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2

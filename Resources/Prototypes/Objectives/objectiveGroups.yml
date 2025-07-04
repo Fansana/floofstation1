@@ -31,10 +31,10 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    # KillRandomPersonObjective: 1 # DeltaV Replaced for Teach Lesson
-    # TeachLessonRandomPersonObjective: 1 # Floof - Disabled until constent system is made for targets
+    KillRandomPersonObjective: 1
+    TeachLessonRandomPersonObjective: 1
     # KillRandomHeadObjective: 0.25 # Floof - Replaced with TeachLessonRandomHeadObjective
-    TeachLessonRandomHeadObjective: 1 # Floof - Replaces KillRandomHeadObjective
+    TeachLessonRandomHeadObjective: 0.5 # Floof - Replaces KillRandomHeadObjective
 
 - type: weightedRandom
   id: TraitorObjectiveGroupState

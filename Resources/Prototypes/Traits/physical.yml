@@ -817,7 +817,7 @@
       slotId: "left leg"
     - !type:TraitCyberneticLimbReplacement
       removeBodyPart: Leg
-      partSymmetry: Right 
+      partSymmetry: Right
       protoId: SpeedRightLeg
       slotId: "right leg"
 
@@ -830,6 +830,7 @@
       inverted: true
       species:
         - Shadowkin
+        - Felinid
     - !type:CharacterTraitRequirement
       traits:
         - CyberEyes

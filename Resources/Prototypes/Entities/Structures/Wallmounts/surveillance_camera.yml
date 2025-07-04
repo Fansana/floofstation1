@@ -8,11 +8,6 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      # This exists for examine.
-      fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.25
       light:
         shape:
           !type:PhysShapeCircle
@@ -65,8 +60,6 @@
       InUse: camera_in_use
   - type: UserInterface
     interfaces:
-      enum.AiUi.Key:
-        type: StationAiBoundUserInterface
       enum.SurveillanceCameraSetupUiKey.Camera:
         type: SurveillanceCameraSetupBoundUi
       enum.WiresUiKey.Key:

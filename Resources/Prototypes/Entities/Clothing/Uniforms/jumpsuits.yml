@@ -397,7 +397,7 @@
     sprite: Clothing/Uniforms/Jumpsuit/hop.rsi
 
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  parent: [ClothingUniformBase] # Floof - M3739 - #1139 - previously also had ClothingUniformFoldableBase which DeltaV sprites do not support.
   id: ClothingUniformJumpsuitHoS
   name: head of security's jumpsuit
   description: A standard Station Security uniform, adorned with gold emblems and commander's epaulettes. # DeltaV - improved description
@@ -597,7 +597,7 @@
     sprite: Clothing/Uniforms/Jumpsuit/paramedic.rsi
 
 - type: entity
-  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ]
+  parent: [ClothingUniformBase] # Floof - M3739 - #1139 - previously also had ClothingUniformFoldableBase which DeltaV sprites do not support.
   id: ClothingUniformJumpsuitBrigmedic
   name: corpsman jumpsuit # DeltaV - rename brigmedic to corpsman
   description: This uniform is issued to qualified personnel who have been trained. No one cares that the training took half a day.

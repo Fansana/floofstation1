@@ -81,3 +81,7 @@
 - type: font
   id: RyujinAttack
   path: /Fonts/RyujinAttack/RyujinAttack.otf
+
+- type: font # Floofstation + Goobstation LRP
+  id: Chinese
+  path: /Fonts/NotoSans/NotoSansSC-Regular.ttf
