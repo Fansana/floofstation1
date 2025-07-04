@@ -6583,3 +6583,143 @@ Entries:
   id: 692
   time: '2025-06-29T19:57:58.0000000+00:00'
   url: https://github.com/Floof-Station/Floof-Station/pull/1149
+- author: Mnemotechnician
+  changes:
+    - type: Tweak
+      message: >-
+        Voting for random map will no longer result in the last map being chosen
+        for the second time (unless the vote was called manually, or the current
+        map got changed)
+  id: 693
+  time: '2025-07-02T01:24:07.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1166
+- author: EinsteinEngines
+  changes:
+    - type: Add
+      message: Added Holopads (unmapped)
+    - type: Add
+      message: Intellicards are now useful for removing/adding a Station AI's brain.
+    - type: Add
+      message: Added the Communications Console to Station AI actions.
+    - type: Add
+      message: AI now has a warp point.
+    - type: Add
+      message: Added more things for the AI to press.
+    - type: Add
+      message: More AI laws have been added.
+    - type: Fix
+      message: Fixed the mail system
+    - type: Fix
+      message: Fixed AI actions
+    - type: Fix
+      message: >-
+        Fixed invalid spawns for station AI breaking and ruining your ability to
+        play it.
+    - type: Fix
+      message: >-
+        The Station AI's name will now properly send in "arrived to the station"
+        announcements.
+    - type: Fix
+      message: Changed the CPR sound to simply not loop until fixed.
+    - type: Fix
+      message: Fixed unlocalized messages being sent for the random sentience event.
+  id: 694
+  time: '2025-07-02T01:25:19.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1005
+- author: Sprkl
+  changes:
+    - type: Add
+      message: Crew can opt in to being the Kill or Teach target of Traitors.
+  id: 695
+  time: '2025-07-03T17:37:37.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1165
+- author: Fansana
+  changes:
+    - type: Tweak
+      message: Adjusted the rules stating that suicide RP is forbidden.
+    - type: Fix
+      message: reformatted the Rules a little.
+  id: 696
+  time: '2025-07-04T14:19:52.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1172
+- author: VividPups
+  changes:
+    - type: Tweak
+      message: >-
+        Arachne has an ass of an spider might as well make web like an arachnid
+        naturally 
+  id: 697
+  time: '2025-07-04T14:20:25.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1170
+- author: AlexisMoonlight
+  changes:
+    - type: Add
+      message: Added public nudity permit recipe to HoP's uniform printer.
+  id: 698
+  time: '2025-07-04T15:00:47.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1171
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Tweaked Fish Labeler to Label Dragons
+  id: 699
+  time: '2025-07-04T15:01:46.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1141
+- author: Raikyr0
+  changes:
+    - type: Tweak
+      message: Tweaked Mantis to being Security again
+  id: 700
+  time: '2025-07-04T15:05:22.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1110
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: >-
+        The speed at which your characters body regulates its heat now depends
+        on its mass. This means that 4 kg rodentia will no longer regulate its
+        temperature 17 times faster than a 70 kg human.
+  id: 701
+  time: '2025-07-04T15:13:31.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1107
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: >-
+        You can now add visual descriptions to your character in-game by
+        clicking on your character or by using the right click menu and
+        selecting "custom examine". This works on all entities that can
+        consciously perform actions.
+  id: 702
+  time: '2025-07-04T15:01:29.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1168
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Surgery Speed to Roboticist, Senior Researcher
+  id: 703
+  time: '2025-07-04T15:28:20.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1094
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked Train based on community feedback and requests. This includes
+        adding the full Justice department.
+  id: 704
+  time: '2025-07-04T15:17:51.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1074
+- author: ashkitten
+  changes: []
+  id: 705
+  time: '2025-07-04T15:02:32.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1135
+- author: ItsDzordz
+  changes:
+    - type: Add
+      message: Added Mimeguin
+    - type: Tweak
+      message: Balanced Crazed Clown Rat
+  id: 706
+  time: '2025-07-04T15:03:09.0000000+00:00'
+  url: https://github.com/Floof-Station/Floof-Station/pull/1128

@@ -32,3 +32,6 @@ consent-Hypno-desc = Allow yourself to be hypnotized.
 
 consent-NoClone-name = Disallow Paradox Anomaly
 consent-NoClone-desc = Turn this on to disallow Paradox clones of yourself.
+
+consent-NSFWDescriptions-name = Show NSFW Descriptions
+consent-NSFWDescriptions-desc = Toggle this on to see dynamic player descriptions that may contain NSFW/ERP content.
