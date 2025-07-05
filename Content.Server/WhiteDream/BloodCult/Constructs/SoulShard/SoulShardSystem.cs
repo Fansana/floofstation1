@@ -2,6 +2,7 @@
 using Content.Server.Mind;
 using Content.Server.Popups;
 using Content.Server.Roles;
+using Content.Shared._Goobstation.Bible;
 using Content.Shared.Interaction;
 using Content.Shared.Mind.Components;
 using Content.Shared.Roles;

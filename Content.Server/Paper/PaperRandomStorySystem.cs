@@ -1,4 +1,6 @@
 using Content.Server.RandomMetadata;
+using Content.Shared.Paper;
+
 
 namespace Content.Server.Paper;
 

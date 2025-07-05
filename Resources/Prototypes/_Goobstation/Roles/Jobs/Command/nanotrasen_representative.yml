@@ -22,7 +22,7 @@
   - Maintenance
   - Engineering
   - Medical
-  - Research  
+  - Research
   - Command
   - NanotrasenRepresentative
   special:
@@ -31,6 +31,8 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+      - type: Condemned
+        soulOwnedNotDevil: true
 
 - type: startingGear
   id: NanotrasenRepresentativeGear
