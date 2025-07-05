@@ -64,7 +64,7 @@
 - type: trait
   id: Pacifist
   category: Mental
-  points: 6
+  points: 8
   functions:
     - !type:TraitAddComponent
       components:
@@ -88,7 +88,7 @@
 - type: trait
   id: Unrevivable
   category: Physical
-  points: 6
+  points: 8 # being unable to be revived via defib and CPR, this is effective round removal
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -138,6 +138,7 @@
 - type: trait
   id: FrontalLisp
   category: TraitsSpeechAccents
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -158,6 +159,7 @@
 - type: trait
   id: Snoring
   category: Auditory
+  slots: 0
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -176,7 +178,7 @@
 - type: trait
   id: BadKnees
   category: Physical
-  points: 3
+  points: 5 # Opposite of Parkour Training and a horrific debuff for its cost
   requirements:
     - !type:CharacterTraitRequirement
       inverted: true
@@ -200,7 +202,7 @@
 - type: trait
   id: Sluggish
   category: Physical
-  points: 3
+  points: 5
   requirements:
     - !type:CharacterTraitRequirement
       inverted: true
@@ -222,7 +224,7 @@
 - type: trait
   id: SnailPaced
   category: Physical
-  points: 5
+  points: 8
   requirements:
     - !type:CharacterTraitRequirement
       inverted: true
@@ -314,7 +316,7 @@
 - type: trait
   id: Clumsy
   category: Physical
-  points: 1
+  points: 5 # Clumsy makes you unable to use guns, can't climb tables and medpen others
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
