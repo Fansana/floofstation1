@@ -582,6 +582,10 @@
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
         - Anomaly
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - HeavyDermalArmor
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
@@ -603,6 +607,10 @@
         - Prisoner # Bionics should be "Confiscated" from long term prisoners.
         - Gladiator # Floof
         - Anomaly
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - DermalArmor
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
