@@ -1205,3 +1205,13 @@
     containers:
       circuit_holder: !type:ContainerSlot
       board: !type:Container
+
+- type: entity # Floof
+  id: DecorativeComputer
+  parent: BaseComputer
+  name: Computer
+  description: A computer for putering.
+  components:
+  - type: Construction
+    graph: DecorativeComputer
+    node: DecorativeComputer
