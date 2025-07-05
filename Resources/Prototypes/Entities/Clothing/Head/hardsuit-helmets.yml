@@ -207,6 +207,14 @@
       coefficients:
         Heat: 0.90
         Radiation: 0.75
+  - type: ToggleableLightVisuals
+  - type: PointLight
+    enabled: false
+    radius: 3
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
 
 
 #Security Hardsuit
