@@ -1,0 +1,64 @@
+- type: entity
+  name: Freelancer "Pilot" Softsuit Bulk Crate
+  id: CrateFreelancerSoftsuitPilot
+  suffix: Freelancer, Filled
+  parent: CrateMercenarySecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: DoubleEmergencyNitrogenTankFilled
+      amount: 3
+    - id: DoubleEmergencyOxygenTankFilled
+      amount: 3
+    - id: DoubleEmergencyWaterVaporTankFilled
+      amount: 3
+    - id: ClothingOuterHardsuitFreelancerPilot
+      amount: 3
+    - id: ClothingHeadHelmetPilot
+      amount: 3
+
+- type: entity
+  name: Freelancer "Legion" Softsuit Bulk Crate
+  id: CrateFreelancerSoftsuitLegion
+  suffix: Freelancer, Filled
+  parent: CrateMercenarySecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: DoubleEmergencyNitrogenTankFilled
+      amount: 3
+    - id: DoubleEmergencyOxygenTankFilled
+      amount: 3
+    - id: DoubleEmergencyWaterVaporTankFilled
+      amount: 3
+    - id: ClothingOuterHardsuitFreelancerLegion
+      amount: 3
+    - id: ClothingHeadHelmetOcular
+      amount: 3
+
+- type: entity
+  name: Freelancer Ammo Bulk Crate
+  id: CrateFreelancerAmmoSecure
+  suffix: Freelancer, Filled
+  parent: CrateAmmoSecure
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxMagazinePistol
+      amount: 3
+    - id: BoxMagazinePistolRubber
+      amount: 3
+    - id: BoxMagazineLightRifle
+      amount: 3
+    - id: BoxMagazineShotgun
+      amount: 3
+    - id: BoxMagazineShotgunBeanbag
+      amount: 3
+    - id: MagazineMagnumLeverRifle
+      amount: 3
+    - id: MagazineBoxMagnum
+      amount: 2
+    - id: MagazineBoxCaselessRifleBig
+      amount: 2
+    - id: MagazineBoxLightRifleBig
+      amount: 2

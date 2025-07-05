@@ -109,3 +109,67 @@
     - id: ClothingOuterHardsuitSurgeonGeneral
     - id: DrinkBloodGlass
       amount: 2
+
+#freelancer
+
+- type: entity
+  id: LockerFreelancerCamoClothingFilled
+  suffix: Freelancer, Clothing, Filled
+  parent: LockerFreelancerCamo
+  components:
+  - type: StorageFill
+    contents:
+    - id: FreelancerPDA
+    - id: ClothingHeadsetAltFreelancer
+    - id: ClothingBackpackMerc
+    - id: ClothingHeadBandMerc
+    - id: ClothingHeadHatBeretMerc
+    - id: ClothingShoesBootsMerc
+    - id: ClothingHandsMercGlovesCombat
+    - id: ClothingMaskGasMerc
+    - id: ClothingUniformJumpsuitMercenary
+    - id: ClothingBeltMercWebbing
+    - id: ClothingNeckOldMantle
+    - id: ClothingNeckUnathiMantle
+
+- type: entity
+  id: SuitStorageFreelancerPilot
+  suffix: Freelancer Pilot Softsuit
+  parent: SuitStorageBase
+  components:
+  - type: StorageFill
+    contents:
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: ClothingOuterHardsuitFreelancerPilot
+    - id: ClothingHeadHelmetPilot
+    - id: JetpackMiniFilled
+
+- type: entity
+  id: SuitStorageFreelancerLegion
+  suffix: Freelancer Legion Softsuit
+  parent: SuitStorageBase
+  components:
+  - type: StorageFill
+    contents:
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: ClothingOuterHardsuitFreelancerLegion
+    - id: ClothingHeadHelmetOcular
+    - id: JetpackMiniFilled
+    
+- type: entity
+  id: SuitStorageFreelancerNorthstar
+  suffix: Freelancer Northstar Softsuit
+  parent: SuitStorageBase
+  components:
+  - type: StorageFill
+    contents:
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: ClothingOuterHardsuitFreelancerNorthstar
+    - id: ClothingHeadHelmetStar
+    - id: JetpackMiniFilled
