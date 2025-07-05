@@ -6,7 +6,7 @@
   targetNode: DecorativeComputer
   category: construction-category-furniture
   description: A computer for putering.
-  icon: Structures/Machines/computers.rsi
+  icon: { sprite: Structures/Machines/computers.rsi, state: computer }
   objectType: Structure
 
 - type: constructionGraph
